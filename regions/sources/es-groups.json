@@ -1,0 +1,1005 @@
+{
+"source": {
+"title": "Wikipedia, Spanish wine regions (DOPs and IGPs by autonomous community)",
+"url": "https://en.wikipedia.org/wiki/Spanish_wine_regions",
+"revision": 1357560109,
+"tier": "reference",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [
+"Andalusia"
+],
+"name": "Condado de Huelva",
+"kind": "DOP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Granada",
+"kind": "DOP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Jerez-Xeres-Sherry",
+"kind": "DOP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Lebrija",
+"kind": "DOP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Málaga",
+"kind": "DOP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Manzanilla-Sanlúcar de Barrameda",
+"kind": "DOP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Montilla-Moriles",
+"kind": "DOP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Sierras de Málaga",
+"kind": "DOP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Altiplano de Sierra Nevada",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Bailén",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Cádiz",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Córdoba",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Cumbres del Guadalfeo",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Desierto de Almería",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Laderas del Genil",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Laujar-Alpujarra",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Los Palacios",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Norte de Almería",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Ribera del Andarax",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Sierra Norte de Sevilla",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Sierra Sur de Jaén",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Sierras de Las Estancias y Los Filabres",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Torreperogil",
+"kind": "IGP"
+},
+{
+"path": [
+"Andalusia"
+],
+"name": "Villaviciosa de Córdoba",
+"kind": "IGP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Calatayud",
+"kind": "DOP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Campo de Borja",
+"kind": "DOP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Cariñena",
+"kind": "DOP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Somontano",
+"kind": "DOP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Cava",
+"kind": "DOP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Pago Aylés",
+"kind": "DOP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Bajo Aragón",
+"kind": "IGP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Ribera del Gállego-Cinco Villas",
+"kind": "IGP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Ribera del Jiloca",
+"kind": "IGP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Ribera del Queiles",
+"kind": "IGP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Valdejalón",
+"kind": "IGP"
+},
+{
+"path": [
+"Aragon"
+],
+"name": "Valle del Cinca",
+"kind": "IGP"
+},
+{
+"path": [
+"Asturias"
+],
+"name": "Cangas",
+"kind": "DOP"
+},
+{
+"path": [
+"Cantabria"
+],
+"name": "Costa de Cantabria",
+"kind": "IGP"
+},
+{
+"path": [
+"Cantabria"
+],
+"name": "Liébana",
+"kind": "IGP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Arlanza",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Arribes",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Bierzo",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Cigales",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Ribera del Duero",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Rueda",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Sierra de Salamanca",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Tierra de León",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Tierra del Vino de Zamora",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Toro",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Valles de Benavente",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Valtiendas",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Cava",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile and León"
+],
+"name": "Castilla y León",
+"kind": "IGP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Almansa",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Campo de Calatrava",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Jumilla",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "La Mancha",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Manchuela",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Méntrida",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Mondéjar",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Ribera del Júcar",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Uclés",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Valdepeñas",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Campo de La Guardia",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Casa del Blanco",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Dehesa del Carrizal",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Dominio de Valdepusa",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Finca Élez",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Guijoso",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Pago Calzadilla",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Pago Florentino",
+"kind": "DOP"
+},
+{
+"path": [
+"Castile-La Mancha"
+],
+"name": "Castilla",
+"kind": "IGP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Alella",
+"kind": "DOP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Catalunya",
+"kind": "DOP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Conca de Barberà",
+"kind": "DOP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Costers del Segre",
+"kind": "DOP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Empordà",
+"kind": "DOP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Montsant",
+"kind": "DOP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Penedès",
+"kind": "DOP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Pla de Bages",
+"kind": "DOP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Priorat",
+"kind": "DOP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Tarragona",
+"kind": "DOP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Terra Alta",
+"kind": "DOP"
+},
+{
+"path": [
+"Catalonia"
+],
+"name": "Cava",
+"kind": "DOP"
+},
+{
+"path": [
+"Community of Madrid"
+],
+"name": "Vinos de Madrid",
+"kind": "DOP"
+},
+{
+"path": [
+"Valencian Community"
+],
+"name": "Alicante",
+"kind": "DOP"
+},
+{
+"path": [
+"Valencian Community"
+],
+"name": "Utiel-Requena",
+"kind": "DOP"
+},
+{
+"path": [
+"Valencian Community"
+],
+"name": "Valencia",
+"kind": "DOP"
+},
+{
+"path": [
+"Valencian Community"
+],
+"name": "Cava",
+"kind": "DOP"
+},
+{
+"path": [
+"Valencian Community"
+],
+"name": "El Terrerazo",
+"kind": "DOP"
+},
+{
+"path": [
+"Valencian Community"
+],
+"name": "Los Balagueses",
+"kind": "DOP"
+},
+{
+"path": [
+"Valencian Community"
+],
+"name": "Castelló",
+"kind": "IGP"
+},
+{
+"path": [
+"Extremadura"
+],
+"name": "Ribera del Guadiana",
+"kind": "DOP"
+},
+{
+"path": [
+"Extremadura"
+],
+"name": "Cava",
+"kind": "DOP"
+},
+{
+"path": [
+"Extremadura"
+],
+"name": "Extremadura",
+"kind": "IGP"
+},
+{
+"path": [
+"Galicia"
+],
+"name": "Monterrei",
+"kind": "DOP"
+},
+{
+"path": [
+"Galicia"
+],
+"name": "Rías Baixas",
+"kind": "DOP"
+},
+{
+"path": [
+"Galicia"
+],
+"name": "Ribeira Sacra",
+"kind": "DOP"
+},
+{
+"path": [
+"Galicia"
+],
+"name": "Ribeiro",
+"kind": "DOP"
+},
+{
+"path": [
+"Galicia"
+],
+"name": "Valdeorras",
+"kind": "DOP"
+},
+{
+"path": [
+"Galicia"
+],
+"name": "Barbanza e Iria",
+"kind": "IGP"
+},
+{
+"path": [
+"Galicia"
+],
+"name": "Betanzos",
+"kind": "IGP"
+},
+{
+"path": [
+"Galicia"
+],
+"name": "Ribeiras do Morrazo",
+"kind": "IGP"
+},
+{
+"path": [
+"Galicia"
+],
+"name": "Valle del Miño-Orense",
+"kind": "IGP"
+},
+{
+"path": [
+"Balearic Islands"
+],
+"name": "Binissalem",
+"kind": "DOP"
+},
+{
+"path": [
+"Balearic Islands"
+],
+"name": "Plà i Llevant",
+"kind": "DOP"
+},
+{
+"path": [
+"Balearic Islands"
+],
+"name": "Formentera",
+"kind": "IGP"
+},
+{
+"path": [
+"Balearic Islands"
+],
+"name": "Ibiza",
+"kind": "IGP"
+},
+{
+"path": [
+"Balearic Islands"
+],
+"name": "Illes Balears",
+"kind": "IGP"
+},
+{
+"path": [
+"Balearic Islands"
+],
+"name": "Mallorca",
+"kind": "IGP"
+},
+{
+"path": [
+"Balearic Islands"
+],
+"name": "Isla de Menorca",
+"kind": "IGP"
+},
+{
+"path": [
+"Balearic Islands"
+],
+"name": "Serra de Tramuntana-Costa Nord",
+"kind": "IGP"
+},
+{
+"path": [
+"Canary Islands"
+],
+"name": "Abona",
+"kind": "DOP"
+},
+{
+"path": [
+"Canary Islands"
+],
+"name": "El Hierro",
+"kind": "DOP"
+},
+{
+"path": [
+"Canary Islands"
+],
+"name": "Gran Canaria",
+"kind": "DOP"
+},
+{
+"path": [
+"Canary Islands"
+],
+"name": "La Gomera",
+"kind": "DOP"
+},
+{
+"path": [
+"Canary Islands"
+],
+"name": "La Palma",
+"kind": "DOP"
+},
+{
+"path": [
+"Canary Islands"
+],
+"name": "Lanzarote",
+"kind": "DOP"
+},
+{
+"path": [
+"Canary Islands"
+],
+"name": "Tacoronte-Acentejo",
+"kind": "DOP"
+},
+{
+"path": [
+"Canary Islands"
+],
+"name": "Valle de Güímar",
+"kind": "DOP"
+},
+{
+"path": [
+"Canary Islands"
+],
+"name": "Valle de la Orotava",
+"kind": "DOP"
+},
+{
+"path": [
+"Canary Islands"
+],
+"name": "Ycoden-Daute-Isora",
+"kind": "DOP"
+},
+{
+"path": [
+"Canary Islands"
+],
+"name": "Canary Islands",
+"kind": "IGP"
+},
+{
+"path": [
+"Foral"
+],
+"name": "Navarra",
+"kind": "DOP"
+},
+{
+"path": [
+"Foral"
+],
+"name": "Rioja",
+"kind": "DOP"
+},
+{
+"path": [
+"Foral"
+],
+"name": "Cava",
+"kind": "DOP"
+},
+{
+"path": [
+"Foral"
+],
+"name": "Pago de Arínzano",
+"kind": "DOP"
+},
+{
+"path": [
+"Foral"
+],
+"name": "Otazu",
+"kind": "DOP"
+},
+{
+"path": [
+"Foral"
+],
+"name": "Prado de Irache",
+"kind": "DOP"
+},
+{
+"path": [
+"Foral"
+],
+"name": "Ribera del Queiles",
+"kind": "IGP"
+},
+{
+"path": [
+"Foral"
+],
+"name": "3 Riberas",
+"kind": "IGP"
+},
+{
+"path": [
+"Basque Country"
+],
+"name": "Txacolí de Bizcaia",
+"kind": "DOP"
+},
+{
+"path": [
+"Basque Country"
+],
+"name": "Txacolí de Getaria",
+"kind": "DOP"
+},
+{
+"path": [
+"Basque Country"
+],
+"name": "Txacolí de Álava",
+"kind": "DOP"
+},
+{
+"path": [
+"Basque Country"
+],
+"name": "Rioja Alavesa",
+"kind": "DOP"
+},
+{
+"path": [
+"Basque Country"
+],
+"name": "Cava",
+"kind": "DOP"
+},
+{
+"path": [
+"Murcia"
+],
+"name": "Bullas",
+"kind": "DOP"
+},
+{
+"path": [
+"Murcia"
+],
+"name": "Jumilla",
+"kind": "DOP"
+},
+{
+"path": [
+"Murcia"
+],
+"name": "Yecla",
+"kind": "DOP"
+},
+{
+"path": [
+"Murcia"
+],
+"name": "Campo de Cartagena",
+"kind": "IGP"
+},
+{
+"path": [
+"Murcia"
+],
+"name": "Murcia",
+"kind": "IGP"
+},
+{
+"path": [
+"Rioja"
+],
+"name": "Valles de Sadacia",
+"kind": "DOP"
+}
+]
+}

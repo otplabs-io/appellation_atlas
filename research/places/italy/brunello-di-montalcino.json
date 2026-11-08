@@ -1,0 +1,317 @@
+{
+ "subject": "place",
+ "id": "italy/brunello-di-montalcino",
+ "read": "2026-11-05",
+ "sources": {
+  "disciplinare": {
+   "name": "Disciplinare di produzione, Brunello di Montalcino DOCG (consolidated text, last amendment listed 12.07.2019 / PDF dated October 2019), as hosted by AIS Italia",
+   "kind": "official",
+   "url": "https://aisitalia.it/Disciplinari/Toscana/DOCG/Brunello%20di%20Montalcino.pdf",
+   "note": "Read in full as PDF text. Later amendments, if any, were not checked."
+  },
+  "consorzio-territory": {
+   "name": "Consorzio del Vino Brunello di Montalcino, Territory page",
+   "kind": "official",
+   "url": "https://consorziobrunellodimontalcino.it/en/567/territory"
+  },
+  "wikipedia-en": {
+   "name": "Wikipedia, Brunello di Montalcino (English)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Brunello_di_Montalcino"
+  },
+  "vinfolio": {
+   "name": "Vinfolio, Your guide to Brunello di Montalcino",
+   "kind": "merchant",
+   "url": "https://www.vinfolio.com/editorial/brunello-di-montalcino-guide"
+  },
+  "brunolo": {
+   "name": "Brunolo, Brunello di Montalcino: the diversity of sub-areas and terroir",
+   "kind": "merchant",
+   "url": "https://brunolo.nl/en/blogs/news/brunello-di-montalcino-de-diversiteit-van-deelgebieden-en-terroir"
+  },
+  "winespectator": {
+   "name": "Wine Spectator, Shades of Red in Montalcino: Part Two",
+   "kind": "critic",
+   "url": "https://www.winespectator.com/articles/shades-of-red-in-montalcino-part-two-15401",
+   "note": "Older article. It describes north, east and south in broad terms with no figures."
+  },
+  "search-summaries": {
+   "name": "Search-result summaries of Montalcino guides (cellartours, BBR, Fine Wine Realm and others)",
+   "kind": "general",
+   "note": "Seen only as search summaries. Pages were not opened. Used only for conflicts and one weak soil claim."
+  }
+ },
+ "claims": [
+  {
+   "topic": "grapes",
+   "claim": "Brunello di Montalcino is made from Sangiovese only. The vineyards must be planted only to Sangiovese.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "esclusivamente dal vitigno Sangiovese"
+  },
+  {
+   "topic": "place",
+   "claim": "The DOCG zone is the whole administrative territory of the comune of Montalcino, province of Siena, as it stood on 30 November 2011. It is one commune and has no separate villages or zones in the rules.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "l’intero territorio amministrativo del comune di Montalcino"
+  },
+  {
+   "topic": "place",
+   "claim": "Montalcino is in south-east Tuscany, about 40 km south of Siena. The territory covers 243.62 square km, roughly square, with sides of about 15 km. It is bounded by the valleys of the Orcia, Asso and Ombrone rivers.",
+   "source": ["disciplinare", "consorzio-territory"],
+   "strength": "Strong",
+   "note": "The Consorzio gives about 24,000 ha of land, of which only about 15% is vineyard. Wine Spectator, an older article, calls the shape roughly circular, which is a minor difference."
+  },
+  {
+   "topic": "place",
+   "claim": "The hill is about 40 km in a straight line from the sea to the west and about 100 km from the Apennine chain to the east.",
+   "source": ["disciplinare", "consorzio-territory"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "vineyard",
+   "claim": "The territory runs from about 120 m above sea level along the rivers to about 650 m near Poggio Civitella, its highest point. The rules set no minimum or maximum vineyard altitude. They only ask for ground that ripens grapes well.",
+   "source": ["disciplinare", "consorzio-territory"],
+   "strength": "Strong",
+   "quote": "dal livello di circa 120 metri sul livello del mare lungo i fiumi",
+   "note": "These are the limits of the territory, not a rule for vines. Wikipedia gives vineyards at 149 to 500 m and the town at about 564 m. See conflicts."
+  },
+  {
+   "topic": "soil",
+   "claim": "The disciplinare says the hill has many soil types because it formed in different geological eras. They trace to sandstones (sometimes mixed with limestone), alberese and galestro, and to mixed textures that lean sandy in some places and clayey in others.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "arenarie, anche miste a calcari, ad alberese e a galestro"
+  },
+  {
+   "topic": "soil",
+   "claim": "The soils tend to be low in organic matter and calcareous, with little water in summer. This keeps Sangiovese vigour modest and yields low.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "I terreni tendenzialmente poveri di sostanza organica, calcarei"
+  },
+  {
+   "topic": "soil",
+   "claim": "The lowest ground has relatively loose soils. Higher up, the soil is denser and holds stony particles from weathered marl and limestone.",
+   "source": ["consorzio-territory"],
+   "strength": "Medium",
+   "note": "One official body page. It does not name sides of the hill."
+  },
+  {
+   "topic": "aspect",
+   "claim": "The hill has many slopes with different exposures. This gives many small microclimates, even close together. In general, north-facing slopes ripen later and give racier wines. South- and west-facing slopes give more powerful ones.",
+   "source": ["consorzio-territory", "wikipedia-en"],
+   "strength": "Medium",
+   "note": "The first part is the Consorzio. The north versus south and west part is Wikipedia only."
+  },
+  {
+   "topic": "soil",
+   "claim": "North side (the area around Montalcino town and Montosoli, toward Buonconvento): cooler, on calcareous galestro marl. Wines are described as elegant and perfumed, with finer tannins and a salty, mineral edge. Northern sites tend to pick later than southern ones.",
+   "source": ["vinfolio", "brunolo", "winespectator"],
+   "strength": "Medium",
+   "note": "Three merchant and press sources agree on the style and the galestro. None is an official zoning. The town is the high point of the appellation."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Montosoli, a hill just north of the town, is given as about 250 to 300 m, facing south-east, on galestro and marl.",
+   "source": ["brunolo"],
+   "strength": "Weak",
+   "note": "One merchant blog. A search summary of another guide gave the same 250 to 300 m, but that page was not opened."
+  },
+  {
+   "topic": "soil",
+   "claim": "North-east, around Torrenieri: compact clay soils and more tannic, robust wines.",
+   "source": ["vinfolio"],
+   "strength": "Weak",
+   "note": "One merchant source. Wine Spectator calls the east heavier in soil and more masculine, which fits but gives no detail."
+  },
+  {
+   "topic": "soil",
+   "claim": "South side in general: warmer and drier than the north. Lower ground has heavier clay and gives powerful, tannic wines. Higher, stonier ground drains better and gives finer wines. Wine Spectator calls the south richer and more opulent.",
+   "source": ["brunolo", "winespectator", "search-summaries"],
+   "strength": "Medium",
+   "note": "Style claims agree across sources. The clay versus stony split is from one blog plus search summaries."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Castelnuovo dell'Abate (south-east, near Mount Amiata): called the warmest subzone, with south-facing slopes cooled by Amiata's night air. This gives a wide day-to-night swing that slows ripening and keeps acidity. Soils mix sand, clay and limestone, with galestro higher up. Vineyards are given at about 150 to 400 m.",
+   "source": ["vinfolio", "brunolo", "winespectator"],
+   "strength": "Medium",
+   "note": "Warmest and rich-style claims: three sources. The soils and 150 to 400 m figure are from the Brunolo blog only and are Weak. A search summary of a producer page gave 200 to 400 m. Lower slopes can be picked four to five weeks before higher ones (Vinfolio)."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Sant'Angelo in Colle (south-west): south-facing vineyards in the open sun, shaped by Mount Amiata's weather. Soils have more clay and sand. Altitude is given as about 300 to 400 m. The wines are known as the most muscular and powerful Brunellos, with deep colour and firm tannins.",
+   "source": ["vinfolio", "brunolo"],
+   "strength": "Medium",
+   "note": "Style: two sources agree. Soils and altitude: Brunolo only (Weak). A search summary placed vineyards around Colle Sant'Angelo near 250 m on iron-rich clay, so the altitude is not settled."
+  },
+  {
+   "topic": "place",
+   "claim": "Montalcino has no official subzones. The disciplinare names none. Writers use informal areas such as north, south, Castelnuovo dell'Abate, Sant'Angelo, Torrenieri, Camigliano, Tavernelle and Bosco. Kerin O'Keefe has proposed eight for labelling.",
+   "source": ["disciplinare", "wikipedia-en"],
+   "strength": "Medium",
+   "note": "The absence of subzones is from my read of the disciplinare. The list of eight is Wikipedia, citing O'Keefe."
+  },
+  {
+   "topic": "place",
+   "claim": "The climate is Mediterranean and tends to be dry, with some continental traits because the hill sits between the sea and the Apennines. Average rainfall is about 700 mm a year, mostly in spring and autumn. Snow is possible above 400 m in winter.",
+   "source": ["disciplinare", "consorzio-territory"],
+   "strength": "Strong",
+   "quote": "la media annuale delle precipitazioni è di circa 700 millimetri"
+  },
+  {
+   "topic": "place",
+   "claim": "Mid-slope vineyards are not troubled by fog, frost or late frost. Frequent wind keeps the vines healthy. The growing season is mild with many clear days. Ripening is gradual and the late summer and early autumn are cooler, with large day to night swings.",
+   "source": ["disciplinare", "consorzio-territory"],
+   "strength": "Strong",
+   "quote": "La fascia di media collina non è interessata da nebbie, gelate o brinate tardive"
+  },
+  {
+   "topic": "place",
+   "claim": "Mount Amiata to the south (1,740 m) shelters the territory from storms and hail.",
+   "source": ["consorzio-territory"],
+   "strength": "Medium",
+   "note": "One body page. A promotional claim by the Consorzio."
+  },
+  {
+   "topic": "place",
+   "claim": "Wikipedia says Montalcino has the lowest rainfall of any Tuscan DOCG (about 700 mm versus about 900 mm in Chianti) and ripens up to a week earlier than nearby Montepulciano.",
+   "source": ["wikipedia-en"],
+   "strength": "Weak",
+   "note": "One secondary source. The 700 mm matches the disciplinare."
+  },
+  {
+   "topic": "aging",
+   "claim": "Brunello must age at least 24 months in oak containers of any size. The disciplinare sets no barrel size. Up to 6% of the wine in aging may be held in other containers. After that it needs at least 4 months in bottle (6 for Riserva).",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "almeno ventiquattro mesi in contenitori di rovere di qualsiasi dimensione"
+  },
+  {
+   "topic": "aging",
+   "claim": "Brunello cannot be sold before 1 January of the year after the end of five years, counted from the harvest year.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "non può essere immesso al consumo prima del 1° gennaio dell’anno successivo al termine di cinque anni",
+   "note": "My reading: the harvest year counts as the first year, so a 2019 harvest is released on 1 January 2024. The text does not give an example."
+  },
+  {
+   "topic": "aging",
+   "claim": "Brunello Riserva follows the same rule with six years, so release is one year later. Lots meant for Riserva must be separated in the cellar registers by 31 December of the fifth year. Riserva has no longer wood time than the base wine in the text, only the longer wait and 6 months in bottle.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "sei anni calcolati considerando l’annata della vendemmia",
+   "note": "Some sources say Riserva must age five years. That is a rounded or older version. See conflicts."
+  },
+  {
+   "topic": "aging",
+   "claim": "Brunello that does not meet the rules can be declassified to Rosso di Montalcino DOC, keeping the Brunello yield per hectare.",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "other",
+   "claim": "Maximum yield is 8 t/ha (54.4 hl of wine), or 7 t/ha with a vigna or vigneto mention. Natural alcohol must reach 12.0% (12.5% with vigna). The maximum wine yield is 68% of the grapes. New plantings since 2016 need at least 4,000 vines per hectare.",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "tasting",
+   "claim": "At release the wine must be intense ruby tending to garnet. It must be dry, warm, a little tannic, robust, harmonious and persistent. It needs at least 12.5% alcohol, 5.0 g/l total acidity and 26.0 g/l extract.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "rosso rubino intenso tendente al granato"
+  },
+  {
+   "topic": "tasting",
+   "claim": "The disciplinare describes the aroma as intense, persistent and ethereal, with undergrowth, aromatic wood, small fruits, light vanilla and jam. It says the wine keeps a minimum of ten and up to thirty years depending on the vintage.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "sentori di sottobosco, legno aromatico, piccoli frutti, leggera vaniglia",
+   "note": "Written by the producers' own consortium, so it is a house description."
+  },
+  {
+   "topic": "serve",
+   "claim": "The disciplinare recommends a wide glass and a serving temperature of about 18 to 20 C.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "ad una temperatura di circa 18°C-20°C"
+  },
+  {
+   "topic": "other",
+   "claim": "Everything from winemaking to bottling must happen inside the zone. Bottles must be dark Bordeaux-type glass with a one-piece cork. Agglomerated corks and other closures are banned. The vintage must be on the label.",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "history",
+   "claim": "Brunello di Montalcino was approved as a DOC by decree of 28 March 1966 (Gazzetta Ufficiale 30 June 1966) and as a DOCG by decree of 1 July 1980 (Gazzetta Ufficiale 15 November 1980).",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "Approvato come DOCG DPR 01.07.1980",
+   "note": "Vinfolio gives the DOC as 1968, which conflicts."
+  },
+  {
+   "topic": "history",
+   "claim": "Brunello di Montalcino was among the first wines to get the DOCG, in 1980.",
+   "source": ["wikipedia-en"],
+   "strength": "Weak",
+   "note": "Wikipedia says both that it was one of four first DOCGs and that Montalcino was the first region to get it. The decree date is Strong, but the 'first' claim is not."
+  },
+  {
+   "topic": "history",
+   "claim": "The disciplinare names Clemente Santi as the forerunner of Brunello. His 1865 Vino Scelto (Brunello) won a silver medal in 1869. Brunello of Raffaello Padelletti and Riccardo Paccagnini won prizes in the 1890s and early 1900s. Production fell in the early 1900s. Few producers kept it going between the wars, and after World War II some agreed the production rules.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "note": "Official wording, written by the consortium. It does not name Biondi-Santi."
+  },
+  {
+   "topic": "history",
+   "claim": "Wikipedia adds that Clemente Santi isolated Sangiovese plantings for a 100% varietal wine, and that his grandson Ferruccio Biondi-Santi released a long-aged first modern Brunello in 1888. It also notes a red called Brunello in the area in the early 14th century.",
+   "source": ["wikipedia-en"],
+   "strength": "Weak",
+   "note": "One secondary source. Do not use on a sheet without a better one."
+  },
+  {
+   "topic": "name",
+   "claim": "The origin of the name Montalcino is uncertain. One theory is Mons Lucinus, the mount of Lucina, a Roman goddess. The other is Mons Ilcinus, the mount of holm oaks (lecci). The three holm oaks on the town's coat of arms support the second.",
+   "source": ["consorzio-territory"],
+   "strength": "Medium",
+   "note": "The Consorzio itself offers both theories. Do not state one as fact."
+  },
+  {
+   "topic": "name",
+   "claim": "Brunello is a local nickname, from the word for brown, for a vine once thought to be separate. A provincial commission in Siena found in 1879 that it was Sangiovese.",
+   "source": ["wikipedia-en"],
+   "strength": "Weak",
+   "note": "One secondary source. The disciplinare uses Brunello as a historic wine name only."
+  },
+  {
+   "topic": "other",
+   "claim": "Rosso di Montalcino DOC was set up in 1984. It lets producers release a younger Sangiovese while Brunello ages.",
+   "source": ["wikipedia-en"],
+   "strength": "Weak",
+   "note": "One secondary source. The disciplinare confirms only that Brunello can be reclassified as Rosso di Montalcino."
+  }
+ ],
+ "conflicts": [
+  "DOC year: the disciplinare says decree of 28.03.1966. Vinfolio says 1968. Use 1966.",
+  "Riserva aging: the disciplinare sets release on 1 January six years after the harvest. Italian Wine Central and a James Suckling page (seen in a search summary) say Riserva needs five years of aging. The official text sets six years before sale, with 24 months of oak and 6 months of bottle.",
+  "Altitude: the disciplinare and Consorzio give the territory as 120 to 650 m. Wikipedia gives vineyards at 149 to 500 m, with the town at about 564 m. A search summary of another guide gives the town at 661 m. Treat the vine altitude as roughly 150 to 500 m and avoid exact figures.",
+  "Altitude of Castelnuovo dell'Abate: 150 to 400 m (Brunolo) versus 200 to 400 m (a producer page seen in a summary). Sant'Angelo in Colle: 300 to 400 m (Brunolo) versus about 250 m (a search summary).",
+  "Style by side: Wikipedia says north-facing slopes give racier wines. Vinfolio and Brunolo say the north gives finer, perfumed wines. These agree in spirit. A search summary says the northern slopes give more powerful, aromatic wines, which differs.",
+  "Shape of the zone: the disciplinare and Consorzio say roughly square. Wine Spectator says roughly circular."
+ ],
+ "gaps": [
+  "No official subzone boundaries, altitudes or soil maps by side of the hill. The side-of-hill claims rest on merchants and press. The Consorzio zoning study was not found.",
+  "No Consorzio page on soils by area was reached. The Consorzio territory page does not name any sides.",
+  "Temperature and growing-degree figures for Montalcino were not found.",
+  "Whether the disciplinare was amended after the 2019 consolidated text was not checked.",
+  "The Consorzio producer pages with altitude figures were seen only in a search summary and not opened."
+ ],
+ "sheet": {
+  "place": "Brunello is 100% Sangiovese from the hills around Montalcino, south of Siena. It ages at least two years in oak and goes on sale five years after the harvest year, six for Riserva."
+ }
+}

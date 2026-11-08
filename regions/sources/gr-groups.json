@@ -1,0 +1,226 @@
+{
+"source": {
+"title": "Wikipedia, Greek wine (wine regions)",
+"url": "https://en.wikipedia.org/wiki/Greek_wine",
+"revision": 1383494132,
+"tier": "reference",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Aegean Islands",
+"kind": "region"
+},
+{
+"path": [
+"Aegean Islands"
+],
+"name": "Lemnos",
+"kind": "sub-region"
+},
+{
+"path": [
+"Aegean Islands"
+],
+"name": "Paros",
+"kind": "sub-region"
+},
+{
+"path": [
+"Aegean Islands"
+],
+"name": "Rhodes",
+"kind": "sub-region"
+},
+{
+"path": [
+"Aegean Islands"
+],
+"name": "Samos",
+"kind": "sub-region"
+},
+{
+"path": [
+"Aegean Islands"
+],
+"name": "Santorini",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Crete",
+"kind": "region"
+},
+{
+"path": [
+"Crete"
+],
+"name": "Sitia",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Epirus",
+"kind": "region"
+},
+{
+"path": [
+"Epirus"
+],
+"name": "Zitsa",
+"kind": "sub-region"
+},
+{
+"path": [
+"Epirus"
+],
+"name": "Metsovo",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Ionian Islands",
+"kind": "region"
+},
+{
+"path": [
+"Ionian Islands"
+],
+"name": "Kefalonia",
+"kind": "sub-region"
+},
+{
+"path": [
+"Ionian Islands"
+],
+"name": "Corfu",
+"kind": "sub-region"
+},
+{
+"path": [
+"Ionian Islands"
+],
+"name": "Zakynthos",
+"kind": "sub-region"
+},
+{
+"path": [
+"Ionian Islands"
+],
+"name": "Lefkada",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Macedonia",
+"kind": "region"
+},
+{
+"path": [
+"Macedonia"
+],
+"name": "Amyntaio",
+"kind": "sub-region"
+},
+{
+"path": [
+"Macedonia"
+],
+"name": "Goumenissa",
+"kind": "sub-region"
+},
+{
+"path": [
+"Macedonia"
+],
+"name": "Naoussa",
+"kind": "sub-region"
+},
+{
+"path": [
+"Macedonia"
+],
+"name": "Pieria",
+"kind": "sub-region"
+},
+{
+"path": [
+"Macedonia"
+],
+"name": "Chalkidiki",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Central Greece",
+"kind": "region"
+},
+{
+"path": [
+"Central Greece"
+],
+"name": "Attica",
+"kind": "sub-region"
+},
+{
+"path": [
+"Central Greece"
+],
+"name": "Atalanti",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Peloponnese",
+"kind": "region"
+},
+{
+"path": [
+"Peloponnese"
+],
+"name": "Mantineia",
+"kind": "sub-region"
+},
+{
+"path": [
+"Peloponnese"
+],
+"name": "Nemea",
+"kind": "sub-region"
+},
+{
+"path": [
+"Peloponnese"
+],
+"name": "Monemvassia",
+"kind": "sub-region"
+},
+{
+"path": [
+"Peloponnese"
+],
+"name": "Patras",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Thessaly",
+"kind": "region"
+},
+{
+"path": [
+"Thessaly"
+],
+"name": "Nea Anchialos",
+"kind": "sub-region"
+},
+{
+"path": [
+"Thessaly"
+],
+"name": "Rapsani",
+"kind": "sub-region"
+}
+]
+}

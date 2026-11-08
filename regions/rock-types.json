@@ -1,0 +1,37 @@
+{
+"$about": "The rock and soil families the Appellation Atlas names, which Macrostrat lithologies fall in each, and what each means for the vines, in plain sentences that begin with its name. src/atlasland.py rocks samples Macrostrat's geologic map over each place; the effects paraphrase the sources below. Lithologies not listed here (soil, regolith, coal, chert) are left out of the shares.",
+"sources": {
+  "macrostrat": {"name": "Macrostrat geologic map, the most detailed map unit at each point (CC BY 4.0)", "url": "https://macrostrat.org/api/v2/geologic_units/map"},
+  "wiki-soils": {"name": "Wikipedia, List of vineyard soil types (revision of 26 November 2025, after Stevenson, Sotheby's Wine Encyclopedia)", "url": "https://en.wikipedia.org/w/index.php?title=List_of_vineyard_soil_types&oldid=1324185522"},
+  "sommselect": {"name": "SommSelect, A Quick and Dirty Guide to Wine Soils", "url": "https://sommselect.com/blogs/tasting-notes/a-quick-dirty-guide-to-wine-soils"}
+},
+"families": [
+  {"id": "chalk", "name": "Chalk", "liths": ["chalk"],
+   "effect": "Chalk is soft, porous limestone. Roots push deep into it, and it drains well while still storing water. It is planted to grapes valued for their acidity.", "src": ["wiki-soils", "sommselect"]},
+  {"id": "marl", "name": "Marl", "liths": ["marl", "mixed carbonate-siliciclastic"],
+   "effect": "Marl is a limy clay. It holds water and makes vines ripen later, which keeps acidity in the grapes.", "src": ["wiki-soils"]},
+  {"id": "limestone", "name": "Limestone", "types": ["carbonate"],
+   "effect": "Limestone makes alkaline soil that drains well yet can hold water for the vines. It is usually planted to grapes valued for their acidity.", "src": ["wiki-soils", "sommselect"]},
+  {"id": "volcanic", "name": "Volcanic rock", "types": ["volcanic"], "liths": ["volcaniclastic"],
+   "effect": "Volcanic rock is porous, so it drains well and sends roots deep. Lava soils are mostly basalt, rich in iron, calcium and magnesium.", "src": ["wiki-soils", "sommselect"]},
+  {"id": "granite", "name": "Granite", "types": ["plutonic"],
+   "effect": "Granite weathers to coarse, acid, free-draining soil that warms quickly and holds heat. Its acidity tends to lower the grapes' acidity, which suits Gamay.", "src": ["wiki-soils", "sommselect"]},
+  {"id": "schist", "name": "Schist, slate and gneiss", "types": ["metamorphic", "metasedimentary", "metaigneous", "metavolcanic", "cataclastic"],
+   "effect": "Schist, slate and gneiss break into stony, free-draining soil that holds the day's heat. Schist is rich in magnesium and potassium but poor in organic matter and nitrogen.", "src": ["wiki-soils", "sommselect"]},
+  {"id": "gravel", "name": "Gravel", "liths": ["gravel", "conglomerate", "breccia", "grit", "diamictite", "diamicton", "till", "tillite", "drift"],
+   "effect": "Gravel drains fast and is poor, so roots go deep for water and food. It holds little water.", "src": ["wiki-soils", "sommselect"]},
+  {"id": "sand", "name": "Sand", "liths": ["sand", "greensand"],
+   "effect": "Sand is warm and airy. It drains fast but holds little water, and phylloxera does not thrive in it.", "src": ["wiki-soils"]},
+  {"id": "alluvium", "name": "River deposits", "liths": ["alluvium", "colluvium"],
+   "effect": "River deposits are a mix of gravel, sand and silt. They are often fertile, so vines can grow vigorously.", "src": ["wiki-soils"]},
+  {"id": "loess", "name": "Loess", "liths": ["loess", "silt"],
+   "effect": "Loess is fine, wind-blown silt. Fertile and warm, it holds water well but drains poorly.", "src": ["wiki-soils"]},
+  {"id": "clay", "name": "Clay", "liths": ["clay", "mud"],
+   "effect": "Clay holds water well but drains poorly. It stays cool, which slows ripening and keeps acidity up.", "src": ["wiki-soils"]},
+  {"id": "sandstone", "name": "Sandstone", "liths": ["sandstone", "arkose", "greywacke", "graywacke", "arenite", "quartz arenite", "subarkose", "wacke", "litharenite", "sublitharenite"],
+   "effect": "Sandstone is sand bound into rock. It weathers to light, sandy soil that drains freely.", "src": ["wiki-soils"]},
+  {"id": "shale", "name": "Shale and mudstone", "liths": ["shale", "mudstone", "claystone", "siltstone", "argillite", "pelite"],
+   "effect": "Shale and mudstone are fine-grained rocks that hold heat well and are moderately fertile.", "src": ["wiki-soils"]},
+  {"id": "evaporite", "name": "Gypsum and salt", "types": ["evaporite"], "effect": "", "src": []}
+]
+}

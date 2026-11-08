@@ -1,0 +1,96 @@
+{
+"source": {
+"title": "Wikipedia, List of wine-producing regions: Armenia",
+"url": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions",
+"revision": 1382971935,
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Aragatsotn Province",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Ararat Province",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Armavir Province",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Gegharkunik Province",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Kotayk Province",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Shirak Province",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Syunik Province",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Tavush Province",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Vayots Dzor Province",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Yerevan",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Republic of Artsakh",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Ararat Valley",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Areni",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Armavir",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Ijevan",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Voskevaz",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Yerevan",
+"kind": "region"
+}
+]
+}

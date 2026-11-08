@@ -1,0 +1,32 @@
+{
+ "subject": "place",
+ "id": "united-states/north-coast",
+ "read": "2026-11-05",
+ "sources": {
+  "wikipedia-nc": {"name": "Wikipedia, North Coast AVA", "kind": "reference", "url": "https://en.wikipedia.org/wiki/North_Coast_AVA", "note": "Secondary. Read as text."},
+  "search-nc": {"name": "Web search summaries on the North Coast AVA", "kind": "general", "note": "Several pages agree on the six counties and on 1983. Used only to cross-check Wikipedia."}
+ },
+ "claims": [
+  {"topic": "place", "claim": "The North Coast AVA was established in 1983.", "source": ["wikipedia-nc", "search-nc"], "strength": "Medium", "quote": "September 24, 1983", "note": "Wikipedia says 24 September. Other pages say 21 September. Not checked against the TTB, so only the year is used."},
+  {"topic": "place", "claim": "It covers six counties north of San Francisco: Lake, Marin, Mendocino, Napa, Solano and Sonoma.", "source": ["wikipedia-nc", "search-nc"], "strength": "Medium", "quote": "Lake, Marin, Mendocino, Napa, Solano, and Sonoma"},
+  {"topic": "place", "claim": "It is a very large AVA, over 3 million acres or about 4,700 square miles.", "source": ["wikipedia-nc", "search-nc"], "strength": "Medium", "quote": "about 4,700 square miles"},
+  {"topic": "place", "claim": "The climate is maritime, shaped by fog and breezes from the Pacific. It spans a wide range of climate regions, from I to IV.", "source": ["wikipedia-nc"], "strength": "Weak", "quote": "affected by the fog and breezes from the Pacific Ocean", "note": "Single secondary source."},
+  {"topic": "place", "claim": "It contains many smaller AVAs, including Napa Valley, Alexander Valley, Russian River Valley, Anderson Valley and Dry Creek Valley.", "source": ["wikipedia-nc"], "strength": "Medium"},
+  {"topic": "history", "claim": "The name North Coast first meant three counties: Napa, Sonoma and Mendocino. Lake, Marin and Solano were added during the 1980s approval.", "source": ["search-nc"], "strength": "Weak", "note": "Search summary of a Federal Register based source. Not read directly."},
+  {"topic": "standing", "claim": "Many grapes grow here, including Cabernet Sauvignon, Chardonnay, Pinot Noir, Merlot, Zinfandel and Sauvignon Blanc.", "source": ["wikipedia-nc"], "strength": "Weak", "note": "Single secondary source."},
+  {"topic": "place", "claim": "A North Coast label lets a winery blend fruit from several counties and sub-AVAs.", "source": ["reading"], "strength": "Estimate", "note": "Follows from the AVA covering six counties. Not stated by a source read."}
+ ],
+ "conflicts": [
+  "Established: 21 September 1983 (several pages) against 24 September 1983 (Wikipedia). Year only is used."
+ ],
+ "gaps": [
+  "TTB or Federal Register page for the AVA, not read.",
+  "Rainfall and temperature figures from an official or growers' source. Wikipedia's figures cover a huge area and are not used.",
+  "Planted acreage from a growers' source.",
+  "Soil description for the whole AVA. It varies too much to summarise."
+ ],
+ "sheet": {
+  "place": "A huge AVA of six counties north of San Francisco, with Napa and Sonoma inside it.",
+  "established": "Established in 1983."
+ }
+}

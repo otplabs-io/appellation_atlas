@@ -1,0 +1,90 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Heuvellandse wijn",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003743",
+"file": "PDO-BE-A1426"
+},
+{
+"path": [],
+"name": "Vlaamse mousserende kwaliteitswijn",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003781",
+"file": "PDO-BE-A1430"
+},
+{
+"path": [],
+"name": "Vlaamse landwijn",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003749",
+"file": "PGI-BE-A1429"
+},
+{
+"path": [],
+"name": "Hagelandse wijn",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003741",
+"file": "PDO-BE-A1499"
+},
+{
+"path": [],
+"name": "Haspengouwse wijn",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003723",
+"file": "PDO-BE-A1492"
+},
+{
+"path": [],
+"name": "Maasvallei Limburg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000012784",
+"file": "PDO-BE+NL-02172"
+},
+{
+"path": [],
+"name": "Vin mousseux de qualité de Wallonie",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005345",
+"file": "PDO-BE-A0011"
+},
+{
+"path": [],
+"name": "Vin de pays des jardins de Wallonie",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005344",
+"file": "PGI-BE-A0010"
+},
+{
+"path": [],
+"name": "Côtes de Sambre et Meuse",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005343",
+"file": "PDO-BE-A0009"
+},
+{
+"path": [],
+"name": "Crémant de Wallonie",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005347",
+"file": "PDO-BE-A0012"
+}
+]
+}

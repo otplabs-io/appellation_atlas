@@ -1,0 +1,205 @@
+{
+ "subject": "place",
+ "id": "italy/etna",
+ "read": "2026-11-05",
+ "sources": {
+  "disciplinare": {
+   "name": "Disciplinare di produzione, Etna DOC (Mipaaf text, amended to D.M. 19.01.2022 and rectified 14.03.2022), as hosted by AIS Italia",
+   "kind": "official",
+   "url": "https://aisitalia.it/Disciplinari/Sicilia/DOC/Etna.pdf",
+   "note": "Read as PDF text."
+  },
+  "wikipedia-en": {
+   "name": "Wikipedia, Etna DOC (English)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Etna_DOC"
+  },
+  "contrade-search": {
+   "name": "Wine Tourism, Primal Wine, Wine with Seth and Decanter on Etna contrade (via search summary)",
+   "kind": "general",
+   "url": "https://www.winewithseth.com/winewiki/mt-etna-contrada-system-extension/",
+   "note": "Seen only as search-result summaries. The Wine with Seth page returned HTTP 429 when opened."
+  },
+  "name-search": {
+   "name": "Sicilian food culture, Portus and other pages on the name Etna and Mongibello (via search summary)",
+   "kind": "general",
+   "url": "https://sicilianfoodculture.com/mongibello-the-sicilian-giant-also-known-as-etna/",
+   "note": "Seen only as search-result summaries. Popular sources."
+  }
+ },
+ "claims": [
+  {
+   "topic": "history",
+   "claim": "Etna DOC was approved by DPR of 11 August 1968 (Gazzetta Ufficiale 25 September 1968). Wikipedia calls it the first DOC in Sicily.",
+   "source": [
+    "disciplinare",
+    "wikipedia-en"
+   ],
+   "strength": "Strong",
+   "note": "The date is from the disciplinare. 'First in Sicily' is from Wikipedia only."
+  },
+  {
+   "topic": "grapes",
+   "claim": "Etna Rosso, Riserva and Rosato need at least 80% Nerello Mascalese. Nerello Mantellato (the disciplinare's name for Nerello Cappuccio) can be 0% to 20%. Up to 10% may be other non-aromatic white grapes grown in Sicily.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "Nerello Mascalese minimo 80%"
+  },
+  {
+   "topic": "grapes",
+   "claim": "Etna Bianco needs at least 60% Carricante, with 0% to 40% Catarratto. Etna Bianco Superiore needs at least 80% Carricante and may only come from the delimited area in the commune of Milo.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "Carricante minimo 80%"
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Etna Spumante (white or rosé) needs at least 80% Nerello Mascalese. It must be made by natural refermentation in bottle with at least 18 months on the lees.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "rifermentazione naturale in bottiglia con permanenza sui lieviti per almeno 18 mesi"
+  },
+  {
+   "topic": "aging",
+   "claim": "Etna Rosso may be called Riserva only after at least four years of aging inside the zone, at least 12 months of it in wood, counted from 1 November of the harvest year.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "alcohol",
+   "claim": "Minimum total alcohol: Bianco 11.5%, Bianco Superiore 12%, Rosso 12.5%, Rosso Riserva 13%.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "place",
+   "claim": "The zone covers parts of 20 communes in the province of Catania, from Biancavilla round to Randazzo. No commune is included whole. The zone forms a half circle around the volcano, open on the west side.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "la zona geografica delimitata assume quindi la forma di un semicerchio attorno al vulcano"
+  },
+  {
+   "topic": "place",
+   "claim": "Etna is described as the highest active volcano in Europe, 3,300 m, with a base perimeter of about 180 km. The disciplinare calls the area 'an island within the island'.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "un’isola nell’isola"
+  },
+  {
+   "topic": "soil",
+   "claim": "The soil is volcanic, built from layers of ash, sand, lapilli and pumice. About 80% of the vines are on volcanic brown soils (andic and leached). The other 20% are on alluvial soils and vertisols. The volcanic soils are loose, stony, very permeable and rich in potassium. They are low to middling in nitrogen and phosphorus.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "ceneri, sabbie, lapilli e pomice"
+  },
+  {
+   "topic": "soil",
+   "claim": "The disciplinare says volcanic soils give wines a mineral feel, and help the whites age.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "particolare e gradevole sensazione di mineralità"
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Most vines grow between 300 and 900 m above sea level, and some go up to 1,100 m.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "tra i 300 ed i 900 m. slm, spingendosi sino ai 1.100 m",
+   "note": "Wikipedia gives about 450 to 1,100 m. The disciplinare is the better source."
+  },
+  {
+   "topic": "place",
+   "claim": "The climate is temperate Mediterranean. Rain peaks in autumn and winter and is lowest in summer. June and July are usually dry. Yearly rain runs from about 600 mm on the south-west slope to about 1,200 mm on the north and north-east.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "aspect",
+   "claim": "The north slope (Randazzo, Castiglione di Sicilia, Linguaglossa) has the most rain and big swings between day and night. The east (Giarre, Santa Venerina) ripens earliest and is cooled by sea breezes. The south (Santa Maria di Licodia, Biancavilla, Ragalna, Belpasso) has strong day-night swings and is later. The south-west is driest, with vines up to 1,100 m.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "place",
+   "claim": "A label may add the name of a commune or contrada the grapes came from, as listed in Annex 1 of the disciplinare. This is the contrade system.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "indicazioni geografiche aggiuntive riferite ad unità amministrative o contrade"
+  },
+  {
+   "topic": "place",
+   "claim": "The Consorzio's updated contrada map is said to list 142 contrade, up from 133. Castiglione di Sicilia is said to have 41, Randazzo 25 and Linguaglossa 10.",
+   "source": [
+    "contrade-search"
+   ],
+   "strength": "Weak",
+   "note": "Trade and travel pages seen in a search summary. One page gave 133 contrade. Counts may be old."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Trade sources place the north slope's vines at about 600 to 1,000 m, with a core at 600 to 700 m. One producer lists Contrada Rampante at 740 m.",
+   "source": [
+    "contrade-search"
+   ],
+   "strength": "Weak",
+   "note": "Sources disagree and none is official."
+  },
+  {
+   "topic": "name",
+   "claim": "The name Etna is tied to Greek Aitna. Some link it to the verb aitho, 'to burn', but scholars do not agree. The Romans called the mountain Aetna. The local name Mongibello is said to join Latin mons and Arabic jebel, both meaning mountain.",
+   "source": [
+    "name-search"
+   ],
+   "strength": "Weak",
+   "note": "Popular sources that repeat each other. Do not state one derivation as fact."
+  },
+  {
+   "topic": "history",
+   "claim": "The disciplinare cites Bacci's 1596 history of Italian wines, which credited the quality of wines around Catania to Etna's ash.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "note": "Official wording."
+  }
+ ],
+ "conflicts": [
+  "Elevation: the disciplinare gives 300 to 900 m and up to 1,100 m. English Wikipedia gives about 450 to 1,100 m.",
+  "Contrade count: 133 and 142 both appear in search summaries. Neither was checked against the Consorzio or the disciplinare annex."
+ ],
+ "gaps": [
+  "The Consorzio Tutela Vini Etna DOC site was not opened.",
+  "Soil detail by contrada, and lava flow ages, not found.",
+  "Official count of contrade not extracted from Annex 1.",
+  "Origin of the name Etna has no official or scholarly source in the pages read."
+ ],
+ "sheet": {
+  "place": "Etna is Sicily's volcano wine. Reds are mostly Nerello Mascalese and whites are mostly Carricante, grown on black volcanic soil from 300 to 900 m. The cooler, wetter north slope is the classic home of the contrade."
+ }
+}

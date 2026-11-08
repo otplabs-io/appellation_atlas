@@ -1,0 +1,5359 @@
+{
+"source": {
+"title": "UC Davis Library AVA Project, established American Viticultural Areas (27 CFR part 9)",
+"url": "https://github.com/UCDavisLibrary/ava",
+"tier": "official",
+"pulled": "2026-11-04"
+},
+"entries": [
+{
+"path": [],
+"name": "Ozark Mountain",
+"kind": "AVA",
+"also": [],
+"states": [
+"AR",
+"MO",
+"OK"
+],
+"within": [],
+"county": [
+"Adair",
+"Barry",
+"Barton",
+"Baxter",
+"Benton",
+"Benton",
+"Bollinger",
+"Boone",
+"Butler",
+"Camden",
+"Cape Girardeau",
+"Carroll",
+"Carter",
+"Cedar",
+"Cherokee",
+"Christian",
+"Clay",
+"Cleburne",
+"Cole",
+"Conway",
+"Crawford",
+"Crawford",
+"Dade",
+"Dallas",
+"Delaware",
+"Dent",
+"Douglas",
+"Faulkner",
+"Franklin",
+"Franklin",
+"Fulton",
+"Gasconade",
+"Greene",
+"Haskell",
+"Hickory",
+"Howell",
+"Independence",
+"Iron",
+"Izard",
+"Jackson",
+"Jasper",
+"Jefferson",
+"Johnson",
+"Laclede",
+"Lawrence",
+"Lawrence",
+"Logan",
+"Madison",
+"Madison",
+"Madison",
+"Maries",
+"Marion",
+"Mayes",
+"McDonald",
+"Miller",
+"Monroe",
+"Morgan",
+"Muskogee",
+"Newton",
+"Newton",
+"Oregon",
+"Osage",
+"Ottawa",
+"Ozark",
+"Perry",
+"Perry",
+"Phelps",
+"Polk",
+"Pope",
+"Pulaski",
+"Randolph",
+"Randolph",
+"Reynolds",
+"Ripley",
+"Scott",
+"Searcy",
+"Sebastian",
+"Sequoyah",
+"Shannon",
+"Sharp",
+"St. Charles",
+"St. Clair",
+"St. Francois",
+"St. Louis",
+"St. Louis",
+"Ste. Genevieve",
+"Stoddard",
+"Stone",
+"Stone",
+"Taney",
+"Texas",
+"Van Buren",
+"Vernon",
+"Wagoner",
+"Washington",
+"Washington",
+"Wayne",
+"Webster",
+"White",
+"Wright",
+"Yell"
+],
+"cfr": "9.108",
+"created": "1986-08-01"
+},
+{
+"path": [],
+"name": "Upper Mississippi River Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"IL",
+"IA",
+"MN",
+"WI"
+],
+"within": [],
+"county": [
+"Allamakee",
+"Benton",
+"Black Hawk",
+"Bremer",
+"Buchanan",
+"Buffalo",
+"Carroll",
+"Cedar",
+"Chickasaw",
+"Clark",
+"Clayton",
+"Clinton",
+"Columbia",
+"Crawford",
+"Dakota",
+"Dane",
+"Delaware",
+"Dodge",
+"Dubuque",
+"Dunn",
+"Eau Claire",
+"Fayette",
+"Fillmore",
+"Goodhue",
+"Grant",
+"Green",
+"Houston",
+"Howard",
+"Iowa",
+"Jackson",
+"Jackson",
+"Jo Daviess",
+"Johnson",
+"Jones",
+"Juneau",
+"La Crosse",
+"Lafayette",
+"Lee",
+"Linn",
+"Monroe",
+"Mower",
+"Ogle",
+"Olmsted",
+"Pepin",
+"Pierce",
+"Richland",
+"Rock",
+"Rock Island",
+"Sauk",
+"Scott",
+"St. Croix",
+"Stephenson",
+"Trempealeau",
+"Vernon",
+"Wabasha",
+"Washington",
+"Whiteside",
+"Winnebago",
+"Winneshiek",
+"Winona"
+],
+"cfr": "9.216",
+"created": "2009-07-22"
+},
+{
+"path": [],
+"name": "Ohio River Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"IN",
+"KY",
+"OH",
+"WV"
+],
+"within": [],
+"county": [
+"Adams",
+"Athens",
+"Belmont",
+"Boone",
+"Boyd",
+"Bracken",
+"Breckinridge",
+"Brown",
+"Bullitt",
+"Butler",
+"Cabell",
+"Calhoun",
+"Campbell",
+"Carroll",
+"Carter",
+"Clark",
+"Clermont",
+"Clinton",
+"Daviess",
+"Dearborn",
+"Decatur",
+"Doddridge",
+"Dubois",
+"Elliott",
+"Fleming",
+"Floyd",
+"Franklin",
+"Gallatin",
+"Gallatin",
+"Gallia",
+"Gibson",
+"Gilmer",
+"Grant",
+"Greenup",
+"Hamilton",
+"Hancock",
+"Hardin",
+"Harrison",
+"Harrison",
+"Henderson",
+"Henry",
+"Highland",
+"Hocking",
+"Jackson",
+"Jackson",
+"Jefferson",
+"Jefferson",
+"Jennings",
+"Kanawha",
+"Kenton",
+"Lawrence",
+"Lawrence",
+"Lewis",
+"Lewis",
+"Lincoln",
+"Marshall",
+"Mason",
+"Mason",
+"McLean",
+"Meade",
+"Meigs",
+"Monroe",
+"Morgan",
+"Noble",
+"Ohio",
+"Ohio",
+"Ohio",
+"Oldham",
+"Owen",
+"Pendleton",
+"Perry",
+"Perry",
+"Pike",
+"Pike",
+"Pleasants",
+"Posey",
+"Putnam",
+"Ripley",
+"Ritchie",
+"Roane",
+"Ross",
+"Rowan",
+"Scioto",
+"Scott",
+"Shelby",
+"Spencer",
+"Spencer",
+"Switzerland",
+"Trimble",
+"Tyler",
+"Union",
+"Vanderburgh",
+"Vinton",
+"Warren",
+"Warrick",
+"Washington",
+"Wayne",
+"Webster",
+"Wetzel",
+"Wirt",
+"Wood"
+],
+"cfr": "9.78",
+"created": "1983-09-07"
+},
+{
+"path": [],
+"name": "Columbia Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR",
+"WA"
+],
+"within": [],
+"county": [
+"Adams",
+"Asotin",
+"Benton",
+"Chelan",
+"Columbia",
+"Douglas",
+"Ferry",
+"Franklin",
+"Garfield",
+"Gilliam",
+"Grant",
+"Kittitas",
+"Klickitat",
+"Lincoln",
+"Morrow",
+"Okanogan",
+"Sherman",
+"Stevens",
+"Umatilla",
+"Walla Walla",
+"Wasco",
+"Whitman",
+"Yakima"
+],
+"cfr": "9.74",
+"created": "1984-11-13"
+},
+{
+"path": [],
+"name": "Texas Hill Country",
+"kind": "AVA",
+"also": [],
+"states": [
+"TX"
+],
+"within": [],
+"county": [
+"Bandera",
+"Bexar",
+"Blanco",
+"Burnet",
+"Comal",
+"Edwards",
+"Gillespie",
+"Guadalupe",
+"Hays",
+"Kendall",
+"Kerr",
+"Kimble",
+"Lampasas",
+"Llano",
+"Mason",
+"McCulloch",
+"Medina",
+"Menard",
+"Real",
+"San Saba",
+"Travis",
+"Uvalde",
+"Williamson"
+],
+"cfr": "9.136",
+"created": "1993-07-28"
+},
+{
+"path": [],
+"name": "Texas High Plains",
+"kind": "AVA",
+"also": [],
+"states": [
+"TX"
+],
+"within": [],
+"county": [
+"Armstrong",
+"Bailey",
+"Borden",
+"Briscoe",
+"Castro",
+"Cochran",
+"Crosby",
+"Dawson",
+"Deaf Smith",
+"Dickens",
+"Floyd",
+"Gaines",
+"Garza",
+"Hale",
+"Hockley",
+"Lamb",
+"Lubbock",
+"Lynn",
+"Motley",
+"Parmer",
+"Randall",
+"Swisher",
+"Terry",
+"Yoakum"
+],
+"cfr": "9.144",
+"created": "1993-03-02"
+},
+{
+"path": [],
+"name": "Central Coast",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Alameda",
+"Contra Costa",
+"Monterey",
+"San Benito",
+"San Francisco",
+"San Luis Obispo",
+"San Mateo",
+"Santa Barbara",
+"Santa Clara",
+"Santa Cruz"
+],
+"cfr": "9.75",
+"created": "1985-10-24"
+},
+{
+"path": [],
+"name": "Snake River Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"ID",
+" OR"
+],
+"within": [],
+"county": [
+"Ada",
+"Adams",
+"Boise",
+"Canyon",
+"Elmore",
+"Gem",
+"Gooding",
+"Jerome",
+"Owyhee",
+"Payette",
+"Twin Falls",
+"Washington",
+"Baker",
+"Malheur"
+],
+"cfr": "9.208",
+"created": "2007-04-09"
+},
+{
+"path": [],
+"name": "Loess Hills District",
+"kind": "AVA",
+"also": [],
+"states": [
+"IA",
+"MO"
+],
+"within": [],
+"county": [
+"Fremont",
+"Page",
+"Mills",
+"Montgomery",
+"Pottawattamie",
+"Cass",
+"Harrison",
+"Shelby",
+"Audubon",
+"Monona",
+"Crawford",
+"Carroll",
+"Woodbury",
+"Ida",
+"Sac",
+"Plymouth",
+"Sioux",
+"Atchison",
+"Holt"
+],
+"cfr": "9.255",
+"created": "2016-03-03"
+},
+{
+"path": [],
+"name": "Puget Sound",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [],
+"county": [
+"Clallam",
+"Island",
+"Jefferson",
+"King",
+"Kitsap",
+"Mason",
+"Pierce",
+"San Juan",
+"Skagit",
+"Snohomish",
+"Thurston",
+"Whatcom"
+],
+"cfr": "9.151",
+"created": "1995-10-04"
+},
+{
+"path": [],
+"name": "Mississippi Delta",
+"kind": "AVA",
+"also": [
+"Yazoo Basin, Delta"
+],
+"states": [
+"MS",
+"LA",
+"TN"
+],
+"within": [],
+"county": [
+"Bolivar",
+"Carroll",
+"Coahoma",
+"DeSoto",
+"Grenada",
+"Holmes",
+"Humphreys",
+"Issaquena",
+"Leflore",
+"Madison",
+"Panola",
+"Quitman",
+"Sharkey",
+"Sunflower",
+"Tallahatchie",
+"Tate",
+"Tunica",
+"Warren",
+"Washington",
+"Yazoo"
+],
+"cfr": "9.96",
+"created": "1984-07-07"
+},
+{
+"path": [],
+"name": "Willamette Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [],
+"county": [
+"Benton",
+"Clackamas",
+"Lane",
+"Linn",
+"Marion",
+"Multnomah",
+"Polk",
+"Washington",
+"Yamhill"
+],
+"cfr": "9.90",
+"created": "1983-12-01"
+},
+{
+"path": [],
+"name": "North Coast",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Lake",
+"Marin",
+"Mendocino",
+"Napa",
+"Solano",
+"Sonoma"
+],
+"cfr": "9.30",
+"created": "1983-09-21"
+},
+{
+"path": [],
+"name": "Indiana Uplands",
+"kind": "AVA",
+"also": [],
+"states": [
+"IN"
+],
+"within": [],
+"county": [
+"Bartholomew",
+"Brown",
+"Clark",
+"Crawford",
+"Daviess",
+"Dubois",
+"Floyd",
+"Greene",
+"Harrison",
+"Jackson",
+"Lawrence",
+"Martin",
+"Monroe",
+"Morgan",
+"Orange",
+"Owen",
+"Perry",
+"Scott",
+"Spencer",
+"Washington"
+],
+"cfr": "9.228",
+"created": "2013-02-05"
+},
+{
+"path": [],
+"name": "Arkansas Mountain",
+"kind": "AVA",
+"also": [],
+"states": [
+"AR"
+],
+"within": [
+"Ozark Mountain"
+],
+"county": [
+"Conway",
+"Crawford",
+"Faulkner",
+"Franklin",
+"Johnson",
+"Logan",
+"Madison",
+"Newton",
+"Pope",
+"Scott",
+"Searcy",
+"Sebastian",
+"Van Buren",
+"Yell"
+],
+"cfr": "9.112",
+"created": "1986-09-26"
+},
+{
+"path": [],
+"name": "Sierra Foothills",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Amador",
+"Calaveras",
+"El Dorado",
+"Mariposa",
+"Nevada",
+"Placer",
+"Tuolumne",
+"Yuba"
+],
+"cfr": "9.120",
+"created": "1987-12-18"
+},
+{
+"path": [],
+"name": "Wisconsin Ledge",
+"kind": "AVA",
+"also": [],
+"states": [
+"WI"
+],
+"within": [],
+"county": [
+"Brown",
+"Calumet",
+"Dodge",
+"Door",
+"Fond du Lac",
+"Kewaunee",
+"Manitowoc",
+"Outagamie",
+"Ozaukee",
+"Sheboygan",
+"Washington"
+],
+"cfr": "9.224",
+"created": "2012-04-23"
+},
+{
+"path": [],
+"name": "Hudson River Region",
+"kind": "AVA",
+"also": [],
+"states": [
+"NY"
+],
+"within": [],
+"county": [
+"Columbia",
+"Dutchess",
+"Orange",
+"Putnam",
+"Rockland",
+"Sullivan",
+"Ulster",
+"Westchester"
+],
+"cfr": "9.47",
+"created": "1982-07-06"
+},
+{
+"path": [],
+"name": "Outer Coastal Plain",
+"kind": "AVA",
+"also": [],
+"states": [
+"NJ"
+],
+"within": [],
+"county": [
+"Atlantic",
+"Burlington",
+"Camden",
+"Cape May",
+"Cumberland",
+"Gloucester",
+"Monmouth",
+"Ocean",
+"Salem"
+],
+"cfr": "9.207",
+"created": "2007-03-12"
+},
+{
+"path": [],
+"name": "Shenandoah Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"VA",
+"WV"
+],
+"within": [],
+"county": [
+"Amherst",
+"Augusta",
+"Berkeley",
+"Botetourt",
+"Buena Vista",
+"Clarke",
+"Frederick",
+"Harrisonburg",
+"Jefferson",
+"Page",
+"Rockbridge",
+"Rockingham",
+"Shenandoah",
+"Staunton",
+"Warren",
+"Washington",
+"Waynesboro",
+"Winchester"
+],
+"cfr": "9.60",
+"created": "1982-07-30"
+},
+{
+"path": [],
+"name": "Finger Lakes",
+"kind": "AVA",
+"also": [],
+"states": [
+"NY"
+],
+"within": [],
+"county": [
+"Cayuga",
+"Cortland",
+"Livingston",
+"Monroe",
+"Onondaga",
+"Ontario",
+"Schuyler",
+"Seneca",
+"Steuben",
+"Tompkins",
+"Wayne",
+"Yates"
+],
+"cfr": "9.34",
+"created": "1982-09-01"
+},
+{
+"path": [],
+"name": "Lake Erie",
+"kind": "AVA",
+"also": [],
+"states": [
+"NY",
+"OH",
+"PA"
+],
+"within": [],
+"county": [
+"Cattaraugus",
+"Chautauqua",
+"Erie",
+"Ashtabula",
+"Cuyahoga",
+"Erie",
+"Geauga",
+"Huron",
+"Lake",
+"Lorain",
+"Lucas",
+"Ottawa",
+"Sandusky",
+"Summit",
+"Wood",
+"Erie"
+],
+"cfr": "9.83",
+"created": "1983-11-21"
+},
+{
+"path": [],
+"name": "South Coast",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Orange",
+"Riverside",
+"San Diego"
+],
+"cfr": "9.104",
+"created": "1985-12-23"
+},
+{
+"path": [],
+"name": "Texoma",
+"kind": "AVA",
+"also": [],
+"states": [
+"TX"
+],
+"within": [],
+"county": [
+"Cooke",
+"Fannin",
+"Grayson",
+"Montague"
+],
+"cfr": "9.185",
+"created": "2005-12-07"
+},
+{
+"path": [],
+"name": "Upper Cumberland",
+"kind": "AVA",
+"also": [],
+"states": [
+"Tennessee"
+],
+"within": [],
+"county": [
+"Cumberland, Fentress, Macon, Overton, Putnam, Smith, Warren, and White Counties"
+],
+"cfr": "9.294",
+"created": "2024-05-15"
+},
+{
+"path": [],
+"name": "Southeastern New England",
+"kind": "AVA",
+"also": [],
+"states": [
+"CT",
+"RI",
+"MA"
+],
+"within": [],
+"county": [
+"Barnstable",
+"Bristol",
+"Bristol",
+"Dukes",
+"Kent",
+"Middlesex",
+"Nantucket",
+"New Haven",
+"New London",
+"Newport",
+"Norfolk",
+"Plymouth",
+"Providence",
+"Washington"
+],
+"cfr": "9.72",
+"created": "1983-07-29"
+},
+{
+"path": [],
+"name": "Southern Oregon",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [],
+"county": [
+"Douglas",
+"Jackson",
+"Josephine"
+],
+"cfr": "9.179",
+"created": "2004-12-08"
+},
+{
+"path": [],
+"name": "Ozark Highlands",
+"kind": "AVA",
+"also": [],
+"states": [
+"MO"
+],
+"within": [
+"Ozark Mountain"
+],
+"county": [
+"Crawford",
+"Dent",
+"Franklin",
+"Gasconade",
+"Maries",
+"Osage",
+"Phelps",
+"Pulaski",
+"Shannon",
+"Texas"
+],
+"cfr": "9.115",
+"created": "1987-01-30"
+},
+{
+"path": [],
+"name": "San Francisco Bay",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"Alameda",
+"Contra Costa",
+"San Benito",
+"San Francisco",
+"San Mateo",
+"Santa Clara",
+"Santa Cruz",
+"Solano"
+],
+"cfr": "9.157",
+"created": "1999-03-22"
+},
+{
+"path": [],
+"name": "Tip of the Mitt",
+"kind": "AVA",
+"also": [],
+"states": [
+"MI"
+],
+"within": [],
+"county": [
+"Alpena",
+"Antrim",
+"Charlevoix",
+"Cheboygan",
+"Emmet",
+"Presque Isle"
+],
+"cfr": "9.257",
+"created": "2018-04-06"
+},
+{
+"path": [],
+"name": "Appalachian High Country",
+"kind": "AVA",
+"also": [],
+"states": [
+"NC",
+"TN",
+"VA"
+],
+"within": [],
+"county": [
+"Alleghany",
+"Ashe",
+"Avery",
+"Mitchell",
+"Watauga",
+"Carter",
+"Johnson",
+"Grayson"
+],
+"cfr": "9.260",
+"created": "2016-10-27"
+},
+{
+"path": [],
+"name": "Yadkin Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"NC"
+],
+"within": [],
+"county": [
+"Alleghany",
+"Davidson",
+"Davie",
+"Forsyth",
+"Stokes",
+"Surry",
+"Wilkes",
+"Yadkin"
+],
+"cfr": "9.174",
+"created": "2002-12-09"
+},
+{
+"path": [],
+"name": "Shawnee Hills",
+"kind": "AVA",
+"also": [],
+"states": [
+"IL"
+],
+"within": [],
+"county": [
+"Alexander",
+"Gallatin",
+"Hardin",
+"Jackson",
+"Johnson",
+"Massac",
+"Pope",
+"Pulaski",
+"Randolph",
+"Saline",
+"Union",
+"Williamson"
+],
+"cfr": "9.206",
+"created": "2006-12-27"
+},
+{
+"path": [],
+"name": "Lake Michigan Shore",
+"kind": "AVA",
+"also": [],
+"states": [
+"MI"
+],
+"within": [],
+"county": [
+"Allegan",
+"Berrien",
+"Cass",
+"Kalamazoo",
+"Van Buren"
+],
+"cfr": "9.79",
+"created": "1983-10-13"
+},
+{
+"path": [],
+"name": "Rogue Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Southern Oregon"
+],
+"county": [
+"Jackson",
+"Josephine"
+],
+"cfr": "9.132",
+"created": "1991-02-22"
+},
+{
+"path": [],
+"name": "Lehigh Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"PA"
+],
+"within": [],
+"county": [
+"Berks",
+"Carbon",
+"Lehigh",
+"Monroe",
+"Northampton",
+"Schuylkill"
+],
+"cfr": "9.210",
+"created": "2008-03-11"
+},
+{
+"path": [],
+"name": "Upper Hudson",
+"kind": "AVA",
+"also": [],
+"states": [
+"NY"
+],
+"within": [],
+"county": [
+"Albany",
+"Montgomery",
+"Rensselaer",
+"Saratoga",
+"Schenectady",
+"Schoharie",
+"Washington"
+],
+"cfr": "9.264",
+"created": "2019-01-07"
+},
+{
+"path": [],
+"name": "Western Connecticut Highlands",
+"kind": "AVA",
+"also": [],
+"states": [
+"CT"
+],
+"within": [],
+"county": [
+"Fairfield",
+"Hartford",
+"Litchfield",
+"New Haven"
+],
+"cfr": "9.122",
+"created": "1988-03-10"
+},
+{
+"path": [],
+"name": "Monticello",
+"kind": "AVA",
+"also": [],
+"states": [
+"VA"
+],
+"within": [],
+"county": [
+"Albemarle",
+"Charlottesville",
+"Fluvanna",
+"Greene",
+"Nelson",
+"Orange"
+],
+"cfr": "9.48",
+"created": "1984-01-23"
+},
+{
+"path": [],
+"name": "Eastern Connecticut Highlands",
+"kind": "AVA",
+"also": [],
+"states": [
+"CT"
+],
+"within": [],
+"county": [
+"Hartford",
+"Middlesex",
+"New Haven",
+"New London",
+"Tolland",
+"Windham"
+],
+"cfr": "9.267",
+"created": "2019-10-11"
+},
+{
+"path": [],
+"name": "Cumberland Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"MD",
+"PA"
+],
+"within": [],
+"county": [
+"Washington",
+"Franklin",
+"Cumberland"
+],
+"cfr": "9.105",
+"created": "1985-07-23"
+},
+{
+"path": [],
+"name": "Long Island",
+"kind": "AVA",
+"also": [],
+"states": [
+"NY"
+],
+"within": [],
+"county": [
+"Nassau",
+"Suffolk"
+],
+"cfr": "9.170",
+"created": "2001-05-15"
+},
+{
+"path": [],
+"name": "Yakima Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley"
+],
+"county": [
+"Benton",
+"Yakima"
+],
+"cfr": "9.69",
+"created": "1983-04-04"
+},
+{
+"path": [],
+"name": "Umpqua Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Southern Oregon"
+],
+"county": [
+"Douglas"
+],
+"cfr": "9.89",
+"created": "1984-03-16"
+},
+{
+"path": [],
+"name": "Northern Neck George Washington Birthplace",
+"kind": "AVA",
+"also": [],
+"states": [
+"VA"
+],
+"within": [],
+"county": [
+"King George",
+"Lancaster",
+"Northumberland",
+"Richmond",
+"Westmoreland"
+],
+"cfr": "9.109",
+"created": "1987-04-21"
+},
+{
+"path": [],
+"name": "Haw River Valley",
+"kind": "AVA",
+"also": [
+"Haw River"
+],
+"states": [
+"NC"
+],
+"within": [],
+"county": [
+"Alamance",
+"Caswell",
+"Chatham",
+"Guilford",
+"Orange",
+"Rockingham"
+],
+"cfr": "9.214",
+"created": "2009-03-30"
+},
+{
+"path": [],
+"name": "Virginia Peninsula",
+"kind": "AVA",
+"also": [],
+"states": [
+"VA"
+],
+"within": [],
+"county": [
+"Charles City",
+"Hampton",
+"James City",
+"New Kent",
+"Newport News",
+"Poquoson",
+"Williamsburg",
+"York"
+],
+"cfr": "9.279",
+"created": "2021-09-24"
+},
+{
+"path": [],
+"name": "Paso Robles",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.84",
+"created": "1983-11-03"
+},
+{
+"path": [],
+"name": "Mimbres Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"NM"
+],
+"within": [],
+"county": [
+"Grant",
+"Luna"
+],
+"cfr": "9.103",
+"created": "1985-11-21"
+},
+{
+"path": [],
+"name": "Monterey",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"Monterey"
+],
+"cfr": "9.98",
+"created": "1984-06-15"
+},
+{
+"path": [],
+"name": "Kanawha River Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"WV"
+],
+"within": [
+"Ohio River Valley"
+],
+"county": [
+"Cabell",
+"Jackson",
+"Kanawha",
+"Lincoln",
+"Mason",
+"Putnam"
+],
+"cfr": "9.111",
+"created": "1986-04-08"
+},
+{
+"path": [],
+"name": "Horse Heaven Hills",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley"
+],
+"county": [
+"Benton",
+"Klickitat",
+"Yakima"
+],
+"cfr": "9.188",
+"created": "2005-08-01"
+},
+{
+"path": [],
+"name": "Lodi",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Sacramento",
+"San Joaquin"
+],
+"cfr": "9.107",
+"created": "1986-03-17"
+},
+{
+"path": [],
+"name": "Willcox",
+"kind": "AVA",
+"also": [],
+"states": [
+"AZ"
+],
+"within": [],
+"county": [
+"Cochise",
+"Graham"
+],
+"cfr": "9.259",
+"created": "2016-10-12"
+},
+{
+"path": [],
+"name": "Sonoma Coast",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.116",
+"created": "1987-07-13"
+},
+{
+"path": [],
+"name": "Madera",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Fresno",
+"Madera"
+],
+"cfr": "9.92",
+"created": "1985-01-07"
+},
+{
+"path": [],
+"name": "Antelope Valley of the California High Desert",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Kern",
+"Los Angeles"
+],
+"cfr": "9.219",
+"created": "2011-06-23"
+},
+{
+"path": [],
+"name": "Upper Hiwassee Highlands",
+"kind": "AVA",
+"also": [],
+"states": [
+"GA",
+"NC"
+],
+"within": [],
+"county": [
+"Fannin",
+"Towns",
+"Union",
+"Cherokee",
+"Clay"
+],
+"cfr": "9.234",
+"created": "2014-08-18"
+},
+{
+"path": [],
+"name": "El Dorado",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Sierra Foothills"
+],
+"county": [
+"El Dorado"
+],
+"cfr": "9.61",
+"created": "1983-11-14"
+},
+{
+"path": [],
+"name": "Santa Cruz Mountains",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"San Mateo",
+"Santa Clara",
+"Santa Cruz"
+],
+"cfr": "9.31",
+"created": "1982-01-04"
+},
+{
+"path": [],
+"name": "San Luis Obispo Coast",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.282",
+"created": "2022-04-08"
+},
+{
+"path": [],
+"name": "Napa Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.23",
+"created": "1981-02-27"
+},
+{
+"path": [],
+"name": "Northern Sonoma",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.70",
+"created": "1985-06-17"
+},
+{
+"path": [],
+"name": "Champlain Valley of New York",
+"kind": "AVA",
+"also": [],
+"states": [
+"NY"
+],
+"within": [],
+"county": [
+"Clinton",
+"Essex"
+],
+"cfr": "9.258",
+"created": "2016-08-22"
+},
+{
+"path": [],
+"name": "Walla Walla Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR",
+"WA"
+],
+"within": [
+"Columbia Valley"
+],
+"county": [
+"Umatilla",
+"Walla Walla"
+],
+"cfr": "9.91",
+"created": "1984-01-12"
+},
+{
+"path": [],
+"name": "Santa Clara Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"San Francisco Bay"
+],
+"county": [
+"Alameda",
+"San Benito",
+"Santa Clara"
+],
+"cfr": "9.126",
+"created": "1989-04-27"
+},
+{
+"path": [],
+"name": "Middle Rio Grande Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"NM"
+],
+"within": [],
+"county": [
+"Bernalillo",
+"Sandoval",
+"Socorro",
+"Valencia"
+],
+"cfr": "9.119",
+"created": "1988-03-03"
+},
+{
+"path": [],
+"name": "Mendocino",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Mendocino"
+],
+"cfr": "9.93",
+"created": "1984-07-16"
+},
+{
+"path": [],
+"name": "Lewis-Clark Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"ID",
+"WA"
+],
+"within": [],
+"county": [
+"Asotin",
+"Clearwater",
+"Garfield",
+"Latah",
+"Lewis",
+"Nez Perce",
+"Whitman"
+],
+"cfr": "9.256",
+"created": "2016-05-20"
+},
+{
+"path": [],
+"name": "Texas Davis Mountains",
+"kind": "AVA",
+"also": [],
+"states": [
+"TX"
+],
+"within": [],
+"county": [
+"Jeff Davis"
+],
+"cfr": "9.155",
+"created": "1998-03-11"
+},
+{
+"path": [],
+"name": "Virginia’s Eastern Shore",
+"kind": "AVA",
+"also": [],
+"states": [
+"VA"
+],
+"within": [],
+"county": [
+"Accomack",
+"Northampton"
+],
+"cfr": "9.135",
+"created": "1990-12-10"
+},
+{
+"path": [],
+"name": "Applegate Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Rogue Valley",
+"Southern Oregon"
+],
+"county": [
+"Jackson",
+"Josephine"
+],
+"cfr": "9.165",
+"created": "2000-12-14"
+},
+{
+"path": [],
+"name": "Mesilla Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"NM",
+" TX"
+],
+"within": [],
+"county": [
+"Doña Ana",
+"El Paso"
+],
+"cfr": "9.100",
+"created": "1985-02-14"
+},
+{
+"path": [],
+"name": "Livermore Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"San Francisco Bay"
+],
+"county": [
+"Alameda"
+],
+"cfr": "9.46",
+"created": "1982-10-01"
+},
+{
+"path": [],
+"name": "Clear Lake",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Lake"
+],
+"cfr": "9.99",
+"created": "1984-06-07"
+},
+{
+"path": [],
+"name": "Leelanau Peninsula",
+"kind": "AVA",
+"also": [],
+"states": [
+"MI"
+],
+"within": [],
+"county": [
+"Leelanau"
+],
+"cfr": "9.40",
+"created": "1982-03-15"
+},
+{
+"path": [],
+"name": "Lancaster Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"PA"
+],
+"within": [],
+"county": [
+"Chester",
+"Lancaster"
+],
+"cfr": "9.41",
+"created": "1982-05-12"
+},
+{
+"path": [],
+"name": "Sonoita",
+"kind": "AVA",
+"also": [],
+"states": [
+"AZ"
+],
+"within": [],
+"county": [
+"Cochise",
+"Pima",
+"Santa Cruz"
+],
+"cfr": "9.97",
+"created": "1984-11-26"
+},
+{
+"path": [],
+"name": "Petaluma Gap",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Sonoma Coast"
+],
+"county": [
+"Marin",
+"Sonoma"
+],
+"cfr": "9.261",
+"created": "2018-01-08"
+},
+{
+"path": [],
+"name": "Seneca Lake",
+"kind": "AVA",
+"also": [],
+"states": [
+"NY"
+],
+"within": [
+"Finger Lakes"
+],
+"county": [
+"Ontario",
+"Schuyler",
+"Seneca",
+"Yates"
+],
+"cfr": "9.128",
+"created": "2003-09-02"
+},
+{
+"path": [],
+"name": "Catoctin",
+"kind": "AVA",
+"also": [],
+"states": [
+"MD"
+],
+"within": [],
+"county": [
+"Frederick",
+"Washington"
+],
+"cfr": "9.67",
+"created": "1983-10-13"
+},
+{
+"path": [],
+"name": "Columbia Gorge",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR",
+"WA"
+],
+"within": [],
+"county": [
+"Hood River",
+"Wasco",
+"Klickitat",
+"Skamania"
+],
+"cfr": "9.178",
+"created": "2004-05-10"
+},
+{
+"path": [],
+"name": "Warren Hills",
+"kind": "AVA",
+"also": [],
+"states": [
+"NJ"
+],
+"within": [],
+"county": [
+"Warren"
+],
+"cfr": "9.121",
+"created": "1988-07-23"
+},
+{
+"path": [],
+"name": "Santa Ynez Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"Santa Barbara"
+],
+"cfr": "9.54",
+"created": "1983-05-16"
+},
+{
+"path": [],
+"name": "Russian River Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Northern Sonoma",
+"Sonoma Coast"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.66",
+"created": "1983-11-21"
+},
+{
+"path": [],
+"name": "Contra Costa",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Contra Costa"
+],
+"cfr": "9.291",
+"created": "2024-04-15"
+},
+{
+"path": [],
+"name": "Ancient Lakes of Columbia Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley"
+],
+"county": [
+"Douglas",
+"Grant",
+"Kittitas"
+],
+"cfr": "9.227",
+"created": "2012-11-19"
+},
+{
+"path": [],
+"name": "Royal Slope",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley"
+],
+"county": [
+"Grant",
+"Adams"
+],
+"cfr": "9.271",
+"created": "2020-10-02"
+},
+{
+"path": [],
+"name": "Malibu Coast",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Los Angeles",
+"Ventura"
+],
+"cfr": "9.235",
+"created": "2014-08-18"
+},
+{
+"path": [],
+"name": "Middleburg Virginia",
+"kind": "AVA",
+"also": [
+"Middleburg"
+],
+"states": [
+"VA"
+],
+"within": [],
+"county": [
+"Fauquier",
+"Loudoun"
+],
+"cfr": "9.225",
+"created": "2012-09-13"
+},
+{
+"path": [],
+"name": "San Antonio Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"Monterey"
+],
+"cfr": "9.194",
+"created": "2006-07-10"
+},
+{
+"path": [],
+"name": "Swan Creek",
+"kind": "AVA",
+"also": [],
+"states": [
+"NC"
+],
+"within": [
+"Yadkin Valley"
+],
+"county": [
+"\t\nIredell",
+"Wilkes",
+"Yadkin"
+],
+"cfr": "9.211",
+"created": "2008-05-27"
+},
+{
+"path": [],
+"name": "Tualatin Hills",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Willamette Valley"
+],
+"county": [
+"Multnomah",
+"Washington"
+],
+"cfr": "9.268",
+"created": "2020-07-06"
+},
+{
+"path": [],
+"name": "West Sonoma Coast",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Sonoma Coast, North Coast"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.283",
+"created": "2022-05-23"
+},
+{
+"path": [],
+"name": "Verde Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"AZ"
+],
+"within": [],
+"county": [
+"Yavapai"
+],
+"cfr": "9.280",
+"created": "2021-12-10"
+},
+{
+"path": [],
+"name": "The Hamptons, Long Island",
+"kind": "AVA",
+"also": [],
+"states": [
+"NY"
+],
+"within": [
+"Long Island"
+],
+"county": [
+"Suffolk"
+],
+"cfr": "9.101",
+"created": "1985-05-16"
+},
+{
+"path": [],
+"name": "Crest of the Blue Ridge Henderson County",
+"kind": "AVA",
+"also": [],
+"states": [
+"NC"
+],
+"within": [],
+"county": [
+"Henderson"
+],
+"cfr": "9.266",
+"created": "2019-07-19"
+},
+{
+"path": [],
+"name": "Cucamonga Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Riverside",
+"San Bernardino"
+],
+"cfr": "9.150",
+"created": "1995-05-01"
+},
+{
+"path": [],
+"name": "Gabilan Mountains",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Monterey",
+"San Benito"
+],
+"cfr": "9.288",
+"created": "2022-09-14"
+},
+{
+"path": [],
+"name": "Cape May Peninsula",
+"kind": "AVA",
+"also": [],
+"states": [
+"NJ"
+],
+"within": [
+"Outer Coastal Plain"
+],
+"county": [
+"Cape May",
+"Cumberland"
+],
+"cfr": "9.262",
+"created": "2018-04-06"
+},
+{
+"path": [],
+"name": "Cayuga Lake",
+"kind": "AVA",
+"also": [],
+"states": [
+"NY"
+],
+"within": [
+"Finger Lakes"
+],
+"county": [
+"Cayuga",
+"Seneca",
+"Tompkins"
+],
+"cfr": "9.127",
+"created": "1988-04-25"
+},
+{
+"path": [],
+"name": "Santa Maria Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"San Luis Obispo",
+"Santa Barbara"
+],
+"cfr": "9.28",
+"created": "1981-09-04"
+},
+{
+"path": [],
+"name": "Sonoma Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Sonoma Coast"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.29",
+"created": "1982-01-04"
+},
+{
+"path": [],
+"name": "Trinity Lakes",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Trinity"
+],
+"cfr": "9.184",
+"created": "2005-04-29"
+},
+{
+"path": [],
+"name": "Capay Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Yolo"
+],
+"cfr": "9.176",
+"created": "2003-02-18"
+},
+{
+"path": [],
+"name": "Clarksburg",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Sacramento",
+"Solano",
+"Yolo"
+],
+"cfr": "9.95",
+"created": "1984-02-22"
+},
+{
+"path": [],
+"name": "San Luis Rey",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"South Coast"
+],
+"county": [
+"San Diego"
+],
+"cfr": "9.295",
+"created": "2024-09-30"
+},
+{
+"path": [],
+"name": "Central Delaware Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"NJ",
+"PA"
+],
+"within": [],
+"county": [
+"Hunterdon",
+"Mercer",
+"Bucks"
+],
+"cfr": "9.49",
+"created": "1984-03-19"
+},
+{
+"path": [],
+"name": "White Bluffs",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley"
+],
+"county": [
+"Franklin"
+],
+"cfr": "9.275",
+"created": "2021-07-19"
+},
+{
+"path": [],
+"name": "Temecula Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"South Coast"
+],
+"county": [
+"Riverside"
+],
+"cfr": "9.50",
+"created": "1984-11-23"
+},
+{
+"path": [],
+"name": "Ramona Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"South Coast"
+],
+"county": [
+"San Diego"
+],
+"cfr": "9.191",
+"created": "2006-01-06"
+},
+{
+"path": [],
+"name": "North Fork of Long Island",
+"kind": "AVA",
+"also": [],
+"states": [
+"NY"
+],
+"within": [
+"Long Island"
+],
+"county": [
+"Suffolk"
+],
+"cfr": "9.113",
+"created": "1986-10-10"
+},
+{
+"path": [],
+"name": "Dahlonega Plateau",
+"kind": "AVA",
+"also": [],
+"states": [
+"GA"
+],
+"within": [],
+"county": [
+"Lumpkin",
+"White"
+],
+"cfr": "9.263",
+"created": "2018-06-29"
+},
+{
+"path": [],
+"name": "Mendocino Ridge",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Mendocino",
+"North Coast"
+],
+"county": [
+"Mendocino"
+],
+"cfr": "9.158",
+"created": "1997-10-27"
+},
+{
+"path": [],
+"name": "Clements Hills",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Lodi"
+],
+"county": [
+"San Joaquin"
+],
+"cfr": "9.197",
+"created": "2006-08-16"
+},
+{
+"path": [],
+"name": "Mokelumne River",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Lodi"
+],
+"county": [
+"San Joaquin"
+],
+"cfr": "9.200",
+"created": "2006-08-16"
+},
+{
+"path": [],
+"name": "Wahluke Slope",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley"
+],
+"county": [
+"Grant"
+],
+"cfr": "9.192",
+"created": "2006-01-06"
+},
+{
+"path": [],
+"name": "Grand River Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"OH"
+],
+"within": [
+"Lake Erie"
+],
+"county": [
+"Ashtabula",
+"Geauga",
+"Lake"
+],
+"cfr": "9.87",
+"created": "1983-11-21"
+},
+{
+"path": [],
+"name": "Alexander Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Northern Sonoma"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.53",
+"created": "1984-11-23"
+},
+{
+"path": [],
+"name": "Dry Creek Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Northern Sonoma"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.64",
+"created": "1983-09-06"
+},
+{
+"path": [],
+"name": "Grand Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CO"
+],
+"within": [],
+"county": [
+"Mesa"
+],
+"cfr": "9.137",
+"created": "1991-12-26"
+},
+{
+"path": [],
+"name": "Rattlesnake Hills",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Yakima Valley",
+"Columbia Valley"
+],
+"county": [
+"Yakima"
+],
+"cfr": "9.193",
+"created": "2006-03-20"
+},
+{
+"path": [],
+"name": "Sloughhouse",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Lodi"
+],
+"county": [
+"Sacramento"
+],
+"cfr": "9.201",
+"created": "2006-08-16"
+},
+{
+"path": [],
+"name": "Elkton Oregon",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Southern Oregon",
+"Umpqua Valley"
+],
+"county": [
+"Douglas"
+],
+"cfr": "9.229",
+"created": "2013-03-07"
+},
+{
+"path": [],
+"name": "Fennville",
+"kind": "AVA",
+"also": [],
+"states": [
+"MI"
+],
+"within": [
+"Lake Michigan Shore"
+],
+"county": [
+"Allegan"
+],
+"cfr": "9.33",
+"created": "1981-10-19"
+},
+{
+"path": [],
+"name": "Borden Ranch",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Lodi"
+],
+"county": [
+"Sacramento",
+"San Joaquin"
+],
+"cfr": "9.196",
+"created": "2006-08-16"
+},
+{
+"path": [],
+"name": "Dunnigan Hills",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Yolo"
+],
+"cfr": "9.145",
+"created": "1993-06-14"
+},
+{
+"path": [],
+"name": "Paso Robles Estrella District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Paso Robles"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.241",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "Fredericksburg in the Texas Hill Country",
+"kind": "AVA",
+"also": [],
+"states": [
+"TX"
+],
+"within": [
+"Texas Hill Country"
+],
+"county": [
+"Gillespie"
+],
+"cfr": "9.125",
+"created": "1988-12-22"
+},
+{
+"path": [],
+"name": "Chehalem Mountains",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Willamette Valley"
+],
+"county": [
+"Clackamas",
+"Washington",
+"Yamhill"
+],
+"cfr": "9.205",
+"created": "2006-11-24"
+},
+{
+"path": [],
+"name": "Linganore",
+"kind": "AVA",
+"also": [],
+"states": [
+"MD"
+],
+"within": [],
+"county": [
+"Carroll",
+"Frederick"
+],
+"cfr": "9.63",
+"created": "1983-08-18"
+},
+{
+"path": [],
+"name": "Martha's Vineyard",
+"kind": "AVA",
+"also": [],
+"states": [
+"MA"
+],
+"within": [
+"Southeastern New England"
+],
+"county": [
+"Dukes"
+],
+"cfr": "9.73",
+"created": "1985-01-03"
+},
+{
+"path": [],
+"name": "Paso Robles Highlands District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Paso Robles"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.243",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "Tehachapi Mountains",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Kern"
+],
+"cfr": "9.273",
+"created": "2020-12-21"
+},
+{
+"path": [],
+"name": "Anderson Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Mendocino ",
+"North Coast"
+],
+"county": [
+"Mendocino"
+],
+"cfr": "9.86",
+"created": "1983-09-19"
+},
+{
+"path": [],
+"name": "Yamhill-Carlton",
+"kind": "AVA",
+"also": [
+"Yamhill-Carlton District"
+],
+"states": [
+"OR"
+],
+"within": [
+"Willamette Valley"
+],
+"county": [
+"Washington",
+"Yamhill"
+],
+"cfr": "9.183",
+"created": "2004-11-18"
+},
+{
+"path": [],
+"name": "North Fork of Roanoke",
+"kind": "AVA",
+"also": [],
+"states": [
+"VA"
+],
+"within": [],
+"county": [
+"\t\nMontgomery",
+"Roanoke"
+],
+"cfr": "9.65",
+"created": "1983-05-16"
+},
+{
+"path": [],
+"name": "Van Duzer Corridor",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Willamette Valley"
+],
+"county": [
+"Polk",
+"Yamhill"
+],
+"cfr": "9.265",
+"created": "2018-12-14"
+},
+{
+"path": [],
+"name": "Alta Mesa",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Lodi"
+],
+"county": [
+"Sacramento"
+],
+"cfr": "9.195",
+"created": "2006-08-16"
+},
+{
+"path": [],
+"name": "Adelaida District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Paso Robles"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.238",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "Cosumnes River",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Lodi"
+],
+"county": [
+"Sacramento"
+],
+"cfr": "9.198",
+"created": "2006-08-16"
+},
+{
+"path": [],
+"name": "Hermann",
+"kind": "AVA",
+"also": [],
+"states": [
+"MO"
+],
+"within": [
+"Ozark Mountain"
+],
+"county": [
+"Gasconade",
+"Franklin"
+],
+"cfr": "9.71",
+"created": "1983-08-18"
+},
+{
+"path": [],
+"name": "Eagle Foothills",
+"kind": "AVA",
+"also": [],
+"states": [
+"ID"
+],
+"within": [
+"Snake River Valley"
+],
+"county": [
+"Ada",
+"Gem"
+],
+"cfr": "9.252",
+"created": "2015-11-25"
+},
+{
+"path": [],
+"name": "West Elks",
+"kind": "AVA",
+"also": [],
+"states": [
+"CO"
+],
+"within": [],
+"county": [
+"Delta"
+],
+"cfr": "9.172",
+"created": "2001-05-07"
+},
+{
+"path": [],
+"name": "Creston District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Paso Robles"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.239",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "San Benito",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"San Benito"
+],
+"cfr": "9.110",
+"created": "1987-11-04"
+},
+{
+"path": [],
+"name": "Altus",
+"kind": "AVA",
+"also": [],
+"states": [
+"AR"
+],
+"within": [
+"Arkansas Mountain",
+"Ozark Mountain"
+],
+"county": [
+"Franklin",
+"Johnson"
+],
+"cfr": "9.77",
+"created": "1984-05-30"
+},
+{
+"path": [],
+"name": "Yorkville Highlands",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Mendocino",
+"North Coast"
+],
+"county": [
+"Mendocino"
+],
+"cfr": "9.159",
+"created": "1998-06-08"
+},
+{
+"path": [],
+"name": "Squaw Valley-Miramonte",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Fresno"
+],
+"cfr": "9.251",
+"created": "2015-09-08"
+},
+{
+"path": [],
+"name": "Arroyo Grande Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.129",
+"created": "1990-02-05"
+},
+{
+"path": [],
+"name": "Covelo",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Mendocino"
+],
+"cfr": "9.187",
+"created": "2006-03-20"
+},
+{
+"path": [],
+"name": "Eola-Amity Hills",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Willamette Valley"
+],
+"county": [
+"Polk",
+"Yamhill"
+],
+"cfr": "9.202",
+"created": "2006-08-16"
+},
+{
+"path": [],
+"name": "Tracy Hills",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"San Joaquin",
+"Stanislaus"
+],
+"cfr": "9.204",
+"created": "2006-12-08"
+},
+{
+"path": [],
+"name": "Los Carneros",
+"kind": "AVA",
+"also": [
+"Carneros"
+],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast",
+"Sonoma Coast",
+"Sonoma Valley"
+],
+"county": [
+"Napa",
+"Sonoma"
+],
+"cfr": "9.32",
+"created": "1983-09-19"
+},
+{
+"path": [],
+"name": "Knights Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Northern Sonoma"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.76",
+"created": "1983-11-21"
+},
+{
+"path": [],
+"name": "Yucaipa Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"San Bernardino"
+],
+"cfr": "9.293",
+"created": "2024-05-28"
+},
+{
+"path": [],
+"name": "Fountaingrove District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.250",
+"created": "2015-03-20"
+},
+{
+"path": [],
+"name": "McMinnville",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Willamette Valley"
+],
+"county": [
+"Yamhill"
+],
+"cfr": "9.181",
+"created": "2005-03-21"
+},
+{
+"path": [],
+"name": "Paulsell Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Stanislaus"
+],
+"cfr": "9.285",
+"created": "2022-06-03"
+},
+{
+"path": [],
+"name": "Sta. Rita Hills",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Santa Ynez Valley"
+],
+"county": [
+"Santa Barbara"
+],
+"cfr": "9.162",
+"created": "2001-07-30"
+},
+{
+"path": [],
+"name": "Ben Lomond Mountain",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Santa Cruz Mountains"
+],
+"county": [
+"Santa Cruz"
+],
+"cfr": "9.118",
+"created": "1988-01-08"
+},
+{
+"path": [],
+"name": "Diablo Grande",
+"kind": "AVA",
+"also": [
+"refered by many newspaper articles as the  \"Oak Flats Valley Ranch\" or the \"Oak Flats Valley\""
+],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Stanislaus"
+],
+"cfr": "9.156",
+"created": "1998-08-21"
+},
+{
+"path": [],
+"name": "San Lucas",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Monterey"
+],
+"county": [
+"Monterey"
+],
+"cfr": "9.56",
+"created": "1987-03-02"
+},
+{
+"path": [],
+"name": "Laurelwood District",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Chehalem Mountains",
+"Willamette Valley"
+],
+"county": [
+"Washington",
+"Yamhill"
+],
+"cfr": "9.269",
+"created": "2020-07-06"
+},
+{
+"path": [],
+"name": "Rocky Reach",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley"
+],
+"county": [
+"Chelan",
+"Douglas"
+],
+"cfr": "9.287",
+"created": "2022-06-03"
+},
+{
+"path": [],
+"name": "Lake Chelan",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley"
+],
+"county": [
+"Chelan"
+],
+"cfr": "9.215",
+"created": "2009-05-29"
+},
+{
+"path": [],
+"name": "Arroyo Seco",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Monterey"
+],
+"county": [
+"Monterey"
+],
+"cfr": "9.59",
+"created": "1983-05-16"
+},
+{
+"path": [],
+"name": "Lake Wisconsin",
+"kind": "AVA",
+"also": [],
+"states": [
+"WI"
+],
+"within": [
+"Upper Mississippi",
+"River Valley"
+],
+"county": [
+"Columbia",
+"Dane"
+],
+"cfr": "9.146",
+"created": "1994-01-05"
+},
+{
+"path": [],
+"name": "Fort Ross-Seaview",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Sonoma Coast"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.221",
+"created": "2011-12-14"
+},
+{
+"path": [],
+"name": "Red Hills Lake County",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Clear Lake",
+"North Coast"
+],
+"county": [
+"Lake"
+],
+"cfr": "9.169",
+"created": "2004-09-10"
+},
+{
+"path": [],
+"name": "Escondido Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"TX"
+],
+"within": [],
+"county": [
+"Pecos"
+],
+"cfr": "9.141",
+"created": "1992-06-15"
+},
+{
+"path": [],
+"name": "Redwood Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Mendocino",
+"North Coast"
+],
+"county": [
+"Mendocino"
+],
+"cfr": "9.153",
+"created": "1997-02-21"
+},
+{
+"path": [],
+"name": "Lamorinda",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"San Francisco Bay"
+],
+"county": [
+"Contra Costa"
+],
+"cfr": "9.254",
+"created": "2016-03-25"
+},
+{
+"path": [],
+"name": "Inwood Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Shasta"
+],
+"cfr": "9.226",
+"created": "2012-10-15"
+},
+{
+"path": [],
+"name": "Niagara Escarpment",
+"kind": "AVA",
+"also": [],
+"states": [
+"NY"
+],
+"within": [],
+"county": [
+"Niagara"
+],
+"cfr": "9.186",
+"created": "2005-02-09"
+},
+{
+"path": [],
+"name": "Potter Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Mendocino",
+"North Coast"
+],
+"county": [
+"Mendocino"
+],
+"cfr": "9.82",
+"created": "1983-11-14"
+},
+{
+"path": [],
+"name": "Lower Long Tom",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Willamette Valley"
+],
+"county": [
+"Benton",
+"Lane"
+],
+"cfr": "9.281",
+"created": "2021-12-10"
+},
+{
+"path": [],
+"name": "Jahant",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Lodi"
+],
+"county": [
+"Sacramento",
+"San Joaquin"
+],
+"cfr": "9.199",
+"created": "2006-08-16"
+},
+{
+"path": [],
+"name": "San Juan Creek",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Paso Robles"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.245",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "Eagle Peak Mendocino County",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Mendocino"
+],
+"cfr": "9.237",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "Fair Play",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"El Dorado",
+"Sierra Foothills"
+],
+"county": [
+"El Dorado"
+],
+"cfr": "9.168",
+"created": "2001-04-27"
+},
+{
+"path": [],
+"name": "Happy Canyon of Santa Barbara",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Santa Ynez Valley"
+],
+"county": [
+"Santa Barbara"
+],
+"cfr": "9.217",
+"created": "2009-11-09"
+},
+{
+"path": [],
+"name": "San Bernabe",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Monterey"
+],
+"county": [
+"Monterey"
+],
+"cfr": "9.171",
+"created": "2004-08-30"
+},
+{
+"path": [],
+"name": "Chalk Hill",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Northern Sonoma",
+"Russian River Valley",
+"Sonoma Coast"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.52",
+"created": "1983-11-21"
+},
+{
+"path": [],
+"name": "Los Olivos District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Santa Ynez Valley"
+],
+"county": [
+"Santa Barbara"
+],
+"cfr": "9.253",
+"created": "2016-02-22"
+},
+{
+"path": [],
+"name": "El Pomar District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Paso Robles"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.240",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "Edna Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.35",
+"created": "1982-06-11"
+},
+{
+"path": [],
+"name": "North Yuba",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Sierra Foothills"
+],
+"county": [
+"Yuba"
+],
+"cfr": "9.106",
+"created": "1985-08-30"
+},
+{
+"path": [],
+"name": "Santa Lucia Highlands",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Monterey"
+],
+"county": [
+"Monterey"
+],
+"cfr": "9.139",
+"created": "1992-06-15"
+},
+{
+"path": [],
+"name": "Upper Lake Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Clear Lake",
+"North Coast"
+],
+"county": [
+"Lake"
+],
+"cfr": "9.286",
+"created": "2022-07-05"
+},
+{
+"path": [],
+"name": "Carmel Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"Monterey"
+],
+"cfr": "9.58",
+"created": "1983-01-13"
+},
+{
+"path": [],
+"name": "Green Valley of Russian River Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Northern Sonoma Valley",
+"Russian River Valley",
+"Sonoma Coast"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.57",
+"created": "1983-12-21"
+},
+{
+"path": [],
+"name": "Suisun Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Solano"
+],
+"cfr": "9.45",
+"created": "1982-12-27"
+},
+{
+"path": [],
+"name": "Templeton Gap District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Paso Robles"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.248",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "San Miguel District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Paso Robles"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.246",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "Paicines",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"San Benito"
+],
+"county": [
+"San Benito"
+],
+"cfr": "9.39",
+"created": "1982-09-15"
+},
+{
+"path": [],
+"name": "Old Mission Peninsula",
+"kind": "AVA",
+"also": [],
+"states": [
+"MI"
+],
+"within": [],
+"county": [
+"Grand Traverse"
+],
+"cfr": "9.114",
+"created": "1987-05-21"
+},
+{
+"path": [],
+"name": "Moon Mountain District Sonoma County",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Sonoma Valley"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.231",
+"created": "2013-11-01"
+},
+{
+"path": [],
+"name": "Santa Margarita Ranch",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Paso Robles"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.247",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "Paso Robles Geneseo District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Paso Robles"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.242",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "Solano County Green Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Solano"
+],
+"cfr": "9.44",
+"created": "1983-01-28"
+},
+{
+"path": [],
+"name": "Mt. Veeder",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.123",
+"created": "1990-03-22"
+},
+{
+"path": [],
+"name": "Paso Robles Willow Creek District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Paso Robles"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.244",
+"created": "2014-11-10"
+},
+{
+"path": [],
+"name": "High Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Clear Lake",
+"North Coast"
+],
+"county": [
+"Lake"
+],
+"cfr": "9.189",
+"created": "2023-07-05"
+},
+{
+"path": [],
+"name": "Augusta",
+"kind": "AVA",
+"also": [],
+"states": [
+"MO"
+],
+"within": [],
+"county": [
+"St. Charles"
+],
+"cfr": "9.22",
+"created": "1980-06-20"
+},
+{
+"path": [],
+"name": "Palos Verdes Peninsula",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Los Angeles"
+],
+"cfr": "9.274",
+"created": "2021-07-19"
+},
+{
+"path": [],
+"name": "Dos Rios",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Mendocino"
+],
+"cfr": "9.175",
+"created": "2005-11-14"
+},
+{
+"path": [],
+"name": "Rockpile",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Northern Sonoma"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.173",
+"created": "2002-04-29"
+},
+{
+"path": [],
+"name": "California Shenandoah Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Sierra Foothills"
+],
+"county": [
+"Amador",
+"El Dorado"
+],
+"cfr": "9.37",
+"created": "1983-01-27"
+},
+{
+"path": [],
+"name": "Naches Heights",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley"
+],
+"county": [
+"Yakima"
+],
+"cfr": "9.222",
+"created": "2012-01-13"
+},
+{
+"path": [],
+"name": "The Burn of Columbia Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley"
+],
+"county": [
+"Klickitat"
+],
+"cfr": "9.276",
+"created": "2021-07-19"
+},
+{
+"path": [],
+"name": "Howell Mountain",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.94",
+"created": "1984-01-30"
+},
+{
+"path": [],
+"name": "Calistoga",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.209",
+"created": "2010-01-07"
+},
+{
+"path": [],
+"name": "Dundee Hills",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Willamette Valley"
+],
+"county": [
+"Yamhill"
+],
+"cfr": "9.180",
+"created": "2005-01-31"
+},
+{
+"path": [],
+"name": "Atlas Peak",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.140",
+"created": "1992-02-24"
+},
+{
+"path": [],
+"name": "Hames Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Monterey"
+],
+"county": [
+"Monterey"
+],
+"cfr": "9.147",
+"created": "1994-04-25"
+},
+{
+"path": [],
+"name": "Fiddletown",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Sierra Foothills"
+],
+"county": [
+"Amador"
+],
+"cfr": "9.81",
+"created": "1983-11-03"
+},
+{
+"path": [],
+"name": "Coombsville",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.223",
+"created": "2002-01-13"
+},
+{
+"path": [],
+"name": "Big Valley District-Lake County",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Clear Lake",
+"North Coast"
+],
+"county": [
+"Lake"
+],
+"cfr": "9.232",
+"created": "2013-11-01"
+},
+{
+"path": [],
+"name": "Manton Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Shasta",
+"Tehama"
+],
+"cfr": "9.236",
+"created": "2014-09-02"
+},
+{
+"path": [],
+"name": "Oak Knoll District of Napa Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.161",
+"created": "2004-04-26"
+},
+{
+"path": [],
+"name": "Alexandria Lakes",
+"kind": "AVA",
+"also": [],
+"states": [
+"MN"
+],
+"within": [],
+"county": [
+"Douglas"
+],
+"cfr": "9.177",
+"created": "2003-01-14"
+},
+{
+"path": [],
+"name": "St. Helena",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.149",
+"created": "1995-10-11"
+},
+{
+"path": [],
+"name": "San Pasqual Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"South Coast"
+],
+"county": [
+"San Diego"
+],
+"cfr": "9.25",
+"created": "1981-09-16"
+},
+{
+"path": [],
+"name": "Kelsey Bench-Lake County",
+"kind": "AVA",
+"also": [
+"Kelsey Bench, Kelseyfille Bench"
+],
+"states": [
+"CA"
+],
+"within": [
+"Clear Lake",
+"North Coast"
+],
+"county": [
+"Lake"
+],
+"cfr": "9.233",
+"created": "2013-11-01"
+},
+{
+"path": [],
+"name": "Rocky Knob",
+"kind": "AVA",
+"also": [],
+"states": [
+"VA"
+],
+"within": [],
+"county": [
+"Floyd",
+"Patrick"
+],
+"cfr": "9.43",
+"created": "1983-02-11"
+},
+{
+"path": [],
+"name": "Sierra Pelona Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Los Angeles"
+],
+"cfr": "9.218",
+"created": "2010-08-23"
+},
+{
+"path": [],
+"name": "Leona Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Los Angeles"
+],
+"cfr": "9.212",
+"created": "2008-11-28"
+},
+{
+"path": [],
+"name": "Chalone",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Gabilan Mountains"
+],
+"county": [
+"Monterey",
+"San Benito"
+],
+"cfr": "9.24",
+"created": "1982-07-14"
+},
+{
+"path": [],
+"name": "Spring Mountain District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.143",
+"created": "1993-06-14"
+},
+{
+"path": [],
+"name": "Yountville",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.160",
+"created": "1999-05-18"
+},
+{
+"path": [],
+"name": "Bennett Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Sonoma Coast",
+"Sonoma Mountain",
+"Sonoma Valley"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.142",
+"created": "2003-12-29"
+},
+{
+"path": [],
+"name": "Goose Gap",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley",
+"Yakima Valley"
+],
+"county": [
+"Benton"
+],
+"cfr": "9.277",
+"created": "2021-08-02"
+},
+{
+"path": [],
+"name": "Mt. Harlan",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Gabilan Mountains"
+],
+"county": [
+"San Benito"
+],
+"cfr": "9.131",
+"created": "1990-12-17"
+},
+{
+"path": [],
+"name": "Ballard Canyon",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"Santa Ynez Valley"
+],
+"county": [
+"Santa Barbara"
+],
+"cfr": "9.230",
+"created": "2013-11-01"
+},
+{
+"path": [],
+"name": "Willow Creek",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Humboldt",
+"Trinity"
+],
+"cfr": "9.85",
+"created": "1983-09-19"
+},
+{
+"path": [],
+"name": "Long Valley-Lake County",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Lake"
+],
+"cfr": "9.289",
+"created": "2023-07-05"
+},
+{
+"path": [],
+"name": "Rutherford",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.133",
+"created": "1993-08-02"
+},
+{
+"path": [],
+"name": "Cienega Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"San Benito"
+],
+"county": [
+"San Benito"
+],
+"cfr": "9.38",
+"created": "1982-09-20"
+},
+{
+"path": [],
+"name": "Oakville",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.134",
+"created": "1993-08-02"
+},
+{
+"path": [],
+"name": "York Mountain",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"San Luis Obispo"
+],
+"cfr": "9.80",
+"created": "1983-09-23"
+},
+{
+"path": [],
+"name": "Bell Mountain",
+"kind": "AVA",
+"also": [],
+"states": [
+"TX"
+],
+"within": [
+"Texas Hill Country"
+],
+"county": [
+"Gillespie"
+],
+"cfr": "9.55",
+"created": "1986-11-10"
+},
+{
+"path": [],
+"name": "Alisos Canyon",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast"
+],
+"county": [
+"Santa Barbara"
+],
+"cfr": "9.270",
+"created": "2020-07-28"
+},
+{
+"path": [],
+"name": "Mount Pisgah, Polk County, Oregon",
+"kind": "AVA",
+"also": [
+"Mt. Pisgah, Polk County, Oregon"
+],
+"states": [
+"OR"
+],
+"within": [
+"Willamette Valley"
+],
+"county": [
+"Polk"
+],
+"cfr": "9.284",
+"created": "2022-06-03"
+},
+{
+"path": [],
+"name": "Sonoma Mountain",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Sonoma Valley"
+],
+"county": [
+"Sonoma"
+],
+"cfr": "9.102",
+"created": "1985-02-22"
+},
+{
+"path": [],
+"name": "Red Hill Douglas County, Oregon",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Southern Oregon",
+"Umpqua Valley"
+],
+"county": [
+"Douglas"
+],
+"cfr": "9.190",
+"created": "2005-11-14"
+},
+{
+"path": [],
+"name": "Guenoc Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Lake"
+],
+"cfr": "9.26",
+"created": "1981-12-21"
+},
+{
+"path": [],
+"name": "Winters Highlands",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Solano",
+"Yolo"
+],
+"cfr": "9.290",
+"created": "2023-08-29"
+},
+{
+"path": [],
+"name": "Chiles Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.154",
+"created": "1999-04-19"
+},
+{
+"path": [],
+"name": "Diamond Mountain District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.166",
+"created": "2001-07-31"
+},
+{
+"path": [],
+"name": "Merritt Island",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Clarksburg"
+],
+"county": [
+"Yolo"
+],
+"cfr": "9.68",
+"created": "1983-06-16"
+},
+{
+"path": [],
+"name": "Pine Mountain-Cloverdale Peak",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast",
+"Northern Sonoma"
+],
+"county": [
+"Mendocino",
+"Sonoma"
+],
+"cfr": "9.220",
+"created": "2011-11-28"
+},
+{
+"path": [],
+"name": "Red Mountain",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Yakima Valley",
+"Columbia Valley"
+],
+"county": [
+"Benton"
+],
+"cfr": "9.167",
+"created": "2001-06-11"
+},
+{
+"path": [],
+"name": "Snipes Mountain",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Yakima Valley",
+"Columbia Valley"
+],
+"county": [
+"Yakima"
+],
+"cfr": "9.213",
+"created": "2009-02-20"
+},
+{
+"path": [],
+"name": "Crystal Springs of Napa Valley ",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Napa"
+],
+"cfr": "9.296",
+"created": "2024-11-14"
+},
+{
+"path": [],
+"name": "Wild Horse Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast",
+"Solano County",
+"Green Valley"
+],
+"county": [
+"Napa",
+"Solano"
+],
+"cfr": "9.124",
+"created": "1988-12-30"
+},
+{
+"path": [],
+"name": "Loramie Creek",
+"kind": "AVA",
+"also": [],
+"states": [
+"OH"
+],
+"within": [],
+"county": [
+"Shelby"
+],
+"cfr": "9.62",
+"created": "1982-12-27"
+},
+{
+"path": [],
+"name": "Ribbon Ridge",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Chehalem Mountains",
+"Willamette Valley"
+],
+"county": [
+"Yamhill"
+],
+"cfr": "9.182",
+"created": "2005-06-01"
+},
+{
+"path": [],
+"name": "The Rocks District of Milton-Freewater",
+"kind": "AVA",
+"also": [],
+"states": [
+"OR"
+],
+"within": [
+"Columbia Valley",
+"Walla Walla Valley"
+],
+"county": [
+"Umatilla"
+],
+"cfr": "9.249",
+"created": "2015-03-11"
+},
+{
+"path": [],
+"name": "Stags Leap District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Napa Valley",
+"North Coast"
+],
+"county": [
+"Napa"
+],
+"cfr": "9.117",
+"created": "1989-02-27"
+},
+{
+"path": [],
+"name": "Salado Creek",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Stanislaus"
+],
+"cfr": "9.163",
+"created": "2004-08-30"
+},
+{
+"path": [],
+"name": "Pacheco Pass",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"San Francisco Bay",
+"Santa Clara Valley\n"
+],
+"county": [
+"San Benito",
+"Santa Clara"
+],
+"cfr": "9.88",
+"created": "1984-04-11"
+},
+{
+"path": [],
+"name": "San Ysidro District",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Central Coast",
+"San Francisco Bay",
+"Santa Clara Valley"
+],
+"county": [
+"Santa Clara"
+],
+"cfr": "9.130",
+"created": "1990-12-17"
+},
+{
+"path": [],
+"name": "Beverly Washington",
+"kind": "AVA",
+"also": [],
+"states": [
+"Washington"
+],
+"within": [],
+"county": [
+"Grant County"
+],
+"cfr": "9.297",
+"created": "2024-10-29"
+},
+{
+"path": [],
+"name": "Lime Kiln Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Cienega Valley",
+"Central Coast",
+"San Benito"
+],
+"county": [
+"San Benito"
+],
+"cfr": "9.27",
+"created": "1982-07-06"
+},
+{
+"path": [],
+"name": "McDowell Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Mendocino",
+"North Coast"
+],
+"county": [
+"Mendocino"
+],
+"cfr": "9.36",
+"created": "1982-01-04"
+},
+{
+"path": [],
+"name": "Seiad Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"Siskiyou"
+],
+"cfr": "9.148",
+"created": "1994-06-20"
+},
+{
+"path": [],
+"name": "Saddle Rock-Malibu",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Malibu Coast"
+],
+"county": [
+"Los Angeles"
+],
+"cfr": "9.203",
+"created": "2006-08-16"
+},
+{
+"path": [],
+"name": "Comptche",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Mendocino"
+],
+"cfr": null,
+"created": "2024-05-08"
+},
+{
+"path": [],
+"name": "River Junction",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [],
+"county": [
+"San Joaquin"
+],
+"cfr": "9.164",
+"created": "2001-07-09"
+},
+{
+"path": [],
+"name": "Benmore Valley",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"North Coast"
+],
+"county": [
+"Lake"
+],
+"cfr": "9.138",
+"created": "1991-11-18"
+},
+{
+"path": [],
+"name": "Malibu-Newton Canyon",
+"kind": "AVA",
+"also": [],
+"states": [
+"CA"
+],
+"within": [
+"Malibu Coast"
+],
+"county": [
+"Los Angeles"
+],
+"cfr": "9.152",
+"created": "1996-06-13"
+},
+{
+"path": [],
+"name": "Candy Mountain",
+"kind": "AVA",
+"also": [],
+"states": [
+"WA"
+],
+"within": [
+"Columbia Valley",
+"Yakima Valley"
+],
+"county": [
+"Benton"
+],
+"cfr": "9.272",
+"created": "2020-10-26"
+},
+{
+"path": [],
+"name": "Isle St. George",
+"kind": "AVA",
+"also": [],
+"states": [
+"OH"
+],
+"within": [
+"Lake Erie"
+],
+"county": [
+"Ottawa"
+],
+"cfr": "9.51",
+"created": "1982-08-20"
+},
+{
+"path": [],
+"name": "Cole Ranch",
+"kind": "AVA",
+"also": [
+"Cole Vineyard"
+],
+"states": [
+"CA"
+],
+"within": [
+"Mendocino",
+"North Coast"
+],
+"county": [
+"Mendocino"
+],
+"cfr": "9.42",
+"created": "1983-05-16"
+},
+{
+"path": [],
+"name": "Ulupalakua",
+"kind": "AVA",
+"also": [],
+"states": [
+"HI"
+],
+"within": [],
+"county": [
+"Maui"
+],
+"cfr": "9.278",
+"created": "2021-08-02"
+}
+]
+}

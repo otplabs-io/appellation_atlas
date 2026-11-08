@@ -1,0 +1,146 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Metliška črnina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007442",
+"file": "PDO-SI-A1579"
+},
+{
+"path": [],
+"name": "Belokranjec",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007401",
+"file": "PDO-SI-A1576"
+},
+{
+"path": [],
+"name": "Cviček",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007266",
+"file": "PDO-SI-A1561"
+},
+{
+"path": [],
+"name": "Bela krajina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006665",
+"file": "PDO-SI-A0878"
+},
+{
+"path": [],
+"name": "Posavje",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006847",
+"file": "PGI-SI-A1061"
+},
+{
+"path": [],
+"name": "Goriška Brda",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005684",
+"file": "PDO-SI-A0270"
+},
+{
+"path": [],
+"name": "Kras",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006521",
+"file": "PDO-SI-A0616"
+},
+{
+"path": [],
+"name": "Teran",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007443",
+"file": "PDO-SI-A1581"
+},
+{
+"path": [],
+"name": "Vipavska dolina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005861",
+"file": "PDO-SI-A0448"
+},
+{
+"path": [],
+"name": "Bizeljčan",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005099",
+"file": "PDO-SI-A1520"
+},
+{
+"path": [],
+"name": "Dolenjska",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006662",
+"file": "PDO-SI-A0871"
+},
+{
+"path": [],
+"name": "Primorska",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006901",
+"file": "PGI-SI-A1094"
+},
+{
+"path": [],
+"name": "Slovenska Istra",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006274",
+"file": "PDO-SI-A0609"
+},
+{
+"path": [],
+"name": "Podravje",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006705",
+"file": "PGI-SI-A0995"
+},
+{
+"path": [],
+"name": "Prekmurje",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004923",
+"file": "PDO-SI-A0769"
+},
+{
+"path": [],
+"name": "Bizeljsko Sremič",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005481",
+"file": "PDO-SI-A0772"
+},
+{
+"path": [],
+"name": "Štajerska Slovenija",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001921",
+"file": "PDO-SI-A0639"
+}
+]
+}

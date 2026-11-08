@@ -1,0 +1,3073 @@
+{
+"source": {
+"title": "Wikipedia, List of Italian DOCG wines and List of Italian DOC wines (by region)",
+"url": "https://en.wikipedia.org/wiki/List_of_Italian_DOC_wines",
+"revision": [
+1382114503,
+1327113024
+],
+"tier": "reference",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Albana di Romagna",
+"kind": "DOCG"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Colli Bolognesi Pignoletto",
+"kind": "DOCG"
+},
+{
+"path": [
+"Friuli-Venezia Giulia"
+],
+"name": "Ramandolo",
+"kind": "DOCG"
+},
+{
+"path": [
+"Friuli-Venezia Giulia"
+],
+"name": "Colli Orientali del Friuli Picolit",
+"kind": "DOCG"
+},
+{
+"path": [
+"Friuli-Venezia Giulia"
+],
+"name": "Rosazzo",
+"kind": "DOCG"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Franciacorta",
+"kind": "DOCG"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Oltrepo Pavese Metodo Classico",
+"kind": "DOCG"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Moscato di Scanzo",
+"kind": "DOCG"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Sforzato di Valtellina",
+"kind": "DOCG"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Valtellina",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Asti",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Barbaresco",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Barbera d'Asti",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Costigliole d'Asti",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Vigliano d'Asti",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Nizza",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Barbera del Monferrato Superiore",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Barolo",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Brachetto d'Acqui",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Dolcetto di Dogliani Superiore",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Dolcetto di Ovada Superiore",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Gattinara",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Cortese di Gavi",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Ghemme",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Roero",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Erbaluce di Caluso",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Dolcetto di Diano d'Alba",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Ruché di Castagnole Monferrato",
+"kind": "DOCG"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Alta Langa",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Amarone della Valpolicella",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Bagnoli Friularo",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Bardolino Superiore",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Colli di Conegliano",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Colli Euganei Fior d'Arancio",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Asolo Prosecco",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Conegliano Valdobbiadene Prosecco",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Lison",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Montello Rosso",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Piave Malanotte",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Recioto di Soave",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Soave",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Recioto di Gambellara",
+"kind": "DOCG"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Recioto della Valpolicella",
+"kind": "DOCG"
+},
+{
+"path": [
+"Abruzzo"
+],
+"name": "Colline Teramane Montepulciano d'Abruzzo",
+"kind": "DOCG"
+},
+{
+"path": [
+"Abruzzo"
+],
+"name": "Terre Tollesi",
+"kind": "DOCG"
+},
+{
+"path": [
+"Abruzzo"
+],
+"name": "Terre di Casauria",
+"kind": "DOCG"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Cannellino di Frascati",
+"kind": "DOCG"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Cesanese del Piglio",
+"kind": "DOCG"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Frascati Superiore",
+"kind": "DOCG"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Castelli di Jesi Verdicchio Riserva",
+"kind": "DOCG"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Conero",
+"kind": "DOCG"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Offida",
+"kind": "DOCG"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Vernaccia di Serrapetrona",
+"kind": "DOCG"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Verdicchio di Matelica Riserva",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Brunello di Montalcino",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Carmignano",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Chianti",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Arezzo",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Siena",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Firenze",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Pisa",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Firenze",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Firenze",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Firenze",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Chianti Classico",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Elba Aleatico Passito",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Montecucco",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Morellino di Scansano",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Suvereto",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Val di Cornia",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Vernaccia di San Gimignano",
+"kind": "DOCG"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Vino Nobile di Montepulciano",
+"kind": "DOCG"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Sagrantino di Montefalco",
+"kind": "DOCG"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Torgiano Rosso Riserva",
+"kind": "DOCG"
+},
+{
+"path": [
+"Basilicata"
+],
+"name": "Aglianico del Vulture Superiore",
+"kind": "DOCG"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Aglianico del Taburno",
+"kind": "DOCG"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Fiano di Avellino",
+"kind": "DOCG"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Greco di Tufo",
+"kind": "DOCG"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Taurasi",
+"kind": "DOCG"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Castel del Monte Bombino Nero",
+"kind": "DOCG"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Castel del Monte Nero di Troia Reserva",
+"kind": "DOCG"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Castel del Monte Rosso Riserva",
+"kind": "DOCG"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Primitivo di Manduria Dolce Naturale",
+"kind": "DOCG"
+},
+{
+"path": [
+"Sardinia"
+],
+"name": "Vermentino di Gallura",
+"kind": "DOCG"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Cerasuolo di Vittoria",
+"kind": "DOCG"
+},
+{
+"path": [
+"Abruzzo"
+],
+"name": "Abruzzo",
+"kind": "DOC"
+},
+{
+"path": [
+"Abruzzo"
+],
+"name": "Cerasuolo d'Abruzzo",
+"kind": "DOC"
+},
+{
+"path": [
+"Abruzzo"
+],
+"name": "Controguerra",
+"kind": "DOC"
+},
+{
+"path": [
+"Abruzzo"
+],
+"name": "Montepulciano d'Abruzzo",
+"kind": "DOC"
+},
+{
+"path": [
+"Abruzzo"
+],
+"name": "Terre Tollesi",
+"kind": "DOC"
+},
+{
+"path": [
+"Abruzzo"
+],
+"name": "Trebbiano d'Abruzzo",
+"kind": "DOC"
+},
+{
+"path": [
+"Abruzzo"
+],
+"name": "Villamagna",
+"kind": "DOC"
+},
+{
+"path": [
+"Basilicata"
+],
+"name": "Aglianico del Vulture",
+"kind": "DOC"
+},
+{
+"path": [
+"Basilicata"
+],
+"name": "Matera",
+"kind": "DOC"
+},
+{
+"path": [
+"Basilicata"
+],
+"name": "Terre dell'Alta Val d'Agri",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "Bivongi",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "Cirò",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "Donnici",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "Greco di Bianco",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "Lamezia",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "Melissa",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "Pollino",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "Sant'Anna di Isola Capo Rizzuto",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "San Vito di Luzzi",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "Savuto",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "Scavigna",
+"kind": "DOC"
+},
+{
+"path": [
+"Calabria"
+],
+"name": "Verbicaro",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Aversa Asprinio",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Campi Flegrei",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Capri",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Castel San Lorenzo",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Cilento",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Costa d'Amalfi",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Falerno del Massico",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Falanghina del Sannio",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Galluccio",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Guardiolo",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Irpinia",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Ischia",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Penisola Sorrentina",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Sannio",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Sant'Agata dei Goti",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Solopaca",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Taburno",
+"kind": "DOC"
+},
+{
+"path": [
+"Campania"
+],
+"name": "Vesuvio",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Bosco Eliceo",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Cagnina di Romagna",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Colli Bolognesi",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Colli Bolognesi Classico Pignoletto",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Colli di Faenza",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Colli di Imola",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Colli di Parma",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Colli di Rimini",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Colli di Scandiano e di Canossa",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Colli Piacentini",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Colli Romagna Centrale",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Gutturnio",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Lambrusco di Sorbara",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Lambrusco Grasparossa di Castelvetro",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Lambrusco Salamino di Santacroce",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Modena",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Ortrugo",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Pagadebit di Romagna",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Reggiano",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Reno",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Romagna Albana Spumante",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Sangiovese di Romagna",
+"kind": "DOC"
+},
+{
+"path": [
+"Emilia-Romagna"
+],
+"name": "Trebbiano di Romagna",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "Carso",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "Colli Orientali del Friuli",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "Colli Orientali del Friuli Cialla",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "Colli Orientali del Friuli Rosazzo",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "Collio Goriziano",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "delle Venezie",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "Friuli Annia",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "Friuli Aquileia",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "Friuli Grave",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "Friuli Isonzo",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "Friuli Latisana",
+"kind": "DOC"
+},
+{
+"path": [
+"Friuli Venezia Giulia"
+],
+"name": "Lison Pramaggiore",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Aleatico di Gradoli",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Aprilia",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Atina",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Bianco Capena",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Castelli Romani",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Cerveteri",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Cesanese del Piglio",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Cesanese di Affile",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Cesanese di Olevano Romano",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Circeo",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Colli Albani",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Colli della Sabina",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Colli Etruschi Viterbesi",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Colli Lanuvini",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Cori",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Est! Est!! Est!!! di Montefiascone",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Frascati",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Genazzano",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Marino",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Montecompatri Colonna",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Nettuno",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Orvieto",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Roma",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Tarquinia",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Terracina",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Velletri",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Vignanello",
+"kind": "DOC"
+},
+{
+"path": [
+"Lazio"
+],
+"name": "Zagarolo",
+"kind": "DOC"
+},
+{
+"path": [
+"Liguria"
+],
+"name": "Cinque Terre",
+"kind": "DOC"
+},
+{
+"path": [
+"Liguria"
+],
+"name": "Cinque Terre Sciacchetrà",
+"kind": "DOC"
+},
+{
+"path": [
+"Liguria"
+],
+"name": "Colli di Luni",
+"kind": "DOC"
+},
+{
+"path": [
+"Liguria"
+],
+"name": "Colline di Levanto",
+"kind": "DOC"
+},
+{
+"path": [
+"Liguria"
+],
+"name": "Golfo del Tigullio",
+"kind": "DOC"
+},
+{
+"path": [
+"Liguria"
+],
+"name": "Riviera Ligure di Ponente",
+"kind": "DOC"
+},
+{
+"path": [
+"Liguria"
+],
+"name": "Rossese di Dolceacqua",
+"kind": "DOC"
+},
+{
+"path": [
+"Liguria"
+],
+"name": "Val Polcevera",
+"kind": "DOC"
+},
+{
+"path": [
+"Liguria"
+],
+"name": "Pornassio",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Botticino",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Bonarda dell'Otrepo Pavese",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Buttafuoco dell'Oltrepo Pavese",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Casteggio",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Capriano del Colle",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Cellatica",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Garda",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Garda Colli Mantovani",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Lambrusco Mantovano",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Lugana",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Oltrepò Pavese",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Riviera del Garda Bresciano",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "San Colombano al Lambro",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "San Martino della Battaglia",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Scanzo",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Terre di Franciacorta",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Valcalepio",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Valtellina Rosso",
+"kind": "DOC"
+},
+{
+"path": [
+"Lombardia"
+],
+"name": "Valtenesi",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Bianchello del Metauro",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Colli Maceratesi",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Colli Pesaresi",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Esino",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Falerio dei Colli Ascolani",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Lacrima di Morro d'Alba",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Offida",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Pergola",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Rosso Conero",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Rosso Piceno",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Verdicchio dei Castelli di Jesi",
+"kind": "DOC"
+},
+{
+"path": [
+"Marche"
+],
+"name": "Verdicchio di Matelica",
+"kind": "DOC"
+},
+{
+"path": [
+"Molise"
+],
+"name": "Biferno",
+"kind": "DOC"
+},
+{
+"path": [
+"Molise"
+],
+"name": "Molise",
+"kind": "DOC"
+},
+{
+"path": [
+"Molise"
+],
+"name": "Pentro di Isernia",
+"kind": "DOC"
+},
+{
+"path": [
+"Molise"
+],
+"name": "Tintilia",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Albugnano",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Alta Langa",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Barbera d'Alba",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Barbera d'Asti",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Barbera del Monferrato",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Boca",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Bramaterra",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Calosso",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Canavese",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Carema",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Cisterna d'Asti",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Colli Tortonesi",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Collina Torinese",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Colline Novaresi",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Colline Saluzzesi",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Cortese dell'Alto Monferrato",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Coste della Sesia",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Dolcetto d'Acqui",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Dolcetto d'Alba",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Dolcetto d'Asti",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Dolcetto delle Langhe Monregalesi",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Dolcetto di Diano d'Alba",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Dolcetto di Dogliani",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Dolcetto di Ovada",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Erbaluce di Caluso",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Fara",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Freisa d'Asti",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Freisa di Chieri",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Gabiano",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Grignolino d'Asti",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Grignolino del Monferrato Casalese",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Langhe",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Lessona",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Loazzolo",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Malvasia di Casorzo d'Asti",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Malvasia di Castelnuovo Don Bosco",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Monferrato",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Nebbiolo d'Alba",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Piemonte",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Pinerolese",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Rubino di Cantavenna",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Ruché di Castagnole Monferrato",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Sizzano",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Valsusa",
+"kind": "DOC"
+},
+{
+"path": [
+"Piemonte"
+],
+"name": "Verduno Pelaverga",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Aleatico di Puglia",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Alezio",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Barletta",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Brindisi",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Cacc'e mmitte di Lucera",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Castel del Monte",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Colline Joniche Taratine",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Copertino",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Galatina",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Gioia del Colle",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Gravina",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Leverano",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Lizzano",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Locorotondo",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Martina",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Matino",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Moscato di Trani",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Nardò",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Negroamaro di Terra d'Otranto",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Orta Nova",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Ostuni",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Primitivo di Manduria",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Rosso Barletta",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Rosso Canosa",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Rosso di Cerignola",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Salice Salentino",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "San Severo",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Squinzano",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Tavoliere delle Puglie",
+"kind": "DOC"
+},
+{
+"path": [
+"Puglia"
+],
+"name": "Terra d'Otranto",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Alghero",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Arborea",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Campidano di Terralba",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Cannonau di Sardegna",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Carignano del Sulcis",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Girò di Cagliari",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Malvasia di Bosa",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Malvasia di Cagliari",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Mandrolisai",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Monica di Cagliari",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Monica di Sardegna",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Moscato di Cagliari",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Moscato di Sardegna",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Moscato di Sorso Sennori",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Nasco di Cagliari",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Nuragus di Cagliari",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Sardegna Semidano",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Vermentino di Sardegna",
+"kind": "DOC"
+},
+{
+"path": [
+"Sardegna"
+],
+"name": "Vernaccia di Oristano",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Alcamo",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Contea di Sclafani",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Contessa Entellina",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Delia Nivolelli",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Eloro",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Erice",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Etna",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Faro",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Malvasia delle Lipari",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Mamertino di Milazzo",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Marsala",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Menfi",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Monreale",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Noto",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Moscato di Pantelleria",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Moscato di Siracusa",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Riesi",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Salaparuta",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Sambuca di Sicilia",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Santa Margherita di Belice",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Sciacca",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Siracusa",
+"kind": "DOC"
+},
+{
+"path": [
+"Sicilia"
+],
+"name": "Vittoria",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Ansonica Costa dell'Argentario",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Barco Reale di Carmignano",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Bianco della Valdinievole",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Bianco dell'Empolese",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Bianco di Pitigliano",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Bianco Pisano di San Torpè",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Bianco Vergine della Valdichiana",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Bolgheri",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Candia dei Colli Apuani",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Capalbio",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Colli dell'Etruria Centrale",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Colli di Luni",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Colline Lucchesi",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Cortona",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Elba",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Maremma Toscana",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Montecarlo",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Montecucco",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Monteregio di Massa Marittima",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Montescudaio",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Moscadello di Montalcino",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Orcia",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Parrina",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Pomino",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Rosso di Montalcino",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Rosso di Montepulciano",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "San Gimignano",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Sant'Antimo",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Sovana",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Val d'Arbia",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Vin Santo del Chianti",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Vin Santo del Chianti Classico",
+"kind": "DOC"
+},
+{
+"path": [
+"Toscana"
+],
+"name": "Vin Santo di Montepulciano",
+"kind": "DOC"
+},
+{
+"path": [
+"South Tyrol"
+],
+"name": "Südtirol",
+"kind": "DOC"
+},
+{
+"path": [
+"South Tyrol"
+],
+"name": "Kalterersee",
+"kind": "DOC"
+},
+{
+"path": [
+"South Tyrol"
+],
+"name": "Valdadige",
+"kind": "DOC"
+},
+{
+"path": [
+"South Tyrol"
+],
+"name": "Santa Maddalena",
+"kind": "DOC"
+},
+{
+"path": [
+"Trentino"
+],
+"name": "Casteller",
+"kind": "DOC"
+},
+{
+"path": [
+"Trentino"
+],
+"name": "delle Venezie",
+"kind": "DOC"
+},
+{
+"path": [
+"Trentino"
+],
+"name": "Teroldego Rotaliano",
+"kind": "DOC"
+},
+{
+"path": [
+"Trentino"
+],
+"name": "Trentino",
+"kind": "DOC"
+},
+{
+"path": [
+"Trentino"
+],
+"name": "Trento",
+"kind": "DOC"
+},
+{
+"path": [
+"Trentino"
+],
+"name": "Lago di Caldaro",
+"kind": "DOC"
+},
+{
+"path": [
+"Trentino"
+],
+"name": "Valdadige",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Amelia",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Assisi",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Colli Altotiberini",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Colli Amerini",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Colli del Trasimeno",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Colli Martani",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Colli Perugini",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Lago di Corbara",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Montefalco",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Orvieto",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Rosso Orvietano",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Spoleto",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Todi",
+"kind": "DOC"
+},
+{
+"path": [
+"Umbria"
+],
+"name": "Torgiano",
+"kind": "DOC"
+},
+{
+"path": [
+"Valle d'Aosta/Vallée d'Aoste"
+],
+"name": "Valle d'Aosta",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Arcole",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Bagnoli di Sopra",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Bardolino",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Bianco di Custoza",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Breganze",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Colli Berici",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Colli di Conegliano",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Colli Euganei",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Corti Benedettine del Padovano",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "delle Venezie",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Fiol Prosecco",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Gambellara",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Garda",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Lison Pramaggiore",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Lugana",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Merlara",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Montello e Colli Asolani",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Monti Lessini",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Piave",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Prosecco",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Riviera del Brenta",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "San Martino della Battaglia",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Soave",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Valdadige",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Valpolicella",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Valpolicella Ripasso",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Venezia",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Vicenza",
+"kind": "DOC"
+},
+{
+"path": [
+"Veneto"
+],
+"name": "Vin Santo di Gambellara",
+"kind": "DOC"
+}
+]
+}

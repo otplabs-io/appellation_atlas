@@ -1,0 +1,1161 @@
+{
+"source": {
+"title": "Instituto Nacional de Vitivinicultura, Indicaciones geográficas y denominaciones de origen reconocidas y protegidas de la República Argentina (updated September 2025)",
+"url": "https://www.argentina.gob.ar/inv/proteccion-del-origen-ig-y-doc",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [
+"San Juan"
+],
+"name": "25 de Mayo",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "9 de Julio",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Mendoza",
+"Luján de Cuyo"
+],
+"name": "Agrelo",
+"also": [],
+"kind": "IG",
+"location": "Luján de Cuyo, Mendoza"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Albardón",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Mendoza",
+"Luján de Cuyo"
+],
+"name": "Alto Agrelo",
+"also": [],
+"kind": "IG",
+"location": "Luján de Cuyo, Mendoza"
+},
+{
+"path": [
+"Río Negro"
+],
+"name": "Alto Valle de Río Negro",
+"also": [],
+"kind": "IG",
+"location": "Río Negro"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Angaco",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Neuquén"
+],
+"name": "Añelo",
+"also": [],
+"kind": "IG",
+"location": "Neuquén"
+},
+{
+"path": [
+"La Rioja"
+],
+"name": "Arauco",
+"also": [],
+"kind": "IG",
+"location": "La Rioja"
+},
+{
+"path": [
+"Río Negro"
+],
+"name": "Avellaneda",
+"also": [],
+"kind": "IG",
+"location": "Río Negro"
+},
+{
+"path": [
+"Buenos Aires"
+],
+"name": "Balcarce",
+"also": [],
+"kind": "IG",
+"location": "Buenos Aires"
+},
+{
+"path": [
+"Mendoza",
+"Maipú"
+],
+"name": "Barrancas",
+"also": [],
+"kind": "IG",
+"location": "Maipú, Mendoza"
+},
+{
+"path": [
+"San Juan",
+"Calingasta"
+],
+"name": "Barreal",
+"also": [],
+"kind": "IG",
+"location": "Calingasta, San Juan"
+},
+{
+"path": [
+"Catamarca"
+],
+"name": "Belén",
+"also": [],
+"kind": "IG",
+"location": "Catamarca"
+},
+{
+"path": [
+"Salta"
+],
+"name": "Cachi",
+"also": [],
+"kind": "IG",
+"location": "Salta"
+},
+{
+"path": [
+"Salta"
+],
+"name": "Cafayate",
+"also": [
+"Valle de Cafayate"
+],
+"kind": "IG",
+"location": "Salta"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Calingasta",
+"also": [
+"Valle de Calingasta"
+],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Mendoza",
+"Las Heras"
+],
+"name": "Canota",
+"also": [],
+"kind": "IG",
+"location": "Las Heras, Mendoza"
+},
+{
+"path": [
+"La Rioja"
+],
+"name": "Castro Barros",
+"also": [],
+"kind": "IG",
+"location": "La Rioja"
+},
+{
+"path": [
+"Catamarca"
+],
+"name": "Catamarca",
+"also": [],
+"kind": "IG",
+"location": "Catamarca"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Caucete",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Buenos Aires"
+],
+"name": "Chapadmalal",
+"also": [],
+"kind": "IG",
+"location": "Buenos Aires"
+},
+{
+"path": [
+"La Rioja"
+],
+"name": "Chilecito",
+"also": [],
+"kind": "IG",
+"location": "La Rioja"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Chimbas",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Córdoba"
+],
+"name": "Colón",
+"also": [],
+"kind": "IG",
+"location": "Córdoba"
+},
+{
+"path": [
+"Córdoba",
+"Colón"
+],
+"name": "Colonia Caroya",
+"also": [],
+"kind": "IG",
+"location": "Colón, Córdoba"
+},
+{
+"path": [
+"Neuquén"
+],
+"name": "Confluencia",
+"also": [],
+"kind": "IG",
+"location": "Neuquén"
+},
+{
+"path": [
+"Córdoba"
+],
+"name": "Córdoba Argentina",
+"also": [],
+"kind": "IG",
+"location": "Córdoba"
+},
+{
+"path": [
+"Mendoza",
+"Valle de Uco",
+"San Carlos"
+],
+"name": "Cordón el Cepillo",
+"also": [],
+"kind": "IG",
+"location": "San Carlos, Mendoza"
+},
+{
+"path": [
+"Córdoba"
+],
+"name": "Cruz del Eje",
+"also": [],
+"kind": "IG",
+"location": "Córdoba"
+},
+{
+"path": [],
+"name": "Cuyo",
+"also": [],
+"kind": "IG",
+"location": "Región que incluye las provincias vitivinícolas de Mendoza, San Juan y San Luís"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Distrito Medrano",
+"also": [],
+"kind": "IG",
+"location": "Ubicada en los departamentos de Rivadavia y Junín, Mendoza"
+},
+{
+"path": [
+"Chubut"
+],
+"name": "El Hoyo",
+"also": [],
+"kind": "IG",
+"location": "Cushamen, Chubut"
+},
+{
+"path": [
+"Mendoza",
+"Maipú"
+],
+"name": "El Paraíso",
+"also": [],
+"kind": "IG",
+"location": "Maipú, Mendoza"
+},
+{
+"path": [
+"Mendoza",
+"Valle de Uco",
+"Tupungato"
+],
+"name": "El Peral",
+"also": [],
+"kind": "IG",
+"location": "Tupungato, Mendoza"
+},
+{
+"path": [
+"La Rioja"
+],
+"name": "Famatina",
+"also": [],
+"kind": "IG",
+"location": "La Rioja"
+},
+{
+"path": [
+"La Rioja"
+],
+"name": "Felipe Varela",
+"also": [],
+"kind": "IG",
+"location": "La Rioja"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "General Alvear",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"Río Negro"
+],
+"name": "General Conesa",
+"also": [],
+"kind": "IG",
+"location": "Río Negro"
+},
+{
+"path": [
+"La Rioja"
+],
+"name": "General Lamadrid",
+"also": [],
+"kind": "IG",
+"location": "La Rioja"
+},
+{
+"path": [
+"Río Negro"
+],
+"name": "General Roca",
+"also": [],
+"kind": "IG",
+"location": "Río Negro"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Godoy Cruz",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Guaymallén",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"San Juan",
+"Calingasta"
+],
+"name": "Hilario",
+"also": [
+"Paraje Hilario – Valle de Calingasta"
+],
+"kind": "IG",
+"location": "Calingasta, San Juan"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Iglesia",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Jáchal",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Jujuy"
+],
+"name": "Jujuy",
+"also": [],
+"kind": "IG",
+"location": "Jujuy"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Junín",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"San Juan",
+"Zonda"
+],
+"name": "La Ciénaga",
+"also": [],
+"kind": "IG",
+"location": "Zonda, San Juan"
+},
+{
+"path": [
+"Mendoza",
+"Valle de Uco",
+"San Carlos"
+],
+"name": "La Consulta",
+"also": [],
+"kind": "IG",
+"location": "San Carlos, Mendoza"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "La Paz",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"La Rioja"
+],
+"name": "La Rioja Argentina",
+"also": [],
+"kind": "IG",
+"location": "La Rioja"
+},
+{
+"path": [
+"Mendoza",
+"Luján de Cuyo"
+],
+"name": "Las Compuertas",
+"also": [],
+"kind": "IG",
+"location": "Luján de Cuyo, Mendoza"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Las Heras",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Lavalle",
+"also": [
+"Desierto de Lavalle"
+],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"Mendoza",
+"Valle de Uco",
+"Tunuyán"
+],
+"name": "Los Chacayes",
+"also": [],
+"kind": "IG",
+"location": "Tunuyán, Mendoza"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Luján de Cuyo",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Luján de Cuyo",
+"also": [],
+"kind": "DOC",
+"location": "Mendoza"
+},
+{
+"path": [
+"Mendoza",
+"Maipú"
+],
+"name": "Lunlunta",
+"also": [],
+"kind": "IG",
+"location": "Maipú, Mendoza"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Maipú",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Mendoza",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"Salta"
+],
+"name": "Molinos",
+"also": [],
+"kind": "IG",
+"location": "Salta"
+},
+{
+"path": [
+"Neuquén"
+],
+"name": "Neuquén",
+"also": [],
+"kind": "IG",
+"location": "Neuquén"
+},
+{
+"path": [
+"Mendoza",
+"Valle de Uco",
+"San Carlos"
+],
+"name": "Pampa el Cepillo",
+"also": [],
+"kind": "IG",
+"location": "San Carlos, Mendoza"
+},
+{
+"path": [
+"Mendoza",
+"Valle de Uco",
+"San Carlos"
+],
+"name": "Paraje Altamira",
+"also": [],
+"kind": "IG",
+"location": "San Carlos, Mendoza"
+},
+{
+"path": [
+"Río Negro"
+],
+"name": "Pichimahuida",
+"also": [],
+"kind": "IG",
+"location": "Río Negro"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Pocito",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Catamarca"
+],
+"name": "Pomán",
+"also": [],
+"kind": "IG",
+"location": "Catamarca"
+},
+{
+"path": [
+"San Juan",
+"Caucete"
+],
+"name": "Pozo de los Algarrobos",
+"also": [],
+"kind": "IG",
+"location": "Caucete, San Juan"
+},
+{
+"path": [
+"Jujuy"
+],
+"name": "Quebrada de Humahuaca",
+"also": [],
+"kind": "IG",
+"location": "Jujuy"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Rawson",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Mendoza",
+"Rivadavia"
+],
+"name": "Reducción",
+"also": [],
+"kind": "IG",
+"location": "Rivadavia, Mendoza"
+},
+{
+"path": [
+"Río Negro"
+],
+"name": "Río Negro",
+"also": [],
+"kind": "IG",
+"location": "Río Negro"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Rivadavia",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Rivadavia",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Mendoza",
+"Maipú"
+],
+"name": "Russel",
+"also": [],
+"kind": "IG",
+"location": "Maipú, Mendoza"
+},
+{
+"path": [
+"Salta"
+],
+"name": "Salta",
+"also": [],
+"kind": "IG",
+"location": "Salta"
+},
+{
+"path": [
+"La Rioja"
+],
+"name": "San Blas de los Sauces",
+"also": [],
+"kind": "IG",
+"location": "La Rioja"
+},
+{
+"path": [
+"Mendoza",
+"Valle de Uco"
+],
+"name": "San Carlos",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"Salta"
+],
+"name": "San Carlos",
+"also": [],
+"kind": "IG",
+"location": "Salta"
+},
+{
+"path": [
+"Córdoba"
+],
+"name": "San Javier",
+"also": [],
+"kind": "IG",
+"location": "Córdoba"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "San Juan",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"San Luis"
+],
+"name": "San Luis",
+"also": [],
+"kind": "IG",
+"location": "San Luis"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "San Martín",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "San Martín",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "San Rafael",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "San Rafael",
+"also": [],
+"kind": "DOC",
+"location": "Mendoza"
+},
+{
+"path": [
+"Mendoza",
+"Valle de Uco",
+"Tunuyán"
+],
+"name": "San Pablo",
+"also": [],
+"kind": "IG",
+"location": "Tunuyán, Mendoza"
+},
+{
+"path": [
+"La Rioja"
+],
+"name": "Sanagasta",
+"also": [],
+"kind": "IG",
+"location": "La Rioja"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Santa Lucía",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Catamarca"
+],
+"name": "Santa María",
+"also": [],
+"kind": "IG",
+"location": "Catamarca"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Santa Rosa",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Sarmiento",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"Chubut"
+],
+"name": "Sarmiento",
+"also": [],
+"kind": "IG",
+"location": "Chubut"
+},
+{
+"path": [
+"San Juan",
+"Calingasta"
+],
+"name": "Sorocayense",
+"also": [],
+"kind": "IG",
+"location": "Calingasta, San Juan"
+},
+{
+"path": [
+"Tucumán"
+],
+"name": "Tafí",
+"also": [],
+"kind": "IG",
+"location": "Tucumán"
+},
+{
+"path": [
+"San Juan",
+"Calingasta"
+],
+"name": "Tamberías",
+"also": [
+"Paraje Tamberías – Valle de Calingasta"
+],
+"kind": "IG",
+"location": "Calingasta, San Juan"
+},
+{
+"path": [
+"Buenos Aires"
+],
+"name": "Tandil",
+"also": [],
+"kind": "IG",
+"location": "Buenos Aires"
+},
+{
+"path": [
+"Catamarca"
+],
+"name": "Tinogasta",
+"also": [],
+"kind": "IG",
+"location": "Catamarca"
+},
+{
+"path": [
+"Chubut"
+],
+"name": "Trevelin",
+"also": [],
+"kind": "IG",
+"location": "Futaleufú, Chubut"
+},
+{
+"path": [
+"Tucumán"
+],
+"name": "Tucumán",
+"also": [],
+"kind": "IG",
+"location": "Tucumán"
+},
+{
+"path": [
+"Mendoza",
+"Valle de Uco"
+],
+"name": "Tunuyán",
+"also": [],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"Mendoza",
+"Valle de Uco"
+],
+"name": "Tupungato",
+"also": [
+"Valle de Tupungato"
+],
+"kind": "IG",
+"location": "Mendoza"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Ullum",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"La Rioja",
+"Famatina"
+],
+"name": "Valle de Chañarmuyo",
+"also": [],
+"kind": "IG",
+"location": "Famatina, La Rioja"
+},
+{
+"path": [
+"Mendoza"
+],
+"name": "Valle de Uco",
+"also": [],
+"kind": "IG",
+"location": "Zona interjurisdiccional integrada por los Departamentos de San Carlos, Tunuyán y Tupungato de la Provincia de Mendoza"
+},
+{
+"path": [
+"San Juan",
+"Sarmiento"
+],
+"name": "Valle del Pedernal",
+"also": [],
+"kind": "IG",
+"location": "Sarmiento, San Juan"
+},
+{
+"path": [
+"Salta",
+"San Carlos"
+],
+"name": "Valle de Pucará",
+"also": [],
+"kind": "IG",
+"location": "San Carlos, Salta"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Valle del Tulum",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Valle Fértil",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [
+"San Juan",
+"Zonda"
+],
+"name": "Valle de Zonda",
+"also": [],
+"kind": "IG",
+"location": "Zonda, San Juan"
+},
+{
+"path": [],
+"name": "Calchaquí",
+"also": [],
+"kind": "IG",
+"location": "Valles que incluyen localidades de diferentes provincias y que constituyen una misma área vitícola"
+},
+{
+"path": [],
+"name": "Valles del Famatina",
+"also": [],
+"kind": "IG",
+"location": "Valles que incluyen diferentes localidades de la provincia de La Rioja que constituyen una misma área vitícola"
+},
+{
+"path": [
+"Jujuy"
+],
+"name": "Valles Templados",
+"also": [],
+"kind": "IG",
+"location": "Jujuy"
+},
+{
+"path": [
+"Entre Ríos"
+],
+"name": "Victoria, Entre Ríos",
+"also": [],
+"kind": "IG",
+"location": "Victoria, Entre Ríos"
+},
+{
+"path": [
+"La Rioja"
+],
+"name": "Vinchina",
+"also": [],
+"kind": "IG",
+"location": "La Rioja"
+},
+{
+"path": [
+"Buenos Aires"
+],
+"name": "Villa Ventana",
+"also": [],
+"kind": "IG",
+"location": "Buenos Aires"
+},
+{
+"path": [
+"Mendoza",
+"Valle de Uco",
+"Tunuyán"
+],
+"name": "Vista Flores",
+"also": [],
+"kind": "IG",
+"location": "Tunuyán, Mendoza"
+},
+{
+"path": [
+"Mendoza",
+"Luján de Cuyo"
+],
+"name": "Vistalba",
+"also": [],
+"kind": "IG",
+"location": "Luján de Cuyo, Mendoza"
+},
+{
+"path": [
+"San Juan"
+],
+"name": "Zonda",
+"also": [],
+"kind": "IG",
+"location": "San Juan"
+},
+{
+"path": [],
+"name": "Buenos Aires",
+"kind": "province"
+},
+{
+"path": [],
+"name": "Chubut",
+"kind": "province"
+},
+{
+"path": [],
+"name": "Córdoba",
+"kind": "province"
+},
+{
+"path": [],
+"name": "Entre Ríos",
+"kind": "province"
+},
+{
+"path": [],
+"name": "La Rioja",
+"kind": "province"
+}
+]
+}

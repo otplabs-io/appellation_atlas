@@ -1,0 +1,442 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Huşi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007464",
+"file": "PDO-RO-A1583"
+},
+{
+"path": [],
+"name": "Bohotin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004840",
+"file": "PDO-RO-A0138"
+},
+{
+"path": [],
+"name": "Segarcea",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006879",
+"file": "PDO-RO-A1214"
+},
+{
+"path": [],
+"name": "Drăgăşani",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004726",
+"file": "PDO-RO-A0286"
+},
+{
+"path": [],
+"name": "Babadag",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007116",
+"file": "PDO-RO-A1424"
+},
+{
+"path": [],
+"name": "Terasele Dunării",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006704",
+"file": "PGI-RO-A1077"
+},
+{
+"path": [],
+"name": "Târnave",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004883",
+"file": "PDO-RO-A0365"
+},
+{
+"path": [],
+"name": "Oltina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006543",
+"file": "PDO-RO-A0611"
+},
+{
+"path": [],
+"name": "Colinele Dobrogei",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005981",
+"file": "PGI-RO-A0612"
+},
+{
+"path": [],
+"name": "Murfatlar",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007741",
+"file": "PDO-RO-A0030"
+},
+{
+"path": [],
+"name": "Cotnari",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004730",
+"file": "PDO-RO-A0135"
+},
+{
+"path": [],
+"name": "Jidvei",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000018613",
+"file": "PDO-RO-02854"
+},
+{
+"path": [],
+"name": "Iaşi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004848",
+"file": "PDO-RO-A0139"
+},
+{
+"path": [],
+"name": "Dealurile Munteniei",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006827",
+"file": "PGI-RO-A1085"
+},
+{
+"path": [],
+"name": "Crişana",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002971",
+"file": "PDO-RO-A0105"
+},
+{
+"path": [],
+"name": "Lechinţa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006150",
+"file": "PDO-RO-A0369"
+},
+{
+"path": [],
+"name": "Ştefăneşti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007124",
+"file": "PDO-RO-A1309"
+},
+{
+"path": [],
+"name": "Dealu Mare",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006721",
+"file": "PDO-RO-A1079"
+},
+{
+"path": [],
+"name": "Coteşti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007208",
+"file": "PDO-RO-A1577"
+},
+{
+"path": [],
+"name": "Dealurile Olteniei",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006826",
+"file": "PGI-RO-A1095"
+},
+{
+"path": [],
+"name": "Sebeş-Apold",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006154",
+"file": "PDO-RO-A0371"
+},
+{
+"path": [],
+"name": "Odobeşti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007181",
+"file": "PDO-RO-A1586"
+},
+{
+"path": [],
+"name": "Panciu",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007501",
+"file": "PDO-RO-A1584"
+},
+{
+"path": [],
+"name": "Miniş",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004987",
+"file": "PDO-RO-A0029"
+},
+{
+"path": [],
+"name": "Recaş",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004984",
+"file": "PDO-RO-A0027"
+},
+{
+"path": [],
+"name": "Viile Timişului",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003027",
+"file": "PGI-RO-A0108"
+},
+{
+"path": [],
+"name": "Adamclisi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007721",
+"file": "PDO-RO-N0037"
+},
+{
+"path": [],
+"name": "Dealurile Sătmarului",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003024",
+"file": "PGI-RO-A0107"
+},
+{
+"path": [],
+"name": "Dealurile Vrancei",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007521",
+"file": "PGI-RO-A1582"
+},
+{
+"path": [],
+"name": "Dealurile Moldovei",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007565",
+"file": "PGI-RO-A1591"
+},
+{
+"path": [],
+"name": "Aiud",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006142",
+"file": "PDO-RO-A0366"
+},
+{
+"path": [],
+"name": "Însurăţei",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004891",
+"file": "PDO-RO-N1588"
+},
+{
+"path": [],
+"name": "Dealurile Crişanei",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003022",
+"file": "PGI-RO-A0106"
+},
+{
+"path": [],
+"name": "Dealu Bujorului",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003221",
+"file": "PDO-RO-A0132"
+},
+{
+"path": [],
+"name": "Dealu Mare",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006663",
+"file": "PDO-RO-A1062"
+},
+{
+"path": [],
+"name": "Murfatlar",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006549",
+"file": "PDO-RO-A0624"
+},
+{
+"path": [],
+"name": "Banu Mărăcine",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007341",
+"file": "PDO-RO-A1558"
+},
+{
+"path": [],
+"name": "Mehedinţi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006681",
+"file": "PDO-RO-A1072"
+},
+{
+"path": [],
+"name": "Banat",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004985",
+"file": "PDO-RO-A0028"
+},
+{
+"path": [],
+"name": "Panciu",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007110",
+"file": "PDO-RO-A1193"
+},
+{
+"path": [],
+"name": "Sarica Niculiţel",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007364",
+"file": "PDO-RO-A1575"
+},
+{
+"path": [],
+"name": "Dealurile Zarandului",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005487",
+"file": "PGI-RO-A0031"
+},
+{
+"path": [],
+"name": "Pietroasa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003082",
+"file": "PDO-RO-A0134"
+},
+{
+"path": [],
+"name": "Nicoreşti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003285",
+"file": "PDO-RO-A0133"
+},
+{
+"path": [],
+"name": "Dealurile Transilvaniei",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004929",
+"file": "PGI-RO-A0288"
+},
+{
+"path": [],
+"name": "Iana",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004844",
+"file": "PDO-RO-A0136"
+},
+{
+"path": [],
+"name": "Sâmbureşti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004363",
+"file": "PDO-RO-A0282"
+},
+{
+"path": [],
+"name": "Viile Caraşului",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005488",
+"file": "PGI-RO-A0032"
+},
+{
+"path": [],
+"name": "Dealu Mare",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006687",
+"file": "PDO-RO-A1067"
+},
+{
+"path": [],
+"name": "Dealurile Munteniei",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007141",
+"file": "PGI-RO-A1427"
+},
+{
+"path": [],
+"name": "Dealu Mare",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007142",
+"file": "PDO-RO-A1336"
+},
+{
+"path": [],
+"name": "Panciu",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006880",
+"file": "PDO-RO-A1093"
+},
+{
+"path": [],
+"name": "Târnave",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006561",
+"file": "PDO-RO-A1064"
+},
+{
+"path": [],
+"name": "Alba Iulia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006147",
+"file": "PDO-RO-A0368"
+}
+]
+}

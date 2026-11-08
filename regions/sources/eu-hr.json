@@ -1,0 +1,156 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Muškat momjanski",
+"also": [
+"Moscato di Momiano"
+],
+"kind": "PDO",
+"id": "EUGI00000014449",
+"file": "PDO-HR-02109"
+},
+{
+"path": [],
+"name": "Ponikve",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000014423",
+"file": "PDO-HR-02087"
+},
+{
+"path": [],
+"name": "Zapadna kontinentalna Hrvatska",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010738",
+"file": "PDO-HR-A1663"
+},
+{
+"path": [],
+"name": "Zagorje – Međimurje",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010737",
+"file": "PDO-HR-A1662"
+},
+{
+"path": [],
+"name": "Srednja i Južna Dalmacija",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010736",
+"file": "PDO-HR-A1661"
+},
+{
+"path": [],
+"name": "Slavonija",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010735",
+"file": "PDO-HR-A1660"
+},
+{
+"path": [],
+"name": "Sjeverna Dalmacija",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010734",
+"file": "PDO-HR-A1659"
+},
+{
+"path": [],
+"name": "Primorska Hrvatska",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010733",
+"file": "PDO-HR-A1658"
+},
+{
+"path": [],
+"name": "Prigorje-Bilogora",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010732",
+"file": "PDO-HR-A1657"
+},
+{
+"path": [],
+"name": "Pokuplje",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010731",
+"file": "PDO-HR-A1656"
+},
+{
+"path": [],
+"name": "Plešivica",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010730",
+"file": "PDO-HR-A1654"
+},
+{
+"path": [],
+"name": "Moslavina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010729",
+"file": "PDO-HR-A1653"
+},
+{
+"path": [],
+"name": "Istočna kontinentalna Hrvatska",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010728",
+"file": "PDO-HR-A1651"
+},
+{
+"path": [],
+"name": "Hrvatsko primorje",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010727",
+"file": "PDO-HR-A1650"
+},
+{
+"path": [],
+"name": "Hrvatsko Podunavlje",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010726",
+"file": "PDO-HR-A1655"
+},
+{
+"path": [],
+"name": "Hrvatska Istra",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010725",
+"file": "PDO-HR-A1652"
+},
+{
+"path": [],
+"name": "Dingač",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010724",
+"file": "PDO-HR-A1649"
+},
+{
+"path": [],
+"name": "Dalmatinska zagora",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010723",
+"file": "PDO-HR-A1648"
+}
+]
+}

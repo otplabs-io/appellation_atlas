@@ -1,0 +1,296 @@
+{
+ "subject": "place",
+ "id": "hungary/tokaj",
+ "read": "2026-11-05",
+ "sources": {
+  "wiki-hu": {
+   "name": "Wikipedia (Hungarian), Tokaj-hegyaljai borvidék",
+   "kind": "reference",
+   "url": "https://hu.wikipedia.org/wiki/Tokaj-hegyaljai_borvidék",
+   "note": "Read via page summary. Lists the 27 settlements. The page gives three different area figures."
+  },
+  "wiki-en": {
+   "name": "Wikipedia, Tokaj wine region (English)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Tokaj_wine_region",
+   "note": "Read via page summary."
+  },
+  "wiki-tokaji": {
+   "name": "Wikipedia, Tokaji (English)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Tokaji",
+   "note": "Read via page summary. Source for the style definitions."
+  },
+  "unesco-search": {
+   "name": "UNESCO World Heritage Centre, Tokaj Wine Region Historic Cultural Landscape (ref. 1063), via search summary",
+   "kind": "official",
+   "url": "https://whc.unesco.org/en/list/1063",
+   "note": "The page returned HTTP 403 when opened. Seen only as a search-result summary."
+  },
+  "gov-uk-szamorodni": {
+   "name": "UK government register of protected names, Szamorodni",
+   "kind": "official",
+   "url": "https://www.gov.uk/protected-food-drink-names/szamorodni",
+   "note": "Register text may predate the 2026 EU amendment."
+  },
+  "pdo-amend-search": {
+   "name": "Lovguiden and The Drinks Business on the 2026 amendment to the Tokaj PDO specification (via search summary)",
+   "kind": "general",
+   "url": "https://lovguiden.dk/en/det-offentlige/eur-lex-eu-tidende/2026-07-06-eu-godkender-aendring-af-produktspecifikation-for-vinbetegnelsen-tokaj-tokaji",
+   "note": "Seen only as search summaries. The Drinks Business page returned HTTP 403. The EUR-Lex text was not read."
+  },
+  "tokaj-turizmus": {
+   "name": "Tokaj tourism site, Wine grape varieties",
+   "kind": "reference",
+   "url": "https://www.tokaj-turizmus.hu/Wine-grape-varieties"
+  },
+  "worldoffinewine": {
+   "name": "The World of Fine Wine, Tokaj villages and vineyards: dry white wine",
+   "kind": "critic",
+   "url": "https://worldoffinewine.com/travel/tokaj-villages-vineyards-dry-white-wine"
+  },
+  "afottr": {
+   "name": "A Fool on the Road (Tokaj classification page)",
+   "kind": "general",
+   "url": "https://sites.google.com/site/afottr/home/tokaj-tokaji-classification"
+  },
+  "arvay": {
+   "name": "Arvay Winery listing at En Primeur Club (via search summary)",
+   "kind": "merchant",
+   "url": "https://www.enprimeurclub.com/wineries/arvay-winery-ratka-winery",
+   "note": "Only source found that defines nyirok. Promotional."
+  },
+  "skurnik-hatalos": {
+   "name": "Skurnik Wines, Kvaszinger Furmint Hatalos",
+   "kind": "importer",
+   "url": "https://www.skurnik.com/sku/furmint-hatalos-kvaszinger/",
+   "about": "2024 vintage page. Plot facts apply to the vineyard."
+  },
+  "hatalos-search": {
+   "name": "Search summaries on Kvaszinger and Hatalos hill (winetourism.com, Grand Tokaj Szegi Cellar pages, programturizmus.hu)",
+   "kind": "general",
+   "url": "https://www.programturizmus.hu/partner-szegi-pince.html",
+   "note": "Seen only as search-result summaries. The winetourism.com page returned HTTP 429."
+  },
+  "seth-search": {
+   "name": "Wine with Seth, Tokaj PDO (via search summary)",
+   "kind": "general",
+   "url": "https://www.winewithseth.com/winewiki/tokaj-pdo/",
+   "note": "Page returned HTTP 429. Seen only as a search summary."
+  }
+ },
+ "claims": [
+  {
+   "topic": "place",
+   "claim": "Tokaj is a protected wine region in northeast Hungary, in the Hegyalja foothills of the Zemplén hills. A small part lies in Slovakia and uses the same name.",
+   "source": ["wiki-en", "wiki-hu"],
+   "strength": "Medium",
+   "note": "Both are Wikipedia. The Slovak part (about 908 ha, 7 villages) is from the English page."
+  },
+  {
+   "topic": "place",
+   "claim": "The Hungarian wine region has 27 settlements: Tokaj, Abaújszántó, Bekecs, Bodrogkeresztúr, Bodrogkisfalud, Bodrogolaszi, Erdőbénye, Erdőhorváti, Golop, Hercegkút, Legyesbénye, Mád, Makkoshotyka, Mezőzombor, Monok, Olaszliszka, Rátka, Sárazsadány, Sárospatak, Sátoraljaújhely, Szegi, Szegilong, Szerencs, Tállya, Tarcal, Tolcsva and Vámosújfalu.",
+   "source": ["wiki-hu"],
+   "strength": "Medium",
+   "note": "One list, from Hungarian Wikipedia. English Wikipedia says '28 named villages', which looks like a different count. The UNESCO and PDO texts were not read directly. A search summary also gives 27 for the UNESCO area."
+  },
+  {
+   "topic": "place",
+   "claim": "Planted area is about 5,500 ha. Classified vineyard land is about 11,149 ha.",
+   "source": ["wiki-en"],
+   "strength": "Medium",
+   "note": "Hungarian Wikipedia gives conflicting totals (88,124, 5,478 and 6,202 ha), so use 'about 5,500 ha planted' only."
+  },
+  {
+   "topic": "history",
+   "claim": "Tokaj was made a closed wine region (zárt borvidék) in 1737 and is often called the first in the world. English Wikipedia says the royal decree was 1737 or 1757.",
+   "source": ["wiki-hu", "wiki-en"],
+   "strength": "Medium",
+   "quote": "A royal decree in 1737 or 1757",
+   "note": "1737 is the closed-region decree. The vineyard rankings are dated differently by different sources. See conflicts."
+  },
+  {
+   "topic": "history",
+   "claim": "The vineyards were ranked in classes: first growth, second growth and third growth, with a top 'great first growth' tier for a few sites such as Mézes Mály. Many named vineyards in the old ranking are no longer planted.",
+   "source": ["afottr", "worldoffinewine", "seth-search"],
+   "strength": "Weak",
+   "note": "Class names are consistent across sources. Dates are not. A Fool on the Road says about 150 of nearly 300 classified vineyards are no longer planted. The great first growth tier is only from search summaries."
+  },
+  {
+   "topic": "standing",
+   "claim": "UNESCO listed the Tokaj Wine Region Historic Cultural Landscape as a World Heritage Site in 2002, under criteria (iii) and (v). The core zone is 13,255 ha.",
+   "source": ["wiki-en", "unesco-search", "wiki-hu"],
+   "strength": "Strong",
+   "note": "Year agrees across three sources. UNESCO's own page could not be opened."
+  },
+  {
+   "topic": "soil",
+   "claim": "The bedrock is volcanic: rhyolite and andesite and their tuffs. Topsoils are clay or loess over this. Weathered volcanic material forms a dark loam-type soil called nyirok.",
+   "source": ["wiki-hu", "worldoffinewine", "arvay", "wiki-en"],
+   "strength": "Medium",
+   "quote": "clay or loess over volcanic subsoil",
+   "note": "Bedrock and loess are in several sources. The nyirok definition is from Hungarian Wikipedia (black 'nyiroktalaj') and one merchant page."
+  },
+  {
+   "topic": "soil",
+   "claim": "Loess is deepest around Tokaj and Tarcal, up to about 20 m on the far side of the Tarcal hill. Loess sites tend to give softer wines. Volcanic clay sites such as Mád give more mineral, higher-acid wines.",
+   "source": ["worldoffinewine", "wiki-hu"],
+   "strength": "Medium",
+   "note": "The wine-style link is a general claim from two sources."
+  },
+  {
+   "topic": "aspect",
+   "claim": "The best vineyards are on sunny, mostly south-facing slopes of the hills.",
+   "source": ["wiki-en"],
+   "strength": "Medium"
+  },
+  {
+   "topic": "place",
+   "claim": "The Bodrog and Tisza rivers meet beside the town of Tokaj. Their humidity plus autumn mist and sunny days favour botrytis (noble rot), which dries the grapes on the vine.",
+   "source": ["worldoffinewine", "wiki-en"],
+   "strength": "Strong",
+   "quote": "nearby Tisza and Bodrog rivers favor botrytis"
+  },
+  {
+   "topic": "grapes",
+   "claim": "Six varieties are permitted: Furmint, Hárslevelű, Sárgamuskotály (yellow muscat), Zéta, Kövérszőlő and Kabar.",
+   "source": ["wiki-en", "wiki-hu", "tokaj-turizmus"],
+   "strength": "Strong",
+   "note": "Tokaj-turizmus describes five of the six and does not list Kövérszőlő."
+  },
+  {
+   "topic": "grapes",
+   "claim": "Furmint is the main grape and keeps high acidity, suits noble rot and ages well. Hárslevelű (linden leaf) gives linden-honey notes and less acidity, and is planted lower on slopes. Sárgamuskotály is muscat-scented and rarely makes aszú.",
+   "source": ["tokaj-turizmus"],
+   "strength": "Medium"
+  },
+  {
+   "topic": "grapes",
+   "claim": "Kabar is Bouvier x Hárslevelű, and Zéta (formerly Oremus) is Bouvier x Furmint, bred in 1951.",
+   "source": ["tokaj-turizmus"],
+   "strength": "Medium"
+  },
+  {
+   "topic": "grapes",
+   "claim": "Furmint is roughly 60 to 70 percent of plantings, Hárslevelű roughly 25 to 30 percent and Sárgamuskotály roughly 5 percent.",
+   "source": ["estimate"],
+   "strength": "Weak",
+   "note": "Seen in search summaries with conflicting figures (70/25, 60/30, 60/30/5). Not opened. Do not print a precise share."
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Szamorodni is made from whole bunches that include a good share of botrytised grapes, so it is fuller and higher in alcohol than ordinary wine. Sweet (édes) versions can hold about 100 to 120 g/L residual sugar. With fewer botrytised berries it ends up dry (száraz), around 14% alcohol.",
+   "source": ["wiki-tokaji"],
+   "strength": "Medium",
+   "note": "Single source."
+  },
+  {
+   "topic": "winemaking",
+   "claim": "The UK register says Szamorodni must is at least 230.2 g/L sugar and the wine is aged at least two years, one of them in barrel. It must carry the Tokaj PDO.",
+   "source": ["gov-uk-szamorodni"],
+   "strength": "Medium",
+   "quote": "aged for at least two years (one year in barrel)",
+   "note": "This may be an older register text. A search summary of the 2026 EU amendment gives a shorter minimum (at least six months). See conflicts."
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Aszú is made from individually picked botrytised berries kneaded into a paste (aszú dough). Must or wine is poured over the paste and left 24 to 48 hours, then the wine ferments and ages slowly in cask.",
+   "source": ["wiki-tokaji"],
+   "strength": "Medium"
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Aszú used to be graded 3 to 6 puttonyos by how many baskets of aszú paste went into each cask. Since the 2013 harvest every aszú needs at least 120 g/L residual sugar. The 2026 amendment is reported to set 18 months minimum in cask.",
+   "source": ["wiki-tokaji", "pdo-amend-search"],
+   "strength": "Weak",
+   "note": "The 2013 and 2026 rules are from search summaries only. The EUR-Lex text was not read. The older rule of three years with two in oak is not confirmed here."
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Late harvest (késői szüretelésű) wines are reductive sweet wines made without the aszú process, ready 1 to 18 months after harvest, with 50 to 180 g/L residual sugar.",
+   "source": ["wiki-tokaji"],
+   "strength": "Weak",
+   "note": "One Wikipedia description. The PDO text was not read."
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Other traditional styles are eszencia (free-run juice from aszú berries, 500 to 700 g/L sugar, about 5 to 6% alcohol), fordítás (must poured over used aszú paste) and máslás (must poured over aszú lees). A search summary says the 2026 amendment drops aszúeszencia, dry fordítás and dry máslás.",
+   "source": ["wiki-tokaji", "pdo-amend-search"],
+   "strength": "Weak",
+   "note": "Amendment detail is from a search summary only."
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Dry Tokaj is made from the same grapes without the sweet-wine processes. The 2022 vintage rules for dry wine were not found.",
+   "source": ["reading"],
+   "strength": "Estimate",
+   "note": "No source found that states a dry-wine rule. Use only as 'dry Furmint is a modern style'. Do not quote a rule."
+  },
+  {
+   "topic": "name",
+   "claim": "Hegyalja means 'foothills' and was the region's old name. 'Tokaj' may come from an Old Turkic word for 'forest by a river' or from a Slavic word for a confluence. 'Tokaji' just means 'of Tokaj'.",
+   "source": ["wiki-en", "wiki-tokaji"],
+   "strength": "Weak",
+   "quote": "toqay",
+   "note": "Wikipedia gives these as possible origins, not settled."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "A dűlő is a named vineyard site, a defined plot of land with its own name and history. In Tokaj, historic dűlők were ranked in the old classification. A producer can print the name on the label for a single-site wine.",
+   "source": ["afottr", "worldoffinewine"],
+   "strength": "Medium",
+   "note": "Dűlő is Hungarian for a named vineyard parcel. Sources use it that way; none gives a dictionary definition. A producer quote says about 418 dűlők are recognised in Tokaj-Hegyalja (infostart.hu, via search summary, Weak)."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Hatalos is a hill on the edge of Szegi and Szegilong. Kvaszinger's winery address is in Szegilong. The Grand Tokaj Szegi Cellar is cut into the volcanic Hatalos hill, a system of roughly 400-year-old rock quarries over 5 km long.",
+   "source": ["hatalos-search"],
+   "strength": "Weak",
+   "note": "Hill location is from search summaries on the Grand Tokaj cellar. That Kvaszinger's Hatalos plot is on this same hill is an inference from the name and the winery address, not stated by a source. Another summary put the winery in Olaszliszka, which conflicts."
+  },
+  {
+   "topic": "soil",
+   "claim": "Kvaszinger's Hatalos soil is clay mixed with broken rock over volcanic bedrock.",
+   "source": ["skurnik-hatalos"],
+   "strength": "Medium",
+   "quote": "Clay mixed with broken rock, over volcanic bedrock.",
+   "note": "Importer text. Matches several merchant listings."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Kvaszinger's Hatalos Furmint plot is about 3 ha, planted in 1998, at about 300 m. Merchant listings describe the Hatalos vineyard as south or south-east facing.",
+   "source": ["skurnik-hatalos", "hatalos-search"],
+   "strength": "Medium",
+   "note": "Size, year and height from Skurnik. Aspect is from a search summary only."
+  },
+  {
+   "topic": "history",
+   "claim": "The Kvaszinger family bought its first vineyard, Hatalos, in 1929.",
+   "source": ["hatalos-search"],
+   "strength": "Weak",
+   "note": "Accounts differ: one says Ödön Kvaszinger bought four hectares in 1929, another tells a story of a lost bet."
+  }
+ ],
+ "conflicts": [
+  "Classification date: Hungarian Wikipedia gives 1737 for the closed region and cadastre. English Wikipedia says 1737 or 1757 for the decree, with classification starting 1730 and finishing by the censuses of 1765 and 1772. A Fool on the Road says 1701. One summary credits Rákóczi in about 1700. Safest wording: a 1737 royal decree closed the region, and its vineyards were ranked in classes.",
+  "Village count: Hungarian Wikipedia lists 27. English Wikipedia says 28 named villages including 7 Slovak ones, which does not match.",
+  "Area: Hungarian Wikipedia gives 88,124, 5,478 and 6,202 ha on one page. English Wikipedia says about 5,500 ha planted.",
+  "Szamorodni ageing: the UK register says at least two years with one in barrel. A summary of the 2026 amendment says at least six months. The final text was not read.",
+  "Winery village: most sources give Szegilong for Kvaszinger. One listing says Olaszliszka.",
+  "Grape shares: Furmint 60 to 70 percent, Hárslevelű 25 to 30 percent across summaries."
+ ],
+ "gaps": [
+  "The Hatalos dűlő's village and cadastral entry were not found. It is not in the sources that list the classified vineyards.",
+  "Hatalos soil is described by the producer's importers only. No geological survey or classification entry was found.",
+  "UNESCO, EUR-Lex and the Drinks Business pages could not be opened (HTTP 403 or 429).",
+  "No rule text was read for dry Tokaj, late harvest or édes Szamorodni sugar minimums.",
+  "Winewithseth, the most useful reference page, returned HTTP 429.",
+  "No source on the 'Szamorodni' word origin was verified."
+ ],
+ "sheet": {
+  "place": "Tokaj is a hilly wine region in northeast Hungary. Volcanic rock sits under clay and loess. Two rivers, the Bodrog and the Tisza, bring autumn mist that helps noble rot grow. UNESCO listed the landscape in 2002.",
+  "rules": "A 1737 royal decree closed the Tokaj region to outsiders. Szamorodni is made from whole bunches that include some noble rot. It can be sweet (édes) or dry (száraz). Aszú is the richer style, made from hand-picked rotted berries.",
+  "dulo": "A dűlő is a named vineyard site. The name on the label tells you the wine comes from that one plot.",
+  "hatalos": "Hatalos is a hill near Szegi and Szegilong. The Kvaszinger plot is about 3 hectares at 300 metres. The soil is clay with broken rock over volcanic bedrock."
+ }
+}

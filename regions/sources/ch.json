@@ -1,0 +1,40 @@
+{
+"source": {
+"title": "Wikipedia, Swiss wine (the six regions of Swiss Wine Promotion)",
+"url": "https://en.wikipedia.org/wiki/Swiss_wine",
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Valais",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Vaud",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Geneva",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Three Lakes",
+"kind": "region"
+},
+{
+"path": [],
+"name": "German-speaking Switzerland",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Ticino",
+"kind": "region"
+}
+]
+}

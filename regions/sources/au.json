@@ -1,0 +1,890 @@
+{
+"source": {
+"title": "Wine Australia, Register of protected GIs: geographical indications",
+"url": "https://www.wineaustralia.com/labelling/register-of-protected-gis-and-other-terms/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "South Eastern Australia",
+"kind": "zone",
+"note": "Covers all of NSW, Vic. and Tas. and parts of Qld and SA."
+},
+{
+"path": [],
+"name": "South Australia",
+"kind": "state"
+},
+{
+"path": [
+"South Australia"
+],
+"name": "Adelaide",
+"kind": "super zone",
+"note": "Includes Mount Lofty Ranges, Fleurieu and Barossa."
+},
+{
+"path": [
+"South Australia"
+],
+"name": "Barossa",
+"kind": "zone"
+},
+{
+"path": [
+"South Australia",
+"Barossa"
+],
+"name": "Barossa Valley",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Barossa"
+],
+"name": "Eden Valley",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Barossa",
+"Eden Valley"
+],
+"name": "High Eden",
+"kind": "subregion"
+},
+{
+"path": [
+"South Australia"
+],
+"name": "Far North",
+"kind": "zone"
+},
+{
+"path": [
+"South Australia",
+"Far North"
+],
+"name": "Southern Flinders Ranges",
+"kind": "region"
+},
+{
+"path": [
+"South Australia"
+],
+"name": "Fleurieu",
+"kind": "zone"
+},
+{
+"path": [
+"South Australia",
+"Fleurieu"
+],
+"name": "Currency Creek",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Fleurieu"
+],
+"name": "Kangaroo Island",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Fleurieu"
+],
+"name": "Langhorne Creek",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Fleurieu"
+],
+"name": "McLaren Vale",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Fleurieu"
+],
+"name": "Southern Fleurieu",
+"kind": "region"
+},
+{
+"path": [
+"South Australia"
+],
+"name": "Limestone Coast",
+"kind": "zone"
+},
+{
+"path": [
+"South Australia",
+"Limestone Coast"
+],
+"name": "Coonawarra",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Limestone Coast"
+],
+"name": "Mount Benson",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Limestone Coast"
+],
+"name": "Mount Gambier",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Limestone Coast"
+],
+"name": "Padthaway",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Limestone Coast"
+],
+"name": "Robe",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Limestone Coast"
+],
+"name": "Wrattonbully",
+"kind": "region"
+},
+{
+"path": [
+"South Australia"
+],
+"name": "Lower Murray",
+"kind": "zone"
+},
+{
+"path": [
+"South Australia",
+"Lower Murray"
+],
+"name": "Riverland",
+"kind": "region"
+},
+{
+"path": [
+"South Australia"
+],
+"name": "Mount Lofty Ranges",
+"kind": "zone"
+},
+{
+"path": [
+"South Australia",
+"Mount Lofty Ranges"
+],
+"name": "Adelaide Hills",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Mount Lofty Ranges",
+"Adelaide Hills"
+],
+"name": "Lenswood",
+"kind": "subregion"
+},
+{
+"path": [
+"South Australia",
+"Mount Lofty Ranges",
+"Adelaide Hills"
+],
+"name": "Piccadilly Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"South Australia",
+"Mount Lofty Ranges"
+],
+"name": "Adelaide Plains",
+"kind": "region"
+},
+{
+"path": [
+"South Australia",
+"Mount Lofty Ranges"
+],
+"name": "Clare Valley",
+"kind": "region"
+},
+{
+"path": [
+"South Australia"
+],
+"name": "The Peninsulas",
+"kind": "zone"
+},
+{
+"path": [],
+"name": "New South Wales",
+"kind": "state"
+},
+{
+"path": [
+"New South Wales"
+],
+"name": "Big Rivers",
+"kind": "zone"
+},
+{
+"path": [
+"New South Wales",
+"Big Rivers"
+],
+"name": "Murray Darling",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales",
+"Big Rivers"
+],
+"name": "Perricoota",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales",
+"Big Rivers"
+],
+"name": "Riverina",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales",
+"Big Rivers"
+],
+"name": "Swan Hill",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales"
+],
+"name": "Central Ranges",
+"kind": "zone"
+},
+{
+"path": [
+"New South Wales",
+"Central Ranges"
+],
+"name": "Cowra",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales",
+"Central Ranges"
+],
+"name": "Mudgee",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales",
+"Central Ranges"
+],
+"name": "Orange",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales"
+],
+"name": "Hunter Valley",
+"kind": "zone"
+},
+{
+"path": [
+"New South Wales",
+"Hunter Valley"
+],
+"name": "Hunter",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales",
+"Hunter Valley",
+"Hunter"
+],
+"name": "Broke Fordwich",
+"kind": "subregion"
+},
+{
+"path": [
+"New South Wales",
+"Hunter Valley",
+"Hunter"
+],
+"name": "Pokolbin",
+"kind": "subregion"
+},
+{
+"path": [
+"New South Wales",
+"Hunter Valley",
+"Hunter"
+],
+"name": "Upper Hunter Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"New South Wales"
+],
+"name": "Northern Rivers",
+"kind": "zone"
+},
+{
+"path": [
+"New South Wales",
+"Northern Rivers"
+],
+"name": "Hastings River",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales"
+],
+"name": "Northern Slopes",
+"kind": "zone"
+},
+{
+"path": [
+"New South Wales",
+"Northern Slopes"
+],
+"name": "New England Australia",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales"
+],
+"name": "South Coast",
+"kind": "zone"
+},
+{
+"path": [
+"New South Wales",
+"South Coast"
+],
+"name": "Shoalhaven Coast",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales",
+"South Coast"
+],
+"name": "Southern Highlands",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales"
+],
+"name": "Southern New South Wales",
+"kind": "zone"
+},
+{
+"path": [
+"New South Wales",
+"Southern New South Wales"
+],
+"name": "Canberra District",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales",
+"Southern New South Wales"
+],
+"name": "Gundagai",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales",
+"Southern New South Wales"
+],
+"name": "Hilltops",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales",
+"Southern New South Wales"
+],
+"name": "Tumbarumba",
+"kind": "region"
+},
+{
+"path": [
+"New South Wales"
+],
+"name": "Western Plains",
+"kind": "zone"
+},
+{
+"path": [],
+"name": "Western Australia",
+"kind": "state"
+},
+{
+"path": [
+"Western Australia"
+],
+"name": "Central Western Australia",
+"kind": "zone"
+},
+{
+"path": [
+"Western Australia"
+],
+"name": "Eastern Plains - Inland and North of Western Australia",
+"kind": "zone"
+},
+{
+"path": [
+"Western Australia"
+],
+"name": "Greater Perth",
+"kind": "zone"
+},
+{
+"path": [
+"Western Australia",
+"Greater Perth"
+],
+"name": "Peel",
+"kind": "region"
+},
+{
+"path": [
+"Western Australia",
+"Greater Perth"
+],
+"name": "Perth Hills",
+"kind": "region"
+},
+{
+"path": [
+"Western Australia",
+"Greater Perth"
+],
+"name": "Swan District",
+"kind": "region"
+},
+{
+"path": [
+"Western Australia",
+"Greater Perth",
+"Swan District"
+],
+"name": "Swan Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"Western Australia"
+],
+"name": "South West Australia",
+"kind": "zone"
+},
+{
+"path": [
+"Western Australia",
+"South West Australia"
+],
+"name": "Blackwood Valley",
+"kind": "region"
+},
+{
+"path": [
+"Western Australia",
+"South West Australia"
+],
+"name": "Geographe",
+"kind": "region"
+},
+{
+"path": [
+"Western Australia",
+"South West Australia"
+],
+"name": "Great Southern",
+"kind": "region"
+},
+{
+"path": [
+"Western Australia",
+"South West Australia",
+"Great Southern"
+],
+"name": "Albany",
+"kind": "subregion"
+},
+{
+"path": [
+"Western Australia",
+"South West Australia",
+"Great Southern"
+],
+"name": "Denmark",
+"kind": "subregion"
+},
+{
+"path": [
+"Western Australia",
+"South West Australia",
+"Great Southern"
+],
+"name": "Frankland River",
+"kind": "subregion"
+},
+{
+"path": [
+"Western Australia",
+"South West Australia",
+"Great Southern"
+],
+"name": "Mount Barker",
+"kind": "subregion"
+},
+{
+"path": [
+"Western Australia",
+"South West Australia",
+"Great Southern"
+],
+"name": "Porongurup",
+"kind": "subregion"
+},
+{
+"path": [
+"Western Australia",
+"South West Australia"
+],
+"name": "Manjimup",
+"kind": "region"
+},
+{
+"path": [
+"Western Australia",
+"South West Australia"
+],
+"name": "Margaret River",
+"kind": "region"
+},
+{
+"path": [
+"Western Australia",
+"South West Australia"
+],
+"name": "Pemberton",
+"kind": "region"
+},
+{
+"path": [
+"Western Australia"
+],
+"name": "West Australian South East Coastal",
+"kind": "zone"
+},
+{
+"path": [],
+"name": "Queensland",
+"kind": "state"
+},
+{
+"path": [
+"Queensland"
+],
+"name": "Granite Belt",
+"kind": "region"
+},
+{
+"path": [
+"Queensland"
+],
+"name": "South Burnett",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Victoria",
+"kind": "state"
+},
+{
+"path": [
+"Victoria"
+],
+"name": "Central Victoria",
+"kind": "zone"
+},
+{
+"path": [
+"Victoria",
+"Central Victoria"
+],
+"name": "Bendigo",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"Central Victoria"
+],
+"name": "Goulburn Valley",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"Central Victoria",
+"Goulburn Valley"
+],
+"name": "Nagambie Lakes",
+"kind": "subregion"
+},
+{
+"path": [
+"Victoria",
+"Central Victoria"
+],
+"name": "Heathcote",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"Central Victoria"
+],
+"name": "Strathbogie Ranges",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"Central Victoria"
+],
+"name": "Upper Goulburn",
+"kind": "region"
+},
+{
+"path": [
+"Victoria"
+],
+"name": "Gippsland",
+"kind": "zone"
+},
+{
+"path": [
+"Victoria"
+],
+"name": "North East Victoria",
+"kind": "zone"
+},
+{
+"path": [
+"Victoria",
+"North East Victoria"
+],
+"name": "Alpine Valleys",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"North East Victoria"
+],
+"name": "Beechworth",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"North East Victoria"
+],
+"name": "Glenrowan",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"North East Victoria"
+],
+"name": "King Valley",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"North East Victoria"
+],
+"name": "Rutherglen",
+"kind": "region"
+},
+{
+"path": [
+"Victoria"
+],
+"name": "North West Victoria",
+"kind": "zone"
+},
+{
+"path": [
+"Victoria",
+"North West Victoria"
+],
+"name": "Murray Darling",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"North West Victoria"
+],
+"name": "Swan Hill",
+"kind": "region"
+},
+{
+"path": [
+"Victoria"
+],
+"name": "Port Phillip",
+"kind": "zone"
+},
+{
+"path": [
+"Victoria",
+"Port Phillip"
+],
+"name": "Geelong",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"Port Phillip"
+],
+"name": "Macedon Ranges",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"Port Phillip"
+],
+"name": "Mornington Peninsula",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"Port Phillip"
+],
+"name": "Sunbury",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"Port Phillip"
+],
+"name": "Yarra Valley",
+"kind": "region"
+},
+{
+"path": [
+"Victoria"
+],
+"name": "Western Victoria",
+"kind": "zone"
+},
+{
+"path": [
+"Victoria",
+"Western Victoria"
+],
+"name": "Grampians",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"Western Victoria",
+"Grampians"
+],
+"name": "Great Western",
+"kind": "subregion"
+},
+{
+"path": [
+"Victoria",
+"Western Victoria"
+],
+"name": "Henty",
+"kind": "region"
+},
+{
+"path": [
+"Victoria",
+"Western Victoria"
+],
+"name": "Pyrenees",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Tasmania",
+"kind": "state"
+},
+{
+"path": [],
+"name": "Northern Territory",
+"kind": "state"
+},
+{
+"path": [],
+"name": "Australian Capital Territory",
+"kind": "state"
+}
+]
+}

@@ -1,0 +1,1484 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Tyrnavos",
+"also": [
+"Tyrnavos"
+],
+"kind": "PGI",
+"id": "EUGI00000004881",
+"file": "PGI-GR-A0122"
+},
+{
+"path": [],
+"name": "Makedonia",
+"also": [
+"Makedonia"
+],
+"kind": "PGI",
+"id": "EUGI00000007605",
+"file": "PGI-GR-A1616"
+},
+{
+"path": [],
+"name": "Drama",
+"also": [
+"Drama"
+],
+"kind": "PGI",
+"id": "EUGI00000006821",
+"file": "PGI-GR-A1057"
+},
+{
+"path": [],
+"name": "Playies Paikou",
+"also": [
+"Playies Paikou"
+],
+"kind": "PGI",
+"id": "EUGI00000007004",
+"file": "PGI-GR-A1088"
+},
+{
+"path": [],
+"name": "Epanomi",
+"also": [
+"Epanomi"
+],
+"kind": "PGI",
+"id": "EUGI00000005930",
+"file": "PGI-GR-A0858"
+},
+{
+"path": [],
+"name": "Robola Kefallinias",
+"also": [
+"Robola Kefallinias"
+],
+"kind": "PDO",
+"id": "EUGI00000007021",
+"file": "PDO-GR-A1240"
+},
+{
+"path": [],
+"name": "Evia",
+"also": [
+"Evia"
+],
+"kind": "PGI",
+"id": "EUGI00000006081",
+"file": "PGI-GR-A1559"
+},
+{
+"path": [],
+"name": "Ayio Oros",
+"also": [
+"Ayio Oros"
+],
+"kind": "PGI",
+"id": "EUGI00000006621",
+"file": "PGI-GR-A0873"
+},
+{
+"path": [],
+"name": "Santorini",
+"also": [
+"Santorini"
+],
+"kind": "PDO",
+"id": "EUGI00000006544",
+"file": "PDO-GR-A1065"
+},
+{
+"path": [],
+"name": "Pella",
+"also": [
+"Pella"
+],
+"kind": "PGI",
+"id": "EUGI00000005583",
+"file": "PGI-GR-A0425"
+},
+{
+"path": [],
+"name": "Playies Vertiskou",
+"also": [
+"Playies Vertiskou"
+],
+"kind": "PGI",
+"id": "EUGI00000005584",
+"file": "PGI-GR-A0266"
+},
+{
+"path": [],
+"name": "Mavrodafni Kefallinias",
+"also": [
+"Mavrodafni Kefallinias"
+],
+"kind": "PDO",
+"id": "EUGI00000006876",
+"file": "PDO-GR-A1055"
+},
+{
+"path": [],
+"name": "Metaxaton",
+"also": [
+"Metaxaton"
+],
+"kind": "PGI",
+"id": "EUGI00000006842",
+"file": "PGI-GR-A1019"
+},
+{
+"path": [],
+"name": "Verdea Zakyntou",
+"also": [
+"Verdea Zakyntou"
+],
+"kind": "PGI",
+"id": "EUGI00000006247",
+"file": "PGI-GR-A1050"
+},
+{
+"path": [],
+"name": "Dodekanisos",
+"also": [
+"Dodekanisos"
+],
+"kind": "PGI",
+"id": "EUGI00000007444",
+"file": "PGI-GR-A1580"
+},
+{
+"path": [],
+"name": "Retsina Megaron",
+"also": [
+"Retsina Megaron"
+],
+"kind": "PGI",
+"id": "EUGI00000007563",
+"file": "PGI-GR-A1596"
+},
+{
+"path": [],
+"name": "Thraki",
+"also": [
+"Thraki"
+],
+"kind": "PGI",
+"id": "EUGI00000007606",
+"file": "PGI-GR-A1611"
+},
+{
+"path": [],
+"name": "Fthiotida",
+"also": [
+"Fthiotida"
+],
+"kind": "PGI",
+"id": "EUGI00000007422",
+"file": "PGI-GR-A1571"
+},
+{
+"path": [],
+"name": "Retsina Attikis",
+"also": [
+"Retsina Attikis"
+],
+"kind": "PGI",
+"id": "EUGI00000007205",
+"file": "PGI-GR-A1428"
+},
+{
+"path": [],
+"name": "Hania",
+"also": [
+"Hania"
+],
+"kind": "PGI",
+"id": "EUGI00000006864",
+"file": "PGI-GR-A1059"
+},
+{
+"path": [],
+"name": "Playies Melitona",
+"also": [
+"Playies Melitona"
+],
+"kind": "PDO",
+"id": "EUGI00000007001",
+"file": "PDO-GR-A1096"
+},
+{
+"path": [],
+"name": "Moschato Patron",
+"also": [
+"Moschato Patron"
+],
+"kind": "PDO",
+"id": "EUGI00000006963",
+"file": "PDO-GR-A1087"
+},
+{
+"path": [],
+"name": "Mavrodafni Patron",
+"also": [
+"Mavrodafni Patron"
+],
+"kind": "PDO",
+"id": "EUGI00000006551",
+"file": "PDO-GR-A1048"
+},
+{
+"path": [],
+"name": "Retsina Peanias",
+"also": [
+"Ρετσίνα Λιοπεσίου",
+"Retsina Peanias",
+"Retsina Liopesiou"
+],
+"kind": "PGI",
+"id": "EUGI00000007566",
+"file": "PGI-GR-A1597"
+},
+{
+"path": [],
+"name": "Playies Knimidas",
+"also": [
+"Playies Knimidas"
+],
+"kind": "PGI",
+"id": "EUGI00000007283",
+"file": "PGI-GR-A1553"
+},
+{
+"path": [],
+"name": "Kriti",
+"also": [
+"Kriti"
+],
+"kind": "PGI",
+"id": "EUGI00000007541",
+"file": "PGI-GR-A1605"
+},
+{
+"path": [],
+"name": "Aegeo Pelagos",
+"also": [
+"Aegeo Pelagos"
+],
+"kind": "PGI",
+"id": "EUGI00000007522",
+"file": "PGI-GR-A1602"
+},
+{
+"path": [],
+"name": "Malvasia Χάνδακας-Candia",
+"also": [
+"Malvasia Handakas - Candia"
+],
+"kind": "PDO",
+"id": "EUGI00000007481",
+"file": "PDO-GR-A1617"
+},
+{
+"path": [],
+"name": "Kiklades",
+"also": [
+"Kiklades"
+],
+"kind": "PGI",
+"id": "EUGI00000007104",
+"file": "PGI-GR-A1343"
+},
+{
+"path": [],
+"name": "Retsina Gialtron",
+"also": [
+"Retsina Gialtron"
+],
+"kind": "PGI",
+"id": "EUGI00000006845",
+"file": "PGI-GR-A1052"
+},
+{
+"path": [],
+"name": "Playies Pentelikou",
+"also": [
+"Playies Pentelikou"
+],
+"kind": "PGI",
+"id": "EUGI00000006524",
+"file": "PGI-GR-A0863"
+},
+{
+"path": [],
+"name": "Retsina Pallinis",
+"also": [
+"Retsina Pallinis"
+],
+"kind": "PGI",
+"id": "EUGI00000007581",
+"file": "PGI-GR-A1600"
+},
+{
+"path": [],
+"name": "Moschato Kefallinias",
+"also": [
+"Moschato Kefallinias"
+],
+"kind": "PDO",
+"id": "EUGI00000007325",
+"file": "PDO-GR-A1566"
+},
+{
+"path": [],
+"name": "Χάνδακας - Candia",
+"also": [
+"Handakas - Candia"
+],
+"kind": "PDO",
+"id": "EUGI00000007463",
+"file": "PDO-GR-A1615"
+},
+{
+"path": [],
+"name": "Playies Egialias",
+"also": [
+"Playies Egialias"
+],
+"kind": "PGI",
+"id": "EUGI00000007323",
+"file": "PGI-GR-A1563"
+},
+{
+"path": [],
+"name": "Kilada Atalantis",
+"also": [
+"Kilada Atalantis"
+],
+"kind": "PGI",
+"id": "EUGI00000007221",
+"file": "PGI-GR-A1521"
+},
+{
+"path": [],
+"name": "Arhanes",
+"also": [
+"Arhanes"
+],
+"kind": "PDO",
+"id": "EUGI00000007137",
+"file": "PDO-GR-A1340"
+},
+{
+"path": [],
+"name": "Retsina Markopoulou (Attikis)",
+"also": [
+"Retsina Markopoulou (Attikis)"
+],
+"kind": "PGI",
+"id": "EUGI00000007103",
+"file": "PGI-GR-A1226"
+},
+{
+"path": [],
+"name": "Retsina Halkidas (Evias)",
+"also": [
+"Retsina Halkidas (Evias)"
+],
+"kind": "PGI",
+"id": "EUGI00000007111",
+"file": "PGI-GR-A1420"
+},
+{
+"path": [],
+"name": "Moschatos Riou Patras",
+"also": [
+"Moschatos Riou Patras"
+],
+"kind": "PDO",
+"id": "EUGI00000007006",
+"file": "PDO-GR-A1316"
+},
+{
+"path": [],
+"name": "Retsina Karistou",
+"also": [
+"Retsina Karistou"
+],
+"kind": "PGI",
+"id": "EUGI00000006863",
+"file": "PGI-GR-A1020"
+},
+{
+"path": [],
+"name": "Playies Enou",
+"also": [
+"Playies Enou"
+],
+"kind": "PGI",
+"id": "EUGI00000007441",
+"file": "PGI-GR-A1578"
+},
+{
+"path": [],
+"name": "Playies Kitherona",
+"also": [
+"Playies Kitherona"
+],
+"kind": "PGI",
+"id": "EUGI00000007327",
+"file": "PGI-GR-A1603"
+},
+{
+"path": [],
+"name": "Retsina Thivon (Viotias)",
+"also": [
+"Retsina Thivon (Viotias)"
+],
+"kind": "PGI",
+"id": "EUGI00000006846",
+"file": "PGI-GR-A1004"
+},
+{
+"path": [],
+"name": "Retsina Mesogion (Attikis)",
+"also": [
+"Retsina Mesogion (Attikis)"
+],
+"kind": "PGI",
+"id": "EUGI00000007003",
+"file": "PGI-GR-A1091"
+},
+{
+"path": [],
+"name": "Kerkira",
+"also": [
+"Kerkira"
+],
+"kind": "PGI",
+"id": "EUGI00000005162",
+"file": "PGI-GR-A0141"
+},
+{
+"path": [],
+"name": "Playies Abelou",
+"also": [
+"Playies Abelou"
+],
+"kind": "PGI",
+"id": "EUGI00000005585",
+"file": "PGI-GR-A0841"
+},
+{
+"path": [],
+"name": "Retsina Spaton",
+"also": [
+"Retsina Spaton"
+],
+"kind": "PGI",
+"id": "EUGI00000007462",
+"file": "PGI-GR-A1594"
+},
+{
+"path": [],
+"name": "Opountia Lokridas",
+"also": [
+"Opountia Lokridas"
+],
+"kind": "PGI",
+"id": "EUGI00000007324",
+"file": "PGI-GR-A1562"
+},
+{
+"path": [],
+"name": "Retsina Koropiou",
+"also": [
+"Ρετσίνα Κρωπίας",
+"Retsina Koropiou",
+"Retsina Kropias"
+],
+"kind": "PGI",
+"id": "EUGI00000007562",
+"file": "PGI-GR-A1595"
+},
+{
+"path": [],
+"name": "Peloponnisos",
+"also": [
+"Peloponnisos"
+],
+"kind": "PGI",
+"id": "EUGI00000007603",
+"file": "PGI-GR-A1606"
+},
+{
+"path": [],
+"name": "Ipiros",
+"also": [
+"Ipiros"
+],
+"kind": "PGI",
+"id": "EUGI00000007602",
+"file": "PGI-GR-A1604"
+},
+{
+"path": [],
+"name": "Velvedo",
+"also": [
+"Velvedo"
+],
+"kind": "PGI",
+"id": "EUGI00000007262",
+"file": "PGI-GR-A1529"
+},
+{
+"path": [],
+"name": "Moschato Rodou",
+"also": [
+"Moschato Rodou"
+],
+"kind": "PDO",
+"id": "EUGI00000007326",
+"file": "PDO-GR-A1567"
+},
+{
+"path": [],
+"name": "Retsina Pikermiou",
+"also": [
+"Retsina Pikermiou"
+],
+"kind": "PGI",
+"id": "EUGI00000007583",
+"file": "PGI-GR-A1599"
+},
+{
+"path": [],
+"name": "Retsina Evias",
+"also": [
+"Retsina Evias"
+],
+"kind": "PGI",
+"id": "EUGI00000007204",
+"file": "PGI-GR-A1476"
+},
+{
+"path": [],
+"name": "Moschatos Limnou",
+"also": [
+"Moschatos Limnou"
+],
+"kind": "PDO",
+"id": "EUGI00000007136",
+"file": "PDO-GR-A1432"
+},
+{
+"path": [],
+"name": "Playies Parnithas",
+"also": [
+"Playies Parnithas"
+],
+"kind": "PGI",
+"id": "EUGI00000006985",
+"file": "PGI-GR-A1327"
+},
+{
+"path": [],
+"name": "Kos",
+"also": [
+"Kos"
+],
+"kind": "PGI",
+"id": "EUGI00000005509",
+"file": "PGI-GR-A0981"
+},
+{
+"path": [],
+"name": "Dafnes",
+"also": [
+"Dafnes"
+],
+"kind": "PDO",
+"id": "EUGI00000007162",
+"file": "PDO-GR-A1390"
+},
+{
+"path": [],
+"name": "Parnassos",
+"also": [
+"Parnassos"
+],
+"kind": "PGI",
+"id": "EUGI00000006874",
+"file": "PGI-GR-A1026"
+},
+{
+"path": [],
+"name": "Mantinia",
+"also": [
+"Mantinia"
+],
+"kind": "PDO",
+"id": "EUGI00000007282",
+"file": "PDO-GR-A1554"
+},
+{
+"path": [],
+"name": "Krania",
+"also": [
+"Krania"
+],
+"kind": "PGI",
+"id": "EUGI00000005511",
+"file": "PGI-GR-A0424"
+},
+{
+"path": [],
+"name": "Messinia",
+"also": [
+"Messinia"
+],
+"kind": "PGI",
+"id": "EUGI00000006246",
+"file": "PGI-GR-A1009"
+},
+{
+"path": [],
+"name": "Lasithi",
+"also": [
+"Lasithi"
+],
+"kind": "PGI",
+"id": "EUGI00000006287",
+"file": "PGI-GR-A0830"
+},
+{
+"path": [],
+"name": "Martino",
+"also": [
+"Martino"
+],
+"kind": "PGI",
+"id": "EUGI00000006396",
+"file": "PGI-GR-A1531"
+},
+{
+"path": [],
+"name": "Thasos",
+"also": [
+"Thasos"
+],
+"kind": "PGI",
+"id": "EUGI00000004561",
+"file": "PGI-GR-A0121"
+},
+{
+"path": [],
+"name": "Letrini",
+"also": [
+"Letrini"
+],
+"kind": "PGI",
+"id": "EUGI00000005501",
+"file": "PGI-GR-A0421"
+},
+{
+"path": [],
+"name": "Zitsa",
+"also": [
+"Zitsa"
+],
+"kind": "PDO",
+"id": "EUGI00000007263",
+"file": "PDO-GR-A1532"
+},
+{
+"path": [],
+"name": "Paros",
+"also": [
+"Paros"
+],
+"kind": "PDO",
+"id": "EUGI00000007424",
+"file": "PDO-GR-A1570"
+},
+{
+"path": [],
+"name": "Malvasia Σητείας",
+"also": [
+"Malvasia Sitia"
+],
+"kind": "PDO",
+"id": "EUGI00000007561",
+"file": "PDO-GR-A1608"
+},
+{
+"path": [],
+"name": "Meteora",
+"also": [
+"Meteora"
+],
+"kind": "PGI",
+"id": "EUGI00000007242",
+"file": "PGI-GR-A1530"
+},
+{
+"path": [],
+"name": "Korinthos",
+"also": [
+"Korinthos"
+],
+"kind": "PGI",
+"id": "EUGI00000007461",
+"file": "PGI-GR-A1593"
+},
+{
+"path": [],
+"name": "Karystos",
+"also": [
+"Karystos"
+],
+"kind": "PGI",
+"id": "EUGI00000007134",
+"file": "PGI-GR-A1334"
+},
+{
+"path": [],
+"name": "Arkadia",
+"also": [
+"Arkadia"
+],
+"kind": "PGI",
+"id": "EUGI00000007126",
+"file": "PGI-GR-A1331"
+},
+{
+"path": [],
+"name": "Αrgolida",
+"also": [
+"Αrgolida"
+],
+"kind": "PGI",
+"id": "EUGI00000005661",
+"file": "PGI-GR-A0850"
+},
+{
+"path": [],
+"name": "Rethimno",
+"also": [
+"Rethimno"
+],
+"kind": "PGI",
+"id": "EUGI00000006686",
+"file": "PGI-GR-A1060"
+},
+{
+"path": [],
+"name": "Zakynthos",
+"also": [
+"Zakynthos"
+],
+"kind": "PGI",
+"id": "EUGI00000006061",
+"file": "PGI-GR-A0945"
+},
+{
+"path": [],
+"name": "Kastoria",
+"also": [
+"Kastoria"
+],
+"kind": "PGI",
+"id": "EUGI00000006862",
+"file": "PGI-GR-A1013"
+},
+{
+"path": [],
+"name": "Mantzavinata",
+"also": [
+"Mantzavinata"
+],
+"kind": "PGI",
+"id": "EUGI00000006822",
+"file": "PGI-GR-A0998"
+},
+{
+"path": [],
+"name": "Goumenissa",
+"also": [
+"Goumenissa"
+],
+"kind": "PDO",
+"id": "EUGI00000007109",
+"file": "PDO-GR-A1251"
+},
+{
+"path": [],
+"name": "Ilion",
+"also": [
+"Ilion"
+],
+"kind": "PGI",
+"id": "EUGI00000005513",
+"file": "PGI-GR-A0204"
+},
+{
+"path": [],
+"name": "Lefkada",
+"also": [
+"Lefkada"
+],
+"kind": "PGI",
+"id": "EUGI00000006402",
+"file": "PGI-GR-A0866"
+},
+{
+"path": [],
+"name": "Trifilia",
+"also": [
+"Trifilia"
+],
+"kind": "PGI",
+"id": "EUGI00000000061",
+"file": "PGI-GR-A0063"
+},
+{
+"path": [],
+"name": "Lilantio Pedio",
+"also": [
+"Lilantio Pedio"
+],
+"kind": "PGI",
+"id": "EUGI00000005095",
+"file": "PGI-GR-A0131"
+},
+{
+"path": [],
+"name": "Kozani",
+"also": [
+"Kozani"
+],
+"kind": "PGI",
+"id": "EUGI00000007161",
+"file": "PGI-GR-A1386"
+},
+{
+"path": [],
+"name": "Retsina of Viotia",
+"also": [
+"Retsina of Viotia"
+],
+"kind": "PGI",
+"id": "EUGI00000007281",
+"file": "PGI-GR-A1572"
+},
+{
+"path": [],
+"name": "Nea Mesimvria",
+"also": [
+"Nea Mesimvria"
+],
+"kind": "PGI",
+"id": "EUGI00000007363",
+"file": "PGI-GR-A1574"
+},
+{
+"path": [],
+"name": "Μονεμβασία- Malvasia",
+"also": [
+"Monemvasia - Malvasia"
+],
+"kind": "PDO",
+"id": "EUGI00000007243",
+"file": "PDO-GR-A1533"
+},
+{
+"path": [],
+"name": "Sitia",
+"also": [
+"Sitia"
+],
+"kind": "PDO",
+"id": "EUGI00000007445",
+"file": "PDO-GR-A1613"
+},
+{
+"path": [],
+"name": "Lesvos",
+"also": [
+"Lesvos"
+],
+"kind": "PGI",
+"id": "EUGI00000004934",
+"file": "PGI-GR-A0125"
+},
+{
+"path": [],
+"name": "Markopoulo",
+"also": [
+"Markopoulo"
+],
+"kind": "PGI",
+"id": "EUGI00000006501",
+"file": "PGI-GR-A0943"
+},
+{
+"path": [],
+"name": "Sithonia",
+"also": [
+"Sithonia"
+],
+"kind": "PGI",
+"id": "EUGI00000006282",
+"file": "PGI-GR-A0989"
+},
+{
+"path": [],
+"name": "Spata",
+"also": [
+"Spata"
+],
+"kind": "PGI",
+"id": "EUGI00000006423",
+"file": "PGI-GR-A0831"
+},
+{
+"path": [],
+"name": "Magnisia",
+"also": [
+"Magnisia"
+],
+"kind": "PGI",
+"id": "EUGI00000005921",
+"file": "PGI-GR-A0860"
+},
+{
+"path": [],
+"name": "Mesenikola",
+"also": [
+"Mesenikola"
+],
+"kind": "PDO",
+"id": "EUGI00000007118",
+"file": "PDO-GR-A1253"
+},
+{
+"path": [],
+"name": "Halkidiki",
+"also": [
+"Halkidiki"
+],
+"kind": "PGI",
+"id": "EUGI00000007183",
+"file": "PGI-GR-A1403"
+},
+{
+"path": [],
+"name": "Metsovo",
+"also": [
+"Metsovo"
+],
+"kind": "PGI",
+"id": "EUGI00000005524",
+"file": "PGI-GR-A0942"
+},
+{
+"path": [],
+"name": "Rapsani",
+"also": [
+"Rapsani"
+],
+"kind": "PDO",
+"id": "EUGI00000003566",
+"file": "PDO-GR-A0116"
+},
+{
+"path": [],
+"name": "Ilia",
+"also": [
+"Ilia"
+],
+"kind": "PGI",
+"id": "EUGI00000005187",
+"file": "PGI-GR-A0140"
+},
+{
+"path": [],
+"name": "Nemea",
+"also": [
+"Nemea"
+],
+"kind": "PDO",
+"id": "EUGI00000007207",
+"file": "PDO-GR-A1573"
+},
+{
+"path": [],
+"name": "Siatista",
+"also": [
+"Siatista"
+],
+"kind": "PGI",
+"id": "EUGI00000007133",
+"file": "PGI-GR-A1326"
+},
+{
+"path": [],
+"name": "Thessalia",
+"also": [
+"Thessalia"
+],
+"kind": "PGI",
+"id": "EUGI00000007582",
+"file": "PGI-GR-A1601"
+},
+{
+"path": [],
+"name": "Malvasia Πάρος",
+"also": [
+"Malvasia Paros"
+],
+"kind": "PDO",
+"id": "EUGI00000007426",
+"file": "PDO-GR-A1607"
+},
+{
+"path": [],
+"name": "Anchialos",
+"also": [
+"Anchialos"
+],
+"kind": "PDO",
+"id": "EUGI00000006825",
+"file": "PDO-GR-A1484"
+},
+{
+"path": [],
+"name": "Evros",
+"also": [
+"Evros"
+],
+"kind": "PGI",
+"id": "EUGI00000006701",
+"file": "PGI-GR-A1045"
+},
+{
+"path": [],
+"name": "Grevena",
+"also": [
+"Grevena"
+],
+"kind": "PGI",
+"id": "EUGI00000006961",
+"file": "PGI-GR-A1051"
+},
+{
+"path": [],
+"name": "Anavyssos",
+"also": [
+"Anavyssos"
+],
+"kind": "PGI",
+"id": "EUGI00000005841",
+"file": "PGI-GR-A0859"
+},
+{
+"path": [],
+"name": "Patra",
+"also": [
+"Patra"
+],
+"kind": "PDO",
+"id": "EUGI00000006523",
+"file": "PDO-GR-A1239"
+},
+{
+"path": [],
+"name": "Peza",
+"also": [
+"Peza"
+],
+"kind": "PDO",
+"id": "EUGI00000007182",
+"file": "PDO-GR-A1401"
+},
+{
+"path": [],
+"name": "Naoussa",
+"also": [
+"Naoussa"
+],
+"kind": "PDO",
+"id": "EUGI00000007267",
+"file": "PDO-GR-A1610"
+},
+{
+"path": [],
+"name": "Limnos",
+"also": [
+"Limnos"
+],
+"kind": "PDO",
+"id": "EUGI00000007425",
+"file": "PDO-GR-A1614"
+},
+{
+"path": [],
+"name": "Paggeo",
+"also": [
+"Paggeo"
+],
+"kind": "PGI",
+"id": "EUGI00000006361",
+"file": "PGI-GR-A0865"
+},
+{
+"path": [],
+"name": "Tegea",
+"also": [
+"Tegea"
+],
+"kind": "PGI",
+"id": "EUGI00000004925",
+"file": "PGI-GR-A0123"
+},
+{
+"path": [],
+"name": "Thapsana",
+"also": [
+"Thapsana"
+],
+"kind": "PGI",
+"id": "EUGI00000005790",
+"file": "PGI-GR-A1039"
+},
+{
+"path": [],
+"name": "Elassona",
+"also": [
+"Elassona"
+],
+"kind": "PGI",
+"id": "EUGI00000006250",
+"file": "PGI-GR-A0868"
+},
+{
+"path": [],
+"name": "Ikaria",
+"also": [
+"Ikaria"
+],
+"kind": "PGI",
+"id": "EUGI00000006525",
+"file": "PGI-GR-A0836"
+},
+{
+"path": [],
+"name": "Chios",
+"also": [
+"Chios"
+],
+"kind": "PGI",
+"id": "EUGI00000004001",
+"file": "PGI-GR-A0118"
+},
+{
+"path": [],
+"name": "Agora",
+"also": [
+"Agora"
+],
+"kind": "PGI",
+"id": "EUGI00000005601",
+"file": "PGI-GR-A0267"
+},
+{
+"path": [],
+"name": "Ismaros",
+"also": [
+"Ismaros"
+],
+"kind": "PGI",
+"id": "EUGI00000005623",
+"file": "PGI-GR-A0423"
+},
+{
+"path": [],
+"name": "Gerania",
+"also": [
+"Gerania"
+],
+"kind": "PGI",
+"id": "EUGI00000005901",
+"file": "PGI-GR-A0840"
+},
+{
+"path": [],
+"name": "Pylia",
+"also": [
+"Pylia"
+],
+"kind": "PGI",
+"id": "EUGI00000006161",
+"file": "PGI-GR-A1033"
+},
+{
+"path": [],
+"name": "Achaia",
+"also": [
+"Achaia"
+],
+"kind": "PGI",
+"id": "EUGI00000007362",
+"file": "PGI-GR-A1568"
+},
+{
+"path": [],
+"name": "Thiva",
+"also": [
+"Thiva"
+],
+"kind": "PGI",
+"id": "EUGI00000007101",
+"file": "PGI-GR-A1195"
+},
+{
+"path": [],
+"name": "Amynteo",
+"also": [
+"Amynteo"
+],
+"kind": "PDO",
+"id": "EUGI00000007106",
+"file": "PDO-GR-A1395"
+},
+{
+"path": [],
+"name": "Halikouna",
+"also": [
+"Halikouna"
+],
+"kind": "PGI",
+"id": "EUGI00000006399",
+"file": "PGI-GR-A0832"
+},
+{
+"path": [],
+"name": "Pieria",
+"also": [
+"Pieria"
+],
+"kind": "PGI",
+"id": "EUGI00000006604",
+"file": "PGI-GR-A0869"
+},
+{
+"path": [],
+"name": "Thessaloniki",
+"also": [
+"Thessaloniki"
+],
+"kind": "PGI",
+"id": "EUGI00000005062",
+"file": "PGI-GR-A0126"
+},
+{
+"path": [],
+"name": "Klimenti",
+"also": [
+"Klimenti"
+],
+"kind": "PGI",
+"id": "EUGI00000005352",
+"file": "PGI-GR-A0268"
+},
+{
+"path": [],
+"name": "Pallini",
+"also": [
+"Pallini"
+],
+"kind": "PGI",
+"id": "EUGI00000005581",
+"file": "PGI-GR-A0265"
+},
+{
+"path": [],
+"name": "Krannona",
+"also": [
+"Krannona"
+],
+"kind": "PGI",
+"id": "EUGI00000005341",
+"file": "PGI-GR-A0142"
+},
+{
+"path": [],
+"name": "Kissamos",
+"also": [
+"Kissamos"
+],
+"kind": "PGI",
+"id": "EUGI00000005346",
+"file": "PGI-GR-A0422"
+},
+{
+"path": [],
+"name": "Lakonia",
+"also": [
+"Lakonia"
+],
+"kind": "PGI",
+"id": "EUGI00000006063",
+"file": "PGI-GR-A1528"
+},
+{
+"path": [],
+"name": "Attiki",
+"also": [
+"Attiki"
+],
+"kind": "PGI",
+"id": "EUGI00000007382",
+"file": "PGI-GR-A1569"
+},
+{
+"path": [],
+"name": "Rodos",
+"also": [
+"Rodos"
+],
+"kind": "PDO",
+"id": "EUGI00000007423",
+"file": "PDO-GR-A1612"
+},
+{
+"path": [],
+"name": "Samos",
+"also": [
+"Samos"
+],
+"kind": "PDO",
+"id": "EUGI00000007361",
+"file": "PDO-GR-A1564"
+},
+{
+"path": [],
+"name": "Karditsa",
+"also": [
+"Karditsa"
+],
+"kind": "PGI",
+"id": "EUGI00000007446",
+"file": "PGI-GR-A1592"
+},
+{
+"path": [],
+"name": "Serres",
+"also": [
+"Serres"
+],
+"kind": "PGI",
+"id": "EUGI00000006684",
+"file": "PGI-GR-A1090"
+},
+{
+"path": [],
+"name": "Ioannina",
+"also": [
+"Ioannina"
+],
+"kind": "PGI",
+"id": "EUGI00000006966",
+"file": "PGI-GR-A1058"
+},
+{
+"path": [],
+"name": "Florina",
+"also": [
+"Florina"
+],
+"kind": "PGI",
+"id": "EUGI00000006969",
+"file": "PGI-GR-A1080"
+},
+{
+"path": [],
+"name": "Avdira",
+"also": [
+"Avdira"
+],
+"kind": "PGI",
+"id": "EUGI00000006041",
+"file": "PGI-GR-A0861"
+},
+{
+"path": [],
+"name": "Sterea Ellada",
+"also": [
+"Sterea Ellada"
+],
+"kind": "PGI",
+"id": "EUGI00000007604",
+"file": "PGI-GR-A1609"
+},
+{
+"path": [],
+"name": "Ritsona",
+"also": [
+"Ritsona"
+],
+"kind": "PGI",
+"id": "EUGI00000007261",
+"file": "PGI-GR-A1527"
+},
+{
+"path": [],
+"name": "Iraklio",
+"also": [
+"Iraklio"
+],
+"kind": "PGI",
+"id": "EUGI00000007421",
+"file": "PGI-GR-A1565"
+},
+{
+"path": [],
+"name": "Imathia",
+"also": [
+"Imathia"
+],
+"kind": "PGI",
+"id": "EUGI00000007265",
+"file": "PGI-GR-A1524"
+},
+{
+"path": [],
+"name": "Pisatis",
+"also": [
+"Pisatis"
+],
+"kind": "PGI",
+"id": "EUGI00000005582",
+"file": "PGI-GR-A0269"
+},
+{
+"path": [],
+"name": "Kavala",
+"also": [
+"Kavala"
+],
+"kind": "PGI",
+"id": "EUGI00000005186",
+"file": "PGI-GR-A0137"
+}
+]
+}

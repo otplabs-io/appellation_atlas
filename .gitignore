@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+
+# Rebuilt on your machine. public/ and regions/ carry everything the site needs.
+build/
+
+# Raw downloads from the original sources (about 3.7 GB). Some of them may not be redistributed.
+data/
+
+# Machine and tool files
+.DS_Store
+.vercel/
+CLAUDE.local.md
+
+# iCloud conflict copies, such as "index 2.json"
+* [0-9].*

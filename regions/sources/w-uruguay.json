@@ -1,0 +1,50 @@
+{
+"source": {
+"title": "Wikipedia, List of wine-producing regions: Uruguay",
+"url": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions",
+"revision": 1382971935,
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Montevideo",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Canelones",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Maldonado",
+"kind": "region"
+},
+{
+"path": [
+"Maldonado"
+],
+"name": "Garzón",
+"kind": "region"
+},
+{
+"path": [
+"Maldonado"
+],
+"name": "José Ignacio",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Colonia",
+"kind": "region"
+},
+{
+"path": [],
+"name": "San José",
+"kind": "region"
+}
+]
+}

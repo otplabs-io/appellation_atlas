@@ -1,0 +1,182 @@
+{
+ "$about": "The growing season average temperatures (°C) in which each grape makes its classic wine, read off Jones's climate-maturity chart (bars measured against its 13 to 21 °C axis, so about ±0.1 °C). The Atlas uses them to say which grapes a place's climate suits.",
+ "source": {
+  "name": "Jones, G.V. 2010, Climate, grapes, and wine: structure and suitability in a variable and changing climate, VIII International Terroir Congress, Figure 2 (after Jones 2006)",
+  "url": "https://ives-openscience.eu/wp-content/uploads/2023/03/Climate_Grape_Wine_Jones.pdf"
+ },
+ "also": {
+  "Garnacha": "Grenache",
+  "Cannonau": "Grenache",
+  "Mazuelo": "Carignan",
+  "Carignano": "Carignan",
+  "Primitivo": "Zinfandel",
+  "Shiraz": "Syrah",
+  "Côt": "Malbec",
+  "Spätburgunder": "Pinot Noir",
+  "Pinot Grigio": "Pinot Gris",
+  "Grauburgunder": "Pinot Gris"
+ },
+ "classes": [
+  [
+   -99,
+   13,
+   "too cool"
+  ],
+  [
+   13,
+   15,
+   "cool"
+  ],
+  [
+   15,
+   17,
+   "intermediate"
+  ],
+  [
+   17,
+   19,
+   "warm"
+  ],
+  [
+   19,
+   24,
+   "hot"
+  ],
+  [
+   24,
+   99,
+   "too hot"
+  ]
+ ],
+ "grapes": {
+  "Müller-Thurgau": [
+   13.1,
+   15.0
+  ],
+  "Pinot Gris": [
+   13.1,
+   15.3
+  ],
+  "Gewürztraminer": [
+   13.1,
+   15.6
+  ],
+  "Riesling": [
+   13.2,
+   17.0
+  ],
+  "Pinot Noir": [
+   14.0,
+   16.2
+  ],
+  "Chardonnay": [
+   14.1,
+   17.6
+  ],
+  "Sauvignon Blanc": [
+   14.7,
+   17.7
+  ],
+  "Sémillon": [
+   14.9,
+   18.2
+  ],
+  "Cabernet Franc": [
+   15.4,
+   18.9
+  ],
+  "Tempranillo": [
+   15.9,
+   18.6
+  ],
+  "Dolcetto": [
+   16.4,
+   18.5
+  ],
+  "Merlot": [
+   16.0,
+   18.8
+  ],
+  "Malbec": [
+   16.3,
+   18.9
+  ],
+  "Viognier": [
+   16.6,
+   18.8
+  ],
+  "Syrah": [
+   16.1,
+   19.0
+  ],
+  "Cabernet Sauvignon": [
+   16.4,
+   19.3
+  ],
+  "Sangiovese": [
+   16.9,
+   19.2
+  ],
+  "Grenache": [
+   16.6,
+   19.4
+  ],
+  "Carignan": [
+   17.1,
+   19.5
+  ],
+  "Zinfandel": [
+   17.5,
+   19.6
+  ],
+  "Nebbiolo": [
+   17.6,
+   19.7
+  ]
+ },
+ "winkler": {
+  "$about": "Winkler regions by degree days above 10 °C (50 °F), April to October in the north and October to April in the south, with what each region suits, paraphrased from Wikipedia's table (General ripening capability and wine style).",
+  "source": {
+   "name": "Wikipedia, Winkler index (revision of 13 October 2026)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Winkler_index&oldid=1379995815"
+  },
+  "regions": [
+   [
+    "Ia",
+    850,
+    1111,
+    "Only very early grapes ripen well, mostly hybrids and a few vinifera."
+   ],
+   [
+    "Ib",
+    1111,
+    1389,
+    "Early-ripening grapes reach high quality."
+   ],
+   [
+    "II",
+    1389,
+    1667,
+    "Early and mid-season grapes make good wine."
+   ],
+   [
+    "III",
+    1667,
+    1944,
+    "Good for generous crops of standard to good wine."
+   ],
+   [
+    "IV",
+    1944,
+    2222,
+    "Big crops are possible, but quality tops out at acceptable."
+   ],
+   [
+    "V",
+    2222,
+    2700,
+    "Best for big crops of everyday wine, or table grapes."
+   ]
+  ]
+ }
+}

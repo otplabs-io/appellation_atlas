@@ -1,0 +1,194 @@
+{
+"source": {
+"title": "Wikipedia, List of wine-producing regions: Mexico",
+"url": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions",
+"revision": 1382971935,
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Aguascalientes",
+"kind": "region"
+},
+{
+"path": [
+"Aguascalientes"
+],
+"name": "Aguascalientes",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Baja California",
+"kind": "region"
+},
+{
+"path": [
+"Baja California"
+],
+"name": "Valle de Guadalupe",
+"kind": "region"
+},
+{
+"path": [
+"Baja California",
+"Valle de Guadalupe"
+],
+"name": "Valle de Calafia",
+"kind": "region"
+},
+{
+"path": [
+"Baja California",
+"Valle de Guadalupe"
+],
+"name": "Valle de Mexicali",
+"kind": "region"
+},
+{
+"path": [
+"Baja California",
+"Valle de Guadalupe"
+],
+"name": "Valle de San Vicente",
+"kind": "region"
+},
+{
+"path": [
+"Baja California",
+"Valle de Guadalupe"
+],
+"name": "Valle de Santo Tomás",
+"kind": "region"
+},
+{
+"path": [
+"Baja California",
+"Valle de Guadalupe"
+],
+"name": "Zona Tecate",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Coahuila",
+"kind": "region"
+},
+{
+"path": [
+"Coahuila"
+],
+"name": "Valle de Parras",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Guanajuato",
+"kind": "region"
+},
+{
+"path": [
+"Guanajuato"
+],
+"name": "Guanajuato City",
+"kind": "region"
+},
+{
+"path": [
+"Guanajuato"
+],
+"name": "San Miguel de Allende",
+"kind": "region"
+},
+{
+"path": [
+"Guanajuato"
+],
+"name": "Dolores Hidalgo",
+"kind": "region"
+},
+{
+"path": [
+"Guanajuato"
+],
+"name": "San Felipe",
+"kind": "region"
+},
+{
+"path": [
+"Guanajuato"
+],
+"name": "Salvatierra",
+"kind": "region"
+},
+{
+"path": [
+"Guanajuato"
+],
+"name": "San Francisco del Rincón",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Hidalgo",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Nuevo León",
+"kind": "region"
+},
+{
+"path": [
+"Nuevo León"
+],
+"name": "Valle de Las Maravillas",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Querétaro",
+"kind": "region"
+},
+{
+"path": [
+"Querétaro"
+],
+"name": "Tequisquiapan",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Sonora",
+"kind": "region"
+},
+{
+"path": [
+"Sonora"
+],
+"name": "Caborca",
+"kind": "region"
+},
+{
+"path": [
+"Sonora"
+],
+"name": "Hermosillo",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Zacatecas",
+"kind": "region"
+},
+{
+"path": [
+"Zacatecas"
+],
+"name": "Valle de las Arcinas",
+"kind": "region"
+}
+]
+}

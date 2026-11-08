@@ -1,0 +1,108 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "TOKAJSKÉ VÍNO zo slovenskej oblasti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000018565",
+"file": "PDO-SK-02856"
+},
+{
+"path": [],
+"name": "Vinohradnícka oblasť Tokaj",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003562",
+"file": "PDO-SK-A0120"
+},
+{
+"path": [],
+"name": "Stredoslovenská",
+"also": [
+"Stredoslovenský",
+"Stredoslovenské"
+],
+"kind": "PDO",
+"id": "EUGI00000006395",
+"file": "PDO-SK-A1355"
+},
+{
+"path": [],
+"name": "Karpatská perla",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007210",
+"file": "PDO-SK-A1598"
+},
+{
+"path": [],
+"name": "Malokarpatská",
+"also": [
+"Malokarpatské",
+"Malokarpatský"
+],
+"kind": "PDO",
+"id": "EUGI00000006690",
+"file": "PDO-SK-A1360"
+},
+{
+"path": [],
+"name": "Východoslovenská",
+"also": [
+"Východoslovenský",
+"Východoslovenské"
+],
+"kind": "PDO",
+"id": "EUGI00000006368",
+"file": "PDO-SK-A1354"
+},
+{
+"path": [],
+"name": "Slovenská",
+"also": [
+"Slovenské",
+"Slovenský"
+],
+"kind": "PGI",
+"id": "EUGI00000006706",
+"file": "PGI-SK-A1361"
+},
+{
+"path": [],
+"name": "Južnoslovenská",
+"also": [
+"Južnoslovenské",
+"Južnoslovenský"
+],
+"kind": "PDO",
+"id": "EUGI00000006683",
+"file": "PDO-SK-A1356"
+},
+{
+"path": [],
+"name": "Nitrianska",
+"also": [
+"Nitrianske",
+"Nitriansky"
+],
+"kind": "PDO",
+"id": "EUGI00000006685",
+"file": "PDO-SK-A1357"
+},
+{
+"path": [],
+"name": "Skalický rubín",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000012884",
+"file": "PDO-SK-01899"
+}
+]
+}

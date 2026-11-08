@@ -1,0 +1,38 @@
+{
+"$about": "The places in the WSET Level 4 Diploma in Wines, for the Appellation Atlas, which colours them apart (src/atlas.py wset). The specification lists principal regions, not appellations, so every place inside a listed region counts. A listed region is a place id (it and everything under it), or Eurostat NUTS 2 codes where the spec names an administrative region the tree does not have (Spain's autonomous communities). A place with no listed ancestor counts when the inside point of its shape falls within a listed region. `places` adds what the sparkling and fortified units name outside those regions, and places with no shape that sit inside one.",
+"source": {
+  "name": "WSET Level 4 Diploma in Wines, Specification, Issue 1 (2019): Unit D3 principal wine regions, Unit D4 principal sparkling wines, Unit D5 principal fortified wines",
+  "url": "https://www.wsetglobal.com/media/7084/wset_l4wines_specification_en_may2019.pdf"
+},
+"countries": {
+  "france": {"regions": ["france/bordeaux","france/burgundy","france/beaujolais","france/alsace","france/loire-valley","france/rhone-valley","france/languedoc-roussillon","france/provence","france/south-west-france","france/jura","france/champagne"],
+             "$why": "D3: Bordeaux, Burgundy, Beaujolais, Alsace, the Loire Valley, the Rhone Valley, South of France, South West France, Jura. South of France is taken as Languedoc-Roussillon and Provence; Corsica is left out. D4: Champagne. D5's vins doux naturels sit in Roussillon and the Rhone."},
+  "germany": {"regions": ["germany/ahr","germany/mosel","germany/nahe","germany/rheingau","germany/rheinhessen","germany/pfalz","germany/baden","germany/franken","germany/wurttemberg"]},
+  "austria": {"regions": ["austria/niederosterreich","austria/burgenland","austria/steiermark"],
+              "places": ["austria/ruster-ausbruch","austria/rosalia","austria/steirerland"], "$why": "Ruster Ausbruch and Rosalia are in Burgenland, and Steirerland is Steiermark's regional wine. None has a shape of its own."},
+  "hungary": {"regions": ["hungary/tokaj"]},
+  "greece": {"nuts": ["EL52","EL53","EL514","EL515","EL65","EL632","EL633","EL41","EL42","EL43","EL62"],
+             "regions": ["greece/macedonia","greece/peloponnese","greece/aegean-islands","greece/ionian-islands","greece/crete"],
+             "$why": "D3: Macedonia, Peloponnese, the Islands. The Islands are taken as the Aegean and Ionian islands and Crete. As NUTS: Central and Western Macedonia, Drama and Kavala-Thasos (not Thrace), the Peloponnese region with Achaia and Ilia (Patras), the North and South Aegean, Crete and the Ionian Islands."},
+  "italy": {"nuts": ["ITC1","ITH1","ITH2","ITH3","ITH4","ITI1","ITI2","ITI3","ITI4","ITF1","ITF3","ITF4","ITF5","ITG1","ITG2"],
+            "regions": ["italy/trentino","italy/alto-adige","italy/friuli-venezia-giulia","italy/veneto","italy/piedmont","italy/tuscany","italy/marche","italy/umbria","italy/lazio","italy/abruzzo","italy/campania","italy/puglia","italy/basilicata","italy/sicily","italy/sardinia"],
+            "places": ["italy/franciacorta","italy/lambrusco-di-sorbara","italy/lambrusco-grasparossa-di-castelvetro","italy/lambrusco-salamino-di-santa-croce","italy/lambrusco-mantovano","italy/reggiano","italy/modena"],
+            "$why": "D3's regions, also as their NUTS 2 regions so the regional wines inside them count. D4 names Franciacorta and Lambrusco, outside the D3 regions. Reggiano and Modena are the other Lambrusco appellations."},
+  "spain": {"nuts": ["ES51","ES52","ES62","ES24","ES42","ES41","ES23","ES22","ES11"],
+            "places": ["spain/rioja","spain/penedes-cava","spain/jerez","spain/manzanilla-de-sanlucar"],
+            "$why": "D3: Catalunya, Valencia, Murcia, Aragon, Castilla-La Mancha, Castilla y Leon, La Rioja, Navarra, Galicia, as their NUTS 2 regions. Rioja is the whole DOCa, Rioja Alavesa included. D4: Cava. D5: Sherry."},
+  "portugal": {"places": ["portugal/vinho-verde","portugal/minho","portugal/douro","portugal/porto","portugal/duriense","portugal/dao","portugal/terras-do-dao","portugal/bairrada","portugal/beira-atlantico","portugal/alentejo","portugal/alentejano","portugal/lisboa","portugal/bucelas","portugal/colares","portugal/carcavelos","portugal/alenquer","portugal/arruda","portugal/torres-vedras","portugal/obidos","portugal/encostas-d-aire","portugal/peninsula-de-setubal","portugal/setubal","portugal/palmela","portugal/tejo","portugal/dotejo","portugal/madeira"],
+               "$why": "D3: Vinho Verde, Douro, Dao, Bairrada, Alentejo, Lisboa, Peninsula de Setubal, Tejo, each with the regional wine and appellations of that region (most have no shape). D5: Port and Madeira."},
+  "united-states": {"regions": ["united-states/california","united-states/oregon","united-states/washington","united-states/new-york"]},
+  "canada": {"all": true, "$why": "Ontario and British Columbia, the two provinces the atlas has."},
+  "chile": {"regions": ["chile/coquimbo","chile/aconcagua","chile/central-valley","chile/southern-chile"]},
+  "argentina": {"regions": ["argentina/salta","argentina/san-juan","argentina/mendoza","argentina/rio-negro","argentina/neuquen","argentina/chubut"],
+                "$why": "D3: Salta, San Juan, Mendoza, Patagonia. Patagonia is taken as Rio Negro, Neuquen and Chubut."},
+  "south-africa": {"regions": ["south-africa/coastal-region","south-africa/breede-river-valley","south-africa/cape-south-coast","south-africa/olifants-river"], "places": ["south-africa/western-cape"]},
+  "australia": {"regions": ["australia/south-australia","australia/victoria","australia/new-south-wales","australia/tasmania","australia/western-australia"],
+                "places": ["australia/south-eastern-australia"], "$why": "D5's Rutherglen Muscat is in Victoria."},
+  "new-zealand": {"all": true},
+  "china": {"all": true},
+  "united-kingdom": {"all": true, "$why": "D4: England and Wales."}
+}
+}

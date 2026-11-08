@@ -1,0 +1,3558 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Margaux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001705",
+"file": "PDO-FR-A0329"
+},
+{
+"path": [],
+"name": "Bellet",
+"also": [
+"Vin de Bellet"
+],
+"kind": "PDO",
+"id": "EUGI00000000125",
+"file": "PDO-FR-A0663"
+},
+{
+"path": [],
+"name": "Blaye",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001983",
+"file": "PDO-FR-A0712"
+},
+{
+"path": [],
+"name": "Sauternes",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001583",
+"file": "PDO-FR-A0819"
+},
+{
+"path": [],
+"name": "Rosé d'Anjou",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001141",
+"file": "PDO-FR-A1007"
+},
+{
+"path": [],
+"name": "Alsace",
+"also": [
+"Vin d'Alsace"
+],
+"kind": "PDO",
+"id": "EUGI00000000601",
+"file": "PDO-FR-A1101"
+},
+{
+"path": [],
+"name": "Alsace grand cru Hengst",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002025",
+"file": "PDO-FR-A0376"
+},
+{
+"path": [],
+"name": "Côtes du Lot",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002462",
+"file": "PGI-FR-A1218"
+},
+{
+"path": [],
+"name": "Crémant de Bourgogne",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002967",
+"file": "PDO-FR-A0676"
+},
+{
+"path": [],
+"name": "Crémant d'Alsace",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001981",
+"file": "PDO-FR-A0917"
+},
+{
+"path": [],
+"name": "Pommard",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001362",
+"file": "PDO-FR-A0193"
+},
+{
+"path": [],
+"name": "Pouilly-Loché",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002001",
+"file": "PDO-FR-A0652"
+},
+{
+"path": [],
+"name": "Alsace grand cru Brand",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002014",
+"file": "PDO-FR-A0340"
+},
+{
+"path": [],
+"name": "Saint-Pourçain",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001221",
+"file": "PDO-FR-A0586"
+},
+{
+"path": [],
+"name": "Moulis",
+"also": [
+"Moulis-en-Médoc"
+],
+"kind": "PDO",
+"id": "EUGI00000001761",
+"file": "PDO-FR-A0731"
+},
+{
+"path": [],
+"name": "Coteaux des Baronnies",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002581",
+"file": "PGI-FR-A1159"
+},
+{
+"path": [],
+"name": "Châtillon-en-Diois",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000221",
+"file": "PDO-FR-A0177"
+},
+{
+"path": [],
+"name": "Pineau des Charentes",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000801",
+"file": "PDO-FR-A0489"
+},
+{
+"path": [],
+"name": "Nuits-Saint-Georges",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003243",
+"file": "PDO-FR-A0579"
+},
+{
+"path": [],
+"name": "Coteaux de Die",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000223",
+"file": "PDO-FR-A0397"
+},
+{
+"path": [],
+"name": "Haut-Poitou",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001001",
+"file": "PDO-FR-A0726"
+},
+{
+"path": [],
+"name": "Crémant de Die",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000405",
+"file": "PDO-FR-A0487"
+},
+{
+"path": [],
+"name": "Meursault",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001661",
+"file": "PDO-FR-A1017"
+},
+{
+"path": [],
+"name": "Saint-Bris",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001443",
+"file": "PDO-FR-A0197"
+},
+{
+"path": [],
+"name": "Blagny",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001608",
+"file": "PDO-FR-A1023"
+},
+{
+"path": [],
+"name": "Côtes de Blaye",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001985",
+"file": "PDO-FR-A0271"
+},
+{
+"path": [],
+"name": "Collines Rhodaniennes",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001942",
+"file": "PGI-FR-A1125"
+},
+{
+"path": [],
+"name": "Coteaux de l'Auxois",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003025",
+"file": "PGI-FR-A1233"
+},
+{
+"path": [],
+"name": "Coteaux de Peyriac",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003032",
+"file": "PGI-FR-A1371"
+},
+{
+"path": [],
+"name": "Fitou",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000421",
+"file": "PDO-FR-A0195"
+},
+{
+"path": [],
+"name": "Muscat de Rivesaltes",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000661",
+"file": "PDO-FR-A1102"
+},
+{
+"path": [],
+"name": "Ruchottes-Chambertin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002003",
+"file": "PDO-FR-A0559"
+},
+{
+"path": [],
+"name": "Mazoyères-Chambertin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002002",
+"file": "PDO-FR-A0317"
+},
+{
+"path": [],
+"name": "Mazis-Chambertin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001990",
+"file": "PDO-FR-A0315"
+},
+{
+"path": [],
+"name": "Latricières-Chambertin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001989",
+"file": "PDO-FR-A0564"
+},
+{
+"path": [],
+"name": "Griotte-Chambertin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001965",
+"file": "PDO-FR-A0562"
+},
+{
+"path": [],
+"name": "Charmes-Chambertin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001881",
+"file": "PDO-FR-A0560"
+},
+{
+"path": [],
+"name": "Chapelle-Chambertin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001861",
+"file": "PDO-FR-A0316"
+},
+{
+"path": [],
+"name": "Chambertin-Clos de Bèze",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002901",
+"file": "PDO-FR-A0311"
+},
+{
+"path": [],
+"name": "Atlantique",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002056",
+"file": "PGI-FR-A1365"
+},
+{
+"path": [],
+"name": "Pays de Brive",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003621",
+"file": "PGI-FR-A1127"
+},
+{
+"path": [],
+"name": "Jurançon",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002008",
+"file": "PDO-FR-A0827"
+},
+{
+"path": [],
+"name": "Côtes Catalanes",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003036",
+"file": "PGI-FR-A1135"
+},
+{
+"path": [],
+"name": "Tursan",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001614",
+"file": "PDO-FR-A0734"
+},
+{
+"path": [],
+"name": "Minervois",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001442",
+"file": "PDO-FR-A0330"
+},
+{
+"path": [],
+"name": "Crémant de Limoux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000881",
+"file": "PDO-FR-A1003"
+},
+{
+"path": [],
+"name": "Coteaux champenois",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002666",
+"file": "PDO-FR-A1364"
+},
+{
+"path": [],
+"name": "Côtes du Roussillon Villages",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000641",
+"file": "PDO-FR-A0999"
+},
+{
+"path": [],
+"name": "Côtes du Roussillon",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000441",
+"file": "PDO-FR-A0919"
+},
+{
+"path": [],
+"name": "Côtes de Provence",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000323",
+"file": "PDO-FR-A0392"
+},
+{
+"path": [],
+"name": "Coteaux Varois en Provence",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000142",
+"file": "PDO-FR-A0725"
+},
+{
+"path": [],
+"name": "Vin de Savoie",
+"also": [
+"Savoie"
+],
+"kind": "PDO",
+"id": "EUGI00000002202",
+"file": "PDO-FR-A0681"
+},
+{
+"path": [],
+"name": "Montlouis-sur-Loire",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001284",
+"file": "PDO-FR-A0169"
+},
+{
+"path": [],
+"name": "Bordeaux supérieur",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001605",
+"file": "PDO-FR-A0306"
+},
+{
+"path": [],
+"name": "Alsace grand cru Schlossberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002041",
+"file": "PDO-FR-A0415"
+},
+{
+"path": [],
+"name": "Alsace grand cru Schoenenbourg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002042",
+"file": "PDO-FR-A0418"
+},
+{
+"path": [],
+"name": "Champagne",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002663",
+"file": "PDO-FR-A1359"
+},
+{
+"path": [],
+"name": "Alsace grand cru Spiegel",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002045",
+"file": "PDO-FR-A0345"
+},
+{
+"path": [],
+"name": "Alsace grand cru Wiebelsberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002064",
+"file": "PDO-FR-A0638"
+},
+{
+"path": [],
+"name": "Alsace grand cru Zinnkoepflé",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002051",
+"file": "PDO-FR-A0635"
+},
+{
+"path": [],
+"name": "Alsace grand cru Zotzenberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002066",
+"file": "PDO-FR-A0916"
+},
+{
+"path": [],
+"name": "Alsace grand cru Steinklotz",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002063",
+"file": "PDO-FR-A0636"
+},
+{
+"path": [],
+"name": "Alsace grand cru Sporen",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002046",
+"file": "PDO-FR-A0628"
+},
+{
+"path": [],
+"name": "Alsace grand cru Sommerberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002043",
+"file": "PDO-FR-A0416"
+},
+{
+"path": [],
+"name": "Alsace grand cru Steingrubler",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002048",
+"file": "PDO-FR-A0630"
+},
+{
+"path": [],
+"name": "Alsace grand cru Winzenberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002065",
+"file": "PDO-FR-A0641"
+},
+{
+"path": [],
+"name": "Alsace grand cru Rosacker",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002039",
+"file": "PDO-FR-A0341"
+},
+{
+"path": [],
+"name": "Alsace grand cru Saering",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002040",
+"file": "PDO-FR-A0375"
+},
+{
+"path": [],
+"name": "Alsace grand cru Pfersigberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002036",
+"file": "PDO-FR-A0374"
+},
+{
+"path": [],
+"name": "Bourgogne",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002801",
+"file": "PDO-FR-A0650"
+},
+{
+"path": [],
+"name": "Cairanne",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000014883",
+"file": "PDO-FR-02175"
+},
+{
+"path": [],
+"name": "Vosne-Romanée",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002925",
+"file": "PDO-FR-A0504"
+},
+{
+"path": [],
+"name": "Alsace grand cru Rangen",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002038",
+"file": "PDO-FR-A0386"
+},
+{
+"path": [],
+"name": "Alsace grand cru Pfingstberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002037",
+"file": "PDO-FR-A0387"
+},
+{
+"path": [],
+"name": "Alsace grand cru Praelatenberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002062",
+"file": "PDO-FR-A0381"
+},
+{
+"path": [],
+"name": "Alsace grand cru Muenchberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002061",
+"file": "PDO-FR-A0417"
+},
+{
+"path": [],
+"name": "Alsace grand cru Mambourg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002031",
+"file": "PDO-FR-A0411"
+},
+{
+"path": [],
+"name": "Alsace grand cru Mandelberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002032",
+"file": "PDO-FR-A0334"
+},
+{
+"path": [],
+"name": "Alsace grand cru Gloeckelberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002020",
+"file": "PDO-FR-A0377"
+},
+{
+"path": [],
+"name": "Alsace grand cru Engelberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002055",
+"file": "PDO-FR-A0385"
+},
+{
+"path": [],
+"name": "Alsace grand cru Kessler",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002028",
+"file": "PDO-FR-A0414"
+},
+{
+"path": [],
+"name": "Alsace grand cru Bruderthal",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002054",
+"file": "PDO-FR-A0336"
+},
+{
+"path": [],
+"name": "Alsace grand cru Kastelberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002058",
+"file": "PDO-FR-A0419"
+},
+{
+"path": [],
+"name": "Alsace grand cru Kirchberg de Barr",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002059",
+"file": "PDO-FR-A0343"
+},
+{
+"path": [],
+"name": "Alsace grand cru Froehn",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002017",
+"file": "PDO-FR-A0384"
+},
+{
+"path": [],
+"name": "Alsace grand cru Ollwiller",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002034",
+"file": "PDO-FR-A0413"
+},
+{
+"path": [],
+"name": "Alsace grand cru Moenchberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002060",
+"file": "PDO-FR-A0383"
+},
+{
+"path": [],
+"name": "Alsace grand cru Steinert",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002047",
+"file": "PDO-FR-A0344"
+},
+{
+"path": [],
+"name": "Alsace grand cru Osterberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002035",
+"file": "PDO-FR-A0412"
+},
+{
+"path": [],
+"name": "Alsace grand cru Sonnenglanz",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002044",
+"file": "PDO-FR-A0625"
+},
+{
+"path": [],
+"name": "Alsace grand cru Wineck-Schlossberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002050",
+"file": "PDO-FR-A0633"
+},
+{
+"path": [],
+"name": "Alsace grand cru Vorbourg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002049",
+"file": "PDO-FR-A0632"
+},
+{
+"path": [],
+"name": "Alsace grand cru Altenberg de Bergbieten",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002052",
+"file": "PDO-FR-A0349"
+},
+{
+"path": [],
+"name": "Alsace grand cru Altenberg de Bergheim",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002013",
+"file": "PDO-FR-A0915"
+},
+{
+"path": [],
+"name": "Clos de Vougeot",
+"also": [
+"Clos Vougeot"
+],
+"kind": "PDO",
+"id": "EUGI00000001943",
+"file": "PDO-FR-A0310"
+},
+{
+"path": [],
+"name": "Alsace grand cru Geisberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002019",
+"file": "PDO-FR-A0379"
+},
+{
+"path": [],
+"name": "Alsace grand cru Kitterlé",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002030",
+"file": "PDO-FR-A0335"
+},
+{
+"path": [],
+"name": "Alsace grand cru Florimont",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002016",
+"file": "PDO-FR-A0298"
+},
+{
+"path": [],
+"name": "Alsace grand cru Goldert",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002021",
+"file": "PDO-FR-A0373"
+},
+{
+"path": [],
+"name": "Alsace grand cru Hatschbourg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002023",
+"file": "PDO-FR-A0372"
+},
+{
+"path": [],
+"name": "Alsace grand cru Kirchberg de Ribeauvillé",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002029",
+"file": "PDO-FR-A0339"
+},
+{
+"path": [],
+"name": "Alsace grand cru Altenberg de Wolxheim",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002053",
+"file": "PDO-FR-A0348"
+},
+{
+"path": [],
+"name": "Alsace grand cru Frankstein",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002057",
+"file": "PDO-FR-A0346"
+},
+{
+"path": [],
+"name": "Alsace grand cru Furstentum",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002018",
+"file": "PDO-FR-A0378"
+},
+{
+"path": [],
+"name": "Alsace grand cru Kaefferkopf",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002026",
+"file": "PDO-FR-A0914"
+},
+{
+"path": [],
+"name": "Gevrey-Chambertin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001545",
+"file": "PDO-FR-A0168"
+},
+{
+"path": [],
+"name": "Touraine",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002781",
+"file": "PDO-FR-A0501"
+},
+{
+"path": [],
+"name": "Touraine Noble Joué",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001542",
+"file": "PDO-FR-A0594"
+},
+{
+"path": [],
+"name": "Saint-Nicolas-de-Bourgueil",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001302",
+"file": "PDO-FR-A0585"
+},
+{
+"path": [],
+"name": "Orléans-Cléry",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001301",
+"file": "PDO-FR-A0400"
+},
+{
+"path": [],
+"name": "Orléans",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001285",
+"file": "PDO-FR-A0303"
+},
+{
+"path": [],
+"name": "Jasnières",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001283",
+"file": "PDO-FR-A0393"
+},
+{
+"path": [],
+"name": "Cour-Cheverny",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001282",
+"file": "PDO-FR-A0304"
+},
+{
+"path": [],
+"name": "Coteaux du Loir",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001222",
+"file": "PDO-FR-A0299"
+},
+{
+"path": [],
+"name": "Bourgueil",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001210",
+"file": "PDO-FR-A0729"
+},
+{
+"path": [],
+"name": "Cheverny",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001212",
+"file": "PDO-FR-A0164"
+},
+{
+"path": [],
+"name": "Patrimonio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000121",
+"file": "PDO-FR-A0157"
+},
+{
+"path": [],
+"name": "Corse",
+"also": [
+"Vin de Corse"
+],
+"kind": "PDO",
+"id": "EUGI00000000124",
+"file": "PDO-FR-A0145"
+},
+{
+"path": [],
+"name": "Muscat du Cap Corse",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000122",
+"file": "PDO-FR-A0722"
+},
+{
+"path": [],
+"name": "Terrasses du Larzac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000008661",
+"file": "PDO-FR-02084"
+},
+{
+"path": [],
+"name": "Muscadet Sèvre et Maine",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001743",
+"file": "PDO-FR-A0494"
+},
+{
+"path": [],
+"name": "Côtes du Rhône Villages",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000182",
+"file": "PDO-FR-A0664"
+},
+{
+"path": [],
+"name": "Ajaccio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000123",
+"file": "PDO-FR-A0156"
+},
+{
+"path": [],
+"name": "Beaujolais",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002924",
+"file": "PDO-FR-A0934"
+},
+{
+"path": [],
+"name": "Muscadet Coteaux de la Loire",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002504",
+"file": "PDO-FR-A0495"
+},
+{
+"path": [],
+"name": "Bourgogne aligoté",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002741",
+"file": "PDO-FR-A0739"
+},
+{
+"path": [],
+"name": "Côtes de Gascogne",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001619",
+"file": "PGI-FR-A1162"
+},
+{
+"path": [],
+"name": "Saussignac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001163",
+"file": "PDO-FR-A0189"
+},
+{
+"path": [],
+"name": "Vinsobres",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000203",
+"file": "PDO-FR-A0690"
+},
+{
+"path": [],
+"name": "Côtes de Bergerac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001004",
+"file": "PDO-FR-A0191"
+},
+{
+"path": [],
+"name": "Bergerac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001002",
+"file": "PDO-FR-A0190"
+},
+{
+"path": [],
+"name": "Côtes de Bordeaux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003542",
+"file": "PDO-FR-A0987"
+},
+{
+"path": [],
+"name": "Coteaux du Vendômois",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001223",
+"file": "PDO-FR-A0166"
+},
+{
+"path": [],
+"name": "Coteaux du Giennois",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001181",
+"file": "PDO-FR-A0394"
+},
+{
+"path": [],
+"name": "Bandol",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000101",
+"file": "PDO-FR-A0485"
+},
+{
+"path": [],
+"name": "Côtes de la Charité",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003461",
+"file": "PGI-FR-A1372"
+},
+{
+"path": [],
+"name": "Muscat de Lunel",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000461",
+"file": "PDO-FR-A0717"
+},
+{
+"path": [],
+"name": "Côtes du Marmandais",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001206",
+"file": "PDO-FR-A0683"
+},
+{
+"path": [],
+"name": "Costières de Nîmes",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000164",
+"file": "PDO-FR-A0161"
+},
+{
+"path": [],
+"name": "Graves supérieures",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003569",
+"file": "PDO-FR-A1014"
+},
+{
+"path": [],
+"name": "Rosé des Riceys",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002928",
+"file": "PDO-FR-A1363"
+},
+{
+"path": [],
+"name": "Bonnezeaux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000283",
+"file": "PDO-FR-A0926"
+},
+{
+"path": [],
+"name": "Fiefs Vendéens",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002009",
+"file": "PDO-FR-A0733"
+},
+{
+"path": [],
+"name": "Volnay",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001461",
+"file": "PDO-FR-A0198"
+},
+{
+"path": [],
+"name": "Moselle",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002621",
+"file": "PDO-FR-A0669"
+},
+{
+"path": [],
+"name": "Mont Caume",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002940",
+"file": "PGI-FR-A1206"
+},
+{
+"path": [],
+"name": "Muscat de Beaumes-de-Venise",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000721",
+"file": "PDO-FR-A0716"
+},
+{
+"path": [],
+"name": "Floc de Gascogne",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001841",
+"file": "PDO-FR-A0503"
+},
+{
+"path": [],
+"name": "Duché d'Uzès",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003442",
+"file": "PDO-FR-A1165"
+},
+{
+"path": [],
+"name": "Coteaux de l'Aubance",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000284",
+"file": "PDO-FR-A0149"
+},
+{
+"path": [],
+"name": "Coteaux du Layon",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002525",
+"file": "PDO-FR-A0826"
+},
+{
+"path": [],
+"name": "Pays d'Oc",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003341",
+"file": "PGI-FR-A1367"
+},
+{
+"path": [],
+"name": "Côtes de Thongue",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003201",
+"file": "PGI-FR-A1110"
+},
+{
+"path": [],
+"name": "Pays des Bouches-du-Rhône",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003035",
+"file": "PGI-FR-A1223"
+},
+{
+"path": [],
+"name": "Anjou Villages",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000941",
+"file": "PDO-FR-A0493"
+},
+{
+"path": [],
+"name": "Cassis",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000126",
+"file": "PDO-FR-A0396"
+},
+{
+"path": [],
+"name": "Bourg",
+"also": [
+"Côtes de Bourg",
+"Bourgeais"
+],
+"kind": "PDO",
+"id": "EUGI00000001986",
+"file": "PDO-FR-A0828"
+},
+{
+"path": [],
+"name": "Sainte-Croix-du-Mont",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001611",
+"file": "PDO-FR-A0714"
+},
+{
+"path": [],
+"name": "Beaumes de Venise",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000161",
+"file": "PDO-FR-A0724"
+},
+{
+"path": [],
+"name": "Tavel",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000201",
+"file": "PDO-FR-A0328"
+},
+{
+"path": [],
+"name": "Crémant de Bordeaux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001616",
+"file": "PDO-FR-A0488"
+},
+{
+"path": [],
+"name": "Anjou-Coteaux de la Loire",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000285",
+"file": "PDO-FR-A0405"
+},
+{
+"path": [],
+"name": "Anjou Brissac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000961",
+"file": "PDO-FR-A0259"
+},
+{
+"path": [],
+"name": "Saumur-Champigny",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001005",
+"file": "PDO-FR-A0147"
+},
+{
+"path": [],
+"name": "Ladoix",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001281",
+"file": "PDO-FR-A0590"
+},
+{
+"path": [],
+"name": "Malepère",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001321",
+"file": "PDO-FR-A0196"
+},
+{
+"path": [],
+"name": "Luberon",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000184",
+"file": "PDO-FR-A0920"
+},
+{
+"path": [],
+"name": "Muscadet",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002506",
+"file": "PDO-FR-A0497"
+},
+{
+"path": [],
+"name": "Drôme",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002541",
+"file": "PGI-FR-A1121"
+},
+{
+"path": [],
+"name": "Muscadet Côtes de Grandlieu",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002505",
+"file": "PDO-FR-A0496"
+},
+{
+"path": [],
+"name": "Ventoux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000404",
+"file": "PDO-FR-A0399"
+},
+{
+"path": [],
+"name": "Vouvray",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001546",
+"file": "PDO-FR-A0146"
+},
+{
+"path": [],
+"name": "Chinon",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001214",
+"file": "PDO-FR-A0395"
+},
+{
+"path": [],
+"name": "Crémant du Jura",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001501",
+"file": "PDO-FR-A0740"
+},
+{
+"path": [],
+"name": "Bordeaux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001602",
+"file": "PDO-FR-A0821"
+},
+{
+"path": [],
+"name": "Var",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002927",
+"file": "PGI-FR-A1145"
+},
+{
+"path": [],
+"name": "Alpilles",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001382",
+"file": "PGI-FR-A1197"
+},
+{
+"path": [],
+"name": "Brouilly",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002665",
+"file": "PDO-FR-A0935"
+},
+{
+"path": [],
+"name": "Coteaux d'Ancenis",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002484",
+"file": "PDO-FR-A0928"
+},
+{
+"path": [],
+"name": "Gros Plant du Pays nantais",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001966",
+"file": "PDO-FR-A0275"
+},
+{
+"path": [],
+"name": "Pacherenc du Vic-Bilh",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001901",
+"file": "PDO-FR-A0593"
+},
+{
+"path": [],
+"name": "Madiran",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001701",
+"file": "PDO-FR-A0687"
+},
+{
+"path": [],
+"name": "Coteaux d'Aix-en-Provence",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000141",
+"file": "PDO-FR-A0159"
+},
+{
+"path": [],
+"name": "Côte de Brouilly",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002763",
+"file": "PDO-FR-A1027"
+},
+{
+"path": [],
+"name": "Saint-Romain",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001441",
+"file": "PDO-FR-A0167"
+},
+{
+"path": [],
+"name": "Chablis grand cru",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001721",
+"file": "PDO-FR-A0505"
+},
+{
+"path": [],
+"name": "Côtes du Rhône",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000181",
+"file": "PDO-FR-A0325"
+},
+{
+"path": [],
+"name": "Loupiac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001609",
+"file": "PDO-FR-A0170"
+},
+{
+"path": [],
+"name": "Premières Côtes de Bordeaux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001607",
+"file": "PDO-FR-A0274"
+},
+{
+"path": [],
+"name": "Cadillac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001606",
+"file": "PDO-FR-A0686"
+},
+{
+"path": [],
+"name": "Saint-Péray",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000261",
+"file": "PDO-FR-A0398"
+},
+{
+"path": [],
+"name": "Coulée de Serrant",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002523",
+"file": "PDO-FR-A0983"
+},
+{
+"path": [],
+"name": "Alpes-de-Haute-Provence",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000000501",
+"file": "PGI-FR-A1115"
+},
+{
+"path": [],
+"name": "Côtes de Thau",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003163",
+"file": "PGI-FR-A1229"
+},
+{
+"path": [],
+"name": "Muscat de Frontignan",
+"also": [
+"Frontignan",
+"Vin de Frontignan"
+],
+"kind": "PDO",
+"id": "EUGI00000000561",
+"file": "PDO-FR-A0675"
+},
+{
+"path": [],
+"name": "Mâcon",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002487",
+"file": "PDO-FR-A0649"
+},
+{
+"path": [],
+"name": "Macvin du Jura",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001521",
+"file": "PDO-FR-A0192"
+},
+{
+"path": [],
+"name": "Hermitage",
+"also": [
+"Ermitage",
+"L'Hermitage",
+"L'Ermitage"
+],
+"kind": "PDO",
+"id": "EUGI00000000286",
+"file": "PDO-FR-A1002"
+},
+{
+"path": [],
+"name": "Gigondas",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000183",
+"file": "PDO-FR-A0143"
+},
+{
+"path": [],
+"name": "Picpoul de Pinet",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000008602",
+"file": "PDO-FR-N1672"
+},
+{
+"path": [],
+"name": "Fixin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003441",
+"file": "PDO-FR-A0642"
+},
+{
+"path": [],
+"name": "Fleurie",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002823",
+"file": "PDO-FR-A0930"
+},
+{
+"path": [],
+"name": "La Clape",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000014387",
+"file": "PDO-FR-02113"
+},
+{
+"path": [],
+"name": "Languedoc",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000621",
+"file": "PDO-FR-A0922"
+},
+{
+"path": [],
+"name": "Périgord",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003570",
+"file": "PGI-FR-A1105"
+},
+{
+"path": [],
+"name": "Valençay",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001544",
+"file": "PDO-FR-A0320"
+},
+{
+"path": [],
+"name": "Isère",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002862",
+"file": "PGI-FR-A1153"
+},
+{
+"path": [],
+"name": "Crozes-Hermitage",
+"also": [
+"Crozes-Ermitage"
+],
+"kind": "PDO",
+"id": "EUGI00000000227",
+"file": "PDO-FR-A0389"
+},
+{
+"path": [],
+"name": "Médoc",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001617",
+"file": "PDO-FR-A0730"
+},
+{
+"path": [],
+"name": "Chablis",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001618",
+"file": "PDO-FR-A0736"
+},
+{
+"path": [],
+"name": "Clairette de Die",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000222",
+"file": "PDO-FR-A0301"
+},
+{
+"path": [],
+"name": "Haut-Médoc",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001702",
+"file": "PDO-FR-A0710"
+},
+{
+"path": [],
+"name": "Côtes de Duras",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001204",
+"file": "PDO-FR-A0165"
+},
+{
+"path": [],
+"name": "Coteaux bourguignons",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000861",
+"file": "PDO-FR-A0931"
+},
+{
+"path": [],
+"name": "Listrac-Médoc",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001703",
+"file": "PDO-FR-A0276"
+},
+{
+"path": [],
+"name": "Terres du Midi",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000016239",
+"file": "PGI-FR-02484"
+},
+{
+"path": [],
+"name": "Pessac-Léognan",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000282",
+"file": "PDO-FR-A0162"
+},
+{
+"path": [],
+"name": "Graves de Vayres",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002006",
+"file": "PDO-FR-A0927"
+},
+{
+"path": [],
+"name": "Alpes-Maritimes",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001007",
+"file": "PGI-FR-A1148"
+},
+{
+"path": [],
+"name": "Gers",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001621",
+"file": "PGI-FR-A1221"
+},
+{
+"path": [],
+"name": "Maures",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003023",
+"file": "PGI-FR-A1152"
+},
+{
+"path": [],
+"name": "Cévennes",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002982",
+"file": "PGI-FR-A1151"
+},
+{
+"path": [],
+"name": "Mercurey",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002442",
+"file": "PDO-FR-A0404"
+},
+{
+"path": [],
+"name": "Entre-deux-Mers",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001988",
+"file": "PDO-FR-A0406"
+},
+{
+"path": [],
+"name": "Seyssel",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002301",
+"file": "PDO-FR-A0679"
+},
+{
+"path": [],
+"name": "Roussette du Bugey",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002302",
+"file": "PDO-FR-A0588"
+},
+{
+"path": [],
+"name": "Gaillac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002802",
+"file": "PDO-FR-A0502"
+},
+{
+"path": [],
+"name": "Coteaux du Quercy",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002142",
+"file": "PDO-FR-A0499"
+},
+{
+"path": [],
+"name": "Château-Chalon",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001102",
+"file": "PDO-FR-A0187"
+},
+{
+"path": [],
+"name": "Bugey",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002162",
+"file": "PDO-FR-A0174"
+},
+{
+"path": [],
+"name": "Moulin-à-Vent",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002923",
+"file": "PDO-FR-A0933"
+},
+{
+"path": [],
+"name": "Alsace grand cru Kanzlerberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002027",
+"file": "PDO-FR-A0410"
+},
+{
+"path": [],
+"name": "Alsace grand cru Marckrain",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002033",
+"file": "PDO-FR-A0333"
+},
+{
+"path": [],
+"name": "Alsace grand cru Eichberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002015",
+"file": "PDO-FR-A0338"
+},
+{
+"path": [],
+"name": "L'Etoile",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001502",
+"file": "PDO-FR-A0598"
+},
+{
+"path": [],
+"name": "Chambertin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001742",
+"file": "PDO-FR-A0313"
+},
+{
+"path": [],
+"name": "Viré-Clessé",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002024",
+"file": "PDO-FR-A0661"
+},
+{
+"path": [],
+"name": "Pouilly-Vinzelles",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002004",
+"file": "PDO-FR-A0936"
+},
+{
+"path": [],
+"name": "Barsac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001562",
+"file": "PDO-FR-A0186"
+},
+{
+"path": [],
+"name": "Saint-Estèphe",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001723",
+"file": "PDO-FR-A0178"
+},
+{
+"path": [],
+"name": "Pauillac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001722",
+"file": "PDO-FR-A0713"
+},
+{
+"path": [],
+"name": "Saint-Mont",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001081",
+"file": "PDO-FR-A0711"
+},
+{
+"path": [],
+"name": "Côte de Nuits-Villages",
+"also": [
+"Vins fins de la Côte de Nuits"
+],
+"kind": "PDO",
+"id": "EUGI00000001604",
+"file": "PDO-FR-A0409"
+},
+{
+"path": [],
+"name": "Comté Tolosan",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002562",
+"file": "PGI-FR-A1231"
+},
+{
+"path": [],
+"name": "Graves",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001613",
+"file": "PDO-FR-A1012"
+},
+{
+"path": [],
+"name": "Méditerranée",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003039",
+"file": "PGI-FR-A1154"
+},
+{
+"path": [],
+"name": "Val de Loire",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003421",
+"file": "PGI-FR-A1225"
+},
+{
+"path": [],
+"name": "Côtes de Toul",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002601",
+"file": "PDO-FR-A0709"
+},
+{
+"path": [],
+"name": "Corbières",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001241",
+"file": "PDO-FR-A0671"
+},
+{
+"path": [],
+"name": "Anjou",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001082",
+"file": "PDO-FR-A0820"
+},
+{
+"path": [],
+"name": "Cabernet d'Anjou",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001101",
+"file": "PDO-FR-A1005"
+},
+{
+"path": [],
+"name": "Saumur",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001165",
+"file": "PDO-FR-A0260"
+},
+{
+"path": [],
+"name": "Crémant de Loire",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000982",
+"file": "PDO-FR-A0391"
+},
+{
+"path": [],
+"name": "Rosé de Loire",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001003",
+"file": "PDO-FR-A0150"
+},
+{
+"path": [],
+"name": "Fronton",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001885",
+"file": "PDO-FR-A0595"
+},
+{
+"path": [],
+"name": "Coteaux de Saumur",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000062",
+"file": "PDO-FR-A0179"
+},
+{
+"path": [],
+"name": "Buzet",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001164",
+"file": "PDO-FR-A0148"
+},
+{
+"path": [],
+"name": "Canon Fronsac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000281",
+"file": "PDO-FR-A0924"
+},
+{
+"path": [],
+"name": "Fronsac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000263",
+"file": "PDO-FR-A1103"
+},
+{
+"path": [],
+"name": "Condrieu",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000262",
+"file": "PDO-FR-A0685"
+},
+{
+"path": [],
+"name": "Béarn",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001941",
+"file": "PDO-FR-A0597"
+},
+{
+"path": [],
+"name": "Chiroubles",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002822",
+"file": "PDO-FR-A0911"
+},
+{
+"path": [],
+"name": "Juliénas",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002841",
+"file": "PDO-FR-A1025"
+},
+{
+"path": [],
+"name": "Régnié",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002826",
+"file": "PDO-FR-A0912"
+},
+{
+"path": [],
+"name": "Saône-et-Loire",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003030",
+"file": "PGI-FR-A1212"
+},
+{
+"path": [],
+"name": "Chénas",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002921",
+"file": "PDO-FR-A1029"
+},
+{
+"path": [],
+"name": "Les Baux de Provence",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000301",
+"file": "PDO-FR-A0272"
+},
+{
+"path": [],
+"name": "Irouléguy",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001642",
+"file": "PDO-FR-A0708"
+},
+{
+"path": [],
+"name": "Morgon",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002922",
+"file": "PDO-FR-A1024"
+},
+{
+"path": [],
+"name": "Saint-Amour",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002827",
+"file": "PDO-FR-A1028"
+},
+{
+"path": [],
+"name": "Puisseguin Saint-Emilion",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001862",
+"file": "PDO-FR-A0992"
+},
+{
+"path": [],
+"name": "Château-Grillet",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000204",
+"file": "PDO-FR-A0587"
+},
+{
+"path": [],
+"name": "Palette",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000322",
+"file": "PDO-FR-A0185"
+},
+{
+"path": [],
+"name": "Cornas",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000224",
+"file": "PDO-FR-A0697"
+},
+{
+"path": [],
+"name": "Pouilly-Fumé",
+"also": [
+"Blanc Fumé de Pouilly"
+],
+"kind": "PDO",
+"id": "EUGI00000001209",
+"file": "PDO-FR-A0824"
+},
+{
+"path": [],
+"name": "Pouilly-sur-Loire",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001681",
+"file": "PDO-FR-A0825"
+},
+{
+"path": [],
+"name": "Brulhois",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001207",
+"file": "PDO-FR-A0984"
+},
+{
+"path": [],
+"name": "Saint-Joseph",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000241",
+"file": "PDO-FR-A0200"
+},
+{
+"path": [],
+"name": "Lirac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000402",
+"file": "PDO-FR-A0331"
+},
+{
+"path": [],
+"name": "Roussette de Savoie",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002281",
+"file": "PDO-FR-A0173"
+},
+{
+"path": [],
+"name": "Côte Rôtie",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000225",
+"file": "PDO-FR-A0199"
+},
+{
+"path": [],
+"name": "Banyuls",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002961",
+"file": "PDO-FR-A0672"
+},
+{
+"path": [],
+"name": "Lorraine",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000017993",
+"file": "PGI-FR-02815"
+},
+{
+"path": [],
+"name": "Gaillac premières côtes",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001962",
+"file": "PDO-FR-A0326"
+},
+{
+"path": [],
+"name": "Monbazillac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001042",
+"file": "PDO-FR-A0153"
+},
+{
+"path": [],
+"name": "Petit Chablis",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001744",
+"file": "PDO-FR-A0656"
+},
+{
+"path": [],
+"name": "La Livinière",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001543",
+"file": "PDO-FR-A0667"
+},
+{
+"path": [],
+"name": "Rasteau",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000321",
+"file": "PDO-FR-A0720"
+},
+{
+"path": [],
+"name": "Boutenac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001381",
+"file": "PDO-FR-A0670"
+},
+{
+"path": [],
+"name": "Vaucluse",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003037",
+"file": "PGI-FR-A1209"
+},
+{
+"path": [],
+"name": "Grignan-les-Adhémar",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000481",
+"file": "PDO-FR-A0929"
+},
+{
+"path": [],
+"name": "Savennières",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000084",
+"file": "PDO-FR-A0158"
+},
+{
+"path": [],
+"name": "Lussac Saint-Emilion",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001824",
+"file": "PDO-FR-A1200"
+},
+{
+"path": [],
+"name": "Côtes d'Auvergne",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001202",
+"file": "PDO-FR-A0925"
+},
+{
+"path": [],
+"name": "Cérons",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001610",
+"file": "PDO-FR-A0668"
+},
+{
+"path": [],
+"name": "Sable de Camargue",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000018486",
+"file": "PDO-FR-02848"
+},
+{
+"path": [],
+"name": "Rivesaltes",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000082",
+"file": "PDO-FR-A0623"
+},
+{
+"path": [],
+"name": "Île de Beauté",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002842",
+"file": "PGI-FR-A1166"
+},
+{
+"path": [],
+"name": "Savennières Roche aux Moines",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002521",
+"file": "PDO-FR-A0982"
+},
+{
+"path": [],
+"name": "Saint-Emilion Grand Cru",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001822",
+"file": "PDO-FR-A0993"
+},
+{
+"path": [],
+"name": "Saint-Emilion",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001803",
+"file": "PDO-FR-A0988"
+},
+{
+"path": [],
+"name": "Pic Saint-Loup",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000014911",
+"file": "PDO-FR-02354"
+},
+{
+"path": [],
+"name": "Pays d'Hérault",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002984",
+"file": "PGI-FR-A1370"
+},
+{
+"path": [],
+"name": "Haute Vallée de l'Orb",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003161",
+"file": "PGI-FR-A1163"
+},
+{
+"path": [],
+"name": "Vallée du Paradis",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002937",
+"file": "PGI-FR-A1141"
+},
+{
+"path": [],
+"name": "Le Pays Cathare",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003045",
+"file": "PGI-FR-A1374"
+},
+{
+"path": [],
+"name": "Aude",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002701",
+"file": "PGI-FR-A1215"
+},
+{
+"path": [],
+"name": "Vallée du Torgan",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003042",
+"file": "PGI-FR-A1112"
+},
+{
+"path": [],
+"name": "Coteaux d'Ensérune",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003183",
+"file": "PGI-FR-A1168"
+},
+{
+"path": [],
+"name": "Corrèze",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000015287",
+"file": "PDO-FR-02407"
+},
+{
+"path": [],
+"name": "Quarts de Chaume",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002524",
+"file": "PDO-FR-A0829"
+},
+{
+"path": [],
+"name": "Côtes du Jura",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001121",
+"file": "PDO-FR-A0155"
+},
+{
+"path": [],
+"name": "Vézelay",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000015597",
+"file": "PDO-FR-02406"
+},
+{
+"path": [],
+"name": "Saint-Véran",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002010",
+"file": "PDO-FR-A0577"
+},
+{
+"path": [],
+"name": "Comtés Rhodaniens",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003041",
+"file": "PGI-FR-A1230"
+},
+{
+"path": [],
+"name": "Vicomté d'Aumelas",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003043",
+"file": "PGI-FR-A1107"
+},
+{
+"path": [],
+"name": "Arbois",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000021",
+"file": "PDO-FR-A0994"
+},
+{
+"path": [],
+"name": "Coteaux de Béziers",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003184",
+"file": "PGI-FR-A1146"
+},
+{
+"path": [],
+"name": "Saint-Guilhem-le-Désert",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003362",
+"file": "PGI-FR-A1143"
+},
+{
+"path": [],
+"name": "Reuilly",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001213",
+"file": "PDO-FR-A0727"
+},
+{
+"path": [],
+"name": "Quincy",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001211",
+"file": "PDO-FR-A0498"
+},
+{
+"path": [],
+"name": "Charentais",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001122",
+"file": "PGI-FR-A1196"
+},
+{
+"path": [],
+"name": "Pomerol",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001963",
+"file": "PDO-FR-A0273"
+},
+{
+"path": [],
+"name": "Côtes de Bordeaux-Saint-Macaire",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001612",
+"file": "PDO-FR-A0707"
+},
+{
+"path": [],
+"name": "Vacqueyras",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000202",
+"file": "PDO-FR-A0151"
+},
+{
+"path": [],
+"name": "Île-de-France",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000017243",
+"file": "PGI-FR-02624"
+},
+{
+"path": [],
+"name": "Ardèche",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001401",
+"file": "PGI-FR-A1198"
+},
+{
+"path": [],
+"name": "Limoux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000761",
+"file": "PDO-FR-A0921"
+},
+{
+"path": [],
+"name": "Saint-Chinian",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000341",
+"file": "PDO-FR-A0203"
+},
+{
+"path": [],
+"name": "Coteaux du Pont du Gard",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002966",
+"file": "PGI-FR-A1131"
+},
+{
+"path": [],
+"name": "Pouilly-Fuissé",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001783",
+"file": "PDO-FR-A0653"
+},
+{
+"path": [],
+"name": "Marsannay",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001541",
+"file": "PDO-FR-A0175"
+},
+{
+"path": [],
+"name": "Gard",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002934",
+"file": "PGI-FR-A1130"
+},
+{
+"path": [],
+"name": "Agenais",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003561",
+"file": "PGI-FR-A1207"
+},
+{
+"path": [],
+"name": "Montagne-Saint-Emilion",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001883",
+"file": "PDO-FR-A0990"
+},
+{
+"path": [],
+"name": "Coteaux de Tannay",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002965",
+"file": "PGI-FR-A1134"
+},
+{
+"path": [],
+"name": "Coteaux de l'Ain",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002341",
+"file": "PGI-FR-A1160"
+},
+{
+"path": [],
+"name": "Coteaux du Cher et de l'Arnon",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002464",
+"file": "PGI-FR-A1129"
+},
+{
+"path": [],
+"name": "Vin des Allobroges",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002441",
+"file": "PGI-FR-A1144"
+},
+{
+"path": [],
+"name": "Pécharmant",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001061",
+"file": "PDO-FR-A0823"
+},
+{
+"path": [],
+"name": "Bourgogne Passe-tout-grains",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002722",
+"file": "PDO-FR-A0738"
+},
+{
+"path": [],
+"name": "Marcillac",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002005",
+"file": "PDO-FR-A0818"
+},
+{
+"path": [],
+"name": "Lalande-de-Pomerol",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001961",
+"file": "PDO-FR-A0171"
+},
+{
+"path": [],
+"name": "Grands-Echezeaux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003582",
+"file": "PDO-FR-A0583"
+},
+{
+"path": [],
+"name": "Rosette",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001161",
+"file": "PDO-FR-A0163"
+},
+{
+"path": [],
+"name": "Châteaumeillant",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001162",
+"file": "PDO-FR-A0154"
+},
+{
+"path": [],
+"name": "Cabardès",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001341",
+"file": "PDO-FR-A1011"
+},
+{
+"path": [],
+"name": "Sainte-Foy-Bordeaux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002011",
+"file": "PDO-FR-A0407"
+},
+{
+"path": [],
+"name": "Montravel",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001006",
+"file": "PDO-FR-A0923"
+},
+{
+"path": [],
+"name": "Côtes de Montravel",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001021",
+"file": "PDO-FR-A0188"
+},
+{
+"path": [],
+"name": "Haut-Montravel",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001041",
+"file": "PDO-FR-A0152"
+},
+{
+"path": [],
+"name": "Coteaux de Glanes",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002443",
+"file": "PGI-FR-A1216"
+},
+{
+"path": [],
+"name": "Estaing",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002181",
+"file": "PDO-FR-A1000"
+},
+{
+"path": [],
+"name": "Beaune",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001203",
+"file": "PDO-FR-A1022"
+},
+{
+"path": [],
+"name": "Faugères",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000362",
+"file": "PDO-FR-A0996"
+},
+{
+"path": [],
+"name": "Auxey-Duresses",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000901",
+"file": "PDO-FR-A0647"
+},
+{
+"path": [],
+"name": "Santenay",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001581",
+"file": "PDO-FR-A0589"
+},
+{
+"path": [],
+"name": "Urfé",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004699",
+"file": "PGI-FR-A1116"
+},
+{
+"path": [],
+"name": "Morey-Saint-Denis",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001481",
+"file": "PDO-FR-A0913"
+},
+{
+"path": [],
+"name": "Saint-Aubin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001601",
+"file": "PDO-FR-A0822"
+},
+{
+"path": [],
+"name": "La Tâche",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002824",
+"file": "PDO-FR-A0322"
+},
+{
+"path": [],
+"name": "Corton-Charlemagne",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002161",
+"file": "PDO-FR-A0307"
+},
+{
+"path": [],
+"name": "Bourgogne mousseux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002881",
+"file": "PDO-FR-A0737"
+},
+{
+"path": [],
+"name": "Maury",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000521",
+"file": "PDO-FR-A0719"
+},
+{
+"path": [],
+"name": "Vougeot",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001801",
+"file": "PDO-FR-A0176"
+},
+{
+"path": [],
+"name": "Echezeaux",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002926",
+"file": "PDO-FR-A0321"
+},
+{
+"path": [],
+"name": "Cahors",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001982",
+"file": "PDO-FR-A0302"
+},
+{
+"path": [],
+"name": "Côtes de Meuse",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002622",
+"file": "PGI-FR-A1156"
+},
+{
+"path": [],
+"name": "Haute-Vienne",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001123",
+"file": "PGI-FR-A1157"
+},
+{
+"path": [],
+"name": "Saint-Julien",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001741",
+"file": "PDO-FR-A0500"
+},
+{
+"path": [],
+"name": "Côte de Beaune-Villages",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001421",
+"file": "PDO-FR-A0401"
+},
+{
+"path": [],
+"name": "La Romanée",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001987",
+"file": "PDO-FR-A0314"
+},
+{
+"path": [],
+"name": "Chevalier-Montrachet",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001462",
+"file": "PDO-FR-A0573"
+},
+{
+"path": [],
+"name": "Grand Roussillon",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000581",
+"file": "PDO-FR-A0721"
+},
+{
+"path": [],
+"name": "Collioure",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001167",
+"file": "PDO-FR-A1049"
+},
+{
+"path": [],
+"name": "Haute Vallée de l'Aude",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003044",
+"file": "PGI-FR-A1126"
+},
+{
+"path": [],
+"name": "Yonne",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003033",
+"file": "PGI-FR-A1117"
+},
+{
+"path": [],
+"name": "Puy-de-Dôme",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003181",
+"file": "PGI-FR-A1211"
+},
+{
+"path": [],
+"name": "Puligny-Montrachet",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001603",
+"file": "PDO-FR-A0308"
+},
+{
+"path": [],
+"name": "Maranges",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001641",
+"file": "PDO-FR-A0718"
+},
+{
+"path": [],
+"name": "Côtes du Tarn",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002527",
+"file": "PGI-FR-A1161"
+},
+{
+"path": [],
+"name": "Clairette de Bellegarde",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000163",
+"file": "PDO-FR-A0160"
+},
+{
+"path": [],
+"name": "Romanée-Conti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002861",
+"file": "PDO-FR-A0584"
+},
+{
+"path": [],
+"name": "Banyuls grand cru",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002985",
+"file": "PDO-FR-A0673"
+},
+{
+"path": [],
+"name": "Saint-Sardos",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002012",
+"file": "PDO-FR-A0408"
+},
+{
+"path": [],
+"name": "Coteaux du Lyonnais",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002661",
+"file": "PDO-FR-A0202"
+},
+{
+"path": [],
+"name": "Sainte-Marie-la-Blanche",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003001",
+"file": "PGI-FR-A1113"
+},
+{
+"path": [],
+"name": "Côte Vermeille",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003081",
+"file": "PGI-FR-A1155"
+},
+{
+"path": [],
+"name": "Cabernet de Saumur",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001166",
+"file": "PDO-FR-A0257"
+},
+{
+"path": [],
+"name": "Pernand-Vergelesses",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003564",
+"file": "PDO-FR-A0643"
+},
+{
+"path": [],
+"name": "Pierrevert",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000403",
+"file": "PDO-FR-A0918"
+},
+{
+"path": [],
+"name": "Charlemagne",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002141",
+"file": "PDO-FR-A0492"
+},
+{
+"path": [],
+"name": "Côtes du Forez",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002241",
+"file": "PDO-FR-A0172"
+},
+{
+"path": [],
+"name": "Côte Roannaise",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002261",
+"file": "PDO-FR-A0201"
+},
+{
+"path": [],
+"name": "Hautes-Alpes",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002641",
+"file": "PGI-FR-A1208"
+},
+{
+"path": [],
+"name": "Thézac-Perricard",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003567",
+"file": "PGI-FR-A1204"
+},
+{
+"path": [],
+"name": "Lavilledieu",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002963",
+"file": "PGI-FR-A1136"
+},
+{
+"path": [],
+"name": "Monthélie",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003521",
+"file": "PDO-FR-A0654"
+},
+{
+"path": [],
+"name": "Haute-Marne",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001802",
+"file": "PGI-FR-A1150"
+},
+{
+"path": [],
+"name": "Chambolle-Musigny",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001561",
+"file": "PDO-FR-A1016"
+},
+{
+"path": [],
+"name": "Romanée-Saint-Vivant",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003501",
+"file": "PDO-FR-A0309"
+},
+{
+"path": [],
+"name": "Bâtard-Montrachet",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001383",
+"file": "PDO-FR-A0571"
+},
+{
+"path": [],
+"name": "La Grande Rue",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002522",
+"file": "PDO-FR-A0581"
+},
+{
+"path": [],
+"name": "Savigny-lès-Beaune",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003602",
+"file": "PDO-FR-A0660"
+},
+{
+"path": [],
+"name": "Châteauneuf-du-Pape",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000162",
+"file": "PDO-FR-A0144"
+},
+{
+"path": [],
+"name": "Clos Saint-Denis",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002502",
+"file": "PDO-FR-A0323"
+},
+{
+"path": [],
+"name": "Ariège",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002481",
+"file": "PGI-FR-A1109"
+},
+{
+"path": [],
+"name": "Clos de la Roche",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001884",
+"file": "PDO-FR-A0580"
+},
+{
+"path": [],
+"name": "Bonnes-Mares",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002526",
+"file": "PDO-FR-A0490"
+},
+{
+"path": [],
+"name": "Bienvenues-Bâtard-Montrachet",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001402",
+"file": "PDO-FR-A0657"
+},
+{
+"path": [],
+"name": "Montagny",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002465",
+"file": "PDO-FR-A0403"
+},
+{
+"path": [],
+"name": "Chassagne-Montrachet",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001615",
+"file": "PDO-FR-A1021"
+},
+{
+"path": [],
+"name": "Côtes du Vivarais",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000226",
+"file": "PDO-FR-A0390"
+},
+{
+"path": [],
+"name": "Landes",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001821",
+"file": "PGI-FR-A1219"
+},
+{
+"path": [],
+"name": "Menetou-Salon",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001205",
+"file": "PDO-FR-A0300"
+},
+{
+"path": [],
+"name": "Chorey-lès-Beaune",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002930",
+"file": "PDO-FR-A0659"
+},
+{
+"path": [],
+"name": "Aveyron",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002361",
+"file": "PGI-FR-A1149"
+},
+{
+"path": [],
+"name": "Givry",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002485",
+"file": "PDO-FR-A0578"
+},
+{
+"path": [],
+"name": "Richebourg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002121",
+"file": "PDO-FR-A0388"
+},
+{
+"path": [],
+"name": "Clairette du Languedoc",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000541",
+"file": "PDO-FR-A0486"
+},
+{
+"path": [],
+"name": "Rully",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002221",
+"file": "PDO-FR-A0937"
+},
+{
+"path": [],
+"name": "Musigny",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002081",
+"file": "PDO-FR-A0582"
+},
+{
+"path": [],
+"name": "Muscat de Mireval",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000401",
+"file": "PDO-FR-A0715"
+},
+{
+"path": [],
+"name": "Aloxe-Corton",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000781",
+"file": "PDO-FR-A0932"
+},
+{
+"path": [],
+"name": "Bouzeron",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002101",
+"file": "PDO-FR-A0576"
+},
+{
+"path": [],
+"name": "Entraygues - Le Fel",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002321",
+"file": "PDO-FR-A0986"
+},
+{
+"path": [],
+"name": "Criots-Bâtard-Montrachet",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001482",
+"file": "PDO-FR-A0574"
+},
+{
+"path": [],
+"name": "Irancy",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001208",
+"file": "PDO-FR-A0591"
+},
+{
+"path": [],
+"name": "Corton",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002102",
+"file": "PDO-FR-A0319"
+},
+{
+"path": [],
+"name": "Côtes de Millau",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002201",
+"file": "PDO-FR-A0596"
+},
+{
+"path": [],
+"name": "Calvados",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002381",
+"file": "PGI-FR-A1222"
+},
+{
+"path": [],
+"name": "Saint-Georges-Saint-Emilion",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001882",
+"file": "PDO-FR-A0991"
+},
+{
+"path": [],
+"name": "Coteaux de Coiffy",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001805",
+"file": "PGI-FR-A1120"
+},
+{
+"path": [],
+"name": "Franche-Comté",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001782",
+"file": "PGI-FR-A1217"
+},
+{
+"path": [],
+"name": "Sancerre",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000000841",
+"file": "PDO-FR-A0194"
+},
+{
+"path": [],
+"name": "Clos des Lambrays",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002501",
+"file": "PDO-FR-A0324"
+},
+{
+"path": [],
+"name": "Muscat de Saint-Jean-de-Minervois",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001584",
+"file": "PDO-FR-A0666"
+},
+{
+"path": [],
+"name": "Montrachet",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001582",
+"file": "PDO-FR-A0402"
+},
+{
+"path": [],
+"name": "Côte de Beaune",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001286",
+"file": "PDO-FR-A0592"
+},
+{
+"path": [],
+"name": "Clos de Tart",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002486",
+"file": "PDO-FR-A0491"
+}
+]
+}

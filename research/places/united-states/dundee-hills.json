@@ -1,0 +1,33 @@
+{
+ "subject": "place",
+ "id": "united-states/dundee-hills",
+ "read": "2026-11-05",
+ "sources": {
+  "wikipedia-dh": {"name": "Wikipedia, Dundee Hills AVA", "kind": "reference", "url": "https://en.wikipedia.org/wiki/Dundee_Hills_AVA"},
+  "owb-dh": {"name": "Oregon Wine Board trade site, Dundee Hills", "kind": "official", "url": "https://trade.oregonwine.org/resources/dundee-hills/"},
+  "bergstrom-vyd": {"name": "Bergström Wines, Bergström Vineyard page", "kind": "producer", "url": "https://bergstromwines.com/farm/bergstrom-vineyard/", "note": "One vineyard in the AVA."}
+ },
+ "claims": [
+  {"topic": "place", "claim": "The Dundee Hills AVA was approved in 2004, as Oregon's eighth AVA.", "source": ["wikipedia-dh", "owb-dh"], "strength": "Medium", "quote": "November 30, 2004", "note": "Both give 2004. The exact day is from Wikipedia only."},
+  {"topic": "place", "claim": "The name started as a proposed 'Red Hills', for the red soil. The petition was amended to Dundee Hills.", "source": ["wikipedia-dh"], "strength": "Weak", "note": "Single secondary source."},
+  {"topic": "soil", "claim": "Jory soil covers about 80 percent of the AVA. It is a red, well-drained volcanic clay.", "source": ["wikipedia-dh", "owb-dh"], "strength": "Medium", "quote": "approximately 80 percent of the area", "note": "The 80 percent figure is Wikipedia only. Both agree Jory is dominant and well drained."},
+  {"topic": "soil", "claim": "Jory formed from Columbia River basalt lava flows more than 14 million years ago. It runs 4 to 6 feet deep.", "source": ["owb-dh"], "strength": "Medium", "quote": "formed from Columbia River Basalts more than 14 million years ago", "note": "Official wine body page. Other pages give 15 to 17 million years."},
+  {"topic": "soil", "claim": "The steeper western slopes have Willakenzie soils, a sedimentary soil, rather than Jory.", "source": ["wikipedia-dh"], "strength": "Weak", "note": "Single secondary source."},
+  {"topic": "place", "claim": "Vineyards run from the 200 foot contour up to a high point of 1,067 feet.", "source": ["wikipedia-dh", "owb-dh"], "strength": "Strong", "quote": "200-foot contour line up to a highest peak of 1,067 feet", "note": "Both agree. Bergström's own vineyard sits at 350 to 380 feet, in the lower part of the range."},
+  {"topic": "place", "claim": "The Coast Range to the west puts the Dundee Hills in a rain shadow. Rain is 30 to 45 inches a year.", "source": ["wikipedia-dh"], "strength": "Weak", "note": "Single secondary source."},
+  {"topic": "place", "claim": "Nights are warmer and frost is less likely than on the valley floor. Growing seasons run a little warmer than most Willamette Valley AVAs.", "source": ["wikipedia-dh", "owb-dh"], "strength": "Medium", "quote": "slightly warmer than most Willamette Valley AVAs"},
+  {"topic": "place", "claim": "Pinot Noir from Jory is often bright and elegant, with earthy, truffle-like flavors and a silky feel.", "source": ["owb-dh"], "strength": "Medium", "quote": "bright and elegant, with earthy, truffle-like flavors and a silky mouthfeel"}
+ ],
+ "conflicts": [
+  "AVA size: Wikipedia gives 6,490 acres (infobox) and 6,940 (text). The Oregon Wine Board gives 12,500 acres. No acreage is used.",
+  "Jory age: more than 14 million years (Oregon Wine Board) against 15 to 17 million (search summaries). Neither is used as a hard figure."
+ ],
+ "gaps": [
+  "TTB petition or Federal Register text not read, so the establishment date and size are not checked against the official record.",
+  "No degree-day or temperature data found."
+ ],
+ "sheet": {
+  "soil": "Red Jory clay, from volcanic basalt, deep and well drained.",
+  "elevation": "200 to 1,067 feet. This vineyard sits near 380."
+ }
+}

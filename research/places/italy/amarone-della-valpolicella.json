@@ -1,0 +1,261 @@
+{
+ "subject": "place",
+ "id": "italy/amarone-della-valpolicella",
+ "read": "2026-11-05",
+ "sources": {
+  "disciplinare": {
+   "name": "Disciplinare di produzione, Amarone della Valpolicella DOCG (Masaf text, amended to D.M. 03.08.2023), as hosted by AIS Italia",
+   "kind": "official",
+   "url": "https://aisitalia.it/Disciplinari/Veneto/DOCG/Amarone%20della%20Valpolicella.pdf",
+   "note": "Read as PDF text. Latest amendment listed is D.M. 03.08.2023."
+  },
+  "wikipedia-en": {
+   "name": "Wikipedia, Amarone della Valpolicella (English)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Amarone_della_Valpolicella"
+  },
+  "name-search": {
+   "name": "Merriam-Webster and wine-trade pages on the word Amarone (via search summary)",
+   "kind": "general",
+   "url": "https://www.merriam-webster.com/dictionary/Amarone",
+   "note": "Seen only as a search-result summary. Pages not opened."
+  },
+  "producers": {
+   "name": "Producer sheets: Allegrini, Zenato, Bertani, Albino Armani (via search summary)",
+   "kind": "producer",
+   "url": "https://allegrini.it/wp-content/uploads/2025/09/2020_Amarone_eng-NO-.pdf",
+   "note": "Seen only as search-result summaries. Producer framing, not the Consorzio."
+  }
+ },
+ "claims": [
+  {
+   "topic": "place",
+   "claim": "The DOCG covers Amarone della Valpolicella, which may add Classico or Valpantena, and the word Riserva.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "designabile anche con i riferimenti “classico” e “Valpantena”"
+  },
+  {
+   "topic": "grapes",
+   "claim": "Corvina and/or Corvinone must be 45% to 95% of the vineyard. Rondinella must be 5% to 30%. Up to 25% in total may be other authorised red grapes: at most 15% non-aromatic reds from the Verona list (no single grape over 10%), and the rest native Italian reds.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "Corvina Veronese (Cruina o Corvina) e/o Corvinone dal 45% al 95 %",
+   "note": "The rule is on the vineyard make-up, not the finished blend."
+  },
+  {
+   "topic": "place",
+   "claim": "The wider zone is all or part of 19 communes in the province of Verona, including Negrar, Marano, Fumane, Sant'Ambrogio, San Pietro in Cariano, Dolcè, Verona itself, Grezzana, Illasi and Tregnago. Vineyards on peaty or very wet valley-floor soil are excluded.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "place",
+   "claim": "The Classico zone is the communes of Negrar, Marano, Fumane, Sant'Ambrogio and San Pietro in Cariano. Valpantena is a separately delimited valley zone to the north of Verona, bounded in part by the 500 m contour.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "note": "The Valpantena boundary description was read in part. No commune list for it was extracted."
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Grapes are dried (appassimento) in suitable rooms before pressing. Climate-controlled rooms are allowed if they run at temperatures like traditional drying. Heat-assisted dehumidifying is banned. Drying is not given a fixed time or weight loss.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "escludendo qualsiasi sistema di deumidificazione operante con l’ausilio del calore"
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Dried grapes cannot be vinified before 1 December, unless the Veneto Region allows it earlier after a documented request from the Consorzio. The dried grapes must reach at least 14% natural alcohol.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "non possono essere vinificate prima del 1° dicembre"
+  },
+  {
+   "topic": "winemaking",
+   "claim": "The official description of the wine says the grapes are held in drying lofts (fruttai) for about 100 to 120 days. This is a description, not a legal minimum.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "conservate in fruttai per 100/120 giorni"
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Wine from dried grapes may not exceed 40% of the grape weight. The Region can lower this each year at the Consorzio's request.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Producers say the grapes lose roughly 40% to 50% of their weight while drying, over about three to four months.",
+   "source": [
+    "producers"
+   ],
+   "strength": "Weak",
+   "note": "Producer sheets only, seen in search summaries. Not a rule."
+  },
+  {
+   "topic": "aging",
+   "claim": "Amarone must age at least two years, counted from 1 January after the harvest, before sale. Riserva needs at least four years from 1 November of the harvest year.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "almeno 4 anni a partire dal 1° novembre dell’anno della vendemmia"
+  },
+  {
+   "topic": "aging",
+   "claim": "The descriptive section of the disciplinare says the wine spends at least two years in wooden containers, then is bottled and rests more in bottle before release. The operative aging article does not name wood or barrel size.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "note": "Wording differs between the two sections of the same text. Safe to say at least two years of aging and that wood is the norm."
+  },
+  {
+   "topic": "alcohol",
+   "claim": "Finished wine must have at least 14% actual alcohol, at least 5.0 g/l total acidity and 28 g/l extract (32 g/l for Riserva). Residual sugar is capped at 9 g/l at 14%, with a small allowance for each extra 0.1% alcohol.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "titolo alcolometrico volumico effettivo minimo: 14% vol."
+  },
+  {
+   "topic": "tasting",
+   "claim": "The disciplinare describes a deep red that can turn garnet with age, with a strong nose of raisined fruit, tobacco and spice. The palate is full, velvety and warm. It calls Amarone one of the longest-lived great Italian wines.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "È uno dei vini più longevi fra i grandi vini italiani",
+   "note": "Official self-description."
+  },
+  {
+   "topic": "history",
+   "claim": "Amarone was first recognised as a type of Valpolicella by DPR of 21 August 1968. The disciplinare says four wines (Valpolicella, Ripasso, Recioto, Amarone) were made autonomous denominations by ministerial decrees of 24 March 2010.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "history",
+   "claim": "Amarone and Recioto della Valpolicella were promoted to DOCG on 4 December 2009. English Wikipedia also gives DOC status as 1990.",
+   "source": [
+    "wikipedia-en"
+   ],
+   "strength": "Medium",
+   "note": "The DOCG year is 2009 in common reference use. The standalone Amarone disciplinare is dated 2010. See conflicts."
+  },
+  {
+   "topic": "history",
+   "claim": "The disciplinare says the first commercial bottle of Amarone della Valpolicella dates from 1953. It traces the style's ancestor to Acinatico, a dried-grape wine asked for by Cassiodorus in the 4th to 6th century letters.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "note": "Official wording. The link to Cassiodorus is the consorzio's story, so keep it hedged on a sheet."
+  },
+  {
+   "topic": "soil",
+   "claim": "Valpolicella soils come from broken-down limestone and dolomite rock, from basalt, and from glacial and river deposits of volcanic origin. They vary, so water supply to the vines varies too.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "calcareo-dolomitiche che da basalti, che da depositi morenici e fluviali di origine vulcanica"
+  },
+  {
+   "topic": "soil",
+   "claim": "Bertani describes Valpantena as a pre-alpine valley with ferruginous marl and clay-limestone marl soils. Albino Armani describes Classico high-hill sites as calcareous deposits on volcanic rock.",
+   "source": [
+    "producers"
+   ],
+   "strength": "Weak",
+   "note": "Producer descriptions only, seen in a search summary."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Vineyards reach up to about 500 m above sea level.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "può arrivare sino ai 500 s.l.m."
+  },
+  {
+   "topic": "aspect",
+   "claim": "On low and middle hills and valley floors vines mostly face south. Higher up, vineyards sit on the gentler ridge tops and near-flat tops of the higher hills, on both the west and east sides of the zone.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Vines must be trained on a trellis (spalliera) or an inclined Veronese pergola. Vines must be at least in their fourth growing cycle to count.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "place",
+   "claim": "The climate is mild and not very rainy, sheltered by the Lessini mountains to the north and near Lake Garda. Yearly rain is about 850 to 1,000 mm, mostly in winter.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "la media annua oscilla fra gli 850 ed i 1000 mm"
+  },
+  {
+   "topic": "name",
+   "claim": "Amarone is Italian for 'great bitter', from amaro with the -one augmentative. It set the dry wine apart from the sweet Recioto made in the same place.",
+   "source": [
+    "wikipedia-en",
+    "name-search"
+   ],
+   "strength": "Medium",
+   "note": "Two secondary sources agree on the meaning. The name was not defined in the disciplinare."
+  },
+  {
+   "topic": "name",
+   "claim": "A popular story says a forgotten cask of Recioto fermented dry and Adelino Lucchese of the Valpolicella cooperative called it 'Amarone' in 1936.",
+   "source": [
+    "wikipedia-en",
+    "name-search"
+   ],
+   "strength": "Weak",
+   "note": "Sources disagree on what he said and when the name first appeared on a label (1936, 1939 and 1953 all appear)."
+  }
+ ],
+ "conflicts": [
+  "DOCG date: English Wikipedia gives 4 December 2009 for DOCG and 1990 for DOC. The disciplinare says Amarone was recognised as a type in 1968 and made a standalone denomination in March 2010. One search summary gave DOCG as 2005. Use 2009 for DOCG with care, or avoid the year.",
+  "Wood aging: the descriptive section says two years in wood. The operative article says two years of aging only.",
+  "Name story: dates for the first use of the word Amarone vary (1936, 1939, 1953)."
+ ],
+ "gaps": [
+  "Consorzio per la Tutela dei Vini Valpolicella site was not opened, so no Consorzio statement on soils, drying or Classico and Valpantena character.",
+  "Origin of the name Valpolicella not found.",
+  "Valpantena commune list and Classico soil detail not extracted.",
+  "No climate figures beyond the disciplinare's rainfall range."
+ ],
+ "sheet": {
+  "place": "Amarone is a dry, full red from Verona. Corvina, Corvinone and Rondinella grapes are dried for months, then pressed no earlier than December. It needs at least 14% alcohol and two years of aging."
+ }
+}

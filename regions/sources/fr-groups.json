@@ -1,0 +1,3989 @@
+{
+"source": {
+"title": "Wikipédia, « Vin français bénéficiant d'une AOC » (classified by bassin and vignoble, after INAO)",
+"url": "https://fr.wikipedia.org/wiki/Vin_fran%C3%A7ais_b%C3%A9n%C3%A9ficiant_d%27une_AOC",
+"revision": 240039961,
+"tier": "reference",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "auxerrois",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "chasselas",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "edelzwicker",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "gentil",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "gewurztraminer",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "muscat",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "pinot",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "pinot-gris",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "pinot-noir",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "riesling",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "sylvaner",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "bergheim",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "blienschwiller",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "côtes-de-barr",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "côte-de-rouffach",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "coteaux-du-haut-koenigsbourg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "klevener de Heiligenstein",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "ottrot",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "rodern",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "saint-hippolyte",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "scherwiller",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "val-saint-grégoire",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "vallée noble",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "wolxheim",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "altenberg-de-bergbieten",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "altenberg-de-bergheim",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "altenberg-de-wolxheim",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "brand",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "bruderthal",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "eichberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "engelberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "florimont",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "frankstein",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "froehn",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "furstentum",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "geisberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "gloeckelberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "goldert",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "hatschbourg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "hengst",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "kaefferkopf",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "kanzlerberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "kastelberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "kessler",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "kirchberg-de-barr",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "kirchberg-de-ribeauvillé",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "kitterlé",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "mambourg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "mandelberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "marckrain",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "moenchberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "muenchberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "ollwiller",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "osterberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "pfersigberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "pfingstberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "praelatenberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "rangen",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "rosacker",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "saering",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "schlossberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "schoenenbourg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "sommerberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "sonnenglanz",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "spiegel",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "sporen",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "steinert",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "steingrubler",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "steinklotz",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "vorbourg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "wiebelsberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "wineck-schlossberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "winzenberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "zinnkoepflé",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble d'Alsace"
+],
+"name": "zotzenberg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble de Lorraine"
+],
+"name": "côtes-de-toul",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Alsace Est",
+"Vignoble de Lorraine"
+],
+"name": "moselle",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Blayais et du Bourgeais"
+],
+"name": "blavia",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Blayais et du Bourgeais"
+],
+"name": "blaye-côtes-de-bordeaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Blayais et du Bourgeais"
+],
+"name": "côtes-de-bourg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble de l'Entre-deux-Mers"
+],
+"name": "entre-deux-mers",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble de l'Entre-deux-Mers"
+],
+"name": "entre-deux-mers-haut-benauge",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble de l'Entre-deux-Mers"
+],
+"name": "bordeaux-haut-benauge",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble de l'Entre-deux-Mers"
+],
+"name": "graves-de-vayres",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble de l'Entre-deux-Mers"
+],
+"name": "cadillac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble de l'Entre-deux-Mers"
+],
+"name": "cadillac-côtes-de-bordeaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble de l'Entre-deux-Mers"
+],
+"name": "premières-côtes-de-bordeaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble de l'Entre-deux-Mers"
+],
+"name": "loupiac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble de l'Entre-deux-Mers"
+],
+"name": "sainte-croix-du-mont",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble de l'Entre-deux-Mers"
+],
+"name": "côtes-de-bordeaux-saint-macaire",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble de l'Entre-deux-Mers"
+],
+"name": "sainte-foy-côtes-de-bordeaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble des Graves"
+],
+"name": "graves",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble des Graves"
+],
+"name": "pessac-léognan",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble des Graves"
+],
+"name": "cérons",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "fronsac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "canon-fronsac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "pomerol",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "lalande-de-pomerol",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "saint-émilion",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "saint-émilion grand cru",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "montagne-saint-émilion",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "saint-georges-saint-émilion",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "lussac-saint-émilion",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "puisseguin-saint-émilion",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "francs-côtes-de-bordeaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Libournais"
+],
+"name": "castillon-côtes-de-bordeaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Médoc"
+],
+"name": "médoc",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Médoc"
+],
+"name": "haut-médoc",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Médoc"
+],
+"name": "saint-estèphe",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Médoc"
+],
+"name": "pauillac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Médoc"
+],
+"name": "saint-julien",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Médoc"
+],
+"name": "listrac-médoc",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Médoc"
+],
+"name": "moulis",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Médoc"
+],
+"name": "margaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Sauternais"
+],
+"name": "sauternes",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bordeaux",
+"vignoble du Sauternais"
+],
+"name": "barsac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bergerac"
+],
+"name": "côtes-de-montravel",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bergerac"
+],
+"name": "haut-montravel",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bergerac"
+],
+"name": "monbazillac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bergerac"
+],
+"name": "montravel",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bergerac"
+],
+"name": "pécharmant",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bergerac"
+],
+"name": "rosette",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Aquitaine",
+"Vignoble de Bergerac"
+],
+"name": "saussignac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne"
+],
+"name": "bourgogne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne"
+],
+"name": "bourgogne aligoté",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne"
+],
+"name": "bourgogne-passe-tout-grains",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne"
+],
+"name": "coteaux-bourguignons",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne"
+],
+"name": "crémant de Bourgogne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne"
+],
+"name": "bourgogne mousseux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne"
+],
+"name": "marc de Bourgogne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne"
+],
+"name": "fine de Bourgogne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "petit-chablis",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "chablis",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "chablis grand cru",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "irancy",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "saint-bris",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "vézelay",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "bourgogne-côtes-d'auxerre",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "bourgogne chitry",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "bourgogne coulanges-la-vineuse",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "bourgogne tonnerre",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "bourgogne épineuil",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la Basse-Bourgogne"
+],
+"name": "bourgogne côte saint-jacques",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "bourgogne montrecul",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "bourgogne le chapitre",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "marsannay",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "fixin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "gevrey-chambertin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "ruchottes-chambertin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "mazis-chambertin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "chambertin-clos-de-bèze",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "chambertin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "chapelle-chambertin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "charmes-chambertin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "griotte-chambertin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "latricières-chambertin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "mazoyères-chambertin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "morey-saint-denis",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "clos-de-la-roche",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "clos-saint-denis",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "clos-des-lambrays",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "clos-de-tart",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "chambolle-musigny",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "bonnes-mares",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "musigny",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "vougeot",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "clos-de-vougeot",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "échezeaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "grands-échezeaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "vosne-romanée",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "richebourg",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "la-romanée",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "romanée-conti",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "romanée-saint-vivant",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "la-grande-rue",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "la-tâche",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "nuits-saint-georges",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "côte-de-nuits-villages",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "bourgogne hautes-côtes-de-nuits",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Nuits"
+],
+"name": "bourgogne côte-d'or",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "ladoix",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "bourgogne-la-chapelle-notre-dame",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "aloxe-corton",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "corton",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "corton-charlemagne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "charlemagne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "pernand-vergelesses",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "savigny-lès-beaune",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "chorey-lès-beaune",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "beaune",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "côte-de-beaune",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "pommard",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "volnay",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "monthélie",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "auxey-duresses",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "saint-romain",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "meursault",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "puligny-montrachet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "blagny",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "chevalier-montrachet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "montrachet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "bâtard-montrachet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "bienvenues-bâtard-montrachet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "chassagne-montrachet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "criots-bâtard-montrachet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "saint-aubin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "santenay",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "maranges",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "côte-de-beaune-villages",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "bourgogne hautes-côtes-de-beaune",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble de la côte de Beaune"
+],
+"name": "bourgogne côte-d'or",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignobles de la côte chalonnaise"
+],
+"name": "bouzeron",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignobles de la côte chalonnaise"
+],
+"name": "rully",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignobles de la côte chalonnaise"
+],
+"name": "mercurey",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignobles de la côte chalonnaise"
+],
+"name": "givry",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignobles de la côte chalonnaise"
+],
+"name": "montagny",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignobles de la côte chalonnaise"
+],
+"name": "bourgogne côte-chalonnaise",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignobles de la côte chalonnaise"
+],
+"name": "bourgogne-côtes-du-couchois",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble du Mâconnais"
+],
+"name": "mâcon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble du Mâconnais"
+],
+"name": "mâcon villages",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble du Mâconnais"
+],
+"name": "viré-clessé",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble du Mâconnais"
+],
+"name": "pouilly-fuissé",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble du Mâconnais"
+],
+"name": "pouilly-loché",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble du Mâconnais"
+],
+"name": "pouilly-vinzelles",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Bourgogne",
+"vignoble du Mâconnais"
+],
+"name": "saint-véran",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "coteaux-du-lyonnais",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "beaujolais",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "beaujolais nouveau",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "beaujolais supérieur",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "beaujolais-villages",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "juliénas",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "saint-amour",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "chénas",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "moulin-à-vent",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "fleurie",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "chiroubles",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "morgon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "régnié",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "brouilly",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignobles du Beaujolais et du Lyonnais"
+],
+"name": "côte-de-brouilly",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "abymes",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "apremont",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "arbin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "ayze",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "chautagne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "chignin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "chignin-bergeron",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "crépy",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "cruet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "jongieux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "marignan",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "marin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "montmélian",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "ripaille",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "saint-jean-de-la-porte",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "saint-jeoire-prieuré",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "crémant",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "frangy",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "marestel",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "monterminod",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble de Savoie"
+],
+"name": "monthoux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Bugey"
+],
+"name": "cerdon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Bugey"
+],
+"name": "manicle",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Bugey"
+],
+"name": "montagnieu",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Bugey"
+],
+"name": "virieu-le-grand",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Jura"
+],
+"name": "côtes-du-jura",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Jura"
+],
+"name": "crémant du Jura",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Jura"
+],
+"name": "macvin du Jura",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Jura"
+],
+"name": "marc du Jura",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Jura"
+],
+"name": "arbois",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Jura"
+],
+"name": "le pupillin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Jura"
+],
+"name": "château-chalon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Bourgogne Beaujolais Savoie Jura",
+"Vignoble du Jura"
+],
+"name": "l'étoile",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Champagne"
+],
+"name": "champagne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Champagne"
+],
+"name": "coteaux-champenois",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Charentes Cognac"
+],
+"name": "cognac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Charentes Cognac"
+],
+"name": "pineau des Charentes",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Corse"
+],
+"name": "calvi",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Corse"
+],
+"name": "coteaux-du-cap-corse",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Corse"
+],
+"name": "figari",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Corse"
+],
+"name": "porto-vecchio",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Corse"
+],
+"name": "sartène",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Corse"
+],
+"name": "ajaccio",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Corse"
+],
+"name": "muscat du cap Corse",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Corse"
+],
+"name": "patrimonio",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "cabrières",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "la-méjanelle",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "pézenas",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "quatourze",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "saint-christol",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "saint-drézéry",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "saint-georges-d'orques",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "saint-saturnin",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "sommières",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "cabardès",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "clairette du Languedoc",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "corbières",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "côtes-du-roussillon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "côtes-du-roussillon-villages",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "caramany",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "latour-de-france",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "lesquerde",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "et tautavel",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "crémant de Limoux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "grand-roussillon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "grés-de-montpellier",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "limoux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "malepère",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "minervois",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "picpoul de Pinet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "pic-saint-loup",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "saint-chinian",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "roquebrun",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "et berlou",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "terrasses-du-larzac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "muscat de Rivesaltes",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "rivesaltes",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "sable-de-camargue",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "banyuls",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "banyuls grand cru",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "boutenac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "la clape",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "collioure",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "faugères",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "fitou",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "la-livinière",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "maury",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "montpeyroux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "muscat de Frontignan",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "muscat de Lunel",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "muscat de Mireval",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Languedoc Roussillon"
+],
+"name": "muscat de Saint-Jean-de-Minervois",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "brulhois",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "buzet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "côtes-du-marmandais",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "fronton",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "saint-sardos",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "cahors",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "coteaux-du-quercy",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "côtes-de-millau",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "entraygues-le-fel",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "estaing",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "gaillac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "gaillac-premières-côtes",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "marcillac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "armagnac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "béarn",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "floc de Gascogne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "irouléguy",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "jurançon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "madiran",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "pacherenc du Vic-Bilh",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "saint-mont",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Sud-Ouest"
+],
+"name": "tursan",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "crémant de Loire",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "rosé de Loire",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "gros-plant du Pays nantais",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "muscadet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "muscadet-coteaux-de-la-loire",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "coteaux-d'ancenis",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "muscadet-sèvre-et-maine",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "château-thébaud",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "clisson",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "gorges",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "goulaine",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "le-pallet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "monnières-saint-fiacre",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "et mouzillon-tillières",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "muscadet-côtes-de-grandlieu",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "fiefs-vendéens",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "brem",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "chantonnay",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "mareuil",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "pissotte",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "et vix",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "anjou",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "cabernet d'Anjou",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "rosé d'Anjou",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "anjou-coteaux-de-la-loire",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "savennières",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "coulée-de-serrant",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "savennières-roche-aux-moines",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "coteaux-du-layon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "chaume",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "Beaulieu-sur-Layon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "Faye-d'Anjou",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "Rablay-sur-Layon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "Rochefort-sur-Loire",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "Saint-Aubin-de-Luigné",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "et Saint-Lambert-du-Lattay",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "quarts-de-chaume",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "bonnezeaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "coteaux-de-l'aubance",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "anjou villages",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "anjou brissac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "saumur",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "coteaux-de-saumur",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "saumur-champigny",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "saint-nicolas-de-bourgueil",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "bourgueil",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "chinon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "touraine",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "amboise",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "azay-le-rideau",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "mesland",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "chenonceaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "et oisly",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "touraine-noble-joué",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "vouvray",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "montlouis-sur-loire",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "cheverny",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "cour-cheverny",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "valençay",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "coteaux-du-loir",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "jasnières",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "coteaux-du-vendômois",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "haut-poitou",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "orléans",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "orléans-cléry",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "châteaumeillant",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "coteaux-du-giennois",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "menetou-salon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "pouilly-fumé",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "pouilly-sur-loire",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "quincy",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "reuilly",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "sancerre",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "saint-pourçain",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "côtes-d'auvergne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "madargue",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "châteaugay",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "chanturgue",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "corent",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "et boudes",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "côte-roannaise",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Val-de-Loire Centre"
+],
+"name": "côtes-du-forez",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "chusclan",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "gadagne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "massif-d'uchaux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "nyons",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "plan-de-dieu",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "puyméras",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "roaix",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "rochegude",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "rousset-les-vignes",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "sablet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "saint-andéol",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "saint-gervais",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "saint-maurice",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "saint-pantaléon-les-vignes",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "sainte-cécile",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "séguret",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "signargues",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "suze-la-rousse",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "vaison-la-romaine",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "valréas",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "visan",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "côte-rôtie",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "château-grillet",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "condrieu",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "saint-joseph",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "hermitage",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "crozes-hermitage",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "cornas",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "saint-péray",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "vinsobres",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "cairanne",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "rasteau",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "gigondas",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "beaumes-de-venise",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "muscat de Beaumes-de-Venise",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "vacqueyras",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "châteauneuf-du-pape",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "laudun",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "lirac",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "tavel",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "châtillon-en-diois",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "clairette de Bellegarde",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "clairette de Die",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "costières-de-nîmes",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "coteaux-de-die",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "côtes-du-vivarais",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "crémant de Die",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "duché-d'uzès",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "grignan-les-adhémar",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "luberon",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de la vallée du Rhône"
+],
+"name": "ventoux",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "les-baux-de-provence",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "coteaux-d'aix-en-provence",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "palette",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "pierrevert",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "côtes-de-provence",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "cru sainte-victoire",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "pierrefeu",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "la-londe",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "notre-dame-des-anges",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "fréjus",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "cassis",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "bandol",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "coteaux-varois-en-provence",
+"kind": "AOC"
+},
+{
+"path": [
+"Bassin Vallée-du-Rhône Provence",
+"Vignoble de Provence"
+],
+"name": "bellet",
+"kind": "AOC"
+}
+]
+}

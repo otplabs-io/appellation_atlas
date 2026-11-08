@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Appellation Atlas</title>
+<meta name="description" content="Every wine place in the world on one globe, with what is planted there, its climate, its rock and its land.">
+<link rel="apple-touch-icon" href="assets/appellation-atlas-180.png">
+<meta name="apple-mobile-web-app-title" content="Atlas">
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="atlas.css">
+</head>
+<body class="app">
+<div class="page">
+  <h1 class="app-title ts-page_title"><a href="./" title="Back to the world">Appellation Atlas</a></h1>
+  <header class="top">
+    <div class="search" role="combobox" aria-haspopup="listbox" aria-owns="sugg">
+      <label><span class="sr">Search</span><input id="q" type="search" class="ts-body" placeholder="Search a country, region or appellation" autocomplete="off" autocapitalize="off" spellcheck="false" aria-autocomplete="list" aria-controls="sugg" aria-expanded="false"></label>
+      <ul id="sugg" class="sugg" role="listbox" hidden></ul>
+    </div>
+  </header>
+  <main>
+    <section class="row origin">
+      <p id="crumbs" class="crumbs ts-place_subtitle"></p>
+      <div id="ptitle" class="hero"></div>
+      <p id="mapNote" class="ts-caption mapnote"></p>
+      <div id="map" class="map"></div>
+      <p id="shapeNote" class="ts-caption shape-note" hidden></p>
+      <div class="key" aria-hidden="true"><div class="kr ts-caption"><i class="a1"></i><i class="a2"></i><i class="a3"></i><i class="a4"></i><span>Benchmark region</span></div><div class="kr ts-caption"><i class="a1 o"></i><i class="a2 o"></i><i class="a3 o"></i><i class="a4 o"></i><span>Emerging region</span></div><p class="key-note ts-fact_note"><span class="grad"></span>Darker shades are better known</p></div>
+      <div id="places" class="places"></div>
+    </section>
+    <div id="info"></div>
+  </main>
+</div>
+<script src="atlas.js"></script>
+</body>
+</html>

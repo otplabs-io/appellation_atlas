@@ -1,0 +1,26 @@
+{
+"source": {
+"title": "Wikipedia, List of wine-producing regions: Japan",
+"url": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions",
+"revision": 1382971935,
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Yamanashi",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Hokkaido",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Nagano",
+"kind": "region"
+}
+]
+}

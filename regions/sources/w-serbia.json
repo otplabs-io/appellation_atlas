@@ -1,0 +1,51 @@
+{
+"source": {
+"title": "Wikipedia, List of wine-producing regions: Serbia",
+"url": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions",
+"revision": 1382971935,
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Banat",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Nišava",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Pocerina",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Srem",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Subotica",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Šumadija",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Timok Valley",
+"kind": "region"
+},
+{
+"path": [],
+"name": "West Morava",
+"kind": "region"
+}
+]
+}

@@ -1,0 +1,149 @@
+/* Appellation Atlas: the app's page, map and steps (assets/app.css), plus the notoriety shades and the place facts.
+   Shades run from the lightest gold to the deepest, the warm golds of the design. */
+.app-sub{padding:0 20px 10px;color:var(--soft)}
+.app-sub a{color:var(--teal);text-decoration:none}
+.app-sub a:hover{text-decoration:underline}
+:root{--a0:#EEF2F5;--a1:var(--gold-tint);--a2:#F5D58A;--a3:var(--map-premier);--a4:var(--gold-deep);
+  --o1:#DDE3E8;--o2:#CBD3DA;--o3:#B6C1CA;--o4:#9EABB6}   /* places outside the WSET Diploma: cool greys, so the gold ones stand out */
+.map .rg.a0{fill:var(--a0);stroke:var(--land-edge)}
+.map .rg.a1{fill:var(--a1)}
+.map .rg.a2{fill:var(--a2)}
+.map .rg.a3{fill:var(--a3)}
+.map .rg.a4{fill:var(--a4)}
+.map .rg.o.a1{fill:var(--o1)}.map .rg.o.a2{fill:var(--o2)}.map .rg.o.a3{fill:var(--o3)}.map .rg.o.a4{fill:var(--o4)}
+.map .rg.sib{fill:#E2E9EE;stroke:var(--land-edge)}
+.map .rg.a1,.map .rg.a2{stroke:#fff}
+.map .self{fill:var(--a0);stroke:none;pointer-events:none}
+.map .rg.sel{fill:var(--map-target)}
+@media (hover:hover){.map .rg:hover:not(.sib){fill:var(--map-target)}}
+.map .dot-m.a0{fill:var(--a0);stroke:var(--land-edge)}
+.map .dot-m.a1{fill:var(--a2)}.map .dot-m.a2{fill:var(--a2)}.map .dot-m.a3{fill:var(--a3)}.map .dot-m.a4{fill:var(--a4)}
+.map .dot-m.o.a1,.map .dot-m.o.a2{fill:var(--o2)}.map .dot-m.o.a3{fill:var(--o3)}.map .dot-m.o.a4{fill:var(--o4)}
+.map .dot-m.sel{fill:var(--map-target)}
+.key{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;margin-top:10px;color:var(--soft)}
+.key .kr{display:flex;align-items:center;gap:4px}
+.key-note{flex-basis:100%;display:flex;align-items:center;gap:8px;margin:2px 0 0;color:var(--ink);font-style:italic}
+.key-note .grad{display:inline-block;width:46px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--o1),var(--a4))}
+.key i,.sw{display:inline-block;width:18px;height:12px;border:1px solid var(--land-edge)}
+.key i+span{margin-left:4px}
+.key .a1,.sw.a1{background:var(--a1)}.key .a2,.sw.a2{background:var(--a2)}.key .a3,.sw.a3{background:var(--a3)}.key .a4,.sw.a4{background:var(--a4)}.sw.a0{background:var(--a0)}
+.key .o.a1,.sw.o.a1{background:var(--o1)}.key .o.a2,.sw.o.a2{background:var(--o2)}.key .o.a3,.sw.o.a3{background:var(--o3)}.key .o.a4,.sw.o.a4{background:var(--o4)}
+.places .step{text-decoration:none}
+.places .step .sw{width:12px;height:12px;margin-right:2px}
+.places .step small{color:var(--soft);font-weight:400}
+/* ---- the place */
+.hero .eyebrow{color:var(--coral-text);margin-bottom:4px}
+.hero .name{line-height:1.05;overflow-wrap:break-word;font-size:min(56px,calc((100vw - 40px) / (var(--n,1) * .64)))}   /* the longest word always fits the phone */
+.hero .also{margin-top:4px;color:var(--soft)}
+.hero .known{margin-top:8px;color:var(--soft);display:flex;align-items:center;gap:6px}
+.hero .ts-body{margin-top:8px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px 16px;margin-top:4px}
+.fact{display:flex;flex-direction:column;gap:2px}
+.fact .ts-fact_note{color:var(--soft)}
+.sub{margin:14px 0 6px;color:var(--soft)}
+.sub:first-child{margin-top:0}
+.sub a{color:var(--teal)}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{display:inline-flex;align-items:center;gap:6px;min-height:26px;padding:0 9px;background:var(--fill);border-left:4px solid var(--land-edge)}
+.chip.red{border-left-color:#8E2F3C}
+.chip.white{border-left-color:var(--gold)}
+.chip.pink{border-left-color:#D98C95}
+.chip b{font-weight:600;color:var(--soft)}
+.mrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 20px;margin-top:4px}
+.months{display:block;width:100%;max-width:340px;height:auto}
+.months rect.t{fill:#E5DCC6}.months rect.t.gs{fill:var(--coral)}
+.months rect.p{fill:#CFE3EE}.months rect.p.gs{fill:var(--teal)}
+.months text{font-family:var(--body);font-size:9px;fill:var(--soft)}
+.note{margin-top:10px;color:var(--soft)}
+.prose p+p{margin-top:8px}
+.claim{margin-top:6px}
+.claim .str{display:inline-block;margin-left:4px;padding:0 6px;background:var(--gold-tint);font-size:11px;font-weight:700;color:var(--ink)}
+.more-d{margin-top:10px}
+.more-d summary{cursor:pointer;color:var(--teal)}
+.more-d p{margin-top:6px}
+.src{margin:0;padding-left:18px;color:var(--soft)}
+.src li+li{margin-top:4px}
+.src a{color:var(--teal)}
+/* ---- what is planted, the climate scales, the land */
+.planted{display:grid;gap:5px;margin-top:6px;max-width:560px}
+.gr{display:grid;grid-template-columns:minmax(130px,44%) 1fr 38px;align-items:center;gap:8px}
+.gr .g{display:flex;align-items:center;gap:7px;overflow-wrap:anywhere}
+.gr .dot{flex:none;width:9px;height:9px;border-radius:50%;background:var(--land-edge)}
+.gr .dot.r{background:var(--coral)}.gr .dot.w{background:var(--gold)}
+.gr .bar{height:10px;background:var(--fill)}
+.gr .bar i{display:block;height:100%;background:var(--a3)}
+.gr .pc{text-align:right;color:var(--soft)}
+.scale{position:relative;display:flex;margin:4px 0 2px;max-width:640px}
+.scale .seg{display:flex;flex-direction:column;gap:2px;padding:7px 4px 6px;background:var(--fill);border-right:2px solid var(--paper,#fff);min-width:0}
+.scale .seg:last-child{border-right:0}
+.scale .seg .n{font-family:var(--body);font-size:12px;font-weight:700;color:var(--soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.scale .seg .r{font-family:var(--body);font-size:10px;color:var(--soft);line-height:1.2}
+.scale .seg.on{background:var(--a3)}
+.scale .seg.on .n,.scale .seg.on .r{color:var(--ink)}
+.scale .mark{position:absolute;top:-5px;width:0;height:0;margin-left:-6px;border:6px solid transparent;border-top-color:var(--ink)}
+.wk{margin-top:6px}
+.why{margin-top:14px;max-width:680px}
+.soil-text{max-width:680px;margin:12px 0 18px}
+.why-head{color:var(--soft);margin:0 0 6px}
+.why dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 16px;margin:0}
+.why dt{color:var(--ink);padding-top:1px}
+.why dd{margin:0}
+@media (max-width:520px){.why dl{grid-template-columns:1fr;gap:2px}.why dd{margin-bottom:8px}}
+.big-note{margin-top:10px;color:var(--soft)}
+.land{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px}
+.land .facts{flex:1 1 300px}
+.rose{width:120px;height:120px;flex:none}
+.rose path{fill:var(--a3);stroke:#fff;stroke-width:1}
+.rose text{font-family:var(--body);font-size:9px;fill:var(--soft)}
+@media (max-width:480px){.scale .seg .r{display:none}.scale .seg .n{font-size:10px}}
+
+/* ---- the title above the map, the place groups, the comparison table, the notes */
+#ptitle{margin:4px 0 2px}
+.hero .badge{color:var(--ink);background:var(--a2);padding:1px 6px;border-radius:2px;letter-spacing:.04em}
+.hero .badge.o{background:var(--o2)}
+.mapnote{color:var(--soft);margin:2px 0 8px}
+.shape-note{color:var(--soft);margin-top:6px}
+.inside{margin:16px 0 4px}
+.grp{margin:10px 0 6px;color:var(--soft)}
+.grp small{font-weight:400}
+.tablewrap{overflow-x:auto;margin-top:6px}
+table.parts{border-collapse:collapse;width:100%;min-width:520px}
+table.parts th,table.parts td{text-align:left;padding:6px 8px 6px 0;border-bottom:1px solid var(--fill);vertical-align:baseline;white-space:nowrap}
+table.parts thead th{color:var(--soft);font-weight:700}
+table.parts tbody th{font-weight:600}
+table.parts a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+table.parts a:hover{text-decoration:underline}
+table.parts small{color:var(--soft)}
+details.found>summary{cursor:pointer;list-style:none}
+details.found>summary::-webkit-details-marker{display:none}
+details.found>summary h2::before{content:'\25B8';display:inline-block;width:1em;color:var(--soft);transition:transform .15s}
+details.found[open]>summary h2::before{transform:rotate(90deg)}
+.known{display:flex;align-items:center;gap:6px;margin-bottom:8px;color:var(--soft)}
+
+/* ---- which planted grapes the appellation's rules allow */
+.gr.no .bar i{background:var(--o3)}
+.gr.no .g{color:var(--soft)}
+.gr.minor .bar i{background:var(--a2)}
+.gr .tag{grid-column:3;justify-self:end;color:var(--soft)}
+.legal-key{display:flex;flex-wrap:wrap;align-items:center;gap:4px 16px}
+.legal-key>span{display:inline-flex;align-items:center;gap:6px}
+.legal-key .lk{display:inline-block;flex:none;width:14px;height:8px}
+.legal-key .lk.main{background:var(--a3)}.legal-key .lk.no{background:var(--o3)}
+
+/* ---- the rock beneath: one bar, a band per family */
+.rocks{display:flex;gap:2px;max-width:640px;margin-top:4px}
+.rk{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:6px 7px;background:var(--fill)}
+.rk b,.rk small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rk small{color:var(--soft)}
+.rk.r-limestone,.rk.r-chalk{background:#EFE9D8}.rk.r-marl{background:#E3DBC4}.rk.r-volcanic{background:#D9C9C6}.rk.r-granite{background:#E6D3CF}
+.rk.r-schist,.rk.r-shale{background:#D5DCE2}.rk.r-gravel,.rk.r-sand,.rk.r-sandstone{background:#F3E4C2}.rk.r-alluvium,.rk.r-loess,.rk.r-clay{background:#E4DFD3}
+
+/* ---- a place's neighbours, folded; jump buttons to each section */
+details.sibs>summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:8px}
+details.sibs>summary::-webkit-details-marker{display:none}
+details.sibs>summary::before{content:'\25B8';color:var(--soft);transition:transform .15s}
+details.sibs[open]>summary::before{transform:rotate(90deg)}
+details.sibs>summary small{color:var(--soft);font-weight:400}
+.jump{display:flex;flex-wrap:wrap;gap:6px;padding:14px 20px 4px}
+.jump .step{border:0}
+section.row[id^="s-"]{scroll-margin-top:80px}

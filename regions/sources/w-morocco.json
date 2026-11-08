@@ -1,0 +1,26 @@
+{
+"source": {
+"title": "Wikipedia, List of wine-producing regions: Morocco",
+"url": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions",
+"revision": 1382971935,
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Atlas Mountains",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Benslimane",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Meknès",
+"kind": "region"
+}
+]
+}

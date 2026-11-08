@@ -1,0 +1,442 @@
+{
+"source": {
+"title": "Cahier des charges de l’AOC « Champagne », homologué par l’arrêté du 30 novembre 2022 (BO du MASA, 15 décembre 2022), chapitre I, II b (grand cru) et c (premier cru); commune codes from INSEE, Code officiel géographique 2024",
+"url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-3b36a01e-8edd-4742-ade7-fbd3251816c4/telechargement ; https://www.insee.fr/fr/statistiques/fichier/7766585/v_commune_2024.csv",
+"tier": "official",
+"pulled": "2026-11-04",
+"note": "The grand cru villages may use “grand cru” or “premier cru”. The text lists villages, not vineyards."
+},
+"entries": [
+{
+"path": [],
+"name": "Ambonnay",
+"kind": "Grand Cru",
+"commune": "51007",
+"commune_name": "Ambonnay"
+},
+{
+"path": [],
+"name": "Avize",
+"kind": "Grand Cru",
+"commune": "51029",
+"commune_name": "Avize"
+},
+{
+"path": [],
+"name": "Ay",
+"kind": "Grand Cru",
+"village_code": "51030",
+"commune": "51030",
+"commune_name": "Aÿ-Champagne",
+"merged": true
+},
+{
+"path": [],
+"name": "Beaumont-sur-Vesle",
+"kind": "Grand Cru",
+"commune": "51044",
+"commune_name": "Beaumont-sur-Vesle"
+},
+{
+"path": [],
+"name": "Bouzy",
+"kind": "Grand Cru",
+"commune": "51079",
+"commune_name": "Bouzy"
+},
+{
+"path": [],
+"name": "Chouilly",
+"kind": "Grand Cru",
+"commune": "51153",
+"commune_name": "Chouilly"
+},
+{
+"path": [],
+"name": "Cramant",
+"kind": "Grand Cru",
+"commune": "51196",
+"commune_name": "Cramant"
+},
+{
+"path": [],
+"name": "Louvois",
+"kind": "Grand Cru",
+"village_code": "51331",
+"commune": "51564",
+"commune_name": "Val de Livre",
+"merged": true
+},
+{
+"path": [],
+"name": "Mailly-Champagne",
+"kind": "Grand Cru",
+"commune": "51338",
+"commune_name": "Mailly-Champagne"
+},
+{
+"path": [],
+"name": "Le Mesnil-sur-Oger",
+"kind": "Grand Cru",
+"commune": "51367",
+"commune_name": "Le Mesnil-sur-Oger"
+},
+{
+"path": [],
+"name": "Oger",
+"kind": "Grand Cru",
+"village_code": "51411",
+"commune": "51612",
+"commune_name": "Blancs-Coteaux",
+"merged": true
+},
+{
+"path": [],
+"name": "Oiry",
+"kind": "Grand Cru",
+"commune": "51413",
+"commune_name": "Oiry"
+},
+{
+"path": [],
+"name": "Puisieulx",
+"kind": "Grand Cru",
+"commune": "51450",
+"commune_name": "Puisieulx"
+},
+{
+"path": [],
+"name": "Sillery",
+"kind": "Grand Cru",
+"commune": "51536",
+"commune_name": "Sillery"
+},
+{
+"path": [],
+"name": "Tours-sur-Marne",
+"kind": "Grand Cru",
+"commune": "51576",
+"commune_name": "Tours-sur-Marne"
+},
+{
+"path": [],
+"name": "Verzenay",
+"kind": "Grand Cru",
+"commune": "51613",
+"commune_name": "Verzenay"
+},
+{
+"path": [],
+"name": "Verzy",
+"kind": "Grand Cru",
+"commune": "51614",
+"commune_name": "Verzy"
+},
+{
+"path": [],
+"name": "Avenay-Val-d’Or",
+"kind": "Premier Cru",
+"commune": "51028",
+"commune_name": "Avenay-Val-d'Or"
+},
+{
+"path": [],
+"name": "Bergères-lès-Vertus",
+"kind": "Premier Cru",
+"commune": "51049",
+"commune_name": "Bergères-lès-Vertus"
+},
+{
+"path": [],
+"name": "Bezannes",
+"kind": "Premier Cru",
+"commune": "51058",
+"commune_name": "Bezannes"
+},
+{
+"path": [],
+"name": "Billy-le-Grand",
+"kind": "Premier Cru",
+"commune": "51061",
+"commune_name": "Billy-le-Grand"
+},
+{
+"path": [],
+"name": "Bisseuil",
+"kind": "Premier Cru",
+"village_code": "51064",
+"commune": "51030",
+"commune_name": "Aÿ-Champagne",
+"merged": true
+},
+{
+"path": [],
+"name": "Chamery",
+"kind": "Premier Cru",
+"commune": "51112",
+"commune_name": "Chamery"
+},
+{
+"path": [],
+"name": "Champillon",
+"kind": "Premier Cru",
+"commune": "51119",
+"commune_name": "Champillon"
+},
+{
+"path": [],
+"name": "Chigny-lès-Roses",
+"kind": "Premier Cru",
+"commune": "51152",
+"commune_name": "Chigny-les-Roses"
+},
+{
+"path": [],
+"name": "Coligny",
+"kind": "Premier Cru",
+"village_code": "51158",
+"commune": "51158",
+"commune_name": "Val-des-Marais",
+"merged": true
+},
+{
+"path": [],
+"name": "Cormontreuil",
+"kind": "Premier Cru",
+"commune": "51172",
+"commune_name": "Cormontreuil"
+},
+{
+"path": [],
+"name": "Coulommes-la-Montagne",
+"kind": "Premier Cru",
+"commune": "51177",
+"commune_name": "Coulommes-la-Montagne"
+},
+{
+"path": [],
+"name": "Cuis",
+"kind": "Premier Cru",
+"commune": "51200",
+"commune_name": "Cuis"
+},
+{
+"path": [],
+"name": "Cumières",
+"kind": "Premier Cru",
+"commune": "51202",
+"commune_name": "Cumières"
+},
+{
+"path": [],
+"name": "Dizy",
+"kind": "Premier Cru",
+"commune": "51210",
+"commune_name": "Dizy"
+},
+{
+"path": [],
+"name": "Ecueil",
+"kind": "Premier Cru",
+"commune": "51225",
+"commune_name": "Écueil"
+},
+{
+"path": [],
+"name": "Etrechy",
+"kind": "Premier Cru",
+"commune": "51239",
+"commune_name": "Étréchy"
+},
+{
+"path": [],
+"name": "Grauves",
+"kind": "Premier Cru",
+"commune": "51281",
+"commune_name": "Grauves"
+},
+{
+"path": [],
+"name": "Hautvillers",
+"kind": "Premier Cru",
+"commune": "51287",
+"commune_name": "Hautvillers"
+},
+{
+"path": [],
+"name": "Jouy-lès-Reims",
+"kind": "Premier Cru",
+"commune": "51310",
+"commune_name": "Jouy-lès-Reims"
+},
+{
+"path": [],
+"name": "Ludes",
+"kind": "Premier Cru",
+"commune": "51333",
+"commune_name": "Ludes"
+},
+{
+"path": [],
+"name": "Mareuil-sur-Ay",
+"kind": "Premier Cru",
+"village_code": "51347",
+"commune": "51030",
+"commune_name": "Aÿ-Champagne",
+"merged": true
+},
+{
+"path": [],
+"name": "Les Mesneux",
+"kind": "Premier Cru",
+"commune": "51365",
+"commune_name": "Les Mesneux"
+},
+{
+"path": [],
+"name": "Montbré",
+"kind": "Premier Cru",
+"commune": "51375",
+"commune_name": "Montbré"
+},
+{
+"path": [],
+"name": "Mutigny",
+"kind": "Premier Cru",
+"commune": "51392",
+"commune_name": "Mutigny"
+},
+{
+"path": [],
+"name": "Pargny-lès-Reims",
+"kind": "Premier Cru",
+"commune": "51422",
+"commune_name": "Pargny-lès-Reims"
+},
+{
+"path": [],
+"name": "Pierry",
+"kind": "Premier Cru",
+"commune": "51431",
+"commune_name": "Pierry"
+},
+{
+"path": [],
+"name": "Rilly-la-Montagne",
+"kind": "Premier Cru",
+"commune": "51461",
+"commune_name": "Rilly-la-Montagne"
+},
+{
+"path": [],
+"name": "Sacy",
+"kind": "Premier Cru",
+"commune": "51471",
+"commune_name": "Sacy"
+},
+{
+"path": [],
+"name": "Sermiers",
+"kind": "Premier Cru",
+"commune": "51532",
+"commune_name": "Sermiers"
+},
+{
+"path": [],
+"name": "Taissy",
+"kind": "Premier Cru",
+"commune": "51562",
+"commune_name": "Taissy"
+},
+{
+"path": [],
+"name": "Tauxières",
+"kind": "Premier Cru",
+"village_code": "51564",
+"commune": "51564",
+"commune_name": "Val de Livre",
+"merged": true
+},
+{
+"path": [],
+"name": "Trépail",
+"kind": "Premier Cru",
+"commune": "51580",
+"commune_name": "Trépail"
+},
+{
+"path": [],
+"name": "Trois-Puits",
+"kind": "Premier Cru",
+"commune": "51584",
+"commune_name": "Trois-Puits"
+},
+{
+"path": [],
+"name": "Vaudemanges",
+"kind": "Premier Cru",
+"commune": "51599",
+"commune_name": "Vaudemange"
+},
+{
+"path": [],
+"name": "Vertus",
+"kind": "Premier Cru",
+"village_code": "51612",
+"commune": "51612",
+"commune_name": "Blancs-Coteaux",
+"merged": true
+},
+{
+"path": [],
+"name": "Villedommange",
+"kind": "Premier Cru",
+"commune": "51622",
+"commune_name": "Ville-Dommange"
+},
+{
+"path": [],
+"name": "Villeneuve-Renneville",
+"kind": "Premier Cru",
+"commune": "51627",
+"commune_name": "Villeneuve-Renneville-Chevigny"
+},
+{
+"path": [],
+"name": "Villers-Allerand",
+"kind": "Premier Cru",
+"commune": "51629",
+"commune_name": "Villers-Allerand"
+},
+{
+"path": [],
+"name": "Villers-aux-Nœuds",
+"kind": "Premier Cru",
+"commune": "51631",
+"commune_name": "Villers-aux-Nœuds"
+},
+{
+"path": [],
+"name": "Villers-Marmery",
+"kind": "Premier Cru",
+"commune": "51636",
+"commune_name": "Villers-Marmery"
+},
+{
+"path": [],
+"name": "Voipreux",
+"kind": "Premier Cru",
+"village_code": "51651",
+"commune": "51612",
+"commune_name": "Blancs-Coteaux",
+"merged": true
+},
+{
+"path": [],
+"name": "Vrigny",
+"kind": "Premier Cru",
+"commune": "51657",
+"commune_name": "Vrigny"
+}
+]
+}

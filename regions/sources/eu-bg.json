@@ -1,0 +1,550 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Dunavska ravnina",
+"also": [
+"Dunavska ravnina"
+],
+"kind": "PGI",
+"id": "EUGI00000006264",
+"file": "PGI-BG-A1538"
+},
+{
+"path": [],
+"name": "Melnik",
+"also": [
+"Melnik"
+],
+"kind": "PDO",
+"id": "EUGI00000006277",
+"file": "PDO-BG-A1472"
+},
+{
+"path": [],
+"name": "Nova Zagora",
+"also": [
+"Nova Zagora"
+],
+"kind": "PDO",
+"id": "EUGI00000006279",
+"file": "PDO-BG-A1494"
+},
+{
+"path": [],
+"name": "Yambol",
+"also": [
+"Yambol"
+],
+"kind": "PDO",
+"id": "EUGI00000006391",
+"file": "PDO-BG-A1179"
+},
+{
+"path": [],
+"name": "Sakar",
+"also": [
+"Sakar"
+],
+"kind": "PDO",
+"id": "EUGI00000007641",
+"file": "PDO-BG-A0013"
+},
+{
+"path": [],
+"name": "Dragoevo",
+"also": [
+"Dragoevo"
+],
+"kind": "PDO",
+"id": "EUGI00000006263",
+"file": "PDO-BG-A0952"
+},
+{
+"path": [],
+"name": "Trakiyska nizina",
+"also": [
+"Trakiyska nizina"
+],
+"kind": "PGI",
+"id": "EUGI00000006380",
+"file": "PGI-BG-A1552"
+},
+{
+"path": [],
+"name": "Novo Selo",
+"also": [
+"Novo Selo"
+],
+"kind": "PDO",
+"id": "EUGI00000006166",
+"file": "PDO-BG-A0382"
+},
+{
+"path": [],
+"name": "Brestnik",
+"also": [
+"Brestnik"
+],
+"kind": "PDO",
+"id": "EUGI00000006253",
+"file": "PDO-BG-A0944"
+},
+{
+"path": [],
+"name": "Lozitsa",
+"also": [
+"Lozitsa"
+],
+"kind": "PDO",
+"id": "EUGI00000006101",
+"file": "PDO-BG-A0360"
+},
+{
+"path": [],
+"name": "Stambolovo",
+"also": [
+"Stambolovo"
+],
+"kind": "PDO",
+"id": "EUGI00000006375",
+"file": "PDO-BG-A1487"
+},
+{
+"path": [],
+"name": "Pavlikeni",
+"also": [
+"Pavlikeni"
+],
+"kind": "PDO",
+"id": "EUGI00000006181",
+"file": "PDO-BG-A0420"
+},
+{
+"path": [],
+"name": "Sungurlare",
+"also": [
+"Sungurlare"
+],
+"kind": "PDO",
+"id": "EUGI00000006378",
+"file": "PDO-BG-A1489"
+},
+{
+"path": [],
+"name": "Lom",
+"also": [
+"Lom"
+],
+"kind": "PDO",
+"id": "EUGI00000006272",
+"file": "PDO-BG-A1441"
+},
+{
+"path": [],
+"name": "Khan Krum",
+"also": [
+"Khan Krum"
+],
+"kind": "PDO",
+"id": "EUGI00000006382",
+"file": "PDO-BG-A1030"
+},
+{
+"path": [],
+"name": "Harsovo",
+"also": [
+"Harsovo"
+],
+"kind": "PDO",
+"id": "EUGI00000006386",
+"file": "PDO-BG-A0946"
+},
+{
+"path": [],
+"name": "Shivachevo",
+"also": [
+"Shivachevo"
+],
+"kind": "PDO",
+"id": "EUGI00000006388",
+"file": "PDO-BG-A1391"
+},
+{
+"path": [],
+"name": "Sliven",
+"also": [
+"Sliven"
+],
+"kind": "PDO",
+"id": "EUGI00000006374",
+"file": "PDO-BG-A1190"
+},
+{
+"path": [],
+"name": "Varbitsa",
+"also": [
+"Varbitsa"
+],
+"kind": "PDO",
+"id": "EUGI00000006144",
+"file": "PDO-BG-A0370"
+},
+{
+"path": [],
+"name": "Veliki Preslav",
+"also": [
+"Veliki Preslav"
+],
+"kind": "PDO",
+"id": "EUGI00000006258",
+"file": "PDO-BG-A0885"
+},
+{
+"path": [],
+"name": "Novi Pazar",
+"also": [
+"Novi Pazar"
+],
+"kind": "PDO",
+"id": "EUGI00000006280",
+"file": "PDO-BG-A1031"
+},
+{
+"path": [],
+"name": "Sandanski",
+"also": [
+"Sandanski"
+],
+"kind": "PDO",
+"id": "EUGI00000006370",
+"file": "PDO-BG-A1006"
+},
+{
+"path": [],
+"name": "Dolinata na Struma",
+"also": [
+"Dolinata na Struma"
+],
+"kind": "PDO",
+"id": "EUGI00000006262",
+"file": "PDO-BG-A1473"
+},
+{
+"path": [],
+"name": "Stara Zagora",
+"also": [
+"Stara Zagora"
+],
+"kind": "PDO",
+"id": "EUGI00000006377",
+"file": "PDO-BG-A1394"
+},
+{
+"path": [],
+"name": "Karnobat",
+"also": [
+"Karnobat"
+],
+"kind": "PDO",
+"id": "EUGI00000006269",
+"file": "PDO-BG-A1175"
+},
+{
+"path": [],
+"name": "Lyubimets",
+"also": [
+"Lyubimets"
+],
+"kind": "PDO",
+"id": "EUGI00000006275",
+"file": "PDO-BG-A1177"
+},
+{
+"path": [],
+"name": "Lyaskovets",
+"also": [
+"Lyaskovets"
+],
+"kind": "PDO",
+"id": "EUGI00000006276",
+"file": "PDO-BG-A0951"
+},
+{
+"path": [],
+"name": "Suhindol",
+"also": [
+"Suhindol"
+],
+"kind": "PDO",
+"id": "EUGI00000006379",
+"file": "PDO-BG-A1018"
+},
+{
+"path": [],
+"name": "Slavyantsi",
+"also": [
+"Slavyantsi"
+],
+"kind": "PDO",
+"id": "EUGI00000006373",
+"file": "PDO-BG-A1008"
+},
+{
+"path": [],
+"name": "Chernomorski rayon",
+"also": [
+"Chernomorski rayon"
+],
+"kind": "PDO",
+"id": "EUGI00000006387",
+"file": "PDO-BG-A1392"
+},
+{
+"path": [],
+"name": "Ruse",
+"also": [
+"Ruse"
+],
+"kind": "PDO",
+"id": "EUGI00000006369",
+"file": "PDO-BG-A1425"
+},
+{
+"path": [],
+"name": "Ivaylovgrad",
+"also": [
+"Ivaylovgrad"
+],
+"kind": "PDO",
+"id": "EUGI00000006265",
+"file": "PDO-BG-A1047"
+},
+{
+"path": [],
+"name": "Bolyarovo",
+"also": [
+"Bolyarovo"
+],
+"kind": "PDO",
+"id": "EUGI00000006252",
+"file": "PDO-BG-A0985"
+},
+{
+"path": [],
+"name": "Pomorie",
+"also": [
+"Pomorie"
+],
+"kind": "PDO",
+"id": "EUGI00000006241",
+"file": "PDO-BG-A0430"
+},
+{
+"path": [],
+"name": "Karlovo",
+"also": [
+"Karlovo"
+],
+"kind": "PDO",
+"id": "EUGI00000006268",
+"file": "PDO-BG-A1044"
+},
+{
+"path": [],
+"name": "Varna",
+"also": [
+"Varna"
+],
+"kind": "PDO",
+"id": "EUGI00000006257",
+"file": "PDO-BG-A1032"
+},
+{
+"path": [],
+"name": "Montana",
+"also": [
+"Montana"
+],
+"kind": "PDO",
+"id": "EUGI00000006278",
+"file": "PDO-BG-A1314"
+},
+{
+"path": [],
+"name": "Pleven",
+"also": [
+"Pleven"
+],
+"kind": "PDO",
+"id": "EUGI00000006366",
+"file": "PDO-BG-A1477"
+},
+{
+"path": [],
+"name": "Svishtov",
+"also": [
+"Svishtov"
+],
+"kind": "PDO",
+"id": "EUGI00000006371",
+"file": "PDO-BG-A0957"
+},
+{
+"path": [],
+"name": "Asenovgrad",
+"also": [
+"Asenovgrad"
+],
+"kind": "PDO",
+"id": "EUGI00000006251",
+"file": "PDO-BG-A0877"
+},
+{
+"path": [],
+"name": "Vratsa",
+"also": [
+"Vratsa"
+],
+"kind": "PDO",
+"id": "EUGI00000006261",
+"file": "PDO-BG-A0955"
+},
+{
+"path": [],
+"name": "Septemvri",
+"also": [
+"Septemvri"
+],
+"kind": "PDO",
+"id": "EUGI00000006372",
+"file": "PDO-BG-A1185"
+},
+{
+"path": [],
+"name": "Haskovo",
+"also": [
+"Haskovo"
+],
+"kind": "PDO",
+"id": "EUGI00000006383",
+"file": "PDO-BG-A1043"
+},
+{
+"path": [],
+"name": "Pazardzhik",
+"also": [
+"Pazardzhik"
+],
+"kind": "PDO",
+"id": "EUGI00000006364",
+"file": "PDO-BG-A1182"
+},
+{
+"path": [],
+"name": "Perushtitsa",
+"also": [
+"Perushtitsa"
+],
+"kind": "PDO",
+"id": "EUGI00000006365",
+"file": "PDO-BG-A1474"
+},
+{
+"path": [],
+"name": "Yuzhno chernomorie",
+"also": [
+"Yuzhno chernomorie"
+],
+"kind": "PDO",
+"id": "EUGI00000006390",
+"file": "PDO-BG-A1347"
+},
+{
+"path": [],
+"name": "Targovishte",
+"also": [
+"Targovishte"
+],
+"kind": "PDO",
+"id": "EUGI00000006381",
+"file": "PDO-BG-A1439"
+},
+{
+"path": [],
+"name": "Lovech",
+"also": [
+"Lovech"
+],
+"kind": "PDO",
+"id": "EUGI00000006270",
+"file": "PDO-BG-A0956"
+},
+{
+"path": [],
+"name": "Shumen",
+"also": [
+"Shumen"
+],
+"kind": "PDO",
+"id": "EUGI00000006389",
+"file": "PDO-BG-A0997"
+},
+{
+"path": [],
+"name": "Vidin",
+"also": [
+"Vidin"
+],
+"kind": "PDO",
+"id": "EUGI00000006260",
+"file": "PDO-BG-A1346"
+},
+{
+"path": [],
+"name": "Oryahovitsa",
+"also": [
+"Oryahovitsa"
+],
+"kind": "PDO",
+"id": "EUGI00000006362",
+"file": "PDO-BG-A1344"
+},
+{
+"path": [],
+"name": "Plovdiv",
+"also": [
+"Plovdiv"
+],
+"kind": "PDO",
+"id": "EUGI00000006367",
+"file": "PDO-BG-A1297"
+},
+{
+"path": [],
+"name": "Hisarya",
+"also": [
+"Hisarya"
+],
+"kind": "PDO",
+"id": "EUGI00000006384",
+"file": "PDO-BG-A1393"
+},
+{
+"path": [],
+"name": "Evksinograd",
+"also": [
+"Evksinograd"
+],
+"kind": "PDO",
+"id": "EUGI00000006256",
+"file": "PDO-BG-A0881"
+}
+]
+}

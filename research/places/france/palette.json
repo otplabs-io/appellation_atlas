@@ -1,0 +1,200 @@
+{
+ "subject": "place",
+ "id": "france/palette",
+ "read": "2026-11-05",
+ "sources": {
+  "simone-aoc": {
+   "name": "Château Simone site, L'AOC Palette page",
+   "kind": "producer",
+   "url": "https://www.chateau-simone.fr/aoc-palette",
+   "note": "Fetched as page text."
+  },
+  "simone-famille": {
+   "name": "Château Simone site, Une famille page",
+   "kind": "producer",
+   "url": "https://www.chateau-simone.fr/famille",
+   "note": "Fetched as page text."
+  },
+  "wikipedia-en": {
+   "name": "Wikipedia, Palette AOC (English)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Palette_AOC"
+  },
+  "wikipedia-fr": {
+   "name": "Wikipédia, Palette (AOC) (French)",
+   "kind": "reference",
+   "url": "https://fr.wikipedia.org/wiki/Palette_(AOC)",
+   "note": "Read through a page summary."
+  }
+ },
+ "claims": [
+  {
+   "topic": "place",
+   "claim": "Palette is a small appellation in Provence, a few kilometers east of Aix-en-Provence.",
+   "source": [
+    "simone-aoc",
+    "wikipedia-en"
+   ],
+   "strength": "Medium",
+   "note": "Two sources agree."
+  },
+  {
+   "topic": "size",
+   "claim": "The appellation covers about 50 hectares, strictly delimited.",
+   "source": [
+    "simone-aoc"
+   ],
+   "strength": "Medium",
+   "note": "Producer's own appellation page."
+  },
+  {
+   "topic": "size",
+   "claim": "French Wikipedia gives 52 hectares planted in 2024: 25 red, 19 white, 8 rosé.",
+   "source": [
+    "wikipedia-fr"
+   ],
+   "strength": "Weak",
+   "note": "Single secondary source, read through a summary."
+  },
+  {
+   "topic": "place",
+   "claim": "The vines grow in Aix-en-Provence, Meyreuil and Le Tholonet. The hamlet of Palette lies in Le Tholonet.",
+   "source": [
+    "wikipedia-en"
+   ],
+   "strength": "Weak",
+   "note": "Single secondary source."
+  },
+  {
+   "topic": "history",
+   "claim": "The AOC Palette was classified by decree on 28 April 1948. It extended the earlier recognition of Château Simone, obtained by Jean Rougier in 1946.",
+   "source": [
+    "simone-aoc",
+    "simone-famille"
+   ],
+   "strength": "Medium",
+   "note": "Producer's account. The 1946 date conflicts between the two producer pages (see conflicts)."
+  },
+  {
+   "topic": "history",
+   "claim": "Wikipedia dates the appellation to 1948.",
+   "source": [
+    "wikipedia-en"
+   ],
+   "strength": "Medium",
+   "quote": "established in 1948"
+  },
+  {
+   "topic": "soil",
+   "claim": "Soils are scree (éboulis) from limestone, on the calcaires de Langesse.",
+   "source": [
+    "simone-aoc"
+   ],
+   "strength": "Medium"
+  },
+  {
+   "topic": "soil",
+   "claim": "Soils are thin, stony and skeletal, on Lutetian Tertiary limestones, including lake limestones.",
+   "source": [
+    "wikipedia-fr"
+   ],
+   "strength": "Weak",
+   "quote": "sols squelettiques de peu d'épaisseur et caillouteux",
+   "note": "Single secondary source."
+  },
+  {
+   "topic": "aspect",
+   "claim": "Vines sit mostly on hillsides facing Mont Sainte-Victoire.",
+   "source": [
+    "simone-aoc"
+   ],
+   "strength": "Medium"
+  },
+  {
+   "topic": "place",
+   "claim": "The site is a wooded bowl, sheltered from the wind by nearby heights.",
+   "source": [
+    "wikipedia-fr"
+   ],
+   "strength": "Weak",
+   "note": "Single secondary source."
+  },
+  {
+   "topic": "place",
+   "claim": "Palette has its own microclimate.",
+   "source": [
+    "simone-aoc"
+   ],
+   "strength": "Medium",
+   "note": "Producer's description, no detail given."
+  },
+  {
+   "topic": "grapes",
+   "claim": "White Palette is at least 80% Clairette. Bourboulenc, Trebbiano, Grenache blanc and Muscat varieties may make up the rest.",
+   "source": [
+    "wikipedia-en"
+   ],
+   "strength": "Weak",
+   "note": "Conflicts with French Wikipedia (see conflicts)."
+  },
+  {
+   "topic": "grapes",
+   "claim": "Red and rosé Palette is at least 80% Grenache, Mourvèdre and Cinsault.",
+   "source": [
+    "wikipedia-en"
+   ],
+   "strength": "Weak",
+   "note": "Single secondary source."
+  },
+  {
+   "topic": "other",
+   "claim": "Yields are capped at 40 hl/ha. Wines must reach at least 11% alcohol.",
+   "source": [
+    "wikipedia-en"
+   ],
+   "strength": "Weak",
+   "note": "Single secondary source."
+  },
+  {
+   "topic": "other",
+   "claim": "Harvest is by hand, and winemaking must happen inside the delimited area.",
+   "source": [
+    "simone-aoc"
+   ],
+   "strength": "Medium"
+  },
+  {
+   "topic": "producer",
+   "claim": "Producers include Château Simone, Château Crémade and Château Henri Bonnaud. Château de Meyreuil and Château des Trois Sautets are also listed.",
+   "source": [
+    "wikipedia-fr"
+   ],
+   "strength": "Weak",
+   "note": "Single secondary source."
+  },
+  {
+   "topic": "standing",
+   "claim": "Château Simone is the best-known Palette estate.",
+   "source": [
+    "estimate"
+   ],
+   "strength": "Estimate",
+   "note": "Common view, but no source here gives Simone's share of the appellation. Do not state a share or say it dominates without one."
+  }
+ ],
+ "conflicts": [
+  "Château Simone's own pages date the 'Château Simone' recognition 21 July 1946 (AOC page) and 21 February 1946 (family page).",
+  "White grape rules: English Wikipedia says at least 80% Clairette. French Wikipedia says the main grapes (araignan, bourboulenc, clairette, clairette rose) must make at least 55%. The producer lists Clairette, Grenache blanc and Bourboulenc as the whites.",
+  "Size: about 50 ha (producer) against 52 ha planted in 2024 (French Wikipedia)."
+ ],
+ "gaps": [
+  "Château Simone's share of Palette's vineyard or output. Not found, so 'dominates' is unproven.",
+  "Official INAO cahier des charges. Not read.",
+  "Web search was unavailable (budget used up). Read only pages I could name.",
+  "Elevation."
+ ],
+ "sheet": {
+  "soil": "Thin, stony limestone scree on the Langesse limestone.",
+  "aspect": "Hillsides facing Mont Sainte-Victoire."
+ }
+}

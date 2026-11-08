@@ -1,0 +1,58 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Sussex",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000015029",
+"file": "PDO-GB-02365"
+},
+{
+"path": [],
+"name": "Welsh Regional",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007108",
+"file": "PGI-GB-A1590"
+},
+{
+"path": [],
+"name": "Welsh",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006911",
+"file": "PDO-GB-A1587"
+},
+{
+"path": [],
+"name": "English Regional",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007107",
+"file": "PGI-GB-A1589"
+},
+{
+"path": [],
+"name": "English",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006661",
+"file": "PDO-GB-A1585"
+},
+{
+"path": [],
+"name": "Darnibole",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007801",
+"file": "PDO-GB-N1636"
+}
+]
+}

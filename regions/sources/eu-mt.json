@@ -1,0 +1,36 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Malta",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007621",
+"file": "PDO-MT-A1630"
+},
+{
+"path": [],
+"name": "Gozo",
+"also": [
+"Għawdex"
+],
+"kind": "PDO",
+"id": "EUGI00000007082",
+"file": "PDO-MT-A1629"
+},
+{
+"path": [],
+"name": "Maltese Islands",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007083",
+"file": "PGI-MT-A1631"
+}
+]
+}

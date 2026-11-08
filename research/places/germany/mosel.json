@@ -1,0 +1,246 @@
+{
+ "subject": "place",
+ "id": "germany/mosel",
+ "read": "2026-11-05",
+ "sources": {
+  "spec": {
+   "name": "Produktspezifikation, geschützte Ursprungsbezeichnung Mosel (BLE, EU PDO product specification)",
+   "kind": "official",
+   "url": "https://www.ble.de/SharedDocs/Downloads/DE/Ernaehrung-Lebensmittel/EU-Qualitaetskennzeichen/Wein/Antraege/Bestimmte_Anbaugebiete/Mosel/Mosel_1Uae/Produktspezifikation.pdf?__blob=publicationFile&v=4",
+   "note": "Read as PDF text (German). Version date not shown in the text. Sections 3.2 (minimum must weights), 9.1 and 9.2 (geography, soil, climate) used."
+  },
+  "wikipedia-mosel": {
+   "name": "Wikipedia, Mosel (wine region)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Mosel_(wine_region)"
+  },
+  "vdp-himmelreich": {
+   "name": "VDP vineyard register, Himmelreich, Graach (VDP.GROSSE LAGE)",
+   "kind": "official",
+   "url": "https://www.vdp.de/en/the-wines/vineyardonline/lage/4052-himmelreich-vdpgrosse-lage",
+   "note": "The VDP is the growers' association, so this is the association's own register, not the state vineyard roll. Area is printed in acres; hectares here are my conversion."
+  },
+  "vdp-wehlen-sonnenuhr": {
+   "name": "VDP vineyard register, Sonnenuhr, Wehlen (VDP.GROSSE LAGE)",
+   "kind": "official",
+   "url": "https://www.vdp.de/en/the-wines/vineyardonline/lage/4116-sonnenuhr-wehlen-vdpgrosse-lage",
+   "note": "Not one of the three sheet vineyards. Used only to tell it apart from the Zeltinger Sonnenuhr."
+  },
+  "vdp-zeltingen-sonnenuhr": {
+   "name": "VDP vineyard register, Sonnenuhr, Zeltingen (VDP.GROSSE LAGE)",
+   "kind": "official",
+   "url": "https://www.vdp.de/en/the-wines/vineyardonline/lage/4135-sonnenuhr",
+   "note": "Area printed in acres; hectares are my conversion. Name-origin line came from a search summary of tourism pages, not the VDP page."
+  },
+  "visitmosel-sundial": {
+   "name": "Visit Mosel, Zeltinger Sonnenuhr (sundial)",
+   "kind": "general",
+   "url": "https://en.visitmosel.de/cities-culture/poi/zeltinger-sonnenuhr-sundial",
+   "note": "Seen only as a search-result summary. Page not opened."
+  },
+  "molitor-tasting": {
+   "name": "2001 tasting note on Markus Molitor's holdings (via search summary)",
+   "kind": "critic",
+   "note": "Seen only as a search summary, original page and author not identified. Old figure."
+  },
+  "meininger-lagen": {
+   "name": "Meininger, Lagenvergleich Mosel (via search summary)",
+   "kind": "reference",
+   "url": "https://www.meininger.de/wein/verkostungen/ergebnisse/lagenvergleich-mosel",
+   "note": "Seen only as a search summary. Page fetch was blocked."
+  }
+ },
+ "claims": [
+  {
+   "topic": "name",
+   "claim": "The region is named after the Mosel river. It was called Mosel-Saar-Ruwer until 1 August 2007, then shortened to Mosel.",
+   "source": ["wikipedia-mosel"],
+   "strength": "Medium",
+   "note": "One reference source. A search summary of a German Wine Institute page also reported the shortening, but only as a headline."
+  },
+  {
+   "topic": "place",
+   "claim": "The PDO covers vines along the Mosel and its tributaries Saar and Ruwer. The river runs from Perl on the Luxembourg border to Koblenz. The spec splits it into Obermosel, Trierer Talweitung, Mittelmosel (Schweich to Moselkern) and the lower valley.",
+   "source": ["spec"],
+   "strength": "Strong",
+   "quote": "überwiegend entlang des Flusses Mosel und seiner Nebenflüsse Saar und Ruwer"
+  },
+  {
+   "topic": "place",
+   "claim": "Wine law divides the region into Bereiche (districts). Wikipedia lists Burg Cochem, Bernkastel, Ruwertal, Saar, Obermosel and Moseltor. Bernkastel is the centre of the Mittelmosel. Saar and Ruwer are the two side valleys.",
+   "source": ["wikipedia-mosel"],
+   "strength": "Medium",
+   "note": "Wikipedia's own text says four Bereiche lie on the Mosel, one on the Saar and one on the Ruwer, which fits the list only loosely. The Bereich names should be checked against the vineyard roll before the sheet names them."
+  },
+  {
+   "topic": "place",
+   "claim": "Graach (Himmelreich), Wehlen (Klosterberg, Sonnenuhr) and Zeltingen (Sonnenuhr) are neighbouring wine villages on the Mittelmosel, in the Bernkastel district.",
+   "source": ["reading"],
+   "strength": "Weak",
+   "note": "No fetched source states the Bereich for each village. VDP lists all three in Mosel-Saar-Ruwer. The district placement is my own reading and general knowledge."
+  },
+  {
+   "topic": "place",
+   "claim": "Vines on the Mosel, Saar and Ruwer grow between about 65 and 375 m above sea level, averaging about 180 m. About half the vineyards face south-east, south or south-west. The average aspect is 195 degrees, which is south-south-west.",
+   "source": ["spec"],
+   "strength": "Strong",
+   "quote": "Die Weinberge sind hauptsächlich (zu 50 %) SE-S-SW exponiert"
+  },
+  {
+   "topic": "soil",
+   "claim": "Devonian rock dominates the region. From Mittelmosel downstream the river cuts a narrow valley into the Rhenish Slate Mountains. The Devonian rocks are mostly quartzitic sandstone, quartzite and clay slate. Limestone (Muschelkalk, Keuper) appears only on the Obermosel.",
+   "source": ["spec"],
+   "strength": "Strong",
+   "quote": "dominieren bei Weitem devonische Gesteine"
+  },
+  {
+   "topic": "soil",
+   "claim": "Slate soils warm quickly and drain well, and many top sites have little topsoil, only broken slate. Slate type varies by site and shapes the wine's mineral character.",
+   "source": ["spec", "wikipedia-mosel"],
+   "strength": "Strong",
+   "quote": "schnell erwärmbar",
+   "note": "Spec says the Devonian soils warm quickly. Wikipedia adds the porous, well-draining, little-topsoil description."
+  },
+  {
+   "topic": "soil",
+   "claim": "Slate is described by colour: blue slate on the Mosel proper, grey slate on the Saar, and some red slate with more clay. This colour split comes from wine-guide summaries and the VDP register uses 'blue and grey' for Himmelreich.",
+   "source": ["vdp-himmelreich"],
+   "strength": "Weak",
+   "note": "The blue/grey/red split was in search summaries of wine-guide sites that I did not open. Only the VDP Himmelreich 'blue and grey slate' is read first-hand."
+  },
+  {
+   "topic": "aspect",
+   "claim": "The steep slopes give the vines the most direct sunlight in the region. Average direct sun in the growing season is 652,000 Wh/m2, highest on steep and very steep sites. The river also reflects light onto the vines.",
+   "source": ["spec", "wikipedia-mosel"],
+   "strength": "Strong",
+   "quote": "Die höchsten Einstrahlungswerte sind hierbei in den Steil- und Steilstlagen zu verzeichnen."
+  },
+  {
+   "topic": "aspect",
+   "claim": "The steepest vineyard in the world is thought to be Bremmer Calmont on the lower Mosel, at about 65 degrees. The three sheet vineyards are less extreme. VDP slopes are 45 to 75 percent (Himmelreich) and 65 to 75 percent (Zeltinger Sonnenuhr).",
+   "source": ["wikipedia-mosel", "vdp-himmelreich", "vdp-zeltingen-sonnenuhr"],
+   "strength": "Medium",
+   "note": "VDP slope is in percent, not degrees. 100 percent is 45 degrees."
+  },
+  {
+   "topic": "place",
+   "claim": "The climate is cool. Average annual temperature is 9.7 C and the growing-season average is 14.1 C. Rainfall averages 760 mm a year, 60 percent of it in the growing season.",
+   "source": ["spec"],
+   "strength": "Strong",
+   "quote": "in der Vegetationsperiode selbst beträgt die Durchschnittstemperatur 14,1 °C",
+   "note": "Regional averages for the whole PDO, not for the Mittelmosel alone."
+  },
+  {
+   "topic": "place",
+   "claim": "The sheltered river valley and the water moderate the climate, so it is mild for its latitude. Autumn nights bring fog as cold air from Hunsrück and Eifel meets warmer air over the river. The fog burns off by midday. Slow ripening and big day-night swings give fine fruit and a sharp, precise acidity.",
+   "source": ["spec"],
+   "strength": "Strong",
+   "quote": "für den Breitengrad vergleichsweise mildes Mesoklima"
+  },
+  {
+   "topic": "standing",
+   "claim": "Riesling is the main grape. It covered 59.7 percent of the region's vines in 2008 (5,390 ha), well ahead of Müller-Thurgau at 14 percent. Total area then was about 9,034 ha, the fifth largest of Germany's 13 regions.",
+   "source": ["wikipedia-mosel"],
+   "strength": "Medium",
+   "note": "2008 figures. Current shares are likely different and were not found."
+  },
+  {
+   "topic": "standing",
+   "claim": "Mosel Riesling is known for moderate alcohol, marked acidity and a balance of sweetness and acid. The spec says grapes reach only moderate sugar even at full ripeness, giving delicate wines with moderate alcohol. It describes Kabinett as having low to moderate alcohol and tense acid-sweet balance, and Spätlese and Auslese as usually made with some residual sugar. Typical aromas are pome fruit, stone fruit and citrus.",
+   "source": ["spec"],
+   "strength": "Strong",
+   "quote": "spannungsvolle Säure-Süße Balance bei niedrigen Alkoholgehalten"
+  },
+  {
+   "topic": "winemaking",
+   "claim": "The steep slate slopes favour botrytis in ripe, humid autumns, which allows selection of Auslese, Beerenauslese and Trockenbeerenauslese.",
+   "source": ["spec"],
+   "strength": "Strong",
+   "quote": "Das Kleinklima in den Schiefersteilhängen begünstigt diesen natürlichen Prozess."
+  },
+  {
+   "topic": "other",
+   "claim": "Six Prädikat levels, set by must weight (ripeness at harvest, not final sweetness). Minimum for Mosel Riesling: Kabinett 73 Oechsle (9.5% vol potential), Spätlese 80 (10.6%), Auslese 88 (11.9%), Beerenauslese 110 (15.3%), Eiswein 110 (15.3%), Trockenbeerenauslese 150 (21.5%).",
+   "source": ["spec"],
+   "strength": "Strong",
+   "quote": "Kabinett: alle übrigen Rebsorten 9,5 % vol und 73° Öchsle",
+   "note": "Read straight from section 3.2 of the Mosel PDO spec. Riesling falls under 'alle übrigen Rebsorten' for Kabinett, and is named with Elbling and Müller-Thurgau for Spätlese (80) and Auslese (88). Spec version date unknown."
+  },
+  {
+   "topic": "other",
+   "claim": "Eiswein grapes must be naturally frozen at harvest and pressing. Beerenauslese uses overripe, dried or botrytised berries. Trockenbeerenauslese uses more selection and shrivelled berries, giving the highest sweetness.",
+   "source": ["spec"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "other",
+   "claim": "The Mosel Riesling minimums are higher than the older commonly quoted German figures of Kabinett 67-70, Spätlese 76 and Auslese 83. The Mosel PDO spec sets 73, 80 and 88 for Riesling.",
+   "source": ["spec"],
+   "strength": "Medium",
+   "note": "The 76 and 83 figures were seen only in search summaries (winewithseth) and an older 70 for Kabinett. The 2014 NRW federal-style table showed Riesling at 70/78/85. See conflicts."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Graacher Himmelreich is in the village of Graach, a VDP.GROSSE LAGE planted to Riesling. It faces south-west to south, lies at 110 to 325 m, and has a slope of 45 to 75 percent. Soil is blue and grey slate. Graded area is listed as 163.09 acres, about 66 ha.",
+   "source": ["vdp-himmelreich"],
+   "strength": "Medium",
+   "quote": "Exposition: SW-S",
+   "note": "VDP's own register, first-hand. Size conflicts across sources: a wein.plus glossary summary gave 57 ha of vines and Valckenberg about 185 acres. The VDP area is the 'graded' (Grosse Lage) area, which may differ from the legal Einzellage."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Zeltinger Sonnenuhr is in Zeltingen. It is a VDP.GROSSE LAGE planted to Riesling, facing south-south-west to south, at 100 to 250 m, with a slope of 65 to 75 percent. Soil is stony, weathered grey Devonian slate. Graded area is 51.25 acres, about 21 ha.",
+   "source": ["vdp-zeltingen-sonnenuhr"],
+   "strength": "Medium",
+   "quote": "Alignment is SSW-S",
+   "note": "VDP register read first-hand through a page summary. Graded area may differ from the legal Einzellage."
+  },
+  {
+   "topic": "name",
+   "claim": "Zeltinger Sonnenuhr is named for a large sundial in the vines, built in 1620 by an abbot of Himmerod Monastery. It is billed as the largest sundial in a German vineyard.",
+   "source": ["visitmosel-sundial"],
+   "strength": "Weak",
+   "note": "Tourism page seen only as a search summary."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Do not mix up the two Sonnenuhr sites. Wehlener Sonnenuhr is in Wehlen, graded at 113.67 acres (about 46 ha), grey-blue Devonian slate, 110 to 320 m. Zeltinger Sonnenuhr is a separate, smaller site two villages away.",
+   "source": ["vdp-wehlen-sonnenuhr", "vdp-zeltingen-sonnenuhr"],
+   "strength": "Medium",
+   "note": "Wehlen slope: the VDP page lists 65-70 percent in the data and 60-100 percent in its text."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Wehlener Klosterberg is a slope in Wehlen, beside Markus Molitor's family house, Haus Klosterberg, which sits at the top. An importer describes it as a large, classically oriented slope with iron-rich Devonian slate. No official size, slope or exact aspect was found.",
+   "source": ["molitor-tasting"],
+   "strength": "Weak",
+   "note": "Search summaries only. The importer was not identified. Do not state the aspect or hectares on the sheet."
+  },
+  {
+   "topic": "size",
+   "claim": "Molitor's own Wehlener Klosterberg holding was given as 6.4 ha in a 2001 note, his Zeltinger Sonnenuhr holding as 5.1 ha. These are the estate's parcels, not the whole Einzellage.",
+   "source": ["molitor-tasting"],
+   "strength": "Weak",
+   "note": "Old, secondhand, from a search summary. Holdings may have changed."
+  }
+ ],
+ "conflicts": [
+  "Minimum must weights: the Mosel PDO spec gives Riesling Kabinett 73, Spätlese 80, Auslese 88 Oechsle. Search summaries of other sources gave Kabinett 67 to 70, Spätlese 76 and Auslese 83 (a common national or older table), and a 2014 NRW table gave Riesling 70, 78, 85. The Mosel spec is the official document for this PDO, so the sheet should use 73, 80 and 88. Beerenauslese 110, Eiswein 110 and Trockenbeerenauslese 150 agree across sources, except one source putting Beerenauslese at 120.",
+  "Graacher Himmelreich size: VDP 163.09 acres (about 66 ha), wein.plus 57 ha of vines, Valckenberg about 185 acres. Not resolved.",
+  "Wehlener Sonnenuhr slope: VDP lists 65-70 percent in data and 60-100 percent in text. Dr. Loosen up to 70 percent, Yapp about 50 percent. Not a sheet vineyard.",
+  "Wikipedia says four Bereiche lie on the Mosel, one on the Saar and one on the Ruwer, but then lists Burg Cochem, Bernkastel, Ruwertal, Saar, Obermosel and Moseltor."
+ ],
+ "gaps": [
+  "No official size, aspect, slope or soil for Wehlener Klosterberg. The VDP register and search results did not cover it.",
+  "No official size or soil for the legal Einzellagen (as opposed to VDP graded areas) for any of the three. The state Weinbergsrolle was not read.",
+  "Origin of the name Himmelreich (Graach) not found. Origin of Klosterberg not confirmed beyond the monastery-slope sense of the word.",
+  "Name origin of 'Mosel' (Latin Mosella) not sourced.",
+  "Bereich membership of Graach, Wehlen and Zeltingen, and the Bernkasteler Ring, not confirmed by a fetched source.",
+  "Current Riesling share and vineyard area are not found; Wikipedia gives 2008.",
+  "Several sources (winewithseth, Jancis Robinson, wein.plus, Meininger) were blocked or rate-limited when fetched."
+ ],
+ "sheet": {
+  "place": "The Mosel is a cool German river valley with steep slate slopes facing south. Riesling ripens slowly here. The wines come out light in alcohol, high in acid and balanced by a little sugar.",
+  "rules": "German wine is graded by how ripe the grapes were, not how sweet the wine is. On the Mosel, Riesling needs at least 73 Oechsle for Kabinett, 80 for Spätlese and 88 for Auslese. Beerenauslese and Eiswein start at 110, Trockenbeerenauslese at 150."
+ }
+}

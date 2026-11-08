@@ -1,0 +1,26 @@
+{
+ "$about": "Chile's wine zones, as Decreto 464 (1994, SAG's consolidated text) defines them: each by provinces, comunas or a whole administrative region. The atlas draws them from geoBoundaries (BCN comunas and regions, OpenStreetMap provinces), with today's provinces. Regions with no list here (Atacama, Coquimbo, Aconcagua, Central Valley, Southern Chile) join the valleys inside them. Alto, Central and Pacific Maipo are not in the decree, so they have no shape.",
+ "$source": {"name": "Decreto 464, Zonificación vitícola y denominación de origen, Servicio Agrícola y Ganadero (consolidated text)", "url": "https://sag.cl/sites/default/files/decreto_ndeg_464.pdf", "read": "2026-11-07"},
+ "places": {
+  "chile/copiapo-valley": {"provinces": ["Copiapó"], "text": "Valle de Copiapó, cuyo límite está definido por la provincia de igual nombre"},
+  "chile/huasco-valley": {"provinces": ["Huasco"], "text": "Valle del Huasco, cuyo límite está definido por la provincia de igual nombre"},
+  "chile/elqui-valley": {"provinces": ["Elqui"], "text": "límites están definidos por las provincias de igual nombre"},
+  "chile/limari-valley": {"provinces": ["Limarí"], "text": "límites están definidos por las provincias de igual nombre"},
+  "chile/choapa-valley": {"provinces": ["Choapa"], "text": "límites están definidos por las provincias de igual nombre"},
+  "chile/aconcagua-valley": {"provinces": ["San Felipe de Aconcagua", "Los Andes", "Quillota"], "text": "comprende a las Provincias de San Felipe de Aconcagua, Los Andes y Quillota"},
+  "chile/casablanca-valley": {"comunas": ["Casablanca"], "text": "cuyo límite se extiende a la comuna del mismo nombre"},
+  "chile/san-antonio-valley": {"provinces": ["San Antonio"], "text": "comprende a la provincia de igual nombre"},
+  "chile/maipo-valley": {"regions": ["Región Metropolitana de Santiago"], "text": "comprende todas las provincias de la Región Administrativa Metropolitana de Santiago"},
+  "chile/rapel-valley": {"provinces": ["Cachapoal", "Colchagua", "Cardenal Caro"], "text": "comprende las Provincias de Cachapoal, Colchagua y Cardenal Caro"},
+  "chile/cachapoal-valley": {"provinces": ["Cachapoal"], "text": "comprende la provincia de igual nombre"},
+  "chile/colchagua-valley": {"provinces": ["Colchagua", "Cardenal Caro"], "text": "comprende las Provincias de Colchagua y Cardenal Caro"},
+  "chile/curico-valley": {"provinces": ["Curicó"], "comunas": ["Río Claro"], "text": "comprende la Provincia de Curicó y la comuna de Río Claro"},
+  "chile/teno-valley": {"comunas": ["Teno", "Romeral", "Rauco", "Hualañé", "Vichuquén"], "text": "comprende las comunas de Teno, Romeral, Rauco, Hualañé y Vichuquén"},
+  "chile/lontue-valley": {"comunas": ["Curicó", "Molina", "Sagrada Familia", "Río Claro"], "text": "comprende las comunas de Curicó, Molina y Sagrada Familia ... y la comuna de Río Claro"},
+  "chile/maule-valley": {"comunas": ["Talca", "San Clemente", "Pencahue", "Maule", "Pelarco", "San Rafael", "Empedrado", "Curepto", "San Javier", "Villa Alegre", "Retiro", "Parral", "Linares", "Yerbas Buenas", "Colbún", "Longaví", "Cauquenes"], "text": "la Provincia de Talca, con excepción de la comuna de Río Claro, la Provincia de Linares y la comuna de Cauquenes; its zones name these comunas"},
+  "chile/itata-valley": {"comunas": ["Chillán", "Coelemu", "Ranquil", "Quillón", "Portezuelo", "Ninhue", "Treguaco", "Quirihue", "San Nicolás", "Bulnes", "San Carlos", "Florida"], "text": "comprende las comunas de Chillán, Coelemu, Ranquil, Quillón, Portezuelo, Ninhue, Treguaco, Quirihue, San Nicolás, Bulnes y San Carlos ... y la comuna de Florida"},
+  "chile/bio-bio-valley": {"comunas": ["Yumbel", "Nacimiento", "Mulchén", "Negrete", "Laja"], "text": "comprende las comunas de Yumbel, Nacimiento, Mulchén, Negrete y Laja"},
+  "chile/malleco-valley": {"comunas": ["Angol", "Collipulli", "Ercilla", "Los Sauces", "Lumaco", "Purén", "Renaico", "Traiguén", "Victoria"], "text": "comprende las comunas de Angol, Collipulli, Ercilla, Los Sauces, Lumaco, Purén, Renaico, Traiguén y Victoria"},
+  "chile/austral": {"comunas": ["Perquenco", "Galvarino", "Osorno", "San Pablo", "Purranque", "La Unión", "Futrono"], "text": "its two valleys: Cautín (Perquenco, Galvarino) and Osorno (Osorno, San Pablo, Purranque, La Unión, Futrono). The region itself runs on 'hasta donde las condiciones edafoclimáticas permitan'"}
+ }
+}

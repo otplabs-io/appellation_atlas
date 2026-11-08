@@ -1,0 +1,28 @@
+{
+ "$comment": "Where the app's map finds a shape for a place that no source names directly. src/geoindex.py reads it. places: nuts (NUTS 2 ids), us_state (FIPS), us_county (FIPS), pdo (EU PDO names), store_border (an eu-maps store's panel 1 border), store_commune ([store, name]), stores (zone names in the eu-maps stores), none (no shape: shown as a chip). passthrough: category nodes the app skips. display_parent: a place shown inside another place than its tree parent.",
+ "places": {
+  "italy/piedmont": {"nuts": ["ITC1"]},
+  "italy/tuscany": {"nuts": ["ITI1"]},
+  "italy/veneto": {"nuts": ["ITH3"]},
+  "italy/sicily": {"nuts": ["ITG1"]},
+  "italy/basilicata": {"nuts": ["ITF5"]},
+  "italy/toscana-igt": {"nuts": ["ITI1"]},
+  "italy/sicilia-doc": {"nuts": ["ITG1"]},
+  "italy/vigneti-delle-dolomiti": {"nuts": ["ITH1", "ITH2"]},
+  "spain/canary-islands": {"nuts": ["ES70"]},
+  "spain/penedes-cava": {"pdo": ["Penedès"]},
+  "spain/rioja-alta": {"none": true},
+  "portugal/minho": {"pdo": ["Vinho Verde"]},
+  "united-states/california": {"us_state": "06"},
+  "united-states/oregon": {"us_state": "41"},
+  "united-states/washington": {"us_state": "53"},
+  "united-states/sonoma-county": {"us_county": "06097"},
+  "argentina/mendoza": {"store_border": "argentina-mendoza"},
+  "argentina/tunuyan": {"store_commune": ["argentina-mendoza", "Tunuyán"]},
+  "argentina/los-chacayes": {"none": true},
+  "south-africa/western-cape": {"store_border": "south-africa-wc"},
+  "south-africa/cape-south-coast": {"stores": ["Overberg", "Walker Bay", "Cape Agulhas"]}
+ },
+ "passthrough": ["italy/igt-indicazione-geografica-tipica", "greece/pgis", "portugal/vinho-regional-pgi"],
+ "display_parent": {}
+}

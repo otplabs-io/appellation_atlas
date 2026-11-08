@@ -1,0 +1,59 @@
+{
+ "subject": "place",
+ "id": "spain/rioja",
+ "read": "2026-11-05",
+ "sources": {
+  "cr-classification": {"name": "Consejo Regulador DOCa Rioja, Classification (aging categories)", "kind": "official", "url": "https://riojawine.com/en/the-designation/classification/", "note": "Table read via page summary. White and rosé Crianza total time is not stated there."},
+  "cr-designation": {"name": "Consejo Regulador DOCa Rioja, Denominación de Origen Calificada", "kind": "official", "url": "https://www.riojawine.com/en/the-designation/", "note": "Page text says wines have a qualified denomination since 1991, first in Spain, protected since 1925."},
+  "cr-origin-levels": {"name": "Consejo Regulador DOCa Rioja, origin levels page", "kind": "official", "url": "https://riojawine.com/doca-rioja/denominacion-de-origen-calificada/"},
+  "cr-geography": {"name": "Consejo Regulador DOCa Rioja, Geography and terroirs of Rioja", "kind": "official", "url": "https://riojawine.com/en-gb/blog/geography-and-terroirs-of-rioja/"},
+  "cr-areas": {"name": "Consejo Regulador DOCa Rioja, Production areas", "kind": "official", "url": "https://riojawine.com/en-gb/production-areas/"},
+  "wikipedia-rioja": {"name": "Wikipedia, Rioja DOCa", "kind": "reference", "url": "https://en.wikipedia.org/wiki/Rioja_DOCa"},
+  "wikipedia-etymology": {"name": "Wikipedia, Etymology of La Rioja and Oja (river)", "kind": "reference", "url": "https://en.wikipedia.org/wiki/Etymology_of_La_Rioja", "note": "Seen as a search summary."},
+  "gwc-station": {"name": "Great Wine Capitals, Haro train station: six historic Rioja wineries join forces", "kind": "reference", "url": "https://www.greatwinecapitals.com/best-of-stories/haro-train-station-six-historic-rioja-wineries-join-forces/"},
+  "foodswines-station": {"name": "Foods and Wines from Spain, Haro station district", "kind": "reference", "url": "https://www.foodswinesfromspain.com/en/wine/articles/2019/july/haro-rioja-station-district", "note": "Seen as a search summary only."},
+  "zone-secondary": {"name": "Search summary of Consejo zone pages via secondary sites (Rioja Alta, Alavesa, Oriental soils and hectares)", "kind": "general", "note": "Consejo zone pages were not opened. Figures are second-hand."},
+  "search-altitude": {"name": "Search summary of Riojawine pages on zone altitude", "kind": "general", "note": "Zone altitudes seen only in a search summary."}
+ },
+ "claims": [
+  {"topic": "standing", "claim": "Rioja is a Denominación de Origen Calificada (DOCa), and was the first in Spain. The Consejo Regulador dates the qualified status to 1991 and says its wines have been protected since 1925.", "source": ["cr-designation", "wikipedia-rioja"], "strength": "Strong", "quote": "since 1991, they have a QDO", "note": "Consejo page (read through a summary) and Wikipedia agree on 1991 and 'first'. The 1925 date is the earlier DO protection."},
+  {"topic": "standing", "claim": "The DOCa has four origin levels: DOCa Rioja, Vino de Zona, Vino de Pueblo and Vino de Viñedo Singular. Vino de Zona names Rioja Alta, Rioja Alavesa or Rioja Oriental. Vino de Pueblo covers any of the delimited municipalities.", "source": ["cr-origin-levels"], "strength": "Strong"},
+  {"topic": "standing", "claim": "Wikipedia says new classification rules came in 2018, focused on villages and vineyard sites. The Consejo page dates Viñedo Singular to 2017. Rioja Oriental is the newer name for what was called Rioja Baja.", "source": ["wikipedia-rioja", "cr-origin-levels"], "strength": "Medium", "note": "The 2017 and 2018 dates differ by level. I did not find the Consejo's own date for the Vino de Zona and Vino de Pueblo labels or the Baja to Oriental rename."},
+  {"topic": "size", "claim": "The Consejo says Rioja has more than 66,000 hectares of vineyard in 144 municipalities: 118 in La Rioja, 18 in the Basque Country and 8 in Navarre.", "source": ["cr-areas"], "strength": "Strong", "quote": "more than 66,000 hectares", "note": "A search summary of the 2025 report gave 66,405 ha. Wikipedia lists 65,326 ha, from 2016/17 data."},
+  {"topic": "size", "claim": "Per-zone vineyard area, as second-hand Consejo figures: Rioja Alta about 27,900 ha, Rioja Oriental about 25,200 ha, Rioja Alavesa about 13,200 ha.", "source": ["zone-secondary"], "strength": "Weak", "note": "Not confirmed on a Consejo page. Decanter 2023 gave a lower Oriental figure of about 24,600 ha."},
+  {"topic": "place", "claim": "The region follows the upper Ebro valley, which runs west to east near its northern edge, over about 100 km from Haro in the west to Alfaro in the east. Seven tributary valleys cut into the south side.", "source": ["cr-geography", "cr-areas"], "strength": "Strong", "note": "Tributary names (Tirón, Najerilla, Iregua and others) were not on the pages read, so none are listed."},
+  {"topic": "place", "claim": "The Sierra de Cantabria shelters the region from the north. The Demanda and Cameros ranges bound it to the south.", "source": ["cr-geography"], "strength": "Strong"},
+  {"topic": "place", "claim": "The climate mixes Atlantic and Mediterranean influences. The west leans Atlantic and the east is more Mediterranean, so Rioja Oriental is the warmest and driest zone. Average annual temperature is 12 to 14 C with about 2,000 sunshine hours.", "source": ["cr-geography", "wikipedia-rioja"], "strength": "Strong", "quote": "The eastern areas are more influenced by the Mediterranean climate"},
+  {"topic": "place", "claim": "Vineyards sit from about 300 m up to about 900 m on terraced hillside plots.", "source": ["cr-geography", "cr-areas"], "strength": "Strong"},
+  {"topic": "place", "claim": "Zone altitudes: Rioja Alta about 400 to 600 m and Rioja Alavesa about 400 to 700 m.", "source": ["search-altitude"], "strength": "Weak", "note": "Seen only in a search summary of promotional pages. Sources differ."},
+  {"topic": "soil", "claim": "Three main soil types: calcareous (clay-limestone) soils that are yellow-ochre, low in organic matter and rich in calcium; ferrous clay soils that are reddish-brown, deep and compact on the middle hills and higher ground; and alluvial soils that are sandy and stony on flat terraces by the Ebro and its tributaries.", "source": ["cr-geography"], "strength": "Strong"},
+  {"topic": "soil", "claim": "Rioja Alta mixes clay-limestone, ferrous clay and alluvial soils. Rioja Alavesa is mostly clay-limestone. Rioja Oriental is mostly ferrous clay and alluvial.", "source": ["zone-secondary"], "strength": "Medium", "note": "Zone split is second-hand, but fits the Consejo's own soil descriptions. An Alavesa figure of about 95% clay-limestone was also seen and is not used."},
+  {"topic": "place", "claim": "Haro is at the western end of the region, in Rioja Alta. The Barrio de la Estación is a district of wineries beside the railway station. A rail line from Catalonia to Bilbao opened in 1864, and wineries were built beside the tracks from the 1870s.", "source": ["gwc-station", "foodswines-station"], "strength": "Medium", "note": "Station-district pages are tourism material."},
+  {"topic": "history", "claim": "Wineries in the Barrio de la Estación include CVNE (1879), Gómez Cruzado (1886), La Rioja Alta (1890), Bodegas Bilbaínas (1901), Muga (cellars moved there in 1970) and Roda (1987). López de Heredia is also in the district.", "source": ["gwc-station", "foodswines-station"], "strength": "Medium", "note": "López de Heredia was founded in 1877 per a search summary. The six-winery article lists the others but not López de Heredia."},
+  {"topic": "name", "claim": "The usual explanation is that Rioja comes from Río Oja, a small tributary of the Tirón, which joins the Ebro just north of Haro. The name is first recorded in 1099. The origin is not settled.", "source": ["wikipedia-etymology"], "strength": "Medium", "note": "One source counts 22 competing theories."},
+  {"topic": "grapes", "claim": "Red grapes include Tempranillo, Garnacha, Mazuelo and Graciano. White grapes include Viura, Malvasía and Garnacha blanca. Tempranillo is about 88% of red plantings.", "source": ["wikipedia-rioja"], "strength": "Medium", "note": "The Consejo page says 14 authorised varieties."},
+  {"topic": "aging", "claim": "Red Crianza: 2 years total, at least 1 year in oak (225 litre barrels).", "source": ["cr-classification"], "strength": "Strong", "quote": "kept at least one year in a 225 litre (49.5 gallons) oak barrels"},
+  {"topic": "aging", "claim": "Red Reserva: 3 years total, at least 1 year in oak and at least 6 months in bottle.", "source": ["cr-classification", "cr-origin-levels"], "strength": "Strong"},
+  {"topic": "aging", "claim": "Red Gran Reserva: 5 years total, at least 2 years in oak and 2 years in bottle.", "source": ["cr-classification"], "strength": "Strong"},
+  {"topic": "aging", "claim": "White and rosado Crianza: at least 6 months in oak. The Consejo page gives no total time. Secondary sources say 18 months total.", "source": ["cr-classification"], "strength": "Medium", "note": "Total time of 18 months is from secondary sources only."},
+  {"topic": "aging", "claim": "White and rosado Reserva: 2 years total, with at least 6 months in oak.", "source": ["cr-classification"], "strength": "Strong"},
+  {"topic": "aging", "claim": "White and rosado Gran Reserva: 4 years total, with at least 6 months in oak.", "source": ["cr-classification"], "strength": "Strong", "note": "Secondary sources agree on 48 months."},
+  {"topic": "aging", "claim": "These are minimums. A wine can sit longer in barrel or bottle before release, which López de Heredia is known to do.", "source": ["reading"], "strength": "Estimate", "note": "General reading. Producer practice belongs in the wine files."}
+ ],
+ "conflicts": [
+  "White and rosado Crianza total time: the Consejo page gives only 6 months in oak. Secondary sources say 18 months total.",
+  "Vineyard area: more than 66,000 ha (Consejo), 66,405 ha (2025 report via search summary), 65,326 ha (Wikipedia, 2016/17 data).",
+  "Oriental area: about 25,200 ha versus about 24,600 ha (Decanter 2023).",
+  "New classification dates: Viñedo Singular is 2017 (Consejo). Wikipedia gives 2018 for the wider village and site rules."
+ ],
+ "gaps": [
+  "Consejo zone pages were not opened, so per-zone hectares, altitudes and soil shares are second-hand.",
+  "Names of the Ebro tributaries were not found on a page read directly.",
+  "The Consejo's own date for the Rioja Baja to Rioja Oriental rename was not found.",
+  "The Pliego de condiciones was not read directly. Aging rules come from the Consejo classification page."
+ ],
+ "sheet": {
+  "place": "Rioja is Spain's first DOCa, since 1991. It follows the upper Ebro for about 100 km, with Atlantic air in the west and Mediterranean warmth in the east. There are over 66,000 hectares of vines, on clay-limestone, ferrous clay and alluvial soils.",
+  "rules": "Reds: Crianza is 2 years with 1 in oak. Reserva is 3 years with 1 in oak. Gran Reserva is 5 years with 2 in oak and 2 in bottle. Whites and rosados: 6 months in oak at least, then 2 years total for Reserva and 4 for Gran Reserva."
+ }
+}

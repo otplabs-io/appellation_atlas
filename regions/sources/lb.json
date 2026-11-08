@@ -1,0 +1,35 @@
+{
+"source": {
+"title": "Wikipedia, Lebanese wine (wine-growing areas; Lebanon has no legal appellation list)",
+"url": "https://en.wikipedia.org/wiki/Lebanese_wine",
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Bekaa Valley",
+"kind": "area"
+},
+{
+"path": [],
+"name": "Batroun",
+"kind": "area"
+},
+{
+"path": [],
+"name": "Mount Lebanon",
+"kind": "area"
+},
+{
+"path": [],
+"name": "North Lebanon",
+"kind": "area"
+},
+{
+"path": [],
+"name": "Jezzine",
+"kind": "area"
+}
+]
+}

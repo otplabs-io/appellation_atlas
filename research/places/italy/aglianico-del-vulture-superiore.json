@@ -1,0 +1,173 @@
+{
+ "subject": "place",
+ "id": "italy/aglianico-del-vulture-superiore",
+ "read": "2026-11-05",
+ "sources": {
+  "disciplinare": {
+   "name": "Disciplinare di produzione, Aglianico del Vulture Superiore DOCG (D.M. 02.08.2010, amended 2011 and 2014), via the Potenza Chamber of Commerce copy hosted by AIS Italia",
+   "kind": "official",
+   "url": "https://aisitalia.it/Disciplinari/Basilicata/DOCG/Aglianico%20del%20Vulture%20Superiore.pdf",
+   "note": "Read as PDF text."
+  },
+  "vulture-search": {
+   "name": "Wikipedia, Wine with Seth, Vinorandum and other pages on Aglianico del Vulture (via search summary)",
+   "kind": "general",
+   "url": "https://en.wikipedia.org/wiki/Aglianico_del_Vulture",
+   "note": "Seen only as search-result summaries."
+  }
+ },
+ "claims": [
+  {
+   "topic": "history",
+   "claim": "Aglianico del Vulture was a DOC by DPR of 18 February 1971. The Superiore became a DOCG by ministerial decree of 2 August 2010 (Gazzetta Ufficiale 188, 13 August 2010).",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "Approvato DOCG con DM 02.08.2010",
+   "note": "Several secondary sources say 2011. See conflicts."
+  },
+  {
+   "topic": "place",
+   "claim": "The DOCG has two types: Aglianico del Vulture Superiore and Superiore Riserva.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "grapes",
+   "claim": "The wine is made from Aglianico del Vulture (Aglianico) only.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "dal vitigno Aglianico del Vulture N. e/o Aglianico N."
+  },
+  {
+   "topic": "place",
+   "claim": "The zone covers the whole territory of 15 communes in the province of Potenza, including Rionero in Vulture, Barile, Rapolla, Ripacandida, Ginestra, Maschito, Forenza, Acerenza, Melfi, Atella, Venosa, Lavello, Palazzo San Gervasio, Banzi and Genzano di Lucania. Three administrative islands of Atella are excluded.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "place",
+   "claim": "The zone lies on the slopes of Monte Vulture, an extinct volcano that was active until the late Pleistocene. Its highest point is 1,327 m. Eruptions began about 800,000 years ago and left layers of lava and ash.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "vulcano spento, ma attivo fino al Pleistocene superiore"
+  },
+  {
+   "topic": "soil",
+   "claim": "Vineyards must be on hills of mainly volcanic origin. Soils run from sandy and volcanic-ash sands to silty clay. Tuff layers act as a water store in the dry summer.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "terreni collinari di origine prevalentemente vulcanica"
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Vineyards must lie between 200 and 700 m above sea level.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "tra i 200 e i 700 metri s.l.m."
+  },
+  {
+   "topic": "aspect",
+   "claim": "The general exposure is east and south-east.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "l’esposizione generale è orientata verso est e sud-est"
+  },
+  {
+   "topic": "place",
+   "claim": "The climate is clearly dry in July and August. The volcanic massif brings breezes and ventilation from both coasts.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "note": "Only the start of the climate section was read."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Vines are trained as alberello or simple trellis. New plantings must have at least 3,350 vines per hectare.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "production",
+   "claim": "Grape yield is capped at 8 tonnes per hectare. Wine yield is capped at 65% of the grapes (52 hl/ha), with a tolerance up to 70%. Grapes must reach at least 13.0% natural alcohol.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "aging",
+   "claim": "Superiore cannot be sold before 1 November of the third year after the harvest. It needs at least 12 months in wood and at least 12 months in bottle.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "dopo un periodo di invecchiamento obbligatorio di almeno l2 mesi in contenitori di legno",
+   "note": "The clause is headed 'Aglianico del Vulture' in the text, which looks like a carry-over from the DOC text. It is the Superiore disciplinare, so read it as the Superiore rule."
+  },
+  {
+   "topic": "aging",
+   "claim": "Riserva needs release from 1 November of the fifth year after the harvest, with at least 24 months in wood and at least 12 months in bottle.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "alcohol",
+   "claim": "Finished wine needs at least 13.5% total alcohol (both Superiore and Riserva), 4.5 g/l total acidity and 26 g/l extract. The vintage must be on the label.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "tasting",
+   "claim": "The disciplinare describes a deep ruby red turning garnet, with orange tints as it ages. It is dry, fairly tannic, savoury, persistent and balanced, and may show light wood notes.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "secco, giustamente tannico, sapido, persistente"
+  },
+  {
+   "topic": "standing",
+   "claim": "The Superiore is said to be the only DOCG in Basilicata.",
+   "source": [
+    "vulture-search"
+   ],
+   "strength": "Weak",
+   "note": "Search summary only."
+  }
+ ],
+ "conflicts": [
+  "DOCG year: the disciplinare lists the decree of 2 August 2010. Older Wikipedia text and some pages say 2011, possibly the date of the public announcement. Use 2010 with the decree as proof."
+ ],
+ "gaps": [
+  "Consorzio di Tutela not found or opened.",
+  "Origin of the name Vulture and the name Aglianico not found.",
+  "Rest of the climate section (rain, temperature) not extracted.",
+  "No commune-by-commune soil or elevation detail."
+ ],
+ "sheet": {
+  "place": "Aglianico del Vulture Superiore is 100% Aglianico from the slopes of an extinct volcano in Basilicata. The vines grow at 200 to 700 m on volcanic soil. It cannot be sold until the third year after harvest, and Riserva waits until the fifth."
+ }
+}

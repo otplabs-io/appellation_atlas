@@ -1,0 +1,69 @@
+{
+"source": {
+"title": "Wikipedia, List of wine-producing regions: Israel",
+"url": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions",
+"revision": 1382971935,
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Galilee",
+"kind": "region"
+},
+{
+"path": [
+"Galilee"
+],
+"name": "Upper Galilee",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Golan Heights",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Judean Hills",
+"kind": "region"
+},
+{
+"path": [
+"Judean Hills"
+],
+"name": "Jerusalem",
+"kind": "region"
+},
+{
+"path": [
+"Judean Hills"
+],
+"name": "Bet Shemesh",
+"kind": "region"
+},
+{
+"path": [
+"Judean Hills"
+],
+"name": "Latrun",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Mount Carmel",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Rishon LeZion",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Negev",
+"kind": "region"
+}
+]
+}

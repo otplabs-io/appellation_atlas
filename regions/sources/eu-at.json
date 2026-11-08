@@ -1,0 +1,250 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Wagram",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005621",
+"file": "PDO-AT-A0233"
+},
+{
+"path": [],
+"name": "Thermenregion",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005529",
+"file": "PDO-AT-A0229"
+},
+{
+"path": [],
+"name": "Eisenberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004421",
+"file": "PDO-AT-A0215"
+},
+{
+"path": [],
+"name": "Kamptal",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004222",
+"file": "PDO-AT-A0209"
+},
+{
+"path": [],
+"name": "Steiermark",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005521",
+"file": "PDO-AT-A0225"
+},
+{
+"path": [],
+"name": "Burgenland",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004142",
+"file": "PDO-AT-A0207"
+},
+{
+"path": [],
+"name": "Niederösterreich",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005512",
+"file": "PDO-AT-A0221"
+},
+{
+"path": [],
+"name": "Wien",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005624",
+"file": "PDO-AT-A0235"
+},
+{
+"path": [],
+"name": "Vulkanland Steiermark",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005525",
+"file": "PDO-AT-A0226"
+},
+{
+"path": [],
+"name": "Wiener Gemischter Satz",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000017145",
+"file": "PDO-AT-02593"
+},
+{
+"path": [],
+"name": "Ruster Ausbruch",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000017207",
+"file": "PDO-AT-02769"
+},
+{
+"path": [],
+"name": "Südsteiermark",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005528",
+"file": "PDO-AT-A0228"
+},
+{
+"path": [],
+"name": "Wachau",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003801",
+"file": "PDO-AT-A0205"
+},
+{
+"path": [],
+"name": "Neusiedlersee",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005506",
+"file": "PDO-AT-A0219"
+},
+{
+"path": [],
+"name": "Weststeiermark",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005622",
+"file": "PDO-AT-A0234"
+},
+{
+"path": [],
+"name": "Carnuntum",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005504",
+"file": "PDO-AT-A0217"
+},
+{
+"path": [],
+"name": "Rosalia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000017144",
+"file": "PDO-AT-02594"
+},
+{
+"path": [],
+"name": "Weinland",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004281",
+"file": "PGI-AT-A0212"
+},
+{
+"path": [],
+"name": "Weinviertel",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003861",
+"file": "PDO-AT-A0206"
+},
+{
+"path": [],
+"name": "Kremstal",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004143",
+"file": "PDO-AT-A0208"
+},
+{
+"path": [],
+"name": "Steirerland",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004282",
+"file": "PGI-AT-A0213"
+},
+{
+"path": [],
+"name": "Leithaberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004644",
+"file": "PDO-AT-A0216"
+},
+{
+"path": [],
+"name": "Bergland",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004241",
+"file": "PGI-AT-A0211"
+},
+{
+"path": [],
+"name": "Traisental",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004223",
+"file": "PDO-AT-A0210"
+},
+{
+"path": [],
+"name": "Salzburg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005518",
+"file": "PDO-AT-A0224"
+},
+{
+"path": [],
+"name": "Oberösterreich",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005515",
+"file": "PDO-AT-A0223"
+},
+{
+"path": [],
+"name": "Tirol",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005530",
+"file": "PDO-AT-A0230"
+},
+{
+"path": [],
+"name": "Mittelburgenland",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004285",
+"file": "PDO-AT-A0214"
+},
+{
+"path": [],
+"name": "Kärnten",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005505",
+"file": "PDO-AT-A0218"
+},
+{
+"path": [],
+"name": "Vorarlberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005531",
+"file": "PDO-AT-A0231"
+}
+]
+}

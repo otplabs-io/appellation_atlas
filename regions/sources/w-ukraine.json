@@ -1,0 +1,41 @@
+{
+"source": {
+"title": "Wikipedia, List of wine-producing regions: Ukraine",
+"url": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions",
+"revision": 1382971935,
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Autonomous Republic of Crimea",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Kherson Oblast",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Mykolaiv Oblast",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Odesa Oblast",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Zakarpattia Oblast",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Zaporizhzhia Oblast",
+"kind": "region"
+}
+]
+}

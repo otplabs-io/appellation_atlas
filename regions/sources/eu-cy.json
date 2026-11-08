@@ -1,0 +1,120 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Pitsilia",
+"also": [
+"Pitsilia"
+],
+"kind": "PDO",
+"id": "EUGI00000006782",
+"file": "PDO-CY-A1627"
+},
+{
+"path": [],
+"name": "Lefkosia",
+"also": [
+"Lefkosia"
+],
+"kind": "PGI",
+"id": "EUGI00000005962",
+"file": "PGI-CY-A1621"
+},
+{
+"path": [],
+"name": "Larnaka",
+"also": [
+"Larnaka"
+],
+"kind": "PGI",
+"id": "EUGI00000003284",
+"file": "PGI-CY-A1620"
+},
+{
+"path": [],
+"name": "Vouni Panagias - Ampelitis",
+"also": [
+"Vouni Panagias - Ampelitis"
+],
+"kind": "PDO",
+"id": "EUGI00000006761",
+"file": "PDO-CY-A1625"
+},
+{
+"path": [],
+"name": "Laona Akama",
+"also": [
+"Laona Akama"
+],
+"kind": "PDO",
+"id": "EUGI00000006781",
+"file": "PDO-CY-A1626"
+},
+{
+"path": [],
+"name": "Krasochoria Lemesou",
+"also": [
+"Krasochoria Lemesou"
+],
+"kind": "PDO",
+"id": "EUGI00000007564",
+"file": "PDO-CY-A1628"
+},
+{
+"path": [],
+"name": "Koumandaria",
+"also": [
+"Koumandaria"
+],
+"kind": "PDO",
+"id": "EUGI00000005983",
+"file": "PDO-CY-A1622"
+},
+{
+"path": [],
+"name": "Lemesos",
+"also": [
+"Lemesos"
+],
+"kind": "PGI",
+"id": "EUGI00000003228",
+"file": "PGI-CY-A1619"
+},
+{
+"path": [],
+"name": "Krasochoria Lemesou - Laona",
+"also": [
+"Krasochoria Lemesou - Laona"
+],
+"kind": "PDO",
+"id": "EUGI00000006741",
+"file": "PDO-CY-A1624"
+},
+{
+"path": [],
+"name": "Pafos",
+"also": [
+"Pafos"
+],
+"kind": "PGI",
+"id": "EUGI00000003222",
+"file": "PGI-CY-A1618"
+},
+{
+"path": [],
+"name": "Krasochoria Lemesou - Afamis",
+"also": [
+"Krasochoria Lemesou - Afamis"
+],
+"kind": "PDO",
+"id": "EUGI00000006563",
+"file": "PDO-CY-A1623"
+}
+]
+}

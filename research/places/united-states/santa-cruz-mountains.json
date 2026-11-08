@@ -1,0 +1,38 @@
+{
+ "subject": "place",
+ "id": "united-states/santa-cruz-mountains",
+ "read": "2026-11-05",
+ "sources": {
+  "ridge-ava": {"name": "Ridge Vineyards, Santa Cruz Mountains AVA", "kind": "producer", "url": "https://www.ridgewine.com/about/news/santa-cruz-mountains-ava/", "note": "A producer page. Good for Monte Bello facts, less so for the whole AVA."},
+  "wikipedia-scm": {"name": "Wikipedia, Santa Cruz Mountains AVA", "kind": "reference", "url": "https://en.wikipedia.org/wiki/Santa_Cruz_Mountains_AVA", "note": "Secondary. Its rainfall and acreage figures disagree with each other and with other pages, so neither is used."},
+  "ridge-tech-2021": {"name": "Ridge 2021 Estate Cabernet Sauvignon tech sheet", "kind": "producer", "url": "https://www.ridgewine.com/wp-content/uploads/2024/02/21CRE.pdf", "about": "Monte Bello Vineyard, 2021"}
+ },
+ "claims": [
+  {"topic": "place", "claim": "The Santa Cruz Mountains AVA was established in 1981.", "source": ["ridge-ava", "wikipedia-scm"], "strength": "Medium", "quote": "was established in 1981", "note": "Wikipedia gives 4 December 1981. A search snippet from another site said January 1982. Not checked against the TTB."},
+  {"topic": "place", "claim": "The AVA boundary follows the coastal fog line. It sits near 400 feet on the Pacific side and 800 feet on the Bay side, and rises to about 3,000 feet at the ridge crests.", "source": ["wikipedia-scm", "ridge-ava"], "strength": "Medium", "quote": "3000+ feet elevation", "note": "The 400 and 800 foot limits come from Wikipedia only. Ridge confirms the fog line and the 3,000 foot crest."},
+  {"topic": "soil", "claim": "Soils across the AVA are mostly Franciscan shale, sandstone and clay, thin and stony.", "source": ["wikipedia-scm"], "strength": "Weak", "note": "Single secondary source. Soils vary a lot across the fault."},
+  {"topic": "soil", "claim": "At Monte Bello the soils are greenstone and clay over decomposing, fractured limestone.", "source": ["ridge-ava", "ridge-tech-2021"], "strength": "Strong", "quote": "green stone and clay soils layered over decomposing and fractured limestone", "note": "Producer, one vineyard in the AVA. Not the whole appellation."},
+  {"topic": "soil", "claim": "Ridge says limestone is missing from the best-known Cabernet areas of Napa and Sonoma.", "source": ["ridge-ava"], "strength": "Weak", "note": "Producer opinion, not checked elsewhere."},
+  {"topic": "place", "claim": "Monte Bello vines sit between about 1,300 and 2,700 feet.", "source": ["ridge-ava", "ridge-tech-2021"], "strength": "Strong", "quote": "Elevation: 1300' to 2670'", "note": "The Ridge web page rounds the top to 2,700. The tech sheet says 2,670."},
+  {"topic": "place", "claim": "The climate is cool. Ridge calls Monte Bello one of California's coolest Cabernet areas.", "source": ["ridge-ava"], "strength": "Medium", "quote": "one of California’s coolest cabernet-producing areas", "note": "Producer claim about its own site. Wikipedia lists the AVA as Winkler Region I, which is a single secondary source."},
+  {"topic": "place", "claim": "The AVA was drawn by topography, with a boundary set by elevation and fog.", "source": ["ridge-ava", "wikipedia-scm"], "strength": "Medium"},
+  {"topic": "standing", "claim": "The AVA is known for Cabernet Sauvignon, Pinot Noir and Chardonnay, each about a quarter of plantings.", "source": ["wikipedia-scm"], "strength": "Weak", "note": "Single secondary source, and the shares are not dated."},
+  {"topic": "standing", "claim": "Ridge says Monte Bello has often been called America's First Growth and is known for aging for decades.", "source": ["ridge-ava"], "strength": "Weak", "quote": "has often been called America’s First Growth", "note": "Producer's own words about its top wine. Show as Ridge's claim."},
+  {"topic": "place", "claim": "Santa Cruz Mountains is a stand-alone appellation between the North Coast and the Central Coast, and part of neither.", "source": ["ridge-tech-2021"], "strength": "Strong", "quote": "a stand alone appellation separating the North Coast from the Central Coast, but not part of either"}
+ ],
+ "conflicts": [
+  "Wikipedia's infobox gives annual rainfall of 3 inches, while its text says rain is much greater than nearby areas. Rainfall not used.",
+  "Wikipedia says about 480,000 acres. Another source seen in search said about 322,000. Acreage not used.",
+  "Established: 4 December 1981 (Wikipedia, Ridge says 1981) against January 1982 in one search snippet."
+ ],
+ "gaps": [
+  "Rainfall and temperature figures for the AVA from an official or growers' source.",
+  "TTB or growers' association page for the AVA. The association site was not readable (404).",
+  "Soil description for the whole AVA from a source stronger than Wikipedia.",
+  "Planted acreage from a growers' source."
+ ],
+ "sheet": {
+  "soil": "Greenstone and clay over fractured limestone at Monte Bello.",
+  "elevation": "Monte Bello vines sit from about 1,300 to 2,700 feet."
+ }
+}

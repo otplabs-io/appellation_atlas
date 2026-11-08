@@ -1,0 +1,310 @@
+{
+ "subject": "place",
+ "id": "italy/barolo",
+ "read": "2026-11-05",
+ "sources": {
+  "disciplinare": {
+   "name": "Disciplinare di produzione, Barolo DOCG (Mipaaf text, amended to D.M. 17.04.2015), as hosted by AIS Italia",
+   "kind": "official",
+   "url": "https://aisitalia.it/Disciplinari/Piemonte/DOCG/Barolo.pdf",
+   "note": "Read as PDF text. This is the 2015 consolidated version. Later amendments may exist and were not checked."
+  },
+  "wikipedia-en": {
+   "name": "Wikipedia, Barolo (English)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Barolo"
+  },
+  "wikipedia-it-barolo": {
+   "name": "Wikipedia, Barolo (Italia) (Italian), the village",
+   "kind": "reference",
+   "url": "https://it.wikipedia.org/wiki/Barolo_(Italia)"
+  },
+  "winefolly": {
+   "name": "Wine Folly, Barolo, Barbaresco and the other Nebbiolos of Italy",
+   "kind": "reference",
+   "url": "https://winefolly.com/deep-dive/barolo-barbaresco-italy-nebbiolo-regions/"
+  },
+  "winesociety": {
+   "name": "The Wine Society, A simple guide to Barolo",
+   "kind": "merchant",
+   "url": "https://www.thewinesociety.com/discover/explore/expertise/a-simple-guide-to-barolo/"
+  },
+  "winescholar": {
+   "name": "Wine Scholar Guild, Barolo communes (via search summary)",
+   "kind": "reference",
+   "url": "https://www.winescholarguild.com/blog/regions-and-producers/barolo-communes",
+   "note": "Seen only as a search-result summary. Page not opened."
+  },
+  "tourism-name": {
+   "name": "Tourism and village pages on the origin of Barolo's name (via search summary)",
+   "kind": "general",
+   "url": "https://e-borghi.com/en/village/barolo",
+   "note": "Seen only as a search-result summary. Tourism material, often repeating each other."
+  }
+ },
+ "claims": [
+  {
+   "topic": "grapes",
+   "claim": "Barolo is made from Nebbiolo only. The disciplinare allows no other grape.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "composti esclusivamente dal vitigno Nebbiolo"
+  },
+  {
+   "topic": "place",
+   "claim": "The DOCG zone covers all of Barolo, Castiglione Falletto and Serralunga d'Alba, and parts of eight more communes: Monforte d'Alba, Novello, La Morra, Verduno, Grinzane Cavour, Diano d'Alba, Cherasco and Roddi. That makes 11 communes, all in the province of Cuneo.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "nel territorio di 11 Comuni"
+  },
+  {
+   "topic": "place",
+   "claim": "The five original core communes (Barolo, Castiglione Falletto, Serralunga d'Alba, Monforte d'Alba and La Morra) are said to make over 87% of the wine.",
+   "source": ["wikipedia-en"],
+   "strength": "Weak",
+   "note": "Single secondary source. The summary I read named four core communes plus parts of others; the list of five is my reading of the usual core and was not confirmed. Do not use on a sheet without a better source."
+  },
+  {
+   "topic": "place",
+   "claim": "The zone sits just south of Alba in the Langhe hills, above the Tanaro river.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "a pochi chilometri a sud della città di Alba"
+  },
+  {
+   "topic": "soil",
+   "claim": "Vines must be on clay and limestone soils, or a mix of the two. Valley floors, damp flat land and poorly sunlit ground are excluded.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "terreni: argillosi, calcarei e loro eventuali combinazioni"
+  },
+  {
+   "topic": "soil",
+   "claim": "The disciplinare says most of the zone is Tortonian soil, made of layered marls and sands. The marls are grey-blue and not very hard. They form low, rounded, whitish hills.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "caratterizzato da marne e sabbie straterellate",
+   "note": "The text spells it 'tortoriano' once, a typo. It does not name the Helvetian or Serravallian."
+  },
+  {
+   "topic": "soil",
+   "claim": "The disciplinare dates the Langhe soils to the Tortonian and Messinian ages, about 7 million years ago, as the Padano sea withdrew. It describes limestone and tufa layers with gypsum and minerals in some areas.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "note": "Official wording is looser than the geology guides below."
+  },
+  {
+   "topic": "soil",
+   "claim": "Western communes are on Tortonian soil. La Morra and Barolo are the examples. It is calcareous marl, more compact and fertile than the eastern soil.",
+   "source": ["wikipedia-en", "winesociety", "winescholar"],
+   "strength": "Medium",
+   "note": "Three secondary sources agree. No Consorzio page was reached."
+  },
+  {
+   "topic": "soil",
+   "claim": "Eastern communes are on older Helvetian (also called Serravallian) soil. Serralunga d'Alba and Monforte d'Alba are the examples. It is sandstone-based, compact and less fertile.",
+   "source": ["wikipedia-en", "winesociety", "winescholar"],
+   "strength": "Medium",
+   "quote": "compact, sandstone-based soil dating from the Helvetian epoch",
+   "note": "Sources differ on details (see conflicts)."
+  },
+  {
+   "topic": "soil",
+   "claim": "Castiglione Falletto has mixed soils with a good share of sand. It sits between the two formations.",
+   "source": ["winescholar"],
+   "strength": "Weak",
+   "note": "Search-result summary of one page only."
+  },
+  {
+   "topic": "soil",
+   "claim": "Cannubi (Barolo commune) and Ravera (Novello) are named as vineyards on or near the border between the two soil types.",
+   "source": ["winescholar"],
+   "strength": "Weak",
+   "note": "Search-result summary. Another summary placed Cannubi on both soils, and Ravera on the boundary. Not confirmed on a primary page."
+  },
+  {
+   "topic": "tasting",
+   "claim": "Wines from La Morra and Barolo tend to be lighter and more perfumed. Wines from Serralunga, Monforte and Castiglione Falletto tend to be bolder and firmer. Exposure and vine age cause exceptions.",
+   "source": ["winefolly", "winesociety"],
+   "strength": "Medium",
+   "note": "Two secondary sources. A generalisation, not a rule."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Vineyards must lie between 170 m and 540 m above sea level.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "non inferiore a 170 metri s.l.m. e non superiore a 540 m s.l.m"
+  },
+  {
+   "topic": "vineyard",
+   "claim": "The commune of Barolo itself ranges from 213 m to 480 m. The village is at 305 m, on a small spur-shaped plateau ringed by hills.",
+   "source": ["wikipedia-it-barolo"],
+   "strength": "Medium",
+   "note": "Single reference source, but it gives specific figures."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "The Barolo zone is about 50 m higher than the Barbaresco zone. Serralunga d'Alba sits on one of the highest hilltops.",
+   "source": ["wikipedia-en"],
+   "strength": "Weak",
+   "note": "Single secondary source."
+  },
+  {
+   "topic": "aspect",
+   "claim": "Exposure is not fixed, but new plantings may not face north (roughly -45 to +45 degrees). Vines must be on hills, trained on Guyot, at least 3,500 vines per hectare for new plantings.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "esclusione per i nuovi impianti, del versante nord"
+  },
+  {
+   "topic": "place",
+   "claim": "The climate is continental, moderated by the Tanaro river and its tributaries. Harvest usually falls in early to mid October. The main risks are rain, downy mildew and spring hail.",
+   "source": ["wikipedia-en"],
+   "strength": "Weak",
+   "note": "Single secondary source. No Consorzio or weather-station figures found."
+  },
+  {
+   "topic": "place",
+   "claim": "Nebbiolo is picked late, often among foggy hills.",
+   "source": ["winesociety"],
+   "strength": "Weak",
+   "note": "Single merchant source."
+  },
+  {
+   "topic": "aging",
+   "claim": "Barolo needs at least 38 months of aging counted from 1 November of the harvest year. At least 18 of those months must be in wood. It cannot be sold before 1 January of the fourth year after the harvest.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "38 18 1° novembre dell'anno di raccolta delle uve",
+   "note": "The text says 'in legno' (wood) and does not set barrel size."
+  },
+  {
+   "topic": "aging",
+   "claim": "Barolo Riserva needs at least 62 months from 1 November of the harvest year, with at least 18 in wood. Release is from 1 January of the sixth year after harvest. The producer asks for the Riserva label after the aging time has passed.",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "aging",
+   "claim": "Some sources give the rule as three years total with 18 months in barrel, and Riserva as five years.",
+   "source": ["winefolly", "wikipedia-en"],
+   "strength": "Medium",
+   "note": "Rounded versions of the official figures. The disciplinare is the one to use."
+  },
+  {
+   "topic": "other",
+   "claim": "Grape yield is capped at 8 tonnes per hectare, or 7.2 t/ha when a Menzione Geografica Aggiuntiva with 'vigna' is used. Wine yield is capped at 70% of the grapes, 56 hl/ha. Grapes must reach 12.5% natural alcohol (13.0% for MGA with 'vigna').",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "note": "In the 2015 text the table shows 8 t/ha for Barolo with or without an MGA. 7.2 t/ha applies where 'vigna' follows the MGA."
+  },
+  {
+   "topic": "tasting",
+   "claim": "The finished wine must be garnet red, dry, full and harmonious, with at least 13.0% alcohol, 4.5 g/l total acidity and 22.0 g/l extract.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "colore: rosso granato"
+  },
+  {
+   "topic": "other",
+   "claim": "Vinification and aging must happen inside the delimited zone. The Ministry can allow it in the whole territory of some neighbouring communes.",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "other",
+   "claim": "Bottles must be Albeisa-shaped or traditional, in dark glass. Barolo chinato, a flavoured wine, is allowed on a Barolo base.",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "other",
+   "claim": "Barolo DOCG wines carry the vintage year on the label. The disciplinare says Barolo is known for wines that are harmonious, structured and long-lived.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "vini armoniosi, strutturati e longevi"
+  },
+  {
+   "topic": "history",
+   "claim": "Barolo became a DOC by decree of 23 April 1966 and a DOCG by decree of 1 July 1980 (Gazzetta Ufficiale 22 January 1981).",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "history",
+   "claim": "The disciplinare credits Camillo Benso, Count of Cavour, and Giulia Colbert Falletti, the last Marchesa di Barolo, with starting a rich, harmonious style of Barolo in the mid 1800s.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "note": "Official wording. Historians may qualify the story."
+  },
+  {
+   "topic": "history",
+   "claim": "The zone was first demarcated in 1896. Grinzane Cavour and parts of Novello and Verduno were added in 1909. Parts of Cherasco, Diano d'Alba and Roddi came with the 1966 DOC.",
+   "source": ["wikipedia-en"],
+   "strength": "Weak",
+   "note": "Single secondary source. The disciplinare refers to a 1933 ministerial delimitation, which is not in this list."
+  },
+  {
+   "topic": "other",
+   "claim": "Menzioni Geografiche Aggiuntive (MGA) are named vineyard areas or commune designations that can follow the word Barolo on the label. The disciplinare lists them in Article 8 and defines their borders in an annex.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "menzioni geografiche aggiuntive"
+  },
+  {
+   "topic": "other",
+   "claim": "The Barolo MGA were introduced in 2010. Barbaresco did the same in 2007. In total 181 were delimited: 170 vineyard areas and 11 village designations.",
+   "source": ["wikipedia-en", "disciplinare"],
+   "strength": "Medium",
+   "note": "The 2010 date and 181 figure come from English Wikipedia. The disciplinare shows amendments dated 30.09.2010 and 26.11.2010 and lists 11 'del comune di' entries. My own count of the Article 8 list gives 181 names if 'Gallaretto Garretti' (printed without a comma) is read as two, so it matches. The Wine Society says about 170."
+  },
+  {
+   "topic": "other",
+   "claim": "The 'vigna' mention (a named single plot) can only be added after an MGA. It needs separate vinification and storage, the producer must make and bottle the wine, and the type must be no more than half the size of the word Barolo.",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "name",
+   "claim": "The wine is named after the town and castle of Barolo.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "il castello di Barolo, che ha dato il nome al vino"
+  },
+  {
+   "topic": "name",
+   "claim": "The village's own name is of uncertain origin. The most repeated theory is Celtic 'bas reul', meaning 'low place'. Another links it to a Celtic word for river, referring to the Tanaro. Early records show 'Villa Barogly' around 1200. Piedmontese is Bareul.",
+   "source": ["tourism-name", "wikipedia-it-barolo"],
+   "strength": "Weak",
+   "note": "Tourism sources repeat each other and one admits no one really knows. Do not state a derivation as fact."
+  },
+  {
+   "topic": "name",
+   "claim": "The word Langhe may come from 'lingue', tongues of land, according to some scholars.",
+   "source": ["disciplinare"],
+   "strength": "Medium",
+   "quote": "secondo alcuni studiosi deriverebbe da \"Langues\"",
+   "note": "Official text, but hedged as one theory."
+  }
+ ],
+ "conflicts": [
+  "Soil ages: the disciplinare names Tortonian and Messinian. Wine guides name Tortonian (west) and Helvetian or Serravallian (east). Helvetian and Serravallian are used for the same eastern soils. The two are not exact synonyms in geology, so a sheet should say Helvetian/Serravallian only where the wine guide wording is wanted.",
+  "Soil character of the eastern side: English Wikipedia says compact sandstone. One summary says harder, more calcareous with more limestone and grey marl. Another says poorer, less compact sand and sandstone. The sources disagree on whether it is more or less compact.",
+  "MGA count: 181 (170 vineyards plus 11 communes) from English Wikipedia and my count of the disciplinare list. German Wikipedia and the Wine Society give about 170.",
+  "Minimum aging: English Wikipedia says at least 36 months after harvest with 18 in wood, and 38 months counted from 1 November. The disciplinare says 38 months from 1 November. Use the disciplinare.",
+  "Core communes: English Wikipedia names four core communes plus parts of others. Other references count five or three whole communes. The disciplinare says three are wholly included (Barolo, Castiglione Falletto, Serralunga)."
+ ],
+ "gaps": [
+  "The Consorzio di Tutela Barolo Barbaresco Alba Langhe e Dogliani site (and its MGA map) could not be reached. Domain guesses failed and search did not return it.",
+  "Current disciplinare: I read the version amended to 2015. Later amendments were not checked.",
+  "Commune-by-commune soil detail beyond La Morra, Barolo, Castiglione Falletto, Serralunga, Monforte and the Novello and Cannubi borders. Verduno, Grinzane Cavour, Diano d'Alba, Cherasco, Roddi: nothing found.",
+  "Climate figures (temperature, rainfall, growing degree days) not found.",
+  "Aspect: only the disciplinare's north-facing exclusion for new plantings. No source on typical aspects by commune (south, southwest, southeast).",
+  "Justerini & Brooks communes article and winewithseth soils page did not load (empty text and a 429).",
+  "Wikipedia pages are secondary. Nebbiolo name origin (nebbia, fog) was seen only in the Wine Society page and is about the grape, so it is not recorded here."
+ ],
+ "sheet": {
+  "place": "Barolo is 100% Nebbiolo from hills just south of Alba, in 11 communes. It must age at least 38 months, 18 of them in wood, and Riserva needs 62."
+ }
+}

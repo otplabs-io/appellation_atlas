@@ -1,0 +1,175 @@
+{
+ "subject": "place",
+ "id": "spain/ribera-del-duero",
+ "read": "2026-11-05",
+ "sources": {
+  "pliego": {
+   "name": "Pliego de condiciones de la DOP Ribera del Duero (version dated 31-07-2023), Consejo Regulador",
+   "kind": "official",
+   "url": "https://www.riberadelduero.es/sites/default/files/2023-08/PLIEGO_DOUE%2031-07-23_0.pdf",
+   "note": "Read in full text from the PDF (Spanish). Later amendments, if any, were not checked."
+  },
+  "sevenfifty": {
+   "name": "SevenFifty Daily, Ribera del Duero region page",
+   "kind": "reference",
+   "url": "https://daily.sevenfifty.com/regions/ribera-del-duero",
+   "note": "Trade reference. Its 50 degrees per day swing is implausible and is not used."
+  },
+  "search-soils": {
+   "name": "Search-result summaries of trade soil descriptions (Finca Villacreces estate notes and a Castilla y Leon wine summit handout)",
+   "kind": "general",
+   "note": "Seen only as search summaries. Pages not opened. Used only for the gravel and La Horra soil points."
+  }
+ },
+ "claims": [
+  {
+   "topic": "history",
+   "claim": "The first regulation of the Ribera del Duero denomination and its Consejo Regulador was approved by a Ministry of Agriculture order of 21 July 1982. The current regulation dates from an order of 1 December 1992.",
+   "source": ["pliego", "sevenfifty"],
+   "strength": "Strong",
+   "quote": "aprobado mediante Orden del Ministerio de Agricultura, Pesca y Alimentación, de 21 de julio de 1982",
+   "note": "Official text and trade reference agree on 1982."
+  },
+  {
+   "topic": "place",
+   "claim": "The DO covers listed municipalities in four provinces: Burgos, Soria, Segovia and Valladolid, all in Castilla y Leon.",
+   "source": ["pliego", "sevenfifty"],
+   "strength": "Strong",
+   "quote": "provincias de Burgos, Soria, Segovia y Valladolid"
+  },
+  {
+   "topic": "place",
+   "claim": "The vineyards sit on the Duero basin plateau. The pliego puts the valleys at an average of 750 to 850 m, with the high interfluve ridges reaching 1,014 m. Trade sources give about 700 to 1,000 m for the plateau, with most vineyards between roughly 760 and 945 m.",
+   "source": ["pliego", "sevenfifty"],
+   "strength": "Strong",
+   "quote": "los valles, con una altura topográfica media situada entre los 750 y 850 metros",
+   "note": "Two sources, slightly different framing. Both fit the 'about 700 to 1,000 m' range."
+  },
+  {
+   "topic": "place",
+   "claim": "The climate is Mediterranean with a strongly continental character and some Atlantic influence. The pliego gives extremes of about 42 C maximum and minus 20 C minimum over the year.",
+   "source": ["pliego"],
+   "strength": "Strong",
+   "quote": "oscilaciones anuales pueden considerarse claramente extremas (42ºC de máxima anual y - 20 º C de mínima)"
+  },
+  {
+   "topic": "place",
+   "claim": "During ripening the gap between day and night temperatures is usually 15 to 20 C. The pliego credits these swings, plus the high average altitude, for slow ripening, balanced acidity and softer tannins.",
+   "source": ["pliego"],
+   "strength": "Strong",
+   "quote": "diferencias térmicas entre el día y la noche durante el período de maduración, de 15 a 20ºC",
+   "note": "SevenFifty's '50 degrees per day' figure was rejected as a likely error."
+  },
+  {
+   "topic": "place",
+   "claim": "Frost is a real risk. The pliego gives the extreme frost-risk window as 17 September to 6 June. SevenFifty also calls frost a major threat and says it can strike from spring into early autumn.",
+   "source": ["pliego", "sevenfifty"],
+   "strength": "Strong",
+   "quote": "El periodo extremo de riesgo de heladas se sitúa entre el 17 de septiembre y el 6 de junio",
+   "note": "SevenFifty's 'June through September' wording differs slightly from the pliego window. The pliego is used."
+  },
+  {
+   "topic": "place",
+   "claim": "Rainfall is moderate to low with dry summers. Aranda de Duero averages about 435 mm. The area gets more than 2,400 hours of sun a year.",
+   "source": ["pliego"],
+   "strength": "Strong",
+   "quote": "en Aranda de Duero el promedio se sitúa en 435 mm"
+  },
+  {
+   "topic": "soil",
+   "claim": "The pliego describes the usual soils as sandy clays, ochre and reddish (Tertiary), plus middle and lower Duero terraces (Quaternary). The basin fill is mostly sands, silty or clayey sands, with layers of limestone, marl and chalky concretions. Soils are basic in pH and low in organic matter.",
+   "source": ["pliego", "sevenfifty"],
+   "strength": "Strong",
+   "quote": "Arcillas arenosas, ocres y rojizas (Terciario) y Terrazas medias y bajas del Duero (Cuaternario)",
+   "note": "SevenFifty gives the same mix of sand, clay, limestone and marl."
+  },
+  {
+   "topic": "soil",
+   "claim": "Gravel and pebble layers occur in places. A trade description of Finca Villacreces mentions sandy loam with layers of gravel and pebbles, and another survey puts clay with gravelly outcrops around La Horra and more limestone and chalk to the west.",
+   "source": ["search-soils"],
+   "strength": "Weak",
+   "note": "Search summaries only. The pliego does not use the word 'cascajo' or 'gravel'. I did not find a source that defines 'cascajo' for Ribera. In Spanish it means coarse gravel or pebbles, a general-language meaning, not a Ribera source."
+  },
+  {
+   "topic": "name",
+   "claim": "Tinto Fino and Tinta del País are the local names for Tempranillo. The pliego lists them as accepted synonyms and names Tempranillo as the main variety for red wines.",
+   "source": ["pliego", "sevenfifty"],
+   "strength": "Strong",
+   "quote": "Tempranillo (sinonimias admitidas: Tinto Fino o Tinta del País)"
+  },
+  {
+   "topic": "grapes",
+   "claim": "Red wines must be at least 75 percent Tempranillo (Tinto Fino, Tinta del País). Other permitted varieties are Cabernet Sauvignon, Garnacha Tinta, Malbec, Merlot and, for whites, Albillo Mayor. Tempranillo is about 95 percent of plantings according to SevenFifty.",
+   "source": ["pliego", "sevenfifty"],
+   "strength": "Strong",
+   "quote": "Se elaborarán con un 75%, como mínimo, de la variedad Tempranillo o Tinto Fino o Tinta del País",
+   "note": "The 95 percent plantings figure comes from SevenFifty only."
+  },
+  {
+   "topic": "aging",
+   "claim": "Red minimums under the pliego. Crianza: 24 months total, at least 12 in oak. Reserva: 36 months total, at least 12 in oak, the rest in bottle. Gran Reserva: 60 months total, at least 24 in oak, the rest in bottle.",
+   "source": ["pliego", "sevenfifty"],
+   "strength": "Strong",
+   "quote": "sesenta meses de los que, al menos veinticuatro, habrán permanecido en barricas de madera de roble",
+   "note": "SevenFifty gives the same figures, apart from rounding Gran Reserva to 5 years."
+  },
+  {
+   "topic": "aging",
+   "claim": "Oak barrels for Crianza, Reserva and Gran Reserva can be at most 330 litres. The 'Roble' or 'Barrica' mention needs at least 3 months in barrel and allows up to 600 litres. Aging time cannot be counted before 1 October of the harvest year, and the count for the three terms starts when the wine goes into oak.",
+   "source": ["pliego"],
+   "strength": "Strong",
+   "quote": "no podrá contabilizarse, en ningún caso, antes del 1 de octubre del año de la vendimia"
+  },
+  {
+   "topic": "aging",
+   "claim": "Rose and white minimums are lower: Crianza 18 months (6 in oak), Reserva 24 months (6 in oak), Gran Reserva 48 months (6 in oak).",
+   "source": ["pliego"],
+   "strength": "Strong",
+   "quote": "dieciocho meses, de los que al menos seis habrán permanecido en barricas de madera de roble"
+  },
+  {
+   "topic": "other",
+   "claim": "The maximum yield is 7,000 kg of grapes per hectare (50.4 hl/ha) for all varieties except Albillo Mayor.",
+   "source": ["pliego"],
+   "strength": "Strong",
+   "quote": "La producción máxima admitida por hectárea será de 7.000 kilogramos de uva"
+  },
+  {
+   "topic": "standing",
+   "claim": "The wines are known for deep colour, a balanced natural acidity, firm yet high-quality tannin, power with elegance, and a strong ability to age. The pliego says aged wines are among the longest-lived in Spain. SevenFifty lists blackberry, plum, vanilla, spice, leather and tobacco as typical flavours.",
+   "source": ["pliego", "sevenfifty"],
+   "strength": "Strong",
+   "quote": "vinos que se encuentran entre los más longevos de España",
+   "note": "The pliego is a self-description by the regulator. SevenFifty is consistent."
+  },
+  {
+   "topic": "standing",
+   "claim": "Ribera del Duero holds DO status, not DOCa. SevenFifty says it was approved for DOCa in 2008 and did not pursue it.",
+   "source": ["sevenfifty"],
+   "strength": "Weak",
+   "note": "Single trade source on the DOCa point. The pliego calls it a DOP (the EU term for the DO)."
+  },
+  {
+   "topic": "name",
+   "claim": "Ribera del Duero means 'bank of the Duero', after the river that runs through the zone. The pliego refers to the Duero basin throughout.",
+   "source": ["reading"],
+   "strength": "Estimate",
+   "note": "Plain translation of the Spanish name. No source states the naming origin."
+  }
+ ],
+ "conflicts": [
+  "SevenFifty says the day-night swing is 'up to 50 degrees'. The pliego says 15 to 20 C during ripening. The pliego figure is used.",
+  "SevenFifty gives the frost window as June to September. The pliego gives 17 September to 6 June. The pliego is used.",
+  "Some web guides give Gran Reserva as 18 months in barrel (the general Spanish rule). Ribera's pliego says 24 months. The pliego is used."
+ ],
+ "gaps": [
+  "No source found that uses or defines 'cascajo' for Ribera del Duero vineyards.",
+  "No source for the origin of the name beyond the plain meaning of the words.",
+  "Per-sub-zone soil and elevation detail (Pesquera, La Horra, Roa, Anguix, Aranda) was not read from a primary source.",
+  "The DOCa 2008 point rests on one trade source."
+ ],
+ "sheet": {
+  "place": "Ribera del Duero is a high plateau along the Duero river in northern Spain, at roughly 700 to 1,000 m. Summers are hot and nights are cold, so grapes ripen slowly and keep their freshness. Spring frost is a real risk. Locals call Tempranillo Tinto Fino or Tinta del País.",
+  "rules": "A red must be at least 75 percent Tempranillo. Crianza needs 24 months of aging, Reserva 36 and Gran Reserva 60. At least 12 months in oak for the first two and 24 for Gran Reserva."
+ }
+}

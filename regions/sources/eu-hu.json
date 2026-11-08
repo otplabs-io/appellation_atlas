@@ -1,0 +1,428 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Sümeg",
+"also": [
+"Sümegi"
+],
+"kind": "PDO",
+"id": "EUGI00000018348",
+"file": "PDO-HU-02823"
+},
+{
+"path": [],
+"name": "Bükk",
+"also": [
+"Bükki"
+],
+"kind": "PDO",
+"id": "EUGI00000005785",
+"file": "PDO-HU-A1500"
+},
+{
+"path": [],
+"name": "Villány",
+"also": [
+"Villányi"
+],
+"kind": "PDO",
+"id": "EUGI00000006801",
+"file": "PDO-HU-A1381"
+},
+{
+"path": [],
+"name": "Nivegy-völgy",
+"also": [
+"Nivegy-völgyi"
+],
+"kind": "PDO",
+"id": "EUGI00000018334",
+"file": "PDO-HU-02816"
+},
+{
+"path": [],
+"name": "Badacsony",
+"also": [
+"Badacsonyi"
+],
+"kind": "PDO",
+"id": "EUGI00000005789",
+"file": "PDO-HU-A1506"
+},
+{
+"path": [],
+"name": "Csopak",
+"also": [
+"Csopaki"
+],
+"kind": "PDO",
+"id": "EUGI00000015846",
+"file": "PDO-HU-02378"
+},
+{
+"path": [],
+"name": "Mura",
+"also": [
+"Murai"
+],
+"kind": "PDO",
+"id": "EUGI00000016795",
+"file": "PDO-HU-02817"
+},
+{
+"path": [],
+"name": "Balatonfüred-Csopak",
+"also": [
+"Balatonfüred-Csopaki"
+],
+"kind": "PDO",
+"id": "EUGI00000005795",
+"file": "PDO-HU-A1516"
+},
+{
+"path": [],
+"name": "Tokaj",
+"also": [
+"Tokaji"
+],
+"kind": "PDO",
+"id": "EUGI00000005787",
+"file": "PDO-HU-A1254"
+},
+{
+"path": [],
+"name": "Felső-Magyarország",
+"also": [
+"Felső-Magyarországi"
+],
+"kind": "PGI",
+"id": "EUGI00000005783",
+"file": "PGI-HU-A1329"
+},
+{
+"path": [],
+"name": "Pécs",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006871",
+"file": "PDO-HU-A1385"
+},
+{
+"path": [],
+"name": "Zemplén",
+"also": [
+"Zempléni"
+],
+"kind": "PGI",
+"id": "EUGI00000005788",
+"file": "PGI-HU-A1375"
+},
+{
+"path": [],
+"name": "Szekszárd",
+"also": [
+"Szekszárdi"
+],
+"kind": "PDO",
+"id": "EUGI00000006422",
+"file": "PDO-HU-A1349"
+},
+{
+"path": [],
+"name": "Mátra",
+"also": [
+"Mátrai"
+],
+"kind": "PDO",
+"id": "EUGI00000005784",
+"file": "PDO-HU-A1368"
+},
+{
+"path": [],
+"name": "Etyek-Buda",
+"also": [
+"Etyek-Budai"
+],
+"kind": "PDO",
+"id": "EUGI00000006425",
+"file": "PDO-HU-A1350"
+},
+{
+"path": [],
+"name": "Sopron",
+"also": [
+"Soproni"
+],
+"kind": "PDO",
+"id": "EUGI00000005802",
+"file": "PDO-HU-A1504"
+},
+{
+"path": [],
+"name": "Hajós-Baja",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006904",
+"file": "PDO-HU-A1388"
+},
+{
+"path": [],
+"name": "Füred",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000019804",
+"file": "PDO-HU-03043"
+},
+{
+"path": [],
+"name": "Etyeki Pezsgő",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000018015",
+"file": "PDO-HU-02772"
+},
+{
+"path": [],
+"name": "Tihany",
+"also": [
+"Tihanyi"
+],
+"kind": "PDO",
+"id": "EUGI00000005800",
+"file": "PDO-HU-A1503"
+},
+{
+"path": [],
+"name": "Mór",
+"also": [
+"Móri"
+],
+"kind": "PDO",
+"id": "EUGI00000005935",
+"file": "PDO-HU-A1333"
+},
+{
+"path": [],
+"name": "Pannonhalma",
+"also": [
+"Pannonhalmi"
+],
+"kind": "PDO",
+"id": "EUGI00000005937",
+"file": "PDO-HU-A1338"
+},
+{
+"path": [],
+"name": "Kőszeg",
+"also": [
+"Kőszegi"
+],
+"kind": "PDO",
+"id": "EUGI00000018208",
+"file": "PDO-HU-02804"
+},
+{
+"path": [],
+"name": "Dunántúli",
+"also": [
+"Dunántúl"
+],
+"kind": "PGI",
+"id": "EUGI00000006446",
+"file": "PGI-HU-A1351"
+},
+{
+"path": [],
+"name": "Balaton-felvidék",
+"also": [
+"Balaton-felvidéki"
+],
+"kind": "PDO",
+"id": "EUGI00000005794",
+"file": "PDO-HU-A1509"
+},
+{
+"path": [],
+"name": "Tolna",
+"also": [
+"Tolnai"
+],
+"kind": "PDO",
+"id": "EUGI00000006462",
+"file": "PDO-HU-A1353"
+},
+{
+"path": [],
+"name": "Izsáki Arany Sárfehér",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005941",
+"file": "PDO-HU-A1341"
+},
+{
+"path": [],
+"name": "Nagy-Somló",
+"also": [
+"Nagy-Somlói"
+],
+"kind": "PDO",
+"id": "EUGI00000005798",
+"file": "PDO-HU-A1501"
+},
+{
+"path": [],
+"name": "Kunság",
+"also": [
+"Kunsági"
+],
+"kind": "PDO",
+"id": "EUGI00000005942",
+"file": "PDO-HU-A1332"
+},
+{
+"path": [],
+"name": "Balaton",
+"also": [
+"Balatoni"
+],
+"kind": "PGI",
+"id": "EUGI00000005792",
+"file": "PGI-HU-A1507"
+},
+{
+"path": [],
+"name": "Pannon",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006691",
+"file": "PDO-HU-A1380"
+},
+{
+"path": [],
+"name": "Zala",
+"also": [
+"Zalai"
+],
+"kind": "PDO",
+"id": "EUGI00000005801",
+"file": "PDO-HU-A1502"
+},
+{
+"path": [],
+"name": "Balatonboglár",
+"also": [
+"Balatonboglári"
+],
+"kind": "PDO",
+"id": "EUGI00000005793",
+"file": "PDO-HU-A1378"
+},
+{
+"path": [],
+"name": "Neszmély",
+"also": [
+"Neszmélyi"
+],
+"kind": "PDO",
+"id": "EUGI00000005936",
+"file": "PDO-HU-A1335"
+},
+{
+"path": [],
+"name": "Eger",
+"also": [
+"Egri"
+],
+"kind": "PDO",
+"id": "EUGI00000005122",
+"file": "PDO-HU-A1328"
+},
+{
+"path": [],
+"name": "Soltvadkerti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000014933",
+"file": "PDO-HU-02171"
+},
+{
+"path": [],
+"name": "Duna-Tisza-közi",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006082",
+"file": "PGI-HU-A1342"
+},
+{
+"path": [],
+"name": "Duna",
+"also": [
+"Dunai"
+],
+"kind": "PDO",
+"id": "EUGI00000006122",
+"file": "PDO-HU-A1345"
+},
+{
+"path": [],
+"name": "Debrői Hárslevelű",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005786",
+"file": "PDO-HU-A1373"
+},
+{
+"path": [],
+"name": "Csongrád",
+"also": [
+"Csongrádi"
+],
+"kind": "PDO",
+"id": "EUGI00000006844",
+"file": "PDO-HU-A1383"
+},
+{
+"path": [],
+"name": "Káli",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005797",
+"file": "PDO-HU-A1505"
+},
+{
+"path": [],
+"name": "Monor",
+"also": [
+"Monori"
+],
+"kind": "PDO",
+"id": "EUGI00000007861",
+"file": "PDO-HU-N1638"
+},
+{
+"path": [],
+"name": "Balatonmelléki",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005796",
+"file": "PGI-HU-A1508"
+},
+{
+"path": [],
+"name": "Somlói",
+"also": [
+"Somló"
+],
+"kind": "PDO",
+"id": "EUGI00000005799",
+"file": "PDO-HU-A1376"
+}
+]
+}

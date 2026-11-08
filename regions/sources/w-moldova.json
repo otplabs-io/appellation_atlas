@@ -1,0 +1,36 @@
+{
+"source": {
+"title": "Wikipedia, List of wine-producing regions: Moldova",
+"url": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions",
+"revision": 1382971935,
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Bardar",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Codri",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Cricova",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Hîncești",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Purcari",
+"kind": "region"
+}
+]
+}

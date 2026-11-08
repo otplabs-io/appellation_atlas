@@ -1,0 +1,26 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Willamette Valley",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000016381",
+"file": "PGI-US-02439"
+},
+{
+"path": [],
+"name": "Napa Valley",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000016465",
+"file": "PDO-US-17738"
+}
+]
+}

@@ -1,0 +1,181 @@
+{
+ "subject": "place",
+ "id": "italy/vigneti-delle-dolomiti",
+ "read": "2026-11-05",
+ "sources": {
+  "disciplinare": {
+   "name": "Disciplinare di produzione, IGT Vigneti delle Dolomiti, Allegato III/A on the Provincia autonoma di Trento site",
+   "kind": "official",
+   "url": "https://www.provincia.tn.it/ocmultibinary/download/86107/6220609/1/71612560dd01daef78754c53f153c207.pdf/file/9738555372_III_A_Disciplinare_VIGNETI%2BDELLE%2BDOLOMITI.pdf",
+   "note": "Read as PDF text. It is an annex to a July 2026 notice of proposed amendment, so it may be the current text or the text with proposed changes. Not checked."
+  },
+  "provincia-search": {
+   "name": "Provincia autonoma di Trento notice and summary table on the IGT Vigneti delle Dolomiti (via search summary)",
+   "kind": "official",
+   "url": "https://www.provincia.tn.it/content/download/86102/6220154/file/973855590Allegato_F_Quadro_sinottico.pdf",
+   "note": "Seen only as a search-result summary."
+  },
+  "directory": {
+   "name": "Vino Trails Guide, Vigneti delle Dolomiti IGT",
+   "kind": "general",
+   "url": "https://vino-trails-guide.pages.dev/denominations/vigneti-delle-dolomiti-igt/"
+  },
+  "avvinare": {
+   "name": "Avvinare, Italian Indigenous Varieties: Manzoni Bianco",
+   "kind": "general",
+   "url": "https://avvinare.com/2017/05/30/italian-indigenous-varieties-manzoni-bianco/"
+  },
+  "manzoni-search": {
+   "name": "Foradori, Alois Lageder and other producer listings; FEM technical sheet (via search summary)",
+   "kind": "producer",
+   "url": "https://trasparenza.fmach.it/content/download/294573/10345721/version/1/file/Incrocio+Manzoni+scheda+tecnica.pdf",
+   "note": "Seen only as search-result summaries. The FEM sheet returned 404."
+  }
+ },
+ "claims": [
+  {
+   "topic": "place",
+   "claim": "The IGT area is the whole administrative territory of the provinces of Bolzano, Trento and Belluno. Belluno is in Veneto, the other two are in Trentino-Alto Adige. The German name is Weinberg Dolomiten.",
+   "source": [
+    "disciplinare",
+    "provincia-search",
+    "directory"
+   ],
+   "strength": "Strong",
+   "quote": "comprende l’intero territorio amministrativo delle province di Bolzano, Trento e Belluno"
+  },
+  {
+   "topic": "name",
+   "claim": "The disciplinare says the name rests on the fame of the place. The Dolomites were made a UNESCO World Heritage Site in 2009.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "si basa principalmente sulla notorietà legata all’origine geografica del prodotto"
+  },
+  {
+   "topic": "history",
+   "claim": "The disciplinare was approved by D.M. of 26 November 1997. An amendment was approved by EU regulation 2019/1878. A further amendment was proposed in July 2026.",
+   "source": [
+    "provincia-search"
+   ],
+   "strength": "Medium",
+   "note": "Search summary of Provincia di Trento pages. Another page says IGT status dates from earlier. Not confirmed on the full text."
+  },
+  {
+   "topic": "place",
+   "claim": "The IGT allows white, red and rosé, still or frizzante. It also allows passito (dried-grape) and late-harvest wines, red novello, and sparkling wine.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Medium",
+   "note": "Possibly draft text, see source note."
+  },
+  {
+   "topic": "grapes",
+   "claim": "Wines may be made from any grape classed as suitable, or under observation, for Bolzano and Trento, or for Belluno, listed in Annex 1. A grape name on the label needs at least 85% of that grape. Two grape names need 100% from the two, with the smaller above 15%.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Medium",
+   "quote": "per almeno l’85% del corrispondente vitigno",
+   "note": "Possibly draft text."
+  },
+  {
+   "topic": "grapes",
+   "claim": "Several grapes cannot be named on the label, including Lagrein, Riesling Italico, Riesling Renano, Traminer Aromatico, Marzemino, Veltliner, Meunier and Trebbiano Toscano.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Medium",
+   "note": "My reading of the exclusion list in the varietal-naming clause."
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Sparkling white and rosé must come from Chardonnay, Pinot Bianco, Pinot Grigio, Pinot Nero and Müller Thurgau, alone or together. They must be made by tank (autoclave) refermentation only. A Moscato Giallo aromatic sparkling is also allowed.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Medium",
+   "quote": "rifermentazione in autoclave",
+   "note": "Possibly draft text. No classic-method sparkling is listed."
+  },
+  {
+   "topic": "production",
+   "claim": "Grape yield is capped at 23 tonnes per hectare, or 19.5 for wines naming a grape (12 for Moscato Rosa). Wine yield is capped at 80% of the grapes. Minimum total alcohol is 8% for white, rosé and red.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Medium",
+   "note": "Possibly draft text."
+  },
+  {
+   "topic": "vineyard",
+   "claim": "The area is mountainous or hilly and counted entirely as mountain land. Only about 10% is flat valley floor, and over 70% is forest. Vines grow in wider valleys such as the Adige, Isarco, Val Venosta, Valle del Sarca and Val di Cembra.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "vineyard",
+   "claim": "One directory gives vineyard heights as roughly 70 to 800 m above sea level.",
+   "source": [
+    "directory"
+   ],
+   "strength": "Weak",
+   "note": "Directory page only, no source given."
+  },
+  {
+   "topic": "grapes",
+   "claim": "Manzoni Bianco appears in Annex 1 for the provinces of Trento, Bolzano and Belluno, and is not on the list of grapes barred from the label. So 'Manzoni Bianco' can be named on the label under the 85% rule.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Medium",
+   "note": "My reading of the annex and the exclusion list."
+  },
+  {
+   "topic": "grapes",
+   "claim": "Manzoni Bianco (Incrocio Manzoni 6.0.13) was bred by Prof. Luigi Manzoni at the Istituto Tecnico Agrario in Conegliano between 1930 and 1935. It is a cross of Riesling Renano and Pinot Bianco.",
+   "source": [
+    "avvinare",
+    "manzoni-search"
+   ],
+   "strength": "Medium",
+   "note": "One review lists Riesling and Chardonnay instead. See conflicts."
+  },
+  {
+   "topic": "tasting",
+   "claim": "Manzoni Bianco is mostly used to add aroma and acidity to blends. Foradori's Fontanasanta is a well-known 100% Manzoni, classed IGT Vigneti delle Dolomiti.",
+   "source": [
+    "avvinare",
+    "manzoni-search"
+   ],
+   "strength": "Weak",
+   "note": "Little tasting detail found. Producer listings."
+  },
+  {
+   "topic": "name",
+   "claim": "The grape is named for its breeder, Luigi Manzoni.",
+   "source": [
+    "avvinare"
+   ],
+   "strength": "Medium"
+  }
+ ],
+ "conflicts": [
+  "Manzoni Bianco parentage: most sources say Riesling Renano x Pinot Bianco. One review says Riesling x Chardonnay.",
+  "IGT date: the Trento summary says the disciplinare was approved 26 November 1997. Other pages date IGT status earlier. Not resolved."
+ ],
+ "gaps": [
+  "The version of the disciplinare read is an annex to a July 2026 amendment notice. Whether it shows the current or the proposed text is not known.",
+  "The Masaf copy was not found.",
+  "Soil and climate detail for the IGT not extracted beyond the general geography.",
+  "Official elevation range not found.",
+  "Consorzio Vini del Trentino not opened."
+ ],
+ "sheet": {
+  "place": "Vigneti delle Dolomiti is a wide IGT that covers Trento, Bolzano and Belluno. It allows many grapes and styles, still and sparkling. Manzoni Bianco, a Riesling and Pinot Bianco cross, is one grape it lets you name."
+ }
+}

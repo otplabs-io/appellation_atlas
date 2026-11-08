@@ -1,0 +1,119 @@
+{
+ "subject": "place",
+ "id": "italy/sicilia-doc",
+ "read": "2026-11-05",
+ "sources": {
+  "disciplinare": {
+   "name": "Disciplinare di produzione, Sicilia DOC (Masaf text, amended to D.M. 27.08.2024), as hosted by AIS Italia",
+   "kind": "official",
+   "url": "https://aisitalia.it/Disciplinari/Sicilia/DOC/Sicilia.pdf",
+   "note": "Read as PDF text."
+  }
+ },
+ "claims": [
+  {
+   "topic": "history",
+   "claim": "Sicilia began as an IGT (D.M. 10 October 1995). It became a DOC by D.M. of 22 November 2011 (Gazzetta Ufficiale 284, 6 December 2011). The latest amendment listed is D.M. 27 August 2024.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "Approvato DOC con D.M. 22.11.2011"
+  },
+  {
+   "topic": "place",
+   "claim": "The grape zone is the whole administrative territory of the Region of Sicily. Winemaking, mandatory aging and bottling must also happen within the region.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "comprende l’intero territorio amministrativo della Regione Sicilia"
+  },
+  {
+   "topic": "place",
+   "claim": "The disciplinare describes the island as mountainous in the north, hilly in the centre-south and south-west, a plateau in the south-east and volcanic in the east, with flat land mostly on the coasts. It lists soil groups from volcanic to clay-marl, evaporite, sand-calcarenite and limestone.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "grapes",
+   "claim": "The DOC allows white, red, rosé, white and rosé sparkling, and wines named for one of 31 grapes. Examples are Grillo, Catarratto, Inzolia, Carricante, Grecanico, Zibibbo, Nero d'Avola, Frappato, Nerello Mascalese, Perricone, Syrah, Merlot and Cabernet Sauvignon. Chardonnay, Sauvignon, Pinot Grigio, Pinot Nero, Vermentino and Sangiovese are also on the list.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "note": "Not every style is allowed for every grape. A label may also name two grapes of the same colour."
+  },
+  {
+   "topic": "grapes",
+   "claim": "White wines need at least 50% from Insolia, Catarratto, Grillo, Grecanico, Chardonnay, Viognier and Sauvignon, alone or together. Reds need at least 50% from Nero d'Avola, Frappato, Nerello Mascalese, Perricone, Syrah, Merlot, Cabernet Sauvignon and Nerello Cappuccio. Other grapes suited to Sicily may fill the rest.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Sparkling Sicilia must be made by natural fermentation, either by the tank (Charmat) method or by the classic method of bottle refermentation. The classic method is only for white and rosé.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "quote": "metodo charmat o con il metodo classico della rifermentazione in bottiglia"
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Sparkling may be white or rosé, and may be named for Grillo, Chardonnay, Catarratto, Carricante, Grecanico, Pinot Grigio, Moscato Bianco, Zibibbo, Nero d'Avola, Frappato, Nerello Mascalese or Pinot Nero. The sweetness range runs from brut nature to extra dry.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "alcohol",
+   "claim": "Minimum total alcohol for sparkling: 11.5% for tank-method white and rosé, 12% for classic method. Classic method needs at least 5.5 g/l total acidity.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "note": "The disciplinare read gives no set time on the lees for classic method. EU minimums apply."
+  },
+  {
+   "topic": "winemaking",
+   "claim": "Late harvest (vendemmia tardiva) and passito wines are made from grapes dried on the vine, or after picking on mats, racks or crates in suitable rooms. Heat-assisted dehumidifying is banned.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "place",
+   "claim": "The disciplinare lists extra types: Bianco in Superiore and Riserva, Rosso in Riserva, and several grape names in Superiore or Riserva.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "history",
+   "claim": "The disciplinare traces Sicilian wine back through the Greeks, Romans, Arabs, Normans and Spanish. It says the Muslims brought Zibibbo, named from Capo Zebib in Africa, to Pantelleria.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "note": "Official history, unchecked against other sources."
+  }
+ ],
+ "conflicts": [],
+ "gaps": [
+  "Consorzio di Tutela Vini DOC Sicilia not opened, so no number on its size or members.",
+  "Origin of the name Sicilia not researched.",
+  "Yield limits and still-wine alcohol minimums not extracted.",
+  "No climate or elevation figures for the island."
+ ],
+ "sheet": {
+  "place": "Sicilia DOC covers the whole island. It allows white, red, rosé and sparkling wines, and it names 31 grapes, from Grillo and Nero d'Avola to Chardonnay. Sparkling can be tank or classic method."
+ }
+}

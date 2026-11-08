@@ -1,0 +1,380 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Alentejano",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004834",
+"file": "PGI-PT-A1543"
+},
+{
+"path": [],
+"name": "Douro",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004965",
+"file": "PDO-PT-A1539"
+},
+{
+"path": [],
+"name": "Tejo",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005421",
+"file": "PGI-PT-A1547"
+},
+{
+"path": [],
+"name": "Vinho Verde",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003864",
+"file": "PDO-PT-A1545"
+},
+{
+"path": [],
+"name": "Pico",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005045",
+"file": "PDO-PT-A1445"
+},
+{
+"path": [],
+"name": "Biscoitos",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005044",
+"file": "PDO-PT-A1444"
+},
+{
+"path": [],
+"name": "Lisboa",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004659",
+"file": "PGI-PT-A1535"
+},
+{
+"path": [],
+"name": "Beira Atlântico",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000015118",
+"file": "PGI-PT-02350"
+},
+{
+"path": [],
+"name": "Algarve",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005001",
+"file": "PGI-PT-A1448"
+},
+{
+"path": [],
+"name": "Terras do Dão",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000015119",
+"file": "PGI-PT-02352"
+},
+{
+"path": [],
+"name": "Beira Interior",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005482",
+"file": "PDO-PT-A1546"
+},
+{
+"path": [],
+"name": "Terras de Cister",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000015124",
+"file": "PGI-PT-02351"
+},
+{
+"path": [],
+"name": "Graciosa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005124",
+"file": "PDO-PT-A1446"
+},
+{
+"path": [],
+"name": "Bairrada",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004201",
+"file": "PDO-PT-A1537"
+},
+{
+"path": [],
+"name": "Açores",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005125",
+"file": "PGI-PT-A1447"
+},
+{
+"path": [],
+"name": "Terras da Beira",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000015120",
+"file": "PGI-PT-02355"
+},
+{
+"path": [],
+"name": "Península de Setúbal",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005402",
+"file": "PGI-PT-A1459"
+},
+{
+"path": [],
+"name": "Dão",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003963",
+"file": "PDO-PT-A1534"
+},
+{
+"path": [],
+"name": "Alentejo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003742",
+"file": "PDO-PT-A1542"
+},
+{
+"path": [],
+"name": "Távora-Varosa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006445",
+"file": "PDO-PT-A1541"
+},
+{
+"path": [],
+"name": "Setúbal",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005241",
+"file": "PDO-PT-A1457"
+},
+{
+"path": [],
+"name": "Porto",
+"also": [
+"Port",
+"vinho do Porto",
+"Port Wine",
+"vin de Porto",
+"Oporto",
+"Portvin",
+"Portwein",
+"Portwijn"
+],
+"kind": "PDO",
+"id": "EUGI00000006172",
+"file": "PDO-PT-A1540"
+},
+{
+"path": [],
+"name": "Minho",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003622",
+"file": "PGI-PT-A1536"
+},
+{
+"path": [],
+"name": "Palmela",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005761",
+"file": "PDO-PT-A1460"
+},
+{
+"path": [],
+"name": "Trás-os-Montes",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006341",
+"file": "PDO-PT-A1466"
+},
+{
+"path": [],
+"name": "Bucelas",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005565",
+"file": "PDO-PT-A1463"
+},
+{
+"path": [],
+"name": "Madeirense",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007660",
+"file": "PDO-PT-A0039"
+},
+{
+"path": [],
+"name": "Torres Vedras",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005564",
+"file": "PDO-PT-A1465"
+},
+{
+"path": [],
+"name": "Lagos",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005202",
+"file": "PDO-PT-A1454"
+},
+{
+"path": [],
+"name": "Carcavelos",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005567",
+"file": "PDO-PT-A1462"
+},
+{
+"path": [],
+"name": "Transmontano",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006342",
+"file": "PGI-PT-A1467"
+},
+{
+"path": [],
+"name": "Tavira",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005011",
+"file": "PDO-PT-A1449"
+},
+{
+"path": [],
+"name": "Alenquer",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005561",
+"file": "PDO-PT-A1468"
+},
+{
+"path": [],
+"name": "DoTejo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004262",
+"file": "PDO-PT-A1544"
+},
+{
+"path": [],
+"name": "Duriense",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004926",
+"file": "PGI-PT-A0124"
+},
+{
+"path": [],
+"name": "Colares",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005568",
+"file": "PDO-PT-A1461"
+},
+{
+"path": [],
+"name": "Óbidos",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005560",
+"file": "PDO-PT-A1469"
+},
+{
+"path": [],
+"name": "Portimão",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005188",
+"file": "PDO-PT-A1452"
+},
+{
+"path": [],
+"name": "Encostas d'Aire",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005558",
+"file": "PDO-PT-A1470"
+},
+{
+"path": [],
+"name": "Lafões",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005261",
+"file": "PDO-PT-A1455"
+},
+{
+"path": [],
+"name": "Terras Madeirenses",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007662",
+"file": "PGI-PT-A0040"
+},
+{
+"path": [],
+"name": "Madeira",
+"also": [
+"Vinho da Madeira",
+"Madère",
+"Vin de Madère",
+"Madera",
+"Madeira Wein",
+"Madeira Wine",
+"Vino di Madera",
+"Madeira Wijn"
+],
+"kind": "PDO",
+"id": "EUGI00000007659",
+"file": "PDO-PT-A0038"
+},
+{
+"path": [],
+"name": "Arruda",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005556",
+"file": "PDO-PT-A1471"
+},
+{
+"path": [],
+"name": "Lagoa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005184",
+"file": "PDO-PT-A1450"
+}
+]
+}

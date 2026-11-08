@@ -1,0 +1,298 @@
+{
+ "subject": "place",
+ "id": "italy/toscana-igt",
+ "read": "2026-11-05",
+ "sources": {
+  "iwc-toscana": {
+   "name": "Italian Wine Central, IGP Toscano / Toscana",
+   "kind": "reference",
+   "url": "https://italianwinecentral.com/denomination/igp-toscano-toscana/",
+   "note": "Database summary of the rules. The Ministry's disciplinare for Toscana IGT could not be found or opened, so figures here are second-hand."
+  },
+  "rivista-agraria": {
+   "name": "Rivista di Agraria, Storia, identita, valore: Vino Toscana IGT celebra il trentennale della denominazione",
+   "kind": "reference",
+   "url": "https://www.rivistadiagraria.org/vino-e-dintorni/storia-identita-valore-vino-toscana-igt-celebra-trentennale-della-denominazione/",
+   "note": "Trade article that draws on the Consorzio Vino Toscana. Does not discuss Super Tuscans."
+  },
+  "gonews": {
+   "name": "GoNews, Consorzio Vino Toscana riconosciuto dal Masaf referente di tutti i produttori Igt",
+   "kind": "reference",
+   "url": "https://www.gonews.it/?p=1366970",
+   "note": "Local news piece. The date was not shown in the text I read."
+  },
+  "search-summaries": {
+   "name": "Search-result summaries (Rivista di Agraria March 2026 on the pending revision, and a Super Tuscan history page on the vino da tavola label rule)",
+   "kind": "general",
+   "note": "Seen only as search summaries. Pages not opened."
+  },
+  "wset": {
+   "name": "WSET, What is a Super Tuscan wine (2025)",
+   "kind": "reference",
+   "url": "https://www.wsetglobal.com/knowledge-centre/blog/2025/what-is-a-super-tuscan-wine"
+  },
+  "wikipedia-super-tuscan": {
+   "name": "Wikipedia, Super Tuscan (English)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Super_Tuscan",
+   "note": "First 100,000 characters read. The last part was not read."
+  },
+  "wikipedia-san-guido": {
+   "name": "Wikipedia, Tenuta San Guido (English)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Tenuta_San_Guido"
+  },
+  "gambero-tignanello": {
+   "name": "Gambero Rosso International, After 50 years, Tignanello still captures the spirit of the times",
+   "kind": "critic",
+   "url": "https://www.gamberorossointernational.com/news/after-50-years-tignanello-still-captures-the-spirit-of-the-times/page/2/"
+  },
+  "disciplinare-bolgheri": {
+   "name": "Disciplinare di produzione, Bolgheri DOC (consolidated text, DM 03.11.2021), as hosted by AIS Italia",
+   "kind": "official",
+   "url": "https://aisitalia.it/Disciplinari/Toscana/DOC/Bolgheri.pdf"
+  },
+  "disciplinare-cc": {
+   "name": "Disciplinare di produzione, Chianti Classico DOCG (consolidated with changes of DM 22 June 2023), Consorzio Vino Chianti Classico",
+   "kind": "official",
+   "url": "https://www.chianticlassico.com/wp-content/uploads/2024/01/DOCG_Chianti_Classico_disciplinare_consolidato_con_modifiche_DM_22_giugno_2023.pdf",
+   "note": "Read in full as PDF text."
+  },
+  "cc-history": {
+   "name": "Consorzio Vino Chianti Classico, History of Chianti Classico",
+   "kind": "official",
+   "url": "https://www.chianticlassico.com/en/consortium/history-of-chianti-classico/"
+  }
+ },
+ "claims": [
+  {
+   "topic": "place",
+   "claim": "Toscana IGT (now IGP) is a regional designation. Its production zone is the whole of Tuscany, with about 13,300 to 13,500 hectares of vines in use.",
+   "source": [
+    "iwc-toscana",
+    "rivista-agraria"
+   ],
+   "strength": "Medium",
+   "note": "13,338 ha in 2020 (Italian Wine Central) and an average of about 13,500 ha (Rivista di Agraria). No primary text read."
+  },
+  {
+   "topic": "history",
+   "claim": "Law 164 of 1992 introduced the IGT category in Italy. It sits between the strict DOC and DOCG and the plain vino da tavola. The Toscana IGT disciplinare was issued by ministerial decree on 9 October 1995 (Gazzetta Ufficiale 25 October 1995).",
+   "source": [
+    "rivista-agraria",
+    "iwc-toscana"
+   ],
+   "strength": "Medium",
+   "note": "Italian Wine Central says established 1995. Wikipedia says the Toscana IGT came in 1992. The law is 1992 and the Toscana disciplinare is 1995."
+  },
+  {
+   "topic": "grapes",
+   "claim": "Blended Toscana IGT wines may use any proportions of the grape varieties approved for Tuscany. A wine that names one variety on the label must be at least 85% of that variety.",
+   "source": [
+    "iwc-toscana"
+   ],
+   "strength": "Medium",
+   "note": "One database summary. Not checked in the disciplinare text."
+  },
+  {
+   "topic": "other",
+   "claim": "Types listed are bianco, rosato, rosso and novello, white and rose sparkling (metodo classico or tank), late harvest, and white and red passito. Minimum alcohol is listed as 10.0% for bianco, 11.0% for rosato, rosso and novello.",
+   "source": [
+    "iwc-toscana"
+   ],
+   "strength": "Weak",
+   "note": "One database summary. Yields per hectare and aging rules were not shown. Do not quote the figures on a sheet."
+  },
+  {
+   "topic": "other",
+   "claim": "The designation is large. The Consorzio Vino Toscana says over 4,000 producers, an average of about 640,000 hl declared a year and about 27% of Tuscany's wine output.",
+   "source": [
+    "rivista-agraria",
+    "iwc-toscana",
+    "gonews"
+   ],
+   "strength": "Medium",
+   "note": "Italian Wine Central gives 640,000 hl in 2020. GoNews gives more than 4,000 companies. The Consorzio-backed article gives the 27%."
+  },
+  {
+   "topic": "other",
+   "claim": "Consorzio Vino Toscana is recognised by the Ministry (Masaf) as the protection body for all Toscana IGT producers. It was formed on 10 June 2019. Its earlier forms were the Ente Tutela Vini dei Colli della Toscana Centrale (founded 22 November 1984 by Piero Antinori, Vittorio Frescobaldi and Ambrogio Folonari) and from 27 July 1995 the Ente Tutela Vini di Toscana.",
+   "source": [
+    "rivista-agraria",
+    "gonews"
+   ],
+   "strength": "Medium",
+   "note": "Two secondary sources agree on the role. The dates are from one article."
+  },
+  {
+   "topic": "name",
+   "claim": "A revised disciplinare drops the old form Toscano o Toscana, leaving Toscana, and adds sparkling wine categories. Reports say the national wine committee approved it in March 2026 and EU approval is still to come.",
+   "source": [
+    "gonews",
+    "search-summaries"
+   ],
+   "strength": "Weak",
+   "note": "GoNews confirms the name change and the sparkling category. The 2026 status is from a search summary only. Check before relying on it."
+  },
+  {
+   "topic": "history",
+   "claim": "Chianti DOC (1967) set a recipe of 50 to 80% Sangiovese, 10 to 30% Canaiolo, 10 to 30% Trebbiano and/or Malvasia (white grapes) and up to 5% others. This blocked Sangiovese-Cabernet blends and 100% Sangiovese from using the Chianti name.",
+   "source": [
+    "wset",
+    "wikipedia-super-tuscan"
+   ],
+   "strength": "Medium",
+   "note": "WSET gives the full percentages. Wikipedia has similar wording: at most 70% Sangiovese and at least 10% local white grape."
+  },
+  {
+   "topic": "history",
+   "claim": "Sassicaia (Tenuta San Guido, Bolgheri) was the first. Mario Incisa della Rocchetta planted Cabernet Sauvignon in 1944. The first commercial wine was the 1968 vintage, released in 1971. It was sold as vino da tavola because the blend fell outside DOC rules.",
+   "source": [
+    "wset",
+    "wikipedia-san-guido",
+    "disciplinare-bolgheri"
+   ],
+   "strength": "Medium",
+   "note": "The 1944 plantings are in the Bolgheri disciplinare (Strong). The 1968 and 1971 dates are from two secondary sources."
+  },
+  {
+   "topic": "history",
+   "claim": "Tignanello (Antinori, Chianti Classico area) first reached the market with the 1971 vintage. It was sold as vino da tavola because it broke Chianti Classico norms, which required white grapes in the blend. Giacomo Tachis worked on it with Piero Antinori. Cabernet was added in 1975.",
+   "source": [
+    "gambero-tignanello",
+    "wset"
+   ],
+   "strength": "Medium",
+   "note": "Gambero Rosso and WSET agree on 1971-era vino da tavola status and Cabernet from 1975. See conflicts for the launch year and early blend."
+  },
+  {
+   "topic": "history",
+   "claim": "The first Tignanello of 1971 was Sangiovese with a small share of Canaiolo, aged 30 months in barriques. The current blend is 85% Sangiovese, 10% Cabernet Sauvignon and 5% Cabernet Franc.",
+   "source": [
+    "gambero-tignanello"
+   ],
+   "strength": "Weak",
+   "note": "One source. Others give 80% Sangiovese and 20% Cabernet for the 1970s blend."
+  },
+  {
+   "topic": "history",
+   "claim": "Montevertine's 100% Sangiovese Le Pergole Torte was refused by the Chianti authorities and released as vino da tavola in 1977.",
+   "source": [
+    "wset"
+   ],
+   "strength": "Weak",
+   "note": "One source."
+  },
+  {
+   "topic": "history",
+   "claim": "Sassicaia, Tignanello and other early Super Tuscans were sold as vino da tavola, the bottom rung. From 1992 the new IGT category gave them a rung with a regional name. WSET says Super Tuscans became the home of the IGT category from 1992. Later some moved into DOCs such as Bolgheri.",
+   "source": [
+    "wset",
+    "wikipedia-super-tuscan"
+   ],
+   "strength": "Medium",
+   "note": "WSET: Super Tuscans became home to the IGT category from 1992. Wikipedia: Toscana IGT was a less restrictive alternative, and some producers still use it instead of a DOC."
+  },
+  {
+   "topic": "history",
+   "claim": "Under the 1992 law, vino da tavola could no longer show a vintage or a grape name, so producers moved to IGT to keep both on the label.",
+   "source": [
+    "search-summaries"
+   ],
+   "strength": "Weak",
+   "note": "Seen in a search summary about Cepparello. Not confirmed on an opened page."
+  },
+  {
+   "topic": "standing",
+   "claim": "Super Tuscan is an unofficial term, not recognised in the Italian classification. It describes Tuscan reds, often with Cabernet or Merlot, made outside the old DOC rules. Some are IGT Toscana, some are DOC (such as Bolgheri) and Sassicaia has its own DOC.",
+   "source": [
+    "wikipedia-super-tuscan"
+   ],
+   "strength": "Medium",
+   "quote": "unofficial category of Tuscan wines, not recognized within the Italian wine classification system",
+   "note": "One reference source, but a clear statement."
+  },
+  {
+   "topic": "history",
+   "claim": "Bolgheri DOC dates from 1983 and the Sassicaia subzone from 1994. Some sources wrongly give 1994 for the whole DOC.",
+   "source": [
+    "disciplinare-bolgheri",
+    "wikipedia-super-tuscan"
+   ],
+   "strength": "Strong",
+   "note": "Disciplinare table: DPR 1 August 1983, then DM 5 November 1994 for the Sassicaia subzone."
+  },
+  {
+   "topic": "place",
+   "claim": "Chianti Classico DOCG covers a delimited zone, defined by a 1932 decree and based on the old 1716 Chianti boundaries. Toscana IGT covers the whole region.",
+   "source": [
+    "disciplinare-cc",
+    "cc-history"
+   ],
+   "strength": "Strong",
+   "quote": "decreto interministeriale 31luglio 1932"
+  },
+  {
+   "topic": "grapes",
+   "claim": "Chianti Classico DOCG needs 80 to 100% Sangiovese for annata and Riserva, plus red grapes suited to Tuscany for the rest. No white grapes are listed. Gran Selezione needs 90 to 100% Sangiovese, with the rest limited to listed native reds (Colorino, Canaiolo, Ciliegiolo, Mammolo, Pugnitello, Malvasia Nera, Foglia Tonda, Sanforte) up to 10%.",
+   "source": [
+    "disciplinare-cc"
+   ],
+   "strength": "Strong",
+   "quote": "Sangiovese dal 90% fino al 100%",
+   "note": "The Gran Selezione rule applies from the fifth vintage after the approval of the 2023 amendment. A search summary reads that as 2027. This is my reading, not stated in the text."
+  },
+  {
+   "topic": "grapes",
+   "claim": "White grapes were allowed in Chianti Classico until 2006. The 2006 vintage was the first without them. 100% Sangiovese was allowed from 1996, when Chianti Classico became its own DOCG.",
+   "source": [
+    "cc-history"
+   ],
+   "strength": "Strong"
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Chianti Classico vineyards must be on hills, no higher than 700 m, on soils mostly of sandstone, calcareous marl, clay schist, sand and gravel. Toscana IGT has no such restriction shown in the sources I read.",
+   "source": [
+    "disciplinare-cc",
+    "iwc-toscana"
+   ],
+   "strength": "Strong",
+   "quote": "altitudine non superiore a 700 metri s.l.m.",
+   "note": "The Chianti Classico part is the disciplinare. The IGT part is an absence in a database summary."
+  },
+  {
+   "topic": "aging",
+   "claim": "Chianti Classico rules: annata wine is sold from 1 October of the year after the harvest. Riserva needs at least 24 months of aging, Gran Selezione at least 30, both with at least 3 months in bottle, counted from 1 January after the harvest.",
+   "source": [
+    "disciplinare-cc"
+   ],
+   "strength": "Strong",
+   "quote": "almeno 30 mesi di invecchiamento di cui affinamento in bottiglia per almeno 3 mesi"
+  },
+  {
+   "topic": "history",
+   "claim": "Chianti Classico DOC came in 1967 and DOCG in 1984. The Gran Selezione level was added in the 2013 reorganisation, dated 2014.",
+   "source": [
+    "cc-history"
+   ],
+   "strength": "Strong"
+  }
+ ],
+ "conflicts": [
+  "IGT dates: Wikipedia says Toscana IGT began in 1992. Rivista di Agraria and Italian Wine Central say the Toscana disciplinare dates from 1995 (decree 9 October 1995) under Law 164/1992. Both are consistent if 1992 is the law and 1995 the Toscana text.",
+  "Bolgheri DOC: WSET and Wikipedia give 1994. The disciplinare gives 1983 for the DOC and 1994 for the Sassicaia subzone.",
+  "Tignanello: first vintage 1971 (Gambero Rosso, WSET), but a search summary puts the first cuvee in 1970 as a Chianti Classico Riserva and the commercial release in 1974. Wikipedia says the 1971 wine was known as Tignanello in 1978. WSET says the modern blend dates from 1975. Blend of the early wines is also disputed: Sangiovese with Canaiolo (Gambero Rosso), 80% Sangiovese with 20% Cabernet Sauvignon (WSET).",
+  "Sassicaia: the Wikipedia page says the first wine was made in 1948, WSET and the Bolgheri disciplinare say plantings started in 1944."
+ ],
+ "gaps": [
+  "The Ministry's disciplinare for Toscana IGT could not be found. Aisitalia, spaghettitaliani and Gambero Rosso links failed. Yields, aging and exact label rules are missing.",
+  "The status of the revised disciplinare (name change to Toscana, sparkling wines) is from a news piece and a search summary. Not confirmed from the Gazzetta or EU register.",
+  "The origin of the name Toscana was not researched for this file.",
+  "Wikipedia's Super Tuscan page was read only to 100,000 of 111,000 characters.",
+  "A single authoritative source for the date of the first Tignanello and the first IGT use by Super Tuscans was not found."
+ ],
+ "sheet": {
+  "place": "Toscana IGT covers the whole region and leaves winemakers free to choose their grapes. Many Super Tuscans use it because their blends did not fit the old Chianti rules."
+ }
+}

@@ -1,0 +1,186 @@
+{
+"source": {
+"title": "Wikipedia, Hungarian wine (wine regions and sub-regions)",
+"url": "https://en.wikipedia.org/wiki/Hungarian_wine",
+"revision": 1381814389,
+"tier": "reference",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Balaton",
+"kind": "region"
+},
+{
+"path": [
+"Balaton"
+],
+"name": "Badacsony",
+"kind": "sub-region"
+},
+{
+"path": [
+"Balaton"
+],
+"name": "Balatonboglár",
+"kind": "sub-region"
+},
+{
+"path": [
+"Balaton"
+],
+"name": "Balaton-felvidék",
+"kind": "sub-region"
+},
+{
+"path": [
+"Balaton"
+],
+"name": "Balatonfüred-Csopak",
+"kind": "sub-region"
+},
+{
+"path": [
+"Balaton"
+],
+"name": "Nagy-Somló",
+"kind": "sub-region"
+},
+{
+"path": [
+"Balaton"
+],
+"name": "Zala",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Duna",
+"kind": "region"
+},
+{
+"path": [
+"Duna"
+],
+"name": "Csongrád",
+"kind": "sub-region"
+},
+{
+"path": [
+"Duna"
+],
+"name": "Hajós-Baja",
+"kind": "sub-region"
+},
+{
+"path": [
+"Duna"
+],
+"name": "Kunság",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Eger",
+"kind": "region"
+},
+{
+"path": [
+"Eger"
+],
+"name": "Bükk",
+"kind": "sub-region"
+},
+{
+"path": [
+"Eger"
+],
+"name": "Mátra",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Észak-Dunántúl",
+"kind": "region"
+},
+{
+"path": [
+"Észak-Dunántúl"
+],
+"name": "Neszmély",
+"kind": "sub-region"
+},
+{
+"path": [
+"Észak-Dunántúl"
+],
+"name": "Etyek-Buda",
+"kind": "sub-region"
+},
+{
+"path": [
+"Észak-Dunántúl"
+],
+"name": "Mór",
+"kind": "sub-region"
+},
+{
+"path": [
+"Észak-Dunántúl"
+],
+"name": "Pannonhalma",
+"kind": "sub-region"
+},
+{
+"path": [
+"Észak-Dunántúl"
+],
+"name": "Sopron",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Pannon",
+"kind": "region"
+},
+{
+"path": [
+"Pannon"
+],
+"name": "Pécs",
+"kind": "sub-region"
+},
+{
+"path": [
+"Pannon"
+],
+"name": "Szekszárd",
+"kind": "sub-region"
+},
+{
+"path": [
+"Pannon"
+],
+"name": "Tolna",
+"kind": "sub-region"
+},
+{
+"path": [
+"Pannon"
+],
+"name": "Villány",
+"kind": "sub-region"
+},
+{
+"path": [],
+"name": "Sopron",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Tokaj",
+"kind": "region"
+}
+]
+}

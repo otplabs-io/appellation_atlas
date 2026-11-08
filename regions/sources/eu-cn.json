@@ -1,0 +1,50 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "沙城葡萄酒",
+"also": [
+"Shacheng Pu Tao Jiu"
+],
+"kind": "PGI",
+"id": "EUGI00000017918",
+"file": "PGI-CN-2725"
+},
+{
+"path": [],
+"name": "烟台葡萄酒",
+"also": [
+"Yantai Pu Tao Jiu"
+],
+"kind": "PGI",
+"id": "EUGI00000017909",
+"file": "PGI-CN-2716"
+},
+{
+"path": [],
+"name": "桓仁冰酒",
+"also": [
+"Huanren Bing Jiu"
+],
+"kind": "PGI",
+"id": "EUGI00000017908",
+"file": "PGI-CN-2715"
+},
+{
+"path": [],
+"name": "贺兰山东麓葡萄酒",
+"also": [
+"Helanshan Dong Lu Pu Tao Jiu"
+],
+"kind": "PGI",
+"id": "EUGI00000017907",
+"file": "PGI-CN-2714"
+}
+]
+}

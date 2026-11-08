@@ -1,0 +1,136 @@
+{
+"source": {
+"title": "Wikipedia, Austrian wine (wine regions)",
+"url": "https://en.wikipedia.org/wiki/Austrian_wine",
+"revision": 1323163032,
+"tier": "reference",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Lower Austria",
+"kind": "region"
+},
+{
+"path": [
+"Lower Austria"
+],
+"name": "Wachau",
+"kind": "region"
+},
+{
+"path": [
+"Lower Austria"
+],
+"name": "Kremstal",
+"kind": "region"
+},
+{
+"path": [
+"Lower Austria"
+],
+"name": "Kamptal",
+"kind": "region"
+},
+{
+"path": [
+"Lower Austria"
+],
+"name": "Traisental",
+"kind": "region"
+},
+{
+"path": [
+"Lower Austria"
+],
+"name": "Wagram",
+"kind": "region"
+},
+{
+"path": [
+"Lower Austria"
+],
+"name": "Weinviertel",
+"kind": "region"
+},
+{
+"path": [
+"Lower Austria"
+],
+"name": "Carnuntum",
+"kind": "region"
+},
+{
+"path": [
+"Lower Austria"
+],
+"name": "Thermenregion",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Burgenland",
+"kind": "region"
+},
+{
+"path": [
+"Burgenland"
+],
+"name": "Neusiedlersee",
+"kind": "region"
+},
+{
+"path": [
+"Burgenland"
+],
+"name": "Leithaberg",
+"kind": "region"
+},
+{
+"path": [
+"Burgenland"
+],
+"name": "Mittelburgenland",
+"kind": "region"
+},
+{
+"path": [
+"Burgenland"
+],
+"name": "Eisenberg",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Vienna",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Styria",
+"kind": "region"
+},
+{
+"path": [
+"Styria"
+],
+"name": "Vulkanland Steiermark",
+"kind": "region"
+},
+{
+"path": [
+"Styria"
+],
+"name": "Südsteiermark",
+"kind": "region"
+},
+{
+"path": [
+"Styria"
+],
+"name": "Weststeiermark",
+"kind": "region"
+}
+]
+}

@@ -1,0 +1,294 @@
+{
+ "subject": "place",
+ "id": "italy/bolgheri",
+ "read": "2026-11-05",
+ "sources": {
+  "disciplinare-bolgheri": {
+   "name": "Disciplinare di produzione, Bolgheri DOC (consolidated text, last amendment listed DM 03.11.2021), as hosted by AIS Italia",
+   "kind": "official",
+   "url": "https://aisitalia.it/Disciplinari/Toscana/DOC/Bolgheri.pdf",
+   "note": "Read in full as PDF text. Later amendments, if any, were not checked."
+  },
+  "disciplinare-sassicaia": {
+   "name": "Disciplinare di produzione, Bolgheri Sassicaia DOC (consolidated text, last amendment listed DM 30.03.2015), as hosted by AIS Italia",
+   "kind": "official",
+   "url": "https://aisitalia.it/Disciplinari/Toscana/DOC/Bolgheri%20Sassicaia.pdf",
+   "note": "Read in full as PDF text. Later amendments, if any, were not checked."
+  },
+  "wset": {
+   "name": "WSET, What is a Super Tuscan wine (2025)",
+   "kind": "reference",
+   "url": "https://www.wsetglobal.com/knowledge-centre/blog/2025/what-is-a-super-tuscan-wine"
+  },
+  "wikipedia-san-guido": {
+   "name": "Wikipedia, Tenuta San Guido (English)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Tenuta_San_Guido"
+  },
+  "wikipedia-super-tuscan": {
+   "name": "Wikipedia, Super Tuscan (English)",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Super_Tuscan"
+  },
+  "wikipedia-bolgheri": {
+   "name": "Wikipedia, Bolgheri (English), via search summary",
+   "kind": "reference",
+   "url": "https://en.wikipedia.org/wiki/Bolgheri",
+   "note": "Seen only as a search-result summary. Page not opened."
+  },
+  "consorzio-bolgheri": {
+   "name": "Consorzio Tutela Vini Bolgheri DOC, home page",
+   "kind": "official",
+   "url": "https://www.bolgheridoc.com/en/",
+   "note": "Home page only. The Terroir and History pages were not reached."
+  }
+ },
+ "claims": [
+  {
+   "topic": "place",
+   "claim": "Bolgheri DOC covers white (bianco, Vermentino, Sauvignon), rosato, rosso and rosso superiore. It is reserved for wines from the comune of Castagneto Carducci, province of Livorno. Land west of the old Via Aurelia road (the old route of the SS1) is excluded.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong",
+   "quote": "ad esclusione dei territori ubicati ad ovest della s. s. Aurelia, vecchio tracciato"
+  },
+  {
+   "topic": "grapes",
+   "claim": "Bolgheri rosso, rosso superiore and rosato come from vineyards planted to: Cabernet Sauvignon 0 to 100%, Merlot 0 to 100%, Cabernet Franc 0 to 100%, Syrah up to 50%, Sangiovese up to 50%. Other red grapes suited to Tuscany may add up to 30%. No single grape is required, so a Bolgheri red need not be Cabernet-led.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong",
+   "quote": "Cabernet Sauvignon: da 0 al 100%",
+   "note": "The percentages are of the producer's vineyard composition, as written in the rules."
+  },
+  {
+   "topic": "grapes",
+   "claim": "Bolgheri bianco is Vermentino, Sauvignon and Viognier, each from 0 to 100%, plus other white grapes up to 40%. Bolgheri Vermentino and Bolgheri Sauvignon must be at least 85% of that grape.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "aging",
+   "claim": "Bolgheri Superiore (rosso superiore) must age at least 2 years counted from 1 January after the harvest, with at least one year in oak barrels.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong",
+   "quote": "di cui almeno uno in botti di rovere",
+   "note": "The text says botti (casks or barrels) and sets no size, unlike the Sassicaia DOC."
+  },
+  {
+   "topic": "aging",
+   "claim": "Standard Bolgheri rosso can be sold from 1 September of the year after the harvest.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "other",
+   "claim": "Superiore has a lower yield than rosso: 8 t/ha against 9. Its grapes need 12.0% natural alcohol against 11.5%. The finished Superiore needs 12.5% alcohol, 4.5 g/l acidity and 24 g/l extract. It must go in a dark Bordeaux bottle with a flush cork. A vigna mention is allowed.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "other",
+   "claim": "Labels must show the word Toscana under Bolgheri, in type no more than half the size. Old labels without it could be used up for 2021 and earlier vintages.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong",
+   "note": "From the amendment of DM 03.11.2021."
+  },
+  {
+   "topic": "other",
+   "claim": "Vines in new plantings need at least 4,500 per hectare. Expanded training systems are banned. Winemaking, aging and bottling must happen in the comune of Castagneto Carducci.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "place",
+   "claim": "Relief: a north-south line of hills at about 250 to 400 m runs roughly parallel to the coast at the east edge of the zone. Vineyards sit on the foothill band below them, with the Tyrrhenian Sea to the west and the rivers Cecina and Cornia to the north and south.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong",
+   "quote": "quote variabili tra i 250 ed i 400m slm"
+  },
+  {
+   "topic": "place",
+   "claim": "The hills shelter the vines from winter cold. In summer the sea and the rivers send steady air that eases the heat and helps grapes ripen. Warm humid air from the south-west can cause heavy rain when it meets the hills.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "place",
+   "claim": "Climate figures in the disciplinare: mean temperature 14.5 C (average minimum 9.6, maximum 19.4), rainfall 584 mm, water deficit 205 mm. Huglin index 2444 and Winkler index 1747.",
+   "source": ["disciplinare-bolgheri", "disciplinare-sassicaia"],
+   "strength": "Strong",
+   "quote": "Temperatura media: 14,5°C",
+   "note": "The text gives no period or station for the averages. The Winkler and Huglin values appear only in the Bolgheri text."
+  },
+  {
+   "topic": "soil",
+   "claim": "A zoning study led by Prof. Attilio Scienza found 27 soil units in 16 landscape units. Soils vary from sandy to sandy-clay-loam and clayey or silty-clay. They are weakly alkaline to alkaline, with negligible salinity and no sodium or active-lime problems. The rules call this variety of soils the key to complexity and persistence.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong",
+   "quote": "27 unità pedologiche"
+  },
+  {
+   "topic": "soil",
+   "claim": "Bolgheri Sassicaia zone: terraces and straight slopes on Pleistocene sediments, with shallow soils full of stones, a clay-silt texture and imperfect inner drainage. They range from little to very calcareous and contain iron oxide.",
+   "source": ["disciplinare-sassicaia"],
+   "strength": "Strong",
+   "quote": "suoli poco profondi con scheletro molto evidente"
+  },
+  {
+   "topic": "soil",
+   "claim": "The clay in the Sassicaia soils keeps summer water stress low. The rules say the soils suit Cabernet Sauvignon and Cabernet Franc, and set it apart from the rest of Bolgheri.",
+   "source": ["disciplinare-sassicaia"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "tasting",
+   "claim": "The Sassicaia rules describe the wine as elegant and fresh, with red fruit and spice, a long finish and a nose that recalls the Mediterranean scrub (macchia) around the vines.",
+   "source": ["disciplinare-sassicaia"],
+   "strength": "Strong",
+   "quote": "ricorda la macchia mediterranea",
+   "note": "Written by the DOC's own estate, so it is a house description."
+  },
+  {
+   "topic": "tasting",
+   "claim": "Bolgheri Superiore is described as a ruby or garnet wine, rich and elegant on the nose, dry, full, robust and harmonious, with good structure.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong",
+   "quote": "asciutto, pieno, robusto e armonico con buona elegante struttura"
+  },
+  {
+   "topic": "grapes",
+   "claim": "Bolgheri Sassicaia DOC is for red wine with at least 80% Cabernet Sauvignon in the vineyards. Other red varieties suited to Tuscany may make up to 20%. The annex lists Cabernet Franc, Merlot, Petit Verdot, Syrah and Sangiovese among them.",
+   "source": ["disciplinare-sassicaia"],
+   "strength": "Strong",
+   "quote": "Cabernet Sauvignon: almeno l' 80%"
+  },
+  {
+   "topic": "aging",
+   "claim": "Bolgheri Sassicaia must age at least 2 years from 1 January after the harvest, with at least 18 months in oak barrels of no more than 225 litres.",
+   "source": ["disciplinare-sassicaia"],
+   "strength": "Strong",
+   "quote": "almeno 18 mesi in botti di rovere di capacità non superiore a 225 litri"
+  },
+  {
+   "topic": "other",
+   "claim": "Sassicaia yield is capped at 7 t/ha. Grapes need 11.5% natural alcohol, and the wine at least 12.0%, 4.5 g/l acidity and 25 g/l extract. Blending with grapes or wine from outside the zone is banned. The name Sassicaia may stand before the DOC name in type as big or bigger.",
+   "source": ["disciplinare-sassicaia"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "place",
+   "claim": "The Sassicaia zone is a small delimited area inside Castagneto Carducci. Its boundary description starts on the Viale di San Guido, takes in the Le Capanne building and the Sassicaia farm, and borders the Ornellaia estate on one side.",
+   "source": ["disciplinare-sassicaia"],
+   "strength": "Strong",
+   "note": "Its control body is the Livorno Chamber of Commerce, not Valoritalia."
+  },
+  {
+   "topic": "place",
+   "claim": "Bolgheri Sassicaia is said to be the only DOC in Italy that belongs to a single estate.",
+   "source": ["wikipedia-san-guido"],
+   "strength": "Weak",
+   "note": "One secondary source. Not stated in the disciplinare."
+  },
+  {
+   "topic": "history",
+   "claim": "Bolgheri DOC was recognised by decree DPR 1 August 1983 (Gazzetta Ufficiale 31 January 1984). The Sassicaia subzone was added by DM 5 November 1994 (Gazzetta Ufficiale 12 November 1994).",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong",
+   "quote": "inserimento sottozona Sassicaia",
+   "note": "WSET and Wikipedia say Bolgheri became a DOC in 1994. That is the Sassicaia date, not the DOC. See conflicts."
+  },
+  {
+   "topic": "history",
+   "claim": "Bolgheri Sassicaia now has its own disciplinare as a DOC. That disciplinare lists DM 5 November 1994 as its approval and amendments in 2001, 2011, 2013, 2014 and 2015. When it became fully separate from Bolgheri DOC is not stated.",
+   "source": ["disciplinare-sassicaia"],
+   "strength": "Strong",
+   "note": "Wikipedia says Sassicaia got its own DOC in 1994. One search summary said 2013, which is not confirmed."
+  },
+  {
+   "topic": "history",
+   "claim": "Vines in the area go back to the Etruscans and Romans, according to the disciplinare. The Della Gherardesca family started vineyards at San Guido and Belvedere in the late 1600s. After 1790 new plantings were made, mainly near Bolgheri.",
+   "source": ["disciplinare-bolgheri"],
+   "strength": "Strong",
+   "note": "Official wording. Historians may qualify the older parts."
+  },
+  {
+   "topic": "history",
+   "claim": "In the first half of the 1800s Count Guido Alberto della Gherardesca hired winemaking experts, including Giuseppe Mazzanti, and planted French varieties such as Gamay, Cabernet and Syrah. The first experimental vineyards were planted in 1816 at Le Capanne di Castiglioncello, where the first Sassicaia vineyard was later made.",
+   "source": ["disciplinare-bolgheri", "disciplinare-sassicaia"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "history",
+   "claim": "Phylloxera destroyed the vineyards in the early 1900s. After a quiet period between the wars, Marchese Mario Incisa della Rocchetta backed French, mainly Bordeaux, varieties. His plantings date from 1944.",
+   "source": ["disciplinare-bolgheri", "disciplinare-sassicaia"],
+   "strength": "Strong",
+   "quote": "nati già dal 1944"
+  },
+  {
+   "topic": "aspect",
+   "claim": "The first Incisa plantings were high on the hill facing east, because the sea was thought to harm quality. That idea was dropped. The best ground proved to be the foothills and plain, and the sea climate helped ripening.",
+   "source": ["disciplinare-bolgheri", "disciplinare-sassicaia"],
+   "strength": "Strong",
+   "note": "Official wording."
+  },
+  {
+   "topic": "history",
+   "claim": "Sassicaia was first sold commercially from the 1968 vintage, released in 1971. Before that it was a family wine.",
+   "source": ["wset", "wikipedia-san-guido"],
+   "strength": "Medium",
+   "note": "Two secondary sources agree. The disciplinare gives no first-release date."
+  },
+  {
+   "topic": "history",
+   "claim": "Wikipedia says the first Sassicaia wine was made in 1948 from cuttings of 50-year-old vines from a friend's estate near Pisa. WSET says Incisa planted Cabernet Sauvignon in 1944 on one hectare. Search summaries also repeat a story of Lafite cuttings.",
+   "source": ["wikipedia-san-guido", "wset"],
+   "strength": "Weak",
+   "note": "Sources differ on the origin of the vines and the first wine. The disciplinare confirms only plantings from 1944. See conflicts."
+  },
+  {
+   "topic": "standing",
+   "claim": "The disciplinare says Sassicaia was officially established in 1978 when a Decanter tasting of Cabernets from around the world put it first. Its 1985 vintage then did very well against Bordeaux grands crus at a Grand Jury Europeen tasting. From the 1980s other Bolgheri estates followed and won many awards.",
+   "source": ["disciplinare-bolgheri", "disciplinare-sassicaia"],
+   "strength": "Strong",
+   "note": "Official but promotional wording. Wikipedia says the wine ranked first in 1978 was the 1972 vintage, out of 33 wines from 11 countries (Weak)."
+  },
+  {
+   "topic": "name",
+   "claim": "The name Sassicaia comes from the many stones (sassi) in the soil of the vineyard.",
+   "source": ["disciplinare-sassicaia", "wikipedia-san-guido"],
+   "strength": "Strong",
+   "quote": "dall’elevata quantità di sassi presente nel terreno"
+  },
+  {
+   "topic": "name",
+   "claim": "The village name Bolgheri is of the Lombard era. The leading idea is that it comes from Bulgar troops stationed there. It is first recorded in 1075 in a papal bull of Gregory VII. The castle of the Della Gherardesca family took the older settlement's name (Castrum Bolgheris).",
+   "source": ["wikipedia-bolgheri"],
+   "strength": "Weak",
+   "note": "Search summary of one Wikipedia page. Other sources offer other ideas, including an Etruscan root. Do not state one as fact."
+  },
+  {
+   "topic": "name",
+   "claim": "The comune was renamed from Castagneto Marittimo to Castagneto Carducci in 1907, in honour of the poet Giosue Carducci. Castagneto comes from sweet chestnut trees.",
+   "source": ["wikipedia-bolgheri"],
+   "strength": "Weak",
+   "note": "Search summary of one Wikipedia page."
+  }
+ ],
+ "conflicts": [
+  "Bolgheri DOC year: the disciplinare table says DPR 1 August 1983 (Gazzetta Ufficiale 31 January 1984). WSET and Wikipedia say 1994, which is the Sassicaia subzone decree. Use 1983 for the DOC and 1994 for Sassicaia.",
+  "Sassicaia disciplinare, internal: the table lists approval by DM 5 November 1994. Its own text says the subzone Sassicaia DOC was recognised by DPR 1 August 1983, which is the Bolgheri DOC date. The 1994 date is the Sassicaia one.",
+  "Sassicaia origins: planting in 1944 (WSET, disciplinare) versus first wine in 1948 (Wikipedia). Source of the vines: friend's estate near Pisa (Wikipedia) versus Lafite cuttings (search summaries). Unresolved.",
+  "Sassicaia in 1978: the disciplinare says Sassicaia placed first in a Decanter comparative Cabernet tasting. Wikipedia names the 1972 vintage and 33 wines in a clarets tasting. Details differ.",
+  "Sassicaia aging was given as 18 months in barrels in a search summary of a trade site. The disciplinare confirms 18 months in barrels of up to 225 litres, so this is resolved."
+ ],
+ "gaps": [
+  "The Consorzio Bolgheri Terroir and History pages were not reached. The home page was read only.",
+  "No altitude range for the vineyards themselves. The disciplinare gives the hill line at about 250 to 400 m and says vines are in the foothill band.",
+  "No commune-level or vineyard-level soil detail beyond the Scienza zonation summary and the Sassicaia zone text.",
+  "The date when Bolgheri Sassicaia became a separate DOC with its own disciplinare is not stated.",
+  "Whether either disciplinare was amended after the versions listed was not checked.",
+  "Bolgheri name origin rests on one search summary. No local or scholarly source was found."
+ ],
+ "sheet": {
+  "place": "Bolgheri is a coastal Tuscan zone known for Cabernet Sauvignon, Merlot and Cabernet Franc. Sassicaia put it on the map and has its own DOC."
+ }
+}

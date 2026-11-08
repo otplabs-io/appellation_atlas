@@ -1,0 +1,146 @@
+{
+ "subject": "place",
+ "id": "italy/verduno-pelaverga",
+ "read": "2026-11-05",
+ "sources": {
+  "visitlmr": {
+   "name": "Visit Langhe Monferrato Roero, Verduno Pelaverga DOC",
+   "kind": "reference",
+   "url": "https://www.visitlmr.it/en/vini/verduno-pelaverga-doc"
+  },
+  "wikipedia-it": {
+   "name": "Wikipedia, Verduno (Italian)",
+   "kind": "reference",
+   "url": "https://it.wikipedia.org/wiki/Verduno"
+  },
+  "regione-search": {
+   "name": "Regione Piemonte copy of the disciplinare, Strada del Barolo, Langhe.net and Vert de Vin (via search summary)",
+   "kind": "official",
+   "url": "https://www.regione.piemonte.it/web/media/6468/download",
+   "note": "The Regione Piemonte PDF refused the connection when opened. Seen only as a search-result summary. The Strada del Barolo page returned 404."
+  },
+  "pelaverga-search": {
+   "name": "Italy Abroad, Falstaff, Vinorandum, Provincia di Cuneo and others on Pelaverga Piccolo (via search summary)",
+   "kind": "general",
+   "url": "https://italyabroad.com/grapes/pelaverga-piccolo",
+   "note": "Seen only as search-result summaries."
+  }
+ },
+ "claims": [
+  {
+   "topic": "history",
+   "claim": "Verduno Pelaverga (also Verduno) is a DOC with rules set by ministerial decree of 20 October 1995 (Gazzetta Ufficiale 270, 18 November 1995). Later amendments are reported in 2007, 2011, 2014 and 2015.",
+   "source": [
+    "regione-search",
+    "visitlmr"
+   ],
+   "strength": "Medium",
+   "note": "The 1995 decree date appears on the Regione Piemonte copy and on visitlmr. The disciplinare itself was not opened. Treat 1995 as the DOC date."
+  },
+  {
+   "topic": "grapes",
+   "claim": "The wine must be 85% to 100% Pelaverga Piccolo. Up to 15% may be other non-aromatic red grapes from approved Piedmont vineyards.",
+   "source": [
+    "visitlmr",
+    "regione-search"
+   ],
+   "strength": "Medium",
+   "note": "Two secondary sources agree. The disciplinare was not read."
+  },
+  {
+   "topic": "place",
+   "claim": "There is one type: a still, dry red. Minimum alcohol is 11% by volume.",
+   "source": [
+    "visitlmr",
+    "regione-search"
+   ],
+   "strength": "Medium"
+  },
+  {
+   "topic": "place",
+   "claim": "The zone is the whole commune of Verduno in the province of Cuneo, plus small parts of La Morra and Roddi.",
+   "source": [
+    "visitlmr",
+    "regione-search"
+   ],
+   "strength": "Medium"
+  },
+  {
+   "topic": "place",
+   "claim": "Verduno is a small commune of 7.16 sq km at 381 m, bordering Bra, La Morra, Roddi and Santa Vittoria d'Alba. It is also one of the 11 communes of the Barolo zone.",
+   "source": [
+    "wikipedia-it"
+   ],
+   "strength": "Medium",
+   "note": "Single reference source. The Barolo link agrees with the Barolo place file."
+  },
+  {
+   "topic": "soil",
+   "claim": "Verduno's soils are mostly Sant'Agata marls, grey-blue and layered, with clay, limestone and sand in varying mixes, laid down in the Miocene.",
+   "source": [
+    "pelaverga-search"
+   ],
+   "strength": "Weak",
+   "note": "Search summaries only. No geological source opened."
+  },
+  {
+   "topic": "tasting",
+   "claim": "The wine is ruby red, sometimes with violet tints. The nose is intense, fragrant, fruity and spicy. The palate is dry, fresh, velvety and balanced.",
+   "source": [
+    "visitlmr"
+   ],
+   "strength": "Medium",
+   "note": "Regional tourism wording."
+  },
+  {
+   "topic": "grapes",
+   "claim": "Pelaverga Piccolo has been grown in Verduno since the 15th century, though its origin is unclear. Tradition credits Blessed Sebastiano Valfre in the early 1700s, bringing it from Saluzzo. Castello di Verduno replanted with Pelaverga Piccolo in 1972, and others followed.",
+   "source": [
+    "pelaverga-search"
+   ],
+   "strength": "Weak",
+   "note": "Search summaries. The Valfre story is tradition, not record."
+  },
+  {
+   "topic": "name",
+   "claim": "'Piccolo' refers to the small berries, which set it apart from the larger-berried Pelaverga grape of the Saluzzo area.",
+   "source": [
+    "pelaverga-search"
+   ],
+   "strength": "Weak",
+   "note": "Search summary only."
+  },
+  {
+   "topic": "name",
+   "claim": "The name Pelaverga has competing explanations: a Latin 'pellis virga', or 'pela' and 'verga' (to peel a branch), tied to a way of training the vine.",
+   "source": [
+    "pelaverga-search"
+   ],
+   "strength": "Weak",
+   "note": "Sources disagree. Do not state a derivation as fact."
+  },
+  {
+   "topic": "production",
+   "claim": "The 2022 vintage registered 1,756 hl as DOC. Estimates of planted area range from about 11 to 21 hectares.",
+   "source": [
+    "regione-search",
+    "pelaverga-search"
+   ],
+   "strength": "Weak",
+   "note": "Area figures conflict."
+  }
+ ],
+ "conflicts": [
+  "Planted area: about 11 ha, 18 ha and 21 ha (the last for two DOCs) appear in different pages.",
+  "Zone: one summary names Verduno, La Morra and Roddi, another says Verduno whole plus parts of La Morra and Roddi. Whole-commune status for La Morra and Roddi is not meant."
+ ],
+ "gaps": [
+  "The disciplinare text was not read. The Regione Piemonte PDF refused the connection and AIS's Italia URL gave 404.",
+  "Aging rules, yield limits and DOC elevation range not found.",
+  "Origin of the name Verduno not found (the commune's motto is 'Semper virens').",
+  "Exposure and elevation of the vineyards not found."
+ ],
+ "sheet": {
+  "place": "Verduno Pelaverga is a light, spicy red from the little Pelaverga Piccolo grape. It comes from the village of Verduno in the Langhe, next to Barolo, and is made in tiny amounts."
+ }
+}

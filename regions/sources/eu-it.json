@@ -1,0 +1,4343 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Chianti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003581",
+"file": "PDO-IT-A1228"
+},
+{
+"path": [],
+"name": "Salice Salentino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005017",
+"file": "PDO-IT-A0567"
+},
+{
+"path": [],
+"name": "Benevento",
+"also": [
+"Beneventano"
+],
+"kind": "PGI",
+"id": "EUGI00000005064",
+"file": "PGI-IT-A0283"
+},
+{
+"path": [],
+"name": "Colli Berici",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003565",
+"file": "PDO-IT-A0450"
+},
+{
+"path": [],
+"name": "Rubino di Cantavenna",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006541",
+"file": "PDO-IT-A1234"
+},
+{
+"path": [],
+"name": "Alto Adige",
+"also": [
+"dell'Alto Adige",
+"Südtirol",
+"Südtiroler"
+],
+"kind": "PDO",
+"id": "EUGI00000004161",
+"file": "PDO-IT-A0293"
+},
+{
+"path": [],
+"name": "Boca",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004839",
+"file": "PDO-IT-A1074"
+},
+{
+"path": [],
+"name": "Lessona",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006404",
+"file": "PDO-IT-A1191"
+},
+{
+"path": [],
+"name": "Marsala",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005782",
+"file": "PDO-IT-A0785"
+},
+{
+"path": [],
+"name": "Pomino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006550",
+"file": "PDO-IT-A1453"
+},
+{
+"path": [],
+"name": "Terre Abruzzesi",
+"also": [
+"Terre d'Abruzzo"
+],
+"kind": "PGI",
+"id": "EUGI00000018906",
+"file": "PGI-IT-02874"
+},
+{
+"path": [],
+"name": "Friuli",
+"also": [
+"Friuli Venezia Giulia",
+"Furlanija",
+"Furlanija Julijska krajina"
+],
+"kind": "PDO",
+"id": "EUGI00000015052",
+"file": "PDO-IT-02176"
+},
+{
+"path": [],
+"name": "Colli Euganei",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002968",
+"file": "PDO-IT-A0454"
+},
+{
+"path": [],
+"name": "Costa d'Amalfi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004827",
+"file": "PDO-IT-A0278"
+},
+{
+"path": [],
+"name": "Romagna",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004544",
+"file": "PDO-IT-A0507"
+},
+{
+"path": [],
+"name": "Romagna Albana",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003641",
+"file": "PDO-IT-A0285"
+},
+{
+"path": [],
+"name": "Collina Torinese",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003782",
+"file": "PDO-IT-A1098"
+},
+{
+"path": [],
+"name": "Asti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006878",
+"file": "PDO-IT-A1396"
+},
+{
+"path": [],
+"name": "Montepulciano d'Abruzzo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002803",
+"file": "PDO-IT-A0723"
+},
+{
+"path": [],
+"name": "Toscano",
+"also": [
+"Toscana"
+],
+"kind": "PGI",
+"id": "EUGI00000003824",
+"file": "PGI-IT-A1517"
+},
+{
+"path": [],
+"name": "Fara",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004894",
+"file": "PDO-IT-A1178"
+},
+{
+"path": [],
+"name": "Loazzolo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006482",
+"file": "PDO-IT-A1192"
+},
+{
+"path": [],
+"name": "Morellino di Scansano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006302",
+"file": "PDO-IT-A1260"
+},
+{
+"path": [],
+"name": "Sizzano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006548",
+"file": "PDO-IT-A1236"
+},
+{
+"path": [],
+"name": "Ravenna",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004657",
+"file": "PGI-IT-A0523"
+},
+{
+"path": [],
+"name": "Barolo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004441",
+"file": "PDO-IT-A1389"
+},
+{
+"path": [],
+"name": "Barbaresco",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004886",
+"file": "PDO-IT-A1399"
+},
+{
+"path": [],
+"name": "Trebbiano d'Abruzzo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002932",
+"file": "PDO-IT-A0728"
+},
+{
+"path": [],
+"name": "Garda",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004141",
+"file": "PDO-IT-A1320"
+},
+{
+"path": [],
+"name": "Friuli Colli Orientali",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006461",
+"file": "PDO-IT-A0953"
+},
+{
+"path": [],
+"name": "Castelli di Jesi Verdicchio Riserva",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004830",
+"file": "PDO-IT-A0483"
+},
+{
+"path": [],
+"name": "Verdicchio dei Castelli di Jesi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003862",
+"file": "PDO-IT-A0482"
+},
+{
+"path": [],
+"name": "Ghemme",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004887",
+"file": "PDO-IT-A1263"
+},
+{
+"path": [],
+"name": "Verdicchio di Matelica",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004832",
+"file": "PDO-IT-A0481"
+},
+{
+"path": [],
+"name": "Verdicchio di Matelica Riserva",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004831",
+"file": "PDO-IT-A0480"
+},
+{
+"path": [],
+"name": "Cònero",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004829",
+"file": "PDO-IT-A0449"
+},
+{
+"path": [],
+"name": "Rubicone",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004663",
+"file": "PGI-IT-A0525"
+},
+{
+"path": [],
+"name": "Vesuvio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005061",
+"file": "PDO-IT-A0252"
+},
+{
+"path": [],
+"name": "Prosecco",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002936",
+"file": "PDO-IT-A0516"
+},
+{
+"path": [],
+"name": "Suvereto",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006867",
+"file": "PDO-IT-A1266"
+},
+{
+"path": [],
+"name": "Val d'Arno di Sopra",
+"also": [
+"Valdarno di Sopra"
+],
+"kind": "PDO",
+"id": "EUGI00000006965",
+"file": "PDO-IT-A1497"
+},
+{
+"path": [],
+"name": "Scanzo",
+"also": [
+"Moscato di Scanzo"
+],
+"kind": "PDO",
+"id": "EUGI00000003701",
+"file": "PDO-IT-A0949"
+},
+{
+"path": [],
+"name": "Sicilia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006004",
+"file": "PDO-IT-A0801"
+},
+{
+"path": [],
+"name": "Asolo Montello",
+"also": [
+"Montello Asolo"
+],
+"kind": "PDO",
+"id": "EUGI00000004733",
+"file": "PDO-IT-A0460"
+},
+{
+"path": [],
+"name": "Cirò",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004658",
+"file": "PDO-IT-A0610"
+},
+{
+"path": [],
+"name": "Casauria",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000019497",
+"file": "PDO-IT-02972"
+},
+{
+"path": [],
+"name": "Nebbiolo d'Alba",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006504",
+"file": "PDO-IT-A1213"
+},
+{
+"path": [],
+"name": "Spoleto",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005489",
+"file": "PDO-IT-A0848"
+},
+{
+"path": [],
+"name": "Emilia-Romagna",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000018008",
+"file": "PDO-IT-02770"
+},
+{
+"path": [],
+"name": "Valcalepio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005069",
+"file": "PDO-IT-A1366"
+},
+{
+"path": [],
+"name": "Terre Siciliane",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005822",
+"file": "PGI-IT-A0810"
+},
+{
+"path": [],
+"name": "Orvieto",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005484",
+"file": "PDO-IT-A0846"
+},
+{
+"path": [],
+"name": "Rossese di Dolceacqua",
+"also": [
+"Dolceacqua"
+],
+"kind": "PDO",
+"id": "EUGI00000005110",
+"file": "PDO-IT-A0358"
+},
+{
+"path": [],
+"name": "Gabiano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006301",
+"file": "PDO-IT-A1183"
+},
+{
+"path": [],
+"name": "Cirò Classico",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000020218",
+"file": "PDO-IT-03209"
+},
+{
+"path": [],
+"name": "Roma",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006385",
+"file": "PDO-IT-A0759"
+},
+{
+"path": [],
+"name": "dell'Emilia",
+"also": [
+"Emilia"
+],
+"kind": "PGI",
+"id": "EUGI00000004802",
+"file": "PGI-IT-A0509"
+},
+{
+"path": [],
+"name": "Fiano di Avellino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005013",
+"file": "PDO-IT-A0232"
+},
+{
+"path": [],
+"name": "Vino Nobile di Montepulciano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006321",
+"file": "PDO-IT-A1308"
+},
+{
+"path": [],
+"name": "Reggiano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004503",
+"file": "PDO-IT-A0351"
+},
+{
+"path": [],
+"name": "Lambrusco Grasparossa di Castelvetro",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004482",
+"file": "PDO-IT-A0337"
+},
+{
+"path": [],
+"name": "Modena",
+"also": [
+"di Modena"
+],
+"kind": "PDO",
+"id": "EUGI00000004551",
+"file": "PDO-IT-A0347"
+},
+{
+"path": [],
+"name": "Colli di Scandiano e di Canossa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004361",
+"file": "PDO-IT-A0305"
+},
+{
+"path": [],
+"name": "Lambrusco di Sorbara",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004481",
+"file": "PDO-IT-A0332"
+},
+{
+"path": [],
+"name": "Lambrusco Salamino di Santa Croce",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004502",
+"file": "PDO-IT-A0342"
+},
+{
+"path": [],
+"name": "San Gimignano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006254",
+"file": "PDO-IT-A1464"
+},
+{
+"path": [],
+"name": "Vernaccia di San Gimignano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004601",
+"file": "PDO-IT-A1292"
+},
+{
+"path": [],
+"name": "Montecucco Sangiovese",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006503",
+"file": "PDO-IT-A1246"
+},
+{
+"path": [],
+"name": "Colli Maceratesi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004842",
+"file": "PDO-IT-A0443"
+},
+{
+"path": [],
+"name": "Montecucco",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006294",
+"file": "PDO-IT-A1433"
+},
+{
+"path": [],
+"name": "Pantelleria",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006148",
+"file": "PDO-IT-A0792"
+},
+{
+"path": [],
+"name": "Lessini Durello",
+"also": [
+"Durello Lessini"
+],
+"kind": "PDO",
+"id": "EUGI00000005009",
+"file": "PDO-IT-A0447"
+},
+{
+"path": [],
+"name": "Ramandolo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005741",
+"file": "PDO-IT-A0939"
+},
+{
+"path": [],
+"name": "Forlì",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004642",
+"file": "PGI-IT-A0512"
+},
+{
+"path": [],
+"name": "Abruzzo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002983",
+"file": "PDO-IT-A0880"
+},
+{
+"path": [],
+"name": "Terre di Pisa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006908",
+"file": "PDO-IT-A1495"
+},
+{
+"path": [],
+"name": "Cerasuolo d'Abruzzo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003002",
+"file": "PDO-IT-A0743"
+},
+{
+"path": [],
+"name": "Asolo Prosecco",
+"also": [
+"Asolo"
+],
+"kind": "PDO",
+"id": "EUGI00000002939",
+"file": "PDO-IT-A0514"
+},
+{
+"path": [],
+"name": "Franciacorta",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003568",
+"file": "PDO-IT-A1034"
+},
+{
+"path": [],
+"name": "Curtefranca",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004123",
+"file": "PDO-IT-A1042"
+},
+{
+"path": [],
+"name": "Pinerolese",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006527",
+"file": "PDO-IT-A1232"
+},
+{
+"path": [],
+"name": "Grignolino del Monferrato Casalese",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006376",
+"file": "PDO-IT-A1187"
+},
+{
+"path": [],
+"name": "Riviera del Garda Classico",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005067",
+"file": "PDO-IT-A1137"
+},
+{
+"path": [],
+"name": "Vicenza",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003941",
+"file": "PDO-IT-A0476"
+},
+{
+"path": [],
+"name": "Falerio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003241",
+"file": "PDO-IT-A0433"
+},
+{
+"path": [],
+"name": "Rosso Piceno",
+"also": [
+"Piceno"
+],
+"kind": "PDO",
+"id": "EUGI00000004826",
+"file": "PDO-IT-A0427"
+},
+{
+"path": [],
+"name": "Monreale",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006021",
+"file": "PDO-IT-A0787"
+},
+{
+"path": [],
+"name": "Valdadige",
+"also": [
+"Etschtaler"
+],
+"kind": "PDO",
+"id": "EUGI00000005441",
+"file": "PDO-IT-A0474"
+},
+{
+"path": [],
+"name": "Chianti Classico",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003623",
+"file": "PDO-IT-A1235"
+},
+{
+"path": [],
+"name": "Montefalco Sagrantino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005682",
+"file": "PDO-IT-A0833"
+},
+{
+"path": [],
+"name": "Montefalco",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005322",
+"file": "PDO-IT-A0845"
+},
+{
+"path": [],
+"name": "Torgiano Rosso Riserva",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005683",
+"file": "PDO-IT-A0834"
+},
+{
+"path": [],
+"name": "Recioto della Valpolicella",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004403",
+"file": "PDO-IT-A0441"
+},
+{
+"path": [],
+"name": "Amarone della Valpolicella",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003182",
+"file": "PDO-IT-A0435"
+},
+{
+"path": [],
+"name": "Torgiano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005555",
+"file": "PDO-IT-A0851"
+},
+{
+"path": [],
+"name": "Rosso Orvietano",
+"also": [
+"Orvietano Rosso"
+],
+"kind": "PDO",
+"id": "EUGI00000005485",
+"file": "PDO-IT-A0847"
+},
+{
+"path": [],
+"name": "Valpolicella Ripasso",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003283",
+"file": "PDO-IT-A0446"
+},
+{
+"path": [],
+"name": "Valpolicella",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003162",
+"file": "PDO-IT-A0442"
+},
+{
+"path": [],
+"name": "Arcole",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003301",
+"file": "PDO-IT-A0438"
+},
+{
+"path": [],
+"name": "Colline Teramane Montepulciano d’Abruzzo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002561",
+"file": "PDO-IT-A0876"
+},
+{
+"path": [],
+"name": "Maremma toscana",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006881",
+"file": "PDO-IT-A1413"
+},
+{
+"path": [],
+"name": "Castelfranco Emilia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004641",
+"file": "PGI-IT-A0508"
+},
+{
+"path": [],
+"name": "Allerona",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005686",
+"file": "PGI-IT-A0852"
+},
+{
+"path": [],
+"name": "Canelli",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000018285",
+"file": "PDO-IT-02810"
+},
+{
+"path": [],
+"name": "Monti Lessini",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005008",
+"file": "PDO-IT-A0462"
+},
+{
+"path": [],
+"name": "Colli Bolognesi Pignoletto",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003601",
+"file": "PDO-IT-A0284"
+},
+{
+"path": [],
+"name": "Garda Colli Mantovani",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005015",
+"file": "PDO-IT-A1070"
+},
+{
+"path": [],
+"name": "Tintilia del Molise",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004904",
+"file": "PDO-IT-A0677"
+},
+{
+"path": [],
+"name": "Custoza",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004552",
+"file": "PDO-IT-A0468"
+},
+{
+"path": [],
+"name": "Colli d'Imola",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003642",
+"file": "PDO-IT-A0290"
+},
+{
+"path": [],
+"name": "Reno",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004504",
+"file": "PDO-IT-A0506"
+},
+{
+"path": [],
+"name": "Roero",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004813",
+"file": "PDO-IT-A1261"
+},
+{
+"path": [],
+"name": "Rimini",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004341",
+"file": "PDO-IT-A0297"
+},
+{
+"path": [],
+"name": "Vin Santo del Chianti Classico",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007007",
+"file": "PDO-IT-A1514"
+},
+{
+"path": [],
+"name": "Rosso Cònero",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004836",
+"file": "PDO-IT-A0428"
+},
+{
+"path": [],
+"name": "Etna",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005523",
+"file": "PDO-IT-A0780"
+},
+{
+"path": [],
+"name": "Bolgheri",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005702",
+"file": "PDO-IT-A1348"
+},
+{
+"path": [],
+"name": "Freisa d'Asti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006290",
+"file": "PDO-IT-A1180"
+},
+{
+"path": [],
+"name": "Irpinia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004861",
+"file": "PDO-IT-A0279"
+},
+{
+"path": [],
+"name": "Liguria di Levante",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005321",
+"file": "PGI-IT-A0363"
+},
+{
+"path": [],
+"name": "Lacrima di Morro",
+"also": [
+"Lacrima di Morro d'Alba"
+],
+"kind": "PDO",
+"id": "EUGI00000003863",
+"file": "PDO-IT-A0431"
+},
+{
+"path": [],
+"name": "Barbera d'Alba",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003821",
+"file": "PDO-IT-A1068"
+},
+{
+"path": [],
+"name": "Terre Tollesi",
+"also": [
+"Tullum"
+],
+"kind": "PDO",
+"id": "EUGI00000002941",
+"file": "PDO-IT-A0742"
+},
+{
+"path": [],
+"name": "delle Venezie",
+"also": [
+"Beneških okolišev"
+],
+"kind": "PDO",
+"id": "EUGI00000015490",
+"file": "PDO-IT-02360"
+},
+{
+"path": [],
+"name": "Gavi",
+"also": [
+"Cortese di Gavi"
+],
+"kind": "PDO",
+"id": "EUGI00000004805",
+"file": "PDO-IT-A1310"
+},
+{
+"path": [],
+"name": "Soave",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003321",
+"file": "PDO-IT-A0472"
+},
+{
+"path": [],
+"name": "Frascati",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006288",
+"file": "PDO-IT-A0750"
+},
+{
+"path": [],
+"name": "Frascati Superiore",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006157",
+"file": "PDO-IT-A0682"
+},
+{
+"path": [],
+"name": "Cinque Terre",
+"also": [
+"Cinque Terre Sciacchetrà"
+],
+"kind": "PDO",
+"id": "EUGI00000005006",
+"file": "PDO-IT-A0352"
+},
+{
+"path": [],
+"name": "Bardolino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004021",
+"file": "PDO-IT-A0436"
+},
+{
+"path": [],
+"name": "Nizza",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000012857",
+"file": "PDO-IT-01896"
+},
+{
+"path": [],
+"name": "Moscadello di Montalcino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006443",
+"file": "PDO-IT-A1440"
+},
+{
+"path": [],
+"name": "Taurasi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005004",
+"file": "PDO-IT-A0237"
+},
+{
+"path": [],
+"name": "Terre Alfieri",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006562",
+"file": "PDO-IT-A1241"
+},
+{
+"path": [],
+"name": "Greco di Tufo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005018",
+"file": "PDO-IT-A0236"
+},
+{
+"path": [],
+"name": "Venezia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003141",
+"file": "PDO-IT-A0517"
+},
+{
+"path": [],
+"name": "Ortrugo dei Colli Piacentini",
+"also": [
+"Ortrugo – Colli Piacentini"
+],
+"kind": "PDO",
+"id": "EUGI00000004541",
+"file": "PDO-IT-A0350"
+},
+{
+"path": [],
+"name": "Alpi Retiche",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005085",
+"file": "PGI-IT-A1352"
+},
+{
+"path": [],
+"name": "Trevenezie",
+"also": [
+"Tri Benečije"
+],
+"kind": "PGI",
+"id": "EUGI00000005446",
+"file": "PGI-IT-A0862"
+},
+{
+"path": [],
+"name": "Vin Santo di Montepulciano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006982",
+"file": "PDO-IT-A1515"
+},
+{
+"path": [],
+"name": "Ruchè di Castagnole Monferrato",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004825",
+"file": "PDO-IT-A1258"
+},
+{
+"path": [],
+"name": "Rosso di Montepulciano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006421",
+"file": "PDO-IT-A1458"
+},
+{
+"path": [],
+"name": "Mitterberg",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004261",
+"file": "PGI-IT-A0295"
+},
+{
+"path": [],
+"name": "Cerasuolo di Vittoria",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005490",
+"file": "PDO-IT-A0773"
+},
+{
+"path": [],
+"name": "Menfi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005932",
+"file": "PDO-IT-A0786"
+},
+{
+"path": [],
+"name": "Piemonte",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006526",
+"file": "PDO-IT-A1224"
+},
+{
+"path": [],
+"name": "Recioto di Soave",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003324",
+"file": "PDO-IT-A0465"
+},
+{
+"path": [],
+"name": "Matera",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002483",
+"file": "PDO-IT-A0533"
+},
+{
+"path": [],
+"name": "Brachetto d'Acqui",
+"also": [
+"Acqui"
+],
+"kind": "PDO",
+"id": "EUGI00000004550",
+"file": "PDO-IT-A1382"
+},
+{
+"path": [],
+"name": "Soave Superiore",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003322",
+"file": "PDO-IT-A0473"
+},
+{
+"path": [],
+"name": "Teroldego Rotaliano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004582",
+"file": "PDO-IT-A0749"
+},
+{
+"path": [],
+"name": "Valsusa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006581",
+"file": "PDO-IT-A1243"
+},
+{
+"path": [],
+"name": "Conegliano Valdobbiadene - Prosecco",
+"also": [
+"Valdobbiadene - Prosecco",
+"Conegliano - Prosecco"
+],
+"kind": "PDO",
+"id": "EUGI00000002938",
+"file": "PDO-IT-A0515"
+},
+{
+"path": [],
+"name": "Vallagarina",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004621",
+"file": "PGI-IT-A0756"
+},
+{
+"path": [],
+"name": "Vigneti delle Dolomiti",
+"also": [
+"Weinberg Dolomiten"
+],
+"kind": "PGI",
+"id": "EUGI00000004684",
+"file": "PGI-IT-A0755"
+},
+{
+"path": [],
+"name": "Valle d'Itria",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004933",
+"file": "PGI-IT-A0604"
+},
+{
+"path": [],
+"name": "Monferrato",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006488",
+"file": "PDO-IT-A1210"
+},
+{
+"path": [],
+"name": "Isola dei Nuraghi",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005091",
+"file": "PGI-IT-A1140"
+},
+{
+"path": [],
+"name": "Contea di Sclafani",
+"also": [
+"Valledolmo-Contea di Sclafani"
+],
+"kind": "PDO",
+"id": "EUGI00000005493",
+"file": "PDO-IT-A0775"
+},
+{
+"path": [],
+"name": "Barbera d'Asti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004382",
+"file": "PDO-IT-A1398"
+},
+{
+"path": [],
+"name": "Colli Trevigiani",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005444",
+"file": "PGI-IT-A0518"
+},
+{
+"path": [],
+"name": "Lison-Pramaggiore",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003381",
+"file": "PDO-IT-A0459"
+},
+{
+"path": [],
+"name": "Val Tidone",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004743",
+"file": "PGI-IT-A0532"
+},
+{
+"path": [],
+"name": "Marca Trevigiana",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005447",
+"file": "PGI-IT-A0520"
+},
+{
+"path": [],
+"name": "Rosso di Montalcino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005077",
+"file": "PDO-IT-A1456"
+},
+{
+"path": [],
+"name": "Pentro di Isernia",
+"also": [
+"Pentro"
+],
+"kind": "PDO",
+"id": "EUGI00000004905",
+"file": "PDO-IT-A0684"
+},
+{
+"path": [],
+"name": "Venezia Giulia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006547",
+"file": "PGI-IT-A0977"
+},
+{
+"path": [],
+"name": "Valtellina rosso",
+"also": [
+"Rosso di Valtellina"
+],
+"kind": "PDO",
+"id": "EUGI00000004967",
+"file": "PDO-IT-A1323"
+},
+{
+"path": [],
+"name": "Trento",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003881",
+"file": "PDO-IT-A0752"
+},
+{
+"path": [],
+"name": "Piave Malanotte",
+"also": [
+"Malanotte del Piave"
+],
+"kind": "PDO",
+"id": "EUGI00000002962",
+"file": "PDO-IT-A0463"
+},
+{
+"path": [],
+"name": "Palizzi",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004812",
+"file": "PGI-IT-A0645"
+},
+{
+"path": [],
+"name": "Veneto Orientale",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005450",
+"file": "PGI-IT-A0522"
+},
+{
+"path": [],
+"name": "Gambellara",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004184",
+"file": "PDO-IT-A0469"
+},
+{
+"path": [],
+"name": "Lamezia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004664",
+"file": "PDO-IT-A0618"
+},
+{
+"path": [],
+"name": "Malvasia di Castelnuovo Don Bosco",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006486",
+"file": "PDO-IT-A1201"
+},
+{
+"path": [],
+"name": "Valtellina Superiore",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005931",
+"file": "PDO-IT-A1036"
+},
+{
+"path": [],
+"name": "Sforzato di Valtellina",
+"also": [
+"Sfursat di Valtellina"
+],
+"kind": "PDO",
+"id": "EUGI00000003702",
+"file": "PDO-IT-A1035"
+},
+{
+"path": [],
+"name": "Lison",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003382",
+"file": "PDO-IT-A0457"
+},
+{
+"path": [],
+"name": "Val di Neto",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004822",
+"file": "PGI-IT-A0655"
+},
+{
+"path": [],
+"name": "Lipuda",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004808",
+"file": "PGI-IT-A0665"
+},
+{
+"path": [],
+"name": "Rotae",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005066",
+"file": "PGI-IT-A0688"
+},
+{
+"path": [],
+"name": "Verona",
+"also": [
+"Veronese",
+"Provincia di Verona"
+],
+"kind": "PGI",
+"id": "EUGI00000005448",
+"file": "PGI-IT-A0524"
+},
+{
+"path": [],
+"name": "Piave",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003385",
+"file": "PDO-IT-A0464"
+},
+{
+"path": [],
+"name": "Locride",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004810",
+"file": "PGI-IT-A0644"
+},
+{
+"path": [],
+"name": "Terre di Cosenza",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004783",
+"file": "PDO-IT-A0627"
+},
+{
+"path": [],
+"name": "Trentino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004744",
+"file": "PDO-IT-A0754"
+},
+{
+"path": [],
+"name": "Pellaro",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004814",
+"file": "PGI-IT-A0648"
+},
+{
+"path": [],
+"name": "Est! Est!! Est!!! di Montefiascone",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006286",
+"file": "PDO-IT-A0705"
+},
+{
+"path": [],
+"name": "Veneto",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005449",
+"file": "PGI-IT-A0521"
+},
+{
+"path": [],
+"name": "Osco",
+"also": [
+"Terre degli Osci"
+],
+"kind": "PGI",
+"id": "EUGI00000005065",
+"file": "PGI-IT-A0693"
+},
+{
+"path": [],
+"name": "Terre di Veleja",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004741",
+"file": "PGI-IT-A0529"
+},
+{
+"path": [],
+"name": "Scilla",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004821",
+"file": "PGI-IT-A0651"
+},
+{
+"path": [],
+"name": "Basilicata",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002503",
+"file": "PGI-IT-A0531"
+},
+{
+"path": [],
+"name": "Colli Bolognesi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003541",
+"file": "PDO-IT-A0289"
+},
+{
+"path": [],
+"name": "Alto Livenza",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005443",
+"file": "PGI-IT-A0864"
+},
+{
+"path": [],
+"name": "Colli Euganei Fior d'Arancio",
+"also": [
+"Fior d'Arancio Colli Euganei"
+],
+"kind": "PDO",
+"id": "EUGI00000002929",
+"file": "PDO-IT-A0455"
+},
+{
+"path": [],
+"name": "Conselvano",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005445",
+"file": "PGI-IT-A0519"
+},
+{
+"path": [],
+"name": "Brunello di Montalcino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004343",
+"file": "PDO-IT-A1199"
+},
+{
+"path": [],
+"name": "Dogliani",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004581",
+"file": "PDO-IT-A1330"
+},
+{
+"path": [],
+"name": "Alezio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005092",
+"file": "PDO-IT-A0541"
+},
+{
+"path": [],
+"name": "Bolgheri Sassicaia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000009022",
+"file": "PDO-IT-A1671"
+},
+{
+"path": [],
+"name": "Vin Santo di Carmignano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000008861",
+"file": "PDO-IT-A1669"
+},
+{
+"path": [],
+"name": "Cellatica",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004122",
+"file": "PDO-IT-A1108"
+},
+{
+"path": [],
+"name": "Alta Langa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004364",
+"file": "PDO-IT-A1252"
+},
+{
+"path": [],
+"name": "Contessa Entellina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005508",
+"file": "PDO-IT-A0776"
+},
+{
+"path": [],
+"name": "Eloro",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005519",
+"file": "PDO-IT-A0778"
+},
+{
+"path": [],
+"name": "Cisterna d'Asti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004895",
+"file": "PDO-IT-A1092"
+},
+{
+"path": [],
+"name": "Colli di Faenza",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004284",
+"file": "PDO-IT-A0291"
+},
+{
+"path": [],
+"name": "Bosco Eliceo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002721",
+"file": "PDO-IT-A0287"
+},
+{
+"path": [],
+"name": "Spello",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005927",
+"file": "PGI-IT-A0856"
+},
+{
+"path": [],
+"name": "Gutturnio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004462",
+"file": "PDO-IT-A0327"
+},
+{
+"path": [],
+"name": "Lugana",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005070",
+"file": "PDO-IT-A1322"
+},
+{
+"path": [],
+"name": "Noto",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005461",
+"file": "PDO-IT-A0790"
+},
+{
+"path": [],
+"name": "Marino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006271",
+"file": "PDO-IT-A0753"
+},
+{
+"path": [],
+"name": "Terracina",
+"also": [
+"Moscato di Terracina"
+],
+"kind": "PDO",
+"id": "EUGI00000006394",
+"file": "PDO-IT-A0761"
+},
+{
+"path": [],
+"name": "Terre Aquilane",
+"also": [
+"Terre de L'Aquila"
+],
+"kind": "PGI",
+"id": "EUGI00000003261",
+"file": "PGI-IT-A0898"
+},
+{
+"path": [],
+"name": "Malvasia di Casorzo d'Asti",
+"also": [
+"Malvasia di Casorzo",
+"Casorzo"
+],
+"kind": "PDO",
+"id": "EUGI00000006485",
+"file": "PDO-IT-A1194"
+},
+{
+"path": [],
+"name": "Calabria",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004806",
+"file": "PGI-IT-A0637"
+},
+{
+"path": [],
+"name": "Ortona",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003026",
+"file": "PDO-IT-A1184"
+},
+{
+"path": [],
+"name": "Colli Albani",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002623",
+"file": "PDO-IT-A0701"
+},
+{
+"path": [],
+"name": "Canavese",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005924",
+"file": "PDO-IT-A1083"
+},
+{
+"path": [],
+"name": "San Martino della Battaglia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004966",
+"file": "PDO-IT-A1318"
+},
+{
+"path": [],
+"name": "Bagnoli di Sopra",
+"also": [
+"Bagnoli"
+],
+"kind": "PDO",
+"id": "EUGI00000004723",
+"file": "PDO-IT-A0466"
+},
+{
+"path": [],
+"name": "Colline di Levanto",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004928",
+"file": "PDO-IT-A0354"
+},
+{
+"path": [],
+"name": "Squinzano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004982",
+"file": "PDO-IT-A0569"
+},
+{
+"path": [],
+"name": "Sardegna Semidano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004930",
+"file": "PDO-IT-A1046"
+},
+{
+"path": [],
+"name": "Castel San Lorenzo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004803",
+"file": "PDO-IT-A0242"
+},
+{
+"path": [],
+"name": "Moscato di Sardegna",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004889",
+"file": "PDO-IT-A1147"
+},
+{
+"path": [],
+"name": "Trexenta",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005118",
+"file": "PGI-IT-A0815"
+},
+{
+"path": [],
+"name": "Gravina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004901",
+"file": "PDO-IT-A0550"
+},
+{
+"path": [],
+"name": "Castel del Monte Bombino Nero",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004939",
+"file": "PDO-IT-A0537"
+},
+{
+"path": [],
+"name": "Friuli Latisana",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006484",
+"file": "PDO-IT-A0976"
+},
+{
+"path": [],
+"name": "Nurra",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005094",
+"file": "PGI-IT-A0791"
+},
+{
+"path": [],
+"name": "Aglianico del Vulture Superiore",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001804",
+"file": "PDO-IT-A0527"
+},
+{
+"path": [],
+"name": "Elba",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003822",
+"file": "PDO-IT-A1519"
+},
+{
+"path": [],
+"name": "Val Polcèvera",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005183",
+"file": "PDO-IT-A0359"
+},
+{
+"path": [],
+"name": "Dugenta",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005403",
+"file": "PGI-IT-A0256"
+},
+{
+"path": [],
+"name": "Colli Piacentini",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004402",
+"file": "PDO-IT-A0312"
+},
+{
+"path": [],
+"name": "Barbera del Monferrato Superiore",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004422",
+"file": "PDO-IT-A1397"
+},
+{
+"path": [],
+"name": "Strevi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006553",
+"file": "PDO-IT-A1238"
+},
+{
+"path": [],
+"name": "Ronchi Varesini",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005082",
+"file": "PGI-IT-A1037"
+},
+{
+"path": [],
+"name": "Colli di Salerno",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005111",
+"file": "PGI-IT-A0255"
+},
+{
+"path": [],
+"name": "Aprilia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002401",
+"file": "PDO-IT-A0691"
+},
+{
+"path": [],
+"name": "Nasco di Cagliari",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004902",
+"file": "PDO-IT-A1133"
+},
+{
+"path": [],
+"name": "Alta Valle della Greve",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006703",
+"file": "PGI-IT-A1443"
+},
+{
+"path": [],
+"name": "Umbria",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005933",
+"file": "PGI-IT-A0857"
+},
+{
+"path": [],
+"name": "Malvasia di Bosa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004816",
+"file": "PDO-IT-A0907"
+},
+{
+"path": [],
+"name": "Collina del Milanese",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005075",
+"file": "PGI-IT-A1053"
+},
+{
+"path": [],
+"name": "Dolcetto d'Acqui",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006244",
+"file": "PDO-IT-A1139"
+},
+{
+"path": [],
+"name": "Terre di Offida",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003231",
+"file": "PDO-IT-A0479"
+},
+{
+"path": [],
+"name": "Marche",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000003242",
+"file": "PGI-IT-A0484"
+},
+{
+"path": [],
+"name": "Corti Benedettine del Padovano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003401",
+"file": "PDO-IT-A0456"
+},
+{
+"path": [],
+"name": "Alto Mincio",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005072",
+"file": "PGI-IT-A1076"
+},
+{
+"path": [],
+"name": "Alba",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003750",
+"file": "PDO-IT-A1063"
+},
+{
+"path": [],
+"name": "Colli Orientali del Friuli Picolit",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006152",
+"file": "PDO-IT-A0938"
+},
+{
+"path": [],
+"name": "Bianco di Pitigliano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006907",
+"file": "PDO-IT-A1339"
+},
+{
+"path": [],
+"name": "Vernaccia di Serrapetrona",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004835",
+"file": "PDO-IT-A0445"
+},
+{
+"path": [],
+"name": "Leverano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005510",
+"file": "PDO-IT-A0563"
+},
+{
+"path": [],
+"name": "Costa Etrusco Romana",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006160",
+"file": "PGI-IT-A0768"
+},
+{
+"path": [],
+"name": "Grignolino d'Asti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006363",
+"file": "PDO-IT-A1186"
+},
+{
+"path": [],
+"name": "Bianchello del Metauro",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004837",
+"file": "PDO-IT-A0444"
+},
+{
+"path": [],
+"name": "Montecompatri Colonna",
+"also": [
+"Montecompatri",
+"Colonna"
+],
+"kind": "PDO",
+"id": "EUGI00000006291",
+"file": "PDO-IT-A0757"
+},
+{
+"path": [],
+"name": "Melissa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004721",
+"file": "PDO-IT-A0619"
+},
+{
+"path": [],
+"name": "Colli Martani",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005223",
+"file": "PDO-IT-A0842"
+},
+{
+"path": [],
+"name": "Controguerra",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002935",
+"file": "PDO-IT-A0879"
+},
+{
+"path": [],
+"name": "Marmilla",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005093",
+"file": "PGI-IT-A0789"
+},
+{
+"path": [],
+"name": "Buttafuoco dell'Oltrepò Pavese",
+"also": [
+"Buttafuoco"
+],
+"kind": "PDO",
+"id": "EUGI00000003761",
+"file": "PDO-IT-A0978"
+},
+{
+"path": [],
+"name": "Alghero",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003981",
+"file": "PDO-IT-A0904"
+},
+{
+"path": [],
+"name": "Castel del Monte Nero di Troia Riserva",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004940",
+"file": "PDO-IT-A0538"
+},
+{
+"path": [],
+"name": "Assisi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005107",
+"file": "PDO-IT-A0837"
+},
+{
+"path": [],
+"name": "Pornassio",
+"also": [
+"Ormeasco di Pornassio"
+],
+"kind": "PDO",
+"id": "EUGI00000005141",
+"file": "PDO-IT-A0356"
+},
+{
+"path": [],
+"name": "Nardò",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005563",
+"file": "PDO-IT-A0556"
+},
+{
+"path": [],
+"name": "Negroamaro di Terra d'Otranto",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005566",
+"file": "PDO-IT-A0557"
+},
+{
+"path": [],
+"name": "Ronchi di Brescia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005081",
+"file": "PGI-IT-A1265"
+},
+{
+"path": [],
+"name": "Parteolla",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005097",
+"file": "PGI-IT-A0796"
+},
+{
+"path": [],
+"name": "Cannellino di Frascati",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006156",
+"file": "PDO-IT-A0678"
+},
+{
+"path": [],
+"name": "Sant'Antimo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005862",
+"file": "PDO-IT-A1486"
+},
+{
+"path": [],
+"name": "Salaparuta",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006143",
+"file": "PDO-IT-A0795"
+},
+{
+"path": [],
+"name": "Barco Reale di Carmignano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005928",
+"file": "PDO-IT-A1325"
+},
+{
+"path": [],
+"name": "Martina",
+"also": [
+"Martina Franca"
+],
+"kind": "PDO",
+"id": "EUGI00000005554",
+"file": "PDO-IT-A0553"
+},
+{
+"path": [],
+"name": "Puglia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004924",
+"file": "PGI-IT-A0601"
+},
+{
+"path": [],
+"name": "Colline Savonesi",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005302",
+"file": "PGI-IT-A0362"
+},
+{
+"path": [],
+"name": "Aglianico del Taburno",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005025",
+"file": "PDO-IT-A0277"
+},
+{
+"path": [],
+"name": "I Terreni di Sanseverino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004853",
+"file": "PDO-IT-A0432"
+},
+{
+"path": [],
+"name": "Terra d'Otranto",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005569",
+"file": "PDO-IT-A0572"
+},
+{
+"path": [],
+"name": "Cesanese del Piglio",
+"also": [
+"Piglio"
+],
+"kind": "PDO",
+"id": "EUGI00000002362",
+"file": "PDO-IT-A0680"
+},
+{
+"path": [],
+"name": "Biferno",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004884",
+"file": "PDO-IT-A0674"
+},
+{
+"path": [],
+"name": "Alcamo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005491",
+"file": "PDO-IT-A0774"
+},
+{
+"path": [],
+"name": "Narni",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005925",
+"file": "PGI-IT-A0855"
+},
+{
+"path": [],
+"name": "Scavigna",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004963",
+"file": "PDO-IT-A0621"
+},
+{
+"path": [],
+"name": "Valdinievole",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006641",
+"file": "PDO-IT-A1512"
+},
+{
+"path": [],
+"name": "Carignano del Sulcis",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004811",
+"file": "PDO-IT-A1172"
+},
+{
+"path": [],
+"name": "Bonarda dell'Oltrepò Pavese",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003722",
+"file": "PDO-IT-A0973"
+},
+{
+"path": [],
+"name": "Cilento",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004824",
+"file": "PDO-IT-A0243"
+},
+{
+"path": [],
+"name": "Castel del Monte Rosso Riserva",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004942",
+"file": "PDO-IT-A0539"
+},
+{
+"path": [],
+"name": "Montenetto di Brescia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005076",
+"file": "PGI-IT-A1256"
+},
+{
+"path": [],
+"name": "Recioto di Gambellara",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004185",
+"file": "PDO-IT-A0470"
+},
+{
+"path": [],
+"name": "Copertino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005502",
+"file": "PDO-IT-A0547"
+},
+{
+"path": [],
+"name": "Friuli Aquileia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006398",
+"file": "PDO-IT-A0950"
+},
+{
+"path": [],
+"name": "Terre dell'Alta Val d'Agri",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002488",
+"file": "PDO-IT-A0530"
+},
+{
+"path": [],
+"name": "Fortana del Taro",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004649",
+"file": "PGI-IT-A0513"
+},
+{
+"path": [],
+"name": "Arghillà",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004804",
+"file": "PGI-IT-A0662"
+},
+{
+"path": [],
+"name": "Cesanese di Olevano Romano",
+"also": [
+"Olevano Romano"
+],
+"kind": "PDO",
+"id": "EUGI00000002463",
+"file": "PDO-IT-A0699"
+},
+{
+"path": [],
+"name": "Barbera del Monferrato",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003751",
+"file": "PDO-IT-A1071"
+},
+{
+"path": [],
+"name": "Campania",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005108",
+"file": "PGI-IT-A0253"
+},
+{
+"path": [],
+"name": "Paestum",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005351",
+"file": "PGI-IT-A0261"
+},
+{
+"path": [],
+"name": "Aglianico del Vulture",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000001823",
+"file": "PDO-IT-A0222"
+},
+{
+"path": [],
+"name": "Lizzano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005522",
+"file": "PDO-IT-A0551"
+},
+{
+"path": [],
+"name": "Colline del Genovesato",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005301",
+"file": "PGI-IT-A0361"
+},
+{
+"path": [],
+"name": "Valdadige Terradeiforti",
+"also": [
+"Terradeiforti"
+],
+"kind": "PDO",
+"id": "EUGI00000005442",
+"file": "PDO-IT-A0475"
+},
+{
+"path": [],
+"name": "Falerno del Massico",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004847",
+"file": "PDO-IT-A0249"
+},
+{
+"path": [],
+"name": "Colline Novaresi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005982",
+"file": "PDO-IT-A1100"
+},
+{
+"path": [],
+"name": "Colli di Parma",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004301",
+"file": "PDO-IT-A0292"
+},
+{
+"path": [],
+"name": "Cannonau di Sardegna",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004809",
+"file": "PDO-IT-A1099"
+},
+{
+"path": [],
+"name": "Dolcetto di Ovada",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006267",
+"file": "PDO-IT-A1176"
+},
+{
+"path": [],
+"name": "Vernaccia di Oristano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004936",
+"file": "PDO-IT-A1170"
+},
+{
+"path": [],
+"name": "Bivongi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004652",
+"file": "PDO-IT-A0605"
+},
+{
+"path": [],
+"name": "Daunia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004921",
+"file": "PGI-IT-A0599"
+},
+{
+"path": [],
+"name": "Cagliari",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004762",
+"file": "PDO-IT-A1313"
+},
+{
+"path": [],
+"name": "Valli Ossolane",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006564",
+"file": "PDO-IT-A1242"
+},
+{
+"path": [],
+"name": "Ogliastra",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005096",
+"file": "PGI-IT-A0794"
+},
+{
+"path": [],
+"name": "Vittoria",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006001",
+"file": "PDO-IT-A0803"
+},
+{
+"path": [],
+"name": "Oltrepò Pavese",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003785",
+"file": "PDO-IT-A0971"
+},
+{
+"path": [],
+"name": "Colli Cimini",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002662",
+"file": "PGI-IT-A0767"
+},
+{
+"path": [],
+"name": "Villamagna",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003028",
+"file": "PDO-IT-A0883"
+},
+{
+"path": [],
+"name": "Oltrepò Pavese Pinot grigio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003762",
+"file": "PDO-IT-A1010"
+},
+{
+"path": [],
+"name": "San Torpè",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006905",
+"file": "PDO-IT-A1488"
+},
+{
+"path": [],
+"name": "Erbaluce di Caluso",
+"also": [
+"Caluso"
+],
+"kind": "PDO",
+"id": "EUGI00000004828",
+"file": "PDO-IT-A1315"
+},
+{
+"path": [],
+"name": "Capriano del Colle",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004103",
+"file": "PDO-IT-A1124"
+},
+{
+"path": [],
+"name": "Girò di Cagliari",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004815",
+"file": "PDO-IT-A1122"
+},
+{
+"path": [],
+"name": "Casteggio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003721",
+"file": "PDO-IT-A0974"
+},
+{
+"path": [],
+"name": "Colli Tortonesi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006688",
+"file": "PDO-IT-A1097"
+},
+{
+"path": [],
+"name": "Capalbio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006909",
+"file": "PDO-IT-A1379"
+},
+{
+"path": [],
+"name": "Montello Rosso",
+"also": [
+"Montello"
+],
+"kind": "PDO",
+"id": "EUGI00000004732",
+"file": "PDO-IT-A0461"
+},
+{
+"path": [],
+"name": "Costa Viola",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004807",
+"file": "PGI-IT-A0640"
+},
+{
+"path": [],
+"name": "Orta Nova",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005026",
+"file": "PDO-IT-A0558"
+},
+{
+"path": [],
+"name": "Lago di Corbara",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005226",
+"file": "PDO-IT-A0844"
+},
+{
+"path": [],
+"name": "Castel del Monte",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005463",
+"file": "PDO-IT-A0545"
+},
+{
+"path": [],
+"name": "Todi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005495",
+"file": "PDO-IT-A0849"
+},
+{
+"path": [],
+"name": "Dolcetto d'Alba",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006248",
+"file": "PDO-IT-A1142"
+},
+{
+"path": [],
+"name": "Atina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006163",
+"file": "PDO-IT-A0692"
+},
+{
+"path": [],
+"name": "Carso",
+"also": [
+"Carso - Kras"
+],
+"kind": "PDO",
+"id": "EUGI00000006164",
+"file": "PDO-IT-A0910"
+},
+{
+"path": [],
+"name": "Merlara",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002964",
+"file": "PDO-IT-A0440"
+},
+{
+"path": [],
+"name": "Breganze",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003961",
+"file": "PDO-IT-A0439"
+},
+{
+"path": [],
+"name": "Riviera del Brenta",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003962",
+"file": "PDO-IT-A0471"
+},
+{
+"path": [],
+"name": "Genazzano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006289",
+"file": "PDO-IT-A0751"
+},
+{
+"path": [],
+"name": "Locorotondo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005547",
+"file": "PDO-IT-A0552"
+},
+{
+"path": [],
+"name": "Salina",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005781",
+"file": "PGI-IT-A0809"
+},
+{
+"path": [],
+"name": "Bianco Capena",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002402",
+"file": "PDO-IT-A0694"
+},
+{
+"path": [],
+"name": "Romangia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005114",
+"file": "PGI-IT-A0812"
+},
+{
+"path": [],
+"name": "Pinot nero dell'Oltrepò Pavese",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003783",
+"file": "PDO-IT-A1001"
+},
+{
+"path": [],
+"name": "Sangue di Giuda",
+"also": [
+"Sangue di Giuda dell'Oltrepò Pavese"
+],
+"kind": "PDO",
+"id": "EUGI00000003784",
+"file": "PDO-IT-A0979"
+},
+{
+"path": [],
+"name": "Primitivo di Manduria",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005023",
+"file": "PDO-IT-A0565"
+},
+{
+"path": [],
+"name": "Serrapetrona",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004843",
+"file": "PDO-IT-A0451"
+},
+{
+"path": [],
+"name": "Monica di Sardegna",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004888",
+"file": "PDO-IT-A1158"
+},
+{
+"path": [],
+"name": "Catalanesca del Monte Somma",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005109",
+"file": "PGI-IT-A0254"
+},
+{
+"path": [],
+"name": "Casavecchia di Pontelatone",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005486",
+"file": "PDO-IT-A0241"
+},
+{
+"path": [],
+"name": "Epomeo",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005224",
+"file": "PGI-IT-A0258"
+},
+{
+"path": [],
+"name": "Valli di Porto Pino",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005121",
+"file": "PGI-IT-A0817"
+},
+{
+"path": [],
+"name": "Lago di Caldaro",
+"also": [
+"Kalterersee",
+"Caldaro",
+"Kalterer"
+],
+"kind": "PDO",
+"id": "EUGI00000004221",
+"file": "PDO-IT-A0294"
+},
+{
+"path": [],
+"name": "Colline Saluzzesi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006124",
+"file": "PDO-IT-A1106"
+},
+{
+"path": [],
+"name": "Collio Goriziano",
+"also": [
+"Collio"
+],
+"kind": "PDO",
+"id": "EUGI00000006201",
+"file": "PDO-IT-A0908"
+},
+{
+"path": [],
+"name": "Bergamasca",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005074",
+"file": "PGI-IT-A1369"
+},
+{
+"path": [],
+"name": "Colli del Limbara",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004082",
+"file": "PGI-IT-A0788"
+},
+{
+"path": [],
+"name": "Tarantino",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004931",
+"file": "PGI-IT-A0603"
+},
+{
+"path": [],
+"name": "Riviera ligure di Ponente",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005143",
+"file": "PDO-IT-A0357"
+},
+{
+"path": [],
+"name": "Lambrusco Mantovano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005003",
+"file": "PDO-IT-A1073"
+},
+{
+"path": [],
+"name": "Sambuca di Sicilia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006141",
+"file": "PDO-IT-A0797"
+},
+{
+"path": [],
+"name": "Verduno Pelaverga",
+"also": [
+"Verduno"
+],
+"kind": "PDO",
+"id": "EUGI00000006583",
+"file": "PDO-IT-A1244"
+},
+{
+"path": [],
+"name": "Colli dell'Etruria Centrale",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006877",
+"file": "PDO-IT-A1384"
+},
+{
+"path": [],
+"name": "Albugnano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004283",
+"file": "PDO-IT-A1066"
+},
+{
+"path": [],
+"name": "Sabbioneta",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005083",
+"file": "PGI-IT-A1082"
+},
+{
+"path": [],
+"name": "Primitivo di Manduria Dolce Naturale",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004938",
+"file": "PDO-IT-A0535"
+},
+{
+"path": [],
+"name": "Dolcetto di Diano d'Alba",
+"also": [
+"Diano d'Alba"
+],
+"kind": "PDO",
+"id": "EUGI00000004661",
+"file": "PDO-IT-A1324"
+},
+{
+"path": [],
+"name": "Colli di Conegliano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005007",
+"file": "PDO-IT-A0453"
+},
+{
+"path": [],
+"name": "Moscato di Sorso",
+"also": [
+"Moscato di Sennori",
+"Moscato di Sorso - Sennori"
+],
+"kind": "PDO",
+"id": "EUGI00000004890",
+"file": "PDO-IT-A0909"
+},
+{
+"path": [],
+"name": "Colli Altotiberini",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005120",
+"file": "PDO-IT-A0838"
+},
+{
+"path": [],
+"name": "Cerveteri",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006167",
+"file": "PDO-IT-A0696"
+},
+{
+"path": [],
+"name": "Vignanello",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006403",
+"file": "PDO-IT-A0763"
+},
+{
+"path": [],
+"name": "Friuli Isonzo",
+"also": [
+"Isonzo del Friuli"
+],
+"kind": "PDO",
+"id": "EUGI00000006448",
+"file": "PDO-IT-A0959"
+},
+{
+"path": [],
+"name": "Bianco del Sillaro",
+"also": [
+"Sillaro"
+],
+"kind": "PGI",
+"id": "EUGI00000004781",
+"file": "PGI-IT-A0526"
+},
+{
+"path": [],
+"name": "Gioia del Colle",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005503",
+"file": "PDO-IT-A0549"
+},
+{
+"path": [],
+"name": "Langhe",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006397",
+"file": "PDO-IT-A1189"
+},
+{
+"path": [],
+"name": "Colline Joniche Tarantine",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005483",
+"file": "PDO-IT-A0546"
+},
+{
+"path": [],
+"name": "Calosso",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006605",
+"file": "PDO-IT-A1118"
+},
+{
+"path": [],
+"name": "Valle del Tirso",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005119",
+"file": "PGI-IT-A0816"
+},
+{
+"path": [],
+"name": "Vermentino di Gallura",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004943",
+"file": "PDO-IT-A0903"
+},
+{
+"path": [],
+"name": "Sannio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004961",
+"file": "PDO-IT-A0281"
+},
+{
+"path": [],
+"name": "Gattinara",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004666",
+"file": "PDO-IT-A1311"
+},
+{
+"path": [],
+"name": "Colli Pesaresi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004846",
+"file": "PDO-IT-A0458"
+},
+{
+"path": [],
+"name": "Malvasia delle Lipari",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005542",
+"file": "PDO-IT-A0782"
+},
+{
+"path": [],
+"name": "Colli Perugini",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005225",
+"file": "PDO-IT-A0843"
+},
+{
+"path": [],
+"name": "Provincia di Pavia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005641",
+"file": "PGI-IT-A1015"
+},
+{
+"path": [],
+"name": "Barbagia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005088",
+"file": "PGI-IT-A0784"
+},
+{
+"path": [],
+"name": "Sibiola",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005115",
+"file": "PGI-IT-A0813"
+},
+{
+"path": [],
+"name": "Fontanarossa di Cerda",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005882",
+"file": "PGI-IT-A0806"
+},
+{
+"path": [],
+"name": "Siracusa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006002",
+"file": "PDO-IT-A0802"
+},
+{
+"path": [],
+"name": "Colli di Luni",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005063",
+"file": "PDO-IT-A0353"
+},
+{
+"path": [],
+"name": "Colline Lucchesi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006447",
+"file": "PDO-IT-A1387"
+},
+{
+"path": [],
+"name": "Candia dei Colli Apuani",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005106",
+"file": "PDO-IT-A1377"
+},
+{
+"path": [],
+"name": "Valcamonica",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005087",
+"file": "PGI-IT-A1317"
+},
+{
+"path": [],
+"name": "Velletri",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006401",
+"file": "PDO-IT-A0762"
+},
+{
+"path": [],
+"name": "Terratico di Bibbona",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006606",
+"file": "PDO-IT-A1491"
+},
+{
+"path": [],
+"name": "Val d'Arbia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006941",
+"file": "PDO-IT-A1496"
+},
+{
+"path": [],
+"name": "Terre del Colleoni",
+"also": [
+"Colleoni"
+],
+"kind": "PDO",
+"id": "EUGI00000005071",
+"file": "PDO-IT-A1358"
+},
+{
+"path": [],
+"name": "Bardolino Superiore",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004022",
+"file": "PDO-IT-A0437"
+},
+{
+"path": [],
+"name": "Coste della Sesia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006170",
+"file": "PDO-IT-A1138"
+},
+{
+"path": [],
+"name": "Civitella d'Agliano",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002583",
+"file": "PGI-IT-A0766"
+},
+{
+"path": [],
+"name": "Amelia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005104",
+"file": "PDO-IT-A0835"
+},
+{
+"path": [],
+"name": "Circeo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006169",
+"file": "PDO-IT-A0700"
+},
+{
+"path": [],
+"name": "Carema",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005494",
+"file": "PDO-IT-A1084"
+},
+{
+"path": [],
+"name": "Cortese dell'Alto Monferrato",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006165",
+"file": "PDO-IT-A1111"
+},
+{
+"path": [],
+"name": "Dolcetto d'Asti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006259",
+"file": "PDO-IT-A1174"
+},
+{
+"path": [],
+"name": "Arborea",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004061",
+"file": "PDO-IT-A0906"
+},
+{
+"path": [],
+"name": "Botticino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004102",
+"file": "PDO-IT-A1104"
+},
+{
+"path": [],
+"name": "Offida",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003229",
+"file": "PDO-IT-A0477"
+},
+{
+"path": [],
+"name": "Castelli Romani",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002461",
+"file": "PDO-IT-A0695"
+},
+{
+"path": [],
+"name": "Friuli Annia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006273",
+"file": "PDO-IT-A0905"
+},
+{
+"path": [],
+"name": "Sovana",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006906",
+"file": "PDO-IT-A1490"
+},
+{
+"path": [],
+"name": "Friuli Grave",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006426",
+"file": "PDO-IT-A0954"
+},
+{
+"path": [],
+"name": "Ansonica Costa dell'Argentario",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006875",
+"file": "PDO-IT-A1312"
+},
+{
+"path": [],
+"name": "San Severo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004988",
+"file": "PDO-IT-A0568"
+},
+{
+"path": [],
+"name": "Ostuni",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005024",
+"file": "PDO-IT-A0561"
+},
+{
+"path": [],
+"name": "Pergola",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004850",
+"file": "PDO-IT-A0429"
+},
+{
+"path": [],
+"name": "Barletta",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005101",
+"file": "PDO-IT-A0542"
+},
+{
+"path": [],
+"name": "Colli Etruschi Viterbesi",
+"also": [
+"Tuscia"
+],
+"kind": "PDO",
+"id": "EUGI00000006255",
+"file": "PDO-IT-A0703"
+},
+{
+"path": [],
+"name": "Montescudaio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006528",
+"file": "PDO-IT-A1437"
+},
+{
+"path": [],
+"name": "Frusinate",
+"also": [
+"del Frusinate"
+],
+"kind": "PGI",
+"id": "EUGI00000002664",
+"file": "PGI-IT-A0770"
+},
+{
+"path": [],
+"name": "Costa Toscana",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006664",
+"file": "PGI-IT-A1434"
+},
+{
+"path": [],
+"name": "Delia Nivolelli",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005516",
+"file": "PDO-IT-A0777"
+},
+{
+"path": [],
+"name": "Falanghina del Sannio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004838",
+"file": "PDO-IT-A0248"
+},
+{
+"path": [],
+"name": "Provincia di Nuoro",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005113",
+"file": "PGI-IT-A0808"
+},
+{
+"path": [],
+"name": "Quistello",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005080",
+"file": "PGI-IT-A1081"
+},
+{
+"path": [],
+"name": "Mamertino",
+"also": [
+"Mamertino di Milazzo"
+],
+"kind": "PDO",
+"id": "EUGI00000005552",
+"file": "PDO-IT-A0783"
+},
+{
+"path": [],
+"name": "Cacc'e mmitte di Lucera",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005281",
+"file": "PDO-IT-A0544"
+},
+{
+"path": [],
+"name": "Riesi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006146",
+"file": "PDO-IT-A0793"
+},
+{
+"path": [],
+"name": "Camarro",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005791",
+"file": "PGI-IT-A0805"
+},
+{
+"path": [],
+"name": "Grance Senesi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006522",
+"file": "PDO-IT-A1400"
+},
+{
+"path": [],
+"name": "Vin Santo del Chianti",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006967",
+"file": "PDO-IT-A1513"
+},
+{
+"path": [],
+"name": "Roccamonfina",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005112",
+"file": "PGI-IT-A0263"
+},
+{
+"path": [],
+"name": "Colli del Trasimeno",
+"also": [
+"Trasimeno"
+],
+"kind": "PDO",
+"id": "EUGI00000005222",
+"file": "PDO-IT-A0839"
+},
+{
+"path": [],
+"name": "Anagni",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002582",
+"file": "PGI-IT-A0765"
+},
+{
+"path": [],
+"name": "Lazio",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000002761",
+"file": "PGI-IT-A0771"
+},
+{
+"path": [],
+"name": "Colli della Toscana centrale",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007022",
+"file": "PGI-IT-A1436"
+},
+{
+"path": [],
+"name": "Freisa di Chieri",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006293",
+"file": "PDO-IT-A1181"
+},
+{
+"path": [],
+"name": "Savuto",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004962",
+"file": "PDO-IT-A0620"
+},
+{
+"path": [],
+"name": "San Colombano al Lambro",
+"also": [
+"San Colombano"
+],
+"kind": "PDO",
+"id": "EUGI00000005068",
+"file": "PDO-IT-A1054"
+},
+{
+"path": [],
+"name": "Mandrolisai",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004818",
+"file": "PDO-IT-A1171"
+},
+{
+"path": [],
+"name": "Aleatico di Gradoli",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006162",
+"file": "PDO-IT-A0689"
+},
+{
+"path": [],
+"name": "Vigneti della Serenissima",
+"also": [
+"Serenissima"
+],
+"kind": "PDO",
+"id": "EUGI00000004833",
+"file": "PDO-IT-A0478"
+},
+{
+"path": [],
+"name": "Matino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005559",
+"file": "PDO-IT-A0554"
+},
+{
+"path": [],
+"name": "Colli Lanuvini",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006281",
+"file": "PDO-IT-A0704"
+},
+{
+"path": [],
+"name": "Nettuno",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006292",
+"file": "PDO-IT-A0758"
+},
+{
+"path": [],
+"name": "Cortona",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006481",
+"file": "PDO-IT-A1518"
+},
+{
+"path": [],
+"name": "Greco di Bianco",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004662",
+"file": "PDO-IT-A0617"
+},
+{
+"path": [],
+"name": "Cori",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006284",
+"file": "PDO-IT-A0706"
+},
+{
+"path": [],
+"name": "Val di Magra",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006666",
+"file": "PGI-IT-A1431"
+},
+{
+"path": [],
+"name": "Santa Margherita di Belice",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006123",
+"file": "PDO-IT-A0798"
+},
+{
+"path": [],
+"name": "Capri",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004761",
+"file": "PDO-IT-A0240"
+},
+{
+"path": [],
+"name": "Penisola Sorrentina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004941",
+"file": "PDO-IT-A0280"
+},
+{
+"path": [],
+"name": "Campi Flegrei",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004801",
+"file": "PDO-IT-A0239"
+},
+{
+"path": [],
+"name": "Terrazze dell'Imperiese",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005349",
+"file": "PGI-IT-A0364"
+},
+{
+"path": [],
+"name": "Pompeiano",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005381",
+"file": "PGI-IT-A0262"
+},
+{
+"path": [],
+"name": "Erice",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005520",
+"file": "PDO-IT-A0779"
+},
+{
+"path": [],
+"name": "Bianco dell'Empolese",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005685",
+"file": "PDO-IT-A1337"
+},
+{
+"path": [],
+"name": "Planargia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005098",
+"file": "PGI-IT-A0799"
+},
+{
+"path": [],
+"name": "Colli Romagna centrale",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004461",
+"file": "PDO-IT-A0318"
+},
+{
+"path": [],
+"name": "Avola",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005883",
+"file": "PGI-IT-A0804"
+},
+{
+"path": [],
+"name": "Benaco Bresciano",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005073",
+"file": "PGI-IT-A1205"
+},
+{
+"path": [],
+"name": "Orcia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006902",
+"file": "PDO-IT-A1442"
+},
+{
+"path": [],
+"name": "Terre di Casole",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006545",
+"file": "PDO-IT-A1493"
+},
+{
+"path": [],
+"name": "Val di Cornia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006962",
+"file": "PDO-IT-A1498"
+},
+{
+"path": [],
+"name": "Vermentino di Sardegna",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004935",
+"file": "PDO-IT-A1169"
+},
+{
+"path": [],
+"name": "Murgia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004922",
+"file": "PGI-IT-A0600"
+},
+{
+"path": [],
+"name": "San Ginesio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004845",
+"file": "PDO-IT-A0426"
+},
+{
+"path": [],
+"name": "Nuragus di Cagliari",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004903",
+"file": "PDO-IT-A1164"
+},
+{
+"path": [],
+"name": "Valle d'Aosta",
+"also": [
+"Vallée d'Aoste"
+],
+"kind": "PDO",
+"id": "EUGI00000003121",
+"file": "PDO-IT-A0296"
+},
+{
+"path": [],
+"name": "Cannara",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005923",
+"file": "PGI-IT-A0854"
+},
+{
+"path": [],
+"name": "Rosazzo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006145",
+"file": "PDO-IT-A0367"
+},
+{
+"path": [],
+"name": "Bettona",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005701",
+"file": "PGI-IT-A0853"
+},
+{
+"path": [],
+"name": "Campidano di Terralba",
+"also": [
+"Terralba"
+],
+"kind": "PDO",
+"id": "EUGI00000004932",
+"file": "PDO-IT-A1167"
+},
+{
+"path": [],
+"name": "Grottino di Roccanova",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002482",
+"file": "PDO-IT-A0528"
+},
+{
+"path": [],
+"name": "Val di Cornia Rosso",
+"also": [
+"Rosso della Val di Cornia"
+],
+"kind": "PDO",
+"id": "EUGI00000006866",
+"file": "PDO-IT-A1262"
+},
+{
+"path": [],
+"name": "Sebino",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005084",
+"file": "PGI-IT-A1041"
+},
+{
+"path": [],
+"name": "Provincia di Mantova",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005078",
+"file": "PGI-IT-A1078"
+},
+{
+"path": [],
+"name": "Tavoliere delle Puglie",
+"also": [
+"Tavoliere"
+],
+"kind": "PDO",
+"id": "EUGI00000004981",
+"file": "PDO-IT-A0570"
+},
+{
+"path": [],
+"name": "Galluccio",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004852",
+"file": "PDO-IT-A0250"
+},
+{
+"path": [],
+"name": "Salento",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004927",
+"file": "PGI-IT-A0602"
+},
+{
+"path": [],
+"name": "Valdamato",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004823",
+"file": "PGI-IT-A0658"
+},
+{
+"path": [],
+"name": "Casteller",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004553",
+"file": "PDO-IT-A0748"
+},
+{
+"path": [],
+"name": "Molise",
+"also": [
+"del Molise"
+],
+"kind": "PDO",
+"id": "EUGI00000004892",
+"file": "PDO-IT-A0575"
+},
+{
+"path": [],
+"name": "Terre del Volturno",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005116",
+"file": "PGI-IT-A0264"
+},
+{
+"path": [],
+"name": "Tharros",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005117",
+"file": "PGI-IT-A0814"
+},
+{
+"path": [],
+"name": "Oltrepò Pavese metodo classico",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003624",
+"file": "PDO-IT-A0958"
+},
+{
+"path": [],
+"name": "Montecastelli",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007041",
+"file": "PGI-IT-A1438"
+},
+{
+"path": [],
+"name": "Parrina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006689",
+"file": "PDO-IT-A1451"
+},
+{
+"path": [],
+"name": "Galatina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003029",
+"file": "PDO-IT-A0548"
+},
+{
+"path": [],
+"name": "S. Anna di Isola Capo Rizzuto",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004660",
+"file": "PDO-IT-A0629"
+},
+{
+"path": [],
+"name": "Esino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004851",
+"file": "PDO-IT-A0434"
+},
+{
+"path": [],
+"name": "Monteregio di Massa Marittima",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006912",
+"file": "PDO-IT-A1435"
+},
+{
+"path": [],
+"name": "Valdichiana toscana",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006623",
+"file": "PDO-IT-A1510"
+},
+{
+"path": [],
+"name": "Colli della Sabina",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006171",
+"file": "PDO-IT-A0702"
+},
+{
+"path": [],
+"name": "Sciacca",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006121",
+"file": "PDO-IT-A0800"
+},
+{
+"path": [],
+"name": "Cesanese di Affile",
+"also": [
+"Affile"
+],
+"kind": "PDO",
+"id": "EUGI00000006168",
+"file": "PDO-IT-A0698"
+},
+{
+"path": [],
+"name": "Carmignano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005926",
+"file": "PDO-IT-A1220"
+},
+{
+"path": [],
+"name": "Ischia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004937",
+"file": "PDO-IT-A0251"
+},
+{
+"path": [],
+"name": "Moscato di Trani",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005562",
+"file": "PDO-IT-A0555"
+},
+{
+"path": [],
+"name": "Terre Lariane",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005086",
+"file": "PGI-IT-A1069"
+},
+{
+"path": [],
+"name": "Faro",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005526",
+"file": "PDO-IT-A0781"
+},
+{
+"path": [],
+"name": "Brindisi",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005203",
+"file": "PDO-IT-A0543"
+},
+{
+"path": [],
+"name": "Bramaterra",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004849",
+"file": "PDO-IT-A1075"
+},
+{
+"path": [],
+"name": "Rosso di Cerignola",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005019",
+"file": "PDO-IT-A0566"
+},
+{
+"path": [],
+"name": "Aversa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004784",
+"file": "PDO-IT-A0238"
+},
+{
+"path": [],
+"name": "Elba Aleatico Passito",
+"also": [
+"Aleatico Passito dell'Elba"
+],
+"kind": "PDO",
+"id": "EUGI00000003823",
+"file": "PDO-IT-A1237"
+},
+{
+"path": [],
+"name": "Valle Belice",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005821",
+"file": "PGI-IT-A0811"
+},
+{
+"path": [],
+"name": "Dolcetto di Ovada Superiore",
+"also": [
+"Ovada"
+],
+"kind": "PDO",
+"id": "EUGI00000006602",
+"file": "PDO-IT-A1319"
+},
+{
+"path": [],
+"name": "Aleatico di Puglia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005014",
+"file": "PDO-IT-A0540"
+},
+{
+"path": [],
+"name": "Tarquinia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006392",
+"file": "PDO-IT-A0760"
+},
+{
+"path": [],
+"name": "Bagnoli Friularo",
+"also": [
+"Friularo di Bagnoli"
+],
+"kind": "PDO",
+"id": "EUGI00000004722",
+"file": "PDO-IT-A0467"
+},
+{
+"path": [],
+"name": "Zagarolo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006405",
+"file": "PDO-IT-A0764"
+},
+{
+"path": [],
+"name": "Portofino",
+"also": [
+"Golfo del Tigullio - Portofino"
+],
+"kind": "PDO",
+"id": "EUGI00000005090",
+"file": "PDO-IT-A0355"
+},
+{
+"path": [],
+"name": "Montecarlo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006003",
+"file": "PDO-IT-A1421"
+}
+]
+}

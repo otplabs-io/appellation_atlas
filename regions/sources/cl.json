@@ -1,0 +1,201 @@
+{
+"source": {
+"title": "Wikipedia, Chilean wine (wine regions, after the 2018 decree in Diario Oficial No. 42.065)",
+"url": "https://en.wikipedia.org/wiki/Chilean_wine",
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Atacama",
+"kind": "region"
+},
+{
+"path": [
+"Atacama"
+],
+"name": "Copiapó Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"Atacama"
+],
+"name": "Huasco Valley",
+"kind": "subregion"
+},
+{
+"path": [],
+"name": "Coquimbo",
+"kind": "region"
+},
+{
+"path": [
+"Coquimbo"
+],
+"name": "Elqui Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"Coquimbo"
+],
+"name": "Limarí Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"Coquimbo"
+],
+"name": "Choapa Valley",
+"kind": "subregion"
+},
+{
+"path": [],
+"name": "Aconcagua",
+"kind": "region"
+},
+{
+"path": [
+"Aconcagua"
+],
+"name": "Aconcagua Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"Aconcagua"
+],
+"name": "Casablanca Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"Aconcagua"
+],
+"name": "San Antonio Valley",
+"kind": "subregion"
+},
+{
+"path": [],
+"name": "Central Valley",
+"kind": "region"
+},
+{
+"path": [
+"Central Valley"
+],
+"name": "Maipo Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"Central Valley",
+"Maipo Valley"
+],
+"name": "Alto Maipo",
+"kind": "zone"
+},
+{
+"path": [
+"Central Valley",
+"Maipo Valley"
+],
+"name": "Central Maipo",
+"kind": "zone"
+},
+{
+"path": [
+"Central Valley",
+"Maipo Valley"
+],
+"name": "Pacific Maipo",
+"kind": "zone"
+},
+{
+"path": [
+"Central Valley"
+],
+"name": "Rapel Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"Central Valley",
+"Rapel Valley"
+],
+"name": "Cachapoal Valley",
+"kind": "zone"
+},
+{
+"path": [
+"Central Valley",
+"Rapel Valley"
+],
+"name": "Colchagua Valley",
+"kind": "zone"
+},
+{
+"path": [
+"Central Valley"
+],
+"name": "Curicó Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"Central Valley",
+"Curicó Valley"
+],
+"name": "Teno Valley",
+"kind": "zone"
+},
+{
+"path": [
+"Central Valley",
+"Curicó Valley"
+],
+"name": "Lontué Valley",
+"kind": "zone"
+},
+{
+"path": [
+"Central Valley"
+],
+"name": "Maule Valley",
+"kind": "subregion"
+},
+{
+"path": [],
+"name": "Southern Chile",
+"kind": "region"
+},
+{
+"path": [
+"Southern Chile"
+],
+"name": "Itata Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"Southern Chile"
+],
+"name": "Bío-Bío Valley",
+"kind": "subregion"
+},
+{
+"path": [
+"Southern Chile"
+],
+"name": "Malleco Valley",
+"kind": "subregion"
+},
+{
+"path": [],
+"name": "Austral",
+"kind": "region"
+}
+]
+}

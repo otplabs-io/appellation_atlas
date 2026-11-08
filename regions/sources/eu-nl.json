@@ -1,0 +1,178 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Rivierenland",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000017964",
+"file": "PDO-NL-02774"
+},
+{
+"path": [],
+"name": "Zeeland",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005517",
+"file": "PGI-NL-A0963"
+},
+{
+"path": [],
+"name": "Zuid-Holland",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005544",
+"file": "PGI-NL-A0965"
+},
+{
+"path": [],
+"name": "Utrecht",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005546",
+"file": "PGI-NL-A0967"
+},
+{
+"path": [],
+"name": "Overijssel",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005548",
+"file": "PGI-NL-A0968"
+},
+{
+"path": [],
+"name": "Noord-Holland",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005545",
+"file": "PGI-NL-A0966"
+},
+{
+"path": [],
+"name": "Noord-Brabant",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005543",
+"file": "PGI-NL-A0964"
+},
+{
+"path": [],
+"name": "Limburg",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000000741",
+"file": "PGI-NL-A0961"
+},
+{
+"path": [],
+"name": "Groningen",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005551",
+"file": "PGI-NL-A0970"
+},
+{
+"path": [],
+"name": "Gelderland",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005020",
+"file": "PGI-NL-A0962"
+},
+{
+"path": [],
+"name": "Friesland",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005553",
+"file": "PGI-NL-A0972"
+},
+{
+"path": [],
+"name": "Flevoland",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005549",
+"file": "PGI-NL-A0380"
+},
+{
+"path": [],
+"name": "Drenthe",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005550",
+"file": "PGI-NL-A0969"
+},
+{
+"path": [],
+"name": "Twente",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000018747",
+"file": "PDO-NL-02873"
+},
+{
+"path": [],
+"name": "Schouwen-Duiveland",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000018044",
+"file": "PDO-NL-02775"
+},
+{
+"path": [],
+"name": "Maasvallei Limburg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000012784",
+"file": "PDO-BE+NL-02172"
+},
+{
+"path": [],
+"name": "De Voerendaalse Bergen",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000018045",
+"file": "PDO-NL-02776"
+},
+{
+"path": [],
+"name": "Achterhoek - Winterswijk",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000015305",
+"file": "PDO-NL-02402"
+},
+{
+"path": [],
+"name": "Vijlen",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000014220",
+"file": "PDO-NL-02168"
+},
+{
+"path": [],
+"name": "Oolde",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000014935",
+"file": "PDO-NL-02230"
+},
+{
+"path": [],
+"name": "Mergelland",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000014415",
+"file": "PDO-NL-02114"
+}
+]
+}

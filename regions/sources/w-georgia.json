@@ -1,0 +1,36 @@
+{
+"source": {
+"title": "Wikipedia, List of wine-producing regions: Georgia",
+"url": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions",
+"revision": 1382971935,
+"tier": "secondary",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Abkhazia",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Kakheti",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Kartli",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Imereti",
+"kind": "region"
+},
+{
+"path": [],
+"name": "Racha-Lechkhumi and Kvemo Svaneti",
+"kind": "region"
+}
+]
+}

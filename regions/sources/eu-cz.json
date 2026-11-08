@@ -1,0 +1,116 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Šobes",
+"also": [
+"Šobeské víno"
+],
+"kind": "PDO",
+"id": "EUGI00000006483",
+"file": "PDO-CZ-A1089"
+},
+{
+"path": [],
+"name": "Velkopavlovická",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005016",
+"file": "PDO-CZ-A0896"
+},
+{
+"path": [],
+"name": "Morava",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005161",
+"file": "PDO-CZ-A0899"
+},
+{
+"path": [],
+"name": "Novosedelské Slámové víno",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006722",
+"file": "PDO-CZ-A1321"
+},
+{
+"path": [],
+"name": "Čechy",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002821",
+"file": "PDO-CZ-A0888"
+},
+{
+"path": [],
+"name": "Znojmo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005492",
+"file": "PDO-CZ-A1086"
+},
+{
+"path": [],
+"name": "Znojemská",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004882",
+"file": "PDO-CZ-A0892"
+},
+{
+"path": [],
+"name": "moravské",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005221",
+"file": "PGI-CZ-A0902"
+},
+{
+"path": [],
+"name": "Mikulovská",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005123",
+"file": "PDO-CZ-A0897"
+},
+{
+"path": [],
+"name": "Litoměřická",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004964",
+"file": "PDO-CZ-A0894"
+},
+{
+"path": [],
+"name": "Slovácká",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004862",
+"file": "PDO-CZ-A0890"
+},
+{
+"path": [],
+"name": "české",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005201",
+"file": "PGI-CZ-A0900"
+},
+{
+"path": [],
+"name": "Mělnická",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005010",
+"file": "PDO-CZ-A0895"
+}
+]
+}

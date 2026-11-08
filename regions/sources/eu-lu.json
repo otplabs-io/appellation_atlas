@@ -1,0 +1,18 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Moselle Luxembourgeoise",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003101",
+"file": "PDO-LU-A0452"
+}
+]
+}

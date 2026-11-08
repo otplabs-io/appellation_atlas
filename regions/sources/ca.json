@@ -1,0 +1,312 @@
+{
+"source": {
+"title": "Ontario Wine Appellation Authority (VQA Ontario) appellation pages, and Wine Growers of British Columbia, BC wine regions",
+"url": "https://vqaontario.ca/ontario-appellations/ ; https://winebc.com/wine-regions/",
+"tier": "official for Ontario, industry for British Columbia",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Ontario",
+"kind": "province"
+},
+{
+"path": [
+"Ontario"
+],
+"name": "Niagara Peninsula",
+"kind": "appellation"
+},
+{
+"path": [
+"Ontario"
+],
+"name": "Lake Erie North Shore",
+"kind": "appellation"
+},
+{
+"path": [
+"Ontario",
+"Lake Erie North Shore"
+],
+"name": "South Islands",
+"kind": "sub-appellation"
+},
+{
+"path": [
+"Ontario"
+],
+"name": "Prince Edward County",
+"kind": "appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "Niagara Escarpment",
+"kind": "regional appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "Niagara-on-the-Lake",
+"kind": "regional appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "West Niagara",
+"kind": "regional appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "Beamsville Bench",
+"kind": "sub-appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "Creek Shores",
+"kind": "sub-appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "Four Mile Creek",
+"kind": "sub-appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "Lincoln Lakeshore",
+"kind": "sub-appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "Niagara Lakeshore",
+"kind": "sub-appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "Niagara River",
+"kind": "sub-appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "Short Hills Bench",
+"kind": "sub-appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "St. David's Bench",
+"kind": "sub-appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "Twenty Mile Bench",
+"kind": "sub-appellation"
+},
+{
+"path": [
+"Ontario",
+"Niagara Peninsula"
+],
+"name": "Vinemount Ridge",
+"kind": "sub-appellation"
+},
+{
+"path": [],
+"name": "British Columbia",
+"kind": "province"
+},
+{
+"path": [
+"British Columbia"
+],
+"name": "Vancouver Island",
+"kind": "GI"
+},
+{
+"path": [
+"British Columbia"
+],
+"name": "Gulf Islands",
+"kind": "GI"
+},
+{
+"path": [
+"British Columbia"
+],
+"name": "Fraser Valley",
+"kind": "GI"
+},
+{
+"path": [
+"British Columbia"
+],
+"name": "Similkameen Valley",
+"kind": "GI"
+},
+{
+"path": [
+"British Columbia"
+],
+"name": "Okanagan Valley",
+"kind": "GI"
+},
+{
+"path": [
+"British Columbia"
+],
+"name": "Kootenays",
+"kind": "GI"
+},
+{
+"path": [
+"British Columbia"
+],
+"name": "Lillooet",
+"kind": "GI"
+},
+{
+"path": [
+"British Columbia"
+],
+"name": "Shuswap",
+"kind": "GI"
+},
+{
+"path": [
+"British Columbia"
+],
+"name": "Thompson Valley",
+"kind": "GI"
+},
+{
+"path": [
+"British Columbia",
+"Okanagan Valley"
+],
+"name": "Lake Country",
+"kind": "sub-GI"
+},
+{
+"path": [
+"British Columbia",
+"Okanagan Valley"
+],
+"name": "East Kelowna Slopes",
+"kind": "sub-GI"
+},
+{
+"path": [
+"British Columbia",
+"Okanagan Valley"
+],
+"name": "South Kelowna Slopes",
+"kind": "sub-GI"
+},
+{
+"path": [
+"British Columbia",
+"Okanagan Valley"
+],
+"name": "Summerland Valleys",
+"kind": "sub-GI"
+},
+{
+"path": [
+"British Columbia",
+"Okanagan Valley"
+],
+"name": "Summerland Bench",
+"kind": "sub-GI"
+},
+{
+"path": [
+"British Columbia",
+"Okanagan Valley"
+],
+"name": "Summerland Lakefront",
+"kind": "sub-GI"
+},
+{
+"path": [
+"British Columbia",
+"Okanagan Valley"
+],
+"name": "Naramata Bench",
+"kind": "sub-GI"
+},
+{
+"path": [
+"British Columbia",
+"Okanagan Valley"
+],
+"name": "Skaha Bench",
+"kind": "sub-GI"
+},
+{
+"path": [
+"British Columbia",
+"Okanagan Valley"
+],
+"name": "Okanagan Falls",
+"kind": "sub-GI"
+},
+{
+"path": [
+"British Columbia",
+"Okanagan Valley"
+],
+"name": "Golden Mile Bench",
+"kind": "sub-GI"
+},
+{
+"path": [
+"British Columbia",
+"Okanagan Valley"
+],
+"name": "Golden Mile Slopes",
+"kind": "sub-GI"
+},
+{
+"path": [
+"British Columbia"
+],
+"name": "Cowichan Valley",
+"kind": "sub-GI",
+"note": "Wine BC lists it among the sub-GIs without naming its parent GI."
+}
+]
+}

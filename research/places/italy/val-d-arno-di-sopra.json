@@ -1,0 +1,212 @@
+{
+ "subject": "place",
+ "id": "italy/val-d-arno-di-sopra",
+ "read": "2026-11-05",
+ "sources": {
+  "disciplinare": {
+   "name": "Disciplinare di produzione, Val d'Arno di Sopra o Valdarno di Sopra DOC (consolidated text with the 2024 amendment, GUUE 30.10.2024), as hosted by AIS Italia",
+   "kind": "official",
+   "url": "https://aisitalia.it/Disciplinari/Toscana/DOC/Val%20d'Arno%20di%20Sopra%20o%20Valdarno%20di%20Sopra.pdf",
+   "note": "Read in full as PDF text. The revision table prints one date as 26.06.2014 next to a Gazzetta date of 10.07.2024, which looks like a typo for 2024."
+  },
+  "iwc": {
+   "name": "Italian Wine Central, Val d'Arno di Sopra DOC",
+   "kind": "reference",
+   "url": "https://italianwinecentral.com/?p=1065"
+  },
+  "petrolo": {
+   "name": "Fattoria Petrolo, DOC Valdarno di Sopra",
+   "kind": "producer",
+   "url": "https://www.petrolo.it/en/?p=908",
+   "note": "Producer page. Producers are parties to the DOC, so treat it as a local view."
+  },
+  "winespectator-2001": {
+   "name": "Wine Spectator, Tuscan Producers Campaign for New Appellation (17 December 2001)",
+   "kind": "critic",
+   "url": "https://www.winespectator.com/articles/tuscan-producers-campaign-for-new-appellation-21126"
+  },
+  "search-2011": {
+   "name": "Search-result summary of the 2011 disciplinare (DM 13.06.2011) and wein.plus / vinerra / vinorandum pages",
+   "kind": "general",
+   "note": "The 2011 PDF (spaghettitaliani 561) returned 404 when fetched. Subzone commune lists come only from search summaries."
+  }
+ },
+ "claims": [
+  {
+   "topic": "history",
+   "claim": "Val d'Arno di Sopra (also written Valdarno di Sopra) was approved as a DOC by ministerial decree of 13 June 2011 (Gazzetta Ufficiale 148, 28 June 2011). It was changed in 2011, 2014 and, with a large rewrite, in 2024.",
+   "source": ["disciplinare", "petrolo", "iwc"],
+   "strength": "Strong",
+   "quote": "Approvato con DM 13.06.2011",
+   "note": "Italian Wine Central says it was almost completely rewritten in 2024, with the last change dated 7 October 2024, so older vintages may differ from recent wines."
+  },
+  {
+   "topic": "history",
+   "claim": "Pietraviva came first. In 2001 a group of producers (Petrolo, Villa La Selva, I Selvatici) asked the government for a Pietraviva DOC for the west side of the valley, next to Chianti Classico. It was granted around 2005 and merged into Val d'Arno di Sopra in 2011.",
+   "source": ["winespectator-2001", "petrolo", "iwc", "disciplinare"],
+   "strength": "Medium",
+   "note": "The disciplinare says Pietraviva DOC was born in the early 2000s and that Valdarno di Sopra was built on it. The 2001 campaign is Wine Spectator. The 2005 year is Petrolo and a search summary. The 2011 merger is Italian Wine Central and Petrolo."
+  },
+  {
+   "topic": "name",
+   "claim": "The producers first wanted the DOC called Valdarno Superiore, which would have covered both sides of the valley. A nearby cooperative that uses that name objected, so they chose Pietraviva. No source explains the word Pietraviva itself.",
+   "source": ["winespectator-2001"],
+   "strength": "Medium",
+   "note": "One article from 2001. The meaning of Pietraviva was not found."
+  },
+  {
+   "topic": "place",
+   "claim": "From 2011 until the 2024 rewrite the DOC had two subzones, Pietraviva and Pratomagno. In the 2011 text Pietraviva covered Cavriglia, Montevarchi, Bucine, San Giovanni Valdarno, Pergine Valdarno and Civitella in Val di Chiana.",
+   "source": ["petrolo", "search-2011"],
+   "strength": "Medium",
+   "note": "Petrolo confirms the two subzones. The commune list comes from two independent search summaries that agree. The 2011 PDF itself could not be opened. The Pratomagno commune list is incomplete."
+  },
+  {
+   "topic": "place",
+   "claim": "The 2024 consolidated disciplinare has no subzones. Pietraviva appears only in the history section, as the earlier DOC on which Valdarno di Sopra was built. Petrolo says producers proposed dropping the two subzones.",
+   "source": ["disciplinare", "petrolo"],
+   "strength": "Medium",
+   "note": "My search of the full 2024 text found no subzone article. Petrolo's page may predate the final change. A sheet about a newer wine should not mention a Pietraviva subzone unless the label does."
+  },
+  {
+   "topic": "place",
+   "claim": "The DOC zone is the entire territory of Cavriglia, Montevarchi, Bucine, Civitella in Val di Chiana, Castelfranco-Piandisco, Terranuova Bracciolini, Loro Ciuffenna, San Giovanni Valdarno, Castiglion Fibocchi and Laterina-Pergine Valdarno. It also includes the part of Arezzo comune between Civitella, Laterina-Pergine and Castiglion Fibocchi and the Canale Maestro della Chiana and Arno, up to the Capolona border. In the province of Florence it takes in all of Figline e Incisa Valdarno, Reggello and Rignano sull'Arno.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "nell’intero territorio dei comuni di Figline e Incisa Valdarno, Reggello e Rignano sull’Arno",
+   "note": "So it spans the provinces of Arezzo and Florence. This is the 2024 text."
+  },
+  {
+   "topic": "place",
+   "claim": "The zone lies on both sides of the Arno valley, between the Arezzo plain and the Florentine hills. The disciplinare places it roughly between the Casentino and Chianti, and says a 1716 decree of Grand Duke Cosimo III de' Medici defined the Valdarno as a quality wine area.",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "grapes",
+   "claim": "Rosso: Merlot 40 to 80%, with Sangiovese and/or Cabernet Sauvignon and/or Syrah and/or Cabernet Franc up to 50%, and other red grapes up to 30%. Bianco: Chardonnay 40 to 80%, with Trebbiano Toscano and/or Malvasia Bianca Lunga up to 50%, Sauvignon up to 10%, and other whites up to 30%.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "Merlot dal 40% all’80%"
+  },
+  {
+   "topic": "grapes",
+   "claim": "Single-variety wines need at least 85% of that grape. The named varieties are Chardonnay, Sauvignon, Malvasia Bianca Lunga, Orpicchio, Trebbiano, Sangiovese, Cabernet Sauvignon, Cabernet Franc, Merlot, Syrah, Malvasia Nera, Canaiolo Nero, Ciliegiolo, Pinot Nero, Pugnitello and Foglia Tonda. Sangiovese, Cabernet Franc and Pugnitello can also be made as rosato.",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "grapes",
+   "claim": "The DOC also covers a rosato sparkling wine from at least 85% Sangiovese, made by the traditional method with 48 months on the lees. Vin Santo (Malvasia Bianca Lunga and/or Trebbiano) and Vin Santo Occhio di Pernice (Sangiovese at least 80%) are also allowed, along with late harvest white and red.",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "aging",
+   "claim": "Red riserva needs 24 months from 1 November of the harvest year, with at least 12 in wood and 3 in bottle. White riserva needs 12 months, with 6 in wood and 3 in bottle. Plain red cannot be sold before 31 March of the year after the harvest. Whites and rosati cannot be sold before 1 February.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "di 24 mesi, di cui almeno 12 in legno e 3 mesi in bottiglia"
+  },
+  {
+   "topic": "other",
+   "claim": "The maximum yield is 11 t/ha for all types. The wine yield is capped at 70%. Natural alcohol is 12.0% for most reds (13.0% for riserva) and 11.5% for whites. New plantings need at least 4,100 vines per hectare.",
+   "source": ["disciplinare"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "vineyard",
+   "claim": "Vineyards below 170 m above sea level are excluded from the register. The rules set no top limit.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "altitudine inferiore ai 170 metri s.l.m."
+  },
+  {
+   "topic": "aspect",
+   "claim": "The main vineyard exposure is west to south-west. This gives well ventilated, bright sites. The disciplinare says growers favour soils with good texture and depth.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "orientati a ovest - sud ovest"
+  },
+  {
+   "topic": "soil",
+   "claim": "A zoning study by the University of Milan (Scienza) found the foothill and alluvial bands of the DOC fairly uniform. The ridges are formed from the lower Miocene Tuscan series. The Macigno formation is turbiditic quartz-feldspar sandstone with a little calcite, alternating with silty schists. The Londa formation is mostly silty schists with some marl, fine sandstone and limestone.",
+   "source": ["disciplinare", "petrolo"],
+   "strength": "Strong",
+   "quote": "formazione del macigno",
+   "note": "Petrolo repeats the same description. It is the disciplinare text quoting Scienza and Toninato (2003)."
+  },
+  {
+   "topic": "soil",
+   "claim": "A working group of local growers and winemakers says the geology gives the wines a savoury, mineral character whatever the grape. The disciplinare also says the reds show 'mountain fruit' notes.",
+   "source": ["disciplinare"],
+   "strength": "Medium",
+   "note": "Official wording but from a local working group. A house view, not independent."
+  },
+  {
+   "topic": "place",
+   "claim": "Climate: temperate-cold for much of the year, with Mediterranean influence in summer that helps ripening. Winters are cold and hard, summers hot and sunny, with strong temperature swings. The area falls in an intermediate class on the Rocchi and Pastena scale, where negative climate traits are weak.",
+   "source": ["disciplinare", "petrolo"],
+   "strength": "Strong"
+  },
+  {
+   "topic": "place",
+   "claim": "Average rainfall is 550 to 900 mm a year depending on the year, about 70% of it in autumn and winter.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "quote": "dai 550 ai 900 mm secondo gli anni",
+   "note": "Petrolo gives 550 to 700 mm. See conflicts."
+  },
+  {
+   "topic": "place",
+   "claim": "A large day to night swing in summer helps the wines keep their aromas, according to the disciplinare. It says the whites are intense and persistent, thanks to the warm to cold alternation of the foothill climate.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "note": "Official wording, so a house description."
+  },
+  {
+   "topic": "history",
+   "claim": "The disciplinare traces wine here to the Etruscans and Pliny the Elder, and to the 1427 Florentine Catasto, which graded wines by quality. From the 1970s some producers made wines of high standing as IGT, which led to Pietraviva and then Valdarno di Sopra.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "note": "Official history. The older parts are the consortium's own account."
+  },
+  {
+   "topic": "standing",
+   "claim": "In 1716 Cosimo III named four areas whose wines could be exported with the origin shown: Chianti Classico, Pomino, Carmignano and Val d'Arno di Sopra.",
+   "source": ["disciplinare"],
+   "strength": "Strong",
+   "note": "Official wording. Historians may qualify it."
+  },
+  {
+   "topic": "standing",
+   "claim": "In 2001 Wine Spectator said the area was making a handful of top-ranked wines, naming Petrolo's Torrione and Galatrona and Villa La Selva's Selvamaggio and Felciaia. The proposed Pietraviva area was about 2,500 acres.",
+   "source": ["winespectator-2001"],
+   "strength": "Medium",
+   "note": "One 2001 article. The acreage was for the proposed Pietraviva DOC, not the whole Valdarno DOC."
+  },
+  {
+   "topic": "name",
+   "claim": "Val d'Arno di Sopra means the upper part of the Arno valley, the stretch between Arezzo and Florence. Di Sopra means upper, as in upstream.",
+   "source": ["reading"],
+   "strength": "Estimate",
+   "note": "My plain reading of the Italian words and of the disciplinare's description of the zone. No source states the derivation."
+  }
+ ],
+ "conflicts": [
+  "Subzones: Petrolo and a search summary of the 2011 text describe two subzones, Pietraviva and Pratomagno. The 2024 consolidated disciplinare has none. Petrolo says producers proposed dropping them. The 2024 text is the current rule.",
+  "Pietraviva date: the Wine Spectator article is from December 2001. Petrolo says the DOC was granted in 2005. The disciplinare says early 2000s. A search summary also says 2005.",
+  "Rainfall: 550 to 900 mm (disciplinare) versus 550 to 700 mm (Petrolo).",
+  "Italian Wine Central says the DOC was established in 2011, incorporating the former Pietraviva DOC, but does not mention subzones. The 2011 date matches the disciplinare."
+ ],
+ "gaps": [
+  "The 2011 disciplinare could not be opened. The Pietraviva commune list and the Pratomagno list rest on search summaries. The Pratomagno list is incomplete.",
+  "No source explains the word Pietraviva.",
+  "No altitude figures beyond the 170 m minimum, and no soil detail by commune.",
+  "No independent climate data (temperature, growing degree days) for the upper Arno valley.",
+  "The 2024 rewrite: only the final text was read. The reasons for dropping subzones were not found."
+ ],
+ "sheet": {
+  "place": "Val d'Arno di Sopra is a DOC in the upper Arno valley, between Arezzo and Florence. It dates from 2011 and grew out of the older Pietraviva DOC. The red blend is Merlot-led."
+ }
+}

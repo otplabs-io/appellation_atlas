@@ -1,0 +1,169 @@
+{
+ "story": {
+  "signature": {
+   "component": "quality_ladder",
+   "title": "Greece’s ladder",
+   "tiers": [
+    "PDO",
+    "PGI",
+    "Wine"
+   ]
+  }
+ },
+ "place": {
+  "subtitle": "From Greece down to one zone"
+ },
+ "styles": [
+  "red",
+  "white",
+  "sparkling",
+  "rosé",
+  "dessert",
+  "orange",
+  "fortified"
+ ],
+ "map": {
+  "engine": "zones",
+  "precision": "zone",
+  "zone_store": "eu",
+  "credit": "Maps: wine zones from the EU PDO boundaries (Candiago et al. 2022, CC0), drawn by whole commune, with PGI Attiki drawn as the Attica region; municipality outlines from geoBoundaries (CC0); region outlines © EuroGeographics for the administrative boundaries. For orientation, not a legal boundary.",
+  "region_slug": "greece",
+  "projection": 32634,
+  "eu": {
+   "country": "GR",
+   "nuts": [
+    "EL30",
+    "EL41",
+    "EL42",
+    "EL43",
+    "EL51",
+    "EL52",
+    "EL53",
+    "EL54",
+    "EL61",
+    "EL62",
+    "EL63",
+    "EL64",
+    "EL65"
+   ],
+   "names": {
+    "Ραψάνη": "Rapsani",
+    "Μαυροδάφνη Πατρών": "Mavrodaphne of Patras",
+    "Μαυροδάφνη Κεφαλληνίας": "Mavrodaphne of Cephalonia",
+    "Σαντορίνη": "Santorini",
+    "Μοσχάτο Πατρών": "Muscat of Patras",
+    "Πλαγιές Μελίτωνα": "Slopes of Meliton",
+    "Πάτρα": "Patras",
+    "Ρομπόλα Κεφαλληνίας": "Robola of Cephalonia",
+    "Γουμένισσα": "Goumenissa",
+    "Μεσενικόλα": "Messenikola",
+    "Μοσχάτος Ρίου Πάτρας": "Muscat of Rio Patras",
+    "Αρχάνες": "Archanes",
+    "Δαφνές": "Dafnes",
+    "Αμύνταιο": "Amyndeon",
+    "Πεζά": "Peza",
+    "Μοσχάτος Λήμνου": "Muscat of Lemnos",
+    "Αγχίαλος": "Anchialos",
+    "Ζίτσα": "Zitsa",
+    "Μονεμβασία- Malvasia": "Monemvasia-Malvasia",
+    "Μαντινεία": "Mantinia",
+    "Σάμος": "Samos",
+    "Μοσχάτος Κεφαλληνίας": "Muscat of Cephalonia",
+    "Μοσχάτος Ρόδου": "Muscat of Rhodes",
+    "Πάρος": "Paros",
+    "Νεμέα": "Nemea",
+    "Malvasia Πάρος": "Malvasia Paros",
+    "Malvasia Σητείας": "Malvasia Sitia",
+    "Νάουσα": "Naoussa",
+    "Ρόδος": "Rhodes",
+    "Σητεία": "Sitia",
+    "Λήμνος": "Lemnos",
+    "Χάνδακας - Candia": "Handakas-Candia",
+    "Malvasia Χάνδακας-Candia": "Malvasia Handakas-Candia"
+   },
+   "default_tier": "PDO",
+   "locator_bbox": [
+    -2,
+    30,
+    38,
+    50
+   ],
+   "communes_gb": "geoBoundaries-GRC-ADM3_simplified.geojson",
+   "extra_zones": [
+    {
+     "name": "Attiki",
+     "slug": "attiki",
+     "tier": "PGI",
+     "nuts": [
+      "EL30"
+     ],
+     "note": "PGI Attiki is drawn as the Attica region."
+    }
+   ]
+  },
+  "locator_file": "greece/_locator.json",
+  "tier_fill": {
+   "PDO": "goldl"
+  },
+  "tier_key": [
+   [
+    "goldl",
+    "PDO zones"
+   ]
+  ],
+  "panel1": [
+   "Greece",
+   "Its PDO zones"
+  ],
+  "panel1_towns": [],
+  "broad": [],
+  "areas": [
+   {
+    "name": "Attica",
+    "title": "Attica and the Peloponnese",
+    "zones": [
+     "attiki",
+     "nemea",
+     "mantinia",
+     "monemvasia-malvasia",
+     "patras"
+    ],
+    "towns": []
+   }
+  ],
+  "panel2_subtitle": "Its wine zones",
+  "panel3_subtitle": "Its zone, drawn by municipality",
+  "covers": [
+   "greece/pgis",
+   "greece/robola-kefallinias",
+   "greece/aegean-islands",
+   "greece/mavrodafni-kefallinias",
+   "greece/playies-melitona",
+   "greece/moschato-patron",
+   "greece/mavrodafni-patron",
+   "greece/malvasia-candia",
+   "greece/moschato-kefallinias",
+   "greece/candia",
+   "greece/arhanes",
+   "greece/moschatos-riou-patras",
+   "greece/moschato-rodou",
+   "greece/moschatos-limnou",
+   "greece/dafnes",
+   "greece/mantinia",
+   "greece/epirus",
+   "greece/malvasia",
+   "greece/macedonia",
+   "greece/crete",
+   "greece/mesenikola",
+   "greece/thessaly",
+   "greece/peloponnese",
+   "greece/anchialos",
+   "greece/patra",
+   "greece/peza",
+   "greece/limnos",
+   "greece/amynteo",
+   "greece/rodos"
+  ]
+ },
+ "$why": "Not an EU PDO or PGI or a US AVA: a country, state, region, group or sub-zone, with no shape of its own in the map data. The places under it that draw stay covered."
+}

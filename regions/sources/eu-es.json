@@ -1,0 +1,1229 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Vinos de Madrid",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006981",
+"file": "PDO-ES-A1525"
+},
+{
+"path": [],
+"name": "Rioja",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003061",
+"file": "PDO-ES-A0117"
+},
+{
+"path": [],
+"name": "Penedès",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007127",
+"file": "PDO-ES-A1551"
+},
+{
+"path": [],
+"name": "La Mancha",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007644",
+"file": "PDO-ES-A0045"
+},
+{
+"path": [],
+"name": "Pla de Bages",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007322",
+"file": "PDO-ES-A1557"
+},
+{
+"path": [],
+"name": "Montsant",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007301",
+"file": "PDO-ES-A1550"
+},
+{
+"path": [],
+"name": "Arlanza",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005353",
+"file": "PDO-ES-A0613"
+},
+{
+"path": [],
+"name": "Tierra del Vino de Zamora",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005963",
+"file": "PDO-ES-A0634"
+},
+{
+"path": [],
+"name": "Sierra de Salamanca",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005943",
+"file": "PDO-ES-A0631"
+},
+{
+"path": [],
+"name": "Pago de Arínzano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005181",
+"file": "PDO-ES-A0183"
+},
+{
+"path": [],
+"name": "Navarra",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004841",
+"file": "PDO-ES-A0127"
+},
+{
+"path": [],
+"name": "Jerez-Xérès-Sherry",
+"also": [
+"Jerez",
+"Xérès",
+"Sherry"
+],
+"kind": "PDO",
+"id": "EUGI00000007002",
+"file": "PDO-ES-A1483"
+},
+{
+"path": [],
+"name": "Priorat",
+"also": [
+"Priorato"
+],
+"kind": "PDO",
+"id": "EUGI00000007131",
+"file": "PDO-ES-A1560"
+},
+{
+"path": [],
+"name": "Conca de Barberà",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007120",
+"file": "PDO-ES-A1422"
+},
+{
+"path": [],
+"name": "Manzanilla de Sanlúcar",
+"also": [
+"Manzanilla de Sanlúcar de Barrameda",
+"Manzanilla-Sanlúcar de Barrameda",
+"Manzanilla"
+],
+"kind": "PDO",
+"id": "EUGI00000007122",
+"file": "PDO-ES-A1482"
+},
+{
+"path": [],
+"name": "Dehesa Peñalba",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000016881",
+"file": "PDO-ES-02592"
+},
+{
+"path": [],
+"name": "Abadía Retuerta",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000016271",
+"file": "PDO-ES-02481"
+},
+{
+"path": [],
+"name": "Bierzo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005922",
+"file": "PDO-ES-A0615"
+},
+{
+"path": [],
+"name": "Ribera del Guadiana",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005462",
+"file": "PDO-ES-A1295"
+},
+{
+"path": [],
+"name": "Condado de Huelva",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006984",
+"file": "PDO-ES-A1485"
+},
+{
+"path": [],
+"name": "Binissalem",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006968",
+"file": "PDO-ES-A1056"
+},
+{
+"path": [],
+"name": "Almansa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007643",
+"file": "PDO-ES-A0044"
+},
+{
+"path": [],
+"name": "Pago de Otazu",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005185",
+"file": "PDO-ES-A0184"
+},
+{
+"path": [],
+"name": "Manchuela",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007645",
+"file": "PDO-ES-A0046"
+},
+{
+"path": [],
+"name": "Arribes",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005681",
+"file": "PDO-ES-A0614"
+},
+{
+"path": [],
+"name": "3 Riberas",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004885",
+"file": "PGI-ES-A0128"
+},
+{
+"path": [],
+"name": "Mallorca",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006828",
+"file": "PGI-ES-A0960"
+},
+{
+"path": [],
+"name": "Cava",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006393",
+"file": "PDO-ES-A0735"
+},
+{
+"path": [],
+"name": "Aylés",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007264",
+"file": "PDO-ES-A1522"
+},
+{
+"path": [],
+"name": "Pla i Llevant",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006910",
+"file": "PDO-ES-A1038"
+},
+{
+"path": [],
+"name": "Prado de Irache",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005012",
+"file": "PDO-ES-A0182"
+},
+{
+"path": [],
+"name": "Alella",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007117",
+"file": "PDO-ES-A1423"
+},
+{
+"path": [],
+"name": "Terra Alta",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007321",
+"file": "PDO-ES-A1556"
+},
+{
+"path": [],
+"name": "Uclés",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007649",
+"file": "PDO-ES-A0050"
+},
+{
+"path": [],
+"name": "Bolandin",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000012282",
+"file": "PDO-ES-N1876"
+},
+{
+"path": [],
+"name": "Campo de Calatrava",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000018857",
+"file": "PDO-ES-02870"
+},
+{
+"path": [],
+"name": "Castilla",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007661",
+"file": "PGI-ES-A0059"
+},
+{
+"path": [],
+"name": "Arabako Txakolina",
+"also": [
+"Txakoli de Álava",
+"Chacolí de Álava"
+],
+"kind": "PDO",
+"id": "EUGI00000006424",
+"file": "PDO-ES-A0732"
+},
+{
+"path": [],
+"name": "Cariñena",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007642",
+"file": "PDO-ES-A0043"
+},
+{
+"path": [],
+"name": "Ribeiras do Morrazo",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000015164",
+"file": "PGI-ES-02238"
+},
+{
+"path": [],
+"name": "Bizkaiko Txakolina",
+"also": [
+"Chacolí de Bizkaia",
+"Txakoli de Bizkaia"
+],
+"kind": "PDO",
+"id": "EUGI00000006542",
+"file": "PDO-ES-A0746"
+},
+{
+"path": [],
+"name": "Monterrei",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006622",
+"file": "PDO-ES-A1114"
+},
+{
+"path": [],
+"name": "Ribeiro",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006843",
+"file": "PDO-ES-A1123"
+},
+{
+"path": [],
+"name": "Getariako Txakolina",
+"also": [
+"Chacolí de Getaria",
+"Txakoli de Getaria"
+],
+"kind": "PDO",
+"id": "EUGI00000006487",
+"file": "PDO-ES-A0741"
+},
+{
+"path": [],
+"name": "Valencia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006603",
+"file": "PDO-ES-A0872"
+},
+{
+"path": [],
+"name": "Tharsys",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000019602",
+"file": "PDO-ES-02980"
+},
+{
+"path": [],
+"name": "Gran Canaria",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002981",
+"file": "PDO-ES-A0112"
+},
+{
+"path": [],
+"name": "Empordà",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007268",
+"file": "PDO-ES-A1548"
+},
+{
+"path": [],
+"name": "Rueda",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006442",
+"file": "PDO-ES-A0889"
+},
+{
+"path": [],
+"name": "Jumilla",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000002762",
+"file": "PDO-ES-A0109"
+},
+{
+"path": [],
+"name": "Isla de Menorca",
+"also": [
+"Illa de Menorca"
+],
+"kind": "PGI",
+"id": "EUGI00000006692",
+"file": "PGI-ES-A0870"
+},
+{
+"path": [],
+"name": "Ribeira Sacra",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006870",
+"file": "PDO-ES-A1128"
+},
+{
+"path": [],
+"name": "Costers del Segre",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007121",
+"file": "PDO-ES-A1523"
+},
+{
+"path": [],
+"name": "Río Negro",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000019772",
+"file": "PDO-ES-03003"
+},
+{
+"path": [],
+"name": "Tacoronte-Acentejo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003384",
+"file": "PDO-ES-A0115"
+},
+{
+"path": [],
+"name": "Campo de Borja",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005005",
+"file": "PDO-ES-A0180"
+},
+{
+"path": [],
+"name": "Lanzarote",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003225",
+"file": "PDO-ES-A0113"
+},
+{
+"path": [],
+"name": "Valdeorras",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006903",
+"file": "PDO-ES-A1132"
+},
+{
+"path": [],
+"name": "Granada",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007206",
+"file": "PDO-ES-A1475"
+},
+{
+"path": [],
+"name": "Rías Baixas",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006702",
+"file": "PDO-ES-A1119"
+},
+{
+"path": [],
+"name": "Barbanza e Iria",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007008",
+"file": "PGI-ES-A1255"
+},
+{
+"path": [],
+"name": "Los Balagueses",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006285",
+"file": "PDO-ES-A0941"
+},
+{
+"path": [],
+"name": "Sierras de Málaga",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007139",
+"file": "PDO-ES-A1480"
+},
+{
+"path": [],
+"name": "Cebreros",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000015257",
+"file": "PDO-ES-02348"
+},
+{
+"path": [],
+"name": "Toro",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006149",
+"file": "PDO-ES-A0886"
+},
+{
+"path": [],
+"name": "Dehesa del Carrizal",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007653",
+"file": "PDO-ES-A0054"
+},
+{
+"path": [],
+"name": "Urbezo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000016755",
+"file": "PDO-ES-02585"
+},
+{
+"path": [],
+"name": "Alicante",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006682",
+"file": "PDO-ES-A1526"
+},
+{
+"path": [],
+"name": "Formentera",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006707",
+"file": "PGI-ES-A0875"
+},
+{
+"path": [],
+"name": "Cataluña",
+"also": [
+"Catalunya"
+],
+"kind": "PDO",
+"id": "EUGI00000007115",
+"file": "PDO-ES-A1549"
+},
+{
+"path": [],
+"name": "Yecla",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006159",
+"file": "PDO-ES-A0606"
+},
+{
+"path": [],
+"name": "Rosalejo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000019059",
+"file": "PDO-ES-02880"
+},
+{
+"path": [],
+"name": "León",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005961",
+"file": "PDO-ES-A0882"
+},
+{
+"path": [],
+"name": "Calatayud",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005102",
+"file": "PDO-ES-A0247"
+},
+{
+"path": [],
+"name": "Tarragona",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007302",
+"file": "PDO-ES-A1555"
+},
+{
+"path": [],
+"name": "Utiel-Requena",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006601",
+"file": "PDO-ES-A0874"
+},
+{
+"path": [],
+"name": "Ribera del Duero",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005934",
+"file": "PDO-ES-A0626"
+},
+{
+"path": [],
+"name": "Finca Élez",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007652",
+"file": "PDO-ES-A0053"
+},
+{
+"path": [],
+"name": "Extremadura",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006245",
+"file": "PGI-ES-A1300"
+},
+{
+"path": [],
+"name": "Méntrida",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007646",
+"file": "PDO-ES-A0047"
+},
+{
+"path": [],
+"name": "Terras do Navia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000018111",
+"file": "PGI-ES-02787"
+},
+{
+"path": [],
+"name": "Mondéjar",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007647",
+"file": "PDO-ES-A0048"
+},
+{
+"path": [],
+"name": "Cigales",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005929",
+"file": "PDO-ES-A0622"
+},
+{
+"path": [],
+"name": "Urueña",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000016336",
+"file": "PDO-ES-02485"
+},
+{
+"path": [],
+"name": "Vallegarcía",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000014380",
+"file": "PDO-ES-02085"
+},
+{
+"path": [],
+"name": "Islas Canarias",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006964",
+"file": "PDO-ES-A1511"
+},
+{
+"path": [],
+"name": "Lebrija",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007202",
+"file": "PDO-ES-A1478"
+},
+{
+"path": [],
+"name": "Ribera del Júcar",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007648",
+"file": "PDO-ES-A0049"
+},
+{
+"path": [],
+"name": "Montilla-Moriles",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007201",
+"file": "PDO-ES-A1479"
+},
+{
+"path": [],
+"name": "Casa del Blanco",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007658",
+"file": "PDO-ES-A0060"
+},
+{
+"path": [],
+"name": "Los Cerrillos",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000015085",
+"file": "PDO-ES-02228"
+},
+{
+"path": [],
+"name": "La Jaraba",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000012845",
+"file": "PDO-ES-01895"
+},
+{
+"path": [],
+"name": "El Vicario",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007781",
+"file": "PDO-ES-N1634"
+},
+{
+"path": [],
+"name": "Castilla y León",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006824",
+"file": "PGI-ES-A0948"
+},
+{
+"path": [],
+"name": "Chozas Carrascal",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007821",
+"file": "PDO-ES-N1637"
+},
+{
+"path": [],
+"name": "Valdepeñas",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007650",
+"file": "PDO-ES-A0051"
+},
+{
+"path": [],
+"name": "Vera de Estenas",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000008543",
+"file": "PDO-ES-N1665"
+},
+{
+"path": [],
+"name": "Bullas",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006158",
+"file": "PDO-ES-A0536"
+},
+{
+"path": [],
+"name": "Castelló",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006693",
+"file": "PGI-ES-A1173"
+},
+{
+"path": [],
+"name": "Betanzos",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007114",
+"file": "PGI-ES-A1257"
+},
+{
+"path": [],
+"name": "Cangas",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004383",
+"file": "PDO-ES-A0119"
+},
+{
+"path": [],
+"name": "Valtiendas",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006155",
+"file": "PDO-ES-A0747"
+},
+{
+"path": [],
+"name": "Valle del Cinca",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004893",
+"file": "PGI-ES-A0181"
+},
+{
+"path": [],
+"name": "Murcia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006242",
+"file": "PGI-ES-A0608"
+},
+{
+"path": [],
+"name": "Bajo Aragón",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007143",
+"file": "PGI-ES-A1362"
+},
+{
+"path": [],
+"name": "Dominio de Valdepusa",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007651",
+"file": "PDO-ES-A0052"
+},
+{
+"path": [],
+"name": "Serra de Tramuntana-Costa Nord",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001964",
+"file": "PGI-ES-A0103"
+},
+{
+"path": [],
+"name": "La Gomera",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003122",
+"file": "PDO-ES-A0111"
+},
+{
+"path": [],
+"name": "Valle del Miño-Ourense",
+"also": [
+"Val do Miño-Ourense"
+],
+"kind": "PGI",
+"id": "EUGI00000007130",
+"file": "PGI-ES-A1259"
+},
+{
+"path": [],
+"name": "Los Palacios",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007102",
+"file": "PGI-ES-A1411"
+},
+{
+"path": [],
+"name": "Liébana",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005105",
+"file": "PGI-ES-A0130"
+},
+{
+"path": [],
+"name": "Villaviciosa de Córdoba",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007138",
+"file": "PGI-ES-A1419"
+},
+{
+"path": [],
+"name": "Ribera del Andarax",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007112",
+"file": "PGI-ES-A1414"
+},
+{
+"path": [],
+"name": "Costa de Cantabria",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005022",
+"file": "PGI-ES-A0129"
+},
+{
+"path": [],
+"name": "Ibiza",
+"also": [
+"Eivissa"
+],
+"kind": "PGI",
+"id": "EUGI00000002931",
+"file": "PGI-ES-A0110"
+},
+{
+"path": [],
+"name": "Sierra Norte de Sevilla",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007113",
+"file": "PGI-ES-A1415"
+},
+{
+"path": [],
+"name": "Sierras de Las Estancias y Los Filabres",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007128",
+"file": "PGI-ES-A1417"
+},
+{
+"path": [],
+"name": "Valles de Benavente",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006153",
+"file": "PDO-ES-A0646"
+},
+{
+"path": [],
+"name": "Córdoba",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006865",
+"file": "PGI-ES-A1406"
+},
+{
+"path": [],
+"name": "Valle de la Orotava",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006873",
+"file": "PDO-ES-A1040"
+},
+{
+"path": [],
+"name": "Valles de Sadacia",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005142",
+"file": "PGI-ES-A0511"
+},
+{
+"path": [],
+"name": "Ribera del Queiles",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000001361",
+"file": "PGI-ES-A0083"
+},
+{
+"path": [],
+"name": "Bailén",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006243",
+"file": "PGI-ES-A1404"
+},
+{
+"path": [],
+"name": "Ycoden-Daute-Isora",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003481",
+"file": "PDO-ES-A0114"
+},
+{
+"path": [],
+"name": "Desierto de Almería",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006983",
+"file": "PGI-ES-A1408"
+},
+{
+"path": [],
+"name": "Abona",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006829",
+"file": "PDO-ES-A0975"
+},
+{
+"path": [],
+"name": "Illes Balears",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006823",
+"file": "PGI-ES-A0947"
+},
+{
+"path": [],
+"name": "El Terrerazo",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006249",
+"file": "PDO-ES-A0940"
+},
+{
+"path": [],
+"name": "Ribera del Gállego - Cinco Villas",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005342",
+"file": "PGI-ES-A0245"
+},
+{
+"path": [],
+"name": "Calzadilla",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007655",
+"file": "PDO-ES-A0056"
+},
+{
+"path": [],
+"name": "Guijoso",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007657",
+"file": "PDO-ES-A0058"
+},
+{
+"path": [],
+"name": "Valle de Güímar",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006868",
+"file": "PDO-ES-A0980"
+},
+{
+"path": [],
+"name": "Laderas del Genil",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007005",
+"file": "PGI-ES-A1409"
+},
+{
+"path": [],
+"name": "Ribera del Jiloca",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005348",
+"file": "PGI-ES-A0244"
+},
+{
+"path": [],
+"name": "Somontano",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000005662",
+"file": "PDO-ES-A0534"
+},
+{
+"path": [],
+"name": "Sierra Sur de Jaén",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007119",
+"file": "PGI-ES-A1416"
+},
+{
+"path": [],
+"name": "Campo de La Guardia",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007654",
+"file": "PDO-ES-A0055"
+},
+{
+"path": [],
+"name": "Cádiz",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006582",
+"file": "PGI-ES-A1405"
+},
+{
+"path": [],
+"name": "Campo de Cartagena",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006221",
+"file": "PGI-ES-A0607"
+},
+{
+"path": [],
+"name": "Málaga",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007135",
+"file": "PDO-ES-A1481"
+},
+{
+"path": [],
+"name": "El Hierro",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000006861",
+"file": "PDO-ES-A1250"
+},
+{
+"path": [],
+"name": "Laujar-Alpujarra",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007061",
+"file": "PGI-ES-A1410"
+},
+{
+"path": [],
+"name": "Norte de Almería",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007105",
+"file": "PGI-ES-A1412"
+},
+{
+"path": [],
+"name": "Cumbres del Guadalfeo",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006869",
+"file": "PGI-ES-A1407"
+},
+{
+"path": [],
+"name": "Pago Florentino",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007656",
+"file": "PDO-ES-A0057"
+},
+{
+"path": [],
+"name": "Torreperogil",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000007132",
+"file": "PGI-ES-A1418"
+},
+{
+"path": [],
+"name": "Altiplano de Sierra Nevada",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006222",
+"file": "PGI-ES-A1402"
+},
+{
+"path": [],
+"name": "Valdejalón",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005350",
+"file": "PGI-ES-A0246"
+},
+{
+"path": [],
+"name": "La Palma",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003901",
+"file": "PDO-ES-A0510"
+}
+]
+}

@@ -1,0 +1,185 @@
+{
+"source": {
+"title": "IPONZ, New Zealand Geographical Indications Register (export)",
+"url": "https://www.iponz.govt.nz/get-ip/geographical-indications/register/",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "North Island",
+"kind": "enduring GI"
+},
+{
+"path": [],
+"name": "South Island",
+"kind": "enduring GI"
+},
+{
+"path": [
+"North Island"
+],
+"name": "Northland",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"North Island"
+],
+"name": "Auckland",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"North Island",
+"Auckland"
+],
+"name": "Matakana",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"North Island",
+"Auckland"
+],
+"name": "Kumeu",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"North Island",
+"Auckland"
+],
+"name": "Waiheke Island",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"North Island"
+],
+"name": "Gisborne",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"North Island"
+],
+"name": "Hawke’s Bay",
+"also": [
+"Hawkes Bay"
+],
+"kind": "GI"
+},
+{
+"path": [
+"North Island"
+],
+"name": "Central Hawke's Bay",
+"also": [
+"Central Hawkes Bay"
+],
+"kind": "GI"
+},
+{
+"path": [
+"North Island"
+],
+"name": "Wairarapa",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"North Island"
+],
+"name": "Gladstone",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"North Island"
+],
+"name": "Martinborough",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"South Island"
+],
+"name": "Nelson",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"South Island"
+],
+"name": "Marlborough",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"South Island"
+],
+"name": "Canterbury",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"South Island",
+"Canterbury"
+],
+"name": "North Canterbury",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"South Island",
+"Canterbury"
+],
+"name": "Waipara Valley",
+"also": [
+"Waipara"
+],
+"kind": "GI"
+},
+{
+"path": [
+"South Island"
+],
+"name": "Waitaki Valley North Otago",
+"also": [
+"Waitaki Valley"
+],
+"kind": "GI"
+},
+{
+"path": [
+"South Island"
+],
+"name": "Central Otago",
+"also": [],
+"kind": "GI"
+},
+{
+"path": [
+"South Island"
+],
+"name": "Bannockburn",
+"also": [],
+"kind": "GI"
+}
+]
+}

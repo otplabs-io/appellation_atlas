@@ -1,0 +1,380 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Sachsen",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004665",
+"file": "PDO-DE-A1277"
+},
+{
+"path": [],
+"name": "Rheingauer Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004702",
+"file": "PGI-DE-A1299"
+},
+{
+"path": [],
+"name": "Rheinhessen",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004654",
+"file": "PDO-DE-A1274"
+},
+{
+"path": [],
+"name": "Landwein Main",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004686",
+"file": "PGI-DE-A1282"
+},
+{
+"path": [],
+"name": "Württemberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004656",
+"file": "PDO-DE-A1276"
+},
+{
+"path": [],
+"name": "Schwäbischer Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004707",
+"file": "PGI-DE-A1305"
+},
+{
+"path": [],
+"name": "Mosel",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004648",
+"file": "PDO-DE-A1270"
+},
+{
+"path": [],
+"name": "Rheinburgen-Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004701",
+"file": "PGI-DE-A1298"
+},
+{
+"path": [],
+"name": "Pfälzer Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004698",
+"file": "PGI-DE-A1294"
+},
+{
+"path": [],
+"name": "Mittelrhein",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004647",
+"file": "PDO-DE-A1269"
+},
+{
+"path": [],
+"name": "Nahe",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004650",
+"file": "PDO-DE-A1271"
+},
+{
+"path": [],
+"name": "Pfalz",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004651",
+"file": "PDO-DE-A1272"
+},
+{
+"path": [],
+"name": "Baden",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004643",
+"file": "PDO-DE-A1264"
+},
+{
+"path": [],
+"name": "Landwein der Mosel",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004687",
+"file": "PGI-DE-A1283"
+},
+{
+"path": [],
+"name": "Landwein der Ruwer",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004692",
+"file": "PGI-DE-A1288"
+},
+{
+"path": [],
+"name": "Franken",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004645",
+"file": "PDO-DE-A1267"
+},
+{
+"path": [],
+"name": "Landwein der Saar",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004693",
+"file": "PGI-DE-A1289"
+},
+{
+"path": [],
+"name": "Nahegauer Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004697",
+"file": "PGI-DE-A1293"
+},
+{
+"path": [],
+"name": "Monzinger Niederberg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000015112",
+"file": "PDO-DE-02363"
+},
+{
+"path": [],
+"name": "Mecklenburger Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004694",
+"file": "PGI-DE-A1290"
+},
+{
+"path": [],
+"name": "Saale-Unstrut",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004655",
+"file": "PDO-DE-A1275"
+},
+{
+"path": [],
+"name": "Sächsischer Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004705",
+"file": "PGI-DE-A1303"
+},
+{
+"path": [],
+"name": "Rheinischer Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004703",
+"file": "PGI-DE-A1301"
+},
+{
+"path": [],
+"name": "Schleswig-Holsteinischer Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004706",
+"file": "PGI-DE-A1304"
+},
+{
+"path": [],
+"name": "Saarländischer Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004704",
+"file": "PGI-DE-A1302"
+},
+{
+"path": [],
+"name": "Großräschener See",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000016011",
+"file": "PGI-DE-02660"
+},
+{
+"path": [],
+"name": "Uhlen Blaufüsser Lay",
+"also": [
+"Uhlen Blaufüßer Lay"
+],
+"kind": "PDO",
+"id": "EUGI00000014254",
+"file": "PDO-DE-02081"
+},
+{
+"path": [],
+"name": "Uhlen Laubach",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000014262",
+"file": "PDO-DE-02082"
+},
+{
+"path": [],
+"name": "Uhlen Roth Lay",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000014263",
+"file": "PDO-DE-02083"
+},
+{
+"path": [],
+"name": "Würzburger Stein-Berg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000015827",
+"file": "PDO-DE-02403"
+},
+{
+"path": [],
+"name": "Taubertäler Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004709",
+"file": "PGI-DE-A1307"
+},
+{
+"path": [],
+"name": "Landwein Rhein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004690",
+"file": "PGI-DE-A1286"
+},
+{
+"path": [],
+"name": "Ahrtaler Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004681",
+"file": "PGI-DE-A1278"
+},
+{
+"path": [],
+"name": "Starkenburger Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004708",
+"file": "PGI-DE-A1306"
+},
+{
+"path": [],
+"name": "Hessische Bergstraße",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004646",
+"file": "PDO-DE-A1268"
+},
+{
+"path": [],
+"name": "Bayerischer Bodensee-Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004683",
+"file": "PGI-DE-A1280"
+},
+{
+"path": [],
+"name": "Rheingau",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000004653",
+"file": "PDO-DE-A1273"
+},
+{
+"path": [],
+"name": "Bürgstadter Berg",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000010582",
+"file": "PDO-DE-N1822"
+},
+{
+"path": [],
+"name": "Landwein Rhein-Neckar",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004691",
+"file": "PGI-DE-A1287"
+},
+{
+"path": [],
+"name": "Mitteldeutscher Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004696",
+"file": "PGI-DE-A1291"
+},
+{
+"path": [],
+"name": "Badischer Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004682",
+"file": "PGI-DE-A1279"
+},
+{
+"path": [],
+"name": "Brandenburger Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004685",
+"file": "PGI-DE-A1281"
+},
+{
+"path": [],
+"name": "Ahr",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000003386",
+"file": "PDO-DE-A0867"
+},
+{
+"path": [],
+"name": "Regensburger Landwein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004700",
+"file": "PGI-DE-A1296"
+},
+{
+"path": [],
+"name": "Landwein Neckar",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004688",
+"file": "PGI-DE-A1284"
+},
+{
+"path": [],
+"name": "Landwein Oberrhein",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000004689",
+"file": "PGI-DE-A1285"
+}
+]
+}

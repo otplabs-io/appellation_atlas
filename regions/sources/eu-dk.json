@@ -1,0 +1,50 @@
+{
+"source": {
+"title": "eAmbrosia, the EU geographical indications register: registered wine names",
+"url": "https://webgate.ec.europa.eu/eambrosia-api/api/geographical-indications",
+"tier": "official",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Dons",
+"also": [],
+"kind": "PDO",
+"id": "EUGI00000007701",
+"file": "PDO-DK-N1635"
+},
+{
+"path": [],
+"name": "Bornholm",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006723",
+"file": "PGI-DK-A1249"
+},
+{
+"path": [],
+"name": "Jylland",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005401",
+"file": "PGI-DK-A1247"
+},
+{
+"path": [],
+"name": "Sjælland",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000005002",
+"file": "PGI-DK-A1245"
+},
+{
+"path": [],
+"name": "Fyn",
+"also": [],
+"kind": "PGI",
+"id": "EUGI00000006444",
+"file": "PGI-DK-A1248"
+}
+]
+}

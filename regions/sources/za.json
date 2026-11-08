@@ -1,0 +1,809 @@
+{
+"source": {
+"title": "Wikipedia, Wine regions of South Africa (summary of the Wine of Origin scheme)",
+"url": "https://en.wikipedia.org/wiki/Wine_regions_of_South_Africa",
+"revision": 1340548421,
+"tier": "secondary",
+"note": "SAWIS, the official source, failed to load (TLS error) on 2026-11-03.",
+"pulled": "2026-11-03"
+},
+"entries": [
+{
+"path": [],
+"name": "Western Cape",
+"kind": "geographical unit"
+},
+{
+"path": [
+"Western Cape"
+],
+"name": "Breede River Valley",
+"kind": "region"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley"
+],
+"name": "Breedekloof",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Breedekloof"
+],
+"name": "Goudini",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Breedekloof"
+],
+"name": "Slanghoek",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Breedekloof"
+],
+"name": "Scherpenheuvel",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley"
+],
+"name": "Robertson",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Robertson"
+],
+"name": "Agterkliphoogte",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Robertson"
+],
+"name": "Bonnievale",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Robertson"
+],
+"name": "Boesmansrivier",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Robertson"
+],
+"name": "Eilandia",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Robertson"
+],
+"name": "Hoopsrivier",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Robertson"
+],
+"name": "Klaasvoogds",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Robertson"
+],
+"name": "Le Chasseur",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Robertson"
+],
+"name": "McGregor",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Breede River Valley",
+"Robertson"
+],
+"name": "Vinkrivier",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape"
+],
+"name": "Cape South Coast",
+"kind": "region"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast"
+],
+"name": "Cape Agulhas",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Cape Agulhas"
+],
+"name": "Elim",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast"
+],
+"name": "Overberg",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Overberg"
+],
+"name": "Elgin",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Overberg"
+],
+"name": "Greyton",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Overberg"
+],
+"name": "Klein Rivier",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Overberg"
+],
+"name": "Theewater",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast"
+],
+"name": "Plettenberg Bay",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast"
+],
+"name": "Swellendam",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Swellendam"
+],
+"name": "Buffeljags",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Swellendam"
+],
+"name": "Malgas",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Swellendam"
+],
+"name": "Stormsvlei",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast"
+],
+"name": "Walker Bay",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Walker Bay"
+],
+"name": "Bot River",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Walker Bay"
+],
+"name": "Hemel-en-Aarde Ridge",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Walker Bay"
+],
+"name": "Hemel-en-Aarde Valley",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Walker Bay"
+],
+"name": "Sunday's Glen",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast",
+"Walker Bay"
+],
+"name": "Upper Hemel-en-Aarde Valley",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast"
+],
+"name": "Herbertsdale",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Cape South Coast"
+],
+"name": "Stilbaai East",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape"
+],
+"name": "Coastal Region",
+"kind": "region"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region"
+],
+"name": "Cape Peninsula",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region"
+],
+"name": "Darling",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Darling"
+],
+"name": "Groenekloof",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region"
+],
+"name": "Franschhoek/Franschhoek Valley",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region"
+],
+"name": "Paarl",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Paarl"
+],
+"name": "Simonsberg-Paarl",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Paarl"
+],
+"name": "Voor Paardeberg",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Paarl"
+],
+"name": "Wellington",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region"
+],
+"name": "Stellenbosch",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Stellenbosch"
+],
+"name": "Banghoek",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Stellenbosch"
+],
+"name": "Bottelary",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Stellenbosch"
+],
+"name": "Devon Valley",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Stellenbosch"
+],
+"name": "Jonkershoek Valley",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Stellenbosch"
+],
+"name": "Papegaaiberg",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Stellenbosch"
+],
+"name": "Polkadraai Hills",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Stellenbosch"
+],
+"name": "Simonsberg-Stellenbosch",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region"
+],
+"name": "Swartland",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Swartland"
+],
+"name": "Malmesbury",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Swartland"
+],
+"name": "Riebeekberg",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region"
+],
+"name": "Tulbagh",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region"
+],
+"name": "Tygerberg",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Tygerberg"
+],
+"name": "Durbanville",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region",
+"Tygerberg"
+],
+"name": "Philadelphia",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region"
+],
+"name": "Wellington",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region"
+],
+"name": "Constantia",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Coastal Region"
+],
+"name": "Hout Bay",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape"
+],
+"name": "Klein Karoo",
+"kind": "region"
+},
+{
+"path": [
+"Western Cape",
+"Klein Karoo"
+],
+"name": "Calitzdorp",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Klein Karoo"
+],
+"name": "Langeberg-Garcia",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Klein Karoo"
+],
+"name": "Montagu",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Klein Karoo"
+],
+"name": "Tradouw",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Klein Karoo"
+],
+"name": "Tradouw Highlands",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Klein Karoo"
+],
+"name": "Outeniqua",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Klein Karoo"
+],
+"name": "Upper Langkloof",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape"
+],
+"name": "Olifants River",
+"kind": "region"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River"
+],
+"name": "Citrusdal Mountain",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River",
+"Citrusdal Mountain"
+],
+"name": "Piekenierskloof",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River"
+],
+"name": "Citrusdal Valley",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River"
+],
+"name": "Lutzville Valley",
+"kind": "district"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River",
+"Lutzville Valley"
+],
+"name": "Koekenaap",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River"
+],
+"name": "Bamboes Bay",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River"
+],
+"name": "Spruitdrift",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River"
+],
+"name": "Vredendal",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River"
+],
+"name": "Cederberg",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River"
+],
+"name": "Ceres",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River"
+],
+"name": "Lamberts Bay",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River"
+],
+"name": "Prince Albert Valley",
+"kind": "ward"
+},
+{
+"path": [
+"Western Cape",
+"Olifants River"
+],
+"name": "Swartberg",
+"kind": "ward"
+},
+{
+"path": [],
+"name": "Northern Cape",
+"kind": "geographical unit"
+},
+{
+"path": [
+"Northern Cape"
+],
+"name": "Douglas",
+"kind": "district"
+},
+{
+"path": [
+"Northern Cape",
+"Douglas"
+],
+"name": "Hartswater",
+"kind": "ward"
+},
+{
+"path": [
+"Northern Cape",
+"Douglas"
+],
+"name": "Central Orange River",
+"kind": "ward"
+},
+{
+"path": [
+"Northern Cape",
+"Douglas"
+],
+"name": "Rietrivier FS",
+"kind": "ward"
+},
+{
+"path": [
+"Northern Cape"
+],
+"name": "Sutherland-Karoo",
+"kind": "district"
+},
+{
+"path": [],
+"name": "Eastern Cape",
+"kind": "geographical unit"
+},
+{
+"path": [
+"Eastern Cape"
+],
+"name": "St Francis Bay",
+"kind": "ward"
+},
+{
+"path": [],
+"name": "Free State | | |",
+"kind": "geographical unit"
+},
+{
+"path": [],
+"name": "KwaZulu-Natal",
+"kind": "geographical unit"
+},
+{
+"path": [],
+"name": "Limpopo",
+"kind": "geographical unit"
+},
+{
+"path": [],
+"name": "North-West Province | | |",
+"kind": "geographical unit"
+}
+]
+}
