@@ -3,12 +3,37 @@ import Foundation
 // Words and scales the website writes in web/atlas.js. Keep the two in step: a change to one is a change to both.
 
 enum Copy {
+    /// A rock family's share in words: it comes from a few map points, so a percentage would claim too much (rockShare in web/atlas.js).
+    static func share(_ v: Double) -> String { v >= 0.5 ? "mostly" : v >= 0.25 ? "much" : "some" }
+
+    /// The grapes left out of what is planted because they are not wine grapes (leftOut in web/atlas.js).
+    static func leftOut(_ left: JSON) -> String {
+        func and(_ xs: [String]) -> String { xs.count > 1 ? xs.dropLast().joined(separator: ", ") + " and " + xs.last! : xs.first ?? "" }
+        var out = ""
+        let juice = left["juice"].strings, table = left["table"].strings
+        if !juice.isEmpty { out += " Juice grapes are left out: \(and(juice))." }
+        if !table.isEmpty { out += " Table grapes are left out: \(and(table))." }
+        return out
+    }
+
+    /// Notes on the rules facts (COPY in web/atlas.js).
+    enum Rules {
+        static let baseYield = "the yield its rules set; some years a little more is allowed"
+        static let yieldCeiling = "the most its rules allow in any year; the usual limit is lower"
+        static let yieldLimit = "the highest the rules allow"
+        static let recognised = "the year it was first recognised"
+        static let noShares = "The record lists the grapes allowed, not their shares."
+    }
+
     static let worldIntro = [
         "Benchmark regions, in gold, are the ones the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest.",
         "Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.",
     ]
 
-    static func worldCount(_ n: Int) -> String { "Every wine country, region and appellation we have, \(fmt(Double(n))) places in all." }
+    static let homeTitle = "Explore the world\u{2019}s wine places"
+    static func worldCount(_ n: Int) -> String {
+        "Every wine country, region and appellation we have, \(fmt(Double(n))) places in all. Pick a country on the globe to start, or search for one."
+    }
 
     static let shapeNote: [String: String] = [
         "Eurostat NUTS, the area it is named for": "The map draws the department, province or region it is named for. The PGI\u{2019}s own area can differ a little.",

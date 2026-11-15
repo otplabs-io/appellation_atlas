@@ -116,7 +116,6 @@
     "united-states/coombsville",
     "united-states/atlas-peak",
     "united-states/howell-mountain",
-    "united-states/mount-veeder",
     "united-states/spring-mountain-district",
     "united-states/diamond-mountain-district",
     "united-states/los-carneros",
@@ -286,15 +285,6 @@
    ],
    "cfr": "9.94",
    "path": "united-states/california/napa-valley/howell-mountain",
-   "children": []
-  },
-  "united-states/mount-veeder": {
-   "id": "united-states/mount-veeder",
-   "name": "Mount Veeder",
-   "parent": "united-states/napa-valley",
-   "depth": 3,
-   "source": "chris",
-   "path": "united-states/california/napa-valley/mount-veeder",
    "children": []
   },
   "united-states/spring-mountain-district": {
@@ -23934,7 +23924,10 @@
    ],
    "cfr": "9.123",
    "path": "united-states/california/napa-valley/mt-veeder",
-   "children": []
+   "children": [],
+   "also": [
+    "Mount Veeder"
+   ]
   },
   "united-states/paso-robles-willow-creek-district": {
    "id": "united-states/paso-robles-willow-creek-district",
@@ -39889,7 +39882,6 @@
     "armenia/tavush-province",
     "armenia/vayots-dzor-province",
     "armenia/yerevan",
-    "armenia/republic-of-artsakh",
     "armenia/ararat-valley",
     "armenia/areni",
     "armenia/armavir",
@@ -40028,19 +40020,6 @@
     "w-armenia"
    ],
    "path": "armenia/yerevan",
-   "children": []
-  },
-  "armenia/republic-of-artsakh": {
-   "id": "armenia/republic-of-artsakh",
-   "name": "Republic of Artsakh",
-   "parent": "armenia",
-   "depth": 1,
-   "source": "w-armenia",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "path": "armenia/republic-of-artsakh",
    "children": []
   },
   "armenia/ararat-valley": {
@@ -40439,7 +40418,12 @@
    ],
    "path": "mexico/baja-california",
    "children": [
-    "mexico/valle-de-guadalupe"
+    "mexico/valle-de-guadalupe",
+    "mexico/valle-de-calafia",
+    "mexico/valle-de-mexicali",
+    "mexico/valle-de-san-vicente",
+    "mexico/valle-de-santo-tomas",
+    "mexico/zona-tecate"
    ]
   },
   "mexico/valle-de-guadalupe": {
@@ -40453,77 +40437,71 @@
     "region"
    ],
    "path": "mexico/baja-california/valle-de-guadalupe",
-   "children": [
-    "mexico/valle-de-calafia",
-    "mexico/valle-de-mexicali",
-    "mexico/valle-de-san-vicente",
-    "mexico/valle-de-santo-tomas",
-    "mexico/zona-tecate"
-   ]
+   "children": []
   },
   "mexico/valle-de-calafia": {
    "id": "mexico/valle-de-calafia",
    "name": "Valle de Calafia",
-   "parent": "mexico/valle-de-guadalupe",
-   "depth": 3,
+   "parent": "mexico/baja-california",
+   "depth": 2,
    "source": "w-mexico",
    "kind": "region",
    "official": [
     "region"
    ],
-   "path": "mexico/baja-california/valle-de-guadalupe/valle-de-calafia",
+   "path": "mexico/baja-california/valle-de-calafia",
    "children": []
   },
   "mexico/valle-de-mexicali": {
    "id": "mexico/valle-de-mexicali",
    "name": "Valle de Mexicali",
-   "parent": "mexico/valle-de-guadalupe",
-   "depth": 3,
+   "parent": "mexico/baja-california",
+   "depth": 2,
    "source": "w-mexico",
    "kind": "region",
    "official": [
     "region"
    ],
-   "path": "mexico/baja-california/valle-de-guadalupe/valle-de-mexicali",
+   "path": "mexico/baja-california/valle-de-mexicali",
    "children": []
   },
   "mexico/valle-de-san-vicente": {
    "id": "mexico/valle-de-san-vicente",
    "name": "Valle de San Vicente",
-   "parent": "mexico/valle-de-guadalupe",
-   "depth": 3,
+   "parent": "mexico/baja-california",
+   "depth": 2,
    "source": "w-mexico",
    "kind": "region",
    "official": [
     "region"
    ],
-   "path": "mexico/baja-california/valle-de-guadalupe/valle-de-san-vicente",
+   "path": "mexico/baja-california/valle-de-san-vicente",
    "children": []
   },
   "mexico/valle-de-santo-tomas": {
    "id": "mexico/valle-de-santo-tomas",
    "name": "Valle de Santo Tomás",
-   "parent": "mexico/valle-de-guadalupe",
-   "depth": 3,
+   "parent": "mexico/baja-california",
+   "depth": 2,
    "source": "w-mexico",
    "kind": "region",
    "official": [
     "region"
    ],
-   "path": "mexico/baja-california/valle-de-guadalupe/valle-de-santo-tomas",
+   "path": "mexico/baja-california/valle-de-santo-tomas",
    "children": []
   },
   "mexico/zona-tecate": {
    "id": "mexico/zona-tecate",
    "name": "Zona Tecate",
-   "parent": "mexico/valle-de-guadalupe",
-   "depth": 3,
+   "parent": "mexico/baja-california",
+   "depth": 2,
    "source": "w-mexico",
    "kind": "region",
    "official": [
     "region"
    ],
-   "path": "mexico/baja-california/valle-de-guadalupe/zona-tecate",
+   "path": "mexico/baja-california/zona-tecate",
    "children": []
   },
   "mexico/coahuila": {
@@ -40733,8 +40711,7 @@
    ],
    "path": "mexico/sonora",
    "children": [
-    "mexico/caborca",
-    "mexico/hermosillo"
+    "mexico/caborca"
    ]
   },
   "mexico/caborca": {
@@ -40748,19 +40725,6 @@
     "region"
    ],
    "path": "mexico/sonora/caborca",
-   "children": []
-  },
-  "mexico/hermosillo": {
-   "id": "mexico/hermosillo",
-   "name": "Hermosillo",
-   "parent": "mexico/sonora",
-   "depth": 2,
-   "source": "w-mexico",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "path": "mexico/sonora/hermosillo",
    "children": []
   },
   "mexico/zacatecas": {
@@ -41104,345 +41068,6 @@
    "depth": 0,
    "source": "added",
    "path": "turkey",
-   "children": [
-    "turkey/yazgan-winery"
-   ]
-  },
-  "turkey/yazgan-winery": {
-   "id": "turkey/yazgan-winery",
-   "name": "Yazgan Winery",
-   "parent": "turkey",
-   "depth": 1,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "path": "turkey/yazgan-winery",
-   "children": [
-    "turkey/altntas",
-    "turkey/beylerce",
-    "turkey/bornova-misketi",
-    "turkey/emir",
-    "turkey/hasandede",
-    "turkey/narince",
-    "turkey/rumi",
-    "turkey/sultaniye",
-    "turkey/yapncak",
-    "turkey/adakaras",
-    "turkey/bogazkere",
-    "turkey/calkaras",
-    "turkey/dimrit",
-    "turkey/horozkaras",
-    "turkey/kalecik-karas",
-    "turkey/karalahna",
-    "turkey/karasakz",
-    "turkey/okuzgozu",
-    "turkey/papazkaras"
-   ]
-  },
-  "turkey/altntas": {
-   "id": "turkey/altntas",
-   "name": "Altıntaş",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/altntas",
-   "children": []
-  },
-  "turkey/beylerce": {
-   "id": "turkey/beylerce",
-   "name": "Beylerce",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/beylerce",
-   "children": []
-  },
-  "turkey/bornova-misketi": {
-   "id": "turkey/bornova-misketi",
-   "name": "Bornova Misketi",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/bornova-misketi",
-   "children": []
-  },
-  "turkey/emir": {
-   "id": "turkey/emir",
-   "name": "Emir",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/emir",
-   "children": []
-  },
-  "turkey/hasandede": {
-   "id": "turkey/hasandede",
-   "name": "Hasandede",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/hasandede",
-   "children": []
-  },
-  "turkey/narince": {
-   "id": "turkey/narince",
-   "name": "Narince",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/narince",
-   "children": []
-  },
-  "turkey/rumi": {
-   "id": "turkey/rumi",
-   "name": "Rumi",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/rumi",
-   "children": []
-  },
-  "turkey/sultaniye": {
-   "id": "turkey/sultaniye",
-   "name": "Sultaniye",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/sultaniye",
-   "children": []
-  },
-  "turkey/yapncak": {
-   "id": "turkey/yapncak",
-   "name": "Yapıncak",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/yapncak",
-   "children": []
-  },
-  "turkey/adakaras": {
-   "id": "turkey/adakaras",
-   "name": "Adakarası",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/adakaras",
-   "children": []
-  },
-  "turkey/bogazkere": {
-   "id": "turkey/bogazkere",
-   "name": "Boğazkere",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/bogazkere",
-   "children": []
-  },
-  "turkey/calkaras": {
-   "id": "turkey/calkaras",
-   "name": "Çalkarası",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/calkaras",
-   "children": []
-  },
-  "turkey/dimrit": {
-   "id": "turkey/dimrit",
-   "name": "Dimrit",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/dimrit",
-   "children": []
-  },
-  "turkey/horozkaras": {
-   "id": "turkey/horozkaras",
-   "name": "Horozkarası",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/horozkaras",
-   "children": []
-  },
-  "turkey/kalecik-karas": {
-   "id": "turkey/kalecik-karas",
-   "name": "Kalecik Karası",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/kalecik-karas",
-   "children": []
-  },
-  "turkey/karalahna": {
-   "id": "turkey/karalahna",
-   "name": "Karalahna",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/karalahna",
-   "children": []
-  },
-  "turkey/karasakz": {
-   "id": "turkey/karasakz",
-   "name": "Karasakız",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/karasakz",
-   "children": []
-  },
-  "turkey/okuzgozu": {
-   "id": "turkey/okuzgozu",
-   "name": "Öküzgözü",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/okuzgozu",
-   "children": []
-  },
-  "turkey/papazkaras": {
-   "id": "turkey/papazkaras",
-   "name": "Papazkarası",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/papazkaras",
    "children": []
   },
   "ukraine": {

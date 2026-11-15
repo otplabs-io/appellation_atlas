@@ -1,0 +1,110 @@
+{
+ "france": {
+  "facts": [
+   "Vin de France replaced Vin de Table and allows the grape variety and vintage to be shown on the label.",
+   "IGP basically replaced Vin de Pays, and former VDQS wines had to qualify as AOP or be downgraded to IGP.",
+   "If a single varietal name is used on a French label, the wine must be made from a minimum of 85% of that variety."
+  ]
+ },
+ "france/alsace": {
+  "facts": [
+   "The Vosges mountains shelter Alsace from rain and maritime influence, so the region is rather dry and sunny.",
+   "Vendange Tardive (VT) and Sélection de Grains Nobles (SGN) have been late harvest designations since 1983, and SGN means grapes affected by noble rot.",
+   "Minimum must weights are 235 g/L for Riesling VT and 276 g/L for Riesling SGN, and 257 g/L and 306 g/L for Pinot Gris and Gewürztraminer.",
+   "Alsace wine must legally be bottled in tall bottles called flûtes d'Alsace, known in the AOC rules as the vin du Rhin bottle."
+  ]
+ },
+ "france/beaujolais": {
+  "facts": [
+   "Red Beaujolais is made from Gamay, often by semi-carbonic maceration, with whole clusters fermenting in cement or stainless steel tanks, which gives a fruity wine without much tannin.",
+   "There are three tiers: Beaujolais AOC, Beaujolais-Villages AOC covering 39 communes in the north, and Cru Beaujolais with ten villages or areas.",
+   "From north to south the ten crus are Saint-Amour, Juliénas, Chénas, Moulin-à-Vent, Fleurie, Chiroubles, Morgon, Régnié, Brouilly and Côte de Brouilly."
+  ]
+ },
+ "france/bordeaux": {
+  "facts": [
+   "The Gironde estuary and the Garonne and Dordogne rivers give Bordeaux an Atlantic climate, and the best vineyards sit on well-drained gravel soils near the Gironde.",
+   "Château Mouton Rothschild was promoted from second to first growth in 1973, and Château d'Yquem is the only superior first growth of Sauternes.",
+   "Saint-Émilion was classified in 1955 and is updated about every ten years, Graves in 1953 and 1959, and Pomerol has no official classification."
+  ]
+ },
+ "france/burgundy": {
+  "facts": [
+   "Burgundy classifications follow geography, not producers, with four levels from regional and village to Premier Cru and Grand Cru.",
+   "Delineating vineyards by terroir goes back to medieval times, and the climats of Burgundy are on the UNESCO World Heritage List.",
+   "The most famous wines are dry reds from Pinot noir and whites from Chardonnay, with Gamay and Aligoté also grown."
+  ]
+ },
+ "france/chablis": {
+  "facts": [
+   "Chablis has four levels: Petit Chablis, Chablis, Premier Cru and Grand Cru, with Chablis AOC designated in 1938 and Petit Chablis in 1944.",
+   "Chablis must be made from Chardonnay alone, and typically shows much less oak influence than the white wines of the rest of Burgundy.",
+   "All Grand Cru and Premier Cru vineyards are on Kimmeridgean soil, which gives a mineral, flinty note, while most Petit Chablis is on younger Portlandian soil.",
+   "The seven Grand Cru vineyards lie on one southwest-facing hill above the town: Bougros, Les Preuses, Vaudésir, Grenouilles, Valmur, Les Clos and Blanchot.",
+   "Spring frost from March to early May is a major risk, and protection includes smudge pots and sprinklers that coat the vines in ice."
+  ]
+ },
+ "france/champagne": {
+  "facts": [
+   "Champagne gets its bubbles from a second fermentation in the bottle, and the appellation requires a minimum of fifteen months before release.",
+   "Almost all champagne uses Chardonnay, Pinot noir and Pinot meunier, with blanc de blancs made from 100% Chardonnay and blanc de noirs from Pinot noir, Pinot meunier or both.",
+   "After ageing, the lees are riddled into the bottle neck, the neck is frozen and disgorged, and a dosage of sugar and wine is added.",
+   "Houses may use no more than 80% of a vintage's harvest for vintage champagne, which keeps at least 20% for non-vintage blends."
+  ]
+ },
+ "france/chateauneuf-du-pape": {
+  "facts": [
+   "The rules drawn up in 1923 were the first appellation contrôlée rules in France and the prototype for later AOC rules, and became national law on 15 May 1936.",
+   "The original rules allowed ten varieties, amended to thirteen in 1936 and eighteen in 2009, with no split between principal and accessory varieties.",
+   "Red and white varieties are allowed in both colours, and most wines are Grenache-led blends, with Grenache noir at 72% of the vineyard in 2004.",
+   "In the north and north-east, galets roulés, round pebbles, cover the clay soil, hold the sun's heat and release it at night to speed ripening.",
+   "Yields are limited to 35 hl/ha, and wines must reach a minimum of 12.5% alcohol with no chaptalization allowed.",
+   "Only about one in 16 bottles produced in the appellation contains white wine."
+  ]
+ },
+ "france/cote-de-beaune": {
+  "facts": [
+   "Reds continue south from the Côte de Nuits but grow lighter and more perfumed, with the great white Burgundies in Meursault and Chassagne-Montrachet farther south.",
+   "The Cortons in Aloxe-Corton are the only Grand Cru reds in the district, and Corton-Charlemagne is a great white Grand Cru reaching into Pernand and Ladoix.",
+   "The Montrachet Grand Crus are split between Puligny-Montrachet and Chassagne-Montrachet and include Chevalier-Montrachet and Bâtard-Montrachet.",
+   "Meursault has no Grand Crus but grows almost only Chardonnay, which makes rich white Burgundy that develops a nutty character with time.",
+   "Côte de Beaune Villages is a general appellation for 16 villages, excluding Aloxe-Corton, Pommard, Volnay and Beaune.",
+   "Pommard makes some of the most tannic and full-bodied wines of the Côte d'Or, while Volnay is lighter, more elegant and more graceful."
+  ]
+ },
+ "france/cote-de-nuits": {
+  "facts": [
+   "The Côte de Nuits covers fourteen communes, and six of them produce grand cru wines.",
+   "There are 24 Grand Cru vineyards clustered around six villages, and more than 100 Premier Cru vineyards across the region.",
+   "Since the mid 19th century nearly all Premier and Grand Cru vineyards have been planted entirely to Pinot noir."
+  ]
+ },
+ "france/cote-rotie": {
+  "facts": [
+   "Syrah and Viognier are the only permitted grapes, and Côte-Rôtie is red wine from Syrah with up to 20% Viognier.",
+   "Under the appellation rules, Syrah and Viognier, if used, must be fermented at the same time, a process known as cofermentation.",
+   "The Côte Brune in the north has dark, iron-rich schist, and the Côte Blonde has pale granite and schist soil.",
+   "Côte Blonde wines are more balanced, elegant and meant for earlier drinking, while Côte Brune wines have more tannin and age longer.",
+   "The name means the roasted slope and refers to the long hours of sun, in a continental climate unlike the more Mediterranean southern Rhône."
+  ]
+ },
+ "france/gevrey-chambertin": {
+  "facts": [
+   "The AOC may be used only for red wine with Pinot noir as the main grape variety.",
+   "There are nine Grand Cru vineyards, Chambertin and eight others named Chambertin in combination with something else, such as Chapelle-Chambertin.",
+   "The nine Grands Crus all lie south of the town, on both sides of the Route des Grands Crus.",
+   "Chambertin-Clos de Bèze may also be called Chambertin, and Charmes-Chambertin and Mazoyères-Chambertin share a production zone, so those names are interchangeable.",
+   "Twenty-six climats are classified as Premier Cru, and Clos Saint-Jacques is typically the most highly regarded of them."
+  ]
+ },
+ "france/graves": {
+  "facts": [
+   "Graves, meaning gravelly land, lies on the left bank of the Garonne upstream of Bordeaux, and its glacial gravel soils include white quartz deposits.",
+   "It is the only Bordeaux subregion famed for reds, dry whites and sweet wines, though red wines dominate production.",
+   "Red Graves producers were classified in 1953, and dry whites were added in the updated 1959 classification.",
+   "In 1987 the part closest to the city of Bordeaux became a separate AOC, Pessac-Léognan, home of first growth Château Haut-Brion.",
+   "Reds are led by Cabernet Sauvignon with somewhat more Merlot than in the Médoc, and dry whites blend Sauvignon blanc and Sémillon.",
+   "Graves AOC is the basic appellation for red and dry white wine, and Graves Supérieures AOC is for sweet white wine."
+  ]
+ }
+}

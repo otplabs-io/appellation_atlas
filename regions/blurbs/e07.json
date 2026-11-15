@@ -1,0 +1,555 @@
+{
+ "hungary/badacsony": {
+  "text": "A Balaton PDO on the northern shore of Lake Balaton, around Mount Badacsony in central Transdanubia. Welschriesling is the most planted grape at 43% of vineyard area, ahead of Pinot Gris at 14%, and the allowed grapes include Kéknyelű and Furmint.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Badacsony wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Badacsony_wine_region&oldid=1351743367"
+  }
+ },
+ "hungary/balaton": {
+  "text": "One of Hungary's seven larger wine regions, spread around Lake Balaton and made up of six regions: Badacsony, Balatonboglár, Balaton-felvidék, Balatonfüred-Csopak, Nagy-Somló and Zala. It is known for white wines with local character, and its most widely grown grape is olaszrizling.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Balaton wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Balaton_wine_region&oldid=1362051761"
+  }
+ },
+ "hungary/balaton-felvidek": {
+  "text": "A Balaton PDO whose rules allow still and semi-sparkling wine. Welschriesling covers 45% of its vineyards, with Pinot Gris and Chardonnay next, and the allowed grapes also include Furmint, Hárslevelű and Kéknyelű.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "hungary/balatonboglar": {
+  "text": "A PDO on the southern shore of Lake Balaton, the only wine region in Somogy County and part of the wider Balaton region. Sparkling wine plays an important role there, and Chardonnay is the most planted grape at 12%.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Balatonboglár wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Balatonbogl%C3%A1r_wine_region&oldid=1362154227"
+  }
+ },
+ "hungary/balatonfured-csopak": {
+  "text": "A Balaton PDO for still wine, in a wider region known for white wines with local character. Welschriesling takes 37% of plantings, far ahead of Pinot Gris and Blaufränkisch, though red grapes such as Cabernet Sauvignon and Kékfrankos are allowed too.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Balaton wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Balaton_wine_region&oldid=1362051761"
+  }
+ },
+ "hungary/bukk": {
+  "text": "A PDO inside the Eger region of Hungary, which is known for the red blend Egri Bikavér. Blaufränkisch is the most planted grape at 19%, followed by Leányka at 15%, and the rules cover still wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Eger wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Eger_wine_region&oldid=1292768746"
+  }
+ },
+ "hungary/csongrad": {
+  "text": "A PDO in the Duna region, a mostly flat area between the Danube and Tisza rivers with sandy soil. Blaufränkisch leads plantings at 24%, followed by Riesling at 9% and Kövidinka at 8%.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Duna wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Duna_wine_region&oldid=1288783120"
+  }
+ },
+ "hungary/csopak": {
+  "text": "A Hungarian PDO for still wine from five communes, including Csopak, Alsóörs and Paloznak. Its rules allow only two grapes, Furmint and Olasz Rizling.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "hungary/debroi-harslevelu": {
+  "text": "A Hungarian white wine PDO named for Hárslevelű, with five communes including Aldebrő, Feldebrő and Verpelét. Its rules allow only white grapes, among them Hárslevelű, Leányka, Chardonnay and Olasz Rizling.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "hungary/duna": {
+  "text": "The largest of Hungary's seven larger wine regions, lying between the Danube and Tisza rivers. It is mostly flat, with sand and some loess, and was formerly known for light sand wines. Bianca and Cserszegi Fűszeres lead plantings in Kunság and Csongrád.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Duna wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Duna_wine_region&oldid=1288783120"
+  }
+ },
+ "hungary/hajos-baja": {
+  "text": "A PDO in the Duna region, the flat, sandy area between the Danube and Tisza rivers. Its rules allow still and sparkling wine from grapes including Kadarka, Kékfrankos, Merlot, Olasz Rizling and Kövidinka.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Duna wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Duna_wine_region&oldid=1288783120"
+  }
+ },
+ "hungary/izsaki-arany-sarfeher": {
+  "text": "A Hungarian PDO for still and sparkling wine made from a single grape, Arany Sárfehér, in communes such as Izsák, Fülöpszállás and Helvécia.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "hungary/kali": {
+  "text": "A Hungarian PDO from communes such as Köveskál and Mindszentkálla.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "hungary/kunsag": {
+  "text": "A PDO in the Duna region, the flat, sandy area between the Danube and Tisza rivers. It allows still, sparkling and aerated semi-sparkling wine. Bianca is the most planted grape at 23%, followed by Cserszegi Fűszeres at 16%.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Duna wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Duna_wine_region&oldid=1288783120"
+  }
+ },
+ "hungary/matra": {
+  "text": "A PDO inside the Eger region of Hungary, which is known for the red blend Egri Bikavér. Plantings are spread widely, led by Müller-Thurgau at 9%, with Blaufränkisch, Muscat Ottonel, Pinot Gris and Chasselas close behind.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Eger wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Eger_wine_region&oldid=1292768746"
+  }
+ },
+ "hungary/monor": {
+  "text": "A Hungarian PDO covering four communes: Bénye, Gomba, Monor and Monorierdő. Its rules allow still wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "hungary/mor": {
+  "text": "An Észak-Dunántúl PDO for still wine, where the wider area is described as making white wines on limestone soil. Ezerjó is the most planted grape at 22%, ahead of Chardonnay at 10%, and is named as a traditional local variety there.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Észak-Dunántúl wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=%C3%89szak-Dun%C3%A1nt%C3%BAl_wine_region&oldid=1288783466"
+  }
+ },
+ "hungary/nagy-somlo": {
+  "text": "A Balaton PDO for still wine. Welschriesling is the most planted grape at 27%, followed by Juhfark at 19% and Furmint at 14%, with Hárslevelű also grown.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "hungary/neszmely": {
+  "text": "An Észak-Dunántúl PDO for still and sparkling wine, in an area described as making white wines on limestone soil. Chardonnay is the most planted grape at 18%, followed by Pinot Gris at 13%.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Észak-Dunántúl wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=%C3%89szak-Dun%C3%A1nt%C3%BAl_wine_region&oldid=1288783466"
+  }
+ },
+ "hungary/pannon": {
+  "text": "One of Hungary's seven larger wine regions, made up of Pécs, Szekszárd, Tolna and Villány, with mostly loess soil. Red wine is more significant than white, and Cabernet Sauvignon, Cabernet Franc and Merlot have gained ground. Blaufränkisch leads plantings in Tolna, Szekszárd and Pécs.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Pannon wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Pannon_wine_region&oldid=1288790201"
+  }
+ },
+ "hungary/pannonhalma": {
+  "text": "An Észak-Dunántúl PDO for still wine, in an area described as making white wines on limestone soil. Welschriesling is the most planted grape at 25%, ahead of Riesling at 10% and Müller-Thurgau at 9%.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Észak-Dunántúl wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=%C3%89szak-Dun%C3%A1nt%C3%BAl_wine_region&oldid=1288783466"
+  }
+ },
+ "hungary/pecs": {
+  "text": "A PDO in the Pannon region, where soil is mostly loess and red wine is more significant than white. Plantings here are led by Welschriesling at 11% and Chardonnay at 10%, with Blaufränkisch at 5%.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Pannon wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Pannon_wine_region&oldid=1288790201"
+  }
+ },
+ "hungary/pgis": {
+  "text": "The group that holds Hungary's PGI wine areas: Felső-Magyarország, Zemplén, Dunántúli, Duna-Tisza-közi and Balatonmelléki.",
+  "from": [
+   "where"
+  ]
+ },
+ "hungary/soltvadkerti": {
+  "text": "A Hungarian PDO limited to the commune of Soltvadkert. Its rules allow still and sparkling wine from a single grape, Ezerjó.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "hungary/somloi": {
+  "text": "A white wine region on the slopes of an extinct volcano crowned by an 11th-century castle ruin. Its wines are made from Hárslevelű, Furmint, Juhfark, Welschriesling, Traminer and Chardonnay, mostly from small plots.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Somló",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Soml%C3%B3&oldid=870683471"
+  }
+ },
+ "hungary/sopron": {
+  "text": "A red wine region in Hungary, linked to neighboring Burgenland in Austria by geography, culture and viticulture. Kékfrankos is the main grape, and Blaufränkisch covers 53% of plantings. Wine here dates back to Roman times.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Sopron wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Sopron_wine_region&oldid=1288792205"
+  }
+ },
+ "hungary/szekszard": {
+  "text": "A PDO in the Pannon region, where red wine is more significant than white and soil is mostly loess. Its best-known product is Szekszárdi Bikavér. Blaufränkisch leads plantings at 27%, followed by Merlot at 16% and Cabernet Franc at 11%.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Pannon wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Pannon_wine_region&oldid=1288790201"
+  }
+ },
+ "hungary/tihany": {
+  "text": "A Hungarian PDO limited to the commune of Tihany. Its rules allow only red grapes, among them Cabernet Franc, Cabernet Sauvignon, Merlot, Pinot Noir, Syrah and Zweigelt.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "hungary/tolna": {
+  "text": "A PDO in the Pannon region, where soil is mostly loess and red wine is more significant than white. Plantings are led by Blaufränkisch at 14% and Chardonnay at 12%, with Grüner Veltliner at 8%.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Pannon wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Pannon_wine_region&oldid=1288790201"
+  }
+ },
+ "hungary/villany": {
+  "text": "A PDO in the Pannon region, known for full-bodied, Bordeaux-style red wines. Cabernet Sauvignon is the most planted grape at 18%, followed by Blauer Portugieser at 15%, Cabernet Franc at 13% and Merlot at 12%.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Pannon wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Pannon_wine_region&oldid=1288790201"
+  }
+ },
+ "hungary/zala": {
+  "text": "A Balaton PDO whose rules allow still, semi-sparkling and quality sparkling wine. Plantings are varied, led by Welschriesling at 8% and Cabernet Sauvignon at 7%, with Chardonnay and Riesling close behind.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "hungary/eger": {
+  "text": "A wine region in northeast Hungary, centered on the town of Eger, known for the red blend Egri Bikavér and for whites such as Egri Leányka and Debrői Hárslevelű. Blaufränkisch is the most planted grape at 19%.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Eger wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Eger_wine_region&oldid=1292768746"
+  }
+ },
+ "hungary/eszak-dunantul": {
+  "text": "A group of four wine regions around Buda and the upper Danube: Etyek-Buda, Neszmély, Mór and Pannonhalma. Its limestone-based soil makes only white wine, with Chardonnay, Sauvignon Blanc, Riesling, Tramini and Muscat Ottonel playing a significant role.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Észak-Dunántúl wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=%C3%89szak-Dun%C3%A1nt%C3%BAl_wine_region&oldid=1288783466"
+  }
+ },
+ "hungary/etyek-buda": {
+  "text": "An Észak-Dunántúl PDO for still and sparkling wine, in an area described as making white wines on limestone soil. Chardonnay is the most planted grape at 13%, followed by Grüner Veltliner at 10% and Sauvignon Blanc at 7%.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Észak-Dunántúl wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=%C3%89szak-Dun%C3%A1nt%C3%BAl_wine_region&oldid=1288783466"
+  }
+ },
+ "argentina/balcarce": {
+  "text": "An Argentine geographical indication in Buenos Aires province, where Pinot Noir is the most planted grape at 25%. Chardonnay, Cabernet Franc and Tannat each cover 17%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/belen": {
+  "text": "An Argentine geographical indication in Catamarca province. Torrontés Riojano is the most planted grape at 45%, followed by Malbec at 36%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/buenos-aires": {
+  "text": "A province whose southern part is a more recent wine producing area. It holds four geographical indications: Balcarce, Chapadmalal, Tandil and Villa Ventana.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Argentine wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Argentine_wine&oldid=1383752542"
+  }
+ },
+ "argentina/castro-barros": {
+  "text": "An Argentine geographical indication in La Rioja province. Malbec is the most planted grape at 29%, followed by Cabernet Sauvignon at 21% and Bonarda at 15%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/catamarca": {
+  "text": "A province named among Argentina's wine producing regions. It holds four geographical indications: Belén, Pomán, Santa María and Tinogasta. Cereza is the most planted grape in Tinogasta and Belén, at 60%.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Argentine wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Argentine_wine&oldid=1383752542"
+  }
+ },
+ "argentina/chilecito": {
+  "text": "An Argentine geographical indication in La Rioja province. Torrontés Riojano is the most planted grape at 28%, followed by Cabernet Sauvignon, Malbec and Bonarda at around 10% each.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/colon": {
+  "text": "An Argentine geographical indication in Córdoba province that holds the smaller Colonia Caroya. Isabella is the most planted grape at 23%, followed by Pinot Noir at 19%, Merlot at 15% and Malbec at 14%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/cordoba": {
+  "text": "An Argentine province that holds four geographical indications: Colón, Córdoba Argentina, Cruz del Eje and San Javier.",
+  "from": [
+   "where"
+  ]
+ },
+ "argentina/cruz-del-eje": {
+  "text": "An Argentine geographical indication in Córdoba province. Malbec is the most planted grape at 54%, followed by Syrah at 31% and Cabernet Sauvignon at 8%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/famatina": {
+  "text": "An Argentine geographical indication in La Rioja province that holds the smaller Valle de Chañarmuyo. Malbec is the most planted grape at 39%, followed by Torrontés Riojano at 26%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/general-lamadrid": {
+  "text": "An Argentine geographical indication in La Rioja province. Torrontés Riojano is the most planted grape at 48%, followed by Cereza at 21% and Cabernet Sauvignon at 12%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/la-rioja": {
+  "text": "An Argentine province named among the country's most important wine regions. It holds ten geographical indications, including Chilecito, Famatina and Vinchina. In the Vinchina and Capital areas, Torrontés Riojano (35%) and Cereza (32%) lead plantings.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Argentine wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Argentine_wine&oldid=1383752542"
+  }
+ },
+ "argentina/poman": {
+  "text": "An Argentine geographical indication in Catamarca province. Muscat of Alexandria and Bonarda are the most planted grapes at 26% each, followed by Malbec at 21%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/san-javier": {
+  "text": "An Argentine geographical indication in Córdoba province. Malbec is the most planted grape at 38%, followed by Syrah and Bonarda at 12% each.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/san-luis": {
+  "text": "An Argentine geographical indication where, in the La Capital and Ayacucho areas, Malbec is the most planted grape at 40%. Syrah follows at 26% and Cabernet Sauvignon at 18%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/sanagasta": {
+  "text": "An Argentine geographical indication in La Rioja province. Malbec is the most planted grape at 47%, followed by Torrontés Riojano at 27%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/santa-maria": {
+  "text": "An Argentine geographical indication in Catamarca province. Cabernet Sauvignon is the most planted grape at 33%, followed by Malbec at 28% and Torrontés Riojano at 21%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/tandil": {
+  "text": "An Argentine geographical indication in Buenos Aires province, with only a few hectares of vines.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/tinogasta": {
+  "text": "An Argentine geographical indication in Catamarca province. Cereza is the most planted grape by far, at 67%, followed by Syrah at 10%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/tucuman": {
+  "text": "An Argentine province that holds the geographical indication Tafí. In the Trancas area, Torrontés Riojano is the most planted grape at 67%, followed by Malbec at 17%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "argentina/valle-de-chanarmuyo": {
+  "text": "An Argentine geographical indication inside Famatina, in La Rioja province.",
+  "from": [
+   "where"
+  ]
+ },
+ "argentina/vinchina": {
+  "text": "An Argentine geographical indication in La Rioja province. Torrontés Riojano is the most planted grape at 42%, followed closely by Cereza at 38%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ }
+}

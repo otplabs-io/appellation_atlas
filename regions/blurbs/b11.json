@@ -1,0 +1,955 @@
+{
+ "united-states/yakima-valley": {
+  "text": "Washington's first AVA, set in a long east-west valley around the Yakima River and created in 1983. It holds the state's largest concentration of wineries and vineyards. Chardonnay and Riesling lead the plantings, ahead of Merlot, Cabernet Sauvignon and Syrah.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "ava"
+  ],
+  "wiki": {
+   "title": "Yakima Valley AVA",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Yakima_Valley_AVA&oldid=1356971833"
+  }
+ },
+ "united-states/yamhill-carlton": {
+  "text": "A Willamette Valley AVA in Oregon, about 35 miles southwest of Portland and 25 miles inland, around the towns of Carlton and Yamhill. The hills around it are horseshoe-shaped and eroded.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Yamhill-Carlton AVA",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Yamhill-Carlton_AVA&oldid=1361937775"
+  }
+ },
+ "united-states/york-mountain": {
+  "text": "A small Central Coast AVA in California's San Luis Obispo County, west of Paso Robles. Vineyards sit mostly around 1,500 feet in mountain terrain, about seven miles from the Pacific, and the climate is cooler and wetter than Paso Robles. The first vineyard here was planted in the 1870s.",
+  "from": [
+   "wikipedia",
+   "ava"
+  ],
+  "wiki": {
+   "title": "York Mountain AVA",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=York_Mountain_AVA&oldid=1355926264"
+  }
+ },
+ "united-states/yorkville-highlands": {
+  "text": "A California AVA in southern Mendocino County, on the border between Sonoma's Alexander Valley and Mendocino's Anderson Valley. It was created in 1998 and sits inside the Mendocino and North Coast AVAs.",
+  "from": [
+   "wikipedia",
+   "ava"
+  ],
+  "wiki": {
+   "title": "Yorkville Highlands AVA",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Yorkville_Highlands_AVA&oldid=1381070670"
+  }
+ },
+ "united-states/yountville": {
+  "text": "A Napa Valley AVA in California built around the town of Yountville, created in 1999. It covers about 8,260 acres, of which 3,500 were planted at the start.",
+  "from": [
+   "wikipedia",
+   "ava"
+  ],
+  "wiki": {
+   "title": "Yountville AVA",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Yountville_AVA&oldid=1360844955"
+  }
+ },
+ "united-states/yucaipa-valley": {
+  "text": "A very recent California AVA, established in 2024, in a valley in the foothills of the San Bernardino Mountains. It covers about 57 square miles, and elevation and climate are its distinguishing features.",
+  "from": [
+   "wikipedia",
+   "ava"
+  ],
+  "wiki": {
+   "title": "Yucaipa Valley AVA",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Yucaipa_Valley_AVA&oldid=1376200794"
+  }
+ },
+ "spain": {
+  "text": "Spain has more land planted to vines than any other country, yet it ranks third in wine production, thanks to very low yields from widely spaced old vines on dry soils. Tempranillo and Airén are the most planted grapes, among over 400 native varieties.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Spanish wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Spanish_wine&oldid=1364335913"
+  }
+ },
+ "spain/3-riberas": {
+  "text": "A Navarre vino de la tierra (IGP), a Spanish geographical indication one step below the Denominación de Origen level and mirroring the vins de pays of French wine. It gained that status in 2018.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "3 Riberas",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=3_Riberas&oldid=1383206875"
+  }
+ },
+ "spain/alella": {
+  "text": "A small Catalan DO on the Mediterranean coast just north of Barcelona, in Maresme county. Urban growth has shrunk it to a third of its 1956 size. Allowed grapes include whites such as Xarello, Macabeo and Garnacha Blanca, plus several reds.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Alella (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Alella_%28DO%29&oldid=1320706056"
+  }
+ },
+ "spain/alicante": {
+  "text": "A DO in Alicante province with two sub-zones. Vinalopó is mostly red wine from Monastrell, while the coastal La Marina is mostly white from Moscatel. It is best known for Fondillón, a sweet dessert wine made from overripe grapes.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Alicante (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Alicante_%28DO%29&oldid=1254570342"
+  }
+ },
+ "spain/almansa": {
+  "text": "A DOP in the southeast of Albacete province, in the transition zone between the high La Mancha plateau and the Mediterranean. It is known for red wines, with Monastrell, Garnacha Tinta, Tempranillo and several international reds among its allowed grapes.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Almansa (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Almansa_%28DO%29&oldid=1320706898"
+  }
+ },
+ "spain/altiplano-de-sierra-nevada": {
+  "text": "An Andalusian vino de la tierra covering municipalities in the north of Granada province, formerly called Norte de Granada. It sits one step below the DO level and gained its status in 2005.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Altiplano de Sierra Nevada",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Altiplano_de_Sierra_Nevada&oldid=1371909927"
+  }
+ },
+ "spain/arlanza": {
+  "text": "A Castile and León DOP across 67 municipalities in Burgos and Palencia, named for the Arlanza River. It was upgraded to DOP status in 2007. Allowed grapes are mainly Tempranillo, Garnacha Tinta, Mencía and Cabernet Sauvignon, plus a few whites.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Arlanza (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Arlanza_%28DO%29&oldid=1008906218"
+  }
+ },
+ "spain/arribes": {
+  "text": "A Castile and León DOP in the southwest of Zamora and northwest of Salamanca, on the Duero River along the Portuguese border. The area is part of a natural park. Allowed grapes include local reds such as Juan García, Rufete and Bruñal, plus Tempranillo and Garnacha Tinta.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Arribes (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Arribes_%28wine%29&oldid=1304511699"
+  }
+ },
+ "spain/ayles": {
+  "text": "A small Aragón DOP that covers just the municipality of Mezalocha. Its wines are made from four red grapes: Cabernet Sauvignon, Garnacha Tinta, Merlot and Tempranillo.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/barbanza-e-iria": {
+  "text": "A Galician vino de la tierra covering municipalities in A Coruña and Pontevedra provinces, such as Padrón, Boiro and Ribeira. It sits one step below the DO level and gained that status in 2007.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Barbanza e Iria",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barbanza_e_Iria&oldid=1148142907"
+  }
+ },
+ "spain/bierzo": {
+  "text": "A DOP in the northwest of León province, covering about 3,000 square kilometers of small mountain valleys and a flat plain. Allowed grapes include Mencía for red and Godello for white, plus Doña Blanca, Palomino and Alarije.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Bierzo (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bierzo_%28DO%29&oldid=1369103876"
+  }
+ },
+ "spain/bullas": {
+  "text": "A Murcia DOP covering eight municipalities, including Caravaca de la Cruz, Moratalla and Bullas. It is known for young reds and rosés from the Monastrell grape.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Bullas (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bullas_%28DO%29&oldid=1330245931"
+  }
+ },
+ "spain/calatayud": {
+  "text": "An Aragón DOP grouped with Campo de Borja as Campo de Borja & Calatayud, in the southwest of Zaragoza province across 46 municipalities in the Ebro valley. Vineyards are on south-facing slopes. Garnacha Tinta, Tempranillo and Macabeo are among its allowed grapes.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Calatayud (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Calatayud_%28DO%29&oldid=1237591018"
+  }
+ },
+ "spain/calzadilla": {
+  "text": "A Castilla-La Mancha DOP that covers only the municipality of Huete. Its wines are made from four red grapes: Cabernet Sauvignon, Garnacha Tinta, Syrah and Tempranillo.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/campo-de-borja": {
+  "text": "An Aragón DOP grouped with Calatayud as Campo de Borja & Calatayud, in northwest Zaragoza province across 16 municipalities. It is a transition zone between the Ebro plains and the Iberian mountains, and Moncayo mountain creates a microclimate. Garnacha Tinta, Syrah and Cabernet Sauvignon are among its allowed grapes.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Campo de Borja (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Campo_de_Borja_%28DO%29&oldid=1385048917"
+  }
+ },
+ "spain/campo-de-borja-calatayud": {
+  "text": "A grouping of two Aragón appellations, Campo de Borja and Calatayud.",
+  "from": [
+   "where"
+  ]
+ },
+ "spain/campo-de-la-guardia": {
+  "text": "A Castilla-La Mancha DOP that covers only the municipality of La Guardia. Its wines are made from Cabernet Sauvignon, Chardonnay, Malbec, Merlot, Petit Verdot, Syrah and Tempranillo.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/carinena": {
+  "text": "An Aragón DOP on a plateau about 31 miles southwest of Zaragoza, with vineyards rising from 1,300 to 2,600 feet toward the Sierra de la Virgen. It dates to 1932, among the oldest protected areas in Europe. Its allowed grapes include Garnacha Tinta, Mazuela, Tempranillo and Syrah.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Cariñena DOP",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cari%C3%B1ena_DOP&oldid=1375358235"
+  }
+ },
+ "spain/casa-del-blanco": {
+  "text": "A Castilla-La Mancha DOP that covers only the municipality of Manzanares. Wines are made from Airén, Chardonnay and Sauvignon Blanc among the whites, and Tempranillo, Syrah, Merlot and several other reds.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/castilla-y-leon": {
+  "text": "A Spanish PGI in the Vino de la Tierra (IGP) category, whose vineyards are dominated by Tempranillo, which makes up half of plantings. Verdejo is second at 23 percent, followed by smaller shares of Mencía, Garnacha and Prieto Picudo.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "spain/cataluna": {
+  "text": "A Catalan DOP created in 2001 to give commercial support to wineries outside other Catalan DOPs. It has no single location, with vineyards scattered across Catalonia, and allows mixing grapes from other DOPs. Allowed grapes are many, from Macabeo and Xarello to Garnacha and Syrah.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Catalunya DOP",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Catalunya_DOP&oldid=1269651377"
+  }
+ },
+ "spain/cava": {
+  "text": "Spain's DO for quality sparkling wine, made by the traditional method as in Champagne. Macabeo, Parellada and Xarello are the traditional grapes, with Chardonnay and red Pinot Noir, Garnacha Tinta, Monastrell and Trepat also allowed. About 95 percent of cava comes from the Penedès area.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cava (Spanish wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cava_%28Spanish_wine%29&oldid=1384848271"
+  }
+ },
+ "spain/cebreros": {
+  "text": "A DOP covering 35 municipalities. Its wines are made from just three grapes: Albillo Real for white, and Garnacha Tinta and Tempranillo for red, with Garnacha Tintorera also allowed.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/chozas-carrascal": {
+  "text": "A DOP in the municipality of Requena, in Valencia. Wines are made from Bobal, Tempranillo, Garnacha Tinta, Syrah and Cabernets among reds, and Chardonnay, Macabeo and Sauvignon Blanc among whites.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "spain/cigales": {
+  "text": "A Castile and León DOP north of Valladolid along both banks of the Pisuerga River, at about 2,460 feet. It was created in 1991. Allowed grapes include Tempranillo, Garnacha Tinta and Garnacha Roja, plus Verdejo and Albillo Mayor for white.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Cigales (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cigales_%28wine%29&oldid=1313772003"
+  }
+ },
+ "spain/conca-de-barbera": {
+  "text": "A DOP in northern Tarragona province, set in the Francolí and Anguera river valleys. It was long known for whites but now mainly makes red, especially from the native Trepat grape, along with whites, rosés and small amounts of sparkling wine.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Conca de Barberà (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Conca_de_Barber%C3%A0_%28DO%29&oldid=1244186976"
+  }
+ },
+ "spain/condado-do-tea": {
+  "text": "A wine area within Rías Baixas, the Galician DO known for white wine from the Albariño grape. Rías Baixas also allows Godello, Loureira and Caíño Blanco for white, and Mencía, Espadeiro and Caíño Tinto for red.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Rías Baixas DO",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=R%C3%ADas_Baixas_DO&oldid=1318588836"
+  }
+ },
+ "spain/costa-de-cantabria": {
+  "text": "A vino de la tierra on Spain's north coast, covering Cantabrian municipalities between the sea and the Picos de Europa mountains. It leaves out the towns covered by Liébana. It sits one step below the DO level.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Costa de Cantabria",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Costa_de_Cantabria&oldid=1206567856"
+  }
+ },
+ "spain/costers-del-segre": {
+  "text": "A Catalan DOP in Lleida province, split into sub-zones including Artesa, Valls de Riucorb, Garrigues, Raïmat, Pallars Jussà and Segrià. The allowed grape list is long and varied, from Tempranillo, Garnacha Tinta and Cabernet Sauvignon to Chardonnay, Macabeo and Riesling.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Costers del Segre",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Costers_del_Segre&oldid=1251383455"
+  }
+ },
+ "spain/cumbres-del-guadalfeo": {
+  "text": "An Andalusian vino de la tierra in the Alpujarras mountains of Granada province, formerly called Contraviesa-Alpujarra. It covers municipalities such as Albuñol, Cádiar and Ugíjar and sits one step below the DO level.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Cumbres del Guadalfeo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cumbres_del_Guadalfeo&oldid=1197659859"
+  }
+ },
+ "spain/dehesa-del-carrizal": {
+  "text": "A Castilla-La Mancha DOP that covers only the municipality of Retuerta del Bullaque. Wines are made from Cabernet Sauvignon, Merlot, Petit Verdot, Syrah and Tempranillo for red, and Chardonnay for white.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/dehesa-penalba": {
+  "text": "A DOP that covers only the municipality of Villabáñez. Its wines are made from four red grapes: Cabernet Sauvignon, Merlot, Syrah and Tempranillo.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/desierto-de-almeria": {
+  "text": "An Andalusian vino de la tierra (IGP) covering fourteen municipalities in Almería province, including Tabernas and Sorbas. It sits one step below the DO level on the Spanish quality ladder and gained its status in 2003.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Desierto de Almería",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Desierto_de_Almer%C3%ADa&oldid=1148142941"
+  }
+ },
+ "spain/dominio-de-valdepusa": {
+  "text": "A Vino de Pago in Malpica de Tajo, Toledo, which won its status in 2003. This is the highest tier of Spanish wine, requiring estate-grown grapes and an on-site winery. Allowed grapes are Cabernet Sauvignon, Graciano, Petit Verdot and Syrah.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Dominio de Valdepusa",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Dominio_de_Valdepusa&oldid=1003108566"
+  }
+ },
+ "spain/el-terrerazo": {
+  "text": "A DOP that covers only the municipality of Utiel, in Valencia. Wines are made from Bobal, Tempranillo, Garnacha Tinta, Syrah, Merlot and Cabernet Sauvignon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "spain/el-vicario": {
+  "text": "A Vino de Pago estate in Ciudad Real, formed in 2019 and inside the La Mancha DOP area. A Vino de Pago applies to a single estate, not a region. Allowed grapes include Tempranillo, Syrah, Merlot and Cabernet Sauvignon, plus Chardonnay and Sauvignon Blanc.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "El Vicario",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=El_Vicario&oldid=1241838113"
+  }
+ },
+ "spain/emporda": {
+  "text": "A Catalan DOP in the northeastern corner of Catalonia, in Girona province. It runs from Figueres north to the French border and south through Baix Empordà near the Mediterranean. Garnacha, Macabeo, Cabernet Sauvignon and Syrah are among its allowed grapes.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Empordà (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Empord%C3%A0_%28DO%29&oldid=1352507249"
+  }
+ },
+ "spain/finca-elez": {
+  "text": "A Castilla-La Mancha DOP that covers only the municipality of El Bonillo. Wines are made from Cabernet Sauvignon, Merlot, Syrah and Tempranillo for red, and Chardonnay for white.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/guijoso": {
+  "text": "A Castilla-La Mancha DOP that covers only the municipality of El Bonillo. Wines are made from Cabernet Sauvignon, Merlot, Syrah and Tempranillo for red, and Chardonnay and Sauvignon Blanc for white.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/jerez": {
+  "text": "The DO for sherry, made from white grapes grown around Jerez de la Frontera in Andalusia. Palomino makes styles from light fino to darker, oxidized amontillado and oloroso. Manzanilla, from Sanlúcar de Barrameda, has its own DO. Pedro Ximénez and Moscatel make sweet dessert sherries.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Sherry",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Sherry&oldid=1377689311"
+  }
+ },
+ "spain/jumilla": {
+  "text": "A DOP across northern Murcia and southeastern Albacete, named for the town of Jumilla and described as one of Spain's leading wine regions. Allowed grapes include Monastrell, Tempranillo, Syrah, Garnacha Tinta and Cabernet Sauvignon.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Jumilla (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Jumilla_%28DO%29&oldid=1346461439"
+  }
+ },
+ "spain/la-jaraba": {
+  "text": "A Vino de Pago estate in El Provencio, formed in 2019 and inside the La Mancha DOP area. A Vino de Pago applies to a single estate. Allowed grapes are Cabernet Sauvignon, Graciano, Merlot, Tempranillo and Sauvignon Blanc.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "La Jaraba (Vino de Pago)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=La_Jaraba_%28Vino_de_Pago%29&oldid=1283503433"
+  }
+ },
+ "spain/la-mancha": {
+  "text": "It spans 182 municipalities across four provinces. Airén and Tempranillo lead the wider region's plantings.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "La Mancha (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=La_Mancha_%28DO%29&oldid=1287629768"
+  }
+ },
+ "spain/la-mancha-valdepenas": {
+  "text": "A grouping of two Castilla-La Mancha appellations, La Mancha and Valdepeñas.",
+  "from": [
+   "where"
+  ]
+ },
+ "spain/laderas-del-genil": {
+  "text": "An Andalusian vino de la tierra in the southwest of Granada province, formerly called Granada Sur-Oeste. It sits one step below the DO level and gained its status in 2003.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Laderas del Genil",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Laderas_del_Genil&oldid=1197659655"
+  }
+ },
+ "spain/laujar-alpujarra": {
+  "text": "An Andalusian vino de la tierra covering four municipalities in Almería province, including Laujar de Andarax. About 2,000 acres of vines grow on terraces on steep mountain slopes in the upper Andarax valley. It sits one step below the DO level.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Laujar-Alpujarra",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Laujar-Alpujarra&oldid=1148142947"
+  }
+ },
+ "spain/leon": {
+  "text": "A DOP covering 88 municipalities. Allowed grapes are Prieto Picudo, Mencía, Tempranillo and Garnacha Tinta for red, and Verdejo, Godello and Albarín Blanco for white.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/liebana": {
+  "text": "A vino de la tierra in Cantabria on Spain's north coast, covering the municipalities of Potes, Pesaguero, Camaleño and others. It sits one step below the DO level and gained its status in 2004.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Liébana (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Li%C3%A9bana_%28wine%29&oldid=1148142959"
+  }
+ },
+ "spain/los-balagueses": {
+  "text": "A DOP in the municipality of Requena, in Valencia. Wines are made from Tempranillo, Merlot and Syrah for red, and Chardonnay and Sauvignon Blanc for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "spain/los-cerrillos": {
+  "text": "A Castilla-La Mancha DOP that covers only the municipality of Argamasilla de Alba. Wines are made from Cabernet Sauvignon, Merlot, Petit Verdot, Syrah and Tempranillo for red, and Chardonnay for white.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/manchuela": {
+  "text": "A DOP in eastern Albacete and Cuenca, between the Júcar and Cabriel rivers. It split from La Mancha in 2004 and is bordered by La Mancha, Utiel-Requena and Jumilla. Allowed grapes include Bobal, Garnacha Tinta, Monastrell, Tempranillo and many others.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Manchuela DO",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Manchuela_DO&oldid=1317930070"
+  }
+ },
+ "spain/manzanilla-de-sanlucar": {
+  "text": "A fortified wine from the port of Sanlúcar de Barrameda in Cádiz province, made like fino sherry. It is very pale and dry, with a savory, salty character, and is named for chamomile. Palomino is among the allowed grapes.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Manzanilla (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Manzanilla_%28wine%29&oldid=1346038893"
+  }
+ },
+ "spain/mentrida": {
+  "text": "A DOP in the northeast of Toledo province with about 64,000 acres of vines, 71 percent of them in the Torrijos area. It also includes the Talavera and Sagra-Toledo areas. Garnacha Tinta, Tempranillo and Syrah are among its allowed grapes.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Méntrida DO",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=M%C3%A9ntrida_DO&oldid=1012620018"
+  }
+ },
+ "spain/mondejar": {
+  "text": "A DOP in the southeast of Guadalajara province, around the town of Mondéjar, covering 19 municipalities. Allowed grapes include Tempranillo, Syrah, Merlot and Cabernet Sauvignon for red, and Macabeo, Malvar and Verdejo for white.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Mondéjar (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Mond%C3%A9jar_%28DO%29&oldid=1283470053"
+  }
+ },
+ "spain/monterrei": {
+  "text": "A DOP in the southeast corner of Ourense province in Galicia, covering six municipalities including Verín. It was long neglected but production boomed after a critic praised some of its wines in 2008. Allowed grapes include Godello, Albariño and Treixadura for white, and Mencía for red.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Monterrei (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Monterrei_%28DO%29&oldid=1253671055"
+  }
+ },
+ "spain/montsant": {
+  "text": "A DOP in Tarragona province, named for the Montsant mountains and covering 12 municipalities. It was the Falset subzone of Tarragona until becoming a separate DO in the early 2000s. Garnacha Tinta, Syrah, Cabernet Sauvignon and Merlot are among its allowed grapes.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Montsant DO",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Montsant_DO&oldid=1260199972"
+  }
+ },
+ "spain/murcia": {
+  "text": "A Spanish PGI in the Vino de la Tierra (IGP) category, covering Murcia, where Monastrell dominates, making up 76 percent of plantings. Alicante Bouschet is second at 7 percent, followed by Syrah, Airén and Tempranillo at 3 percent each.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "spain/navarra": {
+  "text": "A DOP across the southern half of Navarre, on the lower Pyrenees slopes running down to the Ebro basin. It was once known only for rosados but now also makes quality reds and whites. Tempranillo is half of plantings, followed by Garnacha.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Navarra (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Navarra_%28DO%29&oldid=1376545197"
+  }
+ },
+ "spain/norte-de-almeria": {
+  "text": "An Andalusian vino de la tierra covering four municipalities in northern Almería: Chirivel, María, Vélez-Blanco and Vélez-Rubio. It sits one step below the DO level and gained its status in 2008.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Norte de Almería",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Norte_de_Almer%C3%ADa&oldid=1148142926"
+  }
+ },
+ "spain/o-rosal": {
+  "text": "A wine area within Rías Baixas, the Galician DO known for white wine from the Albariño grape. Rías Baixas also allows Godello, Loureira and Caíño Blanco for white, and Mencía, Espadeiro and Caíño Tinto for red.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Rías Baixas DO",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=R%C3%ADas_Baixas_DO&oldid=1318588836"
+  }
+ },
+ "spain/pago-de-arinzano": {
+  "text": "A DOP in the municipality of Aberin, in Navarra. Wines are made from Tempranillo, Merlot and Cabernet Sauvignon for red, and Chardonnay for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "spain/pago-de-otazu": {
+  "text": "A DOP in Navarra, in the municipalities of Cizur and Etxauri. Wines are made from Tempranillo, Merlot and Cabernet Sauvignon for red, and Chardonnay for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "spain/pago-florentino": {
+  "text": "A Castilla-La Mancha DOP that covers only the municipality of Malagón. Its wines are made from three red grapes: Petit Verdot, Syrah and Tempranillo.",
+  "from": [
+   "rules"
+  ]
+ },
+ "spain/penedes": {
+  "text": "A Catalan DOP in the Penedès & Cava grouping, framed by the coastal Garraf hills and the higher inland mountains. It became the first appellation with 100 percent certified organic production in 2025. Allowed grapes include Xarello, Macabeo and Parellada, plus many red and international varieties.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Penedès DOP",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Pened%C3%A8s_DOP&oldid=1353610745"
+  }
+ },
+ "spain/pla-de-bages": {
+  "text": "A Catalan DOP in Barcelona province, one of the smallest in Spain at under 1,250 acres and one of the newest, official since 1997. Allowed grapes include Picapoll Blanco and Picapoll Negro, plus Macabeo, Parellada, Tempranillo and Merlot.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Pla de Bages",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Pla_de_Bages&oldid=1148142976"
+  }
+ },
+ "spain/prado-de-irache": {
+  "text": "A DOP that covers only Ayegui, in Navarra. Its wines are made from red grapes: Tempranillo, Garnacha Tinta, Merlot, Cabernet Sauvignon, Graciano and Mazuela.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "spain/priorat": {
+  "text": "A Catalan DOQ in Tarragona province covering 11 municipalities, one of only two Spanish regions at this top tier, alongside Rioja. It makes powerful reds, which drew international attention in the 1990s, from black slate and quartz soil called llicorella.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Priorat DOQ",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Priorat_DOQ&oldid=1379839096"
+  }
+ },
+ "spain/rias-baixas": {
+  "text": "A Galician DO in Pontevedra and southern A Coruña provinces, known for white wines from the Albariño grape. Its subzones include Val do Salnés, O Rosal and Condado do Tea. Godello, Loureira and Treixadura are also allowed.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Rías Baixas DO",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=R%C3%ADas_Baixas_DO&oldid=1318588836"
+  }
+ },
+ "spain/ribeira-sacra": {
+  "text": "A Galician DOP in Lugo and Ourense provinces, whose name means sacred riverbank. Vineyards sit on steep slopes in the Miño and Sil river valleys. The region is known for red wines, and Mencía and Godello are among the allowed grapes.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Ribeira Sacra (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ribeira_Sacra_%28DO%29&oldid=1334237349"
+  }
+ },
+ "spain/ribeiras-do-morrazo": {
+  "text": "A Galician vino de la tierra covering eight municipalities in Pontevedra province, including Cangas and Marín. It sits one step below the DO level and gained its status in 2018.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Ribeiras do Morrazo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ribeiras_do_Morrazo&oldid=1165175067"
+  }
+ },
+ "spain/ribeiro": {
+  "text": "A Galician DOP in northwest Ourense province, in the valleys of the Avia, Miño and Arnoia rivers. Allowed grapes include Treixadura, Godello, Albariño and Loureira for white, and Caíño, Sousón, Brancellao and Mencía for red.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Ribeiro (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ribeiro_%28DO%29&oldid=1366357490"
+  }
+ },
+ "spain/ribera-del-andarax": {
+  "text": "An Andalusian vino de la tierra (IGP) covering twenty municipalities in Almería province, including Canjáyar, Gérgal and Ohanes. It sits one step below the DO level on the Spanish quality ladder and gained its status in 2003.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ribera del Andarax",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ribera_del_Andarax&oldid=1148142955"
+  }
+ },
+ "spain/ribera-del-duero": {
+  "text": "A DOP on Castile and León's northern plateau, along the Duero River, with largely flat, rocky terrain. It is centered on Aranda de Duero, with the best-known vineyards near Peñafiel and Roa. Allowed reds are Tempranillo, Garnacha Tinta, Cabernet Sauvignon, Merlot and Malbec.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Ribera del Duero",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ribera_del_Duero&oldid=1304720811"
+  }
+ },
+ "spain/ribera-del-jiloca": {
+  "text": "An Aragón vino de la tierra in the Jiloca Valley, covering seven municipalities in Teruel and fourteen in Zaragoza. It sits one step below the DO level and gained its status in 2005.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Ribera del Jiloca",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ribera_del_Jiloca&oldid=1330169424"
+  }
+ },
+ "spain/ribera-del-jucar": {
+  "text": "A DOP along the Júcar River in Cuenca province, covering seven municipalities. Allowed grapes include Tempranillo, Bobal, Syrah and Cabernet Sauvignon for red, and Airén, Macabeo, Verdejo and Sauvignon Blanc for white.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Ribera del Júcar",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ribera_del_J%C3%BAcar&oldid=1012608309"
+  }
+ },
+ "spain/ribera-del-queiles": {
+  "text": "A vino de la tierra (IGP) spanning Zaragoza in Aragón and southern Navarre, covering towns such as Tarazona, Cascante and Ablitas. It sits one step below the DO level and gained its status in 2003.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ribera del Queiles",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ribera_del_Queiles&oldid=1351498294"
+  }
+ },
+ "spain/rioja": {
+  "text": "A DOCa, the highest tier of Spanish wine regulation, with vineyards in La Rioja, Navarre and Álava. It has three zones: Rioja Alta, Rioja Alavesa and Rioja Oriental. Tempranillo is 77 percent of plantings in La Rioja, followed by Garnacha, Macabeo, Graciano and Mazuelo.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Rioja DOCa",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Rioja_DOCa&oldid=1368867539"
+  }
+ },
+ "spain/rioja-alavesa": {
+  "text": "One of the three zones of Rioja, the Spanish DOCa, the highest category in Spanish wine regulation. Many Rioja wines blend fruit from all three zones, though single-zone wines are slowly growing.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Rioja DOCa",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Rioja_DOCa&oldid=1368867539"
+  }
+ },
+ "spain/rioja-alta": {
+  "text": "One of the three zones of Rioja, the Spanish DOCa, the highest category in Spanish wine regulation. Many Rioja wines blend fruit from all three zones, though single-zone wines are slowly growing.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Rioja DOCa",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Rioja_DOCa&oldid=1368867539"
+  }
+ },
+ "spain/rioja-oriental": {
+  "text": "One of the three zones of Rioja, the Spanish DOCa, the highest category in Spanish wine regulation. Many Rioja wines blend fruit from all three zones, though single-zone wines are slowly growing.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Rioja DOCa",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Rioja_DOCa&oldid=1368867539"
+  }
+ },
+ "spain/rueda": {
+  "text": "A Castile and León DOP across 72 municipalities in Valladolid, Segovia and Ávila, known mainly for white wines from the Verdejo grape. It is one of Spain's leading wine regions. Sauvignon Blanc, Macabeo and Palomino Fino are also allowed.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Rueda DO",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Rueda_DO&oldid=1231090800"
+  }
+ },
+ "spain/serra-de-tramuntana-costa-nord": {
+  "text": "A vino de la tierra on the north coast of Mallorca, in the Balearic Islands, covering 18 municipalities. It is tiny, with around 99 acres and five registered wineries. It sits one step below the DO level.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Serra de Tramuntana-Costa Nord",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Serra_de_Tramuntana-Costa_Nord&oldid=1148142938"
+  }
+ },
+ "spain/sierra-de-salamanca": {
+  "text": "A Castile and León DOP in Salamanca province, known for red wines from the native Rufete grape. It ranks between vino de la tierra and DO. Garnacha Tinta and Tempranillo are also allowed, along with Macabeo and Palomino for white.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Sierra de Salamanca",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Sierra_de_Salamanca&oldid=1383431174"
+  }
+ },
+ "spain/sierra-sur-de-jaen": {
+  "text": "An Andalusian vino de la tierra in the southwest of Jaén province, covering municipalities such as Alcalá la Real, Alcaudete and Martos. It sits one step below the DO level and gained its status in 2003.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Sierra Sur de Jaén (DO)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Sierra_Sur_de_Ja%C3%A9n_%28DO%29&oldid=1304888379"
+  }
+ }
+}

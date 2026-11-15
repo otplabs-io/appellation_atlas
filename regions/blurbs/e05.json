@@ -1,0 +1,540 @@
+{
+ "france/agenais": {
+  "text": "A Lot-et-Garonne wine area covering nearly all of the department except the Thézac-Perricard communes. It is a French PGI, called vin de pays de l'Agenais until 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Agenais (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Agenais_%28IGP%29&oldid=238332378"
+  }
+ },
+ "france/ajaccio": {
+  "text": "A Corsican appellation on land that looks down over the Mediterranean, built around Sciaccarello, which gives its red and rosé wines a distinctive flavor and elegance. Vermentino, Nielluccio and Barbaroux are also main grapes, and the wines were once called Coteaux d'Ajaccio.",
+  "from": [
+   "rules",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Ajaccio AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ajaccio_AOC&oldid=1381232646"
+  }
+ },
+ "france/alpes-de-haute-provence": {
+  "text": "A departmental French PGI, called vin de pays des Alpes-de-Haute-Provence until 2009. It is meant for wines of the department that cannot apply for an appellation.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Alpes-de-haute-provence (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Alpes-de-haute-provence_%28IGP%29&oldid=237584144"
+  }
+ },
+ "france/alpes-maritimes": {
+  "text": "A French PGI for wines made in the Alpes-Maritimes department. It was called vin de pays des Alpes-Maritimes from 1968 to 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Alpes-maritimes (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Alpes-maritimes_%28IGP%29&oldid=237584190"
+  }
+ },
+ "france/alpilles": {
+  "text": "A PGI in the north of the Bouches-du-Rhône, for wines that cannot apply for an appellation. It was called vin de pays de la Petite Crau from 1982 to 2000, then vin de pays des Alpilles until 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Alpilles (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Alpilles_%28IGP%29&oldid=238334579"
+  }
+ },
+ "france/ardeche": {
+  "text": "A French PGI for the Ardèche, where Syrah covers about 30% of the vineyard area, followed by Grenache at 19% and Merlot at 14%. Viognier and Chardonnay each cover 7%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "france/ariege": {
+  "text": "A PGI in the Ariège, with about 150 acres of vines, mostly in the lower northern parts of the department on the Plantaurel slopes and Pyrenean foothills. The name can add Coteaux de la Lèze or Coteaux du Plantaurel.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Ariège (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Ari%C3%A8ge_%28IGP%29&oldid=240837439"
+  }
+ },
+ "france/bugey": {
+  "text": "An Ain appellation with a high proportion of white wine, but also making rosé, red and sparkling wines. Chardonnay, Altesse, Jacquère, Gamay, Pinot Noir and Mondeuse are among its main grapes, and its Altesse wines, locally called Roussette, are among the more noted.",
+  "from": [
+   "rules",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Bugey wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bugey_wine&oldid=1255849612"
+  }
+ },
+ "france/cevennes": {
+  "text": "A French PGI, called vin de pays des Cévennes until 2011.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Cévennes (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=C%C3%A9vennes_%28IGP%29&oldid=238335489"
+  }
+ },
+ "france/charentais": {
+  "text": "A PGI covering the Charente and Charente-Maritime departments in southwest France. It was known as vin de pays charentais until 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Charentais (IGP)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Charentais_%28IGP%29&oldid=1279960042"
+  }
+ },
+ "france/charentes": {
+  "text": "A wine area around the Charente and Charente-Maritime departments, where Ugni Blanc covers about 96% of the vineyard area. Pineau des Charentes sits within it.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "france/comte-tolosan": {
+  "text": "A regional French PGI produced across the whole of the Southwest vineyard. It matches the old vin de pays du comté tolosan, in use from 1982 to 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Comté-tolosan",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Comt%C3%A9-tolosan&oldid=237584465"
+  }
+ },
+ "france/comtes-rhodaniens": {
+  "text": "A regional French PGI produced across the middle Rhône Valley. It was called vin de pays des comtés rhodaniens from 1989 to 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Comtés-rhodaniens",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Comt%C3%A9s-rhodaniens&oldid=237584523"
+  }
+ },
+ "france/corse": {
+  "text": "A Corsican appellation for wine, with Vermentino, Grenache, Nielluccio and Sciaccarello as its main grapes. Across the island, Sangiovese covers about 29% of the vineyard area, Mammolo 26% and Vermentino 23%.",
+  "from": [
+   "planted",
+   "rules",
+   "where"
+  ]
+ },
+ "france/corsica": {
+  "text": "A Mediterranean island where many winemaking traditions and grape varieties are Italian in origin. Its vineyards trace back to Phocean traders around 570 BC, and Sangiovese, Mammolo and Vermentino are the most planted grapes.",
+  "from": [
+   "planted_wider",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Corsican wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Corsican_wine&oldid=1320405117"
+  }
+ },
+ "france/coteaux-de-coiffy": {
+  "text": "A French PGI from the Apance-Amance area in the southeast of the Haute-Marne. It was called vin de pays des coteaux de Coiffy until 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Coteaux-de-coiffy",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Coteaux-de-coiffy&oldid=237584646"
+  }
+ },
+ "france/coteaux-de-peyriac": {
+  "text": "A Languedoc-Roussillon PGI making white, rosé and red wine on part of the Minervois, in the Aude and Hérault. It was vin de pays des coteaux de Peyriac from 1974 until 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Coteaux-de-peyriac",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Coteaux-de-peyriac&oldid=237584712"
+  }
+ },
+ "france/coteaux-des-baronnies": {
+  "text": "A French PGI, called vin de pays des coteaux des Baronnies from 1981 until 2011.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Coteaux-des-baronnies",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Coteaux-des-baronnies&oldid=240764674"
+  }
+ },
+ "france/cotes-catalanes": {
+  "text": "A Languedoc-Roussillon PGI making dry red, rosé and white wines. Syrah, Carignan and Grenache are common grapes.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Côtes Catalanes",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4tes_Catalanes&oldid=1356041257"
+  }
+ },
+ "france/cotes-de-gascogne": {
+  "text": "A Gascony district making mainly white wine, mostly in the Gers department, in the same area as Armagnac. It is a country wine, held to stricter production rules since a 1982 decree.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Côtes de Gascogne",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4tes_de_Gascogne&oldid=1372537896"
+  }
+ },
+ "france/cotes-de-meuse": {
+  "text": "A PGI in part of the Meuse department, within the Lorraine vineyard. It is for still white, gray, rosé and red wines, and over five years white made 46% of production and red 32%.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Côtes-de-meuse (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=C%C3%B4tes-de-meuse_%28IGP%29&oldid=240267829"
+  }
+ },
+ "france/cotes-de-thongue": {
+  "text": "A Languedoc-Roussillon PGI on part of the Hérault, covering 23 communes in the Thongue river basin. The wines can be white, rosé or red.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Côtes-de-thongue",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=C%C3%B4tes-de-thongue&oldid=237584860"
+  }
+ },
+ "france/cotes-de-toul": {
+  "text": "A Lorraine appellation near Toul, west of Nancy, in Meurthe-et-Moselle, with about 270 acres of vines. Its wines are made from Aubin, Auxerrois, Pinot Noir and Gamay, and it has been an AOC since 1998.",
+  "from": [
+   "rules",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Côtes de Toul",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4tes_de_Toul&oldid=1268305730"
+  }
+ },
+ "france/cotes-du-tarn": {
+  "text": "A PGI for wine made in the Tarn department of southwest France. It was called vin de pays des côtes du Tarn until 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Côtes-du-tarn",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=C%C3%B4tes-du-tarn&oldid=237584902"
+  }
+ },
+ "france/gard": {
+  "text": "A departmental PGI covering the whole Gard vineyard, where Grenache covers about 27% of the area and Syrah 20%. It was called vin de pays du Gard until 2009.",
+  "from": [
+   "planted",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Gard (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Gard_%28IGP%29&oldid=237584936"
+  }
+ },
+ "france/hautes-alpes": {
+  "text": "A departmental French PGI, called vin de pays des Hautes-Alpes until 2009. It is meant for wines of the department that cannot apply for an appellation.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Hautes-alpes (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Hautes-alpes_%28IGP%29&oldid=237585042"
+  }
+ },
+ "france/landes": {
+  "text": "A PGI in the Landes department, next to the Tursan appellation, where white grapes lead the plantings: Colombard 27%, Baco Blanc 18% and Gros Manseng 18%. It was called vin de pays des terroirs landais until 2009.",
+  "from": [
+   "planted",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Landes (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Landes_%28IGP%29&oldid=237585091"
+  }
+ },
+ "france/lavilledieu": {
+  "text": "A PGI for wine made in the Tarn-et-Garonne department. It is a French indication géographique protégée.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Lavilledieu (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Lavilledieu_%28IGP%29&oldid=237585106"
+  }
+ },
+ "france/maures": {
+  "text": "A French PGI for wines that cannot apply for an appellation. It was called vin de pays des Maures until 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Maures (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Maures_%28IGP%29&oldid=237585141"
+  }
+ },
+ "france/moselle": {
+  "text": "A Lorraine appellation on the Moselle river. Moselle wines in general are mainly white and come from some of the coldest climates used for commercial winemaking. The French rules allow Müller-Thurgau, Auxerrois, Pinot Gris and Pinot Noir as main grapes.",
+  "from": [
+   "rules",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Moselle wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Moselle_wine&oldid=1250802391"
+  }
+ },
+ "france/muscat-du-cap-corse": {
+  "text": "A Corsican appellation for liqueur wine, made from Muscat à Petits Grains Blancs.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/patrimonio": {
+  "text": "A Corsican appellation whose rules allow Nielluccio for red and Vermentino for white, with Grenache and Sciaccarello as minor grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/pays-des-bouches-du-rhone": {
+  "text": "A departmental French PGI, called vin de pays des Bouches-du-Rhône from 1968 to 2009. It is meant for wines that cannot apply for an appellation.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Pays-des-bouches-du-rhône",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Pays-des-bouches-du-rh%C3%B4ne&oldid=237585322"
+  }
+ },
+ "france/perigord": {
+  "text": "A PGI for wine made in the Dordogne department, in the Southwest vineyard. It was called vin de pays du Périgord from 1996 until 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Périgord (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=P%C3%A9rigord_%28IGP%29&oldid=238045923"
+  }
+ },
+ "france/pineau-des-charentes": {
+  "text": "A regional aperitif of western France, a fortified liqueur wine made by adding Cognac eau-de-vie to grape juice or lightly fermented must, then maturing it. It is popular locally but less known elsewhere in France and abroad, and the area grows mostly Ugni Blanc.",
+  "from": [
+   "planted",
+   "rules",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Pineau des Charentes",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Pineau_des_Charentes&oldid=1328314508"
+  }
+ },
+ "france/roussette-de-savoie": {
+  "text": "A Savoie appellation for white wine, made only from Altesse, a late-ripening grape also called Roussette. It is the region's second-largest appellation, with about 10% of production.",
+  "from": [
+   "rules",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Roussette de Savoie",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Roussette_de_Savoie&oldid=1232405523"
+  }
+ },
+ "france/roussette-du-bugey": {
+  "text": "A Bugey appellation for white wine made only from Altesse, locally called Roussette. Bugey Altesse wines are among the more noted from the area.",
+  "from": [
+   "rules",
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Bugey wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bugey_wine&oldid=1255849612"
+  }
+ },
+ "france/saint-guilhem-le-desert": {
+  "text": "A PGI in the north of the Hérault, covering Saint-Guilhem and 71 nearby communes.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Saint-guilhem-le-désert (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Saint-guilhem-le-d%C3%A9sert_%28IGP%29&oldid=240137122"
+  }
+ },
+ "france/savoie": {
+  "text": "France's only alpine wine region, known for grapes rarely grown elsewhere: Jacquère, Roussanne, Altesse and Gringet for white, and Mondeuse for red. Jacquère covers about 59% of the vineyard area and Altesse 21%.",
+  "from": [
+   "planted",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Savoy wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Savoy_wine&oldid=1333693764"
+  }
+ },
+ "france/seyssel": {
+  "text": "A Savoie appellation in the Ain and Haute-Savoie, made only of white wine, still or sparkling. It uses Altesse and Molette, and the wines suit drinking young.",
+  "from": [
+   "rules",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Seyssel AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Seyssel_AOC&oldid=1232404991"
+  }
+ },
+ "france/terres-du-midi": {
+  "text": "A regional French PGI for red, rosé and white still wines from across Languedoc-Roussillon. It covers the same area as Pays d'Oc, but is a blended wine where Pays d'Oc is mostly single-grape.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Terres-du-midi",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Terres-du-midi&oldid=237372976"
+  }
+ },
+ "france/thezac-perricard": {
+  "text": "A French PGI for wine produced in the Lot-et-Garonne department. It was called vin de pays de Thézac-Perricard until 2009.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Thézac-perricard",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Th%C3%A9zac-perricard&oldid=239001563"
+  }
+ },
+ "france/urfe": {
+  "text": "A PGI in the Loire department. Parts of it overlap the Côte Roannaise and Côtes du Forez appellations, which are for dry red and rosé wines from Gamay.",
+  "from": [
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Urfé (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Urf%C3%A9_%28IGP%29&oldid=237373074"
+  }
+ },
+ "france/vaucluse": {
+  "text": "A departmental PGI where Grenache covers about 47% of the vineyard area and Syrah 22%. Every wine is approved at a tasting, and the name can add Aigues or Principauté d'Orange.",
+  "from": [
+   "planted",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Vaucluse (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Vaucluse_%28IGP%29&oldid=237585568"
+  }
+ },
+ "france/vin-de-savoie": {
+  "text": "A Savoie appellation in the Alps foothills, for red and white wines, mostly white. The whites use Chasselas, Jacquère, Altesse and Chardonnay, and the reds Mondeuse, Gamay and Pinot.",
+  "from": [
+   "rules",
+   "where",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Vin de Savoie AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vin_de_Savoie_AOC&oldid=1232404831"
+  }
+ },
+ "france/yonne": {
+  "text": "A French PGI for the Yonne, where Chardonnay covers about 80% of the vineyard area, followed by Pinot Noir at 13%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ }
+}

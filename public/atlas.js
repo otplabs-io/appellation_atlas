@@ -54,7 +54,7 @@ function projRing(r,cam){const out=new Array(r.n);
   for(let i=0;i<r.n;i++){const d=r.lam[i]-cam.l0,cd=Math.cos(d),cp=r.cp[i],sp=r.sp[i]; out[i]=[cp*Math.sin(d),cam.c0*sp-cam.s0*cp*cd,cam.s0*sp+cam.c0*cp*cd];}
   return out;}
 function cross(a,b){const t=a[2]/(a[2]-b[2]),x=a[0]+t*(b[0]-a[0]),y=a[1]+t*(b[1]-a[1]),L=Math.hypot(x,y)||1; return [x/L,y/L,0];}
-function clip(rings){   // cut a polygon at the horizon and close it along the globe's edge (outer rings run counterclockwise)
+function clip(rings,reach=Math.PI){   // cut a polygon at the horizon and close it along the globe's edge (outer rings run counterclockwise)
   const out=[],segs=[];
   for(const r of rings){const n=r.length; let vis=0; for(const p of r) if(p[2]>=0) vis++;
     if(vis===n){out.push(r); continue;} if(!vis) continue;
@@ -66,7 +66,7 @@ function clip(rings){   // cut a polygon at the horizon and close it along the g
   const A=p=>Math.atan2(p[1],p[0]), sg=segs.map(p=>({p,a0:A(p[0]),a1:A(p[p.length-1]),used:false}));
   for(const s0 of sg){if(s0.used) continue; const ring=[]; let s=s0;
     for(let g=0;g<400;g++){s.used=true; for(const q of s.p) ring.push(q);
-      let best=null,bd=9; for(const t of sg) if(!t.used||t===s0){let d=(t.a0-s.a1)%TAU; if(d<0) d+=TAU; if(d<bd){bd=d;best=t;}}
+      let best=null,bd=9; for(const t of sg) if(!t.used||t===s0){let d=(t.a0-s.a1)%TAU; if(d<0) d+=TAU; if(d>TAU-.1&&reach<1.4) d=0; if(d<bd){bd=d;best=t;}}
       const st=Math.ceil(bd/.06); for(let k=1;k<st;k++){const a=s.a1+bd*k/st; ring.push([Math.cos(a),Math.sin(a)]);}
       if(!best||best===s0) break; s=best;}
     out.push(ring);}
@@ -77,7 +77,7 @@ const r1=v=>Math.round(v*10)/10;
 function polyD(poly,cam){
   const dot=poly.c[0]*cam.v[0]+poly.c[1]*cam.v[1]+poly.c[2]*cam.v[2], dist=Math.acos(Math.max(-1,Math.min(1,dot)));
   if(dist-poly.rad>M.va||Math.sin(Math.min(poly.rad,1.5))*cam.R<.35) return '';
-  let rings=poly.rs.map(r=>projRing(r,cam)); if(dist+poly.rad>Math.PI/2-1e-4) rings=clip(rings);
+  let rings=poly.rs.map(r=>projRing(r,cam)); if(dist+poly.rad>Math.PI/2-1e-4) rings=clip(rings,poly.rad);
   const cx=M.W/2,cy=M.H/2,R=cam.R; let d='';
   for(const r of rings) if(r.length>2){d+='M'; for(let i=0;i<r.length;i++) d+=(i?'L':'')+r1(cx+R*r[i][0])+','+r1(cy-R*r[i][1]); d+='Z';}
   return d;
@@ -300,7 +300,14 @@ const fact=(label,value,note)=>value==null||value===''?'':`<div class="fact"><sp
 const chips=list=>`<div class="chips">${list.map(([g,sk,n])=>`<span class="chip ${sk||''}">${esc(g)}${n!=null?`<b>${n}</b>`:''}</span>`).join('')}</div>`;
 const block=(head,body,note)=>body?`<section class="row"><div class="head"><h2 class="ts-section_head">${head}</h2>${note?`<span class="ts-caption">${note}</span>`:''}</div>${body}</section>`:'';
 const toF=c=>c*9/5+32, inch=mm=>mm/25.4, ft=m=>Math.round(m*3.281/10)*10;
-const reading=xs=>xs&&xs.length?`<div class="why"><p class="why-head ts-fact_label">Why it matters</p><dl>${xs.map(([k,v])=>`<dt class="ts-fact_label">${esc(k)}</dt><dd class="ts-body">${esc(v)}</dd>`).join('')}</dl></div>`:'';
+// the grapes left out of what is planted because they are not wine grapes (Copy.leftOut in the app)
+const andList=xs=>xs.length>1?xs.slice(0,-1).join(', ')+' and '+xs[xs.length-1]:(xs[0]||'');
+// notes on the rules facts (Copy.rules in the app)
+const COPY={baseYield:'the yield its rules set; some years a little more is allowed',yieldCeiling:'the most its rules allow in any year; the usual limit is lower',
+  yieldLimit:'the highest the rules allow',recognised:'the year it was first recognised',noShares:'The record lists the grapes allowed, not their shares.'};
+const rockShare=v=>v>=.5?'mostly':v>=.25?'much':'some';   // a rock family's share in words: it comes from a few map points (Copy.share in the app)
+const leftOut=l=>l?(l.juice?` Juice grapes are left out: ${esc(andList(l.juice))}.`:'')+(l.table?` Table grapes are left out: ${esc(andList(l.table))}.`:''):'';
+const reading=(xs,head)=>xs&&xs.length?`<div class="why"><p class="why-head ts-fact_label">${head}</p><dl>${xs.map(([k,v])=>`<dt class="ts-fact_label">${esc(k)}</dt><dd class="ts-body">${esc(v)}</dd>`).join('')}</dl></div>`:'';
 const para=t=>t?`<p class="ts-body soil-text">${esc(t)}</p>`:'';
 const bigNote=f=>f.large?`<p class="ts-caption big-note">${f.parts?'Too big and varied for one reading. These figures average all of it; the table further down compares the places inside.':'Too big and varied for one reading. These figures average all of it, hills and valleys alike.'}</p>`:'';
 function scale(segs,i,pos,label){   // a row of categories, the place's one lit and marked
@@ -325,10 +332,11 @@ const SHAPE_NOTE={'Eurostat NUTS, the area it is named for':'The map draws the d
   'union of its children':'There is no single boundary for it, so the map joins the places inside it.'};
 function renderTitle(id,f){   // the place's name, what it is and which group it is in, above the map
   const cap=x=>x?x[0].toUpperCase()+x.slice(1):x;
-  if(id==='world'){$('#ptitle').innerHTML=`<h2 class="ts-sheet_title name">The world</h2>`; $('#shapeNote').hidden=true; return;}
+  if(id==='world'){$('#ptitle').innerHTML=`<h2 class="ts-sheet_title name">Explore the world’s wine places</h2>`; $('#shapeNote').hidden=true; return;}
   const kind=f?(f.kind.length?f.kind.map(cap).join(' and '):(f.depth===0?'Country':f.shape==='Eurostat LAU, the commune it is named for'?'Commune':'Region')):'';
   $('#ptitle').innerHTML=`<p class="ts-eyebrow eyebrow">${esc(kind)}${kind?' · ':''}<span class="badge ${wset(id)?'':'o'}">${wset(id)?'Benchmark region':'Emerging region'}</span></p><h2 class="ts-sheet_title name" style="--n:${Math.max(...String(PL[id]?.[0]||id).split(/\s+/).map(w=>w.length))}">${esc(PL[id]?.[0]||id)}</h2>`
-    +(f&&f.also.length?`<p class="ts-caption also">Also ${f.also.map(esc).join(', ')}</p>`:'');
+    +(f&&f.also.length?`<p class="ts-caption also">Also ${f.also.map(esc).join(', ')}</p>`:'')
+    +(f&&f.blurb?`<p class="ts-body blurb">${esc(f.blurb.text)}</p>`:'');   // what the place is known for (PlacePage in the app)
   const sn=f&&SHAPE_NOTE[f.shape]; $('#shapeNote').hidden=!sn; $('#shapeNote').textContent=sn||'';
 }
 function renderInfo(f){
@@ -347,6 +355,7 @@ function renderInfo(f){
     X.glance=block('At a glance',b);
   }
   const R=f.research;
+  if(f.keyfacts&&f.keyfacts.length) X.keyfacts=block('Key facts',`<ul class="keyfacts">${f.keyfacts.map(t=>`<li class="ts-body">${esc(t)}</li>`).join('')}</ul>`);   // from the full article (src/keyfacts.py)
   if(R&&R.sheet){X.short=block('In short',`<div class="prose">${Object.values(R.sheet).filter(Boolean).map(t=>`<p class="ts-body">${esc(t)}</p>`).join('')}</div>`,'From our research');}
   const pl=f.planted;
   if(pl&&pl.grapes.length){
@@ -354,21 +363,26 @@ function renderInfo(f){
     const where=pl.scope==='country'?'':pl.scope==='own'?`in ${pl.names.join(' and ')}`:pl.scope==='within'?`across ${pl.names.slice(0,4).join(', ')}${pl.names.length>4?` and ${pl.names.length-4} more`:''}`
       :`${pl.names.slice(0,3).join(', ')}${pl.names.length>3?` and ${pl.names.length-3} more`:''}`;
     const top=pl.grapes[0][1]||1, ac=ha=>fmt(Math.round(ha*2.471));
-    const other=pl.grapes.find(([g])=>g==='Other'), rows=pl.grapes.filter(([g,ha])=>g!=='Other'&&(ha/pl.ha>=.01||pl.grapes.length<=6)).map(([g,ha,c],k)=>`<div class="gr ${pl.legal?pl.legal[pl.grapes.findIndex(x=>x[0]===g)]||'':''}"><span class="g ts-body"><i class="dot ${c==='W'?'w':c==='R'?'r':'o'}"></i>${esc(g)}</span><span class="bar"><i style="width:${Math.min(100,Math.max(1,ha/top*100))}%"></i></span><span class="pc ts-caption">${Math.round(ha/pl.ha*100)||'<1'}%</span>${pl.legal&&pl.legal[pl.grapes.findIndex(x=>x[0]===g)]==='minor'?'<span class="tag ts-caption">minor role</span>':''}</div>`).join('');
-    const cap=wide?`No figures exist for ${esc(f.name)} alone. These are for ${esc(where)}, the wider area it sits in: ${ac(pl.ha)} acres of vines, ${pl.year}.`:`${ac(pl.ha)} acres of vines${where?' '+esc(where):''}, ${pl.year}`;
+    const other=pl.grapes.find(([g])=>g==='Other'), rows=pl.grapes.filter(([g,ha])=>g!=='Other'&&ha/pl.ha>=.01).map(([g,ha,c],k)=>`<div class="gr ${pl.legal?pl.legal[pl.grapes.findIndex(x=>x[0]===g)]||'':''}"><span class="g ts-body"><i class="dot ${c==='W'?'w':c==='R'?'r':'o'}"></i>${esc(g)}</span><span class="bar"><i style="width:${Math.min(100,Math.max(1,ha/top*100))}%"></i></span><span class="pc ts-caption">${Math.round(ha/pl.ha*100)||'<1'}%</span>${pl.legal&&pl.legal[pl.grapes.findIndex(x=>x[0]===g)]==='minor'?'<span class="tag ts-caption">minor role</span>':''}</div>`).join('');
+    const cap=wide?`No figures exist for ${esc(f.name)} alone. These are for ${esc(where)}, the wider area it sits in: ${ac(pl.ha)} acres of wine grapes, ${pl.year}.`+leftOut(pl.left):`${ac(pl.ha)} acres of wine grapes${where?' '+esc(where):''}, ${pl.year}.`+leftOut(pl.left);
     const key=wide?[`Allowed in ${esc(f.name)}`,`Not allowed in ${esc(f.name)}`]:[`Can carry the ${esc(f.name)} name`,'Grown here, but sold under another name'];
     X.planted=block(wide?'Planted in the wider area':'What is planted',`<p class="ts-caption sub">${cap}</p>${pl.legal?`<p class="ts-caption sub legal-key"><span><i class="lk main"></i>${key[0]}</span><span><i class="lk no"></i>${key[1]}</span></p>`:''}<div class="planted">${rows}</div>${other?`<p class="ts-caption sub">Other grapes: ${Math.round(other[1]/pl.ha*100)}%</p>`:''}`,'Share of vineyard area');
   }
   const ru=f.rules;
   if(ru){
     let b='';
-    for(const [sk,head] of SKINS){const g=ru.grapes.filter(x=>x[1]===sk); if(g.length) b+=`<p class="ts-caption sub">${head}</p>${chips(g)}`;}
-    const un=ru.grapes.filter(x=>!x[1]); if(un.length) b+=`<p class="ts-caption sub">Grapes</p>${chips(un)}`;
+    if(ru.province_list) b+=`<p class="ts-caption sub">The EU record lists every grape approved in the province, not this wine's own blend rules.</p><details class="more-d"><summary class="ts-caption">All ${ru.grapes.length} grapes</summary>${chips(ru.grapes)}</details>`;
+    else if(ru.long_list) b+=`<details class="more-d"><summary class="ts-caption">The rules allow ${ru.grapes.length} grapes</summary>${chips(ru.grapes)}</details>`;
+    else{
+      for(const [sk,head] of SKINS){const g=ru.grapes.filter(x=>x[1]===sk); if(g.length) b+=`<p class="ts-caption sub">${head}</p>${chips(g)}`;}
+      const un=ru.grapes.filter(x=>!x[1]); if(un.length) b+=`<p class="ts-caption sub">Grapes</p>${chips(un)}`;
+      if(!ru.cahier&&ru.grapes.length>1) b+=`<p class="ts-caption">${esc(COPY.noShares)}</p>`;
+    }
     if(ru.grapes_other.length) b+=`<p class="ts-caption sub">Also allowed, in smaller roles</p>${chips(ru.grapes_other)}`;
     if(ru.grapes_trial&&ru.grapes_trial.length) b+=`<p class="ts-caption sub">On trial, to adapt to a changing climate</p>${chips(ru.grapes_trial)}`;
     if(ru.limits&&ru.limits.length) b+=`<p class="ts-caption sub">Limits, as a share of the vines</p><ul class="limits">${ru.limits.map(l=>`<li class="ts-body">${esc(l)}</li>`).join('')}</ul>`;
-    b+=`<div class="facts">${fact('Wine types',ru.types.join(', '))}${fact('Highest yield',ru.yield_hl?`${fmt(ru.yield_hl)} hl/ha`:ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:null,ru.yield_hl&&ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:'')}`
-      +`${fact('Fewest vines',ru.density?`${fmt(ru.density)} per ha`:null)}${fact('Irrigation',ru.irrigation)}${fact('Protected since',ru.registered?ru.registered.slice(0,4):null)}${fact('Communes',ru.communes.length?fmt(ru.communes.length):null)}</div>`;
+    b+=`<div class="facts">${fact('Wine types',ru.types.join(', '))}${ru.yield_base?fact('Base yield',ru.yield_base,COPY.baseYield):fact(ru.yield_ceiling?'Yield ceiling':'Yield limit',ru.yield_hl?`${fmt(ru.yield_hl)} hl/ha`:ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:null,ru.yield_ceiling?COPY.yieldCeiling:COPY.yieldLimit)}${fact('Recognised',ru.recognised?String(ru.recognised):null,COPY.recognised)}`
+      +`${fact('Fewest vines',ru.density?`${fmt(ru.density)} per ha`:null)}${fact('Irrigation',ru.irrigation)}${fact('Communes',ru.communes.length?fmt(ru.communes.length):null)}</div>`;
     if(ru.communes.length) b+=`<details class="more-d"><summary class="ts-caption">The communes</summary><p class="ts-caption">${ru.communes.map(esc).join(', ')}</p></details>`;
     X.rules=block('The rules',b,'Allowed grapes, not plantings');
   }
@@ -393,13 +407,13 @@ function renderInfo(f){
       +`${fact('Rain',`${Math.round(inch(c.rain))} in/year`,`${Math.round(inch(c.gs_rain))} in while the vines grow`)}${fact('Climate type',esc(c.koppen_name||c.koppen),c.koppen?'Köppen '+c.koppen:'')}</div>`
       +`<p class="ts-caption sub">Growing season: ${esc((GST_F[gi]||['?'])[0].toLowerCase())}</p>${scale(GST_F.map(x=>[x[0],x[3]]),gi,gp,'Growing season temperature class')}`
       +`<p class="ts-caption sub">Winkler region ${esc(wk?wk[0]:'')}</p>${scale(WK_F.map(x=>[x[0],x[3]]),wi,wp,'Winkler region')}${wk&&wk[1]?`<p class="ts-body wk">${esc(wk[1])}</p>`:''}`
-      +bigNote(f)+reading(rd.climate)
+      +bigNote(f)+reading(rd.climate,'What the climate means for the vines')
       +`<div class="mrow"><div><p class="ts-caption sub">Average temperature by month, °F</p>${months(c.tavg.map(toF),'temperature','t',south)}</div><div><p class="ts-caption sub">Rain by month, inches</p>${months(c.prec.map(inch),'rain','p',south)}</div></div>`;
-    X.climate=block('Climate',b);
+    X.climate=block('Climate',b,'Averages, 1970 to 2000');
   }
   const so=f.soil, rk=f.rocks;
   if(so||rk){
-    const rb=rk&&rk.families.length?`<p class="ts-caption sub">The rock beneath</p><div class="rocks">${rk.families.map(([i,v])=>`<span class="rk r-${i}" style="flex:${v}"><b class="ts-caption">${esc(rk.names[i]||i)}</b><small class="ts-caption">${Math.round(v*100)}%</small></span>`).join('')}</div>`+para(rd.soil&&rd.soil.rock):'';
+    const rb=rk&&rk.families.length?`<p class="ts-caption sub">The rock beneath, from a geologic map: the main rock units, not each vineyard's soil</p><div class="rocks">${rk.families.map(([i,v])=>`<span class="rk r-${i}" style="flex:${v}"><b class="ts-caption">${esc(rk.names[i]||i)}</b><small class="ts-caption">${rockShare(v)}</small></span>`).join('')}</div>`+para(rd.soil&&rd.soil.rock):'';
     const b=rb+(so?`<p class="ts-caption sub">The soil, 1 to 2 feet down</p><div class="facts">${fact('Texture',so.texture)}${fact('Clay, silt, sand',`${so.clay}, ${so.silt}, ${so.sand}%`)}${fact('pH',so.ph,so.ph_class)}${fact('Stones',so.stones!=null?`${so.stones}%`:null,'of the soil by volume')}</div>`+para(rd.soil&&rd.soil.top):'')+bigNote(f);
     X.soil=block('Rock and soil',b);
   }
@@ -409,7 +423,7 @@ function renderInfo(f){
     const top=te.aspect?Object.entries(te.aspect).sort((a,b)=>b[1]-a[1])[0]:null;
     const rose=te.aspect?`<svg class="rose" viewBox="-50 -50 100 100" role="img" aria-label="Which way the slopes face">${['N','NE','E','SE','S','SW','W','NW'].map((d,k)=>{const r=8+te.aspect[d]/Math.max(...Object.values(te.aspect))*30, a1=(k*45-20)*Math.PI/180, a2=(k*45+20)*Math.PI/180;
         return `<path d="M0 0L${(Math.sin(a1)*r).toFixed(1)} ${(-Math.cos(a1)*r).toFixed(1)}A${r.toFixed(1)} ${r.toFixed(1)} 0 0 1 ${(Math.sin(a2)*r).toFixed(1)} ${(-Math.cos(a2)*r).toFixed(1)}Z"/>`;}).join('')}<text x="0" y="-41" text-anchor="middle">N</text><text x="0" y="48" text-anchor="middle">S</text><text x="45" y="3" text-anchor="middle">E</text><text x="-45" y="3" text-anchor="middle">W</text></svg>`:'';
-    const b=`<div class="land"><div class="facts">${fact('Elevation',`${fmt(ft(te.elev[1]))} ft`,`${fmt(ft(te.elev[0]))} to ${fmt(ft(te.elev[2]))} ft`)}${te.aspect?fact('Grade',`${Math.round(Math.tan(te.slope*Math.PI/180)*100)}%`,`${te.slope}° on average`):fact('Slope',`${te.slope}°`,`${Math.round(te.steep*100)}% steeper than 10°, ${Math.round(te.flat*100)}% flat`)}${top?(top[1]<.3?fact('Slopes face','Every way','no main direction'):fact('Slopes face',DN[top[0]],`${Math.round(top[1]*100)}% of sloping ground`)):''}</div>${rose}</div>`+bigNote(f)+reading(rd.land);
+    const b=`<div class="land"><div class="facts">${fact('Elevation',`${fmt(ft(te.elev[1]))} ft`,`${fmt(ft(te.elev[0]))} to ${fmt(ft(te.elev[2]))} ft`)}${te.aspect?fact('Grade',`${Math.round(Math.tan(te.slope*Math.PI/180)*100)}%`,`${te.slope}° on average`):fact('Slope',`${te.slope}°`,`${Math.round(te.steep*100)}% steeper than 10°, ${Math.round(te.flat*100)}% flat`)}${top?(top[1]<.3?fact('Slopes face','Every way','no main direction'):fact('Slopes face',DN[top[0]],`${Math.round(top[1]*100)}% of sloping ground`)):''}</div>${rose}</div>`+bigNote(f)+reading(rd.land,'What the land means for the vines');
     X.land=block('The land',b);
   }
   if(R&&R.claims.length){
@@ -428,7 +442,7 @@ function renderInfo(f){
   const src=[...f.sources,...(R?R.sources:[])];
   X.sources=block('Sources',knownLine+(src.length?`<ul class="src ts-caption">${src.map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`:esc(s.name)}</li>`).join('')}</ul>`:''));
   // what the place is, then what grows there, then why it grows there, then the law, then the notes
-  const order=['glance','short','planted','climate','soil','land','parts','rules','ava','gi','found','none','sources'];
+  const order=['keyfacts','glance','short','planted','climate','soil','land','parts','rules','ava','gi','found','none','sources'];
   const JUMP={planted:'Planted',climate:'Climate',soil:'Rock and soil',land:'Land',parts:'Compare',rules:'Rules',ava:'AVA',gi:'GI',found:'Notes'};
   for(const k of order) if(X[k]) X[k]=X[k].replace('<section class="row"',`<section class="row" id="s-${k}"`);
   const jumps=order.filter(k=>X[k]&&JUMP[k]);
@@ -437,7 +451,7 @@ function renderInfo(f){
   for(const b of document.querySelectorAll('#info [data-jump]')) b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView({behavior:'smooth',block:'start'});
   const apb=$('#allparts'); if(apb) apb.onclick=()=>{M.allParts=true; renderInfo(f); M.allParts=false;};
 }
-const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">Every wine country, region and appellation we have, ${fmt(Object.keys(PL).length)} places in all.</p><p class="ts-body">Benchmark regions, in gold, are the ones the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest.</p><p class="ts-body">Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.</p></div></section>`;
+const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">Every wine country, region and appellation we have, ${fmt(Object.keys(PL).length)} places in all. Pick a country on the globe to start, or search for one.</p><p class="ts-body">Benchmark regions, in gold, are the ones the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest.</p><p class="ts-body">Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.</p></div></section>`;
 async function render(){
   readHash(); renderPlaces(); mapShow();
   if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=WORLD_INFO(); return;}

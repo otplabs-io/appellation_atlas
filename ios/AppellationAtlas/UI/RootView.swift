@@ -13,7 +13,7 @@ struct RootView: View {
         .sensoryFeedback(.selection, trigger: nav.place)
         .sensoryFeedback(.impact(weight: .light), trigger: globe.arrivals)
         .onAppear {
-            globe.onPick = { [nav] id in nav.place == id ? nav.go(globe.view?.id ?? "world") : nav.go(id) }
+            globe.onPick = { [nav] id in nav.go(id) }
             if nav.place.hasPrefix("lookup:") {
                 let v = nav.place.dropFirst(7).split(separator: ",").compactMap { Double($0) }
                 nav.go(WhereAmI.place(at: v[0], v[1], in: globe.atlas) ?? "world")
@@ -29,19 +29,22 @@ struct CompactLayout: View {
     static let peek: CGFloat = 230
 
     var body: some View {
-        ZStack(alignment: .topLeading) {
-            GlobeView(bottomInset: Self.peek)
-                .ignoresSafeArea()
-            BackButton()
-                .padding(.leading, 16)
-                .padding(.top, 4)
-            WhereAmIButton()
-                .padding(.trailing, 16)
-                .padding(.top, 4)
-                .frame(maxWidth: .infinity, alignment: .trailing)
+        GeometryReader { g in
+            ZStack(alignment: .topLeading) {
+                // labels keep clear of the status bar and the buttons under it
+                GlobeView(bottomInset: Self.peek, topInset: g.safeAreaInsets.top + 56)
+                    .ignoresSafeArea()
+                BackButton()
+                    .padding(.leading, 16)
+                    .padding(.top, 4)
+                WhereAmIButton()
+                    .padding(.trailing, 16)
+                    .padding(.top, 4)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+            }
         }
         .sheet(isPresented: .constant(true)) {
-            PlaceSheet()
+            PlaceSheet(detent: $detent)
                 .presentationDetents([.height(Self.peek), .medium, .large], selection: $detent)
                 .presentationBackgroundInteraction(.enabled(upThrough: .medium))
                 .presentationContentInteraction(.scrolls)
@@ -61,7 +64,7 @@ struct WideLayout: View {
             Sidebar()
         } detail: {
             ZStack(alignment: .topLeading) {
-                GlobeView()
+                GlobeView(topInset: 64)
                     .ignoresSafeArea(edges: .bottom)
                 BackButton().padding(16)
                 WhereAmIButton().padding(16).frame(maxWidth: .infinity, alignment: .trailing)
@@ -79,6 +82,7 @@ struct WideLayout: View {
             }
         }
         .navigationSplitViewStyle(.balanced)
+        .onboarding()
     }
 }
 

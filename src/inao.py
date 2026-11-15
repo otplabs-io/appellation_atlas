@@ -384,6 +384,63 @@ def parse(ch, names, sec=''):
     return role, lim, members
 
 
+
+# ---------- base yields, wine types and recognition year, from the same cahier
+_W = lambda s: re.sub(r'\s+', ' ', s)
+COL = r'(?:blancs?|rouges?|ros[ée]s?|gris|clairets?)'
+COLEN = {'blanc': 'white', 'rouge': 'red', 'rose': 'rosé', 'gris': 'gris', 'clairet': 'clairet'}
+def _part(s, a, b, n=1500):
+    m = re.search(a, s, re.I)
+    if not m: return None
+    e = re.search(b, s[m.end():], re.I)
+    return s[m.end():m.end() + (e.start() if e else n)]
+def _colours(t):
+    return [COLEN[fold(c) if fold(c) in COLEN else fold(c)[:-1]] for c in re.findall(COL, t, re.I)]
+def base_yield(sec):
+    """Chapter VIII's rendement (the yield the rules set), not the rendement butoir (the ceiling some years allow):
+    [[colour or '', value, unit], ...]. Per colour when the cahier gives a table."""
+    y = _part(sec, r'VIII\.?\s*[-–―]?\s*Rendements?.{0,80}?1°\s*[-–―]?\s*Rendements?\b', r'2°\s*[-–―]?\s*Rendement butoir|2°|\bIX\.?\s*[-–―]', 900)
+    if not y: return None
+    unit = 'kg/ha' if re.search(r'kilogramme', y, re.I) else 'hl/ha'
+    num = lambda v: float(v.replace(' ', '').replace('\u00a0', '').replace(',', '.'))
+    both = bool(re.search(r'rendement butoir', y, re.I))   # one table with the rendement and the butoir side by side: "Vins blancs 68 75"
+    out, seen = [], set()
+    for cols, v in re.findall(r'pour les vins (' + COL + r'(?:\s*(?:,|et|ou)\s*' + COL + r')*)\b[^.]{0,140}?à\s*(\d+(?:[.,]\d+)?)\s*hectolitres', y, re.I):
+        cs = [c for c in _colours(cols) if c not in seen]
+        if cs: seen.update(cs); out.append([' and '.join(cs), num(v), unit])
+    rows = r'Vins? (?:tranquilles )?(' + COL + r'(?:\s*(?:,|et|ou)\s*' + COL + r')*)\s*:?\s*(\d+(?:[.,]\d+)?)' + (r'\s+\d+' if both else r'\b')
+    for cols, v in re.findall(rows, y, re.I):   # the first row for each colour is the appellation's own; later rows are its mentions (supérieur, Villages)
+        cs = [c for c in _colours(cols) if c not in seen]
+        if cs: seen.update(cs); out.append([' and '.join(cs), num(v), unit])
+    if both:
+        if out: return out
+        m = re.search(r'(?:»|\))\s*(\d+(?:[.,]\d+)?)\s+\d', y)
+        return [['', num(m.group(1)), unit]] if m else None
+    if out: return out
+    m = re.search(r'fix[ée]s?\b[^.]{0,120}?à\s*:?\s*(\d{1,3}(?:[ \u00a0]\d{3})*(?:[.,]\d+)?)\s*(?:hectolitres|kilogrammes)', y, re.I)
+    return [['', num(m.group(1)), unit]] if m else None
+KIND = [(r'mousseux', 'Sparkling {}'), (r'p[ée]tillants?', 'Lightly sparkling {}'), (r'doux naturels?', 'Vin doux naturel ({})'), (r'de liqueur', 'Vin de liqueur ({})')]
+STILL = {'white': 'White wine', 'red': 'Red wine', 'rosé': 'Rosé wine', 'gris': 'Gris (pale rosé)', 'clairet': 'Clairet'}
+def wine_types(sec):
+    """Chapter I's colours and types: "réservée aux vins tranquilles rouges et rosés" is ['Red wine', 'Rosé wine']."""
+    t = _part(sec, r'(?:III|II)\.?\s*[-–―]?\s*Couleurs? et types? de produits?', r'\bIV\.?\s*[-–―]|\bIII\.?\s*[-–―]', 600)
+    if not t: return None
+    out = []
+    for pre, cols, post in re.findall(r'vins?\s+((?:tranquilles|mousseux|p[ée]tillants?|doux naturels|de liqueur)\s+)?(' + COL + r'(?:\s*(?:,|et|ou)\s*' + COL + r')*)(\s+(?:tranquilles|mousseux|p[ée]tillants?|doux naturels))?', t, re.I):
+        k = (pre + ' ' + post).lower()
+        for c in _colours(cols):
+            f = next((f for pat, f in KIND if re.search(pat, k)), None)
+            out.append(f.format(c) if f else STILL[c])
+    return list(dict.fromkeys(out)) or None
+def recognised(sec, names=()):
+    """The year the appellation was first recognised, when the cahier says ("initialement reconnue par le décret du 2 mai 2007"), or,
+    in a cahier shared by several (Alsace's grands crus), the year it gives for this one ("« Alsace grand cru Brand » est reconnue en 1983")."""
+    for n in names:
+        m = re.search(r'«\s*' + re.escape(n) + r'\s*»\s*(?:a été|est)\s+reconnue\s+en\s+(\d{4})', sec, re.I)
+        if m: return int(m.group(1))
+    m = re.search(r'reconnue?s?\s+(?:en\s+appellation\s+d.origine\s+contr[ôo]l[ée]e\s+)?par\s+(?:le\s+)?d[ée]cret\s+du\s+(?:\d{1,2}|1er)\s+\w+\s+(\d{4})', sec[:4000], re.I)
+    return int(m.group(1)) if m else None
+
 def grapes():
     texts()
     M = json.load(open(os.path.join(OUT, 'map.json'), encoding='utf-8'))
@@ -418,7 +475,9 @@ def grapes():
         if not ch: miss[pid] = 'no grape chapter'; continue
         role, limits, members = parse(ch, names, sec)
         if not role: miss[pid] = 'no grapes read'; continue
-        out[pid] = dict(grapes=list(role.values()), members=members, limits=limits, date=r.get('date'), url=r['url'], label=r.get('label'))
+        ws = _W(sec)
+        out[pid] = dict(grapes=list(role.values()), members=members, limits=limits, date=r.get('date'), url=r['url'], label=r.get('label'),
+                        base_yield=base_yield(ws), types=wine_types(ws), recognised=recognised(ws, names))
     meta = dict(source="INAO, cahiers des charges des appellations d'origine contrôlées, as published in the Bulletin officiel du ministère de l'Agriculture (Licence Ouverte)",
                 url='https://www.inao.gouv.fr/rechercher-un-produit')
     json.dump({'$about': __doc__.split('\n')[0], **meta, 'missing': miss, 'places': out},

@@ -1,0 +1,946 @@
+{
+ "italy/carso": {
+  "text": "A small Friuli-Venezia Giulia wine zone in the provinces of Trieste and Gorizia, on the Slovenian border. It is named for the Karst Plateau, became a DOC in 1985, and covers just 140 acres. It makes both red and white wine.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Carso DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Carso_DOC&oldid=1334283571"
+  }
+ },
+ "italy/casauria": {
+  "text": "A PDO in Abruzzo, for still, sparkling and raisined-grape wine.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "italy/casavecchia-di-pontelatone": {
+  "text": "A DOC in the province of Caserta, in Campania, centered on Pontelatone and a handful of nearby communes.. Its wine is named for the Casavecchia grape.",
+  "from": [
+   "rules",
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Casavecchia di Pontelatone",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Casavecchia_di_Pontelatone&oldid=152370125"
+  }
+ },
+ "italy/castel-del-monte": {
+  "text": "A Puglia denomination around Andria, Trani and Bitonto. Its rules allow still, sparkling and semi-sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/castel-del-monte-bombino-nero": {
+  "text": "A Puglia denomination for wine made around Andria, Trani and Bitonto.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/castel-del-monte-nero-di-troia-riserva": {
+  "text": "A Puglia denomination for wine from communes around Andria, Trani and Bitonto, with a riserva tier.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/castel-del-monte-rosso-riserva": {
+  "text": "A Puglia denomination for riserva wine from communes around Andria, Trani and Bitonto.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/castel-san-lorenzo": {
+  "text": "A Campania denomination around Castel San Lorenzo, Roccadaspide and Felitto. Its rules allow still and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/casteller": {
+  "text": "A Trentino denomination spread over dozens of communes, from Riva del Garda to Trento and Rovereto. Its rules allow wine from only six grapes, among them Lagrein, Merlot, Teroldego and two Schiava types. Teroldego is also a leading planting in the wider province.",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/castelli-di-jesi-verdicchio-riserva": {
+  "text": "A Marche riserva tier for Castelli di Jesi, from communes such as Cupramontana, Montecarotto and Staffolo.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/castelli-romani": {
+  "text": "A Lazio denomination covering communes including Rome itself, Frascati, Marino, Velletri and Nemi. Its rules allow still and semi-sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/cerasuolo-d-abruzzo": {
+  "text": "An Abruzzo DOC for rosé, called rosato, made from Montepulciano. The name means cherry red, for the deep color the wine takes from even brief skin contact with the grape's highly pigmented skins.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cerasuolo d'Abruzzo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cerasuolo_d%27Abruzzo&oldid=1327827086"
+  }
+ },
+ "italy/cerasuolo-di-vittoria": {
+  "text": "Sicily's only DOCG, a dry red from around Vittoria, meaning cherry red. It blends Nero d'Avola, locally called Calabrese, at 50 to 70 percent with Frappato, with set cropping rates and a minimum alcohol of 13 percent.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cerasuolo di Vittoria",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cerasuolo_di_Vittoria&oldid=1220299452"
+  }
+ },
+ "italy/cerveteri": {
+  "text": "A Lazio denomination from communes including Cerveteri, Tarquinia and Civitavecchia.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/cesanese-del-piglio": {
+  "text": "A Lazio denomination centered on Piglio, with Anagni, Paliano and two other communes. Its rules name the Cesanese grapes, Cesanese Comune and Cesanese d'Affile, among the allowed varieties. Cesanese is a red grape.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/cesanese-di-affile": {
+  "text": "A Lazio denomination limited to the communes of Affile, Arcinazzo Romano and Roiate. Its rules allow still and semi-sparkling wine, with the red Cesanese d'Affile among the named grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/cesanese-di-olevano-romano": {
+  "text": "A Lazio denomination limited to the communes of Genazzano and Olevano Romano. Its rules allow still and semi-sparkling wine, with the red Cesanese Comune and Cesanese d'Affile among the named grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/chianti": {
+  "text": "A Tuscan red wine made principally from Sangiovese, which Baron Bettino Ricasoli helped establish as the dominant grape in the late 19th century. It was once tied to a straw-covered flask, the fiasco. The zone was first defined in 1716.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Chianti",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Chianti&oldid=1384567843"
+  }
+ },
+ "italy/chianti-classico": {
+  "text": "A Tuscan DOCG whose rules cover communes such as Castellina, Gaiole, Greve and Radda in Chianti.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/cilento": {
+  "text": "A DOC in the province of Salerno, in Campania, covering dozens of communes.",
+  "from": [
+   "rules",
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cilento (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Cilento_%28vino%29&oldid=152773714"
+  }
+ },
+ "italy/circeo": {
+  "text": "A Lazio denomination limited to four communes: Latina, Sabaudia, San Felice Circeo and Terracina. Its rules allow still, semi-sparkling and aromatic sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/cisterna-d-asti": {
+  "text": "A Piedmont DOC in the provinces of Asti and Cuneo, from communes including Cisterna d'Asti, Canale and Govone.",
+  "from": [
+   "rules",
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cisterna d'Asti (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Cisterna_d%27Asti_%28vino%29&oldid=152369481"
+  }
+ },
+ "italy/colli-albani": {
+  "text": "A Lazio denomination from communes including Albano Laziale, Ariccia and Castel Gandolfo. Its rules allow still and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-altotiberini": {
+  "text": "An Umbrian denomination from communes including Città di Castello, Gubbio and Umbertide. Its rules allow still and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-berici": {
+  "text": "A Veneto denomination around Vicenza, across 26 communes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-del-trasimeno": {
+  "text": "An Umbrian denomination from ten communes such as Castiglione del Lago, Panicale and Magione. Its rules allow still and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-dell-etruria-centrale": {
+  "text": "A Tuscan denomination spread over many communes, including Florence, Arezzo, Montalcino and Greve in Chianti.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-della-sabina": {
+  "text": "A Lazio denomination from communes such as Fara in Sabina, Poggio Mirteto and Palombara Sabina. Its rules allow still and semi-sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-di-conegliano": {
+  "text": "A Veneto denomination from communes including Conegliano, Vittorio Veneto and Follina.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-etruschi-viterbesi": {
+  "text": "A Lazio denomination, also called Tuscia, around Montefiascone, Tuscania and Bolsena. Its rules allow still and semi-sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-euganei": {
+  "text": "A Veneto denomination in the Euganean Hills, volcanic hills of 980 to 2,000 feet rising from the plain south of Padua. Its rules allow still and several sparkling styles.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Euganean Hills",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Euganean_Hills&oldid=1381487508"
+  }
+ },
+ "italy/colli-euganei-fior-d-arancio": {
+  "text": "A denomination in the Euganean Hills of Veneto, the volcanic hills south of Padua.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-lanuvini": {
+  "text": "A Lazio denomination limited to the communes of Genzano di Roma and Lanuvio. Its rules allow still and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-maceratesi": {
+  "text": "A DOC in the province of Macerata, in Marche, created in 1975. It allows white and red wines, plus quality sparkling wine.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Colli Maceratesi DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Colli_Maceratesi_DOC&oldid=1220578978"
+  }
+ },
+ "italy/colli-martani": {
+  "text": "An Umbrian denomination of 13 communes around Montefalco, Todi, Spoleto and Bevagna. Its rules allow still and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-orientali-del-friuli-picolit": {
+  "text": "A white wine DOCG in the province of Udine, in Friuli-Venezia Giulia, covering communes such as Buttrio, Cividale del Friuli and Corno di Rosazzo. Picolit is among the grapes its rules cover.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Colli Orientali del Friuli Picolit",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Colli_Orientali_del_Friuli_Picolit&oldid=152369543"
+  }
+ },
+ "italy/colli-perugini": {
+  "text": "An Umbrian denomination of seven communes around Perugia, Deruta and Marsciano. Its rules allow still and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-pesaresi": {
+  "text": "A Marche denomination covering about 30 communes including Fano and Cagli. Its rules allow still and quality sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-tortonesi": {
+  "text": "A Piedmont denomination of 46 communes around Tortona. Its rules allow still, semi-sparkling and sparkling wine. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/collina-torinese": {
+  "text": "A Piedmont denomination of 28 communes including Andezeno and Arignano, near Turin. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/colline-joniche-tarantine": {
+  "text": "A Puglia denomination from communes such as Castellaneta, Ginosa and Grottaglie. Its rules allow wine and liqueur wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colline-lucchesi": {
+  "text": "A DOC created in 1968 in northern Tuscany, centered near Lucca.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Colline Lucchesi",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Colline_Lucchesi&oldid=1220578899"
+  }
+ },
+ "italy/colline-novaresi": {
+  "text": "A Piedmont denomination of 25 communes including Boca and Borgomanero. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/colline-saluzzesi": {
+  "text": "A Piedmont denomination of 13 communes around Saluzzo, including Busca and Dronero. Its rules allow still and sparkling wine. Piedmont grows mostly Barbera (27%) and Muscat Blanc (25%).",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/colline-teramane-montepulciano-dabruzzo": {
+  "text": "An Abruzzo denomination of 31 communes including Teramo, Atri and Campli. Its rules allow wine from only two grapes, Montepulciano and Sangiovese.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/collio": {
+  "text": "A white wine zone in the Gorizia Hills of Friuli-Venezia Giulia, on the border with Slovenia. Leading grapes are Friulano, Ribolla Gialla, Malvasia Istriana, Chardonnay, Pinot Bianco, Pinot Grigio and Sauvignon Blanc. Red wine is also made.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Collio Goriziano",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Collio_Goriziano&oldid=1256554872"
+  }
+ },
+ "italy/conegliano-valdobbiadene-prosecco-superiore": {
+  "text": "A Veneto DOCG in the hills of Treviso province, between Vittorio Veneto and Valdobbiadene, at 490 to 1,150 feet. Its wine is made from Glera, with Verdiso, Perera and Bianchetta Trevigiana allowed, in sparkling and still styles. Cartizze lies inside.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Conegliano Valdobbiadene - Prosecco",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Conegliano_Valdobbiadene_-_Prosecco&oldid=152369817"
+  }
+ },
+ "italy/conero": {
+  "text": "A Marche denomination of six communes including Osimo, Numana and Camerano.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/contea-di-sclafani": {
+  "text": "A Sicilian denomination from 14 communes including Caltavuturo and Cammarata. Its rules allow wine from three main grapes, Catarratto Bianco Comune, Catarratto Bianco Lucido and Perricone, with Nero d'Avola as a minor grape.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/contessa-entellina": {
+  "text": "A Sicilian denomination limited to a single commune, Contessa Entellina.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/controguerra": {
+  "text": "An Abruzzo denomination limited to five communes, including Controguerra, Colonnella and Corropoli. Its rules allow still and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/copertino": {
+  "text": "A Puglia denomination from six communes around Copertino and Galatina. Its rules allow wine from five grapes: Negro Amaro, Montepulciano, Sangiovese and the Malvasia Nera of Brindisi and Lecce.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/cori": {
+  "text": "A Lazio denomination limited to two communes, Cori and Cisterna di Latina.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/cortese-dell-alto-monferrato": {
+  "text": "A Piedmont denomination across 86 communes of Alto Monferrato, including Acqui Terme.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/corti-benedettine-del-padovano": {
+  "text": "A Veneto denomination across 31 communes. Its rules allow still, semi-sparkling and several sparkling styles.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/cortona": {
+  "text": "A Tuscan denomination limited to the commune of Cortona.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/costa-d-amalfi": {
+  "text": "A Campania denomination from 13 communes including Amalfi, Atrani and Furore.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/coste-della-sesia": {
+  "text": "A Piedmont denomination of 16 communes including Gattinara and Cossato. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/custoza": {
+  "text": "A Veneto white wine denomination from nine communes including Peschiera del Garda and Lazise. Its rules allow still and sparkling wine from grapes such as Garganega, Trebbiano, Chardonnay and Pinot Bianco.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/delia-nivolelli": {
+  "text": "A Sicilian denomination from four communes including Marsala and Mazara del Vallo. Its rules allow still and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/delle-venezie": {
+  "text": "A DOC covering Trento, Friuli-Venezia Giulia and Veneto, across 953 communes. Its rules allow still, sparkling and semi-sparkling wine. The area grows mostly Glera (34 percent), then Pinot Gris and Garganega.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Delle Venezie",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Delle_Venezie&oldid=153275524"
+  }
+ },
+ "italy/dogliani": {
+  "text": "A Piedmont red wine made from Dolcetto alone, from 21 communes around Dogliani and Carrù.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/dolcetto-d-acqui": {
+  "text": "A Piedmont red wine made from Dolcetto alone, from 23 communes around Acqui Terme.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/dolcetto-d-alba": {
+  "text": "A Piedmont red wine made from Dolcetto alone, from 36 communes around Alba, including Barolo and Barbaresco. It is traditionally the most drunk table wine of the Langhe, and is made in the provinces of Asti and Cuneo.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Dolcetto d'Alba",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Dolcetto_d%27Alba&oldid=152369553"
+  }
+ },
+ "italy/dolcetto-d-asti": {
+  "text": "A Piedmont red wine made from Dolcetto alone, from 24 communes of Asti province, including Canelli and Bubbio.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Dolcetto d'Asti",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Dolcetto_d%27Asti&oldid=152369554"
+  }
+ },
+ "italy/dolcetto-di-diano-d-alba": {
+  "text": "A Piedmont red wine made from Dolcetto alone, from the single commune of Diano d'Alba.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/dolcetto-di-ovada": {
+  "text": "A Piedmont denomination of 22 communes around Ovada. Its wine is named for the Dolcetto grape. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/dolcetto-di-ovada-superiore": {
+  "text": "A Piedmont red wine made from Dolcetto alone, in a Superiore tier, from 22 communes around Ovada.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/elba": {
+  "text": "A DOC for wine from the island of Elba, off Tuscany, created in 1967. It can be red, white or sweet. Elba rosso is at least 60 percent Sangiovese, and the white blends Ansonica, Trebbiano Toscano and Vermentino, among others.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Elba DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Elba_DOC&oldid=1372689030"
+  }
+ },
+ "italy/elba-aleatico-passito": {
+  "text": "A wine from Aleatico alone, made on the island of Elba, off Tuscany. It comes from seven communes, including Capoliveri, Marciana and Porto Azzurro.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/eloro": {
+  "text": "A Sicilian denomination from five communes including Noto and Pachino. Nero d'Avola is also the second most planted grape in Sicily.",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/erbaluce-di-caluso": {
+  "text": "A Piedmont DOCG white from the Canavese, in the hills around Caluso and Ivrea. It is made from the Erbaluce grape, a native white variety grown there since ancient times. Styles include still, traditional-method sparkling and a straw wine.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Erbaluce di Caluso",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Erbaluce_di_Caluso&oldid=1376859864"
+  }
+ },
+ "italy/erice": {
+  "text": "A Sicilian denomination from seven communes including Erice and Castellammare del Golfo. Sicily grows mostly Catarratto Bianco (26%).",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/esino": {
+  "text": "A Marche denomination of 53 communes including Ancona and Arcevia. Its rules allow still and semi-sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/est-est-est-di-montefiascone": {
+  "text": "A Lazio white wine from around Montefiascone, in Viterbo province, based on Trebbiano and Malvasia Bianca. It has been a DOC since 1966, over about 1,000 acres. Its odd name comes from a tale about a 12th-century German bishop.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Est! Est!! Est!!! di Montefiascone",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Est%21_Est%21%21_Est%21%21%21_di_Montefiascone&oldid=1378809061"
+  }
+ },
+ "italy/etna": {
+  "text": "A Sicilian DOC on Europe's biggest active volcano, Mount Etna, where vines have long played a major role. Its reds and rosés are made mostly from Nerello Mascalese, and its whites from Carricante.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Etna DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Etna_DOC&oldid=1337661048"
+  }
+ },
+ "italy/falanghina-del-sannio": {
+  "text": "A Campania denomination of 78 communes in the Sannio area.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/falerio": {
+  "text": "A Marche denomination of 73 communes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/falerno-del-massico": {
+  "text": "A red wine DOC in Caserta province, in Campania, from five communes including Carinola and Sessa Aurunca. It was classified in 1989 and comes from the area of ancient Rome's falernian wine.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Falerno del Massico",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Falerno_del_Massico&oldid=1220606995"
+  }
+ },
+ "italy/fara": {
+  "text": "A Piedmont red from the communes of Fara Novarese and Briona. Its rules allow Nebbiolo, Uva Rara and Vespolina.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/faro": {
+  "text": "A Sicilian denomination limited to the commune of Messina. Its rules allow wine from eight grapes, among them Nerello Mascalese, Nerello Cappuccio, Nocera and Sangiovese. Sicily grows mostly Catarratto Bianco (26%) and Nero d'Avola (17%).",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/fiano-di-avellino": {
+  "text": "A Campania white from 26 communes around Avellino, made under rules that allow four grapes: Fiano, Greco, Coda di Volpe and Trebbiano Toscano.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/franciacorta": {
+  "text": "A sparkling wine from Brescia province, in Lombardy, made by the traditional method on hills between Lake Iseo and Brescia. Its rules allow Chardonnay, Pinot Nero, Pinot Bianco and Erbamat. It has been a DOCG for sparkling wine only since 1995.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Franciacorta (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Franciacorta_%28wine%29&oldid=1383747169"
+  }
+ },
+ "italy/frascati": {
+  "text": "A white wine from the Lazio town of Frascati, southeast of Rome, where grapes were grown as far back as the 5th century BC. It is made from Malvasia di Candia, Malvasia del Lazio, Grechetto, Bombino Bianco and Trebbiano.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Frascati DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Frascati_DOC&oldid=1291636187"
+  }
+ },
+ "italy/frascati-superiore": {
+  "text": "A higher tier of Frascati, from communes including Frascati, Grottaferrata and Monte Porzio Catone in Lazio.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/freisa-d-asti": {
+  "text": "A Piedmont wine made from Freisa alone, from the communes of Cellarengo and Villanova d'Asti. Its rules allow still, semi-sparkling and sparkling wine. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/freisa-di-chieri": {
+  "text": "A Piedmont denomination of 13 communes around Chieri. Its wine is named for the Freisa grape. Its rules allow still, semi-sparkling and sparkling wine.",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/friuli-annia": {
+  "text": "A Friuli-Venezia Giulia DOC and the newest of the region's denominations, set up in 1995, covering eight communes including Marano Lagunare. Its rules allow still and sparkling wine.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Friuli Annia",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Friuli_Annia&oldid=152369985"
+  }
+ },
+ "italy/friuli-aquileia": {
+  "text": "A Friuli-Venezia Giulia DOC set up in 1975, running from Aquileia through Cervignano del Friuli to Trivignano Udinese. Its rules allow still and sparkling wine.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Friuli Aquileia",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Friuli_Aquileia&oldid=152369988"
+  }
+ },
+ "italy/friuli-colli-orientali": {
+  "text": "A Friuli-Venezia Giulia DOC in Udine province, in three sections: Ramandolo, Cialla and Corno di Rosazzo. It has similar climate and soil to Collio but makes more red and dessert wine.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Colli Orientali del Friuli",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Colli_Orientali_del_Friuli&oldid=1371172991"
+  }
+ },
+ "italy/friuli-grave": {
+  "text": "A Friuli-Venezia Giulia DOC across 93 communes in Udine and Pordenone provinces.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Friuli Grave",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Friuli_Grave&oldid=152369992"
+  }
+ },
+ "italy/friuli-isonzo": {
+  "text": "A Friuli-Venezia Giulia denomination of 21 communes around Gorizia and Cormons.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/friuli-latisana": {
+  "text": "A Friuli-Venezia Giulia DOC in Udine province, around Latisana and Lignano Sabbiadoro. Its rules allow still and sparkling wine. The region grows mostly Pinot Gris (29%), then Glera (25%) and Merlot (8%).",
+  "from": [
+   "wikipedia",
+   "rules",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Friuli Latisana",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Friuli_Latisana&oldid=152370003"
+  }
+ },
+ "italy/friuli-venezia-giulia": {
+  "text": "A northeast Italian region known mainly for white wine, which is considered some of Italy's best in that style. Pinot Gris is the most planted grape at 29 percent, then Glera at 25. It has 11 DOCs, 3 DOCGs and 3 IGTs.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Friuli-Venezia Giulia wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Friuli-Venezia_Giulia_wine&oldid=1348049250"
+  }
+ },
+ "italy/gabiano": {
+  "text": "A Piedmont denomination limited to the communes of Gabiano and Moncestino. Its rules allow wine from only Barbera, Freisa and Grignolino.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/galatina": {
+  "text": "A Puglia denomination of seven communes around Galatina. Its rules allow still and semi-sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/galluccio": {
+  "text": "A Campania denomination limited to five communes, including Galluccio and Rocca d'Evandro.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/gambellara": {
+  "text": "A Veneto white wine denomination from four communes including Gambellara. Its rules allow still and quality sparkling wine from Garganega, Chardonnay, Pinot Bianco and Trebbiano di Soave. Garganega is also among the main grapes of Veneto.",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "italy/gattinara": {
+  "text": "A red Piedmont DOCG made from Nebbiolo grown in the hills of Gattinara commune, in Vercelli province. It became a DOC in 1967 and a DOCG in 1990. Its rules also allow Uva Rara and Vespolina.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Gattinara DOCG",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Gattinara_DOCG&oldid=1249122609"
+  }
+ },
+ "italy/gavi": {
+  "text": "A dry white from the Alessandria province in Piedmont, near the Ligurian border. It is made only from Cortese, a grape reported there since the 17th century. It became a DOC in 1974 and a DOCG in 1998.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cortese di Gavi",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cortese_di_Gavi&oldid=1342122805"
+  }
+ },
+ "italy/genazzano": {
+  "text": "A Lazio denomination of five communes, including Genazzano and Olevano Romano.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/ghemme": {
+  "text": "A red DOCG in the hills of Novara province, in Piedmont, from Ghemme and Romagnano Sesia. It is made mainly from Nebbiolo, locally called Spanna, with Uva Rara and Vespolina allowed. It needs at least three years of aging.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ghemme DOCG",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ghemme_DOCG&oldid=1220607126"
+  }
+ },
+ "italy/cartizze": {
+  "text": "A place inside the Conegliano Valdobbiadene Prosecco Superiore DOCG in Veneto, whose wines are sparkling and still Prosecco made from Glera. Verdiso, Perera and Bianchetta Trevigiana are also allowed there.",
+  "from": [
+   "rules_of_wider",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Conegliano Valdobbiadene - Prosecco",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Conegliano_Valdobbiadene_-_Prosecco&oldid=152369817"
+  }
+ },
+ "italy/castiglione-falletto": {
+  "text": "One of the communes of the Barolo zone in Piedmont, southwest of Alba. Barolo is a red DOCG made from Nebbiolo and often described as one of Italy's greatest wines.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Barolo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barolo&oldid=1366043582"
+  }
+ }
+}

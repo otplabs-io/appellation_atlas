@@ -226,7 +226,7 @@ def views(used,kids,geo,items,thin=False,tight=1):
         ch=[geo[c] for c in kids[n] if geo.get(c) is not None]
         if T[n]['depth']==0:   # a country: its main land and every place with wine, so a region is seen in its country
             base=unary_union([max(polys(geo[n]),key=lambda p:p.area),*ch])
-        else: base=unary_union(ch) if ch else geo[n]
+        else: base=unary_union([geo[n],*ch])   # the place itself, not just its parts: Russian River Valley, not Green Valley
         whole=full.get(n) if T[n]['depth']>0 else None
         if whole is not None: base=unary_union([base,whole])   # frame the whole region, not just its parts with wine
         c,half=frame(base)

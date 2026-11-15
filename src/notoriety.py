@@ -206,6 +206,12 @@ def find_all():
         ts=[norm(v) for v in LK.get(q,{}).get('links',{}).values()]
         return any(m and any(m in x for x in ts) for m in map(norm,base(n)))
     CT=cats('enwiki',sorted({t for n,ts in bare.items() for t in ts if t in hit}))   # Colchagua Valley is in "Wine regions of Chile"
+    COUNTRY={k:T[k]['name'] for k in T if T[k]['depth']==0}
+    ALIAS={'united-states':['united states','u.s.','usa','american']}
+    def foreign(n,q):   # an article whose description names another country is not this place's: "Montana (wine)" is the US state's, not Bulgaria's
+        d=(M.get(q,('',[]))[0] or '').lower().replace('new mexico','new-mx'); own=country(n)   # New Mexico is not Mexico
+        says=lambda c:any(re.search(r'(?<!\w)'+re.escape(w)+r'(?!\w)',d) for w in ALIAS.get(c,[COUNTRY[c].lower()]))
+        return not says(own) and any(says(c) for c in COUNTRY if c!=own)
     def ok(t,b):   # a bare name, or a title that redirects, counts only when the item it lands on is a wine place: a description
         f,q=hit[t]; d,c=M.get(q,('',[])); c=set(c)   # that says so, or one of CLASSES. That keeps out communes, lakes, towns, grapes, disambiguations.
         if b and c&SETTLED and not c&PLACE: return False
@@ -213,7 +219,7 @@ def find_all():
     pick={}
     for n,ts in rest.items():   # the first of its usual titles that has an article; the bare name only as a last resort
         if n in NOT_PLACE: continue
-        good=lambda t:hit[t][0]==t or named(n,hit[t][1])   # a redirect must land on an article about this place, not "Sparkling wine"
+        good=lambda t:(hit[t][0]==t or named(n,hit[t][1])) and not foreign(n,hit[t][1])   # a redirect must land on an article about this place, not "Sparkling wine"
         t=next(((t,False) for t in ts if t in hit and ok(t,False) and good(t)),None) or next(((t,True) for t in bare.get(n,[]) if t in hit and ok(t,True) and good(t)),None)
         if t: pick[n]=t+tuple(hit[t[0]])
     # One article, one place: a title that is the article itself beats a redirect to it, then the broader place.

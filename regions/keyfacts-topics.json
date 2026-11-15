@@ -1,0 +1,418 @@
+{
+ "$about": "What to look for in each classic place's Wikipedia article, from the editorial review (build/review). Pointers only: a fact goes in only when the article says it.",
+ "places": {
+  "france": [
+   "the AOC/AOP, IGP and Vin de France hierarchy"
+  ],
+  "france/bordeaux": [
+   "the classifications: 1855, Saint-Emilion, Graves, Cru Bourgeois",
+   "maritime climate and vintage variation",
+   "left bank and right bank blends"
+  ],
+  "france/medoc": [
+   "gravel soils by the estuary",
+   "Cabernet Sauvignon-led blends",
+   "Haut-Médoc and the communal appellations"
+  ],
+  "france/pauillac": [
+   "first growths and the 1855 classification",
+   "gravel soils",
+   "Cabernet Sauvignon-led blends"
+  ],
+  "france/margaux": [
+   "the 1855 classified growths in Margaux",
+   "gravel soils",
+   "style of the wines"
+  ],
+  "france/saint-emilion": [
+   "the Saint-Emilion classification and how often it is revised",
+   "limestone plateau and slopes",
+   "Merlot and Cabernet Franc"
+  ],
+  "france/pomerol": [
+   "no official classification",
+   "clay and iron-rich subsoil",
+   "Merlot dominance"
+  ],
+  "france/sauternes": [
+   "noble rot (botrytis) from autumn mists where the Ciron meets the Garonne",
+   "successive selective picking",
+   "Sémillon-based sweet white",
+   "1855 classification of Sauternes"
+  ],
+  "france/graves": [
+   "the Graves classification of 1953/1959",
+   "gravel soils",
+   "red and dry white styles"
+  ],
+  "france/pessac-leognan": [
+   "created in 1987",
+   "home of the classified growths of Graves"
+  ],
+  "france/burgundy": [
+   "regional, village, Premier Cru and Grand Cru hierarchy",
+   "the climat",
+   "Pinot Noir and Chardonnay"
+  ],
+  "france/chablis": [
+   "the four levels: Petit Chablis, Chablis, Premier Cru, Grand Cru",
+   "Kimmeridgian soil",
+   "spring frost"
+  ],
+  "france/cote-de-nuits": [
+   "Grand Crus mostly red",
+   "Grand Cru vineyards on the mid-slope"
+  ],
+  "france/gevrey-chambertin": [
+   "Grand Crus such as Chambertin",
+   "red Pinot Noir"
+  ],
+  "france/vosne-romanee": [
+   "Grand Crus such as Romanée-Conti, La Tâche, Richebourg"
+  ],
+  "france/cote-de-beaune": [
+   "great whites: Meursault, Puligny, Chassagne",
+   "Corton and Corton-Charlemagne"
+  ],
+  "france/meursault": [
+   "white wine, Chardonnay",
+   "Premier Crus, no Grand Cru"
+  ],
+  "france/puligny-montrachet": [
+   "Grand Crus Montrachet and Bâtard-Montrachet",
+   "white wine"
+  ],
+  "france/beaujolais": [
+   "carbonic and semi-carbonic maceration",
+   "the tiers: Beaujolais, Beaujolais-Villages, the ten crus",
+   "granite in the north"
+  ],
+  "france/morgon": [
+   "one of the ten Beaujolais crus",
+   "Côte du Py",
+   "age-worthy style"
+  ],
+  "france/macon": [
+   "Mâcon-Villages",
+   "Pouilly-Fuissé",
+   "Chardonnay"
+  ],
+  "france/champagne": [
+   "traditional method and time on lees",
+   "Grand Cru and Premier Cru villages (échelle des crus)",
+   "sub-regions: Montagne de Reims, Vallée de la Marne, Côte des Blancs, Côte des Bar",
+   "chalk soils",
+   "hand harvesting"
+  ],
+  "france/alsace": [
+   "varietal labelling",
+   "Vendanges Tardives and Sélection de Grains Nobles",
+   "rain shadow of the Vosges",
+   "Alsace Grand Cru"
+  ],
+  "france/loire-valley": [
+   "sub-regions: Pays Nantais, Anjou-Saumur, Touraine, Central Vineyards",
+   "main grapes Melon, Chenin Blanc, Cabernet Franc, Sauvignon Blanc"
+  ],
+  "france/sancerre": [
+   "Sauvignon Blanc",
+   "soils: terres blanches, caillottes, silex",
+   "red and rosé from Pinot Noir"
+  ],
+  "france/vouvray": [
+   "Chenin Blanc",
+   "dry to sweet and sparkling styles",
+   "tuffeau limestone"
+  ],
+  "france/muscadet-sevre-et-maine": [
+   "sur lie ageing",
+   "Melon de Bourgogne",
+   "crus communaux"
+  ],
+  "france/rhone-valley": [
+   "northern and southern Rhône",
+   "the Mistral",
+   "Syrah in the north, Grenache blends in the south"
+  ],
+  "france/cote-rotie": [
+   "Syrah with up to 20% Viognier",
+   "steep terraces",
+   "Côte Brune and Côte Blonde"
+  ],
+  "france/hermitage": [
+   "steep granite hill",
+   "Syrah, with Marsanne and Roussanne allowed",
+   "vin de paille"
+  ],
+  "france/chateauneuf-du-pape": [
+   "many permitted grapes, Grenache-led",
+   "galets roulés",
+   "the first appellation rules (1923/1936)"
+  ],
+  "france/provence": [
+   "rosé is most of the production",
+   "Bandol and Mourvèdre"
+  ],
+  "france/languedoc-roussillon": [
+   "IGP Pays d'Oc",
+   "vins doux naturels",
+   "Limoux sparkling wine"
+  ],
+  "italy": [
+   "DOCG, DOC, IGT hierarchy"
+  ],
+  "italy/piedmont": [
+   "Nebbiolo, Barbera, Dolcetto, Moscato",
+   "Barolo and Barbaresco",
+   "the Langhe and Roero"
+  ],
+  "italy/barolo": [
+   "minimum ageing: 38 months, 18 in wood; Riserva 62 months",
+   "11 communes",
+   "Nebbiolo only"
+  ],
+  "italy/barbaresco": [
+   "minimum ageing: 26 months, 9 in wood; Riserva 50 months",
+   "Nebbiolo only"
+  ],
+  "italy/chianti-classico": [
+   "at least 80% Sangiovese",
+   "Riserva and Gran Selezione",
+   "the black rooster"
+  ],
+  "italy/brunello-di-montalcino": [
+   "100% Sangiovese",
+   "release after about five years, at least two in wood",
+   "Rosso di Montalcino"
+  ],
+  "italy/valpolicella": [
+   "Corvina, Corvinone and Rondinella",
+   "the style ladder: Valpolicella, Ripasso, Amarone, Recioto",
+   "appassimento"
+  ],
+  "italy/amarone-della-valpolicella": [
+   "appassimento, dried grapes",
+   "minimum ageing",
+   "dry style versus Recioto"
+  ],
+  "italy/soave": [
+   "Garganega",
+   "Soave Classico and Soave Superiore DOCG",
+   "Recioto di Soave"
+  ],
+  "italy/prosecco-doc": [
+   "Glera",
+   "tank (Charmat) method",
+   "the DOCGs Conegliano Valdobbiadene and Asolo"
+  ],
+  "italy/etna": [
+   "Nerello Mascalese and Carricante",
+   "volcanic soils and high altitude vineyards",
+   "contrade"
+  ],
+  "italy/taurasi": [
+   "Aglianico at least 85%",
+   "ageing rules",
+   "volcanic soils"
+  ],
+  "spain": [
+   "DO, DOCa and Vino de Pago",
+   "Tempranillo, Garnacha, Albariño, Airén"
+  ],
+  "spain/rioja": [
+   "ageing categories: Crianza, Reserva, Gran Reserva",
+   "Rioja Alta, Alavesa, Oriental",
+   "Tempranillo-led blends"
+  ],
+  "spain/ribera-del-duero": [
+   "Tinto Fino (Tempranillo) at least 75%",
+   "high altitude, continental climate"
+  ],
+  "spain/priorat": [
+   "llicorella soil",
+   "Garnacha and Cariñena",
+   "DOQ status"
+  ],
+  "spain/rias-baixas": [
+   "Albariño",
+   "wet Atlantic climate and pergola training",
+   "its five subzones"
+  ],
+  "spain/jerez": [
+   "albariza soil",
+   "flor and biological ageing versus oxidative ageing",
+   "the solera system",
+   "Palomino"
+  ],
+  "spain/cava": [
+   "traditional method",
+   "minimum time on lees and the Reserva and Gran Reserva tiers",
+   "Macabeo, Xarel-lo, Parellada"
+  ],
+  "spain/rueda": [
+   "Verdejo",
+   "high plateau"
+  ],
+  "portugal": [
+   "DOC and Vinho Regional",
+   "native grapes such as Touriga Nacional"
+  ],
+  "portugal/douro": [
+   "Baixo Corgo, Cima Corgo, Douro Superior",
+   "schist soils and terraces",
+   "Port and unfortified wine"
+  ],
+  "portugal/porto": [
+   "fortification with grape spirit (aguardente)",
+   "ruby and tawny style families",
+   "vintage Port and LBV"
+  ],
+  "portugal/vinho-verde": [
+   "Alvarinho and Loureiro",
+   "light, fresh styles"
+  ],
+  "portugal/madeira": [
+   "estufagem and canteiro heating",
+   "the noble grapes Sercial, Verdelho, Boal, Malmsey",
+   "Tinta Negra"
+  ],
+  "germany": [
+   "Qualitätswein and Prädikatswein, the Prädikat levels",
+   "Riesling"
+  ],
+  "germany/mosel": [
+   "steep slate slopes",
+   "Riesling",
+   "off-dry and sweet styles"
+  ],
+  "germany/rheingau": [
+   "Riesling",
+   "south-facing slopes along the Rhine"
+  ],
+  "germany/pfalz": [
+   "one of the warmest German regions",
+   "Riesling and Pinot varieties"
+  ],
+  "austria": [
+   "the DAC system",
+   "Grüner Veltliner and Blaufränkisch"
+  ],
+  "austria/wachau": [
+   "Steinfeder, Federspiel, Smaragd (Vinea Wachau)",
+   "Wachau DAC",
+   "terraces above the Danube"
+  ],
+  "hungary/tokaj": [
+   "aszú berries and the Aszú style",
+   "Szamorodni and Eszencia",
+   "Furmint and Hárslevelű",
+   "fog from the Bodrog and Tisza rivers"
+  ],
+  "greece/santorini": [
+   "Assyrtiko",
+   "kouloura basket training",
+   "ungrafted vines, phylloxera-free",
+   "volcanic soil",
+   "Vinsanto"
+  ],
+  "united-states": [
+   "AVA labelling rules"
+  ],
+  "united-states/napa-valley": [
+   "Cabernet Sauvignon",
+   "sub-AVAs",
+   "cooler south, warmer north"
+  ],
+  "united-states/sonoma-county": [
+   "Pacific fog and cool coastal areas",
+   "Pinot Noir and Chardonnay",
+   "Russian River Valley"
+  ],
+  "united-states/willamette-valley": [
+   "Pinot Noir",
+   "sub-AVAs",
+   "soils such as Jory"
+  ],
+  "united-states/columbia-valley": [
+   "rain shadow of the Cascades",
+   "irrigation",
+   "winter freeze"
+  ],
+  "united-states/finger-lakes": [
+   "deep lakes moderating temperature",
+   "Riesling",
+   "vinifera, hybrid and native grapes"
+  ],
+  "australia/barossa-valley": [
+   "old vines",
+   "Shiraz",
+   "phylloxera-free South Australia"
+  ],
+  "australia/clare-valley": [
+   "dry Riesling",
+   "cool nights and altitude"
+  ],
+  "australia/coonawarra": [
+   "terra rossa over limestone",
+   "Cabernet Sauvignon"
+  ],
+  "australia/hunter-valley": [
+   "Hunter Semillon style",
+   "summer rain and humidity"
+  ],
+  "australia/margaret-river": [
+   "Cabernet Sauvignon and Chardonnay",
+   "Indian Ocean influence",
+   "Semillon Sauvignon Blanc blends"
+  ],
+  "australia/yarra-valley": [
+   "Pinot Noir, Chardonnay and sparkling wine",
+   "cool climate"
+  ],
+  "new-zealand/marlborough": [
+   "Sauvignon Blanc",
+   "Wairau and Awatere valleys",
+   "sunshine and cool nights"
+  ],
+  "new-zealand/central-otago": [
+   "Pinot Noir",
+   "continental climate, dry, frost",
+   "southernmost wine region"
+  ],
+  "south-africa/stellenbosch": [
+   "False Bay and the Cape Doctor",
+   "mountain slopes",
+   "Cabernet Sauvignon and Pinotage"
+  ],
+  "south-africa/swartland": [
+   "dry-farmed old bush vines",
+   "Chenin Blanc and Rhône varieties"
+  ],
+  "chile/maipo-valley": [
+   "Cabernet Sauvignon",
+   "Andes influence",
+   "Alto Maipo"
+  ],
+  "chile/casablanca-valley": [
+   "cool coastal climate, Humboldt Current",
+   "white wines and Pinot Noir",
+   "frost"
+  ],
+  "argentina/mendoza": [
+   "high altitude vineyards",
+   "Malbec",
+   "irrigation from Andes snowmelt",
+   "Uco Valley and Luján de Cuyo"
+  ],
+  "argentina/valle-de-uco": [
+   "high altitude",
+   "Malbec",
+   "sub-regions such as Tupungato"
+  ],
+  "canada/niagara-peninsula": [
+   "Icewine",
+   "Lake Ontario and the Niagara Escarpment",
+   "VQA"
+  ]
+ }
+}

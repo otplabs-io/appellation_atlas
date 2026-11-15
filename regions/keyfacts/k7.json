@@ -1,0 +1,66 @@
+{
+ "spain/rueda": {
+  "facts": [
+   "Rueda is a Spanish DOP in Castile and León, known mainly for white wines based on the Verdejo grape.",
+   "The vineyards sit on a flat high plain at 2,000 to 2,560 feet above sea level, with the Duero River flowing through.",
+   "The climate is continental with some Atlantic influence, with long hot summers, cold winters, and frost and hail risks in winter and spring.",
+   "Irrigation is only allowed under special circumstances, and vines are often trained close to the ground to resist strong winds.",
+   "Gran Vino de Rueda comes from vineyards over 30 years old, with yields under 6,500 kg/ha and a transformation ratio of 65%."
+  ]
+ },
+ "united-states": {
+  "facts": [
+   "American Viticultural Areas (AVAs) are based on distinct local geography, climate and soil, and have been set up by federal regulators since 1978.",
+   "For an AVA to appear on a label, at least 85% of the grapes must come from within it.",
+   "A wine labelled with a varietal must be at least 75% of that grape, and Oregon requires 90% for certain varietals such as Pinot Noir."
+  ]
+ },
+ "united-states/columbia-valley": {
+  "facts": [
+   "Columbia Valley is a large AVA covering much of central and southern Washington and reaching into northern Oregon, established in 1984.",
+   "It holds about 99% of Washington's vineyard acreage and contains eighteen appellations, including Walla Walla Valley, Yakima Valley, Red Mountain and Horse Heaven Hills.",
+   "The Cascade Range casts a rain shadow, so some areas get less than 6 inches of rain a year and vineyards depend on irrigation.",
+   "Growers use water from the Columbia, Snake, Yakima and Walla Walla Rivers to control the timing and amount of water the vines receive.",
+   "Deep winter freezes are the main climate threat, with temperatures able to fall from 40°F to below 0°F in hours."
+  ]
+ },
+ "united-states/finger-lakes": {
+  "facts": [
+   "Finger Lakes is an AVA in upstate New York, set up in 1982, and about 80 percent of the state's wine comes from it.",
+   "Deep lakes hold their warmth and moderate temperatures, keeping some vineyards 10 to 15°F warmer than sites half a mile away.",
+   "Lake effect snow cover protects vines from winter freeze, and cool spring breezes delay bud-break until the danger of frost has passed.",
+   "Riesling is one of the most successful varieties, and the region is often compared to the German regions along the Rhine.",
+   "Growers plant European Vitis vinifera, native American Vitis labrusca and French-American hybrid grapes.",
+   "Cayuga Lake and Seneca Lake were set up as sub-appellations, in 1988 and 2003 respectively."
+  ]
+ },
+ "united-states/napa-valley": {
+  "facts": [
+   "Napa Valley was established as the nation's second AVA in 1981 and covers all of Napa County except the portion northeast of Putah Creek and Lake Berryessa.",
+   "Grape varieties grown include Cabernet Sauvignon, Chardonnay, Pinot Noir, Merlot and Zinfandel.",
+   "As of 2024, there are seventeen sub-AVAs within Napa Valley, and the Oakville and Rutherford AVAs lie on the Rutherford Bench.",
+   "The open southern end of the valley floor is cooler because of San Pablo Bay, while the sheltered northern end is often much warmer.",
+   "Soils in the south are mainly sediments from San Pablo Bay, while the north has a large volume of volcanic lava and ash.",
+   "The climate is Mediterranean, with hot dry summers and cool wet winters, and daily summer fog that usually lingers until mid-morning."
+  ]
+ },
+ "united-states/sonoma-county": {
+  "facts": [
+   "County names qualify automatically as legal appellations of origin, so Sonoma County wines need no TTB registration to use the name.",
+   "Sonoma County has 19 AVAs, reflecting its wide variety of climate and soil conditions.",
+   "The most common varieties planted are Chardonnay, Cabernet Sauvignon and Pinot Noir, and the area is also known for Merlot and Zinfandel.",
+   "Russian River Valley is marked by cooling coastal fog that arrives in the evening or early morning and retreats before noon.",
+   "Russian River Valley is known for cool climate varieties, notably Pinot Noir and Chardonnay.",
+   "The Petaluma Gap lets cool ocean air flow inland, and with San Pablo Bay it makes the region suited to Pinot Noir, Chardonnay and Syrah."
+  ]
+ },
+ "united-states/willamette-valley": {
+  "facts": [
+   "Willamette Valley is Oregon's largest AVA, established in 1983, and has a cool, moist climate recognized worldwide for Pinot Noir.",
+   "Most producers do not irrigate, which supports deep-rooted vines and rapid ripening from some water stress.",
+   "Most vineyards sit on southeast-facing slopes, and soils are generally marine sedimentary, volcanic and loess.",
+   "Winters are cool and wet and summers dry and warm, with heat above 90°F on only 5 to 15 days per year.",
+   "Yamhill-Carlton District and McMinnville only allow vineyards between 200 and 1,000 feet in elevation to use the appellation name."
+  ]
+ }
+}

@@ -1,0 +1,786 @@
+{
+ "italy/riesi": {
+  "text": "A Sicilian appellation around Butera, Mazzarino and Riesi.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/riviera-del-brenta": {
+  "text": "A Veneto appellation for still, semi-sparkling and sparkling wine, made. It covers communes around Padua, Dolo and Mira.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/roero": {
+  "text": "A hilly area of Cuneo province in Piedmont, known for its wines and also for peaches and pears.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Roero",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Roero&oldid=1376601627"
+  }
+ },
+ "italy/roma": {
+  "text": "A Lazio appellation covering many communes, for still and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/rosazzo": {
+  "text": "A Friuli-Venezia Giulia wine from Udine province. The zone covers Corno di Rosazzo, Manzano and San Giovanni al Natisone. Its Italian article calls it a DOCG wine.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Rosazzo",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Rosazzo&oldid=152369979"
+  }
+ },
+ "italy/rosso-conero": {
+  "text": "A red wine from the Marche, made around Ancona, Sirolo and Numana.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/rosso-di-cerignola": {
+  "text": "A red wine from Puglia, made around Cerignola, Stornara and Ascoli Satriano. The rules allow only seven grapes: Uva di Troia, Negro Amaro, Montepulciano, Sangiovese, Barbera, Malbech and Trebbiano Toscano.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/rosso-di-montalcino": {
+  "text": "A red wine from the commune of Montalcino in Tuscany, made only from Sangiovese.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/rosso-di-montepulciano": {
+  "text": "A red wine from the town of Montepulciano in Tuscany.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/rosso-orvietano": {
+  "text": "A red wine from Umbria, made around Orvieto and nearby communes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/rosso-piceno": {
+  "text": "A red wine from the Marche, made across many communes around Ascoli Piceno and Ancona.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/rubino-di-cantavenna": {
+  "text": "A Piedmont appellation for red wine from the communes of Camino and Gabiano. It is made from only three grapes, Barbera, Freisa and Grignolino.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/ruche-di-castagnole-monferrato": {
+  "text": "A Piedmont red wine from Castagnole Monferrato and six nearby communes. Its rules allow only three grapes, Ruchè, Barbera and Brachetto.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/salaparuta": {
+  "text": "A Sicilian appellation limited to the commune of Salaparuta. Its rules allow still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/salice-salentino": {
+  "text": "A Puglia wine from around the town of Salice Salentino, made primarily from the Negroamaro grape. It is chiefly known as a red wine, though white and rosé also exist. It received DOC status in 1976.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Salice Salentino (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Salice_Salentino_%28wine%29&oldid=1192499257"
+  }
+ },
+ "italy/sambuca-di-sicilia": {
+  "text": "A Sicilian appellation limited to the commune of Sambuca di Sicilia.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/san-gimignano": {
+  "text": "A Tuscan appellation limited to the commune of San Gimignano.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/san-ginesio": {
+  "text": "A Marche appellation for still and quality sparkling wine, made around San Ginesio and eight nearby communes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/san-severo": {
+  "text": "A Puglia appellation around San Severo, Lucera and Torremaggiore, for still, semi-sparkling and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/san-torpe": {
+  "text": "A Tuscan appellation around San Miniato, Pontedera and Peccioli. Its rules allow still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/sannio": {
+  "text": "A Campania appellation spanning many communes around Benevento, for still, semi-sparkling and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/sant-antimo": {
+  "text": "A Tuscan appellation covering the commune of Montalcino, for wines. It is a DOC for wines produced in the province of Siena.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "planted_wider"
+  ],
+  "wiki": {
+   "title": "Sant'Antimo (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Sant%27Antimo_%28vino%29&oldid=152369888"
+  }
+ },
+ "italy/santa-margherita-di-belice": {
+  "text": "A small Sicilian appellation covering Montevago and Santa Margherita di Belice. Its rules allow still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/sardegna-semidano": {
+  "text": "A Sardinia appellation for still, sparkling and raisined-grape wine, with Semidano among the allowed white grapes. It covers a very large number of communes. Sardinia grows mostly Alicante Bouschet and Vermentino.",
+  "from": [
+   "rules",
+   "planted"
+  ]
+ },
+ "italy/sardinia": {
+  "text": "A region of Italy with appellations such as Cannonau di Sardegna, Vermentino di Gallura, Moscato di Sardegna and Carignano del Sulcis. Its vineyards grow mostly Alicante Bouschet and Vermentino, followed by Carignano.",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/sciacca": {
+  "text": "A Sicilian appellation covering the communes of Sciacca and Caltabellotta.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/serrapetrona": {
+  "text": "A Marche appellation around Serrapetrona, San Severino Marche and Belforte del Chienti, for still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/sicilia-doc": {
+  "text": "A DOC for the whole Sicilian region, created in 2011 after being an IGT since 1995. It covers still, sparkling and sweet styles. Sicily grows mostly Catarratto and Nero d'Avola.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Sicilia (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Sicilia_%28vino%29&oldid=152531577"
+  }
+ },
+ "italy/sicily": {
+  "text": "A region of Italy with appellations including Etna, Marsala, Pantelleria, Cerasuolo di Vittoria and Menfi. Its vineyards grow mostly Catarratto Bianco and Nero d'Avola, followed by Grillo, Inzolia and Syrah.",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/siracusa": {
+  "text": "A Sicilian appellation limited to the commune of Siracusa, for still wine and quality aromatic sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/sizzano": {
+  "text": "A Piedmont red wine from the commune of Sizzano.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/soave": {
+  "text": "A dry white wine from the Veneto, made around Verona, with Garganega as the principal grape. Most is dry and still and some is sparkling, while sweet Recioto di Soave has its own DOCG.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Soave (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Soave_%28wine%29&oldid=1380616698"
+  }
+ },
+ "italy/soave-classico": {
+  "text": "The Classico part of Soave, a wine place in the Veneto region of Italy.",
+  "from": [
+   "where"
+  ]
+ },
+ "italy/soave-superiore": {
+  "text": "A Veneto white wine from the Soave area, made around Soave and nearby communes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/sovana": {
+  "text": "A red or rosé wine from southern Tuscany, around Pitigliano, Sorano and Manciano. Sovana rosso is at least 50% Sangiovese and mostly light, with some riserva aged longer. It became a DOC in 1999.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Sovana DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Sovana_DOC&oldid=1220578889"
+  }
+ },
+ "italy/spoleto": {
+  "text": "An Umbria appellation around Spoleto, Montefalco and Foligno, for still and quality sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/squinzano": {
+  "text": "A Puglia appellation around Lecce and Squinzano, for still and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/strevi": {
+  "text": "A Piedmont appellation limited to the commune of Strevi, for wine made only from Moscato Bianco.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/suvereto": {
+  "text": "A Tuscan appellation limited to the commune of Suvereto.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/tarquinia": {
+  "text": "A Lazio appellation around Cerveteri, Civitavecchia and Montalto di Castro, for still and semi-sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/taurasi": {
+  "text": "A red wine from Avellino province in Campania, based principally on Aglianico, grown on volcanic soils. It became a DOC in 1970 and a DOCG in 1993. Its popularity is recent: until the early 1990s, one winery exported it.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Taurasi (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Taurasi_%28wine%29&oldid=1294614417"
+  }
+ },
+ "italy/tavoliere-delle-puglie": {
+  "text": "A Puglia appellation around Foggia, Lucera and Cerignola, for still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/teroldego-rotaliano": {
+  "text": "A Trentino red wine made only from Teroldego, from Mezzocorona, Mezzolombardo and San Michele all'Adige. In the province of Trento, Teroldego is the third most planted grape, after Pinot Gris and Chardonnay.",
+  "from": [
+   "rules",
+   "planted_wider"
+  ]
+ },
+ "italy/terra-d-otranto": {
+  "text": "A Puglia appellation covering many communes around Brindisi and Lecce, for still, semi-sparkling and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/terracina": {
+  "text": "A Lazio appellation for wine from Terracina, Monte San Biagio and Sonnino, including aromatic sparkling wine and wine from raisined grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/terratico-di-bibbona": {
+  "text": "A Tuscan appellation around Bibbona and Cecina, in Livorno province. Its rules allow still wine.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Terratico di Bibbona",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Terratico_di_Bibbona&oldid=152370172"
+  }
+ },
+ "italy/terre-alfieri": {
+  "text": "A Piedmont appellation around communes such as Govone, Priocca and Magliano Alfieri.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/terre-dell-alta-val-d-agri": {
+  "text": "A Basilicata appellation around Grumento Nova, Moliterno and Viggiano.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/terre-di-casole": {
+  "text": "A Tuscan appellation limited to the commune of Casole d'Elsa. Its rules allow still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/terre-di-offida": {
+  "text": "A white wine from the Marche, around Ascoli Piceno and Fermo provinces, with still and quality sparkling styles.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Terre di Offida",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Terre_di_Offida&oldid=152370170"
+  }
+ },
+ "italy/terre-di-pisa": {
+  "text": "A Tuscan appellation around Pontedera, San Miniato and Peccioli. Its rules allow still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/terre-tollesi": {
+  "text": "An Abruzzo appellation limited to the commune of Tollo.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/todi": {
+  "text": "An Umbria appellation around Todi, Collazzone and Massa Martana, for still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/torgiano": {
+  "text": "An Umbria appellation limited to the commune of Torgiano, for still and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/torgiano-rosso-riserva": {
+  "text": "An Umbria appellation for red Riserva wine from the commune of Torgiano.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/toscana-igt": {
+  "text": "A Tuscan regional wine, made across Tuscany as an IGT. The wider region grows mostly Sangiovese, which is more than half of its vineyards, followed by Trebbiano Toscano and Merlot.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Toscana (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Toscana_%28vino%29&oldid=152370039"
+  }
+ },
+ "italy/trebbiano-d-abruzzo": {
+  "text": "A white wine from Abruzzo, made across many communes. Trebbiano d'Abruzzo is the most important white grape in the region, and Trebbiano Toscano is also allowed. Emidio Pepe is named as one of its champions.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Trebbiano d'Abruzzo (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Trebbiano_d%27Abruzzo_%28wine%29&oldid=1371309140"
+  }
+ },
+ "italy/trentino": {
+  "text": "A Trentino PDO in the southern part of the Trentino-Alto Adige region. It allows still, liqueur and sweet wines. The province grows mostly Pinot Gris and Chardonnay.",
+  "from": [
+   "rules",
+   "wikipedia",
+   "planted_wider"
+  ],
+  "wiki": {
+   "title": "Trentino wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Trentino_wine&oldid=1324954349"
+  }
+ },
+ "italy/trento-doc": {
+  "text": "A DOC for white and rosé sparkling wine from the province of Trento, made from Chardonnay, Pinot Noir, Meunier and Pinot Bianco. It was created, as the second in the world after Champagne, to ensure quality and distinction.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Trento DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Trento_DOC&oldid=1287068110"
+  }
+ },
+ "italy/tuscany": {
+  "text": "A region of Italy with appellations such as Chianti Classico, Brunello di Montalcino, Vino Nobile di Montepulciano and Bolgheri. Its vineyards grow mostly Sangiovese, at over half of the area, with Trebbiano Toscano and Merlot next.",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/umbria": {
+  "text": "A region of Italy with appellations such as Montefalco Sagrantino, Torgiano, Spoleto and Rosso Orvietano. Its vineyards grow mostly Sangiovese, Trebbiano Toscano and Grechetto di Orvieto, followed by Merlot and Sagrantino.",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/val-d-arbia": {
+  "text": "A Tuscan appellation in Siena province, around Buonconvento, Castelnuovo Berardenga and Monteriggioni. Its rules allow still wine.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Val d'Arbia",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Val_d%27Arbia&oldid=152370307"
+  }
+ },
+ "italy/val-d-arno-di-sopra": {
+  "text": "A Tuscan appellation around Montevarchi, San Giovanni Valdarno and Bucine. Its rules allow still and quality sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/val-di-cornia": {
+  "text": "A Tuscan appellation around Suvereto, Piombino and Campiglia Marittima.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/val-di-cornia-rosso": {
+  "text": "A Tuscan red wine from around Suvereto, Piombino and San Vincenzo.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/valdadige": {
+  "text": "A PDO across the provinces of Trento and Bolzano, within Alto Adige, for still and semi-sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/valdadige-terradeiforti": {
+  "text": "A small PDO within Alto Adige, around Avio, Brentino Belluno, Dolcè and Rivoli Veronese. Its rules allow still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/valdichiana-toscana": {
+  "text": "A Tuscan DOC around Cortona, Chiusi and Arezzo. Its rules allow still, semi-sparkling and sparkling wine.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Valdichiana toscana",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Valdichiana_toscana&oldid=152783262"
+  }
+ },
+ "italy/valdinievole": {
+  "text": "A Tuscan appellation around Montecatini-Terme, Pescia and Monsummano Terme.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/valli-ossolane": {
+  "text": "A Piedmont appellation in the Ossola valleys, around Domodossola, Crodo and Villadossola. Its rules allow still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/valpolicella": {
+  "text": "A red wine from Verona province in the Veneto. It became a DOC in 1968.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Valpolicella (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Valpolicella_%28vino%29&oldid=149737363"
+  }
+ },
+ "italy/valpolicella-ripasso": {
+  "text": "A Veneto red DOC made only in Valpolicella. These are the same grapes used for Amarone and Recioto.",
+  "from": [
+   "rules",
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Valpolicella Ripasso",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Valpolicella_Ripasso&oldid=143131208"
+  }
+ },
+ "italy/valsusa": {
+  "text": "A Piedmont appellation in the Susa valley, around Susa, Chiomonte and Bussoleno. Its rules allow still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/velletri": {
+  "text": "A Lazio appellation around Velletri, Lariano and Cisterna di Latina, for still and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/veneto": {
+  "text": "A region of Italy with appellations such as Amarone della Valpolicella, Soave, Prosecco DOC and Conegliano Valdobbiadene. Its vineyards grow mostly Glera, followed by Pinot Gris, Garganega and Corvina Veronese.",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/venezia": {
+  "text": "A Veneto appellation for still, semi-sparkling and sparkling wine, including aromatic sparkling.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/verdicchio-dei-castelli-di-jesi": {
+  "text": "A white wine from the Marche, made around Cupramontana, Montecarotto and Arcevia, as still or quality sparkling wine.. Its wine is named for the Verdicchio grape.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/verdicchio-di-matelica": {
+  "text": "A white wine from the Marche, made around Matelica, Fabriano and Camerino, as still or quality sparkling wine.. Its wine is named for the Verdicchio grape.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/verdicchio-di-matelica-riserva": {
+  "text": "A riserva white wine from the Marche, made in Matelica, Fabriano, Camerino and five other communes. Its wine is named for the Verdicchio grape. It is still wine only.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/verduno-pelaverga": {
+  "text": "A Piedmont red wine from Verduno, La Morra and Roddi.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/vermentino-di-gallura": {
+  "text": "A Sardinia white wine named for Vermentino, made around Olbia, Tempio Pausania and Santa Teresa Gallura. Vermentino is one of Sardinia's most important grapes. Still, semi-sparkling and sparkling styles are allowed.",
+  "from": [
+   "rules",
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Vermentino di Gallura",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vermentino_di_Gallura&oldid=1382586474"
+  }
+ },
+ "italy/vermentino-di-sardegna": {
+  "text": "A white wine from across Sardinia, named for Vermentino, as still, semi-sparkling or sparkling wine. Sardinia's vineyards grow mostly Alicante Bouschet and Vermentino, which together cover more than half of the planted area.",
+  "from": [
+   "rules",
+   "planted"
+  ]
+ },
+ "italy/vernaccia-di-oristano": {
+  "text": "A Sardinia wine around Oristano, Cabras and Santa Giusta, made only from Vernaccia di Oristano. It may be still wine or liqueur wine. Sardinia grows mostly Alicante Bouschet and Vermentino.",
+  "from": [
+   "rules",
+   "planted_wider"
+  ]
+ },
+ "italy/vernaccia-di-san-gimignano": {
+  "text": "A white wine made from the Vernaccia grape in and around San Gimignano, a Tuscan hill town. It was the first Italian wine to receive DOC status, in 1966, and became a DOCG in 1993.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Vernaccia di San Gimignano",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vernaccia_di_San_Gimignano&oldid=1383303870"
+  }
+ },
+ "italy/vernaccia-di-serrapetrona": {
+  "text": "A sparkling wine from the Marche, around Serrapetrona, San Severino Marche and Belforte del Chienti. It is a quality sparkling wine, with Vernaccia Nera among the allowed grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/verona": {
+  "text": "A PGI for the Verona area of the Veneto region of Italy.",
+  "from": [
+   "where"
+  ]
+ },
+ "italy/vesuvio": {
+  "text": "A Campania appellation around Ercolano, Torre del Greco and Boscotrecase, for still, sparkling and liqueur wine. Only seven grapes are allowed: Aglianico, Piedirosso, Falanghina, Greco, Coda di Volpe, Sciascinoso and Verdeca.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/vicenza": {
+  "text": "A Veneto appellation for still, semi-sparkling and sparkling wine, around Bassano del Grappa, Breganze and Arzignano.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/vignanello": {
+  "text": "A Lazio appellation around Vignanello, Soriano nel Cimino and Gallese, for still and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/vigneti-della-serenissima": {
+  "text": "A Veneto quality sparkling wine made only from Chardonnay, Pinot Bianco and Pinot Nero. It covers many communes across the region, including Bardolino, Asolo and Bassano del Grappa, and so spreads widely.",
+  "from": [
+   "rules",
+   "planted_wider"
+  ]
+ },
+ "italy/vigneti-delle-dolomiti": {
+  "text": "A PGI for the area of Trento and Bolzano in Italy. The area's vineyards grow mostly Pinot Noir (19%), Chardonnay (18%) and Pinot Gris (18%), followed by Teroldego and Merlot at 7% each.",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/villamagna": {
+  "text": "An Abruzzo appellation covering Villamagna, Bucchianico and Vacri in Chieti province.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Villamagna (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Villamagna_%28vino%29&oldid=152370105"
+  }
+ },
+ "italy/vin-santo-del-chianti": {
+  "text": "A Tuscan PDO for Vin Santo made across many communes, including Arezzo and Carmignano. The wider Tuscany area grows mostly Sangiovese.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/vin-santo-del-chianti-classico": {
+  "text": "A Tuscan Vin Santo made in the Chianti Classico area, in communes such as Greve, Radda, Gaiole and Castellina in Chianti.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/vin-santo-di-carmignano": {
+  "text": "A Tuscan Vin Santo limited to Carmignano and Poggio a Caiano.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/vin-santo-di-montepulciano": {
+  "text": "A Tuscan Vin Santo limited to the commune of Montepulciano.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/vino-nobile-di-montepulciano": {
+  "text": "A red DOCG from vineyards around the town of Montepulciano in Tuscany. It is at least 70% Sangiovese, known locally as Prugnolo gentile, with 10% to 20% Canaiolo Nero. It is aged two years, one in oak, or three as riserva.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Vino Nobile di Montepulciano",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vino_Nobile_di_Montepulciano&oldid=1364388811"
+  }
+ },
+ "italy/vittoria": {
+  "text": "A Sicilian appellation around Vittoria, Ragusa and Caltagirone, for still wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/zagarolo": {
+  "text": "A Lazio white wine from Zagarolo and Gallicano nel Lazio. Its rules allow seven grapes: Malvasia Bianca di Candia, Malvasia del Lazio, Trebbiano Toscano, Trebbiano Giallo, Bellone, Bombino Bianco and Verdicchio Bianco.",
+  "from": [
+   "rules",
+   "planted_wider"
+  ]
+ },
+ "italy/serralunga-d-alba": {
+  "text": "A commune in the Barolo zone in Piedmont. Barolo is a red DOCG wine made from Nebbiolo, often described as one of Italy's greatest wines, and Serralunga d'Alba is one of the communes it covers.",
+  "from": [
+   "rules_of_wider",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Barolo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barolo&oldid=1366043582"
+  }
+ },
+ "italy/verduno": {
+  "text": "A commune in the Barolo zone in Piedmont, where only part of its land falls inside the zone. Barolo is a red DOCG wine made from Nebbiolo, often described as one of Italy's greatest wines.",
+  "from": [
+   "rules_of_wider",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Barolo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barolo&oldid=1366043582"
+  }
+ },
+ "italy/treiso": {
+  "text": "A Barbaresco commune in Piedmont. Barbaresco is a Nebbiolo wine from the Langhe, east of Alba, and Treiso is one of its three named communes with Barbaresco and Neive. The wine is often compared with Barolo.",
+  "from": [
+   "rules_of_wider",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Barbaresco",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barbaresco&oldid=1337731225"
+  }
+ }
+}

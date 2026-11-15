@@ -1,0 +1,58 @@
+{
+ "greece/anchialos": {
+  "text": "A Greek PDO for wine made from Roditis and Savatiano, with a Thessaly area around it that grows mostly Muscat of Hamburg and Roditis. The rules name four communities as the source of the grapes.",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "greece/attiki": {
+  "text": "A Greek PGI around Attica where Savatiano is by far the main grape, at about 90% of the vineyard area, followed by small amounts of Roditis, Assyrtiko and Malagousia.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "greece/epirus": {
+  "text": "A grouping of Greek wine zones that includes Zitsa and Metsovo.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/mesenikola": {
+  "text": "A Greek PDO for red wine made from Carignan and Syrah, with Mavro Mesenikola allowed as a minor grape. Its rules name three communities as the source of the grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/rapsani": {
+  "text": "A Thessaly PDO for red wine from Xinomavro, Krassato and Stavroto.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/sterea-ellada": {
+  "text": "A Greek PGI where Savatiano is the main grape at about 63% of the vineyard area. Roditis follows at 17%, with small amounts of Cabernet Sauvignon, Syrah and Merlot.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "greece/thessalia": {
+  "text": "A Greek PGI where Muscat of Hamburg covers about 59% of the vineyard area, a large lead over Roditis at 19%. Syrah, Xinomavro and Assyrtiko each cover about 3%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "greece/zitsa": {
+  "text": "An Epirus PDO that allows still wine and quality sparkling wine, with Debina, a white grape, named in its rules.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ }
+}

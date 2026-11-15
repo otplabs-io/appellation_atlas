@@ -2,15 +2,16 @@ import SwiftUI
 import UIKit
 
 extension UIColor {
-    convenience init(hex: UInt32, alpha: CGFloat = 1) {
+    nonisolated convenience init(hex: UInt32, alpha: CGFloat = 1) {
         self.init(red: CGFloat((hex >> 16) & 0xFF) / 255, green: CGFloat((hex >> 8) & 0xFF) / 255, blue: CGFloat(hex & 0xFF) / 255, alpha: alpha)
     }
 }
 
 extension Color {
     /// A color with a light and a dark version, picked by the system appearance.
-    init(light: UInt32, dark: UInt32) {
-        self.init(uiColor: UIColor { $0.userInterfaceStyle == .dark ? UIColor(hex: dark) : UIColor(hex: light) })
+    /// SwiftUI can resolve a color while drawing off the main thread, so the provider must not be tied to it.
+    nonisolated init(light: UInt32, dark: UInt32) {
+        self.init(uiColor: UIColor(dynamicProvider: { @Sendable t in t.userInterfaceStyle == .dark ? UIColor(hex: dark) : UIColor(hex: light) }))
     }
 }
 

@@ -37,7 +37,7 @@
 .hero .also{margin-top:4px;color:var(--soft)}
 .hero .known{margin-top:8px;color:var(--soft);display:flex;align-items:center;gap:6px}
 .hero .ts-body{margin-top:8px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px 16px;margin-top:4px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:22px 20px;margin-top:4px}
 .fact{display:flex;flex-direction:column;gap:2px}
 .fact .ts-fact_note{color:var(--soft)}
 .sub{margin:14px 0 6px;color:var(--soft)}
@@ -65,7 +65,7 @@
 .src li+li{margin-top:4px}
 .src a{color:var(--teal)}
 /* ---- what is planted, the climate scales, the land */
-.planted{display:grid;gap:5px;margin-top:6px;max-width:560px}
+.planted{display:grid;gap:10px;margin-top:10px;max-width:560px}
 .gr{display:grid;grid-template-columns:minmax(130px,44%) 1fr 38px;align-items:center;gap:8px}
 .gr .g{display:flex;align-items:center;gap:7px;overflow-wrap:anywhere}
 .gr .dot{flex:none;width:9px;height:9px;border-radius:50%;background:var(--land-edge)}
@@ -82,10 +82,10 @@
 .scale .seg.on .n,.scale .seg.on .r{color:var(--ink)}
 .scale .mark{position:absolute;top:-5px;width:0;height:0;margin-left:-6px;border:6px solid transparent;border-top-color:var(--ink)}
 .wk{margin-top:6px}
-.why{margin-top:14px;max-width:680px}
+.why{margin-top:18px;max-width:680px;padding:16px;background:color-mix(in srgb,var(--fill) 70%,transparent);border-radius:14px}
 .soil-text{max-width:680px;margin:12px 0 18px}
-.why-head{color:var(--soft);margin:0 0 6px}
-.why dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 16px;margin:0}
+.why-head{color:var(--soft);margin:0 0 12px}
+.why dl{display:grid;grid-template-columns:max-content 1fr;gap:12px 16px;margin:0}
 .why dt{color:var(--ink);padding-top:1px}
 .why dd{margin:0}
 @media (max-width:520px){.why dl{grid-template-columns:1fr;gap:2px}.why dd{margin-bottom:8px}}
@@ -148,6 +148,9 @@ details.sibs>summary small{color:var(--soft);font-weight:400}
 .jump{display:flex;flex-wrap:wrap;gap:6px;padding:14px 20px 4px}
 .jump .step{border:0}
 section.row[id^="s-"]{scroll-margin-top:80px}
+/* a band between a place's sections, so each reads as its own block (AtlasSection in the app) */
+#info section.row{padding:30px 20px 24px;border-top:8px solid var(--fill)}
+#info .head{margin-bottom:16px}
 /* Dark: follows the system setting, with the same colors as the iPhone and iPad app (ios/AppellationAtlas/UI/Theme.swift). */
 @media (prefers-color-scheme:dark){
   :root{color-scheme:dark;--ink:#E6ECF1;--soft:#A3AFBA;--coral:#F06A4C;--coral-text:#F58B70;--gold-tint:#4A3C1A;--gold-deep:#F0BE58;--teal:#5FB8BC;
@@ -167,3 +170,7 @@ section.row[id^="s-"]{scroll-margin-top:80px}
   .rk.r-schist,.rk.r-shale{background:#2E3945}.rk.r-gravel,.rk.r-sand,.rk.r-sandstone{background:#43391F}.rk.r-alluvium,.rk.r-loess,.rk.r-clay{background:#35322B}
   a{color:var(--teal)}
 }
+
+.blurb{margin:10px 0 2px;max-width:640px;color:var(--ink)}
+.keyfacts{margin:0;padding-left:1.1em;display:grid;gap:10px;max-width:680px}
+.keyfacts li::marker{color:var(--teal,#1F6F6F)}

@@ -171,6 +171,9 @@ def eu_rows_ids():
     for f in glob.glob(os.path.join(ROOT,'regions','sources','eu-*.json')):
         for e in jl(f)['entries']: files[e['id']]=e.get('file')
     return {n:files[x['eu_id']] for n,x in T.items() if x.get('eu_id') and files.get(x['eu_id'])}
+# Districts the tree names after a small appellation of the same name: the Côte de Beaune district holds Meursault and Pommard, while
+# the Côte de Beaune AOC is a few slopes above Beaune. The page is the district: drawn from its villages, without the AOC's rules.
+DISTRICTS={'france/cote-de-beaune'}
 SHAPE_SRC={'eu-pdo':'EU wine PDO boundaries','ava':'UC Davis AVA boundaries','wine-australia':'Wine Australia GI boundaries','iponz':'IPONZ GI register',
            'argentina':'geoBoundaries, the department it is named for','chile':'Chile Decreto 464, drawn from its comunas and provinces','nuts':'Eurostat NUTS, the area it is named for','lau':'Eurostat LAU, the commune it is named for'}
 def geoindex_norm(v):
@@ -246,9 +249,9 @@ def geo():
     shp={}; src={}; t0=time.time()
     def resolve(n):
         if n in shp: return shp[n]
-        try: g,s=G.own_shape(n)
+        try: g,s=(None,None) if n in DISTRICTS else G.own_shape(n)
         except KeyError: g,s=None,None
-        if g is None or g.is_empty: g,s=extra_shape(n)
+        if (g is None or g.is_empty) and n not in DISTRICTS: g,s=extra_shape(n)
         if g is None or g.is_empty:
             ch=[c for c in (resolve(k) for k in kids.get(n,[])) if c is not None]
             g=G.unary_union(ch).buffer(0) if ch else None; s='union of its children' if ch else None
@@ -280,7 +283,7 @@ def geo():
     print('sources:',collections.Counter(src.values()))
 # ---- what the atlas says about each place
 CA=os.path.join(ROOT,'data','cache')
-SKIN={'N':'red','Rg':'red','B':'white','G':'pink','Rs':'pink'}
+SKIN={'N':'red','Rg':'red','B':'white','G':'pink','Gr':'pink','Rs':'pink'}   # Gr: grey-skinned (Czech Pálava, Rulandské šedé)
 SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulatory information for wine protected designations of origin in Europe, Scientific Data (product specifications as of 2021)',url='https://doi.org/10.1038/s41597-022-01513-0'),
      'ava':dict(name='UC Davis Library, American Viticultural Area boundaries, with the CFR text',url='https://github.com/UCDavisLibrary/ava'),
      'wikipedia':dict(name='Wikidata sitelinks and Wikimedia page views',url='https://www.wikidata.org'),
@@ -298,6 +301,9 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'nrcs':dict(name='USDA NRCS Soil Survey Manual, Agriculture Handbook 18 (texture classes and pH classes)',url=None),
      'inao':dict(name="INAO, the appellation's cahier des charges, chapter V (grapes and their shares), from the Bulletin officiel du ministère de l'Agriculture (Licence Ouverte)",url='https://www.inao.gouv.fr/rechercher-un-produit'),
      'anderson':dict(name='Anderson, Nelgen and Puga, Database of Regional, National and Global Winegrape Bearing Areas by Variety, 2000 to 2023, University of Adelaide (CC BY 4.0)',url='https://doi.org/10.25909/32870405.v1'),
+     'statistik-austria':dict(name='Statistik Austria, Weingartengrunderhebung 2020, grape varieties by state (Rebsorten nach Bundesländern 2020), in hectares',url='https://www.statistik.at/fileadmin/pages/164/RebsortenNachBL2020.ods'),
+     'vivc':dict(name='Vitis International Variety Catalogue (VIVC), Julius Kühn-Institut: varieties listed only as table or raisin grapes',url='https://www.vivc.de'),
+     'usda-juice':dict(name='USDA NASS grape production and disposition survey: juice-type varieties (Concord, Niagara) counted apart from wine-type ones',url='https://www.nasda.org/wp-content/uploads/2024/01/Grape-PDI-Training-Materials.pdf'),
      'terrain':dict(name='AWS Terrain Tiles (Terrarium), from SRTM, GMTED2010, ETOPO1 and national elevation models',url='https://registry.opendata.aws/terrain-tiles/'),
      'jones2010':dict(name='Jones 2010, Climate, grapes, and wine: structure and suitability in a variable and changing climate, VIII International Terroir Congress (which grapes suit which growing season temperatures)',url='https://ives-openscience.eu/wp-content/uploads/2023/03/Climate_Grape_Wine_Jones.pdf'),
      'winkler-wiki':dict(name='Wikipedia, Winkler index (what each region suits)',url='https://en.wikipedia.org/w/index.php?title=Winkler_index&oldid=1379995815'),
@@ -357,6 +363,7 @@ def rules(r):
                 irrigation=None if r['Irrigation']=='na' else r['Irrigation'],communes=[c for c in r['Municip_nam'].split('/') if c and c!='na'],
                 register=r['PDOinfo'] or None)
 SKIN_EN={'red':'red','white':'white','pink':'pink'}
+fmt0=lambda v:f'{v:,.0f}'
 def inao_rules(r,x):
     """The EU rules with the grapes sorted the way the French cahier des charges sorts them: main grapes, grapes allowed
     in smaller shares, grapes on trial to adapt to a changing climate, and the share limits."""
@@ -393,8 +400,14 @@ def inao_rules(r,x):
         if pre: w=pre[:1].upper()+pre[1:]+', '+(w[:1].lower()+w[1:] if w.split()[0] in ('The','Each','Any') else w)
         return f'{w}: {amount(l)}'
     lim=[line(l) for l in x['limits'] if l['grapes'] or l['role']=='single' or (l['role'] and (by.get(l['role']) or x.get('members',{}).get(l['role'])))]
-    return dict(r,grapes=by['main'],grapes_other=by['complementary']+by['accessory'],grapes_trial=by['adaptation'],
+    out=dict(r,grapes=by['main'],grapes_other=by['complementary']+by['accessory'],grapes_trial=by['adaptation'],
                 limits=list(dict.fromkeys(lim)),cahier=dict(year=str(x['date'])[:4] if x.get('date') else None,url=x['url']))
+    sparkling_only=bool(r.get('types')) and all('Sparkling' in t for t in r['types'])
+    if sparkling_only and not any('Sparkling' in t for t in x.get('types') or []): return out   # the cahier read is a still wine's (Crémant d'Alsace from Alsace's)
+    if x.get('types'): out['types']=x['types']; out['types_from']='cahier'
+    if x.get('base_yield'): out['base_yield']=x['base_yield']
+    if x.get('recognised'): out['recognised']=x['recognised']
+    return out
 @snap('ava-rules')
 def ava_rows():
     A={}
@@ -424,10 +437,41 @@ def facts():
     np_=os.path.join(ROOT,'regions','notoriety.json'); N=jl(np_)['places'] if os.path.exists(np_) else {}
     cp=os.path.join(ROOT,'regions','atlas-climate.json'); CL=jl(cp)['places'] if os.path.exists(cp) else {}
     E,A,R=eu_rows(),ava_rows(),research()
+    import blurbs; BL=blurbs.written()
+    import categories; CATS=jl(os.path.join(ROOT,'regions','categories.json'))
+    import keyfacts; KF=keyfacts.written()
     import atlasland
     opt=lambda f:jl(os.path.join(ROOT,'regions',f))['places'] if os.path.exists(os.path.join(ROOT,'regions',f)) else {}
-    INAO=opt('inao-grapes.json'); rules_of=lambda k:inao_rules(rules(E[k]),INAO[k]) if k in INAO else rules(E[k])
+    INAO=opt('inao-grapes.json')
+    def renamed(r,c):   # grapes in the Diploma's names for the country, once each (src/atlasland.py display): Sauvignon Blanc, Malbec, Spätburgunder
+        seen=set()
+        for key in ('grapes','grapes_other'):
+            out=[]
+            for g in r.get(key) or []:
+                nm=atlasland.rule_name(g[0] if isinstance(g,list) else g,c)
+                if nm in seen: continue
+                seen.add(nm); out.append([nm,*g[1:]] if isinstance(g,list) else nm)
+            if r.get(key): r[key]=out
+        if r.get('types'): r['types']=['Fortified wine' if t=='Liqueur Wine' else t for t in r['types']]   # the EU's "liqueur wine" is what the Diploma calls fortified
+        sk={x[1] for x in r.get('grapes') or [] if isinstance(x,list)}
+        if c=='italy' and len(r.get('grapes') or [])>=10: r['province_list']=True   # Italy's EU records list every grape the province approves, not the DOC's blend
+        elif len(r.get('grapes') or [])>20: r['long_list']=True   # Germany's and Austria's records carry the national list of approved varieties
+        elif r.get('types')==['Wine'] and 'white' in sk and sk<={'white','pink'}: r['types']=['White wine']   # white grapes make only white wine; red grapes can make red, rosé or white, so they say nothing
+        by=r.pop('base_yield',None)
+        if by:   # the cahier's rendement, for the colours this place makes; the EU figure is the rendement butoir, the ceiling some years allow
+            cols={'White wine':'white','Red wine':'red','Rosé wine':'rosé','Gris (pale rosé)':'gris','Clairet':'clairet'}
+            made={cols[t] for t in r.get('types') or [] if t in cols}
+            keep=[b for b in by if not b[0] or not made or set(b[0].split(' and '))&made]
+            n=lambda b:f"{fmt0(b[1])} {b[2]}"
+            if len(keep)==1 or len({b[1] for b in keep})==1: r['yield_base']=n(keep[0])
+            elif keep: r['yield_base']=n(keep[0])+' for '+keep[0][0]+', '+', '.join(f"{fmt0(b[1])} for {b[0]}" for b in keep[1:])
+            r.pop('yield_hl',None); r.pop('yield_kg',None)
+        elif c=='france' and (r.get('yield_hl') or r.get('yield_kg')): r['yield_ceiling']=True   # only the EU's rendement butoir is known
+        r.pop('registered',None)   # an EU record date (1973 for most old names), not when the place was recognised
+        return r
+    rules_of=lambda k:renamed(inao_rules(rules(E[k]),INAO[k]) if k in INAO else rules(E[k]),k.split('/')[0])
     PLN,TER,RK=opt('atlas-plantings.json'),opt('atlas-terrain.json'),opt('atlas-rocks.json'); CG=jl(os.path.join(ROOT,'regions','climate-grapes.json'))
+    OWNROW={T[k]['name'] for k,v in PLN.items() if v.get('scope')=='own' and k in T}   # places with a database row of their own
     CG['rocks']=jl(os.path.join(ROOT,'regions','rock-types.json')); RNAME={x['id']:x['name'] for x in CG['rocks']['families']}
     for k,v in CG['rocks']['sources'].items(): SRC.setdefault('rock-'+k,v)
     PLOTS=opt('atlas-plots.json'); TER.update(PLOTS)   # a grand cru measured over its own vineyard, in place of the whole commune the EU draws
@@ -455,8 +499,16 @@ def facts():
         big=AREA.get(k,0)>15000 or bool(te and te['elev'][2]-te['elev'][0]>=800)
         if big:   # a varied place: the spread across the places inside it, not its own blurred average
             gs=sorted(CL[q]['climate']['gst'] for q in below(k) if (CL.get(q) or {}).get('climate') and CL[q]['climate'].get('gst') is not None and not (AREA.get(q,0)>15000))
-            return [k,[gs[0],gs[-1]] if len(gs)>=2 else None,None,te['elev'] if te else None,te.get('steep'),None,g,int(k in WS),1]
-        return [k,c.get('gst'),cls,(te['elev'] if big else te['elev'][1]) if te else None,te.get('steep'),top if te and te.get('flat',1)<.8 and not big else None,g,int(k in WS),int(big)]
+            return [k,[gs[0],gs[-1]] if len(gs)>=2 else None,None,te['elev'] if te else None,te.get('steep'),None,g,int(k in BENCH),1]
+        return [k,c.get('gst'),cls,(te['elev'] if big else te['elev'][1]) if te else None,te.get('steep'),top if te and te.get('flat',1)<.8 and not big else None,g,int(k in BENCH),int(big)]
+    NAMED={k for w in jl(os.path.join(ROOT,'regions','wset.json'))['countries'].values() for k in w.get('regions',[])+w.get('places',[])}
+    VINELESS={'australia/eastern-plains-inland-and-north-of-western-australia'}   # a GI zone of desert with no vineyards recorded
+    def bench(n):   # a Benchmark page is one inside a Diploma region that has something of its own to teach: rules, an AVA, key facts or a climate
+        if n not in WS: return False
+        if '/' not in n or n in NAMED: return True   # a country, or a place the Diploma list names itself
+        own=n in E or n in A or n in KF or (CL.get(n) or {}).get('climate',{}) and CL[n]['climate'].get('gst') is not None or (n in BL and gi[n].get('source'))   # a blurb counts when the place is on the map (South Eastern Australia), not for a name alone (Creek Shores)
+        return bool(own) and n not in VINELESS
+    BENCH={n for n in gi if bench(n)}
     fd=os.path.join(OUT,'facts'); os.makedirs(fd,exist_ok=True)
     for f in os.listdir(fd): os.remove(os.path.join(fd,f))
     places={}
@@ -464,15 +516,24 @@ def facts():
         t=T[n]; chain=[]; p=x['parent']
         while p and p!='world': chain.insert(0,[p,T[p]['name']]); p=gi[p]['parent']
         kind=[k for k in t.get('official',[]) if k] or ([t['kind']] if t.get('kind') else [])
-        f=dict(id=n,name=t['name'],also=t.get('also',[]),kind=kind,country=T[t['path'].split('/')[0]]['name'],chain=chain,depth=t['depth'],
+        kind=categories.label(n,kind,CATS)   # AOC, DOCG, DOCa, DOC, not the EU's PDO: the words the Diploma uses (src/categories.py)
+        if n in DISTRICTS or n=='france/cote-de-nuits': kind=['district']
+        f=dict(id=n,name=t['name'],also=[a for a in t.get('also',[]) if a.casefold()!=t['name'].casefold()],kind=kind,country=T[t['path'].split('/')[0]]['name'],chain=chain,depth=t['depth'],
                shape=x['source'],known=N.get(n))
         src=['wikipedia'] if n in N else []
-        if n in E: f['rules']=rules_of(n); src+=['eu-pdo']+(['inao'] if n in INAO else [])
+        if n in E and n not in DISTRICTS: f['rules']=rules_of(n); src+=['eu-pdo']+(['inao'] if n in INAO else [])
         if n in A: f['ava']=A[n]; src.append('ava')
         if n in CL:
-            f['climate']=CL[n].get('climate'); f['soil']=CL[n].get('soil'); src+=[s for s in ('worldclim','koppen','winkler','winkler-wiki','jones2010') if f['climate']]+(['soilgrids','nrcs'] if f['soil'] else [])
-        if n in PLN and not (PLN[n]['scope'] in ('around','parent') and vineyard(n,x['source'])):   # a grand cru or single vineyard has no figures of its own, and a whole district's mix says nothing about it
-            f['planted']=dict(PLN[n]); src.append('anderson')
+            f['climate']=CL[n].get('climate'); f['soil']=CL[n].get('soil'); src+=[s for s in ('worldclim','koppen','winkler','jones2010') if f['climate']]+(['soilgrids','nrcs'] if f['soil'] else [])
+        # Only figures that are the place's own: its region, the districts inside it, or its country. A wider district's mix sits under
+        # the place's name as if it were its own, and students read it so: Merlot-led Pauillac, Gamay in Côte-Rôtie, red Meursault.
+        part_rows=[c for c in (A.get(n) or {}).get('contains',[]) if c in OWNROW and c not in (PLN.get(n) or {}).get('names',[])]
+        sc_=PLN.get(n,{}).get('scope')   # a French main region's départements are the region (Alsace's Haut-Rhin and Bas-Rhin); elsewhere a wider
+        own_scope=sc_ in ('own','within','country') or (sc_=='around' and t['depth']==1 and n.startswith('france/'))   # area's mix is another place's (Priorat's Cataluña)
+        if n in PLN and (PLN[n].get('ha') or 0)>=20 and own_scope and not part_rows:   # under 20 ha, whole-hectare rows make shares meaningless (Tandil's 9 ha)   # an AVA whose row leaves out its sub-AVAs' rows (Columbia Valley) is incomplete
+            f['planted']=dict(PLN[n]); src.append(PLN[n].get('source') or 'anderson')
+            lf=PLN[n].get('left') or {}
+            src+=(['vivc'] if 'table' in lf else [])+(['usda-juice'] if 'juice' in lf else [])
             if f.get('rules') and f['rules'].get('grapes'): f['planted']['legal']=atlasland.legal(f['planted'],f['rules'])
         if n in TER:
             f['terrain']=TER[n] if vineyard(n,x['source']) else {k:v for k,v in TER[n].items() if k!='aspect'}; src+=['terrain','lapse']+(['plots'] if n in PLOTS else [])
@@ -483,12 +544,27 @@ def facts():
         if f['large']:
             rows=[r for r in (part(k) for k in kids.get(n,[])) if r]
             if len(rows)>=2: f['parts']=rows
-        rd=atlasland.readings(f,CG)
+        rd=atlasland.readings(dict(f,_wider=(PLN.get(n) or {}).get('grapes')),CG)   # the wider table only orders the rules' grapes, it names none
         if rd: f['reading']=rd
         if f.get('climate') and f['climate'].get('gdd') is not None:
-            f['winkler']=next(([w[0],w[3]] for w in CG['winkler']['regions'] if w[1]<=f['climate']['gdd']<w[2]),['below Ia' if f['climate']['gdd']<850 else 'above V',''])
+            # the class only: Winkler's sentences for each class were written for California, and read wrongly elsewhere ("mostly hybrids"
+            # in Champagne, "quality tops out at acceptable" in the Barossa); what suits the place is said from its own grapes instead
+            f['winkler']=next(([w[0],''] for w in CG['winkler']['regions'] if w[1]<=f['climate']['gdd']<w[2]),['below Ia' if f['climate']['gdd']<850 else 'above V',''])
         if n in R: f['research']=R[n]
-        if n in WS: f['wset']=True; src.append('wset')
+        if KF.get(n,{}).get('facts'):   # the few things a Diploma student must know, from the place's full article (src/keyfacts.py)
+            f['keyfacts']=[atlasland.text_names(x,n.split('/')[0]) for x in KF[n]['facts']]
+            SOILW=re.compile(r'\b(soil|soils|slate|schist|limestone|chalk|granite|gravel|clay|marl|sand|volcanic|llicorella|albariza|terra rossa|loess|alluvial|pumice|basalt)\b',re.I)
+            if any(SOILW.search(x) for x in f['keyfacts']):   # the key facts say what the vineyard soils are; map geology and a 1 km soil model would contradict them
+                f.pop('rocks',None); f.pop('soil',None)
+            if f.get('rules') and any(re.search(r'hl/ha|hectolit',x) for x in f['keyfacts']):
+                for k in ('yield_hl','yield_kg','yield_base','yield_ceiling'): f['rules'].pop(k,None)   # the key facts give the base yields
+            ap=os.path.join(ROOT,'data','cache','wikipedia','full',n.replace('/','__')+'.json')
+            if os.path.exists(ap):
+                a=jl(ap); SRC['kf:'+n]=dict(name=f'Wikipedia, {a["title"]}{"" if a["lang"]=="en" else " ("+a["lang"]+")"}, the full article (key facts)',url=a['url']); src.append('kf:'+n)
+        if n in BL:   # what the place is known for, written from its own facts and its Wikipedia intro (src/blurbs.py)
+            f['blurb']=dict(text=atlasland.text_names(BL[n]['text'],n.split('/')[0])); w=BL[n].get('wiki')
+            if w: SRC['wiki:'+n]=dict(name=f'Wikipedia, {w["title"]}{"" if w["lang"]=="en" else " ("+{"it":"Italian","fr":"French"}.get(w["lang"],w["lang"])+")"}, the opening of the article',url=w['url']); src.append('wiki:'+n)
+        if n in BENCH: f['wset']=True; src.append('wset')
         if x['source']=='Wine Australia GI boundaries':
             pr=next((AU[m] for m in [geoindex_norm(v) for v in [t['name']]+t.get('also',[])] if m in AU),None)
             if pr: f['gi']={k:pr.get(v) for k,v in dict(type='GI_TYPE',number='GI_NUMBER',year='YEAR_REGISTER',area_km2='GI_AREA_KM2',vines_ha='VINE_AREA_HA',url='GI_URL',state='STATE').items()}
@@ -505,9 +581,9 @@ def facts():
                               best=[k for k in sorted(sub,key=lambda k:-(N.get(k) or {}).get('score',-1))[:8] if k in N])
         f['sources']=[SRC[s] for s in dict.fromkeys(src)]
         json.dump(f,open(os.path.join(fd,n.replace('/','__')+'.json'),'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
-        places[n]=[t['name'],x['parent'],round((N.get(n) or {}).get('score',-1)),(kind or [''])[0],T[t['path'].split('/')[0]]['name'],t.get('also',[]),int(n in WS)]
+        places[n]=[t['name'],x['parent'],round((N.get(n) or {}).get('score',-1)),(kind or [''])[0],T[t['path'].split('/')[0]]['name'],f['also'],int(n in BENCH)]
     json.dump(dict(places=places),open(os.path.join(OUT,'places.json'),'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
-    print(f'{len(places)} places: {len(WS)} in the WSET Diploma, {len(E)} with EU rules, {len(A)} AVAs, {len(CL)} with climate, {len(R)} researched, {len(N)} with a Wikipedia score')
+    print(f'{len(places)} places: {len(BENCH)} Benchmark ({len(WS)-len(BENCH)} inside Diploma regions with nothing of their own), {len(E)} with EU rules, {len(A)} AVAs, {len(CL)} with climate, {len(R)} researched, {len(N)} with a Wikipedia score')
 # ---- climate and soil, worked out over each place's shape
 CL=os.path.join(CA,'climate')
 def raster(path):
@@ -555,12 +631,38 @@ def climate():
     # WorldClim: twelve months of temperature and of rain on one grid
     a,x0,y0,dx,dy=raster(os.path.join(CL,'worldclim','tavg','wc2.1_2.5m_tavg_01.tif'))
     idx={n:cells(g.simplify(.01),x0,y0,dx,dy,a.shape) for n,g in shp.items()}; print(f'worldclim cells {time.time()-t0:.0f}s',flush=True)
+    grid=dict(x0=x0,y0=y0,dx=dx,dy=dy,shape=a.shape)
+    cellv={n:{} for n in idx}
     for var in ('tavg','prec'):
         for m in range(12):
             a=raster(os.path.join(CL,'worldclim',var,f'wc2.1_2.5m_{var}_{m+1:02d}.tif'))[0]
-            for n,(rr,cc) in idx.items():
-                v=a[rr,cc]; v=v[v>-1e30]; out[n]['climate'].setdefault(var,[]).append(round(float(v.mean()),1) if len(v) else None)
+            for n,(rr,cc) in idx.items(): cellv[n].setdefault(var,[]).append(a[rr,cc].astype('float64'))
         print(f'worldclim {var} {time.time()-t0:.0f}s',flush=True)
+    # The vineyard mask: only the cells warm enough for wine grapes, a growing season of 13 °C or more (Jones's floor), count.
+    # An outline drawn round a valley takes in the mountains above it; averaged whole, Marlborough or the Uco Valley come out
+    # colder and wetter than any vineyard in them. Where no cell is that warm, the warmest quarter stands in.
+    warm={}
+    for n,(rr,cc) in idx.items():
+        ta=np.array(cellv[n]['tavg']); pr=np.array(cellv[n]['prec']); ok=(ta>-1e30).all(0)&(pr>-1e30).all(0)
+        gs=[9,10,11,0,1,2,3] if lat[n]<0 else [3,4,5,6,7,8,9]
+        g=ta[gs].mean(0); keep=ok&(g>=13)
+        if not keep.any() and ok.any(): keep=ok&(g>=np.quantile(g[ok],.75))
+        if keep.any() and keep.sum()<.7*ok.sum() and g[keep].max()<17: keep=keep&(g>=g[keep].max()-1.5)   # cool and mostly hill: the vines take the warmest
+        # ground, which a 4.5 km grid can only find as the cells nearest the warmest (the Wairau). Not in warm high country such as the Uco
+        # Valley, where the warmest cells are the plains below the vineyards
+        warm[n]=keep
+        out[n]['climate']['tavg']=[round(float(ta[i][keep].mean()),1) if keep.any() else None for i in range(12)]
+        out[n]['climate']['prec']=[round(float(pr[i][keep].mean()),1) if keep.any() else None for i in range(12)]
+        out[n]['climate']['warm_share']=round(float(keep.sum()/max(1,ok.sum())),2)
+    del cellv
+    os.makedirs(OUT,exist_ok=True)
+    json.dump(dict(grid=dict(x0=x0,y0=y0,dx=dx,dy=dy,shape=list(grid['shape'])),
+                   cells={n:[[int(r),int(c)] for r,c,k in zip(idx[n][0],idx[n][1],warm[n]) if k] for n in idx}),
+              open(os.path.join(OUT,'warmcells.json'),'w'),separators=(',',':'))
+    WK={n:set(zip(idx[n][0][warm[n]].tolist(),idx[n][1][warm[n]].tolist())) for n in idx}
+    def warm_at(n,lon,lat_,G=dict(grid)):   # which of these points fall in the place's warm cells (on the WorldClim grid, not the caller's)
+        r=((G['y0']-lat_)/G['dy']).astype(int); c=((lon-G['x0'])/G['dx']).astype(int); S=WK[n]
+        return np.array([(a_,b_) in S for a_,b_ in zip(r.tolist(),c.tolist())],dtype=bool)
     days=[31,28.25,31,30,31,30,31,31,30,31,30,31]
     for n,o in out.items():
         c=o['climate']; ta,pr=c.get('tavg'),c.get('prec')
@@ -578,7 +680,10 @@ def climate():
     a,x0,y0,dx,dy=raster(os.path.join(CL,'koppen','tif','1991_2020','koppen_geiger_0p00833333.tif'))
     for n,g in shp.items():
         if not out[n]['climate']: continue
-        rr,cc=cells(g.simplify(.004),x0,y0,dx,dy,a.shape); v=a[rr,cc]; v=v[v>0]
+        rr,cc=cells(g.simplify(.004),x0,y0,dx,dy,a.shape); v=a[rr,cc]
+        m=warm_at(n,x0+(cc+.5)*dx,y0-(rr+.5)*dy)
+        if m.any(): v=v[m]
+        v=v[v>0]
         if len(v): out[n]['climate']['koppen'],out[n]['climate']['koppen_name']=leg.get(int(np.bincount(v).argmax()),(None,None))
     del a; print(f'koppen {time.time()-t0:.0f}s',flush=True)
     # SoilGrids: the typical (median) value, on the Homolosine grid
@@ -587,8 +692,13 @@ def climate():
     for prop in ('clay','sand','phh2o','cfvo'):
         a,x0,y0,dx,dy=raster(os.path.join(sg,f'{prop}_30-60cm_mean_1000.tif'))
         if idx is None: idx={n:cells(transform(to,g).simplify(400),x0,y0,dx,dy,a.shape) for n,g in shp.items()}
+        if prop=='clay':
+            inv=Transformer.from_crs('+proj=igh +lon_0=0 +datum=WGS84 +units=m +no_defs',4326,always_xy=True).transform
+            wmask={}
+            for n,(rr,cc) in idx.items():
+                lo,la=inv(x0+(cc+.5)*dx,y0-(rr+.5)*dy); m=warm_at(n,np.asarray(lo),np.asarray(la)); wmask[n]=m if m.any() else np.ones(len(rr),bool)
         for n,(rr,cc) in idx.items():
-            v=a[rr,cc]; v=v[(v>=0)&(v<32000)]
+            v=a[rr,cc][wmask[n]]; v=v[(v>=0)&(v<32000)]
             if prop!='cfvo': v=v[v>0]
             vals.setdefault(n,{})[prop]=float(np.median(v))/10 if len(v) else None
         del a; print(f'soil {prop} {time.time()-t0:.0f}s',flush=True)

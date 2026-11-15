@@ -10,7 +10,7 @@ struct PlaceInfo: View {
     @State private var allParts = false
 
     private enum Key: String, CaseIterable {
-        case glance, short, planted, climate, soil, land, parts, rules, ava, gi, found, none, sources
+        case keyfacts, glance, short, planted, climate, soil, land, parts, rules, ava, gi, found, none, sources
         var jump: String? {
             switch self {
             case .planted: "Planted"
@@ -29,6 +29,7 @@ struct PlaceInfo: View {
 
     private var present: [Key] {
         var k: [Key] = []
+        if !f["keyfacts"].array.isEmpty { k.append(.keyfacts) }
         if f["summary"].truthy { k.append(.glance) }
         if f["research"]["sheet"].truthy { k.append(.short) }
         if !f["planted"]["grapes"].array.isEmpty { k.append(.planted) }
@@ -69,6 +70,7 @@ struct PlaceInfo: View {
 
     @ViewBuilder private func section(_ k: Key) -> some View {
         switch k {
+        case .keyfacts: keyfacts
         case .glance: glance
         case .short: short
         case .planted: planted
@@ -103,6 +105,20 @@ struct PlaceInfo: View {
     }
 
     // ---- sections
+
+    /// The few things a Diploma student must know, from the place's full Wikipedia article (keyfacts in web/atlas.js).
+    private var keyfacts: some View {
+        AtlasSection(title: "Key facts") {
+            VStack(alignment: .leading, spacing: 10) {
+                ForEach(f["keyfacts"].strings, id: \.self) { t in
+                    HStack(alignment: .firstTextBaseline, spacing: 10) {
+                        Circle().fill(Palette.teal).frame(width: 6, height: 6).alignmentGuide(.firstTextBaseline) { $0[.bottom] + 1 }
+                        Text(t).font(.atlasBody).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+            }
+        }
+    }
 
     private var glance: some View {
         let sm = f["summary"]
@@ -148,15 +164,15 @@ struct PlaceInfo: View {
         let top = max(grapes.first?[1].double ?? 1, 1)
         let legal = pl["legal"].strings
         let other = grapes.first { $0[0].string == "Other" }
-        let rows = grapes.enumerated().filter { _, g in g[0].string != "Other" && ((g[1].double ?? 0) / ha >= 0.01 || grapes.count <= 6) }
+        let rows = grapes.enumerated().filter { _, g in g[0].string != "Other" && (g[1].double ?? 0) / ha >= 0.01 }   // a row under 1% would read "0%"
         let acres = fmt(ha * 2.471)
         let year = pl["year"].int.map(String.init) ?? ""
         let caption = wide
-            ? "No figures exist for \(name) alone. These are for \(where_), the wider area it sits in: \(acres) acres of vines, \(year)."
-            : "\(acres) acres of vines\(where_.isEmpty ? "" : " " + where_), \(year)"
+            ? "No figures exist for \(name) alone. These are for \(where_), the wider area it sits in: \(acres) acres of wine grapes, \(year)."
+            : "\(acres) acres of wine grapes\(where_.isEmpty ? "" : " " + where_), \(year)."
         let key = wide ? ["Allowed in \(name)", "Not allowed in \(name)"] : ["Can carry the \(name) name", "Grown here, but sold under another name"]
         return AtlasSection(title: wide ? "Planted in the wider area" : "What is planted", note: "Share of vineyard area") {
-            Text(caption).font(.atlasNote).foregroundStyle(Palette.soft)
+            Text(caption + Copy.leftOut(pl["left"])).font(.atlasNote).foregroundStyle(Palette.soft)
             if !legal.isEmpty {
                 FlowLayout(spacing: 14) {
                     HStack(spacing: 5) { Rectangle().fill(Palette.gold4[3]).frame(width: 14, height: 8); Text(key[0]) }
@@ -164,7 +180,7 @@ struct PlaceInfo: View {
                 }
                 .font(.atlasNote).foregroundStyle(Palette.soft)
             }
-            VStack(spacing: 6) {
+            VStack(spacing: 10) {
                 ForEach(rows, id: \.offset) { i, g in
                     let status = legal.indices.contains(i) ? legal[i] : ""
                     let share = (g[1].double ?? 0) / ha * 100
@@ -200,7 +216,7 @@ struct PlaceInfo: View {
         let (wi, wp) = Copy.segment(Copy.winkler, c["gdd"].double ?? 0)
         let wk = f["winkler"]
         let reading = f["reading"]["climate"]
-        return AtlasSection(title: "Climate") {
+        return AtlasSection(title: "Climate", note: "Averages, 1970 to 2000") {
             FactGrid(facts: [
                 Fact(label: "Growing season", value: "\(Int(toF(c["gst"].double ?? 0).rounded()))°F", note: south ? "average, October to April" : "average, April to October"),
                 Fact(label: "Heat", value: "\(fmt(((c["gdd"].double ?? 0) * 1.8 / 10).rounded() * 10)) degree days", note: "°F, above 50°F"),
@@ -213,7 +229,7 @@ struct PlaceInfo: View {
             ScaleBar(segments: Copy.winkler.map { ($0.0, $0.3) }, index: wi, position: wp, label: "Winkler region")
             if let t = wk[1].string, !t.isEmpty { Text(t).font(.atlasBody) }
             bigNote
-            Reading(points: pairs(reading))
+            Reading(title: "What the climate means for the vines", points: pairs(reading))
             ViewThatFits {
                 HStack(alignment: .top, spacing: 16) { tempChart(c, south); rainChart(c, south) }
                 VStack(alignment: .leading, spacing: 10) { tempChart(c, south); rainChart(c, south) }
@@ -242,14 +258,14 @@ struct PlaceInfo: View {
         let fams = rk["families"].array
         return AtlasSection(title: "Rock and soil") {
             if !fams.isEmpty {
-                SubCaption("The rock beneath")
+                SubCaption("The rock beneath, from a geologic map: the main rock units, not each vineyard's soil")
                 GeometryReader { g in
                     HStack(spacing: 2) {
                         ForEach(Array(fams.enumerated()), id: \.offset) { _, x in
                             let id = x[0].string ?? "", v = x[1].double ?? 0
                             VStack(alignment: .leading, spacing: 1) {
                                 Text(rk["names"][id].string ?? id).font(.system(size: 11, weight: .bold)).lineLimit(1).minimumScaleFactor(0.6)
-                                Text("\(Int((v * 100).rounded()))%").font(.system(size: 10)).foregroundStyle(Palette.soft)
+                                Text(Copy.share(v)).font(.system(size: 10)).foregroundStyle(Palette.soft)   // words, not percentages: a few sample points
                             }
                             .padding(.horizontal, 6).padding(.vertical, 6)
                             .frame(width: max(30, g.size.width * v - 2), alignment: .leading)
@@ -298,7 +314,7 @@ struct PlaceInfo: View {
                 VStack(alignment: .leading, spacing: 12) { FactGrid(facts: facts); if !asp.isEmpty { Rose(aspect: asp) } }
             }
             bigNote
-            Reading(points: pairs(f["reading"]["land"]))
+            Reading(title: "What the land means for the vines", points: pairs(f["reading"]["land"]))
         }
     }
 
@@ -362,12 +378,20 @@ struct PlaceInfo: View {
         let yhl = ru["yield_hl"].double, ykg = ru["yield_kg"].double
         let communes = ru["communes"].strings
         return AtlasSection(title: "The rules", note: "Allowed grapes, not plantings") {
-            ForEach([("red", "Red grapes"), ("white", "White grapes"), ("pink", "Pink and grey grapes")], id: \.0) { sk, head in
-                let g = grapes.filter { $0[1].string == sk }
-                if !g.isEmpty { SubCaption(head); Chips(items: g.map { ($0[0].string ?? "", sk, nil) }) }
+            if ru["province_list"].truthy {   // Italy's EU records: every grape the province approves, not this DOC's own blend (rules in web/atlas.js)
+                Text("The EU record lists every grape approved in the province, not this wine's own blend rules.").font(.atlasNote).foregroundStyle(Palette.soft)
+                DisclosureGroup("All \(grapes.count) grapes") { Chips(items: grapes.map { ($0[0].string ?? "", $0[1].string ?? "", nil) }) }.font(.atlasNote)
+            } else if ru["long_list"].truthy {
+                DisclosureGroup("The rules allow \(grapes.count) grapes") { Chips(items: grapes.map { ($0[0].string ?? "", $0[1].string ?? "", nil) }) }.font(.atlasNote)
+            } else {
+                ForEach([("red", "Red grapes"), ("white", "White grapes"), ("pink", "Pink and grey grapes")], id: \.0) { sk, head in
+                    let g = grapes.filter { $0[1].string == sk }
+                    if !g.isEmpty { SubCaption(head); Chips(items: g.map { ($0[0].string ?? "", sk, nil) }) }
+                }
+                let un = grapes.filter { $0[1].string == nil || $0[1].string == "" }
+                if !un.isEmpty { SubCaption("Grapes"); Chips(items: un.map { ($0[0].string ?? "", "", nil) }) }
+                if ru["cahier"].isNull && grapes.count > 1 { Text(Copy.Rules.noShares).font(.atlasNote).foregroundStyle(Palette.soft) }
             }
-            let un = grapes.filter { $0[1].string == nil || $0[1].string == "" }
-            if !un.isEmpty { SubCaption("Grapes"); Chips(items: un.map { ($0[0].string ?? "", "", nil) }) }
             if !ru["grapes_other"].array.isEmpty { SubCaption("Also allowed, in smaller roles"); Chips(items: chips(ru["grapes_other"])) }
             if !ru["grapes_trial"].array.isEmpty { SubCaption("On trial, to adapt to a changing climate"); Chips(items: chips(ru["grapes_trial"])) }
             let limits = ru["limits"].strings
@@ -384,10 +408,12 @@ struct PlaceInfo: View {
             }
             FactGrid(facts: [
                 Fact(label: "Wine types", value: ru["types"].strings.joined(separator: ", ")),
-                Fact(label: "Highest yield", value: yhl.map { "\(fmt($0)) hl/ha" } ?? ykg.map { "\(fmt($0)) kg/ha" } ?? "", note: yhl != nil && ykg != nil ? "\(fmt(ykg)) kg/ha" : ""),
+                ru["yield_base"].string.map { Fact(label: "Base yield", value: $0, note: Copy.Rules.baseYield) }
+                    ?? Fact(label: ru["yield_ceiling"].truthy ? "Yield ceiling" : "Yield limit", value: yhl.map { "\(fmt($0)) hl/ha" } ?? ykg.map { "\(fmt($0)) kg/ha" } ?? "",
+                            note: ru["yield_ceiling"].truthy ? Copy.Rules.yieldCeiling : Copy.Rules.yieldLimit),
+                Fact(label: "Recognised", value: ru["recognised"].double.map { String(Int($0)) } ?? "", note: Copy.Rules.recognised),
                 Fact(label: "Fewest vines", value: ru["density"].double.map { "\(fmt($0)) per ha" } ?? ""),
                 Fact(label: "Irrigation", value: ru["irrigation"].string ?? ""),
-                Fact(label: "Protected since", value: ru["registered"].string.map { String($0.prefix(4)) } ?? ""),
                 Fact(label: "Communes", value: communes.isEmpty ? "" : fmt(Double(communes.count))),
             ])
             if !communes.isEmpty {

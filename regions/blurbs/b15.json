@@ -1,0 +1,722 @@
+{
+ "greece": {
+  "text": "One of the oldest wine-producing countries in the world, with evidence of Greek wine about 6,500 years ago. Its most planted grapes are Savatiano and Roditis, followed by Agiorgitiko, Liatiko, Muscat of Hamburg and Xinomavro.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Greek wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Greek_wine&oldid=1385684248"
+  }
+ },
+ "greece/achaia": {
+  "text": "A Greek PGI in the Dytiki Elláda area of western Greece.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/aegean-islands": {
+  "text": "A group of Greek island wine areas that includes Santorini, Paros and Samos.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/amynteo": {
+  "text": "A Greek PDO for wine and sparkling wine made from Xinomavro, a red grape.",
+  "from": [
+   "rules"
+  ]
+ },
+ "greece/arhanes": {
+  "text": "A Cretan PDO for wine made from the red grapes Kotsifali and Mandilaria. It sits on an island where Liatiko is the most planted grape, followed by Kotsifali and Romeiko.",
+  "from": [
+   "rules",
+   "planted_wider"
+  ]
+ },
+ "greece/candia": {
+  "text": "A Cretan PDO for wine from Greece. Allowed grapes are the reds Kotsifali and Mandilaria and the whites Assyrtiko, Athiri, Thrapsathiri, Vidiano and Vilana.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/chios": {
+  "text": "A Greek PGI on the island of Chios, in the North Aegean (Voreio Aigaio).",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/crete": {
+  "text": "A Greek island wine area, with wine made since the Bronze Age by the Minoans. Its appellations include Peza, Archanes, Dafnes and Sitia, and Liatiko, Kotsifali and Romeiko are the most planted grapes.",
+  "from": [
+   "wikipedia",
+   "planted_wider"
+  ],
+  "wiki": {
+   "title": "Cretan wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cretan_wine&oldid=1290565529"
+  }
+ },
+ "greece/dafnes": {
+  "text": "A Cretan PDO for wine made from the red grapes Liatiko and Mandilaria. It allows liqueur wine and wine from raisined grapes as well as table wine. Liatiko is the most planted grape on Crete.",
+  "from": [
+   "rules",
+   "planted_wider"
+  ]
+ },
+ "greece/drama": {
+  "text": "A Greek PGI in the Anatoliki Makedonia and Thraki area of northern Greece.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/goumenissa": {
+  "text": "A PDO in Greek Macedonia for red wine made from Xinomavro and Negoska.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/imathia": {
+  "text": "A Greek PGI in Macedonia, in the Kentriki Makedonia area.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/ionian-islands": {
+  "text": "A group of Greek island wine areas that includes Zakynthos and Lefkada.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/kriti": {
+  "text": "A Greek PGI covering the whole island of Crete. Liatiko is the most planted grape at 38 percent of vines, followed by Kotsifali, Romeiko, Vilana (the leading white), Razaki and Mandilaria.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "greece/lefkada": {
+  "text": "A Greek PGI on the Ionian island of Lefkada, in the Ionian Islands group.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/limnos": {
+  "text": "A PDO on the North Aegean island of Limnos for wine made from the red Limnio and the white Moschato Alexandreias. It allows table wine, liqueur wine and wine from raisined grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/macedonia": {
+  "text": "A group of Greek wine areas that includes Goumenissa, Naoussa and Pieria.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/malvasia": {
+  "text": "A Greek PDO for sweet wine, made as liqueur wine or wine from raisined grapes. Allowed grapes include Malvasia di Candia Aromatica, Moschato Aspro, Assyrtiko, Athiri, Liatiko and Thrapsathiri.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/malvasia-candia": {
+  "text": "A Cretan PDO for sweet wine, made as liqueur wine or wine from raisined grapes. Allowed grapes include Malvasia di Candia Aromatica, Moschato Aspro, Vidiano, Assyrtiko, Athiri, Liatiko and Thrapsathiri.",
+  "from": [
+   "rules",
+   "where",
+   "planted_wider"
+  ]
+ },
+ "greece/mantinia": {
+  "text": "A Peloponnese PDO for wine and quality sparkling wine, made from Asproudes and Moschofilero.",
+  "from": [
+   "rules"
+  ]
+ },
+ "greece/mavrodafni-kefallinias": {
+  "text": "A Greek PDO on the Ionian island of Kefalonia for red liqueur wine made from Mavrodafni and Korinthiaki.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/mavrodafni-patron": {
+  "text": "A PDO around Patras for red liqueur wine and wine from raisined grapes, made from Mavrodafni and Korinthiaki.",
+  "from": [
+   "rules"
+  ]
+ },
+ "greece/moschato-kefallinias": {
+  "text": "A Greek PDO on the Ionian island of Kefalonia for sweet white wine made from Moschato Aspro. It covers both liqueur wine and wine from raisined grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/moschato-patron": {
+  "text": "A Greek PDO around Patras, in western Greece (Dytiki Elláda), for sweet white wine made from Moschato Aspro. It covers liqueur wine and wine from raisined grapes. The wider area is mostly planted with Roditis.",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "greece/moschato-rodou": {
+  "text": "A PDO on the island of Rhodes for sweet white wine made from Moschato Aspro. It covers liqueur wine and wine from raisined grapes, in the South Aegean (Notio Aigaio).",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/moschatos-limnou": {
+  "text": "A Greek PDO on the North Aegean island of Limnos for sweet white wine made from Moschato Alexandreias. It covers liqueur wine and wine from raisined grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/moschatos-riou-patras": {
+  "text": "A Greek PDO near Patras, in western Greece (Dytiki Elláda), for sweet white wine made from Moschato Aspro. It covers liqueur wine and wine from raisined grapes. The wider area is mostly planted with Roditis.",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "greece/naoussa": {
+  "text": "A PDO in Greek Macedonia for red wine made only from Xinomavro.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/nemea": {
+  "text": "A Peloponnese PDO for red wine made only from Agiorgitiko. It also allows liqueur wine and wine from raisined grapes. Agiorgitiko is the most planted grape in the Peloponnese, at about 35 percent.",
+  "from": [
+   "rules",
+   "planted_wider"
+  ]
+ },
+ "greece/paros": {
+  "text": "A PDO on the island of Paros, in the Aegean Islands, for wine made from the red Mandilaria and the white Monemvassia.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/patra": {
+  "text": "A PDO around Patras for wine made from Roditis, a pink-skinned grape.",
+  "from": [
+   "rules"
+  ]
+ },
+ "greece/pella": {
+  "text": "A Greek PGI in Macedonia, in the Kentriki Makedonia area.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/peloponnisos": {
+  "text": "A Greek PGI covering the Peloponnese. Agiorgitiko is the most planted grape at 35 percent of vines, followed by Roditis at 23 percent and Moschofilero at 15 percent.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "greece/peza": {
+  "text": "A Cretan PDO for wine made from the red Kotsifali and Mandilaria and the white Vilana.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/pieria": {
+  "text": "A Greek PGI in Macedonia, in the Kentriki Makedonia area.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/playies-melitona": {
+  "text": "A PDO in Greek Macedonia for wine made from Assyrtiko, Athiri, Roditis and Limnio, along with Cabernet Sauvignon and Cabernet Franc. The wider Kentriki Makedonia area is mostly planted with Xinomavro.",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "greece/robola-kefallinias": {
+  "text": "A Greek PDO on the Ionian island of Kefalonia for white wine from Robola.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/rodos": {
+  "text": "A Greek PDO on the island of Rhodes for wine and quality sparkling wine. Allowed grapes are the whites Assyrtiko, Athiri and Malagousia and the reds Mandilaria and Mavrothiriko.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "greece/samos": {
+  "text": "A PDO on the North Aegean island of Samos, in the Aegean Islands group, for sweet white wine made from Moschato Aspro. It covers liqueur wine and wine from raisined grapes. Muscat Blanc is the most planted grape in the North Aegean.",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "greece/santorini": {
+  "text": "A Cycladic island in the Aegean Islands group whose wine became famous worldwide in the Middle Ages under Venice. The PDO centers on white grapes such as Assyrtiko, Athiri and Aidani Aspro, and covers dry wine, fortified wine and Vinsanto, made from sun-dried grapes.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Santorini (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Santorini_%28wine%29&oldid=1371751740"
+  }
+ },
+ "greece/serres": {
+  "text": "A Greek PGI in Macedonia, in the Kentriki Makedonia area.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/sitia": {
+  "text": "A PDO on Crete for wine made from the red Liatiko and Mandilaria and the white Thrapsathiri and Vilana. It covers wine, liqueur wine and wine from raisined grapes. Liatiko is also the most planted grape on the island.",
+  "from": [
+   "rules",
+   "planted_wider",
+   "where"
+  ]
+ },
+ "greece/thessaloniki": {
+  "text": "A Greek PGI in Macedonia, in the Kentriki Makedonia area.",
+  "from": [
+   "where"
+  ]
+ },
+ "greece/zakynthos": {
+  "text": "A Greek PGI on the Ionian island of Zakynthos, in the Ionian Islands group.",
+  "from": [
+   "where"
+  ]
+ },
+ "canada": {
+  "text": "A country whose wine comes mainly from Ontario and British Columbia. Canada is the leading maker of icewine, and its most planted grapes are Seyval Blanc, Chardonnay, Riesling and Cabernet Franc.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Canadian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Canadian_wine&oldid=1377503609"
+  }
+ },
+ "canada/beamsville-bench": {
+  "text": "A sub-appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/british-columbia": {
+  "text": "A Canadian wine province that includes the Okanagan, Similkameen, Fraser and Cowichan valleys and Vancouver Island. Merlot and Pinot Noir are the most planted grapes, followed by Pinot Gris and Chardonnay.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "canada/creek-shores": {
+  "text": "A sub-appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/east-kelowna-slopes": {
+  "text": "A sub-GI of the Okanagan Valley, in British Columbia. The Okanagan is Canada's second-largest wine area and, with the Similkameen Valley, makes more than 80 percent of the province's wine. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/four-mile-creek": {
+  "text": "A sub-appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/fraser-valley": {
+  "text": "A British Columbia geographical indication in the Fraser River basin, from just west of Hope to the Pacific Ocean. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia",
+   "planted_wider"
+  ],
+  "wiki": {
+   "title": "Fraser Valley",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Fraser_Valley&oldid=1385710484"
+  }
+ },
+ "canada/golden-mile-bench": {
+  "text": "A sub-GI of the Okanagan Valley, in British Columbia. The Okanagan is Canada's second-largest wine area and, with the Similkameen Valley, makes more than 80 percent of the province's wine. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/golden-mile-slopes": {
+  "text": "A sub-GI of the Okanagan Valley, in British Columbia. The Okanagan is Canada's second-largest wine area and, with the Similkameen Valley, makes more than 80 percent of the province's wine. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/gulf-islands": {
+  "text": "A British Columbia geographical indication covering wine from the Gulf Islands.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "British Columbia wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=British_Columbia_wine&oldid=1372478322"
+  }
+ },
+ "canada/lake-country": {
+  "text": "A sub-GI of the Okanagan Valley, in British Columbia. The Okanagan is Canada's second-largest wine area and, with the Similkameen Valley, makes more than 80 percent of the province's wine. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/lake-erie-north-shore": {
+  "text": "An Ontario appellation on the north shore of Lake Erie, one of the province's three official wine-growing regions. It contains the South Islands sub-appellation. Ontario is Canada's largest wine province.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/lincoln-lakeshore": {
+  "text": "A sub-appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/naramata-bench": {
+  "text": "A sub-GI of the Okanagan Valley, in British Columbia. The Okanagan is Canada's second-largest wine area and, with the Similkameen Valley, makes more than 80 percent of the province's wine. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/niagara-escarpment": {
+  "text": "A regional appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/niagara-lakeshore": {
+  "text": "A sub-appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/niagara-on-the-lake": {
+  "text": "A regional appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/niagara-peninsula": {
+  "text": "A Canadian appellation that holds a dozen named areas, including Niagara-on-the-Lake, Niagara Escarpment, Beamsville Bench, Twenty Mile Bench and Short Hills Bench.",
+  "from": [
+   "where"
+  ]
+ },
+ "canada/niagara-river": {
+  "text": "A sub-appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/okanagan-falls": {
+  "text": "A sub-GI of the Okanagan Valley, in British Columbia. The Okanagan is Canada's second-largest wine area and, with the Similkameen Valley, makes more than 80 percent of the province's wine. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/okanagan-valley": {
+  "text": "Canada's second-largest wine area, with about 8,600 acres of vines around Okanagan Lake and other lakes. With the Similkameen Valley it makes more than 80 percent of British Columbia's wine, from varied terrain, microclimates and soils.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/ontario": {
+  "text": "Canada's largest wine province, with about two-thirds of the country's vineyard acreage. Its three official regions are the Niagara Peninsula, the north shore of Lake Erie and Prince Edward County, and it is the world's largest icewine producer.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/prince-edward-county": {
+  "text": "The newest of Ontario's official wine areas, named a Designated Viticultural Area in 2007. It lies in the southeastern part of southern Ontario, with more than 700 acres of vineyard.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Prince Edward County wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Prince_Edward_County_wine&oldid=1384993555"
+  }
+ },
+ "canada/short-hills-bench": {
+  "text": "A sub-appellation of the Niagara Peninsula in Ontario, within the Niagara Escarpment regional appellation, south of St. Catharines. Ontario is Canada's largest wine province and the world's largest ice wine producer.",
+  "from": [
+   "where",
+   "wikipedia",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Short Hills Bench",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Short_Hills_Bench&oldid=1357260261"
+  }
+ },
+ "canada/skaha-bench": {
+  "text": "A sub-GI of the Okanagan Valley, in British Columbia. The Okanagan is Canada's second-largest wine area and, with the Similkameen Valley, makes more than 80 percent of the province's wine. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/south-islands": {
+  "text": "A sub-appellation of Lake Erie North Shore, in Ontario. Lake Erie North Shore is one of Ontario's three official wine-growing regions, and Ontario is the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/south-kelowna-slopes": {
+  "text": "A sub-GI of the Okanagan Valley, in British Columbia. The Okanagan is Canada's second-largest wine area and, with the Similkameen Valley, makes more than 80 percent of the province's wine. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/st-david-s-bench": {
+  "text": "A sub-appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/summerland-bench": {
+  "text": "A sub-GI of the Okanagan Valley, in British Columbia. The Okanagan is Canada's second-largest wine area and, with the Similkameen Valley, makes more than 80 percent of the province's wine. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/summerland-lakefront": {
+  "text": "A sub-GI of the Okanagan Valley, in British Columbia. The Okanagan is Canada's second-largest wine area and, with the Similkameen Valley, makes more than 80 percent of the province's wine. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/summerland-valleys": {
+  "text": "A sub-GI of the Okanagan Valley, in British Columbia. The Okanagan is Canada's second-largest wine area and, with the Similkameen Valley, makes more than 80 percent of the province's wine. Merlot and Pinot Noir are the most planted grapes in the province.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Okanagan Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Okanagan_Valley_%28wine_region%29&oldid=1384894765"
+  }
+ },
+ "canada/twenty-mile-bench": {
+  "text": "A sub-appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/vinemount-ridge": {
+  "text": "A sub-appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ },
+ "canada/west-niagara": {
+  "text": "A regional appellation of the Niagara Peninsula, in Ontario. Ontario is Canada's largest wine province, and the Niagara Peninsula is one of its three official wine-growing regions. Ontario is also the world's largest producer of ice wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ontario wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ontario_wine&oldid=1360166748"
+  }
+ }
+}

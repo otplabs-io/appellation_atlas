@@ -2,9 +2,9 @@
 "$about": "How well known each place is, from Wikipedia. Built by src/notoriety.py; the method is in its docstring.",
 "$sources": {
 "wikidata": "Wikidata, sitelinks and eAmbrosia ids (P9854), https://www.wikidata.org",
-"pageviews": "Wikipedia pageviews (MediaWiki API prop=pageviews), user views over the 60 days before 2026-11-07, https://www.mediawiki.org/wiki/Extension:PageViewInfo"
+"pageviews": "Wikipedia pageviews (MediaWiki API prop=pageviews), user views over the 60 days before 2026-11-15, https://www.mediawiki.org/wiki/Extension:PageViewInfo"
 },
-"fetched": "2026-11-07",
+"fetched": "2026-11-15",
 "places": {
 "argentina": {
 "score": 75.8,
@@ -119,7 +119,7 @@
 "best": "australia/riverina"
 },
 "australia/canberra-district": {
-"score": 16.7,
+"score": 16.6,
 "langs": 1,
 "views": 93,
 "days": 60,
@@ -161,7 +161,7 @@
 "url": "https://en.wikipedia.org/wiki/Clare_Valley_wine_region"
 },
 "australia/coonawarra": {
-"score": 68.6,
+"score": 68.5,
 "langs": 5,
 "views": 559,
 "days": 60,
@@ -323,7 +323,7 @@
 "url": "https://en.wikipedia.org/wiki/High_Eden"
 },
 "australia/hilltops": {
-"score": 10.4,
+"score": 10.5,
 "langs": 1,
 "views": 54,
 "days": 60,
@@ -367,7 +367,7 @@
 "url": "https://en.wikipedia.org/wiki/Langhorne_Creek_wine_region"
 },
 "australia/limestone-coast": {
-"score": 52.9,
+"score": 52.8,
 "own": null,
 "articles": 5,
 "total": 745,
@@ -441,7 +441,7 @@
 "days": 60
 },
 "australia/mudgee": {
-"score": 17.3,
+"score": 17.2,
 "langs": 1,
 "views": 98,
 "days": 60,
@@ -525,7 +525,7 @@
 "days": 60
 },
 "australia/pyrenees": {
-"score": 67.2,
+"score": 67.1,
 "langs": 6,
 "views": 340,
 "days": 60,
@@ -633,7 +633,7 @@
 "days": 60
 },
 "australia/swan-hill": {
-"score": 11.3,
+"score": 11.4,
 "langs": 1,
 "views": 59,
 "days": 60,
@@ -673,7 +673,7 @@
 "url": "https://en.wikipedia.org/wiki/Tumbarumba_wine_region"
 },
 "australia/victoria": {
-"score": 64.1,
+"score": 64.0,
 "langs": 2,
 "views": 272,
 "days": 60,
@@ -701,7 +701,7 @@
 "best": "australia/swan-valley"
 },
 "australia/western-victoria": {
-"score": 46.1,
+"score": 46.0,
 "langs": 1,
 "views": 14,
 "days": 60,
@@ -815,7 +815,7 @@
 "best": null
 },
 "bulgaria": {
-"score": 51.5,
+"score": 50.3,
 "langs": 10,
 "views": 762,
 "days": 60,
@@ -824,19 +824,9 @@
 "via": "English Wikipedia \"Bulgarian wine\"",
 "url": "https://en.wikipedia.org/wiki/Bulgarian_wine",
 "own": 79.1,
-"articles": 2,
-"total": 844,
+"articles": 1,
+"total": 762,
 "best": null
-},
-"bulgaria/montana": {
-"score": 37.9,
-"langs": 3,
-"views": 82,
-"days": 60,
-"wikidata": "Q2555792",
-"article": "Montana wine",
-"via": "English Wikipedia \"Montana (wine)\" (redirects to \"Montana wine\")",
-"url": "https://en.wikipedia.org/wiki/Montana_wine"
 },
 "canada": {
 "score": 85.3,
@@ -861,7 +851,7 @@
 "article": "British Columbia wine",
 "via": "English Wikipedia \"British Columbia (wine)\" (redirects to \"British Columbia wine\")",
 "url": "https://en.wikipedia.org/wiki/British_Columbia_wine",
-"own": 29.3,
+"own": 29.2,
 "articles": 3,
 "total": 6435,
 "best": "canada/fraser-valley"
@@ -877,7 +867,7 @@
 "url": "https://en.wikipedia.org/wiki/Fraser_Valley"
 },
 "canada/niagara-peninsula": {
-"score": 10.9,
+"score": 10.8,
 "own": null,
 "articles": 1,
 "total": 91,
@@ -923,7 +913,7 @@
 "url": "https://en.wikipedia.org/wiki/Prince_Edward_County_wine"
 },
 "canada/short-hills-bench": {
-"score": 16.4,
+"score": 16.3,
 "langs": 1,
 "views": 91,
 "days": 60,
@@ -1059,7 +1049,7 @@
 "best": null
 },
 "croatia": {
-"score": 65.7,
+"score": 65.6,
 "langs": 10,
 "views": 1373,
 "days": 60,
@@ -1067,7 +1057,7 @@
 "article": "Croatian wine",
 "via": "English Wikipedia \"Croatian wine\"",
 "url": "https://en.wikipedia.org/wiki/Croatian_wine",
-"own": 84.8,
+"own": 84.7,
 "articles": 2,
 "total": 1950,
 "best": null
@@ -1203,7 +1193,7 @@
 "best": "france/corton"
 },
 "france/alpes-de-haute-provence": {
-"score": 10.4,
+"score": 10.5,
 "langs": 1,
 "views": 54,
 "days": 60,
@@ -1291,7 +1281,7 @@
 "url": "https://en.wikipedia.org/wiki/Anjou_wine"
 },
 "france/ariege": {
-"score": 17.0,
+"score": 16.9,
 "langs": 1,
 "views": 95,
 "days": 60,
@@ -1473,7 +1463,7 @@
 "url": "https://en.wikipedia.org/wiki/Bourgueil_AOC"
 },
 "france/bouzeron": {
-"score": 60.1,
+"score": 60.0,
 "langs": 3,
 "views": 599,
 "days": 60,
@@ -1483,7 +1473,7 @@
 "url": "https://en.wikipedia.org/wiki/Bouzeron_AOC"
 },
 "france/bugey": {
-"score": 61.7,
+"score": 61.6,
 "langs": 5,
 "views": 1207,
 "days": 60,
@@ -1491,7 +1481,7 @@
 "article": "Bugey wine",
 "via": "English Wikipedia \"Bugey wine\"",
 "url": "https://en.wikipedia.org/wiki/Bugey_wine",
-"own": 76.0,
+"own": 75.9,
 "articles": 1,
 "total": 1207,
 "best": null
@@ -1521,7 +1511,7 @@
 "url": "https://en.wikipedia.org/wiki/Buzet_AOC"
 },
 "france/cabardes": {
-"score": 67.6,
+"score": 67.5,
 "langs": 5,
 "views": 493,
 "days": 60,
@@ -1745,7 +1735,7 @@
 "url": "https://en.wikipedia.org/wiki/Clos_de_Vougeot"
 },
 "france/clos-des-lambrays": {
-"score": 64.1,
+"score": 64.0,
 "langs": 3,
 "views": 883,
 "days": 60,
@@ -1755,7 +1745,7 @@
 "url": "https://en.wikipedia.org/wiki/Clos_des_Lambrays"
 },
 "france/collioure": {
-"score": 66.3,
+"score": 66.2,
 "langs": 4,
 "views": 619,
 "days": 60,
@@ -1839,7 +1829,7 @@
 "url": "https://en.wikipedia.org/wiki/Corton_%28wine%29"
 },
 "france/costieres-de-nimes": {
-"score": 80.9,
+"score": 80.8,
 "langs": 6,
 "views": 1472,
 "days": 60,
@@ -1923,7 +1913,7 @@
 "url": "https://en.wikipedia.org/wiki/C%C3%B4te-R%C3%B4tie_AOC"
 },
 "france/coteaux-bourguignons": {
-"score": 70.5,
+"score": 70.4,
 "langs": 4,
 "views": 930,
 "days": 60,
@@ -1933,7 +1923,7 @@
 "url": "https://en.wikipedia.org/wiki/Coteaux_Bourguignons"
 },
 "france/coteaux-de-coiffy": {
-"score": 28.3,
+"score": 28.2,
 "langs": 1,
 "views": 226,
 "days": 60,
@@ -2053,7 +2043,7 @@
 "url": "https://en.wikipedia.org/wiki/C%C3%B4tes_de_Toul"
 },
 "france/cotes-du-marmandais": {
-"score": 65.7,
+"score": 65.6,
 "langs": 4,
 "views": 594,
 "days": 60,
@@ -2103,7 +2093,7 @@
 "url": "https://en.wikipedia.org/wiki/C%C3%B4tes_du_Vivarais_AOC"
 },
 "france/cremant-d-alsace": {
-"score": 85.8,
+"score": 85.7,
 "langs": 6,
 "views": 2821,
 "days": 60,
@@ -2113,7 +2103,7 @@
 "url": "https://en.wikipedia.org/wiki/Cr%C3%A9mant_d%27Alsace"
 },
 "france/crozes-hermitage": {
-"score": 85.7,
+"score": 85.6,
 "langs": 5,
 "views": 5968,
 "days": 60,
@@ -2147,7 +2137,7 @@
 "url": "https://en.wikipedia.org/wiki/Faug%C3%A8res_AOC"
 },
 "france/fitou": {
-"score": 83.8,
+"score": 83.7,
 "langs": 7,
 "views": 1613,
 "days": 60,
@@ -2177,7 +2167,7 @@
 "url": "https://en.wikipedia.org/wiki/Fronsac_AOC"
 },
 "france/fronton": {
-"score": 77.9,
+"score": 77.8,
 "langs": 6,
 "views": 1078,
 "days": 60,
@@ -2221,7 +2211,7 @@
 "best": "france/chambertin"
 },
 "france/gigondas": {
-"score": 80.6,
+"score": 80.5,
 "langs": 4,
 "views": 3638,
 "days": 60,
@@ -2259,7 +2249,7 @@
 "url": "https://en.wikipedia.org/wiki/Graves_%28wine_region%29"
 },
 "france/graves-de-vayres": {
-"score": 71.6,
+"score": 71.5,
 "langs": 5,
 "views": 741,
 "days": 60,
@@ -2299,7 +2289,7 @@
 "url": "https://fr.wikipedia.org/wiki/Hautes-alpes_%28IGP%29"
 },
 "france/hautes-cotes-de-beaune": {
-"score": 71.7,
+"score": 71.6,
 "langs": 4,
 "views": 1048,
 "days": 60,
@@ -2319,7 +2309,7 @@
 "url": "https://en.wikipedia.org/wiki/Hautes-C%C3%B4tes_de_Nuits"
 },
 "france/hermitage": {
-"score": 89.6,
+"score": 89.5,
 "langs": 8,
 "views": 3081,
 "days": 60,
@@ -2337,7 +2327,7 @@
 "days": 60
 },
 "france/irouleguy": {
-"score": 84.7,
+"score": 84.6,
 "langs": 7,
 "views": 1821,
 "days": 60,
@@ -2391,7 +2381,7 @@
 "url": "https://en.wikipedia.org/wiki/Juran%C3%A7on_AOC"
 },
 "france/la-romanee": {
-"score": 70.3,
+"score": 70.2,
 "langs": 4,
 "views": 899,
 "days": 60,
@@ -2515,7 +2505,7 @@
 "days": 60
 },
 "france/luberon": {
-"score": 70.6,
+"score": 70.5,
 "langs": 4,
 "views": 933,
 "days": 60,
@@ -2589,7 +2579,7 @@
 "url": "https://en.wikipedia.org/wiki/Marsannay_wine"
 },
 "france/maures": {
-"score": 11.3,
+"score": 11.4,
 "langs": 1,
 "views": 59,
 "days": 60,
@@ -2599,7 +2589,7 @@
 "url": "https://fr.wikipedia.org/wiki/Maures_%28IGP%29"
 },
 "france/maury": {
-"score": 80.7,
+"score": 80.6,
 "langs": 5,
 "views": 2004,
 "days": 60,
@@ -2649,7 +2639,7 @@
 "url": "https://en.wikipedia.org/wiki/Mercurey_wine"
 },
 "france/meursault": {
-"score": 64.2,
+"score": 64.3,
 "langs": 2,
 "views": 3800,
 "days": 60,
@@ -2659,7 +2649,7 @@
 "url": "https://en.wikipedia.org/wiki/Meursault_wine"
 },
 "france/minervois": {
-"score": 81.7,
+"score": 81.6,
 "langs": 5,
 "views": 2282,
 "days": 60,
@@ -2693,7 +2683,7 @@
 "best": null
 },
 "france/montagne-saint-emilion": {
-"score": 69.8,
+"score": 69.7,
 "langs": 4,
 "views": 858,
 "days": 60,
@@ -2777,7 +2767,7 @@
 "url": "https://en.wikipedia.org/wiki/Muscat_de_Rivesaltes_AOC"
 },
 "france/musigny": {
-"score": 68.1,
+"score": 68.0,
 "langs": 4,
 "views": 731,
 "days": 60,
@@ -2805,7 +2795,7 @@
 "url": "https://en.wikipedia.org/wiki/Nuits-Saint-Georges_wine"
 },
 "france/orleans": {
-"score": 61.0,
+"score": 60.9,
 "langs": 4,
 "views": 337,
 "days": 60,
@@ -2825,7 +2815,7 @@
 "url": "https://en.wikipedia.org/wiki/Palette_AOC"
 },
 "france/pauillac": {
-"score": 75.8,
+"score": 75.7,
 "langs": 4,
 "views": 1621,
 "days": 60,
@@ -2865,7 +2855,7 @@
 "url": "https://en.wikipedia.org/wiki/P%C3%A9charmant"
 },
 "france/perigord": {
-"score": 25.1,
+"score": 25.0,
 "langs": 1,
 "views": 177,
 "days": 60,
@@ -3089,7 +3079,7 @@
 "url": "https://en.wikipedia.org/wiki/Roman%C3%A9e-Saint-Vivant"
 },
 "france/rose-des-riceys": {
-"score": 64.9,
+"score": 64.8,
 "langs": 4,
 "views": 542,
 "days": 60,
@@ -3129,7 +3119,7 @@
 "url": "https://en.wikipedia.org/wiki/Rully_wine"
 },
 "france/saint-amour": {
-"score": 76.7,
+"score": 76.6,
 "langs": 4,
 "views": 1848,
 "days": 60,
@@ -3319,7 +3309,7 @@
 "url": "https://en.wikipedia.org/wiki/Saumur_%28wine%29"
 },
 "france/saussignac": {
-"score": 57.2,
+"score": 57.1,
 "langs": 4,
 "views": 231,
 "days": 60,
@@ -3347,7 +3337,7 @@
 "days": 60
 },
 "france/savennieres": {
-"score": 59.4,
+"score": 59.5,
 "langs": 2,
 "views": 1697,
 "days": 60,
@@ -3443,7 +3433,7 @@
 "url": "https://fr.wikipedia.org/wiki/Terres-du-midi"
 },
 "france/thezac-perricard": {
-"score": 17.0,
+"score": 16.9,
 "langs": 1,
 "views": 95,
 "days": 60,
@@ -3473,7 +3463,7 @@
 "url": "https://en.wikipedia.org/wiki/Tursan"
 },
 "france/urfe": {
-"score": 27.2,
+"score": 27.1,
 "langs": 1,
 "views": 209,
 "days": 60,
@@ -3547,7 +3537,7 @@
 "url": "https://en.wikipedia.org/wiki/Ventoux_AOC"
 },
 "france/vin-de-savoie": {
-"score": 67.2,
+"score": 67.1,
 "langs": 3,
 "views": 1265,
 "days": 60,
@@ -3557,7 +3547,7 @@
 "url": "https://en.wikipedia.org/wiki/Vin_de_Savoie_AOC"
 },
 "france/vinsobres": {
-"score": 68.5,
+"score": 68.4,
 "langs": 4,
 "views": 773,
 "days": 60,
@@ -3567,7 +3557,7 @@
 "url": "https://en.wikipedia.org/wiki/Vinsobres_AOC"
 },
 "france/vire-clesse": {
-"score": 63.4,
+"score": 63.5,
 "langs": 2,
 "views": 3080,
 "days": 60,
@@ -3609,7 +3599,7 @@
 "article": "Vougeot wine",
 "via": "English Wikipedia \"Vougeot wine\"",
 "url": "https://en.wikipedia.org/wiki/Vougeot_wine",
-"own": 50.9,
+"own": 50.8,
 "articles": 2,
 "total": 3346,
 "best": "france/clos-de-vougeot"
@@ -3653,7 +3643,7 @@
 "best": null
 },
 "germany/ahr": {
-"score": 85.6,
+"score": 85.5,
 "langs": 12,
 "views": 1306,
 "days": 60,
@@ -3663,7 +3653,7 @@
 "url": "https://en.wikipedia.org/wiki/Ahr_%28wine_region%29"
 },
 "germany/baden": {
-"score": 87.1,
+"score": 87.0,
 "langs": 11,
 "views": 1611,
 "days": 60,
@@ -3773,7 +3763,7 @@
 "url": "https://en.wikipedia.org/wiki/Saxony_%28wine_region%29"
 },
 "germany/wurttemberg": {
-"score": 82.8,
+"score": 82.7,
 "langs": 8,
 "views": 1291,
 "days": 60,
@@ -3867,7 +3857,7 @@
 "best": "hungary/badacsony"
 },
 "hungary/balatonboglar": {
-"score": 58.8,
+"score": 58.7,
 "langs": 4,
 "views": 275,
 "days": 60,
@@ -3919,7 +3909,7 @@
 "best": "hungary/sopron"
 },
 "hungary/pannon": {
-"score": 17.5,
+"score": 17.4,
 "langs": 2,
 "views": 112,
 "days": 60,
@@ -3927,7 +3917,7 @@
 "article": "Pannon wine region",
 "via": "English Wikipedia \"Pannon wine region\"",
 "url": "https://en.wikipedia.org/wiki/Pannon_wine_region",
-"own": 31.3,
+"own": 31.2,
 "articles": 1,
 "total": 112,
 "best": null
@@ -4015,7 +4005,7 @@
 "url": "https://en.wikipedia.org/wiki/Aglianico_del_Vulture"
 },
 "italy/alcamo": {
-"score": 60.7,
+"score": 60.6,
 "langs": 5,
 "views": 232,
 "days": 60,
@@ -4069,7 +4059,7 @@
 "url": "https://en.wikipedia.org/wiki/Ansonica_Costa_dell%27Argentario"
 },
 "italy/asolo-prosecco": {
-"score": 45.1,
+"score": 45.0,
 "langs": 3,
 "views": 146,
 "days": 60,
@@ -4123,7 +4113,7 @@
 "url": "https://en.wikipedia.org/wiki/Bardolino_DOC"
 },
 "italy/bardolino-superiore": {
-"score": 18.8,
+"score": 18.9,
 "langs": 2,
 "views": 27,
 "days": 60,
@@ -4195,7 +4185,7 @@
 "url": "https://en.wikipedia.org/wiki/Bianco_di_Pitigliano"
 },
 "italy/bivongi": {
-"score": 15.9,
+"score": 15.8,
 "langs": 1,
 "views": 88,
 "days": 60,
@@ -4225,7 +4215,7 @@
 "url": "https://en.wikipedia.org/wiki/Brachetto_d%27Acqui"
 },
 "italy/brindisi": {
-"score": 49.6,
+"score": 49.5,
 "langs": 4,
 "views": 129,
 "days": 60,
@@ -4301,7 +4291,7 @@
 "url": "https://it.wikipedia.org/wiki/Casavecchia_di_Pontelatone"
 },
 "italy/cerasuolo-d-abruzzo": {
-"score": 80.8,
+"score": 80.7,
 "langs": 4,
 "views": 3744,
 "days": 60,
@@ -4391,7 +4381,7 @@
 "url": "https://it.wikipedia.org/wiki/Colli_d%27Imola"
 },
 "italy/colli-di-luni": {
-"score": 56.3,
+"score": 56.2,
 "langs": 3,
 "views": 390,
 "days": 60,
@@ -4451,7 +4441,7 @@
 "url": "https://en.wikipedia.org/wiki/Colline_di_Levanto_DOC"
 },
 "italy/colline-lucchesi": {
-"score": 43.6,
+"score": 43.5,
 "langs": 3,
 "views": 129,
 "days": 60,
@@ -4505,7 +4495,7 @@
 "url": "https://it.wikipedia.org/wiki/Dolcetto_d%27Alba"
 },
 "italy/dolcetto-d-asti": {
-"score": 38.1,
+"score": 38.0,
 "langs": 3,
 "views": 83,
 "days": 60,
@@ -4613,7 +4603,7 @@
 "url": "https://it.wikipedia.org/wiki/Friuli_Aquileia"
 },
 "italy/friuli-colli-orientali": {
-"score": 62.8,
+"score": 62.7,
 "langs": 4,
 "views": 415,
 "days": 60,
@@ -4633,7 +4623,7 @@
 "url": "https://it.wikipedia.org/wiki/Friuli_Grave"
 },
 "italy/friuli-latisana": {
-"score": 19.8,
+"score": 19.9,
 "langs": 2,
 "views": 37,
 "days": 60,
@@ -4651,7 +4641,7 @@
 "article": "Friuli-Venezia Giulia wine",
 "via": "English Wikipedia \"Friuli Venezia Giulia (wine)\" (redirects to \"Friuli-Venezia Giulia wine\")",
 "url": "https://en.wikipedia.org/wiki/Friuli-Venezia_Giulia_wine",
-"own": 76.8,
+"own": 76.7,
 "articles": 13,
 "total": 3361,
 "best": null
@@ -4687,7 +4677,7 @@
 "url": "https://en.wikipedia.org/wiki/Cortese_di_Gavi"
 },
 "italy/ghemme": {
-"score": 74.6,
+"score": 74.5,
 "langs": 7,
 "views": 628,
 "days": 60,
@@ -4777,7 +4767,7 @@
 "best": null
 },
 "italy/lison": {
-"score": 56.2,
+"score": 56.1,
 "langs": 4,
 "views": 215,
 "days": 60,
@@ -4811,7 +4801,7 @@
 "best": "italy/franciacorta"
 },
 "italy/malvasia-di-castelnuovo-don-bosco": {
-"score": 54.3,
+"score": 54.2,
 "langs": 5,
 "views": 144,
 "days": 60,
@@ -4939,7 +4929,7 @@
 "url": "https://en.wikipedia.org/wiki/Moscato_d%27Asti"
 },
 "italy/nebbiolo-d-alba": {
-"score": 53.9,
+"score": 53.8,
 "langs": 3,
 "views": 299,
 "days": 60,
@@ -4969,7 +4959,7 @@
 "url": "https://en.wikipedia.org/wiki/Nettuno_DOC"
 },
 "italy/nizza": {
-"score": 71.6,
+"score": 71.5,
 "langs": 4,
 "views": 1035,
 "days": 60,
@@ -4989,7 +4979,7 @@
 "url": "https://en.wikipedia.org/wiki/Orvieto_DOC"
 },
 "italy/ostuni": {
-"score": 35.1,
+"score": 35.0,
 "langs": 2,
 "views": 151,
 "days": 60,
@@ -5009,7 +4999,7 @@
 "url": "https://en.wikipedia.org/wiki/Parrina"
 },
 "italy/penisola-sorrentina": {
-"score": 14.8,
+"score": 14.9,
 "langs": 1,
 "views": 80,
 "days": 60,
@@ -5019,7 +5009,7 @@
 "url": "https://it.wikipedia.org/wiki/Penisola_Sorrentina_%28vino%29"
 },
 "italy/piave": {
-"score": 22.1,
+"score": 22.2,
 "langs": 2,
 "views": 52,
 "days": 60,
@@ -5037,13 +5027,13 @@
 "article": "Piedmont wine",
 "via": "English Wikipedia \"Piedmont (wine)\" (redirects to \"Piedmont wine\")",
 "url": "https://en.wikipedia.org/wiki/Piedmont_wine",
-"own": 78.9,
+"own": 78.8,
 "articles": 20,
 "total": 83791,
 "best": "italy/monferrato"
 },
 "italy/pinot-nero-dell-oltrepo-pavese": {
-"score": 17.0,
+"score": 16.9,
 "langs": 1,
 "views": 95,
 "days": 60,
@@ -5101,7 +5091,7 @@
 "url": "https://en.wikipedia.org/wiki/Recioto_di_Soave_DOCG"
 },
 "italy/roero": {
-"score": 93.6,
+"score": 93.5,
 "langs": 13,
 "views": 3868,
 "days": 60,
@@ -5121,7 +5111,7 @@
 "url": "https://en.wikipedia.org/wiki/Romagna_Albana"
 },
 "italy/rosazzo": {
-"score": 32.9,
+"score": 33.0,
 "langs": 3,
 "views": 53,
 "days": 60,
@@ -5169,7 +5159,7 @@
 "days": 60
 },
 "italy/sicilia-doc": {
-"score": 17.6,
+"score": 17.5,
 "langs": 1,
 "views": 100,
 "days": 60,
@@ -5247,7 +5237,7 @@
 "url": "https://it.wikipedia.org/wiki/Terre_di_Offida"
 },
 "italy/terre-tollesi": {
-"score": 52.2,
+"score": 52.1,
 "langs": 4,
 "views": 155,
 "days": 60,
@@ -5317,7 +5307,7 @@
 "days": 60
 },
 "italy/val-d-arbia": {
-"score": 10.9,
+"score": 11.0,
 "langs": 1,
 "views": 56,
 "days": 60,
@@ -5347,7 +5337,7 @@
 "url": "https://it.wikipedia.org/wiki/Valle_Belice"
 },
 "italy/valle-d-aosta": {
-"score": 66.9,
+"score": 66.8,
 "langs": 4,
 "views": 651,
 "days": 60,
@@ -5385,7 +5375,7 @@
 "days": 60
 },
 "italy/vermentino-di-gallura": {
-"score": 71.1,
+"score": 71.0,
 "langs": 6,
 "views": 557,
 "days": 60,
@@ -5467,7 +5457,7 @@
 "best": null
 },
 "malta": {
-"score": 48.2,
+"score": 49.4,
 "langs": 6,
 "views": 790,
 "days": 60,
@@ -5561,7 +5551,7 @@
 "best": null
 },
 "new-zealand/auckland": {
-"score": 19.0,
+"score": 18.9,
 "langs": 1,
 "views": 90,
 "days": 60,
@@ -5569,7 +5559,7 @@
 "article": "Auckland wine region",
 "via": "English Wikipedia \"Auckland wine region\"",
 "url": "https://en.wikipedia.org/wiki/Auckland_wine_region",
-"own": 16.2,
+"own": 16.1,
 "articles": 2,
 "total": 267,
 "best": "new-zealand/waiheke-island"
@@ -5609,7 +5599,7 @@
 "url": "https://en.wikipedia.org/wiki/Hawke%27s_Bay_wine_region"
 },
 "new-zealand/marlborough": {
-"score": 60.4,
+"score": 60.5,
 "langs": 2,
 "views": 1974,
 "days": 60,
@@ -5635,7 +5625,7 @@
 "days": 60
 },
 "new-zealand/waiheke-island": {
-"score": 25.1,
+"score": 25.0,
 "langs": 1,
 "views": 177,
 "days": 60,
@@ -5655,7 +5645,7 @@
 "url": "https://en.wikipedia.org/wiki/Waipara"
 },
 "new-zealand/waitaki-valley-north-otago": {
-"score": 17.2,
+"score": 17.1,
 "langs": 1,
 "views": 97,
 "days": 60,
@@ -5733,7 +5723,7 @@
 "url": "https://en.wikipedia.org/wiki/Bairrada_DOC"
 },
 "portugal/beira-interior": {
-"score": 37.6,
+"score": 37.5,
 "langs": 4,
 "views": 43,
 "days": 60,
@@ -5773,7 +5763,7 @@
 "url": "https://en.wikipedia.org/wiki/Carcavelos_DOC"
 },
 "portugal/colares": {
-"score": 68.0,
+"score": 67.9,
 "langs": 5,
 "views": 519,
 "days": 60,
@@ -5813,7 +5803,7 @@
 "url": "https://en.wikipedia.org/wiki/Encostas_d%27Aire_DOC"
 },
 "portugal/graciosa": {
-"score": 18.8,
+"score": 18.9,
 "langs": 2,
 "views": 27,
 "days": 60,
@@ -5833,7 +5823,7 @@
 "url": "https://en.wikipedia.org/wiki/Laf%C3%B5es_IPR"
 },
 "portugal/lagoa": {
-"score": 38.3,
+"score": 38.2,
 "langs": 3,
 "views": 85,
 "days": 60,
@@ -5843,7 +5833,7 @@
 "url": "https://en.wikipedia.org/wiki/Lagoa_DOC"
 },
 "portugal/lisboa": {
-"score": 43.2,
+"score": 43.1,
 "langs": 3,
 "views": 125,
 "days": 60,
@@ -5893,7 +5883,7 @@
 "url": "https://en.wikipedia.org/wiki/Palmela_DOC"
 },
 "portugal/pico": {
-"score": 60.3,
+"score": 60.2,
 "langs": 5,
 "views": 225,
 "days": 60,
@@ -5953,7 +5943,7 @@
 "url": "https://en.wikipedia.org/wiki/T%C3%A1vora-Varosa_DOC"
 },
 "portugal/tejo": {
-"score": 50.4,
+"score": 50.3,
 "langs": 3,
 "views": 217,
 "days": 60,
@@ -5993,7 +5983,7 @@
 "url": "https://en.wikipedia.org/wiki/Tr%C3%A1s-os-Montes_wine_region"
 },
 "portugal/vinho-regional-pgi": {
-"score": 35.4,
+"score": 35.3,
 "own": null,
 "articles": 4,
 "total": 486,
@@ -6025,7 +6015,7 @@
 "best": "romania/dragasani"
 },
 "romania/cotnari": {
-"score": 82.7,
+"score": 82.6,
 "langs": 24,
 "views": 724,
 "days": 60,
@@ -6177,7 +6167,7 @@
 "article": "Breedekloof",
 "via": "English Wikipedia \"Breedekloof\" (a wine place on Wikidata)",
 "url": "https://en.wikipedia.org/wiki/Breedekloof",
-"own": 44.9,
+"own": 44.8,
 "articles": 1,
 "total": 90,
 "best": null
@@ -6259,7 +6249,7 @@
 "url": "https://en.wikipedia.org/wiki/Abona_%28DO%29"
 },
 "spain/alella": {
-"score": 65.6,
+"score": 65.5,
 "langs": 6,
 "views": 290,
 "days": 60,
@@ -6349,7 +6339,7 @@
 "url": "https://en.wikipedia.org/wiki/Bierzo_%28DO%29"
 },
 "spain/bizkaiko-txakolina": {
-"score": 53.9,
+"score": 53.8,
 "langs": 3,
 "views": 299,
 "days": 60,
@@ -6359,7 +6349,7 @@
 "url": "https://en.wikipedia.org/wiki/Bizkaiko_Txakolina"
 },
 "spain/bullas": {
-"score": 58.1,
+"score": 58.0,
 "langs": 4,
 "views": 252,
 "days": 60,
@@ -6397,7 +6387,7 @@
 "days": 60
 },
 "spain/canary-islands": {
-"score": 59.4,
+"score": 59.3,
 "own": null,
 "articles": 10,
 "total": 1607,
@@ -6415,7 +6405,7 @@
 "url": "https://en.wikipedia.org/wiki/Cari%C3%B1ena_DOP"
 },
 "spain/cataluna": {
-"score": 58.7,
+"score": 58.6,
 "langs": 5,
 "views": 199,
 "days": 60,
@@ -6445,7 +6435,7 @@
 "url": "https://en.wikipedia.org/wiki/Cigales_%28wine%29"
 },
 "spain/conca-de-barbera": {
-"score": 61.1,
+"score": 61.0,
 "langs": 6,
 "views": 195,
 "days": 60,
@@ -6535,7 +6525,7 @@
 "url": "https://en.wikipedia.org/wiki/El_Vicario"
 },
 "spain/emporda": {
-"score": 66.0,
+"score": 65.9,
 "langs": 5,
 "views": 405,
 "days": 60,
@@ -6663,7 +6653,7 @@
 "url": "https://en.wikipedia.org/wiki/Laderas_del_Genil"
 },
 "spain/lanzarote": {
-"score": 64.1,
+"score": 64.0,
 "langs": 5,
 "views": 318,
 "days": 60,
@@ -6733,7 +6723,7 @@
 "url": "https://en.wikipedia.org/wiki/Manzanilla_%28wine%29"
 },
 "spain/mentrida": {
-"score": 65.2,
+"score": 65.1,
 "langs": 6,
 "views": 281,
 "days": 60,
@@ -6743,7 +6733,7 @@
 "url": "https://en.wikipedia.org/wiki/M%C3%A9ntrida_DO"
 },
 "spain/mondejar": {
-"score": 41.7,
+"score": 41.6,
 "langs": 3,
 "views": 109,
 "days": 60,
@@ -6753,7 +6743,7 @@
 "url": "https://en.wikipedia.org/wiki/Mond%C3%A9jar_%28DO%29"
 },
 "spain/monterrei": {
-"score": 72.7,
+"score": 72.6,
 "langs": 5,
 "views": 816,
 "days": 60,
@@ -6793,7 +6783,7 @@
 "url": "https://en.wikipedia.org/wiki/Navarra_%28DO%29"
 },
 "spain/norte-de-almeria": {
-"score": 32.9,
+"score": 33.0,
 "langs": 3,
 "views": 53,
 "days": 60,
@@ -6821,7 +6811,7 @@
 "days": 60
 },
 "spain/pla-de-bages": {
-"score": 59.8,
+"score": 59.7,
 "langs": 5,
 "views": 217,
 "days": 60,
@@ -6831,7 +6821,7 @@
 "url": "https://en.wikipedia.org/wiki/Pla_de_Bages"
 },
 "spain/pla-i-llevant": {
-"score": 44.9,
+"score": 44.8,
 "langs": 3,
 "views": 144,
 "days": 60,
@@ -6915,7 +6905,7 @@
 "url": "https://en.wikipedia.org/wiki/Ribera_del_Duero"
 },
 "spain/ribera-del-guadiana": {
-"score": 62.7,
+"score": 62.6,
 "langs": 4,
 "views": 412,
 "days": 60,
@@ -6925,7 +6915,7 @@
 "url": "https://en.wikipedia.org/wiki/Ribera_del_Guadiana"
 },
 "spain/ribera-del-jiloca": {
-"score": 41.8,
+"score": 41.7,
 "langs": 3,
 "views": 111,
 "days": 60,
@@ -6963,7 +6953,7 @@
 "article": "Rioja DOCa",
 "via": "English Wikipedia \"Rioja (DO)\" (redirects to \"Rioja DOCa\")",
 "url": "https://en.wikipedia.org/wiki/Rioja_DOCa",
-"own": 97.1,
+"own": 97.0,
 "articles": 1,
 "total": 8013,
 "best": null
@@ -6989,7 +6979,7 @@
 "url": "https://en.wikipedia.org/wiki/Serra_de_Tramuntana-Costa_Nord"
 },
 "spain/sierra-de-salamanca": {
-"score": 46.5,
+"score": 46.4,
 "langs": 3,
 "views": 158,
 "days": 60,
@@ -6999,7 +6989,7 @@
 "url": "https://en.wikipedia.org/wiki/Sierra_de_Salamanca"
 },
 "spain/sierra-sur-de-jaen": {
-"score": 72.6,
+"score": 72.5,
 "langs": 10,
 "views": 377,
 "days": 60,
@@ -7039,7 +7029,7 @@
 "url": "https://en.wikipedia.org/wiki/Tacoronte-Acentejo"
 },
 "spain/tarragona": {
-"score": 56.2,
+"score": 56.1,
 "langs": 6,
 "views": 137,
 "days": 60,
@@ -7049,7 +7039,7 @@
 "url": "https://en.wikipedia.org/wiki/Tarragona_%28DO%29"
 },
 "spain/terra-alta": {
-"score": 70.0,
+"score": 69.9,
 "langs": 5,
 "views": 631,
 "days": 60,
@@ -7079,7 +7069,7 @@
 "url": "https://en.wikipedia.org/wiki/Toro_%28DO%29"
 },
 "spain/ucles": {
-"score": 48.5,
+"score": 48.4,
 "langs": 4,
 "views": 118,
 "days": 60,
@@ -7099,7 +7089,7 @@
 "url": "https://en.wikipedia.org/wiki/Utiel-Requena"
 },
 "spain/valdeorras": {
-"score": 70.8,
+"score": 70.7,
 "langs": 5,
 "views": 681,
 "days": 60,
@@ -7129,7 +7119,7 @@
 "url": "https://en.wikipedia.org/wiki/Valencia_%28DO%29"
 },
 "spain/valle-de-guimar": {
-"score": 41.5,
+"score": 41.4,
 "langs": 3,
 "views": 108,
 "days": 60,
@@ -7149,7 +7139,7 @@
 "url": "https://en.wikipedia.org/wiki/Valle_de_la_Orotava"
 },
 "spain/valle-del-cinca": {
-"score": 49.3,
+"score": 49.2,
 "langs": 4,
 "views": 126,
 "days": 60,
@@ -7179,7 +7169,7 @@
 "url": "https://en.wikipedia.org/wiki/Vallegarc%C3%ADa"
 },
 "spain/valles-de-benavente": {
-"score": 28.8,
+"score": 28.7,
 "langs": 2,
 "views": 93,
 "days": 60,
@@ -7209,7 +7199,7 @@
 "url": "https://en.wikipedia.org/wiki/Vera_de_Estenas"
 },
 "spain/vino-de-la-tierra-igp": {
-"score": 68.9,
+"score": 68.8,
 "own": null,
 "articles": 21,
 "total": 2179,
@@ -7337,7 +7327,7 @@
 "best": "united-states/napa-valley"
 },
 "united-states/adelaida-district": {
-"score": 36.8,
+"score": 36.7,
 "langs": 2,
 "views": 173,
 "days": 60,
@@ -7397,7 +7387,7 @@
 "url": "https://en.wikipedia.org/wiki/Altus_AVA"
 },
 "united-states/ancient-lakes-of-columbia-valley": {
-"score": 23.2,
+"score": 23.1,
 "langs": 1,
 "views": 153,
 "days": 60,
@@ -7469,7 +7459,7 @@
 "article": "Arkansas wine",
 "via": "English Wikipedia \"Arkansas wine\"",
 "url": "https://en.wikipedia.org/wiki/Arkansas_wine",
-"own": 48.3,
+"own": 48.2,
 "articles": 6,
 "total": 953,
 "best": null
@@ -7483,13 +7473,13 @@
 "article": "Arkansas Mountain AVA",
 "via": "English Wikipedia \"Arkansas Mountain AVA\"",
 "url": "https://en.wikipedia.org/wiki/Arkansas_Mountain_AVA",
-"own": 20.7,
+"own": 20.8,
 "articles": 2,
 "total": 106,
 "best": "united-states/altus"
 },
 "united-states/arroyo-grande-valley": {
-"score": 28.3,
+"score": 28.2,
 "langs": 2,
 "views": 90,
 "days": 60,
@@ -7539,7 +7529,7 @@
 "url": "https://en.wikipedia.org/wiki/Ballard_Canyon_AVA"
 },
 "united-states/bell-mountain": {
-"score": 31.3,
+"score": 31.2,
 "langs": 2,
 "views": 112,
 "days": 60,
@@ -7559,7 +7549,7 @@
 "url": "https://en.wikipedia.org/wiki/Ben_Lomond_Mountain_AVA"
 },
 "united-states/benmore-valley": {
-"score": 18.8,
+"score": 18.9,
 "langs": 2,
 "views": 27,
 "days": 60,
@@ -7633,7 +7623,7 @@
 "url": "https://en.wikipedia.org/wiki/Calistoga_AVA"
 },
 "united-states/candy-mountain": {
-"score": 14.8,
+"score": 14.9,
 "langs": 1,
 "views": 80,
 "days": 60,
@@ -7673,7 +7663,7 @@
 "url": "https://en.wikipedia.org/wiki/Carmel_Valley_AVA"
 },
 "united-states/catoctin": {
-"score": 24.9,
+"score": 25.0,
 "langs": 2,
 "views": 68,
 "days": 60,
@@ -7717,7 +7707,7 @@
 "url": "https://en.wikipedia.org/wiki/Central_Delaware_Valley_AVA"
 },
 "united-states/chalk-hill": {
-"score": 35.1,
+"score": 35.0,
 "langs": 2,
 "views": 151,
 "days": 60,
@@ -7809,7 +7799,7 @@
 "best": "united-states/red-hills-lake-county"
 },
 "united-states/clements-hills": {
-"score": 31.6,
+"score": 31.5,
 "langs": 2,
 "views": 114,
 "days": 60,
@@ -7819,7 +7809,7 @@
 "url": "https://en.wikipedia.org/wiki/Clements_Hills_AVA"
 },
 "united-states/cole-ranch": {
-"score": 49.8,
+"score": 49.7,
 "langs": 4,
 "views": 132,
 "days": 60,
@@ -7843,7 +7833,7 @@
 "best": "united-states/grand-valley"
 },
 "united-states/columbia-gorge": {
-"score": 55.4,
+"score": 55.3,
 "langs": 4,
 "views": 202,
 "days": 60,
@@ -8041,7 +8031,7 @@
 "url": "https://en.wikipedia.org/wiki/Dundee_Hills_AVA"
 },
 "united-states/dunnigan-hills": {
-"score": 31.3,
+"score": 31.2,
 "langs": 2,
 "views": 112,
 "days": 60,
@@ -8051,7 +8041,7 @@
 "url": "https://en.wikipedia.org/wiki/Dunnigan_Hills_AVA"
 },
 "united-states/eagle-foothills": {
-"score": 15.9,
+"score": 15.8,
 "langs": 1,
 "views": 88,
 "days": 60,
@@ -8091,7 +8081,7 @@
 "url": "https://en.wikipedia.org/wiki/Edna_Valley_AVA"
 },
 "united-states/el-dorado": {
-"score": 36.6,
+"score": 36.5,
 "langs": 2,
 "views": 208,
 "days": 60,
@@ -8099,7 +8089,7 @@
 "article": "El Dorado AVA",
 "via": "English Wikipedia \"El Dorado AVA\"",
 "url": "https://en.wikipedia.org/wiki/El_Dorado_AVA",
-"own": 39.2,
+"own": 39.1,
 "articles": 2,
 "total": 310,
 "best": null
@@ -8135,7 +8125,7 @@
 "url": "https://en.wikipedia.org/wiki/Eola-Amity_Hills_AVA"
 },
 "united-states/escondido-valley": {
-"score": 32.4,
+"score": 32.3,
 "langs": 2,
 "views": 124,
 "days": 60,
@@ -8183,7 +8173,7 @@
 "article": "Finger Lakes AVA",
 "via": "English Wikipedia \"Finger Lakes AVA\"",
 "url": "https://en.wikipedia.org/wiki/Finger_Lakes_AVA",
-"own": 38.6,
+"own": 38.5,
 "articles": 3,
 "total": 1335,
 "best": "united-states/seneca-lake"
@@ -8199,7 +8189,7 @@
 "url": "https://en.wikipedia.org/wiki/Fort_Ross-Seaview_AVA"
 },
 "united-states/fountaingrove-district": {
-"score": 16.2,
+"score": 16.1,
 "langs": 1,
 "views": 90,
 "days": 60,
@@ -8237,7 +8227,7 @@
 "days": 60
 },
 "united-states/goose-gap": {
-"score": 11.9,
+"score": 12.0,
 "langs": 1,
 "views": 64,
 "days": 60,
@@ -8277,7 +8267,7 @@
 "url": "https://en.wikipedia.org/wiki/Green_Valley_of_Russian_River_Valley_AVA"
 },
 "united-states/guenoc-valley": {
-"score": 21.6,
+"score": 21.5,
 "langs": 1,
 "views": 139,
 "days": 60,
@@ -8325,7 +8315,7 @@
 "article": "Hawaii wine",
 "via": "English Wikipedia \"Hawaii wine\"",
 "url": "https://en.wikipedia.org/wiki/Hawaii_wine",
-"own": 30.8,
+"own": 30.7,
 "articles": 2,
 "total": 473,
 "best": null
@@ -8341,7 +8331,7 @@
 "url": "https://en.wikipedia.org/wiki/Hermann_AVA"
 },
 "united-states/high-valley": {
-"score": 36.7,
+"score": 36.6,
 "langs": 2,
 "views": 172,
 "days": 60,
@@ -8351,7 +8341,7 @@
 "url": "https://en.wikipedia.org/wiki/High_Valley_AVA"
 },
 "united-states/horse-heaven-hills": {
-"score": 42.6,
+"score": 42.5,
 "langs": 2,
 "views": 283,
 "days": 60,
@@ -8389,13 +8379,13 @@
 "article": "Idaho wine",
 "via": "English Wikipedia \"Idaho wine\"",
 "url": "https://en.wikipedia.org/wiki/Idaho_wine",
-"own": 35.2,
+"own": 35.1,
 "articles": 4,
 "total": 629,
 "best": "united-states/snake-river-valley"
 },
 "united-states/illinois": {
-"score": 34.6,
+"score": 34.5,
 "langs": 2,
 "views": 164,
 "days": 60,
@@ -8403,7 +8393,7 @@
 "article": "Illinois wine",
 "via": "English Wikipedia \"Illinois wine\"",
 "url": "https://en.wikipedia.org/wiki/Illinois_wine",
-"own": 36.3,
+"own": 36.2,
 "articles": 3,
 "total": 750,
 "best": null
@@ -8539,7 +8529,7 @@
 "article": "Lake Michigan Shore AVA",
 "via": "English Wikipedia \"Lake Michigan Shore AVA\"",
 "url": "https://en.wikipedia.org/wiki/Lake_Michigan_Shore_AVA",
-"own": 39.2,
+"own": 39.1,
 "articles": 2,
 "total": 363,
 "best": null
@@ -8565,7 +8555,7 @@
 "url": "https://en.wikipedia.org/wiki/Lamorinda_AVA"
 },
 "united-states/lancaster-valley": {
-"score": 22.8,
+"score": 22.9,
 "langs": 2,
 "views": 55,
 "days": 60,
@@ -8635,7 +8625,7 @@
 "url": "https://en.wikipedia.org/wiki/Lime_Kiln_Valley_AVA"
 },
 "united-states/linganore": {
-"score": 24.9,
+"score": 25.0,
 "langs": 2,
 "views": 68,
 "days": 60,
@@ -8669,7 +8659,7 @@
 "best": null
 },
 "united-states/loess-hills-district": {
-"score": 17.6,
+"score": 17.5,
 "langs": 1,
 "views": 100,
 "days": 60,
@@ -8679,7 +8669,7 @@
 "url": "https://en.wikipedia.org/wiki/Loess_Hills_District_AVA"
 },
 "united-states/long-island": {
-"score": 47.6,
+"score": 47.5,
 "langs": 2,
 "views": 390,
 "days": 60,
@@ -8879,7 +8869,7 @@
 "url": "https://en.wikipedia.org/wiki/Mendocino_Ridge_AVA"
 },
 "united-states/merritt-island": {
-"score": 41.3,
+"score": 41.2,
 "langs": 3,
 "views": 107,
 "days": 60,
@@ -8923,7 +8913,7 @@
 "url": "https://en.wikipedia.org/wiki/Middle_Rio_Grande_Valley_AVA"
 },
 "united-states/middleburg-virginia": {
-"score": 21.8,
+"score": 21.7,
 "langs": 1,
 "views": 141,
 "days": 60,
@@ -8951,13 +8941,13 @@
 "article": "Minnesota wine",
 "via": "English Wikipedia \"Minnesota wine\"",
 "url": "https://en.wikipedia.org/wiki/Minnesota_wine",
-"own": 45.4,
+"own": 45.3,
 "articles": 2,
 "total": 248,
 "best": null
 },
 "united-states/mississippi": {
-"score": 17.1,
+"score": 17.0,
 "langs": 1,
 "views": 129,
 "days": 60,
@@ -8971,7 +8961,7 @@
 "best": "united-states/mississippi-delta"
 },
 "united-states/mississippi-delta": {
-"score": 23.2,
+"score": 23.1,
 "langs": 1,
 "views": 153,
 "days": 60,
@@ -8995,7 +8985,7 @@
 "best": "united-states/augusta"
 },
 "united-states/mokelumne-river": {
-"score": 31.3,
+"score": 31.2,
 "langs": 2,
 "views": 112,
 "days": 60,
@@ -9048,16 +9038,6 @@
 "via": "English Wikipedia \"Mount Pisgah, Polk County, Oregon AVA\"",
 "url": "https://en.wikipedia.org/wiki/Mount_Pisgah%2C_Polk_County%2C_Oregon_AVA"
 },
-"united-states/mount-veeder": {
-"score": 46.1,
-"langs": 2,
-"views": 412,
-"days": 60,
-"wikidata": "Q183511",
-"article": "Mount Veeder AVA",
-"via": "English Wikipedia \"Mount Veeder AVA\"",
-"url": "https://en.wikipedia.org/wiki/Mount_Veeder_AVA"
-},
 "united-states/mt-harlan": {
 "score": 30.8,
 "langs": 2,
@@ -9067,6 +9047,16 @@
 "article": "Mt. Harlan AVA",
 "via": "English Wikipedia \"Mt. Harlan AVA\"",
 "url": "https://en.wikipedia.org/wiki/Mt._Harlan_AVA"
+},
+"united-states/mt-veeder": {
+"score": 46.0,
+"langs": 2,
+"views": 412,
+"days": 60,
+"wikidata": "Q183511",
+"article": "Mount Veeder AVA",
+"via": "English Wikipedia \"Mt. Veeder AVA\" (redirects to \"Mount Veeder AVA\")",
+"url": "https://en.wikipedia.org/wiki/Mount_Veeder_AVA"
 },
 "united-states/naches-heights": {
 "score": 23.8,
@@ -9153,7 +9143,7 @@
 "article": "North Carolina wine",
 "via": "English Wikipedia \"North Carolina wine\"",
 "url": "https://en.wikipedia.org/wiki/North_Carolina_wine",
-"own": 51.6,
+"own": 51.5,
 "articles": 6,
 "total": 1122,
 "best": "united-states/yadkin-valley"
@@ -9173,7 +9163,7 @@
 "best": "united-states/red-hills-lake-county"
 },
 "united-states/north-fork": {
-"score": 48.9,
+"score": 48.8,
 "langs": 3,
 "views": 191,
 "days": 60,
@@ -9269,7 +9259,7 @@
 "article": "Ohio River Valley AVA",
 "via": "English Wikipedia \"Ohio River Valley AVA\"",
 "url": "https://en.wikipedia.org/wiki/Ohio_River_Valley_AVA",
-"own": 61.1,
+"own": 61.0,
 "articles": 2,
 "total": 755,
 "best": null
@@ -9293,7 +9283,7 @@
 "article": "Oregon wine",
 "via": "English Wikipedia \"Oregon wine\"",
 "url": "https://en.wikipedia.org/wiki/Oregon_wine",
-"own": 71.1,
+"own": 71.0,
 "articles": 18,
 "total": 3873,
 "best": null
@@ -9391,7 +9381,7 @@
 "url": "https://en.wikipedia.org/wiki/Paso_Robles_Estrella_District_AVA"
 },
 "united-states/paso-robles-geneseo-district": {
-"score": 15.9,
+"score": 15.8,
 "langs": 1,
 "views": 88,
 "days": 60,
@@ -9411,7 +9401,7 @@
 "url": "https://en.wikipedia.org/wiki/Paso_Robles_Highlands_District_AVA"
 },
 "united-states/paso-robles-willow-creek-district": {
-"score": 20.1,
+"score": 20.0,
 "langs": 1,
 "views": 122,
 "days": 60,
@@ -9485,7 +9475,7 @@
 "url": "https://en.wikipedia.org/wiki/Puget_Sound_AVA"
 },
 "united-states/ramona-valley": {
-"score": 41.5,
+"score": 41.4,
 "langs": 3,
 "views": 108,
 "days": 60,
@@ -9545,7 +9535,7 @@
 "url": "https://en.wikipedia.org/wiki/Ribbon_Ridge_AVA"
 },
 "united-states/river-junction": {
-"score": 22.8,
+"score": 22.9,
 "langs": 2,
 "views": 55,
 "days": 60,
@@ -9653,7 +9643,7 @@
 "url": "https://en.wikipedia.org/wiki/Salado_Creek_AVA"
 },
 "united-states/san-antonio-valley": {
-"score": 29.3,
+"score": 29.2,
 "langs": 2,
 "views": 97,
 "days": 60,
@@ -9873,7 +9863,7 @@
 "url": "https://en.wikipedia.org/wiki/Shawnee_Hills_AVA"
 },
 "united-states/shenandoah-valley": {
-"score": 40.7,
+"score": 40.6,
 "langs": 2,
 "views": 233,
 "days": 60,
@@ -9989,7 +9979,7 @@
 "best": "united-states/russian-river-valley"
 },
 "united-states/sonoma-mountain": {
-"score": 29.4,
+"score": 29.3,
 "langs": 2,
 "views": 98,
 "days": 60,
@@ -10049,7 +10039,7 @@
 "article": "Southern Oregon AVA",
 "via": "English Wikipedia \"Southern Oregon AVA\"",
 "url": "https://en.wikipedia.org/wiki/Southern_Oregon_AVA",
-"own": 22.4,
+"own": 22.3,
 "articles": 5,
 "total": 843,
 "best": "united-states/rogue-valley"
@@ -10075,7 +10065,7 @@
 "url": "https://en.wikipedia.org/wiki/Squaw_Valley-Miramonte_AVA"
 },
 "united-states/st-helena": {
-"score": 36.7,
+"score": 36.6,
 "langs": 2,
 "views": 172,
 "days": 60,
@@ -10163,7 +10153,7 @@
 "article": "Tennessee wine",
 "via": "English Wikipedia \"Tennessee wine\"",
 "url": "https://en.wikipedia.org/wiki/Tennessee_wine",
-"own": 24.6,
+"own": 24.5,
 "articles": 2,
 "total": 280,
 "best": null
@@ -10217,7 +10207,7 @@
 "best": null
 },
 "united-states/texoma": {
-"score": 19.9,
+"score": 19.8,
 "langs": 1,
 "views": 120,
 "days": 60,
@@ -10247,7 +10237,7 @@
 "url": "https://en.wikipedia.org/wiki/The_Hamptons%2C_Long_Island_AVA"
 },
 "united-states/the-rocks-district-of-milton-freewater": {
-"score": 30.8,
+"score": 30.7,
 "langs": 1,
 "views": 290,
 "days": 60,
@@ -10267,7 +10257,7 @@
 "url": "https://en.wikipedia.org/wiki/Tip_of_the_Mitt_AVA"
 },
 "united-states/tracy-hills": {
-"score": 24.5,
+"score": 24.6,
 "langs": 2,
 "views": 66,
 "days": 60,
@@ -10315,7 +10305,7 @@
 "article": "Umpqua Valley AVA",
 "via": "English Wikipedia \"Umpqua Valley AVA\"",
 "url": "https://en.wikipedia.org/wiki/Umpqua_Valley_AVA",
-"own": 30.3,
+"own": 30.2,
 "articles": 2,
 "total": 349,
 "best": null
@@ -10331,7 +10321,7 @@
 "url": "https://en.wikipedia.org/wiki/Upper_Cumberland_AVA"
 },
 "united-states/upper-hiwassee-highlands": {
-"score": 16.4,
+"score": 16.3,
 "langs": 1,
 "views": 91,
 "days": 60,
@@ -10341,7 +10331,7 @@
 "url": "https://en.wikipedia.org/wiki/Upper_Hiwassee_Highlands_AVA"
 },
 "united-states/upper-hudson": {
-"score": 14.8,
+"score": 14.9,
 "langs": 1,
 "views": 80,
 "days": 60,
@@ -10435,7 +10425,7 @@
 "url": "https://en.wikipedia.org/wiki/Walla_Walla_Valley_AVA"
 },
 "united-states/warren-hills": {
-"score": 23.4,
+"score": 23.5,
 "langs": 2,
 "views": 59,
 "days": 60,
@@ -10459,7 +10449,7 @@
 "best": "united-states/columbia-valley"
 },
 "united-states/west-elks": {
-"score": 35.2,
+"score": 35.1,
 "langs": 2,
 "views": 152,
 "days": 60,
@@ -10489,7 +10479,7 @@
 "url": "https://en.wikipedia.org/wiki/West_Virginia_wine"
 },
 "united-states/western-connecticut-highlands": {
-"score": 10.4,
+"score": 10.5,
 "langs": 1,
 "views": 54,
 "days": 60,
@@ -10533,7 +10523,7 @@
 "best": null
 },
 "united-states/willcox": {
-"score": 26.4,
+"score": 26.3,
 "langs": 1,
 "views": 196,
 "days": 60,
@@ -10635,7 +10625,7 @@
 "url": "https://en.wikipedia.org/wiki/York_Mountain_AVA"
 },
 "united-states/yorkville-highlands": {
-"score": 28.8,
+"score": 28.7,
 "langs": 2,
 "views": 93,
 "days": 60,

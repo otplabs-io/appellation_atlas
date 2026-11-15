@@ -1,0 +1,871 @@
+{
+ "france/southern-rhone": {
+  "text": "A southern Rhône area containing Châteauneuf-du-Pape, Gigondas, Vacqueyras, Rasteau, Tavel, Lirac and the Côtes du Rhône and Côtes du Rhône Villages appellations. Vineyards in Vaucluse are planted mostly to Grenache (47%), then Syrah (22%).",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "france/taissy": {
+  "text": "A cru village in Champagne, so its wines are made under Champagne rules: quality sparkling wine from Chardonnay, Pinot Noir, Meunier and a few rarer allowed grapes.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/tauxieres": {
+  "text": "A cru village in Champagne, so its wines are made under Champagne rules: quality sparkling wine from Chardonnay, Pinot Noir, Meunier and a few rarer allowed grapes such as Petit Meslier and Arbane.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/tavel": {
+  "text": "A southern Rhône appellation that makes only rosé, in the commune of Tavel across the river from Châteauneuf-du-Pape. Wines must reach at least 11% alcohol. Allowed grapes include Grenache, Cinsaut, Syrah, Mourvèdre and Clairette.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Tavel AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Tavel_AOC&oldid=1269715365"
+  }
+ },
+ "france/terrasses-du-larzac": {
+  "text": "A Languedoc appellation created in 2005 for red wines from Syrah, Grenache and Mourvèdre, with Cinsaut and Carignan allowed as additions. Its vineyards are among the highest in the Coteaux du Languedoc, on the slopes of the Cevennes.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Terrasses du Larzac",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Terrasses_du_Larzac&oldid=1326202974"
+  }
+ },
+ "france/touraine": {
+  "text": "A broad Loire Valley appellation covering 70 communes, making dry white wines and tannic reds, with sparkling wine also allowed. It covers the same ground as many smaller local appellations.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Touraine AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Touraine_AOC&oldid=1306791956"
+  }
+ },
+ "france/touraine-noble-joue": {
+  "text": "A Touraine appellation in the Loire Valley, made from Pinot Noir, Pinot Gris and Meunier in five communes including Joué-lès-Tours and Saint-Avertin.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/tours-sur-marne": {
+  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/trepail": {
+  "text": "One of Champagne's cru villages, making sparkling wine under the Champagne rules. Those allow Chardonnay, Pinot Noir and Meunier, along with Pinot Blanc, Pinot Gris, Petit Meslier and Arbane.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/trois-puits": {
+  "text": "A cru village in Champagne, so its wines are made under Champagne rules: quality sparkling wine from Chardonnay, Pinot Noir, Meunier and a few rarer allowed grapes.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/tursan": {
+  "text": "A South West France appellation, a VDQS from 1958 and an AOC since 2011. The main grapes allowed are Gros Manseng and Baroque for white and Tannat and Cabernet Franc for red.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Tursan",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Tursan&oldid=1343156728"
+  }
+ },
+ "france/vacqueyras": {
+  "text": "A southern Rhône cru, one of the 17 crus of Côtes du Rhône, at the foot of the Dentelles de Montmirail. It is mostly red, from Grenache, Mourvèdre, Syrah and Cinsaut, with some white and rosé. The wines are similar to nearby Gigondas and Cairanne.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Vacqueyras AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vacqueyras_AOC&oldid=1360989937"
+  }
+ },
+ "france/valencay": {
+  "text": "A Touraine appellation in the upper Loire, on the left bank of the Cher. It is the only place in France with an appellation for both wine and cheese. Sauvignon Blanc is the main white grape, and reds are made from Cot, Gamay and Pinot Noir.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Valençay AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Valen%C3%A7ay_AOC&oldid=1321941739"
+  }
+ },
+ "france/vallee-de-la-marne": {
+  "text": "A Champagne sub-region along the Marne, with more variable soils than the other sub-regions. Pinot Meunier is the main grape, about 59% of production, with 23% Pinot Noir and 18% Chardonnay. It has only two Grands Crus villages, Aÿ and Tours-sur-Marne.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Vallée de la Marne",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vall%C3%A9e_de_la_Marne&oldid=1361808891"
+  }
+ },
+ "france/var": {
+  "text": "A PGI for the Var department, called vin de pays du Var from 1968 until 2009. It labels wines that cannot qualify for an appellation. Vineyards in the Var are planted mostly to Grenache (32%), Cinsaut (19%) and Syrah (14%).",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Var (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Var_%28IGP%29&oldid=237585541"
+  }
+ },
+ "france/vaudemanges": {
+  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus Pinot Blanc, Pinot Gris, Petit Meslier and Arbane.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/ventoux": {
+  "text": "A southeastern Rhône appellation, called Côtes du Ventoux until 2008, with vineyards in 51 communes of Vaucluse on the lower slopes of Mont Ventoux. Reds are made from Grenache, Syrah, Mourvèdre, Cinsaut and Carignan, whites from grapes such as Clairette and Roussanne.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Ventoux AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ventoux_AOC&oldid=1369495413"
+  }
+ },
+ "france/vertus": {
+  "text": "One of Champagne's cru villages, making sparkling wine under the Champagne rules. Those rules allow red Pinot Noir and Meunier and white Chardonnay, along with rarer grapes such as Arbane and Petit Meslier.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/verzenay": {
+  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/verzy": {
+  "text": "One of Champagne's cru villages, making sparkling wine under the Champagne rules. Those allow Chardonnay, Pinot Noir and Meunier, along with Pinot Blanc, Pinot Gris, Petit Meslier and Arbane.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/vezelay": {
+  "text": "A Burgundy appellation in the Grand Auxerrois, in the north of the region.",
+  "from": [
+   "where"
+  ]
+ },
+ "france/villages-subregion-not-yet-set": {
+  "text": "A group of villages whose Champagne sub-region is not yet set, among them Avenay-Val-d’Or, Bezannes, Champillon, Chigny-lès-Roses and Cuis.",
+  "from": [
+   "where"
+  ]
+ },
+ "france/villedommange": {
+  "text": "A cru village in Champagne, so its wines are made under Champagne rules: quality sparkling wine from Chardonnay, Pinot Noir, Meunier and a few rarer allowed grapes.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/villeneuve-renneville": {
+  "text": "A cru village in Champagne, so its wines are made under Champagne rules: quality sparkling wine from Chardonnay, Pinot Noir, Meunier and a few rarer allowed grapes such as Petit Meslier and Arbane.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/villers-allerand": {
+  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/villers-aux-noeuds": {
+  "text": "One of Champagne's cru villages, making sparkling wine under the Champagne rules. Those allow Chardonnay, Pinot Noir and Meunier, along with Pinot Blanc, Pinot Gris, Petit Meslier and Arbane.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/villers-marmery": {
+  "text": "A cru village in Champagne, so its wines are made under Champagne rules: quality sparkling wine from Chardonnay, Pinot Noir, Meunier and a few rarer allowed grapes.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/vinsobres": {
+  "text": "A southern Rhône appellation for red wine, made its own AOC in 2006 as a Rhône cru after belonging to Côtes-du-Rhône Villages. Wines must contain at least 50% Grenache and 25% Syrah and/or Mourvèdre. Some vineyards were once olive groves.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Vinsobres AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vinsobres_AOC&oldid=1232415745"
+  }
+ },
+ "france/vire-clesse": {
+  "text": "A Mâconnais appellation for white wine in Burgundy, in the communes of Clessé, Laizé, Montbellet and Viré. Chardonnay is the only grape allowed. Created in 1999 as its own communal cru, like Pouilly-Fuissé, it has no Premier Cru vineyards.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Viré-Clessé",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vir%C3%A9-Cless%C3%A9&oldid=1146036919"
+  }
+ },
+ "france/voipreux": {
+  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus Pinot Blanc, Pinot Gris, Petit Meslier and Arbane.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/volnay": {
+  "text": "A Côte de Beaune village in Burgundy, used only for red wine with Pinot Noir as the main grape. It has no Grand Cru vineyards but several highly regarded Premier Crus. Some vineyards in the commune of Meursault also carry the name.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Volnay wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Volnay_wine&oldid=1316082908"
+  }
+ },
+ "france/vosne-romanee": {
+  "text": "A Côte de Nuits village in Burgundy, used only for red wine with Pinot Noir. It has six Grand Cru vineyards, including Romanée-Conti, which is among Burgundy's most iconic, sought after and expensive red wines, plus two in neighboring Flagey-Échezeaux.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Vosne-Romanée wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vosne-Roman%C3%A9e_wine&oldid=1348050320"
+  }
+ },
+ "france/vougeot": {
+  "text": "A Côte de Nuits village in Burgundy making red Pinot Noir and white Chardonnay. Most of its vineyard land is the single Grand Cru Clos de Vougeot, about 123 acres and the largest Grand Cru of the Côte de Nuits. Village-level Vougeot is rare.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Vougeot wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vougeot_wine&oldid=1368862089"
+  }
+ },
+ "france/vouvray": {
+  "text": "A Loire Valley wine area just east of Tours, in Touraine, devoted almost entirely to Chenin Blanc. Style follows the weather: cooler years favor dry and sparkling Vouvray, warmer years the sweet moelleux and liquoreux styles.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Vouvray (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vouvray_%28wine%29&oldid=1360195470"
+  }
+ },
+ "france/vrigny": {
+  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "italy": {
+  "text": "A country that makes wine in every one of its regions, with the widest variety of native grapes of any country. The most planted grape is Sangiovese (10%), followed by Glera and Trebbiano Toscano (6% each) and Catarratto Bianco (5%).",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Italian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Italian_wine&oldid=1382972195"
+  }
+ },
+ "italy/abruzzo": {
+  "text": "A regional appellation whose area includes Montepulciano d'Abruzzo, Trebbiano d'Abruzzo, Cerasuolo d'Abruzzo and Controguerra. Abruzzo is planted mostly to Montepulciano (54%), then Trebbiano Toscano (17%), Trebbiano d'Abruzzo (8%) and Pecorino (6%).",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/aglianico-del-taburno": {
+  "text": "A Campania appellation for wine from Aglianico. It covers 13 communes including Benevento and Montesarchio.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/aglianico-del-vulture": {
+  "text": "A red wine from the Aglianico grape, grown on volcanic soils from Mount Vulture in Basilicata. It became a DOC in 1971 and is considered one of the best red wines of Italy.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Aglianico del Vulture",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Aglianico_del_Vulture&oldid=1285390123"
+  }
+ },
+ "italy/aglianico-del-vulture-superiore": {
+  "text": "A Basilicata appellation for wine made from Aglianico, using Aglianico del Vulture as its grape name.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/alba": {
+  "text": "A Piedmont-area appellation with a long list of allowed grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/albugnano": {
+  "text": "A Piedmont appellation for red wine made from Barbera, Bonarda, Freisa and Nebbiolo, from four communes including Albugnano and Pino d'Asti.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/alcamo": {
+  "text": "A Sicilian DOC in the Val di Mazara, southwest of Palermo, covering nine towns including Calatafimi and Partinico. It began in 1972 for white wine only and now includes red and rosé.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Alcamo wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Alcamo_wine&oldid=1327685787"
+  }
+ },
+ "italy/aleatico-di-gradoli": {
+  "text": "A Lazio-area appellation for wine and liqueur wine, built around the Aleatico grape.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/aleatico-di-puglia": {
+  "text": "A Puglia appellation for wine and liqueur wine, made from Negro Amaro and Primitivo, with Malvasia Nera allowed as a minor grape. Puglia as a whole is planted mostly to Primitivo (16%), Trebbiano Toscano (15%) and Sangiovese (13%).",
+  "from": [
+   "rules",
+   "planted"
+  ]
+ },
+ "italy/alezio": {
+  "text": "A Puglia-area appellation for wine made from Negro Amaro, Malvasia Nera di Lecce, Montepulciano and Sangiovese.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/alghero": {
+  "text": "A Sardinian appellation with a very wide list of allowed grapes. Sardinia is planted mostly to Alicante Bouschet (29%) and Vermentino (28%).",
+  "from": [
+   "rules",
+   "planted_wider"
+  ]
+ },
+ "italy/alta-langa": {
+  "text": "A Piedmont-area appellation for sparkling wine only.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/alto-adige": {
+  "text": "South Tyrol, an autonomous province in northeast Italy with strong Austrian influence from its long history under Austria-Hungary.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "South Tyrol wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=South_Tyrol_wine&oldid=1371465754"
+  }
+ },
+ "italy/amarone-della-valpolicella": {
+  "text": "A DOCG dry red wine from partly dried grapes, mainly Corvina and/or Corvinone (45 to 95%) and Rondinella (5 to 30%), from Valpolicella in Verona province, Veneto. The name means \"great bitter\", to set it apart from the sweeter Recioto.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Amarone",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Amarone&oldid=1353567218"
+  }
+ },
+ "italy/amelia": {
+  "text": "An Umbria-area appellation with a very long list of allowed grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/ansonica-costa-dell-argentario": {
+  "text": "A dry white wine from Ansonica, also called Inzolia, on the far southern coast of Tuscany and the island of Giglio. The DOC dates from 1995 and requires at least 85% Ansonica. The grape needs strong sun, heat and little rain.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Ansonica Costa dell'Argentario",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ansonica_Costa_dell%27Argentario&oldid=1378799380"
+  }
+ },
+ "italy/aprilia": {
+  "text": "A Lazio-area appellation making wine from a very wide list of allowed grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/arborea": {
+  "text": "A Sardinian appellation for still and semi-sparkling wine. Sardinia is planted mostly to Alicante Bouschet (29%), Vermentino (28%) and Carignano (9%).",
+  "from": [
+   "rules",
+   "planted_wider"
+  ]
+ },
+ "italy/arcole": {
+  "text": "A Veneto-area appellation for still, semi-sparkling and quality sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/asolo-montello": {
+  "text": "A Veneto-area appellation, also called Montello Asolo, for wine and quality sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/asolo-prosecco": {
+  "text": "A DOCG in Treviso province for Prosecco, in sparkling, semi-sparkling and aromatic sparkling styles. Glera is allowed alongside Bianchetta Trevigiana, Verdiso, Perera and Chardonnay.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Colli Asolani - Prosecco",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Colli_Asolani_-_Prosecco&oldid=152369944"
+  }
+ },
+ "italy/assisi": {
+  "text": "An Umbria-area appellation with a very long list of allowed grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/asti": {
+  "text": "A sweet, low-alcohol sparkling white DOCG made from Moscato Bianco, often served with dessert, around the towns of Asti and Alba in Piedmont. It was Italy's largest producing appellation as of 2004, with over ten times as much made as Barolo.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Asti wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Asti_wine&oldid=1359194810"
+  }
+ },
+ "italy/atina": {
+  "text": "A Lazio-area appellation making wine from a very wide list of allowed grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/aversa": {
+  "text": "A Campania-area appellation for still and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/bagnoli-di-sopra": {
+  "text": "A Veneto-area appellation, also called Bagnoli, for wine, liqueur wine and quality sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/bagnoli-friularo": {
+  "text": "A Veneto-area appellation, also called Friularo di Bagnoli, for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/barbaresco": {
+  "text": "A red wine made from Nebbiolo in the Langhe, just east of Alba in Piedmont, from Barbaresco, Neive, Treiso and part of Alba. A DOC since 1966 and a DOCG since 1980, it is often compared with Barolo.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Barbaresco",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barbaresco&oldid=1337731225"
+  }
+ },
+ "italy/barbera-d-alba": {
+  "text": "A Piedmont appellation for red wine from Barbera, with Nebbiolo also allowed, from about 50 communes around Alba that include Barolo, Barbaresco, La Morra and Neive.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/barbera-d-asti": {
+  "text": "A red wine from Barbera, made in the hills of the Asti and Alexandria provinces in Piedmont.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Barbera d'Asti",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barbera_d%27Asti&oldid=1325993486"
+  }
+ },
+ "italy/barbera-del-monferrato": {
+  "text": "A Piedmont-area appellation for still and semi-sparkling wine made from Barbera, with Dolcetto, Freisa and Grignolino also allowed.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/barbera-del-monferrato-superiore": {
+  "text": "A Piedmont appellation for red wine in a Superiore tier, made from Barbera, with Dolcetto, Freisa and Grignolino allowed. It covers a large number of communes, including Acqui Terme, Asti and Casale Monferrato.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/barco-reale-di-carmignano": {
+  "text": "A Tuscany-area appellation for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/bardolino": {
+  "text": "A red wine from hills east of Lake Garda in Verona province, named for the town of Bardolino and a DOC since 1968. The blend is mainly Corvina, Rondinella and Molinara. Bardolino Superiore is a stronger, aged wine, a DOCG since 2001.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Bardolino DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bardolino_DOC&oldid=1378637556"
+  }
+ },
+ "italy/bardolino-superiore": {
+  "text": "A DOCG in Verona province for wine from the hills between Lake Garda and the Adige river.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Bardolino Superiore",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Bardolino_Superiore&oldid=152369760"
+  }
+ },
+ "italy/barletta": {
+  "text": "A red wine DOC in the Barletta-Andria-Trani province of Apulia, made mainly from Uva di Troia. Just over 150 acres are planted to Uva di Troia, Montepulciano, Sangiovese and Malbec.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Rosso Barletta DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Rosso_Barletta_DOC&oldid=1220581453"
+  }
+ },
+ "italy/barolo": {
+  "text": "A red DOCG from Nebbiolo in Piedmont, southwest of Alba, often described as one of Italy's greatest wines. The zone covers 11 communes, among them Barolo, La Morra, Castiglione Falletto, Serralunga d'Alba and Monforte d'Alba.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Barolo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barolo&oldid=1366043582"
+  }
+ },
+ "italy/basilicata": {
+  "text": "A PGI covering the region of Basilicata, including Matera, Aglianico del Vulture and Terre dell'Alta Val d'Agri. Vineyards are planted mostly to Aglianico (61%), followed by Sangiovese (9%) and Primitivo (4%).",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/benevento": {
+  "text": "A PGI also called Beneventano, in the Benevento area of Campania.",
+  "from": [
+   "where"
+  ]
+ },
+ "italy/bianchello-del-metauro": {
+  "text": "A DOC created in 1969 in the province of Pesaro and Urbino, in Marche. It makes still and sparkling wine from Biancame and Malvasia Bianca Lunga.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Bianchello del Metauro",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bianchello_del_Metauro&oldid=1220578923"
+  }
+ },
+ "italy/bianco-capena": {
+  "text": "A Lazio-area appellation for wine made from Bellone, Bombino Bianco, Trebbiano Toscano, Trebbiano Giallo and several Malvasias.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/bianco-dell-empolese": {
+  "text": "A DOC in the province of Florence, in Tuscany, for wine and wine from raisined grapes.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Bianco dell'Empolese",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Bianco_dell%27Empolese&oldid=152369513"
+  }
+ },
+ "italy/bianco-di-pitigliano": {
+  "text": "A DOC near the southern coast of Tuscany, created in 1966, for still and sparkling wine.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Bianco di Pitigliano",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bianco_di_Pitigliano&oldid=1220578840"
+  }
+ },
+ "italy/boca": {
+  "text": "A Piedmont appellation for red wine made from Nebbiolo, Uva Rara and Vespolina, from five communes including Boca and Grignasco.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/bolgheri": {
+  "text": "A Tuscany-area appellation with a very wide list of allowed grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/bolgheri-sassicaia": {
+  "text": "A Tuscany-area appellation for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/brachetto-d-acqui": {
+  "text": "A red wine from Brachetto, a grape believed native to Piedmont, made around Acqui Terme in Alessandria province. A DOCG since 1996, it can be still or sparkling, usually with some sweetness.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Brachetto d'Acqui",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Brachetto_d%27Acqui&oldid=1269813103"
+  }
+ },
+ "italy/bramaterra": {
+  "text": "A Piedmont appellation for red wine made from Nebbiolo, Croatina, Uva Rara and Vespolina, from seven communes including Masserano and Lozzolo.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/breganze": {
+  "text": "A Veneto-area appellation for wine and quality sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/brindisi": {
+  "text": "A red wine DOC in the province of Brindisi, in Apulia, granted in 1979. Production has fallen by up to half as vines were uprooted under EU incentives.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Brindisi Rosso",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Brindisi_Rosso&oldid=1345504242"
+  }
+ },
+ "italy/brunello-di-montalcino": {
+  "text": "A red DOCG made only from Sangiovese around Montalcino, in the province of Siena, Tuscany. Brunello was long thought a separate grape, until an 1879 commission found it was Sangiovese.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Brunello di Montalcino",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Brunello_di_Montalcino&oldid=1370717626"
+  }
+ },
+ "italy/cacc-e-mmitte-di-lucera": {
+  "text": "A DOC created in 1975 on the Tavoliere plain, at the foot of the Apennines, in the towns of Lucera, Biccari and Troia in Foggia province. Allowed grapes include Uva di Troia, Montepulciano, Sangiovese and Trebbiano Toscano.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Cacc'e mmitte di Lucera",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Cacc%27e_mmitte_di_Lucera&oldid=152657236"
+  }
+ },
+ "italy/cagliari": {
+  "text": "A Sardinian appellation for still and sparkling wine with a very wide list of allowed grapes. Sardinia is planted mostly to Alicante Bouschet (29%) and Vermentino (28%).",
+  "from": [
+   "rules",
+   "planted_wider"
+  ]
+ },
+ "italy/calosso": {
+  "text": "A Piedmont-area appellation with a long list of allowed grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/campania": {
+  "text": "A PGI for the whole of Campania, whose area includes Taurasi, Fiano di Avellino, Greco di Tufo and Vesuvio. Vineyards are planted mostly to Aglianico (33%) and Falanghina Flegrea (19%), then Barbera (7%) and Greco (6%).",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/campi-flegrei": {
+  "text": "A Campania-area appellation for still and sparkling wine, and wine from raisined grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/campidano-di-terralba": {
+  "text": "A Sardinian appellation, also called Terralba.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/canavese": {
+  "text": "A Piedmont appellation for still and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/candia-dei-colli-apuani": {
+  "text": "A Tuscany-area appellation for still and semi-sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/cannellino-di-frascati": {
+  "text": "A Lazio-area appellation for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/cannonau-di-sardegna": {
+  "text": "A Sardinian appellation for wine, liqueur wine and wine from raisined grapes, built around Cannonau.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/capalbio": {
+  "text": "A Tuscany-area appellation with a very wide list of allowed grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/capri": {
+  "text": "A Campania appellation for wine on the island of Capri, covering the communes of Capri and Anacapri.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/carema": {
+  "text": "A Piedmont-area appellation for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/carignano-del-sulcis": {
+  "text": "A Sardinian appellation for wine and wine from raisined grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/carmignano": {
+  "text": "A Tuscan wine region around Carmignano, near Prato and about 10 miles northwest of Florence. Its quality was recognized by Cosimo III de' Medici, who gave it legal protection in 1716. Producers have long blended Sangiovese with Cabernet Sauvignon.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Carmignano DOCG",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Carmignano_DOCG&oldid=1218638032"
+  }
+ }
+}

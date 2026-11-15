@@ -1,0 +1,664 @@
+{
+ "bulgaria": {
+  "text": "Grape growing here goes back to the Thracians, with evidence of winemaking from 4000 B.C. The most planted grapes are Merlot (17 percent) and Cabernet Sauvignon (16), followed by Pamid, then Rkatsiteli and Muscat Ottonel at 9 percent each.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Bulgarian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bulgarian_wine&oldid=1365051480"
+  }
+ },
+ "bulgaria/asenovgrad": {
+  "text": "A Bulgarian PDO for wine from six red grapes: Cabernet Sauvignon, Mavrud, Merlot, Pamid, Rubin and Syrah.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/bolyarovo": {
+  "text": "A Bulgarian PDO for red wine from just two grapes, Cabernet Sauvignon and Merlot.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/brestnik": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon, Mavrud and Merlot.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/chernomorski-rayon": {
+  "text": "A Bulgarian PDO that covers dozens of communes and allows a wide range of grapes, including Chardonnay, Dimiat, Muscat Ottonel and Riesling for white and Merlot and Cabernet Sauvignon for red.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/dolinata-na-struma": {
+  "text": "A Bulgarian PDO whose rules allow Melnik grapes such as Shiroka Melnishka Loza, Melnishki Rubin and Ranna Melnishka Loza, along with Cabernet Sauvignon, Merlot and Chardonnay.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/dragoevo": {
+  "text": "A Bulgarian PDO covering the communes of Novi Pazar and Veliki Preslav. Its rules allow Cabernet Sauvignon and Merlot for red, and Chardonnay, Muscat Ottonel and Traminer for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/evksinograd": {
+  "text": "A Bulgarian PDO covering the communes of Aksakovo and Varna, with rules for white grapes: Chardonnay, Dimiat, Misket Vrachanski, Muscat Ottonel, Riesling and Traminer. Pink Misket Cherven is also allowed.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/harsovo": {
+  "text": "A Bulgarian PDO in the Sandanski commune, for red wine from a single grape, Shiroka Melnishka Loza.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/haskovo": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon, Merlot, Pamid and Syrah, and white wine from Dimiat and Tamyanka.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/hisarya": {
+  "text": "A Bulgarian PDO whose rules allow mainly white grapes: Aligoté, Chardonnay, Riesling, Sauvignon Blanc and Traminer, plus Pinot Gris.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/ivaylovgrad": {
+  "text": "A Bulgarian PDO in the Ivaylovgrad commune. Its rules allow Cabernet Sauvignon, Merlot, Pinot Noir, Syrah and Alicante Bouschet for red, and Chardonnay, Tamyanka and Traminer for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/karlovo": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon and Merlot, with pink Misket Cherven and white Traminer also allowed. It covers five communes, including Karlovo and Sopot.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/karnobat": {
+  "text": "A Bulgarian PDO covering the communes of Karnobat and Straldzha, with a wide grape list that includes Cabernet Sauvignon, Merlot, Syrah, Chardonnay, Sauvignon Blanc and Viognier.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/khan-krum": {
+  "text": "A Bulgarian PDO for white wine from a single grape, Traminer, across the communes of Novi Pazar, Shumen and Veliki Preslav.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/lom": {
+  "text": "A Bulgarian PDO in the Lom commune. Its rules allow reds such as Cabernet Sauvignon, Merlot and Pinot Noir, and whites such as Chardonnay, Riesling and Sauvignon Blanc.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/lovech": {
+  "text": "A Bulgarian PDO in the Lovech commune, for red wine from Cabernet Sauvignon, Merlot and Pinot Noir.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/lozitsa": {
+  "text": "A Bulgarian PDO in the Nikopol commune, for red wine from a single grape, Cabernet Sauvignon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/lyaskovets": {
+  "text": "A Bulgarian PDO in the Lyaskovets commune. Its rules allow Cabernet Sauvignon, Merlot and Gamza for red, and Aligoté, Chardonnay and Dimiat for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/lyubimets": {
+  "text": "A Bulgarian PDO with a long grape list, including Cabernet Sauvignon, Merlot, Mavrud, Evmolpia and Shiroka Melnishka Loza for red, and Chardonnay and Tamyanka for white. It covers communes such as Lyubimets, Harmanli and Svilengrad.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/melnik": {
+  "text": "A Bulgarian PDO in the Petrich commune, for red wine from a single grape, Merlot.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/montana": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon, Merlot and Pinot Noir, and white wine from Chardonnay, Riesling and Misket Vrachanski. It covers nine communes, including Montana, Berkovitsa and Varshets.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/nova-zagora": {
+  "text": "A Bulgarian PDO covering six communes, including Sliven and Stara Zagora. It allows quality sparkling wine as well as still, from grapes that include Cabernet Sauvignon, Merlot, Mavrud, Chardonnay and Muscat Ottonel.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/novi-pazar": {
+  "text": "A Bulgarian PDO for white wine from a single grape, Chardonnay.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/novo-selo": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon, Gamza and Merlot.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/oryahovitsa": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon and Merlot.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/pavlikeni": {
+  "text": "A Bulgarian PDO for red wine from a single grape, Gamza.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/pazardzhik": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon, Mavrud and Pamid.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/perushtitsa": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon and Merlot.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/pgis": {
+  "text": "The group of Bulgaria's PGIs, which holds two: Dunavska ravnina and Trakiyska nizina.",
+  "from": [
+   "where"
+  ]
+ },
+ "bulgaria/pleven": {
+  "text": "A Bulgarian PDO whose rules allow Cabernet Sauvignon, Gamza and Merlot for red, and Chardonnay for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/plovdiv": {
+  "text": "A Bulgarian PDO with a broad grape list: Cabernet Sauvignon, Merlot, Mavrud, Pamid and Syrah for red, and Chardonnay, Sauvignon Blanc and Muscat Ottonel for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/pomorie": {
+  "text": "A Bulgarian PDO whose rules allow four grapes: Cabernet Sauvignon and Merlot for red, Chardonnay and Muscat Ottonel for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/ruse": {
+  "text": "A Bulgarian PDO whose rules allow Cabernet Sauvignon, Cabernet Franc and Merlot for red, and Chardonnay, Riesling, Rkatsiteli and Sauvignon Blanc among the whites.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/sakar": {
+  "text": "A Bulgarian PDO whose rules allow Cabernet Sauvignon, Merlot, Syrah, Mavrud and Cabernet Franc for red, and Chardonnay, Sauvignon Blanc and Viognier for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/sandanski": {
+  "text": "A Bulgarian PDO for red wine from a single grape, Cabernet Sauvignon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/septemvri": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon and Mavrud.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/shivachevo": {
+  "text": "A Bulgarian PDO whose rules allow Cabernet Sauvignon, Merlot and Pamid for red, and Chardonnay, Muscat Ottonel and Sauvignon Blanc for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/shumen": {
+  "text": "A Bulgarian PDO whose rules allow Cabernet Sauvignon and Merlot for red, and Chardonnay, Muscat Ottonel, Riesling and Sauvignon Blanc for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/slavyantsi": {
+  "text": "A Bulgarian PDO for white wine from a single grape, Chardonnay.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/sliven": {
+  "text": "A Bulgarian PDO whose rules allow reds such as Cabernet Sauvignon, Merlot, Pamid and Shevka, and whites such as Chardonnay, Aligoté, Dimiat and Rkatsiteli.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/stambolovo": {
+  "text": "A Bulgarian PDO whose rules allow Cabernet Sauvignon, Merlot and Pamid for red, and Tamyanka for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/stara-zagora": {
+  "text": "A Bulgarian PDO whose rules allow Cabernet Sauvignon, Merlot, Mavrud and Syrah for red, and Chardonnay and Rkatsiteli for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/suhindol": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon, Gamza and Merlot.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/sungurlare": {
+  "text": "A Bulgarian PDO with a broad grape list: Cabernet Sauvignon, Merlot, Pinot Noir and Syrah for red, and Chardonnay, Riesling, Rkatsiteli and Sauvignon Blanc among the whites.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/svishtov": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon, Gamza and Merlot.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/targovishte": {
+  "text": "A Bulgarian PDO with a very long grape list, including Cabernet Sauvignon, Merlot, Chardonnay, Riesling, Viognier, Roussanne and Grenache.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/varbitsa": {
+  "text": "A Bulgarian PDO for red wine from a single grape, Cabernet Sauvignon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/varna": {
+  "text": "A Bulgarian PDO whose rules allow Cabernet Sauvignon and Merlot for red, and Chardonnay, Dimiat, Muscat Ottonel, Rkatsiteli and Ugni Blanc for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/veliki-preslav": {
+  "text": "A Bulgarian PDO whose rules allow Cabernet Sauvignon and Merlot for red, and Chardonnay, Dimiat, Muscat Ottonel, Riesling, Sauvignon Blanc and Traminer for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/vidin": {
+  "text": "A Bulgarian PDO whose rules allow Cabernet Sauvignon, Gamza and Merlot for red, and Chardonnay, Riesling and Rkatsiteli among the whites.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/vratsa": {
+  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon and Merlot, and white wine from Misket Vrachanski.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/yambol": {
+  "text": "A Bulgarian PDO whose rules allow Cabernet Sauvignon, Merlot, Cabernet Franc, Syrah and Petit Verdot for red, and Chardonnay, Muscat Ottonel and Tamyanka for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "bulgaria/yuzhno-chernomorie": {
+  "text": "A Bulgarian PDO with a wide grape list, including Cabernet Sauvignon, Merlot, Syrah, Pinot Noir, Chardonnay, Riesling and Sauvignon Blanc.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania": {
+  "text": "One of the world's largest wine producers and the sixth-largest in Europe, after Italy, France, Spain, Germany and Portugal, though lesser-known on the world stage. Its most planted grapes are Fetească Regală and Fetească Albă at 7 percent each, then Merlot at 6.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Romanian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Romanian_wine&oldid=1378486624"
+  }
+ },
+ "romania/adamclisi": {
+  "text": "A Romanian PDO whose rules allow Cabernet Sauvignon, Pinot Noir and Syrah for red, Chardonnay and Sauvignon for white, and Fetească Neagră.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/aiud": {
+  "text": "A Romanian PDO that leans white, with Fetească Regală, Fetească Albă, Furmint, Muscat Ottonel, Neuburger and Sauvignon allowed, plus Cabernet Sauvignon, Merlot, Pinot Noir and Syrah for red.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/alba-iulia": {
+  "text": "A Romanian PDO whose allowed grapes are all white or pink: Fetească Albă, Fetească Regală, Furmint, Muscat Ottonel, Neuburger, Pinot Gris, Riesling Italian, Sauvignon and Traminer Roz.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/babadag": {
+  "text": "A Romanian PDO whose rules allow reds such as Cabernet Sauvignon, Merlot and Băbeasacă Neagră, and whites such as Chardonnay, Fetească Regală, Columna and Aligoté.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/banat": {
+  "text": "A Romanian PDO with rules for reds such as Cabernet Sauvignon, Merlot, Cadarcă, Burgund Mare and Syrah, and whites such as Fetească Regală, Chardonnay and Majarcă Albă.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/banu-maracine": {
+  "text": "A Romanian PDO whose rules allow reds such as Negru de Drăgăşani, Novac, Cabernet Sauvignon and Merlot, and whites such as Tămâioasă Românească, Fetească Regală and Chardonnay.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/bohotin": {
+  "text": "A Romanian PDO whose rules allow the pink Busuioacă de Bohotin, along with Băbeasacă Neagră, Cabernet Sauvignon, Merlot, Fetească Albă and Chardonnay.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/cotesti": {
+  "text": "A Romanian PDO with a very long grape list, from Fetească Regală and Fetească Albă to Merlot, Syrah, Furmint and Tămâioasă Românească.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/cotnari": {
+  "text": "A Romanian PDO named for a wine village in Iaşi County, in Western Moldavia, known for the Grasă de Cotnari grape. Its rules allow still, sparkling and aromatic sparkling wine from grapes such as Grasă de Cotnari, Fetească Albă, Frâncuşă and Tămâioasă Românească.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cotnari",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cotnari&oldid=1375653399"
+  }
+ },
+ "romania/crisana": {
+  "text": "A Romanian PDO with rules for reds such as Burgund Mare, Cabernet Sauvignon, Merlot, Pinot Noir and Syrah, and whites such as Fetească Regală, Chardonnay and Mustoasă de Măderat.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/dealu-bujorului": {
+  "text": "A Romanian PDO whose rules allow Băbeasacă Neagră, Cabernet Sauvignon and Merlot for red, and Fetească Albă, Fetească Regală, Aligoté, Muscat Ottonel and Sauvignon for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/dealu-mare": {
+  "text": "A Muntenia wine region where the area around Valea Călugărească in Prahova County is best known for reds, and Pietroasele in Buzău County for whites. It is typically seen as one of Romania's most important regions, and its PDO rules allow a very wide set of grapes.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Dealu Mare wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Dealu_Mare_wine_region&oldid=1369009672"
+  }
+ },
+ "romania/dragasani": {
+  "text": "A Romanian PDO named for a city in Vâlcea County, on the Olt river, whose neighboring hills are well known for Wallachian wines. Its rules allow Negru de Drăgăşani, Novac, Cabernet Sauvignon, Merlot, Fetească Regală and Tămâioasă Românească.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Drăgășani",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Dr%C4%83g%C4%83%C8%99ani&oldid=1375802357"
+  }
+ },
+ "romania/husi": {
+  "text": "A Romanian PDO with a very long grape list, including Fetească Albă, Fetească Regală, Grasă de Cotnari, Busuioacă de Bohotin, Merlot and Cabernet Sauvignon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/iana": {
+  "text": "A Romanian PDO whose rules allow Aligoté, Fetească Albă, Fetească Regală and Sauvignon for white, Cabernet Sauvignon, Merlot and Pinot Noir for red, and pink Busuioacă de Bohotin.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/iasi": {
+  "text": "A Romanian PDO in Iaşi, where plantings are led by Fetească Albă (17 percent), then Aligoté (12) and Muscat Blanc (6). Its rules allow grapes such as Fetească Regală, Tămâioasă Românească, Cabernet Sauvignon and Merlot.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "romania/insuratei": {
+  "text": "A Romanian PDO whose rules allow Cabernet Sauvignon and Syrah for red, and Chardonnay, Fetească Regală, Fetească Albă and Riesling for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/lechinta": {
+  "text": "A Romanian PDO whose rules allow Fetească Regală, Fetească Albă, Neuburger, Traminer Roz and Riesling Italian, with Cabernet Sauvignon, Merlot and Pinot Noir for red.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/mehedinti": {
+  "text": "A Romanian PDO in Mehedinţi, where Merlot (6 percent) leads plantings, ahead of Cabernet Sauvignon and Sauvignon Blanc (4 each). Its rules allow Negru de Drăgăşani, Novac, Tămâioasă Românească, Pinot Noir and Syrah, among others.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "romania/minis": {
+  "text": "A Romanian PDO that allows quality sparkling and semi-sparkling wine as well as still. Its grapes include Cadarcă, Burgund Mare, Cabernet Sauvignon, Pinot Noir, Fetească Regală and Furmint.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/murfatlar": {
+  "text": "A Romanian PDO whose rules allow Cabernet Sauvignon, Merlot, Pinot Noir, Syrah and Burgund Mare for red, and Chardonnay, Columna, Fetească Regală and Tămâioasă Românească for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/nicoresti": {
+  "text": "A Romanian PDO whose rules allow Băbeasacă Neagră, Cabernet Sauvignon and Merlot for red, and Fetească Albă, Fetească Regală, Muscat Ottonel and Sauvignon for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/odobesti": {
+  "text": "A Romanian PDO with a very long grape list, from Fetească Regală, Galbenă de Odobeşti and Grasă de Cotnari to Merlot, Syrah and Sangiovese.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/oltina": {
+  "text": "A Romanian PDO whose rules allow Cabernet Sauvignon, Merlot, Pinot Noir, Syrah and Burgund Mare for red, and Chardonnay, Fetească Albă, Fetească Regală and Sauvignon for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/panciu": {
+  "text": "A Romanian PDO whose rules allow reds such as Cadarcă, Burgund Mare and Pinot Noir, and whites such as Chardonnay, Furmint, Riesling de Rhin, Galbenă de Odobeşti and Tămâioasă Românească.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/pgis": {
+  "text": "The group of Romania's PGIs, which includes Terasele Dunării, Colinele Dobrogei, Dealurile Munteniei and Dealurile Moldovei.",
+  "from": [
+   "where"
+  ]
+ },
+ "romania/pietroasa": {
+  "text": "A Romanian PDO whose rules allow reds such as Cabernet Sauvignon, Merlot and Băbeasacă Neagră, and whites such as Fetească Albă, Fetească Regală, Grasă de Cotnari and Tămâioasă Românească.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/recas": {
+  "text": "A Romanian PDO named for a town in Timiş County, best known for the wine produced in its surrounding hills. Its rules allow still and quality sparkling wine from grapes such as Cabernet Sauvignon, Merlot, Fetească Regală and Muscat Ottonel.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Recaș",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Reca%C8%99&oldid=1379771151"
+  }
+ },
+ "romania/samburesti": {
+  "text": "A Romanian PDO whose rules allow reds such as Burgund Mare, Cabernet Sauvignon, Merlot, Negru de Drăgăşani and Syrah, and whites such as Chardonnay, Fetească Regală and Sauvignon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/sarica-niculitel": {
+  "text": "A Romanian PDO whose rules allow reds such as Cabernet Sauvignon, Merlot and Pinot Noir, and whites such as Aligoté, Chardonnay, Fetească Regală and Rkatsiteli.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/sebes-apold": {
+  "text": "A Romanian PDO whose rules allow Fetească Regală, Furmint, Iordana, Neuburger and Riesling for white, and Cabernet Sauvignon, Merlot, Pinot Noir and Syrah for red.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/segarcea": {
+  "text": "A Romanian PDO whose rules allow reds such as Cabernet Sauvignon, Merlot, Negru de Drăgăşani and Syrah, and whites such as Chardonnay, Sauvignon and Tămâioasă Românească.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/stefanesti": {
+  "text": "A Romanian PDO whose rules allow Cabernet Sauvignon, Merlot, Pinot Noir and Burgund Mare for red, and Fetească Albă, Fetească Regală, Chardonnay and Sauvignon for white.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "romania/tarnave": {
+  "text": "One of Romania's oldest and most important wine regions, in Transylvania just north of Sibiu and centered on Jidvei commune in Alba County. A cool climate from altitude (about 1,000 feet) and river humidity gives cool, fruity white wines with very good acidity.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Târnave wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=T%C3%A2rnave_wine_region&oldid=1286765261"
+  }
+ }
+}

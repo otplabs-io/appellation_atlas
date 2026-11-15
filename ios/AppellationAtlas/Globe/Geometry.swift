@@ -99,7 +99,7 @@ struct Projector {
         if dist - poly.radius > viewAngle || sin(min(poly.radius, 1.5)) * R < 0.35 { return false }
         let projected = poly.rings.map { $0.map(project) }
         let rings: [[V2]] = dist + poly.radius > Double.pi / 2 - 1e-4
-            ? clipAtHorizon(projected)
+            ? clipAtHorizon(projected, reach: poly.radius)
             : projected.map { $0.map { V2($0.x, $0.y) } }
         var any = false
         for r in rings where r.count > 2 {
@@ -137,7 +137,10 @@ struct Projector {
 }
 
 /// Cuts rings at the horizon and closes them along the globe's edge. Outer rings run counterclockwise.
-func clipAtHorizon(_ rings: [[V3]]) -> [[V2]] {
+/// `reach` is how far the polygon spreads from its center: one smaller than a hemisphere never needs an edge arc
+/// most of the way round. Such an arc comes from a coast that dips just behind the edge and back, where the two
+/// crossings land a hair out of order, and drawing it would paint the whole globe for a frame.
+func clipAtHorizon(_ rings: [[V3]], reach: Double = .pi) -> [[V2]] {
     var out: [[V2]] = []
     var segs: [[V2]] = []
     func cross(_ a: V3, _ b: V3) -> V2 {
@@ -182,6 +185,7 @@ func clipAtHorizon(_ rings: [[V3]]) -> [[V2]] {
             for t in sg.indices where !sg[t].used || t == i0 {
                 var d = (sg[t].a0 - sg[s].a1).truncatingRemainder(dividingBy: tau)
                 if d < 0 { d += tau }
+                if d > tau - 0.1 && reach < 1.4 { d = 0 }   // a hair out of order, not the long way round
                 if d < bd { bd = d; best = t }
             }
             let steps = Int(ceil(bd / 0.06))

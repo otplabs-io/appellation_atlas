@@ -1,0 +1,845 @@
+{
+ "italy/gioia-del-colle": {
+  "text": "A Puglia area PDO for wine. Reds include Primitivo, Negro Amaro, Montepulciano and Sangiovese, and whites include Fiano, Falanghina and Greco.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/giro-di-cagliari": {
+  "text": "A Sardinian PDO for wine and liqueur wine made only from the Girò grape.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/grance-senesi": {
+  "text": "A DOC for wine made in the province of Siena, with a very wide list of allowed grapes. Trebbiano Toscano and Merlot follow.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Grance Senesi",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Grance_Senesi&oldid=152370141"
+  }
+ },
+ "italy/gravina": {
+  "text": "A Puglia area PDO for still and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/greco-di-tufo": {
+  "text": "A Campania PDO for still and sparkling wine made from Greco, with Coda di Volpe also allowed.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/grignolino-d-asti": {
+  "text": "A Piedmont PDO for wine made from Grignolino, with Freisa also allowed. It covers a list of communes around Asti, in a region that grows mostly Barbera, Muscat Blanc and Nebbiolo.",
+  "from": [
+   "rules",
+   "planted_wider"
+  ]
+ },
+ "italy/grignolino-del-monferrato-casalese": {
+  "text": "A Piedmont PDO for wine made from Grignolino, with Freisa also allowed.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/grottino-di-roccanova": {
+  "text": "A Basilicata PDO for wine from Roccanova, Castronuovo di Sant'Andrea and Sant'Arcangelo.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/i-terreni-di-sanseverino": {
+  "text": "A Marche PDO for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/irpinia": {
+  "text": "A Campania PDO covering still, sparkling, liqueur and raisined-grape wines.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/ischia": {
+  "text": "A Campania PDO for still, sparkling and raisined-grape wines.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/lacrima-di-morro": {
+  "text": "A red DOC in the province of Ancona, in Marche, made from the rare local Lacrima grape. Created in 1985, it is one of the most important wine productions of the Marche region.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Lacrima di Morro d'Alba",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Lacrima_di_Morro_d%27Alba&oldid=1356650564"
+  }
+ },
+ "italy/lago-di-caldaro": {
+  "text": "A Trentino PDO for wine. Its communes include Caldaro and Appiano.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/lago-di-corbara": {
+  "text": "An Umbria PDO for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/lambrusco-di-sorbara": {
+  "text": "A semi-sparkling PDO made from Lambrusco varieties, including Lambrusco di Sorbara, Grasparossa, Salamino and Maestri.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/lambrusco-grasparossa-di-castelvetro": {
+  "text": "An Emilia-Romagna PDO for sparkling and semi-sparkling wine, including a quality sparkling category. Castelvetro di Modena is one of its communes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/lambrusco-mantovano": {
+  "text": "A Lombardy DOC in the province of Mantua for semi-sparkling and still wine. It is made from Lambrusco varieties such as Maestri, Salamino and Grasparossa, along with Ancellotta and Fortana.",
+  "from": [
+   "rules",
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Lambrusco Mantovano",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Lambrusco_Mantovano&oldid=148546852"
+  }
+ },
+ "italy/lambrusco-salamino-di-santa-croce": {
+  "text": "A PDO for sparkling, quality sparkling and semi-sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/langhe": {
+  "text": "A hilly area of Piedmont south and east of the Tanaro river, in the provinces of Cuneo and Asti, famous for its wines, cheeses and the white truffles of Alba.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Langhe",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Langhe&oldid=1366154857"
+  }
+ },
+ "italy/langhe-nebbiolo": {
+  "text": "A Piedmont wine named for the Nebbiolo grape. Nebbiolo is the grape behind Barolo and Barbaresco, the region's best-known wines.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Piedmont wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Piedmont_wine&oldid=1341732272"
+  }
+ },
+ "italy/lazio": {
+  "text": "An Italian PGI covering the Lazio region, home to Orvieto, Roma, Frascati, Marino, Montefiascone and Cesanese del Piglio. Malvasia Bianca di Candia (26%) and Trebbiano Toscano (23%) are the most planted grapes.",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/lessini-durello": {
+  "text": "A Veneto PDO for quality sparkling wine made from Durella, with Chardonnay, Garganega, Pinot Bianco and Pinot Nero also allowed.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/lessona": {
+  "text": "A Piedmont PDO for red wine made from Nebbiolo, Uva Rara and Vespolina, from the commune of Lessona.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/leverano": {
+  "text": "A Puglia area PDO for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/lison": {
+  "text": "A dry white DOCG on the plain between the Tagliamento and Livenza rivers, a few miles from the sea. It is the only Italian DOCG made in two regions, Veneto and Friuli-Venezia Giulia.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Lison (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Lison_%28vino%29&oldid=152369960"
+  }
+ },
+ "italy/lison-pramaggiore": {
+  "text": "A DOC in Friuli Venezia Giulia covering the provinces of Venice, Treviso and Pordenone. Its wines are promoted from Pramaggiore.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Lison-Pramaggiore",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Lison-Pramaggiore&oldid=152369956"
+  }
+ },
+ "italy/lizzano": {
+  "text": "A Puglia PDO for still, semi-sparkling and sparkling wine, from the communes of Lizzano, Faggiano and Taranto.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/loazzolo": {
+  "text": "A Piedmont PDO for wine made only from Moscato Bianco, from the single commune of Loazzolo.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/locorotondo": {
+  "text": "A Puglia area PDO for still and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/lugana": {
+  "text": "A Veneto PDO for still and quality sparkling wine, from communes such as Sirmione, Desenzano del Garda and Peschiera del Garda.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/malvasia-delle-lipari": {
+  "text": "A Sicilian PDO for wine, liqueur wine and raisined-grape wine, made from Malvasia di Lipari. Corinto Nero, Catarratto and Viognier are also allowed.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/malvasia-di-bosa": {
+  "text": "A Sardinian PDO for still, quality sparkling and raisined-grape wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/malvasia-di-casorzo-d-asti": {
+  "text": "A Piedmont PDO for still and sparkling wine made from Malvasia di Casorzo, with Barbera, Freisa and Grignolino also allowed. Its communes include Altavilla Monferrato, Olivola, Ottiglio and Vignale Monferrato.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/malvasia-di-castelnuovo-don-bosco": {
+  "text": "A Piedmont DOC for sweet, sparkling red or rosé dessert wine from the province of Asti. It is made from Malvasia di Schierano, with up to 15% Freisa, and tastes sweet and aromatic with some tannin.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Malvasia di Castelnuovo Don Bosco",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Malvasia_di_Castelnuovo_Don_Bosco&oldid=1342122913"
+  }
+ },
+ "italy/mamertino": {
+  "text": "A Sicilian PDO for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/mandrolisai": {
+  "text": "A Sardinian PDO for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/marche": {
+  "text": "An Italian PGI covering the Marche region, home to Verdicchio dei Castelli di Jesi, Verdicchio di Matelica, Cònero, Rosso Piceno and Lacrima di Morro. Verdicchio Bianco (28%), Montepulciano (18%) and Sangiovese (17%) lead the plantings.",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/maremma-toscana": {
+  "text": "A DOC in Tuscany whose rules allow a wide variety of grapes and styles.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Maremma Toscana",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Maremma_Toscana&oldid=1355962923"
+  }
+ },
+ "italy/marino": {
+  "text": "A Lazio DOC on the western edge of the Alban Hills, south of Rome, created in 1970. Its wine is mostly Trebbiano and Malvasia Bianca di Candia, a blend like Frascati's, but Trebbiano makes up only 25% to 55% of it.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Marino DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Marino_DOC&oldid=1220579013"
+  }
+ },
+ "italy/marsala": {
+  "text": "A fortified wine, dry or sweet, made around the city of Marsala in Sicily. It has been a DOC since 1969 and is a liqueur wine from Grillo, Catarratto, Damaschino and other grapes. Unfortified wine from the area does not qualify.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Marsala wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Marsala_wine&oldid=1382991268"
+  }
+ },
+ "italy/martina": {
+  "text": "A Puglia area PDO for still and sparkling wine made from Verdeca, Bianco d'Alessano, Bombino Bianco, Fiano and Malvasia Bianca.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/matera": {
+  "text": "A Basilicata PDO for still and sparkling wine from many communes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/matino": {
+  "text": "A Puglia PDO for wine made from Negro Amaro, Malvasia and Sangiovese, from communes such as Matino, Gallipoli and Casarano.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/menfi": {
+  "text": "A Sicilian PDO for still, sparkling and raisined-grape wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/merlara": {
+  "text": "A Veneto PDO for still and semi-sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/modena": {
+  "text": "A PDO for sparkling, quality sparkling and semi-sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/monferrato": {
+  "text": "A historical region of Piedmont, roughly the provinces of Alessandria and Asti, and one of Italy's most important wine districts.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Montferrat",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Montferrat&oldid=1371928529"
+  }
+ },
+ "italy/monica-di-sardegna": {
+  "text": "A Sardinian PDO for still and semi-sparkling wine. Sardinia grows mostly Alicante Bouschet (29%) and Vermentino (28%), with Monica Nera at 7%.",
+  "from": [
+   "rules",
+   "planted"
+  ]
+ },
+ "italy/monreale": {
+  "text": "A Sicilian PDO for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/montecarlo": {
+  "text": "A DOC in northern Tuscany, around the town of Montecarlo near Lucca and Pisa. It is unusual for Tuscany because its whites are commonly made from Sémillon, Sauvignon Blanc and Pinot Bianco, not Trebbiano and Malvasia.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Montecarlo DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Montecarlo_DOC&oldid=1220581587"
+  }
+ },
+ "italy/montecompatri-colonna": {
+  "text": "A Lazio PDO for still and semi-sparkling wine from Malvasia Bianca di Candia, Malvasia del Lazio, Trebbiano Toscano, Trebbiano Giallo, Bellone, Biancame and Verdicchio Bianco.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/montecucco": {
+  "text": "A Tuscan PDO for wine, with a very wide list of allowed grapes. Trebbiano Toscano and Merlot follow at 9% each.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/montecucco-sangiovese": {
+  "text": "A Tuscan PDO named for Sangiovese.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/montefalco": {
+  "text": "An Umbrian DOC awarded in 1979, making Montefalco Rosso (red) and Montefalco Bianco (white). Its communes include Montefalco and Bevagna.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Montefalco DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Montefalco_DOC&oldid=1247011055"
+  }
+ },
+ "italy/montefalco-sagrantino": {
+  "text": "An Umbrian DOCG for wine made from 100% Sagrantino, around Montefalco in the province of Perugia. It is made as an oak-aged dry red (Secco) and a less common sweet red (Passito). It gained DOCG status in 1992.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Montefalco Sagrantino",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Montefalco_Sagrantino&oldid=1278235464"
+  }
+ },
+ "italy/montello-rosso": {
+  "text": "A Veneto PDO for red wine. Its communes include Asolo and Cornuda.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/montepulciano-d-abruzzo": {
+  "text": "A red wine made from the Montepulciano grape in Abruzzo, a DOC since 1968. It is not the same as Vino Nobile di Montepulciano, a Tuscan wine from Sangiovese.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Montepulciano d'Abruzzo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Montepulciano_d%27Abruzzo&oldid=1382253921"
+  }
+ },
+ "italy/monteregio-di-massa-marittima": {
+  "text": "A Tuscan PDO for wine, with a very wide list of allowed grapes. Trebbiano Toscano and Merlot follow at 9% each.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/montescudaio": {
+  "text": "A Tuscan PDO for wine, with a very wide list of allowed grapes. Trebbiano Toscano and Merlot follow at 9% each.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/monti-lessini": {
+  "text": "A Veneto PDO for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/morellino-di-scansano": {
+  "text": "A red DOCG from the hills around Scansano in the Maremma, coastal Tuscany, made from at least 85% Sangiovese, which is called Morellino locally. It became DOC in 1978 and DOCG from the 2007 vintage.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Morellino di Scansano",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Morellino_di_Scansano&oldid=1264648088"
+  }
+ },
+ "italy/moscadello-di-montalcino": {
+  "text": "A white wine from the Tuscan village of Montalcino, made as still or semi-sparkling wine.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Moscadello di Montalcino",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Moscadello_di_Montalcino&oldid=1194936638"
+  }
+ },
+ "italy/moscato-d-asti": {
+  "text": "A Piedmont DOCG for sweet, low alcohol sparkling white wine made from Moscato Bianco, mainly in the province of Asti. It is considered a dessert wine and has a musky aroma. Asti is a related wine from the same grape and area.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Moscato d'Asti",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Moscato_d%27Asti&oldid=1337884623"
+  }
+ },
+ "italy/moscato-di-sardegna": {
+  "text": "A Sardinian PDO with many styles: still, sparkling, quality sparkling, raisined-grape and overripe-grape wine. Its wine is named for the Moscato grape.",
+  "from": [
+   "rules",
+   "planted"
+  ]
+ },
+ "italy/moscato-di-sorso": {
+  "text": "A Sardinian PDO for still, liqueur, aromatic sparkling and raisined-grape wine. Its wine is named for the Moscato grape.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/moscato-di-trani": {
+  "text": "A Puglia PDO for wine and liqueur wine made only from Moscato Bianco, from communes such as Andria, Barletta and Bisceglie.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/nardo": {
+  "text": "A Puglia PDO for red wine made from Negro Amaro, Malvasia Nera di Brindisi, Malvasia Nera di Lecce and Montepulciano, from the communes of Nardò and Porto Cesareo.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/nasco-di-cagliari": {
+  "text": "A Sardinian PDO for wine and liqueur wine made only from the Nasco grape. Its rules list many communes across the island.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/nebbiolo-d-alba": {
+  "text": "A DOC in the province of Cuneo for wine made from Nebbiolo, including a quality sparkling style.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Nebbiolo d'Alba",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Nebbiolo_d%27Alba&oldid=153354264"
+  }
+ },
+ "italy/negroamaro-di-terra-d-otranto": {
+  "text": "A DOC across the provinces of Brindisi, Lecce and Taranto, in Puglia, for still, semi-sparkling and sparkling wine.. Its wine is named for the Negroamaro grape.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Negroamaro di Terra d'Otranto",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Negroamaro_di_Terra_d%27Otranto&oldid=152510850"
+  }
+ },
+ "italy/nettuno": {
+  "text": "A DOC in Lazio, covering the communes of Nettuno and Anzio, with red, white and rosé wines. The area has made wine since Roman times, but the DOC was granted only in 2003.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Nettuno DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Nettuno_DOC&oldid=1329936733"
+  }
+ },
+ "italy/nizza": {
+  "text": "A red DOCG from Piedmont made from Barbera, from a zone of communes in the province of Asti where conditions suit Barbera's ripening. It was called Barbera d'Asti Superiore Nizza before 2014.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Nizza DOCG",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Nizza_DOCG&oldid=1294546452"
+  }
+ },
+ "italy/noto": {
+  "text": "A Sicilian PDO for wine, liqueur wine, aromatic sparkling and raisined-grape wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/nuragus-di-cagliari": {
+  "text": "A Sardinian PDO for still and semi-sparkling wine. Its wine is named for the Nuragus grape.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/offida": {
+  "text": "A Marche PDO for wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/orcia": {
+  "text": "A Tuscan PDO for wine, with a very wide list of allowed grapes. Trebbiano Toscano and Merlot follow at 9% each.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/orta-nova": {
+  "text": "A Puglia area PDO for wine made from only five grapes: Sangiovese, Montepulciano, Uva di Troia, Trebbiano Toscano and Lambrusco Maestri.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/ortona": {
+  "text": "An Abruzzo PDO for wine from the commune of Ortona.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/orvieto": {
+  "text": "A wine region in Umbria and Lazio around the town of Orvieto, known for white wine from mostly Grechetto and Trebbiano. Today's Orvieto is dry, with a semi-sweet Abboccato and a sweet style in small amounts.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Orvieto DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Orvieto_DOC&oldid=1385074667"
+  }
+ },
+ "italy/ostuni": {
+  "text": "A Puglia DOC from 1972 for white or rosé wine, in the province of Brindisi. Allowed grapes include Verdeca, Bianco d'Alessano, Francavidda, Impigno, Negro Amaro and Susumaniello. The zone covers Ostuni, Carovigno and nearby communes.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Ostuni DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ostuni_DOC&oldid=1237538535"
+  }
+ },
+ "italy/pantelleria": {
+  "text": "A Sicilian PDO with many styles, including still, sparkling, liqueur and raisined-grape wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/parrina": {
+  "text": "A small Tuscan DOC in part of the commune of Orbetello, in Grosseto, from 1971. About half of its wine is white, 35% red and 15% rosé.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Parrina",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Parrina&oldid=1305018680"
+  }
+ },
+ "italy/penisola-sorrentina": {
+  "text": "A Campania DOC in the metropolitan city of Naples, for still and semi-sparkling wine.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Penisola Sorrentina (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Penisola_Sorrentina_%28vino%29&oldid=152370130"
+  }
+ },
+ "italy/pergola": {
+  "text": "A Marche PDO for still, sparkling and raisined-grape wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/piave": {
+  "text": "A DOC in the provinces of Treviso and Venice, around the lower course of the Piave river.",
+  "from": [
+   "rules",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Piave (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Piave_%28vino%29&oldid=152369924"
+  }
+ },
+ "italy/piave-malanotte": {
+  "text": "A Veneto PDO for red wine. Its communes include Casale sul Sile and Breda di Piave.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/piedmont": {
+  "text": "A northwest Italian region whose best-known wines are Barolo and Barbaresco, made from Nebbiolo, with Barbera and Dolcetto also popular. Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%) are the most planted grapes.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Piedmont wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Piedmont_wine&oldid=1341732272"
+  }
+ },
+ "italy/piemonte": {
+  "text": "A Piedmont PDO for still, sparkling, aromatic sparkling and raisined-grape wine. Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%) lead the plantings.",
+  "from": [
+   "rules",
+   "planted"
+  ]
+ },
+ "italy/pinerolese": {
+  "text": "A Piedmont PDO for wine. Its communes include Barge and Bricherasio.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/pomino": {
+  "text": "A Tuscan PDO for still and quality sparkling wine from the commune of Rufina, with a very wide list of allowed grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/primitivo-di-manduria": {
+  "text": "A Puglia appellation named for the Primitivo grape. Its communes include Avetrana, Carosino and Erchie.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/prosecco-doc": {
+  "text": "A white DOC across nine provinces in Veneto and Friuli-Venezia Giulia, made from Glera with up to 15% other grapes such as Chardonnay or Pinot Grigio. It is almost always sparkling or semi-sparkling, though still wine is allowed.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Prosecco",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Prosecco&oldid=1374078616"
+  }
+ },
+ "italy/puglia": {
+  "text": "An Italian PGI covering the Puglia region, home to Primitivo di Manduria, Salice Salentino, Gravina and Negroamaro di Terra d'Otranto. Primitivo (16%), Trebbiano Toscano (15%) and Sangiovese (13%) are the most planted grapes.",
+  "from": [
+   "where",
+   "planted"
+  ]
+ },
+ "italy/ramandolo": {
+  "text": "A sweet white DOCG from the hills near Nimis in Friuli-Venezia Giulia, made from a local Verduzzo variety, Verduzzo Friulano. It has been DOCG since 2001, and before that was a subzone of Colli Orientali del Friuli.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Ramandolo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ramandolo&oldid=1314442443"
+  }
+ },
+ "italy/recioto-della-valpolicella": {
+  "text": "A sweet red DOCG passito from Valpolicella in Veneto. Only the upper, best-exposed part of each bunch is dried to concentrate sugars, giving the name from the word for ear.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Recioto della Valpolicella",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Recioto_della_Valpolicella&oldid=152661160"
+  }
+ },
+ "italy/recioto-di-gambellara": {
+  "text": "A Veneto PDO for wine made only from Garganega, in wine and quality sparkling forms. Its communes are Gambellara, Montebello Vicentino, Montorso Vicentino and Zermeghedo.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/recioto-di-soave": {
+  "text": "A Veneto sweet DOCG from the Soave area, granted in 1998. Grapes are dried on straw mats for weeks or months after harvest, and the wine is at least 70% Garganega with no more than 30% Trebbiano di Soave.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Recioto di Soave DOCG",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Recioto_di_Soave_DOCG&oldid=1354541755"
+  }
+ },
+ "italy/reggiano": {
+  "text": "An Emilia-Romagna PDO for still, semi-sparkling and quality sparkling wine made from Lambrusco varieties, including Salamino, Grasparossa and Maestri.",
+  "from": [
+   "rules"
+  ]
+ },
+ "italy/la-morra": {
+  "text": "A Barolo commune in Piedmont. Barolo is a red DOCG wine made from Nebbiolo, often described as one of Italy's greatest wines, and La Morra is one of the communes its zone of production covers.",
+  "from": [
+   "rules_of_wider",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Barolo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barolo&oldid=1366043582"
+  }
+ },
+ "italy/monforte-d-alba": {
+  "text": "A commune in the Barolo zone in Piedmont. Barolo is a red DOCG wine made from Nebbiolo, often described as one of Italy's greatest wines, and Monforte d'Alba is one of the communes it covers.",
+  "from": [
+   "rules_of_wider",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Barolo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barolo&oldid=1366043582"
+  }
+ },
+ "italy/novello": {
+  "text": "A commune in the Barolo zone in Piedmont. Barolo is a red DOCG wine made from Nebbiolo, often described as one of Italy's greatest wines, and Novello is one of the communes it covers.",
+  "from": [
+   "rules_of_wider",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Barolo",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barolo&oldid=1366043582"
+  }
+ },
+ "italy/neive": {
+  "text": "A Barbaresco commune in Piedmont. Barbaresco is a Nebbiolo wine from the Langhe, east of Alba, and Neive is one of its three named communes with Barbaresco and Treiso. The wine is often compared with Barolo.",
+  "from": [
+   "rules_of_wider",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Barbaresco",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Barbaresco&oldid=1337731225"
+  }
+ }
+}

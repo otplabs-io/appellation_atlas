@@ -1,0 +1,439 @@
+{
+ "czechia": {
+  "text": "Wine country almost entirely in southern Moravia, which holds about 96% of the vineyards, so Czech wine is often called Moravian wine. It leans on local grapes, with Grüner Veltliner, Riesling and Müller-Thurgau the most planted.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Czech wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Czech_wine&oldid=1345735695"
+  }
+ },
+ "czechia/cechy": {
+  "text": "A Bohemian PDO covering the Czech wine areas outside Moravia, around Mělník and Litoměřice. It allows wine, sparkling wine, liqueur wine and wine from raisined or overripe grapes, and the area grows mostly Müller-Thurgau, Riesling and Pinot Noir.",
+  "from": [
+   "rules",
+   "planted",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Czech wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Czech_wine&oldid=1345735695"
+  }
+ },
+ "czechia/litomericka": {
+  "text": "A wine subregion on the Elbe river in north Bohemia, centered on the town of Litoměřice, with a winegrowing history of more than 1,000 years. Müller-Thurgau, Pinot Noir and Riesling are the most planted grapes.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Litoměřická wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Litom%C4%9B%C5%99ick%C3%A1_wine&oldid=1371210463"
+  }
+ },
+ "czechia/melnicka": {
+  "text": "A Bohemian subregion on the Elbe river named after the town of Mělník. It takes in every Bohemian vineyard outside Litoměřice, from Prague to the Giant Mountains, and grows mostly Riesling, Pinot Noir and Müller-Thurgau.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Mělnická wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=M%C4%9Blnick%C3%A1_wine&oldid=1162746181"
+  }
+ },
+ "czechia/mikulovska": {
+  "text": "A southern Moravian region of 30 wine villages, known for white wines grown on limestone soils, especially around the Pálava protected area. Welschriesling, Grüner Veltliner and Riesling lead the plantings, and Valtice Castle hosts the national wine centre.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Mikulovská wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Mikulovsk%C3%A1_wine&oldid=1383360527"
+  }
+ },
+ "czechia/morava": {
+  "text": "The Moravian PDO of Czechia, covering a long list of villages. It allows wine, sparkling wine, liqueur wine and wine from raisined or overripe grapes. Moravia holds about 96% of Czech vineyards.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Czech wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Czech_wine&oldid=1345735695"
+  }
+ },
+ "czechia/novosedelske-slamove-vino": {
+  "text": "A Czech PDO for wine from raisined grapes, grown only around the village of Novosedly.",
+  "from": [
+   "rules"
+  ]
+ },
+ "czechia/pgis": {
+  "text": "Czechia's group of two regional PGIs, moravské and české.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Czech wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Czech_wine&oldid=1345735695"
+  }
+ },
+ "czechia/slovacka": {
+  "text": "A Moravian wine region whose vineyards grow mostly Riesling, Müller-Thurgau, Chardonnay, Pinot Gris and Pinot Blanc. Its PDO allows wine, sparkling wine, liqueur wine and wine from raisined or overripe grapes.",
+  "from": [
+   "rules",
+   "planted"
+  ]
+ },
+ "czechia/sobes": {
+  "text": "A Czech PDO for wine around the single village of Podmolí. Its grapes are Pálava, the Pinots, Riesling, Welschriesling, Sauvignon, Red Traminer and Grüner Veltliner.",
+  "from": [
+   "rules"
+  ]
+ },
+ "czechia/velkopavlovicka": {
+  "text": "A southern Moravian PDO named for Velké Pavlovice, allowing wine, sparkling wine, liqueur wine and wine from raisined or overripe grapes. Grüner Veltliner leads the plantings, followed by Müller-Thurgau and Blaufränkisch.",
+  "from": [
+   "rules",
+   "planted"
+  ]
+ },
+ "czechia/znojemska": {
+  "text": "A Moravian PDO around the town of Znojmo for wine, sparkling wine, liqueur wine and wine from raisined or overripe grapes. Grüner Veltliner, Riesling, Müller-Thurgau and Sauvignon Blanc are the most planted.",
+  "from": [
+   "rules",
+   "planted"
+  ]
+ },
+ "czechia/znojmo": {
+  "text": "A Czech PDO for wine around the town of Znojmo. It allows only three grapes: Riesling, Sauvignon and Grüner Veltliner.",
+  "from": [
+   "rules"
+  ]
+ },
+ "cyprus": {
+  "text": "An island wine country where Mavro and Xynisteri are the most planted grapes, at 28% and 20% of the vineyard. Sultaniye follows at 4% and Syrah at 3%. Wine adds to farming, jobs, exports and tourism.",
+  "from": [
+   "planted",
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Cypriot wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cypriot_wine&oldid=1383658219"
+  }
+ },
+ "cyprus/koumandaria": {
+  "text": "A Cypriot PDO for liqueur wine and wine from raisined grapes, made from red Mavro and white Xinisteri.",
+  "from": [
+   "rules"
+  ]
+ },
+ "cyprus/krasochoria-lemesou": {
+  "text": "A Cypriot PDO for wine, covering 22 villages including Omodos. It allows grapes such as Maratheftiko, Mavro and Xinisteri beside Cabernet Sauvignon, Shiraz and Chardonnay.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "cyprus/krasochoria-lemesou-afamis": {
+  "text": "A Cypriot PDO for wine, covering four villages including Omodos. Its grapes include Mavro, Maratheftiko, Xinisteri, Shiraz and Cabernet Sauvignon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "cyprus/krasochoria-lemesou-laona": {
+  "text": "A Cypriot PDO for wine, covering three villages including Omodos. Its grapes include Mavro, Maratheftiko, Xinisteri, Shiraz and Cabernet Sauvignon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "cyprus/laona-akama": {
+  "text": "A Cypriot PDO for wine, covering six villages. Its allowed grapes include Maratheftiko, Mavro and Xinisteri, along with Cabernet Sauvignon, Shiraz and Chardonnay.",
+  "from": [
+   "rules"
+  ]
+ },
+ "cyprus/pgis": {
+  "text": "Cyprus's group of four PGIs: Lefkosia, Larnaka, Lemesos and Pafos.",
+  "from": [
+   "where"
+  ]
+ },
+ "cyprus/pitsilia": {
+  "text": "A Cypriot PDO for wine, covering 32 villages. Its allowed grapes include Maratheftiko, Mavro and Xinisteri, along with Cabernet Sauvignon, Shiraz and Chardonnay.",
+  "from": [
+   "rules"
+  ]
+ },
+ "cyprus/vouni-panagias-ampelitis": {
+  "text": "A Cypriot PDO for wine, covering four villages. Its allowed grapes include Maratheftiko, Mavro and Xinisteri, along with Cabernet Sauvignon, Shiraz and Chardonnay.",
+  "from": [
+   "rules"
+  ]
+ },
+ "belgium": {
+  "text": "A small wine country whose production, though modest, has grown in recent decades. Chardonnay is the most planted grape at 32%, ahead of Pinot Noir at 12% and Johanniter at 8%.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Belgian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Belgian_wine&oldid=1378987447"
+  }
+ },
+ "belgium/cotes-de-sambre-et-meuse": {
+  "text": "A Belgian PDO for wine, with a broad grape list that includes Chardonnay, Pinot Noir, Riesling, Gamay and Chenin, alongside Regent and Johanniter.",
+  "from": [
+   "rules"
+  ]
+ },
+ "belgium/cremant-de-wallonie": {
+  "text": "A Belgian PDO for sparkling wine from Wallonia, made from Chardonnay, Pinot Blanc, Pinot Meunier and Pinot Noir.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "belgium/hagelandse-wijn": {
+  "text": "A Belgian PDO for wine. It allows Chardonnay, Pinot Noir, Riesling and Auxerrois, along with Bacchus, Kerner, Regent and Johanniter.",
+  "from": [
+   "rules"
+  ]
+ },
+ "belgium/haspengouwse-wijn": {
+  "text": "A Belgian PDO for wine. It allows Chardonnay, Pinot Noir, Riesling and Auxerrois, along with Bacchus, Kerner, Ortega and Regent.",
+  "from": [
+   "rules"
+  ]
+ },
+ "belgium/heuvellandse-wijn": {
+  "text": "A Belgian PDO for wine, made from grapes such as Chardonnay, Pinot Noir, Riesling, Pinot Gris and Auxerrois, with Cabernet Sauvignon as a minor option.",
+  "from": [
+   "rules"
+  ]
+ },
+ "belgium/maasvallei-limburg": {
+  "text": "A Belgian PDO for wine, covering 11 communes including Maaseik, Lanaken and Maasmechelen. Its grapes are all listed as minor ones, among them Chardonnay, Pinot Noir, Pinot Gris, Riesling and Auxerrois.",
+  "from": [
+   "rules"
+  ]
+ },
+ "belgium/pgis": {
+  "text": "Belgium's group of two regional PGIs: Vlaamse landwijn for Flanders and Vin de pays des jardins de Wallonie.",
+  "from": [
+   "where"
+  ]
+ },
+ "belgium/vin-mousseux-de-qualite-de-wallonie": {
+  "text": "A Belgian PDO for quality sparkling wine from Wallonia. It is made from Chardonnay, the Pinots, Auxerrois and Riesling.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "belgium/vlaamse-mousserende-kwaliteitswijn": {
+  "text": "A Flemish PDO for quality sparkling wine, made from Chardonnay, the Pinots, Auxerrois, Kerner and Riesling.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "slovakia": {
+  "text": "A wine country with production in the south, divided into six wine areas. It is best known abroad for Tokaj and popular at home and in nearby countries. White wine leads, including historic sweet styles, and Grüner Veltliner, Welschriesling and Blaufränkisch are the most planted.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Slovak wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Slovak_wine&oldid=1339181627"
+  }
+ },
+ "slovakia/juznoslovenska": {
+  "text": "A southern Slovak PDO for wine, sparkling wine, liqueur wine and wine from raisined or overripe grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "slovakia/karpatska-perla": {
+  "text": "A Slovak PDO for wine and sparkling wine.",
+  "from": [
+   "rules"
+  ]
+ },
+ "slovakia/malokarpatska": {
+  "text": "A Slovak PDO, in the Bratislava area, for wine, sparkling wine, liqueur wine and wine from raisined or overripe grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "slovakia/nitrianska": {
+  "text": "A Slovak PDO for wine, sparkling wine, liqueur wine and wine from raisined or overripe grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "slovakia/pgis": {
+  "text": "Slovakia's PGI group, which holds a single PGI, Slovenská.",
+  "from": [
+   "where"
+  ]
+ },
+ "slovakia/skalicky-rubin": {
+  "text": "A Slovak PDO for red wine, made only from Frankovka Modrá (Blaufränkisch), Modrý Portugal and Svatovavřinecké (Sankt Laurent).",
+  "from": [
+   "rules"
+  ]
+ },
+ "slovakia/stredoslovenska": {
+  "text": "A central Slovak PDO for wine, sparkling wine, liqueur wine and wine from raisined or overripe grapes, with Furmint among its grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "slovakia/tokajske-vino-zo-slovenskej-oblasti": {
+  "text": "A Slovak PDO for Tokaj wine. Slovak Tokaj is named among the country's historic sweet wines, alongside ice wine, straw wine and botrytized wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Slovak wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Slovak_wine&oldid=1339181627"
+  }
+ },
+ "slovakia/vinohradnicka-oblast-tokaj": {
+  "text": "The Slovak Tokaj area, whose rules allow only Furmint, Lipovina and Yellow Muscat.",
+  "from": [
+   "rules"
+  ]
+ },
+ "slovakia/vychodoslovenska": {
+  "text": "An eastern Slovak PDO for wine, sparkling wine, liqueur wine and wine from raisined or overripe grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "south-africa/central-orange-river": {
+  "text": "A ward in the Douglas district of the Northern Cape.",
+  "from": [
+   "where"
+  ]
+ },
+ "south-africa/douglas": {
+  "text": "A district in the Northern Cape holding the wards Hartswater, Central Orange River and Rietrivier FS.",
+  "from": [
+   "where"
+  ]
+ },
+ "south-africa/eastern-cape": {
+  "text": "A South African geographical unit outside the Western Cape, where production is almost entirely concentrated. Its one ward is St Francis Bay.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "South African wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=South_African_wine&oldid=1377116908"
+  }
+ },
+ "south-africa/free-state": {
+  "text": "A South African geographical unit outside the Western Cape, where wine production is almost entirely concentrated.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "South African wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=South_African_wine&oldid=1377116908"
+  }
+ },
+ "south-africa/hartswater": {
+  "text": "A ward in the Douglas district of the Northern Cape.",
+  "from": [
+   "where"
+  ]
+ },
+ "south-africa/kwazulu-natal": {
+  "text": "A geographical unit under South Africa's Wine of Origin system, covering the province of KwaZulu-Natal in the east, which has an embryonic wine industry.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "KwaZulu-Natal wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=KwaZulu-Natal_wine&oldid=1372750322"
+  }
+ },
+ "south-africa/limpopo": {
+  "text": "A South African geographical unit outside the Western Cape, where wine production is almost entirely concentrated.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "South African wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=South_African_wine&oldid=1377116908"
+  }
+ },
+ "south-africa/north-west-province": {
+  "text": "A South African geographical unit outside the Western Cape, where wine production is almost entirely concentrated.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "South African wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=South_African_wine&oldid=1377116908"
+  }
+ },
+ "south-africa/northern-cape": {
+  "text": "A South African geographical unit holding the districts Douglas and Sutherland-Karoo. Sultaniye is about half the vineyard, followed by Colombard at 21% and Chenin Blanc at 15%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "south-africa/rietrivier-fs": {
+  "text": "A ward in the Douglas district of the Northern Cape.",
+  "from": [
+   "where"
+  ]
+ },
+ "south-africa/st-francis-bay": {
+  "text": "A ward in South Africa's Eastern Cape, a geographical unit outside the Western Cape, where wine production is almost entirely concentrated.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "South African wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=South_African_wine&oldid=1377116908"
+  }
+ }
+}

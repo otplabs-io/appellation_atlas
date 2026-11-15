@@ -64,7 +64,10 @@ final class WhereAmI: NSObject, CLLocationManagerDelegate {
     func dismiss() { state = .idle }
 
     /// The smallest place on the map holding a point, going down view by view from the world.
-    static func place(at lon: Double, _ lat: Double, in atlas: Atlas) -> String? {
+    static func place(at lon: Double, _ lat: Double, in atlas: Atlas) -> String? { chain(at: lon, lat, in: atlas).last }
+
+    /// The places holding a point, from its country down to the smallest.
+    static func chain(at lon: Double, _ lat: Double, in atlas: Atlas) -> [String] {
         // Seen from straight above the point, a shape holds it when its drawing holds the middle of the canvas.
         let P = Projector(Camera(lon: lon, lat: lat, R: 1_000_000), center: .zero, diagonal: 0)
         func holds(_ polys: [Poly]) -> Bool {
@@ -72,7 +75,7 @@ final class WhereAmI: NSObject, CLLocationManagerDelegate {
             for p in polys where acos(max(-1, min(1, simd_dot(p.center, P.v)))) - p.radius < Double.pi / 2 { P.add(p, to: &path) }
             return path.contains(.zero, eoFill: false)
         }
-        var best: String?
+        var out: [String] = []
         var viewID = "world"
         for _ in 0..<12 {
             guard let v = atlas.view(viewID) else { break }
@@ -81,12 +84,12 @@ final class WhereAmI: NSObject, CLLocationManagerDelegate {
             // where shapes overlap (grand crus drawn by whole commune), the smallest one, unless they are the same shape
             let hit = hits.min { a, b in (a.polys.map(\.radius).max() ?? 0) < (b.polys.map(\.radius).max() ?? 0) }!
             let same = hits.filter { abs(($0.polys.map(\.radius).max() ?? 0) - (hit.polys.map(\.radius).max() ?? 0)) < 1e-9 }
-            if same.count > 1 { best = viewID == "world" ? hit.id : viewID; break }
-            best = hit.id
+            if same.count > 1 { if viewID == "world" { out.append(hit.id) }; break }
+            out.append(hit.id)
             guard atlas.geo[hit.id]?.hasView == true, hit.id != viewID else { break }
             viewID = hit.id
         }
-        return best
+        return out
     }
 }
 
