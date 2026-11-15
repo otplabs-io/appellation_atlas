@@ -296,6 +296,7 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'argentina':dict(name='geoBoundaries, Argentina departments (Instituto Geográfico Nacional, CC BY 3.0 IGO) and provinces (CC BY 2.5)',url='https://www.geoboundaries.org'),
      'lau':dict(name='Eurostat GISCO, Local Administrative Units 2021 (communes)',url='https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units'),
      'nrcs':dict(name='USDA NRCS Soil Survey Manual, Agriculture Handbook 18 (texture classes and pH classes)',url=None),
+     'inao':dict(name="INAO, the appellation's cahier des charges, chapter V (grapes and their shares), from the Bulletin officiel du ministère de l'Agriculture (Licence Ouverte)",url='https://www.inao.gouv.fr/rechercher-un-produit'),
      'anderson':dict(name='Anderson, Nelgen and Puga, Database of Regional, National and Global Winegrape Bearing Areas by Variety, 2000 to 2023, University of Adelaide (CC BY 4.0)',url='https://doi.org/10.25909/32870405.v1'),
      'terrain':dict(name='AWS Terrain Tiles (Terrarium), from SRTM, GMTED2010, ETOPO1 and national elevation models',url='https://registry.opendata.aws/terrain-tiles/'),
      'jones2010':dict(name='Jones 2010, Climate, grapes, and wine: structure and suitability in a variable and changing climate, VIII International Terroir Congress (which grapes suit which growing season temperatures)',url='https://ives-openscience.eu/wp-content/uploads/2023/03/Climate_Grape_Wine_Jones.pdf'),
@@ -355,6 +356,45 @@ def rules(r):
                 yield_hl=num(r['Maximum_yield_hl']),yield_kg=num(r['Maximum_yield_kg']),density=num(r['Minimum_planting_density']),
                 irrigation=None if r['Irrigation']=='na' else r['Irrigation'],communes=[c for c in r['Municip_nam'].split('/') if c and c!='na'],
                 register=r['PDOinfo'] or None)
+SKIN_EN={'red':'red','white':'white','pink':'pink'}
+def inao_rules(r,x):
+    """The EU rules with the grapes sorted the way the French cahier des charges sorts them: main grapes, grapes allowed
+    in smaller shares, grapes on trial to adapt to a changing climate, and the share limits."""
+    import atlasland
+    eu={atlasland.prime(g):[g,sk] for g,sk in r['grapes']+r['grapes_other']}
+    small={'de','du','des','la','le','les','à','a','au','aux'}
+    title=lambda g:' '.join(w.lower() if w.lower() in small and i else w[:1].upper()+w[1:] for i,w in enumerate(g.split()))
+    seen=collections.Counter(geoindex_norm(g) for g,_,_ in x['grapes'])
+    def en(g,sk):   # the EU list's English name for the grape when it has one, else the cahier's own
+        if seen[geoindex_norm(g)]>1 and sk!='red': g+=' '+{'white':'blanc','pink':'gris'}[sk]   # Grenache N beside Grenache B
+        if atlasland.prime(g) in eu and eu[atlasland.prime(g)][1] in (sk,None): return [title(eu[atlasland.prime(g)][0]),sk]
+        return [title(g),sk]
+    name={}; by={'main':[],'complementary':[],'accessory':[],'adaptation':[]}
+    for g,sk,role in x['grapes']:
+        e=en(g,sk); name.setdefault(geoindex_norm(g),e[0]); by[role].append(e)
+    alln={e[0] for v in by.values() for e in v}
+    for k in by: by[k]=[e for e in by[k] if not (e[0].endswith(' Blanc') and e[0]+'he' in alln)]   # 'mondeuse B' is the Mondeuse Blanche listed beside it
+    def who(l):
+        gs=l['grapes'] or (x.get('members',{}).get(l['role'],[]) if l['role'] in ('complementary','accessory') and l['blend'] else [])   # in a blend, name the grapes the role holds
+        if gs:
+            ns=[name.get(geoindex_norm(g)) or title(g) for g in gs]
+            s=ns[0] if len(ns)==1 else ', '.join(ns[:-1])+' and '+ns[-1]
+            return s+(', each' if l['each'] and len(ns)>1 else ' together' if len(ns)>1 else '')
+        if l['role']=='single': return 'Any one grape'
+        noun={'main':'main grape','complementary':'complementary grape','accessory':'minor grape','adaptation':'trial grape'}[l['role']]
+        return f'Each {noun}' if l['each'] else f'The {noun}s together'
+    def amount(l):
+        f=lambda v:f'{v:g}%'
+        if l['min'] is not None and l['max'] is not None: return f"{l['min']:g} to {f(l['max'])}"
+        return f"at most {f(l['max'])}" if l['max'] is not None else f"at least {f(l['min'])}"
+    def line(l):
+        w=who(l); pre=[f"for {l['wine']} wine" if l.get('wine') else '', 'in a blend' if l.get('blend') else '']
+        pre=' and '.join(p for p in pre if p)
+        if pre: w=pre[:1].upper()+pre[1:]+', '+(w[:1].lower()+w[1:] if w.split()[0] in ('The','Each','Any') else w)
+        return f'{w}: {amount(l)}'
+    lim=[line(l) for l in x['limits'] if l['grapes'] or l['role']=='single' or (l['role'] and (by.get(l['role']) or x.get('members',{}).get(l['role'])))]
+    return dict(r,grapes=by['main'],grapes_other=by['complementary']+by['accessory'],grapes_trial=by['adaptation'],
+                limits=list(dict.fromkeys(lim)),cahier=dict(year=str(x['date'])[:4] if x.get('date') else None,url=x['url']))
 @snap('ava-rules')
 def ava_rows():
     A={}
@@ -386,6 +426,7 @@ def facts():
     E,A,R=eu_rows(),ava_rows(),research()
     import atlasland
     opt=lambda f:jl(os.path.join(ROOT,'regions',f))['places'] if os.path.exists(os.path.join(ROOT,'regions',f)) else {}
+    INAO=opt('inao-grapes.json'); rules_of=lambda k:inao_rules(rules(E[k]),INAO[k]) if k in INAO else rules(E[k])
     PLN,TER,RK=opt('atlas-plantings.json'),opt('atlas-terrain.json'),opt('atlas-rocks.json'); CG=jl(os.path.join(ROOT,'regions','climate-grapes.json'))
     CG['rocks']=jl(os.path.join(ROOT,'regions','rock-types.json')); RNAME={x['id']:x['name'] for x in CG['rocks']['families']}
     for k,v in CG['rocks']['sources'].items(): SRC.setdefault('rock-'+k,v)
@@ -426,11 +467,11 @@ def facts():
         f=dict(id=n,name=t['name'],also=t.get('also',[]),kind=kind,country=T[t['path'].split('/')[0]]['name'],chain=chain,depth=t['depth'],
                shape=x['source'],known=N.get(n))
         src=['wikipedia'] if n in N else []
-        if n in E: f['rules']=rules(E[n]); src.append('eu-pdo')
+        if n in E: f['rules']=rules_of(n); src+=['eu-pdo']+(['inao'] if n in INAO else [])
         if n in A: f['ava']=A[n]; src.append('ava')
         if n in CL:
             f['climate']=CL[n].get('climate'); f['soil']=CL[n].get('soil'); src+=[s for s in ('worldclim','koppen','winkler','winkler-wiki','jones2010') if f['climate']]+(['soilgrids','nrcs'] if f['soil'] else [])
-        if n in PLN:
+        if n in PLN and not (PLN[n]['scope'] in ('around','parent') and vineyard(n,x['source'])):   # a grand cru or single vineyard has no figures of its own, and a whole district's mix says nothing about it
             f['planted']=dict(PLN[n]); src.append('anderson')
             if f.get('rules') and f['rules'].get('grapes'): f['planted']['legal']=atlasland.legal(f['planted'],f['rules'])
         if n in TER:
@@ -456,7 +497,7 @@ def facts():
         if sub:   # a region: what its places share
             ap=[k for k in sub if k in E]; gc=collections.Counter(); sk={}
             for k in ap:
-                for g,s in rules(E[k])['grapes']: gc[g]+=1; sk[g]=s
+                for g,s in rules_of(k)['grapes']: gc[g]+=1; sk[g]=s
             gs=[CL[k]['climate']['gst'] for k in sub if k in CL and (CL[k].get('climate') or {}).get('gst') is not None]
             f['summary']=dict(places=len(sub),kinds=collections.Counter(([k for k in T[s].get('official',[])] or ['region'])[0] for s in sub).most_common(),
                               grapes=[[g,sk[g],c] for g,c in gc.most_common(24)],with_rules=len(ap),

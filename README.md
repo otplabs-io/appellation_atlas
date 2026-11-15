@@ -69,6 +69,14 @@ Everything in `regions/` is included, so you only need this to pull newer number
 ```
 
 ```bash
+.venv/bin/python src/inao.py fetch
+```
+
+```bash
+.venv/bin/python src/inao.py grapes
+```
+
+```bash
 .venv/bin/python src/notoriety.py fetch
 ```
 
@@ -76,7 +84,17 @@ Everything in `regions/` is included, so you only need this to pull newer number
 .venv/bin/python src/notoriety.py build
 ```
 
-Run `make site` afterward. Drawing the boundaries again (`src/atlas.py geo`) and measuring climate and soil again (`src/atlas.py climate`) need about 3.7 GB of raw files in `data/cache/`. Those are not included, because of their size and because some may not be redistributed. The sources are listed below.
+`src/inao.py grapes` reads the PDFs with `pdftotext` if you have it, or with macOS's PDFKit. Run `make site` afterward. Drawing the boundaries again (`src/atlas.py geo`) and measuring climate and soil again (`src/atlas.py climate`) need about 3.7 GB of raw files in `data/cache/`. Those are not included, because of their size and because some may not be redistributed. The sources are listed below.
+
+## iPhone and iPad app
+
+`ios/` holds a native app with the same places and pages, built for iOS and iPadOS 27. Everything ships inside the app, so it works with no connection. It adds a few things a phone does well: Where am I, which finds the wine place you're standing in; saved places with your own notes, synced through iCloud; and a place-of-the-day widget.
+
+1. Run `make site`, so `public/` is current. Xcode copies it into the app on every build.
+2. Put your Apple team in `ios/Config/Local.xcconfig`, as `DEVELOPMENT_TEAM = ABCDE12345`.
+3. Open `ios/AppellationAtlas.xcodeproj`, choose your device, and press Run.
+
+To test a place directly, run with the argument `-place france/burgundy`.
 
 ## Where the data comes from
 
@@ -89,6 +107,7 @@ Each place page lists the sources behind it. Check each source's own terms befor
 | [Eurostat GISCO](https://ec.europa.eu/eurostat/web/gisco) | Countries and regions | See Eurostat |
 | [Wine Australia](https://www.wineaustralia.com/), [IPONZ](https://www.iponz.govt.nz/) | Australian and New Zealand boundaries | See each register |
 | [INAO via OpenDataWine](https://github.com/24eme/opendatawine) | French grand cru plots | Licence Ouverte |
+| [INAO cahiers des charges](https://www.inao.gouv.fr/rechercher-un-produit) | French main and minor grapes, and their share limits | Licence Ouverte |
 | [Anderson, Nelgen and Puga](https://doi.org/10.25909/32870405.v1) | What is planted | CC BY 4.0 |
 | [WorldClim 2.1](https://www.worldclim.org/) | Temperature and rain | Limits commercial use and redistribution. See their terms |
 | [Beck et al. 2023](https://doi.org/10.1038/s41597-023-02549-6) | Climate type | See the paper |

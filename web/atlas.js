@@ -310,7 +310,7 @@ function scale(segs,i,pos,label){   // a row of categories, the place's one lit 
 }
 const GST_F=[['Too cool',-99,13,'under 55°F'],['Cool',13,15,'55 to 59°F'],['Intermediate',15,17,'59 to 63°F'],['Warm',17,19,'63 to 66°F'],['Hot',19,24,'66 to 75°F'],['Too hot',24,99,'over 75°F']];
 const WK_F=[['Below Ia',0,850,'under 1,500'],['Ia',850,1111,'1,500 to 2,000'],['Ib',1111,1389,'2,000 to 2,500'],['II',1389,1667,'2,500 to 3,000'],['III',1667,1944,'3,000 to 3,500'],['IV',1944,2222,'3,500 to 4,000'],['V',2222,2700,'4,000 to 4,900'],['Above V',2700,9999,'over 4,900']];
-function seg(t,v){const i=t.findIndex(([,lo,hi])=>lo<=v&&v<hi); if(i<0) return [-1,0]; const [,lo,hi]=t[i], a=lo<-50?hi-2:lo, b=hi>90?lo+2:hi>5000?lo+400:hi; return [i,(v-a)/(b-a)];}
+function seg(t,v){const i=t.findIndex(([,lo,hi])=>lo<=v&&v<hi); if(i<0) return [-1,0]; const [,lo,hi]=t[i], a=lo<-50?hi-2:lo, b=hi>5000?lo+400:hi>90&&hi<1000?lo+2:hi; return [i,(v-a)/(b-a)];}
 function months(vals,unit,cls,south){   // twelve bars, the growing season marked
   if(!vals) return ''; const max=Math.max(...vals.map(Math.abs),1), w=22, h=56, gs=south?[9,10,11,0,1,2,3]:[3,4,5,6,7,8,9];
   const bars=vals.map((v,i)=>{const bh=Math.max(1,Math.abs(v)/max*(h-14)); return `<rect x="${i*w+3}" y="${h-bh-12}" width="${w-6}" height="${bh}" class="${cls}${gs.includes(i)?' gs':''}"/><text x="${i*w+w/2}" y="${h-1}" text-anchor="middle">${'JFMAMJJASOND'[i]}</text>`;}).join('');
@@ -342,7 +342,7 @@ function renderInfo(f){
   const sm=f.summary;
   if(sm){
     const k=sm.kinds.map(([k,n])=>`${n} ${k}${n===1?'':'s'}`).join(', ');
-    let b=`<div class="facts">${fact('Places inside',fmt(sm.places),k)}${sm.gst?fact('Growing season',`${Math.round(toF(sm.gst[0]))} to ${Math.round(toF(sm.gst[1]))}°F`,'average temperature across its places'):''}</div>`;
+    let b=`<div class="facts">${fact('Places inside',fmt(sm.places),k)}${sm.gst?fact('Growing season',Math.round(toF(sm.gst[0]))===Math.round(toF(sm.gst[1]))?`${Math.round(toF(sm.gst[0]))}°F`:`${Math.round(toF(sm.gst[0]))} to ${Math.round(toF(sm.gst[1]))}°F`,'average temperature across its places'):''}</div>`;
     if(sm.grapes.length&&!f.planted) b+=`<p class="ts-caption sub">The grapes most often allowed, and in how many of its ${sm.with_rules} appellation${sm.with_rules===1?'':'s'} with rules:</p>${chips(sm.grapes)}`;
     X.glance=block('At a glance',b);
   }
@@ -350,11 +350,14 @@ function renderInfo(f){
   if(R&&R.sheet){X.short=block('In short',`<div class="prose">${Object.values(R.sheet).filter(Boolean).map(t=>`<p class="ts-body">${esc(t)}</p>`).join('')}</div>`,'From our research');}
   const pl=f.planted;
   if(pl&&pl.grapes.length){
+    const wide=pl.scope==='around'||pl.scope==='parent';   // no figures for the place itself, only for the district around it
     const where=pl.scope==='country'?'':pl.scope==='own'?`in ${pl.names.join(' and ')}`:pl.scope==='within'?`across ${pl.names.slice(0,4).join(', ')}${pl.names.length>4?` and ${pl.names.length-4} more`:''}`
-      :`across ${pl.names.slice(0,3).join(', ')}${pl.names.length>3?` and ${pl.names.length-3} more`:''}, the wider area it sits in`;
+      :`${pl.names.slice(0,3).join(', ')}${pl.names.length>3?` and ${pl.names.length-3} more`:''}`;
     const top=pl.grapes[0][1]||1, ac=ha=>fmt(Math.round(ha*2.471));
     const other=pl.grapes.find(([g])=>g==='Other'), rows=pl.grapes.filter(([g,ha])=>g!=='Other'&&(ha/pl.ha>=.01||pl.grapes.length<=6)).map(([g,ha,c],k)=>`<div class="gr ${pl.legal?pl.legal[pl.grapes.findIndex(x=>x[0]===g)]||'':''}"><span class="g ts-body"><i class="dot ${c==='W'?'w':c==='R'?'r':'o'}"></i>${esc(g)}</span><span class="bar"><i style="width:${Math.min(100,Math.max(1,ha/top*100))}%"></i></span><span class="pc ts-caption">${Math.round(ha/pl.ha*100)||'<1'}%</span>${pl.legal&&pl.legal[pl.grapes.findIndex(x=>x[0]===g)]==='minor'?'<span class="tag ts-caption">minor role</span>':''}</div>`).join('');
-    X.planted=block('What is planted',`<p class="ts-caption sub">${ac(pl.ha)} acres of vines${where?' '+esc(where):''}, ${pl.year}</p>${pl.legal?`<p class="ts-caption sub legal-key"><span><i class="lk main"></i>Can carry the ${esc(f.name)} name</span><span><i class="lk no"></i>Grown here, but sold under another name</span></p>`:''}<div class="planted">${rows}</div>${other?`<p class="ts-caption sub">Other grapes: ${Math.round(other[1]/pl.ha*100)}%</p>`:''}`,'Share of vineyard area');
+    const cap=wide?`No figures exist for ${esc(f.name)} alone. These are for ${esc(where)}, the wider area it sits in: ${ac(pl.ha)} acres of vines, ${pl.year}.`:`${ac(pl.ha)} acres of vines${where?' '+esc(where):''}, ${pl.year}`;
+    const key=wide?[`Allowed in ${esc(f.name)}`,`Not allowed in ${esc(f.name)}`]:[`Can carry the ${esc(f.name)} name`,'Grown here, but sold under another name'];
+    X.planted=block(wide?'Planted in the wider area':'What is planted',`<p class="ts-caption sub">${cap}</p>${pl.legal?`<p class="ts-caption sub legal-key"><span><i class="lk main"></i>${key[0]}</span><span><i class="lk no"></i>${key[1]}</span></p>`:''}<div class="planted">${rows}</div>${other?`<p class="ts-caption sub">Other grapes: ${Math.round(other[1]/pl.ha*100)}%</p>`:''}`,'Share of vineyard area');
   }
   const ru=f.rules;
   if(ru){
@@ -362,6 +365,8 @@ function renderInfo(f){
     for(const [sk,head] of SKINS){const g=ru.grapes.filter(x=>x[1]===sk); if(g.length) b+=`<p class="ts-caption sub">${head}</p>${chips(g)}`;}
     const un=ru.grapes.filter(x=>!x[1]); if(un.length) b+=`<p class="ts-caption sub">Grapes</p>${chips(un)}`;
     if(ru.grapes_other.length) b+=`<p class="ts-caption sub">Also allowed, in smaller roles</p>${chips(ru.grapes_other)}`;
+    if(ru.grapes_trial&&ru.grapes_trial.length) b+=`<p class="ts-caption sub">On trial, to adapt to a changing climate</p>${chips(ru.grapes_trial)}`;
+    if(ru.limits&&ru.limits.length) b+=`<p class="ts-caption sub">Limits, as a share of the vines</p><ul class="limits">${ru.limits.map(l=>`<li class="ts-body">${esc(l)}</li>`).join('')}</ul>`;
     b+=`<div class="facts">${fact('Wine types',ru.types.join(', '))}${fact('Highest yield',ru.yield_hl?`${fmt(ru.yield_hl)} hl/ha`:ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:null,ru.yield_hl&&ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:'')}`
       +`${fact('Fewest vines',ru.density?`${fmt(ru.density)} per ha`:null)}${fact('Irrigation',ru.irrigation)}${fact('Protected since',ru.registered?ru.registered.slice(0,4):null)}${fact('Communes',ru.communes.length?fmt(ru.communes.length):null)}</div>`;
     if(ru.communes.length) b+=`<details class="more-d"><summary class="ts-caption">The communes</summary><p class="ts-caption">${ru.communes.map(esc).join(', ')}</p></details>`;
@@ -432,7 +437,7 @@ function renderInfo(f){
   for(const b of document.querySelectorAll('#info [data-jump]')) b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView({behavior:'smooth',block:'start'});
   const apb=$('#allparts'); if(apb) apb.onclick=()=>{M.allParts=true; renderInfo(f); M.allParts=false;};
 }
-const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">Every wine country, region and appellation we have, ${fmt(Object.keys(PL).length)} places in all.</p><p class="ts-body">Benchmark regions, in gold, are the ones the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest.</p><p class="ts-body">Darker shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.</p></div></section>`;
+const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">Every wine country, region and appellation we have, ${fmt(Object.keys(PL).length)} places in all.</p><p class="ts-body">Benchmark regions, in gold, are the ones the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest.</p><p class="ts-body">Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.</p></div></section>`;
 async function render(){
   readHash(); renderPlaces(); mapShow();
   if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=WORLD_INFO(); return;}

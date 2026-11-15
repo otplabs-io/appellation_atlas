@@ -125,6 +125,7 @@ details.found[open]>summary h2::before{transform:rotate(90deg)}
 .gr.no .g{color:var(--soft)}
 .gr.minor .bar i{background:var(--a2)}
 .gr .tag{grid-column:3;justify-self:end;color:var(--soft)}
+.limits{margin:4px 0 0;padding-left:18px}.limits li{margin:2px 0}
 .legal-key{display:flex;flex-wrap:wrap;align-items:center;gap:4px 16px}
 .legal-key>span{display:inline-flex;align-items:center;gap:6px}
 .legal-key .lk{display:inline-block;flex:none;width:14px;height:8px}
@@ -147,3 +148,22 @@ details.sibs>summary small{color:var(--soft);font-weight:400}
 .jump{display:flex;flex-wrap:wrap;gap:6px;padding:14px 20px 4px}
 .jump .step{border:0}
 section.row[id^="s-"]{scroll-margin-top:80px}
+/* Dark: follows the system setting, with the same colors as the iPhone and iPad app (ios/AppellationAtlas/UI/Theme.swift). */
+@media (prefers-color-scheme:dark){
+  :root{color-scheme:dark;--ink:#E6ECF1;--soft:#A3AFBA;--coral:#F06A4C;--coral-text:#F58B70;--gold-tint:#4A3C1A;--gold-deep:#F0BE58;--teal:#5FB8BC;
+    --paper:#0F161D;--fill:#1D2833;--ground:#0A1016;--rule:#40505D;--ocean:#0E2231;--ocean-hi:#1A3A50;--land:#24313D;--land-edge:#40505D;--map-target:#F06A4C;
+    --map-premier:#C2902C;--hot:#F06A4C;--dot-empty-border:#5A6A78;
+    --a0:#2A3743;--a1:#5A4820;--a2:#8A6922;--a3:#C2902C;--a4:#F0BE58;--o1:#334150;--o2:#445462;--o3:#5A6A78;--o4:#7A8996}
+  .page,.top,.sugg,.search input,.map,.zout{background:var(--paper)}
+  .search input,.zout,.sugg{border-color:var(--rule)}
+  .map .grat{stroke:#2E5068}
+  .map .rg,.map .rg.a1,.map .rg.a2,.map .dot-m,.rose path{stroke:#0E1820}
+  .map .rg.sib,.map .rg.sib.n0{fill:#2A3743}
+  .map text{stroke:#0E1820}
+  .chip.red{border-left-color:#C0566A}.chip.pink{border-left-color:#E3A0A8}
+  .months rect.t{fill:#3A3426}.months rect.p{fill:#1F3A4C}
+  .scale .seg{border-right-color:var(--paper)}
+  .rk.r-limestone,.rk.r-chalk{background:#3B3829}.rk.r-marl{background:#3A3426}.rk.r-volcanic{background:#3E3130}.rk.r-granite{background:#423331}
+  .rk.r-schist,.rk.r-shale{background:#2E3945}.rk.r-gravel,.rk.r-sand,.rk.r-sandstone{background:#43391F}.rk.r-alluvium,.rk.r-loess,.rk.r-clay{background:#35322B}
+  a{color:var(--teal)}
+}

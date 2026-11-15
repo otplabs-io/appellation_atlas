@@ -15,3 +15,8 @@ CLAUDE.local.md
 
 # iCloud conflict copies, such as "index 2.json"
 * [0-9].*
+
+# iPhone and iPad app: your Apple team, and Xcode's per-user state
+ios/Config/Local.xcconfig
+ios/**/xcuserdata/
+ios/build/
