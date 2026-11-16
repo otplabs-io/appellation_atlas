@@ -1,6 +1,6 @@
 {
  "france/southern-rhone": {
-  "text": "A southern Rhône area containing Châteauneuf-du-Pape, Gigondas, Vacqueyras, Rasteau, Tavel, Lirac and the Côtes du Rhône and Côtes du Rhône Villages appellations. Vineyards in Vaucluse are planted mostly to Grenache (47%), then Syrah (22%).",
+  "text": "A southern Rhône area containing Châteauneuf-du-Pape, Gigondas, Vacqueyras, Rasteau, Tavel, Lirac and the Côtes du Rhône and Côtes du Rhône Villages appellations. Vineyards in Vaucluse are planted above all to Grenache (47%), then Syrah (22%).",
   "from": [
    "where",
    "planted"
@@ -33,7 +33,7 @@
   }
  },
  "france/terrasses-du-larzac": {
-  "text": "A Languedoc appellation created in 2005 for red wines from Syrah, Grenache and Mourvèdre, with Cinsaut and Carignan allowed as additions. Its vineyards are among the highest in the Coteaux du Languedoc, on the slopes of the Cevennes.",
+  "text": "A Languedoc appellation created in 2005 for red wines from Syrah, Grenache and Mourvèdre, with Cinsaut and Carignan allowed as additions.",
   "from": [
    "wikipedia",
    "rules"
@@ -64,7 +64,7 @@
   ]
  },
  "france/tours-sur-marne": {
-  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
+  "text": "A cru village inside Champagne. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
   "from": [
    "rules_of_wider",
    "where"
@@ -133,7 +133,7 @@
   }
  },
  "france/var": {
-  "text": "A PGI for the Var department, called vin de pays du Var from 1968 until 2009. It labels wines that cannot qualify for an appellation. Vineyards in the Var are planted mostly to Grenache (32%), Cinsaut (19%) and Syrah (14%).",
+  "text": "A PGI for the Var department, called vin de pays du Var from 1968 until 2009. It labels wines that cannot qualify for an appellation.",
   "from": [
    "wikipedia",
    "planted"
@@ -145,7 +145,7 @@
   }
  },
  "france/vaudemanges": {
-  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus Pinot Blanc, Pinot Gris, Petit Meslier and Arbane.",
+  "text": "A cru village inside Champagne. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus Pinot Blanc, Pinot Gris, Petit Meslier and Arbane.",
   "from": [
    "rules_of_wider",
    "where"
@@ -171,7 +171,7 @@
   ]
  },
  "france/verzenay": {
-  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
+  "text": "A cru village inside Champagne. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
   "from": [
    "rules_of_wider",
    "where"
@@ -211,7 +211,7 @@
   ]
  },
  "france/villers-allerand": {
-  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
+  "text": "A cru village inside Champagne. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
   "from": [
    "rules_of_wider",
    "where"
@@ -256,7 +256,7 @@
   }
  },
  "france/voipreux": {
-  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus Pinot Blanc, Pinot Gris, Petit Meslier and Arbane.",
+  "text": "A cru village inside Champagne. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus Pinot Blanc, Pinot Gris, Petit Meslier and Arbane.",
   "from": [
    "rules_of_wider",
    "where"
@@ -289,7 +289,7 @@
   }
  },
  "france/vougeot": {
-  "text": "A Côte de Nuits village in Burgundy making red Pinot Noir and white Chardonnay. Most of its vineyard land is the single Grand Cru Clos de Vougeot, about 123 acres and the largest Grand Cru of the Côte de Nuits. Village-level Vougeot is rare.",
+  "text": "A Côte de Nuits village in Burgundy making red Pinot Noir and white Chardonnay. Most of its vineyard land is the single Grand Cru Clos de Vougeot, about 125 acres and the largest Grand Cru of the Côte de Nuits. Village-level Vougeot is rare.",
   "from": [
    "wikipedia",
    "rules",
@@ -314,7 +314,7 @@
   }
  },
  "france/vrigny": {
-  "text": "A cru village inside Champagne, where the rules cover quality sparkling wine only. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
+  "text": "A cru village inside Champagne. Allowed grapes include Pinot Noir, Chardonnay and Meunier, plus rarer ones such as Petit Meslier and Arbane.",
   "from": [
    "rules_of_wider",
    "where"
@@ -396,7 +396,7 @@
   ]
  },
  "italy/aleatico-di-puglia": {
-  "text": "A Puglia appellation for wine and liqueur wine, made from Negro Amaro and Primitivo, with Malvasia Nera allowed as a minor grape. Puglia as a whole is planted mostly to Primitivo (16%), Trebbiano Toscano (15%) and Sangiovese (13%).",
+  "text": "A Puglia appellation for wine and liqueur wine, made from Negro Amaro and Primitivo, with Malvasia Nera allowed as a minor grape.",
   "from": [
    "rules",
    "planted"
@@ -409,7 +409,7 @@
   ]
  },
  "italy/alghero": {
-  "text": "A Sardinian appellation with a very wide list of allowed grapes. Sardinia is planted mostly to Alicante Bouschet (29%) and Vermentino (28%).",
+  "text": "A Sardinian appellation.",
   "from": [
    "rules",
    "planted_wider"
@@ -464,13 +464,13 @@
   }
  },
  "italy/aprilia": {
-  "text": "A Lazio-area appellation making wine from a very wide list of allowed grapes.",
+  "text": "A Lazio-area appellation.",
   "from": [
    "rules"
   ]
  },
  "italy/arborea": {
-  "text": "A Sardinian appellation for still and semi-sparkling wine. Sardinia is planted mostly to Alicante Bouschet (29%), Vermentino (28%) and Carignano (9%).",
+  "text": "A Sardinian appellation for still and semi-sparkling wine.",
   "from": [
    "rules",
    "planted_wider"
@@ -507,7 +507,7 @@
   ]
  },
  "italy/asti": {
-  "text": "A sweet, low-alcohol sparkling white DOCG made from Moscato Bianco, often served with dessert, around the towns of Asti and Alba in Piedmont. It was Italy's largest producing appellation as of 2004, with over ten times as much made as Barolo.",
+  "text": "A sweet, low-alcohol sparkling white DOCG made from Moscato Bianco, often served with dessert, around the towns of Asti and Alba in Piedmont. It is one of Italy's largest appellations, with more than 90 million bottles made in 2024.",
   "from": [
    "wikipedia",
    "rules"
@@ -519,7 +519,7 @@
   }
  },
  "italy/atina": {
-  "text": "A Lazio-area appellation making wine from a very wide list of allowed grapes.",
+  "text": "A Lazio-area appellation.",
   "from": [
    "rules"
   ]
@@ -562,7 +562,7 @@
   ]
  },
  "italy/barbera-d-asti": {
-  "text": "A red wine from Barbera, made in the hills of the Asti and Alexandria provinces in Piedmont.",
+  "text": "A red wine from Barbera, made in the hills of the Asti and Alessandria provinces in Piedmont.",
   "from": [
    "wikipedia"
   ],
@@ -683,7 +683,7 @@
   }
  },
  "italy/bianco-di-pitigliano": {
-  "text": "A DOC near the southern coast of Tuscany, created in 1966, for still and sparkling wine.",
+  "text": "A DOC in southern Tuscany, on the tufa plateau by the Lazio border, created in 1966, for still and sparkling wine.",
   "from": [
    "wikipedia",
    "rules"
@@ -702,7 +702,7 @@
   ]
  },
  "italy/bolgheri": {
-  "text": "A Tuscany-area appellation with a very wide list of allowed grapes.",
+  "text": "A Tuscany-area appellation.",
   "from": [
    "rules"
   ]
@@ -775,7 +775,7 @@
   }
  },
  "italy/cagliari": {
-  "text": "A Sardinian appellation for still and sparkling wine with a very wide list of allowed grapes. Sardinia is planted mostly to Alicante Bouschet (29%) and Vermentino (28%).",
+  "text": "A Sardinian appellation for still and sparkling wine.",
   "from": [
    "rules",
    "planted_wider"
@@ -788,7 +788,7 @@
   ]
  },
  "italy/campania": {
-  "text": "A PGI for the whole of Campania, whose area includes Taurasi, Fiano di Avellino, Greco di Tufo and Vesuvio. Vineyards are planted mostly to Aglianico (33%) and Falanghina Flegrea (19%), then Barbera (7%) and Greco (6%).",
+  "text": "A PGI for the whole of Campania, whose area includes Taurasi, Fiano di Avellino, Greco di Tufo and Vesuvio. Vineyards are planted above all to Aglianico (33%) and Falanghina Flegrea (19%), then Barbera (7%) and Greco (6%).",
   "from": [
    "where",
    "planted"
@@ -832,7 +832,7 @@
   ]
  },
  "italy/capalbio": {
-  "text": "A Tuscany-area appellation with a very wide list of allowed grapes.",
+  "text": "A Tuscany-area appellation.",
   "from": [
    "rules"
   ]

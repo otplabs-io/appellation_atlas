@@ -20,13 +20,16 @@ enum Copy {
     enum Rules {
         static let baseYield = "the yield its rules set; some years a little more is allowed"
         static let yieldCeiling = "the most its rules allow in any year; the usual limit is lower"
-        static let yieldLimit = "the highest the rules allow"
-        static let recognised = "the year it was first recognised"
+        static let yieldLimit = "the most the 2022 EU record allows; some of its wines may have lower limits, and rules change"
+        static let recognised = "the year its rules say it was first recognised, sometimes under an older name"
         static let noShares = "The record lists the grapes allowed, not their shares."
+        static let limitsHead = "Planting rules: shares of each grower\u{2019}s vineyard, not of the blend"
+        static func forWine(_ w: String) -> String { "Main grapes, for \(w)" }
+        static let desertRain = "Rain is left out here: the climate grid reads far from what the weather stations record."
     }
 
     static let worldIntro = [
-        "Benchmark regions, in gold, are the ones the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest.",
+        "Benchmark regions, in gold, lie in the regions the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest. The Atlas is independent, and not affiliated with or endorsed by WSET.",
         "Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.",
     ]
 

@@ -6,13 +6,13 @@
   ]
  },
  "italy/giro-di-cagliari": {
-  "text": "A Sardinian PDO for wine and liqueur wine made only from the Girò grape.",
+  "text": "A Sardinian PDO for wine and liqueur wine made mainly from the Girò grape.",
   "from": [
    "rules"
   ]
  },
  "italy/grance-senesi": {
-  "text": "A DOC for wine made in the province of Siena, with a very wide list of allowed grapes. Trebbiano Toscano and Merlot follow.",
+  "text": "A DOC for wine made in the province of Siena.",
   "from": [
    "rules",
    "wikipedia"
@@ -36,7 +36,7 @@
   ]
  },
  "italy/grignolino-d-asti": {
-  "text": "A Piedmont PDO for wine made from Grignolino, with Freisa also allowed. It covers a list of communes around Asti, in a region that grows mostly Barbera, Muscat Blanc and Nebbiolo.",
+  "text": "A Piedmont PDO for wine made from Grignolino, with Freisa also allowed. It covers a list of communes around Asti.",
   "from": [
    "rules",
    "planted_wider"
@@ -73,7 +73,7 @@
   ]
  },
  "italy/lacrima-di-morro": {
-  "text": "A red DOC in the province of Ancona, in Marche, made from the rare local Lacrima grape. Created in 1985, it is one of the most important wine productions of the Marche region.",
+  "text": "A red DOC in the province of Ancona, in Marche, made from the rare local Lacrima grape. Created in 1985, it is a small DOC of about 250 hectares in the Marche region.",
   "from": [
    "wikipedia",
    "rules"
@@ -189,7 +189,7 @@
   }
  },
  "italy/lison-pramaggiore": {
-  "text": "A DOC in Friuli Venezia Giulia covering the provinces of Venice, Treviso and Pordenone. Its wines are promoted from Pramaggiore.",
+  "text": "A DOC across Veneto and Friuli Venezia Giulia, in the provinces of Venice, Treviso and Pordenone. Its wines are promoted from Pramaggiore.",
   "from": [
    "wikipedia",
    "rules",
@@ -220,7 +220,7 @@
   ]
  },
  "italy/lugana": {
-  "text": "A Veneto PDO for still and quality sparkling wine, from communes such as Sirmione, Desenzano del Garda and Peschiera del Garda.",
+  "text": "A PDO south of Lake Garda, across Lombardy and Veneto, for still and quality sparkling wine, from communes such as Sirmione, Desenzano del Garda and Peschiera del Garda.",
   "from": [
    "rules"
   ]
@@ -288,7 +288,7 @@
   }
  },
  "italy/marino": {
-  "text": "A Lazio DOC on the western edge of the Alban Hills, south of Rome, created in 1970. Its wine is mostly Trebbiano and Malvasia Bianca di Candia, a blend like Frascati's, but Trebbiano makes up only 25% to 55% of it.",
+  "text": "A Lazio DOC on the western edge of the Alban Hills, south of Rome, created in 1970. Its white wine is led by Malvasia Bianca di Candia.",
   "from": [
    "wikipedia",
    "where"
@@ -360,7 +360,7 @@
   }
  },
  "italy/monica-di-sardegna": {
-  "text": "A Sardinian PDO for still and semi-sparkling wine. Sardinia grows mostly Alicante Bouschet (29%) and Vermentino (28%), with Monica Nera at 7%.",
+  "text": "A Sardinian PDO for still and semi-sparkling wine.",
   "from": [
    "rules",
    "planted"
@@ -390,7 +390,7 @@
   ]
  },
  "italy/montecucco": {
-  "text": "A Tuscan PDO for wine, with a very wide list of allowed grapes. Trebbiano Toscano and Merlot follow at 9% each.",
+  "text": "A Tuscan PDO for wine.",
   "from": [
    "rules"
   ]
@@ -443,13 +443,13 @@
   }
  },
  "italy/monteregio-di-massa-marittima": {
-  "text": "A Tuscan PDO for wine, with a very wide list of allowed grapes. Trebbiano Toscano and Merlot follow at 9% each.",
+  "text": "A Tuscan PDO for wine.",
   "from": [
    "rules"
   ]
  },
  "italy/montescudaio": {
-  "text": "A Tuscan PDO for wine, with a very wide list of allowed grapes. Trebbiano Toscano and Merlot follow at 9% each.",
+  "text": "A Tuscan PDO for wine.",
   "from": [
    "rules"
   ]
@@ -521,7 +521,7 @@
   ]
  },
  "italy/nasco-di-cagliari": {
-  "text": "A Sardinian PDO for wine and liqueur wine made only from the Nasco grape. Its rules list many communes across the island.",
+  "text": "A Sardinian PDO for wine and liqueur wine made mainly from the Nasco grape, in the south and centre-west of the island.",
   "from": [
    "rules"
   ]
@@ -592,7 +592,7 @@
   ]
  },
  "italy/orcia": {
-  "text": "A Tuscan PDO for wine, with a very wide list of allowed grapes. Trebbiano Toscano and Merlot follow at 9% each.",
+  "text": "A Tuscan PDO for wine.",
   "from": [
    "rules"
   ]
@@ -712,7 +712,7 @@
   ]
  },
  "italy/pomino": {
-  "text": "A Tuscan PDO for still and quality sparkling wine from the commune of Rufina, with a very wide list of allowed grapes.",
+  "text": "A Tuscan PDO for still and quality sparkling wine from the commune of Rufina.",
   "from": [
    "rules"
   ]
@@ -785,7 +785,7 @@
   }
  },
  "italy/reggiano": {
-  "text": "An Emilia-Romagna PDO for still, semi-sparkling and quality sparkling wine made from Lambrusco varieties, including Salamino, Grasparossa and Maestri.",
+  "text": "An Emilia-Romagna PDO for still, semi-sparkling and quality sparkling wine many of them from Lambrusco varieties such as Salamino, Grasparossa and Maestri.",
   "from": [
    "rules"
   ]

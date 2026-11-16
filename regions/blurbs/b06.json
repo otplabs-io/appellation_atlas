@@ -325,7 +325,7 @@
   ]
  },
  "italy/colli-tortonesi": {
-  "text": "A Piedmont denomination of 46 communes around Tortona. Its rules allow still, semi-sparkling and sparkling wine. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "text": "A Piedmont denomination of 46 communes around Tortona. Its rules allow still, semi-sparkling and sparkling wine.",
   "from": [
    "rules",
    "planted_wider",
@@ -333,7 +333,7 @@
   ]
  },
  "italy/collina-torinese": {
-  "text": "A Piedmont denomination of 28 communes including Andezeno and Arignano, near Turin. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "text": "A Piedmont denomination of 28 communes including Andezeno and Arignano, near Turin.",
   "from": [
    "rules",
    "planted_wider",
@@ -361,7 +361,7 @@
   }
  },
  "italy/colline-novaresi": {
-  "text": "A Piedmont denomination of 25 communes including Boca and Borgomanero. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "text": "A Piedmont denomination of 25 communes including Boca and Borgomanero.",
   "from": [
    "rules",
    "planted_wider",
@@ -369,7 +369,7 @@
   ]
  },
  "italy/colline-saluzzesi": {
-  "text": "A Piedmont denomination of 13 communes around Saluzzo, including Busca and Dronero. Its rules allow still and sparkling wine. Piedmont grows mostly Barbera (27%) and Muscat Blanc (25%).",
+  "text": "A Piedmont denomination of 13 communes around Saluzzo, including Busca and Dronero. Its rules allow still and sparkling wine.",
   "from": [
    "rules",
    "planted_wider",
@@ -410,7 +410,7 @@
   }
  },
  "italy/conero": {
-  "text": "A Marche denomination of six communes including Osimo, Numana and Camerano.",
+  "text": "A Marche denomination around Monte Conero, including Ancona, Osimo, Numana and Camerano.",
   "from": [
    "rules",
    "where"
@@ -480,7 +480,7 @@
   ]
  },
  "italy/coste-della-sesia": {
-  "text": "A Piedmont denomination of 16 communes including Gattinara and Cossato. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "text": "A Piedmont denomination of 16 communes including Gattinara and Cossato.",
   "from": [
    "rules",
    "planted_wider",
@@ -502,7 +502,7 @@
   ]
  },
  "italy/delle-venezie": {
-  "text": "A DOC covering Trento, Friuli-Venezia Giulia and Veneto, across 953 communes. Its rules allow still, sparkling and semi-sparkling wine. The area grows mostly Glera (34 percent), then Pinot Gris and Garganega.",
+  "text": "A DOC covering Trento, Friuli-Venezia Giulia and Veneto, across 953 communes. Its rules allow still, sparkling and semi-sparkling wine. The area grows above all Glera (34 percent), then Pinot Gris and Garganega.",
   "from": [
    "wikipedia",
    "rules",
@@ -563,7 +563,7 @@
   ]
  },
  "italy/dolcetto-di-ovada": {
-  "text": "A Piedmont denomination of 22 communes around Ovada. Its wine is named for the Dolcetto grape. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "text": "A Piedmont denomination of 22 communes around Ovada. Its wine is named for the Dolcetto grape.",
   "from": [
    "rules",
    "planted_wider",
@@ -619,7 +619,7 @@
   }
  },
  "italy/erice": {
-  "text": "A Sicilian denomination from seven communes including Erice and Castellammare del Golfo. Sicily grows mostly Catarratto Bianco (26%).",
+  "text": "A Sicilian denomination from seven communes including Erice and Castellammare del Golfo.",
   "from": [
    "rules",
    "planted_wider",
@@ -694,7 +694,7 @@
   ]
  },
  "italy/faro": {
-  "text": "A Sicilian denomination limited to the commune of Messina. Its rules allow wine from eight grapes, among them Nerello Mascalese, Nerello Cappuccio, Nocera and Sangiovese. Sicily grows mostly Catarratto Bianco (26%) and Nero d'Avola (17%).",
+  "text": "A Sicilian denomination limited to the commune of Messina. Its rules allow wine from eight grapes, among them Nerello Mascalese, Nerello Cappuccio, Nocera and Sangiovese.",
   "from": [
    "rules",
    "planted_wider",
@@ -742,7 +742,7 @@
   ]
  },
  "italy/freisa-d-asti": {
-  "text": "A Piedmont wine made from Freisa alone, from the communes of Cellarengo and Villanova d'Asti. Its rules allow still, semi-sparkling and sparkling wine. Piedmont grows mostly Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%).",
+  "text": "A Piedmont wine made from Freisa alone, from the hills of Asti province. Its rules allow still, semi-sparkling and sparkling wine.",
   "from": [
    "rules",
    "planted_wider",
@@ -758,7 +758,7 @@
   ]
  },
  "italy/friuli-annia": {
-  "text": "A Friuli-Venezia Giulia DOC and the newest of the region's denominations, set up in 1995, covering eight communes including Marano Lagunare. Its rules allow still and sparkling wine.",
+  "text": "A Friuli-Venezia Giulia DOC, set up in 1995, covering eight communes including Marano Lagunare. Its rules allow still and sparkling wine.",
   "from": [
    "wikipedia",
    "rules",
@@ -816,7 +816,7 @@
   ]
  },
  "italy/friuli-latisana": {
-  "text": "A Friuli-Venezia Giulia DOC in Udine province, around Latisana and Lignano Sabbiadoro. Its rules allow still and sparkling wine. The region grows mostly Pinot Gris (29%), then Glera (25%) and Merlot (8%).",
+  "text": "A Friuli-Venezia Giulia DOC in Udine province, around Latisana and Lignano Sabbiadoro. Its rules allow still and sparkling wine. The region grows above all Pinot Gris (29%), then Glera (25%) and Merlot (8%).",
   "from": [
    "wikipedia",
    "rules",

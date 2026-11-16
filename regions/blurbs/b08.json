@@ -144,7 +144,7 @@
   ]
  },
  "italy/sant-antimo": {
-  "text": "A Tuscan appellation covering the commune of Montalcino, for wines. It is a DOC for wines produced in the province of Siena.",
+  "text": "A Tuscan DOC covering the commune of Montalcino, in Siena province.",
   "from": [
    "wikipedia",
    "rules",
@@ -163,7 +163,7 @@
   ]
  },
  "italy/sardegna-semidano": {
-  "text": "A Sardinia appellation for still, sparkling and raisined-grape wine, with Semidano among the allowed white grapes. It covers a very large number of communes. Sardinia grows mostly Alicante Bouschet and Vermentino.",
+  "text": "A Sardinia appellation for still, sparkling and raisined-grape wine, with Semidano among the allowed white grapes. It covers a very large number of communes.",
   "from": [
    "rules",
    "planted"
@@ -189,7 +189,7 @@
   ]
  },
  "italy/sicilia-doc": {
-  "text": "A DOC for the whole Sicilian region, created in 2011 after being an IGT since 1995. It covers still, sparkling and sweet styles. Sicily grows mostly Catarratto and Nero d'Avola.",
+  "text": "A DOC for the whole Sicilian region, created in 2011 after being an IGT since 1995. It covers still, sparkling and sweet styles.",
   "from": [
    "wikipedia",
    "rules",
@@ -305,14 +305,14 @@
   ]
  },
  "italy/teroldego-rotaliano": {
-  "text": "A Trentino red wine made only from Teroldego, from Mezzocorona, Mezzolombardo and San Michele all'Adige. In the province of Trento, Teroldego is the third most planted grape, after Pinot Gris and Chardonnay.",
+  "text": "A Trentino red wine made only from Teroldego, from Mezzocorona, Mezzolombardo and San Michele all'Adige.",
   "from": [
    "rules",
    "planted_wider"
   ]
  },
  "italy/terra-d-otranto": {
-  "text": "A Puglia appellation covering many communes around Brindisi and Lecce, for still, semi-sparkling and sparkling wine.",
+  "text": "A Puglia appellation covering many communes in the provinces of Brindisi, Lecce and Taranto, for still, semi-sparkling and sparkling wine.",
   "from": [
    "rules"
   ]
@@ -397,7 +397,7 @@
   ]
  },
  "italy/toscana-igt": {
-  "text": "A Tuscan regional wine, made across Tuscany as an IGT. The wider region grows mostly Sangiovese, which is more than half of its vineyards, followed by Trebbiano Toscano and Merlot.",
+  "text": "A Tuscan regional wine, made across Tuscany as an IGT.",
   "from": [
    "wikipedia",
    "planted"
@@ -490,13 +490,13 @@
   ]
  },
  "italy/valdadige": {
-  "text": "A PDO across the provinces of Trento and Bolzano, within Alto Adige, for still and semi-sparkling wine.",
+  "text": "A PDO along the Adige across the provinces of Bolzano, Trento and Verona, for still and semi-sparkling wine.",
   "from": [
    "rules"
   ]
  },
  "italy/valdadige-terradeiforti": {
-  "text": "A small PDO within Alto Adige, around Avio, Brentino Belluno, Dolcè and Rivoli Veronese. Its rules allow still wine.",
+  "text": "A small PDO on the Adige between Trentino and Veneto, around Avio, Brentino Belluno, Dolcè and Rivoli Veronese. Its rules allow still wine.",
   "from": [
    "rules"
   ]
@@ -613,14 +613,14 @@
   }
  },
  "italy/vermentino-di-sardegna": {
-  "text": "A white wine from across Sardinia, named for Vermentino, as still, semi-sparkling or sparkling wine. Sardinia's vineyards grow mostly Alicante Bouschet and Vermentino, which together cover more than half of the planted area.",
+  "text": "A white wine from across Sardinia, named for Vermentino, as still, semi-sparkling or sparkling wine.",
   "from": [
    "rules",
    "planted"
   ]
  },
  "italy/vernaccia-di-oristano": {
-  "text": "A Sardinia wine around Oristano, Cabras and Santa Giusta, made only from Vernaccia di Oristano. It may be still wine or liqueur wine. Sardinia grows mostly Alicante Bouschet and Vermentino.",
+  "text": "A Sardinia wine around Oristano, Cabras and Santa Giusta, made only from Vernaccia di Oristano. It may be still wine or liqueur wine.",
   "from": [
    "rules",
    "planted_wider"
@@ -676,7 +676,7 @@
   ]
  },
  "italy/vigneti-delle-dolomiti": {
-  "text": "A PGI for the area of Trento and Bolzano in Italy. The area's vineyards grow mostly Pinot Noir (19%), Chardonnay (18%) and Pinot Gris (18%), followed by Teroldego and Merlot at 7% each.",
+  "text": "A PGI for the area of Trento and Bolzano in Italy. The area's vineyards grow above all Pinot Noir (19%), Chardonnay (18%) and Pinot Gris (18%), followed by Teroldego and Merlot at 7% each.",
   "from": [
    "where",
    "planted"
@@ -695,7 +695,7 @@
   }
  },
  "italy/vin-santo-del-chianti": {
-  "text": "A Tuscan PDO for Vin Santo made across many communes, including Arezzo and Carmignano. The wider Tuscany area grows mostly Sangiovese.",
+  "text": "A Tuscan PDO for Vin Santo made across many communes, including Arezzo and Carmignano.",
   "from": [
    "rules",
    "where"

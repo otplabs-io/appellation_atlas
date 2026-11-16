@@ -115,7 +115,7 @@
   ]
  },
  "france/le-mesnil-sur-oger": {
-  "text": "A cru village in the Côte des Blancs, a Champagne sub-region whose vineyards are 95% Chardonnay. Champagne's sparkling wines are made from Chardonnay, Pinot Noir, Meunier and a few rarer grapes.",
+  "text": "A cru village in the Côte des Blancs, a Champagne sub-region whose vineyards are 95% Chardonnay.",
   "from": [
    "rules_of_wider",
    "wikipedia_of_wider",
@@ -135,7 +135,7 @@
   ]
  },
  "france/louvois": {
-  "text": "A cru village in the Montagne de Reims, a Champagne sub-region with chalk-based soils and nine Grands Crus villages. Champagne's sparkling wines are made from Chardonnay, Pinot Noir, Meunier and a few rarer grapes.",
+  "text": "A cru village in the Montagne de Reims, a Champagne sub-region with chalk-based soils and nine Grands Crus villages.",
   "from": [
    "rules_of_wider",
    "wikipedia_of_wider",
@@ -155,7 +155,7 @@
   ]
  },
  "france/mailly-champagne": {
-  "text": "A cru village in the Montagne de Reims, a Champagne sub-region with chalk-based soils and nine Grands Crus villages. Champagne's sparkling wines are made from Chardonnay, Pinot Noir, Meunier and a few rarer grapes.",
+  "text": "A cru village in the Montagne de Reims, a Champagne sub-region with chalk-based soils and nine Grands Crus villages.",
   "from": [
    "rules_of_wider",
    "wikipedia_of_wider",
@@ -168,7 +168,7 @@
   }
  },
  "france/mareuil-sur-ay": {
-  "text": "A cru village in the Vallée de la Marne, a Champagne sub-region with variable soils. Champagne's sparkling wines are made from Chardonnay, Pinot Noir, Meunier and a few rarer grapes.",
+  "text": "A cru village in the Vallée de la Marne, a Champagne sub-region with variable soils.",
   "from": [
    "rules_of_wider",
    "wikipedia_of_wider",
@@ -216,7 +216,7 @@
   ]
  },
  "france/entre-deux-mers": {
-  "text": "The largest sub-region of Bordeaux, between the Garonne and Dordogne rivers, with about 3,700 acres in vine. Its wines are made from Semillon, Sauvignon and Muscadelle, plus red grapes such as Merlot and Cabernet Franc.",
+  "text": "The largest sub-region of Bordeaux, between the Garonne and Dordogne rivers. The Entre-Deux-Mers appellation itself has about 3,700 acres in vine, and its wines are made from Semillon, Sauvignon and Muscadelle, plus red grapes such as Merlot and Cabernet Franc.",
   "from": [
    "rules",
    "wikipedia",
@@ -256,7 +256,7 @@
   ]
  },
  "france/fitou": {
-  "text": "A large Languedoc appellation for red wine in which Carignan is the dominant grape, at least 40% of the blend. Grenache, Mourvèdre and Syrah are blended with it.",
+  "text": "A Languedoc appellation for red wine, from Carignan and Grenache, each at least 20% of the vines, with Mourvèdre and Syrah.",
   "from": [
    "rules",
    "wikipedia"
@@ -332,7 +332,7 @@
   }
  },
  "france/gaillac-premieres-cotes": {
-  "text": "A South West France appellation of 11 communes around Gaillac, for white wine. It is made from Mauzac, Len de l'El, Ondenc and Muscadelle, plus Sauvignon.",
+  "text": "A South West France appellation of 11 communes around Gaillac, for white wine. It is made from Mauzac, Len de l'El and Muscadelle, with Ondenc and Sauvignon in smaller roles.",
   "from": [
    "rules",
    "where"
@@ -389,7 +389,7 @@
   ]
  },
  "france/grand-roussillon": {
-  "text": "A Languedoc-Roussillon appellation for liqueur wine, covering 98 communes. It is made from Grenache in its red, white and gray forms, plus Macabeu and two Muscats.",
+  "text": "A Languedoc-Roussillon appellation for vin doux naturel. It is made from Grenache in its red, white and gray forms, Macabeu and Tourbat, with the Muscats in a smaller role.",
   "from": [
    "rules",
    "where"
@@ -415,7 +415,7 @@
   }
  },
  "france/graves-de-vayres": {
-  "text": "A Bordeaux appellation for red and white wine, about 1,700 acres in two communes inside Entre-Deux-Mers. Reds use Merlot and Cabernets, whites use Sauvignon, Semillon and Muscadelle.",
+  "text": "A Bordeaux appellation for red and white wine, in two communes inside Entre-Deux-Mers. Reds use Merlot and Cabernets, whites use Sauvignon, Semillon and Muscadelle.",
   "from": [
    "rules",
    "wikipedia"
@@ -527,7 +527,7 @@
   ]
  },
  "france/irouleguy": {
-  "text": "A South West France appellation, the only one in the Northern Basque Country and often called the smallest vineyard in France. About 70% of the wine is red, with Tannat and Cabernet Franc, plus 20% rosé and 10% white from Manseng and Courbu.",
+  "text": "A South West France appellation, the only one in the Northern Basque Country and often called one of the smallest vineyards in France. About 70% of the wine is red, with Tannat and Cabernet Franc, plus 20% rosé and 10% white from Manseng and Courbu.",
   "from": [
    "rules",
    "wikipedia",
@@ -596,7 +596,7 @@
   }
  },
  "france/la-clape": {
-  "text": "A Languedoc-Roussillon appellation of six communes. Its red wines use Mourvèdre, Syrah and Grenache, and its whites use Clairette, Grenache Blanc, Marsanne, Roussanne, Vermentino and others.",
+  "text": "A Languedoc-Roussillon appellation of six communes. Its red wines use Mourvèdre, Syrah and Grenache, and its whites must be at least 40% Bourboulenc, with Clairette, Grenache Blanc, Marsanne, Roussanne and Vermentino.",
   "from": [
    "rules",
    "where"
@@ -665,7 +665,7 @@
   }
  },
  "france/languedoc": {
-  "text": "A large southern appellation across 527 communes, with Grenache, Syrah, Mourvèdre and Lledoner Pelut as main red grapes and a long list of whites. The Hérault and Aude grow mostly Syrah (17%), Merlot, Grenache and Carignan.",
+  "text": "A large southern appellation across 527 communes, with Grenache, Syrah, Mourvèdre and Lledoner Pelut as main red grapes and a long list of whites.",
   "from": [
    "rules",
    "planted"
@@ -705,7 +705,7 @@
   ]
  },
  "france/limoux": {
-  "text": "A Languedoc-Roussillon appellation around Limoux, covering sparkling and still wines. Mauzac, Chardonnay and Chenin are used for whites, and Merlot mostly for reds. Wine historians believe the first sparkling wine was made here in 1531.",
+  "text": "A Languedoc-Roussillon appellation around Limoux, covering sparkling and still wines. Mauzac, Chardonnay and Chenin are used for whites, and Merlot mostly for reds. Limoux claims the world's first sparkling wine, made by monks at Saint-Hilaire and recorded in 1531.",
   "from": [
    "rules",
    "wikipedia",
@@ -799,7 +799,7 @@
   }
  },
  "france/maconnais": {
-  "text": "The southern part of Burgundy, west of the Saône, best known for good-value white wine from Chardonnay. Pouilly-Fuissé is particularly sought after. Nearly all of its wine is white.",
+  "text": "The southern part of Burgundy, west of the Saône, best known for good-value white wine from Chardonnay. Pouilly-Fuissé is particularly sought after. Most of its wine is white.",
   "from": [
    "wikipedia",
    "where"

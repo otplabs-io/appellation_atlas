@@ -308,6 +308,7 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'jones2010':dict(name='Jones 2010, Climate, grapes, and wine: structure and suitability in a variable and changing climate, VIII International Terroir Congress (which grapes suit which growing season temperatures)',url='https://ives-openscience.eu/wp-content/uploads/2023/03/Climate_Grape_Wine_Jones.pdf'),
      'winkler-wiki':dict(name='Wikipedia, Winkler index (what each region suits)',url='https://en.wikipedia.org/w/index.php?title=Winkler_index&oldid=1379995815'),
      'lapse':dict(name='Wikipedia, Lapse rate (6.5 °C cooler per 1,000 m, the standard atmosphere)',url='https://en.wikipedia.org/wiki/Lapse_rate'),
+     'sawis':dict(name='SAWIS, Production areas defined in terms of the Wine of Origin Scheme, June 2024 (regions, districts and wards)',url='https://www.sawis.co.za/cert/download/Production_areas_-_June_2024.pdf'),
      'wset':dict(name='WSET Level 4 Diploma in Wines, Specification, Issue 1 (2019), the principal regions of Units D3, D4 and D5',url='https://www.wsetglobal.com/media/7084/wset_l4wines_specification_en_may2019.pdf')}
 @snap('australia-gi')
 def au_gi(): return {m:v[1] for m,v in X.australia().items()}
@@ -364,6 +365,70 @@ def rules(r):
                 register=r['PDOinfo'] or None)
 SKIN_EN={'red':'red','white':'white','pink':'pink'}
 fmt0=lambda v:f'{v:,.0f}'
+# French regions whose départements are not the region: Beaujolais's Rhône takes in Côte-Rôtie and leaves out its Saône-et-Loire crus;
+# the Rhône Valley's Gard, Vaucluse and Drôme bring in Languedoc IGP Merlot and leave out the northern Rhône; Languedoc's lack the Gard
+# places of the hand-built French hierarchy (regions/tree.json source 'chris') that are appellations or AOC mentions: Beaujolais-Villages is
+# AOC Beaujolais with the mention Villages, the Hautes-Côtes are AOC Bourgogne's, Castillon and Blaye are AOC Côtes de Bordeaux's
+CHRIS_KIND={'france/beaujolais-villages':'AOC','france/macon-villages':'AOC','france/chablis-premier-cru':'AOC','france/hautes-cotes-de-nuits':'AOC',
+            'france/hautes-cotes-de-beaune':'AOC','france/castillon-cotes-de-bordeaux':'AOC','france/blaye-cotes-de-bordeaux':'AOC','france/alsace-aoc':'AOC',
+            'france/cote-des-bar':'district','france/montagne-de-reims':'district','france/cote-des-blancs':'district','france/vallee-de-la-marne':'district'}
+# WorldClim's dry patch over Viterbo province: the grid gives 300 to 480 mm a year where the Viterbo station records about 736 mm
+# (1971 to 2000) and Rome about 727 mm, so rain is left out on the places inside it
+GRID_DRY={'italy/vignanello','italy/est-est-est-di-montefiascone','italy/colli-etruschi-viterbesi','italy/aleatico-di-gradoli','italy/tarquinia','italy/orvieto'}
+# Blurbs on pages without reviewed key facts keep only what the page's own data supports: a sentence with numbers keeps them only if
+# each is a planting share, the planting year, or the AVA, GI or recognition year on the page; a ranking ("largest", "first") only
+# if the superlative check confirmed it (build/review/superlatives/). Wikipedia's figures and rankings were the main source of errors.
+AREA_SHAPES={'EU wine PDO boundaries','Eurostat NUTS, the area it is named for','Eurostat LAU, the commune it is named for',
+             'geoBoundaries, the department it is named for','geoBoundaries, the province it is named for',
+             'Chile Decreto 464, drawn from its comunas and provinces','union of its children','Eurostat GISCO LAU','Eurostat GISCO NUTS 2021',
+             'US Census counties','geoBoundaries'}
+RANK=re.compile(r"\b(largest|smallest|oldest|newest|first|highest|lowest|northernmost|southernmost|easternmost|westernmost|biggest|(?:second|third|fourth|fifth|sixth|seventh)[- ](?:largest|oldest|biggest|smallest|most)|most important|most famous|most widely|leading)\b",re.I)
+def _checked():
+    out=set()
+    for i in range(1,5):
+        bp=os.path.join(ROOT,'build','review','superlatives',f'batch{i}.json'); rp=os.path.join(ROOT,'build','review','superlatives',f'result{i}.json')
+        if not (os.path.exists(bp) and os.path.exists(rp)): continue
+        items,res=jl(bp),jl(rp)
+        if len(items)==len(res): out|={it['sentence'] for it,r in zip(items,res) if r['verdict']=='keep'}
+        out|={r['replacement'] for r in res if r.get('replacement')}
+    return out
+CHECKED=_checked()
+def trim_blurb(t,f):
+    ok=set()
+    pl=f.get('planted') or {}
+    for g,h,*_ in pl.get('grapes',[]):
+        if pl.get('ha'): v=100*h/pl['ha']; ok|={int(v),int(v)+1,round(v)}
+    for y in [pl.get('year'),(f.get('ava') or {}).get('created'),(f.get('rules') or {}).get('recognised'),(f.get('gi') or {}).get('year')]:
+        if y: ok.add(int(str(y)[:4]))
+    for k in ('places',):
+        if (f.get('summary') or {}).get(k): ok.add(f['summary'][k])
+    bad=lambda x:bool({int(v.replace(',','')) for v in re.findall(r'\d[\d,]*',x)}-ok) or bool(RANK.search(x))
+    keep=[]; dropped=False
+    ANAPHOR=re.compile(r'^(?:These|Those|This|They|Their|Both)\b|\bthose two\b|\bthe same (?:grapes|area|zone)\b|^It was (?:created|founded|established|recognized|recognised|approved)\.$',re.I)
+    for sen in re.split(r'(?<=\.)\s+',t):
+        if keep and dropped and ANAPHOR.search(sen): continue   # it leans on the sentence just cut ("It also makes white from those two grapes")
+        if not keep and dropped and re.search(r'\bthe same\b|\bthose\b',sen): continue
+        dropped=False
+        if sen in CHECKED or not bad(sen): keep.append(sen); continue
+        dropped=True
+        parts=re.split(r',\s+',sen.rstrip('.'))   # cut only the clause that carries the figure: "A Côte de Beaune village in Burgundy, making more than 85% red"
+        if bad(parts[0]):   # "A sparkling wine appellation covering nearly 500 communes" keeps "A sparkling wine appellation"
+            p0=re.sub(r'\s+(?:covering|of|with|across|spanning|around|about|nearly|over|some|at|in)\b[^,.]*?\d[^,.]*$','',parts[0])
+            if p0==parts[0] or bad(p0) or len(p0.split())<3 or re.search(r'\b(?:created|founded|established|recognized|recognised|approved|planted)$',p0): continue
+            parts=[p0]
+        if re.match(r'(?:In|On|At|With|After|From|For|By|As|Since|Of)\b',parts[0]) and len(parts)>1: continue   # a lead-in with its subject cut away
+        rest=[x for x in parts[1:] if not bad(x)]
+        if (len(rest)<len(parts)-1 and len(parts[0].split())<4) or re.search(r'\b(?:along|for|of|in|on|at|from|with|between|across|by|to|and|or)$',parts[0]): continue   # "A narrow, running inland": the noun went with the figure
+        keep.append(', '.join([parts[0]]+rest)+'.')
+    if keep and re.match(r'Its? ',keep[0]) and not re.match(r'Its? ',t):   # the opening went; name the place instead of "It"
+        keep[0]=re.sub(r'^It ',f['name']+' ',re.sub(r'^Its ',f['name']+"'s ",keep[0]))
+    if not f.get('planted'):   # the page shows no planting table to back a share ("Cabernet over half" in Walla Walla came from one state's side)
+        keep=[x for x in keep if x in CHECKED or not re.search(r'\b(?:plantings|planted|most planted|percent|leads|over half|of the vines)\b|%',x)]
+    return ' '.join(keep)
+RULEFIX={('italy/bianco-capena','Malvasia di Candia Aromatica'):'Malvasia Bianca di Candia'}
+ADMIN_NOT_PGI={'greece/sterea-ellada','south-africa/paarl','south-africa/olifants-river'}   # and SAWIS's statistical Paarl, which takes in Wellington, Franschhoek and Tulbagh   # the database row is the administrative region, without Attica; the PGI covers both
+DEPT_MISMATCH={'france/cremant-de-bordeaux','france/beaujolais','france/rhone-valley','france/languedoc-roussillon','france/languedoc','france/southern-rhone','france/south-west-france'}   # and AOCs whose départements cover only part of them
+US_STATE={"Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA", "Colorado": "CO", "Connecticut": "CT", "Delaware": "DE", "Florida": "FL", "Georgia": "GA", "Hawaii": "HI", "Idaho": "ID", "Illinois": "IL", "Indiana": "IN", "Iowa": "IA", "Kansas": "KS", "Kentucky": "KY", "Louisiana": "LA", "Maine": "ME", "Maryland": "MD", "Massachusetts": "MA", "Michigan": "MI", "Minnesota": "MN", "Mississippi": "MS", "Missouri": "MO", "Montana": "MT", "Nebraska": "NE", "Nevada": "NV", "New Hampshire": "NH", "New Jersey": "NJ", "New Mexico": "NM", "New York": "NY", "North Carolina": "NC", "North Dakota": "ND", "Ohio": "OH", "Oklahoma": "OK", "Oregon": "OR", "Pennsylvania": "PA", "Rhode Island": "RI", "South Carolina": "SC", "South Dakota": "SD", "Tennessee": "TN", "Texas": "TX", "Utah": "UT", "Vermont": "VT", "Virginia": "VA", "Washington": "WA", "West Virginia": "WV", "Wisconsin": "WI", "Wyoming": "WY"}
 def inao_rules(r,x):
     """The EU rules with the grapes sorted the way the French cahier des charges sorts them: main grapes, grapes allowed
     in smaller shares, grapes on trial to adapt to a changing climate, and the share limits."""
@@ -381,8 +446,15 @@ def inao_rules(r,x):
         e=en(g,sk); name.setdefault(geoindex_norm(g),e[0]); by[role].append(e)
     alln={e[0] for v in by.values() for e in v}
     for k in by: by[k]=[e for e in by[k] if not (e[0].endswith(' Blanc') and e[0]+'he' in alln)]   # 'mondeuse B' is the Mondeuse Blanche listed beside it
+    WINES={'red':'red','rosé':'rosé','white':'white'}
+    def wine_roles(w):   # the roles one wine gives its grapes, where the cahier sets them per wine (Malepère's red and rosé)
+        for lab,gs in x.get('by_wine') or []:
+            if lab==w: return gs
+        return None
     def who(l):
-        gs=l['grapes'] or (x.get('members',{}).get(l['role'],[]) if l['role'] in ('complementary','accessory') and l['blend'] else [])   # in a blend, name the grapes the role holds
+        wr=wine_roles(l.get('wine'))
+        if not l['grapes'] and wr and l['role'] in ('main','complementary','accessory'): gs=[g for g,_,r in wr if r==l['role']]   # name them: "Merlot: at least 50%"
+        else: gs=l['grapes'] or (x.get('members',{}).get(l['role'],[]) if l['role'] in ('complementary','accessory') and l['blend'] else [])   # in a blend, name the grapes the role holds
         if gs:
             ns=[name.get(geoindex_norm(g)) or title(g) for g in gs]
             s=ns[0] if len(ns)==1 else ', '.join(ns[:-1])+' and '+ns[-1]
@@ -399,13 +471,28 @@ def inao_rules(r,x):
         pre=' and '.join(p for p in pre if p)
         if pre: w=pre[:1].upper()+pre[1:]+', '+(w[:1].lower()+w[1:] if w.split()[0] in ('The','Each','Any') else w)
         return f'{w}: {amount(l)}'
-    lim=[line(l) for l in x['limits'] if l['grapes'] or l['role']=='single' or (l['role'] and (by.get(l['role']) or x.get('members',{}).get(l['role'])))]
-    out=dict(r,grapes=by['main'],grapes_other=by['complementary']+by['accessory'],grapes_trial=by['adaptation'],
+    named=lambda l:bool(l['grapes']) or bool(l['role'] in ('main','complementary','accessory') and wine_roles(l.get('wine')) and [g for g,_,r in wine_roles(l.get('wine')) if r==l['role']])
+    lim=[line(l) for l in x['limits'] if named(l)]   # only limits that name their grapes: "the minor grapes together" reads wrongly when the page merges two tiers
+    subj=collections.Counter(l.split(':')[0] for l in lim)
+    lim=[l for l in lim if subj[l.split(':')[0]]==1 or l.startswith('For ')]   # one grape with two unlabelled limits belongs to two wines (Rasteau's red and its VDN): show neither
+    per=[]
+    for lab,gs in x.get('by_wine') or []:
+        b={'main':[],'other':[]}
+        for g,sk,rl in gs:
+            if rl!='adaptation': b['main' if rl=='main' else 'other'].append(en(g,sk))
+        lab={'red':'red wine','rosé':'rosé','white':'white wine','sparkling white':'sparkling white','sparkling rosé':'sparkling rosé','red and rosé':'red and rosé'}.get(lab,lab)
+        per.append([lab,b['main'],b['other']])
+    out=dict(r,grapes=by['main'],grapes_other=by['complementary']+by['accessory'],grapes_trial=by['adaptation'],by_wine=per or None,
                 limits=list(dict.fromkeys(lim)),cahier=dict(year=str(x['date'])[:4] if x.get('date') else None,url=x['url']))
     sparkling_only=bool(r.get('types')) and all('Sparkling' in t for t in r['types'])
     if sparkling_only and not any('Sparkling' in t for t in x.get('types') or []): return out   # the cahier read is a still wine's (Crémant d'Alsace from Alsace's)
-    if x.get('types'): out['types']=x['types']; out['types_from']='cahier'
+    if x.get('types'):
+        eu=r.get('types') or []
+        extra=(['Fortified wine'] if any('Liqueur' in t for t in eu) and not any(re.search('doux naturel|liqueur',t) for t in x['types']) else [])+\
+              (['Sparkling wine'] if any('Sparkling' in t for t in eu) and not any('parkling' in t for t in x['types']) else [])
+        out['types']=x['types']+extra; out['types_from']='cahier'   # the EU record keeps a category the cahier reading missed (Maury's vins doux naturels)
     if x.get('base_yield'): out['base_yield']=x['base_yield']
+    if x.get('mixed_roles'): out['grapes'],out['grapes_other'],out['roles_unread']=by['main']+by['complementary']+by['accessory'],[],True   # roles differ by wine and the rows were not read apart
     if x.get('recognised'): out['recognised']=x['recognised']
     return out
 @snap('ava-rules')
@@ -415,12 +502,20 @@ def ava_rows():
         p=f['properties']
         if p.get('removed') not in (None,'None'): continue
         A[p['cfr_index']]=p
-    nn=lambda v:[x for x in (v or '').split('|') if x and x!='None']
+    nn=lambda v:[x.strip() for x in re.split(r'[|,]',v or '') if x.strip() and x.strip()!='None']   # West Sonoma Coast's parents are comma-separated
+    AVN={f['properties']['name'] for f in jl(os.path.join(CA,'avas.geojson'))['features']}
+    def avas(v):   # the data splits multi-word names ("Solano County|Green Valley"): join the pieces back into real AVA names, drop the rest
+        ps=nn(v); out_=[]; i=0
+        while i<len(ps):
+            for j in range(len(ps),i,-1):
+                if ' '.join(ps[i:j]) in AVN: out_.append(' '.join(ps[i:j])); i=j; break
+            else: i+=1
+        return out_
     out={}
     for n,x in T.items():
         p=A.get(x['cfr']) if x.get('cfr') else None
         if p: out[n]=dict(created=p['created'] if p['created']!='None' else None,states=sorted(set(nn(p['state']))),counties=sorted(set(nn(p['county']))),
-                          within=nn(p['within']),contains=nn(p['contains']),cfr=p['cfr_index'],cfr_url=f"https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-9/subpart-C/section-{p['cfr_index']}")
+                          within=avas(p['within']),contains=avas(p['contains']),cfr=p['cfr_index'],cfr_url=f"https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-9/subpart-C/section-{p['cfr_index']}")
     return out
 def research():
     import glob
@@ -445,6 +540,11 @@ def facts():
     INAO=opt('inao-grapes.json')
     def renamed(r,c):   # grapes in the Diploma's names for the country, once each (src/atlasland.py display): Sauvignon Blanc, Malbec, Spätburgunder
         seen=set()
+        old=[g[0] for k in ('grapes','grapes_other','grapes_trial') for g in r.get(k) or [] if isinstance(g,list)]+[g[0] for w in r.get('by_wine') or [] for i in (1,2) for g in w[i]]
+        swap={o:atlasland.rule_name(o,c) for o in old if atlasland.rule_name(o,c)!=o}
+        if r.get('limits') and swap:   # the limits name grapes as the chips do: Malbec, not Cot
+            pat=re.compile(r'\b('+'|'.join(sorted(map(re.escape,swap),key=len,reverse=True))+r')\b')
+            r['limits']=[pat.sub(lambda m:swap[m.group(1)],l) for l in r['limits']]
         for key in ('grapes','grapes_other'):
             out=[]
             for g in r.get(key) or []:
@@ -452,21 +552,28 @@ def facts():
                 if nm in seen: continue
                 seen.add(nm); out.append([nm,*g[1:]] if isinstance(g,list) else nm)
             if r.get(key): r[key]=out
+        for w in r.get('by_wine') or []:   # the same names in the per-wine roles
+            for i in (1,2): w[i]=list({atlasland.rule_name(g[0],c):[atlasland.rule_name(g[0],c),*g[1:]] for g in w[i]}.values())
         if r.get('types'): r['types']=['Fortified wine' if t=='Liqueur Wine' else t for t in r['types']]   # the EU's "liqueur wine" is what the Diploma calls fortified
         sk={x[1] for x in r.get('grapes') or [] if isinstance(x,list)}
+        if not r.get('cahier') or not r.get('grapes'):   # the EU's "other varieties" are those not on the OIV list, not minor ones (Almansa's Garnacha Tintorera); a cahier read with no main grapes has no roles either
+            r['grapes'],r['grapes_other']=(r.get('grapes') or [])+(r.get('grapes_other') or []),[]
+            if r.get('cahier'): r['roles_unread']=True
         if c=='italy' and len(r.get('grapes') or [])>=10: r['province_list']=True   # Italy's EU records list every grape the province approves, not the DOC's blend
         elif len(r.get('grapes') or [])>20: r['long_list']=True   # Germany's and Austria's records carry the national list of approved varieties
         elif r.get('types')==['Wine'] and 'white' in sk and sk<={'white','pink'}: r['types']=['White wine']   # white grapes make only white wine; red grapes can make red, rosé or white, so they say nothing
+        if r.get('types')==['Wine']: r.pop('types')   # the record gives no colour or style: say nothing rather than "Wine"
         by=r.pop('base_yield',None)
         if by:   # the cahier's rendement, for the colours this place makes; the EU figure is the rendement butoir, the ceiling some years allow
             cols={'White wine':'white','Red wine':'red','Rosé wine':'rosé','Gris (pale rosé)':'gris','Clairet':'clairet'}
             made={cols[t] for t in r.get('types') or [] if t in cols}
-            keep=[b for b in by if not b[0] or not made or set(b[0].split(' and '))&made]
+            colour=lambda lab:{w for w in lab.replace('dry ','').replace('sweet ','').split(' and ')}
+            keep=[b for b in by if not b[0] or not made or not colour(b[0])<=set(cols.values()) or colour(b[0])&made]   # still and sparkling rows stay
             n=lambda b:f"{fmt0(b[1])} {b[2]}"
             if len(keep)==1 or len({b[1] for b in keep})==1: r['yield_base']=n(keep[0])
             elif keep: r['yield_base']=n(keep[0])+' for '+keep[0][0]+', '+', '.join(f"{fmt0(b[1])} for {b[0]}" for b in keep[1:])
             r.pop('yield_hl',None); r.pop('yield_kg',None)
-        elif c=='france' and (r.get('yield_hl') or r.get('yield_kg')): r['yield_ceiling']=True   # only the EU's rendement butoir is known
+        elif c=='france' and (r.get('yield_hl') or r.get('yield_kg')) and not r.get('cahier'): r['yield_ceiling']=True   # only the EU's rendement butoir is known; where a cahier was read but its yields were not (Savennières), say no more than the EU record does
         r.pop('registered',None)   # an EU record date (1973 for most old names), not when the place was recognised
         return r
     rules_of=lambda k:renamed(inao_rules(rules(E[k]),INAO[k]) if k in INAO else rules(E[k]),k.split('/')[0])
@@ -505,23 +612,33 @@ def facts():
     VINELESS={'australia/eastern-plains-inland-and-north-of-western-australia'}   # a GI zone of desert with no vineyards recorded
     def bench(n):   # a Benchmark page is one inside a Diploma region that has something of its own to teach: rules, an AVA, key facts or a climate
         if n not in WS: return False
-        if '/' not in n or n in NAMED: return True   # a country, or a place the Diploma list names itself
+        if '/' not in n or n in NAMED or T[n].get('source')=='chris': return True   # a country, a place the Diploma list names, or one of the hand-built Diploma structure
         own=n in E or n in A or n in KF or (CL.get(n) or {}).get('climate',{}) and CL[n]['climate'].get('gst') is not None or (n in BL and gi[n].get('source'))   # a blurb counts when the place is on the map (South Eastern Australia), not for a name alone (Creek Shores)
         return bool(own) and n not in VINELESS
     BENCH={n for n in gi if bench(n)}
+    kids_={}
+    for k,v in gi.items(): kids_.setdefault(v['parent'],[]).append(k)
+    PARTIAL={k for k,v in gi.items() if v.get('source')=='union of its children' and kids_.get(k) and 2*sum(1 for c in kids_[k] if gi[c].get('source'))<len(kids_[k])}
+    PARTIAL|={'italy/freisa-d-asti','greece/sterea-ellada'}   # Sterea Ellada's outline and rows are the administrative region, which leaves out Attica   # the EU record lists the two communes its rules leave out, so the outline is the wrong land
     fd=os.path.join(OUT,'facts'); os.makedirs(fd,exist_ok=True)
     for f in os.listdir(fd): os.remove(os.path.join(fd,f))
     places={}
     for n,x in gi.items():
         t=T[n]; chain=[]; p=x['parent']
         while p and p!='world': chain.insert(0,[p,T[p]['name']]); p=gi[p]['parent']
+        own_st={s.strip() for s in (A.get(n) or {}).get('states') or []}
+        if own_st: chain=[c for c in chain if not (c[0].count('/')==1 and c[0].startswith('united-states/') and c[1] in US_STATE and US_STATE[c[1]] not in own_st)]   # an Ohio AVA inside Lake Erie, which is filed under New York
         kind=[k for k in t.get('official',[]) if k] or ([t['kind']] if t.get('kind') else [])
         kind=categories.label(n,kind,CATS)   # AOC, DOCG, DOCa, DOC, not the EU's PDO: the words the Diploma uses (src/categories.py)
         if n in DISTRICTS or n=='france/cote-de-nuits': kind=['district']
+        if not kind and n in CHRIS_KIND: kind=[CHRIS_KIND[n]]
+        if n=='france/alsace-grand-cru': kind=['AOC']   # 51 grand cru AOCs under one name
         f=dict(id=n,name=t['name'],also=[a for a in t.get('also',[]) if a.casefold()!=t['name'].casefold()],kind=kind,country=T[t['path'].split('/')[0]]['name'],chain=chain,depth=t['depth'],
                shape=x['source'],known=N.get(n))
-        src=['wikipedia'] if n in N else []
+        src=(['wikipedia'] if n in N else [])+(['sawis'] if n.startswith('south-africa/') else [])
         if n in E and n not in DISTRICTS: f['rules']=rules_of(n); src+=['eu-pdo']+(['inao'] if n in INAO else [])
+        for g in (f.get('rules') or {}).get('grapes') or []:   # record names the disciplinare contradicts (Bianco Capena's Malvasia is the Lazio Malvasia di Candia, not the aromatic one)
+            if isinstance(g,list) and (n,g[0]) in RULEFIX: g[0]=RULEFIX[(n,g[0])]
         if n in A: f['ava']=A[n]; src.append('ava')
         if n in CL:
             f['climate']=CL[n].get('climate'); f['soil']=CL[n].get('soil'); src+=[s for s in ('worldclim','koppen','winkler','jones2010') if f['climate']]+(['soilgrids','nrcs'] if f['soil'] else [])
@@ -529,8 +646,11 @@ def facts():
         # the place's name as if it were its own, and students read it so: Merlot-led Pauillac, Gamay in Côte-Rôtie, red Meursault.
         part_rows=[c for c in (A.get(n) or {}).get('contains',[]) if c in OWNROW and c not in (PLN.get(n) or {}).get('names',[])]
         sc_=PLN.get(n,{}).get('scope')   # a French main region's départements are the region (Alsace's Haut-Rhin and Bas-Rhin); elsewhere a wider
-        own_scope=sc_ in ('own','within','country') or (sc_=='around' and t['depth']==1 and n.startswith('france/'))   # area's mix is another place's (Priorat's Cataluña)
-        if n in PLN and (PLN[n].get('ha') or 0)>=20 and own_scope and not part_rows:   # under 20 ha, whole-hectare rows make shares meaningless (Tandil's 9 ha)   # an AVA whose row leaves out its sub-AVAs' rows (Columbia Valley) is incomplete
+        own_scope=(sc_ in ('own','within','country') and n not in DEPT_MISMATCH) or (sc_=='around' and t['depth']==1 and n.startswith('france/') and n not in DEPT_MISMATCH)   # area's mix is another place's (Priorat's Cataluña)
+        multistate=len({x.strip() for x in (A.get(n) or {}).get('states') or []})>1   # a state's report covers only its side (Columbia Gorge), or what is left outside sub-AVAs (Columbia Valley)
+        no_other=n.startswith('united-states/') and not any(g=='Other' for g,*_ in (PLN.get(n) or {}).get('grapes',[]))   # rows with no "other" line count only the listed grapes (Lake Chelan: 104 of about 265 acres)
+        statewide=n.startswith('united-states/') and sc_=='within' and any(x in US_STATE for x in PLN.get(n,{}).get('names') or []) and t['name'] not in US_STATE   # a state's table on an AVA (Loramie Creek shows all Ohio)
+        if n in PLN and (PLN[n].get('ha') or 0)>=20 and own_scope and not part_rows and n not in ADMIN_NOT_PGI and not multistate and not statewide and not no_other:   # under 20 ha, whole-hectare rows make shares meaningless (Tandil's 9 ha)   # an AVA whose row leaves out its sub-AVAs' rows (Columbia Valley) is incomplete
             f['planted']=dict(PLN[n]); src.append(PLN[n].get('source') or 'anderson')
             lf=PLN[n].get('left') or {}
             src+=(['vivc'] if 'table' in lf else [])+(['usda-juice'] if 'juice' in lf else [])
@@ -538,14 +658,35 @@ def facts():
         if n in TER:
             f['terrain']=TER[n] if vineyard(n,x['source']) else {k:v for k,v in TER[n].items() if k!='aspect'}; src+=['terrain','lapse']+(['plots'] if n in PLOTS else [])
         if n in AREA: f['area_km2']=AREA[n]
-        if n in RK: f['rocks']=dict(RK[n],names={i:RNAME[i] for i,_ in RK[n]['families'] if i in RNAME}); src+=['rock-macrostrat','rock-wiki-soils','rock-sommselect']
+        if n in RK: f['rocks']=dict(RK[n],families=[[i,min(v,.49) if k else v] for k,(i,v) in enumerate(RK[n]['families'])],names={i:RNAME[i] for i,_ in RK[n]['families'] if i in RNAME});   # only the first family can be "mostly" src+=['rock-macrostrat','rock-wiki-soils','rock-sommselect']
         te=TER.get(n)
         f['large']=t['depth']==0 or AREA.get(n,0)>15000 or bool(te and te['elev'][2]-te['elev'][0]>=800)   # too big or too varied for one reading
         if f['large']:
             rows=[r for r in (part(k) for k in kids.get(n,[])) if r]
             if len(rows)>=2: f['parts']=rows
+        if n in PARTIAL:   # its outline joins only a few of the places inside it (Breede River Valley is Robertson's alone): figures over it would be theirs
+            for k in ('climate','soil','terrain','rocks','parts'): f.pop(k,None)
+            for k in ('worldclim','koppen','winkler','jones2010','soilgrids','nrcs','terrain','lapse','rock-macrostrat','rock-wiki-soils','rock-sommselect'):
+                if k in src: src.remove(k)
         rd=atlasland.readings(dict(f,_wider=(PLN.get(n) or {}).get('grapes')),CG)   # the wider table only orders the rules' grapes, it names none
         if rd: f['reading']=rd
+        c_=f.get('climate') or {}
+        if c_.get('tavg') and c_.get('prec') and c_.get('koppen') and not c_['koppen'].startswith('B'):   # the map's class against the page's own monthly figures (Köppen's dry test)
+            T_=sum(c_['tavg'])/12; P_=sum(c_['prec']); summer=[9,10,11,0,1,2] if c_.get('lat',0)<0 else [3,4,5,6,7,8]
+            sh=sum(c_['prec'][i] for i in summer)/P_ if P_ else 0
+            th=20*T_+(280 if sh>=.7 else 0 if sh<.3 else 140)
+            if P_<.5*th:   # Molinos: 137 mm a year is desert, though the 1 km map, taking in mountain cells, says Cwb
+                f['climate']=dict(c_,koppen='BW'+('h' if T_>=18 else 'k'),koppen_name='Arid, desert'+(', hot' if T_>=18 else ', cold')+' (from these figures)')
+        reg_=next((c_[0] for c_ in chain if c_[0] in ('italy/lazio','italy/umbria','italy/toscana','italy/tuscany')),None)
+        if f.get('climate') and (f['climate'].get('cells') or 9)<=2:   # one grid cell on a 56 ha grand cru reads the mountain above it (Altenberg de Bergheim)
+            f['climate']=dict(f['climate'],rain=None,gs_rain=None,prec=None,dry=True)
+            if (f.get('reading') or {}).get('climate'): f['reading']['climate']=[x for x in f['reading']['climate'] if x[0] not in ('Rain','Harvest')]
+        if f.get('soil') and (AREA.get(n,99)<5 or (f.get('climate') or {}).get('cells',9)<=2): f.pop('soil',None)   # a 1 km topsoil model on a plot of a few hectares
+        if n in GRID_DRY or (reg_ and (f.get('climate') or {}).get('rain') and f['climate']['rain']<600) and f.get('climate'):   # the grid's dry patch over central Italy: stations there record more than 600 mm
+            f['climate']=dict(f['climate'],rain=None,gs_rain=None,prec=None,dry=True)
+            if (f.get('reading') or {}).get('climate'): f['reading']['climate']=[x for x in f['reading']['climate'] if x[0] not in ('Rain','Harvest')]
+        if (f.get('climate') or {}).get('koppen','').startswith('BW'):   # in deserts the grid reads two to three times the station normals (San Juan: about 4 inches, not 10)
+            f['climate']=dict(f['climate'],rain=None,gs_rain=None,prec=None,dry=True)
         if f.get('climate') and f['climate'].get('gdd') is not None:
             # the class only: Winkler's sentences for each class were written for California, and read wrongly elsewhere ("mostly hybrids"
             # in Champagne, "quality tops out at acceptable" in the Barossa); what suits the place is said from its own grapes instead
@@ -571,14 +712,24 @@ def facts():
         src+=[k for k,v in SHAPE_SRC.items() if v==x['source']]
         sub=below(n)
         if sub:   # a region: what its places share
+            st_=US_STATE.get(t['name']) if n.startswith('united-states/') and n.count('/')==1 else None
+            if st_: sub=[k for k in sub if not (A.get(k) or {}).get('states') or st_ in {s.strip() for s in A[k]['states']}]   # Indiana does not hold West Virginia's Kanawha River Valley
             ap=[k for k in sub if k in E]; gc=collections.Counter(); sk={}
             for k in ap:
                 for g,s in rules_of(k)['grapes']: gc[g]+=1; sk[g]=s
             gs=[CL[k]['climate']['gst'] for k in sub if k in CL and (CL[k].get('climate') or {}).get('gst') is not None]
-            f['summary']=dict(places=len(sub),kinds=collections.Counter(([k for k in T[s].get('official',[])] or ['region'])[0] for s in sub).most_common(),
+            ac=[x for x in (A.get(n) or {}).get('contains') or [] if x]
+            overlap=n in A and len(ac)>len(sub)   # an AVA whose sub-AVAs sit elsewhere in the tree (North Coast's are under Napa, Sonoma and Mendocino)
+            f['summary']=dict(places=len(ac) if overlap else len(sub),kinds=collections.Counter(([k for k in T[s].get('official',[])] or ['region'])[0] for s in sub).most_common(),
                               grapes=[[g,sk[g],c] for g,c in gc.most_common(24)],with_rules=len(ap),
-                              gst=[round(min(gs),1),round(max(gs),1)] if gs else None,
+                              gst=[round(min(gs),1),round(max(gs),1)] if len(gs)>=2 and not overlap else None,   # a range needs two places: not "67 to 67" from Robertson alone
                               best=[k for k in sorted(sub,key=lambda k:-(N.get(k) or {}).get('score',-1))[:8] if k in N])
+        if f.get('blurb') and n not in KF: f['blurb']['text']=trim_blurb(f['blurb']['text'],f)
+        if f.get('terrain') and x['source'] in AREA_SHAPES and n not in PLOTS:   # a whole commune or district: its heights are not the vineyards' (Avize's plateau, Gattinara's plain)
+            f.pop('terrain',None); f.pop('aspect',None)
+            if f.get('reading'): f['reading'].pop('land',None)
+            src=[s_ for s_ in src if s_ not in ('terrain','lapse')]
+        if f.get('blurb') is not None and not f['blurb']['text']: f.pop('blurb')
         f['sources']=[SRC[s] for s in dict.fromkeys(src)]
         json.dump(f,open(os.path.join(fd,n.replace('/','__')+'.json'),'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
         places[n]=[t['name'],x['parent'],round((N.get(n) or {}).get('score',-1)),(kind or [''])[0],T[t['path'].split('/')[0]]['name'],f['also'],int(n in BENCH)]

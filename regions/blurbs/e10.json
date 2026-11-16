@@ -19,7 +19,7 @@
   ]
  },
  "croatia/dingac": {
-  "text": "A small Croatian red wine area of about 150 acres on the Pelješac sub-region of Middle and South Dalmatia, made only from Plavac Mali Crni. The wines are dark, full and a little bitter, and can be very high in alcohol. It was the first wine protected as Premium Quality, in 1965.",
+  "text": "A small Croatian red wine area of about 150 acres on the Pelješac sub-region of Middle and South Dalmatia, made only from Plavac Mali Crni. The wines are dark, full and a little bitter, and can be very high in alcohol. It was the first protected Croatian wine region, in 1961.",
   "from": [
    "wikipedia",
    "rules"
@@ -141,7 +141,7 @@
   }
  },
  "slovenia/bela-krajina": {
-  "text": "A Slovenian appellation in the communes of Metlika, Semič and Črnomelj, for wine and sparkling wine. The area grows mostly Blaufränkisch (19 percent) and Welschriesling (17), with Kraljevina and Žametovka also planted.",
+  "text": "A Slovenian appellation in the communes of Metlika, Semič and Črnomelj, for wine and sparkling wine. The area grows above all Blaufränkisch (19 percent) and Welschriesling (17), with Kraljevina and Žametovka also planted.",
   "from": [
    "rules",
    "planted"
@@ -160,7 +160,7 @@
   ]
  },
  "slovenia/bizeljsko-sremic": {
-  "text": "A Slovenian appellation for wine and sparkling wine, in communes such as Brežice, Krško, Sevnica and Kozje. It grows mostly Blaufränkisch and Welschriesling (19 percent each), then Žametovka at 15.",
+  "text": "A Slovenian appellation for wine and sparkling wine, in communes such as Brežice, Krško, Sevnica and Kozje. It grows above all Blaufränkisch and Welschriesling (19 percent each), then Žametovka at 15.",
   "from": [
    "rules",
    "planted"
@@ -370,7 +370,7 @@
   }
  },
  "portugal/tavora-varosa": {
-  "text": "A DOC in the northwest of the Beiras region. Its white wines have traditionally gone into the base blends of Portuguese sparkling wine, and it allows wine and sparkling wine. The wines of its former Encostas da Nave area are very like those of the Douro.",
+  "text": "A Portuguese DOC in the Beiras for still and sparkling wine. The wines of its former Encostas da Nave area are very like those of the Douro.",
   "from": [
    "wikipedia",
    "rules"

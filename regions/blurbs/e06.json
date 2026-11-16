@@ -26,7 +26,7 @@
   ]
  },
  "bulgaria/brestnik": {
-  "text": "A Bulgarian PDO for red wine from Cabernet Sauvignon, Mavrud and Merlot.",
+  "text": "A Bulgarian PDO for red and rosé wine from Cabernet Sauvignon, Mavrud and Merlot.",
   "from": [
    "rules",
    "where"
@@ -382,7 +382,7 @@
   ]
  },
  "romania": {
-  "text": "One of the world's largest wine producers and the sixth-largest in Europe, after Italy, France, Spain, Germany and Portugal, though lesser-known on the world stage. Its most planted grapes are Fetească Regală and Fetească Albă at 7 percent each, then Merlot at 6.",
+  "text": "One of the world's largest wine producers and the sixth-largest in the European Union, after Italy, France, Spain, Germany and Portugal, though lesser-known on the world stage. Its most planted grapes are Fetească Regală and Fetească Albă at 7 percent each, then Merlot at 6.",
   "from": [
    "wikipedia",
    "planted"

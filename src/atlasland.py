@@ -34,9 +34,15 @@ NAME={'Garnacha Tinta':'Grenache','Côt':'Malbec','Mazuelo':'Carignan','Tribidra
 # county surveys count every vine, juice grapes too: USDA's grape survey asks about juice-type grapes apart from wine-type ones, and
 # Concord and Niagara are the juice grapes it means first.
 TABLE=set(jl(os.path.join(ROOT,'regions','table-grapes.json'))['table'])
-TABLE_IN={'france':{'Muscat of Hamburg'}}   # in France it is the Muscat du Ventoux table-grape AOP's grape, not a wine grape
+TABLE_IN={'france':{'Muscat of Hamburg'},'argentina':{'Superior Seedless','Cardinal','Alphonse Lavallée'}}   # VIVC: table grapes (Argentina's INV rows count them)   # in France it is the Muscat du Ventoux table-grape AOP's grape, not a wine grape
 JUICE={'united-states':{'Concord','Niagara'}}
-def not_wine(g,c): return 'table' if g in TABLE or g in TABLE_IN.get(c,()) else 'juice' if g in JUICE.get(c,()) else None
+# rows the database names wrongly: Sardinia's 7,064 ha are Cannonau, which Sardinians also call Alicante, not Alicante Bouschet
+ROWFIX={('Italy','Sardegna','Alicante Henri Bouschet'):'Garnacha Tinta',
+        ('Argentina','*','Muscat Blanc à Petits Grains (G)'):'Moscatel Rosado'}   # Argentina's pink Muscat is its own variety, Moscatel Rosado (INTA)
+WINE_IN={'japan':{'Campbell Early'}}   # crushed for wine in Japan, though VIVC lists it as a table grape
+def not_wine(g,c):
+    if g in WINE_IN.get(c,()): return None
+    return 'table' if g in TABLE or g in TABLE_IN.get(c,()) else 'juice' if g in JUICE.get(c,()) else None
 # The names the Diploma uses, over the database's prime names: one table for planted lists, rules and climate lines alike.
 NAME.update({'Sultaniye':'Sultana','Vidal':'Vidal Blanc','Sauvignon Blanc (G)':'Sauvignon Gris','Pinot Meunier':'Meunier','Meunier':'Meunier',
              'Tocai Friulano':'Friulano','Sauvignonasse':'Friulano','Muscat Blanc à Petits Grains':'Muscat Blanc','Mazuela':'Mazuelo',
@@ -46,20 +52,20 @@ NAME.update({'Gamay Noir':'Gamay','Cinsaut':'Cinsault','Garnacha Roja (Gris)':'G
 LOCAL={'australia':{'Syrah':'Shiraz','Sémillon':'Semillon'},'south-africa':{'Syrah':'Shiraz','Sémillon':'Semillon','Chenin Blanc':'Chenin Blanc'},
        'new-zealand':{'Alvarinho':'Albariño'},'united-states':{'Alvarinho':'Albariño'},'france':{'Silvaner':'Sylvaner'},
        'spain':{'Alvarinho':'Albariño','Trajadura':'Treixadura','Vinhao':'Sousón','Borraçal':'Caíño Tinto','Mazuelo':'Mazuelo'},
-       'portugal':{'Tempranillo':'Tinta Roriz'},
+       'portugal':{'Tempranillo':'Tinta Roriz','Mencía':'Jaen'},
        'italy':{'Pinot Gris':'Pinot Grigio','Pinot Noir':'Pinot Nero','Pinot Blanc':'Pinot Bianco','Muscat Blanc':'Moscato Bianco','Sauvignonasse':'Friulano'},
        'germany':{'Pinot Noir':'Spätburgunder','Pinot Gris':'Grauburgunder','Pinot Blanc':'Weissburgunder','Schiava Grossa':'Trollinger','Blauer Spätburgunder':'Spätburgunder'},
        'austria':{'Pinot Blanc':'Weissburgunder','Muscat Blanc':'Gelber Muskateller','Pinot Noir':'Blauburgunder'},
        'hungary':{'Grasă de Cotnari':'Kövérszőlő','Muscat Blanc':'Sárga Muskotály'},
-       'chile':{'Listán Prieto':'País'},'slovenia':{'Savagnin Blanc':'Traminer'},'czechia':{'Savagnin Blanc':'Traminer'}}
+       'chile':{'Listán Prieto':'País'},'argentina':{'Listán Prieto':'Criolla Chica'},'slovenia':{'Savagnin Blanc':'Traminer'},'czechia':{'Savagnin Blanc':'Traminer'}}
 LOCAL['austria']['Savagnin Blanc']='Traminer'
 import re as _re
 TEXT=[(r'\bPinot noir\b','Pinot Noir'),(r'\bSauvignon blanc\b','Sauvignon Blanc'),(r'\bChenin blanc\b','Chenin Blanc'),(r'\bCabernet sauvignon\b','Cabernet Sauvignon'),
       (r'\bCabernet franc\b','Cabernet Franc'),(r'\bPinot [Mm]eunier\b','Meunier'),(r'\bPinot gris\b','Pinot Gris'),(r'\bPinot blanc\b','Pinot Blanc'),
       (r'\bPinot grigio\b','Pinot Grigio'),(r'\bPinot nero\b','Pinot Nero'),(r'\bGamay Noir\b','Gamay'),(r'\bCinsaut\b','Cinsault'),(r'\bCarmenere\b','Carmenère'),
-      (r'\bvitis vinifera\b','Vitis vinifera'),(r'Garnacha Roja \(Gris\)','Grenache Gris'),(r' \((?:G|R|Rg)\)',''),(r'\bCarménère\b','Carmenère'),(r'\bEchézeaux\b','Échezeaux'),(r'\bMEGA\b','MGA'),(r'\bMelon de Bourgogne\b','Melon'),(r'\bBrun Argente\b','Brun Argenté'),(r'\bSauvignon Blanc Gris\b','Sauvignon Gris')]
+      (r'\bvitis vinifera\b','Vitis vinifera'),(r'Garnacha Roja \(Gris\)','Grenache Gris'),(r' \((?:G|R|Rg)\)',''),(r'\bCarménère\b','Carmenère'),(r'\bEchézeaux\b','Échezeaux'),(r'\bMEGA\b','MGA'),(r'\bMelon de Bourgogne\b','Melon'),(r'\bBrun Argente\b','Brun Argenté'),(r'\bFetească Neagrăn\b','Fetească Neagră'),(r'\bBăbeasacă\b','Băbească'),(r'\bRkatiteli\b','Rkatsiteli'),(r'\bRiesling Italian\b','Welschriesling'),(r'\bSauvignon Blanc Gris\b','Sauvignon Gris')]
 TEXT_IN={'australia':[(r'\bSyrah\b','Shiraz'),(r'\bSémillon\b','Semillon')],'south-africa':[(r'\bSyrah\b','Shiraz'),(r'\bSémillon\b','Semillon')],
-         'new-zealand':[(r'\bAlvarinho\b','Albariño')],'spain':[(r'\bAlvarinho\b','Albariño')],'france':[(r'\bSilvaner\b','Sylvaner'),(r'\bSemillon\b','Sémillon')],'germany':[(r'\bPinot Noir\b','Spätburgunder')],'spain':[(r'\bAlvarinho\b','Albariño'),(r'\bDOP\b','DO')],'italy':[(r'\bMuscat Blanc\b','Moscato Bianco')]}
+         'new-zealand':[(r'\bAlvarinho\b','Albariño')],'spain':[(r'\bAlvarinho\b','Albariño')],'france':[(r'\bSilvaner\b','Sylvaner'),(r'\bSemillon\b','Sémillon')],'germany':[(r'\bPinot Noir\b','Spätburgunder')],'spain':[(r'\bAlvarinho\b','Albariño'),(r'\bDOP\b','DO')],'portugal':[(r'\bTempranillo\b','Tinta Roriz'),(r'\bMencía\b','Jaen')],'hungary':[(r'\b[Oo]laszrizling\b','Welschriesling')],'slovenia':[(r'\bLaški [Rr]izling\b','Welschriesling')],'italy':[(r'\bMuscat Blanc\b','Moscato Bianco')]}
 def text_names(t,c):
     """Grape names in running text, made to match the tables: Shiraz in Australia, Pinot Noir not Pinot noir, no (G) or (R)."""
     for a,b in TEXT+TEXT_IN.get(c,[]): t=_re.sub(a,b,t)
@@ -194,7 +200,7 @@ def plant():
             if years.get(r[0])!=y or (yr(r) and yr(r)!=latest[tuple(r[:5])]): continue
             c=COUNTRY.get(r[0],cid.get(norm(r[0])))
             if not c or not r[5]: continue
-            g=r[4] or 'other'; colour[g]=r[8]; national[c][g]+=float(r[5]); nyear[c]=y; rowyear[c]=max(rowyear.get(c,0),yr(r))
+            g=ROWFIX.get((r[0],r[1],r[4])) or ROWFIX.get((r[0],'*',r[4])) or r[4] or 'other'; colour[g]=r[8]; national[c][g]+=float(r[5]); nyear[c]=y; rowyear[c]=max(rowyear.get(c,0),yr(r))
             path=tuple(clean(x) for x in r[1:4] if clean(x))
             if path: by[c][path][g]+=float(r[5])
     named=collections.defaultdict(dict)   # every atlas place by name, shape or not
@@ -534,6 +540,7 @@ def readings(f,CG):
     planted=[key(g) for g,ha,*_ in (pl or {}).get('grapes',[]) if g!='Other' and key(g) in G and ha>=.05*pl['ha']][:4] if pl and pl.get('scope') in ('own','within','country') else []
     main=[g for g,*_ in ((f.get('rules') or {}).get('grapes') or [])]
     if (f['id'].startswith('italy/') and len(main)>=10) or len(main)>6: main=[]   # Italy's EU lists are the province's; a long list is no place's identity
+    if f['id'].startswith('france/') and not (f.get('rules') or {}).get('cahier'): main=[]   # the EU list has no roles: Pinot Gris is allowed in Pernand's red, not one of its grapes
     lead=next((g for g,ha,*_ in (pl or {}).get('grapes',[]) if g!='Other'),None)
     if lead and key(lead) not in G: planted=[]   # Verdejo leads in Rueda: judging only its minor grapes would mislead
     known=list(dict.fromkeys(key(g) for g in main if key(g) in G))
@@ -560,12 +567,13 @@ def readings(f,CG):
             pr=c['prec']; south=c['lat']<0; share=c['gs_rain']/c['rain'] if c['rain'] else 0
             summer=sum(pr[i] for i in ((11,0,1) if south else (5,6,7))); winter=sum(pr[i] for i in ((5,6,7) if south else (11,0,1)))
             if (c.get('koppen') or '').startswith('B') and summer>1.5*winter and summer>.4*sum(pr): r.append(['Rain','A dry climate, and what little rain there is falls mostly in summer. Water is scarce.'])
+            elif (c.get('koppen') or '').startswith('B') and share>=.4: r.append(['Rain','A dry climate, though much of its little rain falls while the vines grow. Water is scarce.'])   # Verde Valley's monsoon
             elif (c.get('koppen') or '').startswith('B'): r.append(['Rain','A dry climate, with little rain while the vines grow. Water is scarce and the dry air keeps disease down.'])
             elif _in(c['gs_rain'])<4: r.append(['Rain','Summers are close to rainless. Vines draw on water stored in the soil, or on irrigation, but disease is rare.'])
             elif share<.35: r.append(['Rain','Most rain falls in winter. Dry summers keep mildew and rot down, though young vines may need watering.'])
             elif share>.7 and _in(c['gs_rain'])>=16: r.append(['Rain','Most rain falls while the vines grow. Damp leaves invite mildew and rot, so growers spray more and pick carefully.'])   # a share alone is not enough: Znojmo gets 14 inches
             hv=[2,3] if south else [8,9]; avg=sum(pr)/12   # not in Mediterranean climates, where autumn is merely the wettest season and vintages are steady
-            if avg and sum(pr[i] for i in hv)/2>1.25*avg and not (c.get('koppen') or '').startswith('Cs'): r.append(['Harvest','Rain picks up at harvest. Growers race to pick before rot sets in, and vintages vary more.'])
+            if avg and sum(pr[i] for i in hv)/2>1.25*avg and not (c.get('koppen') or '')[:2] in ('Cs','BS','BW') and c['gst']<19: r.append(['Harvest','Rain picks up at harvest. Growers race to pick before rot sets in, and vintages vary more.'])   # hot places pick in July and August, before these rains
         out['climate']=r
     soil={}   # two short paragraphs, not labelled points: what the rock does, then what the topsoil does
     if rk and rk.get('families'):

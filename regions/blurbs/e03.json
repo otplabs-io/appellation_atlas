@@ -1,6 +1,6 @@
 {
  "greece/anchialos": {
-  "text": "A Greek PDO for wine made from Roditis and Savatiano, with a Thessaly area around it that grows mostly Muscat of Hamburg and Roditis. The rules name four communities as the source of the grapes.",
+  "text": "A Greek PDO for wine made from Roditis and Savatiano. The rules name four communities as the source of the grapes.",
   "from": [
    "rules",
    "planted_wider",
@@ -35,7 +35,7 @@
   ]
  },
  "greece/sterea-ellada": {
-  "text": "A Greek PGI where Savatiano is the main grape at about 63% of the vineyard area. Roditis follows at 17%, with small amounts of Cabernet Sauvignon, Syrah and Merlot.",
+  "text": "A Greek PGI for central Greece, where Savatiano is the main grape, followed by Roditis.",
   "from": [
    "planted",
    "where"

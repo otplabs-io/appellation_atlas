@@ -220,8 +220,8 @@ struct PlaceInfo: View {
             FactGrid(facts: [
                 Fact(label: "Growing season", value: "\(Int(toF(c["gst"].double ?? 0).rounded()))°F", note: south ? "average, October to April" : "average, April to October"),
                 Fact(label: "Heat", value: "\(fmt(((c["gdd"].double ?? 0) * 1.8 / 10).rounded() * 10)) degree days", note: "°F, above 50°F"),
-                Fact(label: "Rain", value: "\(Int(inches(c["rain"].double ?? 0).rounded())) in/year", note: "\(Int(inches(c["gs_rain"].double ?? 0).rounded())) in while the vines grow"),
-                Fact(label: "Climate type", value: c["koppen_name"].string ?? c["koppen"].string ?? "", note: c["koppen"].string.map { "Köppen " + $0 } ?? ""),
+                Fact(label: "Rain", value: c["rain"].double.map { "\(Int(inches($0).rounded())) in/year" } ?? "", note: c["gs_rain"].double.map { "\(Int(inches($0).rounded())) in while the vines grow" } ?? ""),
+                Fact(label: "Climate type", value: c["koppen_name"].string ?? c["koppen"].string ?? "", note: c["koppen"].string.map { "Köppen " + $0 + ", from a 1991 to 2020 map" } ?? ""),
             ])
             SubCaption("Growing season: \(gi >= 0 ? Copy.growingSeason[gi].0.lowercased() : "?")")
             ScaleBar(segments: Copy.growingSeason.map { ($0.0, $0.3) }, index: gi, position: gp, label: "Growing season temperature class")
@@ -247,8 +247,12 @@ struct PlaceInfo: View {
 
     private func rainChart(_ c: JSON, _ south: Bool) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            SubCaption("Rain by month, inches")
-            MonthsChart(values: c["prec"].doubles.map(inches), unit: "inches", season: Palette.teal, base: Palette.monthRain, south: south)
+            if c["prec"].doubles.isEmpty {   // left out in deserts (desertRain in web/atlas.js)
+                Text(Copy.Rules.desertRain).font(.atlasNote).foregroundStyle(Palette.soft)
+            } else {
+                SubCaption("Rain by month, inches")
+                MonthsChart(values: c["prec"].doubles.map(inches), unit: "inches", season: Palette.teal, base: Palette.monthRain, south: south)
+            }
         }
         .frame(minWidth: 220)
     }
@@ -382,7 +386,13 @@ struct PlaceInfo: View {
                 Text("The EU record lists every grape approved in the province, not this wine's own blend rules.").font(.atlasNote).foregroundStyle(Palette.soft)
                 DisclosureGroup("All \(grapes.count) grapes") { Chips(items: grapes.map { ($0[0].string ?? "", $0[1].string ?? "", nil) }) }.font(.atlasNote)
             } else if ru["long_list"].truthy {
-                DisclosureGroup("The rules allow \(grapes.count) grapes") { Chips(items: grapes.map { ($0[0].string ?? "", $0[1].string ?? "", nil) }) }.font(.atlasNote)
+                DisclosureGroup("The 2022 EU record allows \(grapes.count) grapes") { Chips(items: grapes.map { ($0[0].string ?? "", $0[1].string ?? "", nil) }) }.font(.atlasNote)
+            } else if !ru["by_wine"].array.isEmpty {   // each wine's own roles (byWine in web/atlas.js)
+                ForEach(Array(ru["by_wine"].array.enumerated()), id: \.offset) { _, w in
+                    SubCaption(Copy.Rules.forWine(w[0].string ?? ""))
+                    Chips(items: chips(w[1]))
+                    if !w[2].array.isEmpty { Text("Also allowed, in smaller roles").font(.atlasNote).foregroundStyle(Palette.soft); Chips(items: chips(w[2])) }
+                }
             } else {
                 ForEach([("red", "Red grapes"), ("white", "White grapes"), ("pink", "Pink and grey grapes")], id: \.0) { sk, head in
                     let g = grapes.filter { $0[1].string == sk }
@@ -390,13 +400,13 @@ struct PlaceInfo: View {
                 }
                 let un = grapes.filter { $0[1].string == nil || $0[1].string == "" }
                 if !un.isEmpty { SubCaption("Grapes"); Chips(items: un.map { ($0[0].string ?? "", "", nil) }) }
-                if ru["cahier"].isNull && grapes.count > 1 { Text(Copy.Rules.noShares).font(.atlasNote).foregroundStyle(Palette.soft) }
+                if (ru["cahier"].isNull || ru["roles_unread"].truthy) && grapes.count > 1 { Text(Copy.Rules.noShares).font(.atlasNote).foregroundStyle(Palette.soft) }
             }
-            if !ru["grapes_other"].array.isEmpty { SubCaption("Also allowed, in smaller roles"); Chips(items: chips(ru["grapes_other"])) }
+            if !ru["grapes_other"].array.isEmpty && ru["by_wine"].array.isEmpty { SubCaption("Also allowed, in smaller roles"); Chips(items: chips(ru["grapes_other"])) }
             if !ru["grapes_trial"].array.isEmpty { SubCaption("On trial, to adapt to a changing climate"); Chips(items: chips(ru["grapes_trial"])) }
             let limits = ru["limits"].strings
             if !limits.isEmpty {
-                SubCaption("Limits, as a share of the vines")
+                SubCaption(Copy.Rules.limitsHead)
                 VStack(alignment: .leading, spacing: 4) {
                     ForEach(limits, id: \.self) { l in
                         HStack(alignment: .firstTextBaseline, spacing: 8) {
@@ -414,7 +424,7 @@ struct PlaceInfo: View {
                 Fact(label: "Recognised", value: ru["recognised"].double.map { String(Int($0)) } ?? "", note: Copy.Rules.recognised),
                 Fact(label: "Fewest vines", value: ru["density"].double.map { "\(fmt($0)) per ha" } ?? ""),
                 Fact(label: "Irrigation", value: ru["irrigation"].string ?? ""),
-                Fact(label: "Communes", value: communes.isEmpty ? "" : fmt(Double(communes.count))),
+                Fact(label: "Communes", value: communes.isEmpty ? "" : fmt(Double(communes.count)), note: "in the 2022 EU record"),
             ])
             if !communes.isEmpty {
                 DisclosureGroup("The communes") { Text(communes.joined(separator: ", ")).font(.atlasNote).frame(maxWidth: .infinity, alignment: .leading) }

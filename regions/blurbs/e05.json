@@ -117,7 +117,7 @@
   }
  },
  "france/charentes": {
-  "text": "A wine area around the Charente and Charente-Maritime departments, where Ugni Blanc covers about 96% of the vineyard area. Pineau des Charentes sits within it.",
+  "text": "A wine area around the Charente and Charente-Maritime departments, the Cognac country, where Ugni Blanc, grown mostly for distilling, covers about 96% of the vineyard area. Pineau des Charentes sits within it.",
   "from": [
    "planted",
    "where"
@@ -367,7 +367,7 @@
   ]
  },
  "france/pays-des-bouches-du-rhone": {
-  "text": "A departmental French PGI, called vin de pays des Bouches-du-Rhône from 1968 to 2009. It is meant for wines that cannot apply for an appellation.",
+  "text": "A departmental French PGI, called vin de pays des Bouches-du-Rhône from 1968 to 2009.",
   "from": [
    "where",
    "wikipedia"

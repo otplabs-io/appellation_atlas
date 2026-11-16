@@ -96,7 +96,7 @@
   },
   {
    "topic": "other",
-   "claim": "Types listed are bianco, rosato, rosso and novello, white and rose sparkling (metodo classico or tank), late harvest, and white and red passito. Minimum alcohol is listed as 10.0% for bianco, 11.0% for rosato, rosso and novello.",
+   "claim": "Types listed are bianco, rosato, rosso and novello, late harvest, and white and red passito. Minimum alcohol is listed as 10.0% for bianco, 11.0% for rosato, rosso and novello.",
    "source": [
     "iwc-toscana"
    ],
@@ -167,7 +167,7 @@
   },
   {
    "topic": "history",
-   "claim": "The first Tignanello of 1971 was Sangiovese with a small share of Canaiolo, aged 30 months in barriques. The current blend is 85% Sangiovese, 10% Cabernet Sauvignon and 5% Cabernet Franc.",
+   "claim": "The first Tignanello of 1971 was Sangiovese with a small share of Canaiolo, aged 30 months in barriques. It is now mostly Sangiovese with Cabernet Sauvignon and Cabernet Franc, in proportions that vary by vintage.",
    "source": [
     "gambero-tignanello"
    ],
@@ -185,7 +185,7 @@
   },
   {
    "topic": "history",
-   "claim": "Sassicaia, Tignanello and other early Super Tuscans were sold as vino da tavola, the bottom rung. From 1992 the new IGT category gave them a rung with a regional name. WSET says Super Tuscans became the home of the IGT category from 1992. Later some moved into DOCs such as Bolgheri.",
+   "claim": "Sassicaia, Tignanello and other early Super Tuscans were sold as vino da tavola, the bottom rung. From 1992 the new IGT category gave them a rung with a regional name.",
    "source": [
     "wset",
     "wikipedia-super-tuscan"
@@ -214,7 +214,7 @@
   },
   {
    "topic": "history",
-   "claim": "Bolgheri DOC dates from 1983 and the Sassicaia subzone from 1994. Some sources wrongly give 1994 for the whole DOC.",
+   "claim": "Bolgheri DOC dates from 1983, for white and rosé. Bolgheri Rosso and the Sassicaia subzone came in 1994.",
    "source": [
     "disciplinare-bolgheri",
     "wikipedia-super-tuscan"
@@ -234,7 +234,7 @@
   },
   {
    "topic": "grapes",
-   "claim": "Chianti Classico DOCG needs 80 to 100% Sangiovese for annata and Riserva, plus red grapes suited to Tuscany for the rest. No white grapes are listed. Gran Selezione needs 90 to 100% Sangiovese, with the rest limited to listed native reds (Colorino, Canaiolo, Ciliegiolo, Mammolo, Pugnitello, Malvasia Nera, Foglia Tonda, Sanforte) up to 10%.",
+   "claim": "Chianti Classico DOCG needs 80 to 100% Sangiovese for annata and Riserva, plus red grapes suited to Tuscany for the rest. No white grapes are listed. A rule change raises Gran Selezione to 90 to 100% Sangiovese, phased in over several harvests, with the rest limited to listed native reds (Colorino, Canaiolo, Ciliegiolo, Mammolo, Pugnitello, Malvasia Nera, Foglia Tonda, Sanforte) up to 10%.",
    "source": [
     "disciplinare-cc"
    ],

@@ -1,6 +1,6 @@
 {
  "south-africa/tradouw-highlands": {
-  "text": "A ward in the Klein Karoo area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Klein Karoo area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -12,7 +12,7 @@
   }
  },
  "south-africa/tulbagh": {
-  "text": "A district in the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A district in the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -24,7 +24,7 @@
   }
  },
  "south-africa/tygerberg": {
-  "text": "A district in the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards, with Durbanville and Philadelphia inside.",
+  "text": "A district in the Coastal Region, in the Western Cape, with Durbanville and Philadelphia inside.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -36,7 +36,7 @@
   }
  },
  "south-africa/upper-hemel-en-aarde-valley": {
-  "text": "A ward in the Walker Bay area of the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Walker Bay area of the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -48,7 +48,7 @@
   }
  },
  "south-africa/upper-langkloof": {
-  "text": "A ward in the Klein Karoo area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Klein Karoo area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -60,7 +60,7 @@
   }
  },
  "south-africa/vinkrivier": {
-  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -72,7 +72,7 @@
   }
  },
  "south-africa/voor-paardeberg": {
-  "text": "A ward in the Paarl area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Paarl area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -84,7 +84,7 @@
   }
  },
  "south-africa/vredendal": {
-  "text": "A ward in the Olifants River area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Olifants River area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -96,7 +96,7 @@
   }
  },
  "south-africa/walker-bay": {
-  "text": "A district on the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards, with Bot River, Hemel-en-Aarde Ridge, Hemel-en-Aarde Valley, Sunday's Glen and Upper Hemel-en-Aarde Valley inside.",
+  "text": "A district on the Cape South Coast, in the Western Cape, with Bot River, Hemel-en-Aarde Ridge, Hemel-en-Aarde Valley, Sunday's Glen and Upper Hemel-en-Aarde Valley inside.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -108,7 +108,7 @@
   }
  },
  "south-africa/wellington": {
-  "text": "A ward in the Paarl area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Paarl area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -132,7 +132,7 @@
   }
  },
  "argentina": {
-  "text": "The world's fifth-largest wine producer, with vine cuttings first brought to Santiago del Estero in 1557. Malbec is the most planted grape at 24%, followed by Cereza and Bonarda. Its provinces include San Juan, Mendoza and Río Negro.",
+  "text": "The world's sixth-largest wine producer in 2025, with vine cuttings first brought to Santiago del Estero in 1557. Malbec is the most planted grape at 24%, followed by Cereza and Bonarda. Its provinces include San Juan, Mendoza and Río Negro.",
   "from": [
    "wikipedia",
    "planted",
@@ -158,7 +158,7 @@
   }
  },
  "argentina/agrelo": {
-  "text": "A wine area in Luján de Cuyo, in Mendoza, the province that makes nearly two-thirds of Argentina's wine.",
+  "text": "A wine area in Luján de Cuyo, in Mendoza, Argentina's leading wine province.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -183,7 +183,7 @@
   }
  },
  "argentina/alto-agrelo": {
-  "text": "A wine area in Luján de Cuyo, in Mendoza, the province that makes nearly two-thirds of Argentina's wine.",
+  "text": "A wine area in Luján de Cuyo, in Mendoza, Argentina's leading wine province.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -233,7 +233,7 @@
   }
  },
  "argentina/barrancas": {
-  "text": "A wine area in Maipú, in Mendoza, the province that makes nearly two-thirds of Argentina's wine.",
+  "text": "A wine area in Maipú, in Mendoza, Argentina's leading wine province.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -296,7 +296,7 @@
   }
  },
  "argentina/canota": {
-  "text": "A wine area in Las Heras, in Mendoza, the province that makes nearly two-thirds of Argentina's wine.",
+  "text": "A wine area in Las Heras, in Mendoza, Argentina's leading wine province.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -353,7 +353,7 @@
   }
  },
  "argentina/distrito-medrano": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine.",
+  "text": "A wine area in Mendoza, Argentina's leading wine province.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -365,7 +365,7 @@
   }
  },
  "argentina/el-paraiso": {
-  "text": "A wine area in Maipú, in Mendoza, the province that makes nearly two-thirds of Argentina's wine.",
+  "text": "A wine area in Maipú, in Mendoza, Argentina's leading wine province.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -377,7 +377,7 @@
   }
  },
  "argentina/general-alvear": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine. Plantings are led by Cereza (21%), Criolla Grande (16%) and Bonarda (12%).",
+  "text": "A wine area in Mendoza, Argentina's leading wine province. Plantings are led by Cereza (21%), Criolla Grande (16%) and Bonarda (12%).",
   "from": [
    "where",
    "planted",
@@ -415,7 +415,7 @@
   }
  },
  "argentina/godoy-cruz": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine. The planting figures list only Malbec.",
+  "text": "A wine area in Mendoza, Argentina's leading wine province. The planting figures list only Malbec.",
   "from": [
    "where",
    "planted",
@@ -428,7 +428,7 @@
   }
  },
  "argentina/guaymallen": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine. Malbec leads plantings at 25%, followed by Syrah (11%) and Bonarda (10%).",
+  "text": "A wine area in Mendoza, Argentina's leading wine province. Malbec leads plantings at 25%, followed by Syrah (11%) and Bonarda (10%).",
   "from": [
    "where",
    "planted",
@@ -466,7 +466,7 @@
   }
  },
  "argentina/junin": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine. Malbec leads plantings at 18%, followed by Criolla Grande (15%) and Cereza (14%).",
+  "text": "A wine area in Mendoza, Argentina's leading wine province. Malbec leads plantings at 18%, followed by Criolla Grande (15%) and Cereza (14%).",
   "from": [
    "where",
    "planted",
@@ -504,7 +504,7 @@
   }
  },
  "argentina/las-compuertas": {
-  "text": "A wine area in Luján de Cuyo, in Mendoza, the province that makes nearly two-thirds of Argentina's wine.",
+  "text": "A wine area in Luján de Cuyo, in Mendoza, Argentina's leading wine province.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -516,7 +516,7 @@
   }
  },
  "argentina/las-heras": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine, with Canota inside. Plantings are led by Cereza (15%), Bonarda (13%) and Pedro Giménez (13%).",
+  "text": "A wine area in Mendoza, Argentina's leading wine province, with Canota inside. Plantings are led by Cereza (15%), Bonarda (13%) and Pedro Giménez (13%).",
   "from": [
    "where",
    "planted",
@@ -529,7 +529,7 @@
   }
  },
  "argentina/lavalle": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine. Plantings are led by Bonarda (17%), Cereza (13%) and Syrah (12%).",
+  "text": "A wine area in Mendoza, Argentina's leading wine province. Plantings are led by Bonarda (17%), Cereza (13%) and Syrah (12%).",
   "from": [
    "where",
    "planted",
@@ -542,7 +542,7 @@
   }
  },
  "argentina/lujan-de-cuyo": {
-  "text": "A wine area that is both an IG and a DOC in Mendoza, the province that makes nearly two-thirds of Argentina's wine, with Agrelo, Alto Agrelo, Las Compuertas and Vistalba inside. Malbec dominates plantings at 58%, followed by Cabernet Sauvignon (13%) and Bonarda (4%).",
+  "text": "A wine area that is both an IG and a DOC in Mendoza, Argentina's leading wine province, with Agrelo, Alto Agrelo, Las Compuertas and Vistalba inside. Malbec dominates plantings at 58%, followed by Cabernet Sauvignon (13%) and Bonarda (4%).",
   "from": [
    "where",
    "planted",
@@ -555,7 +555,7 @@
   }
  },
  "argentina/lunlunta": {
-  "text": "A wine area in Maipú, in Mendoza, the province that makes nearly two-thirds of Argentina's wine.",
+  "text": "A wine area in Maipú, in Mendoza, Argentina's leading wine province.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -567,7 +567,7 @@
   }
  },
  "argentina/maipu": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine, with Barrancas, El Paraíso, Lunlunta and Russel inside. Malbec leads plantings at 37%, followed by Cabernet Sauvignon (12%) and Bonarda (8%).",
+  "text": "A wine area in Mendoza, Argentina's leading wine province, with Barrancas, El Paraíso, Lunlunta and Russel inside. Malbec leads plantings at 37%, followed by Cabernet Sauvignon (12%) and Bonarda (8%).",
   "from": [
    "where",
    "planted",
@@ -624,7 +624,7 @@
   }
  },
  "argentina/pocito": {
-  "text": "A wine area in San Juan, one of Argentina's most important wine provinces. Plantings are led by Cereza (39%), Superior Seedless (13%) and Syrah (9%).",
+  "text": "A wine area in San Juan, one of Argentina's most important wine provinces. Cereza leads its wine-grape plantings, then Syrah.",
   "from": [
    "where",
    "planted",
@@ -662,7 +662,7 @@
   }
  },
  "argentina/reduccion": {
-  "text": "A wine area in Rivadavia, in Mendoza, the province that makes nearly two-thirds of Argentina's wine.",
+  "text": "A wine area in Rivadavia, in Mendoza, Argentina's leading wine province.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -687,7 +687,7 @@
   }
  },
  "argentina/rivadavia": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine, with Reducción inside. Malbec leads plantings at 17%, followed by Criolla Grande (15%) and Bonarda (12%).",
+  "text": "A wine area in Mendoza, Argentina's leading wine province, with Reducción inside. Malbec leads plantings at 17%, followed by Criolla Grande (15%) and Bonarda (12%).",
   "from": [
    "where",
    "planted",
@@ -700,7 +700,7 @@
   }
  },
  "argentina/russel": {
-  "text": "A wine area in Maipú, in Mendoza, the province that makes nearly two-thirds of Argentina's wine.",
+  "text": "A wine area in Maipú, in Mendoza, Argentina's leading wine province.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -745,7 +745,7 @@
   }
  },
  "argentina/san-martin": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine. Plantings are led by Cereza (18%), Criolla Grande (16%) and Bonarda (13%).",
+  "text": "A wine area in Mendoza, Argentina's leading wine province. Plantings are led by Cereza (18%), Criolla Grande (16%) and Bonarda (13%).",
   "from": [
    "where",
    "planted",
@@ -758,7 +758,7 @@
   }
  },
  "argentina/san-rafael": {
-  "text": "A wine area that is both an IG and a DOC in Mendoza, the province that makes nearly two-thirds of Argentina's wine. Malbec leads plantings at 18%, followed by Bonarda (13%) and Cabernet Sauvignon (9%).",
+  "text": "A wine area that is both an IG and a DOC in Mendoza, Argentina's leading wine province. Malbec leads plantings at 18%, followed by Bonarda (13%) and Cabernet Sauvignon (9%).",
   "from": [
    "where",
    "planted",
@@ -784,7 +784,7 @@
   }
  },
  "argentina/santa-rosa": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine. Plantings are led by Cereza (16%), Bonarda (15%) and Criolla Grande (12%).",
+  "text": "A wine area in Mendoza, Argentina's leading wine province. Plantings are led by Cereza (16%), Bonarda (15%) and Criolla Grande (12%).",
   "from": [
    "where",
    "planted",
@@ -797,7 +797,7 @@
   }
  },
  "argentina/sarmiento": {
-  "text": "A wine area in San Juan, one of Argentina's most important wine provinces, with Valle del Pedernal inside. Plantings are led by Cereza (26%), Malbec (14%) and Pedro Giménez (9%).",
+  "text": "A wine area in San Juan, one of Argentina's most important wine provinces, with Valle del Pedernal inside. Plantings are led by Cereza (27%), Malbec (14%) and Pedro Giménez (9%).",
   "from": [
    "where",
    "planted",
@@ -834,7 +834,7 @@
   }
  },
  "argentina/tunuyan": {
-  "text": "A wine area in Valle de Uco, in Mendoza, the province that makes nearly two-thirds of Argentina's wine, with Los Chacayes, San Pablo and Vista Flores inside. Malbec dominates plantings at 55%, followed by Cabernet Sauvignon (12%) and Chardonnay (5%).",
+  "text": "A wine area in Valle de Uco, in Mendoza, Argentina's leading wine province, with Los Chacayes, San Pablo and Vista Flores inside. Malbec dominates plantings at 55%, followed by Cabernet Sauvignon (12%) and Chardonnay (5%).",
   "from": [
    "where",
    "planted",
@@ -847,7 +847,7 @@
   }
  },
  "argentina/tupungato": {
-  "text": "A wine area in Valle de Uco, in Mendoza, the province that makes nearly two-thirds of Argentina's wine, with El Peral inside. Malbec leads plantings at 47%, followed by Chardonnay (11%) and Cabernet Sauvignon (9%).",
+  "text": "A wine area in Valle de Uco, in Mendoza, Argentina's leading wine province, with El Peral inside. Malbec leads plantings at 47%, followed by Chardonnay (11%) and Cabernet Sauvignon (9%).",
   "from": [
    "where",
    "planted",
@@ -872,7 +872,7 @@
   }
  },
  "argentina/valle-de-uco": {
-  "text": "A wine area in Mendoza, the province that makes nearly two-thirds of Argentina's wine, with San Carlos, Tupungato and Tunuyán inside. Malbec dominates plantings at 55%, followed by Cabernet Sauvignon (10%) and Chardonnay (7%).",
+  "text": "A wine area in Mendoza, Argentina's leading wine province, with San Carlos, Tupungato and Tunuyán inside. Malbec dominates plantings at 55%, followed by Cabernet Sauvignon (10%) and Chardonnay (7%).",
   "from": [
    "where",
    "planted",
@@ -921,7 +921,7 @@
   }
  },
  "argentina/vistalba": {
-  "text": "A wine area in Luján de Cuyo, in Mendoza, the province that makes nearly two-thirds of Argentina's wine.",
+  "text": "A wine area in Luján de Cuyo, in Mendoza, Argentina's leading wine province.",
   "from": [
    "where",
    "wikipedia_of_wider"

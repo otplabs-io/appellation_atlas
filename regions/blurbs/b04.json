@@ -192,7 +192,7 @@
   }
  },
  "france/oger": {
-  "text": "A cru village in the Côte des Blancs, a Champagne sub-region whose vineyards are 95% Chardonnay. Champagne's sparkling wines are made from Chardonnay, Pinot Noir, Meunier and a few rarer grapes.",
+  "text": "A cru village in the Côte des Blancs, a Champagne sub-region whose vineyards are 95% Chardonnay.",
   "from": [
    "rules_of_wider",
    "wikipedia_of_wider",
@@ -205,7 +205,7 @@
   }
  },
  "france/oiry": {
-  "text": "A cru village in the Côte des Blancs, a Champagne sub-region whose vineyards are 95% Chardonnay. Champagne's sparkling wines are made from Chardonnay, Pinot Noir, Meunier and a few rarer grapes.",
+  "text": "A cru village in the Côte des Blancs, a Champagne sub-region whose vineyards are 95% Chardonnay.",
   "from": [
    "rules_of_wider",
    "wikipedia_of_wider",
@@ -353,7 +353,7 @@
   ]
  },
  "france/pierrevert": {
-  "text": "A Provence appellation covering eleven communes around Manosque and Pierrevert. It allows many grapes, including Grenache, Syrah, Carignan and Mourvèdre for red and Vermentino, Marsanne and Roussanne for white.",
+  "text": "A Provence appellation covering eleven communes around Manosque and Pierrevert. It allows many grapes, including Grenache, Syrah, Carignan and Mourvèdre for red and Grenache Blanc, Vermentino, Marsanne and Roussanne for white.",
   "from": [
    "rules",
    "where"
@@ -380,7 +380,7 @@
   }
  },
  "france/pommard": {
-  "text": "A Côte de Beaune village in Burgundy making red wine only, mainly from Pinot Noir. It has no Grand Cru vineyards but several highly regarded Premier Crus, and the AOC dates from 1937.",
+  "text": "A Côte de Beaune village in Burgundy making red wine only, mainly from Pinot Noir. It has no Grand Cru vineyards but several highly regarded Premier Crus, and the AOC dates from 1936.",
   "from": [
    "wikipedia",
    "rules",
@@ -477,7 +477,7 @@
   }
  },
  "france/puisieulx": {
-  "text": "A cru village in the Montagne de Reims, a Champagne sub-region with chalk-based soils and nine Grands Crus villages. Champagne's sparkling wines are made from Chardonnay, Pinot Noir, Meunier and a few rarer grapes.",
+  "text": "A cru village in the Montagne de Reims, a Champagne sub-region with chalk-based soils and nine Grands Crus villages.",
   "from": [
    "rules_of_wider",
    "wikipedia_of_wider",
@@ -842,7 +842,7 @@
   }
  },
  "france/saint-peray": {
-  "text": "A very small northern Rhône appellation, at its southern end, making white wine only from Marsanne and Roussanne. Most of it is sparkling, somewhat like Champagne, though some still wine is made.",
+  "text": "A very small northern Rhône appellation, at its southern end, making white wine only from Marsanne and Roussanne. It makes still wine and a sparkling wine made like Champagne.",
   "from": [
    "wikipedia",
    "rules",
@@ -1051,7 +1051,7 @@
   ]
  },
  "france/sillery": {
-  "text": "A cru village in the Montagne de Reims, a Champagne sub-region with chalk-based soils and nine Grands Crus villages. Champagne's sparkling wines are made from Chardonnay, Pinot Noir, Meunier and a few rarer grapes.",
+  "text": "A cru village in the Montagne de Reims, a Champagne sub-region with chalk-based soils and nine Grands Crus villages.",
   "from": [
    "rules_of_wider",
    "wikipedia_of_wider",

@@ -12,7 +12,7 @@
   }
  },
  "united-states/monterey": {
-  "text": "A long Central Coast AVA running from Monterey Bay south through the Salinas Valley. The north is cool with a very long growing season, and about half of the vines are Chardonnay. Pinot Noir and Riesling grow nearer the cold Pacific, and Bordeaux grapes in the warmer south.",
+  "text": "A long Central Coast AVA running from Monterey Bay south through the Salinas Valley. The north is cool with a very long growing season, and Chardonnay is the leading grape. Pinot Noir and Riesling grow nearer the cold Pacific, and Bordeaux grapes in the warmer south.",
   "from": [
    "wikipedia",
    "ava",
@@ -37,7 +37,7 @@
   }
  },
  "united-states/mount-pisgah-polk-county-oregon": {
-  "text": "The southernmost sub-appellation of Oregon's Willamette Valley, a small AVA in the hills of Polk County around an 835-foot peak. The wider valley is mostly Pinot Noir, with Pinot Gris next.",
+  "text": "A small Willamette Valley AVA in the hills of Polk County around an 835-foot peak.",
   "from": [
    "wikipedia",
    "planted_wider",
@@ -102,7 +102,7 @@
   }
  },
  "united-states/new-york": {
-  "text": "A US wine state, the second-largest grape-growing state by volume after California. Most of its vineyard area is American Vitis labrusca grapes, mainly Concord, and the rest is split between vinifera and French hybrids. Its AVAs include the Finger Lakes and Long Island.",
+  "text": "A US wine state, the third-largest grape-growing state by volume after California and Washington. Most of its vineyard area is American Vitis labrusca grapes, mainly Concord, and the rest is split between vinifera and French hybrids. Its AVAs include the Finger Lakes and Long Island.",
   "from": [
    "wikipedia",
    "where"
@@ -114,7 +114,7 @@
   }
  },
  "united-states/niagara-escarpment": {
-  "text": "A narrow New York AVA along a free-draining limestone ridge near Lake Ontario, sharing terroir with Canada's Niagara Peninsula. Wines run from Merlot, Cabernet Franc, Chardonnay and Riesling to fruit wines, and Traminette is widely planted in the county.",
+  "text": "A narrow New York AVA along a free-draining limestone ridge near Lake Ontario, sharing terroir with Canada's Niagara Peninsula. Wines run from Merlot, Cabernet Franc, Chardonnay and Riesling to fruit wines, and the hybrid Traminette is grown in the county.",
   "from": [
    "wikipedia",
    "planted_wider"
@@ -126,7 +126,7 @@
   }
  },
  "united-states/north-coast": {
-  "text": "A huge California AVA covering six counties north of San Francisco: Lake, Marin, Mendocino, Napa, Sonoma and Solano. Its sub-appellations share weather shaped by Pacific fog and breezes. Sonoma and Mendocino Counties inside it grow mostly Chardonnay, Pinot Noir and Cabernet Sauvignon.",
+  "text": "A huge California AVA covering six counties north of San Francisco: Lake, Marin, Mendocino, Napa, Sonoma and Solano. Its sub-appellations share weather shaped by Pacific fog and breezes.",
   "from": [
    "wikipedia",
    "planted",
@@ -163,7 +163,7 @@
   }
  },
  "united-states/northern-sonoma": {
-  "text": "A broad Sonoma County AVA covering most of the county except the southern Carneros, Petaluma Gap and Sonoma Valley areas. It fully contains Alexander Valley, Russian River Valley, Dry Creek Valley and others. Its grapes include Cabernet Sauvignon, Chardonnay, Sauvignon Blanc and Zinfandel.",
+  "text": "A broad Sonoma County AVA covering the northern part of the county. It fully contains Alexander Valley, Russian River Valley, Dry Creek Valley and others. Its grapes include Cabernet Sauvignon, Chardonnay, Sauvignon Blanc and Zinfandel.",
   "from": [
    "wikipedia",
    "ava"
@@ -199,7 +199,7 @@
   }
  },
  "united-states/oregon": {
-  "text": "A US wine state where Pinot Noir and Pinot Gris are the top two grapes harvested. Chardonnay is the most valuable grape overall, while Pinot Noir commands the high end. Its two big AVAs are the Willamette Valley and Southern Oregon, and commercial winemaking began in the 1960s.",
+  "text": "A US wine state where Pinot Noir and Pinot Gris are the top two grapes harvested. Pinot Noir commands the high end. Its two big AVAs are the Willamette Valley and Southern Oregon, and commercial winemaking began in the 1960s.",
   "from": [
    "wikipedia",
    "where"
@@ -308,7 +308,7 @@
   }
  },
  "united-states/paulsell-valley": {
-  "text": "A small California AVA on the first rises out of the San Joaquin Valley floor, in Stanislaus County. It counts as Sierra Nevada foothills, with three vineyards on about 864 acres. The county overall grows mostly Chardonnay, Cabernet Sauvignon and Zinfandel.",
+  "text": "A small California AVA on the first rises out of the San Joaquin Valley floor, in Stanislaus County. It counts as Sierra Nevada foothills, with three vineyards on about 864 acres.",
   "from": [
    "wikipedia",
    "planted_wider",
@@ -382,7 +382,7 @@
   }
  },
  "united-states/rattlesnake-hills": {
-  "text": "A Washington AVA in Yakima Valley, within the Columbia Valley, on a ridge that rises to 3,085 feet, the highest point in the Yakima Valley. Merlot is the most planted grape, followed by Riesling and Cabernet Sauvignon.",
+  "text": "A Washington AVA in Yakima Valley, within the Columbia Valley, on a ridge where the AVA rises to 3,085 feet. Merlot is the most planted grape, followed by Riesling and Cabernet Sauvignon.",
   "from": [
    "wikipedia",
    "planted",
@@ -408,7 +408,7 @@
   }
  },
  "united-states/red-hills-lake-county": {
-  "text": "A Lake County AVA of red, stony soils on rolling hills at the foot of Mount Konocti, beside Clear Lake. Elevations run from 1,400 to 3,000 feet. The county grows mostly Cabernet Sauvignon, then Sauvignon Blanc.",
+  "text": "A Lake County AVA of red, stony soils on rolling hills at the foot of Mount Konocti, beside Clear Lake. Elevations run from 1,400 to 3,000 feet.",
   "from": [
    "wikipedia",
    "ava",
@@ -458,7 +458,7 @@
   }
  },
  "united-states/river-junction": {
-  "text": "The nation's smallest AVA, in California, at the confluence of the San Joaquin and Stanislaus Rivers in San Joaquin County. It is cooler than the rest of the Central Valley and is the only place in the valley with lots of fine sandy loam. About 90 percent of it is planted to Chardonnay.",
+  "text": "A small AVA in California, at the confluence of the San Joaquin and Stanislaus Rivers in San Joaquin County. It is cooler than the rest of the Central Valley and is the only place in the valley with lots of fine sandy loam. About 90 percent of it is planted to Chardonnay.",
   "from": [
    "wikipedia",
    "ava",
@@ -471,7 +471,7 @@
   }
  },
  "united-states/rockpile": {
-  "text": "A small AVA in the northernmost part of Sonoma County, beside Lake Sonoma, with about 160 acres of vines at or above 800 feet. It overlaps the northwestern corner of the Dry Creek Valley appellation and sits within Northern Sonoma.",
+  "text": "A small AVA in the northwestern part of Sonoma County, beside Lake Sonoma, with about 160 acres of vines at or above 800 feet. It overlaps the northwestern corner of the Dry Creek Valley appellation and sits within Northern Sonoma.",
   "from": [
    "wikipedia",
    "ava"
@@ -619,7 +619,7 @@
   }
  },
  "united-states/san-juan-creek": {
-  "text": "The easternmost district inside the Paso Robles AVA, following the San Juan Creek valley at 980 to 1,600 feet. It sits in the rain shadow of the Santa Lucia Coast Range, so it is warmer and more continental than the western districts.",
+  "text": "One of the two easternmost districts inside the Paso Robles AVA, following the San Juan Creek valley at 980 to 1,600 feet. It sits in the rain shadow of the Santa Lucia Coast Range, so it is warmer and more continental than the western districts.",
   "from": [
    "wikipedia",
    "ava"
@@ -668,7 +668,7 @@
   }
  },
  "united-states/san-miguel-district": {
-  "text": "The northernmost district of the Paso Robles AVA, around the town of San Miguel on the Monterey County line. It has a very mild marine influence, only 11.4 inches of rain and a warm Winkler Region III climate, on alluvial fans and terraces.",
+  "text": "One of the two northernmost districts of the Paso Robles AVA, around the town of San Miguel on the Monterey County line. It has a very mild marine influence, only 11.4 inches of rain and a warm Winkler Region III climate, on alluvial fans and terraces.",
   "from": [
    "wikipedia",
    "ava"
@@ -831,7 +831,7 @@
   }
  },
  "united-states/sloughhouse": {
-  "text": "A Lodi sub-AVA in Sacramento County, about 21 miles southeast of Sacramento, covering 78,800 acres. It is one of seven smaller areas carved from the Lodi AVA in 2006. The surrounding county grows mostly Chardonnay, Cabernet Sauvignon and Merlot.",
+  "text": "A Lodi sub-AVA in Sacramento County, about 21 miles southeast of Sacramento, covering 78,800 acres. It is one of seven smaller areas carved from the Lodi AVA in 2006.",
   "from": [
    "wikipedia",
    "ava",
@@ -845,7 +845,7 @@
   }
  },
  "united-states/snipes-mountain": {
-  "text": "A small Washington AVA of about 4,145 acres near Outlook in the Yakima Valley, the state's second smallest. It has one of Washington's oldest vineyard histories, and Cabernet Sauvignon and Merlot are the leading grapes.",
+  "text": "A small Washington AVA of about 4,145 acres near Outlook in the Yakima Valley, the state's third smallest. It has one of Washington's oldest vineyard histories, and Cabernet Sauvignon and Merlot are the leading grapes.",
   "from": [
    "wikipedia",
    "planted",
@@ -947,7 +947,7 @@
   }
  },
  "united-states/spring-mountain-district": {
-  "text": "A Napa Valley sub-appellation of mostly east-facing hillside vineyards at 400 to 2,600 feet. Small hillside yields mean it makes under 2 percent of Napa Valley wine. Napa County's main grape is Cabernet Sauvignon.",
+  "text": "A Napa Valley sub-appellation of mostly east-facing hillside vineyards, its boundary running from 400 to 2,600 feet. Small hillside yields mean it makes under 2 percent of Napa Valley wine.",
   "from": [
    "wikipedia",
    "ava",
@@ -986,7 +986,7 @@
   }
  },
  "united-states/sta-rita-hills": {
-  "text": "A Central Coast AVA in Santa Barbara County on the western edge of the Santa Ynez Valley, enclosed by it but separate. Its name was shortened from Santa Rita Hills in 2006 after a protest from a Chilean producer. The county's main grapes are Chardonnay and Pinot Noir.",
+  "text": "A Central Coast AVA in Santa Barbara County on the western edge of the Santa Ynez Valley, enclosed by it but separate. Its name was shortened from Santa Rita Hills in 2006 after a protest from a Chilean producer.",
   "from": [
    "wikipedia",
    "ava",
@@ -1025,7 +1025,7 @@
   }
  },
  "united-states/tehachapi-mountains": {
-  "text": "A California AVA around the town of Tehachapi in Kern County, between the Tehachapi Mountains and the southern Sierra Nevada. It is small, with six vineyards on 25 acres in 2020, and no other AVA lies within 75 miles.",
+  "text": "A California AVA around the town of Tehachapi in Kern County, between the Tehachapi Mountains and the southern Sierra Nevada. It is small, with six vineyards on 25 acres in 2020.",
   "from": [
    "wikipedia",
    "ava",
@@ -1163,7 +1163,7 @@
   }
  },
  "united-states/upper-lake-valley": {
-  "text": "A valley AVA north of Clear Lake in Lake County, set 1,326 to 2,820 feet up among valleys south of the Mendocino National Forest. It started with 16 vineyards on about 300 acres. The county's main grapes are Cabernet Sauvignon and Sauvignon Blanc.",
+  "text": "A valley AVA north of Clear Lake in Lake County, set 1,326 to 2,820 feet up among valleys south of the Mendocino National Forest. It started with 16 vineyards on about 300 acres.",
   "from": [
    "wikipedia",
    "ava",
@@ -1214,7 +1214,7 @@
   }
  },
  "united-states/washington": {
-  "text": "The third-largest wine-producing US state, with 99.9 percent of wine grape production in the dry eastern half, in the Cascade rain shadow with about 8 inches of rain and long sunlight hours. Irrigation is key. In the Columbia Valley, Cabernet Sauvignon leads plantings, followed by Merlot and Syrah.",
+  "text": "The second-largest wine-producing US state, with 99.9 percent of wine grape production in the dry eastern half, in the Cascade rain shadow with about 8 inches of rain and long sunlight hours. Irrigation is key. In the Columbia Valley, Cabernet Sauvignon leads plantings, followed by Merlot and Syrah.",
   "from": [
    "wikipedia",
    "planted",
@@ -1251,7 +1251,7 @@
   }
  },
  "united-states/wild-horse-valley": {
-  "text": "A small valley AVA straddling Napa and Solano counties, partly inside Napa Valley. Its southerly spot brings more sun, while San Pablo Bay keeps it cool, which suits Pinot Noir. It had only 73 acres under vine when created.",
+  "text": "A small valley AVA straddling Napa and Solano counties, partly inside Napa Valley. Its petitioners described more sun than nearby areas and cooling from San Pablo Bay. It had only 73 acres under vine when created.",
   "from": [
    "wikipedia",
    "ava"

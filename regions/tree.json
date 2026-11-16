@@ -1231,7 +1231,6 @@
     "france/beaujolais",
     "france/provence",
     "france/languedoc-roussillon",
-    "france/other-aocs-region-not-yet-set",
     "france/igp-vins-de-pays",
     "france/charentes",
     "france/south-west-france",
@@ -4050,14 +4049,20 @@
     "italy/umbria",
     "italy/sardinia",
     "italy/igt-indicazione-geografica-tipica",
-    "italy/other-docs-region-not-yet-set",
     "italy/emilia-romagna",
     "italy/calabria",
     "italy/lazio",
     "italy/liguria",
     "italy/molise",
     "italy/basilicata",
-    "italy/valle-d-aosta"
+    "italy/delle-venezie",
+    "italy/lison-pramaggiore",
+    "italy/lison",
+    "italy/valdadige",
+    "italy/valdadige-terradeiforti",
+    "italy/lugana",
+    "italy/garda",
+    "italy/orvieto"
    ]
   },
   "italy/piedmont": {
@@ -4644,7 +4649,6 @@
     "italy/prosecco-doc",
     "italy/conegliano-valdobbiadene-prosecco-superiore",
     "italy/pinot-grigio-delle-venezie",
-    "italy/lugana",
     "italy/bardolino",
     "italy/colli-berici",
     "italy/colli-euganei",
@@ -4661,7 +4665,6 @@
     "italy/soave-superiore",
     "italy/piave-malanotte",
     "italy/gambellara",
-    "italy/lison",
     "italy/piave",
     "italy/colli-euganei-fior-d-arancio",
     "italy/bagnoli-di-sopra",
@@ -4808,8 +4811,8 @@
   "italy/lugana": {
    "id": "italy/lugana",
    "name": "Lugana",
-   "parent": "italy/veneto",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "chris",
    "official": [
     "PDO"
@@ -4818,7 +4821,7 @@
     "eu-it"
    ],
    "eu_id": "EUGI00000005070",
-   "path": "italy/veneto/lugana",
+   "path": "italy/lugana",
    "children": []
   },
   "italy/bardolino": {
@@ -4851,10 +4854,7 @@
    ],
    "eu_id": "EUGI00000004161",
    "path": "italy/alto-adige",
-   "children": [
-    "italy/valdadige",
-    "italy/valdadige-terradeiforti"
-   ]
+   "children": []
   },
   "italy/friuli-venezia-giulia": {
    "id": "italy/friuli-venezia-giulia",
@@ -4875,8 +4875,6 @@
     "italy/friuli-colli-orientali",
     "italy/friuli-grave",
     "italy/ramandolo",
-    "italy/delle-venezie",
-    "italy/lison-pramaggiore",
     "italy/friuli-latisana",
     "italy/colli-orientali-del-friuli-picolit",
     "italy/friuli-aquileia",
@@ -4984,7 +4982,6 @@
    "children": [
     "italy/franciacorta",
     "italy/valtellina-superiore",
-    "italy/garda",
     "italy/scanzo",
     "italy/valcalepio",
     "italy/curtefranca",
@@ -6020,16 +6017,6 @@
    ],
    "eu_id": "EUGI00000001141",
    "path": "france/loire-valley/rose-d-anjou",
-   "children": []
-  },
-  "france/other-aocs-region-not-yet-set": {
-   "id": "france/other-aocs-region-not-yet-set",
-   "name": "Other AOCs, region not yet set",
-   "parent": "france",
-   "depth": 1,
-   "source": "eu",
-   "kind": "group",
-   "path": "france/other-aocs-region-not-yet-set",
    "children": []
   },
   "france/alsace-grand-cru-hengst": {
@@ -10957,7 +10944,7 @@
   },
   "france/villages-subregion-not-yet-set": {
    "id": "france/villages-subregion-not-yet-set",
-   "name": "Villages, subregion not yet set",
+   "name": "Champagne villages",
    "parent": "france/champagne",
    "depth": 2,
    "source": "fr-champagne-crus",
@@ -11981,16 +11968,6 @@
    "path": "italy/piedmont/rubino-di-cantavenna",
    "children": []
   },
-  "italy/other-docs-region-not-yet-set": {
-   "id": "italy/other-docs-region-not-yet-set",
-   "name": "Other DOCs, region not yet set",
-   "parent": "italy",
-   "depth": 1,
-   "source": "eu",
-   "kind": "group",
-   "path": "italy/other-docs-region-not-yet-set",
-   "children": []
-  },
   "italy/boca": {
    "id": "italy/boca",
    "name": "Boca",
@@ -12245,15 +12222,15 @@
   "italy/garda": {
    "id": "italy/garda",
    "name": "Garda",
-   "parent": "italy/lombardy",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000004141",
-   "path": "italy/lombardy/garda",
+   "path": "italy/garda",
    "children": []
   },
   "italy/castelli-di-jesi-verdicchio-riserva": {
@@ -12547,7 +12524,6 @@
    "eu_id": "EUGI00000002761",
    "path": "italy/lazio",
    "children": [
-    "italy/orvieto",
     "italy/roma",
     "italy/frascati",
     "italy/frascati-superiore",
@@ -12582,15 +12558,15 @@
   "italy/orvieto": {
    "id": "italy/orvieto",
    "name": "Orvieto",
-   "parent": "italy/lazio",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000005484",
-   "path": "italy/lazio/orvieto",
+   "path": "italy/orvieto",
    "children": []
   },
   "italy/liguria": {
@@ -13053,8 +13029,8 @@
   "italy/valdadige": {
    "id": "italy/valdadige",
    "name": "Valdadige",
-   "parent": "italy/alto-adige",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "also": [
@@ -13064,7 +13040,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000005441",
-   "path": "italy/alto-adige/valdadige",
+   "path": "italy/valdadige",
    "children": []
   },
   "italy/montefalco": {
@@ -13464,8 +13440,8 @@
   "italy/delle-venezie": {
    "id": "italy/delle-venezie",
    "name": "delle Venezie",
-   "parent": "italy/friuli-venezia-giulia",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "also": [
@@ -13475,7 +13451,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000015490",
-   "path": "italy/friuli-venezia-giulia/delle-venezie",
+   "path": "italy/delle-venezie",
    "children": []
   },
   "italy/frascati": {
@@ -13928,15 +13904,15 @@
   "italy/lison-pramaggiore": {
    "id": "italy/lison-pramaggiore",
    "name": "Lison-Pramaggiore",
-   "parent": "italy/friuli-venezia-giulia",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000003381",
-   "path": "italy/friuli-venezia-giulia/lison-pramaggiore",
+   "path": "italy/lison-pramaggiore",
    "children": []
   },
   "italy/val-tidone": {
@@ -14122,15 +14098,15 @@
   "italy/lison": {
    "id": "italy/lison",
    "name": "Lison",
-   "parent": "italy/veneto",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000003382",
-   "path": "italy/veneto/lison",
+   "path": "italy/lison",
    "children": []
   },
   "italy/val-di-neto": {
@@ -15858,8 +15834,8 @@
   "italy/valdadige-terradeiforti": {
    "id": "italy/valdadige-terradeiforti",
    "name": "Valdadige Terradeiforti",
-   "parent": "italy/alto-adige",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "also": [
@@ -15869,7 +15845,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000005442",
-   "path": "italy/alto-adige/valdadige-terradeiforti",
+   "path": "italy/valdadige-terradeiforti",
    "children": []
   },
   "italy/falerno-del-massico": {
@@ -18136,23 +18112,6 @@
    ],
    "eu_id": "EUGI00000004903",
    "path": "italy/sardinia/nuragus-di-cagliari",
-   "children": []
-  },
-  "italy/valle-d-aosta": {
-   "id": "italy/valle-d-aosta",
-   "name": "Valle d'Aosta",
-   "parent": "italy",
-   "depth": 1,
-   "source": "it-groups",
-   "kind": "group",
-   "official": [
-    "PDO"
-   ],
-   "sources": [
-    "eu-it"
-   ],
-   "eu_id": "EUGI00000003121",
-   "path": "italy/valle-d-aosta",
    "children": []
   },
   "italy/cannara": {
@@ -25289,7 +25248,7 @@
   },
   "austria/landwein-pgi": {
    "id": "austria/landwein-pgi",
-   "name": "Landwein (PGI)",
+   "name": "Landwein regions",
    "parent": "austria",
    "depth": 1,
    "source": "eu",
@@ -26998,17 +26957,13 @@
     "greece/aegean-islands",
     "greece/mavrodafni-kefallinias",
     "greece/playies-melitona",
-    "greece/moschato-patron",
-    "greece/mavrodafni-patron",
     "greece/malvasia-candia",
     "greece/moschato-kefallinias",
     "greece/candia",
     "greece/arhanes",
-    "greece/moschatos-riou-patras",
     "greece/moschato-rodou",
     "greece/moschatos-limnou",
     "greece/dafnes",
-    "greece/mantinia",
     "greece/epirus",
     "greece/malvasia",
     "greece/ionian-islands",
@@ -27018,7 +26973,6 @@
     "greece/thessaly",
     "greece/peloponnese",
     "greece/anchialos",
-    "greece/patra",
     "greece/peza",
     "greece/limnos",
     "greece/amynteo",
@@ -27520,8 +27474,8 @@
   "greece/moschato-patron": {
    "id": "greece/moschato-patron",
    "name": "Moschato Patron",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/peloponnese",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27531,14 +27485,14 @@
     "PDO"
    ],
    "eu_id": "EUGI00000006963",
-   "path": "greece/moschato-patron",
+   "path": "greece/peloponnese/moschato-patron",
    "children": []
   },
   "greece/mavrodafni-patron": {
    "id": "greece/mavrodafni-patron",
    "name": "Mavrodafni Patron",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/peloponnese",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27548,7 +27502,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000006551",
-   "path": "greece/mavrodafni-patron",
+   "path": "greece/peloponnese/mavrodafni-patron",
    "children": []
   },
   "greece/retsina-peanias": {
@@ -27828,8 +27782,8 @@
   "greece/moschatos-riou-patras": {
    "id": "greece/moschatos-riou-patras",
    "name": "Moschatos Riou Patras",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/peloponnese",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27839,7 +27793,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007006",
-   "path": "greece/moschatos-riou-patras",
+   "path": "greece/peloponnese/moschatos-riou-patras",
    "children": []
   },
   "greece/retsina-karistou": {
@@ -28204,8 +28158,8 @@
   "greece/mantinia": {
    "id": "greece/mantinia",
    "name": "Mantinia",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/peloponnese",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28215,7 +28169,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007282",
-   "path": "greece/mantinia",
+   "path": "greece/peloponnese/mantinia",
    "children": []
   },
   "greece/krania": {
@@ -28923,7 +28877,12 @@
    "kind": "group",
    "path": "greece/peloponnese",
    "children": [
-    "greece/nemea"
+    "greece/nemea",
+    "greece/mantinia",
+    "greece/patra",
+    "greece/mavrodafni-patron",
+    "greece/moschatos-riou-patras",
+    "greece/moschato-patron"
    ]
   },
   "greece/nemea": {
@@ -29048,8 +29007,8 @@
   "greece/patra": {
    "id": "greece/patra",
    "name": "Patra",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/peloponnese",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -29059,7 +29018,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000006523",
-   "path": "greece/patra",
+   "path": "greece/peloponnese/patra",
    "children": []
   },
   "greece/peza": {
@@ -35520,7 +35479,6 @@
     "argentina/cuyo",
     "argentina/chubut",
     "argentina/jujuy",
-    "argentina/san-luis",
     "argentina/tucuman",
     "argentina/calchaqui",
     "argentina/valles-del-famatina",
@@ -36854,22 +36812,6 @@
    "path": "argentina/cordoba/san-javier",
    "children": []
   },
-  "argentina/san-luis": {
-   "id": "argentina/san-luis",
-   "name": "San Luis",
-   "parent": "argentina",
-   "depth": 1,
-   "source": "ar",
-   "kind": "group",
-   "official": [
-    "IG"
-   ],
-   "sources": [
-    "ar"
-   ],
-   "path": "argentina/san-luis",
-   "children": []
-  },
   "argentina/san-martin": {
    "id": "argentina/san-martin",
    "name": "San Martín",
@@ -37897,8 +37839,8 @@
     "south-africa/western-cape",
     "south-africa/northern-cape",
     "south-africa/eastern-cape",
-    "south-africa/free-state",
     "south-africa/kwazulu-natal",
+    "south-africa/free-state",
     "south-africa/limpopo",
     "south-africa/north-west-province"
    ]
@@ -37915,11 +37857,16 @@
    ],
    "path": "south-africa/western-cape",
    "children": [
-    "south-africa/breede-river-valley",
     "south-africa/cape-south-coast",
     "south-africa/coastal-region",
+    "south-africa/breede-river-valley",
     "south-africa/klein-karoo",
-    "south-africa/olifants-river"
+    "south-africa/olifants-river",
+    "south-africa/ceres-plateau",
+    "south-africa/prince-albert",
+    "south-africa/nieuwoudtville",
+    "south-africa/cederberg",
+    "south-africa/leipoldtville-sandveld"
    ]
   },
   "south-africa/breede-river-valley": {
@@ -37935,7 +37882,8 @@
    "path": "south-africa/western-cape/breede-river-valley",
    "children": [
     "south-africa/breedekloof",
-    "south-africa/robertson"
+    "south-africa/robertson",
+    "south-africa/worcester"
    ]
   },
   "south-africa/breedekloof": {
@@ -37951,8 +37899,7 @@
    "path": "south-africa/western-cape/breede-river-valley/breedekloof",
    "children": [
     "south-africa/goudini",
-    "south-africa/slanghoek",
-    "south-africa/scherpenheuvel"
+    "south-africa/slanghoek"
    ]
   },
   "south-africa/goudini": {
@@ -37984,14 +37931,14 @@
   "south-africa/scherpenheuvel": {
    "id": "south-africa/scherpenheuvel",
    "name": "Scherpenheuvel",
-   "parent": "south-africa/breedekloof",
+   "parent": "south-africa/worcester",
    "depth": 4,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/breede-river-valley/breedekloof/scherpenheuvel",
+   "path": "south-africa/western-cape/breede-river-valley/worcester/scherpenheuvel",
    "children": []
   },
   "south-africa/robertson": {
@@ -38007,14 +37954,19 @@
    "path": "south-africa/western-cape/breede-river-valley/robertson",
    "children": [
     "south-africa/agterkliphoogte",
-    "south-africa/bonnievale",
+    "south-africa/ashton",
     "south-africa/boesmansrivier",
+    "south-africa/bonnievale",
     "south-africa/eilandia",
+    "south-africa/goedemoed",
+    "south-africa/goree",
+    "south-africa/goudmyn",
     "south-africa/hoopsrivier",
     "south-africa/klaasvoogds",
     "south-africa/le-chasseur",
     "south-africa/mcgregor",
-    "south-africa/vinkrivier"
+    "south-africa/vinkrivier",
+    "south-africa/zandrivier"
    ]
   },
   "south-africa/agterkliphoogte": {
@@ -38147,11 +38099,14 @@
    "path": "south-africa/western-cape/cape-south-coast",
    "children": [
     "south-africa/cape-agulhas",
+    "south-africa/elgin",
+    "south-africa/lower-duivenhoks-river",
     "south-africa/overberg",
     "south-africa/plettenberg-bay",
     "south-africa/swellendam",
     "south-africa/walker-bay",
     "south-africa/herbertsdale",
+    "south-africa/napier",
     "south-africa/stilbaai-east"
    ]
   },
@@ -38195,7 +38150,7 @@
    ],
    "path": "south-africa/western-cape/cape-south-coast/overberg",
    "children": [
-    "south-africa/elgin",
+    "south-africa/elandskloof-kaaimansgat",
     "south-africa/greyton",
     "south-africa/klein-rivier",
     "south-africa/theewater"
@@ -38204,14 +38159,14 @@
   "south-africa/elgin": {
    "id": "south-africa/elgin",
    "name": "Elgin",
-   "parent": "south-africa/overberg",
-   "depth": 4,
+   "parent": "south-africa/cape-south-coast",
+   "depth": 3,
    "source": "za",
-   "kind": "ward",
+   "kind": "district",
    "official": [
-    "ward"
+    "district"
    ],
-   "path": "south-africa/western-cape/cape-south-coast/overberg/elgin",
+   "path": "south-africa/western-cape/cape-south-coast/elgin",
    "children": []
   },
   "south-africa/greyton": {
@@ -38229,7 +38184,7 @@
   },
   "south-africa/klein-rivier": {
    "id": "south-africa/klein-rivier",
-   "name": "Klein Rivier",
+   "name": "Klein River",
    "parent": "south-africa/overberg",
    "depth": 4,
    "source": "za",
@@ -38338,6 +38293,8 @@
     "south-africa/hemel-en-aarde-ridge",
     "south-africa/hemel-en-aarde-valley",
     "south-africa/sunday-s-glen",
+    "south-africa/springfontein-rim",
+    "south-africa/stanford-foothills",
     "south-africa/upper-hemel-en-aarde-valley"
    ]
   },
@@ -38421,7 +38378,7 @@
   },
   "south-africa/stilbaai-east": {
    "id": "south-africa/stilbaai-east",
-   "name": "Stilbaai East",
+   "name": "Still Bay East",
    "parent": "south-africa/cape-south-coast",
    "depth": 3,
    "source": "za",
@@ -38444,30 +38401,18 @@
    ],
    "path": "south-africa/western-cape/coastal-region",
    "children": [
-    "south-africa/cape-peninsula",
+    "south-africa/cape-town",
     "south-africa/darling",
     "south-africa/franschhoek-franschhoek-valley",
+    "south-africa/lutzville-valley",
     "south-africa/paarl",
     "south-africa/stellenbosch",
     "south-africa/swartland",
     "south-africa/tulbagh",
-    "south-africa/tygerberg",
-    "south-africa/constantia",
-    "south-africa/hout-bay"
+    "south-africa/wellington",
+    "south-africa/bamboes-bay",
+    "south-africa/lamberts-bay"
    ]
-  },
-  "south-africa/cape-peninsula": {
-   "id": "south-africa/cape-peninsula",
-   "name": "Cape Peninsula",
-   "parent": "south-africa/coastal-region",
-   "depth": 3,
-   "source": "za",
-   "kind": "district",
-   "official": [
-    "district"
-   ],
-   "path": "south-africa/western-cape/coastal-region/cape-peninsula",
-   "children": []
   },
   "south-africa/darling": {
    "id": "south-africa/darling",
@@ -38522,9 +38467,9 @@
    ],
    "path": "south-africa/western-cape/coastal-region/paarl",
    "children": [
+    "south-africa/agter-paarl",
     "south-africa/simonsberg-paarl",
-    "south-africa/voor-paardeberg",
-    "south-africa/wellington"
+    "south-africa/voor-paardeberg"
    ]
   },
   "south-africa/simonsberg-paarl": {
@@ -38556,19 +38501,24 @@
   "south-africa/wellington": {
    "id": "south-africa/wellington",
    "name": "Wellington",
-   "parent": "south-africa/paarl",
-   "depth": 4,
+   "parent": "south-africa/coastal-region",
+   "depth": 3,
    "source": "za",
-   "kind": "ward",
+   "kind": "district",
    "official": [
-    "ward",
     "district"
    ],
    "sources": [
     "za"
    ],
-   "path": "south-africa/western-cape/coastal-region/paarl/wellington",
-   "children": []
+   "path": "south-africa/western-cape/coastal-region/wellington",
+   "children": [
+    "south-africa/blouvlei",
+    "south-africa/bovlei",
+    "south-africa/groenberg",
+    "south-africa/limietberg",
+    "south-africa/mid-berg-river"
+   ]
   },
   "south-africa/stellenbosch": {
    "id": "south-africa/stellenbosch",
@@ -38588,7 +38538,8 @@
     "south-africa/jonkershoek-valley",
     "south-africa/papegaaiberg",
     "south-africa/polkadraai-hills",
-    "south-africa/simonsberg-stellenbosch"
+    "south-africa/simonsberg-stellenbosch",
+    "south-africa/vlottenburg"
    ]
   },
   "south-africa/banghoek": {
@@ -38695,7 +38646,13 @@
    "path": "south-africa/western-cape/coastal-region/swartland",
    "children": [
     "south-africa/malmesbury",
-    "south-africa/riebeekberg"
+    "south-africa/paardeberg-perdeberg",
+    "south-africa/paardeberg-south",
+    "south-africa/piket-bo-berg",
+    "south-africa/porseleinberg",
+    "south-africa/riebeekberg",
+    "south-africa/riebeeksrivier",
+    "south-africa/st-helena-bay"
    ]
   },
   "south-africa/malmesbury": {
@@ -38737,72 +38694,56 @@
    "path": "south-africa/western-cape/coastal-region/tulbagh",
    "children": []
   },
-  "south-africa/tygerberg": {
-   "id": "south-africa/tygerberg",
-   "name": "Tygerberg",
-   "parent": "south-africa/coastal-region",
-   "depth": 3,
-   "source": "za",
-   "kind": "district",
-   "official": [
-    "district"
-   ],
-   "path": "south-africa/western-cape/coastal-region/tygerberg",
-   "children": [
-    "south-africa/durbanville",
-    "south-africa/philadelphia"
-   ]
-  },
   "south-africa/durbanville": {
    "id": "south-africa/durbanville",
    "name": "Durbanville",
-   "parent": "south-africa/tygerberg",
+   "parent": "south-africa/cape-town",
    "depth": 4,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/coastal-region/tygerberg/durbanville",
+   "path": "south-africa/western-cape/coastal-region/cape-town/durbanville",
    "children": []
   },
   "south-africa/philadelphia": {
    "id": "south-africa/philadelphia",
    "name": "Philadelphia",
-   "parent": "south-africa/tygerberg",
+   "parent": "south-africa/cape-town",
    "depth": 4,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/coastal-region/tygerberg/philadelphia",
+   "path": "south-africa/western-cape/coastal-region/cape-town/philadelphia",
    "children": []
   },
   "south-africa/constantia": {
    "id": "south-africa/constantia",
    "name": "Constantia",
-   "parent": "south-africa/coastal-region",
-   "depth": 3,
+   "parent": "south-africa/cape-town",
+   "depth": 4,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/coastal-region/constantia",
+   "path": "south-africa/western-cape/coastal-region/cape-town/constantia",
    "children": []
   },
   "south-africa/hout-bay": {
    "id": "south-africa/hout-bay",
    "name": "Hout Bay",
-   "parent": "south-africa/coastal-region",
-   "depth": 3,
+   "parent": "south-africa/cape-town",
+   "depth": 4,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/coastal-region/hout-bay",
+   "path": "south-africa/western-cape/coastal-region/cape-town/hout-bay",
    "children": []
   },
   "south-africa/klein-karoo": {
@@ -38819,10 +38760,12 @@
    "children": [
     "south-africa/calitzdorp",
     "south-africa/langeberg-garcia",
+    "south-africa/cango-valley",
+    "south-africa/koo-plateau",
     "south-africa/montagu",
+    "south-africa/outeniqua",
     "south-africa/tradouw",
     "south-africa/tradouw-highlands",
-    "south-africa/outeniqua",
     "south-africa/upper-langkloof"
    ]
   },
@@ -38837,7 +38780,9 @@
     "district"
    ],
    "path": "south-africa/western-cape/klein-karoo/calitzdorp",
-   "children": []
+   "children": [
+    "south-africa/groenfontein"
+   ]
   },
   "south-africa/langeberg-garcia": {
    "id": "south-africa/langeberg-garcia",
@@ -38931,15 +38876,8 @@
    "children": [
     "south-africa/citrusdal-mountain",
     "south-africa/citrusdal-valley",
-    "south-africa/lutzville-valley",
-    "south-africa/bamboes-bay",
     "south-africa/spruitdrift",
-    "south-africa/vredendal",
-    "south-africa/cederberg",
-    "south-africa/ceres",
-    "south-africa/lamberts-bay",
-    "south-africa/prince-albert-valley",
-    "south-africa/swartberg"
+    "south-africa/vredendal"
    ]
   },
   "south-africa/citrusdal-mountain": {
@@ -38986,14 +38924,14 @@
   "south-africa/lutzville-valley": {
    "id": "south-africa/lutzville-valley",
    "name": "Lutzville Valley",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/coastal-region",
    "depth": 3,
    "source": "za",
    "kind": "district",
    "official": [
     "district"
    ],
-   "path": "south-africa/western-cape/olifants-river/lutzville-valley",
+   "path": "south-africa/western-cape/coastal-region/lutzville-valley",
    "children": [
     "south-africa/koekenaap"
    ]
@@ -39008,20 +38946,20 @@
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/lutzville-valley/koekenaap",
+   "path": "south-africa/western-cape/coastal-region/lutzville-valley/koekenaap",
    "children": []
   },
   "south-africa/bamboes-bay": {
    "id": "south-africa/bamboes-bay",
    "name": "Bamboes Bay",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/coastal-region",
    "depth": 3,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/bamboes-bay",
+   "path": "south-africa/western-cape/coastal-region/bamboes-bay",
    "children": []
   },
   "south-africa/spruitdrift": {
@@ -39053,66 +38991,66 @@
   "south-africa/cederberg": {
    "id": "south-africa/cederberg",
    "name": "Cederberg",
-   "parent": "south-africa/olifants-river",
-   "depth": 3,
+   "parent": "south-africa/western-cape",
+   "depth": 2,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/cederberg",
+   "path": "south-africa/western-cape/cederberg",
    "children": []
   },
   "south-africa/ceres": {
    "id": "south-africa/ceres",
    "name": "Ceres",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/ceres-plateau",
    "depth": 3,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/ceres",
+   "path": "south-africa/western-cape/ceres-plateau/ceres",
    "children": []
   },
   "south-africa/lamberts-bay": {
    "id": "south-africa/lamberts-bay",
    "name": "Lamberts Bay",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/coastal-region",
    "depth": 3,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/lamberts-bay",
+   "path": "south-africa/western-cape/coastal-region/lamberts-bay",
    "children": []
   },
   "south-africa/prince-albert-valley": {
    "id": "south-africa/prince-albert-valley",
    "name": "Prince Albert Valley",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/prince-albert",
    "depth": 3,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/prince-albert-valley",
+   "path": "south-africa/western-cape/prince-albert/prince-albert-valley",
    "children": []
   },
   "south-africa/swartberg": {
    "id": "south-africa/swartberg",
    "name": "Swartberg",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/prince-albert",
    "depth": 3,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/swartberg",
+   "path": "south-africa/western-cape/prince-albert/swartberg",
    "children": []
   },
   "south-africa/northern-cape": {
@@ -39128,7 +39066,10 @@
    "path": "south-africa/northern-cape",
    "children": [
     "south-africa/douglas",
-    "south-africa/sutherland-karoo"
+    "south-africa/sutherland-karoo",
+    "south-africa/central-orange-river",
+    "south-africa/hartswater",
+    "south-africa/prieska"
    ]
   },
   "south-africa/douglas": {
@@ -39142,49 +39083,51 @@
     "district"
    ],
    "path": "south-africa/northern-cape/douglas",
-   "children": [
-    "south-africa/hartswater",
-    "south-africa/central-orange-river",
-    "south-africa/rietrivier-fs"
-   ]
+   "children": []
   },
   "south-africa/hartswater": {
    "id": "south-africa/hartswater",
    "name": "Hartswater",
-   "parent": "south-africa/douglas",
-   "depth": 3,
+   "parent": "south-africa/northern-cape",
+   "depth": 2,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/northern-cape/douglas/hartswater",
+   "path": "south-africa/northern-cape/hartswater",
    "children": []
   },
   "south-africa/central-orange-river": {
    "id": "south-africa/central-orange-river",
    "name": "Central Orange River",
-   "parent": "south-africa/douglas",
-   "depth": 3,
+   "parent": "south-africa/northern-cape",
+   "depth": 2,
    "source": "za",
-   "kind": "ward",
+   "kind": "district",
    "official": [
-    "ward"
+    "district"
    ],
-   "path": "south-africa/northern-cape/douglas/central-orange-river",
-   "children": []
+   "path": "south-africa/northern-cape/central-orange-river",
+   "children": [
+    "south-africa/groblershoop",
+    "south-africa/grootdrink",
+    "south-africa/kakamas",
+    "south-africa/keimoes",
+    "south-africa/upington"
+   ]
   },
   "south-africa/rietrivier-fs": {
    "id": "south-africa/rietrivier-fs",
    "name": "Rietrivier FS",
-   "parent": "south-africa/douglas",
-   "depth": 3,
+   "parent": "south-africa/free-state",
+   "depth": 2,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/northern-cape/douglas/rietrivier-fs",
+   "path": "south-africa/free-state/rietrivier-fs",
    "children": []
   },
   "south-africa/sutherland-karoo": {
@@ -39239,7 +39182,9 @@
     "geographical unit"
    ],
    "path": "south-africa/free-state",
-   "children": []
+   "children": [
+    "south-africa/rietrivier-fs"
+   ]
   },
   "south-africa/kwazulu-natal": {
    "id": "south-africa/kwazulu-natal",
@@ -39252,7 +39197,10 @@
     "geographical unit"
    ],
    "path": "south-africa/kwazulu-natal",
-   "children": []
+   "children": [
+    "south-africa/central-drakensberg",
+    "south-africa/lions-river"
+   ]
   },
   "south-africa/limpopo": {
    "id": "south-africa/limpopo",
@@ -40338,9 +40286,9 @@
    "parent": "japan",
    "depth": 1,
    "source": "w-japan",
-   "kind": "region",
+   "kind": "GI",
    "official": [
-    "region"
+    "GI"
    ],
    "path": "japan/yamanashi",
    "children": []
@@ -40351,9 +40299,9 @@
    "parent": "japan",
    "depth": 1,
    "source": "w-japan",
-   "kind": "region",
+   "kind": "GI",
    "official": [
-    "region"
+    "GI"
    ],
    "path": "japan/hokkaido",
    "children": []
@@ -40364,9 +40312,9 @@
    "parent": "japan",
    "depth": 1,
    "source": "w-japan",
-   "kind": "region",
+   "kind": "GI",
    "official": [
-    "region"
+    "GI"
    ],
    "path": "japan/nagano",
    "children": []
@@ -40843,23 +40791,9 @@
    "source": "added",
    "path": "morocco",
    "children": [
-    "morocco/atlas-mountains",
     "morocco/benslimane",
     "morocco/meknes"
    ]
-  },
-  "morocco/atlas-mountains": {
-   "id": "morocco/atlas-mountains",
-   "name": "Atlas Mountains",
-   "parent": "morocco",
-   "depth": 1,
-   "source": "w-morocco",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "path": "morocco/atlas-mountains",
-   "children": []
   },
   "morocco/benslimane": {
    "id": "morocco/benslimane",
@@ -41272,6 +41206,777 @@
    ],
    "path": "uruguay/san-jose",
    "children": []
+  },
+  "south-africa/lower-duivenhoks-river": {
+   "id": "south-africa/lower-duivenhoks-river",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Lower Duivenhoks River",
+   "parent": "south-africa/cape-south-coast",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/western-cape/cape-south-coast/lower-duivenhoks-river"
+  },
+  "south-africa/elandskloof-kaaimansgat": {
+   "id": "south-africa/elandskloof-kaaimansgat",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Elandskloof/Kaaimansgat",
+   "parent": "south-africa/overberg",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/cape-south-coast/overberg/elandskloof-kaaimansgat"
+  },
+  "south-africa/springfontein-rim": {
+   "id": "south-africa/springfontein-rim",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Springfontein Rim",
+   "parent": "south-africa/walker-bay",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/cape-south-coast/walker-bay/springfontein-rim"
+  },
+  "south-africa/stanford-foothills": {
+   "id": "south-africa/stanford-foothills",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Stanford Foothills",
+   "parent": "south-africa/walker-bay",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/cape-south-coast/walker-bay/stanford-foothills"
+  },
+  "south-africa/napier": {
+   "id": "south-africa/napier",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Napier",
+   "parent": "south-africa/cape-south-coast",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/western-cape/cape-south-coast/napier"
+  },
+  "south-africa/cape-town": {
+   "id": "south-africa/cape-town",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Cape Town",
+   "parent": "south-africa/coastal-region",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [
+    "south-africa/constantia",
+    "south-africa/durbanville",
+    "south-africa/hout-bay",
+    "south-africa/philadelphia"
+   ],
+   "depth": 3,
+   "path": "south-africa/western-cape/coastal-region/cape-town"
+  },
+  "south-africa/agter-paarl": {
+   "id": "south-africa/agter-paarl",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Agter-Paarl",
+   "parent": "south-africa/paarl",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/paarl/agter-paarl"
+  },
+  "south-africa/vlottenburg": {
+   "id": "south-africa/vlottenburg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Vlottenburg",
+   "parent": "south-africa/stellenbosch",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/stellenbosch/vlottenburg"
+  },
+  "south-africa/paardeberg-perdeberg": {
+   "id": "south-africa/paardeberg-perdeberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Paardeberg/Perdeberg",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/paardeberg-perdeberg"
+  },
+  "south-africa/paardeberg-south": {
+   "id": "south-africa/paardeberg-south",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Paardeberg South",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/paardeberg-south"
+  },
+  "south-africa/piket-bo-berg": {
+   "id": "south-africa/piket-bo-berg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Piket-Bo-Berg",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/piket-bo-berg"
+  },
+  "south-africa/porseleinberg": {
+   "id": "south-africa/porseleinberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Porseleinberg",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/porseleinberg"
+  },
+  "south-africa/riebeeksrivier": {
+   "id": "south-africa/riebeeksrivier",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Riebeeksrivier",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/riebeeksrivier"
+  },
+  "south-africa/st-helena-bay": {
+   "id": "south-africa/st-helena-bay",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "St Helena Bay",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/st-helena-bay"
+  },
+  "south-africa/blouvlei": {
+   "id": "south-africa/blouvlei",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Blouvlei",
+   "parent": "south-africa/wellington",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/wellington/blouvlei"
+  },
+  "south-africa/bovlei": {
+   "id": "south-africa/bovlei",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Bovlei",
+   "parent": "south-africa/wellington",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/wellington/bovlei"
+  },
+  "south-africa/groenberg": {
+   "id": "south-africa/groenberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Groenberg",
+   "parent": "south-africa/wellington",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/wellington/groenberg"
+  },
+  "south-africa/limietberg": {
+   "id": "south-africa/limietberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Limietberg",
+   "parent": "south-africa/wellington",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/wellington/limietberg"
+  },
+  "south-africa/mid-berg-river": {
+   "id": "south-africa/mid-berg-river",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Mid-Berg River",
+   "parent": "south-africa/wellington",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/wellington/mid-berg-river"
+  },
+  "south-africa/ashton": {
+   "id": "south-africa/ashton",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Ashton",
+   "parent": "south-africa/robertson",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/robertson/ashton"
+  },
+  "south-africa/goedemoed": {
+   "id": "south-africa/goedemoed",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Goedemoed",
+   "parent": "south-africa/robertson",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/robertson/goedemoed"
+  },
+  "south-africa/goree": {
+   "id": "south-africa/goree",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Goree",
+   "parent": "south-africa/robertson",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/robertson/goree"
+  },
+  "south-africa/goudmyn": {
+   "id": "south-africa/goudmyn",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Goudmyn",
+   "parent": "south-africa/robertson",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/robertson/goudmyn"
+  },
+  "south-africa/zandrivier": {
+   "id": "south-africa/zandrivier",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Zandrivier",
+   "parent": "south-africa/robertson",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/robertson/zandrivier"
+  },
+  "south-africa/worcester": {
+   "id": "south-africa/worcester",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Worcester",
+   "parent": "south-africa/breede-river-valley",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [
+    "south-africa/hex-river-valley",
+    "south-africa/keeromsberg",
+    "south-africa/moordkuil",
+    "south-africa/nuy",
+    "south-africa/rooikrans",
+    "south-africa/scherpenheuvel",
+    "south-africa/stettyn"
+   ],
+   "depth": 3,
+   "path": "south-africa/western-cape/breede-river-valley/worcester"
+  },
+  "south-africa/hex-river-valley": {
+   "id": "south-africa/hex-river-valley",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Hex River Valley",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/hex-river-valley"
+  },
+  "south-africa/keeromsberg": {
+   "id": "south-africa/keeromsberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Keeromsberg",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/keeromsberg"
+  },
+  "south-africa/moordkuil": {
+   "id": "south-africa/moordkuil",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Moordkuil",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/moordkuil"
+  },
+  "south-africa/nuy": {
+   "id": "south-africa/nuy",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Nuy",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/nuy"
+  },
+  "south-africa/rooikrans": {
+   "id": "south-africa/rooikrans",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Rooikrans",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/rooikrans"
+  },
+  "south-africa/stettyn": {
+   "id": "south-africa/stettyn",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Stettyn",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/stettyn"
+  },
+  "south-africa/groenfontein": {
+   "id": "south-africa/groenfontein",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Groenfontein",
+   "parent": "south-africa/calitzdorp",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/klein-karoo/calitzdorp/groenfontein"
+  },
+  "south-africa/cango-valley": {
+   "id": "south-africa/cango-valley",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Cango Valley",
+   "parent": "south-africa/klein-karoo",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/western-cape/klein-karoo/cango-valley"
+  },
+  "south-africa/koo-plateau": {
+   "id": "south-africa/koo-plateau",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Koo Plateau",
+   "parent": "south-africa/klein-karoo",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/western-cape/klein-karoo/koo-plateau"
+  },
+  "south-africa/ceres-plateau": {
+   "id": "south-africa/ceres-plateau",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Ceres Plateau",
+   "parent": "south-africa/western-cape",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [
+    "south-africa/ceres"
+   ],
+   "depth": 2,
+   "path": "south-africa/western-cape/ceres-plateau"
+  },
+  "south-africa/prince-albert": {
+   "id": "south-africa/prince-albert",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Prince Albert",
+   "parent": "south-africa/western-cape",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [
+    "south-africa/kweekvallei",
+    "south-africa/prince-albert-valley",
+    "south-africa/swartberg"
+   ],
+   "depth": 2,
+   "path": "south-africa/western-cape/prince-albert"
+  },
+  "south-africa/kweekvallei": {
+   "id": "south-africa/kweekvallei",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Kweekvallei",
+   "parent": "south-africa/prince-albert",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/western-cape/prince-albert/kweekvallei"
+  },
+  "south-africa/nieuwoudtville": {
+   "id": "south-africa/nieuwoudtville",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Nieuwoudtville",
+   "parent": "south-africa/western-cape",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 2,
+   "path": "south-africa/western-cape/nieuwoudtville"
+  },
+  "south-africa/leipoldtville-sandveld": {
+   "id": "south-africa/leipoldtville-sandveld",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Leipoldtville-Sandveld",
+   "parent": "south-africa/western-cape",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 2,
+   "path": "south-africa/western-cape/leipoldtville-sandveld"
+  },
+  "south-africa/groblershoop": {
+   "id": "south-africa/groblershoop",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Groblershoop",
+   "parent": "south-africa/central-orange-river",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/northern-cape/central-orange-river/groblershoop"
+  },
+  "south-africa/grootdrink": {
+   "id": "south-africa/grootdrink",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Grootdrink",
+   "parent": "south-africa/central-orange-river",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/northern-cape/central-orange-river/grootdrink"
+  },
+  "south-africa/kakamas": {
+   "id": "south-africa/kakamas",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Kakamas",
+   "parent": "south-africa/central-orange-river",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/northern-cape/central-orange-river/kakamas"
+  },
+  "south-africa/keimoes": {
+   "id": "south-africa/keimoes",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Keimoes",
+   "parent": "south-africa/central-orange-river",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/northern-cape/central-orange-river/keimoes"
+  },
+  "south-africa/upington": {
+   "id": "south-africa/upington",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Upington",
+   "parent": "south-africa/central-orange-river",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/northern-cape/central-orange-river/upington"
+  },
+  "south-africa/prieska": {
+   "id": "south-africa/prieska",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Prieska",
+   "parent": "south-africa/northern-cape",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 2,
+   "path": "south-africa/northern-cape/prieska"
+  },
+  "south-africa/central-drakensberg": {
+   "id": "south-africa/central-drakensberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Central Drakensberg",
+   "parent": "south-africa/kwazulu-natal",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [],
+   "depth": 2,
+   "path": "south-africa/kwazulu-natal/central-drakensberg"
+  },
+  "south-africa/lions-river": {
+   "id": "south-africa/lions-river",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Lions River",
+   "parent": "south-africa/kwazulu-natal",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [],
+   "depth": 2,
+   "path": "south-africa/kwazulu-natal/lions-river"
   }
  }
 }

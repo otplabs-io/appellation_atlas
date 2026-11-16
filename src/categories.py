@@ -17,14 +17,21 @@ fold=lambda x:re.sub(r'[^a-z]','',unicodedata.normalize('NFKD',x).encode('ascii'
 BY={'france':{'PDO':'AOC','PGI':'IGP'},'portugal':{'PDO':'DOC','PGI':'Vinho Regional'},'italy':{'PDO':'DOC','PGI':'IGT'},
     'spain':{'PDO':'DO','PGI':'Vino de la Tierra'}}
 DOCA={'spain/rioja','spain/priorat'}
-NOT_DOCG={'italy/soave'}   # Wikipedia's list item is "Soave Superiore": the Soave DOC itself is not a DOCG
+# Vinos de Pago recognised since the Wikipedia list was written, or missing from it (EU register and the Spanish ministry's list)
+PAGO_MORE={'spain/tharsys','spain/abadia-retuerta','spain/chozas-carrascal','spain/el-vicario','spain/vallegarcia','spain/dehesa-penalba','spain/urbezo','spain/bolandin'}
+NOT_DOCG={'italy/soave'}
+DOCG_MORE={'italy/terre-alfieri','italy/canelli','italy/ciro-classico'}   # and Cirò Classico (EU Reg. 2025/1518)   # DOCGs since 2020 (Terre Alfieri) and 2023 (Canelli), after the cached list's revision   # Wikipedia's list item is "Soave Superiore": the Soave DOC itself is not a DOCG
 GERMANY_13={'ahr','baden','franken','hessische-bergstrasse','mittelrhein','mosel','nahe','pfalz','rheingau','rheinhessen','saale-unstrut','sachsen','wurttemberg'}   # Spain's two Denominaciones de Origen Calificadas (Priorat's Catalan DOQ)
 # names in the lists that the tree spells differently
-SAME={'albanadiromagna':'romagnaalbana','valtellina':'valtellinasuperiore','dolcettodidoglianisuperiore':'dogliani',
-      'terredicasauriadocg':'casauria','sagrantinodimontefalco':'montefalcosagrantino','casteldelmontenerodetroiareserva':'casteldelmontenerodetroiariserva'}
+SAME={'valdicornia':'valdicorniarosso','montecucco':'montecuccosangiovese','albanadiromagna':'romagnaalbana','valtellina':'valtellinasuperiore','dolcettodidoglianisuperiore':'dogliani',
+      'terredicasauriadocg':'casauria','sagrantinodimontefalco':'montefalcosagrantino','casteldelmontenerodetroiareserva':'casteldelmontenerodetroiariserva',fold('Castel del Monte Nero di Troia Reserva'):fold('Castel del Monte Nero di Troia Riserva')}
 def listed(page,country,T):
     d=jl(os.path.join(W,page))['parse']; t=d['wikitext']
     names=[(b or a).strip() for a,b in re.findall(r'^[*|]\s*(?:\'\')?\[\[([^\]|]+)(?:\|([^\]]+))?\]\]',t,re.M)]
+    for line in re.findall(r'^\*(.+)$',t,re.M):   # the whole name, links and all: "[[Soave (wine)|Soave]] Superiore", "Gavi or [[Cortese di Gavi]]"
+        x=re.sub(r'\[\[([^\]|]+)\|([^\]]+)\]\]',r'\2',line); x=re.sub(r'\[\[([^\]]+)\]\]',r'\1',x).strip(" '")
+        head=re.split(r'\s*\(|,|\s+produced\b',x)[0].strip()
+        names+=[h.strip() for h in re.split(r'\s+or\s+',head) if h.strip()]
     idx={}
     for k,v in T.items():
         if k.startswith(country+'/'):
@@ -36,8 +43,8 @@ def listed(page,country,T):
     return sorted(out),d['revid']
 def build():
     T=jl(os.path.join(ROOT,'regions','tree.json'))['nodes']
-    docg,r1=listed('docg.json','italy',T); pago,r2=listed('vino-de-pago.json','spain',T)
-    docg=[k for k in docg if k not in NOT_DOCG]
+    docg,r1=listed('docg.json','italy',T); pago,r2=listed('vino-de-pago.json','spain',T); pago=sorted(set(pago)|{k for k in PAGO_MORE if k in T})
+    docg=sorted({k for k in docg if k not in NOT_DOCG}|{k for k in DOCG_MORE if k in T})
     d=jl(os.path.join(W,'dac.json'))['parse']; r3=d['revid']
     names=[re.sub(r'\s*DAC$','',re.sub(r"\[\[|\]\]",'',m).split('|')[-1]).strip() for m in re.findall(r'(\[\[[^\]]+ DAC\]\]|[A-ZÄÖÜ][\w ]+ DAC)',d['wikitext'])]
     idx={fold(v['name']):k for k,v in T.items() if k.startswith('austria/')}

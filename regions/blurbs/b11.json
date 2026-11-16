@@ -1,6 +1,6 @@
 {
  "united-states/yakima-valley": {
-  "text": "Washington's first AVA, set in a long east-west valley around the Yakima River and created in 1983. It holds the state's largest concentration of wineries and vineyards. Chardonnay and Riesling lead the plantings, ahead of Merlot, Cabernet Sauvignon and Syrah.",
+  "text": "Washington's first AVA, set in a long east-west valley around the Yakima River and created in 1983. It holds the state's largest concentration of vineyards. Chardonnay and Riesling lead the plantings, ahead of Merlot, Cabernet Sauvignon and Syrah.",
   "from": [
    "wikipedia",
    "planted",
@@ -120,7 +120,7 @@
   }
  },
  "spain/almansa": {
-  "text": "A DOP in the southeast of Albacete province, in the transition zone between the high La Mancha plateau and the Mediterranean. It is known for red wines, with Monastrell, Garnacha Tinta, Tempranillo and several international reds among its allowed grapes.",
+  "text": "A DOP in the southeast of Albacete province, in the transition zone between the high La Mancha plateau and the Mediterranean. It is known for red wines, with Garnacha Tintorera, Monastrell, Garnacha Tinta, Tempranillo and several international reds among its allowed grapes.",
   "from": [
    "wikipedia",
    "rules",
@@ -144,7 +144,7 @@
   }
  },
  "spain/arlanza": {
-  "text": "A Castile and León DOP across 67 municipalities in Burgos and Palencia, named for the Arlanza River. It was upgraded to DOP status in 2007. Allowed grapes are mainly Tempranillo, Garnacha Tinta, Mencía and Cabernet Sauvignon, plus a few whites.",
+  "text": "A Castile and León DOP across 67 municipalities in Burgos and Palencia, named for the Arlanza River. It was upgraded to DOP status in 2007. Allowed grapes include Tempranillo, Garnacha Tinta, Mencía and Cabernet Sauvignon, plus a few whites.",
   "from": [
    "wikipedia",
    "rules"
@@ -168,7 +168,7 @@
   }
  },
  "spain/ayles": {
-  "text": "A small Aragón DOP that covers just the municipality of Mezalocha. Its wines are made from four red grapes: Cabernet Sauvignon, Garnacha Tinta, Merlot and Tempranillo.",
+  "text": "A single-estate Vino de Pago in Mezalocha, Aragón. Its wines are made from four red grapes: Cabernet Sauvignon, Garnacha Tinta, Merlot and Tempranillo.",
   "from": [
    "rules"
   ]
@@ -222,7 +222,7 @@
   }
  },
  "spain/calzadilla": {
-  "text": "A Castilla-La Mancha DOP that covers only the municipality of Huete. Its wines are made from four red grapes: Cabernet Sauvignon, Garnacha Tinta, Syrah and Tempranillo.",
+  "text": "A single-estate Vino de Pago in Huete, Castilla-La Mancha. Its wines are made from four red grapes: Cabernet Sauvignon, Garnacha Tinta, Syrah and Tempranillo.",
   "from": [
    "rules"
   ]
@@ -247,7 +247,7 @@
   ]
  },
  "spain/campo-de-la-guardia": {
-  "text": "A Castilla-La Mancha DOP that covers only the municipality of La Guardia. Its wines are made from Cabernet Sauvignon, Chardonnay, Malbec, Merlot, Petit Verdot, Syrah and Tempranillo.",
+  "text": "A single-estate Vino de Pago in La Guardia, Castilla-La Mancha. Its wines are made from Cabernet Sauvignon, Chardonnay, Malbec, Merlot, Petit Verdot, Syrah and Tempranillo.",
   "from": [
    "rules"
   ]
@@ -265,7 +265,7 @@
   }
  },
  "spain/casa-del-blanco": {
-  "text": "A Castilla-La Mancha DOP that covers only the municipality of Manzanares. Wines are made from Airén, Chardonnay and Sauvignon Blanc among the whites, and Tempranillo, Syrah, Merlot and several other reds.",
+  "text": "A single-estate Vino de Pago in Manzanares, Castilla-La Mancha. Wines are made from Airén, Chardonnay and Sauvignon Blanc among the whites, and Tempranillo, Syrah, Merlot and several other reds.",
   "from": [
    "rules"
   ]
@@ -386,7 +386,7 @@
   }
  },
  "spain/dehesa-del-carrizal": {
-  "text": "A Castilla-La Mancha DOP that covers only the municipality of Retuerta del Bullaque. Wines are made from Cabernet Sauvignon, Merlot, Petit Verdot, Syrah and Tempranillo for red, and Chardonnay for white.",
+  "text": "A single-estate Vino de Pago in Retuerta del Bullaque, Castilla-La Mancha. Wines are made from Cabernet Sauvignon, Merlot, Petit Verdot, Syrah and Tempranillo for red, and Chardonnay for white.",
   "from": [
    "rules"
   ]
@@ -410,7 +410,7 @@
   }
  },
  "spain/dominio-de-valdepusa": {
-  "text": "A Vino de Pago in Malpica de Tajo, Toledo, which won its status in 2003. This is the highest tier of Spanish wine, requiring estate-grown grapes and an on-site winery. Allowed grapes are Cabernet Sauvignon, Graciano, Petit Verdot and Syrah.",
+  "text": "A Vino de Pago in Malpica de Tajo, Toledo, which won its status in 2003. It holds Vino de Pago status, a single-estate category requiring estate-grown grapes and an on-site winery. Allowed grapes include Cabernet Sauvignon, Graciano, Petit Verdot and Syrah.",
   "from": [
    "wikipedia",
    "rules"
@@ -422,7 +422,7 @@
   }
  },
  "spain/el-terrerazo": {
-  "text": "A DOP that covers only the municipality of Utiel, in Valencia. Wines are made from Bobal, Tempranillo, Garnacha Tinta, Syrah, Merlot and Cabernet Sauvignon.",
+  "text": "A single-estate Vino de Pago in Utiel, Valencia. Wines are made from Bobal, Tempranillo, Garnacha Tinta, Syrah, Merlot and Cabernet Sauvignon.",
   "from": [
    "rules",
    "where"
@@ -453,13 +453,13 @@
   }
  },
  "spain/finca-elez": {
-  "text": "A Castilla-La Mancha DOP that covers only the municipality of El Bonillo. Wines are made from Cabernet Sauvignon, Merlot, Syrah and Tempranillo for red, and Chardonnay for white.",
+  "text": "A single-estate Vino de Pago in El Bonillo, Castilla-La Mancha. Wines are made from Cabernet Sauvignon, Merlot, Syrah and Tempranillo for red, and Chardonnay for white.",
   "from": [
    "rules"
   ]
  },
  "spain/guijoso": {
-  "text": "A Castilla-La Mancha DOP that covers only the municipality of El Bonillo. Wines are made from Cabernet Sauvignon, Merlot, Syrah and Tempranillo for red, and Chardonnay and Sauvignon Blanc for white.",
+  "text": "A single-estate Vino de Pago in El Bonillo, Castilla-La Mancha. Wines are made from Cabernet Sauvignon, Merlot, Syrah and Tempranillo for red, and Chardonnay and Sauvignon Blanc for white.",
   "from": [
    "rules"
   ]
@@ -489,7 +489,7 @@
   }
  },
  "spain/la-jaraba": {
-  "text": "A Vino de Pago estate in El Provencio, formed in 2019 and inside the La Mancha DOP area. A Vino de Pago applies to a single estate. Allowed grapes are Cabernet Sauvignon, Graciano, Merlot, Tempranillo and Sauvignon Blanc.",
+  "text": "A Vino de Pago estate in El Provencio, formed in 2019 and inside the La Mancha DOP area. A Vino de Pago applies to a single estate. Allowed grapes include Cabernet Sauvignon, Graciano, Merlot, Tempranillo and Sauvignon Blanc.",
   "from": [
    "wikipedia",
    "rules"
@@ -542,7 +542,7 @@
   }
  },
  "spain/leon": {
-  "text": "A DOP covering 88 municipalities. Allowed grapes are Prieto Picudo, Mencía, Tempranillo and Garnacha Tinta for red, and Verdejo, Godello and Albarín Blanco for white.",
+  "text": "A DOP covering 88 municipalities. Allowed grapes include Prieto Picudo, Mencía, Tempranillo and Garnacha Tinta for red, and Verdejo, Godello and Albarín Blanco for white.",
   "from": [
    "rules"
   ]
@@ -559,14 +559,14 @@
   }
  },
  "spain/los-balagueses": {
-  "text": "A DOP in the municipality of Requena, in Valencia. Wines are made from Tempranillo, Merlot and Syrah for red, and Chardonnay and Sauvignon Blanc for white.",
+  "text": "A single-estate Vino de Pago in Requena, Valencia. Wines are made from Tempranillo, Merlot and Syrah for red, and Chardonnay and Sauvignon Blanc for white.",
   "from": [
    "rules",
    "where"
   ]
  },
  "spain/los-cerrillos": {
-  "text": "A Castilla-La Mancha DOP that covers only the municipality of Argamasilla de Alba. Wines are made from Cabernet Sauvignon, Merlot, Petit Verdot, Syrah and Tempranillo for red, and Chardonnay for white.",
+  "text": "A single-estate Vino de Pago in Argamasilla de Alba, Castilla-La Mancha. Wines are made from Cabernet Sauvignon, Merlot, Petit Verdot, Syrah and Tempranillo for red, and Chardonnay for white.",
   "from": [
    "rules"
   ]
@@ -687,21 +687,21 @@
   }
  },
  "spain/pago-de-arinzano": {
-  "text": "A DOP in the municipality of Aberin, in Navarra. Wines are made from Tempranillo, Merlot and Cabernet Sauvignon for red, and Chardonnay for white.",
+  "text": "A single-estate Vino de Pago in Aberin, Navarra. Wines are made from Tempranillo, Merlot and Cabernet Sauvignon for red, and Chardonnay for white.",
   "from": [
    "rules",
    "where"
   ]
  },
  "spain/pago-de-otazu": {
-  "text": "A DOP in Navarra, in the municipalities of Cizur and Etxauri. Wines are made from Tempranillo, Merlot and Cabernet Sauvignon for red, and Chardonnay for white.",
+  "text": "A single-estate Vino de Pago in Navarra, on land in Cizur and Etxauri. Wines are made from Tempranillo, Merlot and Cabernet Sauvignon for red, and Chardonnay for white.",
   "from": [
    "rules",
    "where"
   ]
  },
  "spain/pago-florentino": {
-  "text": "A Castilla-La Mancha DOP that covers only the municipality of Malagón. Its wines are made from three red grapes: Petit Verdot, Syrah and Tempranillo.",
+  "text": "A single-estate Vino de Pago in Malagón, Castilla-La Mancha. Its wines are made from three red grapes: Petit Verdot, Syrah and Tempranillo.",
   "from": [
    "rules"
   ]
@@ -720,7 +720,7 @@
   }
  },
  "spain/pla-de-bages": {
-  "text": "A Catalan DOP in Barcelona province, one of the smallest in Spain at under 1,250 acres and one of the newest, official since 1997. Allowed grapes include Picapoll Blanco and Picapoll Negro, plus Macabeo, Parellada, Tempranillo and Merlot.",
+  "text": "A Catalan DOP in Barcelona province, one of the smallest in Spain at under 1,250 acres, official since 1997. Allowed grapes include Picapoll Blanco and Picapoll Negro, plus Macabeo, Parellada, Tempranillo and Merlot.",
   "from": [
    "wikipedia",
    "rules"
@@ -732,7 +732,7 @@
   }
  },
  "spain/prado-de-irache": {
-  "text": "A DOP that covers only Ayegui, in Navarra. Its wines are made from red grapes: Tempranillo, Garnacha Tinta, Merlot, Cabernet Sauvignon, Graciano and Mazuela.",
+  "text": "A single-estate Vino de Pago in Ayegui, Navarra. Its wines are made from red grapes: Tempranillo, Garnacha Tinta, Merlot, Cabernet Sauvignon, Graciano and Mazuela.",
   "from": [
    "rules",
    "where"
@@ -858,7 +858,7 @@
   }
  },
  "spain/rioja": {
-  "text": "A DOCa, the highest tier of Spanish wine regulation, with vineyards in La Rioja, Navarre and Álava. It has three zones: Rioja Alta, Rioja Alavesa and Rioja Oriental. Tempranillo is 77 percent of plantings in La Rioja, followed by Garnacha, Macabeo, Graciano and Mazuelo.",
+  "text": "A DOCa, the highest level for a regional appellation in Spain, with vineyards in La Rioja, Navarre and Álava. It has three zones: Rioja Alta, Rioja Alavesa and Rioja Oriental. Tempranillo is 77 percent of plantings in La Rioja, followed by Garnacha, Macabeo, Graciano and Mazuelo.",
   "from": [
    "wikipedia",
    "planted",
@@ -871,7 +871,7 @@
   }
  },
  "spain/rioja-alavesa": {
-  "text": "One of the three zones of Rioja, the Spanish DOCa, the highest category in Spanish wine regulation. Many Rioja wines blend fruit from all three zones, though single-zone wines are slowly growing.",
+  "text": "One of the three zones of Rioja, the Spanish DOCa, the highest level for a regional appellation in Spain. Many Rioja wines blend fruit from all three zones, though single-zone wines are slowly growing.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -883,7 +883,7 @@
   }
  },
  "spain/rioja-alta": {
-  "text": "One of the three zones of Rioja, the Spanish DOCa, the highest category in Spanish wine regulation. Many Rioja wines blend fruit from all three zones, though single-zone wines are slowly growing.",
+  "text": "One of the three zones of Rioja, a DOCa. Many Rioja wines blend fruit from all three zones, though single-zone wines are slowly growing.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -895,7 +895,7 @@
   }
  },
  "spain/rioja-oriental": {
-  "text": "One of the three zones of Rioja, the Spanish DOCa, the highest category in Spanish wine regulation. Many Rioja wines blend fruit from all three zones, though single-zone wines are slowly growing.",
+  "text": "One of the three zones of Rioja, the Spanish DOCa, the highest level for a regional appellation in Spain. Many Rioja wines blend fruit from all three zones, though single-zone wines are slowly growing.",
   "from": [
    "wikipedia_of_wider",
    "where"

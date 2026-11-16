@@ -66,7 +66,7 @@
   }
  },
  "spain/el-hierro": {
-  "text": "A Canary Islands appellation covering the whole of El Hierro, the smallest and westernmost of the islands. It gained its DO in 1995, and its rules allow still, sparkling, liqueur and overripe-grape wines from local grapes such as Listán Blanco and Negramoll.",
+  "text": "A Canary Islands appellation covering the whole of El Hierro, the smallest of the seven main islands and the westernmost. It gained its DO in 1995, and its rules allow still, sparkling, liqueur and overripe-grape wines from local grapes such as Listán Blanco and Negramoll.",
   "from": [
    "wikipedia",
    "rules",
@@ -241,7 +241,7 @@
   }
  },
  "spain/sierras-de-malaga": {
-  "text": "An Andalusia appellation in Málaga province, with rules allowing still wine and wine from overripe grapes. A very wide list of grapes is allowed, including Tempranillo, Syrah, Cabernet Sauvignon, Chardonnay, Sauvignon Blanc and Pedro Ximénez.",
+  "text": "An Andalusia appellation in Málaga province, with rules allowing still wine and wine from overripe grapes.",
   "from": [
    "rules",
    "where"
@@ -312,7 +312,7 @@
   }
  },
  "germany/hessische-bergstrae": {
-  "text": "Germany's smallest quality wine region, on the northern and western slopes of the Odenwald in Hesse, with about 1,150 acres of vines. It is mostly white, led by Riesling, with Pinot Gris and Spätburgunder next. Most wine is sold locally.",
+  "text": "One of Germany's smallest quality wine regions, on the northern and western slopes of the Odenwald in Hesse, with about 1,150 acres of vines. It is mostly white, led by Riesling, with Pinot Gris and Spätburgunder next. Most wine is sold locally.",
   "from": [
    "wikipedia",
    "planted",
@@ -351,7 +351,7 @@
   }
  },
  "germany/sachsen": {
-  "text": "A small German quality wine region along the Elbe River from Dresden to north of Meissen, with about 1,140 acres of vines. It is one of Europe's northernmost wine regions. Müller-Thurgau and Riesling lead plantings, with Pinot Blanc next.",
+  "text": "A small German quality wine region along the Elbe River from Dresden to north of Meissen, with about 1,140 acres of vines. With Saale-Unstrut, it is one of Germany's two northernmost wine regions. Müller-Thurgau and Riesling lead plantings, with Pinot Blanc next.",
   "from": [
    "wikipedia",
    "planted",

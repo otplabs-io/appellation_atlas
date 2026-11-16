@@ -93,7 +93,7 @@
   ]
  },
  "netherlands/oolde": {
-  "text": "A Dutch PDO in the commune of Lochem. It allows still, semi-sparkling, sparkling and liqueur wines, and wines from overripe grapes. Allowed grapes are Solaris, Regent, Cabernet Blanc, Cabertin and Pinotin.",
+  "text": "A Dutch PDO in the commune of Lochem. It allows still, semi-sparkling, sparkling and liqueur wines, and wines from overripe grapes. Allowed grapes include Solaris, Regent, Cabernet Blanc, Cabertin and Pinotin.",
   "from": [
    "rules",
    "where"
@@ -125,7 +125,7 @@
   ]
  },
  "turkey": {
-  "text": "A country where grape growing in Anatolia goes back at least 7,000 years, and one of the first places Vitis vinifera was domesticated. It has the world's fifth-largest vineyard area, but only 3% to 15% of the harvest becomes wine. Sultaniye, Öküzgözü, Syrah and Boğazkere lead plantings.",
+  "text": "A country where grape growing in Anatolia goes back at least 7,000 years, and one of the first places Vitis vinifera was domesticated. It has the world's sixth-largest vineyard area, but only 3% to 15% of the harvest becomes wine. Sultaniye, Öküzgözü, Syrah and Boğazkere lead plantings.",
   "from": [
    "wikipedia",
    "planted"

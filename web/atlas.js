@@ -304,7 +304,8 @@ const toF=c=>c*9/5+32, inch=mm=>mm/25.4, ft=m=>Math.round(m*3.281/10)*10;
 const andList=xs=>xs.length>1?xs.slice(0,-1).join(', ')+' and '+xs[xs.length-1]:(xs[0]||'');
 // notes on the rules facts (Copy.rules in the app)
 const COPY={baseYield:'the yield its rules set; some years a little more is allowed',yieldCeiling:'the most its rules allow in any year; the usual limit is lower',
-  yieldLimit:'the highest the rules allow',recognised:'the year it was first recognised',noShares:'The record lists the grapes allowed, not their shares.'};
+  yieldLimit:'the most the 2022 EU record allows; some of its wines may have lower limits, and rules change',recognised:'the year its rules say it was first recognised, sometimes under an older name',noShares:'The record lists the grapes allowed, not their shares.',limitsHead:'Planting rules: shares of each grower\u2019s vineyard, not of the blend',
+  forWine:w=>`Main grapes, for ${w}`,desertRain:'Rain is left out here: the climate grid reads far from what the weather stations record.'};
 const rockShare=v=>v>=.5?'mostly':v>=.25?'much':'some';   // a rock family's share in words: it comes from a few map points (Copy.share in the app)
 const leftOut=l=>l?(l.juice?` Juice grapes are left out: ${esc(andList(l.juice))}.`:'')+(l.table?` Table grapes are left out: ${esc(andList(l.table))}.`:''):'';
 const reading=(xs,head)=>xs&&xs.length?`<div class="why"><p class="why-head ts-fact_label">${head}</p><dl>${xs.map(([k,v])=>`<dt class="ts-fact_label">${esc(k)}</dt><dd class="ts-body">${esc(v)}</dd>`).join('')}</dl></div>`:'';
@@ -372,17 +373,23 @@ function renderInfo(f){
   if(ru){
     let b='';
     if(ru.province_list) b+=`<p class="ts-caption sub">The EU record lists every grape approved in the province, not this wine's own blend rules.</p><details class="more-d"><summary class="ts-caption">All ${ru.grapes.length} grapes</summary>${chips(ru.grapes)}</details>`;
-    else if(ru.long_list) b+=`<details class="more-d"><summary class="ts-caption">The rules allow ${ru.grapes.length} grapes</summary>${chips(ru.grapes)}</details>`;
+    else if(ru.long_list) b+=`<details class="more-d"><summary class="ts-caption">The 2022 EU record allows ${ru.grapes.length} grapes</summary>${chips(ru.grapes)}</details>`;
+    else if(ru.by_wine&&ru.by_wine.length){   // the cahier gives each wine its own roles (Malepère: Merlot leads the red, Cabernet Franc the rosé)
+      for(const [w,main,other] of ru.by_wine){
+        b+=`<p class="ts-caption sub">${esc(COPY.forWine(w))}</p>${chips(main)}`;
+        if(other.length) b+=`<p class="ts-caption">Also allowed, in smaller roles</p>${chips(other)}`;
+      }
+    }
     else{
       for(const [sk,head] of SKINS){const g=ru.grapes.filter(x=>x[1]===sk); if(g.length) b+=`<p class="ts-caption sub">${head}</p>${chips(g)}`;}
       const un=ru.grapes.filter(x=>!x[1]); if(un.length) b+=`<p class="ts-caption sub">Grapes</p>${chips(un)}`;
-      if(!ru.cahier&&ru.grapes.length>1) b+=`<p class="ts-caption">${esc(COPY.noShares)}</p>`;
+      if((!ru.cahier||ru.roles_unread)&&ru.grapes.length>1) b+=`<p class="ts-caption">${esc(COPY.noShares)}</p>`;
     }
-    if(ru.grapes_other.length) b+=`<p class="ts-caption sub">Also allowed, in smaller roles</p>${chips(ru.grapes_other)}`;
+    if(ru.grapes_other.length&&!(ru.by_wine&&ru.by_wine.length)) b+=`<p class="ts-caption sub">Also allowed, in smaller roles</p>${chips(ru.grapes_other)}`;
     if(ru.grapes_trial&&ru.grapes_trial.length) b+=`<p class="ts-caption sub">On trial, to adapt to a changing climate</p>${chips(ru.grapes_trial)}`;
-    if(ru.limits&&ru.limits.length) b+=`<p class="ts-caption sub">Limits, as a share of the vines</p><ul class="limits">${ru.limits.map(l=>`<li class="ts-body">${esc(l)}</li>`).join('')}</ul>`;
+    if(ru.limits&&ru.limits.length) b+=`<p class="ts-caption sub">${esc(COPY.limitsHead)}</p><ul class="limits">${ru.limits.map(l=>`<li class="ts-body">${esc(l)}</li>`).join('')}</ul>`;
     b+=`<div class="facts">${fact('Wine types',ru.types.join(', '))}${ru.yield_base?fact('Base yield',ru.yield_base,COPY.baseYield):fact(ru.yield_ceiling?'Yield ceiling':'Yield limit',ru.yield_hl?`${fmt(ru.yield_hl)} hl/ha`:ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:null,ru.yield_ceiling?COPY.yieldCeiling:COPY.yieldLimit)}${fact('Recognised',ru.recognised?String(ru.recognised):null,COPY.recognised)}`
-      +`${fact('Fewest vines',ru.density?`${fmt(ru.density)} per ha`:null)}${fact('Irrigation',ru.irrigation)}${fact('Communes',ru.communes.length?fmt(ru.communes.length):null)}</div>`;
+      +`${fact('Fewest vines',ru.density?`${fmt(ru.density)} per ha`:null)}${fact('Irrigation',ru.irrigation)}${fact('Communes',ru.communes.length?fmt(ru.communes.length):null,'in the 2022 EU record')}</div>`;
     if(ru.communes.length) b+=`<details class="more-d"><summary class="ts-caption">The communes</summary><p class="ts-caption">${ru.communes.map(esc).join(', ')}</p></details>`;
     X.rules=block('The rules',b,'Allowed grapes, not plantings');
   }
@@ -404,11 +411,11 @@ function renderInfo(f){
   if(c){
     const south=c.lat<0, [gi,gp]=seg(GST_F,c.gst), [wi,wp]=seg(WK_F,c.gdd), wk=f.winkler;
     const b=`<div class="facts">${fact('Growing season',`${Math.round(toF(c.gst))}°F`,'average, April to October'.replace('April to October',south?'October to April':'April to October'))}${fact('Heat',`${fmt(Math.round(c.gdd*1.8/10)*10)} degree days`,'°F, above 50°F')}`
-      +`${fact('Rain',`${Math.round(inch(c.rain))} in/year`,`${Math.round(inch(c.gs_rain))} in while the vines grow`)}${fact('Climate type',esc(c.koppen_name||c.koppen),c.koppen?'Köppen '+c.koppen:'')}</div>`
+      +`${c.rain!=null?fact('Rain',`${Math.round(inch(c.rain))} in/year`,`${Math.round(inch(c.gs_rain))} in while the vines grow`):''}${fact('Climate type',esc(c.koppen_name||c.koppen),c.koppen?'Köppen '+c.koppen+', from a 1991 to 2020 map':'')}</div>`
       +`<p class="ts-caption sub">Growing season: ${esc((GST_F[gi]||['?'])[0].toLowerCase())}</p>${scale(GST_F.map(x=>[x[0],x[3]]),gi,gp,'Growing season temperature class')}`
       +`<p class="ts-caption sub">Winkler region ${esc(wk?wk[0]:'')}</p>${scale(WK_F.map(x=>[x[0],x[3]]),wi,wp,'Winkler region')}${wk&&wk[1]?`<p class="ts-body wk">${esc(wk[1])}</p>`:''}`
       +bigNote(f)+reading(rd.climate,'What the climate means for the vines')
-      +`<div class="mrow"><div><p class="ts-caption sub">Average temperature by month, °F</p>${months(c.tavg.map(toF),'temperature','t',south)}</div><div><p class="ts-caption sub">Rain by month, inches</p>${months(c.prec.map(inch),'rain','p',south)}</div></div>`;
+      +`<div class="mrow"><div><p class="ts-caption sub">Average temperature by month, °F</p>${months(c.tavg.map(toF),'temperature','t',south)}</div>${c.prec?`<div><p class="ts-caption sub">Rain by month, inches</p>${months(c.prec.map(inch),'rain','p',south)}</div>`:`<div><p class="ts-caption">${esc(COPY.desertRain)}</p></div>`}</div>`;
     X.climate=block('Climate',b,'Averages, 1970 to 2000');
   }
   const so=f.soil, rk=f.rocks;
@@ -451,7 +458,7 @@ function renderInfo(f){
   for(const b of document.querySelectorAll('#info [data-jump]')) b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView({behavior:'smooth',block:'start'});
   const apb=$('#allparts'); if(apb) apb.onclick=()=>{M.allParts=true; renderInfo(f); M.allParts=false;};
 }
-const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">Every wine country, region and appellation we have, ${fmt(Object.keys(PL).length)} places in all. Pick a country on the globe to start, or search for one.</p><p class="ts-body">Benchmark regions, in gold, are the ones the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest.</p><p class="ts-body">Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.</p></div></section>`;
+const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">Every wine country, region and appellation we have, ${fmt(Object.keys(PL).length)} places in all. Pick a country on the globe to start, or search for one.</p><p class="ts-body">Benchmark regions, in gold, lie in the regions the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest. The Atlas is independent, and not affiliated with or endorsed by WSET.</p><p class="ts-body">Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.</p></div></section>`;
 async function render(){
   readHash(); renderPlaces(); mapShow();
   if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=WORLD_INFO(); return;}

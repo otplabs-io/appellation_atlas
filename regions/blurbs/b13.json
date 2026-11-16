@@ -243,7 +243,7 @@
   ]
  },
  "australia/victoria": {
-  "text": "The Australian state with more wine producers than any other, though third in output. Syrah and Chardonnay are mainstays, and reds range from light, elegant Pinot Noir to full-bodied Shiraz. Rutherglen is known for Madeira-like fortified Liqueur Muscat.",
+  "text": "The Australian state with more wine producers than any other, though third in output. Syrah and Chardonnay are mainstays, and reds range from light, elegant Pinot Noir to full-bodied Shiraz. Rutherglen is known for its fortified Muscat.",
   "from": [
    "wikipedia",
    "planted"
@@ -325,7 +325,7 @@
   }
  },
  "south-africa/agterkliphoogte": {
-  "text": "A ward in the Robertson area of the Breede River Valley, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Robertson area of the Breede River Valley, in the Western Cape.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -337,7 +337,7 @@
   }
  },
  "south-africa/bamboes-bay": {
-  "text": "A ward in the Olifants River area of the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Olifants River area of the Western Cape.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -349,7 +349,7 @@
   }
  },
  "south-africa/banghoek": {
-  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -361,7 +361,7 @@
   }
  },
  "south-africa/boesmansrivier": {
-  "text": "A ward in the Robertson area of the Breede River Valley, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Robertson area of the Breede River Valley, in the Western Cape.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -373,7 +373,7 @@
   }
  },
  "south-africa/bonnievale": {
-  "text": "A ward in the Robertson area of the Breede River Valley, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Robertson area of the Breede River Valley, in the Western Cape.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -397,7 +397,7 @@
   }
  },
  "south-africa/bottelary": {
-  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -409,7 +409,7 @@
   }
  },
  "south-africa/breede-river-valley": {
-  "text": "A region of the Western Cape, whose districts include Breedekloof and Robertson. Plantings in Robertson are led by Colombard, Sauvignon Blanc, Chardonnay and Chenin Blanc.",
+  "text": "A region of the Western Cape, with three districts: Breedekloof, Robertson and Worcester. Plantings in Robertson are led by Colombard, Sauvignon Blanc, Chardonnay and Chenin Blanc.",
   "from": [
    "where",
    "planted"
@@ -440,7 +440,7 @@
   }
  },
  "south-africa/calitzdorp": {
-  "text": "A district in the Klein Karoo area of the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A district in the Klein Karoo area of the Western Cape.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -464,7 +464,7 @@
   }
  },
  "south-africa/cape-peninsula": {
-  "text": "A district in the Coastal Region of the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A district in the Coastal Region of the Western Cape.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -476,14 +476,14 @@
   }
  },
  "south-africa/cape-south-coast": {
-  "text": "A region of the Western Cape, containing Cape Agulhas, Overberg, Plettenberg Bay, Swellendam and Walker Bay. Sauvignon Blanc is the most planted grape at 29%, followed by Chardonnay and Pinot Noir at 14% each.",
+  "text": "A region of the Western Cape, whose districts are Cape Agulhas, Elgin, Lower Duivenhoks River, Overberg, Plettenberg Bay, Swellendam and Walker Bay. Sauvignon Blanc is the most planted grape at 29%, followed by Chardonnay and Pinot Noir at 14% each.",
   "from": [
    "where",
    "planted"
   ]
  },
  "south-africa/cederberg": {
-  "text": "A ward in the Olifants River area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Olifants River area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -495,7 +495,7 @@
   }
  },
  "south-africa/ceres": {
-  "text": "A ward in the Olifants River area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Olifants River area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -507,7 +507,7 @@
   }
  },
  "south-africa/citrusdal-mountain": {
-  "text": "A district in the Olifants River area, in the Western Cape, which holds most of South Africa's vineyards, with Piekenierskloof inside.",
+  "text": "A district in the Olifants River area, in the Western Cape, with Piekenierskloof inside.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -519,7 +519,7 @@
   }
  },
  "south-africa/citrusdal-valley": {
-  "text": "A district in the Olifants River area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A district in the Olifants River area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -531,7 +531,7 @@
   }
  },
  "south-africa/coastal-region": {
-  "text": "A large region of the Western Cape, which holds most of South Africa's vineyards, containing Paarl, Stellenbosch, Swartland, Constantia and Franschhoek. Plantings across Paarl, Swartland and Stellenbosch are led by Chenin Blanc, Cabernet Sauvignon and Syrah.",
+  "text": "A large region of the Western Cape containing Paarl, Stellenbosch, Swartland, Constantia and Franschhoek. Plantings across Paarl, Swartland and Stellenbosch are led by Chenin Blanc, Cabernet Sauvignon and Syrah.",
   "from": [
    "where",
    "planted",
@@ -556,7 +556,7 @@
   }
  },
  "south-africa/darling": {
-  "text": "A district in the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards, with Groenekloof inside.",
+  "text": "A district in the Coastal Region, in the Western Cape, with Groenekloof inside.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -568,7 +568,7 @@
   }
  },
  "south-africa/devon-valley": {
-  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -580,7 +580,7 @@
   }
  },
  "south-africa/durbanville": {
-  "text": "A ward in the Tygerberg area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Tygerberg area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -592,7 +592,7 @@
   }
  },
  "south-africa/eilandia": {
-  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -604,7 +604,7 @@
   }
  },
  "south-africa/elgin": {
-  "text": "A ward in the Overberg area of the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Overberg area of the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -616,7 +616,7 @@
   }
  },
  "south-africa/elim": {
-  "text": "A ward in the Cape Agulhas area of the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Cape Agulhas area of the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -628,7 +628,7 @@
   }
  },
  "south-africa/franschhoek-franschhoek-valley": {
-  "text": "A district in the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A district in the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -652,7 +652,7 @@
   }
  },
  "south-africa/greyton": {
-  "text": "A ward in the Overberg area of the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Overberg area of the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -664,7 +664,7 @@
   }
  },
  "south-africa/groenekloof": {
-  "text": "A ward in the Darling area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Darling area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -676,7 +676,7 @@
   }
  },
  "south-africa/hemel-en-aarde-ridge": {
-  "text": "A ward in the Walker Bay area of the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Walker Bay area of the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -688,7 +688,7 @@
   }
  },
  "south-africa/hemel-en-aarde-valley": {
-  "text": "A ward in the Walker Bay area of the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Walker Bay area of the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -700,7 +700,7 @@
   }
  },
  "south-africa/herbertsdale": {
-  "text": "A ward on the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward on the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -712,7 +712,7 @@
   }
  },
  "south-africa/hoopsrivier": {
-  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -724,7 +724,7 @@
   }
  },
  "south-africa/hout-bay": {
-  "text": "A ward in the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -736,7 +736,7 @@
   }
  },
  "south-africa/jonkershoek-valley": {
-  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -748,7 +748,7 @@
   }
  },
  "south-africa/klaasvoogds": {
-  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -767,7 +767,7 @@
   ]
  },
  "south-africa/klein-rivier": {
-  "text": "A ward in the Overberg area of the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Overberg area of the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -779,7 +779,7 @@
   }
  },
  "south-africa/koekenaap": {
-  "text": "A ward in the Lutzville Valley district of the Olifants River, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Lutzville Valley district of the Olifants River, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -791,7 +791,7 @@
   }
  },
  "south-africa/lamberts-bay": {
-  "text": "A ward in the Olifants River area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Olifants River area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -803,7 +803,7 @@
   }
  },
  "south-africa/langeberg-garcia": {
-  "text": "A district in the Klein Karoo area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A district in the Klein Karoo area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -815,7 +815,7 @@
   }
  },
  "south-africa/le-chasseur": {
-  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -827,7 +827,7 @@
   }
  },
  "south-africa/lutzville-valley": {
-  "text": "A district in the Olifants River area, in the Western Cape, which holds most of South Africa's vineyards, with Koekenaap inside.",
+  "text": "A district of the Coastal Region, on the lower Olifants River in the Western Cape, with Koekenaap inside.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -839,7 +839,7 @@
   }
  },
  "south-africa/malgas": {
-  "text": "A ward in the Swellendam area of the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Swellendam area of the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -851,7 +851,7 @@
   }
  },
  "south-africa/malmesbury": {
-  "text": "A ward in the Swartland area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Swartland area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -863,7 +863,7 @@
   }
  },
  "south-africa/mcgregor": {
-  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Robertson district of the Breede River Valley, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -875,7 +875,7 @@
   }
  },
  "south-africa/montagu": {
-  "text": "A ward in the Klein Karoo area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Klein Karoo area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -887,7 +887,7 @@
   }
  },
  "south-africa/olifants-river": {
-  "text": "A region of the Western Cape, which holds most of South Africa's vineyards, containing Citrusdal Mountain, Citrusdal Valley, Lutzville Valley, Cederberg and Ceres. Chenin Blanc (29%) and Colombard (26%) lead plantings, well ahead of Sauvignon Blanc and Pinotage.",
+  "text": "A region of the Western Cape, whose districts are Citrusdal Mountain and Citrusdal Valley, with the wards of Spruitdrift and Vredendal. Chenin Blanc (29%) and Colombard (26%) lead plantings, well ahead of Sauvignon Blanc and Pinotage.",
   "from": [
    "where",
    "planted",
@@ -900,7 +900,7 @@
   }
  },
  "south-africa/outeniqua": {
-  "text": "A ward in the Klein Karoo area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Klein Karoo area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -912,7 +912,7 @@
   }
  },
  "south-africa/overberg": {
-  "text": "A district on the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards, with Elgin, Greyton, Klein Rivier and Theewater inside.",
+  "text": "A district on the Cape South Coast, in the Western Cape, with Elandskloof/Kaaimansgat, Greyton, Klein River and Theewater inside.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -924,14 +924,14 @@
   }
  },
  "south-africa/paarl": {
-  "text": "A district in the Coastal Region of the Western Cape, containing Simonsberg-Paarl, Voor Paardeberg and Wellington. Chenin Blanc leads plantings at 19%, followed by Syrah, Cabernet Sauvignon and Pinotage.",
+  "text": "A district in the Coastal Region of the Western Cape, whose wards are Agter-Paarl, Simonsberg-Paarl and Voor Paardeberg.",
   "from": [
    "where",
    "planted"
   ]
  },
  "south-africa/papegaaiberg": {
-  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -943,7 +943,7 @@
   }
  },
  "south-africa/philadelphia": {
-  "text": "A ward in the Tygerberg area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Tygerberg area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -955,7 +955,7 @@
   }
  },
  "south-africa/piekenierskloof": {
-  "text": "A ward in the Citrusdal Mountain district of the Olifants River, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Citrusdal Mountain district of the Olifants River, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -967,7 +967,7 @@
   }
  },
  "south-africa/plettenberg-bay": {
-  "text": "A district on the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A district on the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -979,7 +979,7 @@
   }
  },
  "south-africa/polkadraai-hills": {
-  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -991,7 +991,7 @@
   }
  },
  "south-africa/prince-albert-valley": {
-  "text": "A ward in the Olifants River area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Olifants River area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -1003,7 +1003,7 @@
   }
  },
  "south-africa/riebeekberg": {
-  "text": "A ward in the Swartland area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Swartland area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -1034,7 +1034,7 @@
   }
  },
  "south-africa/simonsberg-paarl": {
-  "text": "A ward in the Paarl area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Paarl area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -1046,7 +1046,7 @@
   }
  },
  "south-africa/simonsberg-stellenbosch": {
-  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Stellenbosch area of the Coastal Region, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -1070,7 +1070,7 @@
   }
  },
  "south-africa/spruitdrift": {
-  "text": "A ward in the Olifants River area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Olifants River area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -1089,7 +1089,7 @@
   ]
  },
  "south-africa/stilbaai-east": {
-  "text": "A ward on the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward on the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -1101,7 +1101,7 @@
   }
  },
  "south-africa/stormsvlei": {
-  "text": "A ward in the Swellendam area of the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Swellendam area of the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -1113,7 +1113,7 @@
   }
  },
  "south-africa/sunday-s-glen": {
-  "text": "A ward in the Walker Bay area of the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Walker Bay area of the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -1125,7 +1125,7 @@
   }
  },
  "south-africa/swartberg": {
-  "text": "A ward in the Olifants River area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Olifants River area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -1144,7 +1144,7 @@
   ]
  },
  "south-africa/swellendam": {
-  "text": "A district on the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards, with Buffeljags, Malgas and Stormsvlei inside.",
+  "text": "A district on the Cape South Coast, in the Western Cape, with Buffeljags, Malgas and Stormsvlei inside.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -1156,7 +1156,7 @@
   }
  },
  "south-africa/theewater": {
-  "text": "A ward in the Overberg area of the Cape South Coast, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Overberg area of the Cape South Coast, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -1168,7 +1168,7 @@
   }
  },
  "south-africa/tradouw": {
-  "text": "A ward in the Klein Karoo area, in the Western Cape, which holds most of South Africa's vineyards.",
+  "text": "A ward in the Klein Karoo area, in the Western Cape.",
   "from": [
    "where",
    "wikipedia_of_wider"

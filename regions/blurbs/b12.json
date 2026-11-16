@@ -237,7 +237,7 @@
   ]
  },
  "spain/yecla": {
-  "text": "A DOP in the northernmost corner of Murcia, surrounded by Jumilla, Almansa and Alicante, and traditionally known as the home of Monastrell in Spain. It sells 92 percent of its wine abroad, the highest share of any Spanish DOP.",
+  "text": "A DOP in the northernmost corner of Murcia, surrounded by Jumilla, Almansa and Alicante, and traditionally known as the home of Monastrell in Spain.",
   "from": [
    "wikipedia",
    "where"
@@ -249,7 +249,7 @@
   }
  },
  "australia": {
-  "text": "One of the world's largest wine exporters, sending about 800 million of its 1.2 to 1.3 billion liters a year abroad. Wine is made in every state, and South Australia makes more than half. Syrah is the most planted grape at 30 percent, then Cabernet Sauvignon and Chardonnay.",
+  "text": "One of the world's largest wine exporters, sending about 613 million of its roughly 1.1 billion liters abroad in 2025. Wine is made in every state, and South Australia makes more than half. Syrah is the most planted grape at 30 percent, then Cabernet Sauvignon and Chardonnay.",
   "from": [
    "wikipedia",
    "planted"
@@ -333,7 +333,7 @@
   ]
  },
  "australia/barossa-valley": {
-  "text": "A warm region about 35 miles northeast of Adelaide, in the Barossa zone of South Australia, founded by German settlers. Its warm continental climate gave very ripe grapes and an early fortified wine industry. Syrah is 65 percent of plantings, then Cabernet Sauvignon at 14 percent.",
+  "text": "A warm region about 35 miles northeast of Adelaide, in the Barossa zone of South Australia, founded by German settlers. Its warm, dry summers gave very ripe grapes and an early fortified wine industry. Syrah is 65 percent of plantings, then Cabernet Sauvignon at 14 percent.",
   "from": [
    "wikipedia",
    "planted",
@@ -368,7 +368,7 @@
   ]
  },
  "australia/big-rivers": {
-  "text": "A large grape-growing zone covering the southwestern corner of New South Wales, with four regions: Murray Darling, Perricoota, Riverina and Swan Hill. Chardonnay is 38 percent of plantings and Syrah 20 percent.",
+  "text": "A large grape-growing zone covering the southwestern corner of New South Wales, with four regions: Murray Darling, Perricoota, Riverina and Swan Hill.",
   "from": [
    "wikipedia",
    "planted"
@@ -442,7 +442,7 @@
   ]
  },
  "australia/clare-valley": {
-  "text": "One of Australia's oldest wine regions, in the Mount Lofty Ranges zone of South Australia's Mid North, about 88 miles north of Adelaide and best known for Riesling. Plantings are mostly Syrah (39 percent), with Cabernet Sauvignon at 22 and Riesling at 21.",
+  "text": "One of Australia's oldest wine regions, in the Mount Lofty Ranges zone of South Australia's Mid North, about 88 miles north of Adelaide and best known for Riesling. Plantings are above all Syrah (39 percent), with Cabernet Sauvignon at 22 and Riesling at 21.",
   "from": [
    "wikipedia",
    "planted",
@@ -550,7 +550,7 @@
   ]
  },
  "australia/frankland-river": {
-  "text": "A subregion of Great Southern, Australia's largest wine region, in Western Australia, with about 3,300 acres of vines.",
+  "text": "A subregion of Great Southern, in Western Australia. Frankland River itself has about 3,300 acres of vines.",
   "from": [
    "gi",
    "wikipedia_of_wider",
@@ -747,7 +747,7 @@
   }
  },
  "australia/hunter": {
-  "text": "A New South Wales region with Broke Fordwich, Pokolbin and Upper Hunter Valley inside it. It has about 6,400 acres of vines, mostly Syrah (29 percent), Chardonnay (25), Sémillon (16) and Verdelho (12).",
+  "text": "A New South Wales region with Broke Fordwich, Pokolbin and Upper Hunter Valley inside it. It has about 6,400 acres of vines, above all Syrah (29 percent), Chardonnay (25), Sémillon (16) and Verdelho (12).",
   "from": [
    "planted",
    "gi",
@@ -1070,7 +1070,7 @@
   ]
  },
  "australia/perricoota": {
-  "text": "A region in the Big Rivers zone of New South Wales, with about 1,000 acres of vines, planted mostly to Merlot (31 percent), Petite Sirah (20) and Cabernet Sauvignon (18). Big Rivers has four regions, including Murray Darling and Riverina.",
+  "text": "A region in the Big Rivers zone of New South Wales, with about 1,000 acres of vines, planted above all to Merlot (31 percent), Petite Sirah (20) and Cabernet Sauvignon (18). Big Rivers has four regions, including Murray Darling and Riverina.",
   "from": [
    "wikipedia_of_wider",
    "planted",

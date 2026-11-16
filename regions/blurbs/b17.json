@@ -37,7 +37,7 @@
   }
  },
  "new-zealand/canterbury": {
-  "text": "A South Island geographical indication covering the whole Canterbury Region except the Kaikoura District, about 17,200 square miles. North Canterbury, inside it, grows mostly Sauvignon Blanc and Pinot Noir, with a good share of Riesling and Pinot Gris.",
+  "text": "A South Island geographical indication covering the whole Canterbury Region except the Kaikoura District, about 17,200 square miles.",
   "from": [
    "wikipedia",
    "planted",
@@ -82,7 +82,7 @@
   ]
  },
  "new-zealand/hawkes-bay": {
-  "text": "New Zealand's oldest and second-largest wine region, on the North Island's east coast. Vineyards sit on the plains and low hills around Napier and Hastings. Chardonnay and Sauvignon Blanc lead at 22% each, with Merlot at 20%, so reds and whites both matter.",
+  "text": "One of New Zealand's oldest wine regions and its second-largest, on the North Island's east coast. Vineyards sit on the plains and low hills around Napier and Hastings. Chardonnay and Sauvignon Blanc lead at 22% each, with Merlot at 20%, so reds and whites both matter.",
   "from": [
    "wikipedia",
    "planted"
@@ -523,7 +523,7 @@
   }
  },
  "hungary/tokaj": {
-  "text": "A historic region in northeastern Hungary, also reaching into Slovakia, of 27 named villages. It is famous as the origin of Tokaji aszú, the world's oldest botrytized wine. Furmint covers about 65% of the vines, with Hárslevelű at 20%.",
+  "text": "A historic region of 27 named villages in northeastern Hungary, with a small part across the border in Slovakia. It is famous as the origin of Tokaji aszú, one of the world's oldest botrytized wines. Furmint covers about 65% of the vines, with Hárslevelű at 20%.",
   "from": [
    "wikipedia",
    "planted",

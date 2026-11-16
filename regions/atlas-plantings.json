@@ -4931,7 +4931,7 @@
 "Avellaneda"
 ],
 "year": 2022,
-"ha": 207,
+"ha": 204,
 "grapes": [
 [
 "Malbec",
@@ -4982,10 +4982,10 @@
 "Torrontés Riojano"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 8,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Tempranillo",
@@ -5007,14 +5007,16 @@
 ],
 [
 "Other",
-20,
+17,
 "",
 "other"
 ]
 ],
 "left": {
 "table": [
-"Red Globe"
+"Red Globe",
+"Cardinal",
+"Alphonse Lavallée"
 ]
 }
 },
@@ -5088,7 +5090,7 @@
 "Junín"
 ],
 "year": 2022,
-"ha": 11002,
+"ha": 10987,
 "grapes": [
 [
 "Malbec",
@@ -5127,10 +5129,10 @@
 "Syrah"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 474,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Aspiran Bouschet",
@@ -5164,7 +5166,7 @@
 ],
 [
 "Other",
-1243,
+1228,
 "",
 "other"
 ]
@@ -5173,8 +5175,8 @@
 "table": [
 "Red Globe",
 "Arizul",
-"Fintendo",
-"Flame Seedless"
+"Superior Seedless",
+"Fintendo"
 ]
 }
 },
@@ -5287,7 +5289,7 @@
 "Cereza"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 7,
 "R",
 "Listán Prieto"
@@ -5299,10 +5301,10 @@
 "Syrah"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 3,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Raboso Piave",
@@ -5387,7 +5389,7 @@
 "Cabernet Sauvignon"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 1,
 "R",
 "Listán Prieto"
@@ -5463,7 +5465,7 @@
 "Pinot Noir"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 8,
 "R",
 "Listán Prieto"
@@ -5512,7 +5514,7 @@
 "Tinogasta"
 ],
 "year": 2022,
-"ha": 1494,
+"ha": 1493,
 "grapes": [
 [
 "Cereza",
@@ -5608,7 +5610,7 @@
 "Rawson"
 ],
 "year": 2022,
-"ha": 1012,
+"ha": 974,
 "grapes": [
 [
 "Cereza",
@@ -5639,12 +5641,6 @@
 47,
 "W",
 "Sultaniye"
-],
-[
-"Superior Seedless",
-32,
-"W",
-"Superior Seedless"
 ],
 [
 "Malbec",
@@ -5683,8 +5679,14 @@
 "Torrontes Mendocino"
 ],
 [
+"Viognier",
+8,
+"W",
+"Viognier"
+],
+[
 "Other",
-84,
+69,
 "",
 "other"
 ]
@@ -5889,7 +5891,7 @@
 "Chardonnay"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 0,
 "R",
 "Listán Prieto"
@@ -6018,7 +6020,7 @@
 "Chilecito"
 ],
 "year": 2022,
-"ha": 5227,
+"ha": 5194,
 "grapes": [
 [
 "Torrontés Riojano",
@@ -6094,7 +6096,7 @@
 ],
 [
 "Other",
-554,
+521,
 "",
 "other"
 ]
@@ -6104,7 +6106,7 @@
 "Flame Seedless",
 "Arizul",
 "Fiesta",
-"Serna"
+"Superior Seedless"
 ]
 }
 },
@@ -6153,7 +6155,7 @@
 "Douce Noire"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 9,
 "R",
 "Listán Prieto"
@@ -6253,7 +6255,7 @@
 "Muscat of Alexandria"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 1,
 "R",
 "Listán Prieto"
@@ -6293,7 +6295,7 @@
 "Douce Noire"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 2,
 "R",
 "Listán Prieto"
@@ -6363,7 +6365,7 @@
 "Muscat of Alexandria"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 3,
 "R",
 "Listán Prieto"
@@ -6403,10 +6405,10 @@
 "Syrah"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 417,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Malbec",
@@ -6545,10 +6547,10 @@
 "Tempranillo"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 17,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Criolla Grande",
@@ -6615,10 +6617,10 @@
 "Pedro Giménez"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 10,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Criolla Grande",
@@ -6675,7 +6677,7 @@
 "Las Heras"
 ],
 "year": 2022,
-"ha": 1354,
+"ha": 1350,
 "grapes": [
 [
 "Cereza",
@@ -6702,10 +6704,10 @@
 "Côt"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 85,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Syrah",
@@ -6751,7 +6753,7 @@
 ],
 [
 "Other",
-230,
+226,
 "",
 "other"
 ]
@@ -6759,6 +6761,8 @@
 "left": {
 "table": [
 "Red Globe",
+"Cardinal",
+"Superior Seedless",
 "Victoria"
 ]
 }
@@ -6769,7 +6773,7 @@
 "Lavalle"
 ],
 "year": 2022,
-"ha": 12473,
+"ha": 12445,
 "grapes": [
 [
 "Bonarda",
@@ -6832,10 +6836,10 @@
 "Aspiran Bouschet"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 328,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Ancellotta",
@@ -6845,7 +6849,7 @@
 ],
 [
 "Other",
-1886,
+1858,
 "",
 "other"
 ]
@@ -6855,7 +6859,7 @@
 "Red Globe",
 "Arizul",
 "Flame Seedless",
-"Victoria"
+"Cardinal"
 ]
 }
 },
@@ -6958,7 +6962,7 @@
 "Maipú"
 ],
 "year": 2022,
-"ha": 10874,
+"ha": 10871,
 "grapes": [
 [
 "Malbec",
@@ -7034,7 +7038,7 @@
 ],
 [
 "Other",
-1412,
+1409,
 "",
 "other"
 ]
@@ -7054,7 +7058,7 @@
 "Rivadavia"
 ],
 "year": 2022,
-"ha": 14447,
+"ha": 14430,
 "grapes": [
 [
 "Malbec",
@@ -7105,10 +7109,10 @@
 "Cabernet Sauvignon"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 531,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Aspiran Bouschet",
@@ -7130,7 +7134,7 @@
 ],
 [
 "Other",
-1652,
+1635,
 "",
 "other"
 ]
@@ -7140,7 +7144,7 @@
 "Red Globe",
 "Flame Seedless",
 "Arizul",
-"Emperatriz"
+"Superior Seedless"
 ]
 }
 },
@@ -7243,7 +7247,7 @@
 "San Martín"
 ],
 "year": 2022,
-"ha": 29319,
+"ha": 29137,
 "grapes": [
 [
 "Cereza",
@@ -7288,10 +7292,10 @@
 "Tempranillo"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 1288,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Aspiran Bouschet",
@@ -7319,7 +7323,7 @@
 ],
 [
 "Other",
-4215,
+4032,
 "",
 "other"
 ]
@@ -7329,7 +7333,7 @@
 "Flame Seedless",
 "Red Globe",
 "Arizul",
-"Fiesta"
+"Superior Seedless"
 ]
 }
 },
@@ -7339,7 +7343,7 @@
 "San Rafael"
 ],
 "year": 2022,
-"ha": 12507,
+"ha": 12505,
 "grapes": [
 [
 "Malbec",
@@ -7372,10 +7376,10 @@
 "Criolla Grande"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 1040,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Cereza",
@@ -7415,7 +7419,7 @@
 ],
 [
 "Other",
-1314,
+1312,
 "",
 "other"
 ]
@@ -7435,7 +7439,7 @@
 "Santa Rosa"
 ],
 "year": 2022,
-"ha": 8503,
+"ha": 8493,
 "grapes": [
 [
 "Cereza",
@@ -7480,10 +7484,10 @@
 "Cabernet Sauvignon"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 358,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Aspiran Bouschet",
@@ -7511,7 +7515,7 @@
 ],
 [
 "Other",
-1178,
+1168,
 "",
 "other"
 ]
@@ -7520,8 +7524,8 @@
 "table": [
 "Red Globe",
 "Arizul",
-"Lattuario Nero",
-"Serna"
+"Alphonse Lavallée",
+"Cardinal"
 ]
 }
 },
@@ -7735,7 +7739,7 @@
 "Confluencia"
 ],
 "year": 2022,
-"ha": 139,
+"ha": 138,
 "grapes": [
 [
 "Malbec",
@@ -7786,10 +7790,10 @@
 "Cabernet Franc"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 2,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Sémillon",
@@ -7811,7 +7815,7 @@
 ],
 [
 "Other",
-7,
+6,
 "",
 "other"
 ]
@@ -7819,7 +7823,8 @@
 "left": {
 "table": [
 "Serna",
-"Red Globe"
+"Red Globe",
+"Cardinal"
 ]
 }
 },
@@ -7829,7 +7834,7 @@
 "General Roca"
 ],
 "year": 2022,
-"ha": 1051,
+"ha": 1041,
 "grapes": [
 [
 "Malbec",
@@ -7905,7 +7910,7 @@
 ],
 [
 "Other",
-160,
+150,
 "",
 "other"
 ]
@@ -7913,8 +7918,9 @@
 "left": {
 "table": [
 "Red Globe",
-"Serna",
-"Patagonia"
+"Cardinal",
+"Alphonse Lavallée",
+"Serna"
 ]
 }
 },
@@ -7924,13 +7930,13 @@
 "Pichimahuida"
 ],
 "year": 2022,
-"ha": 51,
+"ha": 45,
 "grapes": [
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 10,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Malbec",
@@ -7943,18 +7949,6 @@
 6,
 "W",
 "Pedro Giménez"
-],
-[
-"Alphonse Lavallée",
-5,
-"R",
-"Alphonse Lavallée"
-],
-[
-"Cardinal",
-2,
-"R",
-"Cardinal"
 ],
 [
 "Syrah",
@@ -7999,8 +7993,20 @@
 "Sémillon"
 ],
 [
+"Cabernet Sauvignon",
+1,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Bonarda",
+1,
+"R",
+"Douce Noire"
+],
+[
 "Other",
-9,
+6,
 "",
 "other"
 ]
@@ -8008,7 +8014,9 @@
 "left": {
 "table": [
 "Red Globe",
-"Alba"
+"Alphonse Lavallée",
+"Alba",
+"Cardinal"
 ]
 }
 },
@@ -8057,7 +8065,7 @@
 "Sauvignon Blanc"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 1,
 "R",
 "Listán Prieto"
@@ -8106,7 +8114,7 @@
 "Cafayate"
 ],
 "year": 2022,
-"ha": 2733,
+"ha": 2732,
 "grapes": [
 [
 "Malbec",
@@ -8233,7 +8241,7 @@
 "Petit Verdot"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 2,
 "R",
 "Listán Prieto"
@@ -8276,25 +8284,13 @@
 "Albardón"
 ],
 "year": 2022,
-"ha": 1011,
+"ha": 661,
 "grapes": [
 [
 "Cereza",
 373,
 "G",
 "Cereza"
-],
-[
-"Superior Seedless",
-254,
-"W",
-"Superior Seedless"
-],
-[
-"Cardinal",
-78,
-"R",
-"Cardinal"
 ],
 [
 "Muscat of Alexandria",
@@ -8327,12 +8323,6 @@
 "Cabernet Sauvignon"
 ],
 [
-"Alphonse Lavallée",
-19,
-"R",
-"Alphonse Lavallée"
-],
-[
 "Aspiran Bouschet",
 17,
 "R",
@@ -8351,8 +8341,26 @@
 "Torrontés Sanjuanino"
 ],
 [
+"Torrontés Riojano",
+7,
+"W",
+"Torrontés Riojano"
+],
+[
+"Pedro Giménez",
+6,
+"W",
+"Pedro Giménez"
+],
+[
+"Greco Nero",
+4,
+"R",
+"Greco Nero"
+],
+[
 "Other",
-52,
+35,
 "",
 "other"
 ]
@@ -8360,9 +8368,9 @@
 "left": {
 "table": [
 "Flame Seedless",
+"Superior Seedless",
 "Red Globe",
-"Arizul",
-"Fiesta"
+"Cardinal"
 ]
 }
 },
@@ -8372,7 +8380,7 @@
 "Angaco"
 ],
 "year": 2022,
-"ha": 1714,
+"ha": 1668,
 "grapes": [
 [
 "Cereza",
@@ -8441,14 +8449,14 @@
 "Aspiran Bouschet"
 ],
 [
-"Cardinal",
-29,
+"Criolla Chica",
+24,
 "R",
-"Cardinal"
+"Listán Prieto"
 ],
 [
 "Other",
-191,
+149,
 "",
 "other"
 ]
@@ -8556,7 +8564,7 @@
 "Caucete"
 ],
 "year": 2022,
-"ha": 5688,
+"ha": 5389,
 "grapes": [
 [
 "Cereza",
@@ -8601,12 +8609,6 @@
 "Sultaniye"
 ],
 [
-"Superior Seedless",
-238,
-"W",
-"Superior Seedless"
-],
-[
 "Aspiran Bouschet",
 225,
 "R",
@@ -8631,8 +8633,14 @@
 "Torrontés Riojano"
 ],
 [
+"Cabernet Sauvignon",
+106,
+"R",
+"Cabernet Sauvignon"
+],
+[
 "Other",
-945,
+777,
 "",
 "other"
 ]
@@ -8640,9 +8648,9 @@
 "left": {
 "table": [
 "Flame Seedless",
+"Superior Seedless",
 "Arizul",
-"Red Globe",
-"Fiesta"
+"Red Globe"
 ]
 }
 },
@@ -8652,7 +8660,7 @@
 "Chimbas"
 ],
 "year": 2022,
-"ha": 598,
+"ha": 573,
 "grapes": [
 [
 "Cereza",
@@ -8697,12 +8705,6 @@
 "Cabernet Sauvignon"
 ],
 [
-"Cardinal",
-17,
-"R",
-"Cardinal"
-],
-[
 "Sultana",
 14,
 "W",
@@ -8715,7 +8717,7 @@
 "Côt"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 9,
 "R",
 "Listán Prieto"
@@ -8727,8 +8729,14 @@
 "Pedro Giménez"
 ],
 [
+"Greco Nero",
+6,
+"R",
+"Greco Nero"
+],
+[
 "Other",
-41,
+28,
 "",
 "other"
 ]
@@ -8738,7 +8746,7 @@
 "Flame Seedless",
 "Red Globe",
 "Arizul",
-"Fiesta"
+"Cardinal"
 ]
 }
 },
@@ -8799,7 +8807,7 @@
 "Torrontés Riojano"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 0,
 "R",
 "Listán Prieto"
@@ -8812,7 +8820,7 @@
 "Pocito"
 ],
 "year": 2022,
-"ha": 2266,
+"ha": 1769,
 "grapes": [
 [
 "Cereza",
@@ -8821,22 +8829,10 @@
 "Cereza"
 ],
 [
-"Superior Seedless",
-304,
-"W",
-"Superior Seedless"
-],
-[
 "Syrah",
 196,
 "R",
 "Syrah"
-],
-[
-"Cardinal",
-148,
-"R",
-"Cardinal"
 ],
 [
 "Malbec",
@@ -8875,20 +8871,32 @@
 "Muscat of Alexandria"
 ],
 [
-"Alphonse Lavallée",
-45,
-"R",
-"Alphonse Lavallée"
-],
-[
 "Torrontés Sanjuanino",
 39,
 "W",
 "Torrontés Sanjuanino"
 ],
 [
+"Torrontés Riojano",
+38,
+"W",
+"Torrontés Riojano"
+],
+[
+"Torrontes Mendocino",
+34,
+"W",
+"Torrontes Mendocino"
+],
+[
+"Aspiran Bouschet",
+25,
+"R",
+"Aspiran Bouschet"
+],
+[
 "Other",
-297,
+201,
 "",
 "other"
 ]
@@ -8896,9 +8904,9 @@
 "left": {
 "table": [
 "Flame Seedless",
+"Superior Seedless",
 "Red Globe",
-"Fiesta",
-"Arizul"
+"Cardinal"
 ]
 }
 },
@@ -8908,7 +8916,7 @@
 "Santa Lucía"
 ],
 "year": 2022,
-"ha": 875,
+"ha": 867,
 "grapes": [
 [
 "Cereza",
@@ -8953,7 +8961,7 @@
 "Pedro Giménez"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 24,
 "R",
 "Listán Prieto"
@@ -8984,7 +8992,7 @@
 ],
 [
 "Other",
-57,
+50,
 "",
 "other"
 ]
@@ -9004,7 +9012,7 @@
 "Sarmiento"
 ],
 "year": 2022,
-"ha": 6757,
+"ha": 6641,
 "grapes": [
 [
 "Cereza",
@@ -9080,7 +9088,7 @@
 ],
 [
 "Other",
-973,
+857,
 "",
 "other"
 ]
@@ -9090,7 +9098,7 @@
 "Flame Seedless",
 "Fintendo",
 "Red Globe",
-"Arizul"
+"Alphonse Lavallée"
 ]
 }
 },
@@ -9115,10 +9123,10 @@
 "Côt"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 0,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Cabernet Sauvignon",
@@ -9137,12 +9145,6 @@
 0,
 "G",
 "Cereza"
-],
-[
-"Alphonse Lavallée",
-0,
-"R",
-"Alphonse Lavallée"
 ],
 [
 "Lambrusco Maestri",
@@ -9164,7 +9166,7 @@
 "Zonda"
 ],
 "year": 2022,
-"ha": 820,
+"ha": 724,
 "grapes": [
 [
 "Malbec",
@@ -9177,12 +9179,6 @@
 112,
 "W",
 "Muscat of Alexandria"
-],
-[
-"Superior Seedless",
-82,
-"W",
-"Superior Seedless"
 ],
 [
 "Tannat",
@@ -9233,14 +9229,20 @@
 "Viognier"
 ],
 [
-"Alphonse Lavallée",
-11,
+"Bonarda",
+10,
 "R",
-"Alphonse Lavallée"
+"Douce Noire"
+],
+[
+"Petit Verdot",
+9,
+"R",
+"Petit Verdot"
 ],
 [
 "Other",
-80,
+58,
 "",
 "other"
 ]
@@ -9248,9 +9250,9 @@
 "left": {
 "table": [
 "Red Globe",
+"Superior Seedless",
 "Flame Seedless",
-"Fiesta",
-"Victoria"
+"Fiesta"
 ]
 }
 },
@@ -20245,7 +20247,7 @@
 "Hokkaido"
 ],
 "year": 2022,
-"ha": 555,
+"ha": 587,
 "grapes": [
 [
 "Pinot Noir",
@@ -20284,6 +20286,12 @@
 "Yamasachi"
 ],
 [
+"Campbell Early",
+32,
+"R",
+"Campbell Early"
+],
+[
 "Müller-Thurgau",
 23,
 "W",
@@ -20314,21 +20322,14 @@
 "Merlot"
 ],
 [
-"Sauvignon Blanc",
-14,
-"W",
-"Sauvignon Blanc"
-],
-[
 "Other",
-148,
+162,
 "",
 "other"
 ]
 ],
 "left": {
 "table": [
-"Campbell Early",
 "Portland",
 "Buffalo"
 ]
@@ -22143,7 +22144,7 @@
 "Alicante Henri Bouschet"
 ],
 [
-"Mencía",
+"Jaen",
 169,
 "R",
 "Mencía"
@@ -22253,7 +22254,7 @@
 "ha": 13409,
 "grapes": [
 [
-"Mencía",
+"Jaen",
 3057,
 "R",
 "Mencía"
@@ -23470,6 +23471,94 @@
 ]
 ]
 },
+"south-africa/cape-town": {
+"scope": "own",
+"names": [
+"Cape Town"
+],
+"year": 2023,
+"ha": 2578,
+"grapes": [
+[
+"Sauvignon Blanc",
+944,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Cabernet Sauvignon",
+397,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+268,
+"R",
+"Merlot"
+],
+[
+"Shiraz",
+261,
+"R",
+"Syrah"
+],
+[
+"Chardonnay",
+168,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+152,
+"R",
+"Pinotage"
+],
+[
+"Chenin Blanc",
+106,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Franc",
+46,
+"R",
+"Cabernet Franc"
+],
+[
+"Semillon",
+43,
+"W",
+"Sémillon"
+],
+[
+"Pinot Noir",
+28,
+"R",
+"Pinot Noir"
+],
+[
+"Muscat Blanc",
+25,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Muscat of Alexandria",
+15,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Other",
+125,
+"",
+"other"
+]
+]
+},
 "south-africa/cape-south-coast": {
 "scope": "own",
 "names": [
@@ -24169,6 +24258,94 @@
 [
 "Other",
 1495,
+"",
+"other"
+]
+]
+},
+"south-africa/worcester": {
+"scope": "own",
+"names": [
+"Worcester"
+],
+"year": 2023,
+"ha": 6518,
+"grapes": [
+[
+"Chenin Blanc",
+1734,
+"W",
+"Chenin Blanc"
+],
+[
+"Colombard",
+1049,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+749,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+469,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+416,
+"R",
+"Pinotage"
+],
+[
+"Shiraz",
+404,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+250,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+205,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+168,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat of Alexandria",
+131,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Sultana",
+94,
+"W",
+"Sultaniye"
+],
+[
+"Cinsault",
+68,
+"R",
+"Cinsaut"
+],
+[
+"Other",
+783,
 "",
 "other"
 ]
@@ -26938,7 +27115,7 @@
 "Argentina"
 ],
 "year": 2022,
-"ha": 196163,
+"ha": 193740,
 "grapes": [
 [
 "Malbec",
@@ -27001,10 +27178,10 @@
 "Tempranillo"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 4946,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Merlot",
@@ -27014,7 +27191,7 @@
 ],
 [
 "Other",
-33554,
+31131,
 "",
 "other"
 ]
@@ -27023,8 +27200,8 @@
 "table": [
 "Flame Seedless",
 "Red Globe",
-"Fiesta",
-"Arizul"
+"Superior Seedless",
+"Fiesta"
 ]
 }
 },
@@ -27714,7 +27891,7 @@
 "Japan"
 ],
 "year": 2022,
-"ha": 6214,
+"ha": 6278,
 "grapes": [
 [
 "Koshu",
@@ -27777,20 +27954,20 @@
 "Kerner"
 ],
 [
+"Campbell Early",
+64,
+"R",
+"Campbell Early"
+],
+[
 "Cabernet Sauvignon",
 61,
 "R",
 "Cabernet Sauvignon"
 ],
 [
-"Sauvignon Blanc",
-57,
-"W",
-"Sauvignon Blanc"
-],
-[
 "Other",
-3926,
+3983,
 "",
 "other"
 ]
@@ -27798,9 +27975,9 @@
 "left": {
 "table": [
 "Shine Muscat",
-"Campbell Early",
 "Kyoho (4N)",
-"Black Queen"
+"Black Queen",
+"Portland"
 ]
 }
 },
@@ -29735,6 +29912,94 @@
 ]
 ]
 },
+"italy/lugana": {
+"scope": "around",
+"names": [
+"Lombardia"
+],
+"year": 2020,
+"ha": 21851,
+"grapes": [
+[
+"Pinot Nero",
+4741,
+"R",
+"Pinot Noir"
+],
+[
+"Chardonnay",
+3074,
+"W",
+"Chardonnay"
+],
+[
+"Bonarda Piemontese",
+2524,
+"R",
+"Bonarda Piemontese"
+],
+[
+"Barbera",
+2373,
+"R",
+"Barbera"
+],
+[
+"Verdicchio Bianco",
+1951,
+"W",
+"Verdicchio Bianco"
+],
+[
+"Moscato Bianco",
+1267,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Merlot",
+1130,
+"R",
+"Merlot"
+],
+[
+"Cabernet Sauvignon",
+828,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Marzemino",
+720,
+"R",
+"Marzemino"
+],
+[
+"Nebbiolo",
+695,
+"R",
+"Nebbiolo"
+],
+[
+"Lambrusco Maestri",
+674,
+"R",
+"Lambrusco Maestri"
+],
+[
+"Pinot Grigio",
+464,
+"G",
+"Pinot Gris"
+],
+[
+"Other",
+1410,
+"",
+"other"
+]
+]
+},
 "italy/alto-adige": {
 "scope": "around",
 "names": [
@@ -30084,10 +30349,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -31784,89 +32049,622 @@
 ]
 ]
 },
-"italy/valle-d-aosta": {
+"italy/garda": {
 "scope": "around",
 "names": [
-"Valle d’Aosta/Vallée d’Aoste"
+"Veneto",
+"Lombardia"
 ],
 "year": 2020,
-"ha": 200,
+"ha": 114170,
 "grapes": [
 [
-"Nebbiolo",
-47,
+"Glera",
+34572,
+"W",
+"Prosecco"
+],
+[
+"Pinot Grigio",
+15340,
+"G",
+"Pinot Gris"
+],
+[
+"Garganega",
+9009,
+"W",
+"Garganega"
+],
+[
+"Chardonnay",
+7463,
+"W",
+"Chardonnay"
+],
+[
+"Corvina Veronese",
+7343,
 "R",
-"Nebbiolo"
+"Corvina Veronese"
+],
+[
+"Merlot",
+6532,
+"R",
+"Merlot"
 ],
 [
 "Pinot Nero",
-39,
+5736,
+"R",
+"Pinot Noir"
+],
+[
+"Cabernet Sauvignon",
+2880,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Rondinella",
+2784,
+"R",
+"Rondinella"
+],
+[
+"Bonarda Piemontese",
+2728,
+"R",
+"Bonarda Piemontese"
+],
+[
+"Barbera",
+2453,
+"R",
+"Barbera"
+],
+[
+"Verdicchio Bianco",
+1951,
+"W",
+"Verdicchio Bianco"
+],
+[
+"Other",
+15379,
+"",
+"other"
+]
+]
+},
+"italy/orvieto": {
+"scope": "around",
+"names": [
+"Umbria"
+],
+"year": 2020,
+"ha": 11574,
+"grapes": [
+[
+"Sangiovese",
+2338,
+"R",
+"Sangiovese"
+],
+[
+"Trebbiano Toscano",
+1863,
+"W",
+"Trebbiano Toscano"
+],
+[
+"Grechetto di Orvieto",
+1798,
+"W",
+"Grechetto di Orvieto"
+],
+[
+"Merlot",
+1461,
+"R",
+"Merlot"
+],
+[
+"Sagrantino",
+1011,
+"R",
+"Sagrantino"
+],
+[
+"Cabernet Sauvignon",
+639,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Chardonnay",
+430,
+"W",
+"Chardonnay"
+],
+[
+"Pinot Grigio",
+220,
+"G",
+"Pinot Gris"
+],
+[
+"Malvasia Bianca Lunga",
+212,
+"W",
+"Malvasia Bianca Lunga"
+],
+[
+"Vermentino",
+188,
+"W",
+"Vermentino"
+],
+[
+"Ciliegiolo",
+179,
+"R",
+"Ciliegiolo"
+],
+[
+"Malvasia Bianca di Candia",
+175,
+"W",
+"Malvasia Bianca di Candia"
+],
+[
+"Other",
+1060,
+"",
+"other"
+]
+]
+},
+"italy/valdadige": {
+"scope": "around",
+"names": [
+"Provincia Autonoma di Trento",
+"Provincia Autonoma di Bolzano/Bozen"
+],
+"year": 2020,
+"ha": 14577,
+"grapes": [
+[
+"Pinot Nero",
+2806,
 "R",
 "Pinot Noir"
 ],
 [
 "Chardonnay",
-23,
+2579,
 "W",
 "Chardonnay"
 ],
 [
-"Moscato Bianco",
-23,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
 "Pinot Grigio",
-18,
+2571,
 "G",
 "Pinot Gris"
 ],
 [
-"Müller-Thurgau",
-14,
-"W",
-"Müller-Thurgau"
-],
-[
-"Syrah",
-14,
+"Teroldego",
+1048,
 "R",
-"Syrah"
-],
-[
-"Gewürztraminer",
-9,
-"W",
-"Gewürztraminer"
+"Teroldego"
 ],
 [
 "Merlot",
-6,
+999,
 "R",
 "Merlot"
 ],
 [
-"Magliocco Canino",
-2,
-"R",
-"Magliocco Canino"
+"Müller-Thurgau",
+838,
+"W",
+"Müller-Thurgau"
 ],
 [
-"Barbera",
-1,
+"Lagrein",
+615,
 "R",
-"Barbera"
+"Lagrein"
 ],
 [
-"Dolcetto",
-1,
+"Gewürztraminer",
+601,
+"W",
+"Gewürztraminer"
+],
+[
+"Pinot Bianco",
+413,
+"W",
+"Pinot Blanc"
+],
+[
+"Marzemino",
+355,
 "R",
-"Dolcetto"
+"Marzemino"
+],
+[
+"Riesling",
+270,
+"W",
+"Riesling"
+],
+[
+"Moscato Giallo",
+231,
+"W",
+"Moscato Giallo"
 ],
 [
 "Other",
-3,
+1251,
+"",
+"other"
+]
+]
+},
+"italy/delle-venezie": {
+"scope": "within",
+"names": [
+"Veneto",
+"Friuli-Venezia Giulia",
+"Provincia Autonoma di Trento"
+],
+"year": 2020,
+"ha": 127693,
+"grapes": [
+[
+"Glera",
+41081,
+"W",
+"Prosecco"
+],
+[
+"Pinot Grigio",
+24824,
+"G",
+"Pinot Gris"
+],
+[
+"Garganega",
+9009,
+"W",
+"Garganega"
+],
+[
+"Merlot",
+8164,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+8115,
+"W",
+"Chardonnay"
+],
+[
+"Corvina Veronese",
+7343,
+"R",
+"Corvina Veronese"
+],
+[
+"Rondinella",
+2784,
+"R",
+"Rondinella"
+],
+[
+"Cabernet Franc",
+2753,
+"R",
+"Cabernet Franc"
+],
+[
+"Cabernet Sauvignon",
+2699,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Friulano",
+2528,
+"W",
+"Sauvignonasse"
+],
+[
+"Sauvignon Blanc",
+1891,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Pinot Nero",
+1542,
+"R",
+"Pinot Noir"
+],
+[
+"Other",
+14960,
+"",
+"other"
+]
+]
+},
+"italy/lison-pramaggiore": {
+"scope": "around",
+"names": [
+"Veneto"
+],
+"year": 2020,
+"ha": 92319,
+"grapes": [
+[
+"Glera",
+34572,
+"W",
+"Prosecco"
+],
+[
+"Pinot Grigio",
+14876,
+"G",
+"Pinot Gris"
+],
+[
+"Garganega",
+9009,
+"W",
+"Garganega"
+],
+[
+"Corvina Veronese",
+7343,
+"R",
+"Corvina Veronese"
+],
+[
+"Merlot",
+5402,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+4389,
+"W",
+"Chardonnay"
+],
+[
+"Rondinella",
+2784,
+"R",
+"Rondinella"
+],
+[
+"Cabernet Sauvignon",
+2052,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Cabernet Franc",
+1741,
+"R",
+"Cabernet Franc"
+],
+[
+"Pinot Nero",
+995,
+"R",
+"Pinot Noir"
+],
+[
+"Pinot Bianco",
+972,
+"W",
+"Pinot Blanc"
+],
+[
+"Friulano",
+911,
+"W",
+"Sauvignonasse"
+],
+[
+"Other",
+7273,
+"",
+"other"
+]
+]
+},
+"italy/lison": {
+"scope": "around",
+"names": [
+"Veneto"
+],
+"year": 2020,
+"ha": 92319,
+"grapes": [
+[
+"Glera",
+34572,
+"W",
+"Prosecco"
+],
+[
+"Pinot Grigio",
+14876,
+"G",
+"Pinot Gris"
+],
+[
+"Garganega",
+9009,
+"W",
+"Garganega"
+],
+[
+"Corvina Veronese",
+7343,
+"R",
+"Corvina Veronese"
+],
+[
+"Merlot",
+5402,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+4389,
+"W",
+"Chardonnay"
+],
+[
+"Rondinella",
+2784,
+"R",
+"Rondinella"
+],
+[
+"Cabernet Sauvignon",
+2052,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Cabernet Franc",
+1741,
+"R",
+"Cabernet Franc"
+],
+[
+"Pinot Nero",
+995,
+"R",
+"Pinot Noir"
+],
+[
+"Pinot Bianco",
+972,
+"W",
+"Pinot Blanc"
+],
+[
+"Friulano",
+911,
+"W",
+"Sauvignonasse"
+],
+[
+"Other",
+7273,
+"",
+"other"
+]
+]
+},
+"italy/valdadige-terradeiforti": {
+"scope": "around",
+"names": [
+"Veneto",
+"Provincia Autonoma di Trento"
+],
+"year": 2020,
+"ha": 101764,
+"grapes": [
+[
+"Glera",
+34572,
+"W",
+"Prosecco"
+],
+[
+"Pinot Grigio",
+17331,
+"G",
+"Pinot Gris"
+],
+[
+"Garganega",
+9009,
+"W",
+"Garganega"
+],
+[
+"Corvina Veronese",
+7343,
+"R",
+"Corvina Veronese"
+],
+[
+"Chardonnay",
+6666,
+"W",
+"Chardonnay"
+],
+[
+"Merlot",
+6077,
+"R",
+"Merlot"
+],
+[
+"Rondinella",
+2784,
+"R",
+"Rondinella"
+],
+[
+"Cabernet Sauvignon",
+2281,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Cabernet Franc",
+1799,
+"R",
+"Cabernet Franc"
+],
+[
+"Pinot Nero",
+1255,
+"R",
+"Pinot Noir"
+],
+[
+"Teroldego",
+1180,
+"R",
+"Teroldego"
+],
+[
+"Pinot Bianco",
+988,
+"W",
+"Pinot Blanc"
+],
+[
+"Other",
+10479,
 "",
 "other"
 ]
@@ -40458,182 +41256,6 @@
 ]
 ]
 },
-"greece/moschato-patron": {
-"scope": "around",
-"names": [
-"Dytiki Elláda"
-],
-"year": 2020,
-"ha": 7512,
-"grapes": [
-[
-"Roditis",
-4546,
-"G",
-"Roditis"
-],
-[
-"Mavrouda",
-856,
-"R",
-"Mavrouda"
-],
-[
-"Moschofilero",
-484,
-"G",
-"Moschofilero"
-],
-[
-"Mavrodafni",
-392,
-"R",
-"Mavrodafni"
-],
-[
-"Muscat Blanc",
-369,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Merlot",
-188,
-"R",
-"Merlot"
-],
-[
-"Cabernet Sauvignon",
-152,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Chardonnay",
-94,
-"W",
-"Chardonnay"
-],
-[
-"Malagousia",
-83,
-"W",
-"Malagousia"
-],
-[
-"Syrah",
-76,
-"R",
-"Syrah"
-],
-[
-"Assyrtiko",
-65,
-"W",
-"Assyrtiko"
-],
-[
-"Sauvignon Blanc",
-65,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Other",
-142,
-"",
-"other"
-]
-]
-},
-"greece/mavrodafni-patron": {
-"scope": "around",
-"names": [
-"Dytiki Elláda"
-],
-"year": 2020,
-"ha": 7512,
-"grapes": [
-[
-"Roditis",
-4546,
-"G",
-"Roditis"
-],
-[
-"Mavrouda",
-856,
-"R",
-"Mavrouda"
-],
-[
-"Moschofilero",
-484,
-"G",
-"Moschofilero"
-],
-[
-"Mavrodafni",
-392,
-"R",
-"Mavrodafni"
-],
-[
-"Muscat Blanc",
-369,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Merlot",
-188,
-"R",
-"Merlot"
-],
-[
-"Cabernet Sauvignon",
-152,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Chardonnay",
-94,
-"W",
-"Chardonnay"
-],
-[
-"Malagousia",
-83,
-"W",
-"Malagousia"
-],
-[
-"Syrah",
-76,
-"R",
-"Syrah"
-],
-[
-"Assyrtiko",
-65,
-"W",
-"Assyrtiko"
-],
-[
-"Sauvignon Blanc",
-65,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Other",
-142,
-"",
-"other"
-]
-]
-},
 "greece/malvasia-candia": {
 "scope": "around",
 "names": [
@@ -40956,94 +41578,6 @@
 ]
 ]
 },
-"greece/moschatos-riou-patras": {
-"scope": "around",
-"names": [
-"Dytiki Elláda"
-],
-"year": 2020,
-"ha": 7512,
-"grapes": [
-[
-"Roditis",
-4546,
-"G",
-"Roditis"
-],
-[
-"Mavrouda",
-856,
-"R",
-"Mavrouda"
-],
-[
-"Moschofilero",
-484,
-"G",
-"Moschofilero"
-],
-[
-"Mavrodafni",
-392,
-"R",
-"Mavrodafni"
-],
-[
-"Muscat Blanc",
-369,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Merlot",
-188,
-"R",
-"Merlot"
-],
-[
-"Cabernet Sauvignon",
-152,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Chardonnay",
-94,
-"W",
-"Chardonnay"
-],
-[
-"Malagousia",
-83,
-"W",
-"Malagousia"
-],
-[
-"Syrah",
-76,
-"R",
-"Syrah"
-],
-[
-"Assyrtiko",
-65,
-"W",
-"Assyrtiko"
-],
-[
-"Sauvignon Blanc",
-65,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Other",
-142,
-"",
-"other"
-]
-]
-},
 "greece/moschato-rodou": {
 "scope": "around",
 "names": [
@@ -41279,94 +41813,6 @@
 [
 "Other",
 29,
-"",
-"other"
-]
-]
-},
-"greece/mantinia": {
-"scope": "around",
-"names": [
-"Peloponnisos"
-],
-"year": 2020,
-"ha": 8508,
-"grapes": [
-[
-"Agiorgitiko",
-2967,
-"R",
-"Agiorgitiko"
-],
-[
-"Roditis",
-1927,
-"G",
-"Roditis"
-],
-[
-"Moschofilero",
-1307,
-"G",
-"Moschofilero"
-],
-[
-"Mavrouda",
-623,
-"R",
-"Mavrouda"
-],
-[
-"Savatiano",
-467,
-"W",
-"Savatiano"
-],
-[
-"Fokiano",
-334,
-"R",
-"Fokiano"
-],
-[
-"Cabernet Sauvignon",
-283,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Chardonnay",
-130,
-"W",
-"Chardonnay"
-],
-[
-"Merlot",
-106,
-"R",
-"Merlot"
-],
-[
-"Assyrtiko",
-104,
-"W",
-"Assyrtiko"
-],
-[
-"Malagousia",
-79,
-"W",
-"Malagousia"
-],
-[
-"Syrah",
-74,
-"R",
-"Syrah"
-],
-[
-"Other",
-107,
 "",
 "other"
 ]
@@ -41925,40 +42371,59 @@
 "greece/peloponnese": {
 "scope": "around",
 "names": [
-"Peloponnisos"
+"Peloponnisos",
+"Dytiki Elláda"
 ],
 "year": 2020,
-"ha": 8508,
+"ha": 16020,
 "grapes": [
 [
-"Agiorgitiko",
-2967,
-"R",
-"Agiorgitiko"
-],
-[
 "Roditis",
-1927,
+6473,
 "G",
 "Roditis"
 ],
 [
+"Agiorgitiko",
+3018,
+"R",
+"Agiorgitiko"
+],
+[
 "Moschofilero",
-1307,
+1791,
 "G",
 "Moschofilero"
 ],
 [
 "Mavrouda",
-623,
+1479,
 "R",
 "Mavrouda"
 ],
 [
 "Savatiano",
-467,
+523,
 "W",
 "Savatiano"
+],
+[
+"Cabernet Sauvignon",
+435,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Mavrodafni",
+414,
+"R",
+"Mavrodafni"
+],
+[
+"Muscat Blanc",
+397,
+"W",
+"Muscat Blanc à Petits Grains"
 ],
 [
 "Fokiano",
@@ -41967,44 +42432,26 @@
 "Fokiano"
 ],
 [
-"Cabernet Sauvignon",
-283,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Chardonnay",
-130,
-"W",
-"Chardonnay"
-],
-[
 "Merlot",
-106,
+294,
 "R",
 "Merlot"
 ],
 [
+"Chardonnay",
+224,
+"W",
+"Chardonnay"
+],
+[
 "Assyrtiko",
-104,
+169,
 "W",
 "Assyrtiko"
 ],
 [
-"Malagousia",
-79,
-"W",
-"Malagousia"
-],
-[
-"Syrah",
-74,
-"R",
-"Syrah"
-],
-[
 "Other",
-107,
+469,
 "",
 "other"
 ]
@@ -42093,94 +42540,6 @@
 [
 "Other",
 29,
-"",
-"other"
-]
-]
-},
-"greece/patra": {
-"scope": "around",
-"names": [
-"Dytiki Elláda"
-],
-"year": 2020,
-"ha": 7512,
-"grapes": [
-[
-"Roditis",
-4546,
-"G",
-"Roditis"
-],
-[
-"Mavrouda",
-856,
-"R",
-"Mavrouda"
-],
-[
-"Moschofilero",
-484,
-"G",
-"Moschofilero"
-],
-[
-"Mavrodafni",
-392,
-"R",
-"Mavrodafni"
-],
-[
-"Muscat Blanc",
-369,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Merlot",
-188,
-"R",
-"Merlot"
-],
-[
-"Cabernet Sauvignon",
-152,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Chardonnay",
-94,
-"W",
-"Chardonnay"
-],
-[
-"Malagousia",
-83,
-"W",
-"Malagousia"
-],
-[
-"Syrah",
-76,
-"R",
-"Syrah"
-],
-[
-"Assyrtiko",
-65,
-"W",
-"Assyrtiko"
-],
-[
-"Sauvignon Blanc",
-65,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Other",
-142,
 "",
 "other"
 ]
@@ -52119,7 +52478,7 @@
 "Valle Fértil"
 ],
 "year": 2022,
-"ha": 24001,
+"ha": 22406,
 "grapes": [
 [
 "Cereza",
@@ -52150,12 +52509,6 @@
 1391,
 "W",
 "Pedro Giménez"
-],
-[
-"Superior Seedless",
-1078,
-"W",
-"Superior Seedless"
 ],
 [
 "Torrontés Sanjuanino",
@@ -52194,8 +52547,14 @@
 "Sultaniye"
 ],
 [
+"Chardonnay",
+429,
+"W",
+"Chardonnay"
+],
+[
 "Other",
-4060,
+3115,
 "",
 "other"
 ]
@@ -52203,9 +52562,9 @@
 "left": {
 "table": [
 "Flame Seedless",
+"Superior Seedless",
 "Red Globe",
-"Arizul",
-"Fiesta"
+"Arizul"
 ]
 }
 },
@@ -52231,7 +52590,7 @@
 "Malargüe"
 ],
 "year": 2022,
-"ha": 146269,
+"ha": 146127,
 "grapes": [
 [
 "Malbec",
@@ -52282,10 +52641,10 @@
 "Tempranillo"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 4812,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Chardonnay",
@@ -52307,7 +52666,7 @@
 ],
 [
 "Other",
-20117,
+19975,
 "",
 "other"
 ]
@@ -52333,7 +52692,7 @@
 "Bariloche"
 ],
 "year": 2022,
-"ha": 1493,
+"ha": 1471,
 "grapes": [
 [
 "Malbec",
@@ -52390,10 +52749,10 @@
 "Syrah"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 48,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Sauvignon Blanc",
@@ -52409,7 +52768,7 @@
 ],
 [
 "Other",
-239,
+216,
 "",
 "other"
 ]
@@ -52417,9 +52776,9 @@
 "left": {
 "table": [
 "Red Globe",
-"Serna",
-"Alba",
-"Patagonia"
+"Cardinal",
+"Alphonse Lavallée",
+"Serna"
 ]
 }
 },
@@ -52434,7 +52793,7 @@
 "Lacar"
 ],
 "year": 2022,
-"ha": 175,
+"ha": 174,
 "grapes": [
 [
 "Malbec",
@@ -52491,10 +52850,10 @@
 "Douce Noire"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 2,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Sémillon",
@@ -52510,7 +52869,7 @@
 ],
 [
 "Other",
-7,
+6,
 "",
 "other"
 ]
@@ -52518,7 +52877,8 @@
 "left": {
 "table": [
 "Serna",
-"Red Globe"
+"Red Globe",
+"Cardinal"
 ]
 }
 },
@@ -52534,7 +52894,7 @@
 "Capital"
 ],
 "year": 2022,
-"ha": 5988,
+"ha": 5946,
 "grapes": [
 [
 "Torrontés Riojano",
@@ -52610,7 +52970,7 @@
 ],
 [
 "Other",
-655,
+613,
 "",
 "other"
 ]
@@ -52620,7 +52980,7 @@
 "Flame Seedless",
 "Arizul",
 "Fiesta",
-"Serna"
+"Superior Seedless"
 ]
 }
 },
@@ -52628,6 +52988,7 @@
 "scope": "within",
 "names": [
 "General Pueyrredón",
+"Junín",
 "Villarino",
 "Berisso",
 "Coronel Suárez",
@@ -52639,18 +53000,24 @@
 "Tandil",
 "Gualeguaychú",
 "Diamante",
+"Coronel Pringles",
 "Leandro N. Alem",
 "Paraná",
 "Campana",
 "Uruguay",
 "Villa Gesell",
-"Junín",
 "Nogoya",
 "San Nicolás"
 ],
 "year": 2022,
-"ha": 201,
+"ha": 227,
 "grapes": [
+[
+"Malbec",
+24,
+"R",
+"Côt"
+],
 [
 "Chardonnay",
 24,
@@ -52658,14 +53025,8 @@
 "Chardonnay"
 ],
 [
-"Malbec",
-23,
-"R",
-"Côt"
-],
-[
 "Sauvignon Blanc",
-21,
+22,
 "W",
 "Sauvignon Blanc"
 ],
@@ -52676,16 +53037,22 @@
 "Isabella"
 ],
 [
+"Tannat",
+19,
+"R",
+"Tannat"
+],
+[
 "Merlot",
 18,
 "R",
 "Merlot"
 ],
 [
-"Tannat",
-15,
+"Cabernet Sauvignon",
+16,
 "R",
-"Tannat"
+"Cabernet Sauvignon"
 ],
 [
 "Pinot Noir",
@@ -52694,10 +53061,10 @@
 "Pinot Noir"
 ],
 [
-"Cabernet Sauvignon",
-14,
+"Syrah",
+11,
 "R",
-"Cabernet Sauvignon"
+"Syrah"
 ],
 [
 "Cabernet Franc",
@@ -52712,24 +53079,23 @@
 "Prosecco"
 ],
 [
-"Cardinal",
+"Pinot Gris",
 6,
-"R",
-"Cardinal"
-],
-[
-"Riesling",
-3,
-"W",
-"Riesling"
+"G",
+"Pinot Gris"
 ],
 [
 "Other",
-25,
+35,
 "",
 "other"
 ]
+],
+"left": {
+"table": [
+"Cardinal"
 ]
+}
 },
 "argentina/catamarca": {
 "scope": "within",
@@ -52742,7 +53108,7 @@
 "Andalgalá"
 ],
 "year": 2022,
-"ha": 2510,
+"ha": 2509,
 "grapes": [
 [
 "Cereza",
@@ -52793,7 +53159,7 @@
 "Afus Ali"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 19,
 "R",
 "Listán Prieto"
@@ -52818,7 +53184,7 @@
 ],
 [
 "Other",
-77,
+76,
 "",
 "other"
 ]
@@ -52841,7 +53207,7 @@
 "Cachi"
 ],
 "year": 2022,
-"ha": 3628,
+"ha": 3627,
 "grapes": [
 [
 "Malbec",
@@ -52892,7 +53258,7 @@
 "Sauvignon Blanc"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 41,
 "R",
 "Listán Prieto"
@@ -52917,11 +53283,16 @@
 ],
 [
 "Other",
-139,
+138,
 "",
 "other"
 ]
+],
+"left": {
+"table": [
+"Superior Seedless"
 ]
+}
 },
 "argentina/cordoba": {
 "scope": "within",
@@ -53200,102 +53571,6 @@
 "other"
 ]
 ]
-},
-"argentina/san-luis": {
-"scope": "within",
-"names": [
-"La Capital",
-"Junín",
-"Ayacucho",
-"Coronel Pringles"
-],
-"year": 2022,
-"ha": 105,
-"grapes": [
-[
-"Malbec",
-30,
-"R",
-"Côt"
-],
-[
-"Syrah",
-27,
-"R",
-"Syrah"
-],
-[
-"Cabernet Sauvignon",
-15,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Viognier",
-9,
-"W",
-"Viognier"
-],
-[
-"Bonarda",
-4,
-"R",
-"Douce Noire"
-],
-[
-"Tannat",
-4,
-"R",
-"Tannat"
-],
-[
-"Pinot Gris",
-4,
-"G",
-"Pinot Gris"
-],
-[
-"Tempranillo",
-3,
-"R",
-"Tempranillo"
-],
-[
-"Cabernet Franc",
-3,
-"R",
-"Cabernet Franc"
-],
-[
-"Chardonnay",
-2,
-"W",
-"Chardonnay"
-],
-[
-"Ancellotta",
-1,
-"R",
-"Ancellotta"
-],
-[
-"Petit Verdot",
-1,
-"R",
-"Petit Verdot"
-],
-[
-"Other",
-1,
-"",
-"other"
-]
-],
-"left": {
-"table": [
-"Red Globe"
-]
-}
 },
 "argentina/tucuman": {
 "scope": "within",
@@ -60843,94 +61118,6 @@
 ]
 ]
 },
-"italy/lugana": {
-"scope": "around",
-"names": [
-"Lombardia"
-],
-"year": 2020,
-"ha": 21851,
-"grapes": [
-[
-"Pinot Nero",
-4741,
-"R",
-"Pinot Noir"
-],
-[
-"Chardonnay",
-3074,
-"W",
-"Chardonnay"
-],
-[
-"Bonarda Piemontese",
-2524,
-"R",
-"Bonarda Piemontese"
-],
-[
-"Barbera",
-2373,
-"R",
-"Barbera"
-],
-[
-"Verdicchio Bianco",
-1951,
-"W",
-"Verdicchio Bianco"
-],
-[
-"Moscato Bianco",
-1267,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Merlot",
-1130,
-"R",
-"Merlot"
-],
-[
-"Cabernet Sauvignon",
-828,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Marzemino",
-720,
-"R",
-"Marzemino"
-],
-[
-"Nebbiolo",
-695,
-"R",
-"Nebbiolo"
-],
-[
-"Lambrusco Maestri",
-674,
-"R",
-"Lambrusco Maestri"
-],
-[
-"Pinot Grigio",
-464,
-"G",
-"Pinot Gris"
-],
-[
-"Other",
-1410,
-"",
-"other"
-]
-]
-},
 "italy/bardolino": {
 "scope": "around",
 "names": [
@@ -62700,10 +62887,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -62788,10 +62975,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -73732,95 +73919,6 @@
 ]
 ]
 },
-"italy/garda": {
-"scope": "around",
-"names": [
-"Veneto",
-"Lombardia"
-],
-"year": 2020,
-"ha": 114170,
-"grapes": [
-[
-"Glera",
-34572,
-"W",
-"Prosecco"
-],
-[
-"Pinot Grigio",
-15340,
-"G",
-"Pinot Gris"
-],
-[
-"Garganega",
-9009,
-"W",
-"Garganega"
-],
-[
-"Chardonnay",
-7463,
-"W",
-"Chardonnay"
-],
-[
-"Corvina Veronese",
-7343,
-"R",
-"Corvina Veronese"
-],
-[
-"Merlot",
-6532,
-"R",
-"Merlot"
-],
-[
-"Pinot Nero",
-5736,
-"R",
-"Pinot Noir"
-],
-[
-"Cabernet Sauvignon",
-2880,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Rondinella",
-2784,
-"R",
-"Rondinella"
-],
-[
-"Bonarda Piemontese",
-2728,
-"R",
-"Bonarda Piemontese"
-],
-[
-"Barbera",
-2453,
-"R",
-"Barbera"
-],
-[
-"Verdicchio Bianco",
-1951,
-"W",
-"Verdicchio Bianco"
-],
-[
-"Other",
-15379,
-"",
-"other"
-]
-]
-},
 "italy/castelli-di-jesi-verdicchio-riserva": {
 "scope": "around",
 "names": [
@@ -75136,94 +75234,6 @@
 [
 "Other",
 1410,
-"",
-"other"
-]
-]
-},
-"italy/orvieto": {
-"scope": "around",
-"names": [
-"Umbria"
-],
-"year": 2020,
-"ha": 11574,
-"grapes": [
-[
-"Sangiovese",
-2338,
-"R",
-"Sangiovese"
-],
-[
-"Trebbiano Toscano",
-1863,
-"W",
-"Trebbiano Toscano"
-],
-[
-"Grechetto di Orvieto",
-1798,
-"W",
-"Grechetto di Orvieto"
-],
-[
-"Merlot",
-1461,
-"R",
-"Merlot"
-],
-[
-"Sagrantino",
-1011,
-"R",
-"Sagrantino"
-],
-[
-"Cabernet Sauvignon",
-639,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Chardonnay",
-430,
-"W",
-"Chardonnay"
-],
-[
-"Pinot Grigio",
-220,
-"G",
-"Pinot Gris"
-],
-[
-"Malvasia Bianca Lunga",
-212,
-"W",
-"Malvasia Bianca Lunga"
-],
-[
-"Vermentino",
-188,
-"W",
-"Vermentino"
-],
-[
-"Ciliegiolo",
-179,
-"R",
-"Ciliegiolo"
-],
-[
-"Malvasia Bianca di Candia",
-175,
-"W",
-"Malvasia Bianca di Candia"
-],
-[
-"Other",
-1060,
 "",
 "other"
 ]
@@ -77693,95 +77703,6 @@
 ]
 ]
 },
-"italy/valdadige": {
-"scope": "around",
-"names": [
-"Provincia Autonoma di Trento",
-"Provincia Autonoma di Bolzano/Bozen"
-],
-"year": 2020,
-"ha": 14577,
-"grapes": [
-[
-"Pinot Nero",
-2806,
-"R",
-"Pinot Noir"
-],
-[
-"Chardonnay",
-2579,
-"W",
-"Chardonnay"
-],
-[
-"Pinot Grigio",
-2571,
-"G",
-"Pinot Gris"
-],
-[
-"Teroldego",
-1048,
-"R",
-"Teroldego"
-],
-[
-"Merlot",
-999,
-"R",
-"Merlot"
-],
-[
-"Müller-Thurgau",
-838,
-"W",
-"Müller-Thurgau"
-],
-[
-"Lagrein",
-615,
-"R",
-"Lagrein"
-],
-[
-"Gewürztraminer",
-601,
-"W",
-"Gewürztraminer"
-],
-[
-"Pinot Bianco",
-413,
-"W",
-"Pinot Blanc"
-],
-[
-"Marzemino",
-355,
-"R",
-"Marzemino"
-],
-[
-"Riesling",
-270,
-"W",
-"Riesling"
-],
-[
-"Moscato Giallo",
-231,
-"W",
-"Moscato Giallo"
-],
-[
-"Other",
-1251,
-"",
-"other"
-]
-]
-},
 "italy/montefalco": {
 "scope": "around",
 "names": [
@@ -79806,96 +79727,6 @@
 ]
 ]
 },
-"italy/delle-venezie": {
-"scope": "within",
-"names": [
-"Veneto",
-"Friuli-Venezia Giulia",
-"Provincia Autonoma di Trento"
-],
-"year": 2020,
-"ha": 127693,
-"grapes": [
-[
-"Glera",
-41081,
-"W",
-"Prosecco"
-],
-[
-"Pinot Grigio",
-24824,
-"G",
-"Pinot Gris"
-],
-[
-"Garganega",
-9009,
-"W",
-"Garganega"
-],
-[
-"Merlot",
-8164,
-"R",
-"Merlot"
-],
-[
-"Chardonnay",
-8115,
-"W",
-"Chardonnay"
-],
-[
-"Corvina Veronese",
-7343,
-"R",
-"Corvina Veronese"
-],
-[
-"Rondinella",
-2784,
-"R",
-"Rondinella"
-],
-[
-"Cabernet Franc",
-2753,
-"R",
-"Cabernet Franc"
-],
-[
-"Cabernet Sauvignon",
-2699,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Friulano",
-2528,
-"W",
-"Sauvignonasse"
-],
-[
-"Sauvignon Blanc",
-1891,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Pinot Nero",
-1542,
-"R",
-"Pinot Noir"
-],
-[
-"Other",
-14960,
-"",
-"other"
-]
-]
-},
 "italy/frascati": {
 "scope": "around",
 "names": [
@@ -81745,94 +81576,6 @@
 ]
 ]
 },
-"italy/lison-pramaggiore": {
-"scope": "around",
-"names": [
-"Veneto"
-],
-"year": 2020,
-"ha": 92319,
-"grapes": [
-[
-"Glera",
-34572,
-"W",
-"Prosecco"
-],
-[
-"Pinot Grigio",
-14876,
-"G",
-"Pinot Gris"
-],
-[
-"Garganega",
-9009,
-"W",
-"Garganega"
-],
-[
-"Corvina Veronese",
-7343,
-"R",
-"Corvina Veronese"
-],
-[
-"Merlot",
-5402,
-"R",
-"Merlot"
-],
-[
-"Chardonnay",
-4389,
-"W",
-"Chardonnay"
-],
-[
-"Rondinella",
-2784,
-"R",
-"Rondinella"
-],
-[
-"Cabernet Sauvignon",
-2052,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Cabernet Franc",
-1741,
-"R",
-"Cabernet Franc"
-],
-[
-"Pinot Nero",
-995,
-"R",
-"Pinot Noir"
-],
-[
-"Pinot Bianco",
-972,
-"W",
-"Pinot Blanc"
-],
-[
-"Friulano",
-911,
-"W",
-"Sauvignonasse"
-],
-[
-"Other",
-7273,
-"",
-"other"
-]
-]
-},
 "italy/pentro-di-isernia": {
 "scope": "around",
 "names": [
@@ -82444,95 +82187,6 @@
 [
 "Other",
 1410,
-"",
-"other"
-]
-]
-},
-"italy/lison": {
-"scope": "around",
-"names": [
-"Veneto",
-"Friuli-Venezia Giulia"
-],
-"year": 2020,
-"ha": 118248,
-"grapes": [
-[
-"Glera",
-41081,
-"W",
-"Prosecco"
-],
-[
-"Pinot Grigio",
-22369,
-"G",
-"Pinot Gris"
-],
-[
-"Garganega",
-9009,
-"W",
-"Garganega"
-],
-[
-"Merlot",
-7489,
-"R",
-"Merlot"
-],
-[
-"Corvina Veronese",
-7343,
-"R",
-"Corvina Veronese"
-],
-[
-"Chardonnay",
-5838,
-"W",
-"Chardonnay"
-],
-[
-"Rondinella",
-2784,
-"R",
-"Rondinella"
-],
-[
-"Cabernet Franc",
-2695,
-"R",
-"Cabernet Franc"
-],
-[
-"Friulano",
-2528,
-"W",
-"Sauvignonasse"
-],
-[
-"Cabernet Sauvignon",
-2470,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Sauvignon Blanc",
-1757,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Ribolla Gialla",
-1451,
-"W",
-"Ribolla Gialla"
-],
-[
-"Other",
-11434,
 "",
 "other"
 ]
@@ -85011,10 +84665,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -85187,10 +84841,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -86155,10 +85809,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -86243,10 +85897,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -87651,10 +87305,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -89323,10 +88977,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -90370,95 +90024,6 @@
 ]
 ]
 },
-"italy/valdadige-terradeiforti": {
-"scope": "around",
-"names": [
-"Veneto",
-"Provincia Autonoma di Trento"
-],
-"year": 2020,
-"ha": 101764,
-"grapes": [
-[
-"Glera",
-34572,
-"W",
-"Prosecco"
-],
-[
-"Pinot Grigio",
-17331,
-"G",
-"Pinot Gris"
-],
-[
-"Garganega",
-9009,
-"W",
-"Garganega"
-],
-[
-"Corvina Veronese",
-7343,
-"R",
-"Corvina Veronese"
-],
-[
-"Chardonnay",
-6666,
-"W",
-"Chardonnay"
-],
-[
-"Merlot",
-6077,
-"R",
-"Merlot"
-],
-[
-"Rondinella",
-2784,
-"R",
-"Rondinella"
-],
-[
-"Cabernet Sauvignon",
-2281,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Cabernet Franc",
-1799,
-"R",
-"Cabernet Franc"
-],
-[
-"Pinot Nero",
-1255,
-"R",
-"Pinot Noir"
-],
-[
-"Teroldego",
-1180,
-"R",
-"Teroldego"
-],
-[
-"Pinot Bianco",
-988,
-"W",
-"Pinot Blanc"
-],
-[
-"Other",
-10479,
-"",
-"other"
-]
-]
-},
 "italy/falerno-del-massico": {
 "scope": "around",
 "names": [
@@ -90820,10 +90385,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -90996,10 +90561,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -91788,10 +91353,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -93548,10 +93113,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -94680,10 +94245,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -97145,10 +96710,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -99257,10 +98822,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -100929,10 +100494,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -101105,10 +100670,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -101281,10 +100846,10 @@
 "ha": 23968,
 "grapes": [
 [
-"Alicante Bouschet",
+"Cannonau",
 7064,
 "R",
-"Alicante Henri Bouschet"
+"Garnacha Tinta"
 ],
 [
 "Vermentino",
@@ -110993,6 +110558,358 @@
 ]
 ]
 },
+"greece/moschato-patron": {
+"scope": "around",
+"names": [
+"Dytiki Elláda"
+],
+"year": 2020,
+"ha": 7512,
+"grapes": [
+[
+"Roditis",
+4546,
+"G",
+"Roditis"
+],
+[
+"Mavrouda",
+856,
+"R",
+"Mavrouda"
+],
+[
+"Moschofilero",
+484,
+"G",
+"Moschofilero"
+],
+[
+"Mavrodafni",
+392,
+"R",
+"Mavrodafni"
+],
+[
+"Muscat Blanc",
+369,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Merlot",
+188,
+"R",
+"Merlot"
+],
+[
+"Cabernet Sauvignon",
+152,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Chardonnay",
+94,
+"W",
+"Chardonnay"
+],
+[
+"Malagousia",
+83,
+"W",
+"Malagousia"
+],
+[
+"Syrah",
+76,
+"R",
+"Syrah"
+],
+[
+"Assyrtiko",
+65,
+"W",
+"Assyrtiko"
+],
+[
+"Sauvignon Blanc",
+65,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Other",
+142,
+"",
+"other"
+]
+]
+},
+"greece/mavrodafni-patron": {
+"scope": "around",
+"names": [
+"Dytiki Elláda"
+],
+"year": 2020,
+"ha": 7512,
+"grapes": [
+[
+"Roditis",
+4546,
+"G",
+"Roditis"
+],
+[
+"Mavrouda",
+856,
+"R",
+"Mavrouda"
+],
+[
+"Moschofilero",
+484,
+"G",
+"Moschofilero"
+],
+[
+"Mavrodafni",
+392,
+"R",
+"Mavrodafni"
+],
+[
+"Muscat Blanc",
+369,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Merlot",
+188,
+"R",
+"Merlot"
+],
+[
+"Cabernet Sauvignon",
+152,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Chardonnay",
+94,
+"W",
+"Chardonnay"
+],
+[
+"Malagousia",
+83,
+"W",
+"Malagousia"
+],
+[
+"Syrah",
+76,
+"R",
+"Syrah"
+],
+[
+"Assyrtiko",
+65,
+"W",
+"Assyrtiko"
+],
+[
+"Sauvignon Blanc",
+65,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Other",
+142,
+"",
+"other"
+]
+]
+},
+"greece/moschatos-riou-patras": {
+"scope": "around",
+"names": [
+"Dytiki Elláda"
+],
+"year": 2020,
+"ha": 7512,
+"grapes": [
+[
+"Roditis",
+4546,
+"G",
+"Roditis"
+],
+[
+"Mavrouda",
+856,
+"R",
+"Mavrouda"
+],
+[
+"Moschofilero",
+484,
+"G",
+"Moschofilero"
+],
+[
+"Mavrodafni",
+392,
+"R",
+"Mavrodafni"
+],
+[
+"Muscat Blanc",
+369,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Merlot",
+188,
+"R",
+"Merlot"
+],
+[
+"Cabernet Sauvignon",
+152,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Chardonnay",
+94,
+"W",
+"Chardonnay"
+],
+[
+"Malagousia",
+83,
+"W",
+"Malagousia"
+],
+[
+"Syrah",
+76,
+"R",
+"Syrah"
+],
+[
+"Assyrtiko",
+65,
+"W",
+"Assyrtiko"
+],
+[
+"Sauvignon Blanc",
+65,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Other",
+142,
+"",
+"other"
+]
+]
+},
+"greece/mantinia": {
+"scope": "around",
+"names": [
+"Peloponnisos"
+],
+"year": 2020,
+"ha": 8508,
+"grapes": [
+[
+"Agiorgitiko",
+2967,
+"R",
+"Agiorgitiko"
+],
+[
+"Roditis",
+1927,
+"G",
+"Roditis"
+],
+[
+"Moschofilero",
+1307,
+"G",
+"Moschofilero"
+],
+[
+"Mavrouda",
+623,
+"R",
+"Mavrouda"
+],
+[
+"Savatiano",
+467,
+"W",
+"Savatiano"
+],
+[
+"Fokiano",
+334,
+"R",
+"Fokiano"
+],
+[
+"Cabernet Sauvignon",
+283,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Chardonnay",
+130,
+"W",
+"Chardonnay"
+],
+[
+"Merlot",
+106,
+"R",
+"Merlot"
+],
+[
+"Assyrtiko",
+104,
+"W",
+"Assyrtiko"
+],
+[
+"Malagousia",
+79,
+"W",
+"Malagousia"
+],
+[
+"Syrah",
+74,
+"R",
+"Syrah"
+],
+[
+"Other",
+107,
+"",
+"other"
+]
+]
+},
 "greece/lasithi": {
 "scope": "around",
 "names": [
@@ -111900,6 +111817,94 @@
 [
 "Other",
 61,
+"",
+"other"
+]
+]
+},
+"greece/patra": {
+"scope": "around",
+"names": [
+"Dytiki Elláda"
+],
+"year": 2020,
+"ha": 7512,
+"grapes": [
+[
+"Roditis",
+4546,
+"G",
+"Roditis"
+],
+[
+"Mavrouda",
+856,
+"R",
+"Mavrouda"
+],
+[
+"Moschofilero",
+484,
+"G",
+"Moschofilero"
+],
+[
+"Mavrodafni",
+392,
+"R",
+"Mavrodafni"
+],
+[
+"Muscat Blanc",
+369,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Merlot",
+188,
+"R",
+"Merlot"
+],
+[
+"Cabernet Sauvignon",
+152,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Chardonnay",
+94,
+"W",
+"Chardonnay"
+],
+[
+"Malagousia",
+83,
+"W",
+"Malagousia"
+],
+[
+"Syrah",
+76,
+"R",
+"Syrah"
+],
+[
+"Assyrtiko",
+65,
+"W",
+"Assyrtiko"
+],
+[
+"Sauvignon Blanc",
+65,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Other",
+142,
 "",
 "other"
 ]
@@ -113689,7 +113694,7 @@
 "Bariloche"
 ],
 "year": 2022,
-"ha": 1493,
+"ha": 1471,
 "grapes": [
 [
 "Malbec",
@@ -113746,10 +113751,10 @@
 "Syrah"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 48,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Sauvignon Blanc",
@@ -113765,7 +113770,7 @@
 ],
 [
 "Other",
-239,
+216,
 "",
 "other"
 ]
@@ -113773,9 +113778,9 @@
 "left": {
 "table": [
 "Red Globe",
-"Serna",
-"Alba",
-"Patagonia"
+"Cardinal",
+"Alphonse Lavallée",
+"Serna"
 ]
 }
 },
@@ -113783,6 +113788,7 @@
 "scope": "parent",
 "names": [
 "General Pueyrredón",
+"Junín",
 "Villarino",
 "Berisso",
 "Coronel Suárez",
@@ -113794,18 +113800,24 @@
 "Tandil",
 "Gualeguaychú",
 "Diamante",
+"Coronel Pringles",
 "Leandro N. Alem",
 "Paraná",
 "Campana",
 "Uruguay",
 "Villa Gesell",
-"Junín",
 "Nogoya",
 "San Nicolás"
 ],
 "year": 2022,
-"ha": 201,
+"ha": 227,
 "grapes": [
+[
+"Malbec",
+24,
+"R",
+"Côt"
+],
 [
 "Chardonnay",
 24,
@@ -113813,14 +113825,8 @@
 "Chardonnay"
 ],
 [
-"Malbec",
-23,
-"R",
-"Côt"
-],
-[
 "Sauvignon Blanc",
-21,
+22,
 "W",
 "Sauvignon Blanc"
 ],
@@ -113831,16 +113837,22 @@
 "Isabella"
 ],
 [
+"Tannat",
+19,
+"R",
+"Tannat"
+],
+[
 "Merlot",
 18,
 "R",
 "Merlot"
 ],
 [
-"Tannat",
-15,
+"Cabernet Sauvignon",
+16,
 "R",
-"Tannat"
+"Cabernet Sauvignon"
 ],
 [
 "Pinot Noir",
@@ -113849,10 +113861,10 @@
 "Pinot Noir"
 ],
 [
-"Cabernet Sauvignon",
-14,
+"Syrah",
+11,
 "R",
-"Cabernet Sauvignon"
+"Syrah"
 ],
 [
 "Cabernet Franc",
@@ -113867,24 +113879,23 @@
 "Prosecco"
 ],
 [
-"Cardinal",
+"Pinot Gris",
 6,
-"R",
-"Cardinal"
-],
-[
-"Riesling",
-3,
-"W",
-"Riesling"
+"G",
+"Pinot Gris"
 ],
 [
 "Other",
-25,
+35,
 "",
 "other"
 ]
+],
+"left": {
+"table": [
+"Cardinal"
 ]
+}
 },
 "argentina/cordoba-argentina": {
 "scope": "parent",
@@ -114107,7 +114118,7 @@
 "Malargüe"
 ],
 "year": 2022,
-"ha": 146269,
+"ha": 146127,
 "grapes": [
 [
 "Malbec",
@@ -114158,10 +114169,10 @@
 "Tempranillo"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 4812,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Chardonnay",
@@ -114183,7 +114194,7 @@
 ],
 [
 "Other",
-20117,
+19975,
 "",
 "other"
 ]
@@ -114294,7 +114305,7 @@
 "Capital"
 ],
 "year": 2022,
-"ha": 5988,
+"ha": 5946,
 "grapes": [
 [
 "Torrontés Riojano",
@@ -114370,7 +114381,7 @@
 ],
 [
 "Other",
-655,
+613,
 "",
 "other"
 ]
@@ -114380,7 +114391,7 @@
 "Flame Seedless",
 "Arizul",
 "Fiesta",
-"Serna"
+"Superior Seedless"
 ]
 }
 },
@@ -114396,7 +114407,7 @@
 "Bariloche"
 ],
 "year": 2022,
-"ha": 1493,
+"ha": 1471,
 "grapes": [
 [
 "Malbec",
@@ -114453,10 +114464,10 @@
 "Syrah"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 48,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Sauvignon Blanc",
@@ -114472,7 +114483,7 @@
 ],
 [
 "Other",
-239,
+216,
 "",
 "other"
 ]
@@ -114480,9 +114491,9 @@
 "left": {
 "table": [
 "Red Globe",
-"Serna",
-"Alba",
-"Patagonia"
+"Cardinal",
+"Alphonse Lavallée",
+"Serna"
 ]
 }
 },
@@ -114498,7 +114509,7 @@
 "Capital"
 ],
 "year": 2022,
-"ha": 5988,
+"ha": 5946,
 "grapes": [
 [
 "Torrontés Riojano",
@@ -114574,7 +114585,7 @@
 ],
 [
 "Other",
-655,
+613,
 "",
 "other"
 ]
@@ -114584,7 +114595,7 @@
 "Flame Seedless",
 "Arizul",
 "Fiesta",
-"Serna"
+"Superior Seedless"
 ]
 }
 },
@@ -114818,7 +114829,7 @@
 "Cabernet Sauvignon"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 24,
 "R",
 "Listán Prieto"
@@ -114848,10 +114859,10 @@
 "Cabernet Franc"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 4,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Petit Verdot",
@@ -114898,7 +114909,7 @@
 "Valle Fértil"
 ],
 "year": 2022,
-"ha": 24001,
+"ha": 22406,
 "grapes": [
 [
 "Cereza",
@@ -114929,12 +114940,6 @@
 1391,
 "W",
 "Pedro Giménez"
-],
-[
-"Superior Seedless",
-1078,
-"W",
-"Superior Seedless"
 ],
 [
 "Torrontés Sanjuanino",
@@ -114973,8 +114978,14 @@
 "Sultaniye"
 ],
 [
+"Chardonnay",
+429,
+"W",
+"Chardonnay"
+],
+[
 "Other",
-4060,
+3115,
 "",
 "other"
 ]
@@ -114982,9 +114993,9 @@
 "left": {
 "table": [
 "Flame Seedless",
+"Superior Seedless",
 "Red Globe",
-"Arizul",
-"Fiesta"
+"Arizul"
 ]
 }
 },
@@ -115082,6 +115093,7 @@
 "scope": "parent",
 "names": [
 "General Pueyrredón",
+"Junín",
 "Villarino",
 "Berisso",
 "Coronel Suárez",
@@ -115093,18 +115105,24 @@
 "Tandil",
 "Gualeguaychú",
 "Diamante",
+"Coronel Pringles",
 "Leandro N. Alem",
 "Paraná",
 "Campana",
 "Uruguay",
 "Villa Gesell",
-"Junín",
 "Nogoya",
 "San Nicolás"
 ],
 "year": 2022,
-"ha": 201,
+"ha": 227,
 "grapes": [
+[
+"Malbec",
+24,
+"R",
+"Côt"
+],
 [
 "Chardonnay",
 24,
@@ -115112,14 +115130,8 @@
 "Chardonnay"
 ],
 [
-"Malbec",
-23,
-"R",
-"Côt"
-],
-[
 "Sauvignon Blanc",
-21,
+22,
 "W",
 "Sauvignon Blanc"
 ],
@@ -115130,16 +115142,22 @@
 "Isabella"
 ],
 [
+"Tannat",
+19,
+"R",
+"Tannat"
+],
+[
 "Merlot",
 18,
 "R",
 "Merlot"
 ],
 [
-"Tannat",
-15,
+"Cabernet Sauvignon",
+16,
 "R",
-"Tannat"
+"Cabernet Sauvignon"
 ],
 [
 "Pinot Noir",
@@ -115148,10 +115166,10 @@
 "Pinot Noir"
 ],
 [
-"Cabernet Sauvignon",
-14,
+"Syrah",
+11,
 "R",
-"Cabernet Sauvignon"
+"Syrah"
 ],
 [
 "Cabernet Franc",
@@ -115166,24 +115184,23 @@
 "Prosecco"
 ],
 [
-"Cardinal",
+"Pinot Gris",
 6,
-"R",
-"Cardinal"
-],
-[
-"Riesling",
-3,
-"W",
-"Riesling"
+"G",
+"Pinot Gris"
 ],
 [
 "Other",
-25,
+35,
 "",
 "other"
 ]
+],
+"left": {
+"table": [
+"Cardinal"
 ]
+}
 },
 "canada/vancouver-island": {
 "scope": "parent",
@@ -116243,7 +116260,275 @@
 ]
 ]
 },
+"south-africa/cederberg": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Robertson",
+"Swartland",
+"Stellenbosch",
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 53664,
+"grapes": [
+[
+"Chenin Blanc",
+7977,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+7413,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+6735,
+"R",
+"Syrah"
+],
+[
+"Sauvignon Blanc",
+5971,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+4870,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+4493,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+3802,
+"R",
+"Merlot"
+],
+[
+"Colombard",
+2386,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+1056,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+1043,
+"R",
+"Cinsaut"
+],
+[
+"Ruby Cabernet",
+708,
+"R",
+"Ruby Cabernet"
+],
+[
+"Cabernet Franc",
+695,
+"R",
+"Cabernet Franc"
+],
+[
+"Other",
+6516,
+"",
+"other"
+]
+]
+},
 "south-africa/douglas": {
+"scope": "parent",
+"names": [
+"Northern Cape"
+],
+"year": 2023,
+"ha": 4840,
+"grapes": [
+[
+"Sultana",
+2435,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+1033,
+"W",
+"Colombard"
+],
+[
+"Chenin Blanc",
+706,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+94,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Muscat of Alexandria",
+62,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Shiraz",
+51,
+"R",
+"Syrah"
+],
+[
+"Ruby Cabernet",
+45,
+"R",
+"Ruby Cabernet"
+],
+[
+"Sauvignon Blanc",
+43,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+40,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+38,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+27,
+"R",
+"Merlot"
+],
+[
+"Muscat Blanc",
+23,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Other",
+243,
+"",
+"other"
+]
+]
+},
+"south-africa/hartswater": {
+"scope": "parent",
+"names": [
+"Northern Cape"
+],
+"year": 2023,
+"ha": 4840,
+"grapes": [
+[
+"Sultana",
+2435,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+1033,
+"W",
+"Colombard"
+],
+[
+"Chenin Blanc",
+706,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+94,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Muscat of Alexandria",
+62,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Shiraz",
+51,
+"R",
+"Syrah"
+],
+[
+"Ruby Cabernet",
+45,
+"R",
+"Ruby Cabernet"
+],
+[
+"Sauvignon Blanc",
+43,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+40,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+38,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+27,
+"R",
+"Merlot"
+],
+[
+"Muscat Blanc",
+23,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Other",
+243,
+"",
+"other"
+]
+]
+},
+"south-africa/central-orange-river": {
 "scope": "parent",
 "names": [
 "Northern Cape"
@@ -117671,6 +117956,462 @@
 [
 "Other",
 25,
+"",
+"other"
+]
+]
+},
+"south-africa/ceres-plateau": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Robertson",
+"Swartland",
+"Stellenbosch",
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 53664,
+"grapes": [
+[
+"Chenin Blanc",
+7977,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+7413,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+6735,
+"R",
+"Syrah"
+],
+[
+"Sauvignon Blanc",
+5971,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+4870,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+4493,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+3802,
+"R",
+"Merlot"
+],
+[
+"Colombard",
+2386,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+1056,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+1043,
+"R",
+"Cinsaut"
+],
+[
+"Ruby Cabernet",
+708,
+"R",
+"Ruby Cabernet"
+],
+[
+"Cabernet Franc",
+695,
+"R",
+"Cabernet Franc"
+],
+[
+"Other",
+6516,
+"",
+"other"
+]
+]
+},
+"south-africa/prince-albert": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Robertson",
+"Swartland",
+"Stellenbosch",
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 53664,
+"grapes": [
+[
+"Chenin Blanc",
+7977,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+7413,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+6735,
+"R",
+"Syrah"
+],
+[
+"Sauvignon Blanc",
+5971,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+4870,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+4493,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+3802,
+"R",
+"Merlot"
+],
+[
+"Colombard",
+2386,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+1056,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+1043,
+"R",
+"Cinsaut"
+],
+[
+"Ruby Cabernet",
+708,
+"R",
+"Ruby Cabernet"
+],
+[
+"Cabernet Franc",
+695,
+"R",
+"Cabernet Franc"
+],
+[
+"Other",
+6516,
+"",
+"other"
+]
+]
+},
+"south-africa/nieuwoudtville": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Robertson",
+"Swartland",
+"Stellenbosch",
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 53664,
+"grapes": [
+[
+"Chenin Blanc",
+7977,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+7413,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+6735,
+"R",
+"Syrah"
+],
+[
+"Sauvignon Blanc",
+5971,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+4870,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+4493,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+3802,
+"R",
+"Merlot"
+],
+[
+"Colombard",
+2386,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+1056,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+1043,
+"R",
+"Cinsaut"
+],
+[
+"Ruby Cabernet",
+708,
+"R",
+"Ruby Cabernet"
+],
+[
+"Cabernet Franc",
+695,
+"R",
+"Cabernet Franc"
+],
+[
+"Other",
+6516,
+"",
+"other"
+]
+]
+},
+"south-africa/leipoldtville-sandveld": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Robertson",
+"Swartland",
+"Stellenbosch",
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 53664,
+"grapes": [
+[
+"Chenin Blanc",
+7977,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+7413,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+6735,
+"R",
+"Syrah"
+],
+[
+"Sauvignon Blanc",
+5971,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+4870,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+4493,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+3802,
+"R",
+"Merlot"
+],
+[
+"Colombard",
+2386,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+1056,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+1043,
+"R",
+"Cinsaut"
+],
+[
+"Ruby Cabernet",
+708,
+"R",
+"Ruby Cabernet"
+],
+[
+"Cabernet Franc",
+695,
+"R",
+"Cabernet Franc"
+],
+[
+"Other",
+6516,
+"",
+"other"
+]
+]
+},
+"south-africa/prieska": {
+"scope": "parent",
+"names": [
+"Northern Cape"
+],
+"year": 2023,
+"ha": 4840,
+"grapes": [
+[
+"Sultana",
+2435,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+1033,
+"W",
+"Colombard"
+],
+[
+"Chenin Blanc",
+706,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+94,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Muscat of Alexandria",
+62,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Shiraz",
+51,
+"R",
+"Syrah"
+],
+[
+"Ruby Cabernet",
+45,
+"R",
+"Ruby Cabernet"
+],
+[
+"Sauvignon Blanc",
+43,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+40,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+38,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+27,
+"R",
+"Merlot"
+],
+[
+"Muscat Blanc",
+23,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Other",
+243,
 "",
 "other"
 ]
@@ -140917,7 +141658,7 @@
 "Maipú"
 ],
 "year": 2022,
-"ha": 10874,
+"ha": 10871,
 "grapes": [
 [
 "Malbec",
@@ -140993,7 +141734,7 @@
 ],
 [
 "Other",
-1412,
+1409,
 "",
 "other"
 ]
@@ -141101,7 +141842,7 @@
 "Las Heras"
 ],
 "year": 2022,
-"ha": 1354,
+"ha": 1350,
 "grapes": [
 [
 "Cereza",
@@ -141128,10 +141869,10 @@
 "Côt"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 85,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Syrah",
@@ -141177,7 +141918,7 @@
 ],
 [
 "Other",
-230,
+226,
 "",
 "other"
 ]
@@ -141185,6 +141926,8 @@
 "left": {
 "table": [
 "Red Globe",
+"Cardinal",
+"Superior Seedless",
 "Victoria"
 ]
 }
@@ -141283,7 +142026,7 @@
 "Maipú"
 ],
 "year": 2022,
-"ha": 10874,
+"ha": 10871,
 "grapes": [
 [
 "Malbec",
@@ -141359,7 +142102,7 @@
 ],
 [
 "Other",
-1412,
+1409,
 "",
 "other"
 ]
@@ -141467,7 +142210,7 @@
 "Zonda"
 ],
 "year": 2022,
-"ha": 820,
+"ha": 724,
 "grapes": [
 [
 "Malbec",
@@ -141480,12 +142223,6 @@
 112,
 "W",
 "Muscat of Alexandria"
-],
-[
-"Superior Seedless",
-82,
-"W",
-"Superior Seedless"
 ],
 [
 "Tannat",
@@ -141536,14 +142273,20 @@
 "Viognier"
 ],
 [
-"Alphonse Lavallée",
-11,
+"Bonarda",
+10,
 "R",
-"Alphonse Lavallée"
+"Douce Noire"
+],
+[
+"Petit Verdot",
+9,
+"R",
+"Petit Verdot"
 ],
 [
 "Other",
-80,
+58,
 "",
 "other"
 ]
@@ -141551,9 +142294,9 @@
 "left": {
 "table": [
 "Red Globe",
+"Superior Seedless",
 "Flame Seedless",
-"Fiesta",
-"Victoria"
+"Fiesta"
 ]
 }
 },
@@ -141656,7 +142399,7 @@
 "Maipú"
 ],
 "year": 2022,
-"ha": 10874,
+"ha": 10871,
 "grapes": [
 [
 "Malbec",
@@ -141732,7 +142475,7 @@
 ],
 [
 "Other",
-1412,
+1409,
 "",
 "other"
 ]
@@ -141752,7 +142495,7 @@
 "Caucete"
 ],
 "year": 2022,
-"ha": 5688,
+"ha": 5389,
 "grapes": [
 [
 "Cereza",
@@ -141797,12 +142540,6 @@
 "Sultaniye"
 ],
 [
-"Superior Seedless",
-238,
-"W",
-"Superior Seedless"
-],
-[
 "Aspiran Bouschet",
 225,
 "R",
@@ -141827,8 +142564,14 @@
 "Torrontés Riojano"
 ],
 [
+"Cabernet Sauvignon",
+106,
+"R",
+"Cabernet Sauvignon"
+],
+[
 "Other",
-945,
+777,
 "",
 "other"
 ]
@@ -141836,9 +142579,9 @@
 "left": {
 "table": [
 "Flame Seedless",
+"Superior Seedless",
 "Arizul",
-"Red Globe",
-"Fiesta"
+"Red Globe"
 ]
 }
 },
@@ -141848,7 +142591,7 @@
 "Rivadavia"
 ],
 "year": 2022,
-"ha": 14447,
+"ha": 14430,
 "grapes": [
 [
 "Malbec",
@@ -141899,10 +142642,10 @@
 "Cabernet Sauvignon"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 531,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Aspiran Bouschet",
@@ -141924,7 +142667,7 @@
 ],
 [
 "Other",
-1652,
+1635,
 "",
 "other"
 ]
@@ -141934,7 +142677,7 @@
 "Red Globe",
 "Flame Seedless",
 "Arizul",
-"Emperatriz"
+"Superior Seedless"
 ]
 }
 },
@@ -141944,7 +142687,7 @@
 "Maipú"
 ],
 "year": 2022,
-"ha": 10874,
+"ha": 10871,
 "grapes": [
 [
 "Malbec",
@@ -142020,7 +142763,7 @@
 ],
 [
 "Other",
-1412,
+1409,
 "",
 "other"
 ]
@@ -142255,7 +142998,7 @@
 "Douce Noire"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 9,
 "R",
 "Listán Prieto"
@@ -142310,7 +143053,7 @@
 "Sarmiento"
 ],
 "year": 2022,
-"ha": 6757,
+"ha": 6641,
 "grapes": [
 [
 "Cereza",
@@ -142386,7 +143129,7 @@
 ],
 [
 "Other",
-973,
+857,
 "",
 "other"
 ]
@@ -142396,7 +143139,7 @@
 "Flame Seedless",
 "Fintendo",
 "Red Globe",
-"Arizul"
+"Alphonse Lavallée"
 ]
 }
 },
@@ -142427,7 +143170,7 @@
 "Cabernet Sauvignon"
 ],
 [
-"Listán Prieto",
+"Criolla Chica",
 24,
 "R",
 "Listán Prieto"
@@ -142457,10 +143200,10 @@
 "Cabernet Franc"
 ],
 [
-"Muscat Blanc",
+"Moscatel Rosado",
 4,
 "W",
-"Muscat Blanc à Petits Grains (G)"
+"Moscatel Rosado"
 ],
 [
 "Petit Verdot",
@@ -142494,7 +143237,7 @@
 "Zonda"
 ],
 "year": 2022,
-"ha": 820,
+"ha": 724,
 "grapes": [
 [
 "Malbec",
@@ -142507,12 +143250,6 @@
 112,
 "W",
 "Muscat of Alexandria"
-],
-[
-"Superior Seedless",
-82,
-"W",
-"Superior Seedless"
 ],
 [
 "Tannat",
@@ -142563,14 +143300,20 @@
 "Viognier"
 ],
 [
-"Alphonse Lavallée",
-11,
+"Bonarda",
+10,
 "R",
-"Alphonse Lavallée"
+"Douce Noire"
+],
+[
+"Petit Verdot",
+9,
+"R",
+"Petit Verdot"
 ],
 [
 "Other",
-80,
+58,
 "",
 "other"
 ]
@@ -142578,9 +143321,9 @@
 "left": {
 "table": [
 "Red Globe",
+"Superior Seedless",
 "Flame Seedless",
-"Fiesta",
-"Victoria"
+"Fiesta"
 ]
 }
 },
@@ -143821,6 +144564,94 @@
 ]
 ]
 },
+"south-africa/elgin": {
+"scope": "parent",
+"names": [
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 2646,
+"grapes": [
+[
+"Sauvignon Blanc",
+757,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+378,
+"W",
+"Chardonnay"
+],
+[
+"Pinot Noir",
+359,
+"R",
+"Pinot Noir"
+],
+[
+"Shiraz",
+320,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+158,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+142,
+"R",
+"Merlot"
+],
+[
+"Chenin Blanc",
+86,
+"W",
+"Chenin Blanc"
+],
+[
+"Semillon",
+72,
+"W",
+"Sémillon"
+],
+[
+"Pinotage",
+59,
+"R",
+"Pinotage"
+],
+[
+"Cabernet Franc",
+33,
+"R",
+"Cabernet Franc"
+],
+[
+"Viognier",
+30,
+"W",
+"Viognier"
+],
+[
+"Colombard",
+20,
+"W",
+"Colombard"
+],
+[
+"Other",
+231,
+"",
+"other"
+]
+]
+},
 "south-africa/plettenberg-bay": {
 "scope": "parent",
 "names": [
@@ -144261,96 +145092,6 @@
 ]
 ]
 },
-"south-africa/cape-peninsula": {
-"scope": "parent",
-"names": [
-"Paarl",
-"Swartland",
-"Stellenbosch"
-],
-"year": 2023,
-"ha": 38241,
-"grapes": [
-[
-"Chenin Blanc",
-6377,
-"W",
-"Chenin Blanc"
-],
-[
-"Cabernet Sauvignon",
-5986,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Shiraz",
-5489,
-"R",
-"Syrah"
-],
-[
-"Pinotage",
-3655,
-"R",
-"Pinotage"
-],
-[
-"Sauvignon Blanc",
-3524,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Merlot",
-3086,
-"R",
-"Merlot"
-],
-[
-"Chardonnay",
-2818,
-"W",
-"Chardonnay"
-],
-[
-"Cinsault",
-955,
-"R",
-"Cinsaut"
-],
-[
-"Cabernet Franc",
-591,
-"R",
-"Cabernet Franc"
-],
-[
-"Colombard",
-541,
-"W",
-"Colombard"
-],
-[
-"Pinot Noir",
-460,
-"R",
-"Pinot Noir"
-],
-[
-"Viognier",
-387,
-"W",
-"Viognier"
-],
-[
-"Other",
-4373,
-"",
-"other"
-]
-]
-},
 "south-africa/darling": {
 "scope": "parent",
 "names": [
@@ -144531,277 +145272,97 @@
 ]
 ]
 },
+"south-africa/wellington": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Swartland",
+"Stellenbosch"
+],
+"year": 2023,
+"ha": 38241,
+"grapes": [
+[
+"Chenin Blanc",
+6377,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+5986,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+5489,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+3655,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+3524,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+3086,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+2818,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+955,
+"R",
+"Cinsaut"
+],
+[
+"Cabernet Franc",
+591,
+"R",
+"Cabernet Franc"
+],
+[
+"Colombard",
+541,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+460,
+"R",
+"Pinot Noir"
+],
+[
+"Viognier",
+387,
+"W",
+"Viognier"
+],
+[
+"Other",
+4373,
+"",
+"other"
+]
+]
+},
 "south-africa/tulbagh": {
-"scope": "parent",
-"names": [
-"Paarl",
-"Swartland",
-"Stellenbosch"
-],
-"year": 2023,
-"ha": 38241,
-"grapes": [
-[
-"Chenin Blanc",
-6377,
-"W",
-"Chenin Blanc"
-],
-[
-"Cabernet Sauvignon",
-5986,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Shiraz",
-5489,
-"R",
-"Syrah"
-],
-[
-"Pinotage",
-3655,
-"R",
-"Pinotage"
-],
-[
-"Sauvignon Blanc",
-3524,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Merlot",
-3086,
-"R",
-"Merlot"
-],
-[
-"Chardonnay",
-2818,
-"W",
-"Chardonnay"
-],
-[
-"Cinsault",
-955,
-"R",
-"Cinsaut"
-],
-[
-"Cabernet Franc",
-591,
-"R",
-"Cabernet Franc"
-],
-[
-"Colombard",
-541,
-"W",
-"Colombard"
-],
-[
-"Pinot Noir",
-460,
-"R",
-"Pinot Noir"
-],
-[
-"Viognier",
-387,
-"W",
-"Viognier"
-],
-[
-"Other",
-4373,
-"",
-"other"
-]
-]
-},
-"south-africa/tygerberg": {
-"scope": "parent",
-"names": [
-"Paarl",
-"Swartland",
-"Stellenbosch"
-],
-"year": 2023,
-"ha": 38241,
-"grapes": [
-[
-"Chenin Blanc",
-6377,
-"W",
-"Chenin Blanc"
-],
-[
-"Cabernet Sauvignon",
-5986,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Shiraz",
-5489,
-"R",
-"Syrah"
-],
-[
-"Pinotage",
-3655,
-"R",
-"Pinotage"
-],
-[
-"Sauvignon Blanc",
-3524,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Merlot",
-3086,
-"R",
-"Merlot"
-],
-[
-"Chardonnay",
-2818,
-"W",
-"Chardonnay"
-],
-[
-"Cinsault",
-955,
-"R",
-"Cinsaut"
-],
-[
-"Cabernet Franc",
-591,
-"R",
-"Cabernet Franc"
-],
-[
-"Colombard",
-541,
-"W",
-"Colombard"
-],
-[
-"Pinot Noir",
-460,
-"R",
-"Pinot Noir"
-],
-[
-"Viognier",
-387,
-"W",
-"Viognier"
-],
-[
-"Other",
-4373,
-"",
-"other"
-]
-]
-},
-"south-africa/constantia": {
-"scope": "parent",
-"names": [
-"Paarl",
-"Swartland",
-"Stellenbosch"
-],
-"year": 2023,
-"ha": 38241,
-"grapes": [
-[
-"Chenin Blanc",
-6377,
-"W",
-"Chenin Blanc"
-],
-[
-"Cabernet Sauvignon",
-5986,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Shiraz",
-5489,
-"R",
-"Syrah"
-],
-[
-"Pinotage",
-3655,
-"R",
-"Pinotage"
-],
-[
-"Sauvignon Blanc",
-3524,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Merlot",
-3086,
-"R",
-"Merlot"
-],
-[
-"Chardonnay",
-2818,
-"W",
-"Chardonnay"
-],
-[
-"Cinsault",
-955,
-"R",
-"Cinsaut"
-],
-[
-"Cabernet Franc",
-591,
-"R",
-"Cabernet Franc"
-],
-[
-"Colombard",
-541,
-"W",
-"Colombard"
-],
-[
-"Pinot Noir",
-460,
-"R",
-"Pinot Noir"
-],
-[
-"Viognier",
-387,
-"W",
-"Viognier"
-],
-[
-"Other",
-4373,
-"",
-"other"
-]
-]
-},
-"south-africa/hout-bay": {
 "scope": "parent",
 "names": [
 "Paarl",
@@ -145686,86 +146247,88 @@
 "south-africa/lutzville-valley": {
 "scope": "parent",
 "names": [
-"Olifants River"
+"Paarl",
+"Swartland",
+"Stellenbosch"
 ],
 "year": 2023,
-"ha": 8523,
+"ha": 38241,
 "grapes": [
 [
 "Chenin Blanc",
-2496,
+6377,
 "W",
 "Chenin Blanc"
 ],
 [
-"Colombard",
-2232,
-"W",
-"Colombard"
-],
-[
-"Sauvignon Blanc",
-689,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Pinotage",
-546,
-"R",
-"Pinotage"
-],
-[
-"Shiraz",
-462,
-"R",
-"Syrah"
-],
-[
-"Ruby Cabernet",
-315,
-"R",
-"Ruby Cabernet"
-],
-[
 "Cabernet Sauvignon",
-300,
+5986,
 "R",
 "Cabernet Sauvignon"
 ],
 [
-"Muscat of Alexandria",
-270,
+"Shiraz",
+5489,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+3655,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+3524,
 "W",
-"Muscat of Alexandria"
+"Sauvignon Blanc"
 ],
 [
 "Merlot",
-196,
+3086,
 "R",
 "Merlot"
 ],
 [
 "Chardonnay",
-141,
+2818,
 "W",
 "Chardonnay"
 ],
 [
-"Sultana",
-117,
-"W",
-"Sultaniye"
+"Cinsault",
+955,
+"R",
+"Cinsaut"
 ],
 [
-"Muscat Blanc",
-101,
+"Cabernet Franc",
+591,
+"R",
+"Cabernet Franc"
+],
+[
+"Colombard",
+541,
 "W",
-"Muscat Blanc à Petits Grains"
+"Colombard"
+],
+[
+"Pinot Noir",
+460,
+"R",
+"Pinot Noir"
+],
+[
+"Viognier",
+387,
+"W",
+"Viognier"
 ],
 [
 "Other",
-658,
+4373,
 "",
 "other"
 ]
@@ -145774,86 +146337,88 @@
 "south-africa/bamboes-bay": {
 "scope": "parent",
 "names": [
-"Olifants River"
+"Paarl",
+"Swartland",
+"Stellenbosch"
 ],
 "year": 2023,
-"ha": 8523,
+"ha": 38241,
 "grapes": [
 [
 "Chenin Blanc",
-2496,
+6377,
 "W",
 "Chenin Blanc"
 ],
 [
-"Colombard",
-2232,
-"W",
-"Colombard"
-],
-[
-"Sauvignon Blanc",
-689,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Pinotage",
-546,
-"R",
-"Pinotage"
-],
-[
-"Shiraz",
-462,
-"R",
-"Syrah"
-],
-[
-"Ruby Cabernet",
-315,
-"R",
-"Ruby Cabernet"
-],
-[
 "Cabernet Sauvignon",
-300,
+5986,
 "R",
 "Cabernet Sauvignon"
 ],
 [
-"Muscat of Alexandria",
-270,
+"Shiraz",
+5489,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+3655,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+3524,
 "W",
-"Muscat of Alexandria"
+"Sauvignon Blanc"
 ],
 [
 "Merlot",
-196,
+3086,
 "R",
 "Merlot"
 ],
 [
 "Chardonnay",
-141,
+2818,
 "W",
 "Chardonnay"
 ],
 [
-"Sultana",
-117,
-"W",
-"Sultaniye"
+"Cinsault",
+955,
+"R",
+"Cinsaut"
 ],
 [
-"Muscat Blanc",
-101,
+"Cabernet Franc",
+591,
+"R",
+"Cabernet Franc"
+],
+[
+"Colombard",
+541,
 "W",
-"Muscat Blanc à Petits Grains"
+"Colombard"
+],
+[
+"Pinot Noir",
+460,
+"R",
+"Pinot Noir"
+],
+[
+"Viognier",
+387,
+"W",
+"Viognier"
 ],
 [
 "Other",
-658,
+4373,
 "",
 "other"
 ]
@@ -146035,177 +146600,93 @@
 ]
 ]
 },
-"south-africa/cederberg": {
-"scope": "parent",
-"names": [
-"Olifants River"
-],
-"year": 2023,
-"ha": 8523,
-"grapes": [
-[
-"Chenin Blanc",
-2496,
-"W",
-"Chenin Blanc"
-],
-[
-"Colombard",
-2232,
-"W",
-"Colombard"
-],
-[
-"Sauvignon Blanc",
-689,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Pinotage",
-546,
-"R",
-"Pinotage"
-],
-[
-"Shiraz",
-462,
-"R",
-"Syrah"
-],
-[
-"Ruby Cabernet",
-315,
-"R",
-"Ruby Cabernet"
-],
-[
-"Cabernet Sauvignon",
-300,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Muscat of Alexandria",
-270,
-"W",
-"Muscat of Alexandria"
-],
-[
-"Merlot",
-196,
-"R",
-"Merlot"
-],
-[
-"Chardonnay",
-141,
-"W",
-"Chardonnay"
-],
-[
-"Sultana",
-117,
-"W",
-"Sultaniye"
-],
-[
-"Muscat Blanc",
-101,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Other",
-658,
-"",
-"other"
-]
-]
-},
 "south-africa/ceres": {
 "scope": "parent",
 "names": [
-"Olifants River"
+"Paarl",
+"Robertson",
+"Swartland",
+"Stellenbosch",
+"Cape South Coast"
 ],
 "year": 2023,
-"ha": 8523,
+"ha": 53664,
 "grapes": [
 [
 "Chenin Blanc",
-2496,
+7977,
 "W",
 "Chenin Blanc"
 ],
 [
-"Colombard",
-2232,
-"W",
-"Colombard"
-],
-[
-"Sauvignon Blanc",
-689,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Pinotage",
-546,
-"R",
-"Pinotage"
-],
-[
-"Shiraz",
-462,
-"R",
-"Syrah"
-],
-[
-"Ruby Cabernet",
-315,
-"R",
-"Ruby Cabernet"
-],
-[
 "Cabernet Sauvignon",
-300,
+7413,
 "R",
 "Cabernet Sauvignon"
 ],
 [
-"Muscat of Alexandria",
-270,
-"W",
-"Muscat of Alexandria"
+"Shiraz",
+6735,
+"R",
+"Syrah"
 ],
 [
-"Merlot",
-196,
-"R",
-"Merlot"
+"Sauvignon Blanc",
+5971,
+"W",
+"Sauvignon Blanc"
 ],
 [
 "Chardonnay",
-141,
+4870,
 "W",
 "Chardonnay"
 ],
 [
-"Sultana",
-117,
-"W",
-"Sultaniye"
+"Pinotage",
+4493,
+"R",
+"Pinotage"
 ],
 [
-"Muscat Blanc",
-101,
+"Merlot",
+3802,
+"R",
+"Merlot"
+],
+[
+"Colombard",
+2386,
 "W",
-"Muscat Blanc à Petits Grains"
+"Colombard"
+],
+[
+"Pinot Noir",
+1056,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+1043,
+"R",
+"Cinsaut"
+],
+[
+"Ruby Cabernet",
+708,
+"R",
+"Ruby Cabernet"
+],
+[
+"Cabernet Franc",
+695,
+"R",
+"Cabernet Franc"
 ],
 [
 "Other",
-658,
+6516,
 "",
 "other"
 ]
@@ -146214,86 +146695,88 @@
 "south-africa/lamberts-bay": {
 "scope": "parent",
 "names": [
-"Olifants River"
+"Paarl",
+"Swartland",
+"Stellenbosch"
 ],
 "year": 2023,
-"ha": 8523,
+"ha": 38241,
 "grapes": [
 [
 "Chenin Blanc",
-2496,
+6377,
 "W",
 "Chenin Blanc"
 ],
 [
-"Colombard",
-2232,
-"W",
-"Colombard"
-],
-[
-"Sauvignon Blanc",
-689,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Pinotage",
-546,
-"R",
-"Pinotage"
-],
-[
-"Shiraz",
-462,
-"R",
-"Syrah"
-],
-[
-"Ruby Cabernet",
-315,
-"R",
-"Ruby Cabernet"
-],
-[
 "Cabernet Sauvignon",
-300,
+5986,
 "R",
 "Cabernet Sauvignon"
 ],
 [
-"Muscat of Alexandria",
-270,
+"Shiraz",
+5489,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+3655,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+3524,
 "W",
-"Muscat of Alexandria"
+"Sauvignon Blanc"
 ],
 [
 "Merlot",
-196,
+3086,
 "R",
 "Merlot"
 ],
 [
 "Chardonnay",
-141,
+2818,
 "W",
 "Chardonnay"
 ],
 [
-"Sultana",
-117,
-"W",
-"Sultaniye"
+"Cinsault",
+955,
+"R",
+"Cinsaut"
 ],
 [
-"Muscat Blanc",
-101,
+"Cabernet Franc",
+591,
+"R",
+"Cabernet Franc"
+],
+[
+"Colombard",
+541,
 "W",
-"Muscat Blanc à Petits Grains"
+"Colombard"
+],
+[
+"Pinot Noir",
+460,
+"R",
+"Pinot Noir"
+],
+[
+"Viognier",
+387,
+"W",
+"Viognier"
 ],
 [
 "Other",
-658,
+4373,
 "",
 "other"
 ]
@@ -146302,86 +146785,90 @@
 "south-africa/prince-albert-valley": {
 "scope": "parent",
 "names": [
-"Olifants River"
+"Paarl",
+"Robertson",
+"Swartland",
+"Stellenbosch",
+"Cape South Coast"
 ],
 "year": 2023,
-"ha": 8523,
+"ha": 53664,
 "grapes": [
 [
 "Chenin Blanc",
-2496,
+7977,
 "W",
 "Chenin Blanc"
 ],
 [
-"Colombard",
-2232,
-"W",
-"Colombard"
-],
-[
-"Sauvignon Blanc",
-689,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Pinotage",
-546,
-"R",
-"Pinotage"
-],
-[
-"Shiraz",
-462,
-"R",
-"Syrah"
-],
-[
-"Ruby Cabernet",
-315,
-"R",
-"Ruby Cabernet"
-],
-[
 "Cabernet Sauvignon",
-300,
+7413,
 "R",
 "Cabernet Sauvignon"
 ],
 [
-"Muscat of Alexandria",
-270,
-"W",
-"Muscat of Alexandria"
+"Shiraz",
+6735,
+"R",
+"Syrah"
 ],
 [
-"Merlot",
-196,
-"R",
-"Merlot"
+"Sauvignon Blanc",
+5971,
+"W",
+"Sauvignon Blanc"
 ],
 [
 "Chardonnay",
-141,
+4870,
 "W",
 "Chardonnay"
 ],
 [
-"Sultana",
-117,
-"W",
-"Sultaniye"
+"Pinotage",
+4493,
+"R",
+"Pinotage"
 ],
 [
-"Muscat Blanc",
-101,
+"Merlot",
+3802,
+"R",
+"Merlot"
+],
+[
+"Colombard",
+2386,
 "W",
-"Muscat Blanc à Petits Grains"
+"Colombard"
+],
+[
+"Pinot Noir",
+1056,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+1043,
+"R",
+"Cinsaut"
+],
+[
+"Ruby Cabernet",
+708,
+"R",
+"Ruby Cabernet"
+],
+[
+"Cabernet Franc",
+695,
+"R",
+"Cabernet Franc"
 ],
 [
 "Other",
-658,
+6516,
 "",
 "other"
 ]
@@ -146390,350 +146877,90 @@
 "south-africa/swartberg": {
 "scope": "parent",
 "names": [
-"Olifants River"
+"Paarl",
+"Robertson",
+"Swartland",
+"Stellenbosch",
+"Cape South Coast"
 ],
 "year": 2023,
-"ha": 8523,
+"ha": 53664,
 "grapes": [
 [
 "Chenin Blanc",
-2496,
-"W",
-"Chenin Blanc"
-],
-[
-"Colombard",
-2232,
-"W",
-"Colombard"
-],
-[
-"Sauvignon Blanc",
-689,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Pinotage",
-546,
-"R",
-"Pinotage"
-],
-[
-"Shiraz",
-462,
-"R",
-"Syrah"
-],
-[
-"Ruby Cabernet",
-315,
-"R",
-"Ruby Cabernet"
-],
-[
-"Cabernet Sauvignon",
-300,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Muscat of Alexandria",
-270,
-"W",
-"Muscat of Alexandria"
-],
-[
-"Merlot",
-196,
-"R",
-"Merlot"
-],
-[
-"Chardonnay",
-141,
-"W",
-"Chardonnay"
-],
-[
-"Sultana",
-117,
-"W",
-"Sultaniye"
-],
-[
-"Muscat Blanc",
-101,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Other",
-658,
-"",
-"other"
-]
-]
-},
-"south-africa/hartswater": {
-"scope": "parent",
-"names": [
-"Northern Cape"
-],
-"year": 2023,
-"ha": 4840,
-"grapes": [
-[
-"Sultana",
-2435,
-"W",
-"Sultaniye"
-],
-[
-"Colombard",
-1033,
-"W",
-"Colombard"
-],
-[
-"Chenin Blanc",
-706,
+7977,
 "W",
 "Chenin Blanc"
 ],
 [
 "Cabernet Sauvignon",
-94,
+7413,
 "R",
 "Cabernet Sauvignon"
 ],
 [
-"Muscat of Alexandria",
-62,
-"W",
-"Muscat of Alexandria"
-],
-[
 "Shiraz",
-51,
+6735,
 "R",
 "Syrah"
 ],
 [
-"Ruby Cabernet",
-45,
-"R",
-"Ruby Cabernet"
-],
-[
 "Sauvignon Blanc",
-43,
+5971,
 "W",
 "Sauvignon Blanc"
 ],
 [
 "Chardonnay",
-40,
+4870,
 "W",
 "Chardonnay"
 ],
 [
 "Pinotage",
-38,
+4493,
 "R",
 "Pinotage"
 ],
 [
 "Merlot",
-27,
+3802,
 "R",
 "Merlot"
 ],
 [
-"Muscat Blanc",
-23,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Other",
-243,
-"",
-"other"
-]
-]
-},
-"south-africa/central-orange-river": {
-"scope": "parent",
-"names": [
-"Northern Cape"
-],
-"year": 2023,
-"ha": 4840,
-"grapes": [
-[
-"Sultana",
-2435,
-"W",
-"Sultaniye"
-],
-[
 "Colombard",
-1033,
+2386,
 "W",
 "Colombard"
 ],
 [
-"Chenin Blanc",
-706,
-"W",
-"Chenin Blanc"
-],
-[
-"Cabernet Sauvignon",
-94,
+"Pinot Noir",
+1056,
 "R",
-"Cabernet Sauvignon"
+"Pinot Noir"
 ],
 [
-"Muscat of Alexandria",
-62,
-"W",
-"Muscat of Alexandria"
-],
-[
-"Shiraz",
-51,
+"Cinsault",
+1043,
 "R",
-"Syrah"
+"Cinsaut"
 ],
 [
 "Ruby Cabernet",
-45,
+708,
 "R",
 "Ruby Cabernet"
 ],
 [
-"Sauvignon Blanc",
-43,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Chardonnay",
-40,
-"W",
-"Chardonnay"
-],
-[
-"Pinotage",
-38,
+"Cabernet Franc",
+695,
 "R",
-"Pinotage"
-],
-[
-"Merlot",
-27,
-"R",
-"Merlot"
-],
-[
-"Muscat Blanc",
-23,
-"W",
-"Muscat Blanc à Petits Grains"
+"Cabernet Franc"
 ],
 [
 "Other",
-243,
-"",
-"other"
-]
-]
-},
-"south-africa/rietrivier-fs": {
-"scope": "parent",
-"names": [
-"Northern Cape"
-],
-"year": 2023,
-"ha": 4840,
-"grapes": [
-[
-"Sultana",
-2435,
-"W",
-"Sultaniye"
-],
-[
-"Colombard",
-1033,
-"W",
-"Colombard"
-],
-[
-"Chenin Blanc",
-706,
-"W",
-"Chenin Blanc"
-],
-[
-"Cabernet Sauvignon",
-94,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Muscat of Alexandria",
-62,
-"W",
-"Muscat of Alexandria"
-],
-[
-"Shiraz",
-51,
-"R",
-"Syrah"
-],
-[
-"Ruby Cabernet",
-45,
-"R",
-"Ruby Cabernet"
-],
-[
-"Sauvignon Blanc",
-43,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Chardonnay",
-40,
-"W",
-"Chardonnay"
-],
-[
-"Pinotage",
-38,
-"R",
-"Pinotage"
-],
-[
-"Merlot",
-27,
-"R",
-"Merlot"
-],
-[
-"Muscat Blanc",
-23,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Other",
-243,
+6516,
 "",
 "other"
 ]
@@ -147364,6 +147591,890 @@
 "Crystal"
 ]
 }
+},
+"south-africa/lower-duivenhoks-river": {
+"scope": "parent",
+"names": [
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 2646,
+"grapes": [
+[
+"Sauvignon Blanc",
+757,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+378,
+"W",
+"Chardonnay"
+],
+[
+"Pinot Noir",
+359,
+"R",
+"Pinot Noir"
+],
+[
+"Shiraz",
+320,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+158,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+142,
+"R",
+"Merlot"
+],
+[
+"Chenin Blanc",
+86,
+"W",
+"Chenin Blanc"
+],
+[
+"Semillon",
+72,
+"W",
+"Sémillon"
+],
+[
+"Pinotage",
+59,
+"R",
+"Pinotage"
+],
+[
+"Cabernet Franc",
+33,
+"R",
+"Cabernet Franc"
+],
+[
+"Viognier",
+30,
+"W",
+"Viognier"
+],
+[
+"Colombard",
+20,
+"W",
+"Colombard"
+],
+[
+"Other",
+231,
+"",
+"other"
+]
+]
+},
+"south-africa/napier": {
+"scope": "parent",
+"names": [
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 2646,
+"grapes": [
+[
+"Sauvignon Blanc",
+757,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+378,
+"W",
+"Chardonnay"
+],
+[
+"Pinot Noir",
+359,
+"R",
+"Pinot Noir"
+],
+[
+"Shiraz",
+320,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+158,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+142,
+"R",
+"Merlot"
+],
+[
+"Chenin Blanc",
+86,
+"W",
+"Chenin Blanc"
+],
+[
+"Semillon",
+72,
+"W",
+"Sémillon"
+],
+[
+"Pinotage",
+59,
+"R",
+"Pinotage"
+],
+[
+"Cabernet Franc",
+33,
+"R",
+"Cabernet Franc"
+],
+[
+"Viognier",
+30,
+"W",
+"Viognier"
+],
+[
+"Colombard",
+20,
+"W",
+"Colombard"
+],
+[
+"Other",
+231,
+"",
+"other"
+]
+]
+},
+"south-africa/cango-valley": {
+"scope": "parent",
+"names": [
+"Klein Karoo"
+],
+"year": 2023,
+"ha": 2002,
+"grapes": [
+[
+"Colombard",
+686,
+"W",
+"Colombard"
+],
+[
+"Chenin Blanc",
+437,
+"W",
+"Chenin Blanc"
+],
+[
+"Muscat of Alexandria",
+92,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Shiraz",
+77,
+"R",
+"Syrah"
+],
+[
+"Sauvignon Blanc",
+76,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+68,
+"W",
+"Chardonnay"
+],
+[
+"Ruby Cabernet",
+67,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat Blanc",
+56,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Merlot",
+50,
+"R",
+"Merlot"
+],
+[
+"Cabernet Sauvignon",
+45,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Pinotage",
+30,
+"R",
+"Pinotage"
+],
+[
+"Viognier",
+15,
+"W",
+"Viognier"
+],
+[
+"Other",
+301,
+"",
+"other"
+]
+]
+},
+"south-africa/koo-plateau": {
+"scope": "parent",
+"names": [
+"Klein Karoo"
+],
+"year": 2023,
+"ha": 2002,
+"grapes": [
+[
+"Colombard",
+686,
+"W",
+"Colombard"
+],
+[
+"Chenin Blanc",
+437,
+"W",
+"Chenin Blanc"
+],
+[
+"Muscat of Alexandria",
+92,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Shiraz",
+77,
+"R",
+"Syrah"
+],
+[
+"Sauvignon Blanc",
+76,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+68,
+"W",
+"Chardonnay"
+],
+[
+"Ruby Cabernet",
+67,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat Blanc",
+56,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Merlot",
+50,
+"R",
+"Merlot"
+],
+[
+"Cabernet Sauvignon",
+45,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Pinotage",
+30,
+"R",
+"Pinotage"
+],
+[
+"Viognier",
+15,
+"W",
+"Viognier"
+],
+[
+"Other",
+301,
+"",
+"other"
+]
+]
+},
+"south-africa/kweekvallei": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Robertson",
+"Swartland",
+"Stellenbosch",
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 53664,
+"grapes": [
+[
+"Chenin Blanc",
+7977,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+7413,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+6735,
+"R",
+"Syrah"
+],
+[
+"Sauvignon Blanc",
+5971,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+4870,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+4493,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+3802,
+"R",
+"Merlot"
+],
+[
+"Colombard",
+2386,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+1056,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+1043,
+"R",
+"Cinsaut"
+],
+[
+"Ruby Cabernet",
+708,
+"R",
+"Ruby Cabernet"
+],
+[
+"Cabernet Franc",
+695,
+"R",
+"Cabernet Franc"
+],
+[
+"Other",
+6516,
+"",
+"other"
+]
+]
+},
+"south-africa/groblershoop": {
+"scope": "parent",
+"names": [
+"Northern Cape"
+],
+"year": 2023,
+"ha": 4840,
+"grapes": [
+[
+"Sultana",
+2435,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+1033,
+"W",
+"Colombard"
+],
+[
+"Chenin Blanc",
+706,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+94,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Muscat of Alexandria",
+62,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Shiraz",
+51,
+"R",
+"Syrah"
+],
+[
+"Ruby Cabernet",
+45,
+"R",
+"Ruby Cabernet"
+],
+[
+"Sauvignon Blanc",
+43,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+40,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+38,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+27,
+"R",
+"Merlot"
+],
+[
+"Muscat Blanc",
+23,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Other",
+243,
+"",
+"other"
+]
+]
+},
+"south-africa/grootdrink": {
+"scope": "parent",
+"names": [
+"Northern Cape"
+],
+"year": 2023,
+"ha": 4840,
+"grapes": [
+[
+"Sultana",
+2435,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+1033,
+"W",
+"Colombard"
+],
+[
+"Chenin Blanc",
+706,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+94,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Muscat of Alexandria",
+62,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Shiraz",
+51,
+"R",
+"Syrah"
+],
+[
+"Ruby Cabernet",
+45,
+"R",
+"Ruby Cabernet"
+],
+[
+"Sauvignon Blanc",
+43,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+40,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+38,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+27,
+"R",
+"Merlot"
+],
+[
+"Muscat Blanc",
+23,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Other",
+243,
+"",
+"other"
+]
+]
+},
+"south-africa/kakamas": {
+"scope": "parent",
+"names": [
+"Northern Cape"
+],
+"year": 2023,
+"ha": 4840,
+"grapes": [
+[
+"Sultana",
+2435,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+1033,
+"W",
+"Colombard"
+],
+[
+"Chenin Blanc",
+706,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+94,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Muscat of Alexandria",
+62,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Shiraz",
+51,
+"R",
+"Syrah"
+],
+[
+"Ruby Cabernet",
+45,
+"R",
+"Ruby Cabernet"
+],
+[
+"Sauvignon Blanc",
+43,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+40,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+38,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+27,
+"R",
+"Merlot"
+],
+[
+"Muscat Blanc",
+23,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Other",
+243,
+"",
+"other"
+]
+]
+},
+"south-africa/keimoes": {
+"scope": "parent",
+"names": [
+"Northern Cape"
+],
+"year": 2023,
+"ha": 4840,
+"grapes": [
+[
+"Sultana",
+2435,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+1033,
+"W",
+"Colombard"
+],
+[
+"Chenin Blanc",
+706,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+94,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Muscat of Alexandria",
+62,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Shiraz",
+51,
+"R",
+"Syrah"
+],
+[
+"Ruby Cabernet",
+45,
+"R",
+"Ruby Cabernet"
+],
+[
+"Sauvignon Blanc",
+43,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+40,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+38,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+27,
+"R",
+"Merlot"
+],
+[
+"Muscat Blanc",
+23,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Other",
+243,
+"",
+"other"
+]
+]
+},
+"south-africa/upington": {
+"scope": "parent",
+"names": [
+"Northern Cape"
+],
+"year": 2023,
+"ha": 4840,
+"grapes": [
+[
+"Sultana",
+2435,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+1033,
+"W",
+"Colombard"
+],
+[
+"Chenin Blanc",
+706,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+94,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Muscat of Alexandria",
+62,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Shiraz",
+51,
+"R",
+"Syrah"
+],
+[
+"Ruby Cabernet",
+45,
+"R",
+"Ruby Cabernet"
+],
+[
+"Sauvignon Blanc",
+43,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+40,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+38,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+27,
+"R",
+"Merlot"
+],
+[
+"Muscat Blanc",
+23,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Other",
+243,
+"",
+"other"
+]
+]
 },
 "france/marsannay": {
 "scope": "around",
@@ -154658,86 +155769,86 @@
 "south-africa/scherpenheuvel": {
 "scope": "parent",
 "names": [
-"Breedekloof"
+"Worcester"
 ],
 "year": 2023,
-"ha": 12659,
+"ha": 6518,
 "grapes": [
 [
 "Chenin Blanc",
-2736,
+1734,
 "W",
 "Chenin Blanc"
 ],
 [
 "Colombard",
-1758,
+1049,
 "W",
 "Colombard"
 ],
 [
 "Sauvignon Blanc",
-1557,
+749,
 "W",
 "Sauvignon Blanc"
 ],
 [
-"Pinotage",
-911,
-"R",
-"Pinotage"
-],
-[
 "Chardonnay",
-802,
+469,
 "W",
 "Chardonnay"
 ],
 [
+"Pinotage",
+416,
+"R",
+"Pinotage"
+],
+[
 "Shiraz",
-721,
+404,
 "R",
 "Syrah"
 ],
 [
-"Merlot",
-636,
-"R",
-"Merlot"
-],
-[
 "Cabernet Sauvignon",
-611,
+250,
 "R",
 "Cabernet Sauvignon"
 ],
 [
-"Muscat of Alexandria",
-546,
-"W",
-"Muscat of Alexandria"
+"Merlot",
+205,
+"R",
+"Merlot"
 ],
 [
 "Ruby Cabernet",
-525,
+168,
 "R",
 "Ruby Cabernet"
 ],
 [
+"Muscat of Alexandria",
+131,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Sultana",
+94,
+"W",
+"Sultaniye"
+],
+[
 "Cinsault",
-516,
+68,
 "R",
 "Cinsaut"
 ],
 [
-"Semillon",
-343,
-"W",
-"Sémillon"
-],
-[
 "Other",
-999,
+783,
 "",
 "other"
 ]
@@ -155536,94 +156647,6 @@
 ]
 },
 "south-africa/elim": {
-"scope": "parent",
-"names": [
-"Cape South Coast"
-],
-"year": 2023,
-"ha": 2646,
-"grapes": [
-[
-"Sauvignon Blanc",
-757,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Chardonnay",
-378,
-"W",
-"Chardonnay"
-],
-[
-"Pinot Noir",
-359,
-"R",
-"Pinot Noir"
-],
-[
-"Shiraz",
-320,
-"R",
-"Syrah"
-],
-[
-"Cabernet Sauvignon",
-158,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Merlot",
-142,
-"R",
-"Merlot"
-],
-[
-"Chenin Blanc",
-86,
-"W",
-"Chenin Blanc"
-],
-[
-"Semillon",
-72,
-"W",
-"Sémillon"
-],
-[
-"Pinotage",
-59,
-"R",
-"Pinotage"
-],
-[
-"Cabernet Franc",
-33,
-"R",
-"Cabernet Franc"
-],
-[
-"Viognier",
-30,
-"W",
-"Viognier"
-],
-[
-"Colombard",
-20,
-"W",
-"Colombard"
-],
-[
-"Other",
-231,
-"",
-"other"
-]
-]
-},
-"south-africa/elgin": {
 "scope": "parent",
 "names": [
 "Cape South Coast"
@@ -156945,94 +157968,6 @@
 ]
 ]
 },
-"south-africa/wellington": {
-"scope": "parent",
-"names": [
-"Paarl"
-],
-"year": 2023,
-"ha": 14248,
-"grapes": [
-[
-"Chenin Blanc",
-2668,
-"W",
-"Chenin Blanc"
-],
-[
-"Shiraz",
-2115,
-"R",
-"Syrah"
-],
-[
-"Cabernet Sauvignon",
-2062,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Pinotage",
-1296,
-"R",
-"Pinotage"
-],
-[
-"Chardonnay",
-1191,
-"W",
-"Chardonnay"
-],
-[
-"Merlot",
-953,
-"R",
-"Merlot"
-],
-[
-"Sauvignon Blanc",
-882,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Cinsault",
-566,
-"R",
-"Cinsaut"
-],
-[
-"Colombard",
-308,
-"W",
-"Colombard"
-],
-[
-"Viognier",
-182,
-"W",
-"Viognier"
-],
-[
-"Cabernet Franc",
-168,
-"R",
-"Cabernet Franc"
-],
-[
-"Pinot Noir",
-146,
-"R",
-"Pinot Noir"
-],
-[
-"Other",
-1712,
-"",
-"other"
-]
-]
-},
 "south-africa/banghoek": {
 "scope": "parent",
 "names": [
@@ -157828,88 +158763,86 @@
 "south-africa/durbanville": {
 "scope": "parent",
 "names": [
-"Paarl",
-"Swartland",
-"Stellenbosch"
+"Cape Town"
 ],
 "year": 2023,
-"ha": 38241,
+"ha": 2578,
 "grapes": [
 [
-"Chenin Blanc",
-6377,
-"W",
-"Chenin Blanc"
-],
-[
-"Cabernet Sauvignon",
-5986,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Shiraz",
-5489,
-"R",
-"Syrah"
-],
-[
-"Pinotage",
-3655,
-"R",
-"Pinotage"
-],
-[
 "Sauvignon Blanc",
-3524,
+944,
 "W",
 "Sauvignon Blanc"
 ],
 [
+"Cabernet Sauvignon",
+397,
+"R",
+"Cabernet Sauvignon"
+],
+[
 "Merlot",
-3086,
+268,
 "R",
 "Merlot"
 ],
 [
+"Shiraz",
+261,
+"R",
+"Syrah"
+],
+[
 "Chardonnay",
-2818,
+168,
 "W",
 "Chardonnay"
 ],
 [
-"Cinsault",
-955,
+"Pinotage",
+152,
 "R",
-"Cinsaut"
+"Pinotage"
+],
+[
+"Chenin Blanc",
+106,
+"W",
+"Chenin Blanc"
 ],
 [
 "Cabernet Franc",
-591,
+46,
 "R",
 "Cabernet Franc"
 ],
 [
-"Colombard",
-541,
+"Semillon",
+43,
 "W",
-"Colombard"
+"Sémillon"
 ],
 [
 "Pinot Noir",
-460,
+28,
 "R",
 "Pinot Noir"
 ],
 [
-"Viognier",
-387,
+"Muscat Blanc",
+25,
 "W",
-"Viognier"
+"Muscat Blanc à Petits Grains"
+],
+[
+"Muscat of Alexandria",
+15,
+"W",
+"Muscat of Alexandria"
 ],
 [
 "Other",
-4373,
+125,
 "",
 "other"
 ]
@@ -157918,88 +158851,262 @@
 "south-africa/philadelphia": {
 "scope": "parent",
 "names": [
-"Paarl",
-"Swartland",
-"Stellenbosch"
+"Cape Town"
 ],
 "year": 2023,
-"ha": 38241,
+"ha": 2578,
 "grapes": [
 [
-"Chenin Blanc",
-6377,
-"W",
-"Chenin Blanc"
-],
-[
-"Cabernet Sauvignon",
-5986,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Shiraz",
-5489,
-"R",
-"Syrah"
-],
-[
-"Pinotage",
-3655,
-"R",
-"Pinotage"
-],
-[
 "Sauvignon Blanc",
-3524,
+944,
 "W",
 "Sauvignon Blanc"
 ],
 [
+"Cabernet Sauvignon",
+397,
+"R",
+"Cabernet Sauvignon"
+],
+[
 "Merlot",
-3086,
+268,
 "R",
 "Merlot"
 ],
 [
+"Shiraz",
+261,
+"R",
+"Syrah"
+],
+[
 "Chardonnay",
-2818,
+168,
 "W",
 "Chardonnay"
 ],
 [
-"Cinsault",
-955,
+"Pinotage",
+152,
 "R",
-"Cinsaut"
+"Pinotage"
+],
+[
+"Chenin Blanc",
+106,
+"W",
+"Chenin Blanc"
 ],
 [
 "Cabernet Franc",
-591,
+46,
 "R",
 "Cabernet Franc"
 ],
 [
-"Colombard",
-541,
+"Semillon",
+43,
 "W",
-"Colombard"
+"Sémillon"
 ],
 [
 "Pinot Noir",
-460,
+28,
 "R",
 "Pinot Noir"
 ],
 [
-"Viognier",
-387,
+"Muscat Blanc",
+25,
 "W",
-"Viognier"
+"Muscat Blanc à Petits Grains"
+],
+[
+"Muscat of Alexandria",
+15,
+"W",
+"Muscat of Alexandria"
 ],
 [
 "Other",
-4373,
+125,
+"",
+"other"
+]
+]
+},
+"south-africa/constantia": {
+"scope": "parent",
+"names": [
+"Cape Town"
+],
+"year": 2023,
+"ha": 2578,
+"grapes": [
+[
+"Sauvignon Blanc",
+944,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Cabernet Sauvignon",
+397,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+268,
+"R",
+"Merlot"
+],
+[
+"Shiraz",
+261,
+"R",
+"Syrah"
+],
+[
+"Chardonnay",
+168,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+152,
+"R",
+"Pinotage"
+],
+[
+"Chenin Blanc",
+106,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Franc",
+46,
+"R",
+"Cabernet Franc"
+],
+[
+"Semillon",
+43,
+"W",
+"Sémillon"
+],
+[
+"Pinot Noir",
+28,
+"R",
+"Pinot Noir"
+],
+[
+"Muscat Blanc",
+25,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Muscat of Alexandria",
+15,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Other",
+125,
+"",
+"other"
+]
+]
+},
+"south-africa/hout-bay": {
+"scope": "parent",
+"names": [
+"Cape Town"
+],
+"year": 2023,
+"ha": 2578,
+"grapes": [
+[
+"Sauvignon Blanc",
+944,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Cabernet Sauvignon",
+397,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+268,
+"R",
+"Merlot"
+],
+[
+"Shiraz",
+261,
+"R",
+"Syrah"
+],
+[
+"Chardonnay",
+168,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+152,
+"R",
+"Pinotage"
+],
+[
+"Chenin Blanc",
+106,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Franc",
+46,
+"R",
+"Cabernet Franc"
+],
+[
+"Semillon",
+43,
+"W",
+"Sémillon"
+],
+[
+"Pinot Noir",
+28,
+"R",
+"Pinot Noir"
+],
+[
+"Muscat Blanc",
+25,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Muscat of Alexandria",
+15,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Other",
+125,
 "",
 "other"
 ]
@@ -158096,86 +159203,2562 @@
 "south-africa/koekenaap": {
 "scope": "parent",
 "names": [
-"Olifants River"
+"Paarl",
+"Swartland",
+"Stellenbosch"
 ],
 "year": 2023,
-"ha": 8523,
+"ha": 38241,
 "grapes": [
 [
 "Chenin Blanc",
-2496,
+6377,
 "W",
 "Chenin Blanc"
 ],
 [
-"Colombard",
-2232,
-"W",
-"Colombard"
-],
-[
-"Sauvignon Blanc",
-689,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Pinotage",
-546,
-"R",
-"Pinotage"
-],
-[
-"Shiraz",
-462,
-"R",
-"Syrah"
-],
-[
-"Ruby Cabernet",
-315,
-"R",
-"Ruby Cabernet"
-],
-[
 "Cabernet Sauvignon",
-300,
+5986,
 "R",
 "Cabernet Sauvignon"
 ],
 [
-"Muscat of Alexandria",
-270,
+"Shiraz",
+5489,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+3655,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+3524,
 "W",
-"Muscat of Alexandria"
+"Sauvignon Blanc"
 ],
 [
 "Merlot",
-196,
+3086,
 "R",
 "Merlot"
 ],
 [
 "Chardonnay",
-141,
+2818,
 "W",
 "Chardonnay"
 ],
 [
+"Cinsault",
+955,
+"R",
+"Cinsaut"
+],
+[
+"Cabernet Franc",
+591,
+"R",
+"Cabernet Franc"
+],
+[
+"Colombard",
+541,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+460,
+"R",
+"Pinot Noir"
+],
+[
+"Viognier",
+387,
+"W",
+"Viognier"
+],
+[
+"Other",
+4373,
+"",
+"other"
+]
+]
+},
+"south-africa/elandskloof-kaaimansgat": {
+"scope": "parent",
+"names": [
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 2646,
+"grapes": [
+[
+"Sauvignon Blanc",
+757,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+378,
+"W",
+"Chardonnay"
+],
+[
+"Pinot Noir",
+359,
+"R",
+"Pinot Noir"
+],
+[
+"Shiraz",
+320,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+158,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+142,
+"R",
+"Merlot"
+],
+[
+"Chenin Blanc",
+86,
+"W",
+"Chenin Blanc"
+],
+[
+"Semillon",
+72,
+"W",
+"Sémillon"
+],
+[
+"Pinotage",
+59,
+"R",
+"Pinotage"
+],
+[
+"Cabernet Franc",
+33,
+"R",
+"Cabernet Franc"
+],
+[
+"Viognier",
+30,
+"W",
+"Viognier"
+],
+[
+"Colombard",
+20,
+"W",
+"Colombard"
+],
+[
+"Other",
+231,
+"",
+"other"
+]
+]
+},
+"south-africa/springfontein-rim": {
+"scope": "parent",
+"names": [
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 2646,
+"grapes": [
+[
+"Sauvignon Blanc",
+757,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+378,
+"W",
+"Chardonnay"
+],
+[
+"Pinot Noir",
+359,
+"R",
+"Pinot Noir"
+],
+[
+"Shiraz",
+320,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+158,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+142,
+"R",
+"Merlot"
+],
+[
+"Chenin Blanc",
+86,
+"W",
+"Chenin Blanc"
+],
+[
+"Semillon",
+72,
+"W",
+"Sémillon"
+],
+[
+"Pinotage",
+59,
+"R",
+"Pinotage"
+],
+[
+"Cabernet Franc",
+33,
+"R",
+"Cabernet Franc"
+],
+[
+"Viognier",
+30,
+"W",
+"Viognier"
+],
+[
+"Colombard",
+20,
+"W",
+"Colombard"
+],
+[
+"Other",
+231,
+"",
+"other"
+]
+]
+},
+"south-africa/stanford-foothills": {
+"scope": "parent",
+"names": [
+"Cape South Coast"
+],
+"year": 2023,
+"ha": 2646,
+"grapes": [
+[
+"Sauvignon Blanc",
+757,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+378,
+"W",
+"Chardonnay"
+],
+[
+"Pinot Noir",
+359,
+"R",
+"Pinot Noir"
+],
+[
+"Shiraz",
+320,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+158,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+142,
+"R",
+"Merlot"
+],
+[
+"Chenin Blanc",
+86,
+"W",
+"Chenin Blanc"
+],
+[
+"Semillon",
+72,
+"W",
+"Sémillon"
+],
+[
+"Pinotage",
+59,
+"R",
+"Pinotage"
+],
+[
+"Cabernet Franc",
+33,
+"R",
+"Cabernet Franc"
+],
+[
+"Viognier",
+30,
+"W",
+"Viognier"
+],
+[
+"Colombard",
+20,
+"W",
+"Colombard"
+],
+[
+"Other",
+231,
+"",
+"other"
+]
+]
+},
+"south-africa/agter-paarl": {
+"scope": "parent",
+"names": [
+"Paarl"
+],
+"year": 2023,
+"ha": 14248,
+"grapes": [
+[
+"Chenin Blanc",
+2668,
+"W",
+"Chenin Blanc"
+],
+[
+"Shiraz",
+2115,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+2062,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Pinotage",
+1296,
+"R",
+"Pinotage"
+],
+[
+"Chardonnay",
+1191,
+"W",
+"Chardonnay"
+],
+[
+"Merlot",
+953,
+"R",
+"Merlot"
+],
+[
+"Sauvignon Blanc",
+882,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Cinsault",
+566,
+"R",
+"Cinsaut"
+],
+[
+"Colombard",
+308,
+"W",
+"Colombard"
+],
+[
+"Viognier",
+182,
+"W",
+"Viognier"
+],
+[
+"Cabernet Franc",
+168,
+"R",
+"Cabernet Franc"
+],
+[
+"Pinot Noir",
+146,
+"R",
+"Pinot Noir"
+],
+[
+"Other",
+1712,
+"",
+"other"
+]
+]
+},
+"south-africa/vlottenburg": {
+"scope": "parent",
+"names": [
+"Stellenbosch"
+],
+"year": 2023,
+"ha": 11815,
+"grapes": [
+[
+"Cabernet Sauvignon",
+2351,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Sauvignon Blanc",
+1548,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+1436,
+"R",
+"Merlot"
+],
+[
+"Shiraz",
+1415,
+"R",
+"Syrah"
+],
+[
+"Chenin Blanc",
+1270,
+"W",
+"Chenin Blanc"
+],
+[
+"Pinotage",
+1022,
+"R",
+"Pinotage"
+],
+[
+"Chardonnay",
+961,
+"W",
+"Chardonnay"
+],
+[
+"Cabernet Franc",
+350,
+"R",
+"Cabernet Franc"
+],
+[
+"Pinot Noir",
+243,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+106,
+"R",
+"Cinsaut"
+],
+[
+"Semillon",
+92,
+"W",
+"Sémillon"
+],
+[
+"Viognier",
+83,
+"W",
+"Viognier"
+],
+[
+"Other",
+938,
+"",
+"other"
+]
+]
+},
+"south-africa/paardeberg-perdeberg": {
+"scope": "parent",
+"names": [
+"Swartland"
+],
+"year": 2023,
+"ha": 12178,
+"grapes": [
+[
+"Chenin Blanc",
+2439,
+"W",
+"Chenin Blanc"
+],
+[
+"Shiraz",
+1959,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+1573,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Pinotage",
+1337,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+1094,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+697,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+666,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+282,
+"R",
+"Cinsaut"
+],
+[
 "Sultana",
-117,
+201,
 "W",
 "Sultaniye"
 ],
 [
+"Colombard",
+197,
+"W",
+"Colombard"
+],
+[
+"Viognier",
+122,
+"W",
+"Viognier"
+],
+[
+"Semillon",
+116,
+"W",
+"Sémillon"
+],
+[
+"Other",
+1495,
+"",
+"other"
+]
+]
+},
+"south-africa/paardeberg-south": {
+"scope": "parent",
+"names": [
+"Swartland"
+],
+"year": 2023,
+"ha": 12178,
+"grapes": [
+[
+"Chenin Blanc",
+2439,
+"W",
+"Chenin Blanc"
+],
+[
+"Shiraz",
+1959,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+1573,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Pinotage",
+1337,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+1094,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+697,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+666,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+282,
+"R",
+"Cinsaut"
+],
+[
+"Sultana",
+201,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+197,
+"W",
+"Colombard"
+],
+[
+"Viognier",
+122,
+"W",
+"Viognier"
+],
+[
+"Semillon",
+116,
+"W",
+"Sémillon"
+],
+[
+"Other",
+1495,
+"",
+"other"
+]
+]
+},
+"south-africa/piket-bo-berg": {
+"scope": "parent",
+"names": [
+"Swartland"
+],
+"year": 2023,
+"ha": 12178,
+"grapes": [
+[
+"Chenin Blanc",
+2439,
+"W",
+"Chenin Blanc"
+],
+[
+"Shiraz",
+1959,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+1573,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Pinotage",
+1337,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+1094,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+697,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+666,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+282,
+"R",
+"Cinsaut"
+],
+[
+"Sultana",
+201,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+197,
+"W",
+"Colombard"
+],
+[
+"Viognier",
+122,
+"W",
+"Viognier"
+],
+[
+"Semillon",
+116,
+"W",
+"Sémillon"
+],
+[
+"Other",
+1495,
+"",
+"other"
+]
+]
+},
+"south-africa/porseleinberg": {
+"scope": "parent",
+"names": [
+"Swartland"
+],
+"year": 2023,
+"ha": 12178,
+"grapes": [
+[
+"Chenin Blanc",
+2439,
+"W",
+"Chenin Blanc"
+],
+[
+"Shiraz",
+1959,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+1573,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Pinotage",
+1337,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+1094,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+697,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+666,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+282,
+"R",
+"Cinsaut"
+],
+[
+"Sultana",
+201,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+197,
+"W",
+"Colombard"
+],
+[
+"Viognier",
+122,
+"W",
+"Viognier"
+],
+[
+"Semillon",
+116,
+"W",
+"Sémillon"
+],
+[
+"Other",
+1495,
+"",
+"other"
+]
+]
+},
+"south-africa/riebeeksrivier": {
+"scope": "parent",
+"names": [
+"Swartland"
+],
+"year": 2023,
+"ha": 12178,
+"grapes": [
+[
+"Chenin Blanc",
+2439,
+"W",
+"Chenin Blanc"
+],
+[
+"Shiraz",
+1959,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+1573,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Pinotage",
+1337,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+1094,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+697,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+666,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+282,
+"R",
+"Cinsaut"
+],
+[
+"Sultana",
+201,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+197,
+"W",
+"Colombard"
+],
+[
+"Viognier",
+122,
+"W",
+"Viognier"
+],
+[
+"Semillon",
+116,
+"W",
+"Sémillon"
+],
+[
+"Other",
+1495,
+"",
+"other"
+]
+]
+},
+"south-africa/st-helena-bay": {
+"scope": "parent",
+"names": [
+"Swartland"
+],
+"year": 2023,
+"ha": 12178,
+"grapes": [
+[
+"Chenin Blanc",
+2439,
+"W",
+"Chenin Blanc"
+],
+[
+"Shiraz",
+1959,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+1573,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Pinotage",
+1337,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+1094,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+697,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+666,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+282,
+"R",
+"Cinsaut"
+],
+[
+"Sultana",
+201,
+"W",
+"Sultaniye"
+],
+[
+"Colombard",
+197,
+"W",
+"Colombard"
+],
+[
+"Viognier",
+122,
+"W",
+"Viognier"
+],
+[
+"Semillon",
+116,
+"W",
+"Sémillon"
+],
+[
+"Other",
+1495,
+"",
+"other"
+]
+]
+},
+"south-africa/blouvlei": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Swartland",
+"Stellenbosch"
+],
+"year": 2023,
+"ha": 38241,
+"grapes": [
+[
+"Chenin Blanc",
+6377,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+5986,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+5489,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+3655,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+3524,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+3086,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+2818,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+955,
+"R",
+"Cinsaut"
+],
+[
+"Cabernet Franc",
+591,
+"R",
+"Cabernet Franc"
+],
+[
+"Colombard",
+541,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+460,
+"R",
+"Pinot Noir"
+],
+[
+"Viognier",
+387,
+"W",
+"Viognier"
+],
+[
+"Other",
+4373,
+"",
+"other"
+]
+]
+},
+"south-africa/bovlei": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Swartland",
+"Stellenbosch"
+],
+"year": 2023,
+"ha": 38241,
+"grapes": [
+[
+"Chenin Blanc",
+6377,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+5986,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+5489,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+3655,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+3524,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+3086,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+2818,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+955,
+"R",
+"Cinsaut"
+],
+[
+"Cabernet Franc",
+591,
+"R",
+"Cabernet Franc"
+],
+[
+"Colombard",
+541,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+460,
+"R",
+"Pinot Noir"
+],
+[
+"Viognier",
+387,
+"W",
+"Viognier"
+],
+[
+"Other",
+4373,
+"",
+"other"
+]
+]
+},
+"south-africa/groenberg": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Swartland",
+"Stellenbosch"
+],
+"year": 2023,
+"ha": 38241,
+"grapes": [
+[
+"Chenin Blanc",
+6377,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+5986,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+5489,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+3655,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+3524,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+3086,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+2818,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+955,
+"R",
+"Cinsaut"
+],
+[
+"Cabernet Franc",
+591,
+"R",
+"Cabernet Franc"
+],
+[
+"Colombard",
+541,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+460,
+"R",
+"Pinot Noir"
+],
+[
+"Viognier",
+387,
+"W",
+"Viognier"
+],
+[
+"Other",
+4373,
+"",
+"other"
+]
+]
+},
+"south-africa/limietberg": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Swartland",
+"Stellenbosch"
+],
+"year": 2023,
+"ha": 38241,
+"grapes": [
+[
+"Chenin Blanc",
+6377,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+5986,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+5489,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+3655,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+3524,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+3086,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+2818,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+955,
+"R",
+"Cinsaut"
+],
+[
+"Cabernet Franc",
+591,
+"R",
+"Cabernet Franc"
+],
+[
+"Colombard",
+541,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+460,
+"R",
+"Pinot Noir"
+],
+[
+"Viognier",
+387,
+"W",
+"Viognier"
+],
+[
+"Other",
+4373,
+"",
+"other"
+]
+]
+},
+"south-africa/mid-berg-river": {
+"scope": "parent",
+"names": [
+"Paarl",
+"Swartland",
+"Stellenbosch"
+],
+"year": 2023,
+"ha": 38241,
+"grapes": [
+[
+"Chenin Blanc",
+6377,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+5986,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+5489,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+3655,
+"R",
+"Pinotage"
+],
+[
+"Sauvignon Blanc",
+3524,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Merlot",
+3086,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+2818,
+"W",
+"Chardonnay"
+],
+[
+"Cinsault",
+955,
+"R",
+"Cinsaut"
+],
+[
+"Cabernet Franc",
+591,
+"R",
+"Cabernet Franc"
+],
+[
+"Colombard",
+541,
+"W",
+"Colombard"
+],
+[
+"Pinot Noir",
+460,
+"R",
+"Pinot Noir"
+],
+[
+"Viognier",
+387,
+"W",
+"Viognier"
+],
+[
+"Other",
+4373,
+"",
+"other"
+]
+]
+},
+"south-africa/ashton": {
+"scope": "parent",
+"names": [
+"Robertson"
+],
+"year": 2023,
+"ha": 12776,
+"grapes": [
+[
+"Colombard",
+1825,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+1690,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+1674,
+"W",
+"Chardonnay"
+],
+[
+"Chenin Blanc",
+1513,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+1269,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+927,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+779,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+574,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+523,
+"R",
+"Ruby Cabernet"
+],
+[
 "Muscat Blanc",
-101,
+409,
 "W",
 "Muscat Blanc à Petits Grains"
 ],
 [
+"Pinot Noir",
+237,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+86,
+"R",
+"Cinsaut"
+],
+[
 "Other",
-658,
+1271,
+"",
+"other"
+]
+]
+},
+"south-africa/goedemoed": {
+"scope": "parent",
+"names": [
+"Robertson"
+],
+"year": 2023,
+"ha": 12776,
+"grapes": [
+[
+"Colombard",
+1825,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+1690,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+1674,
+"W",
+"Chardonnay"
+],
+[
+"Chenin Blanc",
+1513,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+1269,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+927,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+779,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+574,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+523,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat Blanc",
+409,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Pinot Noir",
+237,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+86,
+"R",
+"Cinsaut"
+],
+[
+"Other",
+1271,
+"",
+"other"
+]
+]
+},
+"south-africa/goree": {
+"scope": "parent",
+"names": [
+"Robertson"
+],
+"year": 2023,
+"ha": 12776,
+"grapes": [
+[
+"Colombard",
+1825,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+1690,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+1674,
+"W",
+"Chardonnay"
+],
+[
+"Chenin Blanc",
+1513,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+1269,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+927,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+779,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+574,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+523,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat Blanc",
+409,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Pinot Noir",
+237,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+86,
+"R",
+"Cinsaut"
+],
+[
+"Other",
+1271,
+"",
+"other"
+]
+]
+},
+"south-africa/goudmyn": {
+"scope": "parent",
+"names": [
+"Robertson"
+],
+"year": 2023,
+"ha": 12776,
+"grapes": [
+[
+"Colombard",
+1825,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+1690,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+1674,
+"W",
+"Chardonnay"
+],
+[
+"Chenin Blanc",
+1513,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+1269,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+927,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+779,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+574,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+523,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat Blanc",
+409,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Pinot Noir",
+237,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+86,
+"R",
+"Cinsaut"
+],
+[
+"Other",
+1271,
+"",
+"other"
+]
+]
+},
+"south-africa/zandrivier": {
+"scope": "parent",
+"names": [
+"Robertson"
+],
+"year": 2023,
+"ha": 12776,
+"grapes": [
+[
+"Colombard",
+1825,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+1690,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+1674,
+"W",
+"Chardonnay"
+],
+[
+"Chenin Blanc",
+1513,
+"W",
+"Chenin Blanc"
+],
+[
+"Cabernet Sauvignon",
+1269,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Shiraz",
+927,
+"R",
+"Syrah"
+],
+[
+"Pinotage",
+779,
+"R",
+"Pinotage"
+],
+[
+"Merlot",
+574,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+523,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat Blanc",
+409,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Pinot Noir",
+237,
+"R",
+"Pinot Noir"
+],
+[
+"Cinsault",
+86,
+"R",
+"Cinsaut"
+],
+[
+"Other",
+1271,
+"",
+"other"
+]
+]
+},
+"south-africa/hex-river-valley": {
+"scope": "parent",
+"names": [
+"Worcester"
+],
+"year": 2023,
+"ha": 6518,
+"grapes": [
+[
+"Chenin Blanc",
+1734,
+"W",
+"Chenin Blanc"
+],
+[
+"Colombard",
+1049,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+749,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+469,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+416,
+"R",
+"Pinotage"
+],
+[
+"Shiraz",
+404,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+250,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+205,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+168,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat of Alexandria",
+131,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Sultana",
+94,
+"W",
+"Sultaniye"
+],
+[
+"Cinsault",
+68,
+"R",
+"Cinsaut"
+],
+[
+"Other",
+783,
+"",
+"other"
+]
+]
+},
+"south-africa/keeromsberg": {
+"scope": "parent",
+"names": [
+"Worcester"
+],
+"year": 2023,
+"ha": 6518,
+"grapes": [
+[
+"Chenin Blanc",
+1734,
+"W",
+"Chenin Blanc"
+],
+[
+"Colombard",
+1049,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+749,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+469,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+416,
+"R",
+"Pinotage"
+],
+[
+"Shiraz",
+404,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+250,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+205,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+168,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat of Alexandria",
+131,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Sultana",
+94,
+"W",
+"Sultaniye"
+],
+[
+"Cinsault",
+68,
+"R",
+"Cinsaut"
+],
+[
+"Other",
+783,
+"",
+"other"
+]
+]
+},
+"south-africa/moordkuil": {
+"scope": "parent",
+"names": [
+"Worcester"
+],
+"year": 2023,
+"ha": 6518,
+"grapes": [
+[
+"Chenin Blanc",
+1734,
+"W",
+"Chenin Blanc"
+],
+[
+"Colombard",
+1049,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+749,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+469,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+416,
+"R",
+"Pinotage"
+],
+[
+"Shiraz",
+404,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+250,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+205,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+168,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat of Alexandria",
+131,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Sultana",
+94,
+"W",
+"Sultaniye"
+],
+[
+"Cinsault",
+68,
+"R",
+"Cinsaut"
+],
+[
+"Other",
+783,
+"",
+"other"
+]
+]
+},
+"south-africa/nuy": {
+"scope": "parent",
+"names": [
+"Worcester"
+],
+"year": 2023,
+"ha": 6518,
+"grapes": [
+[
+"Chenin Blanc",
+1734,
+"W",
+"Chenin Blanc"
+],
+[
+"Colombard",
+1049,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+749,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+469,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+416,
+"R",
+"Pinotage"
+],
+[
+"Shiraz",
+404,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+250,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+205,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+168,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat of Alexandria",
+131,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Sultana",
+94,
+"W",
+"Sultaniye"
+],
+[
+"Cinsault",
+68,
+"R",
+"Cinsaut"
+],
+[
+"Other",
+783,
+"",
+"other"
+]
+]
+},
+"south-africa/rooikrans": {
+"scope": "parent",
+"names": [
+"Worcester"
+],
+"year": 2023,
+"ha": 6518,
+"grapes": [
+[
+"Chenin Blanc",
+1734,
+"W",
+"Chenin Blanc"
+],
+[
+"Colombard",
+1049,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+749,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+469,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+416,
+"R",
+"Pinotage"
+],
+[
+"Shiraz",
+404,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+250,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+205,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+168,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat of Alexandria",
+131,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Sultana",
+94,
+"W",
+"Sultaniye"
+],
+[
+"Cinsault",
+68,
+"R",
+"Cinsaut"
+],
+[
+"Other",
+783,
+"",
+"other"
+]
+]
+},
+"south-africa/stettyn": {
+"scope": "parent",
+"names": [
+"Worcester"
+],
+"year": 2023,
+"ha": 6518,
+"grapes": [
+[
+"Chenin Blanc",
+1734,
+"W",
+"Chenin Blanc"
+],
+[
+"Colombard",
+1049,
+"W",
+"Colombard"
+],
+[
+"Sauvignon Blanc",
+749,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+469,
+"W",
+"Chardonnay"
+],
+[
+"Pinotage",
+416,
+"R",
+"Pinotage"
+],
+[
+"Shiraz",
+404,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+250,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Merlot",
+205,
+"R",
+"Merlot"
+],
+[
+"Ruby Cabernet",
+168,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat of Alexandria",
+131,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Sultana",
+94,
+"W",
+"Sultaniye"
+],
+[
+"Cinsault",
+68,
+"R",
+"Cinsaut"
+],
+[
+"Other",
+783,
+"",
+"other"
+]
+]
+},
+"south-africa/groenfontein": {
+"scope": "parent",
+"names": [
+"Klein Karoo"
+],
+"year": 2023,
+"ha": 2002,
+"grapes": [
+[
+"Colombard",
+686,
+"W",
+"Colombard"
+],
+[
+"Chenin Blanc",
+437,
+"W",
+"Chenin Blanc"
+],
+[
+"Muscat of Alexandria",
+92,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Shiraz",
+77,
+"R",
+"Syrah"
+],
+[
+"Sauvignon Blanc",
+76,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Chardonnay",
+68,
+"W",
+"Chardonnay"
+],
+[
+"Ruby Cabernet",
+67,
+"R",
+"Ruby Cabernet"
+],
+[
+"Muscat Blanc",
+56,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Merlot",
+50,
+"R",
+"Merlot"
+],
+[
+"Cabernet Sauvignon",
+45,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Pinotage",
+30,
+"R",
+"Pinotage"
+],
+[
+"Viognier",
+15,
+"W",
+"Viognier"
+],
+[
+"Other",
+301,
 "",
 "other"
 ]

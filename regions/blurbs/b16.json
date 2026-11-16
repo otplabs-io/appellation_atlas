@@ -169,7 +169,7 @@
   }
  },
  "portugal/lisboa": {
-  "text": "Portugal's largest wine producer by volume, a regional wine area stretching from Lisbon along the Atlantic coast to Bairrada. It was called Estremadura until 2009. Caladoc, Castelão, Fernão Pires and Syrah are the most planted grapes.",
+  "text": "One of Portugal's largest wine producers by volume, a regional wine area stretching from Lisbon along the Atlantic coast to Bairrada. It was called Estremadura until 2009. Caladoc, Castelão, Fernão Pires and Syrah are the most planted grapes.",
   "from": [
    "wikipedia",
    "planted",
@@ -576,7 +576,7 @@
   }
  },
  "austria": {
-  "text": "A mostly dry white wine country led by Grüner Veltliner, at 33 percent of vines. About 30 percent of wine is red, from Zweigelt, Blaufränkisch and Pinot Noir. Sweet wines come from around Neusiedler See.",
+  "text": "A above all dry white wine country led by Grüner Veltliner, at 33 percent of vines. About 30 percent of wine is red, from Zweigelt, Blaufränkisch and Pinot Noir. Sweet wines come from around Neusiedler See.",
   "from": [
    "wikipedia",
    "planted"
@@ -641,7 +641,7 @@
   ]
  },
  "austria/mittelburgenland": {
-  "text": "A wine area in Burgenland, Austria, whose wine is made only from Blaufränkisch. The grape covers 52 percent of its vineyards, with Zweigelt second at 24 percent.",
+  "text": "A wine area in Burgenland, Austria, whose DAC wine is made only from Blaufränkisch. The grape covers 52 percent of its vineyards, with Zweigelt second at 24 percent.",
   "from": [
    "rules",
    "planted",
@@ -684,7 +684,7 @@
   ]
  },
  "austria/steirerland": {
-  "text": "A regional Austrian wine designation, a Landwein PGI. Across Austria, wines are mostly dry whites, often from Grüner Veltliner, and about 30 percent of the wines are red.",
+  "text": "A regional Austrian wine designation, a Landwein PGI. Across Austria, wines are above all dry whites, often from Grüner Veltliner, and about 30 percent of the wines are red.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -755,7 +755,7 @@
   ]
  },
  "austria/weinviertel": {
-  "text": "Austria's first controlled designation of origin, in Niederösterreich (Lower Austria), making almost half the world's Grüner Veltliner. The wine is aromatic and spicy with pepper notes. Reserve is dry and full-bodied, and may show botrytis and oak.",
+  "text": "Austria's first controlled designation of origin, in Niederösterreich (Lower Austria), making almost half of Austria's Grüner Veltliner. The wine is aromatic and spicy with pepper notes. Reserve is dry and full-bodied, and may show botrytis and oak.",
   "from": [
    "wikipedia",
    "rules",

@@ -91,7 +91,7 @@
   ]
  },
  "france/castillon-cotes-de-bordeaux": {
-  "text": "A Right Bank Bordeaux place whose wider appellation allows reds from Merlot, Cabernet Franc, Cabernet Sauvignon and Cot, plus whites from Sauvignon, Semillon and Muscadelle.",
+  "text": "A Right Bank Bordeaux appellation for red wine, from Merlot, Cabernet Franc, Cabernet Sauvignon and Cot.",
   "from": [
    "rules_of_wider",
    "where"
@@ -340,7 +340,7 @@
   }
  },
  "france/cheverny": {
-  "text": "A Loire Valley appellation for dry white, light red and rosé wines. Whites are 60% to 80% Sauvignon Blanc, blended with other grapes. It spreads over 1,300 acres in 24 communes of Loir-et-Cher and became an AOC in 1993.",
+  "text": "A Loire Valley appellation for dry white, light red and rosé wines. Whites are led by Sauvignon Blanc, blended with other grapes. It spreads over communes of Loir-et-Cher and became an AOC in 1993.",
   "from": [
    "wikipedia",
    "rules"
@@ -359,7 +359,7 @@
   ]
  },
  "france/chinon": {
-  "text": "A Loire appellation in Touraine that is unusually mostly red, made from Cabernet Franc, with 2% to 5% rosé and a little white from Chenin.",
+  "text": "A Loire appellation in Touraine that is unusually above all red, made from Cabernet Franc, with 2% to 5% rosé and a little white from Chenin.",
   "from": [
    "wikipedia",
    "rules"
@@ -527,7 +527,7 @@
   }
  },
  "france/corbieres": {
-  "text": "The largest appellation in Languedoc-Roussillon, covering 33,400 acres. It is almost 95% red, with Carignan the most common grape, plus Grenache, Syrah and Mourvèdre. It has a wide range of soils.",
+  "text": "The largest appellation in Languedoc-Roussillon. It is almost 95% red, with Carignan the most common grape, plus Grenache, Syrah and Mourvèdre. It has a wide range of soils.",
   "from": [
    "wikipedia",
    "rules"
@@ -1046,7 +1046,7 @@
   }
  },
  "france/cremant-de-bordeaux": {
-  "text": "A sparkling wine appellation covering nearly 500 communes. It is made from the Bordeaux grapes, red and white, including Merlot, Cabernet Sauvignon, Semillon and Sauvignon. Across Gironde, Merlot is the most planted grape, at 58%.",
+  "text": "A sparkling wine appellation covering nearly 500 communes. It is made from the Bordeaux grapes, red and white, including Merlot, Cabernet Sauvignon, Semillon and Sauvignon.",
   "from": [
    "rules",
    "planted"
