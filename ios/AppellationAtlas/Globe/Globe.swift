@@ -419,7 +419,7 @@ final class Globe {
         if v.id != "world" && cam.R < b.R * Globe.leaveAt {   // pinched out: up a level, where the globe is
             pickInPlace(v.parent ?? "world"); return
         }
-        if cam.R > b.R * 1.03, await deeper() { return }
+        if v.id != "world", cam.R > b.R * 1.03, await deeper() { return }   // the world turns and zooms freely: a country opens only when tapped
         guard !busy, view?.id == v.id else { return }
         relabel()   // the globe stays where the finger left it
     }

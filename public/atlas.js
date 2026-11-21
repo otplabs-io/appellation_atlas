@@ -279,7 +279,7 @@ function touchMode(){M.svg.style.touchAction=M.view.id==='world'&&!zoomed()?'pan
 async function settle(){
   if(M.busy||!M.view) return; const v=M.view, b=camFor(v);
   if(v.id!=='world'&&M.cam.R<b.R*.75){zoomOut(); return;}
-  if(M.cam.R>b.R*1.03&&await deeper()) return;
+  if(v.id!=='world'&&M.cam.R>b.R*1.03&&await deeper()) return;   // the world turns and zooms freely: a country opens only when tapped
   if(M.busy||M.view!==v) return;
   if(M.cam.R<b.R) glide(v.id==='world'?camOf(M.cam.lon,Math.max(-60,Math.min(70,M.cam.lat)),b.R):b); else {labels(); touchMode();}
 }
