@@ -554,6 +554,7 @@ function openAbout(){
     <p class="ts-caption">The code is on GitHub under the MIT License. Anyone can read it, copy it, change it and run it on their own computer. ${a(REPO,'github.com/otplabs-io/appellation_atlas')}</p>
     <h3 class="ts-caption about-h">Where the data comes from</h3>
     <ul class="about-src">${ABOUT_SOURCES.map(([n,w,u])=>`<li>${a(u,n)}<span class="ts-caption">${esc(w)}</span></li>`).join('')}</ul>
+    <p class="ts-caption about-n"><a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></p>
     <p class="ts-caption about-note">The notes on how soil, slope and climate affect vines are general viticulture. They describe what usually happens, not findings about each place.</p></div>`;
   d.showModal();
 }

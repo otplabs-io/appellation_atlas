@@ -48,6 +48,10 @@ struct AboutView: View {
                     }
                 }
                 Section {
+                    Link("Privacy policy", destination: URL(string: "https://appellation-atlas.vercel.app/privacy.html")!)
+                    Link("Support", destination: URL(string: "https://appellation-atlas.vercel.app/support.html")!)
+                }
+                Section {
                     Text("The notes on how soil, slope and climate affect vines are general viticulture. They describe what usually happens, not findings about each place.")
                         .font(.atlasNote).foregroundStyle(Palette.soft)
                 }
