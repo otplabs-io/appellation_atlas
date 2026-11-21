@@ -61,7 +61,7 @@ def packets(scope='benchmark'):
         f=jl(fp); ru=f.get('rules') or {}; pl=f.get('planted') or {}
         kids=[P[c][0] for c in P if P[c][1]==k][:12]
         p=dict(id=k,name=f['name'],also=f.get('also',[]),kind=f.get('kind',[]),country=f['country'],within=[n for _,n in f.get('chain',[])],   # every larger place, nearest last (the chain leaves out the place itself)
-               wset=bool(f.get('wset')),benchmark=bool(P[k][6]),places_inside=kids)
+               wset=bool(f.get('study')),benchmark=bool(P[k][6]),places_inside=kids)
         if ru: p['rules']={k2:ru[k2] for k2 in ('types','grapes','grapes_other','communes') if ru.get(k2)}
         else:   # the rules of the nearest larger place, for a village or zone with none of its own (Oger in Champagne)
             for a,an in reversed(f.get('chain',[])):
@@ -86,7 +86,7 @@ def written():
     d=os.path.join(ROOT,'regions','blurbs')
     for fn in sorted(os.listdir(d)) if os.path.isdir(d) else []:
         if fn.endswith('.json') and ' ' not in fn: out.update(jl(os.path.join(d,fn)))
-    return out
+    return {k:v for k,v in out.items() if not v.get('cut')}   # the audit (zaudit.json) drops a blurb with nothing left to keep
 def cite():
     """Adds the Wikipedia article and revision each blurb read, from its packet, so the page can list it in Sources."""
     d=os.path.join(ROOT,'regions','blurbs')

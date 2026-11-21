@@ -97,7 +97,7 @@
   }
  },
  "spain/alella": {
-  "text": "A small Catalan DO on the Mediterranean coast just north of Barcelona, in Maresme county. Urban growth has shrunk it to a third of its 1956 size. Allowed grapes include whites such as Xarello, Macabeo and Garnacha Blanca, plus several reds.",
+  "text": "A small Catalan DO on the Mediterranean coast just north of Barcelona, in the Maresme and Vallès Oriental. Urban growth has shrunk it to a third of its 1956 size. Allowed grapes include whites such as Xarello, Macabeo and Garnacha Blanca, plus several reds.",
   "from": [
    "wikipedia",
    "rules"
@@ -168,10 +168,14 @@
   }
  },
  "spain/ayles": {
-  "text": "A single-estate Vino de Pago in Mezalocha, Aragón. Its wines are made from four red grapes: Cabernet Sauvignon, Garnacha Tinta, Merlot and Tempranillo.",
+  "text": "A single-estate Vino de Pago in Mezalocha, Aragón. Its rules allow Cabernet Sauvignon, Garnacha Tinta, Merlot and Tempranillo, and since a recent change also Syrah and Chardonnay, for white and rosé as well as red.",
   "from": [
    "rules"
-  ]
+  ],
+  "cite": {
+   "name": "Official Journal of the EU, C/2026/1818: amendment of the Aylés product specification (Orden AGA/1399/2025)",
+   "url": "https://www.intiasa.es/sites/default/files/assets/files/certificacion/DocumentoNormativo/VinosPago/2026%2003%2019%20Publicacion%20DOUE%20Ayles%20DU%20AprobadoOct2025.pdf"
+  }
  },
  "spain/barbanza-e-iria": {
   "text": "A Galician vino de la tierra covering municipalities in A Coruña and Pontevedra provinces, such as Padrón, Boiro and Ribeira. It sits one step below the DO level and gained that status in 2007.",
@@ -209,7 +213,7 @@
   }
  },
  "spain/calatayud": {
-  "text": "An Aragón DOP grouped with Campo de Borja as Campo de Borja & Calatayud, in the southwest of Zaragoza province across 46 municipalities in the Ebro valley. Vineyards are on south-facing slopes. Garnacha Tinta, Tempranillo and Macabeo are among its allowed grapes.",
+  "text": "An Aragón DOP shown here with Campo de Borja, in the southwest of Zaragoza province across 46 municipalities in the Ebro valley. Garnacha Tinta, Tempranillo and Macabeo are among its allowed grapes.",
   "from": [
    "wikipedia",
    "rules",
@@ -228,7 +232,7 @@
   ]
  },
  "spain/campo-de-borja": {
-  "text": "An Aragón DOP grouped with Calatayud as Campo de Borja & Calatayud, in northwest Zaragoza province across 16 municipalities. It is a transition zone between the Ebro plains and the Iberian mountains, and Moncayo mountain creates a microclimate. Garnacha Tinta, Syrah and Cabernet Sauvignon are among its allowed grapes.",
+  "text": "An Aragón DOP, shown here with its neighbour Calatayud, in northwest Zaragoza province across 16 municipalities. It is a transition zone between the Ebro plains and the Iberian mountains, and Moncayo mountain creates a microclimate. Garnacha Tinta, Syrah and Cabernet Sauvignon are among its allowed grapes.",
   "from": [
    "wikipedia",
    "rules",
@@ -303,7 +307,7 @@
   }
  },
  "spain/cebreros": {
-  "text": "A DOP covering 35 municipalities. Its wines are made from just three grapes: Albillo Real for white, and Garnacha Tinta and Tempranillo for red, with Garnacha Tintorera also allowed.",
+  "text": "A DOP covering 35 municipalities. Its wines are made from Albillo Real for white and mainly Garnacha Tinta for red, with Tempranillo and Garnacha Tintorera also allowed.",
   "from": [
    "rules"
   ]
@@ -651,7 +655,7 @@
   ]
  },
  "spain/navarra": {
-  "text": "A DOP across the southern half of Navarre, on the lower Pyrenees slopes running down to the Ebro basin. It was once known only for rosados but now also makes quality reds and whites. Tempranillo is half of plantings, followed by Garnacha.",
+  "text": "A DOP across the southern half of Navarre, on the lower Pyrenees slopes running down to the Ebro basin. It was once known mainly for rosados but now also makes quality reds and whites, mostly from Tempranillo and Garnacha.",
   "from": [
    "wikipedia",
    "planted"

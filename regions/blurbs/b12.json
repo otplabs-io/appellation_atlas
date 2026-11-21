@@ -48,7 +48,7 @@
   }
  },
  "spain/tierra-del-vino-de-zamora": {
-  "text": "A Zamora province appellation in Castile and León, upgraded to DOP status in 2007. Its rules cover wine from red Tempranillo, Garnacha Tinta and Cabernet Sauvignon, and from white Verdejo, Godello, Albillo Mayor and Palomino.",
+  "text": "A Zamora province appellation in Castile and León, upgraded to DOP status in 2007. Its rules cover wine from red Tempranillo, Garnacha Tinta and Cabernet Sauvignon, and from whites led by Doña Blanca (Malvasía), Muscat Blanc and Verdejo.",
   "from": [
    "wikipedia",
    "rules"
@@ -128,7 +128,7 @@
   }
  },
  "spain/valdepenas": {
-  "text": "A DOP in the south of Castile-La Mancha, grouped with La Mancha as La Mancha & Valdepeñas. It is almost surrounded by the La Mancha DOP but separate because of its long history of a distinct style, aloque or clarete, made by mixing white and red grapes. Rules allow Tempranillo, Airén and Garnacha Tinta, among others.",
+  "text": "A DOP in the south of Castile-La Mancha, shown here with La Mancha. It is almost surrounded by the La Mancha DOP but separate because of its long history of a distinct style, aloque or clarete, made by mixing white and red grapes. Rules allow Tempranillo, Airén and Garnacha Tinta, among others.",
   "from": [
    "wikipedia",
    "rules",
@@ -722,7 +722,7 @@
   }
  },
  "australia/high-eden": {
-  "text": "A subregion in the western, highest part of Eden Valley, within the Barossa zone of South Australia, at about 1,640 feet, registered in 2001. Its main grapes are Riesling, Cabernet Sauvignon, Shiraz and Chardonnay, and the cool, windy climate and poor soils give low yields.",
+  "text": "A subregion of Eden Valley, within the Barossa zone of South Australia, registered in 2001. Its main grapes are Riesling, Cabernet Sauvignon, Shiraz and Chardonnay, and the cool, windy climate and poor soils give low yields.",
   "from": [
    "wikipedia",
    "where"
@@ -755,7 +755,7 @@
   ]
  },
  "australia/hunter-valley": {
-  "text": "One of Australia's first wine regions, in New South Wales, planted from the early 19th century. Known for Semillon, it also makes Shiraz, Chardonnay, Cabernet Sauvignon and Verdelho. The zone covers the whole catchment of the Hunter River.",
+  "text": "One of Australia's first wine regions, in New South Wales, planted from the early 19th century. Known for Semillon, it also makes Shiraz, Chardonnay and Verdelho. The zone covers the whole catchment of the Hunter River.",
   "from": [
    "wikipedia",
    "planted"

@@ -1,6 +1,6 @@
 {
  "france/southern-rhone": {
-  "text": "A southern Rhône area containing Châteauneuf-du-Pape, Gigondas, Vacqueyras, Rasteau, Tavel, Lirac and the Côtes du Rhône and Côtes du Rhône Villages appellations. Vineyards in Vaucluse are planted above all to Grenache (47%), then Syrah (22%).",
+  "text": "A southern Rhône area containing Châteauneuf-du-Pape, Gigondas, Vacqueyras, Rasteau, Tavel, Lirac and most of the Côtes du Rhône and Côtes du Rhône Villages vineyards. Vineyards in Vaucluse are planted above all to Grenache (47%), then Syrah (22%).",
   "from": [
    "where",
    "planted"
@@ -97,7 +97,7 @@
   }
  },
  "france/vacqueyras": {
-  "text": "A southern Rhône cru, one of the 17 crus of Côtes du Rhône, at the foot of the Dentelles de Montmirail. It is mostly red, from Grenache, Mourvèdre, Syrah and Cinsaut, with some white and rosé. The wines are similar to nearby Gigondas and Cairanne.",
+  "text": "A southern Rhône cru, one of the 17 crus of Côtes du Rhône, at the foot of the Dentelles de Montmirail. It is mostly red, led by Grenache with Syrah and Mourvèdre, with some white and rosé. The wines are similar to nearby Gigondas and Cairanne.",
   "from": [
    "wikipedia",
    "rules"
@@ -365,7 +365,7 @@
   ]
  },
  "italy/alba": {
-  "text": "A Piedmont-area appellation with a long list of allowed grapes.",
+  "text": "A Piedmont DOC for red wine blended from Nebbiolo and Barbera, with Nebbiolo the larger part.",
   "from": [
    "rules"
   ]
@@ -378,7 +378,7 @@
   ]
  },
  "italy/alcamo": {
-  "text": "A Sicilian DOC in the Val di Mazara, southwest of Palermo, covering nine towns including Calatafimi and Partinico. It began in 1972 for white wine only and now includes red and rosé.",
+  "text": "A Sicilian DOC in the Val di Mazara, southwest of Palermo, covering Alcamo and parts of nearby towns such as Calatafimi and Partinico. It began in 1972 for white wine only and now includes red and rosé.",
   "from": [
    "wikipedia",
    "rules"
@@ -446,7 +446,7 @@
   }
  },
  "italy/amelia": {
-  "text": "An Umbria-area appellation with a very long list of allowed grapes.",
+  "text": "A DOC in southern Umbria, around the town of Amelia.",
   "from": [
    "rules"
   ]
@@ -501,7 +501,7 @@
   }
  },
  "italy/assisi": {
-  "text": "An Umbria-area appellation with a very long list of allowed grapes.",
+  "text": "A DOC in Umbria, around the town of Assisi.",
   "from": [
    "rules"
   ]
@@ -714,7 +714,7 @@
   ]
  },
  "italy/brachetto-d-acqui": {
-  "text": "A red wine from Brachetto, a grape believed native to Piedmont, made around Acqui Terme in Alessandria province. A DOCG since 1996, it can be still or sparkling, usually with some sweetness.",
+  "text": "A red wine from Brachetto, a grape believed native to Piedmont, made in the hills around Acqui Terme, across the provinces of Asti and Alessandria. It is a sweet, aromatic, low-alcohol red, usually sparkling or lightly sparkling.",
   "from": [
    "wikipedia",
    "rules"
@@ -782,7 +782,7 @@
   ]
  },
  "italy/calosso": {
-  "text": "A Piedmont-area appellation with a long list of allowed grapes.",
+  "text": "A Piedmont DOC for red wine from the local Gamba di Pernice grape.",
   "from": [
    "rules"
   ]

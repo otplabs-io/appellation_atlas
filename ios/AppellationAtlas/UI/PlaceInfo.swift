@@ -10,15 +10,17 @@ struct PlaceInfo: View {
     @State private var allParts = false
 
     private enum Key: String, CaseIterable {
-        case keyfacts, glance, short, planted, climate, soil, land, parts, rules, ava, gi, found, none, sources
+        case keyfacts, style, terms, glance, short, planted, climate, soil, land, parts, rules, ava, gi, found, none, sources
         var jump: String? {
             switch self {
+            case .style: "Style"
+            case .terms: "Labeling"
             case .planted: "Planted"
             case .climate: "Climate"
             case .soil: "Rock and soil"
             case .land: "Land"
             case .parts: "Compare"
-            case .rules: "Rules"
+            case .rules: "Vineyard"
             case .ava: "AVA"
             case .gi: "GI"
             case .found: "Notes"
@@ -30,6 +32,8 @@ struct PlaceInfo: View {
     private var present: [Key] {
         var k: [Key] = []
         if !f["keyfacts"].array.isEmpty { k.append(.keyfacts) }
+        if !f["style"]["notes"].array.isEmpty { k.append(.style) }
+        if !f["terms"].array.isEmpty { k.append(.terms) }
         if f["summary"].truthy { k.append(.glance) }
         if f["research"]["sheet"].truthy { k.append(.short) }
         if !f["planted"]["grapes"].array.isEmpty { k.append(.planted) }
@@ -71,6 +75,8 @@ struct PlaceInfo: View {
     @ViewBuilder private func section(_ k: Key) -> some View {
         switch k {
         case .keyfacts: keyfacts
+        case .style: style
+        case .terms: terms
         case .glance: glance
         case .short: short
         case .planted: planted
@@ -106,7 +112,36 @@ struct PlaceInfo: View {
 
     // ---- sections
 
-    /// The few things a Diploma student must know, from the place's full Wikipedia article (keyfacts in web/atlas.js).
+    /// What the words on its labels mean: the terms its region uses, for the benchmark places (terms in web/atlas.js).
+    private var terms: some View {
+        AtlasSection(title: "Labeling rules") {
+            VStack(alignment: .leading, spacing: 10) {
+                ForEach(Array(f["terms"].array.enumerated()), id: \.offset) { _, t in
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(t[0].string ?? "").font(.atlasBody.weight(.semibold)).foregroundStyle(Palette.ink)
+                        Text(t[1].string ?? "").font(.atlasBody).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+            }
+        }
+    }
+
+    /// What the wines taste like, for the study-list places (style in web/atlas.js); a place with none of its own shows its region's.
+    private var style: some View {
+        AtlasSection(title: "Wine style") {
+            if let of = f["style"]["of"].string { SubCaption("Written for \(of) as a whole.") }
+            VStack(alignment: .leading, spacing: 10) {
+                ForEach(f["style"]["notes"].strings, id: \.self) { t in
+                    HStack(alignment: .firstTextBaseline, spacing: 10) {
+                        Circle().fill(Palette.teal).frame(width: 6, height: 6).alignmentGuide(.firstTextBaseline) { $0[.bottom] + 1 }
+                        Text(t).font(.atlasBody).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+            }
+        }
+    }
+
+    /// The few things a serious student must know, from the place's full Wikipedia article (keyfacts in web/atlas.js).
     private var keyfacts: some View {
         AtlasSection(title: "Key facts") {
             VStack(alignment: .leading, spacing: 10) {
@@ -169,7 +204,7 @@ struct PlaceInfo: View {
         let year = pl["year"].int.map(String.init) ?? ""
         let caption = wide
             ? "No figures exist for \(name) alone. These are for \(where_), the wider area it sits in: \(acres) acres of wine grapes, \(year)."
-            : "\(acres) acres of wine grapes\(where_.isEmpty ? "" : " " + where_), \(year)."
+            : "\(acres) acres of wine grapes\(where_.isEmpty ? "" : " " + where_), \(year)." + (pl["any_name"].bool == true ? Copy.Rules.anyName : "")
         let key = wide ? ["Allowed in \(name)", "Not allowed in \(name)"] : ["Can carry the \(name) name", "Grown here, but sold under another name"]
         return AtlasSection(title: wide ? "Planted in the wider area" : "What is planted", note: "Share of vineyard area") {
             Text(caption + Copy.leftOut(pl["left"])).font(.atlasNote).foregroundStyle(Palette.soft)
@@ -302,7 +337,7 @@ struct PlaceInfo: View {
         let top = asp.max { $0.value < $1.value }
         let slope = te["slope"].double ?? 0
         let slopeText = slope.rounded() == slope ? String(format: "%.0f", slope) : String(format: "%.1f", slope)
-        var facts = [Fact(label: "Elevation", value: "\(fmt(feet(te["elev"][1].double ?? 0))) ft", note: "\(fmt(feet(te["elev"][0].double ?? 0))) to \(fmt(feet(te["elev"][2].double ?? 0))) ft")]
+        var facts = [Fact(label: "Elevation", value: "\(fmt(feet(te["elev"][1].double ?? 0))) ft", note: "most of it \(fmt(feet(te["elev"][0].double ?? 0))) to \(fmt(feet(te["elev"][2].double ?? 0))) ft")]
         if aspect.truthy {
             facts.append(Fact(label: "Grade", value: "\(Int((tan(slope * Double.pi / 180) * 100).rounded()))%", note: "\(slopeText)° on average"))
         } else {
@@ -381,9 +416,9 @@ struct PlaceInfo: View {
         let grapes = ru["grapes"].array
         let yhl = ru["yield_hl"].double, ykg = ru["yield_kg"].double
         let communes = ru["communes"].strings
-        return AtlasSection(title: "The rules", note: "Allowed grapes, not plantings") {
+        return AtlasSection(title: "Grape and vineyard rules", note: "Allowed grapes, not plantings") {
             if ru["province_list"].truthy {   // Italy's EU records: every grape the province approves, not this DOC's own blend (rules in web/atlas.js)
-                Text("The EU record lists every grape approved in the province, not this wine's own blend rules.").font(.atlasNote).foregroundStyle(Palette.soft)
+                Text("The EU record lists every grape approved in the province or region, not this wine\u{2019}s own blend rules.").font(.atlasNote).foregroundStyle(Palette.soft)
                 DisclosureGroup("All \(grapes.count) grapes") { Chips(items: grapes.map { ($0[0].string ?? "", $0[1].string ?? "", nil) }) }.font(.atlasNote)
             } else if ru["long_list"].truthy {
                 DisclosureGroup("The 2022 EU record allows \(grapes.count) grapes") { Chips(items: grapes.map { ($0[0].string ?? "", $0[1].string ?? "", nil) }) }.font(.atlasNote)
@@ -400,7 +435,7 @@ struct PlaceInfo: View {
                 }
                 let un = grapes.filter { $0[1].string == nil || $0[1].string == "" }
                 if !un.isEmpty { SubCaption("Grapes"); Chips(items: un.map { ($0[0].string ?? "", "", nil) }) }
-                if (ru["cahier"].isNull || ru["roles_unread"].truthy) && grapes.count > 1 { Text(Copy.Rules.noShares).font(.atlasNote).foregroundStyle(Palette.soft) }
+                if (ru["cahier"].isNull || ru["roles_unread"].truthy) && grapes.count > 1 { Text(ru["cahier"].isNull ? Copy.Rules.noShares : Copy.Rules.noRoles).font(.atlasNote).foregroundStyle(Palette.soft) }
             }
             if !ru["grapes_other"].array.isEmpty && ru["by_wine"].array.isEmpty { SubCaption("Also allowed, in smaller roles"); Chips(items: chips(ru["grapes_other"])) }
             if !ru["grapes_trial"].array.isEmpty { SubCaption("On trial, to adapt to a changing climate"); Chips(items: chips(ru["grapes_trial"])) }
@@ -438,7 +473,7 @@ struct PlaceInfo: View {
         let counties = av["counties"].strings
         return AtlasSection(title: "The AVA", note: "US rules name no grapes") {
             FactGrid(facts: [
-                Fact(label: "Approved", value: av["created"].string.map { String($0.prefix(4)) } ?? ""),
+                Fact(label: "In effect from", value: av["created"].string.map { String($0.prefix(4)) } ?? ""),
                 Fact(label: "State", value: av["states"].strings.joined(separator: ", ")),
                 Fact(label: "Counties", value: counties.isEmpty ? "" : fmt(Double(counties.count)), note: counties.prefix(6).joined(separator: ", ") + (counties.count > 6 ? "…" : "")),
             ])

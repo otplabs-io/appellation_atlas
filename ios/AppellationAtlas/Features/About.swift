@@ -6,7 +6,7 @@ struct AboutView: View {
     @Environment(Atlas.self) private var atlas
 
     private let sources: [(String, String, String)] = [
-        ("Candiago et al. 2022, EU wine PDO inventory", "European boundaries and rules", "https://doi.org/10.1038/s41597-022-01778-5"),
+        ("Candiago et al. 2022, EU wine PDO inventory", "European boundaries and rules", "https://doi.org/10.1038/s41597-022-01513-0"),
         ("UC Davis AVA Project", "US boundaries", "https://github.com/UCDavisLibrary/ava"),
         ("Eurostat GISCO", "Countries and regions", "https://ec.europa.eu/eurostat/web/gisco"),
         ("Wine Australia and IPONZ", "Australian and New Zealand boundaries", "https://www.wineaustralia.com/"),
@@ -18,7 +18,6 @@ struct AboutView: View {
         ("Macrostrat", "Rock (CC BY 4.0)", "https://macrostrat.org/"),
         ("AWS Terrain Tiles", "Elevation and slope", "https://registry.opendata.aws/terrain-tiles/"),
         ("Wikidata and Wikimedia", "How well known each place is", "https://www.wikidata.org/"),
-        ("WSET Level 4 specification", "Which places are Benchmark regions", "https://www.wsetglobal.com/"),
     ]
 
     var body: some View {

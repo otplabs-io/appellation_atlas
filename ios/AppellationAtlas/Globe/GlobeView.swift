@@ -15,7 +15,7 @@ struct GlobeView: View {
             // Read everything the canvas draws here, so any change to it redraws the canvas.
             let frame = Frame(cam: globe.cam, view: globe.view?.id, parent: globe.parent?.id, leaf: globe.leaf, out: globe.outgoing?.view.id,
                               fade: globe.fadeIn, world: globe.worldOpacity, labels: globe.labels.count, dots: globe.dots.count, low: globe.range.0, high: globe.range.1,
-                              previews: globe.previews.map(\.id))
+                              previews: globe.previews.map(\.id), level: globe.atlas.level)
             Canvas(rendersAsynchronously: false) { ctx, size in
                 _ = frame
                 draw(&ctx, size)
@@ -139,6 +139,17 @@ struct GlobeView: View {
             ctx.stroke(picked, with: .color(Palette.regionStroke), style: StrokeStyle(lineWidth: 5, lineJoin: .round))
             ctx.stroke(picked, with: .color(Palette.target), style: StrokeStyle(lineWidth: 2.5, lineJoin: .round))
         }
+        // the rivers and lakes the pages name, over the places so they show
+        if !v.water.isEmpty {
+            var lakes = Path()
+            for w in v.water where w.lake { for p in w.polys { P.add(p, to: &lakes) } }
+            ctx.fill(lakes, with: .color(Palette.lake))
+            ctx.stroke(lakes, with: .color(Palette.river), style: StrokeStyle(lineWidth: 0.8, lineJoin: .round))
+            var rivers = Path()
+            for w in v.water where !w.lake { rivers.addPath(P.lines(w.lines)) }
+            ctx.stroke(rivers, with: .color(Palette.paper.opacity(0.9)), style: StrokeStyle(lineWidth: 3.4, lineCap: .round, lineJoin: .round))   // a pale edge, so a river reads across the deepest gold
+            ctx.stroke(rivers, with: .color(Palette.river), style: StrokeStyle(lineWidth: 1.5, lineCap: .round, lineJoin: .round))
+        }
     }
 
     private func label(_ ctx: inout GraphicsContext, _ l: MapLabel) {
@@ -153,16 +164,28 @@ struct GlobeView: View {
             ctx.draw(r, at: l.point, anchor: l.anchor)
             return
         }
+        if let d = l.dot {   // a town's spot
+            let c = Path(ellipseIn: CGRect(x: d.x - 2.6, y: d.y - 2.6, width: 5.2, height: 5.2))
+            ctx.fill(c, with: .color(Palette.soft))
+            ctx.stroke(c, with: .color(Palette.paper), lineWidth: 1)
+        }
         let color: Color = switch st.tone {
         case .ink: Palette.ink
         case .soft: Palette.soft
         case .faint: Palette.ink.opacity(0.5)
+        case .water: Palette.riverInk
         }
-        let r = ctx.resolve(Text(l.text).font(st.font).kerning(st.kern).foregroundStyle(color))
+        let r = ctx.resolve(Text(l.text).font(st.italic ? st.font.italic() : st.font).kerning(st.kern).foregroundStyle(color))
         var halo = ctx
         let blur: CGFloat = st.tone == .ink ? 1.2 : 1
         for _ in 0..<3 { halo.addFilter(.shadow(color: Palette.halo, radius: blur)) }
-        halo.draw(r, at: l.point, anchor: l.anchor)
+        if l.angle != 0 {   // a river's name runs along it
+            halo.translateBy(x: l.point.x, y: l.point.y)
+            halo.rotate(by: .degrees(l.angle))
+            halo.draw(r, at: .zero, anchor: l.anchor)
+        } else {
+            halo.draw(r, at: l.point, anchor: l.anchor)
+        }
     }
 }
 
@@ -174,4 +197,5 @@ private struct Frame: Equatable {
     let labels: Int, dots: Int
     let low: Double, high: Double
     let previews: [String]
+    let level: String   // the course studied picks the gold
 }

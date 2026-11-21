@@ -1,0 +1,55 @@
+{
+ "austria": {
+  "notes": [
+   "Austrian wines are mostly dry whites, often from Grüner Veltliner, with sweet wines around the Neusiedlersee.",
+   "Grüner Veltliner ranges from short-lived Heuriger wines to long-lived Spätlesen.",
+   "Austrian Riesling is mostly dry, full and palate-coating, with a long finish and a hint of white pepper.",
+   "Blaufränkisch gives deeply colored reds with dark fruit, peppery spice and moderate to high acidity, and Zweigelt fresh, fruity reds."
+  ],
+  "art": [
+   "Austrian wine",
+   "Riesling",
+   "Blaufränkisch"
+  ]
+ },
+ "austria/burgenland": {
+  "notes": [
+   "Light, unoaked Blaufränkisch goes under Mittelburgenland DAC Classic, and fuller oaked styles under Reserve.",
+   "Eisenberg's iron-rich red soils give Blaufränkisch a distinct spiciness.",
+   "The east side of the Neusiedlersee makes fruity, fresh Zweigelt and rare sweet wines."
+  ],
+  "art": [
+   "Blaufränkisch",
+   "Austrian wine"
+  ]
+ },
+ "austria/wachau": {
+  "notes": [
+   "The Wachau specializes in dry Riesling and Grüner Veltliner.",
+   "Wines are rarely given new oak or malolactic, and are fuller bodied, closer to Alsace than to Germany.",
+   "Steinfeder is lightest, up to 11.5% alcohol, then Federspiel, then Smaragd at 12.5% or more.",
+   "The best Smaragd wines can age more than 20 years."
+  ],
+  "art": [
+   "Wachau wine"
+  ]
+ },
+ "austria/weinviertel": {
+  "notes": [
+   "Weinviertel DAC is aromatic and spicy, with pepper notes and no botrytis or oak.",
+   "Weinviertel DAC Reserve is dry, full bodied and spicy, and may show subtle botrytis and oak."
+  ],
+  "art": [
+   "Weinviertel DAC"
+  ]
+ },
+ "austria/niederosterreich": {
+  "notes": [
+   "Mostly Grüner Veltliner is grown here, made fresh for drinking young.",
+   "On the Wagram, Grüner Veltliner is a little fuller and more aromatic."
+  ],
+  "art": [
+   "Austrian wine"
+  ]
+ }
+}

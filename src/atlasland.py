@@ -540,7 +540,8 @@ def readings(f,CG):
     planted=[key(g) for g,ha,*_ in (pl or {}).get('grapes',[]) if g!='Other' and key(g) in G and ha>=.05*pl['ha']][:4] if pl and pl.get('scope') in ('own','within','country') else []
     main=[g for g,*_ in ((f.get('rules') or {}).get('grapes') or [])]
     if (f['id'].startswith('italy/') and len(main)>=10) or len(main)>6: main=[]   # Italy's EU lists are the province's; a long list is no place's identity
-    if f['id'].startswith('france/') and not (f.get('rules') or {}).get('cahier'): main=[]   # the EU list has no roles: Pinot Gris is allowed in Pernand's red, not one of its grapes
+    if f['id'].startswith('france/') and not (f.get('rules') or {}).get('cahier'): main=[]
+    if (f.get('rules') or {}).get('roles_unread'): main=[]   # roles not read apart: Saint-Romain's Pinot Gris is an accessory in its reds, not one of its wines   # the EU list has no roles: Pinot Gris is allowed in Pernand's red, not one of its grapes
     lead=next((g for g,ha,*_ in (pl or {}).get('grapes',[]) if g!='Other'),None)
     if lead and key(lead) not in G: planted=[]   # Verdejo leads in Rueda: judging only its minor grapes would mislead
     known=list(dict.fromkeys(key(g) for g in main if key(g) in G))
@@ -611,11 +612,14 @@ def readings(f,CG):
             if a and te['flat']<.8:
                 south=(c or {}).get('lat',1)<0; way=lambda *ds:sum(a[d] for d in ds)
                 toward,away=(way('NW','N','NE'),way('SE','S','SW')) if south else (way('SE','S','SW'),way('NW','N','NE'))
-                side=max(((toward,'sun'),(away,'shade'),(way('NE','E','SE'),'east'),(way('SW','W','NW'),'west')),key=lambda x:x[0])
+                # SE and SW count toward the sun first: Château-Grillet's south-east bowl is "plein sud" in its cahier, not a morning-sun slope
+                side=(toward,'sun') if toward>=.6 else (away,'shade') if away>=.6 else max(((toward,'sun'),(away,'shade'),(way('NE','E','SE'),'east'),(way('SW','W','NW'),'west')),key=lambda x:x[0])
                 coolish=cls in ('too cool','cool','intermediate')
                 if side[0]<.6: r.append(['Sun','Slopes face several ways, so growers can pick warmer or cooler spots to suit each grape.'])
                 elif side[1]=='east': r.append(['Sun','Faces the morning sun. Early light dries the dew, which cuts disease, and the grapes are spared the hottest afternoon sun.'])
                 elif side[1]=='west': r.append(['Sun','Faces the afternoon sun, the hottest of the day. Grapes ripen fuller, but morning dew lingers longer.'])
+                elif side[1]=='sun' and not cls: r.append(['Sun','Faces the midday sun, the warmest way a slope can face, which helps the grapes ripen.'])   # no climate shown (Alsace grands crus): say nothing about warm or cool
+                elif side[1]=='shade' and not cls: r.append(['Sun','Faces away from the sun, so the grapes ripen more slowly.'])
                 elif side[1]=='sun': r.append(['Sun','Faces the midday sun. In a climate this cool, that extra warmth is often what gets grapes fully ripe.' if coolish else 'Faces the midday sun, which pushes ripeness and alcohol up in a climate this warm.'])
                 else: r.append(['Sun','Faces away from the sun. In a cool climate that makes ripening harder.' if coolish else 'Faces away from the sun. In a warm climate the shade keeps grapes fresher and slows ripening.'])
         if r: out['land']=r

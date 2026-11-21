@@ -37,7 +37,7 @@ struct HomePage: View {
             VStack(alignment: .leading, spacing: 10) {
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Start with a classic").font(.atlasSection).foregroundStyle(Palette.ink)
-                    Text("Benchmark regions the WSET Diploma teaches first.").font(.atlasNote).foregroundStyle(Palette.soft)
+                    Text("The benchmark regions to learn first.").font(.atlasNote).foregroundStyle(Palette.soft)
                 }
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 10) {
@@ -58,7 +58,7 @@ struct HomePage: View {
     }
 
     private func surprise() {
-        let pool = atlas.places.values.filter { $0.benchmark && $0.parent != "world" && atlas.geo[$0.id]?.source != nil }
+        let pool = atlas.places.values.filter { atlas.isBenchmark($0.id) && $0.parent != "world" && atlas.geo[$0.id]?.source != nil }
         if let p = pool.randomElement() { nav.go(p.id) }
     }
 }
@@ -143,11 +143,14 @@ struct PlaceShape: View {
 
 /// How to read the colors on the map.
 struct MapKey: View {
+    @Environment(Atlas.self) private var atlas
     var body: some View {
+        @Bindable var atlas = atlas
         VStack(alignment: .leading, spacing: 10) {
             Text("Reading the map").font(.atlasSection).foregroundStyle(Palette.ink)
+            StudyPicker()
             HStack(spacing: 18) { row(Palette.gold4, "Benchmark"); row(Palette.grey4, "Emerging") }
-            ForEach(Copy.worldIntro, id: \.self) { Text($0).font(.atlasNote).foregroundStyle(Palette.soft) }
+            ForEach(Copy.worldIntro(atlas.level), id: \.self) { Text($0).font(.atlasNote).foregroundStyle(Palette.soft) }
         }
         .padding(14)
         .background(Palette.fill.opacity(0.6), in: RoundedRectangle(cornerRadius: 16))
@@ -160,6 +163,21 @@ struct MapKey: View {
                 .overlay(RoundedRectangle(cornerRadius: 5).stroke(Palette.landEdge, lineWidth: 0.5))
                 .accessibilityHidden(true)
             Text(name).font(.subheadline.weight(.bold)).foregroundStyle(Palette.ink)
+        }
+    }
+}
+
+/// The gold pills: they pick which places are gold (the study buttons under the web map).
+struct StudyPicker: View {
+    @Environment(Atlas.self) private var atlas
+    var body: some View {
+        @Bindable var atlas = atlas
+        VStack(alignment: .leading, spacing: 6) {
+            Text("Gold shows").font(.atlasNote).foregroundStyle(Palette.soft)
+            Picker("Gold shows", selection: $atlas.level) {
+                Text("Benchmarks").tag("b"); Text("All").tag("d")
+            }
+            .pickerStyle(.segmented)
         }
     }
 }

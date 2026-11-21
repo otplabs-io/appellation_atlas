@@ -1,0 +1,341 @@
+{
+ "united-states": {
+  "notes": [
+   "American oak, especially new, gives bolder, less subtle oak flavors than French oak.",
+   "White Zinfandel, a semi-sweet blush wine, outsells red Zinfandel six to one.",
+   "American Grüner Veltliner tends to be medium bodied and lightly fruity, with high acidity and spice."
+  ],
+  "art": [
+   "Cabernet Sauvignon",
+   "Zinfandel",
+   "Grüner Veltliner"
+  ]
+ },
+ "united-states/california": {
+  "notes": [
+   "Reliable warmth gives very ripe fruit and a fruit-forward style rather than an earthy or mineral one.",
+   "California Chardonnay is often buttery and full bodied, from malolactic fermentation and oak.",
+   "California Pinot Noir is generally more intense and fruity than Burgundy or Oregon.",
+   "Zinfandel is powerful and fruity, with high acidity and jammy flavor.",
+   "Cabernet Sauvignon ripens fully, giving fruity, full bodied wines often above 14% alcohol."
+  ],
+  "art": [
+   "California wine",
+   "Cabernet Sauvignon"
+  ]
+ },
+ "united-states/alexander-valley": {
+  "notes": [
+   "Alexander Valley wines are known for a rich, fleshy, voluptuous feel from the warm climate.",
+   "Its Cabernet Sauvignon often shows chocolate notes and a warm mouthfeel.",
+   "Its Chardonnay is rich, with tropical fruit.",
+   "Merlot here tends to show plum, tea leaf and black cherry."
+  ],
+  "art": [
+   "Alexander Valley AVA",
+   "Sonoma County wine",
+   "Merlot"
+  ]
+ },
+ "united-states/anderson-valley": {
+  "notes": [
+   "Warmer, sunnier patches give the spicy, berry notes of its Zinfandels."
+  ],
+  "art": [
+   "Mendocino County wine"
+  ]
+ },
+ "united-states/calistoga": {
+  "notes": [
+   "Hot days give color and big berry fruit, while cool nights keep acidity, structure and power."
+  ],
+  "art": [
+   "Calistoga AVA"
+  ]
+ },
+ "united-states/columbia-valley": {
+  "notes": [
+   "Columbia Valley wines are very fruit-forward, like California's, but keep some of the balance and structure of European wine.",
+   "Warm days and cool nights keep acid and sugar in balance, and the long season lets tannins mature."
+  ],
+  "art": [
+   "Columbia Valley AVA"
+  ]
+ },
+ "united-states/dry-creek-valley": {
+  "notes": [
+   "Warm Dry Creek Valley is known for juicy Zinfandel with bright fruit, balanced acidity and notes of blackberry, anise and pepper.",
+   "Styles range from high-alcohol to balanced and spicy.",
+   "Merlot here tends to show plum, tea leaf and black cherry."
+  ],
+  "art": [
+   "Zinfandel",
+   "Merlot"
+  ]
+ },
+ "united-states/lodi": {
+  "notes": [
+   "Lodi Zinfandels are known as juicy and approachable."
+  ],
+  "art": [
+   "Zinfandel"
+  ]
+ },
+ "united-states/los-carneros": {
+  "notes": [
+   "Carneros Pinot Noir is known for crisp acidity, tight structure and spicy berry fruit.",
+   "Older clones give lighter, more elegant wines with earthy notes, while newer French clones give more alcohol, concentration and black fruit.",
+   "Cool marine air from San Pablo Bay shapes the style, and long seasons bring intense, vivid flavors."
+  ],
+  "art": [
+   "Los Carneros AVA"
+  ]
+ },
+ "united-states/mendocino-county": {
+  "notes": [
+   "The warm inland part of the county makes full bodied, very ripe reds from Cabernet Sauvignon, Merlot, Petite Sirah and Zinfandel.",
+   "Redwood Valley is known for peppery, spicy Zinfandel."
+  ],
+  "art": [
+   "Mendocino County wine"
+  ]
+ },
+ "united-states/monterey": {
+  "notes": [
+   "Monterey Chardonnay is associated with mango and guava.",
+   "In the late 20th century its Cabernet Sauvignon was known for very vegetal, green pepper flavors."
+  ],
+  "art": [
+   "Chardonnay",
+   "Cabernet Sauvignon"
+  ]
+ },
+ "united-states/mt-veeder": {
+  "notes": [
+   "Mount Veeder wines are typically powerful in structure.",
+   "Its Cabernet Sauvignon commonly shows briary flavors, moderate to bold tannin and herbal, floral aromas.",
+   "Thin, poor soils give small berries with intense flavor, in wines that need years of aging."
+  ],
+  "art": [
+   "Mount Veeder AVA",
+   "Cabernet Sauvignon"
+  ]
+ },
+ "united-states/napa-valley": {
+  "notes": [
+   "Napa is known above all for Cabernet Sauvignon, with strong black fruit flavors.",
+   "Napa Chardonnay is often associated with pineapple notes.",
+   "Napa Zinfandel is plummy and intense, with red berry, cedar and vanilla, often in a claret style."
+  ],
+  "art": [
+   "Napa Valley AVA",
+   "Cabernet Sauvignon",
+   "Chardonnay",
+   "Zinfandel"
+  ]
+ },
+ "united-states/oakville": {
+  "notes": [
+   "Oakville is known for Bordeaux varieties, with rich texture, firm tannin and notes of mint and herbs.",
+   "Its Merlot tends to show ripe blackberry and black raspberry."
+  ],
+  "art": [
+   "Oakville AVA",
+   "Merlot"
+  ]
+ },
+ "united-states/oregon": {
+  "notes": [
+   "Burgundy-style wines dominate Oregon.",
+   "Oregon Pinot Gris is medium bodied, yellow to copper-pink, with aromas of pear, apple and melon."
+  ],
+  "art": [
+   "Riesling",
+   "Pinot gris"
+  ]
+ },
+ "united-states/paso-robles": {
+  "notes": [
+   "With hot days and cool sea-air evenings, Paso Robles makes Zinfandel known for being soft and round."
+  ],
+  "art": [
+   "Zinfandel"
+  ]
+ },
+ "united-states/russian-river-valley": {
+  "notes": [
+   "The cool climate gives higher acidity and better balance than the fatter, creamier style of the Alexander Valley.",
+   "Classic Russian River Pinot Noir has pale but vibrant color, lively acidity and cherry and berry fruit, though newer methods give heavier, fuller wines.",
+   "Merlot has a distinctive tea-like note, and Zinfandel shows tarter red fruit than in warmer Dry Creek Valley.",
+   "Its crisp grapes are prized for sparkling wine."
+  ],
+  "art": [
+   "Russian River Valley AVA"
+  ]
+ },
+ "united-states/rutherford": {
+  "notes": [
+   "Rutherford Merlot tends to show ripe blackberry and black raspberry."
+  ],
+  "art": [
+   "Merlot"
+  ]
+ },
+ "united-states/san-luis-obispo-coast": {
+  "notes": [
+   "Cooler growing seasons than the surrounding regions give higher acidity in the wines."
+  ],
+  "art": [
+   "San Luis Obispo Coast AVA"
+  ]
+ },
+ "united-states/sonoma-county": {
+  "notes": [
+   "Sonoma is known for fruity, ripe Zinfandel.",
+   "Sonoma Cabernet tends toward anise and black olive notes.",
+   "Alexander Valley Cabernet is known for chocolate notes and a warm mouthfeel."
+  ],
+  "art": [
+   "Sonoma County wine",
+   "Cabernet Sauvignon"
+  ]
+ },
+ "united-states/stags-leap-district": {
+  "notes": [
+   "Warmth, steady breezes and volcanic soil give fruit with concentrated color and intense flavor."
+  ],
+  "art": [
+   "Stags Leap District AVA"
+  ]
+ },
+ "united-states/washington": {
+  "notes": [
+   "Washington wines are known for bright fruit flavors and crisp acidity.",
+   "Recent reds lean riper and more fruit-forward, with noticeable tannin, oak and moderately high alcohol.",
+   "Cabernet and Merlot are often lush, with concentrated berry flavors such as blackberry, cherry and raspberry.",
+   "Good examples can usually age at least eight years.",
+   "Cabernet Franc is fruit-forward, with blueberry and raspberry."
+  ],
+  "art": [
+   "Washington wine",
+   "Cabernet Franc"
+  ]
+ },
+ "united-states/yakima-valley": {
+  "notes": [
+   "Young Sangiovese plantings here have given spicy, tart cherry wines with anise, red currant and tobacco leaf."
+  ],
+  "art": [
+   "Sangiovese"
+  ]
+ },
+ "united-states/new-york": {
+  "notes": [
+   "New York Riesling generally has a light body and a light, mellow flavor."
+  ],
+  "art": [
+   "Riesling"
+  ]
+ },
+ "united-states/santa-maria-valley": {
+  "notes": [
+   "Fog, wind and the Pacific keep days cool here, so the grapes keep plenty of acidity.",
+   "Pinot Noir and Chardonnay lead, with a good share of Syrah.",
+   "Its Pinot Noir has darker cherry fruit, balanced by savory notes such as earthy spice and tea.",
+   "Chardonnay is lean, with bright acidity, green apple and chalk in the west, and fuller, with yellow apple, in the east."
+  ],
+  "ref": [
+   "guildsomm-sb"
+  ]
+ },
+ "united-states/sta-rita-hills": {
+  "notes": [
+   "Even at its eastern edge, Sta. Rita Hills is a very cool Winkler Region I.",
+   "Pinot Noir, about 65% of the vines, shows bright red cherry, ripe and often with a maraschino accent.",
+   "Chardonnay leans toward lemon, green apple or yellow apple, and in some sites toward mineral notes.",
+   "Its Syrah is often lean, with whole-cluster spice."
+  ],
+  "ref": [
+   "guildsomm-sb"
+  ]
+ },
+ "united-states/santa-ynez-valley": {
+  "notes": [
+   "The Santa Ynez Valley warms from Winkler Region I near the coast to Region III in the east.",
+   "Chardonnay is the most planted grape, and Pinot Noir is also important.",
+   "The warmer east suits Rhône and Bordeaux grapes."
+  ],
+  "ref": [
+   "guildsomm-sb"
+  ]
+ },
+ "united-states/ballard-canyon": {
+  "notes": [
+   "Ballard Canyon calls itself Syrah territory, and more than half its vines are Syrah.",
+   "Strong winds, fog and big swings between day and night temper its heat.",
+   "Its Syrah has savory notes like the northern Rhône, with riper fruit, fuller body and softer, more plentiful tannins."
+  ],
+  "ref": [
+   "guildsomm-sb"
+  ]
+ },
+ "united-states/happy-canyon-of-santa-barbara": {
+  "notes": [
+   "Happy Canyon is the warm side of Santa Barbara County, with little fog.",
+   "Wind, altitude and day-night swings of up to 50°F give wines a cooler personality than you might expect.",
+   "Cabernet Sauvignon can be ripe without being jammy, or show savory herb and mineral notes.",
+   "Sauvignon Blanc ranges from ripe tropical and stone fruit to tart citrus, grass and pepper."
+  ],
+  "ref": [
+   "guildsomm-sb"
+  ]
+ },
+ "united-states/los-olivos-district": {
+  "notes": [
+   "Los Olivos District is moderately warm, a cool Winkler Region III, with little fog.",
+   "Most vines are Bordeaux and Rhône grapes, and Italian and Spanish grapes are common too."
+  ],
+  "ref": [
+   "guildsomm-sb",
+   "sbv-los-olivos"
+  ]
+ },
+ "united-states/alisos-canyon": {
+  "notes": [
+   "Winds through the San Antonio River Valley cool Alisos Canyon, but it is warmer and less foggy than its neighbors.",
+   "Key grapes in the wider Los Alamos Valley include Chardonnay, Riesling, Pinot Noir, Syrah, Rhône whites and Bordeaux reds."
+  ],
+  "ref": [
+   "guildsomm-sb"
+  ]
+ },
+ "united-states/edna-valley": {
+  "notes": [
+   "A long, cool growing season near the Pacific gives ripe flavor while the grapes keep their natural acidity.",
+   "Pinot Noir and Chardonnay lead.",
+   "Wines across the San Luis Obispo Coast share an energetic acidity and vibrancy."
+  ],
+  "ref": [
+   "slo-coast"
+  ]
+ },
+ "united-states/arroyo-grande-valley": {
+  "notes": [
+   "A long, cool growing season near the Pacific gives ripe flavor while the grapes keep their natural acidity.",
+   "Pinot Noir and Chardonnay lead.",
+   "Wines across the San Luis Obispo Coast share an energetic acidity and vibrancy."
+  ],
+  "ref": [
+   "slo-coast"
+  ]
+ },
+ "united-states/santa-cruz-mountains": {
+  "notes": [
+   "The Santa Cruz Mountains ripen Cabernet and Syrah into elegant wines, alongside Pinot Noir and Chardonnay.",
+   "Long built on Pinot Noir, the region is now best known for Cabernet and Cabernet-based wines."
+  ],
+  "ref": [
+   "decanter-santa-cruz"
+  ]
+ }
+}

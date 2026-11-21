@@ -22,20 +22,31 @@ enum Copy {
         static let yieldCeiling = "the most its rules allow in any year; the usual limit is lower"
         static let yieldLimit = "the most the 2022 EU record allows; some of its wines may have lower limits, and rules change"
         static let recognised = "the year its rules say it was first recognised, sometimes under an older name"
-        static let noShares = "The record lists the grapes allowed, not their shares."
+        static let noShares = "The 2022 EU record lists the grapes allowed, not their shares. Later changes to the rules may not be in it."
+        static let noRoles = "The cahier gives these grapes different roles in different wines, so they are listed here by colour."
+        static let anyName = " That is every vineyard there, whatever name its wine is sold under."
         static let limitsHead = "Planting rules: shares of each grower\u{2019}s vineyard, not of the blend"
         static func forWine(_ w: String) -> String { "Main grapes, for \(w)" }
-        static let desertRain = "Rain is left out here: the climate grid reads far from what the weather stations record."
+        static let desertRain = "Rain is left out: the 4.5 km grid takes in the wetter hills around the vineyards, so its totals run well above what weather stations among the vines record."
     }
 
-    static let worldIntro = [
-        "Benchmark regions, in gold, lie in the regions the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest. The Atlas is independent, and not affiliated with or endorsed by WSET.",
-        "Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.",
+    /// What gold and grey mean for each pill (LEVELS in atlas.js).
+    struct Level { let name, on, off, ons, offs: String }
+    static let levels: [String: Level] = [
+        "b": Level(name: "Benchmarks", on: "Benchmark region", off: "Emerging region", ons: "Benchmark regions", offs: "Emerging regions"),
+        "d": Level(name: "All", on: "Benchmark region", off: "Emerging region", ons: "Benchmark regions", offs: "Emerging regions"),
     ]
+    static func level(_ l: String) -> Level { levels[l] ?? levels["d"]! }
+    static func worldIntro(_ l: String) -> [String] { [
+        (l == "d" ? "All turns gold every place inside the classic regions, down to the smallest appellation. Emerging regions, in grey, are the rest."
+            : "Benchmark regions, in gold, are the classic places to learn first, and the regions they sit in. Emerging regions, in grey, are the rest.")
+        + " Switch between Benchmarks and All to change the gold. The Atlas is independent, and not affiliated with or endorsed by any wine school.",
+        "Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.",
+    ] }
 
-    static let homeTitle = "Explore the world\u{2019}s wine places"
+    static let homeTitle = "Explore the world\u{2019}s wine regions"
     static func worldCount(_ n: Int) -> String {
-        "Every wine country, region and appellation we have, \(fmt(Double(n))) places in all. Pick a country on the globe to start, or search for one."
+        "Every wine country, region and appellation we have, \(fmt(Double(n))) regions in all. Pick a country on the globe to start, or search for one."
     }
 
     static let shapeNote: [String: String] = [

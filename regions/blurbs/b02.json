@@ -118,7 +118,7 @@
   }
  },
  "france/chablis-grand-cru": {
-  "text": "A Burgundy appellation within Chablis, making white wine from Chardonnay alone. It is limited to the commune of Chablis. Chablis is Burgundy's northernmost appellation, and its cool climate gives wines more acidity and less fruitiness, often with a flinty note.",
+  "text": "The Grand Cru of Chablis, in northern Burgundy, for white wine from Chardonnay alone. Its seven climats all lie in the commune of Chablis, and the cool climate gives wines more acidity and less fruitiness, often with a flinty note.",
   "from": [
    "rules",
    "wikipedia_of_wider",
@@ -224,7 +224,7 @@
   }
  },
  "france/charlemagne": {
-  "text": "A Côte de Beaune appellation within Aloxe-Corton for white wine from Chardonnay, with Pinot Blanc also allowed. Its vineyards lie in the villages of Aloxe-Corton and Pernand-Vergelesses. Aloxe-Corton itself uses Pinot Noir for red and Chardonnay for white.",
+  "text": "A Côte de Beaune Grand Cru within Aloxe-Corton for white wine from Chardonnay, with Pinot Blanc also allowed. Its vineyards lie in the villages of Aloxe-Corton and Pernand-Vergelesses. Aloxe-Corton itself uses Pinot Noir for red and Chardonnay for white.",
   "from": [
    "rules",
    "wikipedia_of_wider",
@@ -391,7 +391,7 @@
   ]
  },
  "france/chouilly": {
-  "text": "A cru village in the Côte des Blancs, an area of Champagne vineyards named for its grape: 95 percent is Chardonnay, and its champagnes carry the term blanc de blancs. Champagne's rules allow Chardonnay, Pinot Noir and Meunier, plus a few other grapes.",
+  "text": "A cru village in the Côte des Blancs, an area of Champagne vineyards named for its grape, where Chardonnay is grown above all and many champagnes are blanc de blancs, from white grapes only. Champagne's rules allow Chardonnay, Pinot Noir and Meunier, plus a few other grapes.",
   "from": [
    "where",
    "rules_of_wider",
@@ -411,7 +411,7 @@
   ]
  },
  "france/clairette-de-die": {
-  "text": "A natural sparkling white from the Rhône Valley, made from at least 75% Muscat à Petits Grains and up to 25% Clairette. It is characterized by peach and apricot flavors, with rose and honeysuckle aromas, and is usually drunk young.",
+  "text": "A natural sparkling white from the Rhône Valley, made from at least 75% Muscat à Petits Grains and up to 25% Clairette. A traditional-method wine is also made from Clairette alone. The Muscat wine has peach and apricot flavors, with rose and honeysuckle aromas, and is usually drunk young.",
   "from": [
    "wikipedia",
    "rules"
@@ -443,7 +443,7 @@
   }
  },
  "france/clos-de-tart": {
-  "text": "A Grand Cru within Morey-Saint-Denis, in the Côte de Nuits of Burgundy. The rules allow Pinot Noir, Chardonnay, Pinot Blanc and Pinot Gris. Morey-Saint-Denis makes red and white wine, mainly from Pinot Noir and Chardonnay.",
+  "text": "A Grand Cru within Morey-Saint-Denis, in the Côte de Nuits of Burgundy. It is for red wine from Pinot Noir, with Chardonnay, Pinot Blanc and Pinot Gris allowed in small amounts. Morey-Saint-Denis makes red and white wine, mainly from Pinot Noir and Chardonnay.",
   "from": [
    "rules",
    "wikipedia_of_wider",
@@ -662,7 +662,7 @@
   }
  },
  "france/cote-de-nuits-villages": {
-  "text": "A Burgundy appellation covering five communes of the Côte de Nuits: Fixin, Brochon, Premeaux-Prissey, Comblanchien and Corgoloin. Pinot Noir and Chardonnay are the main grapes allowed.",
+  "text": "A Burgundy appellation covering three communes of the Côte de Nuits: Premeaux-Prissey, Comblanchien and Corgoloin. Fixin and Brochon were once part of it. Pinot Noir and Chardonnay are the main grapes allowed.",
   "from": [
    "rules",
    "where"
@@ -725,7 +725,7 @@
   ]
  },
  "france/coteaux-d-aix-en-provence": {
-  "text": "A Provence appellation allowing grapes such as Grenache, Syrah, Mourvèdre, Counoise and Cinsaut, plus whites like Grenache Blanc, Sauvignon and Semillon.",
+  "text": "A Provence appellation for red, rosé and white wine. Grenache, Syrah, Mourvèdre, Counoise and Cinsaut lead the reds and rosés, and Vermentino the whites.",
   "from": [
    "rules",
    "where"
@@ -906,7 +906,7 @@
   ]
  },
  "france/cotes-du-forez": {
-  "text": "A Loire Valley appellation whose wine is made only from Gamay. It covers a group of communes including Montbrison, Boën-sur-Lignon and Champdieu. The Loire Valley wine region follows the river Loire from the Atlantic coast to near Orléans.",
+  "text": "A Loire Valley appellation whose wine is made only from Gamay. It covers a group of communes including Montbrison, Boën-sur-Lignon and Champdieu. The Loire Valley wine region follows the river Loire from the Atlantic coast past Orléans to Sancerre and Pouilly.",
   "from": [
    "rules",
    "wikipedia_of_wider",
@@ -995,7 +995,7 @@
   }
  },
  "france/coulee-de-serrant": {
-  "text": "A Loire Valley appellation limited to the commune of Savennières. Its wine is made only from Chenin. The Loire Valley wine region follows the river Loire from the Atlantic coast to near Orléans, with Anjou, Saumur, Chinon and Vouvray in between.",
+  "text": "A Loire Valley appellation for a single vineyard within Savennières. Its white wine is made only from Chenin, dry or sweet. The Loire Valley wine region follows the river Loire from the Atlantic coast past Orléans to Sancerre and Pouilly, with Anjou, Saumur, Chinon and Vouvray in between.",
   "from": [
    "rules",
    "wikipedia_of_wider",
@@ -1022,7 +1022,7 @@
   ]
  },
  "france/cramant": {
-  "text": "A cru village in the Côte des Blancs, an area of Champagne vineyards named for its grape: 95 percent is Chardonnay, and its champagnes carry the term blanc de blancs. Cramant is one of four villages on the Côte des Blancs slope itself.",
+  "text": "A cru village in the Côte des Blancs, an area of Champagne vineyards named for its grape, where Chardonnay is grown above all and many champagnes are blanc de blancs, from white grapes only. Cramant is one of four villages on the Côte des Blancs slope itself.",
   "from": [
    "where",
    "wikipedia_of_wider"

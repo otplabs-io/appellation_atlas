@@ -164,7 +164,7 @@ struct PlaceHeader: View {
                 HStack(spacing: 6) {
                     let kind = kindText
                     if !kind.isEmpty { Text(kind.uppercased()).font(.atlasEyebrow).kerning(1.2).foregroundStyle(Palette.coralText) }
-                    Text(atlas.isBenchmark(id) ? "BENCHMARK REGION" : "EMERGING REGION")
+                    Text((atlas.isBenchmark(id) ? Copy.level(atlas.level).on : Copy.level(atlas.level).off).uppercased())
                         .font(.atlasEyebrow).kerning(0.6)
                         .padding(.horizontal, 6).padding(.vertical, 1)
                         .background(atlas.isBenchmark(id) ? Palette.gold4[2] : Palette.grey4[2], in: RoundedRectangle(cornerRadius: 2))
@@ -228,14 +228,14 @@ struct PlacesHere: View {
         let vid = atlas.viewFor(nav.place)
         let here = atlas.placesIn(vid)
         let range = atlas.range(here.map(\.id))
-        let bench = here.filter(\.benchmark), emerging = here.filter { !$0.benchmark }
+        let bench = here.filter { atlas.isBenchmark($0.id) }, emerging = here.filter { !atlas.isBenchmark($0.id) }
         let cap = bench.isEmpty ? 30 : 12
         let shown = showAll ? emerging : Array(emerging.prefix(cap))
         let title = vid == "world" ? "Countries" : "Places in \(atlas.name(vid))"
         if !here.isEmpty {
             let list = VStack(alignment: .leading, spacing: 10) {
-                if !bench.isEmpty { group("Benchmark regions", bench, count: bench.count, range: range) }
-                if !shown.isEmpty { group("Emerging regions", shown, count: emerging.count, range: range) }
+                if !bench.isEmpty { group(Copy.level(atlas.level).ons, bench, count: bench.count, range: range) }
+                if !shown.isEmpty { group(Copy.level(atlas.level).offs, shown, count: emerging.count, range: range) }
                 if emerging.count > shown.count {
                     Button("Show all \(emerging.count)") { withAnimation { showAll = true } }.font(.atlasNote.weight(.semibold))
                 }
@@ -268,7 +268,7 @@ struct PlacesHere: View {
                 ForEach(list) { p in
                     Button { nav.go(p.id) } label: {
                         HStack(spacing: 6) {
-                            Swatch(color: Palette.shade(benchmark: p.benchmark, tier: atlas.tier(p.id, range: range)))
+                            Swatch(color: Palette.shade(benchmark: atlas.isBenchmark(p.id), tier: atlas.tier(p.id, range: range)))
                             Text(p.name).font(.system(size: 13, weight: .heavy))
                             if atlas.geo[p.id]?.source == nil { Text("no map").font(.system(size: 11)).foregroundStyle(Palette.soft) }
                         }
@@ -277,7 +277,7 @@ struct PlacesHere: View {
                         .background(nav.place == p.id ? Palette.target : Palette.fill, in: Capsule())
                     }
                     .buttonStyle(.plain)
-                    .accessibilityLabel("\(p.name), \(p.benchmark ? "Benchmark" : "Emerging") region")
+                    .accessibilityLabel("\(p.name), \(atlas.isBenchmark(p.id) ? Copy.level(atlas.level).on : Copy.level(atlas.level).off)")
                 }
             }
         }

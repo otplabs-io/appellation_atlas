@@ -26,11 +26,6 @@
    "kind": "general",
    "note": "Seen only as search summaries. Pages not opened."
   },
-  "wset": {
-   "name": "WSET, What is a Super Tuscan wine (2025)",
-   "kind": "reference",
-   "url": "https://www.wsetglobal.com/knowledge-centre/blog/2025/what-is-a-super-tuscan-wine"
-  },
   "wikipedia-super-tuscan": {
    "name": "Wikipedia, Super Tuscan (English)",
    "kind": "reference",
@@ -136,34 +131,31 @@
   },
   {
    "topic": "history",
-   "claim": "Chianti DOC (1967) set a recipe of 50 to 80% Sangiovese, 10 to 30% Canaiolo, 10 to 30% Trebbiano and/or Malvasia (white grapes) and up to 5% others. This blocked Sangiovese-Cabernet blends and 100% Sangiovese from using the Chianti name.",
+   "claim": "Chianti DOC rules (1967) allowed at most 70% Sangiovese and required at least 10% local white grapes. This blocked Sangiovese-Cabernet blends and 100% Sangiovese from using the Chianti name.",
    "source": [
-    "wset",
     "wikipedia-super-tuscan"
    ],
    "strength": "Medium",
-   "note": "WSET gives the full percentages. Wikipedia has similar wording: at most 70% Sangiovese and at least 10% local white grape."
+   "note": "Wikipedia: at most 70% Sangiovese and at least 10% local white grape."
   },
   {
    "topic": "history",
    "claim": "Sassicaia (Tenuta San Guido, Bolgheri) was the first. Mario Incisa della Rocchetta planted Cabernet Sauvignon in 1944. The first commercial wine was the 1968 vintage, released in 1971. It was sold as vino da tavola because the blend fell outside DOC rules.",
    "source": [
-    "wset",
     "wikipedia-san-guido",
     "disciplinare-bolgheri"
    ],
    "strength": "Medium",
-   "note": "The 1944 plantings are in the Bolgheri disciplinare (Strong). The 1968 and 1971 dates are from two secondary sources."
+   "note": "The 1944 plantings are in the Bolgheri disciplinare (Strong). The 1968 and 1971 dates are from one secondary source."
   },
   {
    "topic": "history",
    "claim": "Tignanello (Antinori, Chianti Classico area) first reached the market with the 1971 vintage. It was sold as vino da tavola because it broke Chianti Classico norms, which required white grapes in the blend. Giacomo Tachis worked on it with Piero Antinori. Cabernet was added in 1975.",
    "source": [
-    "gambero-tignanello",
-    "wset"
+    "gambero-tignanello"
    ],
-   "strength": "Medium",
-   "note": "Gambero Rosso and WSET agree on 1971-era vino da tavola status and Cabernet from 1975. See conflicts for the launch year and early blend."
+   "strength": "Weak",
+   "note": "One source, Gambero Rosso, for 1971-era vino da tavola status and Cabernet from 1975. See conflicts for the launch year and early blend."
   },
   {
    "topic": "history",
@@ -176,22 +168,12 @@
   },
   {
    "topic": "history",
-   "claim": "Montevertine's 100% Sangiovese Le Pergole Torte was refused by the Chianti authorities and released as vino da tavola in 1977.",
-   "source": [
-    "wset"
-   ],
-   "strength": "Weak",
-   "note": "One source."
-  },
-  {
-   "topic": "history",
    "claim": "Sassicaia, Tignanello and other early Super Tuscans were sold as vino da tavola, the bottom rung. From 1992 the new IGT category gave them a rung with a regional name.",
    "source": [
-    "wset",
     "wikipedia-super-tuscan"
    ],
    "strength": "Medium",
-   "note": "WSET: Super Tuscans became home to the IGT category from 1992. Wikipedia: Toscana IGT was a less restrictive alternative, and some producers still use it instead of a DOC."
+   "note": "Wikipedia: Toscana IGT was a less restrictive alternative, and some producers still use it instead of a DOC."
   },
   {
    "topic": "history",
@@ -281,9 +263,9 @@
  ],
  "conflicts": [
   "IGT dates: Wikipedia says Toscana IGT began in 1992. Rivista di Agraria and Italian Wine Central say the Toscana disciplinare dates from 1995 (decree 9 October 1995) under Law 164/1992. Both are consistent if 1992 is the law and 1995 the Toscana text.",
-  "Bolgheri DOC: WSET and Wikipedia give 1994. The disciplinare gives 1983 for the DOC and 1994 for the Sassicaia subzone.",
-  "Tignanello: first vintage 1971 (Gambero Rosso, WSET), but a search summary puts the first cuvee in 1970 as a Chianti Classico Riserva and the commercial release in 1974. Wikipedia says the 1971 wine was known as Tignanello in 1978. WSET says the modern blend dates from 1975. Blend of the early wines is also disputed: Sangiovese with Canaiolo (Gambero Rosso), 80% Sangiovese with 20% Cabernet Sauvignon (WSET).",
-  "Sassicaia: the Wikipedia page says the first wine was made in 1948, WSET and the Bolgheri disciplinare say plantings started in 1944."
+  "Bolgheri DOC: Wikipedia gives 1994. The disciplinare gives 1983 for the DOC and 1994 for the Sassicaia subzone.",
+  "Tignanello: first vintage 1971 (Gambero Rosso), but a search summary puts the first cuvee in 1970 as a Chianti Classico Riserva and the commercial release in 1974. Wikipedia says the 1971 wine was known as Tignanello in 1978.",
+  "Sassicaia: the Wikipedia page says the first wine was made in 1948, the Bolgheri disciplinare says plantings started in 1944."
  ],
  "gaps": [
   "The Ministry's disciplinare for Toscana IGT could not be found. Aisitalia, spaghettitaliani and Gambero Rosso links failed. Yields, aging and exact label rules are missing.",

@@ -373,7 +373,7 @@
   }
  },
  "chile/cachapoal-valley": {
-  "text": "A zone of the Rapel Valley, in Chile's Central Valley, the main growing zone for Chilean wine.",
+  "text": "A zone of the Rapel Valley subregion, in Chile's Central Valley region.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -596,7 +596,7 @@
   ]
  },
  "austria/carnuntum": {
-  "text": "A wine area in Niederösterreich (Lower Austria), Austria, where Zweigelt leads plantings at 28 percent, with Grüner Veltliner at 20 and Blaufränkisch at 12. It allows still and sparkling wines.",
+  "text": "A wine area in Niederösterreich (Lower Austria), Austria, where Zweigelt leads plantings at 28 percent, with Grüner Veltliner at 20 and Blaufränkisch at 12.",
   "from": [
    "rules",
    "planted",
@@ -612,7 +612,7 @@
   ]
  },
  "austria/kamptal": {
-  "text": "A wine area in Niederösterreich (Lower Austria), Austria, whose wine is made from Grüner Veltliner and Riesling only. Grüner Veltliner covers 55 percent of its vineyards and Riesling 10, with Zweigelt also planted.",
+  "text": "A wine area in Niederösterreich (Lower Austria), Austria, whose Kamptal DAC wine is made from Grüner Veltliner and Riesling only. Grüner Veltliner covers 55 percent of its vineyards and Riesling 10, with Zweigelt also planted.",
   "from": [
    "rules",
    "planted",
@@ -620,7 +620,7 @@
   ]
  },
  "austria/kremstal": {
-  "text": "A wine area in Niederösterreich (Lower Austria), Austria, whose DAC wines are Grüner Veltliner or Riesling, at least 12 percent alcohol. Grüner Veltliner is fresh and spicy, Riesling has stone fruit and mineral notes, and the regular wines show no botrytis or oak.",
+  "text": "A wine area in Niederösterreich (Lower Austria), Austria, whose DAC wines are Grüner Veltliner or Riesling. Grüner Veltliner is fresh and spicy, Riesling has stone fruit and mineral notes, and the regular wines show no botrytis or oak.",
   "from": [
    "wikipedia",
    "rules",
@@ -769,7 +769,7 @@
   }
  },
  "austria/weststeiermark": {
-  "text": "A wine area in Steiermark, Austria, where Blauer Wildbacher covers 64 percent of vineyards, far ahead of Sauvignon Blanc, Pinot Blanc and Muscat Blanc.",
+  "text": "A wine area in Steiermark, Austria, where Blauer Wildbacher covers 64 percent of vineyards, far ahead of Sauvignon Blanc, Pinot Blanc and Muscat Blanc. Blauer Wildbacher makes Schilcher, its pale, sharp rosé.",
   "from": [
    "rules",
    "planted",

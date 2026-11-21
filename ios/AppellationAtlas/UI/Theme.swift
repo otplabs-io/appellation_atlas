@@ -36,6 +36,10 @@ enum Palette {
     static let regionStroke = Color(light: 0xFFFFFF, dark: 0x0E1820)
     static let halo = Color(light: 0xFFFFFF, dark: 0x0E1820)
     static let graticule = Color(light: 0xFFFFFF, dark: 0x2E5068)
+    /// Rivers and lakes: the ocean's blue, a step deeper so a thin line reads on gold (--river, --lake, --river-ink in web/atlas.css).
+    static let river = Color(light: 0x5B9BC4, dark: 0x4F8DB5)
+    static let lake = Color(light: 0xCFE3EE, dark: 0x1A3A50)
+    static let riverInk = Color(light: 0x2F6F99, dark: 0x8CC3E3)
 
     /// Benchmark (gold) shades by tier, 0 for places with no score.
     static let gold4 = [Color(light: 0xEEF2F5, dark: 0x2A3743), Color(light: 0xF9EBC6, dark: 0x5A4820),

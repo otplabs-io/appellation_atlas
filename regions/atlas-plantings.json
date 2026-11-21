@@ -32670,6 +32670,82 @@
 ]
 ]
 },
+"italy/lago-di-caldaro": {
+"scope": "around",
+"names": [
+"Provincia Autonoma di Bolzano/Bozen"
+],
+"year": 2020,
+"ha": 5132,
+"grapes": [
+[
+"Pinot Nero",
+2546,
+"R",
+"Pinot Noir"
+],
+[
+"Pinot Bianco",
+397,
+"W",
+"Pinot Blanc"
+],
+[
+"Merlot",
+324,
+"R",
+"Merlot"
+],
+[
+"Chardonnay",
+302,
+"W",
+"Chardonnay"
+],
+[
+"Lagrein",
+283,
+"R",
+"Lagrein"
+],
+[
+"Riesling",
+253,
+"W",
+"Riesling"
+],
+[
+"Gewürztraminer",
+122,
+"W",
+"Gewürztraminer"
+],
+[
+"Pinot Grigio",
+116,
+"G",
+"Pinot Gris"
+],
+[
+"Magliocco Canino",
+105,
+"R",
+"Magliocco Canino"
+],
+[
+"Müller-Thurgau",
+76,
+"W",
+"Müller-Thurgau"
+],
+[
+"Other",
+608,
+"",
+"other"
+]
+]
+},
 "spain/vinos-de-madrid": {
 "scope": "around",
 "names": [
@@ -38372,534 +38448,6 @@
 ]
 ]
 },
-"germany/monzinger-niederberg": {
-"scope": "around",
-"names": [
-"Nahe"
-],
-"year": 2016,
-"ha": 3897,
-"grapes": [
-[
-"Riesling",
-1100,
-"W",
-"Riesling"
-],
-[
-"Müller-Thurgau",
-491,
-"W",
-"Müller-Thurgau"
-],
-[
-"Dornfelder",
-434,
-"R",
-"Dornfelder"
-],
-[
-"Spätburgunder",
-255,
-"R",
-"Pinot Noir"
-],
-[
-"Weissburgunder",
-250,
-"W",
-"Pinot Blanc"
-],
-[
-"Grauburgunder",
-243,
-"G",
-"Pinot Gris"
-],
-[
-"Silvaner",
-227,
-"W",
-"Silvaner"
-],
-[
-"Kerner",
-139,
-"W",
-"Kerner"
-],
-[
-"Bacchus",
-129,
-"W",
-"Bacchus"
-],
-[
-"Regent",
-95,
-"R",
-"Regent"
-],
-[
-"Scheurebe",
-95,
-"W",
-"Scheurebe"
-],
-[
-"Blauer Portugieser",
-91,
-"R",
-"Blauer Portugieser"
-],
-[
-"Other",
-348,
-"",
-"other"
-]
-]
-},
-"germany/uhlen-blaufusser-lay": {
-"scope": "around",
-"names": [
-"Mosel"
-],
-"year": 2016,
-"ha": 8137,
-"grapes": [
-[
-"Riesling",
-4975,
-"W",
-"Riesling"
-],
-[
-"Müller-Thurgau",
-1000,
-"W",
-"Müller-Thurgau"
-],
-[
-"Elbling",
-482,
-"W",
-"Elbling"
-],
-[
-"Spätburgunder",
-365,
-"R",
-"Pinot Noir"
-],
-[
-"Dornfelder",
-307,
-"R",
-"Dornfelder"
-],
-[
-"Weissburgunder",
-285,
-"W",
-"Pinot Blanc"
-],
-[
-"Kerner",
-249,
-"W",
-"Kerner"
-],
-[
-"Grauburgunder",
-109,
-"G",
-"Pinot Gris"
-],
-[
-"Bacchus",
-63,
-"W",
-"Bacchus"
-],
-[
-"Regent",
-57,
-"R",
-"Regent"
-],
-[
-"Chardonnay",
-43,
-"W",
-"Chardonnay"
-],
-[
-"Auxerrois",
-32,
-"W",
-"Auxerrois"
-],
-[
-"Other",
-170,
-"",
-"other"
-]
-]
-},
-"germany/uhlen-laubach": {
-"scope": "around",
-"names": [
-"Mosel"
-],
-"year": 2016,
-"ha": 8137,
-"grapes": [
-[
-"Riesling",
-4975,
-"W",
-"Riesling"
-],
-[
-"Müller-Thurgau",
-1000,
-"W",
-"Müller-Thurgau"
-],
-[
-"Elbling",
-482,
-"W",
-"Elbling"
-],
-[
-"Spätburgunder",
-365,
-"R",
-"Pinot Noir"
-],
-[
-"Dornfelder",
-307,
-"R",
-"Dornfelder"
-],
-[
-"Weissburgunder",
-285,
-"W",
-"Pinot Blanc"
-],
-[
-"Kerner",
-249,
-"W",
-"Kerner"
-],
-[
-"Grauburgunder",
-109,
-"G",
-"Pinot Gris"
-],
-[
-"Bacchus",
-63,
-"W",
-"Bacchus"
-],
-[
-"Regent",
-57,
-"R",
-"Regent"
-],
-[
-"Chardonnay",
-43,
-"W",
-"Chardonnay"
-],
-[
-"Auxerrois",
-32,
-"W",
-"Auxerrois"
-],
-[
-"Other",
-170,
-"",
-"other"
-]
-]
-},
-"germany/uhlen-roth-lay": {
-"scope": "around",
-"names": [
-"Mosel"
-],
-"year": 2016,
-"ha": 8137,
-"grapes": [
-[
-"Riesling",
-4975,
-"W",
-"Riesling"
-],
-[
-"Müller-Thurgau",
-1000,
-"W",
-"Müller-Thurgau"
-],
-[
-"Elbling",
-482,
-"W",
-"Elbling"
-],
-[
-"Spätburgunder",
-365,
-"R",
-"Pinot Noir"
-],
-[
-"Dornfelder",
-307,
-"R",
-"Dornfelder"
-],
-[
-"Weissburgunder",
-285,
-"W",
-"Pinot Blanc"
-],
-[
-"Kerner",
-249,
-"W",
-"Kerner"
-],
-[
-"Grauburgunder",
-109,
-"G",
-"Pinot Gris"
-],
-[
-"Bacchus",
-63,
-"W",
-"Bacchus"
-],
-[
-"Regent",
-57,
-"R",
-"Regent"
-],
-[
-"Chardonnay",
-43,
-"W",
-"Chardonnay"
-],
-[
-"Auxerrois",
-32,
-"W",
-"Auxerrois"
-],
-[
-"Other",
-170,
-"",
-"other"
-]
-]
-},
-"germany/wurzburger-stein-berg": {
-"scope": "around",
-"names": [
-"Franken"
-],
-"year": 2016,
-"ha": 5796,
-"grapes": [
-[
-"Müller-Thurgau",
-1592,
-"W",
-"Müller-Thurgau"
-],
-[
-"Silvaner",
-1348,
-"W",
-"Silvaner"
-],
-[
-"Bacchus",
-694,
-"W",
-"Bacchus"
-],
-[
-"Domina",
-329,
-"R",
-"Domina"
-],
-[
-"Riesling",
-318,
-"W",
-"Riesling"
-],
-[
-"Spätburgunder",
-247,
-"R",
-"Pinot Noir"
-],
-[
-"Kerner",
-184,
-"W",
-"Kerner"
-],
-[
-"Weissburgunder",
-146,
-"W",
-"Pinot Blanc"
-],
-[
-"Dornfelder",
-144,
-"R",
-"Dornfelder"
-],
-[
-"Regent",
-134,
-"R",
-"Regent"
-],
-[
-"Scheurebe",
-126,
-"W",
-"Scheurebe"
-],
-[
-"Meunier",
-77,
-"R",
-"Pinot Meunier"
-],
-[
-"Other",
-457,
-"",
-"other"
-]
-]
-},
-"germany/burgstadter-berg": {
-"scope": "around",
-"names": [
-"Franken"
-],
-"year": 2016,
-"ha": 5796,
-"grapes": [
-[
-"Müller-Thurgau",
-1592,
-"W",
-"Müller-Thurgau"
-],
-[
-"Silvaner",
-1348,
-"W",
-"Silvaner"
-],
-[
-"Bacchus",
-694,
-"W",
-"Bacchus"
-],
-[
-"Domina",
-329,
-"R",
-"Domina"
-],
-[
-"Riesling",
-318,
-"W",
-"Riesling"
-],
-[
-"Spätburgunder",
-247,
-"R",
-"Pinot Noir"
-],
-[
-"Kerner",
-184,
-"W",
-"Kerner"
-],
-[
-"Weissburgunder",
-146,
-"W",
-"Pinot Blanc"
-],
-[
-"Dornfelder",
-144,
-"R",
-"Dornfelder"
-],
-[
-"Regent",
-134,
-"R",
-"Regent"
-],
-[
-"Scheurebe",
-126,
-"W",
-"Scheurebe"
-],
-[
-"Meunier",
-77,
-"R",
-"Pinot Meunier"
-],
-[
-"Other",
-457,
-"",
-"other"
-]
-]
-},
 "austria/niederosterreich": {
 "scope": "within",
 "names": [
@@ -40963,64 +40511,6 @@
 ]
 ]
 },
-"greece/robola-kefallinias": {
-"scope": "around",
-"names": [
-"Ionia Nisia"
-],
-"year": 2020,
-"ha": 136,
-"grapes": [
-[
-"Mavrodafni",
-88,
-"R",
-"Mavrodafni"
-],
-[
-"Muscat Blanc",
-23,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Cabernet Sauvignon",
-9,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Mavrouda",
-7,
-"R",
-"Mavrouda"
-],
-[
-"Syrah",
-4,
-"R",
-"Syrah"
-],
-[
-"Malagousia",
-2,
-"W",
-"Malagousia"
-],
-[
-"Merlot",
-2,
-"R",
-"Merlot"
-],
-[
-"Sauvignon Blanc",
-1,
-"W",
-"Sauvignon Blanc"
-]
-]
-},
 "greece/aegean-islands": {
 "scope": "around",
 "names": [
@@ -41107,64 +40597,6 @@
 17,
 "",
 "other"
-]
-]
-},
-"greece/mavrodafni-kefallinias": {
-"scope": "around",
-"names": [
-"Ionia Nisia"
-],
-"year": 2020,
-"ha": 136,
-"grapes": [
-[
-"Mavrodafni",
-88,
-"R",
-"Mavrodafni"
-],
-[
-"Muscat Blanc",
-23,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Cabernet Sauvignon",
-9,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Mavrouda",
-7,
-"R",
-"Mavrouda"
-],
-[
-"Syrah",
-4,
-"R",
-"Syrah"
-],
-[
-"Malagousia",
-2,
-"W",
-"Malagousia"
-],
-[
-"Merlot",
-2,
-"R",
-"Merlot"
-],
-[
-"Sauvignon Blanc",
-1,
-"W",
-"Sauvignon Blanc"
 ]
 ]
 },
@@ -41341,64 +40773,6 @@
 29,
 "",
 "other"
-]
-]
-},
-"greece/moschato-kefallinias": {
-"scope": "around",
-"names": [
-"Ionia Nisia"
-],
-"year": 2020,
-"ha": 136,
-"grapes": [
-[
-"Mavrodafni",
-88,
-"R",
-"Mavrodafni"
-],
-[
-"Muscat Blanc",
-23,
-"W",
-"Muscat Blanc à Petits Grains"
-],
-[
-"Cabernet Sauvignon",
-9,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Mavrouda",
-7,
-"R",
-"Mavrouda"
-],
-[
-"Syrah",
-4,
-"R",
-"Syrah"
-],
-[
-"Malagousia",
-2,
-"W",
-"Malagousia"
-],
-[
-"Merlot",
-2,
-"R",
-"Merlot"
-],
-[
-"Sauvignon Blanc",
-1,
-"W",
-"Sauvignon Blanc"
 ]
 ]
 },
@@ -93280,82 +92654,6 @@
 ]
 ]
 },
-"italy/lago-di-caldaro": {
-"scope": "around",
-"names": [
-"Provincia Autonoma di Bolzano/Bozen"
-],
-"year": 2020,
-"ha": 5132,
-"grapes": [
-[
-"Pinot Nero",
-2546,
-"R",
-"Pinot Noir"
-],
-[
-"Pinot Bianco",
-397,
-"W",
-"Pinot Blanc"
-],
-[
-"Merlot",
-324,
-"R",
-"Merlot"
-],
-[
-"Chardonnay",
-302,
-"W",
-"Chardonnay"
-],
-[
-"Lagrein",
-283,
-"R",
-"Lagrein"
-],
-[
-"Riesling",
-253,
-"W",
-"Riesling"
-],
-[
-"Gewürztraminer",
-122,
-"W",
-"Gewürztraminer"
-],
-[
-"Pinot Grigio",
-116,
-"G",
-"Pinot Gris"
-],
-[
-"Magliocco Canino",
-105,
-"R",
-"Magliocco Canino"
-],
-[
-"Müller-Thurgau",
-76,
-"W",
-"Müller-Thurgau"
-],
-[
-"Other",
-608,
-"",
-"other"
-]
-]
-},
 "italy/colline-saluzzesi": {
 "scope": "around",
 "names": [
@@ -110104,6 +109402,534 @@
 ]
 ]
 },
+"germany/monzinger-niederberg": {
+"scope": "around",
+"names": [
+"Nahe"
+],
+"year": 2016,
+"ha": 3897,
+"grapes": [
+[
+"Riesling",
+1100,
+"W",
+"Riesling"
+],
+[
+"Müller-Thurgau",
+491,
+"W",
+"Müller-Thurgau"
+],
+[
+"Dornfelder",
+434,
+"R",
+"Dornfelder"
+],
+[
+"Spätburgunder",
+255,
+"R",
+"Pinot Noir"
+],
+[
+"Weissburgunder",
+250,
+"W",
+"Pinot Blanc"
+],
+[
+"Grauburgunder",
+243,
+"G",
+"Pinot Gris"
+],
+[
+"Silvaner",
+227,
+"W",
+"Silvaner"
+],
+[
+"Kerner",
+139,
+"W",
+"Kerner"
+],
+[
+"Bacchus",
+129,
+"W",
+"Bacchus"
+],
+[
+"Regent",
+95,
+"R",
+"Regent"
+],
+[
+"Scheurebe",
+95,
+"W",
+"Scheurebe"
+],
+[
+"Blauer Portugieser",
+91,
+"R",
+"Blauer Portugieser"
+],
+[
+"Other",
+348,
+"",
+"other"
+]
+]
+},
+"germany/uhlen-blaufusser-lay": {
+"scope": "around",
+"names": [
+"Mosel"
+],
+"year": 2016,
+"ha": 8137,
+"grapes": [
+[
+"Riesling",
+4975,
+"W",
+"Riesling"
+],
+[
+"Müller-Thurgau",
+1000,
+"W",
+"Müller-Thurgau"
+],
+[
+"Elbling",
+482,
+"W",
+"Elbling"
+],
+[
+"Spätburgunder",
+365,
+"R",
+"Pinot Noir"
+],
+[
+"Dornfelder",
+307,
+"R",
+"Dornfelder"
+],
+[
+"Weissburgunder",
+285,
+"W",
+"Pinot Blanc"
+],
+[
+"Kerner",
+249,
+"W",
+"Kerner"
+],
+[
+"Grauburgunder",
+109,
+"G",
+"Pinot Gris"
+],
+[
+"Bacchus",
+63,
+"W",
+"Bacchus"
+],
+[
+"Regent",
+57,
+"R",
+"Regent"
+],
+[
+"Chardonnay",
+43,
+"W",
+"Chardonnay"
+],
+[
+"Auxerrois",
+32,
+"W",
+"Auxerrois"
+],
+[
+"Other",
+170,
+"",
+"other"
+]
+]
+},
+"germany/uhlen-laubach": {
+"scope": "around",
+"names": [
+"Mosel"
+],
+"year": 2016,
+"ha": 8137,
+"grapes": [
+[
+"Riesling",
+4975,
+"W",
+"Riesling"
+],
+[
+"Müller-Thurgau",
+1000,
+"W",
+"Müller-Thurgau"
+],
+[
+"Elbling",
+482,
+"W",
+"Elbling"
+],
+[
+"Spätburgunder",
+365,
+"R",
+"Pinot Noir"
+],
+[
+"Dornfelder",
+307,
+"R",
+"Dornfelder"
+],
+[
+"Weissburgunder",
+285,
+"W",
+"Pinot Blanc"
+],
+[
+"Kerner",
+249,
+"W",
+"Kerner"
+],
+[
+"Grauburgunder",
+109,
+"G",
+"Pinot Gris"
+],
+[
+"Bacchus",
+63,
+"W",
+"Bacchus"
+],
+[
+"Regent",
+57,
+"R",
+"Regent"
+],
+[
+"Chardonnay",
+43,
+"W",
+"Chardonnay"
+],
+[
+"Auxerrois",
+32,
+"W",
+"Auxerrois"
+],
+[
+"Other",
+170,
+"",
+"other"
+]
+]
+},
+"germany/uhlen-roth-lay": {
+"scope": "around",
+"names": [
+"Mosel"
+],
+"year": 2016,
+"ha": 8137,
+"grapes": [
+[
+"Riesling",
+4975,
+"W",
+"Riesling"
+],
+[
+"Müller-Thurgau",
+1000,
+"W",
+"Müller-Thurgau"
+],
+[
+"Elbling",
+482,
+"W",
+"Elbling"
+],
+[
+"Spätburgunder",
+365,
+"R",
+"Pinot Noir"
+],
+[
+"Dornfelder",
+307,
+"R",
+"Dornfelder"
+],
+[
+"Weissburgunder",
+285,
+"W",
+"Pinot Blanc"
+],
+[
+"Kerner",
+249,
+"W",
+"Kerner"
+],
+[
+"Grauburgunder",
+109,
+"G",
+"Pinot Gris"
+],
+[
+"Bacchus",
+63,
+"W",
+"Bacchus"
+],
+[
+"Regent",
+57,
+"R",
+"Regent"
+],
+[
+"Chardonnay",
+43,
+"W",
+"Chardonnay"
+],
+[
+"Auxerrois",
+32,
+"W",
+"Auxerrois"
+],
+[
+"Other",
+170,
+"",
+"other"
+]
+]
+},
+"germany/wurzburger-stein-berg": {
+"scope": "around",
+"names": [
+"Franken"
+],
+"year": 2016,
+"ha": 5796,
+"grapes": [
+[
+"Müller-Thurgau",
+1592,
+"W",
+"Müller-Thurgau"
+],
+[
+"Silvaner",
+1348,
+"W",
+"Silvaner"
+],
+[
+"Bacchus",
+694,
+"W",
+"Bacchus"
+],
+[
+"Domina",
+329,
+"R",
+"Domina"
+],
+[
+"Riesling",
+318,
+"W",
+"Riesling"
+],
+[
+"Spätburgunder",
+247,
+"R",
+"Pinot Noir"
+],
+[
+"Kerner",
+184,
+"W",
+"Kerner"
+],
+[
+"Weissburgunder",
+146,
+"W",
+"Pinot Blanc"
+],
+[
+"Dornfelder",
+144,
+"R",
+"Dornfelder"
+],
+[
+"Regent",
+134,
+"R",
+"Regent"
+],
+[
+"Scheurebe",
+126,
+"W",
+"Scheurebe"
+],
+[
+"Meunier",
+77,
+"R",
+"Pinot Meunier"
+],
+[
+"Other",
+457,
+"",
+"other"
+]
+]
+},
+"germany/burgstadter-berg": {
+"scope": "around",
+"names": [
+"Franken"
+],
+"year": 2016,
+"ha": 5796,
+"grapes": [
+[
+"Müller-Thurgau",
+1592,
+"W",
+"Müller-Thurgau"
+],
+[
+"Silvaner",
+1348,
+"W",
+"Silvaner"
+],
+[
+"Bacchus",
+694,
+"W",
+"Bacchus"
+],
+[
+"Domina",
+329,
+"R",
+"Domina"
+],
+[
+"Riesling",
+318,
+"W",
+"Riesling"
+],
+[
+"Spätburgunder",
+247,
+"R",
+"Pinot Noir"
+],
+[
+"Kerner",
+184,
+"W",
+"Kerner"
+],
+[
+"Weissburgunder",
+146,
+"W",
+"Pinot Blanc"
+],
+[
+"Dornfelder",
+144,
+"R",
+"Dornfelder"
+],
+[
+"Regent",
+134,
+"R",
+"Regent"
+],
+[
+"Scheurebe",
+126,
+"W",
+"Scheurebe"
+],
+[
+"Meunier",
+77,
+"R",
+"Pinot Meunier"
+],
+[
+"Other",
+457,
+"",
+"other"
+]
+]
+},
 "hungary/dunantuli": {
 "scope": "within",
 "names": [
@@ -110294,6 +110120,64 @@
 ]
 ]
 },
+"greece/robola-kefallinias": {
+"scope": "around",
+"names": [
+"Ionia Nisia"
+],
+"year": 2020,
+"ha": 136,
+"grapes": [
+[
+"Mavrodafni",
+88,
+"R",
+"Mavrodafni"
+],
+[
+"Muscat Blanc",
+23,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Cabernet Sauvignon",
+9,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Mavrouda",
+7,
+"R",
+"Mavrouda"
+],
+[
+"Syrah",
+4,
+"R",
+"Syrah"
+],
+[
+"Malagousia",
+2,
+"W",
+"Malagousia"
+],
+[
+"Merlot",
+2,
+"R",
+"Merlot"
+],
+[
+"Sauvignon Blanc",
+1,
+"W",
+"Sauvignon Blanc"
+]
+]
+},
 "greece/santorini": {
 "scope": "around",
 "names": [
@@ -110467,6 +110351,64 @@
 199,
 "",
 "other"
+]
+]
+},
+"greece/mavrodafni-kefallinias": {
+"scope": "around",
+"names": [
+"Ionia Nisia"
+],
+"year": 2020,
+"ha": 136,
+"grapes": [
+[
+"Mavrodafni",
+88,
+"R",
+"Mavrodafni"
+],
+[
+"Muscat Blanc",
+23,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Cabernet Sauvignon",
+9,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Mavrouda",
+7,
+"R",
+"Mavrouda"
+],
+[
+"Syrah",
+4,
+"R",
+"Syrah"
+],
+[
+"Malagousia",
+2,
+"W",
+"Malagousia"
+],
+[
+"Merlot",
+2,
+"R",
+"Merlot"
+],
+[
+"Sauvignon Blanc",
+1,
+"W",
+"Sauvignon Blanc"
 ]
 ]
 },
@@ -110731,6 +110673,64 @@
 142,
 "",
 "other"
+]
+]
+},
+"greece/moschato-kefallinias": {
+"scope": "around",
+"names": [
+"Ionia Nisia"
+],
+"year": 2020,
+"ha": 136,
+"grapes": [
+[
+"Mavrodafni",
+88,
+"R",
+"Mavrodafni"
+],
+[
+"Muscat Blanc",
+23,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Cabernet Sauvignon",
+9,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Mavrouda",
+7,
+"R",
+"Mavrouda"
+],
+[
+"Syrah",
+4,
+"R",
+"Syrah"
+],
+[
+"Malagousia",
+2,
+"W",
+"Malagousia"
+],
+[
+"Merlot",
+2,
+"R",
+"Merlot"
+],
+[
+"Sauvignon Blanc",
+1,
+"W",
+"Sauvignon Blanc"
 ]
 ]
 },
@@ -139424,6 +139424,94 @@
 ]
 ]
 },
+"united-states/mendocino-ridge": {
+"scope": "around",
+"names": [
+"Mendocino County"
+],
+"year": 2016,
+"ha": 6660,
+"grapes": [
+[
+"Chardonnay",
+1810,
+"W",
+"Chardonnay"
+],
+[
+"Pinot Noir",
+1052,
+"R",
+"Pinot Noir"
+],
+[
+"Cabernet Sauvignon",
+1050,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Zinfandel",
+779,
+"R",
+"Tribidrag"
+],
+[
+"Merlot",
+575,
+"R",
+"Merlot"
+],
+[
+"Syrah",
+274,
+"R",
+"Syrah"
+],
+[
+"Sauvignon Blanc",
+274,
+"W",
+"Sauvignon Blanc"
+],
+[
+"Petite Sirah",
+223,
+"R",
+"Durif"
+],
+[
+"Carignan",
+146,
+"R",
+"Mazuelo"
+],
+[
+"Gewürztraminer",
+68,
+"W",
+"Gewürztraminer"
+],
+[
+"Viognier",
+57,
+"W",
+"Viognier"
+],
+[
+"Grenache",
+45,
+"R",
+"Garnacha Tinta"
+],
+[
+"Other",
+308,
+"",
+"other"
+]
+]
+},
 "united-states/mt-veeder": {
 "scope": "around",
 "names": [
@@ -140660,6 +140748,94 @@
 ]
 },
 "australia/murray-darling": {
+"scope": "around",
+"names": [
+"Big Rivers"
+],
+"year": 2023,
+"ha": 605,
+"grapes": [
+[
+"Chardonnay",
+227,
+"W",
+"Chardonnay"
+],
+[
+"Shiraz",
+124,
+"R",
+"Syrah"
+],
+[
+"Cabernet Sauvignon",
+80,
+"R",
+"Cabernet Sauvignon"
+],
+[
+"Pinot Gris",
+61,
+"G",
+"Pinot Gris"
+],
+[
+"Merlot",
+60,
+"R",
+"Merlot"
+],
+[
+"Muscat Blanc",
+22,
+"W",
+"Muscat Blanc à Petits Grains"
+],
+[
+"Muscat of Alexandria",
+9,
+"W",
+"Muscat of Alexandria"
+],
+[
+"Chenin Blanc",
+6,
+"W",
+"Chenin Blanc"
+],
+[
+"Marsanne",
+5,
+"W",
+"Marsanne"
+],
+[
+"Riesling",
+3,
+"W",
+"Riesling"
+],
+[
+"Semillon",
+2,
+"W",
+"Sémillon"
+],
+[
+"Petite Sirah",
+2,
+"R",
+"Durif"
+],
+[
+"Other",
+5,
+"",
+"other"
+]
+]
+},
+"australia/swan-hill": {
 "scope": "around",
 "names": [
 "Big Rivers"
@@ -149993,94 +150169,6 @@
 [
 "Other",
 800,
-"",
-"other"
-]
-]
-},
-"united-states/mendocino-ridge": {
-"scope": "around",
-"names": [
-"Mendocino County"
-],
-"year": 2016,
-"ha": 6660,
-"grapes": [
-[
-"Chardonnay",
-1810,
-"W",
-"Chardonnay"
-],
-[
-"Pinot Noir",
-1052,
-"R",
-"Pinot Noir"
-],
-[
-"Cabernet Sauvignon",
-1050,
-"R",
-"Cabernet Sauvignon"
-],
-[
-"Zinfandel",
-779,
-"R",
-"Tribidrag"
-],
-[
-"Merlot",
-575,
-"R",
-"Merlot"
-],
-[
-"Syrah",
-274,
-"R",
-"Syrah"
-],
-[
-"Sauvignon Blanc",
-274,
-"W",
-"Sauvignon Blanc"
-],
-[
-"Petite Sirah",
-223,
-"R",
-"Durif"
-],
-[
-"Carignan",
-146,
-"R",
-"Mazuelo"
-],
-[
-"Gewürztraminer",
-68,
-"W",
-"Gewürztraminer"
-],
-[
-"Viognier",
-57,
-"W",
-"Viognier"
-],
-[
-"Grenache",
-45,
-"R",
-"Garnacha Tinta"
-],
-[
-"Other",
-308,
 "",
 "other"
 ]

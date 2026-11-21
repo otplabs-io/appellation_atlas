@@ -1,0 +1,87 @@
+{
+ "new-zealand": {
+  "notes": [
+   "Cool nights give fruit that is nearly always high in acidity, with abundant fruit flavor.",
+   "New Zealand Sauvignon Blanc has asparagus, gooseberry and green flavors, with grassy, citrus and passion fruit notes.",
+   "New Zealand Pinot Noir at its best is savory and earthy, with complexity.",
+   "Most New Zealand wine is made to drink young."
+  ],
+  "art": [
+   "New Zealand wine",
+   "Sauvignon blanc",
+   "Cabernet Sauvignon"
+  ]
+ },
+ "new-zealand/central-otago": {
+  "notes": [
+   "Central Otago is known for premium cool-climate Pinot Noir.",
+   "Its sheltered continental site has hot, dry summers, short cool autumns and cold winters."
+  ],
+  "art": [
+   "New Zealand wine"
+  ]
+ },
+ "new-zealand/hawkes-bay": {
+  "notes": [
+   "Hawke's Bay led New Zealand's Cabernet Sauvignon, though early wines were green and vegetal.",
+   "Merlot is growing in favor here because it ripens better than Cabernet, with fewer green flavors.",
+   "Its Chardonnay has noticeable acidity and leanness."
+  ],
+  "art": [
+   "Cabernet Sauvignon",
+   "Merlot",
+   "Chardonnay"
+  ]
+ },
+ "new-zealand/marlborough": {
+  "notes": [
+   "Marlborough Sauvignon Blanc is what New Zealand is best known for, with green, gooseberry, citrus and passion fruit notes.",
+   "Its Pinot Noir is aromatic, with red cherry fruit, fresh acidity and firm tannin for aging.",
+   "Chardonnay here leans to citrus, peach and melon."
+  ],
+  "art": [
+   "New Zealand wine",
+   "Sauvignon blanc",
+   "Pinot noir",
+   "Chardonnay"
+  ]
+ },
+ "new-zealand/martinborough": {
+  "notes": [
+   "Martinborough is known for premium cool-climate Pinot Noir.",
+   "Its Pinot Noir often has darker fruit and more savory character than Marlborough's."
+  ],
+  "art": [
+   "New Zealand wine",
+   "Pinot noir"
+  ]
+ },
+ "new-zealand/canterbury": {
+  "notes": [
+   "Pinot Gris here develops a rich, flinty, fruit-laden character."
+  ],
+  "art": [
+   "Pinot gris"
+  ]
+ },
+ "new-zealand/gisborne": {
+  "notes": [
+   "Gisborne Chardonnay leans toward citrus, peach and melon."
+  ],
+  "art": [
+   "Chardonnay"
+  ]
+ },
+ "new-zealand/nelson": {
+  "notes": [
+   "Nelson is best known for aromatic whites, Chardonnay and Pinot Noir.",
+   "Pinot Noir is perfumed and balanced, with ripe red berries, cherry and plum, spice and light herbal notes.",
+   "Sauvignon Blanc is rich in tropical fruit and herbaceous notes, usually without too much pungency, with a crisp, balanced palate.",
+   "Wines from the clay-rich Moutere Hills tend to be more robust, with texture, weight and denser tannin.",
+   "The stony Waimea Plains favor aromatic whites with clear varietal character, and reds with fine tannin."
+  ],
+  "ref": [
+   "iponz-nelson"
+  ]
+ }
+}

@@ -85,7 +85,7 @@
   }
  },
  "italy/lago-di-caldaro": {
-  "text": "A Trentino PDO for wine. Its communes include Caldaro and Appiano.",
+  "text": "A PDO for wine across Alto Adige and Trentino. Its communes include Caldaro and Appiano.",
   "from": [
    "rules"
   ]
@@ -109,7 +109,7 @@
   ]
  },
  "italy/lambrusco-mantovano": {
-  "text": "A Lombardy DOC in the province of Mantua for semi-sparkling and still wine. It is made from Lambrusco varieties such as Maestri, Salamino and Grasparossa, along with Ancellotta and Fortana.",
+  "text": "A Lombardy DOC in the province of Mantua for semi-sparkling and still wine. It is made mainly from Lambrusco Viadanese, Maestri, Marani and Salamino, with a little Grasparossa, Ancellotta and Fortana.",
   "from": [
    "rules",
    "wikipedia",
@@ -128,7 +128,7 @@
   ]
  },
  "italy/langhe": {
-  "text": "A hilly area of Piedmont south and east of the Tanaro river, in the provinces of Cuneo and Asti, famous for its wines, cheeses and the white truffles of Alba.",
+  "text": "A hilly area of Piedmont south and east of the Tanaro river, famous for its wines, cheeses and the white truffles of Alba.",
   "from": [
    "wikipedia",
    "rules"
@@ -226,7 +226,7 @@
   ]
  },
  "italy/malvasia-delle-lipari": {
-  "text": "A Sicilian PDO for wine, liqueur wine and raisined-grape wine, made from Malvasia di Lipari. Corinto Nero, Catarratto and Viognier are also allowed.",
+  "text": "A Sicilian PDO for wine, liqueur wine and raisined-grape wine, made from Malvasia di Lipari with a little Corinto Nero.",
   "from": [
    "rules"
   ]
@@ -312,7 +312,7 @@
   }
  },
  "italy/martina": {
-  "text": "A Puglia area PDO for still and sparkling wine made from Verdeca, Bianco d'Alessano, Bombino Bianco, Fiano and Malvasia Bianca.",
+  "text": "A Puglia area PDO for still and sparkling wine made mainly from Verdeca and Bianco d'Alessano, with a little Bombino Bianco, Fiano and Malvasia Bianca.",
   "from": [
    "rules"
   ]
@@ -384,7 +384,7 @@
   }
  },
  "italy/montecompatri-colonna": {
-  "text": "A Lazio PDO for still and semi-sparkling wine from Malvasia Bianca di Candia, Malvasia del Lazio, Trebbiano Toscano, Trebbiano Giallo, Bellone, Biancame and Verdicchio Bianco.",
+  "text": "A Lazio PDO for still and semi-sparkling wine made mainly from Malvasia and Trebbiano, with a little Bellone and Bombino Bianco.",
   "from": [
    "rules"
   ]
@@ -484,7 +484,7 @@
   }
  },
  "italy/moscato-d-asti": {
-  "text": "A Piedmont DOCG for sweet, low alcohol sparkling white wine made from Moscato Bianco, mainly in the province of Asti. It is considered a dessert wine and has a musky aroma. Asti is a related wine from the same grape and area.",
+  "text": "A Piedmont DOCG for sweet, low alcohol, lightly sparkling (frizzante) white wine made from Moscato Bianco, mainly in the province of Asti. It is considered a dessert wine and has a musky aroma. Asti is a related wine from the same grape and area.",
   "from": [
    "wikipedia",
    "where"
@@ -699,7 +699,7 @@
   }
  },
  "italy/piemonte": {
-  "text": "A Piedmont PDO for still, sparkling, aromatic sparkling and raisined-grape wine. Barbera (27%), Muscat Blanc (25%) and Nebbiolo (15%) lead the plantings.",
+  "text": "A Piedmont PDO for still, sparkling, aromatic sparkling and raisined-grape wine.",
   "from": [
    "rules",
    "planted"
@@ -755,7 +755,7 @@
   }
  },
  "italy/recioto-della-valpolicella": {
-  "text": "A sweet red DOCG passito from Valpolicella in Veneto. Only the upper, best-exposed part of each bunch is dried to concentrate sugars, giving the name from the word for ear.",
+  "text": "A sweet red DOCG passito from Valpolicella in Veneto. The grapes are dried to concentrate their sugars. The name comes from the word for ear: traditionally only the upper \"ears\" of each bunch were used.",
   "from": [
    "wikipedia",
    "rules"

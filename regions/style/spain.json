@@ -1,0 +1,232 @@
+{
+ "spain": {
+  "notes": [
+   "Most Spanish reds are full bodied and high in alcohol.",
+   "Low, hot vineyards, such as along the southern Mediterranean coast, give grapes high in alcohol and low in acidity.",
+   "Oak aging has a long tradition in Spain.",
+   "Tempranillo and Garnacha make the full bodied reds of Rioja, Ribera del Duero and Penedès, and Garnacha leads in Priorat."
+  ],
+  "art": [
+   "Spanish wine",
+   "Tempranillo"
+  ]
+ },
+ "spain/carinena": {
+  "notes": [
+   "Cariñena reds have the style of Garnacha from a hot climate.",
+   "Traditional wines are robust and high in alcohol, while newer ones are fruitier, lighter and better balanced.",
+   "Its young whites and rosés are best drunk within the year."
+  ],
+  "art": [
+   "Cariñena DOP"
+  ]
+ },
+ "spain/jerez": {
+  "notes": [
+   "Sherry is made mainly from Palomino, and because it is fortified after fermentation, most sherry is dry.",
+   "Fino and Manzanilla are light, very dry and delicate, while Amontillado and Oloroso are darker and heavier from aging with air.",
+   "Amontillado is dry and nutty, and Oloroso is full bodied, complex and round.",
+   "Palo Cortado combines the nose of Amontillado with the depth and body of Oloroso.",
+   "Pedro Ximénez and Moscatel, from dried grapes, are intensely sweet, and Cream sherry is usually Oloroso sweetened with Pedro Ximénez."
+  ],
+  "art": [
+   "Sherry",
+   "Spanish wine"
+  ]
+ },
+ "spain/priorat": {
+  "notes": [
+   "Very old vines on steep schist terraces give tiny yields, around 5 to 6 hectoliters a hectare.",
+   "Priorat is dense, rich, concentrated and dark, with noticeable tannin.",
+   "It shows dark black fruit with notes of fig and tar.",
+   "Reds are Garnacha or Cariñena, alone or blended with grapes such as Cabernet Sauvignon, Merlot or Syrah."
+  ],
+  "art": [
+   "Grenache",
+   "Priorat DOQ"
+  ]
+ },
+ "spain/ribera-del-duero": {
+  "notes": [
+   "Ribera del Duero is 90 to 100% Tempranillo, known here as Tinta del País.",
+   "Its high-altitude continental climate, with hot days and cold nights, suits Tempranillo well."
+  ],
+  "art": [
+   "Tempranillo"
+  ]
+ },
+ "spain/rioja": {
+  "notes": [
+   "Rioja reds are led by Tempranillo, a fairly neutral grape often blended with Garnacha and Mazuelo and aged long in oak.",
+   "Oak and its pronounced vanilla flavor have long been the region's trademark, though some producers now use less.",
+   "Rioja Alta's higher vineyards give brighter fruit and lighter wines in an old-world style, while Rioja Alavesa gives fuller body and higher acidity.",
+   "Some white Rioja Reserva and Gran Reserva ages for decades into a highly distinctive, aromatic wine."
+  ],
+  "art": [
+   "Rioja DOCa",
+   "Tempranillo",
+   "Macabeo"
+  ]
+ },
+ "spain/rueda": {
+  "notes": [
+   "Rueda whites must be at least 50% Verdejo, often with Sauvignon Blanc or Macabeo.",
+   "Rueda Verdejo must be at least 85% Verdejo."
+  ],
+  "art": [
+   "Verdejo"
+  ]
+ },
+ "spain/valencia": {
+  "notes": [
+   "Bobal from neighboring Utiel-Requena is blended in to give Valencian wines body and aroma."
+  ],
+  "art": [
+   "Valencia (DO)"
+  ]
+ },
+ "spain/penedes": {
+  "notes": [
+   "Penedès makes full bodied reds from Tempranillo and Garnacha, and its cooler climate suits single-variety Tempranillo.",
+   "Xarel·lo, long a blending grape here, is now also made on its own."
+  ],
+  "art": [
+   "Spanish wine",
+   "Tempranillo",
+   "Xarel·lo"
+  ]
+ },
+ "spain/cava": {
+  "notes": [
+   "Cava is a sparkling wine that ferments and ages in bottle, named for the cellars where this happens.",
+   "Macabeo and Xarel·lo are key grapes, and some top Cavas are led by Xarel·lo."
+  ],
+  "art": [
+   "Spanish wine",
+   "Macabeo",
+   "Xarel·lo"
+  ]
+ },
+ "spain/navarra": {
+  "notes": [
+   "Navarra is one of Spain's cooler regions, where single-variety Tempranillo is increasingly common.",
+   "Merlot is sometimes blended here with Tempranillo."
+  ],
+  "art": [
+   "Tempranillo",
+   "Merlot"
+  ]
+ },
+ "spain/valdepenas": {
+  "notes": [
+   "Valdepeñas has long been known for clarete, made by mixing white and red grapes."
+  ],
+  "art": [
+   "Valdepeñas (DO)"
+  ]
+ },
+ "spain/rias-baixas": {
+  "notes": [
+   "Rías Baixas Albariño has complex aromas of citrus, flowers and fruit, with apple standing out.",
+   "On the palate it is balanced and fresh, with good structure, some richness and a floral, fruity finish.",
+   "Cool, damp weather and poor, sandy soils give wines known more for their acidity and aroma than their alcohol.",
+   "Barrel-aged whites add toast, smoke, vanilla and nutty notes.",
+   "The reds are light in body and moderately tannic, with red berry and herbal aromas."
+  ],
+  "ref": [
+   "es-rias-baixas"
+  ]
+ },
+ "spain/bierzo": {
+  "notes": [
+   "Bierzo reds are made mostly from Mencía, and its whites mostly from Godello.",
+   "The reds smell of red and black fruit and violets, and taste fresh, with medium to full body.",
+   "The whites show white and stone fruit, citrus and white flowers, with freshness and medium to full body.",
+   "Barrel-aged reds add vanilla, coconut, toast and spice."
+  ],
+  "ref": [
+   "es-bierzo"
+  ]
+ },
+ "spain/toro": {
+  "notes": [
+   "Toro reds are at least 75% Tinta de Toro, or at least 85% Garnacha.",
+   "Very cold winters, long sunny days and extreme temperatures give wines with structure and high alcohol.",
+   "The reds show red and black fruit, with medium to full body and balanced alcohol and acidity.",
+   "Barrel-aged reds, from Roble to Gran Reserva, add oak aromas as they age.",
+   "The whites are light in body, with fruity, floral or herbal aromas and medium to fairly high acidity."
+  ],
+  "ref": [
+   "es-toro"
+  ]
+ },
+ "spain/calatayud": {
+  "notes": [
+   "Most of Calatayud's vineyards sit high, between 650 and 900 m, and the altitude decides when each style is picked.",
+   "Young reds are deep cherry to garnet, fruity, fleshy and balanced, with soft tannin and a long finish.",
+   "Rosés are strawberry to raspberry pink, intensely floral and fruity, fresh and powerful.",
+   "Calatayud Superior is a deep red, with fruit, balsamic, mineral, toast and spice aromas.",
+   "In Crianza reds, tannins firm in youth round out in bottle."
+  ],
+  "ref": [
+   "es-calatayud"
+  ]
+ },
+ "spain/jumilla": {
+  "notes": [
+   "Monastrell is Jumilla's key grape, tough enough for drought, summer heat and spring frost.",
+   "It gives broad, fleshy wines with good alcohol and acidity, ripe fruit and well-integrated tannin.",
+   "The reds run from violet to brick red, with red and black fruit, and are tannic.",
+   "Other grapes add color stability, acidity and aging potential.",
+   "Sweet and fortified Monastrell wines add dried fruit notes."
+  ],
+  "ref": [
+   "es-jumilla"
+  ]
+ },
+ "spain/yecla": {
+  "notes": [
+   "Yecla's very dry climate, arid soils and strong sun give Monastrell wines of good color and high alcohol.",
+   "Reds are traditionally made from old Monastrell vines, very rich in tannin.",
+   "They are fruity, fleshy and warm, tannic yet smooth, balanced and concentrated.",
+   "Rosés are raspberry to cherry pink, fresh and strongly fruity."
+  ],
+  "ref": [
+   "es-yecla"
+  ]
+ },
+ "spain/la-mancha": {
+  "notes": [
+   "More than 3,000 hours of sun a year ripen La Mancha's grapes to wines of 11 to 14% alcohol, with balanced acidity.",
+   "Its soils suit full-bodied, high-alcohol reds that are good for aging.",
+   "Young reds are violet to garnet, fruity and tannic, with alcohol and acidity in balance.",
+   "Young dry whites are greenish to yellow, fruity and lightly acidic.",
+   "Gran Reserva reds show toast and vanilla."
+  ],
+  "ref": [
+   "es-la-mancha"
+  ]
+ },
+ "spain/cataluna": {
+  "notes": [
+   "Catalunya wines have attractive color, medium to high aromatic intensity, moderate acidity and good alcohol.",
+   "Young whites and rosés are fruity or floral, light and fresh.",
+   "Young reds are clearly fruity, and barrel aging adds vanilla, toast and spice and makes them rounder.",
+   "Fortified wines are warm and unctuous, and aged ones gain nutty notes."
+  ],
+  "ref": [
+   "es-cataluna"
+  ]
+ },
+ "spain/castilla-y-leon": {
+  "notes": [
+   "Young whites are fresh and fruity, with real presence on the palate.",
+   "Reds are powerful, with ripe fruit, deep color, good structure and great capacity for long aging.",
+   "Rosés are fresh, with red fruit, and those from Prieto Picudo have notable body.",
+   "In León and Fermoselle, whole bunches added during fermentation give rosés deeper color and a light sparkle."
+  ],
+  "ref": [
+   "es-castilla-y-leon"
+  ]
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "germany": {
+  "notes": [
+   "High acidity is the hallmark of German wine, from a northern climate and grapes like Riesling that keep acid even when ripe.",
+   "Riesling ranges from very crisp and dry through off-dry (feinherb or halbtrocken) to rich, sweet Beerenauslese and Trockenbeerenauslese.",
+   "Many wines are light, low in alcohol and unoaked, though much more is now made dry.",
+   "Riesling ages well, gaining smoky, honey and petrol notes.",
+   "Dornfelder gives dark, full bodied, fruity and tannic reds."
+  ],
+  "art": [
+   "German wine",
+   "Riesling"
+  ]
+ },
+ "germany/baden": {
+  "notes": [
+   "Baden, Germany's warmest region, makes wines that are usually fuller bodied and higher in alcohol than elsewhere in Germany.",
+   "Its Pinot Blanc and Pinot Gris are among the most powerful in Germany."
+  ],
+  "art": [
+   "Baden (wine region)",
+   "Pinot blanc"
+  ]
+ },
+ "germany/franken": {
+  "notes": [
+   "Franken is known for powerful, dry Silvaner from chalky soils, slightly earthy and rustic.",
+   "Its best wines, mostly dry Spätlesen, are full bodied and can mature for six to ten years.",
+   "Many producers use Fränkisch trocken for wines with 5 grams of sugar or less."
+  ],
+  "art": [
+   "Franconia (wine region)",
+   "German wine"
+  ]
+ },
+ "germany/mosel": {
+  "notes": [
+   "Mosel Riesling is often light, low in alcohol, crisp and high in acidity, with flowery as well as fruity aromas.",
+   "High acidity and clearly defined flavors mark all Mosel wines, and some sweetness often balances the acid.",
+   "Saar and Ruwer wines can be just 6 to 9% alcohol, with intense fruit and high acidity.",
+   "The Mosel is also known for Eiswein, joining high acidity to concentrated sweetness."
+  ],
+  "art": [
+   "Mosel (wine region)",
+   "Riesling"
+  ]
+ },
+ "germany/nahe": {
+  "notes": [
+   "Nahe wines show wet stone and mineral flavors with citrus and stone fruit."
+  ],
+  "art": [
+   "Nahe (wine region)"
+  ]
+ },
+ "germany/pfalz": {
+  "notes": [
+   "Pfalz wines are traditionally dry and full bodied.",
+   "Riesling here can develop citrus and peach notes, and its Pinot Blanc and Pinot Gris are among Germany's most powerful."
+  ],
+  "art": [
+   "Palatinate (wine region)",
+   "Riesling",
+   "Pinot blanc"
+  ]
+ },
+ "germany/rheingau": {
+  "notes": [
+   "Rheingau Riesling sits in style between the Mosel and the warmer south, and at its best joins the strengths of both."
+  ],
+  "art": [
+   "German wine"
+  ]
+ },
+ "germany/rheinhessen": {
+  "notes": [
+   "Rheinhessen makes mostly white wine from Riesling, Müller-Thurgau and Silvaner.",
+   "It is best known as the home of semi-sweet Liebfraumilch, but Riesling is increasingly made powerful and dry.",
+   "Silvaner from chalky soils gives powerful dry wines, slightly earthy and rustic."
+  ],
+  "art": [
+   "Rheinhessen (wine region)",
+   "German wine"
+  ]
+ }
+}

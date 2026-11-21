@@ -78,7 +78,7 @@ struct Onboarding: View {
 
     private var colors: some View {
         Page(title: "Gold for the classics",
-             text: "Benchmark regions, in gold, lie in the regions the WSET Diploma teaches. Emerging regions, in grey, are the rest. A deeper shade means the place is better known. The Atlas is not affiliated with WSET.") {
+             text: "Benchmark regions, in gold, are the classic places to learn first. Emerging regions, in grey, are the rest. A deeper shade means the place is better known. The Atlas is not affiliated with any wine school.") {
             VStack(alignment: .leading, spacing: 14) {
                 ramp(Palette.gold4, "Benchmark")
                 ramp(Palette.grey4, "Emerging")

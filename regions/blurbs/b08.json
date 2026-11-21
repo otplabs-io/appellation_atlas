@@ -639,7 +639,7 @@
   }
  },
  "italy/vernaccia-di-serrapetrona": {
-  "text": "A sparkling wine from the Marche, around Serrapetrona, San Severino Marche and Belforte del Chienti. It is a quality sparkling wine, with Vernaccia Nera among the allowed grapes.",
+  "text": "A sparkling wine from the Marche, around Serrapetrona, San Severino Marche and Belforte del Chienti. It is a red sparkling wine made mainly from Vernaccia Nera.",
   "from": [
    "rules"
   ]
@@ -651,7 +651,7 @@
   ]
  },
  "italy/vesuvio": {
-  "text": "A Campania appellation around Ercolano, Torre del Greco and Boscotrecase, for still, sparkling and liqueur wine. Only seven grapes are allowed: Aglianico, Piedirosso, Falanghina, Greco, Coda di Volpe, Sciascinoso and Verdeca.",
+  "text": "A Campania appellation around Ercolano, Torre del Greco and Boscotrecase, for still, sparkling and liqueur wine. Its whites are led by Caprettone and Coda di Volpe and its reds by Piedirosso. Its best-known wines are sold as Lacryma Christi.",
   "from": [
    "rules"
   ]

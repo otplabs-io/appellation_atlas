@@ -1,3 +1,7 @@
 /*
 !/public
 !/vercel.json
+
+# iCloud conflict copies, such as "atlas 2.js": never deploy them
+* [0-9].*
+* [0-9][0-9].*

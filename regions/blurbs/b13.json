@@ -59,7 +59,7 @@
   ]
  },
  "australia/south-australia": {
-  "text": "The state that makes more than half of all Australian wine. Its range runs from cool-climate Riesling in Clare Valley to big, full-bodied Shiraz in Barossa Valley, and it is home to Penfolds Grange and Jacob's Creek. Irrigation is vital here.",
+  "text": "The state that makes about half of all Australian wine. Its range runs from Riesling in Clare Valley to big, full-bodied Shiraz in Barossa Valley, and it is home to Penfolds Grange and Jacob's Creek. Irrigation is vital here.",
   "from": [
    "wikipedia",
    "where"
@@ -126,7 +126,7 @@
   ]
  },
  "australia/southern-new-south-wales": {
-  "text": "A New South Wales zone containing Canberra District, Gundagai, Hilltops and Tumbarumba. Syrah and Cabernet Sauvignon each make up about a third of plantings, with Pinot Noir next.",
+  "text": "A New South Wales zone containing Canberra District, Gundagai, Hilltops and Tumbarumba. Shiraz leads the plantings, then Cabernet Sauvignon and Chardonnay.",
   "from": [
    "planted",
    "where"
@@ -196,7 +196,7 @@
   }
  },
  "australia/the-peninsulas": {
-  "text": "A very large zone of South Australia, the state that makes more than half of all Australian wine. It covers about 12,300 square miles, but has only about 180 acres of vines, tiny compared with the area.",
+  "text": "A very large zone of South Australia, the state that makes about half of all Australian wine. It covers about 12,300 square miles, but has only about 180 acres of vines, tiny compared with the area.",
   "from": [
    "gi",
    "wikipedia_of_wider",

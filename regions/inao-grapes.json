@@ -320,7 +320,7 @@
 "main"
 ],
 [
-"muscat à petits grains",
+"muscat à petits grains roses",
 "pink",
 "main"
 ],
@@ -362,8 +362,8 @@
 "chasselas",
 "chasselas rose",
 "gewurztraminer",
-"muscat a petits grains blanc",
-"muscat a petits grains gris",
+"muscat a petits grains",
+"muscat a petits grains roses",
 "muscat ottonel",
 "pinot blanc",
 "pinot gris",
@@ -491,7 +491,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-altenberg-de-bergheim": {
@@ -609,7 +611,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-altenberg-de-wolxheim": {
@@ -673,7 +677,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-brand": {
@@ -737,7 +743,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-bruderthal": {
@@ -801,7 +809,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-eichberg": {
@@ -865,7 +875,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-engelberg": {
@@ -929,7 +941,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-florimont": {
@@ -993,7 +1007,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-frankstein": {
@@ -1057,7 +1073,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-froehn": {
@@ -1121,7 +1139,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-furstentum": {
@@ -1185,7 +1205,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-geisberg": {
@@ -1249,7 +1271,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": null
 },
 "france/alsace-grand-cru-gloeckelberg": {
@@ -1313,7 +1337,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-goldert": {
@@ -1377,7 +1403,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-hatschbourg": {
@@ -1441,7 +1469,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-hengst": {
@@ -1587,7 +1617,10 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine",
+"Red wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-kaefferkopf": {
@@ -1704,7 +1737,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 2007
 },
 "france/alsace-grand-cru-kanzlerberg": {
@@ -1768,7 +1803,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-kastelberg": {
@@ -1832,7 +1869,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-kessler": {
@@ -1896,7 +1935,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-kirchberg-de-barr": {
@@ -2042,7 +2083,10 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine",
+"Red wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-kirchberg-de-ribeauville": {
@@ -2106,7 +2150,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-kitterle": {
@@ -2170,7 +2216,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-mambourg": {
@@ -2234,7 +2282,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-mandelberg": {
@@ -2298,7 +2348,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-marckrain": {
@@ -2362,7 +2414,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": null
 },
 "france/alsace-grand-cru-moenchberg": {
@@ -2426,7 +2480,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-muenchberg": {
@@ -2490,7 +2546,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-ollwiller": {
@@ -2554,7 +2612,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-osterberg": {
@@ -2618,7 +2678,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-pfersigberg": {
@@ -2682,7 +2744,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-pfingstberg": {
@@ -2746,7 +2810,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-praelatenberg": {
@@ -2810,7 +2876,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-rangen": {
@@ -2874,7 +2942,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-rosacker": {
@@ -2938,7 +3008,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-saering": {
@@ -3002,7 +3074,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-schlossberg": {
@@ -3066,7 +3140,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1975
 },
 "france/alsace-grand-cru-schoenenbourg": {
@@ -3130,7 +3206,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-sommerberg": {
@@ -3194,7 +3272,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-sonnenglanz": {
@@ -3258,7 +3338,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-spiegel": {
@@ -3322,7 +3404,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-sporen": {
@@ -3386,7 +3470,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-steinert": {
@@ -3450,7 +3536,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-steingrubler": {
@@ -3514,7 +3602,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-steinklotz": {
@@ -3578,7 +3668,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-vorbourg": {
@@ -3724,7 +3816,10 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine",
+"Red wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-wiebelsberg": {
@@ -3788,7 +3883,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1983
 },
 "france/alsace-grand-cru-wineck-schlossberg": {
@@ -3852,7 +3949,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-winzenberg": {
@@ -3916,7 +4015,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-zinnkoepfle": {
@@ -3980,7 +4081,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/alsace-grand-cru-zotzenberg": {
@@ -4032,7 +4135,9 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine"
+],
 "recognised": 1992
 },
 "france/anjou": {
@@ -4490,6 +4595,46 @@
 "enfariné",
 "red",
 "main"
+],
+[
+"aligoté",
+"white",
+"adaptation"
+],
+[
+"chenin",
+"white",
+"adaptation"
+],
+[
+"marsanne",
+"white",
+"adaptation"
+],
+[
+"roussane",
+"white",
+"adaptation"
+],
+[
+"sacy",
+"white",
+"adaptation"
+],
+[
+"béclan",
+"red",
+"adaptation"
+],
+[
+"franc noir de Haute-Saône",
+"red",
+"adaptation"
+],
+[
+"gamay",
+"red",
+"adaptation"
 ]
 ],
 "members": {
@@ -4507,6 +4652,17 @@
 "trousseau",
 "chardonnay",
 "savagnin"
+],
+"adaptation": [
+"aligote",
+"chenin",
+"enfarine",
+"marsanne",
+"roussane",
+"sacy",
+"beclan",
+"franc noir de haute saone",
+"gamay"
 ]
 },
 "limits": [
@@ -4656,12 +4812,12 @@
 "accessory"
 ],
 [
-"Grenache",
+"Grenache blanc",
 "white",
 "adaptation"
 ],
 [
-"Carignan",
+"Carignan blanc",
 "white",
 "adaptation"
 ],
@@ -5023,7 +5179,7 @@
 ]
 ],
 "types": null,
-"recognised": null
+"recognised": 1936
 },
 "france/banyuls-grand-cru": {
 "grapes": [
@@ -5343,9 +5499,19 @@
 "date": 20250424,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-072c67b3-a78d-4184-95ab-6fe5eb6ddc59/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Béarn - BO n°17 du 24 avril 2025",
-"base_yield": null,
-"types": null,
-"recognised": null
+"base_yield": [
+[
+"",
+50.0,
+"hl/ha"
+]
+],
+"types": [
+"White wine",
+"Red wine",
+"Rosé wine"
+],
+"recognised": 1975
 },
 "france/beaujolais": {
 "grapes": [
@@ -6590,7 +6756,18 @@
 "date": 20260611,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-c512f50d-019b-4db3-99fc-e61092b553a8/telechargement",
 "label": "Cahier des charges de l’appellation d’origine contrôlée Bordeaux supérieur homologué par l’arrêté du 4 juin 2026 (AGRT2605247A) - BO n°24 du 11 juin 2026",
-"base_yield": null,
+"base_yield": [
+[
+"white",
+49.0,
+"hl/ha"
+],
+[
+"red",
+58.0,
+"hl/ha"
+]
+],
 "types": [
 "White wine",
 "Red wine"
@@ -6749,18 +6926,8 @@
 "france/bourgogne-mousseux": {
 "grapes": [
 [
-"chardonnay",
-"white",
-"main"
-],
-[
-"pinot blanc",
-"white",
-"main"
-],
-[
-"pinot gris",
-"pink",
+"gamay",
+"red",
 "main"
 ],
 [
@@ -6771,98 +6938,87 @@
 [
 "césar",
 "red",
+"main"
+],
+[
+"aligoté",
+"white",
 "accessory"
 ],
 [
-"gamay",
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"gamay de Bouze",
 "red",
+"accessory"
+],
+[
+"gamay de Chaudenay",
+"red",
+"accessory"
+],
+[
+"melon",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
 "accessory"
 ]
 ],
 "members": {
 "main": [
-"chardonnay",
-"pinot blanc",
+"gamay",
 "pinot noir",
-"pinot gris"
+"cesar"
 ],
 "accessory": [
-"pinot gris",
+"aligote",
 "chardonnay",
+"gamay de bouze",
+"gamay de chaudenay",
+"melon",
 "pinot blanc",
-"cesar",
-"gamay"
+"pinot gris"
 ]
 },
 "limits": [
 {
-"grapes": [
-"pinot gris"
-],
-"role": null,
-"each": false,
-"min": null,
-"max": 30.0,
-"wine": "white",
-"blend": false
-},
-{
-"grapes": [
-"cesar"
-],
-"role": null,
+"grapes": [],
+"role": "accessory",
 "each": false,
 "min": null,
 "max": 10.0,
-"wine": "red",
-"blend": false
-},
-{
-"grapes": [
-"gamay"
-],
-"role": null,
-"each": false,
-"min": null,
-"max": 30.0,
-"wine": "red",
-"blend": false
-},
-{
-"grapes": [
-"cesar"
-],
-"role": null,
-"each": false,
-"min": null,
-"max": 10.0,
-"wine": "rosé",
+"wine": null,
 "blend": false
 }
 ],
 "by_wine": [],
-"mixed_roles": true,
-"date": 20260115,
-"url": "https://info.agriculture.gouv.fr/boagri/document_administratif-e6cb8ffc-217c-492d-be27-6748e8f050db/telechargement",
-"label": "Cahier des charges de l’appellation d’origine contrôlée Bourgogne, homologué par l'arrêté du 6 janvier 2026 (AGRT2535961A) - BO n°03 du 15 janvier 2026",
+"mixed_roles": false,
+"date": 20111117,
+"url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-1fbaf2c5-d402-4eae-87ac-c9f35fdd144a/telechargement",
+"label": "Cahier des charges relatifs aux appellations d’origines contrôlées suivantes 09/11/2011 : Bourgogne mousseux, Chevalier-Montrachet, Muscadet Côtes de Grandlieu, Muscadet Sèvre et Maine, Bouzeron, Givry et Listrac-Médoc - BO n°46 du 17 novembre 2011",
 "base_yield": [
 [
-"white",
-68.0,
-"hl/ha"
-],
-[
-"red and rosé",
-60.0,
+"",
+64.0,
 "hl/ha"
 ]
 ],
 "types": [
-"White wine",
-"Red wine",
-"Rosé wine"
+"Sparkling red"
 ],
-"recognised": 1937
+"recognised": 1943
 },
 "france/bourgogne-passe-tout-grains": {
 "grapes": [
@@ -6991,7 +7147,10 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"Red wine",
+"Rosé wine"
+],
 "recognised": 1937
 },
 "france/boutenac": {
@@ -8256,7 +8415,10 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"Red wine",
+"White wine"
+],
 "recognised": null
 },
 "france/canon-fronsac": {
@@ -8332,8 +8494,16 @@
 "date": 20241219,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-b0eb7c82-3441-4923-952b-3e6b78a45ded/telechargement",
 "label": "BO-agri: Cahier des charges de l'appellation d'origine contrôlée « Canon - Fronsac », homologué par arrêté du 10 décembre 2024 (AGRT2425033A)",
-"base_yield": null,
-"types": null,
+"base_yield": [
+[
+"",
+53.0,
+"hl/ha"
+]
+],
+"types": [
+"Red wine"
+],
 "recognised": 1939
 },
 "france/cassis": {
@@ -8667,8 +8837,12 @@
 "hl/ha"
 ]
 ],
-"types": null,
-"recognised": null
+"types": [
+"White wine",
+"Red wine",
+"Rosé wine"
+],
+"recognised": 1936
 },
 "france/cerons": {
 "grapes": [
@@ -9256,19 +9430,17 @@
 [
 "enfariné",
 "red",
-"main"
+"adaptation"
 ],
 [
 "gringet",
 "white",
-"main"
+"adaptation"
 ]
 ],
 "members": {
 "main": [
-"savagnin",
-"enfarine",
-"gringet"
+"savagnin"
 ],
 "adaptation": [
 "enfarine",
@@ -9290,7 +9462,7 @@
 }
 ],
 "by_wine": [],
-"mixed_roles": true,
+"mixed_roles": false,
 "date": 20260827,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-80d3d5a7-3798-4166-b191-9373c5690bbb/telechargement",
 "label": "Cahier des charges de l’appellation d’origine protégée Château-Chalon homologué par l’arrêté du 11 août 2026, publié au JORF du 15 août 2026 - BO n°35 du 27 août 2026",
@@ -9837,8 +10009,12 @@
 "hl/ha"
 ]
 ],
-"types": null,
-"recognised": null
+"types": [
+"White wine",
+"Red wine",
+"Rosé wine"
+],
+"recognised": 1993
 },
 "france/chinon": {
 "grapes": [
@@ -9892,7 +10068,11 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine",
+"Red wine",
+"Rosé wine"
+],
 "recognised": 1937
 },
 "france/chiroubles": {
@@ -10064,7 +10244,7 @@
 "main"
 ],
 [
-"muscat à petits grains",
+"muscat à petits grains rouges",
 "pink",
 "main"
 ],
@@ -10074,21 +10254,21 @@
 "main"
 ],
 [
-"clairette",
+"clairette rose",
 "pink",
 "accessory"
 ]
 ],
 "members": {
 "main": [
-"muscat a petits grains blanc",
-"muscat a petits grains gris",
-"clairette blanc"
+"muscat a petits grains",
+"muscat a petits grains rouges",
+"clairette"
 ],
 "accessory": [
-"muscat a petits grains gris",
-"clairette blanc",
-"clairette gris"
+"muscat a petits grains rouges",
+"clairette",
+"clairette rose"
 ]
 },
 "limits": [
@@ -10994,7 +11174,7 @@
 },
 {
 "grapes": [
-"carignan"
+"carignan blanc"
 ],
 "role": null,
 "each": false,
@@ -11230,7 +11410,18 @@
 "date": 20191212,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-72919cce-47ac-43c8-bbfd-7524f14d9e66/telechargement",
 "label": "Cahier des charges modifié de l'AOC Corbières - BO n°50 du 12 décembre 2019",
-"base_yield": null,
+"base_yield": [
+[
+"white and rosé",
+50.0,
+"hl/ha"
+],
+[
+"red",
+48.0,
+"hl/ha"
+]
+],
 "types": [
 "White wine",
 "Red wine",
@@ -12491,7 +12682,7 @@
 "accessory"
 ],
 [
-"grenache",
+"grenache blanc",
 "white",
 "accessory"
 ],
@@ -12604,11 +12795,17 @@
 }
 ],
 "by_wine": [],
-"mixed_roles": true,
+"mixed_roles": false,
 "date": 20260618,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-c6ab5987-547b-48a8-9a0a-e7199e5169d8/telechargement",
 "label": "Cahier des charges de l'appellation d'origine protégée Coteaux d’Aix-en-Provence - BO n°25 du 18 juin 2026",
-"base_yield": null,
+"base_yield": [
+[
+"",
+60.0,
+"hl/ha"
+]
+],
 "types": [
 "White wine",
 "Red wine",
@@ -13448,8 +13645,12 @@
 "hl/ha"
 ]
 ],
-"types": null,
-"recognised": null
+"types": [
+"White wine",
+"Red wine",
+"Rosé wine"
+],
+"recognised": 1993
 },
 "france/cotes-d-auvergne": {
 "grapes": [
@@ -14730,7 +14931,18 @@
 "date": 20260910,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-c6625086-ddee-404c-8f65-379f8250bf9c/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Côtes de Toul - BO n°37 du 10 septembre 2026",
-"base_yield": null,
+"base_yield": [
+[
+"white and gris",
+60.0,
+"hl/ha"
+],
+[
+"red",
+45.0,
+"hl/ha"
+]
+],
 "types": [
 "White wine",
 "Gris (pale rosé)",
@@ -14798,14 +15010,54 @@
 "main"
 ],
 [
+"aligoté",
+"white",
+"adaptation"
+],
+[
+"chenin",
+"white",
+"adaptation"
+],
+[
 "enfariné",
 "red",
-"main"
+"adaptation"
 ],
 [
 "gringet",
 "white",
-"main"
+"adaptation"
+],
+[
+"marsanne",
+"white",
+"adaptation"
+],
+[
+"roussane",
+"white",
+"adaptation"
+],
+[
+"sacy",
+"white",
+"adaptation"
+],
+[
+"béclan",
+"red",
+"adaptation"
+],
+[
+"franc noir de Haute-Saône",
+"red",
+"adaptation"
+],
+[
+"gamay",
+"red",
+"adaptation"
 ]
 ],
 "members": {
@@ -14814,9 +15066,7 @@
 "savagnin",
 "pinot noir",
 "poulsard",
-"trousseau",
-"enfarine",
-"gringet"
+"trousseau"
 ],
 "accessory": [
 "pinot noir",
@@ -14826,8 +15076,16 @@
 "savagnin"
 ],
 "adaptation": [
+"aligote",
+"chenin",
 "enfarine",
-"gringet"
+"gringet",
+"marsanne",
+"roussane",
+"sacy",
+"beclan",
+"franc noir de haute saone",
+"gamay"
 ]
 },
 "limits": [
@@ -15567,6 +15825,11 @@
 "accessory"
 ],
 [
+"grenache gris",
+"pink",
+"main"
+],
+[
 "macabeu",
 "white",
 "main"
@@ -15580,11 +15843,6 @@
 "tourbat",
 "white",
 "main"
-],
-[
-"grenache gris",
-"pink",
-"complementary"
 ],
 [
 "marsanne",
@@ -15607,7 +15865,7 @@
 "accessory"
 ],
 [
-"carignan",
+"carignan blanc",
 "white",
 "accessory"
 ]
@@ -15618,6 +15876,7 @@
 "grenache",
 "mourvedre",
 "syrah",
+"grenache gris",
 "grenache blanc",
 "macabeu",
 "tourbat"
@@ -15751,6 +16010,11 @@
 "main"
 ],
 [
+"grenache gris",
+"pink",
+"main"
+],
+[
 "carignan",
 "red",
 "accessory"
@@ -15821,7 +16085,7 @@
 "accessory"
 ],
 [
-"carignan",
+"carignan blanc",
 "white",
 "accessory"
 ]
@@ -16171,7 +16435,18 @@
 "date": 20150903,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-9477ede0-2d47-454b-8ab6-d04804c978e1/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Coulée de Serrant - B.O n°36 du 03 septembre 2015",
-"base_yield": null,
+"base_yield": [
+[
+"dry",
+30.0,
+"hl/ha"
+],
+[
+"sweet",
+25.0,
+"hl/ha"
+]
+],
 "types": [
 "White wine"
 ],
@@ -16196,8 +16471,21 @@
 "date": 20251225,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-ee663adf-52c9-40bf-910f-b1d76ff4b80f/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Cour-Cheverny AGRT2527073A - BO n°52 du 25 décembre 2025",
-"base_yield": null,
-"types": null,
+"base_yield": [
+[
+"dry",
+60.0,
+"hl/ha"
+],
+[
+"sweet",
+50.0,
+"hl/ha"
+]
+],
+"types": [
+"White wine"
+],
 "recognised": 1993
 },
 "france/cremant-d-alsace": {
@@ -16330,8 +16618,17 @@
 "date": 20260115,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-5738187d-eb02-46ff-97db-2454db638583/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Crémant d'Alsace - BO n°03 du 15 janvier 2026",
-"base_yield": null,
-"types": null,
+"base_yield": [
+[
+"",
+80.0,
+"hl/ha"
+]
+],
+"types": [
+"Sparkling white",
+"Sparkling rosé"
+],
 "recognised": 1976
 },
 "france/cremant-de-bordeaux": {
@@ -16525,17 +16822,19 @@
 [
 "aligoté",
 "white",
-"main"
+"accessory"
 ],
 [
 "muscat à petits grains",
 "white",
-"main"
+"accessory"
 ]
 ],
 "members": {
 "main": [
-"clairette",
+"clairette"
+],
+"accessory": [
 "aligote",
 "muscat a petits grains"
 ]
@@ -16590,7 +16889,7 @@
 "types": [
 "Sparkling white"
 ],
-"recognised": null
+"recognised": 1993
 },
 "france/cremant-de-limoux": {
 "grapes": [
@@ -17167,7 +17466,7 @@
 "hl/ha"
 ],
 [
-"white",
+"white and rosé",
 60.0,
 "hl/ha"
 ]
@@ -17349,8 +17648,13 @@
 "label": "Cahier des charges de l'appellation d'origine contrôlée Entre-deux-Mers - BO n°37 du 10 septembre 2026",
 "base_yield": [
 [
-"",
+"white",
 65.0,
+"hl/ha"
+],
+[
+"red",
+55.0,
 "hl/ha"
 ]
 ],
@@ -17538,7 +17842,7 @@
 "hl/ha"
 ],
 [
-"red",
+"red and rosé",
 55.0,
 "hl/ha"
 ]
@@ -18532,6 +18836,11 @@
 "label": "Cahier des charges de l'appellation d'origine contrôlée Gaillac - BO n°37 du 11 septembre 2025",
 "base_yield": [
 [
+"white",
+60.0,
+"hl/ha"
+],
+[
 "red and rosé",
 55.0,
 "hl/ha"
@@ -18543,7 +18852,7 @@
 "Rosé wine",
 "Sparkling white"
 ],
-"recognised": null
+"recognised": 1938
 },
 "france/gaillac-premieres-cotes": {
 "grapes": [
@@ -18886,7 +19195,7 @@
 "label": "Cahier des charges de l’appellation d’origine contrôlée Gigondas, homologué par l’arrêté du 10 décembre 2024 (AGRT2428435A) - BO n°51 du 19 décembre 2024",
 "base_yield": [
 [
-"red",
+"red and rosé",
 36.0,
 "hl/ha"
 ],
@@ -19427,7 +19736,7 @@
 "accessory"
 ],
 [
-"grenache",
+"grenache blanc",
 "white",
 "main"
 ],
@@ -19547,7 +19856,7 @@
 "hl/ha"
 ],
 [
-"white",
+"white and rosé",
 52.0,
 "hl/ha"
 ]
@@ -19864,7 +20173,7 @@
 ]
 ],
 "types": [
-"White wine"
+"Sweet white wine"
 ],
 "recognised": 1937
 },
@@ -20362,30 +20671,58 @@
 "main"
 ],
 [
+"aligoté",
+"white",
+"adaptation"
+],
+[
+"chenin",
+"white",
+"adaptation"
+],
+[
 "enfariné",
 "red",
-"main"
+"adaptation"
 ],
 [
 "gringet",
 "white",
-"main"
+"adaptation"
+],
+[
+"marsanne",
+"white",
+"adaptation"
+],
+[
+"roussanne",
+"white",
+"adaptation"
+],
+[
+"sacy",
+"white",
+"adaptation"
 ]
 ],
 "members": {
 "main": [
 "chardonnay",
 "savagnin",
-"poulsard",
-"enfarine",
-"gringet"
+"poulsard"
 ],
 "accessory": [
 "poulsard"
 ],
 "adaptation": [
+"aligote",
+"chenin",
 "enfarine",
-"gringet"
+"gringet",
+"marsanne",
+"roussanne",
+"sacy"
 ]
 },
 "limits": [
@@ -20471,7 +20808,7 @@
 "main"
 ],
 [
-"grenache",
+"grenache blanc",
 "white",
 "main"
 ],
@@ -20588,7 +20925,7 @@
 {
 "grapes": [
 "bourboulenc",
-"grenache"
+"grenache blanc"
 ],
 "role": null,
 "each": false,
@@ -20794,7 +21131,7 @@
 "types": [
 "Red wine"
 ],
-"recognised": null
+"recognised": 1999
 },
 "france/la-romanee": {
 "grapes": [
@@ -21310,6 +21647,18 @@
 "lledoner pelut",
 "mourvedre",
 "syrah"
+],
+"adaptation": [
+"carignan gris",
+"clairette rose",
+"piquepoul gris",
+"rivairenc blanc",
+"rivairenc gris",
+"terret gris",
+"calabrese",
+"marselan",
+"montepulciano",
+"illade"
 ]
 },
 "limits": [
@@ -22501,8 +22850,12 @@
 "hl/ha"
 ]
 ],
-"types": null,
-"recognised": null
+"types": [
+"Red wine",
+"Rosé wine",
+"White wine"
+],
+"recognised": 1947
 },
 "france/listrac-medoc": {
 "grapes": [
@@ -22594,8 +22947,16 @@
 "date": 20250807,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-f6d9d034-1fd3-40ff-a10b-fc965726676b/telechargement",
 "label": "Cahier des charges de l' AOC Listrac-Médoc homologués par arrêté du 31 juillet 2025, publié au JORF du 7 août Texte de référence : Arrêté du 31 juillet 2025 homologuant le cahier des charges de l'appellation d'origine contrôlée Listrac-Médoc - BO n°33 du 14-08-2025",
-"base_yield": null,
-"types": null,
+"base_yield": [
+[
+"",
+54.0,
+"hl/ha"
+]
+],
+"types": [
+"Red wine"
+],
 "recognised": 1957
 },
 "france/loupiac": {
@@ -23071,6 +23432,10 @@
 "pinot gris",
 "melon",
 "sacy"
+],
+"adaptation": [
+"melon",
+"sacy"
 ]
 },
 "limits": [
@@ -23149,26 +23514,6 @@
 "main"
 ],
 [
-"franc noir de Haute Saône",
-"red",
-"main"
-],
-[
-"gamay",
-"red",
-"main"
-],
-[
-"béclan",
-"red",
-"main"
-],
-[
-"enfariné",
-"red",
-"main"
-],
-[
 "chardonnay",
 "white",
 "main"
@@ -23179,34 +23524,54 @@
 "main"
 ],
 [
+"franc noir de Haute Saône",
+"red",
+"adaptation"
+],
+[
+"gamay",
+"red",
+"adaptation"
+],
+[
+"béclan",
+"red",
+"adaptation"
+],
+[
+"enfariné",
+"red",
+"adaptation"
+],
+[
 "aligoté",
 "white",
-"main"
+"adaptation"
 ],
 [
 "chenin",
 "white",
-"main"
+"adaptation"
 ],
 [
 "marsanne",
 "white",
-"main"
+"adaptation"
 ],
 [
 "sacy",
 "white",
-"main"
+"adaptation"
 ],
 [
 "roussanne",
 "white",
-"main"
+"adaptation"
 ],
 [
 "gringet",
 "white",
-"main"
+"adaptation"
 ]
 ],
 "members": {
@@ -23214,12 +23579,14 @@
 "pinot noir",
 "poulsard",
 "trousseau",
+"chardonnay",
+"savagnin"
+],
+"adaptation": [
 "franc noir de haute saone",
 "gamay",
 "beclan",
 "enfarine",
-"chardonnay",
-"savagnin",
 "aligote",
 "chenin",
 "marsanne",
@@ -24328,6 +24695,21 @@
 "pinot gris",
 "pink",
 "accessory"
+],
+[
+"aligoté",
+"white",
+"adaptation"
+],
+[
+"melon",
+"white",
+"adaptation"
+],
+[
+"sacy",
+"white",
+"adaptation"
 ]
 ],
 "members": {
@@ -24340,6 +24722,11 @@
 "chardonnay",
 "pinot blanc",
 "pinot gris"
+],
+"adaptation": [
+"aligote",
+"melon",
+"sacy"
 ]
 },
 "limits": [
@@ -25495,8 +25882,16 @@
 "date": 20160630,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-ad523a2d-e627-46c0-a62d-67fdbeb947b6/telechargement",
 "label": "BO-agri: Cahier des charges de l'appellation d'origine contrôlée « Moulis » ou « Moulis-en-Médoc »",
-"base_yield": null,
-"types": null,
+"base_yield": [
+[
+"",
+57.0,
+"hl/ha"
+]
+],
+"types": [
+"Red wine"
+],
 "recognised": 1938
 },
 "france/muscadet": {
@@ -25649,15 +26044,15 @@
 "main"
 ],
 [
-"muscat à petits grains",
+"muscat à petits grains rouges",
 "pink",
 "main"
 ]
 ],
 "members": {
 "main": [
-"muscat a petits grains blanc",
-"muscat a petits grains gris"
+"muscat a petits grains",
+"muscat a petits grains rouges"
 ]
 },
 "limits": [],
@@ -26403,7 +26798,7 @@
 "accessory"
 ],
 [
-"muscat à petits grains",
+"muscat à petits grains rouges",
 "pink",
 "accessory"
 ],
@@ -26442,7 +26837,7 @@
 "colombaud",
 "furmint",
 "grenache blanc",
-"muscat a petits grains blanc",
+"muscat a petits grains",
 "muscat d alexandrie",
 "pascal",
 "piquepoul blanc",
@@ -26453,7 +26848,7 @@
 "carignan",
 "castet",
 "durif",
-"muscat a petits grains gris",
+"muscat a petits grains rouges",
 "muscat de hambourg",
 "syrah",
 "teoulier",
@@ -26969,8 +27364,12 @@
 "hl/ha"
 ]
 ],
-"types": null,
-"recognised": null
+"types": [
+"Vin de liqueur (white)",
+"Vin de liqueur (rosé)",
+"Vin de liqueur (red)"
+],
+"recognised": 1945
 },
 "france/pomerol": {
 "grapes": [
@@ -27461,7 +27860,7 @@
 ]
 ],
 "types": [
-"White wine"
+"Sweet white wine"
 ],
 "recognised": 1954
 },
@@ -28746,7 +29145,7 @@
 "accessory"
 ],
 [
-"carignan",
+"carignan blanc",
 "white",
 "accessory"
 ],
@@ -28813,6 +29212,14 @@
 "marsanne",
 "roussanne",
 "vermentino"
+],
+"adaptation": [
+"marselan",
+"morrastel",
+"illade",
+"terret",
+"piquepoul blanc",
+"terret blanc"
 ]
 },
 "limits": [],
@@ -28931,6 +29338,11 @@
 "accessory"
 ],
 [
+"grenache blanc",
+"white",
+"accessory"
+],
+[
 "marsanne",
 "white",
 "accessory"
@@ -28947,6 +29359,11 @@
 ],
 [
 "bourboulenc",
+"white",
+"accessory"
+],
+[
+"carignan blanc",
 "white",
 "accessory"
 ],
@@ -29053,7 +29470,11 @@
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-7814466a-acd3-408c-b277-b5f50c54e624/telechargement",
 "label": "BO-agri: Cahier des charges de l’appellation d’origine contrôlée « SAINT-CHINIAN », homologué par arrêté du 9 décembre 2024 (AGRT2428436A)",
 "base_yield": null,
-"types": null,
+"types": [
+"Red wine",
+"Rosé wine",
+"White wine"
+],
 "recognised": 1982
 },
 "france/saint-emilion": {
@@ -29382,8 +29803,11 @@
 "hl/ha"
 ]
 ],
-"types": null,
-"recognised": null
+"types": [
+"White wine",
+"Red wine"
+],
+"recognised": 1956
 },
 "france/saint-mont": {
 "grapes": [
@@ -29938,7 +30362,11 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine",
+"Red wine",
+"Rosé wine"
+],
 "recognised": null
 },
 "france/saint-romain": {
@@ -30435,54 +30863,100 @@
 [
 "cabernet franc",
 "red",
-"main"
+"complementary"
 ],
 [
 "cabernet-sauvignon",
 "red",
-"main"
-],
-[
-"pineau d'Aunis",
-"red",
-"main"
+"accessory"
 ],
 [
 "chardonnay",
 "white",
-"main"
+"accessory"
 ],
 [
 "sauvignon",
 "white",
-"main"
+"accessory"
 ],
 [
 "gamay",
 "red",
-"main"
+"accessory"
 ],
 [
 "grolleau gris",
 "pink",
-"main"
+"accessory"
 ],
 [
 "grolleau",
 "red",
-"main"
+"accessory"
+],
+[
+"pineau d'Aunis",
+"red",
+"accessory"
 ],
 [
 "pinot noir",
 "red",
-"main"
+"accessory"
+],
+[
+"artaban",
+"red",
+"adaptation"
+],
+[
+"gascon",
+"red",
+"adaptation"
+],
+[
+"gouget",
+"red",
+"adaptation"
+],
+[
+"jacquère",
+"white",
+"adaptation"
+],
+[
+"orbois",
+"white",
+"adaptation"
+],
+[
+"sacy",
+"white",
+"adaptation"
+],
+[
+"vidoc",
+"red",
+"adaptation"
+],
+[
+"voltis",
+"white",
+"adaptation"
 ]
 ],
 "members": {
 "main": [
-"chenin",
-"cabernet franc",
+"chenin"
+],
+"complementary": [
+"cabernet franc"
+],
+"accessory": [
 "cabernet sauvignon",
+"cabernet franc",
+"chenin",
 "chardonnay",
 "sauvignon",
 "gamay",
@@ -30491,17 +30965,23 @@
 "pineau d aunis",
 "pinot noir"
 ],
-"accessory": [
-"cabernet sauvignon",
-"pineau d aunis"
+"adaptation": [
+"artaban",
+"gascon",
+"gouget",
+"jacquere",
+"orbois",
+"sacy",
+"vidoc",
+"voltis"
 ]
 },
 "limits": [],
 "by_wine": [],
 "mixed_roles": true,
-"date": 20160804,
-"url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-2e4ae35e-c9bb-4ba8-96e0-5b53215289c1/telechargement",
-"label": "Cahier des charges de l'appellation d'origine contrôlée Bordeaux supérieur - B.O. n°32 du 04 août 2016",
+"date": 20260521,
+"url": "https://info.agriculture.gouv.fr/boagri/document_administratif-8acb7143-49ca-4e68-a032-d947fa576460/telechargement",
+"label": "Cahier des charges de l'appellation d'origine contrôlée Saumur - BO n°21 du 21 mai 2026",
 "base_yield": [
 [
 "white",
@@ -30526,7 +31006,7 @@
 "Sparkling white",
 "Sparkling rosé"
 ],
-"recognised": null
+"recognised": 1936
 },
 "france/saumur-champigny": {
 "grapes": [
@@ -30658,7 +31138,7 @@
 ]
 ],
 "types": [
-"White wine"
+"Sweet white wine"
 ],
 "recognised": 1982
 },
@@ -30755,7 +31235,18 @@
 "date": 20221020,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-70af0d37-a07e-4a6f-b4c4-dd8f69b4f286/telechargement",
 "label": "Cahier des charges de l'AOC Savennières Roche aux Moines homologué par arrêté du 7 octobre 2022 publié au JORF du 13 octobre 2022 - BO n°43 du 20 octobre 2022",
-"base_yield": null,
+"base_yield": [
+[
+"dry",
+30.0,
+"hl/ha"
+],
+[
+"sweet",
+25.0,
+"hl/ha"
+]
+],
 "types": [
 "White wine"
 ],
@@ -31156,19 +31647,7 @@
 },
 {
 "grapes": [
-"carignan",
-"cinsaut"
-],
-"role": null,
-"each": false,
-"min": null,
-"max": 10.0,
-"wine": "red",
-"blend": false
-},
-{
-"grapes": [
-"carignan",
+"carignan blanc",
 "chenin",
 "grenache blanc",
 "rolle",
@@ -31263,6 +31742,17 @@
 "max": null,
 "wine": null,
 "blend": false
+},
+{
+"grapes": [
+"sauvignon gris"
+],
+"role": null,
+"each": false,
+"min": null,
+"max": 20.0,
+"wine": "white",
+"blend": false
 }
 ],
 "by_wine": [],
@@ -31287,8 +31777,14 @@
 "hl/ha"
 ]
 ],
-"types": null,
-"recognised": null
+"types": [
+"White wine",
+"Red wine",
+"Rosé wine",
+"Sparkling white",
+"Sparkling rosé"
+],
+"recognised": 1939
 },
 "france/touraine-noble-joue": {
 "grapes": [
@@ -32068,7 +32564,11 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine",
+"Red wine",
+"Rosé wine"
+],
 "recognised": null
 },
 "france/vin-de-savoie": {
@@ -32641,7 +33141,10 @@
 "hl/ha"
 ]
 ],
-"types": null,
+"types": [
+"White wine",
+"Red wine"
+],
 "recognised": 2006
 },
 "france/vire-clesse": {
@@ -32685,6 +33188,10 @@
 "aligote",
 "pinot blanc",
 "pinot gris",
+"melon",
+"sacy"
+],
+"adaptation": [
 "melon",
 "sacy"
 ]
@@ -32735,8 +33242,10 @@
 "hl/ha"
 ]
 ],
-"types": null,
-"recognised": null
+"types": [
+"White wine"
+],
+"recognised": 1999
 },
 "france/volnay": {
 "grapes": [
@@ -32851,7 +33360,7 @@
 "base_yield": [
 [
 "",
-48.0,
+50.0,
 "hl/ha"
 ]
 ],

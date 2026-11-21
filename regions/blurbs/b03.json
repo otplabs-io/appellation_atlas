@@ -7,7 +7,7 @@
   ]
  },
  "france/cremant-de-die": {
-  "text": "A Rhône Valley appellation for quality sparkling wine made from Clairette, Aligoté and Muscat à Petits Grains.",
+  "text": "A Rhône Valley appellation for quality sparkling wine made mainly from Clairette, with some Aligoté and Muscat à Petits Grains.",
   "from": [
    "rules",
    "where"
@@ -41,7 +41,7 @@
   }
  },
  "france/criots-batard-montrachet": {
-  "text": "A Côte de Beaune appellation in Burgundy, within Chassagne-Montrachet, for white wine made only from Chardonnay. The village of Chassagne-Montrachet makes about two-thirds white and one-third red wine.",
+  "text": "A Côte de Beaune Grand Cru in Burgundy, within Chassagne-Montrachet, for white wine made only from Chardonnay. The village of Chassagne-Montrachet makes about two-thirds white and one-third red wine.",
   "from": [
    "rules",
    "wikipedia_of_wider",
@@ -202,7 +202,7 @@
   ]
  },
  "france/echezeaux": {
-  "text": "A Côte de Nuits appellation in Burgundy, within Vougeot, for red wine made from Pinot Noir. Chardonnay, Pinot Blanc and Pinot Gris are also allowed in small amounts.",
+  "text": "A Grand Cru in the commune of Flagey-Échezeaux, next to Vosne-Romanée in the Côte de Nuits, for red wine made from Pinot Noir. Chardonnay, Pinot Blanc and Pinot Gris are also allowed in small amounts.",
   "from": [
    "rules",
    "where"
@@ -248,7 +248,7 @@
   }
  },
  "france/fiefs-vendeens": {
-  "text": "A Loire Valley appellation in the Vendée. Its wines are made from Cabernet Franc, Gamay and Pinot Noir for red, and Chardonnay, Chenin and Sauvignon for white.",
+  "text": "A Loire Valley appellation in the Vendée. It makes red, rosé and white wine. Pinot Noir, Négrette and Cabernet Franc lead the reds, and Chardonnay, Chenin and Sauvignon the whites.",
   "from": [
    "rules",
    "planted_wider",
@@ -294,7 +294,7 @@
   ]
  },
  "france/fronsac": {
-  "text": "A Bordeaux appellation on the Right Bank of the Gironde estuary, making red wine only. It is based mostly on Merlot, with Cabernet Franc and Cabernet Sauvignon. Canon Fronsac lies entirely inside it.",
+  "text": "A Bordeaux appellation on the right bank of the Dordogne, where it meets the Isle west of Libourne, making red wine only. It is based mostly on Merlot, with Cabernet Franc and Cabernet Sauvignon. Canon Fronsac lies entirely inside it.",
   "from": [
    "rules",
    "wikipedia"
@@ -319,7 +319,7 @@
   }
  },
  "france/gaillac": {
-  "text": "A South West France appellation in the Tarn, making still and sparkling wines. Its main grapes are Mauzac, Len de l'El and Ondenc for white, and Fer, Duras and Prunelard for red, plus Syrah and Gamay.",
+  "text": "A South West France appellation in the Tarn, making still and sparkling wines. Its main grapes are Len de l'El, Mauzac and Muscadelle for white, and Duras, Fer, Prunelard and Syrah for red. It also makes sweet whites.",
   "from": [
    "rules",
    "wikipedia",
@@ -396,7 +396,7 @@
   ]
  },
  "france/grands-echezeaux": {
-  "text": "A Côte de Nuits appellation in Burgundy, within Vougeot, for red wine made from Pinot Noir. Chardonnay, Pinot Blanc and Pinot Gris are also allowed in small amounts.",
+  "text": "A Grand Cru in the commune of Flagey-Échezeaux, next to Vosne-Romanée in the Côte de Nuits, for red wine made from Pinot Noir. Chardonnay, Pinot Blanc and Pinot Gris are also allowed in small amounts.",
   "from": [
    "rules",
    "where"
@@ -441,7 +441,7 @@
   ]
  },
  "france/griotte-chambertin": {
-  "text": "A Grand Cru in Gevrey-Chambertin, in the Côte de Nuits, making red wine from Pinot Noir. It lies on the lower side of the Route des Grands Crus, and its name comes from the grill pan shape of the vine rows.",
+  "text": "A Grand Cru in Gevrey-Chambertin, in the Côte de Nuits, making red wine from Pinot Noir. It lies on the lower side of the Route des Grands Crus. Its name comes from an old Burgundian word for stony ground.",
   "from": [
    "rules",
    "wikipedia"
@@ -603,7 +603,7 @@
   ]
  },
  "france/la-grande-rue": {
-  "text": "A Côte de Nuits appellation in Burgundy, within Vosne-Romanée. It allows Pinot Noir for red and Chardonnay, Pinot Blanc and Pinot Gris for white.",
+  "text": "A Grand Cru in Vosne-Romanée, in the Côte de Nuits, for red wine from Pinot Noir. Chardonnay, Pinot Blanc and Pinot Gris are allowed only as a few vines in the vineyard.",
   "from": [
    "rules",
    "where"
@@ -698,7 +698,7 @@
   ]
  },
  "france/les-baux-de-provence": {
-  "text": "A Provence appellation of seven communes. Reds use Grenache, Syrah, Mourvèdre and Cinsaut, and whites use Grenache Blanc, Vermentino and Clairette.",
+  "text": "A Provence appellation of seven communes. Reds are led by Grenache, Mourvèdre and Syrah, and whites use Grenache Blanc, Vermentino and Clairette.",
   "from": [
    "rules",
    "where"

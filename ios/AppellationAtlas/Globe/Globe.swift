@@ -7,13 +7,14 @@ import UIKit
 /// How a label is set. Like a road map, each level of the hierarchy has its own type, so a glance tells a country
 /// from a region from the places inside it.
 struct LabelStyle: Equatable {
-    enum Tone { case ink, soft, faint }
+    enum Tone { case ink, soft, faint, water }
     enum Weight { case semibold, bold, heavy }
     let size: CGFloat
     let weight: Weight
     let kern: CGFloat
     let caps: Bool
     let tone: Tone
+    var italic = false
 
     var uiFont: UIFont { .systemFont(ofSize: size, weight: weight == .heavy ? .heavy : weight == .bold ? .bold : .semibold) }
     var font: Font { .system(size: size, weight: weight == .heavy ? .heavy : weight == .bold ? .bold : .semibold) }
@@ -26,6 +27,10 @@ struct LabelStyle: Equatable {
     static let neighbour = LabelStyle(size: 10.5, weight: .semibold, kern: 1, caps: true, tone: .soft)
     /// A place whose own places show inside it: named like a state, spaced and faint, so its parts read over it.
     static let container = LabelStyle(size: 12.5, weight: .heavy, kern: 1.6, caps: true, tone: .faint)
+    /// Rivers and lakes, in italic water blue, like a road map's.
+    static let water = LabelStyle(size: 11, weight: .semibold, kern: 0, caps: false, tone: .water, italic: true)
+    /// Towns, for bearings: quieter than places and rivers.
+    static let town = LabelStyle(size: 11, weight: .semibold, kern: 0, caps: false, tone: .soft)
     /// The places inside a place, shown as you zoom toward it: the level below, small and grey.
     static let inside = LabelStyle(size: 11, weight: .semibold, kern: 0, caps: false, tone: .soft)
     /// This view's own places, bigger as they are better known.
@@ -36,7 +41,7 @@ struct LabelStyle: Equatable {
 
 /// A label placed on the globe.
 struct MapLabel: Identifiable {
-    enum Kind { case place, country, neighbour, inside }
+    enum Kind { case place, country, neighbour, inside, water, town }
     let id: String
     let text: String
     let point: CGPoint
@@ -45,6 +50,10 @@ struct MapLabel: Identifiable {
     let style: LabelStyle
     /// Where the words sit on screen, so a tap on them picks the place they name.
     let box: CGRect
+    /// Degrees the words turn, to run along a river.
+    var angle: Double = 0
+    /// A town's own spot, drawn as a small dot beside its name.
+    var dot: CGPoint? = nil
 }
 
 /// A dot for a place too small to tap.
@@ -274,9 +283,16 @@ final class Globe {
         let zr = abs(log(b.R / a.R))
         let ms = reduceMotion || fixed != nil ? 350 : min(1900, 900 + zr * 160)
         busy = true
+        // turn first, then zoom in (or zoom out first, then turn), so the globe never races past open sea up close;
+        // between two places far apart and both close up, rise toward the whole globe in the middle of the flight instead
+        let inward = b.R >= a.R, rad = Double.pi / 180, R0 = min(fitSize.width, fitSize.height) / 2 * 0.9, lo = min(a.R, b.R)
+        let ang = acos(min(1, sin(a.lat * rad) * sin(b.lat * rad) + cos(a.lat * rad) * cos(b.lat * rad) * cos(dl * rad))) / rad
+        let dip = lo > R0 * 1.5 && ang > 15 ? log(lo / R0) * min(1, ang / 60) : 0
         await animate(ms) { [self] k in
-            let e = Globe.ease(k)
-            cam = reduceMotion ? b : lerp(a, b, e, dl)
+            let e = Globe.ease(k), early = Globe.ease(min(1, k / 0.7)), late = Globe.ease(max(0, (k - 0.3) / 0.7))
+            var c = lerp(a, b, dip > 0 ? e : inward ? early : late, dl, zoom: dip > 0 ? e : inward ? late : early)
+            c.R *= exp(-dip * sin(Double.pi * k))
+            cam = reduceMotion ? b : c
             fadeIn = min(1, max(0, (e - 0.15) / 0.6))
             worldOpacity = max(0.001, wa + (wb - wa) * e)
         }
@@ -474,7 +490,7 @@ final class Globe {
     func hit(_ p: CGPoint) -> String? {
         guard let v = view, !busy else { return nil }
         let P = projector
-        if let l = labels.first(where: { $0.box.insetBy(dx: -6, dy: -6).contains(p) }) {
+        if let l = labels.first(where: { $0.kind != .water && $0.kind != .town && $0.box.insetBy(dx: -6, dy: -6).contains(p) }) {
             if l.kind != .country { return l.id }
             if let c = atlas.country(named: String(l.id.dropFirst(2))) { return c }
         }
@@ -625,7 +641,63 @@ final class Globe {
             }
         }
 
-        // 4. the countries around, for bearings
+        // 4. river and lake names, after the places': along the stretch nearest the middle of the map, or across the lake (labels in web/atlas.js)
+        let mid = CGPoint(x: W / 2, y: topInset + shownH / 2)
+        for w in v.water {
+            var tries: [(CGPoint, Double)] = []
+            if w.lake {
+                if w.anchor.count >= 2, let s = P.screen(lon: w.anchor[0], lat: w.anchor[1]) { tries.append((s, 0)) }
+            } else {
+                for l in w.lines {
+                    let pts: [CGPoint?] = l.points.map { let q = P.project($0); return q.z < 0 ? nil : P.screen(q.x, q.y) }
+                    var last: CGPoint? = nil
+                    for i in pts.indices {
+                        guard let p = pts[i], p.x >= 30, p.x <= W - 30, p.y >= topInset + 16, p.y <= H - bottomInset - 16 else { continue }
+                        if let q = last, hypot(p.x - q.x, p.y - q.y) < 24 { continue }
+                        func near(_ k: Int) -> Bool { guard let q = pts[k] else { return false }; return hypot(q.x - p.x, q.y - p.y) < 22 }
+                        var a = i, b = i   // the river's heading over about 40 points
+                        while a > 0 && near(a - 1) { a -= 1 }
+                        while b < pts.count - 1 && near(b + 1) { b += 1 }
+                        if a == i && i > 0 && pts[i - 1] != nil { a = i - 1 }
+                        if b == i && i < pts.count - 1 && pts[i + 1] != nil { b = i + 1 }
+                        guard a != b, let pa = pts[a], let pb = pts[b] else { continue }
+                        var ang = atan2(pb.y - pa.y, pb.x - pa.x) * 180 / .pi
+                        if ang > 90 { ang -= 180 }
+                        if ang < -90 { ang += 180 }
+                        tries.append((p, ang)); last = p
+                    }
+                }
+            }
+            tries.sort { hypot($0.0.x - mid.x, $0.0.y - mid.y) < hypot($1.0.x - mid.x, $1.0.y - mid.y) }
+            let st = LabelStyle.water, wd = st.width(w.name), h = st.size * 1.2
+            for (s, ang) in tries.prefix(60) {
+                let a = ang * .pi / 180
+                let hw = (abs(cos(a)) * wd + abs(sin(a)) * h) / 2, hh = (abs(sin(a)) * wd + abs(cos(a)) * h) / 2
+                let box = CGRect(x: s.x - hw, y: s.y - hh, width: 2 * hw, height: 2 * hh)
+                guard free(box) else { continue }
+                placed.append(box)
+                outL.append(MapLabel(id: "w:" + w.name, text: w.name, point: s, anchor: UnitPoint(x: 0.5, y: 0.5), kind: .water, style: st, box: box, angle: ang))
+                break
+            }
+        }
+
+        // 4b. a few towns, for bearings: a dot and the name beside it, wherever there is room (web/atlas.js)
+        for t in v.cities {
+            guard let s = P.screen(lon: t.lon, lat: t.lat), s.x >= 8, s.x <= W - 8, s.y >= topInset + 8, s.y <= H - bottomInset - 8 else { continue }
+            let st = LabelStyle.town, w = st.width(t.name), h: CGFloat = 12
+            let dotBox = CGRect(x: s.x - 3, y: s.y - 3, width: 6, height: 6)
+            guard free(dotBox) else { continue }
+            for (X, Y, a) in [(s.x + 6, s.y + 4, CGFloat(0)), (s.x - 6, s.y + 4, 1), (s.x, s.y - 7, 0.5), (s.x, s.y + 15, 0.5)] {
+                let x0 = X - w * a
+                let box = CGRect(x: x0 - 2, y: Y - h + 2, width: w + 4, height: h + 1)
+                guard free(box) else { continue }
+                placed.append(box); placed.append(dotBox)
+                outL.append(MapLabel(id: "t:" + t.name, text: t.name, point: CGPoint(x: X, y: Y), anchor: UnitPoint(x: a, y: 0.8), kind: .town, style: st, box: box, dot: s))
+                break
+            }
+        }
+
+        // 5. the countries around, for bearings
         if v.id != "world" {
             let own = atlas.places[String(v.id.split(separator: "/").first ?? "")]?.name
             let shown = Set(outL.map(\.id))

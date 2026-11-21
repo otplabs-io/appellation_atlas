@@ -1,0 +1,32 @@
+{
+ "france/chablis-premier-cru": {
+  "text": "The premier cru mention of the Chablis appellation, for white wine from Chardonnay alone. Its climats are on the best-exposed slopes, the historic ones on the right bank of the Serein. Labels can add the climat's name.",
+  "from": [
+   "cahier"
+  ],
+  "cite": {
+   "name": "INAO, cahier des charges of the AOC Chablis (arrêté of 10 September 2025), chapters II and X",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-567c3bd8-0c51-425b-a397-05e3b4b23cf0/telechargement"
+  }
+ },
+ "france/entre-deux-mers": {
+  "text": "A Bordeaux appellation for white and red wine, on the land between the Garonne and the Dordogne. The appellations shown inside it lie in the same area but are separate, on communes of their own.",
+  "from": [
+   "cahier"
+  ],
+  "cite": {
+   "name": "INAO, cahier des charges of the AOC Entre-deux-Mers (BO of 10 September 2026), chapters I to III",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-2a9b0e7b-bdce-4f51-8b98-41ca7262b288/telechargement"
+  }
+ },
+ "italy/chianti-rufina": {
+  "text": "A subzone of the Chianti DOCG, in the hills north-east of Florence. Its wine is labelled Chianti Rùfina.",
+  "from": [
+   "wikipedia"
+  ],
+  "cite": {
+   "name": "Wikipedia, Chianti (the Chianti DOCG and its subzones)",
+   "url": "https://en.wikipedia.org/wiki/Chianti"
+  }
+ }
+}

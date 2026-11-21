@@ -11,6 +11,8 @@ struct Place: Hashable, Identifiable, Sendable {
     let country: String
     let also: [String]
     let benchmark: Bool
+    /// 1 named on the Essentials list, 2 named on Core, 4 above an Essentials place, 8 above a Core place.
+    let levels: Int
 }
 
 /// Where a place sits on the map, from geo/index.json.
@@ -42,6 +44,26 @@ struct MapView {
     let context: [[Poly]]
     let outline: [Poly]
     let items: [MapItem]
+    /// The rivers and lakes the pages name (src/water.py), clipped to this view.
+    var water: [MapWater] = []
+    /// A few towns, for bearings (src/cities.py).
+    var cities: [MapCity] = []
+}
+
+/// A town on a view: its name and where it is.
+struct MapCity {
+    let name: String
+    let lon: Double
+    let lat: Double
+}
+
+/// A river or lake on a view: lines or outlines, and where its name goes (a river's next point sets the name's angle).
+struct MapWater {
+    let name: String
+    let lake: Bool
+    let polys: [Poly]
+    let lines: [Line]
+    let anchor: [Double]
 }
 
 struct WorldCountry {
@@ -59,8 +81,12 @@ final class Atlas {
     /// True when the places carry Wikipedia scores.
     let scored: Bool
     let children: [String: [String]]
-    /// The countries that are Benchmark regions, by name, as the world map names them.
-    let benchmarkCountries: Set<String>
+    /// The countries in gold for the level being studied, by name, as the world map names them.
+    var benchmarkCountries: Set<String> { Set(places.values.filter { $0.parent == "world" && isBenchmark($0.id) }.map(\.name)) }
+    /// Which places are gold: "b" Benchmarks or "d" All (atlas.js S.lvl). Older saved "2" and "3" read as Benchmarks.
+    var level: String = { let v = UserDefaults.standard.string(forKey: "atlas.level") ?? "d"; return v == "2" || v == "3" ? "b" : v }() {
+        didSet { UserDefaults.standard.set(level, forKey: "atlas.level") }
+    }
     @ObservationIgnored private let countryIDs: [String: String]
     @ObservationIgnored private let root: URL
     @ObservationIgnored private var viewCache: [String: MapView] = [:]
@@ -79,7 +105,7 @@ final class Atlas {
         var pl: [String: Place] = [:]
         for (id, x) in (JSON.readFast(root.appending(path: "places.json")) ?? .null)["places"].pairs {
             pl[id] = Place(id: id, name: x[0].string ?? id, parent: x[1].string ?? "world", score: x[2].double ?? -1,
-                           kind: x[3].string ?? "", country: x[4].string ?? "", also: x[5].strings, benchmark: x[6].truthy)
+                           kind: x[3].string ?? "", country: x[4].string ?? "", also: x[5].strings, benchmark: x[6].truthy, levels: x[7].int ?? 0)
         }
         places = pl
         var g: [String: GeoEntry] = [:]
@@ -96,7 +122,6 @@ final class Atlas {
         }
         scored = pl.values.contains { $0.score >= 0 }
         countryIDs = Dictionary(pl.values.filter { $0.parent == "world" }.map { ($0.name, $0.id) }, uniquingKeysWith: { a, _ in a })
-        benchmarkCountries = Set(pl.values.filter { $0.parent == "world" && $0.benchmark }.map(\.name))
         searchIndex = pl.values.map { p in (p.id, Atlas.fold(([p.name] + p.also).joined(separator: " "))) }
     }
 
@@ -113,7 +138,14 @@ final class Atlas {
 
     func name(_ id: String) -> String { id == "world" ? "The world" : places[id]?.name ?? id }
     func score(_ id: String) -> Double { places[id]?.score ?? -1 }
-    func isBenchmark(_ id: String) -> Bool { places[id]?.benchmark ?? false }
+    /// In gold: for Benchmarks, the classic places to learn first and the regions above them; for All, every place inside the classic regions.
+    func isBenchmark(_ id: String) -> Bool {
+        guard let p = places[id] else { return false }
+        switch level {
+        case "b": return p.levels & 15 != 0
+        default: return p.benchmark
+        }
+    }
     func kind(_ id: String) -> String { places[id]?.kind ?? "" }
 
     func view(_ id: String) -> MapView? {
@@ -129,7 +161,14 @@ final class Atlas {
                 MapItem(id: $0["id"].string ?? "", name: $0["name"].string ?? "", polys: preparePolys($0["p"]), label: Atlas.point($0["l"]))
             }
             // biggest first, so a small place inside a big one (Brunello inside Toscana IGT) is drawn over it and tapped first
-            .sorted { $0.size > $1.size })
+            .sorted { $0.size > $1.size },
+            water: j["water"].array.map { w in
+                let lake = w["k"].string == "l"
+                return MapWater(name: w["n"].string ?? "", lake: lake,
+                                polys: lake ? preparePolys(.array(w["p"].array.map { JSON.array([$0]) })) : [],
+                                lines: lake ? [] : prepareLines(w["p"]), anchor: w["a"].doubles)
+            },
+            cities: j["cities"].array.map { MapCity(name: $0["n"].string ?? "", lon: $0["c"][0].double ?? 0, lat: $0["c"][1].double ?? 0) })
         viewCache[id] = v
         return v
     }

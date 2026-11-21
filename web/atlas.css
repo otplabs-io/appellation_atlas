@@ -4,7 +4,8 @@
 .app-sub a{color:var(--teal);text-decoration:none}
 .app-sub a:hover{text-decoration:underline}
 :root{--a0:#EEF2F5;--a1:var(--gold-tint);--a2:#F5D58A;--a3:var(--map-premier);--a4:var(--gold-deep);
-  --o1:#DDE3E8;--o2:#CBD3DA;--o3:#B6C1CA;--o4:#9EABB6}   /* places outside the WSET Diploma: cool greys, so the gold ones stand out */
+  --o1:#DDE3E8;--o2:#CBD3DA;--o3:#B6C1CA;--o4:#9EABB6;   /* places outside the benchmark regions: cool greys, so the gold ones stand out */
+  --river:#5B9BC4;--lake:#CFE3EE;--river-ink:#2F6F99}   /* water: the ocean's blue, a step deeper so a thin line reads on gold */
 .map .rg.a0{fill:var(--a0);stroke:var(--land-edge)}
 .map .rg.a1{fill:var(--a1)}
 .map .rg.a2{fill:var(--a2)}
@@ -20,6 +21,15 @@
 .map .dot-m.a1{fill:var(--a2)}.map .dot-m.a2{fill:var(--a2)}.map .dot-m.a3{fill:var(--a3)}.map .dot-m.a4{fill:var(--a4)}
 .map .dot-m.o.a1,.map .dot-m.o.a2{fill:var(--o2)}.map .dot-m.o.a3{fill:var(--o3)}.map .dot-m.o.a4{fill:var(--o4)}
 .map .dot-m.sel{fill:var(--map-target)}
+.map .river-case{fill:none;stroke:var(--paper,#fff);stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round;opacity:.9;pointer-events:none}   /* a pale edge, so a river reads across the deepest gold */
+.map .river{fill:none;stroke:var(--river);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.map .lake{fill:var(--lake);stroke:var(--river);stroke-width:.8;stroke-linejoin:round;pointer-events:none}
+.terms{margin:0;display:grid;gap:10px}
+.terms dt{margin:0;color:var(--ink)}
+.terms dd{margin:2px 0 0;color:var(--ink)}
+.map text.ctl{font-family:var(--body);font-weight:500;font-size:11px;fill:var(--soft);stroke-width:3px}   /* towns, for bearings: quieter than places and rivers */
+.map circle.cd{fill:var(--soft);stroke:var(--paper,#fff);stroke-width:1;pointer-events:none}
+.map text.wl{font-family:var(--body);font-style:italic;font-weight:600;font-size:11px;fill:var(--river-ink);stroke-width:3px}
 .key{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;margin-top:10px;color:var(--soft)}
 .key .kr{display:flex;align-items:center;gap:4px}
 .key-note{flex-basis:100%;display:flex;align-items:center;gap:8px;margin:2px 0 0;color:var(--ink);font-style:italic}
@@ -101,6 +111,10 @@
 #ptitle{margin:4px 0 2px}
 .hero .badge{color:var(--ink);background:var(--a2);padding:1px 6px;border-radius:2px;letter-spacing:.04em}
 .hero .badge.o{background:var(--o2)}
+.study{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;color:var(--soft)}
+.study span{margin-right:4px}
+.study button{font:inherit;color:var(--ink);background:none;border:1px solid var(--land-edge);border-radius:14px;padding:3px 11px;cursor:pointer}
+.study button[aria-pressed="true"]{background:var(--a2);border-color:var(--a3)}
 .mapnote{color:var(--soft);margin:2px 0 8px}
 .shape-note{color:var(--soft);margin-top:6px}
 .inside{margin:16px 0 4px}
@@ -156,7 +170,8 @@ section.row[id^="s-"]{scroll-margin-top:80px}
   :root{color-scheme:dark;--ink:#E6ECF1;--soft:#A3AFBA;--coral:#F06A4C;--coral-text:#F58B70;--gold-tint:#4A3C1A;--gold-deep:#F0BE58;--teal:#5FB8BC;
     --paper:#0F161D;--fill:#1D2833;--ground:#0A1016;--rule:#40505D;--ocean:#0E2231;--ocean-hi:#1A3A50;--land:#24313D;--land-edge:#40505D;--map-target:#F06A4C;
     --map-premier:#C2902C;--hot:#F06A4C;--dot-empty-border:#5A6A78;
-    --a0:#2A3743;--a1:#5A4820;--a2:#8A6922;--a3:#C2902C;--a4:#F0BE58;--o1:#334150;--o2:#445462;--o3:#5A6A78;--o4:#7A8996}
+    --a0:#2A3743;--a1:#5A4820;--a2:#8A6922;--a3:#C2902C;--a4:#F0BE58;--o1:#334150;--o2:#445462;--o3:#5A6A78;--o4:#7A8996;
+    --river:#4F8DB5;--lake:#1A3A50;--river-ink:#8CC3E3}
   .page,.top,.sugg,.search input,.map,.zout{background:var(--paper)}
   .search input,.zout,.sugg{border-color:var(--rule)}
   .map .grat{stroke:#2E5068}

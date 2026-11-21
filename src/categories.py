@@ -20,6 +20,7 @@ DOCA={'spain/rioja','spain/priorat'}
 # Vinos de Pago recognised since the Wikipedia list was written, or missing from it (EU register and the Spanish ministry's list)
 PAGO_MORE={'spain/tharsys','spain/abadia-retuerta','spain/chozas-carrascal','spain/el-vicario','spain/vallegarcia','spain/dehesa-penalba','spain/urbezo','spain/bolandin'}
 NOT_DOCG={'italy/soave'}
+VC={'spain/valtiendas','spain/sierra-de-salamanca','spain/valles-de-benavente'}   # Vino de Calidad con Indicación Geográfica, the tier below DO (Valtiendas: Orden AYG/309/2007; Sierra de Salamanca 2010 and Valles de Benavente keep the term in their pliegos)
 DOCG_MORE={'italy/terre-alfieri','italy/canelli','italy/ciro-classico'}   # and Cirò Classico (EU Reg. 2025/1518)   # DOCGs since 2020 (Terre Alfieri) and 2023 (Canelli), after the cached list's revision   # Wikipedia's list item is "Soave Superiore": the Soave DOC itself is not a DOCG
 GERMANY_13={'ahr','baden','franken','hessische-bergstrasse','mittelrhein','mosel','nahe','pfalz','rheingau','rheinhessen','saale-unstrut','sachsen','wurttemberg'}   # Spain's two Denominaciones de Origen Calificadas (Priorat's Catalan DOQ)
 # names in the lists that the tree spells differently
@@ -49,7 +50,7 @@ def build():
     names=[re.sub(r'\s*DAC$','',re.sub(r"\[\[|\]\]",'',m).split('|')[-1]).strip() for m in re.findall(r'(\[\[[^\]]+ DAC\]\]|[A-ZÄÖÜ][\w ]+ DAC)',d['wikitext'])]
     idx={fold(v['name']):k for k,v in T.items() if k.startswith('austria/')}
     dac=sorted({idx[fold(n)] for n in names if fold(n) in idx})
-    json.dump({'$about':__doc__.split('\n')[0],'by_country':BY,'docg':docg,'doca':sorted(DOCA),'pago':pago,'dac':dac,
+    json.dump({'$about':__doc__.split('\n')[0],'by_country':BY,'docg':docg,'doca':sorted(DOCA),'pago':pago,'dac':dac,'vc':sorted(VC),
                'anbaugebiet':sorted('germany/'+x for x in GERMANY_13),
                'sources':{'docg':f'https://en.wikipedia.org/w/index.php?title=List_of_Italian_DOCG_wines&oldid={r1}',
                           'pago':f'https://en.wikipedia.org/w/index.php?title=Vino_de_Pago&oldid={r2}',
@@ -65,6 +66,7 @@ def label(n,official,cats):
         elif k=='PDO' and n in cats['doca']: out.append('DOCa')
         elif k=='PDO' and n in cats['pago']: out.append('Vino de Pago')
         elif k=='PDO' and n in cats.get('dac',[]): out.append('DAC')
+        elif k=='PDO' and n in cats.get('vc',[]): out.append('Vino de Calidad')
         elif k=='PDO' and n in cats.get('anbaugebiet',[]): out.append('Anbaugebiet')   # one of Germany's 13 quality wine regions
         else: out.append(cats['by_country'].get(c,{}).get(k,k))
     return list(dict.fromkeys(out))

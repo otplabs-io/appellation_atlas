@@ -47,6 +47,34 @@ func preparePolys(_ json: JSON) -> [Poly] {
     }
 }
 
+/// An open line (a river): its points as unit vectors, with a center and reach to skip it when out of sight.
+struct Line: Sendable {
+    let points: [V3]
+    let center: V3
+    let radius: Double
+}
+
+/// Lines as the data stores them: [[lon, lat, lon, lat, ...], ...].
+func prepareLines(_ json: JSON) -> [Line] {
+    json.array.map { line in
+        let a = line.doubles
+        var pts: [V3] = []
+        pts.reserveCapacity(a.count / 2)
+        var sum = V3.zero
+        var k = 0
+        while k + 1 < a.count {
+            let v = unitVector(lon: a[k], lat: a[k + 1])
+            pts.append(v); sum += v
+            k += 2
+        }
+        let len = simd_length(sum)
+        let c = len > 0 ? sum / len : V3(1, 0, 0)
+        var m = 1.0
+        for p in pts { m = min(m, simd_dot(p, c)) }
+        return Line(points: pts, center: c, radius: acos(max(-1, min(1, m))))
+    }
+}
+
 /// Where the globe is turned to, and how big it is drawn (its radius in points).
 struct Camera: Equatable, Sendable {
     var lon: Double
@@ -115,6 +143,25 @@ struct Projector {
         var p = Path()
         for poly in polys { add(poly, to: &p) }
         return p
+    }
+
+    /// Open lines, broken at the horizon, with points under a point apart dropped (lineD in web/atlas.js).
+    func lines(_ ls: [Line]) -> Path {
+        var d = Path()
+        for l in ls {
+            if acos(max(-1, min(1, simd_dot(l.center, v)))) - l.radius > viewAngle { continue }
+            var on = false
+            var last = CGPoint.zero
+            for (i, p) in l.points.enumerated() {
+                let q = project(p)
+                if q.z < 0 { on = false; continue }
+                let s = screen(q.x, q.y)
+                if on && i < l.points.count - 1 && abs(s.x - last.x) + abs(s.y - last.y) < 1 { continue }
+                if on { d.addLine(to: s) } else { d.move(to: s) }
+                last = s; on = true
+            }
+        }
+        return d
     }
 
     /// Lines of longitude and latitude every 15 degrees.

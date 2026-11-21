@@ -1,0 +1,25 @@
+{
+ "hungary": {
+  "notes": [
+   "Villány makes robust, full bodied, spicy reds, and Szekszárd full bodied reds with a little spice.",
+   "Balaton and Somló, largely on volcanic soils, make full bodied whites with considerable to high acidity.",
+   "Eger's Bikavér, or Bull's Blood, is a robust red blend.",
+   "Hungarian Cabernet Franc is full bodied and tannic, with spice, blue flowers and red and black berries."
+  ],
+  "art": [
+   "Hungarian wine",
+   "Cabernet Franc"
+  ]
+ },
+ "hungary/tokaj": {
+  "notes": [
+   "Tokaj is one of the few regions suited to naturally sweet wines.",
+   "Furmint is the main grape, for both dry wines and the famous sweet Tokaji.",
+   "Aszú wines, made from the best botrytized Furmint, are known for living almost forever."
+  ],
+  "art": [
+   "Tokaj wine region",
+   "Furmint"
+  ]
+ }
+}

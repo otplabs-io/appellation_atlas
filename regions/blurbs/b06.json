@@ -102,7 +102,7 @@
   }
  },
  "italy/cerasuolo-di-vittoria": {
-  "text": "Sicily's only DOCG, a dry red from around Vittoria, meaning cherry red. It blends Nero d'Avola, locally called Calabrese, at 50 to 70 percent with Frappato, with set cropping rates and a minimum alcohol of 13 percent.",
+  "text": "Sicily's only DOCG, a dry red from around Vittoria. Cerasuolo means cherry red. It blends Nero d'Avola, locally called Calabrese, at 50 to 70 percent with Frappato, with set cropping rates and a minimum alcohol of 13 percent.",
   "from": [
    "wikipedia",
    "rules",
@@ -264,7 +264,7 @@
   }
  },
  "italy/colli-euganei-fior-d-arancio": {
-  "text": "A denomination in the Euganean Hills of Veneto, the volcanic hills south of Padua.",
+  "text": "A denomination in the Euganean Hills of Veneto, the volcanic hills south of Padua, made mostly from Moscato Giallo.",
   "from": [
    "rules",
    "where"
@@ -298,7 +298,7 @@
   ]
  },
  "italy/colli-orientali-del-friuli-picolit": {
-  "text": "A white wine DOCG in the province of Udine, in Friuli-Venezia Giulia, covering communes such as Buttrio, Cividale del Friuli and Corno di Rosazzo. Picolit is among the grapes its rules cover.",
+  "text": "A white wine DOCG in the province of Udine, in Friuli-Venezia Giulia, covering communes such as Buttrio, Cividale del Friuli and Corno di Rosazzo. Its wine is made mostly from Picolit, and from Picolit alone in the Cialla subzone.",
   "from": [
    "wikipedia",
    "rules",
@@ -530,7 +530,7 @@
   ]
  },
  "italy/dolcetto-d-alba": {
-  "text": "A Piedmont red wine made from Dolcetto alone, from 36 communes around Alba, including Barolo and Barbaresco. It is traditionally the most drunk table wine of the Langhe, and is made in the provinces of Asti and Cuneo.",
+  "text": "A Piedmont red wine made from Dolcetto alone, from communes around Alba, Barolo and Barbaresco among them. It is traditionally the most drunk table wine of the Langhe, and is made in the provinces of Asti and Cuneo.",
   "from": [
    "wikipedia",
    "rules",
@@ -543,7 +543,7 @@
   }
  },
  "italy/dolcetto-d-asti": {
-  "text": "A Piedmont red wine made from Dolcetto alone, from 24 communes of Asti province, including Canelli and Bubbio.",
+  "text": "A Piedmont red wine made from Dolcetto alone, from communes of Asti province such as Canelli and Bubbio.",
   "from": [
    "wikipedia",
    "rules",
@@ -660,7 +660,7 @@
   }
  },
  "italy/falanghina-del-sannio": {
-  "text": "A Campania denomination of 78 communes in the Sannio area.",
+  "text": "A Campania denomination of 78 communes in the Sannio area, made mostly from Falanghina.",
   "from": [
    "rules",
    "where"
@@ -784,7 +784,7 @@
   }
  },
  "italy/friuli-colli-orientali": {
-  "text": "A Friuli-Venezia Giulia DOC in Udine province, in three sections: Ramandolo, Cialla and Corno di Rosazzo. It has similar climate and soil to Collio but makes more red and dessert wine.",
+  "text": "A Friuli-Venezia Giulia DOC in Udine province, with Cialla among its subzones. Ramandolo and Rosazzo, once part of it, are now DOCGs of their own. It has similar climate and soil to Collio but makes more red and dessert wine.",
   "from": [
    "wikipedia",
    "where"
@@ -830,7 +830,7 @@
   }
  },
  "italy/friuli-venezia-giulia": {
-  "text": "A northeast Italian region known mainly for white wine, which is considered some of Italy's best in that style. Pinot Gris is the most planted grape at 29 percent, then Glera at 25. It has 11 DOCs, 3 DOCGs and 3 IGTs.",
+  "text": "A northeast Italian region known mainly for white wine, which is considered some of Italy's best in that style. Pinot Gris is the most planted grape at 29 percent, then Glera at 25.",
   "from": [
    "wikipedia",
    "planted",

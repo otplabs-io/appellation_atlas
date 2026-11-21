@@ -521,7 +521,8 @@
     "united-states/dos-rios",
     "united-states/mendocino",
     "united-states/eagle-peak-mendocino-county",
-    "united-states/comptche"
+    "united-states/comptche",
+    "united-states/mendocino-ridge"
    ]
   },
   "united-states/anderson-valley": {
@@ -1436,9 +1437,7 @@
    "eu_id": "EUGI00000001801",
    "path": "france/burgundy/cote-d-or/cote-de-nuits/vougeot",
    "children": [
-    "france/clos-de-vougeot",
-    "france/grands-echezeaux",
-    "france/echezeaux"
+    "france/clos-de-vougeot"
    ]
   },
   "france/vosne-romanee": {
@@ -1466,7 +1465,9 @@
     "france/romanee-conti",
     "france/romanee-saint-vivant",
     "france/la-grande-rue",
-    "france/richebourg"
+    "france/richebourg",
+    "france/echezeaux",
+    "france/grands-echezeaux"
    ]
   },
   "france/nuits-saint-georges": {
@@ -4062,7 +4063,8 @@
     "italy/valdadige-terradeiforti",
     "italy/lugana",
     "italy/garda",
-    "italy/orvieto"
+    "italy/orvieto",
+    "italy/lago-di-caldaro"
    ]
   },
   "italy/piedmont": {
@@ -4952,7 +4954,6 @@
    "children": [
     "italy/trento-doc",
     "italy/teroldego-rotaliano",
-    "italy/lago-di-caldaro",
     "italy/casteller"
    ]
   },
@@ -9790,7 +9791,7 @@
   "france/grands-echezeaux": {
    "id": "france/grands-echezeaux",
    "name": "Grands-Echezeaux",
-   "parent": "france/vougeot",
+   "parent": "france/vosne-romanee",
    "depth": 5,
    "source": "eu-fr",
    "kind": "PDO",
@@ -9798,7 +9799,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000003582",
-   "path": "france/burgundy/cote-d-or/cote-de-nuits/vougeot/grands-echezeaux",
+   "path": "france/burgundy/cote-d-or/cote-de-nuits/vosne-romanee/grands-echezeaux",
    "children": []
   },
   "france/rosette": {
@@ -10000,7 +10001,7 @@
   "france/echezeaux": {
    "id": "france/echezeaux",
    "name": "Echezeaux",
-   "parent": "france/vougeot",
+   "parent": "france/vosne-romanee",
    "depth": 5,
    "source": "eu-fr",
    "kind": "PDO",
@@ -10008,7 +10009,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000002926",
-   "path": "france/burgundy/cote-d-or/cote-de-nuits/vougeot/echezeaux",
+   "path": "france/burgundy/cote-d-or/cote-de-nuits/vosne-romanee/echezeaux",
    "children": []
   },
   "france/cahors": {
@@ -16507,8 +16508,8 @@
   "italy/lago-di-caldaro": {
    "id": "italy/lago-di-caldaro",
    "name": "Lago di Caldaro",
-   "parent": "italy/trentino",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "also": [
@@ -16520,7 +16521,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000004221",
-   "path": "italy/trentino/lago-di-caldaro",
+   "path": "italy/lago-di-caldaro",
    "children": []
   },
   "italy/colline-saluzzesi": {
@@ -20942,9 +20943,7 @@
    "depth": 2,
    "source": "us-ava",
    "kind": "AVA",
-   "also": [
-    "Yazoo Basin, Delta"
-   ],
+   "also": [],
    "official": [
     "AVA"
    ],
@@ -22099,9 +22098,6 @@
    "depth": 2,
    "source": "us-ava",
    "kind": "AVA",
-   "also": [
-    "refered by many newspaper articles as the  \"Oak Flats Valley Ranch\" or the \"Oak Flats Valley\""
-   ],
    "official": [
     "AVA"
    ],
@@ -22645,7 +22641,6 @@
    "cfr": "9.93",
    "path": "united-states/california/mendocino-county/mendocino",
    "children": [
-    "united-states/mendocino-ridge",
     "united-states/yorkville-highlands",
     "united-states/redwood-valley",
     "united-states/potter-valley",
@@ -23482,15 +23477,15 @@
   "united-states/mendocino-ridge": {
    "id": "united-states/mendocino-ridge",
    "name": "Mendocino Ridge",
-   "parent": "united-states/mendocino",
-   "depth": 4,
+   "parent": "united-states/mendocino-county",
+   "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.158",
-   "path": "united-states/california/mendocino-county/mendocino/mendocino-ridge",
+   "path": "united-states/california/mendocino-county/mendocino-ridge",
    "children": []
   },
   "united-states/rattlesnake-hills": {
@@ -23966,7 +23961,8 @@
    "source": "us-ava",
    "kind": "AVA",
    "also": [
-    "Kelsey Bench, Kelseyfille Bench"
+    "Kelsey Bench",
+    "Kelseyville Bench"
    ],
    "official": [
     "AVA"
@@ -24180,9 +24176,7 @@
    "depth": 4,
    "source": "us-ava",
    "kind": "AVA",
-   "also": [
-    "Cole Vineyard"
-   ],
+   "also": [],
    "official": [
     "AVA"
    ],
@@ -24264,15 +24258,9 @@
     "germany/pfalz",
     "germany/baden",
     "germany/franken",
-    "germany/monzinger-niederberg",
     "germany/saale-unstrut",
-    "germany/uhlen-blaufusser-lay",
-    "germany/uhlen-laubach",
-    "germany/uhlen-roth-lay",
-    "germany/wurzburger-stein-berg",
     "germany/hessische-bergstrae",
     "germany/rheingau",
-    "germany/burgstadter-berg",
     "germany/ahr"
    ]
   },
@@ -24410,7 +24398,11 @@
    ],
    "eu_id": "EUGI00000004648",
    "path": "germany/mosel",
-   "children": []
+   "children": [
+    "germany/uhlen-blaufusser-lay",
+    "germany/uhlen-laubach",
+    "germany/uhlen-roth-lay"
+   ]
   },
   "germany/rheinburgen-landwein": {
    "id": "germany/rheinburgen-landwein",
@@ -24466,7 +24458,9 @@
    ],
    "eu_id": "EUGI00000004650",
    "path": "germany/nahe",
-   "children": []
+   "children": [
+    "germany/monzinger-niederberg"
+   ]
   },
   "germany/pfalz": {
    "id": "germany/pfalz",
@@ -24536,7 +24530,10 @@
    ],
    "eu_id": "EUGI00000004645",
    "path": "germany/franken",
-   "children": []
+   "children": [
+    "germany/wurzburger-stein-berg",
+    "germany/burgstadter-berg"
+   ]
   },
   "germany/landwein-der-saar": {
    "id": "germany/landwein-der-saar",
@@ -24569,15 +24566,15 @@
   "germany/monzinger-niederberg": {
    "id": "germany/monzinger-niederberg",
    "name": "Monzinger Niederberg",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/nahe",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000015112",
-   "path": "germany/monzinger-niederberg",
+   "path": "germany/nahe/monzinger-niederberg",
    "children": []
   },
   "germany/mecklenburger-landwein": {
@@ -24681,8 +24678,8 @@
   "germany/uhlen-blaufusser-lay": {
    "id": "germany/uhlen-blaufusser-lay",
    "name": "Uhlen Blaufüsser Lay",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/mosel",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "also": [
@@ -24692,49 +24689,49 @@
     "PDO"
    ],
    "eu_id": "EUGI00000014254",
-   "path": "germany/uhlen-blaufusser-lay",
+   "path": "germany/mosel/uhlen-blaufusser-lay",
    "children": []
   },
   "germany/uhlen-laubach": {
    "id": "germany/uhlen-laubach",
    "name": "Uhlen Laubach",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/mosel",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000014262",
-   "path": "germany/uhlen-laubach",
+   "path": "germany/mosel/uhlen-laubach",
    "children": []
   },
   "germany/uhlen-roth-lay": {
    "id": "germany/uhlen-roth-lay",
    "name": "Uhlen Roth Lay",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/mosel",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000014263",
-   "path": "germany/uhlen-roth-lay",
+   "path": "germany/mosel/uhlen-roth-lay",
    "children": []
   },
   "germany/wurzburger-stein-berg": {
    "id": "germany/wurzburger-stein-berg",
    "name": "Würzburger Stein-Berg",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/franken",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000015827",
-   "path": "germany/wurzburger-stein-berg",
+   "path": "germany/franken/wurzburger-stein-berg",
    "children": []
   },
   "germany/taubertaler-landwein": {
@@ -24838,15 +24835,15 @@
   "germany/burgstadter-berg": {
    "id": "germany/burgstadter-berg",
    "name": "Bürgstadter Berg",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/franken",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000010582",
-   "path": "germany/burgstadter-berg",
+   "path": "germany/franken/burgstadter-berg",
    "children": []
   },
   "germany/landwein-rhein-neckar": {
@@ -26953,12 +26950,9 @@
    "path": "greece",
    "children": [
     "greece/pgis",
-    "greece/robola-kefallinias",
     "greece/aegean-islands",
-    "greece/mavrodafni-kefallinias",
     "greece/playies-melitona",
     "greece/malvasia-candia",
-    "greece/moschato-kefallinias",
     "greece/candia",
     "greece/arhanes",
     "greece/moschato-rodou",
@@ -27188,8 +27182,8 @@
   "greece/robola-kefallinias": {
    "id": "greece/robola-kefallinias",
    "name": "Robola Kefallinias",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/ionian-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27199,7 +27193,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007021",
-   "path": "greece/robola-kefallinias",
+   "path": "greece/ionian-islands/robola-kefallinias",
    "children": []
   },
   "greece/evia": {
@@ -27304,8 +27298,8 @@
   "greece/mavrodafni-kefallinias": {
    "id": "greece/mavrodafni-kefallinias",
    "name": "Mavrodafni Kefallinias",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/ionian-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27315,7 +27309,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000006876",
-   "path": "greece/mavrodafni-kefallinias",
+   "path": "greece/ionian-islands/mavrodafni-kefallinias",
    "children": []
   },
   "greece/metaxaton": {
@@ -27663,8 +27657,8 @@
   "greece/moschato-kefallinias": {
    "id": "greece/moschato-kefallinias",
    "name": "Moschato Kefallinias",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/ionian-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27674,7 +27668,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007325",
-   "path": "greece/moschato-kefallinias",
+   "path": "greece/ionian-islands/moschato-kefallinias",
    "children": []
   },
   "greece/candia": {
@@ -28453,7 +28447,10 @@
    "path": "greece/ionian-islands",
    "children": [
     "greece/zakynthos",
-    "greece/lefkada"
+    "greece/lefkada",
+    "greece/robola-kefallinias",
+    "greece/mavrodafni-kefallinias",
+    "greece/moschato-kefallinias"
    ]
   },
   "greece/zakynthos": {
@@ -34006,8 +34003,7 @@
    "children": [
     "australia/murray-darling",
     "australia/perricoota",
-    "australia/riverina",
-    "australia/swan-hill"
+    "australia/riverina"
    ]
   },
   "australia/murray-darling": {
@@ -34055,7 +34051,7 @@
   "australia/swan-hill": {
    "id": "australia/swan-hill",
    "name": "Swan Hill",
-   "parent": "australia/big-rivers",
+   "parent": "australia/north-west-victoria",
    "depth": 3,
    "source": "au",
    "kind": "region",
@@ -34065,7 +34061,7 @@
    "sources": [
     "au"
    ],
-   "path": "australia/new-south-wales/big-rivers/swan-hill",
+   "path": "australia/victoria/north-west-victoria/swan-hill",
    "children": []
   },
   "australia/central-ranges": {
@@ -34943,7 +34939,9 @@
     "zone"
    ],
    "path": "australia/victoria/north-west-victoria",
-   "children": []
+   "children": [
+    "australia/swan-hill"
+   ]
   },
   "australia/port-phillip": {
    "id": "australia/port-phillip",

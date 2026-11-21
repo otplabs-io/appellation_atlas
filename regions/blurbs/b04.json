@@ -65,7 +65,7 @@
   }
  },
  "france/moulis-en-medoc": {
-  "text": "A Médoc appellation in Bordeaux for red wine, made from Cabernet Sauvignon, Merlot, Cabernet Franc and other Bordeaux grapes. It covers Moulis-en-Médoc and four neighboring communes.",
+  "text": "A Médoc appellation in Bordeaux for red wine, made from Cabernet Sauvignon, Merlot, Cabernet Franc and other Bordeaux grapes. It covers Moulis-en-Médoc and parts of three neighboring communes: Castelnau-de-Médoc, Lamarque and Listrac-Médoc.",
   "from": [
    "rules",
    "where"
@@ -106,7 +106,7 @@
   ]
  },
  "france/muscat-de-beaumes-de-venise": {
-  "text": "A Rhône Valley appellation for wine made from Muscat à Petits Grains, white or gray. It comes from the communes of Beaumes-de-Venise and Aubignan.",
+  "text": "A Rhône Valley appellation for vin doux naturel made from Muscat à Petits Grains, white and red-skinned. It comes from the communes of Beaumes-de-Venise and Aubignan.",
   "from": [
    "rules",
    "where"
@@ -120,7 +120,7 @@
   ]
  },
  "france/muscat-de-lunel": {
-  "text": "A Languedoc-Roussillon appellation in Hérault for liqueur wine made from Muscat à Petits Grains. It covers four communes, including Lunel and Lunel-Viel.",
+  "text": "A Languedoc-Roussillon appellation in Hérault for vin doux naturel made from Muscat à Petits Grains. It covers four communes, including Lunel and Lunel-Viel.",
   "from": [
    "rules",
    "where"
@@ -509,7 +509,7 @@
   }
  },
  "france/quarts-de-chaume": {
-  "text": "A Loire Valley appellation for wine made only from Chenin, grown in the single commune of Rochefort-sur-Loire. Most Loire Valley production is white, from Chenin Blanc, Sauvignon Blanc and Melon.",
+  "text": "A Loire Valley appellation for sweet white wine made only from Chenin, grown in the single commune of Rochefort-sur-Loire. Its label may add grand cru. Most Loire Valley production is white, from Chenin Blanc, Sauvignon Blanc and Melon.",
   "from": [
    "rules",
    "wikipedia_of_wider",
@@ -855,7 +855,7 @@
   }
  },
  "france/saint-pourcain": {
-  "text": "A small appellation in Auvergne around Saint-Pourçain-sur-Sioule, upstream of the Loire. It makes white, rosé and red wine from Sacy, Chardonnay, Gamay and Pinot Noir, on about 1,500 acres across 19 communes.",
+  "text": "A small appellation in Auvergne around Saint-Pourçain-sur-Sioule, in the Allier valley. It makes white, rosé and red wine from Sacy (Tressallier), Chardonnay, Gamay and Pinot Noir, its rosé from Gamay alone, on about 1,500 acres across 19 communes.",
   "from": [
    "wikipedia",
    "rules",
@@ -974,7 +974,7 @@
   ]
  },
  "france/saussignac": {
-  "text": "A Bergerac appellation in South West France making only sweet white wine, similar to Monbazillac but a little drier. It is generally Sémillon affected by noble rot, and adding sugar is forbidden.",
+  "text": "A Bergerac appellation in South West France making only sweet white wine. It is generally Sémillon affected by noble rot, and adding sugar is forbidden.",
   "from": [
    "rules",
    "wikipedia",

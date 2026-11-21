@@ -172,9 +172,27 @@ def texts():
 HEAD = re.compile(r"cahier des charges (?:de l\W*appellation d\W*origine contr[oô]l[ée]e|des (?:\w+ )?appellations d\W*origine contr[oô]l[ée]es)\s*((?:[^«]{0,40}«\s*[^»\n]+?\s*»[\s,]*(?:ou|et)?\s*)+)", re.I)
 
 
+CHAPTERS = [('I', r"Nom de l.appellation"), ('II', r"D[ée]nominations? g[ée]ographiques? et mentions? compl[ée]mentaires?"),
+            ('III', r"Couleurs? et types? de produits?"), ('IV', r"Aires? et zones?.*"), ('V', r"Enc[ée]pagement"),
+            ('VI', r"Conduite du vignoble"), ('VII', r"R[ée]colte, transport.*"), ('VIII', r"Rendements?.*"),
+            ('IX', r"Transformation, [ée]laboration.*"), ('X', r"Lien avec la zone.*"), ('XI', r"Mesures transitoires"),
+            ('XII', r"R[èe]gles de pr[ée]sentation.*")]
+def numbered(text):
+    """The 2026 layouts drop the chapter numerals ("Encépagement" alone on its line, Saumur 13 May 2026); put them back,
+    in order, so the chapter readers find them. Texts that already number their chapters are left as they are."""
+    if re.search(ROMAN + r'Enc[ée]pagement', text, re.I): return text
+    pos, out = 0, []
+    for num, rx in CHAPTERS:
+        m = re.compile(r'^[ \t]*(' + rx + r')[ \t]*$', re.I | re.M).search(text, pos)
+        if not m: continue
+        out.append(text[pos:m.start(1)] + num + '. - '); pos = m.start(1)
+    return ''.join(out) + text[pos:]
+
+
 def section(text, names):
     """The part of a bulletin that is this appellation's own cahier. Bulletins often carry several, and one cahier can
     cover several appellations (the Alsace grand crus, the Muscadets)."""
+    text = numbered(text)
     heads = [(m.start(), [fold(x) for x in re.findall(r'«\s*([^»]+?)\s*»', m.group(1))]) for m in HEAD.finditer(text)]
     want = {fold(n) for n in names}
     def hit(ns):
@@ -185,7 +203,9 @@ def section(text, names):
             end = next((a for a, n in heads[i + 1:] if not set(n) & set(ns)), len(text))
             sec = text[at:end]
             # a title in a page footer comes after the first page it heads
-            return text[:end] if i == 0 and not chapter(sec) else sec
+            # (Béarn 2025 prints its chapters I to III on the page before the first heading)
+            early = i == 0 and any(fold(x) in want for x in re.findall(r'«\s*([^»]+?)\s*»', text[:at]))
+            return text[:end] if i == 0 and (not chapter(sec) or early) else sec
     return text if not heads else None
 
 
@@ -199,8 +219,13 @@ def grape_list(s):
         part = re.sub(r"^[^a-zà-ÿœæ]+", '', part.strip(), flags=re.I)
         part = re.sub(r'^.*\bc[ée]pages?\s+(?=\S+(?:\s+\S+){0,4}\s+(?:N|B|G|Rs|Gr|Rg)\b)', '', part, flags=re.I)   # 'a l exploitation La proportion des cepages gamay N'
         part = re.sub(r'^.*\bvins?\s+(?:tranquilles\s+|mousseux\s+)?(?:blancs?|rouges?|ros[ée]s?)(?:\s+et\s+ros[ée]s?)?\s+(?=\S+(?:\s+\S+){0,4}\s+(?:N|B|G|Rs|Gr|Rg)\b)', '', part, flags=re.I)   # a table cell: '... lieu-dit Vins blancs auxerrois B'
-        m = re.match(r"(?:(?:sont|issus|le|la|les|du|de|des|d'un|l'ensemble|ensemble|chacun|seuls?|c[ée]pages?|vari[ée]t[ée]s?|suivantes|vins?|tranquilles|mousseux|accessoires?|compl[ée]mentaires?|principa(?:l|ux)|blancs?|rouges?|ros[ée]s?)\s+)*([a-zà-ÿœæ'][a-zà-ÿœæ' -]*?)\s+(N|B|G|Rs|Gr|Rg)\b", part, re.I)
-        if m and len(m.group(1).split()) <= 6: out.append([m.group(1).strip(), SKIN[m.group(2).lower()]])
+        m = re.match(r"(?:(?:sont|issus|le|la|les|du|de|des|d'un|l'ensemble|ensemble|chacun|seuls?|c[ée]pages?|vari[ée]t[ée]s?|suivantes|vins?|tranquilles|mousseux|accessoires?|secondaires?|compl[ée]mentaires?|principa(?:l|ux)|blancs?|rouges?|ros[ée]s?)\s+)*([a-zà-ÿœæ'][a-zà-ÿœæ' -]*?)\s+(N|B|G|Rs|Gr|Rg)\b", part, re.I)
+        if m and len(m.group(1).split()) <= 6:
+            g, c = m.group(1).strip(), m.group(2).lower()
+            if fold(g) == 'muscat a petits grains' and c in ('rg', 'rs'): g += ' rouges' if c == 'rg' else ' roses'   # Rg is rouge and Rs rose, not gris (Beaumes-de-Venise, Alsace)
+            elif fold(g) == 'clairette' and c == 'rs': g += ' rose'   # Clairette de Die's clairette Rs
+            elif fold(g) in ('carignan', 'grenache', 'muscat', 'terret') and c == 'b': g += ' blanc'   # carignan B is Carignan Blanc (Côtes du Roussillon white), not the red grape's name
+            out.append([g, SKIN[c]])
         elif re.fullmatch(r'(?:pinot gris|pinot beurot)\s*\.?', part.strip(), re.I): out.append(['pinot gris', 'pink'])   # listed without its colour code (Bourgogne mousseux)
     return out
 
@@ -209,11 +234,14 @@ ROMAN = r'\b[IVX]{1,4}\s*[.\-–—―−]*\s*[-–—―−]?\s*'   # − is U+
 def chapter(sec):
     """The grapes chapter, as one line of text."""
     m = re.search(ROMAN + r'Enc[ée]pagement', sec, re.I)
+    plain = not m   # the 2026 layouts head the chapter with the bare word (Saumur, 13 May 2026)
+    if plain: m = re.search(r'^\s*Enc[ée]pagement\s*$', sec, re.I | re.M)
     if not m: return None
-    end = re.search(ROMAN + r'Conduite', sec[m.end():], re.I)
+    end = re.search(r'^\s*Conduite du vignoble\s*$', sec[m.end():], re.I | re.M) if plain else re.search(ROMAN + r'Conduite', sec[m.end():], re.I)
     body = sec[m.end(): m.end() + (end.start() if end else 6000)]
     body = re.sub(r'(\n\s*\d+\s*)?\nPublié au BO[^\n]*\n(\s*\d+\s*\n)?', '\n', body)   # page footers, numbered before or after
     body = re.sub(r'(\w)-\n(\w)', r'\1\2', body)   # words split at the end of a line
+    body = re.sub(r'\b(grenache gris|sauvignon gris|pinot gris)\b(?!\s*(?:G|Gr|Rs|Rg)\b)', r'\1 G', body, flags=re.I)   # a grey grape written without its colour code (Côtes du Roussillon rosé: "syrah N, grenache gris")
     return re.sub(r'\s+', ' ', body.replace('\u2019', "'").replace('\u2212', '-'))
 
 
@@ -264,7 +292,7 @@ RANK = {'main': 0, 'complementary': 1, 'accessory': 2, 'adaptation': 3}
 def role_of(label):
     f = fold(label)
     if 'adaptation' in f or 'interet' in f: return 'adaptation'
-    if 'accessoire' in f: return 'accessory'
+    if 'accessoire' in f or 'secondaire' in f: return 'accessory'   # Crémant de Die's "cépages secondaires"
     if 'complementaire' in f: return 'complementary'
     return 'main'
 
@@ -281,12 +309,12 @@ def lists(text):
         if role == 'main' and not re.search(r'principa', label, re.I) and start >= 0 and text[start] == ':' and prev[0] == start: role = prev[1]
         prev = (m.start(), role)
         rest = re.sub(r'^[\s\-–]+', ' ', text[m.end():])
-        stop = re.search(r';\s*(?=[-–]|[a-h]\)|$)|\.\s|\.$|\s[-–]\s|\s[a-h]\)\s*[-–]?|sous r[ée]serve|(?i:;?\s*(?=\bc[ée]pages?\s+(?:principa|compl[ée]mentaire|accessoire)|\bvari[ée]t[ée]s d.int[ée]r[êe]t))', rest)   # the next role's heading ends this list
+        stop = re.search(r';\s*(?=[-–]|[a-h]\)|$)|\.\s|\.$|\s[-–]\s|\s[a-h]\)\s*[-–]?|sous r[ée]serve|(?i:;?\s*(?=\bc[ée]pages?\s+(?:principa|compl[ée]mentaire|accessoire|secondaire)|\bvari[ée]t[ée]s d.int[ée]r[êe]t))', rest)   # the next role's heading ends this list
         body = rest[:stop.start()] if stop else rest
         out += [(g, sk, role) for g, sk in grape_list(body)]
     for m in re.finditer(r"issus (?:exclusivement |uniquement )?(?:du|des) (?:seuls? )?c[ée]pages? (?!suivants)([^.;:]+)", text, re.I):
-        out += [(g, sk, 'main') for g, sk in grape_list(m.group(1))]
-    for m in re.finditer(r"et des vari[ée]t[ée]s (.+?) sous r[ée]serve", text, re.I):   # "- et des varietes alvarinho B ... sous reserve ... d'une convention"
+        out += [(g, sk, 'main') for g, sk in grape_list(re.split(r'\s+et\s+(?:des|les)\s+vari[ée]t[ée]s\b', m.group(1))[0])]   # "savagnin B et des variétés enfariné N, gringet B, sous réserve ..." (Côtes du Jura's vin jaune)
+    for m in re.finditer(r"et (?:des|les) vari[ée]t[ée]s (.+?),? sous r[ée]serve", text, re.I):   # "- et des varietes alvarinho B ... sous reserve ... d'une convention"
         out += [(g, sk, 'adaptation') for g, sk in grape_list(m.group(1))]
     for m in re.finditer(r"peuvent comporter (?:les |le )?c[ée]pages? accessoires?\s*:?\s*([^.;]+?)(?:dans|\.|;|$)", text, re.I):
         out += [(g, sk, 'accessory') for g, sk in grape_list(m.group(1))]
@@ -329,6 +357,7 @@ def _limits(text):
         f = unicodedata.normalize('NFKD', sen).encode('ascii', 'ignore').decode()
         who = re.search(r'proportion(.*?)(?:\best\b|\bne\s+(?:peut|doit)|\bdoit\b|$)', f, re.I)
         who = who.group(1) if who else ''
+        if re.search(r'\bautres? que\b|\bsauf\b|\bhors\b', who, re.I): continue   # 'accessory grapes other than carignan and cinsaut': the names are the exception, not the subject (Terrasses du Larzac)
         named = [fold(g) for g, _ in grape_list(who)]
         if not named and re.search(r'le plus important', who, re.I): named, grp = [], 'single'   # 'the largest grape'
         else: grp = None
@@ -409,14 +438,14 @@ def parse(ch, names, sec=''):
         if r: by.append([label, list(r.values())])
     if len(by) < 2 or all(sorted(map(tuple, b[1])) == sorted(map(tuple, by[0][1])) for b in by): by = []
     seen_roles = {}
-    for g, sk, rl in lists(' '.join(own or general)): seen_roles.setdefault(fold(g), set()).add('main' if rl == 'main' else 'other')
+    for g, sk, rl in lists(' '.join(own or general)): seen_roles.setdefault((fold(g), sk), set()).add('main' if rl == 'main' else 'other')
     mixed = not by and any(len(v) > 1 for v in seen_roles.values())   # main in one wine, minor in another (Saumur's Cabernet Sauvignon), rows not separated
     return role, lim, members, (by or ('mixed' if mixed else []))
 
 
 
 # ---------- base yields, wine types and recognition year, from the same cahier
-_W = lambda s: re.sub(r'\s+', ' ', s)
+_W = lambda s: re.sub(r'\s+', ' ', re.sub(r'hecto\s*-\s*\n\s*litres', 'hectolitres', re.sub(r'(?:\n\s*\d{1,3}\s*)?\nPubli[ée] au BO[^\n]{0,80}(?:\n\s*\d{1,3}(?=\n))?(?=\n)', '', s)))   # a running page header can fall inside a table (Gaillac's yields)   # "50 hecto -\nlitres" split across lines (Béarn)
 COL = r'(?:blancs?|rouges?|ros[ée]s?|gris|clairets?)'
 COLEN = {'blanc': 'white', 'rouge': 'red', 'rose': 'rosé', 'gris': 'gris', 'clairet': 'clairet'}
 def _part(s, a, b, n=1500):
@@ -429,23 +458,30 @@ def _colours(t):
 def base_yield(sec):
     """Chapter VIII's rendement (the yield the rules set), not the rendement butoir (the ceiling some years allow):
     [[colour or '', value, unit], ...]. Per colour when the cahier gives a table."""
-    y = _part(sec, r'VIII\.?\s*[-–―]?\s*Rendements?.{0,80}?1°\s*[-–―]?\s*Rendements?\b', r'2°\s*[-–―]?\s*Rendement butoir|2°|\bIX\.?\s*[-–―]', 900)
+    y = _part(sec, r'VIII?\.?\s*[-–―−]?\s*Rendements?.{0,80}?1\s?°\s*[-–―−]?\s*Rendements?\b', r'2°\s*[-–―−]?\s*Rendement butoir|2°|\bIX\.?\s*[-–―−]', 900)
     if not y: return None
     unit = 'kg/ha' if re.search(r'kilogramme', y, re.I) else 'hl/ha'
     num = lambda v: float(v.replace(' ', '').replace('\u00a0', '').replace(',', '.'))
     both = bool(re.search(r'rendement butoir\s*\(', y, re.I))   # one table with the rendement and the butoir side by side: "Vins blancs 68 75"
     out, seen = [], set()
-    for v, kind in re.findall(r'(\d+(?:[.,]\d+)?)\s*hectolitres par hectare pour les vins ((?:tranquilles|mousseux|' + COL[3:-1] + r')(?:\s+(?:secs|avec sucres r[ée]siduels|moelleux|liquoreux|doux))?)', y, re.I):
-        k = fold(kind); lab = 'still' if k.startswith('tranquille') else 'sparkling' if k.startswith('mousseux') else (_colours(kind) or [''])[0]
-        lab = ('dry ' if ' sec' in k else 'sweet ' if re.search(r'sucres|moelleux|liquoreux|doux', k) else '') + lab   # Graves: dry white 58, sweet white 40
-        if lab not in seen: seen.add(lab); out.append([lab, num(v), unit])
+    for v, kind in re.findall(r'(\d+(?:[.,]\d+)?)\s*hectolitres par hectare pour les vins ((?:tranquilles|mousseux|' + COL[3:-1] + r')(?:\s*(?:,|et|ou)\s*' + COL + r')*(?:\s+(?:secs|avec sucres r[ée]siduels|moelleux|liquoreux|doux))?)', y, re.I):
+        k = fold(kind); pre = 'dry ' if ' sec' in k else 'sweet ' if re.search(r'sucres|moelleux|liquoreux|doux', k) else ''   # Graves: dry white 58, sweet white 40
+        cs = ['still'] if k.startswith('tranquille') else ['sparkling'] if k.startswith('mousseux') else (_colours(kind) or [''])   # "pour les vins blancs et rosés" is both (Entraygues - Le Fel)
+        cs = [pre + c for c in cs if pre + c not in seen]
+        if cs: seen.update(cs); out.append([' and '.join(cs), num(v), unit])
     for cols, v in re.findall(r'pour les vins (' + COL + r'(?:\s*(?:,|et|ou)\s*' + COL + r')*)\b[^.]{0,140}?à\s*(\d+(?:[.,]\d+)?)\s*hectolitres', y, re.I):
         cs = [c for c in _colours(cols) if c not in seen]
         if cs: seen.update(cs); out.append([' and '.join(cs), num(v), unit])
-    rows = r'Vins? (?:tranquilles )?(' + COL + r'(?:\s*(?:,|et|ou)\s*' + COL + r')*)(?:\s*\((secs?|autres?|moelleux|doux|liquoreux)\))?\s*\)?\s*:?\s*(\d+(?:[.,]\d+)?)' + (r'\s+\d+' if both else r'\b')
+    rows = r'Vins? (?:tranquilles )?(' + COL + r'(?:\s*(?:,|et|ou)\s*' + COL + r')*)(?:\s+tranquilles)?(?:\s+et\s+(?:vins\s+)?mousseux)?(?:\s*\((secs?|autres?|moelleux|doux|liquoreux)\))?\s*\)?\s*[:.]?\s*(\d+(?:[.,]\d+)?)' + (r'\s+\d+' if both else r'\b')
     for cols, q, v in re.findall(rows, y, re.I):   # the first row for each colour is the appellation's own; later rows are its mentions (supérieur, Villages)
         pre = {'sec': 'dry ', 'secs': 'dry ', 'autre': 'other ', 'autres': 'other '}.get(fold(q), 'sweet ' if q else '')   # Graves de Vayres: "Vins blancs (secs) 55", "(autres) 50"
         cs = [pre + c for c in _colours(cols) if pre + c not in seen]
+        if cs: seen.update(cs); out.append([' and '.join(cs), num(v), unit])
+    for st, v in re.findall(r'\bVins? (secs?|moelleux(?: (?:ou|et) doux)?|doux|liquoreux)\s+(\d+(?:[.,]\d+)?)\b', y, re.I):   # rows by style: "Vin secs 30", "Vins moelleux ou doux 25" (Coulée de Serrant)
+        lab = 'dry' if fold(st).startswith('sec') else 'sweet'
+        if lab not in seen: seen.add(lab); out.append([lab, num(v), unit])
+    for cols, v in re.findall(r'Vins? (' + COL + r')\s*:\s*(?:(?!Vins? ).){0,160}?fix[ée]s?\s+à\s*(\d+(?:[.,]\d+)?)\s*hectolitres', y, re.I):   # "Vin blanc : Le rendement ... est fixé à 65 hectolitres" (Entre-deux-Mers 2026)
+        cs = [c for c in _colours(cols) if c not in seen]
         if cs: seen.update(cs); out.append([' and '.join(cs), num(v), unit])
     if both:
         if out: return out
@@ -458,12 +494,21 @@ KIND = [(r'mousseux', 'Sparkling {}'), (r'p[ée]tillants?', 'Lightly sparkling {
 STILL = {'white': 'White wine', 'red': 'Red wine', 'rosé': 'Rosé wine', 'gris': 'Gris (pale rosé)', 'clairet': 'Clairet'}
 def sweet(sec):
     """Whether every wine must keep residual sugar: Barsac's 45 g/l of fermentable sugars makes it a sweet wine, though chapter I says white."""
-    m = re.search(r'(?:Les vins (?:blancs )?(?:pr[ée]sentent|ont)|doivent pr[ée]senter|Tout lot de vin[^.]{0,60}?pr[ée]sente)\b[^.]{0,100}?sucres fermentescibles[^.]{0,120}?(?:sup[ée]rieure? ou [ée]gale? [àa]|au moins|minimale? de)\s*(\d+)\s*g', sec, re.I)   # a requirement, not "les vins présentant ..." (Condrieu)
+    m = re.search(r'(?:Les vins (?:blancs )?(?:pr[ée]sentent|ont)|doivent pr[ée]senter|Tout lot de vin[^.]{0,60}?pr[ée]sente)\b[^.]{0,100}?sucres fermentescibles[^.]{0,120}?(?:sup[ée]rieure? ou [ée]gale? [àa]|sup[ée]rieure? [àa]|au moins|minimale? de)\s*(\d+)\s*g', sec, re.I)   # a requirement, not "les vins présentant ..." (Condrieu)
     return bool(m) and int(m.group(1)) >= 45 and not re.search(r'vins? (?:blancs? )?secs?\b', sec[:6000], re.I)
-def wine_types(sec):
+def wine_types(sec, names=()):
     """Chapter I's colours and types: "réservée aux vins tranquilles rouges et rosés" is ['Red wine', 'Rosé wine']."""
-    t = _part(sec, r'(?:III|II)\.?\s*[-–―]?\s*Couleurs? et types? de produits?', r'\bIV\.?\s*[-–―]|\bIII\.?\s*[-–―]', 600)
+    t = _part(sec, r'(?:III|II)\.?\s*[-–―−]?\s*(?:Couleurs? et )?types? de produits?', r'\bIV\.?\s*[-–―−]|\bIII\.?\s*[-–―−]', 600)
     if not t: return None
+    if names:   # one chapter for several (Alsace's grands crus): keep the sentences that apply to this one
+        want = {fold(n) for n in names}; keep = []
+        for snt in re.split(r'(?<=\.)\s+', t):
+            ex = re.split(r'[àa] l.exception d', snt, maxsplit=1)
+            named = {fold(x) for x in re.findall(r'«\s*([^»]+?)\s*»', ex[-1] if len(ex) > 1 else snt)}
+            if len(ex) > 1: ok = not (named & want)
+            else: ok = not named or bool(named & want) or len(named) == 1
+            if ok: keep.append(snt)
+        t = ' '.join(keep)
     out = []
     for pre, cols, post in re.findall(r'vins?\s+((?:tranquilles|mousseux|p[ée]tillants?|doux naturels|de liqueur)\s+)?(' + COL + r'(?:\s*(?:,|et|ou)\s*' + COL + r')*)(\s+(?:tranquilles|mousseux|p[ée]tillants?|doux naturels))?', t, re.I):
         k = (pre + ' ' + post).lower()
@@ -478,7 +523,7 @@ def recognised(sec, names=(), own_only=False):
         m = re.search(r'«\s*' + re.escape(n) + r'\s*»\s*(?:a été|est)\s+reconnue\s+en\s+(\d{4})', sec, re.I)
         if m: return int(m.group(1))
     if own_only: return None
-    m = re.search(r'reconnue?s?\s+(?:en\s+appellation\s+d.origine\s+contr[ôo]l[ée]e\s+)?par\s+(?:le\s+)?d[ée]cret\s+du\s+(?:\d{1,2}|1er)\s+\w+\s+(\d{4})', sec[:4000], re.I)
+    m = re.search(r'reconnue?s?\s+(?:en\s+appellation\s+d.origine\s+contr[ôo]l[ée]e\s+(?:«[^»]{1,60}»\s+)?)?par\s+(?:le\s+|les\s+)?d[ée]crets?\s+(?:du\s+)?(?:\d{1,2}|1er)\s+\w+\s+(\d{4})', sec[:4000], re.I)
     return int(m.group(1)) if m else None
 
 def grapes():
@@ -498,6 +543,7 @@ def grapes():
     for pid, r in sorted(M.items()):
         if pid.startswith('$'): continue
         names = r['names'] + [a for a in re.split(r'\s+ou\s+', r.get('title', '')) if a]
+        full = list(names)   # the names as written: "Bourgogne mousseux" must not match the Bourgogne cahier's heading
         names += [re.sub(r'(\s+(' + '|'.join(TYPE) + r'))+$', '', n, flags=re.I) for n in names]
         found = []
         for d, url, label in r.get('cands', []):
@@ -514,7 +560,7 @@ def grapes():
                 text = unicodedata.normalize('NFC', open(tp, encoding='utf-8').read())
                 sec = section(text, names)
                 if sec is not None and len(sec) < len(text) and chapter(sec): found.append((max(d, bodate(sec[:400])), url, label, sec))
-        want = {fold(n) for n in names}; best = max((x[0] for x in found), default=0)
+        want = {fold(n) for n in full}; best = max((x[0] for x in found), default=0)
         for fn, (d, url, label) in FILES.items():   # a newer cahier whose heading names this one, though its own page does not link it (Rosé d'Anjou in the 2026 Anjou cahier)
             if d <= best or not (HEADS(fn) & want) or any(url == x[1] for x in found): continue
             tp = os.path.join(OUT, 'pdf', fn[:-4] + '.txt'); text = unicodedata.normalize('NFC', open(tp, encoding='utf-8').read())
@@ -533,7 +579,7 @@ def grapes():
         shared = len(hn) > 1 and any(not re.fullmatch(r'ou', x.strip(' ,'), re.I) for x in seps)   # one cahier for several (Anjou, Cabernet d'Anjou, Rosé d'Anjou): take only what names this one
         mixed = by_wine == 'mixed'; by_wine = [] if mixed else by_wine
         out[pid] = dict(grapes=list(role.values()), members=members, limits=limits, by_wine=by_wine, mixed_roles=mixed, date=r.get('date'), url=r['url'], label=r.get('label'),
-                        base_yield=None if shared else base_yield(ws), types=None if shared else [('Sweet white wine' if t == 'White wine' and sweet(ws) else t) for t in (wine_types(ws) or [])] or None,
+                        base_yield=None if shared else base_yield(ws), types=None if shared else [('Sweet white wine' if t == 'White wine' and sweet(ws) else t) for t in (wine_types(ws, names) or [])] or None,
                         recognised=recognised(ws, names) if not shared else recognised(ws, names, own_only=True))
     meta = dict(source="INAO, cahiers des charges des appellations d'origine contrôlées, as published in the Bulletin officiel du ministère de l'Agriculture (Licence Ouverte)",
                 url='https://www.inao.gouv.fr/rechercher-un-produit')
