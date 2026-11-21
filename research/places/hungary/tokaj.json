@@ -110,14 +110,14 @@
   },
   {
    "topic": "history",
-   "claim": "Tokaj was made a closed wine region (zárt borvidék) in 1737 and is often called the first in the world.",
+   "claim": "A 1737 decree closed and delimited Tokaj. It is one of the first such laws.",
    "source": [
     "wiki-hu",
     "wiki-en"
    ],
    "strength": "Medium",
    "quote": "A royal decree in 1737 or 1757",
-   "note": "1737 is the closed-region decree. The vineyard rankings are dated differently by different sources. See conflicts."
+   "note": "1737 is the closed-region decree. The vineyard rankings are dated differently by different sources. See conflicts. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "history",
@@ -143,7 +143,7 @@
   },
   {
    "topic": "soil",
-   "claim": "The bedrock is volcanic: rhyolite and andesite and their tuffs. Topsoils are clay or loess over this. Weathered volcanic material forms a dark loam-type soil called nyirok.",
+   "claim": "The bedrock is volcanic: rhyolite and andesite and their tuffs. Topsoils are clay or loess over this. Weathered volcanic rock forms nyirok, a heavy, dark clay.",
    "source": [
     "wiki-hu",
     "worldoffinewine",
@@ -152,7 +152,7 @@
    ],
    "strength": "Medium",
    "quote": "clay or loess over volcanic subsoil",
-   "note": "Bedrock and loess are in several sources. The nyirok definition is from Hungarian Wikipedia (black 'nyiroktalaj') and one merchant page."
+   "note": "Bedrock and loess are in several sources. The nyirok definition is from Hungarian Wikipedia (black 'nyiroktalaj') and one merchant page. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "soil",
@@ -211,22 +211,22 @@
   },
   {
    "topic": "winemaking",
-   "claim": "Szamorodni is made from whole bunches that include a good share of botrytised grapes, so it is fuller and higher in alcohol than ordinary wine. Sweet (édes) versions can hold about 100 to 120 g/L residual sugar. With fewer botrytised berries it ends up dry (száraz), around 14% alcohol.",
+   "claim": "Szamorodni is made from whole bunches that include a good share of botrytised grapes, so it is fuller and higher in alcohol than ordinary wine. Sweet Szamorodni needs at least 60 g/L sugar from the 2025 harvest (45 g/L before). Dry Szamorodni has 9 g/L or less and at least 12% alcohol.",
    "source": [
     "wiki-tokaji"
    ],
    "strength": "Medium",
-   "note": "Single source."
+   "note": "Single source. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "winemaking",
-   "claim": "The UK register says Szamorodni must is at least 230.2 g/L sugar and the wine is aged at least two years, one of them in barrel. It must carry the Tokaj PDO.",
+   "claim": "Szamorodni must is at least 228.7 g/L sugar for dry and 269.5 g/L for sweet. Sweet Szamorodni spends at least 6 months in wood and can be sold from 1 January of the second year after the harvest. Dry spends at least 24 months in wood and can be sold from the third year. It must carry the Tokaj PDO.",
    "source": [
     "gov-uk-szamorodni"
    ],
    "strength": "Medium",
    "quote": "aged for at least two years (one year in barrel)",
-   "note": "This may be an older register text. A search summary of the 2026 EU amendment gives a shorter minimum (at least six months). See conflicts."
+   "note": "This may be an older register text. A search summary of the 2026 EU amendment gives a shorter minimum (at least six months). See conflicts. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "winemaking",
@@ -238,32 +238,32 @@
   },
   {
    "topic": "winemaking",
-   "claim": "Aszú used to be graded 3 to 6 puttonyos by how many baskets of aszú paste went into each cask. Since the 2013 harvest every aszú needs at least 120 g/L residual sugar.",
+   "claim": "Since 2013 every aszú needs at least 120 g/L sugar and 18 months in wood. Puttonyos numbers are now optional label terms, and 6 puttonyos needs at least 150 g/L.",
    "source": [
     "wiki-tokaji",
     "pdo-amend-search"
    ],
    "strength": "Weak",
-   "note": "The 2013 and 2026 rules are from search summaries only. The EUR-Lex text was not read. The older rule of three years with two in oak is not confirmed here."
+   "note": "The 2013 and 2026 rules are from search summaries only. The EUR-Lex text was not read. The older rule of three years with two in oak is not confirmed here. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "winemaking",
-   "claim": "Late harvest (késői szüretelésű) wines are reductive sweet wines made without the aszú process, ready 1 to 18 months after harvest, with 50 to 180 g/L residual sugar.",
+   "claim": "Late-harvest Tokaji needs at least 45 g/L sugar from hand-picked grapes. It can be sold from 1 January after the harvest.",
    "source": [
     "wiki-tokaji"
    ],
    "strength": "Weak",
-   "note": "One Wikipedia description. The PDO text was not read."
+   "note": "One Wikipedia description. The PDO text was not read. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "winemaking",
-   "claim": "Other traditional styles are eszencia (free-run juice from aszú berries, 500 to 700 g/L sugar, about 5 to 6% alcohol), fordítás (must poured over used aszú paste) and máslás (must poured over aszú lees). A search summary says the 2026 amendment drops aszúeszencia, dry fordítás and dry máslás.",
+   "claim": "Other traditional styles are eszencia (free-run juice from aszú berries, at least 450 g/L sugar and 1.2 to 8% alcohol), fordítás (must poured over used aszú paste) and máslás (must poured over aszú lees). Fordítás and máslás are sweet only, at 60 g/L or more.",
    "source": [
     "wiki-tokaji",
     "pdo-amend-search"
    ],
    "strength": "Weak",
-   "note": "Amendment detail is from a search summary only."
+   "note": "Amendment detail is from a search summary only. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "winemaking",

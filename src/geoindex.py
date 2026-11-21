@@ -65,7 +65,7 @@ class Sources:
             d={}
             for f in jl(os.path.join(CA,'gisco','LAU_RG_01M_2021_4326.geojson'))['features']:
                 p=f['properties']
-                if p['CNTR_CODE'] in LAU_CC.values() and f.get('geometry'): d.setdefault((p['CNTR_CODE'],norm(p['LAU_NAME'])),shape(f['geometry']).buffer(0))
+                if p['CNTR_CODE'] in LAU_CC.values() and f.get('geometry'): d.setdefault((p['CNTR_CODE'],norm(p['LAU_NAME'])),[]).append(shape(f['geometry']).buffer(0))   # every commune of that name (there are three Étréchys in France)
             return d
         return s.get('lau',load)
     def stores(s):
@@ -101,8 +101,15 @@ def own_shape(n):
         g=S.pdo().get((EU_CC[C],nm))
         if g is not None: return g,'EU wine PDO boundaries'
     if C in LAU_CC:
-        g=S.lau().get((LAU_CC[C],nm))
-        if g is not None: return g,'Eurostat GISCO LAU'
+        cs=S.lau().get((LAU_CC[C],nm)) or []
+        if len(cs)>1:   # a name several communes share: the one inside the nearest place above it with a shape of its own (Étréchy in the Marne, not the Essonne)
+            a=T[n].get('parent'); ag=None
+            while a and a in T and T[a]['depth']>0 and ag is None:
+                try: ag,_=own_shape(a)
+                except KeyError: ag=None
+                a=T[a].get('parent')
+            cs=[max(cs,key=lambda g:g.intersection(ag).area)] if ag is not None and not ag.is_empty else []
+        if cs: return cs[0],'Eurostat GISCO LAU'
     g=S.stores().get(nm)
     if g is not None: return g,'zone store'
     return None,None

@@ -92,12 +92,13 @@
   },
   {
    "topic": "place",
-   "claim": "Etna is described as the highest active volcano in Europe, 3,300 m, with a base perimeter of about 180 km. The disciplinare calls the area 'an island within the island'.",
+   "claim": "Etna is Europe's highest active volcano, at about 3,300 to 3,400 m; its height changes with eruptions. Its base runs about 180 km around. The disciplinare calls the area 'an island within the island'.",
    "source": [
     "disciplinare"
    ],
    "strength": "Strong",
-   "quote": "un’isola nell’isola"
+   "quote": "un’isola nell’isola",
+   "note": "Round 28 audit: corrected against the official text."
   },
   {
    "topic": "soil",
@@ -154,12 +155,12 @@
   },
   {
    "topic": "place",
-   "claim": "The Consorzio's updated contrada map is said to list 142 contrade, up from 133. Castiglione di Sicilia is said to have 41, Randazzo 25 and Linguaglossa 10.",
+   "claim": "The official list in the disciplinare has 133 contrade. A 2022 Consorzio map adds nine more, for 142, but these are not yet in the rules.",
    "source": [
     "contrade-search"
    ],
    "strength": "Weak",
-   "note": "Trade and travel pages seen in a search summary. One page gave 133 contrade. Counts may be old."
+   "note": "Trade and travel pages seen in a search summary. One page gave 133 contrade. Counts may be old. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "vineyard",

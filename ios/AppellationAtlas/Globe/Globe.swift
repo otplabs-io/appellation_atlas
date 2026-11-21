@@ -283,14 +283,13 @@ final class Globe {
         let zr = abs(log(b.R / a.R))
         let ms = reduceMotion || fixed != nil ? 350 : min(1900, 900 + zr * 160)
         busy = true
-        // turn first, then zoom in (or zoom out first, then turn), so the globe never races past open sea up close;
-        // between two places far apart and both close up, rise toward the whole globe in the middle of the flight instead
-        let inward = b.R >= a.R, rad = Double.pi / 180, R0 = min(fitSize.width, fitSize.height) / 2 * 0.9, lo = min(a.R, b.R)
+        // turn and zoom together, on one easing; between two places far apart and both close up, rise toward the whole globe in the middle of the flight
+        let rad = Double.pi / 180, R0 = min(fitSize.width, fitSize.height) / 2 * 0.9, lo = min(a.R, b.R)
         let ang = acos(min(1, sin(a.lat * rad) * sin(b.lat * rad) + cos(a.lat * rad) * cos(b.lat * rad) * cos(dl * rad))) / rad
         let dip = lo > R0 * 1.5 && ang > 15 ? log(lo / R0) * min(1, ang / 60) : 0
         await animate(ms) { [self] k in
-            let e = Globe.ease(k), early = Globe.ease(min(1, k / 0.7)), late = Globe.ease(max(0, (k - 0.3) / 0.7))
-            var c = lerp(a, b, dip > 0 ? e : inward ? early : late, dl, zoom: dip > 0 ? e : inward ? late : early)
+            let e = Globe.ease(k)
+            var c = lerp(a, b, e, dl, zoom: e)
             c.R *= exp(-dip * sin(Double.pi * k))
             cam = reduceMotion ? b : c
             fadeIn = min(1, max(0, (e - 0.15) / 0.6))

@@ -174,10 +174,23 @@ def eu_rows_ids():
 # Districts the tree names after a small appellation of the same name: the Côte de Beaune district holds Meursault and Pommard, while
 # the Côte de Beaune AOC is a few slopes above Beaune. The page is the district: drawn from its villages, without the AOC's rules.
 DISTRICTS={'france/cote-de-beaune'}
-SHAPE_SRC={'eu-pdo':'EU wine PDO boundaries','ava':'UC Davis AVA boundaries','wine-australia':'Wine Australia GI boundaries','iponz':'IPONZ GI register',
+SHAPE_SRC={'eu-pdo':'EU wine PDO boundaries','lau-rules':'Eurostat LAU, the municipalities its rules name','ava':'UC Davis AVA boundaries','wine-australia':'Wine Australia GI boundaries','iponz':'IPONZ GI register',
            'argentina':'geoBoundaries, the department it is named for','chile':'Chile Decreto 464, drawn from its comunas and provinces','nuts':'Eurostat NUTS, the area it is named for','lau':'Eurostat LAU, the commune it is named for'}
 def geoindex_norm(v):
     import geoindex as G; return G.norm(v)
+# outlines the EU record gets wrong (round 30): Valdeorras's row carries Alicante's 104 communes, Cviček's carries Bela krajina's three
+SHAPE_FIX={'spain/valdeorras':('lau',['ES_32009','ES_32015','ES_32017','ES_32038','ES_32060','ES_32072','ES_32073','ES_32088']),   # O Barco, O Bolo, Carballeda, Larouco, Petín, A Rúa, Rubiá, Vilamartín: the DO's eight municipalities
+           'slovenia/cvicek':('pdo','PDO-SI-A0871'),   # Cviček is the Dolenjska (Lower Carniola) district's wine: drawn as that district
+           'france/coligny':('none',None)}   # merged into Val-des-Marais in 2018; the only Coligny left in the 2021 communes is in the Ain (like Vertus or Bisseuil, no outline)
+def fixed_shape(n):
+    import geoindex as G
+    how,v=SHAPE_FIX[n]
+    if how=='none': return None,None
+    if how=='pdo': return X.pdo_ids()[v],'EU wine PDO boundaries'
+    from shapely.geometry import shape
+    gs=[shape(f['geometry']).buffer(0) for f in jl(os.path.join(CA,'gisco','LAU_RG_01M_2021_4326.geojson'))['features'] if f['properties'].get('GISCO_ID') in v or f['properties']['CNTR_CODE']+'_'+str(f['properties']['LAU_ID']) in v]
+    assert len(gs)==len(v),(n,len(gs))
+    return G.unary_union(gs).buffer(0),'Eurostat LAU, the municipalities its rules name'
 def extra_shape(n):
     """A shape for a place the app's sources miss, and where it came from, or (None, None)."""
     import geoindex as G
@@ -249,7 +262,7 @@ def geo():
     shp={}; src={}; t0=time.time()
     def resolve(n):
         if n in shp: return shp[n]
-        try: g,s=(None,None) if n in DISTRICTS else G.own_shape(n)
+        try: g,s=(None,None) if n in DISTRICTS else (fixed_shape(n) if n in SHAPE_FIX else G.own_shape(n))
         except KeyError: g,s=None,None
         if (g is None or g.is_empty) and n not in DISTRICTS: g,s=extra_shape(n)
         if g is None or g.is_empty:
@@ -302,11 +315,13 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'jones':dict(name='Jones 2006, Climate and Terroir: Impacts of Climate Variability and Change on Wine, Geoscience Canada reprint series 9 (growing season temperature classes)',url=None),
      'winkler':dict(name='Winkler, Cook, Kliewer and Lider 1974, General Viticulture, University of California Press (heat summation regions)',url=None),
      'wine-australia':dict(name='Wine Australia, Geographical Indications of Australia (zones, regions and subregions), CC BY 4.0',url='https://wineaustralia-opendata-wineaustralia.hub.arcgis.com/'),
+     'chianti-disciplinare':dict(name='Chianti DOCG production rules (disciplinare), as amended by Reg. (EU) 2024/2741, art. 5.6: Riserva needs at least 2 years from 1 January after the harvest',url='https://aisitalia.it/Disciplinari/Toscana/DOCG/Chianti.pdf'),
      'iponz':dict(name='Intellectual Property Office of New Zealand, the geographical indications register and its boundary data',url='https://www.iponz.govt.nz/get-ip/geographical-indications/register/'),
      'nuts':dict(name='Eurostat GISCO, NUTS 2021 boundaries',url='https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics'),
      'chile':dict(name='Decreto 464, Zonificación vitícola (Servicio Agrícola y Ganadero), drawn on geoBoundaries comunas and regions (BCN, CC BY 3.0 IGO) and provinces (OpenStreetMap, ODbL)',url='https://sag.cl/sites/default/files/decreto_ndeg_464.pdf'),
      'argentina':dict(name='geoBoundaries, Argentina departments (Instituto Geográfico Nacional, CC BY 3.0 IGO) and provinces (CC BY 2.5)',url='https://www.geoboundaries.org'),
      'lau':dict(name='Eurostat GISCO, Local Administrative Units 2021 (communes)',url='https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units'),
+     'lau-rules':dict(name='Eurostat GISCO, Local Administrative Units 2021 (the municipalities the rules name)',url='https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units'),
      'nrcs':dict(name='USDA NRCS Soil Survey Manual, Agriculture Handbook 18 (texture classes and pH classes)',url=None),
      'inao':dict(name="INAO, the appellation's cahier des charges, chapter V (grapes and their shares), from the Bulletin officiel du ministère de l'Agriculture (Licence Ouverte)",url='https://www.inao.gouv.fr/rechercher-un-produit'),
      'anderson':dict(name='Anderson, Nelgen and Puga, Database of Regional, National and Global Winegrape Bearing Areas by Variety, 2000 to 2023, University of Adelaide (CC BY 4.0)',url='https://doi.org/10.25909/32870405.v1'),
@@ -361,7 +376,7 @@ def grapes(s):
     out=[]
     for g in (s or '').split('/'):
         g=g.strip()
-        if not g or g=='na': continue
+        if not g or g=='na' or '?' in g: continue   # the record's own doubt ("Moscatel Aromática (Maybe Synonym Of Moscatel De Alejandria?)" beside Moscatel de Alejandría in Alicante)
         name,_,sk=g.rpartition(' ')
         out.append([name,SKIN[sk]] if sk in SKIN and name else [g,None])
     return out
@@ -377,7 +392,11 @@ fmt0=lambda v:f'{v:,.0f}'
 # the Rhône Valley's Gard, Vaucluse and Drôme bring in Languedoc IGP Merlot and leave out the northern Rhône; Languedoc's lack the Gard
 # places of the hand-built French hierarchy (regions/tree.json source 'chris') that are appellations or AOC mentions: Beaujolais-Villages is
 # AOC Beaujolais with the mention Villages, the Hautes-Côtes are AOC Bourgogne's, Castillon and Blaye are AOC Côtes de Bordeaux's
-CHRIS_KIND={'france/beaujolais-villages':'AOC','france/macon-villages':'AOC','france/chablis-premier-cru':'AOC','france/hautes-cotes-de-nuits':'AOC',
+TIER_TERMS={'italy':{'DOCG':'docg','DOC':'doc','IGT':'igt'},'france':{'AOC':'aoc','IGP':'igp'},
+            'spain':{'DOCa':'doca','DO':'do-es','Vino de la Tierra':'vdlt','Vino de Pago':'vino-de-pago','Vino de Calidad':'vc-es'}}   # each country's ladder of label tiers, by the page's own category
+ALSO_INSIDE={'australia/north-west-victoria':['australia/murray-darling'],'australia/big-rivers':['australia/swan-hill'],
+             'united-states/sonoma-county':['united-states/los-carneros','united-states/petaluma-gap','united-states/pine-mountain-cloverdale-peak']}   # AVAs partly in the county, which the county's own count of 19 includes
+CHRIS_KIND={'italy/langhe-nebbiolo':'DOC','spain/condado-do-tea':'Subzone','spain/o-rosal':'Subzone','spain/val-do-salnes':'Subzone','france/beaujolais-villages':'AOC','france/macon-villages':'AOC','france/chablis-premier-cru':'AOC','france/hautes-cotes-de-nuits':'AOC',
             'france/hautes-cotes-de-beaune':'AOC','france/castillon-cotes-de-bordeaux':'AOC','france/blaye-cotes-de-bordeaux':'AOC','france/alsace-aoc':'AOC',
             'italy/puglia-igt':'IGT','france/cote-des-bar':'district','france/montagne-de-reims':'district','france/cote-des-blancs':'district','france/vallee-de-la-marne':'district'}
 # WorldClim's dry patch over Viterbo province: the grid gives 300 to 480 mm a year where the Viterbo station records about 736 mm
@@ -386,7 +405,7 @@ GRID_DRY={'new-zealand/martinborough','italy/vignanello','italy/est-est-est-di-m
 # Blurbs on pages without reviewed key facts keep only what the page's own data supports: a sentence with numbers keeps them only if
 # each is a planting share, the planting year, or the AVA, GI or recognition year on the page; a ranking ("largest", "first") only
 # if the superlative check confirmed it (build/review/superlatives/). Wikipedia's figures and rankings were the main source of errors.
-AREA_SHAPES={'EU wine PDO boundaries','Eurostat NUTS, the area it is named for','Eurostat LAU, the commune it is named for',
+AREA_SHAPES={'EU wine PDO boundaries','Eurostat LAU, the municipalities its rules name','Eurostat NUTS, the area it is named for','Eurostat LAU, the commune it is named for',
              'geoBoundaries, the department it is named for','geoBoundaries, the province it is named for',
              'Chile Decreto 464, drawn from its comunas and provinces','union of its children','Eurostat GISCO LAU','Eurostat GISCO NUTS 2021',
              'US Census counties','geoBoundaries'}
@@ -497,11 +516,16 @@ def cahier_fix(n,r,src):
     if 'yield_base' in (fx.get('set') or {}):
         for k in ('yield_hl','yield_kg','yield_ceiling'): r.pop(k,None)
     if fx.get('limits_drop') or fx.get('limits_add'):
-        r['limits']=[l for l in r.get('limits') or [] if l not in set(fx.get('limits_drop') or [])]+list(fx.get('limits_add') or [])
+        r['limits']=list(dict.fromkeys([l for l in r.get('limits') or [] if l not in set(fx.get('limits_drop') or [])]+list(fx.get('limits_add') or [])))   # an added line the reader already had shows once
+    if fx.get('blend_add'): r['blend']=list(fx['blend_add'])   # shares the cahier sets for the blend (assemblage, cuvée), not for the vineyard
     ren=fx.get('grape_rename') or {}; drop=set(fx.get('grape_drop') or [])
     def tidy(gs): return [[ren.get(g[0],g[0]),*g[1:]] if isinstance(g,list) else ren.get(g,g) for g in gs or [] if (g[0] if isinstance(g,list) else g) not in drop]
     for k in ('grapes','grapes_other','grapes_trial'): r[k]=tidy(r.get(k))
-    if r.get('by_wine'): r['by_wine']=[[w,tidy(m),tidy(o)] for w,m,o in r['by_wine']]
+    if r.get('by_wine'):   # a drop that grape_add puts back moved a grape to another role (Côtes de Bourg's whites); the per-wine rows already have their roles
+        back={g[0] for g in fx.get('grape_add') or []}; drop_=drop-back
+        tidy_=lambda gs:[[ren.get(g[0],g[0]),*g[1:]] for g in gs or [] if g[0] not in drop_]
+        r['by_wine']=[[w,tidy_(m),tidy_(o)] for w,m,o in r['by_wine']]
+        r['by_wine']=[x for x in r['by_wine'] if x[1]] or None   # a wine left with no main grape is one the audit took off the page (Côtes de Bordeaux's whites belong to its sub-names)
     if fx.get('by_colour'):
         r['grapes']=r.get('grapes',[])+[g if isinstance(g,list) else [g,None] for g in r.get('grapes_other') or []]; r['grapes_other']=[]; r['by_wine']=None; r['roles_unread']=True
     r['grapes']=r.get('grapes',[])+[list(g) for g in fx.get('grape_add') or [] if list(g) not in r.get('grapes',[])]
@@ -528,6 +552,19 @@ AVADATE={}   # the page now says "In effect from", which is the UC Davis date (t
 AVAWITHIN={'united-states/contra-costa':['San Francisco Bay','Central Coast']}
 # AVAs a rule keeps out of the larger ones their outlines touch (Santa Cruz Mountains is "specifically excluded" from San Francisco Bay and Central Coast, 27 CFR 9.157 and 9.75)
 AVANOTWITHIN={'united-states/santa-cruz-mountains':{'San Francisco Bay','Central Coast'}}
+# AVAs that only partly lie in a larger one the source lists them within: shown as "Overlaps", not "Inside" (round 27, checked against the
+# T.D. notices and the CFR boundaries: Bennett Valley T.D. TTB-6; Chalk Hill and Russian River Valley T.D. TTB-97 and 27 CFR 9.116; High Valley
+# T.D. TTB-24 and TTB-188; Petaluma Gap T.D. TTB-149; Pine Mountain-Cloverdale Peak T.D. TTB-96; Rockpile T.D. ATF-473 and 9.70; Swan Creek
+# T.D. TTB-69; Mendocino Ridge T.D. ATF-392 and 9.93; Los Carneros, Sonoma Valley and Wild Horse Valley from 9.23, 9.29, 9.32, 9.44, 9.116, 9.124)
+# pairs UC Davis lists as "contains" that only touch or overlap (under half the smaller AVA inside on the boundary map): not counted as places inside
+AVANOTCONTAINS={'Ozark Mountain':{'Augusta'},'Pine Mountain-Cloverdale Peak':{'Alexander Valley'},'Alexander Valley':{'Russian River Valley','Pine Mountain-Cloverdale Peak'},
+                'Anderson Valley':{'Mendocino Ridge'},'Mendocino Ridge':{'Anderson Valley'},'Rockpile':{'Dry Creek Valley'},'Dry Creek Valley':{'Rockpile'},
+                'Russian River Valley':{'Alexander Valley'},'Northern Sonoma':{'Sonoma Coast'},'Sonoma Coast':{'Northern Sonoma'}}
+AVAOVERLAP={'united-states/bennett-valley':['Sonoma Valley','Sonoma Coast','Sonoma Mountain'],'united-states/chalk-hill':['Sonoma Coast'],
+            'united-states/high-valley':['Clear Lake'],'united-states/los-carneros':['Napa Valley','Sonoma Valley','Sonoma Coast'],
+            'united-states/mendocino-ridge':['Mendocino'],'united-states/petaluma-gap':['Sonoma Coast'],'united-states/pine-mountain-cloverdale-peak':['Northern Sonoma'],
+            'united-states/rockpile':['Northern Sonoma'],'united-states/russian-river-valley':['Sonoma Coast'],'united-states/sonoma-valley':['Sonoma Coast'],
+            'united-states/swan-creek':['Yadkin Valley'],'united-states/wild-horse-valley':['Napa Valley','Solano County Green Valley']}
 RULEDROP={'italy/malvasia-delle-lipari':{'Catarratto Bianco','Viognier'},
           'italy/faro':{'Catarratto Bianco','Fiano'},
           'spain/los-cerrillos':{'Chardonnay','Merlot'},   # red only: Tempranillo, Cabernet Sauvignon, Syrah, Petit Verdot (pliego 2019, Petit Verdot added 2020)
@@ -555,6 +592,7 @@ RULEFIX={('italy/bianco-capena','Malvasia di Candia Aromatica'):'Malvasia Bianca
          ('france/saint-pourcain','Sacy'):'Sacy (Tressallier)'}   # the cahier: "localement appelé tressallier"
 ADMIN_NOT_PGI={'greece/sterea-ellada','south-africa/paarl','south-africa/olifants-river'}   # and SAWIS's statistical Paarl, which takes in Wellington, Franschhoek and Tulbagh   # the database row is the administrative region, without Attica; the PGI covers both
 PLANTDROP={'austria/eisenberg':'the 2022 rows sum to about 364 ha; the DAC Produktspezifikation gives 515 ha',
+           'united-states/hudson-river-region':'its only county row is Ulster, which lies partly inside; Columbia, Dutchess and Orange are missing',
            'united-kingdom':'the 2023 country rows put Bacchus first and Pinot Noir at 3%, against WineGB and FSA figures (Chardonnay, Pinot Noir, Meunier lead)',
            'australia/central-western-australia':'its only district row is Peel, which lies in the Greater Perth zone'}   # planting tables that misstate the place
 # California stays: its 2016 county rows sum to 464,000 acres, and USDA's 2016 California Grape Acreage Report (Table 10) gives 459,629 bearing acres of wine grapes, 482,641 in all
@@ -616,6 +654,8 @@ def inao_rules(r,x):
         for g,sk,rl in gs:
             if rl!='adaptation': b['main' if rl=='main' else 'other'].append(en(g,sk))
         lab={'red':'red wine','rosé':'rosé','white':'white wine','sparkling white':'sparkling white','sparkling rosé':'sparkling rosé','red and rosé':'red and rosé'}.get(lab,lab)
+        made_={c_ for t_ in r.get('types') or [] for c_,w_ in (('red','Red'),('rosé','Rosé'),('white','White')) if w_ in t_}
+        if made_ and not any(c_ in lab for c_ in made_): continue   # the page's wine types leave this colour out (a Médoc white row)
         per.append([lab,b['main'],b['other']])
     out=dict(r,grapes=by['main'],grapes_other=by['complementary']+by['accessory'],grapes_trial=by['adaptation'],by_wine=per or None,
                 limits=list(dict.fromkeys(lim)),cahier=dict(year=str(x['date'])[:4] if x.get('date') else None,url=x['url']))
@@ -667,7 +707,7 @@ def ava_rows():
     for n,x in T.items():
         p=A.get(x['cfr']) if x.get('cfr') else None
         if p: out[n]=dict(created=ava_start(p),states=sorted(set(nn(p['state']))),counties=sorted(set(nn(p['county']))),
-                          within=list(dict.fromkeys(x for x in [T[o]['name'] for o in GEOW.get(n,[]) if o in T]+avas(p['within'])+AVAWITHIN.get(n,[]) if x not in AVANOTWITHIN.get(n,()))),contains=avas(p['contains']),cfr=p['cfr_index'],cfr_url=f"https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-9/subpart-C/section-{p['cfr_index']}")
+                          within=list(dict.fromkeys(x for x in [T[o]['name'] for o in GEOW.get(n,[]) if o in T]+avas(p['within'])+AVAWITHIN.get(n,[]) if x not in AVANOTWITHIN.get(n,()) and x not in AVAOVERLAP.get(n,[]))),overlaps=AVAOVERLAP.get(n,[]),contains=avas(p['contains']),ucd=p['name'],cfr=p['cfr_index'],cfr_url=f"https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-9/subpart-C/section-{p['cfr_index']}")
     return out
 def research():
     import glob
@@ -706,13 +746,17 @@ def facts():
         seen=set()
         old=[g[0] for k in ('grapes','grapes_other','grapes_trial') for g in r.get(k) or [] if isinstance(g,list)]+[g[0] for w in r.get('by_wine') or [] for i in (1,2) for g in w[i]]
         swap={o:atlasland.rule_name(o,c) for o in old if atlasland.rule_name(o,c)!=o}
-        if r.get('limits') and swap:   # the limits name grapes as the chips do: Malbec, not Cot
-            pat=re.compile(r'\b('+'|'.join(sorted(map(re.escape,swap),key=len,reverse=True))+r')\b')
-            r['limits']=[pat.sub(lambda m:swap[m.group(1)],l) for l in r['limits']]
+        if (r.get('limits') or r.get('blend')) and swap:   # the limits name grapes as the chips do: Malbec, not Cot
+            keep_={v for v in swap.values()}|{g_[0] for k_ in ('grapes','grapes_other') for g_ in r.get(k_) or [] if isinstance(g_,list)}|{'Cabernet Sauvignon','Sauvignon Gris','Sauvignon Blanc','Cabernet Franc'}
+            full={**{k_:k_ for k_ in keep_},**swap}   # names already in their final form match first, whole, so "Sauvignon" inside "Cabernet Sauvignon" or "Sauvignon Gris" is left alone (Bergerac)
+            pat=re.compile(r'\b('+'|'.join(sorted(map(re.escape,full),key=len,reverse=True))+r')\b')
+            for k_ in ('limits','blend'):
+                if r.get(k_): r[k_]=[pat.sub(lambda m:full[m.group(1)],l) for l in r[k_]]
         for key in ('grapes','grapes_other'):
             out=[]
             for g in r.get(key) or []:
                 nm=atlasland.rule_name(g[0] if isinstance(g,list) else g,c)
+                if nm=='Malvasia' and isinstance(g,list) and g[1:2]==['red']: nm='Malvasia Nera'   # the EU record's bare red "Malvasia" is Malvasia Nera (Matino's own blurb and rules say so)
                 if nm in seen: continue
                 seen.add(nm); out.append([nm,*g[1:]] if isinstance(g,list) else nm)
             if r.get(key): r[key]=out
@@ -750,6 +794,8 @@ def facts():
     gi=jl(os.path.join(OUT,'geo','index.json'))['places']; WS=wset(gi)
     kids=collections.defaultdict(list)
     for n,x in gi.items(): kids[x['parent']].append(n)
+    UCD_T={v['ucd']:T[k]['name'] for k,v in A.items() if k in T and v.get('ucd')}   # UC Davis's name for an AVA, as the atlas names it (Oak Knoll District of Napa Valley)
+    OVERLAP_OF={T[k]['name']:set(v) for k,v in AVAOVERLAP.items() if k in T}   # an AVA's name: the larger AVAs it only partly lies in
     def below(n):   # every place under n in the atlas
         out=[]; st=list(kids.get(n,[]))
         while st: k=st.pop(); out.append(k); st+=kids.get(k,[])
@@ -799,7 +845,7 @@ def facts():
     for n,x in gi.items():
         t=T[n]; chain=[]; p=x['parent']
         while p and p!='world': chain.insert(0,[p,T[p]['name']]); p=gi[p]['parent']
-        own_st={s.strip() for s in (A.get(n) or {}).get('states') or []}
+        own_st={US_STATE.get(s.strip(),s.strip()) for s in (A.get(n) or {}).get('states') or []}   # 'WA', or 'Washington' spelled out (Beverly, Upper Cumberland)
         if own_st: chain=[c for c in chain if not (c[0].count('/')==1 and c[0].startswith('united-states/') and c[1] in US_STATE and US_STATE[c[1]] not in own_st)]   # an Ohio AVA inside Lake Erie, which is filed under New York
         kind=[k for k in t.get('official',[]) if k] or ([t['kind']] if t.get('kind') else [])
         kind=categories.label(n,kind,CATS)   # AOC, DOCG, DOCa, DOC, not the EU's PDO: the words the Diploma uses (src/categories.py)
@@ -896,12 +942,20 @@ def facts():
             # in Champagne, "quality tops out at acceptable" in the Barossa); what suits the place is said from its own grapes instead
             f['winkler']=next(([w[0],''] for w in CG['winkler']['regions'] if w[1]<=f['climate']['gdd']<w[2]),['below Ia' if f['climate']['gdd']<850 else 'above V',''])
         if n in R: f['research']=R[n]
-        tk=[k for p_ in [c_[0] for c_ in chain]+[n] for k in LT['places'].get(p_,[])]   # what the words on its labels mean: its own terms and those of the regions above it
+        tk=[k for p_ in [c_[0] for c_ in chain]+[n] for k in LT['places'].get(p_,[])]+LT.get('only',{}).get(n,[]); tk=[k for k in tk if n not in LT.get('except',{}).get(k,[])]
+        tiers=TIER_TERMS.get(n.split('/')[0])
+        if tiers:   # a DOC page explains DOC, not every tier of Italy's ladder; a place with no tier of its own (a region, a group) keeps them all
+            kinds_=list(f.get('kind') or [])+[x for c_ in reversed(chain) for x in categories.label(c_[0],[k_ for k_ in T[c_[0]].get('official',[]) if k_] or ([T[c_[0]]['kind']] if T[c_[0]].get('kind') else []),CATS) or []]
+            own=next((tiers[x] for x in kinds_ if x in tiers),None)
+            if own: tk=[k for k in tk if k==own or k not in set(tiers.values())|{'vdf'}]
+        if 'ava' in tk and not f.get('ava'): tk=[k for k in tk if k!='ava']   # the AVA rule on an AVA page, not on a state or an informal region (California's Central Valley)   # what the words on its labels mean: its own terms, those of the regions above it, and terms for the place alone (Bordeaux Supérieur is not a Loupiac term)
         if tk:
             f['terms']=[[LT['terms'][k]['name'],LT['terms'][k]['def']] for k in dict.fromkeys(tk)]
             for k in dict.fromkeys(tk):
                 a_=LT['terms'][k]['source']
-                if a_.startswith('SRC:'): src.append(a_[4:]); continue   # a term defined from one of the atlas's own sources (Wine Australia's GI levels)
+                if a_.startswith('SRC:'):
+                    if a_[4:] not in SRC and a_[4:] in LT.get('sources',{}): SRC[a_[4:]]=LT['sources'][a_[4:]]   # a law or official text the audit wrote the term from
+                    src.append(a_[4:]); continue   # a term defined from one of the atlas's own sources (Wine Australia's GI levels)
                 SRC.setdefault('term:'+a_,dict(name=f'Wikipedia, {a_} (what the label terms mean)',url=TA.get(a_))); src.append('term:'+a_)
         if KF.get(n,{}).get('facts'):   # the few things a Diploma student must know, from the place's full article (src/keyfacts.py)
             f['keyfacts']=[atlasland.text_names(x,n.split('/')[0]) for x in KF[n]['facts']]
@@ -914,7 +968,12 @@ def facts():
             ap=os.path.join(ROOT,'data','cache','wikipedia','full',n.replace('/','__')+'.json')
             if os.path.exists(ap):
                 a=jl(ap); SRC['kf:'+n]=dict(name=f'Wikipedia, {a["title"]}{"" if a["lang"]=="en" else " ("+a["lang"]+")"}, the full article (key facts)',url=a['url']); src.append('kf:'+n)
-        sw=next(((c_,STY[c_]) for c_ in [n]+[c_[0] for c_ in chain[-1:] if '/' in c_[0]] if STY.get(c_,{}).get('notes')),None)   # its own notes, else its parent region's: one step only, since a whole state or country speaks badly for a cool corner of it (Sta. Rita Hills is not California at large)
+        sw=next(((c_,STY[c_]) for c_ in [n]+([c_[0] for c_ in chain[-1:] if '/' in c_[0]] if not f.get('rules') else []) if STY.get(c_,{}).get('notes')),None)   # an appellation with rules of its own makes its own wine: the region's notes would describe other wines (dry Entre-Deux-Mers on sweet Loupiac)   # its own notes, else its parent region's: one step only, since a whole state or country speaks badly for a cool corner of it (Sta. Rita Hills is not California at large)
+        if sw and sw[0]!=n:   # a parent's note that names another place under it (Bío-Bío on Itata, Margaret River on the South East Coastal zone) does not describe this one
+            mine={n}|{c_[0] for c_ in chain}
+            others=[T[k]['name'] for k in below(sw[0]) if k not in mine and len(T[k]['name'])>=4]
+            keep=[x for x in sw[1]['notes'] if not any(re.search(r'\b'+re.escape(o.replace(' Valley',''))+r'\b',x) for o in others)]
+            sw=(sw[0],dict(sw[1],notes=keep)) if keep else None
         if sw:
             f['style']=dict(notes=[atlasland.text_names(x,n.split('/')[0]) for x in sw[1]['notes']])
             if sw[0]!=n: f['style']['of']=T[sw[0]]['name']
@@ -935,18 +994,19 @@ def facts():
             pr=next((AU[m] for m in [geoindex_norm(v) for v in [t['name']]+t.get('also',[])] if m in AU),None)
             if pr: f['gi']={k:pr.get(v) for k,v in dict(type='GI_TYPE',number='GI_NUMBER',year='YEAR_REGISTER',area_km2='GI_AREA_KM2',vines_ha='VINE_AREA_HA',url='GI_URL',state='STATE').items()}
         src+=[k for k,v in SHAPE_SRC.items() if v==x['source']]
-        sub=below(n)
-        if sub:   # a region: what its places share
+        sub=below(n)+ALSO_INSIDE.get(n,[])   # a region in two zones counts in both (Murray Darling and Swan Hill straddle the Victoria and New South Wales border)
+        ac=list(dict.fromkeys([UCD_T.get(x,x) for x in (A.get(n) or {}).get('contains') or [] if x and t['name'] not in OVERLAP_OF.get(x,()) and x not in AVANOTCONTAINS.get(t['name'],())]
+                              +([T[k]['name'] for k,v in A.items() if k!=n and k in T and t['name'] in (v.get('within') or [])] if n in A else [])))   # UC Davis lists El Dorado twice in Sierra Foothills (the AVA and the county); an AVA only partly inside is not counted; AVAs whose own "Inside" names this one count too (Fort Ross-Seaview in Sonoma Coast)
+        if sub or ac:   # a region: what its places share
             st_=US_STATE.get(t['name']) if n.startswith('united-states/') and n.count('/')==1 else None
             if st_: sub=[k for k in sub if not (A.get(k) or {}).get('states') or st_ in {s.strip() for s in A[k]['states']}]   # Indiana does not hold West Virginia's Kanawha River Valley
             ap=[k for k in sub if k in E]; gc=collections.Counter(); sk={}
             for k in ap:
                 for g,s in rules_of(k)['grapes']: gc[g]+=1; sk[g]=s
             gs=[CL[k]['climate']['gst'] for k in sub if k in CL and (CL[k].get('climate') or {}).get('gst') is not None]
-            ac=[x for x in (A.get(n) or {}).get('contains') or [] if x]
             overlap=n in A and len(ac)>len(sub)   # an AVA whose sub-AVAs sit elsewhere in the tree (North Coast's are under Napa, Sonoma and Mendocino)
             f['summary']=dict(places=len(ac) if overlap else len(sub),kinds=collections.Counter(([k for k in T[s].get('official',[])] or ['region'])[0] for s in sub).most_common(),
-                              grapes=[[g,sk[g],c] for g,c in gc.most_common(24) if c>=2 or len(ap)<2],with_rules=len(ap),
+                              grapes=[[g,sk[g],c] for g,c in gc.most_common(24) if c>=2],with_rules=len(ap),   # a grape in one record only says nothing about what is most often allowed
                               gst=[round(min(gs),1),round(max(gs),1)] if len(gs)>=2 and not overlap else None,   # a range needs two places: not "67 to 67" from Robertson alone
                               best=[k for k in sorted(sub,key=lambda k:-(N.get(k) or {}).get('score',-1))[:8] if k in N])
         if f.get('gi'): f['gi'].pop('vines_ha',None)   # Wine Australia's GI vine area carries no year, and the planting table gives a dated one where there is one
@@ -954,7 +1014,7 @@ def facts():
             f.pop('climate',None); f.pop('winkler',None)
             if f.get('reading'): f['reading'].pop('climate',None)
         if f.get('blurb') and n not in KF and not BL.get(n,{}).get('audited'): f['blurb']['text']=trim_blurb(f['blurb']['text'],f)   # a blurb the audit rewrote was checked against sources; the trimmer leaves it alone
-        if f.get('terrain') and x['source'] in AREA_SHAPES and n not in PLOTS:   # a whole commune or district: its heights are not the vineyards' (Avize's plateau, Gattinara's plain)
+        if f.get('terrain') and (x['source'] in AREA_SHAPES or (x['source']=='zone store' and n.startswith('argentina/'))) and n not in PLOTS:   # Argentina's stored zones are its departments: Luján de Cuyo's band ran up into the Andes   # a whole commune or district: its heights are not the vineyards' (Avize's plateau, Gattinara's plain)
             f.pop('terrain',None); f.pop('aspect',None)
             if f.get('reading'): f['reading'].pop('land',None)
             src=[s_ for s_ in src if s_ not in ('terrain','lapse')]

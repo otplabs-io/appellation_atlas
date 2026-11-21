@@ -103,11 +103,12 @@
   },
   {
    "topic": "other",
-   "claim": "Vines in new plantings need at least 4,500 per hectare. Expanded training systems are banned. Winemaking, aging and bottling must happen in the comune of Castagneto Carducci.",
+   "claim": "Vines in new plantings need at least 4,500 per hectare. Expanded training systems are banned. Winemaking, aging and bottling must take place in Castagneto Carducci. A few firms that already bottled outside the comune may keep doing so under individual permits.",
    "source": [
     "disciplinare-bolgheri"
    ],
-   "strength": "Strong"
+   "strength": "Strong",
+   "note": "Round 28 audit: corrected against the official text."
   },
   {
    "topic": "place",
@@ -228,22 +229,22 @@
   },
   {
    "topic": "history",
-   "claim": "Bolgheri DOC was recognised by decree DPR 1 August 1983 (Gazzetta Ufficiale 31 January 1984). The Sassicaia subzone was added by DM 5 November 1994 (Gazzetta Ufficiale 12 November 1994).",
+   "claim": "Bolgheri became a DOC in 1983 (DPR 1 August 1983) for white and rosé wines only. Red wines and the Sassicaia subzone were added by DM 5 November 1994.",
    "source": [
     "disciplinare-bolgheri"
    ],
    "strength": "Strong",
    "quote": "inserimento sottozona Sassicaia",
-   "note": "Wikipedia says Bolgheri became a DOC in 1994. That is the Sassicaia date, not the DOC. See conflicts."
+   "note": "Wikipedia says Bolgheri became a DOC in 1994. That is the Sassicaia date, not the DOC. See conflicts. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "history",
-   "claim": "Bolgheri Sassicaia now has its own disciplinare as a DOC. That disciplinare lists DM 5 November 1994 as its approval and amendments in 2001, 2011, 2013, 2014 and 2015. When it became fully separate from Bolgheri DOC is not stated.",
+   "claim": "Sassicaia became a subzone of Bolgheri in 1994. In 2013 it became a separate DOC, Bolgheri Sassicaia, with its own disciplinare.",
    "source": [
     "disciplinare-sassicaia"
    ],
    "strength": "Strong",
-   "note": "Wikipedia says Sassicaia got its own DOC in 1994. One search summary said 2013, which is not confirmed."
+   "note": "Wikipedia says Sassicaia got its own DOC in 1994. One search summary said 2013, which is not confirmed. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "history",
@@ -303,13 +304,13 @@
   },
   {
    "topic": "standing",
-   "claim": "The disciplinare says Sassicaia was officially established in 1978 when a Decanter tasting of Cabernets from around the world put it first. Its 1985 vintage then did very well against Bordeaux grands crus at a Grand Jury Europeen tasting. From the 1980s other Bolgheri estates followed and won many awards.",
+   "claim": "The disciplinare says Sassicaia's fame was sealed in 1978, when a Decanter tasting of Cabernets from around the world put it first. Its 1985 vintage then did very well against Bordeaux grands crus at a Grand Jury Europeen tasting. From the 1980s other Bolgheri estates followed and won many awards.",
    "source": [
     "disciplinare-bolgheri",
     "disciplinare-sassicaia"
    ],
    "strength": "Strong",
-   "note": "Official but promotional wording. Wikipedia says the wine ranked first in 1978 was the 1972 vintage, out of 33 wines from 11 countries (Weak)."
+   "note": "Official but promotional wording. Wikipedia says the wine ranked first in 1978 was the 1972 vintage, out of 33 wines from 11 countries (Weak). Round 28 audit: corrected against the official text."
   },
   {
    "topic": "name",

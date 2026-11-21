@@ -64,12 +64,12 @@
   },
   {
    "topic": "place",
-   "claim": "The IGT allows white, red and rosé, still or frizzante. It also allows passito (dried-grape) and late-harvest wines, red novello, and sparkling wine.",
+   "claim": "The IGT allows white, red and rosé, still or frizzante, plus passito, red novello and sparkling. A proposed 2026 change would add wines from overripe grapes.",
    "source": [
     "disciplinare"
    ],
    "strength": "Medium",
-   "note": "Possibly draft text, see source note."
+   "note": "Possibly draft text, see source note. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "grapes",
@@ -83,12 +83,12 @@
   },
   {
    "topic": "grapes",
-   "claim": "Several grapes cannot be named on the label, including Lagrein, Riesling Italico, Riesling Renano, Traminer Aromatico, Marzemino, Veltliner, Meunier and Trebbiano Toscano.",
+   "claim": "Some grapes cannot be named on the label, and the list differs by province. Lagrein, the Rieslings and Traminer Aromatico are barred in Bolzano and Trento.",
    "source": [
     "disciplinare"
    ],
    "strength": "Medium",
-   "note": "My reading of the exclusion list in the varietal-naming clause."
+   "note": "My reading of the exclusion list in the varietal-naming clause. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "winemaking",
@@ -102,12 +102,12 @@
   },
   {
    "topic": "production",
-   "claim": "Grape yield is capped at 23 tonnes per hectare, or 19.5 for wines naming a grape (12 for Moscato Rosa). Wine yield is capped at 80% of the grapes. Minimum total alcohol is 8% for white, rosé and red.",
+   "claim": "Grape yield is capped at 23 t/ha, or 19.5 t/ha for wines naming a grape (12 for Moscato Rosa). Wine yield is capped at 80%. Still wines need at least 10% alcohol.",
    "source": [
     "disciplinare"
    ],
    "strength": "Medium",
-   "note": "Possibly draft text."
+   "note": "Possibly draft text. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "vineyard",

@@ -186,7 +186,7 @@
   }
  },
  "united-states/bennett-valley": {
-  "text": "A Sonoma Valley sub-AVA of 8,140 acres, ringed by the Sonoma Mountains southeast of Santa Rosa. It lies within the North Coast and overlaps Sonoma Valley, Sonoma Coast and Sonoma Mountain.",
+  "text": "A Sonoma County AVA of 8,140 acres, ringed by the Sonoma Mountains southeast of Santa Rosa. It lies within the North Coast and overlaps Sonoma Valley, Sonoma Coast and Sonoma Mountain.",
   "from": [
    "wikipedia",
    "ava"
@@ -195,7 +195,8 @@
    "title": "Bennett Valley AVA",
    "lang": "en",
    "url": "https://en.wikipedia.org/w/index.php?title=Bennett_Valley_AVA&oldid=1372864366"
-  }
+  },
+  "audited": true
  },
  "united-states/big-valley-district-lake-county": {
   "text": "A Clear Lake sub-area on the western shore of the lake, covering the flatter half of the valley north of Kelseyville. Sauvignon Blanc, Chardonnay, Viognier and Riesling are the main whites, while Zinfandel, Merlot and Cabernet Franc lead the reds.",

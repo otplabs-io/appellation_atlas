@@ -3,7 +3,6 @@
   "notes": [
    "Cool nights give fruit that is nearly always high in acidity, with abundant fruit flavor.",
    "New Zealand Sauvignon Blanc has asparagus, gooseberry and green flavors, with grassy, citrus and passion fruit notes.",
-   "New Zealand Pinot Noir at its best is savory and earthy, with complexity.",
    "Most New Zealand wine is made to drink young."
   ],
   "art": [
@@ -23,9 +22,7 @@
  },
  "new-zealand/hawkes-bay": {
   "notes": [
-   "Hawke's Bay led New Zealand's Cabernet Sauvignon, though early wines were green and vegetal.",
-   "Merlot is growing in favor here because it ripens better than Cabernet, with fewer green flavors.",
-   "Its Chardonnay has noticeable acidity and leanness."
+   "Hawke's Bay led New Zealand's Cabernet Sauvignon, though early wines were green and vegetal."
   ],
   "art": [
    "Cabernet Sauvignon",
@@ -36,7 +33,6 @@
  "new-zealand/marlborough": {
   "notes": [
    "Marlborough Sauvignon Blanc is what New Zealand is best known for, with green, gooseberry, citrus and passion fruit notes.",
-   "Its Pinot Noir is aromatic, with red cherry fruit, fresh acidity and firm tannin for aging.",
    "Chardonnay here leans to citrus, peach and melon."
   ],
   "art": [
@@ -57,9 +53,7 @@
   ]
  },
  "new-zealand/canterbury": {
-  "notes": [
-   "Pinot Gris here develops a rich, flinty, fruit-laden character."
-  ],
+  "notes": [],
   "art": [
    "Pinot gris"
   ]

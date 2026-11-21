@@ -2,8 +2,6 @@
  "austria": {
   "notes": [
    "Austrian wines are mostly dry whites, often from Grüner Veltliner, with sweet wines around the Neusiedlersee.",
-   "Grüner Veltliner ranges from short-lived Heuriger wines to long-lived Spätlesen.",
-   "Austrian Riesling is mostly dry, full and palate-coating, with a long finish and a hint of white pepper.",
    "Blaufränkisch gives deeply colored reds with dark fruit, peppery spice and moderate to high acidity, and Zweigelt fresh, fruity reds."
   ],
   "art": [
@@ -14,13 +12,15 @@
  },
  "austria/burgenland": {
   "notes": [
-   "Light, unoaked Blaufränkisch goes under Mittelburgenland DAC Classic, and fuller oaked styles under Reserve.",
-   "Eisenberg's iron-rich red soils give Blaufränkisch a distinct spiciness.",
-   "The east side of the Neusiedlersee makes fruity, fresh Zweigelt and rare sweet wines."
+   "In Mittelburgenland DAC, basic Blaufränkisch shows little or no oak, while Reserve wines show noticeable oak and at least 13% alcohol.",
+   "Eisenberg's iron-rich red soils give Blaufränkisch a distinct spiciness."
   ],
   "art": [
    "Blaufränkisch",
    "Austrian wine"
+  ],
+  "ref": [
+   "audit-8d678b1b"
   ]
  },
  "austria/wachau": {
@@ -45,7 +45,7 @@
  },
  "austria/niederosterreich": {
   "notes": [
-   "Mostly Grüner Veltliner is grown here, made fresh for drinking young.",
+   "Mostly Grüner Veltliner is grown here.",
    "On the Wagram, Grüner Veltliner is a little fuller and more aromatic."
   ],
   "art": [

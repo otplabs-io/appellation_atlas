@@ -189,7 +189,93 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"vermentino",
+"white",
+"main"
+],
+[
+"biancu gentile",
+"white",
+"accessory"
+],
+[
+"codivarta",
+"white",
+"accessory"
+],
+[
+"genovese",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"barbaroux",
+"pink",
+"main"
+],
+[
+"nielluccio",
+"red",
+"main"
+],
+[
+"sciaccarello",
+"red",
+"main"
+],
+[
+"vermentino",
+"white",
+"main"
+],
+[
+"aleatico",
+"red",
+"accessory"
+],
+[
+"carcajolo",
+"red",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"cinsaut",
+"red",
+"accessory"
+],
+[
+"grenache",
+"red",
+"accessory"
+],
+[
+"morrastel",
+"red",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20191212,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-67402288-bcc8-4d92-a8e1-44aff8a7266e/telechargement",
@@ -264,8 +350,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111028,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-302391de-0e09-4b5c-95d4-ddadcaf4ebeb/telechargement",
 "label": "Cahier des charges relatifs aux appellations d’origines contrôlées suivantes : Saumur et Cabernet de Saumur, Sainte-Foy-Bordeaux, Coteaux du Giennois, Côte Rôtie, Clairette de Bellegarde, Saint-Estèphe, Tursan, Cahors, Palette, Aloxe-Corton ... - BO n°43 du 28 octobre 2011",
@@ -4695,8 +4822,119 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"savagnin",
+"white",
+"main"
+],
+[
+"pinot noir",
+"red",
+"accessory"
+],
+[
+"poulsard",
+"red",
+"accessory"
+],
+[
+"trousseau",
+"red",
+"accessory"
+],
+[
+"aligoté",
+"white",
+"adaptation"
+],
+[
+"chenin",
+"white",
+"adaptation"
+],
+[
+"enfariné",
+"red",
+"adaptation"
+],
+[
+"marsanne",
+"white",
+"adaptation"
+],
+[
+"roussane",
+"white",
+"adaptation"
+],
+[
+"sacy",
+"white",
+"adaptation"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"poulsard",
+"red",
+"main"
+],
+[
+"trousseau",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"savagnin",
+"white",
+"main"
+],
+[
+"enfariné",
+"red",
+"main"
+],
+[
+"béclan",
+"red",
+"adaptation"
+],
+[
+"franc noir de Haute-Saône",
+"red",
+"adaptation"
+],
+[
+"gamay",
+"red",
+"adaptation"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20220915,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-f3ff41c6-ac5a-4378-aec8-0837f4d9d8d6/telechargement",
 "label": "Cahier des charges de l’appellation d’origine protégée Arbois homologué par l’arrêté du 2 septembre 2022 publié au JORF du 9 septembre 2022 (AGRT2221731A) - BO n°38 du 15 septembre 2022",
@@ -4822,7 +5060,7 @@
 "adaptation"
 ],
 [
-"Terret",
+"Terret blanc",
 "white",
 "adaptation"
 ],
@@ -4866,7 +5104,7 @@
 "mourvedre gris",
 "grenache blanc",
 "carignan blanc",
-"terret",
+"terret blanc",
 "assyrtiko",
 "mourvedre blanc"
 ]
@@ -4993,8 +5231,214 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"red",
+[
+[
+"cinsaut",
+"red",
+"main"
+],
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"syrah",
+"red",
+"accessory"
+],
+[
+"Mourvaison",
+"red",
+"adaptation"
+],
+[
+"Counoise",
+"red",
+"adaptation"
+],
+[
+"Xinomavro",
+"red",
+"adaptation"
+],
+[
+"Calabrese",
+"red",
+"adaptation"
+],
+[
+"Agiorgitiko",
+"red",
+"adaptation"
+],
+[
+"Mourvèdre gris",
+"pink",
+"adaptation"
+]
+]
+],
+[
+"rosé",
+[
+[
+"cinsaut",
+"red",
+"main"
+],
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"syrah",
+"red",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"Mourvaison",
+"red",
+"adaptation"
+],
+[
+"Counoise",
+"red",
+"adaptation"
+],
+[
+"Xinomavro",
+"red",
+"adaptation"
+],
+[
+"Calabrese",
+"red",
+"adaptation"
+],
+[
+"Agiorgitiko",
+"red",
+"adaptation"
+],
+[
+"Mourvèdre gris",
+"pink",
+"adaptation"
+]
+]
+],
+[
+"white",
+[
+[
+"bourboulenc",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"main"
+],
+[
+"ugni blanc",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"sauvignon",
+"white",
+"accessory"
+],
+[
+"semillon",
+"white",
+"accessory"
+],
+[
+"vermentino",
+"white",
+"accessory"
+],
+[
+"Grenache blanc",
+"white",
+"adaptation"
+],
+[
+"Carignan blanc",
+"white",
+"adaptation"
+],
+[
+"Terret blanc",
+"white",
+"adaptation"
+],
+[
+"Assyrtiko",
+"white",
+"adaptation"
+],
+[
+"Mourvèdre gris",
+"pink",
+"adaptation"
+],
+[
+"Mourvèdre blanc",
+"white",
+"adaptation"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20260820,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-5dba9fe2-3426-4f86-90e1-84267bdbae56/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Bandol homologué par l'arrêté du 11 août 2026 (AGRT2619695A) - BO n°34 du 20 août 2026",
@@ -5494,7 +5938,88 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"gros manseng",
+"white",
+"main"
+],
+[
+"petit manseng",
+"white",
+"main"
+],
+[
+"raffiat de Moncade",
+"white",
+"main"
+],
+[
+"camaralet de Lasseube",
+"white",
+"accessory"
+],
+[
+"courbu",
+"white",
+"accessory"
+],
+[
+"lauzet",
+"white",
+"accessory"
+],
+[
+"petit courbu",
+"white",
+"accessory"
+],
+[
+"sauvignon",
+"white",
+"accessory"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"main"
+],
+[
+"tannat",
+"red",
+"main"
+],
+[
+"courbu noir",
+"red",
+"accessory"
+],
+[
+"fer",
+"red",
+"accessory"
+],
+[
+"manseng",
+"red",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20250424,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-072c67b3-a78d-4184-95ab-6fe5eb6ddc59/telechargement",
@@ -5585,8 +6110,64 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"aligoté",
+"white",
+"accessory"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"gamay de Bouze",
+"red",
+"accessory"
+],
+[
+"gamay de Chaudenay",
+"red",
+"accessory"
+],
+[
+"melon",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+],
+[
+"pinot noir",
+"red",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20260820,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-587d5ea5-ef21-44d1-ad87-80a5851ec807/telechargement",
 "label": "Cahier des charges de l’appellation d’origine protégée Beaujolais homologué par l'arrêté du 5 août 2026 (AGRT2620041A) - BO n°34 du 20 août 2026",
@@ -5862,8 +6443,54 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111206,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-0368b0e7-6200-4dbf-9598-ae98d8cc0410/telechargement",
 "label": "BO-agri: Cahiers des charges des AOC « Bellet » ou « Vin de Bellet », « Grand Roussillon »,« Médoc », « Moulis » ou « Moulis-en-Médoc » « Muscat de Beaumes-de-Venise », « Pauillac » et « Rasteau »",
@@ -6016,8 +6643,139 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"red",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet sauvignon",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"fer servadou",
+"red",
+"accessory"
+],
+[
+"mérille",
+"red",
+"accessory"
+]
+]
+],
+[
+"rosé",
+[
+[
+"cabernet-sauvignon",
+"red",
+"main"
+],
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"fer servadou",
+"red",
+"accessory"
+],
+[
+"mérille",
+"red",
+"accessory"
+],
+[
+"sémillon",
+"white",
+"accessory"
+],
+[
+"sauvignon",
+"white",
+"accessory"
+],
+[
+"sauvignon gris",
+"pink",
+"accessory"
+],
+[
+"muscadelle",
+"white",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+],
+[
+"ugni blanc",
+"white",
+"complementary"
+],
+[
+"chenin",
+"white",
+"accessory"
+],
+[
+"ondenc",
+"white",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20210902,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-a078cfed-a9b4-4684-997f-6fc1ea003699/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Bergerac homologué par l'arrêté du 25 août 2021 publié au JORF du 2 septembre 2021 - BO n°36 du 2 septembre 2021",
@@ -6751,7 +7509,123 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+],
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"colombard",
+"white",
+"accessory"
+],
+[
+"merlot blanc",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"floréal",
+"white",
+"adaptation"
+],
+[
+"liliorila",
+"white",
+"adaptation"
+],
+[
+"sauvignac",
+"white",
+"adaptation"
+]
+]
+],
+[
+"red",
+[
+[
+"cabernet-sauvignon",
+"red",
+"main"
+],
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"carmenère",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"petit verdot",
+"red",
+"main"
+],
+[
+"arinarnoa",
+"red",
+"adaptation"
+],
+[
+"castets",
+"red",
+"adaptation"
+],
+[
+"marselan",
+"red",
+"adaptation"
+],
+[
+"touriga nacional",
+"red",
+"adaptation"
+],
+[
+"vidoc",
+"red",
+"adaptation"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20260611,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-c512f50d-019b-4db3-99fc-e61092b553a8/telechargement",
@@ -6868,8 +7742,94 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+],
+[
+"césar",
+"red",
+"accessory"
+],
+[
+"gamay",
+"red",
+"accessory"
+]
+]
+],
+[
+"rosé",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"pinot gris",
+"pink",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"césar",
+"red",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20260115,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-e6cb8ffc-217c-492d-be27-6748e8f050db/telechargement",
 "label": "Cahier des charges de l’appellation d’origine contrôlée Bourgogne, homologué par l'arrêté du 6 janvier 2026 (AGRT2535961A) - BO n°03 du 15 janvier 2026",
@@ -7775,8 +8735,124 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+],
+[
+"colombard",
+"white",
+"main"
+],
+[
+"gros manseng",
+"white",
+"main"
+],
+[
+"petit manseng",
+"white",
+"main"
+],
+[
+"floréal",
+"white",
+"main"
+],
+[
+"voltis",
+"white",
+"main"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet sauvignon",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"abouriou",
+"red",
+"accessory"
+],
+[
+"petit verdot",
+"red",
+"accessory"
+],
+[
+"marselan",
+"red",
+"main"
+],
+[
+"nielluccio",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"tempranillo",
+"red",
+"main"
+],
+[
+"vidoc",
+"red",
+"main"
+],
+[
+"artaban",
+"red",
+"main"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20250424,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-556dff9f-9af7-429e-bf37-5badc2bef0c6/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Buzet - BO n°17 du 24 avril 2025",
@@ -9397,8 +10473,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111206,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-0368b0e7-6200-4dbf-9598-ae98d8cc0410/telechargement",
 "label": "BO-agri: Cahiers des charges des AOC « Bellet » ou « Vin de Bellet », « Grand Roussillon »,« Médoc », « Moulis » ou « Moulis-en-Médoc » « Muscat de Beaumes-de-Venise », « Pauillac » et « Rasteau »",
@@ -9771,7 +10888,43 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red and rosé",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"pinot noir",
+"red",
+"accessory"
+],
+[
+"syrah",
+"red",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"aligoté",
+"white",
+"main"
+],
+[
+"chardonnay",
+"white",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20241219,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-fb0af301-e1db-450b-9c95-ed69202db157/telechargement",
@@ -9992,7 +11145,58 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"chardonnay",
+"white",
+"complementary"
+],
+[
+"chenin",
+"white",
+"complementary"
+],
+[
+"orbois",
+"white",
+"complementary"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"gamay",
+"red",
+"complementary"
+],
+[
+"cot",
+"red",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20251225,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-5a98c628-fbe2-40ec-ab35-62f86a6e5867/telechargement",
@@ -10056,7 +11260,33 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red and rosé",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"chenin",
+"white",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20260618,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-f563b042-a8b8-4fc3-8ea2-2af7b2bcf4e1/telechargement",
@@ -10182,8 +11412,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111208,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-5e47eafe-fe6c-4ea2-a395-34477a2325b8/telechargement",
 "label": "BO-agri: Cahiers des charges des AOC « Montagne-Saint-Emilion », « Hermitage » ou « Ermitage » ou « l’Hermitage » ou « l’Ermitage », « Irouléguy », « Saint-Amour », « Brouilly », « Régnié », « Moulin-à-Vent », « Côtes de Bordeaux », « Chénas », « Saint-Emilion », « Lussac Saint-Emilion », « Côtes du Roussillon Villages », « Côtes du Roussillon », « Pouilly-Fuissé », « Bourg » ou « Côtes de Bourg » ou « Bourgeais », « Sauternes », « Chorey-lès-Beaune », « Bienvenues-Bâtard-Montrachet », « Madiran », « Bourgogne aligoté », « Coteaux d’Ancenis », « Collioure », « Monthélie » et « Banyuls grand cru », « Cornas »",
@@ -11823,8 +13094,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111104,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-7b3c14e3-4105-489a-91a6-3e8b7ee78017/telechargement",
 "label": "Cahier des charges relatifs aux appellations d’origines contrôlées suivantes (en lien, décret d’homologation paru au JORF) : Clairette du Languedoc, Corton, Côtes de Duras, Chapelle-Chambertin, Chambertin-Clos de Bèze, Chambertin, Mazis-Chambertin, La Romanée, La Tâche, Loupiac, Orléans-Cléry, Coteaux du Quercy, Rosette et Saint-Romain - BO n°44 du 4 novembre 2011",
@@ -12089,7 +13401,113 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red and rosé",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"cinsaut",
+"red",
+"accessory"
+],
+[
+"marselan",
+"red",
+"accessory"
+],
+[
+"Montepulciano",
+"red",
+"adaptation"
+],
+[
+"Morrastel",
+"red",
+"adaptation"
+]
+]
+],
+[
+"white",
+[
+[
+"grenache blanc",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"macabeu",
+"white",
+"accessory"
+],
+[
+"vermentino",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+],
+[
+"Piquepoul blanc",
+"white",
+"adaptation"
+],
+[
+"Souvignier gris",
+"pink",
+"adaptation"
+],
+[
+"Tourbat",
+"white",
+"adaptation"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20250313,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-61f707a5-34f0-4686-a4de-e86866e02100/telechargement",
@@ -12165,8 +13583,54 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111202,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-dc895811-a5ae-47c2-93be-bbeaf8a96f50/telechargement",
 "label": "Cahiers des charges pour les AOC suivantes : Clos de Tart, Côtes de Millau, Bonnes-Mares, Côte de Beaune, Criots-Bâtard-Montrachet, Charlemagne, Meursault et Blagny - BO n°48 du 02 décembre 2011",
@@ -12295,8 +13759,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20260917,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-98aae6b4-7bd9-478d-803a-01fffb18ccfa/telechargement",
 "label": "Cahier des charges de l’appellation d'origine protégée Côte de-Nuits-Villages - BO n°38 du 17 septembre 2026",
@@ -12463,8 +13968,139 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"aligoté",
+"white",
+"main"
+],
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"melon",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+],
+[
+"pinot gris",
+"pink",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"césar",
+"red",
+"main"
+],
+[
+"aligoté",
+"white",
+"accessory"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"gamay de Bouze",
+"red",
+"accessory"
+],
+[
+"gamay de Chaudenay",
+"red",
+"accessory"
+],
+[
+"melon",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+],
+[
+"rosé",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"pinot gris",
+"pink",
+"main"
+],
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"césar",
+"red",
+"main"
+],
+[
+"aligoté",
+"white",
+"accessory"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"melon",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20240125,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-c0994b17-a8d3-43fa-bcf3-e5b7aecd01b3/telechargement",
 "label": "Cahier des charges de l’appellation d’origine contrôlée Coteaux Bourguignons homologué par l’arrêté du 12 janvier 2024 publié au JORF du 24 janvier 2024 - BO n°4 du 25 janvier 2024",
@@ -12794,7 +14430,158 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red and rosé",
+[
+[
+"cinsaut",
+"red",
+"main"
+],
+[
+"counoise",
+"red",
+"main"
+],
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"caladoc",
+"red",
+"accessory"
+],
+[
+"agiorgitiko",
+"red",
+"adaptation"
+],
+[
+"calabrese",
+"red",
+"adaptation"
+],
+[
+"moschofilero",
+"pink",
+"adaptation"
+],
+[
+"verdejo",
+"white",
+"adaptation"
+],
+[
+"xinomavro",
+"red",
+"adaptation"
+],
+[
+"floreal",
+"white",
+"adaptation"
+],
+[
+"souvignier gris",
+"white",
+"adaptation"
+],
+[
+"sauvignac",
+"white",
+"adaptation"
+]
+]
+],
+[
+"white",
+[
+[
+"vermentino",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"sauvignon",
+"white",
+"accessory"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"sémillon",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"verdejo",
+"white",
+"adaptation"
+],
+[
+"floréal",
+"white",
+"adaptation"
+],
+[
+"souvignier gris",
+"white",
+"adaptation"
+],
+[
+"sauvignac",
+"white",
+"adaptation"
+],
+[
+"Moschofilero",
+"pink",
+"adaptation"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20260618,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-c6ab5987-547b-48a8-9a0a-e7199e5169d8/telechargement",
@@ -12851,7 +14638,33 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"pinot gris",
+"pink",
+"main"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"cabernet franc",
+"red",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20251211,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-b6915da9-2112-4d12-95d7-ab037dafcf01/telechargement",
@@ -13007,7 +14820,33 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"sauvignon",
+"white",
+"main"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"pinot noir",
+"red",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20260917,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-50d70c3a-38fc-45db-a2f9-697801d2a526/telechargement",
@@ -13128,7 +14967,68 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red",
+[
+[
+"pineau d'Aunis",
+"red",
+"main"
+],
+[
+"cabernet franc",
+"red",
+"accessory"
+],
+[
+"cot",
+"red",
+"accessory"
+],
+[
+"gamay",
+"red",
+"accessory"
+]
+]
+],
+[
+"rosé",
+[
+[
+"pineau d'Aunis",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"accessory"
+],
+[
+"gamay",
+"red",
+"accessory"
+],
+[
+"grolleau",
+"red",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"chenin",
+"white",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20220414,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-d69c4f1e-c73e-4b04-8d00-6964f653d72a/telechargement",
@@ -13206,7 +15106,48 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"aligoté",
+"white",
+"main"
+],
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"gamay de Bouze",
+"red",
+"accessory"
+],
+[
+"gamay de Chaudenay",
+"red",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20110916,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-502c86f8-8cdb-4663-91e7-0f54372010e5/telechargement",
@@ -13690,7 +15631,33 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"pinot noir",
+"red",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20240125,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-bb9d8931-7d5e-4309-8c07-1dcdd9c4a183/telechargement",
@@ -13817,7 +15784,73 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet sauvignon",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+]
+]
+],
+[
+"white",
+[
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+],
+[
+"ugni blanc",
+"white",
+"complementary"
+],
+[
+"chenin",
+"white",
+"accessory"
+],
+[
+"ondenc",
+"white",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20170824,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-521ebcc1-feea-4119-855c-51d4a3536e48/telechargement",
@@ -13943,7 +15976,78 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red",
+[
+[
+"cabernet-sauvignon",
+"red",
+"main"
+],
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"carmenère",
+"red",
+"accessory"
+],
+[
+"petit verdot",
+"red",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+],
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"colombard",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20260611,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-93c9cf03-448c-4a5e-88aa-60456dd707e6/telechargement",
@@ -14084,7 +16188,73 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"Carmenère",
+"red",
+"accessory"
+],
+[
+"Petit Verdot",
+"red",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+],
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"colombard",
+"white",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20261018,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-acf4fa52-48a4-498b-b354-32f81644c4c8/telechargement",
@@ -14229,8 +16399,129 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"red",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet sauvignon",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+]
+]
+],
+[
+"rosé",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet sauvignon",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"muscadelle",
+"white",
+"accessory"
+],
+[
+"sauvignon",
+"white",
+"accessory"
+],
+[
+"sauvignon gris",
+"pink",
+"accessory"
+],
+[
+"sémillon",
+"white",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"chenin",
+"white",
+"main"
+],
+[
+"mauzac",
+"white",
+"main"
+],
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"ondenc",
+"white",
+"main"
+],
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+],
+[
+"colombard",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20250807,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-44258990-fcdc-4ca1-9389-22309309c48a/telechargement",
 "label": "Cahier des charges de l’appellation d’origine contrôlée Côtes de Duras, homologué par arrêté du 28 juillet 2025 (AGRT2512971A) - BO n°32 du 7 août 2025",
@@ -14355,8 +16646,84 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"red",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"complementary"
+],
+[
+"duras",
+"red",
+"accessory"
+],
+[
+"fer",
+"red",
+"accessory"
+]
+]
+],
+[
+"rosé",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"accessory"
+],
+[
+"duras",
+"red",
+"accessory"
+],
+[
+"fer",
+"red",
+"accessory"
+],
+[
+"syrah",
+"red",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"chenin",
+"white",
+"main"
+],
+[
+"mauzac",
+"white",
+"complementary"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111202,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-dc895811-a5ae-47c2-93be-bbeaf8a96f50/telechargement",
 "label": "Cahiers des charges pour les AOC suivantes : Clos de Tart, Côtes de Millau, Bonnes-Mares, Côte de Beaune, Criots-Bâtard-Montrachet, Charlemagne, Meursault et Blagny - BO n°48 du 02 décembre 2011",
@@ -14926,8 +17293,59 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"aubin",
+"white",
+"main"
+],
+[
+"auxerrois",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"aubin",
+"white",
+"accessory"
+],
+[
+"auxerrois",
+"white",
+"accessory"
+],
+[
+"meunier",
+"red",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20260910,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-c6625086-ddee-404c-8f65-379f8250bf9c/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Côtes de Toul - BO n°37 du 10 septembre 2026",
@@ -15119,8 +17537,129 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"savagnin",
+"white",
+"main"
+],
+[
+"pinot noir",
+"red",
+"accessory"
+],
+[
+"poulsard",
+"red",
+"accessory"
+],
+[
+"trousseau",
+"red",
+"accessory"
+],
+[
+"aligoté",
+"white",
+"adaptation"
+],
+[
+"chenin",
+"white",
+"adaptation"
+],
+[
+"enfariné",
+"red",
+"adaptation"
+],
+[
+"gringet",
+"white",
+"adaptation"
+],
+[
+"marsanne",
+"white",
+"adaptation"
+],
+[
+"roussane",
+"white",
+"adaptation"
+],
+[
+"sacy",
+"white",
+"adaptation"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"poulsard",
+"red",
+"main"
+],
+[
+"trousseau",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"savagnin",
+"white",
+"main"
+],
+[
+"béclan",
+"red",
+"adaptation"
+],
+[
+"enfariné",
+"red",
+"adaptation"
+],
+[
+"franc noir de Haute-Saône",
+"red",
+"adaptation"
+],
+[
+"gamay",
+"red",
+"adaptation"
+],
+[
+"gringet",
+"white",
+"adaptation"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20220929,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-40d171ab-4187-40be-86f4-fcc155a4eca8/telechargement",
 "label": "Cahier des charges de l'AOP Côtes du Jura, homologué par arrêté du 20 septembre 2022, publié au JORF du 25 septembre 2022 (AGRT2222482A) - BO n°40 du 29 septembre 2022",
@@ -15268,7 +17807,78 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"muscadelle",
+"white",
+"accessory"
+],
+[
+"sémillon",
+"white",
+"accessory"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"abouriou",
+"red",
+"complementary"
+],
+[
+"cot",
+"red",
+"complementary"
+],
+[
+"fer",
+"red",
+"complementary"
+],
+[
+"gamay",
+"red",
+"complementary"
+],
+[
+"syrah",
+"red",
+"complementary"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20260115,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-cd0e75ca-72c9-4ff0-a9e0-4ea7e12e5700/telechargement",
@@ -15541,8 +18151,219 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"bourboulenc",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"main"
+],
+[
+"grenache blanc",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+],
+[
+"viognier",
+"white",
+"main"
+],
+[
+"Clairette rose",
+"pink",
+"accessory"
+],
+[
+"grenache gris",
+"pink",
+"accessory"
+],
+[
+"piquepoul blanc",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"Carignan blanc",
+"white",
+"adaptation"
+],
+[
+"Floréal",
+"white",
+"adaptation"
+],
+[
+"Rolle",
+"white",
+"adaptation"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"brun argenté",
+"red",
+"accessory"
+],
+[
+"caladoc",
+"red",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"cinsaut",
+"red",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"clairette rose",
+"pink",
+"accessory"
+],
+[
+"counoise",
+"red",
+"accessory"
+],
+[
+"couston",
+"red",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"grenache gris",
+"pink",
+"accessory"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"marselan",
+"red",
+"accessory"
+],
+[
+"muscardin",
+"red",
+"accessory"
+],
+[
+"piquepoul blanc",
+"white",
+"accessory"
+],
+[
+"piquepoul noir",
+"red",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+],
+[
+"terret noir",
+"red",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+],
+[
+"Carignan blanc",
+"white",
+"adaptation"
+],
+[
+"Floréal",
+"white",
+"adaptation"
+],
+[
+"Rolle",
+"white",
+"adaptation"
+],
+[
+"Vidoc",
+"red",
+"adaptation"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20241219,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-0a35319f-f582-456a-bc41-dad3dd4ceb28/telechargement",
 "label": "Cahier des charges modifié de l’appellation d’origine contrôlée Côtes du Rhône, homologué par l’arrêté du 10 décembre 2024 (AGRT2428433A) - BO n°51 du 19 décembre 2024",
@@ -15773,8 +18594,204 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"bourboulenc",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"main"
+],
+[
+"grenache blanc",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+],
+[
+"viognier",
+"white",
+"main"
+],
+[
+"clairette rose",
+"pink",
+"accessory"
+],
+[
+"grenache gris",
+"pink",
+"accessory"
+],
+[
+"piquepoul blanc",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"Carignan blanc",
+"white",
+"adaptation"
+],
+[
+"Floréal",
+"white",
+"adaptation"
+],
+[
+"Rolle",
+"white",
+"adaptation"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"brun argenté",
+"red",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"cinsaut",
+"red",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"clairette rose",
+"pink",
+"accessory"
+],
+[
+"counoise",
+"red",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"grenache gris",
+"pink",
+"accessory"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"muscardin",
+"red",
+"accessory"
+],
+[
+"piquepoul blanc",
+"white",
+"accessory"
+],
+[
+"piquepoul noir",
+"red",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+],
+[
+"terret noir",
+"red",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+],
+[
+"carignan blanc",
+"white",
+"adaptation"
+],
+[
+"floréal",
+"white",
+"adaptation"
+],
+[
+"rolle",
+"white",
+"adaptation"
+],
+[
+"vidoc",
+"red",
+"adaptation"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20241128,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-4d6e5152-08b2-47c6-adf7-4578a78bfe78/telechargement",
 "label": "Cahier des charges de l'AOC Côtes du Rhône Villages homologué par arrêté du 21 novembre 2024, publié au JORF du 23 novembre 2024 - BO n°48 du 28 novembre 2024",
@@ -16729,7 +19746,133 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"main"
+],
+[
+"carmenère",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"petit verdot",
+"red",
+"main"
+],
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+],
+[
+"colombard",
+"white",
+"accessory"
+],
+[
+"merlot blanc",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+]
+]
+],
+[
+"rosé",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"main"
+],
+[
+"carmenère",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"petit verdot",
+"red",
+"main"
+],
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20260618,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-fa74935f-073a-41fa-8a16-c18a275e5abc/telechargement",
@@ -17278,8 +20421,44 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"red",
+[
+[
+"syrah",
+"red",
+"main"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20241219,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-7496da98-e980-4e30-8de0-2cc072fbb0fe/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Crozes-Hermitage, homologué par arrêté du 10 décembre 2024 (AGRT2429812A) - BO n°51 du 19 décembre 2024",
@@ -17454,7 +20633,58 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red and rosé",
+[
+[
+"fer",
+"red",
+"main"
+],
+[
+"cabernet franc",
+"red",
+"complementary"
+],
+[
+"cabernet-sauvignon",
+"red",
+"complementary"
+],
+[
+"mouyssaguès",
+"red",
+"accessory"
+],
+[
+"négret de Banhars",
+"red",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"chenin",
+"white",
+"main"
+],
+[
+"mauzac",
+"white",
+"accessory"
+],
+[
+"saint-côme",
+"white",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20111117,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-7bf0d04d-86d4-4be1-9c78-d2ee70b9627e/telechargement",
@@ -17830,7 +21060,88 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red and rosé",
+[
+[
+"fer",
+"red",
+"main"
+],
+[
+"gamay",
+"red",
+"main"
+],
+[
+"cabernet franc",
+"red",
+"complementary"
+],
+[
+"cabernet-sauvignon",
+"red",
+"complementary"
+],
+[
+"abouriou",
+"red",
+"accessory"
+],
+[
+"castet",
+"red",
+"accessory"
+],
+[
+"duras",
+"red",
+"accessory"
+],
+[
+"merlot",
+"red",
+"accessory"
+],
+[
+"mouyssaguès",
+"red",
+"accessory"
+],
+[
+"négret de Banhars",
+"red",
+"accessory"
+],
+[
+"pinot noir",
+"red",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"chenin",
+"white",
+"main"
+],
+[
+"mauzac",
+"white",
+"complementary"
+],
+[
+"saint-côme",
+"white",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20111117,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-7bf0d04d-86d4-4be1-9c78-d2ee70b9627e/telechargement",
@@ -18022,7 +21333,78 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red and rosé",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"lledoner pelut",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"carignan",
+"red",
+"complementary"
+],
+[
+"cinsaut",
+"red",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"grenache blanc",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+],
+[
+"vermentino",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20111209,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-6d8683b3-0d77-4bd6-b1c3-8ae16e2331fa/telechargement",
@@ -18187,8 +21569,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20241128,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-5ae322f4-9fc0-4255-8b45-7f40385e17f6/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Fixin homologué par l'arrêté du 19 novembre 2024 publié au JORF du 21 novembre 2024 - BO n°48 du 28 novembre 2024",
@@ -18829,8 +22252,139 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"sparkling white",
+[
+[
+"len de l'el",
+"white",
+"main"
+],
+[
+"mauzac",
+"white",
+"main"
+],
+[
+"mauzac rose",
+"pink",
+"main"
+],
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"ondenc",
+"white",
+"accessory"
+],
+[
+"sauvignon",
+"white",
+"accessory"
+],
+[
+"alvarinho",
+"white",
+"adaptation"
+],
+[
+"felen",
+"white",
+"adaptation"
+],
+[
+"furmint",
+"white",
+"adaptation"
+],
+[
+"verdanel",
+"white",
+"adaptation"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"duras",
+"red",
+"main"
+],
+[
+"fer",
+"red",
+"main"
+],
+[
+"prunelard",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"cabernet franc",
+"red",
+"accessory"
+],
+[
+"cabernet-sauvignon",
+"red",
+"accessory"
+],
+[
+"gamay",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"accessory"
+],
+[
+"jurançon noir",
+"red",
+"adaptation"
+],
+[
+"len de l'el",
+"white",
+"main"
+],
+[
+"ondenc",
+"white",
+"main"
+],
+[
+"mauzac",
+"white",
+"main"
+],
+[
+"mauzac rose",
+"pink",
+"main"
+],
+[
+"muscadelle",
+"white",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20250911,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-b13c44bb-b1f8-4c56-8b41-5fd2d69659cb/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Gaillac - BO n°37 du 11 septembre 2025",
@@ -19188,8 +22742,179 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"clairette",
+"white",
+"main"
+],
+[
+"bourboulenc",
+"white",
+"complementary"
+],
+[
+"clairette Rose",
+"pink",
+"complementary"
+],
+[
+"grenache blanc",
+"white",
+"complementary"
+],
+[
+"grenache gris",
+"pink",
+"complementary"
+],
+[
+"marsanne",
+"white",
+"complementary"
+],
+[
+"piquepoul blanc",
+"white",
+"complementary"
+],
+[
+"roussanne",
+"white",
+"complementary"
+],
+[
+"viognier",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"Piquepoul gris",
+"pink",
+"adaptation"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"complementary"
+],
+[
+"mourvèdre",
+"red",
+"complementary"
+],
+[
+"cinsaut",
+"red",
+"complementary"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"brun argenté",
+"red",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"clairette rose",
+"pink",
+"accessory"
+],
+[
+"counoise",
+"red",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"grenache gris",
+"pink",
+"accessory"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"muscardin",
+"red",
+"accessory"
+],
+[
+"piquepoul blanc",
+"white",
+"accessory"
+],
+[
+"piquepoul noir",
+"red",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+],
+[
+"terret noir",
+"red",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+],
+[
+"Piquepoul gris",
+"pink",
+"adaptation"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20241219,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-570b68b6-48c2-415d-ab8c-e869e2ff1c54/telechargement",
 "label": "Cahier des charges de l’appellation d’origine contrôlée Gigondas, homologué par l’arrêté du 10 décembre 2024 (AGRT2428435A) - BO n°51 du 19 décembre 2024",
@@ -19247,8 +22972,49 @@
 ]
 },
 "limits": [],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111117,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-1fbaf2c5-d402-4eae-87ac-c9f35fdd144a/telechargement",
 "label": "Cahier des charges relatifs aux appellations d’origines contrôlées suivantes 09/11/2011 : Bourgogne mousseux, Chevalier-Montrachet, Muscadet Côtes de Grandlieu, Muscadet Sèvre et Maine, Bouzeron, Givry et Listrac-Médoc - BO n°46 du 17 novembre 2011",
@@ -19844,8 +23610,174 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"red",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"cinsaut",
+"red",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"marselan",
+"red",
+"accessory"
+],
+[
+"mourvèdre",
+"red",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+]
+]
+],
+[
+"rosé",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"cinsaut",
+"red",
+"main"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"marselan",
+"red",
+"accessory"
+],
+[
+"mourvèdre",
+"red",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"viognier",
+"white",
+"main"
+],
+[
+"grenache blanc",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+],
+[
+"Bourboulenc",
+"white",
+"accessory"
+],
+[
+"Clairette",
+"white",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20231207,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-caece759-9ae4-4f47-afd7-df30155551e3/telechargement",
 "label": "Cahiers des charges Grignan les Adhémar homologué par arrêté du 29 novembre 2023, publié au JORF du 6 décembre 2023. - BO n°49 du 7 décembre 2023",
@@ -20306,8 +24238,44 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"red",
+[
+[
+"syrah",
+"red",
+"main"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20241219,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-44a11782-ba80-4c0e-85ef-6acd35675371/telechargement",
 "label": "Cahier des charges de l’appellation d’origine contrôlée Hermitage ou l’Hermitage ou Ermitage ou l’Ermitage homologué par l’arrêté du 10 décembre 2024 (AGRT2429206A) - BO n°51 du 19 décembre 2024",
@@ -20469,8 +24437,94 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"courbu",
+"white",
+"main"
+],
+[
+"gros manseng",
+"white",
+"main"
+],
+[
+"petit courbu",
+"white",
+"main"
+],
+[
+"petit manseng",
+"white",
+"main"
+]
+]
+],
+[
+"rosé",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet sauvignon",
+"red",
+"main"
+],
+[
+"tannat",
+"red",
+"main"
+],
+[
+"courbu",
+"white",
+"accessory"
+],
+[
+"gros manseng",
+"white",
+"accessory"
+],
+[
+"petit courbu",
+"white",
+"accessory"
+],
+[
+"petit manseng",
+"white",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"tannat",
+"red",
+"main"
+],
+[
+"cabernet sauvignon",
+"red",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20240307,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-90b99013-a98c-483b-8dd1-07c72e57536b/telechargement",
 "label": "Cahier des charges de l’appellation d’origine contrôlée Irouléguy, homologué par arrêté du 27 février 2024, publié le 29 février 2024. - BO n°10 du 7 mars 2024",
@@ -20838,7 +24892,7 @@
 "accessory"
 ],
 [
-"terret",
+"terret blanc",
 "white",
 "accessory"
 ],
@@ -20865,7 +24919,7 @@
 "carignan",
 "cinsaut",
 "macabeu",
-"terret",
+"terret blanc",
 "viognier"
 ]
 },
@@ -20946,7 +25000,93 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"cinsaut",
+"red",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"bourboulenc",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"main"
+],
+[
+"grenache blanc",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"piquepoul",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+],
+[
+"vermentino",
+"white",
+"main"
+],
+[
+"macabeu",
+"white",
+"accessory"
+],
+[
+"terret blanc",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20241107,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-30057276-4eea-40af-996f-47c2aeae3bb1/telechargement",
@@ -21312,8 +25452,54 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20260910,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-c9465758-7a75-4e31-ba2e-a7943003508d/telechargement",
 "label": "Cahier des charges de l’appellation d'origine protégée Ladoix- AGRT2617933A - BO n°37 du 10 septembre 2026",
@@ -22838,8 +27024,129 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"bourboulenc",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"main"
+],
+[
+"grenache blanc",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"piquepoul blanc",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"cinsaut",
+"red",
+"main"
+],
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"clairette rose",
+"pink",
+"accessory"
+],
+[
+"counoise",
+"red",
+"accessory"
+],
+[
+"grenache gris",
+"pink",
+"accessory"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"piquepoul blanc",
+"white",
+"accessory"
+],
+[
+"piquepoul noir",
+"red",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20240718,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-6a18f1f2-d1b5-420b-bdfb-a9f701721270/telechargement",
 "label": "Cahier des charges de l'AOC Lirac homologué par l'arrêté du 4 juillet 2024, publié au JORF du 7 juillet 2024 - BO n°29 du 18 juillet 2024",
@@ -23277,8 +27584,174 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"bourboulenc",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"main"
+],
+[
+"grenache blanc",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+],
+[
+"vermentino",
+"white",
+"main"
+],
+[
+"ugni blanc",
+"white",
+"complementary"
+],
+[
+"viognier",
+"white",
+"accessory"
+],
+[
+"piquepoul blanc",
+"white",
+"adaptation"
+],
+[
+"carignan blanc",
+"white",
+"adaptation"
+],
+[
+"assyrtiko",
+"white",
+"adaptation"
+],
+[
+"parellada",
+"white",
+"adaptation"
+],
+[
+"grenache gris",
+"pink",
+"adaptation"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"cinsaut",
+"red",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"marselan",
+"red",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"vermentino",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+],
+[
+"counoise",
+"red",
+"accessory"
+],
+[
+"caladoc",
+"red",
+"adaptation"
+],
+[
+"sciaccarello",
+"red",
+"adaptation"
+],
+[
+"niellucio",
+"red",
+"adaptation"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20250424,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-bd7aab43-51a7-47e4-8936-f997179f2c71/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Lubéron - BO n°17 du 24 avril 2025",
@@ -23472,8 +27945,59 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"red and rosé",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"pinot noir",
+"red",
+"main"
+]
+]
+],
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"aligoté",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+],
+[
+"melon",
+"white",
+"accessory"
+],
+[
+"sacy",
+"white",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20260820,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-6dd3dd0c-592f-43d0-a6a2-baf46dd570b8/telechargement",
 "label": "Cahier des charges de l’appellation d'origine protégée Mâcon homologué par arrêté du 07 août 2026 (AGRT2619419A) - BO n°34 du 20 août 2026",
@@ -24098,8 +28622,79 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+],
+[
+"rosé",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"pinot gris",
+"pink",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20200528,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-8fa6b7fc-47fa-4091-8d6c-4610b85767b5/telechargement",
 "label": "Cahier des charges modifié de l'AOC Marsannay - BO n°28 du 28 mai 2020",
@@ -24555,7 +29150,103 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+],
+[
+"alvarinho",
+"white",
+"adaptation"
+],
+[
+"floréal",
+"white",
+"adaptation"
+],
+[
+"liliorila",
+"white",
+"adaptation"
+],
+[
+"sauvignac",
+"white",
+"adaptation"
+]
+]
+],
+[
+"red",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"main"
+],
+[
+"carmenère",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"petit verdot",
+"red",
+"main"
+],
+[
+"arinarnoa",
+"red",
+"adaptation"
+],
+[
+"castets",
+"red",
+"adaptation"
+],
+[
+"touriga nacional",
+"red",
+"adaptation"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20250807,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-215c7e43-3794-4aea-b062-4ed370573b8c/telechargement",
@@ -24593,7 +29284,28 @@
 ]
 },
 "limits": [],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"sauvignon",
+"white",
+"main"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"pinot noir",
+"red",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20131206,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-42902e2c-ccf0-41b5-8e8a-cb34b2f6f4d9/telechargement",
@@ -24651,8 +29363,44 @@
 ]
 },
 "limits": [],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20250911,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-84e3b2df-7c1c-489f-8058-fc3b3babba25/telechargement",
 "label": "Cahier des charges relatif à l’appellation d'origine contrôlée Mercurey - BO n°37 du 11 septembre 2025",
@@ -24754,8 +29502,64 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+],
+[
+"aligoté",
+"white",
+"adaptation"
+],
+[
+"melon",
+"white",
+"adaptation"
+],
+[
+"sacy",
+"white",
+"adaptation"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20260611,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-f14f68d0-cb2a-49ca-9fa5-edd6b2828624/telechargement",
 "label": "Cahier des charges de l’appellation d’origine contrôlée Meursault homologué par arrêté du 4 juin 2026 (AGRT2610194A) - BO n°24 du 11 juin 2026",
@@ -25352,8 +30156,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111208,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-5e47eafe-fe6c-4ea2-a395-34477a2325b8/telechargement",
 "label": "BO-agri: Cahiers des charges des AOC « Montagne-Saint-Emilion », « Hermitage » ou « Ermitage » ou « l’Hermitage » ou « l’Ermitage », « Irouléguy », « Saint-Amour », « Brouilly », « Régnié », « Moulin-à-Vent », « Côtes de Bordeaux », « Chénas », « Saint-Emilion », « Lussac Saint-Emilion », « Côtes du Roussillon Villages », « Côtes du Roussillon », « Pouilly-Fuissé », « Bourg » ou « Côtes de Bourg » ou « Bourgeais », « Sauternes », « Chorey-lès-Beaune », « Bienvenues-Bâtard-Montrachet », « Madiran », « Bourgogne aligoté », « Coteaux d’Ancenis », « Collioure », « Monthélie » et « Banyuls grand cru », « Cornas »",
@@ -25518,7 +30363,63 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+],
+[
+"ondenc",
+"white",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"merlot",
+"red",
+"main"
+],
+[
+"cabernet franc",
+"red",
+"complementary"
+],
+[
+"cabernet-sauvignon",
+"red",
+"complementary"
+],
+[
+"cot",
+"red",
+"complementary"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20141023,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-0d52a671-4b5e-4158-ab9f-a37fc2394688/telechargement",
@@ -25587,8 +30488,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111209,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-6d8683b3-0d77-4bd6-b1c3-8ae16e2331fa/telechargement",
 "label": "Cahiers des charges des AOC suivantes (en lien le JORF ; pour les cahiers des charges eux-mêmes, cliquer sur le titre ci-dessus) : Cahiers des charges des AOC, Pouilly-Vinzelles, Pouilly-Loché, Minervois-La Livinière, Corbières, Pécharmant, Faugères, Morey-Saint-Denis, Mâcon et Corbières - BO n°49 du 9 décembre 2011",
@@ -25759,7 +30701,68 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"auxerrois",
+"white",
+"main"
+],
+[
+"müller-thurgau",
+"white",
+"main"
+],
+[
+"pinot gris",
+"pink",
+"main"
+],
+[
+"gewurztraminer",
+"pink",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"riesling",
+"white",
+"accessory"
+]
+]
+],
+[
+"rosé",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"gamay",
+"red",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20260625,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-0b8e5828-6c01-4096-8bab-f9edfc2f588f/telechargement",
@@ -26095,7 +31098,28 @@
 ]
 },
 "limits": [],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"muscat à petits grains blancs",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"muscat à petits grains rouges",
+"pink",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20260618,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-126bfd77-7851-4872-a592-56a769543285/telechargement",
@@ -26259,8 +31283,44 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111117,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-7bf0d04d-86d4-4be1-9c78-d2ee70b9627e/telechargement",
 "label": "Cahier des charges relatifs aux appellations d’origines contrôlées suivantes (en lien, décret d’homologation paru au JORF) : Grignan-les-Adhémar, Musigny, Entraygues-Le Fel, Estaing, Premières Côtes de Bordeaux, Charmes-Chambertin, Griotte-Chambertin, Entre-deux-Mers - BO n°46 du 17 novembre 2011",
@@ -26328,8 +31388,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20250306,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-b1623bde-4ee9-46cb-806e-556ec29a84a4/telechargement",
 "label": "Cahier des charges modifié de l’appellation d’origine contrôlée Nuits-Saint-Georges homologué par l’arrêté du 24 décembre 2024 publié au JORF du 03 janvier 2025 (AGRT2429484A) - BO n°10 du 6 mars 2025",
@@ -26906,7 +32007,153 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"araignan",
+"white",
+"main"
+],
+[
+"bourboulenc",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"main"
+],
+[
+"clairette rose",
+"pink",
+"main"
+],
+[
+"colombaud",
+"white",
+"accessory"
+],
+[
+"furmint",
+"white",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"muscat à petits grains",
+"white",
+"accessory"
+],
+[
+"muscat d'Alexandrie",
+"white",
+"accessory"
+],
+[
+"pascal",
+"white",
+"accessory"
+],
+[
+"piquepoul blanc",
+"white",
+"accessory"
+],
+[
+"terret gris",
+"pink",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"cinsaut",
+"red",
+"main"
+],
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"brun fourca",
+"red",
+"accessory"
+],
+[
+"cabernet-sauvignon",
+"red",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"castet",
+"red",
+"accessory"
+],
+[
+"durif",
+"red",
+"accessory"
+],
+[
+"muscat à petits grains rouges",
+"pink",
+"accessory"
+],
+[
+"muscat de Hambourg",
+"red",
+"accessory"
+],
+[
+"syrah",
+"red",
+"accessory"
+],
+[
+"téoulier",
+"red",
+"accessory"
+],
+[
+"terret gris",
+"pink",
+"accessory"
+],
+[
+"tibouren",
+"red",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20240711,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-9dfd1458-f6c1-4175-aa88-4175ff0255d6/telechargement",
@@ -26983,8 +32230,44 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"vermentino",
+"white",
+"main"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"nielluccio",
+"red",
+"main"
+],
+[
+"grenache",
+"red",
+"accessory"
+],
+[
+"sciaccarello",
+"red",
+"accessory"
+],
+[
+"vermentino",
+"white",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20220512,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-ef16a4b1-5277-4772-9bf6-0d315936c90c/telechargement",
 "label": "Cahier des charges de l'appellation d'origine protégée Patrimonion homologué par l'arrêté du 25 avril 2022 publié au JORF du 5 mai 2022 - B.O. n°20 du 12 mai 2022",
@@ -27180,7 +32463,68 @@
 ]
 },
 "limits": [],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"muscadelle",
+"white",
+"main"
+],
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"sauvignon gris",
+"pink",
+"main"
+],
+[
+"sémillon",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"main"
+],
+[
+"carmenère",
+"red",
+"main"
+],
+[
+"cot",
+"red",
+"main"
+],
+[
+"merlot",
+"red",
+"main"
+],
+[
+"petit verdot",
+"red",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20241219,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-eafa5b1a-119b-4042-814b-a0a10646c996/telechargement",
@@ -27810,8 +33154,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111021,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-437a4e9a-13eb-4d74-8d07-9711118e5d41/telechargement",
 "label": "Cahier des charges relatifs aux appellations d’origines contrôlées suivantes (en lien, décret d’homologation paru au JORF) : Bordeaux supérieur, Graves de Vayres, Barsac, Mercurey, Brulhois, Mazoyères-Chambertin et Puligny-Montrachet - BO n°42 du 21 octobre 2011",
@@ -28221,7 +33606,43 @@
 ]
 },
 "limits": [],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"sauvignon",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+]
+]
+],
+[
+"rosé",
+[
+[
+"pinot gris",
+"pink",
+"main"
+],
+[
+"pinot noir",
+"red",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20220303,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-ab60d12c-339b-4f8d-aa74-8fdcc652a13f/telechargement",
@@ -28987,8 +34408,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111206,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-0368b0e7-6200-4dbf-9598-ae98d8cc0410/telechargement",
 "label": "BO-agri: Cahiers des charges des AOC « Bellet » ou « Vin de Bellet », « Grand Roussillon »,« Médoc », « Moulis » ou « Moulis-en-Médoc » « Muscat de Beaumes-de-Venise », « Pauillac » et « Rasteau »",
@@ -29165,7 +34627,7 @@
 "main"
 ],
 [
-"terret",
+"terret blanc",
 "white",
 "main"
 ]
@@ -29401,6 +34863,11 @@
 "terret",
 "red",
 "main"
+],
+[
+"terret blanc",
+"white",
+"main"
 ]
 ]
 ],
@@ -29453,7 +34920,7 @@
 "accessory"
 ],
 [
-"terret",
+"terret blanc",
 "white",
 "accessory"
 ],
@@ -29791,8 +35258,44 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"red",
+[
+[
+"syrah",
+"red",
+"main"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20240718,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-20ed76a6-b4c3-43a1-8cfd-e8b40379c325/telechargement",
 "label": "Cahier des charges de l'AOC Saint Joseph homologué par l'arrêté du 4 juillet 2024, publié au JORF du 7 juillet 2024 - BO n°29 du 18 juillet 2024",
@@ -30350,7 +35853,53 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"sacy",
+"white",
+"main"
+],
+[
+"sauvignon",
+"white",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"gamay",
+"red",
+"main"
+],
+[
+"pinot noir",
+"red",
+"main"
+]
+]
+],
+[
+"rosé",
+[
+[
+"gamay",
+"red",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20261029,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-c5c8d19a-3986-4891-a49e-e36fc15610d5/telechargement",
@@ -30415,8 +35964,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20250213,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-7393d810-0711-48d8-89be-ed50752a6aa4/telechargement",
 "label": "Cahier des charges de l'appellation d'origine contrôlée Saint Romain - BO n°7 du 13 février 2025",
@@ -30755,7 +36345,28 @@
 ]
 },
 "limits": [],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"sauvignon",
+"white",
+"main"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"pinot noir",
+"red",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20110902,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-c5b06e73-5c8e-40fc-81cb-26d1b8a0135a/telechargement",
@@ -30830,8 +36441,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111206,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-0368b0e7-6200-4dbf-9598-ae98d8cc0410/telechargement",
 "label": "BO-agri: Cahiers des charges des AOC « Bellet » ou « Vin de Bellet », « Grand Roussillon »,« Médoc », « Moulis » ou « Moulis-en-Médoc » « Muscat de Beaumes-de-Venise », « Pauillac » et « Rasteau »",
@@ -31683,7 +37335,148 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"red",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"carignan",
+"red",
+"main"
+],
+[
+"cinsaut",
+"red",
+"accessory"
+],
+[
+"counoise",
+"red",
+"accessory"
+],
+[
+"lledoner pelut",
+"red",
+"accessory"
+],
+[
+"morrastel",
+"red",
+"accessory"
+],
+[
+"terret noir",
+"red",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"bourboulenc",
+"white",
+"main"
+],
+[
+"carignan blanc",
+"white",
+"main"
+],
+[
+"carignan gris",
+"pink",
+"main"
+],
+[
+"chenin",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"main"
+],
+[
+"clairette rose",
+"pink",
+"main"
+],
+[
+"grenache blanc",
+"white",
+"main"
+],
+[
+"grenache gris",
+"pink",
+"main"
+],
+[
+"macabeu",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"piquepoul blanc",
+"white",
+"main"
+],
+[
+"rolle",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+],
+[
+"terret blanc",
+"white",
+"main"
+],
+[
+"terret gris",
+"pink",
+"main"
+],
+[
+"viognier",
+"white",
+"main"
+],
+[
+"assyrtiko",
+"white",
+"main"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20261112,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-0b718982-98da-4a75-aad8-fb637d9707b9/telechargement",
@@ -31972,7 +37765,83 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"baroque",
+"white",
+"main"
+],
+[
+"gros manseng",
+"white",
+"main"
+],
+[
+"chenin",
+"white",
+"accessory"
+],
+[
+"claverie",
+"white",
+"accessory"
+],
+[
+"petit manseng",
+"white",
+"accessory"
+],
+[
+"raffiat de Moncade",
+"white",
+"accessory"
+],
+[
+"sauvignon",
+"white",
+"accessory"
+],
+[
+"sauvignon gris",
+"pink",
+"accessory"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"cabernet franc",
+"red",
+"main"
+],
+[
+"tannat",
+"red",
+"main"
+],
+[
+"cabernet-sauvignon",
+"red",
+"accessory"
+],
+[
+"fer",
+"red",
+"accessory"
+],
+[
+"merlot",
+"red",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20161201,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-8aa55a31-4d11-4e2c-9fbe-01ae6fc48fa4/telechargement",
@@ -32176,8 +38045,234 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"bourboulenc",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"main"
+],
+[
+"grenache blanc",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+],
+[
+"viognier",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"complementary"
+],
+[
+"syrah",
+"red",
+"complementary"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"brun argenté",
+"red",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"cinsaut",
+"red",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"clairette rose",
+"pink",
+"accessory"
+],
+[
+"counoise",
+"red",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"grenache gris",
+"pink",
+"accessory"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"muscardin",
+"red",
+"accessory"
+],
+[
+"piquepoul noir",
+"red",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+],
+[
+"terret noir",
+"red",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+]
+]
+],
+[
+"rosé",
+[
+[
+"cinsaut",
+"red",
+"main"
+],
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"brun argenté",
+"red",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"clairette rose",
+"pink",
+"accessory"
+],
+[
+"counoise",
+"red",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"grenache gris",
+"pink",
+"accessory"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"muscardin",
+"red",
+"accessory"
+],
+[
+"piquepoul noir",
+"red",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+],
+[
+"terret noir",
+"red",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20201210,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-de83bacc-cb7a-47e0-8a4a-42dca6c1a17a/telechargement",
 "label": "Cahier des charges de l'Appellation d'Origine Contrôlée Vacqueyras homologué par l'arrêté du 7 décembre 2020 publié au JORF du 10 décembre 2020 - BO n°50 du 10 décembre 2020",
@@ -32370,7 +38465,88 @@
 "blend": false
 }
 ],
-"by_wine": [],
+"by_wine": [
+[
+"white",
+[
+[
+"sauvignon",
+"white",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"orbois",
+"white",
+"accessory"
+],
+[
+"sauvignon gris",
+"pink",
+"accessory"
+]
+]
+],
+[
+"red",
+[
+[
+"cot",
+"red",
+"main"
+],
+[
+"gamay",
+"red",
+"main"
+],
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"cabernet franc",
+"red",
+"accessory"
+]
+]
+],
+[
+"rosé",
+[
+[
+"cot",
+"red",
+"main"
+],
+[
+"gamay",
+"red",
+"main"
+],
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"cabernet franc",
+"red",
+"accessory"
+],
+[
+"pineau d'Aunis",
+"red",
+"accessory"
+]
+]
+]
+],
 "mixed_roles": false,
 "date": 20110930,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-acd31422-150a-4b41-8b2f-1b2341a77edb/telechargement",
@@ -32547,8 +38723,134 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"bourboulenc",
+"white",
+"main"
+],
+[
+"clairette",
+"white",
+"main"
+],
+[
+"grenache blanc",
+"white",
+"main"
+],
+[
+"roussanne",
+"white",
+"main"
+],
+[
+"vermentino",
+"white",
+"main"
+],
+[
+"viognier",
+"white",
+"main"
+],
+[
+"marsanne",
+"white",
+"accessory"
+]
+]
+],
+[
+"red and rosé",
+[
+[
+"carignan",
+"red",
+"main"
+],
+[
+"cinsaut",
+"red",
+"main"
+],
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"main"
+],
+[
+"syrah",
+"red",
+"main"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"counoise",
+"red",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"marselan",
+"red",
+"accessory"
+],
+[
+"piquepoul noir",
+"red",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+],
+[
+"vermentino",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+],
+[
+"caladoc",
+"red",
+"adaptation"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20231207,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-388160e1-3c7f-41a8-987b-04c846cd7601/telechargement",
 "label": "Cahier des charges de l'AOP Ventoux homologué par arrêté du 17 novembre 2023, publié au JORF du 25 novembre 2023 - BO n°49 du 7 décembre 2023",
@@ -33124,8 +39426,174 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"red",
+[
+[
+"grenache",
+"red",
+"main"
+],
+[
+"mourvèdre",
+"red",
+"complementary"
+],
+[
+"syrah",
+"red",
+"complementary"
+],
+[
+"bourboulenc",
+"white",
+"accessory"
+],
+[
+"brun argenté",
+"red",
+"accessory"
+],
+[
+"carignan",
+"red",
+"accessory"
+],
+[
+"cinsaut",
+"red",
+"accessory"
+],
+[
+"clairette",
+"white",
+"accessory"
+],
+[
+"clairette rose",
+"pink",
+"accessory"
+],
+[
+"counoise",
+"red",
+"accessory"
+],
+[
+"grenache blanc",
+"white",
+"accessory"
+],
+[
+"grenache gris",
+"pink",
+"accessory"
+],
+[
+"marsanne",
+"white",
+"accessory"
+],
+[
+"muscardin",
+"red",
+"accessory"
+],
+[
+"piquepoul blanc",
+"white",
+"accessory"
+],
+[
+"piquepoul noir",
+"red",
+"accessory"
+],
+[
+"roussanne",
+"white",
+"accessory"
+],
+[
+"terret noir",
+"red",
+"accessory"
+],
+[
+"ugni blanc",
+"white",
+"accessory"
+],
+[
+"viognier",
+"white",
+"accessory"
+]
+]
+],
+[
+"white",
+[
+[
+"Clairette",
+"white",
+"main"
+],
+[
+"Grenache Blanc",
+"white",
+"main"
+],
+[
+"Marsanne",
+"white",
+"main"
+],
+[
+"Roussanne",
+"white",
+"main"
+],
+[
+"Viognier",
+"white",
+"main"
+],
+[
+"Bourboulenc",
+"white",
+"accessory"
+],
+[
+"Clairette Rose",
+"pink",
+"accessory"
+],
+[
+"Grenache Gris",
+"pink",
+"accessory"
+],
+[
+"Piquepoul Blanc",
+"white",
+"accessory"
+],
+[
+"Vermentino",
+"white",
+"accessory"
+],
+[
+"Ugni Blanc",
+"white",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20260618,
 "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-a7519cfc-10aa-429d-b9d8-f3c3e0179aa3/telechargement",
 "label": "Cahier des charges de l'appellation d'origine protégée Vinsobres - BO n°25 du 18 juin 2026",
@@ -33415,8 +39883,49 @@
 "blend": false
 }
 ],
-"by_wine": [],
-"mixed_roles": true,
+"by_wine": [
+[
+"white",
+[
+[
+"chardonnay",
+"white",
+"main"
+],
+[
+"pinot blanc",
+"white",
+"main"
+]
+]
+],
+[
+"red",
+[
+[
+"pinot noir",
+"red",
+"main"
+],
+[
+"chardonnay",
+"white",
+"accessory"
+],
+[
+"pinot blanc",
+"white",
+"accessory"
+],
+[
+"pinot gris",
+"pink",
+"accessory"
+]
+]
+]
+],
+"mixed_roles": false,
 "date": 20111117,
 "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-79ea026e-4653-4237-b6d3-7d5ce4572023/telechargement",
 "label": "Cahier des charges relatifs aux appellations d’origines contrôlées suivantes 04/11 : Clos de la Roche, Latricières-Chambertin, Pineau des Charentes, Saint-Mont, Saint-Sardos, Vougeot, - BO n°46 du 17 novembre 2011",

@@ -2,10 +2,7 @@
  "south-africa": {
   "notes": [
    "The warm climate ripens grapes easily, and winemakers more often need to add acid than sugar.",
-   "Chenin Blanc is often made to drink young, with rich tropical notes such as banana, guava, pear and pineapple.",
-   "Pinotage ranges from easy-drinking wine and rosé to barrel-aged reds for cellaring, and newer styles are brighter and juicier.",
-   "Stellenbosch Cabernet is known as heavy and full bodied, while Constantia's is herbal and minty.",
-   "The best Semillon is juicy, with a citrus perfume, fine texture and herbal notes."
+   "Chenin Blanc is often made to drink young, with rich tropical notes such as banana, guava, pear and pineapple."
   ],
   "art": [
    "South African wine",
@@ -18,19 +15,25 @@
  "south-africa/constantia": {
   "notes": [
    "Constantia was famous for an unfortified sweet wine made mostly from Muscat, and its estates still make sweet wines in homage, such as Vin de Constance.",
-   "Its Cabernet Sauvignon is known for herbal and minty flavors."
+   "Its cool climate favors white wines, especially Sauvignon Blanc."
   ],
   "art": [
    "Constantia (wine)",
    "Cabernet Sauvignon"
+  ],
+  "ref": [
+   "wosa"
   ]
  },
  "south-africa/stellenbosch": {
   "notes": [
-   "Stellenbosch Cabernet Sauvignon is noted for heavy, full bodied wines."
+   "Stellenbosch is known for its blended reds."
   ],
   "art": [
    "Cabernet Sauvignon"
+  ],
+  "ref": [
+   "wosa"
   ]
  },
  "south-africa/western-cape": {
@@ -44,7 +47,6 @@
  "south-africa/elgin": {
   "notes": [
    "Elgin is a high-lying, cool district in the Hottentots Holland mountains.",
-   "Its later-ripening, cooler sites give wines with exceptional fruit and elegance.",
    "Chardonnay, Riesling, Sauvignon Blanc, Pinot Noir and Shiraz do particularly well."
   ],
   "ref": [
@@ -53,9 +55,9 @@
  },
  "south-africa/walker-bay": {
   "notes": [
-   "Walker Bay is known for Chardonnay and Pinot Noir from the Hemel-en-Aarde wards.",
+   "Walker Bay is best known for cool-climate Chardonnay and Pinot Noir.",
    "Persistent cool winds from the nearby ocean give the area its cool climate.",
-   "Its Pinotage is noted for consistent quality, and fine Sauvignon Blanc, Merlot and Shiraz are made too."
+   "It is also noted for Pinotage, and Sauvignon Blanc, Merlot and Shiraz are made too."
   ],
   "ref": [
    "wosa"
@@ -90,9 +92,9 @@
  },
  "south-africa/robertson": {
   "notes": [
-   "Robertson's lime-rich soils and cooling southeasterly winds offset its hot summers.",
+   "Robertson has lime-rich soils. Summers can be hot, but cooling southeasterly winds bring moist air into the valley.",
    "Long seen as white wine country, it is known for Chardonnay and Sauvignon Blanc.",
-   "It also makes fine Shiraz and Cabernet Sauvignon, and the fortified dessert wines it was first famed for."
+   "It also makes Shiraz, Cabernet Sauvignon and the fortified dessert wines it was first known for."
   ],
   "ref": [
    "wosa"
@@ -101,8 +103,7 @@
  "south-africa/swartland": {
   "notes": [
    "The Swartland was traditionally a source of robust, full-bodied reds and high-quality fortified wines.",
-   "Exciting reds and whites have emerged more recently, and it still makes top port-style wines.",
-   "Bush vines were the tradition, though trellising is spreading."
+   "Bush vines were the tradition here."
   ],
   "ref": [
    "wosa"

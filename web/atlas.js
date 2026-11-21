@@ -213,12 +213,11 @@ async function fly(v,par){
   let dl=b.lon-a.lon; dl=((dl+540)%360)-180;
   const zr=Math.abs(Math.log(b.R/a.R)), ms=Math.min(1900,900+zr*160);
   M.busy=true; g.style.opacity=0;
-  // turn first, then zoom in (or zoom out first, then turn), so the globe never races past open sea up close;
-  // between two places far apart and both close up, rise toward the whole globe in the middle of the flight instead
-  const inward=b.R>=a.R, rad=Math.PI/180, R0=Math.min(M.W,M.H)/2*.9, lo=Math.min(a.R,b.R),
+  // turn and zoom together, on one easing; between two places far apart and both close up, rise toward the whole globe in the middle of the flight
+  const rad=Math.PI/180, R0=Math.min(M.W,M.H)/2*.9, lo=Math.min(a.R,b.R),
     ang=Math.acos(Math.min(1,Math.sin(a.lat*rad)*Math.sin(b.lat*rad)+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.cos(dl*rad)))/rad,
     dip=lo>R0*1.5&&ang>15?Math.log(lo/R0)*Math.min(1,ang/60):0;
-  await new Promise(res=>{const t0=performance.now(); const step=t=>{const k=Math.min(1,(t-t0)/ms), e=ease(k), early=ease(Math.min(1,k/.7)), late=ease(Math.max(0,(k-.3)/.7)), p=dip?e:inward?early:late, z=dip?e:inward?late:early;
+  await new Promise(res=>{const t0=performance.now(); const step=t=>{const k=Math.min(1,(t-t0)/ms), e=ease(k), p=e, z=e;
     M.cam=camOf(a.lon+dl*p,a.lat+(b.lat-a.lat)*p,Math.exp(Math.log(a.R)+(Math.log(b.R)-Math.log(a.R))*z-dip*Math.sin(Math.PI*k)));
     const fi=Math.min(1,Math.max(0,(e-.15)/.6)); g.style.opacity=fi; for(const o of old) o.style.opacity=1-fi; setWorld(Math.max(.001,wa+(wb-wa)*e));
     draw(); k<1?requestAnimationFrame(step):res();}; requestAnimationFrame(step);});
@@ -363,8 +362,8 @@ const toF=c=>c*9/5+32, inch=mm=>mm/25.4, ft=m=>Math.round(m*3.281/10)*10;
 const andList=xs=>xs.length>1?xs.slice(0,-1).join(', ')+' and '+xs[xs.length-1]:(xs[0]||'');
 // notes on the rules facts (Copy.rules in the app)
 const COPY={baseYield:'the yield its rules set; some years a little more is allowed',yieldCeiling:'the most its rules allow in any year; the usual limit is lower',
-  yieldLimit:'the most the 2022 EU record allows; some of its wines may have lower limits, and rules change',recognised:'the year its rules say it was first recognised, sometimes under an older name',noShares:'The 2022 EU record lists the grapes allowed, not their shares. Later changes to the rules may not be in it.',noRoles:'The cahier gives these grapes different roles in different wines, so they are listed here by colour.',anyName:' That is every vineyard there, whatever name its wine is sold under.',limitsHead:'Planting rules: shares of each grower\u2019s vineyard, not of the blend',
-  forWine:w=>`Main grapes, for ${w}`,desertRain:'Rain is left out: the 4.5 km grid takes in the wetter hills around the vineyards, so its totals run well above what weather stations among the vines record.'};
+  yieldLimit:'the most the 2022 EU record allows; some of its wines may have lower limits, and rules change',recognised:'the year its rules say it was first recognised, sometimes under an older name',noShares:'The 2022 EU record lists the grapes allowed, not their shares. Later changes to the rules may not be in it.',noRoles:'The cahier gives these grapes different roles in different wines, so they are listed here by colour.',anyName:' That is every vineyard there, whatever name its wine is sold under.',limitsHead:'Planting rules: shares of each grower\u2019s vineyard, not of the blend',blendHead:'Blend rules: shares of the wine itself',
+  forWine:w=>`Main grapes, for ${w}`,whitesOlder:y=>`red grapes as of ${y}, white grapes from an earlier survey, so the shares are approximate.`,desertRain:'Rain is left out: the 4.5 km grid takes in the wetter hills around the vineyards, so its totals run well above what weather stations among the vines record.'};
 const rockShare=v=>v>=.5?'mostly':v>=.25?'much':'some';   // a rock family's share in words: it comes from a few map points (Copy.share in the app)
 const leftOut=l=>l?(l.juice?` Juice grapes are left out: ${esc(andList(l.juice))}.`:'')+(l.table?` Table grapes are left out: ${esc(andList(l.table))}.`:''):'';
 const reading=(xs,head)=>xs&&xs.length?`<div class="why"><p class="why-head ts-fact_label">${head}</p><dl>${xs.map(([k,v])=>`<dt class="ts-fact_label">${esc(k)}</dt><dd class="ts-body">${esc(v)}</dd>`).join('')}</dl></div>`:'';
@@ -385,6 +384,7 @@ function months(vals,unit,cls,south){   // twelve bars, the growing season marke
 }
 const SHAPE_NOTE={'Eurostat NUTS, the area it is named for':'The map draws the department, province or region it is named for. The PGI\u2019s own area can differ a little.',
   'Eurostat LAU, the commune it is named for':'The map draws the commune it is named for.',
+  'Eurostat LAU, the municipalities its rules name':'The map draws the municipalities its rules name.',
   'Chile Decreto 464, drawn from its comunas and provinces':'The boundary follows the comunas and provinces that Chile\u2019s Decreto 464 names.',
   'geoBoundaries, the department it is named for':'The map draws the department it is named for. The IG\u2019s own area can be smaller.',
   'geoBoundaries, the province it is named for':'The map draws the province.',
@@ -426,7 +426,8 @@ function renderInfo(f){
       :`${pl.names.slice(0,3).join(', ')}${pl.names.length>3?` and ${pl.names.length-3} more`:''}`;
     const top=pl.grapes[0][1]||1, ac=ha=>fmt(Math.round(ha*2.471));
     const other=pl.grapes.find(([g])=>g==='Other'), rows=pl.grapes.filter(([g,ha])=>g!=='Other'&&ha/pl.ha>=.01).map(([g,ha,c],k)=>`<div class="gr ${pl.legal?pl.legal[pl.grapes.findIndex(x=>x[0]===g)]||'':''}"><span class="g ts-body"><i class="dot ${c==='W'?'w':c==='R'?'r':'o'}"></i>${esc(g)}</span><span class="bar"><i style="width:${Math.min(100,Math.max(1,ha/top*100))}%"></i></span><span class="pc ts-caption">${Math.round(ha/pl.ha*100)||'<1'}%</span>${pl.legal&&pl.legal[pl.grapes.findIndex(x=>x[0]===g)]==='minor'?'<span class="tag ts-caption">minor role</span>':''}</div>`).join('');
-    const cap=wide?`No figures exist for ${esc(f.name)} alone. These are for ${esc(where)}, the wider area it sits in: ${ac(pl.ha)} acres of wine grapes, ${pl.year}.`+leftOut(pl.left):`${ac(pl.ha)} acres of wine grapes${where?' '+esc(where):''}, ${pl.year}.`+(pl.any_name?COPY.anyName:'')+leftOut(pl.left);
+    const amt=pl.whites_older?COPY.whitesOlder(pl.year):`${ac(pl.ha)} acres of wine grapes, ${pl.year}.`;
+    const cap=wide?`No figures exist for ${esc(f.name)} alone. These are for ${esc(where)}, the wider area it sits in: ${amt}`+leftOut(pl.left):(pl.whites_older?`Wine grapes${where?' '+esc(where):''}: `+amt:`${ac(pl.ha)} acres of wine grapes${where?' '+esc(where):''}, ${pl.year}.`)+(pl.any_name?COPY.anyName:'')+leftOut(pl.left);
     const key=wide?[`Allowed in ${esc(f.name)}`,`Not allowed in ${esc(f.name)}`]:[`Can carry the ${esc(f.name)} name`,'Grown here, but sold under another name'];
     X.planted=block(wide?'Planted in the wider area':'What is planted',`<p class="ts-caption sub">${cap}</p>${pl.legal?`<p class="ts-caption sub legal-key"><span><i class="lk main"></i>${key[0]}</span><span><i class="lk no"></i>${key[1]}</span></p>`:''}<div class="planted">${rows}</div>${other?`<p class="ts-caption sub">Other grapes: ${Math.round(other[1]/pl.ha*100)}%</p>`:''}`,'Share of vineyard area');
   }
@@ -450,6 +451,7 @@ function renderInfo(f){
     if(ru.grapes_other.length&&!(ru.by_wine&&ru.by_wine.length)) b+=`<p class="ts-caption sub">Also allowed, in smaller roles</p>${chips(ru.grapes_other)}`;
     if(ru.grapes_trial&&ru.grapes_trial.length) b+=`<p class="ts-caption sub">On trial, to adapt to a changing climate</p>${chips(ru.grapes_trial)}`;
     if(ru.limits&&ru.limits.length) b+=`<p class="ts-caption sub">${esc(COPY.limitsHead)}</p><ul class="limits">${ru.limits.map(l=>`<li class="ts-body">${esc(l)}</li>`).join('')}</ul>`;
+    if(ru.blend&&ru.blend.length) b+=`<p class="ts-caption sub">${esc(COPY.blendHead)}</p><ul class="limits">${ru.blend.map(l=>`<li class="ts-body">${esc(l)}</li>`).join('')}</ul>`;
     b+=`<div class="facts">${fact('Wine types',ru.types.join(', '))}${ru.yield_base?fact('Base yield',ru.yield_base,COPY.baseYield):fact(ru.yield_ceiling?'Yield ceiling':'Yield limit',ru.yield_hl?`${fmt(ru.yield_hl)} hl/ha`:ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:null,ru.yield_ceiling?COPY.yieldCeiling:COPY.yieldLimit)}${fact('Recognised',ru.recognised?String(ru.recognised):null,COPY.recognised)}`
       +`${fact('Fewest vines',ru.density?`${fmt(ru.density)} per ha`:null)}${fact('Irrigation',ru.irrigation)}${fact('Communes',ru.communes.length?fmt(ru.communes.length):null,'in the 2022 EU record')}</div>`;
     if(ru.communes.length) b+=`<details class="more-d"><summary class="ts-caption">The communes</summary><p class="ts-caption">${ru.communes.map(esc).join(', ')}</p></details>`;
@@ -459,6 +461,7 @@ function renderInfo(f){
   if(av){
     const b=`<div class="facts">${fact('In effect from',av.created?av.created.slice(0,4):null)}${fact('State',av.states.join(', '))}${fact('Counties',av.counties.length?fmt(av.counties.length):null,av.counties.slice(0,6).join(', ')+(av.counties.length>6?'…':''))}</div>`
       +(av.within.length?`<p class="ts-caption sub">Inside</p><div class="chips">${av.within.map(n=>`<span class="chip">${esc(n)}</span>`).join('')}</div>`:'')
+      +(av.overlaps&&av.overlaps.length?`<p class="ts-caption sub">Partly inside</p><div class="chips">${av.overlaps.map(n=>`<span class="chip">${esc(n)}</span>`).join('')}</div>`:'')
       +(av.contains.length?`<p class="ts-caption sub">Holds</p><div class="chips">${av.contains.map(n=>`<span class="chip">${esc(n)}</span>`).join('')}</div>`:'')
       +`<p class="ts-caption sub"><a href="${esc(av.cfr_url)}" target="_blank" rel="noopener">Its boundary in the CFR, § ${esc(av.cfr)}</a></p>`;
     X.ava=block('The AVA',b,'US rules name no grapes');

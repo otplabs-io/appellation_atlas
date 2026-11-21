@@ -202,9 +202,11 @@ struct PlaceInfo: View {
         let rows = grapes.enumerated().filter { _, g in g[0].string != "Other" && (g[1].double ?? 0) / ha >= 0.01 }   // a row under 1% would read "0%"
         let acres = fmt(ha * 2.471)
         let year = pl["year"].int.map(String.init) ?? ""
+        let older = pl["whites_older"].bool == true   // France's regional whites come from an earlier survey than its reds
+        let amount = older ? Copy.whitesOlder(year) : "\(acres) acres of wine grapes, \(year)."
         let caption = wide
-            ? "No figures exist for \(name) alone. These are for \(where_), the wider area it sits in: \(acres) acres of wine grapes, \(year)."
-            : "\(acres) acres of wine grapes\(where_.isEmpty ? "" : " " + where_), \(year)." + (pl["any_name"].bool == true ? Copy.Rules.anyName : "")
+            ? "No figures exist for \(name) alone. These are for \(where_), the wider area it sits in: \(amount)"
+            : (older ? "Wine grapes\(where_.isEmpty ? "" : " " + where_): " + amount : "\(acres) acres of wine grapes\(where_.isEmpty ? "" : " " + where_), \(year).") + (pl["any_name"].bool == true ? Copy.Rules.anyName : "")
         let key = wide ? ["Allowed in \(name)", "Not allowed in \(name)"] : ["Can carry the \(name) name", "Grown here, but sold under another name"]
         return AtlasSection(title: wide ? "Planted in the wider area" : "What is planted", note: "Share of vineyard area") {
             Text(caption + Copy.leftOut(pl["left"])).font(.atlasNote).foregroundStyle(Palette.soft)
@@ -439,14 +441,16 @@ struct PlaceInfo: View {
             }
             if !ru["grapes_other"].array.isEmpty && ru["by_wine"].array.isEmpty { SubCaption("Also allowed, in smaller roles"); Chips(items: chips(ru["grapes_other"])) }
             if !ru["grapes_trial"].array.isEmpty { SubCaption("On trial, to adapt to a changing climate"); Chips(items: chips(ru["grapes_trial"])) }
-            let limits = ru["limits"].strings
-            if !limits.isEmpty {
-                SubCaption(Copy.Rules.limitsHead)
-                VStack(alignment: .leading, spacing: 4) {
-                    ForEach(limits, id: \.self) { l in
-                        HStack(alignment: .firstTextBaseline, spacing: 8) {
-                            Text("\u{2022}").foregroundStyle(Palette.soft)
-                            Text(l).font(.atlasBody).foregroundStyle(Palette.ink)
+            ForEach([("limits", Copy.Rules.limitsHead), ("blend", Copy.Rules.blendHead)], id: \.0) { key, head in
+                let limits = ru[key].strings
+                if !limits.isEmpty {
+                    SubCaption(head)
+                    VStack(alignment: .leading, spacing: 4) {
+                        ForEach(limits, id: \.self) { l in
+                            HStack(alignment: .firstTextBaseline, spacing: 8) {
+                                Text("\u{2022}").foregroundStyle(Palette.soft)
+                                Text(l).font(.atlasBody).foregroundStyle(Palette.ink)
+                            }
                         }
                     }
                 }
@@ -478,6 +482,7 @@ struct PlaceInfo: View {
                 Fact(label: "Counties", value: counties.isEmpty ? "" : fmt(Double(counties.count)), note: counties.prefix(6).joined(separator: ", ") + (counties.count > 6 ? "…" : "")),
             ])
             if !av["within"].strings.isEmpty { SubCaption("Inside"); Chips(items: av["within"].strings.map { ($0, "", nil) }) }
+            if !av["overlaps"].strings.isEmpty { SubCaption("Partly inside"); Chips(items: av["overlaps"].strings.map { ($0, "", nil) }) }
             if !av["contains"].strings.isEmpty { SubCaption("Holds"); Chips(items: av["contains"].strings.map { ($0, "", nil) }) }
             if let u = av["cfr_url"].string, let url = URL(string: u) {
                 Link("Its boundary in the CFR, § \(av["cfr"].string ?? "")", destination: url).font(.atlasNote)

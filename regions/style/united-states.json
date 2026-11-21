@@ -2,7 +2,6 @@
  "united-states": {
   "notes": [
    "American oak, especially new, gives bolder, less subtle oak flavors than French oak.",
-   "White Zinfandel, a semi-sweet blush wine, outsells red Zinfandel six to one.",
    "American Grüner Veltliner tends to be medium bodied and lightly fruity, with high acidity and spice."
   ],
   "art": [
@@ -16,7 +15,7 @@
    "Reliable warmth gives very ripe fruit and a fruit-forward style rather than an earthy or mineral one.",
    "California Chardonnay is often buttery and full bodied, from malolactic fermentation and oak.",
    "California Pinot Noir is generally more intense and fruity than Burgundy or Oregon.",
-   "Zinfandel is powerful and fruity, with high acidity and jammy flavor.",
+   "Zinfandel is powerful and fruity, with jammy flavor.",
    "Cabernet Sauvignon ripens fully, giving fruity, full bodied wines often above 14% alcohol."
   ],
   "art": [
@@ -39,10 +38,13 @@
  },
  "united-states/anderson-valley": {
   "notes": [
-   "Warmer, sunnier patches give the spicy, berry notes of its Zinfandels."
+   "Its cool, foggy climate is best known for Pinot Noir, along with Chardonnay, crisp whites and sparkling wine."
   ],
   "art": [
    "Mendocino County wine"
+  ],
+  "ref": [
+   "audit-78d691d2"
   ]
  },
  "united-states/calistoga": {
@@ -55,7 +57,6 @@
  },
  "united-states/columbia-valley": {
   "notes": [
-   "Columbia Valley wines are very fruit-forward, like California's, but keep some of the balance and structure of European wine.",
    "Warm days and cool nights keep acid and sugar in balance, and the long season lets tannins mature."
   ],
   "art": [
@@ -93,8 +94,7 @@
  },
  "united-states/mendocino-county": {
   "notes": [
-   "The warm inland part of the county makes full bodied, very ripe reds from Cabernet Sauvignon, Merlot, Petite Sirah and Zinfandel.",
-   "Redwood Valley is known for peppery, spicy Zinfandel."
+   "The warm inland part of the county makes full bodied, very ripe reds from Cabernet Sauvignon, Merlot, Petite Sirah and Zinfandel."
   ],
   "art": [
    "Mendocino County wine"
@@ -102,8 +102,7 @@
  },
  "united-states/monterey": {
   "notes": [
-   "Monterey Chardonnay is associated with mango and guava.",
-   "In the late 20th century its Cabernet Sauvignon was known for very vegetal, green pepper flavors."
+   "Monterey Chardonnay is associated with mango and guava."
   ],
   "art": [
    "Chardonnay",
@@ -146,39 +145,52 @@
  },
  "united-states/oregon": {
   "notes": [
-   "Burgundy-style wines dominate Oregon.",
+   "Pinot Noir is Oregon's leading grape, with about 60% of its planted acreage.",
    "Oregon Pinot Gris is medium bodied, yellow to copper-pink, with aromas of pear, apple and melon."
   ],
   "art": [
    "Riesling",
    "Pinot gris"
+  ],
+  "ref": [
+   "audit-a7cc0bd0"
   ]
  },
  "united-states/paso-robles": {
   "notes": [
-   "With hot days and cool sea-air evenings, Paso Robles makes Zinfandel known for being soft and round."
+   "With hot days and cool sea-air evenings, Paso Robles makes Zinfandel known for being soft and round.",
+   "Cabernet Sauvignon is the most planted grape, followed by Merlot, Syrah, Zinfandel and Chardonnay."
   ],
   "art": [
    "Zinfandel"
+  ],
+  "ref": [
+   "audit-4f184615"
   ]
  },
  "united-states/russian-river-valley": {
   "notes": [
-   "The cool climate gives higher acidity and better balance than the fatter, creamier style of the Alexander Valley.",
-   "Classic Russian River Pinot Noir has pale but vibrant color, lively acidity and cherry and berry fruit, though newer methods give heavier, fuller wines.",
+   "Its cool climate is especially suited to Pinot Noir and Chardonnay.",
    "Merlot has a distinctive tea-like note, and Zinfandel shows tarter red fruit than in warmer Dry Creek Valley.",
    "Its crisp grapes are prized for sparkling wine."
   ],
   "art": [
    "Russian River Valley AVA"
+  ],
+  "ref": [
+   "audit-10218c36"
   ]
  },
  "united-states/rutherford": {
   "notes": [
-   "Rutherford Merlot tends to show ripe blackberry and black raspberry."
+   "Rutherford Merlot tends to show ripe blackberry and black raspberry.",
+   "Cabernet Sauvignon dominates, and some of its tannins are grainy, a texture linked to the term Rutherford dust."
   ],
   "art": [
    "Merlot"
+  ],
+  "ref": [
+   "audit-697f8c35"
   ]
  },
  "united-states/san-luis-obispo-coast": {
@@ -191,9 +203,7 @@
  },
  "united-states/sonoma-county": {
   "notes": [
-   "Sonoma is known for fruity, ripe Zinfandel.",
-   "Sonoma Cabernet tends toward anise and black olive notes.",
-   "Alexander Valley Cabernet is known for chocolate notes and a warm mouthfeel."
+   "Sonoma Cabernet tends toward anise and black olive notes."
   ],
   "art": [
    "Sonoma County wine",
@@ -211,7 +221,6 @@
  "united-states/washington": {
   "notes": [
    "Washington wines are known for bright fruit flavors and crisp acidity.",
-   "Recent reds lean riper and more fruit-forward, with noticeable tannin, oak and moderately high alcohol.",
    "Cabernet and Merlot are often lush, with concentrated berry flavors such as blackberry, cherry and raspberry.",
    "Good examples can usually age at least eight years.",
    "Cabernet Franc is fruit-forward, with blueberry and raspberry."
@@ -222,19 +231,18 @@
   ]
  },
  "united-states/yakima-valley": {
-  "notes": [
-   "Young Sangiovese plantings here have given spicy, tart cherry wines with anise, red currant and tobacco leaf."
-  ],
+  "notes": [],
   "art": [
    "Sangiovese"
   ]
  },
  "united-states/new-york": {
-  "notes": [
-   "New York Riesling generally has a light body and a light, mellow flavor."
-  ],
+  "notes": [],
   "art": [
    "Riesling"
+  ],
+  "ref": [
+   "audit-a6fc05e6"
   ]
  },
  "united-states/santa-maria-valley": {
@@ -312,8 +320,7 @@
  "united-states/edna-valley": {
   "notes": [
    "A long, cool growing season near the Pacific gives ripe flavor while the grapes keep their natural acidity.",
-   "Pinot Noir and Chardonnay lead.",
-   "Wines across the San Luis Obispo Coast share an energetic acidity and vibrancy."
+   "Pinot Noir and Chardonnay lead."
   ],
   "ref": [
    "slo-coast"
@@ -322,8 +329,7 @@
  "united-states/arroyo-grande-valley": {
   "notes": [
    "A long, cool growing season near the Pacific gives ripe flavor while the grapes keep their natural acidity.",
-   "Pinot Noir and Chardonnay lead.",
-   "Wines across the San Luis Obispo Coast share an energetic acidity and vibrancy."
+   "Pinot Noir and Chardonnay lead."
   ],
   "ref": [
    "slo-coast"
@@ -331,8 +337,7 @@
  },
  "united-states/santa-cruz-mountains": {
   "notes": [
-   "The Santa Cruz Mountains ripen Cabernet and Syrah into elegant wines, alongside Pinot Noir and Chardonnay.",
-   "Long built on Pinot Noir, the region is now best known for Cabernet and Cabernet-based wines."
+   "The Santa Cruz Mountains ripen Cabernet and Syrah into elegant wines, alongside Pinot Noir and Chardonnay."
   ],
   "ref": [
    "decanter-santa-cruz"

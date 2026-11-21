@@ -131,22 +131,22 @@
   },
   {
    "topic": "history",
-   "claim": "Chianti DOC rules (1967) allowed at most 70% Sangiovese and required at least 10% local white grapes. This blocked Sangiovese-Cabernet blends and 100% Sangiovese from using the Chianti name.",
+   "claim": "The 1967 Chianti DOC rules set Sangiovese at 50 to 75% and required 10 to 30% white grapes. This blocked Sangiovese-Cabernet blends and 100% Sangiovese from using the Chianti name.",
    "source": [
     "wikipedia-super-tuscan"
    ],
    "strength": "Medium",
-   "note": "Wikipedia: at most 70% Sangiovese and at least 10% local white grape."
+   "note": "Wikipedia: at most 70% Sangiovese and at least 10% local white grape. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "history",
-   "claim": "Sassicaia (Tenuta San Guido, Bolgheri) was the first. Mario Incisa della Rocchetta planted Cabernet Sauvignon in 1944. The first commercial wine was the 1968 vintage, released in 1971. It was sold as vino da tavola because the blend fell outside DOC rules.",
+   "claim": "Sassicaia (Tenuta San Guido, Bolgheri) was the first. Mario Incisa della Rocchetta planted Cabernet Sauvignon in 1944. The first commercial wine was the 1968 vintage, released in 1971. It was sold as vino da tavola because Bolgheri had no DOC for red wine at the time.",
    "source": [
     "wikipedia-san-guido",
     "disciplinare-bolgheri"
    ],
    "strength": "Medium",
-   "note": "The 1944 plantings are in the Bolgheri disciplinare (Strong). The 1968 and 1971 dates are from one secondary source."
+   "note": "The 1944 plantings are in the Bolgheri disciplinare (Strong). The 1968 and 1971 dates are from one secondary source. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "history",
@@ -168,12 +168,12 @@
   },
   {
    "topic": "history",
-   "claim": "Sassicaia, Tignanello and other early Super Tuscans were sold as vino da tavola, the bottom rung. From 1992 the new IGT category gave them a rung with a regional name.",
+   "claim": "Early Super Tuscans such as Sassicaia and Tignanello were sold as vino da tavola, the bottom rung. Law 164 of 1992 created the IGT level, and Toscana IGT followed in 1995. Many moved to it. Sassicaia went straight to a DOC in 1994.",
    "source": [
     "wikipedia-super-tuscan"
    ],
    "strength": "Medium",
-   "note": "Wikipedia: Toscana IGT was a less restrictive alternative, and some producers still use it instead of a DOC."
+   "note": "Wikipedia: Toscana IGT was a less restrictive alternative, and some producers still use it instead of a DOC. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "history",
@@ -206,13 +206,14 @@
   },
   {
    "topic": "place",
-   "claim": "Chianti Classico DOCG covers a delimited zone, defined by a 1932 decree and based on the old 1716 Chianti boundaries. Toscana IGT covers the whole region.",
+   "claim": "Chianti Classico DOCG covers the zone set by a 1932 decree. It grew from the 1716 Chianti but is much larger. Toscana IGT covers the whole region.",
    "source": [
     "disciplinare-cc",
     "cc-history"
    ],
    "strength": "Strong",
-   "quote": "decreto interministeriale 31luglio 1932"
+   "quote": "decreto interministeriale 31luglio 1932",
+   "note": "Round 28 audit: corrected against the official text."
   },
   {
    "topic": "grapes",
@@ -234,14 +235,14 @@
   },
   {
    "topic": "vineyard",
-   "claim": "Chianti Classico vineyards must be on hills, no higher than 700 m, on soils mostly of sandstone, calcareous marl, clay schist, sand and gravel. Toscana IGT has no such restriction shown in the sources I read.",
+   "claim": "Chianti Classico vineyards must be on hills, no higher than 700 m, on soils mostly of sandstone, limy marl, clay shale, sand and gravel. Valley floors and heavy Pliocene clays are excluded. Toscana IGT has no such restriction shown in the sources read.",
    "source": [
     "disciplinare-cc",
     "iwc-toscana"
    ],
    "strength": "Strong",
    "quote": "altitudine non superiore a 700 metri s.l.m.",
-   "note": "The Chianti Classico part is the disciplinare. The IGT part is an absence in a database summary."
+   "note": "The Chianti Classico part is the disciplinare. The IGT part is an absence in a database summary. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "aging",
@@ -254,11 +255,12 @@
   },
   {
    "topic": "history",
-   "claim": "Chianti Classico DOC came in 1967 and DOCG in 1984. The Gran Selezione level was added in the 2013 reorganisation, dated 2014.",
+   "claim": "Chianti got its DOC in 1967, with Classico as its historic zone. Chianti Classico became a DOCG in 1984 and got its own rules in 1996. Gran Selezione was approved in 2013 and took effect in 2014.",
    "source": [
     "cc-history"
    ],
-   "strength": "Strong"
+   "strength": "Strong",
+   "note": "Round 28 audit: corrected against the official text."
   }
  ],
  "conflicts": [

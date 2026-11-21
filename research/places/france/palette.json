@@ -67,13 +67,13 @@
   },
   {
    "topic": "history",
-   "claim": "The AOC Palette was classified by decree on 28 April 1948. It extended the earlier recognition of Château Simone, obtained by Jean Rougier in 1946.",
+   "claim": "In 1946 the Rougier family of Château Simone asked for an AOC for the estate. Since an AOC is a collective right, the old name Palette was proposed instead, and it was recognized on 28 April 1948.",
    "source": [
     "simone-aoc",
     "simone-famille"
    ],
    "strength": "Medium",
-   "note": "Producer's account. The 1946 date conflicts between the two producer pages (see conflicts)."
+   "note": "Producer's account. The 1946 date conflicts between the two producer pages (see conflicts). Round 28 audit: corrected against the official text."
   },
   {
    "topic": "history",
@@ -130,38 +130,39 @@
   },
   {
    "topic": "grapes",
-   "claim": "White Palette is at least 80% Clairette. Bourboulenc, Trebbiano, Grenache blanc and Muscat varieties may make up the rest.",
+   "claim": "White Palette comes from main grapes Araignan, Bourboulenc, Clairette and Clairette Rose, at least 55% of a grower's vines, with Terret Gris at most 20%. Minor grapes include Grenache Blanc, Ugni Blanc and the Muscats.",
    "source": [
     "wikipedia-en"
    ],
    "strength": "Weak",
-   "note": "Conflicts with French Wikipedia (see conflicts)."
+   "note": "Conflicts with French Wikipedia (see conflicts). Round 28 audit: corrected against the official text."
   },
   {
    "topic": "grapes",
-   "claim": "Red and rosé Palette is at least 80% Grenache, Mourvèdre and Cinsault.",
+   "claim": "Red and rosé Palette come from main grapes Grenache, Mourvèdre and Cinsault, at least 50% of a grower's vines, no one of them over 80%, and Mourvèdre at least 10%. Rosé vineyards may hold up to 15% white grapes.",
    "source": [
     "wikipedia-en"
    ],
    "strength": "Weak",
-   "note": "Single secondary source."
+   "note": "Single secondary source. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "other",
-   "claim": "Yields are capped at 40 hl/ha. Wines must reach at least 11% alcohol.",
+   "claim": "The yield is 45 hl/ha, which is also the ceiling. Wines need at least 11.5% natural alcohol.",
    "source": [
     "wikipedia-en"
    ],
    "strength": "Weak",
-   "note": "Single secondary source."
+   "note": "Single secondary source. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "other",
-   "claim": "Harvest is by hand, and winemaking must happen inside the delimited area.",
+   "claim": "Grapes are picked by hand. Wine is made in the area or in the rest of Meyreuil and Le Tholonet.",
    "source": [
     "simone-aoc"
    ],
-   "strength": "Medium"
+   "strength": "Medium",
+   "note": "Round 28 audit: corrected against the official text."
   },
   {
    "topic": "producer",

@@ -1,7 +1,6 @@
 {
  "canada": {
   "notes": [
-   "Ontario makes rich, oaky Chardonnay, while Quebec and British Columbia make lighter styles.",
    "Ontario is the world's largest producer of icewine."
   ],
   "art": [
@@ -11,7 +10,6 @@
  },
  "canada/okanagan-valley": {
   "notes": [
-   "The Okanagan makes nearly every style of wine at every sweetness, still, sparkling, fortified and dessert, most notably icewine.",
    "Okanagan Chardonnay is marked by delicate citrus fruit."
   ],
   "art": [
@@ -21,9 +19,7 @@
  },
  "canada/ontario": {
   "notes": [
-   "Ontario is the world's largest producer of icewine.",
-   "Ontario Chardonnay is often rich and oaky.",
-   "Ontario Cabernet Franc often shows a vegetal, raspberry-like flavor with moderate acidity."
+   "Ontario is the world's largest producer of icewine."
   ],
   "art": [
    "Ontario wine",

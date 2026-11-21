@@ -718,7 +718,7 @@
   }
  },
  "france/coteaux-champenois": {
-  "text": "The still-wine appellation of Champagne, covering the same area. It allows Chardonnay, Meunier, Pinot Noir and other Champagne grapes. Across Champagne, Pinot Noir is the most planted grape at 38%.",
+  "text": "Champagne's main still-wine appellation, covering the same area. It allows Chardonnay, Meunier, Pinot Noir and other Champagne grapes. Across Champagne, Pinot Noir is the most planted grape at 38%.",
   "from": [
    "rules",
    "planted"
@@ -833,7 +833,7 @@
   ]
  },
  "france/cotes-de-blaye": {
-  "text": "A Right Bank Bordeaux appellation for white wine made from Colombard, Muscadelle, Sauvignon, Semillon and Ugni Blanc, with Blaye among its communes.",
+  "text": "A Right Bank Bordeaux appellation for dry white wine, mainly from Colombard and Ugni Blanc, with Muscadelle, Sauvignon and Sémillon in smaller roles. Blaye is among its communes.",
   "from": [
    "rules",
    "where"

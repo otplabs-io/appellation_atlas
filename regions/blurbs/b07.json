@@ -140,7 +140,7 @@
   }
  },
  "italy/langhe-nebbiolo": {
-  "text": "A Piedmont wine named for the Nebbiolo grape. Nebbiolo is the grape behind Barolo and Barbaresco, the region's best-known wines.",
+  "text": "A wine of the Langhe DOC in Piedmont, at least 85% Nebbiolo. Nebbiolo is the grape behind Barolo and Barbaresco, the region's best-known wines.",
   "from": [
    "where",
    "wikipedia_of_wider"
@@ -149,7 +149,8 @@
    "title": "Piedmont wine",
    "lang": "en",
    "url": "https://en.wikipedia.org/w/index.php?title=Piedmont_wine&oldid=1341732272"
-  }
+  },
+  "audited": true
  },
  "italy/lazio": {
   "text": "An Italian PGI covering the Lazio region, home to Orvieto, Roma, Frascati, Marino, Montefiascone and Cesanese del Piglio. Malvasia Bianca di Candia (26%) and Trebbiano Toscano (23%) are the most planted grapes.",

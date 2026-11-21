@@ -62,7 +62,7 @@
   }
  },
  "hungary/bukk": {
-  "text": "A PDO inside the Eger region of Hungary, which is known for the red blend Egri Bikavér. Blaufränkisch is the most planted grape at 19%, followed by Leányka at 15%, and the rules cover still wine.",
+  "text": "A PDO in northern Hungary, one of the Upper Hungary wine districts beside Eger. Blaufränkisch is the most planted grape at 19%, followed by Leányka at 15%, and the rules cover still wine.",
   "from": [
    "wikipedia_of_wider",
    "rules",
@@ -157,7 +157,7 @@
   }
  },
  "hungary/matra": {
-  "text": "A PDO inside the Eger region of Hungary, which is known for the red blend Egri Bikavér. Plantings are spread widely, led by Müller-Thurgau at 9%, with Blaufränkisch, Muscat Ottonel, Pinot Gris and Chasselas close behind.",
+  "text": "A PDO in northern Hungary, one of the Upper Hungary wine districts beside Eger. Plantings are spread widely, led by Müller-Thurgau at 9%, with Blaufränkisch, Muscat Ottonel, Pinot Gris and Chasselas close behind.",
   "from": [
    "wikipedia_of_wider",
    "planted",
@@ -512,7 +512,7 @@
   ]
  },
  "argentina/santa-maria": {
-  "text": "An Argentine geographical indication in Catamarca province. Cabernet Sauvignon is the most planted grape at 33%, followed by Malbec at 28% and Torrontés Riojano at 21%.",
+  "text": "An Argentine geographical indication in Catamarca province. Cabernet Sauvignon is the most planted grape at 34%, followed by Malbec at 28% and Torrontés Riojano at 22%.",
   "from": [
    "planted",
    "where"

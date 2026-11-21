@@ -190,8 +190,8 @@
    "where"
   ]
  },
- "france/villages-subregion-not-yet-set": {
-  "text": "A group of villages whose Champagne sub-region is not yet set, among them Avenay-Val-d’Or, Bezannes, Champillon, Chigny-lès-Roses and Cuis.",
+ "france/champagne-villages": {
+  "text": "A group of Champagne villages shown together here, among them Avenay-Val-d’Or, Bezannes, Champillon, Chigny-lès-Roses and Cuis.",
   "from": [
    "where"
   ]

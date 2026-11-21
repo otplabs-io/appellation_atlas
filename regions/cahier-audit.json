@@ -202,7 +202,13 @@
     "Souvignier Gris",
     "pink"
    ]
-  ]
+  ],
+  "set": {
+   "types": [
+    "Sweet white wine",
+    "Red wine"
+   ]
+  }
  },
  "france/brulhois": {
   "set": {
@@ -327,7 +333,35 @@
  "france/coteaux-d-ancenis": {
   "set": {
    "yield_base": "50 hl/ha for white, 60 for red and rosé",
-   "recognised": 1954
+   "recognised": 1954,
+   "by_wine": [
+    [
+     "white wine",
+     [
+      [
+       "Pinot Gris",
+       "pink"
+      ]
+     ],
+     []
+    ],
+    [
+     "red and rosé wines",
+     [
+      [
+       "Gamay",
+       "red"
+      ]
+     ],
+     [
+      [
+       "Cabernet Franc",
+       "red"
+      ]
+     ]
+    ]
+   ],
+   "roles_unread": null
   },
   "limits_add": [
    "For red and rosé wine, Cabernet Franc: at most 10%"
@@ -489,10 +523,13 @@
   "limits_add": [
    "For red wine, Gamay and Syrah, each: at least 30%",
    "For red wine, Cabernet Sauvignon: 10 to 30%",
-   "For red wine, Duras and Fer, each: at most 20%",
    "For rosé wine, Gamay: at least 50%",
    "For white wine, Chenin Blanc: at least 50%",
-   "For white wine, Mauzac Blanc: at least 10%"
+   "For white wine, Mauzac Blanc: at least 10%",
+   "For red wine, Duras and Fer, each: at most 20%"
+  ],
+  "limits_drop": [
+   "For red wine, Duras and Fer together: at most 20%"
   ]
  },
  "france/cotes-de-montravel": {
@@ -513,11 +550,11 @@
  "france/cotes-de-provence": {
   "other_add": [
    [
-    "Barbaroux",
+    "Barbaroux (vines planted before 31 July 1994)",
     "pink"
    ],
    [
-    "Calitor",
+    "Calitor (vines planted before 31 July 1994)",
     "red"
    ]
   ],
@@ -584,10 +621,10 @@
     "Sparkling white",
     "Sparkling rosé"
    ],
-   "yield_base": "78 hl/ha",
+   "yield_base": "78 hl/ha for rows up to 5.9 ft apart, 74 up to 7.2 ft, 67 up to 8.2 ft, 60 for wider Hautes Côtes rows",
    "recognised": 1975
   },
-  "limits_add": [
+  "blend_add": [
    "For sparkling white and rosé wine, Chardonnay, Pinot Blanc, Pinot Gris and Pinot Noir together: at least 30%",
    "For sparkling white and rosé wine, Gamay: at most 30%"
   ]
@@ -628,7 +665,14 @@
     "Sparkling white",
     "Sweet white wine"
    ]
-  }
+  },
+  "limits_drop": [
+   "For red and rosé wine, Duras, Fer, Prunelard, Syrah, Gamay, Len de l'El, Ondenc, Mauzac Blanc and Mauzac Rose together: at least 70%"
+  ],
+  "limits_add": [
+   "For red and rosé wine, Duras, Fer, Prunelard and Syrah together: at least 70%",
+   "For red and rosé wine, Duras, Fer and Prunelard together: at least 40%"
+  ]
  },
  "france/graves": {
   "set": {
@@ -648,7 +692,9 @@
    ]
   },
   "limits_add": [
-   "For white wine, Merlot Blanc: at most 30%",
+   "For white wine, Merlot Blanc: at most 30%"
+  ],
+  "blend_add": [
    "For white wine, main grapes together: at least 65%"
   ]
  },
@@ -698,7 +744,7 @@
   "set": {
    "recognised": 1970
   },
-  "limits_add": [
+  "blend_add": [
    "For red wine, Cabernet Franc: at least 60%",
    "For red wine, Gamay de Bouze, Gamay de Chaudenay, Merlot and Pinot Noir together: at most 10%",
    "For rosé wine, Cabernet Franc: at least 40%",
@@ -794,8 +840,107 @@
  },
  "france/maury": {
   "set": {
-   "yield_base": "40 hl/ha for red, 30 for fortified"
-  }
+   "yield_base": "40 hl/ha for red, 30 for fortified",
+   "by_wine": [
+    [
+     "grenat and tuilé wines",
+     [
+      [
+       "Grenache",
+       "red"
+      ]
+     ],
+     [
+      [
+       "Grenache Blanc",
+       "white"
+      ],
+      [
+       "Grenache Gris",
+       "pink"
+      ],
+      [
+       "Carignan",
+       "red"
+      ],
+      [
+       "Macabeu",
+       "white"
+      ],
+      [
+       "Syrah",
+       "red"
+      ]
+     ]
+    ],
+    [
+     "ambré and blanc wines",
+     [
+      [
+       "Grenache Blanc",
+       "white"
+      ],
+      [
+       "Grenache Gris",
+       "pink"
+      ],
+      [
+       "Macabeu",
+       "white"
+      ],
+      [
+       "Tourbat",
+       "white"
+      ]
+     ],
+     [
+      [
+       "Muscat à Petits Grains",
+       "white"
+      ],
+      [
+       "Muscat d'Alexandrie",
+       "white"
+      ]
+     ]
+    ],
+    [
+     "still red wine",
+     [
+      [
+       "Grenache",
+       "red"
+      ]
+     ],
+     [
+      [
+       "Carignan",
+       "red"
+      ],
+      [
+       "Mourvèdre",
+       "red"
+      ],
+      [
+       "Syrah",
+       "red"
+      ],
+      [
+       "Lledoner Pelut",
+       "red"
+      ]
+     ]
+    ]
+   ],
+   "roles_unread": null
+  },
+  "limits_add": [
+   "For grenat and tuilé wines, Grenache: at least 75%",
+   "For grenat and tuilé wines, Macabeu: at most 10%",
+   "For ambré and blanc wines, Muscat à Petits Grains and Muscat d'Alexandrie together: at most 20%",
+   "For still red wine, Grenache: 60 to 80%",
+   "For still red wine, Lledoner Pelut: at most 10%"
+  ]
  },
  "france/medoc": {
   "trial_add": [
@@ -831,7 +976,7 @@
     "Sweet white wine"
    ]
   },
-  "limits_add": [
+  "blend_add": [
    "For sweet white wine, main grapes together: at least 80%"
   ]
  },
@@ -899,17 +1044,327 @@
  },
  "france/rasteau": {
   "set": {
-   "yield_base": "38 hl/ha for red, 30 hl/ha of must for fortified"
+   "yield_base": "38 hl/ha for red, 30 hl/ha of must for fortified",
+   "by_wine": [
+    [
+     "still red wine",
+     [
+      [
+       "Grenache",
+       "red"
+      ]
+     ],
+     [
+      [
+       "Mourvèdre",
+       "red"
+      ],
+      [
+       "Syrah",
+       "red"
+      ],
+      [
+       "Bourboulenc",
+       "white"
+      ],
+      [
+       "Brun Argenté",
+       "red"
+      ],
+      [
+       "Carignan",
+       "red"
+      ],
+      [
+       "Cinsault",
+       "red"
+      ],
+      [
+       "Clairette",
+       "white"
+      ],
+      [
+       "Clairette Rose",
+       "pink"
+      ],
+      [
+       "Counoise",
+       "red"
+      ],
+      [
+       "Marsanne",
+       "white"
+      ],
+      [
+       "Muscardin",
+       "red"
+      ],
+      [
+       "Piquepoul Blanc",
+       "white"
+      ],
+      [
+       "Piquepoul Noir",
+       "red"
+      ],
+      [
+       "Roussanne",
+       "white"
+      ],
+      [
+       "Terret Noir",
+       "red"
+      ],
+      [
+       "Ugni Blanc",
+       "white"
+      ],
+      [
+       "Viognier",
+       "white"
+      ],
+      [
+       "Grenache Blanc",
+       "white"
+      ],
+      [
+       "Grenache Gris",
+       "pink"
+      ]
+     ]
+    ],
+    [
+     "blanc wine",
+     [
+      [
+       "Grenache Gris",
+       "pink"
+      ],
+      [
+       "Grenache Blanc",
+       "white"
+      ]
+     ],
+     [
+      [
+       "Bourboulenc",
+       "white"
+      ],
+      [
+       "Brun Argenté",
+       "red"
+      ],
+      [
+       "Carignan",
+       "red"
+      ],
+      [
+       "Cinsault",
+       "red"
+      ],
+      [
+       "Clairette",
+       "white"
+      ],
+      [
+       "Clairette Rose",
+       "pink"
+      ],
+      [
+       "Counoise",
+       "red"
+      ],
+      [
+       "Marsanne",
+       "white"
+      ],
+      [
+       "Mourvèdre",
+       "red"
+      ],
+      [
+       "Muscardin",
+       "red"
+      ],
+      [
+       "Piquepoul Blanc",
+       "white"
+      ],
+      [
+       "Piquepoul Noir",
+       "red"
+      ],
+      [
+       "Roussanne",
+       "white"
+      ],
+      [
+       "Syrah",
+       "red"
+      ],
+      [
+       "Terret Noir",
+       "red"
+      ],
+      [
+       "Ugni Blanc",
+       "white"
+      ],
+      [
+       "Viognier",
+       "white"
+      ]
+     ]
+    ],
+    [
+     "ambré, grenat, rosé and tuilé wines",
+     [
+      [
+       "Grenache",
+       "red"
+      ],
+      [
+       "Grenache Gris",
+       "pink"
+      ],
+      [
+       "Grenache Blanc",
+       "white"
+      ]
+     ],
+     [
+      [
+       "Bourboulenc",
+       "white"
+      ],
+      [
+       "Brun Argenté",
+       "red"
+      ],
+      [
+       "Carignan",
+       "red"
+      ],
+      [
+       "Cinsault",
+       "red"
+      ],
+      [
+       "Clairette",
+       "white"
+      ],
+      [
+       "Clairette Rose",
+       "pink"
+      ],
+      [
+       "Counoise",
+       "red"
+      ],
+      [
+       "Marsanne",
+       "white"
+      ],
+      [
+       "Mourvèdre",
+       "red"
+      ],
+      [
+       "Muscardin",
+       "red"
+      ],
+      [
+       "Piquepoul Blanc",
+       "white"
+      ],
+      [
+       "Piquepoul Noir",
+       "red"
+      ],
+      [
+       "Roussanne",
+       "white"
+      ],
+      [
+       "Syrah",
+       "red"
+      ],
+      [
+       "Terret Noir",
+       "red"
+      ],
+      [
+       "Ugni Blanc",
+       "white"
+      ],
+      [
+       "Viognier",
+       "white"
+      ]
+     ]
+    ]
+   ],
+   "roles_unread": null
   },
   "limits_add": [
-   "For red wine, Grenache: at least 50%",
-   "For red wine, Mourvèdre and Syrah together: at least 20%"
+   "For still red wine, Grenache: at least 50%",
+   "For still red wine, Mourvèdre and Syrah together: at least 20%",
+   "For still red wine, Carignan and Cinsault together: at most 20%",
+   "For still red wine, white grapes together: at most 5%",
+   "For grenat and tuilé wines, Grenache: at least 75%"
   ]
  },
  "france/rivesaltes": {
   "set": {
    "types": [
     "Fortified wine"
+   ],
+   "by_wine": [
+    [
+     "grenat wine",
+     [
+      [
+       "Grenache",
+       "red"
+      ]
+     ],
+     []
+    ],
+    [
+     "ambré, rosé and tuilé wines",
+     [
+      [
+       "Grenache Blanc",
+       "white"
+      ],
+      [
+       "Grenache Gris",
+       "pink"
+      ],
+      [
+       "Grenache",
+       "red"
+      ],
+      [
+       "Macabeu",
+       "white"
+      ],
+      [
+       "Tourbat",
+       "white"
+      ]
+     ],
+     [
+      [
+       "Muscat à Petits Grains",
+       "white"
+      ],
+      [
+       "Muscat d'Alexandrie",
+       "white"
+      ]
+     ]
+    ]
    ]
   }
  },
@@ -1015,7 +1470,7 @@
   "set": {
    "recognised": 1951
   },
-  "limits_add": [
+  "blend_add": [
    "For rosé wine, Gamay: 100%"
   ]
  },
@@ -1188,7 +1643,7 @@
   "set": {
    "yield_base": "78 hl/ha with rows up to 1.6 m apart, 74 with rows 1.6 to 2 m apart"
   },
-  "limits_add": [
+  "blend_add": [
    "For white wine, Chardonnay, Pinot Noir and Trousseau together: at least 70%"
   ]
  },
@@ -1242,6 +1697,364 @@
     "name": "Asolo Prosecco DOCG production rules (disciplinare), English translation, UK GI register: Glera at least 85%; up to 15% Verdiso, Bianchetta Trevigiana, Perera and Glera Lunga; Pinot and Chardonnay wine only as the traditional addition to the sparkling wine (art. 2 and 5)",
     "url": "https://assets.publishing.service.gov.uk/media/6657096b7b792ffff71a84af/disciplinare-asolo-prosecco-EN.pdf"
    }
+  ]
+ },
+ "spain/jumilla": {
+  "grape_add": [
+   [
+    "Merseguera",
+    "white"
+   ],
+   [
+    "Viognier",
+    "white"
+   ]
+  ],
+  "cite": [
+   {
+    "name": "Jumilla DOP specification (pliego de condiciones), last amended by Resolution of 24 February 2025 (BOE 5 March 2025): white wines from Airén, Macabeo, Pedro Ximénez, Malvasía, Chardonnay, Sauvignon Blanc, Moscatel de grano menudo, Verdejo, Merseguera and Viognier",
+    "url": "https://jumilla.wine/wp-content/uploads/2025/03/PLIEGO-DE-CONDICIONES.pdf"
+   }
+  ]
+ },
+ "germany/wurttemberg": {
+  "set": {
+   "yield_hl": null
+  }
+ },
+ "greece/moschato-rodou": {
+  "grape_add": [
+   [
+    "Moschato Trani",
+    "white"
+   ]
+  ],
+  "cite": [
+   {
+    "name": "Wines of Greece, PDO Muscat of Rhodes: Muscat White and Muscat di Trani",
+    "url": "https://winesofgreece.org/?p=1083"
+   }
+  ]
+ },
+ "france/crozes-hermitage": {
+  "set": {
+   "by_wine": [
+    [
+     "red wine",
+     [
+      [
+       "Syrah",
+       "red"
+      ]
+     ],
+     [
+      [
+       "Marsanne",
+       "white"
+      ],
+      [
+       "Roussanne",
+       "white"
+      ]
+     ]
+    ],
+    [
+     "white wine",
+     [
+      [
+       "Marsanne",
+       "white"
+      ],
+      [
+       "Roussanne",
+       "white"
+      ]
+     ],
+     []
+    ]
+   ],
+   "roles_unread": null
+  }
+ },
+ "france/cairanne": {
+  "limits_drop": [
+   "For white wine, Clairette, Grenache Blanc and Roussanne together: at least 70%"
+  ],
+  "limits_add": [
+   "For white wine, any two of Clairette, Grenache Blanc and Roussanne together: at least 70%"
+  ]
+ },
+ "france/banyuls": {
+  "set": {
+   "by_wine": [
+    [
+     "ambré and blanc wines",
+     [
+      [
+       "Grenache Blanc",
+       "white"
+      ],
+      [
+       "Grenache Gris",
+       "pink"
+      ],
+      [
+       "Macabeu",
+       "white"
+      ],
+      [
+       "Tourbat",
+       "white"
+      ]
+     ],
+     [
+      [
+       "Marsanne",
+       "white"
+      ],
+      [
+       "Muscat à Petits Grains",
+       "white"
+      ],
+      [
+       "Muscat d'Alexandrie",
+       "white"
+      ],
+      [
+       "Roussanne",
+       "white"
+      ],
+      [
+       "Vermentino",
+       "white"
+      ],
+      [
+       "Carignan Blanc",
+       "white"
+      ]
+     ]
+    ],
+    [
+     "rosé wine",
+     [
+      [
+       "Grenache Blanc",
+       "white"
+      ],
+      [
+       "Grenache Gris",
+       "pink"
+      ],
+      [
+       "Grenache",
+       "red"
+      ],
+      [
+       "Macabeu",
+       "white"
+      ],
+      [
+       "Tourbat",
+       "white"
+      ]
+     ],
+     [
+      [
+       "Muscat à Petits Grains",
+       "white"
+      ],
+      [
+       "Muscat d'Alexandrie",
+       "white"
+      ]
+     ]
+    ],
+    [
+     "rimage wine",
+     [
+      [
+       "Grenache",
+       "red"
+      ]
+     ],
+     [
+      [
+       "Carignan",
+       "red"
+      ],
+      [
+       "Cinsault",
+       "red"
+      ],
+      [
+       "Counoise",
+       "red"
+      ],
+      [
+       "Grenache Gris",
+       "pink"
+      ],
+      [
+       "Mourvèdre",
+       "red"
+      ],
+      [
+       "Syrah",
+       "red"
+      ]
+     ]
+    ],
+    [
+     "traditionnel wine",
+     [
+      [
+       "Grenache Gris",
+       "pink"
+      ],
+      [
+       "Grenache",
+       "red"
+      ]
+     ],
+     [
+      [
+       "Carignan",
+       "red"
+      ],
+      [
+       "Cinsault",
+       "red"
+      ],
+      [
+       "Counoise",
+       "red"
+      ],
+      [
+       "Mourvèdre",
+       "red"
+      ],
+      [
+       "Syrah",
+       "red"
+      ]
+     ]
+    ]
+   ],
+   "roles_unread": null
+  },
+  "limits_add": [
+   "For ambré, blanc and rosé wines, Muscat à Petits Grains and Muscat d'Alexandrie together: at most 20%",
+   "For traditionnel wine, Grenache: at least 50%"
+  ]
+ },
+ "italy/terre-tollesi": {
+  "set": {
+   "types": [
+    "Wine"
+   ]
+  }
+ },
+ "france/cotes-de-blaye": {
+  "set": {
+   "grapes": [
+    [
+     "Colombard",
+     "white"
+    ],
+    [
+     "Ugni Blanc",
+     "white"
+    ]
+   ],
+   "grapes_other": [
+    [
+     "Muscadelle",
+     "white"
+    ],
+    [
+     "Sauvignon Blanc",
+     "white"
+    ],
+    [
+     "Sauvignon Gris",
+     "pink"
+    ],
+    [
+     "Sémillon",
+     "white"
+    ]
+   ]
+  },
+  "limits_add": [
+   "Colombard and Ugni Blanc together: 60 to 90%"
+  ],
+  "blend_add": [
+   "Main grapes together: at least 50%"
+  ],
+  "cite": [
+   {
+    "name": "Côtes de Blaye AOC specification (cahier des charges), BO-AGRI 7 December 2017: main grapes Colombard and Ugni Blanc, accessory Muscadelle, Sauvignon, Sauvignon Gris and Sémillon",
+    "url": "https://extranet.inao.gouv.fr/fichier/CDC-Cotes-de-Blaye-BO-2017-12-07.pdf"
+   }
+  ]
+ },
+ "italy/strevi": {
+  "set": {
+   "types": [
+    "Sweet white wine"
+   ]
+  }
+ },
+ "france/vinsobres": {
+  "limits_drop": [
+   "For red wine, Mourvèdre and Syrah together: at least 80%"
+  ],
+  "limits_add": [
+   "For red wine, Grenache, Mourvèdre and Syrah together: at least 80%",
+   "For red wine, Grenache: at least 50%",
+   "For red wine, Mourvèdre and Syrah together: at least 25%"
+  ]
+ },
+ "france/vacqueyras": {
+  "limits_drop": [
+   "For red wine, Mourvèdre and Syrah together: at least 90%"
+  ],
+  "limits_add": [
+   "For red wine, Grenache, Mourvèdre and Syrah together: at least 90%",
+   "For red wine, Grenache: at least 50%",
+   "For red wine, Mourvèdre and Syrah together: at least 20%"
+  ]
+ },
+ "france/ladoix": {
+  "limits_drop": [
+   "For red wine, Chardonnay, Pinot Blanc and Pinot Gris together: at most 15%"
+  ],
+  "limits_add": [
+   "For red wine, Chardonnay, Pinot Blanc and Pinot Gris, only mixed in among the Pinot Noir vines: at most 15% of each plot"
+  ]
+ },
+ "france/beaune": {
+  "limits_drop": [
+   "For red wine, Chardonnay, Pinot Blanc and Pinot Gris together: at most 15%"
+  ],
+  "limits_add": [
+   "For red wine, Chardonnay, Pinot Blanc and Pinot Gris, only mixed in among the Pinot Noir vines: at most 15% of each plot"
+  ]
+ },
+ "france/aloxe-corton": {
+  "limits_drop": [
+   "For red wine, Chardonnay, Pinot Blanc and Pinot Gris together: at most 15%"
+  ],
+  "limits_add": [
+   "For red wine, Chardonnay, Pinot Blanc and Pinot Gris, only mixed in among the Pinot Noir vines: at most 15% of each plot"
+  ]
+ },
+ "france/corton": {
+  "limits_drop": [
+   "For red wine, Chardonnay, Pinot Blanc and Pinot Gris together: at most 15%"
+  ],
+  "limits_add": [
+   "For red wine, Chardonnay, Pinot Blanc and Pinot Gris, only mixed in among the Pinot Noir vines: at most 15% of each plot"
   ]
  }
 }

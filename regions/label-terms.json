@@ -1,5 +1,5 @@
 {
- "$about": "What the words on a label mean: the labelling terms the WSET Level 2 and Level 3 specifications list, each written from the Wikipedia article named in source (src/terms.py). places lists the terms a region's pages show; the places inside it show them too.",
+ "$about": "What the words on a label mean: the labelling terms the WSET Level 2 and Level 3 specifications list, each written from the Wikipedia article named in source (src/terms.py). places lists the terms a region's pages show; the places inside it show them too. only lists terms a place shows on its own page but does not pass down. except lists places a term from above must skip (Champagne's still-wine AOCs have no dosage terms).",
  "terms": {
   "aoc": {
    "name": "AOC / AOP",
@@ -18,8 +18,8 @@
   },
   "bx-sup": {
    "name": "Bordeaux Supérieur",
-   "source": "Bordeaux wine",
-   "def": "One of the two regional appellations allowed anywhere in Bordeaux, beside plain Bordeaux. Together they cover about half the Bordeaux vineyard."
+   "source": "SRC:term-0967587a",
+   "def": "A regional appellation for red and sweet white wine from anywhere in Bordeaux, made to stricter rules than plain Bordeaux."
   },
   "cru-classe-1855": {
    "name": "Cru Classé (1855)",
@@ -44,22 +44,22 @@
   "bourgogne-tiers": {
    "name": "Bourgogne, village, Premier Cru, Grand Cru",
    "source": "Burgundy wine",
-   "def": "Burgundy's four levels, from regional Bourgogne up through village wines to Premier Cru and Grand Cru vineyards. The Grand Crus usually sit mid-slope and higher, with the best sun and drainage."
+   "def": "Burgundy's four levels, from regional Bourgogne up through village wines to Premier Cru and Grand Cru vineyards."
   },
   "alsace-gc": {
    "name": "Alsace Grand Cru",
-   "source": "Alsace Grand Cru AOC",
-   "def": "An appellation for 51 named vineyards. The wine must come from one of them, name it on the label, and keep yields to 55 hl/ha or less."
+   "source": "SRC:term-alsace-gc-cahier",
+   "def": "One of 51 named grand cru vineyards, each its own appellation. The wine must come from that vineyard, name it on the label and meet stricter rules than plain Alsace AOC."
   },
   "vt": {
    "name": "Vendanges Tardives",
-   "source": "Alsace wine",
-   "def": "Late harvest. In ripeness rules it sits close to a German Auslese."
+   "source": "SRC:alsace-cahier-vt",
+   "def": "Late harvest. The grapes need at least 244 g of sugar per liter of juice for Riesling and Muscat, and 270 g for Gewurztraminer and Pinot Gris."
   },
   "sgn": {
    "name": "Sélection de Grains Nobles",
-   "source": "Alsace wine",
-   "def": "Made from grapes with noble rot, close to a German Beerenauslese."
+   "source": "SRC:alsace-cahier-vt",
+   "def": "Made from grapes with noble rot. They need at least 276 g of sugar per liter of juice for Riesling and Muscat, and 306 g for Gewurztraminer and Pinot Gris."
   },
   "bj-nouveau": {
    "name": "Beaujolais Nouveau",
@@ -68,8 +68,8 @@
   },
   "bj-villages": {
    "name": "Beaujolais-Villages",
-   "source": "Beaujolais",
-   "def": "The middle tier, from 39 villages in the north of the region. The crus, such as Fleurie, sit above it."
+   "source": "SRC:term-47e0ceab",
+   "def": "The middle tier, from 38 villages in the north of the region, with the crus, such as Fleurie, above it."
   },
   "sur-lie": {
    "name": "Sur lie",
@@ -84,7 +84,7 @@
   "blanc-de-blancs": {
    "name": "Blanc de Blancs",
    "source": "Champagne",
-   "def": "White from white grapes. In Champagne, 100% Chardonnay."
+   "def": "Made only from white grapes. In Champagne that usually means 100% Chardonnay."
   },
   "blanc-de-noirs": {
    "name": "Blanc de Noirs",
@@ -99,7 +99,7 @@
   "qualitatswein-de": {
    "name": "Qualitätswein",
    "source": "German wine classification",
-   "def": "German quality wine from one of the specified regions. It can be dry to semi-sweet."
+   "def": "German quality wine from one of the specified regions. It can be dry to sweet."
   },
   "pradikatswein": {
    "name": "Prädikatswein",
@@ -118,8 +118,8 @@
   },
   "auslese": {
    "name": "Auslese",
-   "source": "German wine classification",
-   "def": "Select harvest from very ripe, hand-picked bunches. Usually semi-sweet or sweet, sometimes with noble rot."
+   "source": "SRC:term-39bebfbe",
+   "def": "Select harvest from fully ripe or noble-rotted grapes."
   },
   "ba": {
    "name": "Beerenauslese (BA)",
@@ -143,8 +143,8 @@
   },
   "landwein": {
    "name": "Landwein",
-   "source": "German wine classification",
-   "def": "German country wine, below Qualitätswein. It must be dry or medium dry."
+   "source": "SRC:term-d59b9427",
+   "def": "German country wine, below Qualitätswein, which since 2021 no longer has to be dry or medium dry under national rules."
   },
   "vdp-gg": {
    "name": "VDP, Grosses Gewächs (GG)",
@@ -154,7 +154,7 @@
   "sekt": {
    "name": "Sekt",
    "source": "Sparkling wine",
-   "def": "German sparkling wine. Most is made in tank, and the best by the traditional method. Cheap wine carbonated with CO2 cannot be called Sekt."
+   "def": "Quality sparkling wine. Most is made in tank, and the best by the traditional method. Plain Sekt may be made from imported wine, but Deutscher Sekt must come from German grapes."
   },
   "qualitatswein-at": {
    "name": "Qualitätswein",
@@ -168,13 +168,13 @@
   },
   "aszu": {
    "name": "Aszú",
-   "source": "Tokaji",
-   "def": "Tokaji's famous sweet wine. Berries with noble rot are picked one by one, crushed to a paste and soaked in must or wine. Sweetness is graded from 3 to 6 puttonyos."
+   "source": "SRC:term-bf04d468",
+   "def": "Tokaji's famous sweet wine, made by soaking noble-rotted aszú berries in must or wine, with at least 120 g of sugar a liter."
   },
   "eszencia": {
    "name": "Eszencia",
-   "source": "Tokaji",
-   "def": "The free-run juice of aszú berries. It holds 500 to 700 g of sugar a liter, so it never ferments past about 5 or 6% alcohol."
+   "source": "SRC:term-bf04d468",
+   "def": "The juice that drains on its own from aszú berries, with at least 450 g of sugar a liter and only 1.2 to 8% alcohol."
   },
   "igt": {
    "name": "IGT",
@@ -208,13 +208,13 @@
   },
   "vino-de-pago": {
    "name": "Vino de Pago",
-   "source": "Spanish wine",
-   "def": "A single-estate wine of high quality. A pago is a vineyard estate."
+   "source": "SRC:term-ley-24-2003",
+   "def": "A wine from a pago, a named rural site with its own soil and microclimate. All its grapes must grow there."
   },
   "fino": {
    "name": "Fino, Manzanilla",
-   "source": "Sherry",
-   "def": "The driest and palest sherries, aged under a cap of flor yeast that keeps air away. Manzanilla is a light fino from around Sanlúcar de Barrameda."
+   "source": "SRC:term-1beaf9b5",
+   "def": "The driest and palest sherries, aged under a layer of flor yeast that keeps air away. Manzanilla is the same style aged entirely in Sanlúcar de Barrameda."
   },
   "amontillado": {
    "name": "Amontillado",
@@ -253,8 +253,8 @@
   },
   "rioja-gran-reserva": {
    "name": "Gran Reserva",
-   "source": "Rioja DOCa",
-   "def": "In Rioja, a red with at least 24 months in barrel and at least 36 more in bottle."
+   "source": "SRC:term-1fcb41cc",
+   "def": "In Rioja, a red aged at least five years, with at least two in oak and two in bottle."
   },
   "joven": {
    "name": "Joven",
@@ -263,13 +263,13 @@
   },
   "ripasso": {
    "name": "Ripasso",
-   "source": "Valpolicella",
-   "def": "Valpolicella Superiore made with the partly dried skins left over from Amarone or Recioto."
+   "source": "SRC:term-b131bf58",
+   "def": "Valpolicella refermented on the skins left over from making Amarone or Recioto. It may also be labeled Superiore."
   },
   "amarone-recioto": {
    "name": "Amarone, Recioto",
-   "source": "Valpolicella",
-   "def": "Valpolicella wines from dried grapes: Amarone is strong and dry, Recioto sweet. Both have been DOCG since 2009."
+   "source": "SRC:term-eb279b11",
+   "def": "Valpolicella wines from dried grapes: Amarone is strong and dry, Recioto sweet. Both have been DOCG since 2010."
   },
   "ruby": {
    "name": "Ruby, Reserve Ruby",
@@ -278,8 +278,8 @@
   },
   "tawny": {
    "name": "Tawny",
-   "source": "Port wine",
-   "def": "Port aged in wooden barrels, where slow oxidation turns it golden brown and nutty. Older ones carry an age of 10, 20, 30 or 40 years."
+   "source": "SRC:term-780520e1",
+   "def": "Port aged in wooden casks, where slow oxidation turns it golden brown and nutty. Older ones carry an age indication such as 10, 20, 30 or 40 years."
   },
   "lbv": {
    "name": "Late Bottled Vintage (LBV)",
@@ -308,8 +308,8 @@
   },
   "cape-blend": {
    "name": "Cape Blend",
-   "source": "Pinotage",
-   "def": "A red blend with 30 to 70% Pinotage."
+   "source": "SRC:term-01e38f15",
+   "def": "A red blend with 30 to 70% Pinotage, set by the industry rather than by law. Since the 2019 vintage Pinotage should be its largest part."
   },
   "old-vines": {
    "name": "Old vines, Vieilles vignes",
@@ -323,8 +323,8 @@
   },
   "noble-rot": {
    "name": "Noble rot",
-   "def": "Botrytis cinerea, a fungus that in warm, humid weather can turn grapes into fine, concentrated sweet wine.",
-   "source": "Noble rot"
+   "def": "Botrytis cinerea, a fungus that shrivels ripe grapes and concentrates their sugar when damp weather gives way to dry. If the wet weather lasts, it turns into harmful grey rot.",
+   "source": "SRC:term-2103c16d"
   },
   "gi-au": {
    "name": "Zone, region, subregion",
@@ -333,13 +333,13 @@
   },
   "classico": {
    "name": "Classico",
-   "def": "The original heartland of an Italian wine area. In Chianti Classico, members of the producers' consortium carry the black rooster seal.",
-   "source": "Chianti"
+   "def": "The original heartland of an Italian wine area. Every bottle of Chianti Classico carries the black rooster on its neck seal.",
+   "source": "SRC:term-51d6abe1"
   },
   "riserva": {
    "name": "Riserva",
-   "def": "An aged Italian wine. Chianti Riserva needs at least 6 months in barrel and 3 more in bottle before release.",
-   "source": "Chianti"
+   "def": "A longer-aged wine. Each DOC or DOCG's own rules decide whether it has a Riserva and how long it must age. Chianti Riserva needs at least two years, counted from 1 January after the harvest.",
+   "source": "SRC:chianti-disciplinare"
   },
   "prosecco-superiore": {
    "name": "Prosecco Superiore",
@@ -353,13 +353,23 @@
   },
   "asti": {
    "name": "Asti, Moscato d'Asti",
-   "def": "Asti is sweet, sparkling and low in alcohol, from Moscato Bianco. Moscato d'Asti is only lightly sparkling, with even less alcohol.",
-   "source": "Asti wine"
+   "def": "Asti is a fully sparkling Moscato Bianco wine that may range from bone dry to sweet. Moscato d'Asti is sweet, only lightly sparkling and lower in alcohol.",
+   "source": "SRC:term-21c88d76"
   },
   "cremant": {
    "name": "Crémant",
-   "def": "French sparkling wine made outside Champagne.",
-   "source": "Sparkling wine"
+   "def": "A white or rosé traditional-method sparkling wine from one of France's crémant appellations, made from hand-picked grapes and aged at least nine months on its lees.",
+   "source": "SRC:term-9965c956"
+  },
+  "ava-or": {
+   "name": "Oregon AVA",
+   "source": "SRC:term-oar-845-010-0920",
+   "def": "Oregon is stricter than federal law: a wine named for an AVA needs 95% of its grapes from that AVA, and one named for an AVA wholly in Oregon must use only Oregon grapes."
+  },
+  "vc-es": {
+   "name": "Vino de Calidad",
+   "source": "SRC:ley-24-2003",
+   "def": "Vino de Calidad con Indicación Geográfica, a Spanish tier above Vino de la Tierra and below DO."
   }
  },
  "places": {
@@ -369,33 +379,12 @@
    "vdf",
    "old-vines"
   ],
-  "france/bordeaux": [
-   "bx-sup",
-   "cru-classe-1855"
-  ],
-  "france/left-bank": [
-   "cru-bourgeois"
-  ],
-  "france/saint-emilion": [
-   "st-emilion-gcc"
-  ],
-  "france/graves": [
-   "graves-cc"
-  ],
   "france/pessac-leognan": [
-   "graves-cc"
+   "graves-cc",
+   "cru-classe-1855"
   ],
   "france/burgundy": [
    "bourgogne-tiers"
-  ],
-  "france/alsace": [
-   "alsace-gc",
-   "vt",
-   "sgn"
-  ],
-  "france/beaujolais": [
-   "bj-nouveau",
-   "bj-villages"
   ],
   "france/champagne": [
    "champagne-nv",
@@ -424,13 +413,13 @@
   "italy": [
    "docg",
    "doc",
-   "igt",
-   "riserva"
+   "igt"
   ],
   "spain": [
    "doca",
    "do-es",
    "vdlt",
+   "vc-es",
    "vino-de-pago",
    "joven"
   ],
@@ -505,7 +494,8 @@
    "gi-au"
   ],
   "france/sauternes-barsac": [
-   "noble-rot"
+   "noble-rot",
+   "cru-classe-1855"
   ],
   "italy/chianti-classico": [
    "classico"
@@ -517,9 +507,6 @@
    "prosecco-superiore"
   ],
   "italy/asolo-prosecco": [
-   "prosecco-superiore"
-  ],
-  "italy/prosecco-doc": [
    "prosecco-superiore"
   ],
   "spain/cava": [
@@ -548,6 +535,214 @@
   ],
   "france/cremant-du-jura": [
    "cremant"
+  ],
+  "italy/chianti": [
+   "riserva"
+  ],
+  "italy/chianti-rufina": [
+   "riserva"
+  ],
+  "france/medoc": [
+   "cru-bourgeois"
+  ],
+  "france/haut-medoc": [
+   "cru-bourgeois",
+   "cru-classe-1855"
+  ],
+  "france/pauillac": [
+   "cru-bourgeois",
+   "cru-classe-1855"
+  ],
+  "france/saint-julien": [
+   "cru-bourgeois",
+   "cru-classe-1855"
+  ],
+  "france/margaux": [
+   "cru-bourgeois",
+   "cru-classe-1855"
+  ],
+  "france/saint-estephe": [
+   "cru-bourgeois",
+   "cru-classe-1855"
+  ],
+  "france/listrac-medoc": [
+   "cru-bourgeois"
+  ],
+  "france/moulis-en-medoc": [
+   "cru-bourgeois"
+  ],
+  "france/saint-emilion-grand-cru": [
+   "st-emilion-gcc"
+  ],
+  "france/alsace-grand-cru": [
+   "alsace-gc",
+   "vt",
+   "sgn"
+  ],
+  "france/alsace-aoc": [
+   "vt",
+   "sgn"
+  ],
+  "france/beaujolais-in-beaujolais": [
+   "bj-nouveau",
+   "bj-villages"
+  ],
+  "france/beaujolais-villages": [
+   "bj-nouveau",
+   "bj-villages"
+  ],
+  "france/morgon": [
+   "bj-villages"
+  ],
+  "france/fleurie": [
+   "bj-villages"
+  ],
+  "france/moulin-a-vent": [
+   "bj-villages"
+  ],
+  "france/brouilly": [
+   "bj-villages"
+  ],
+  "france/cote-de-brouilly": [
+   "bj-villages"
+  ],
+  "france/julienas": [
+   "bj-villages"
+  ],
+  "france/chiroubles": [
+   "bj-villages"
+  ],
+  "france/chenas": [
+   "bj-villages"
+  ],
+  "france/regnie": [
+   "bj-villages"
+  ],
+  "france/saint-amour": [
+   "bj-villages"
+  ],
+  "spain/manzanilla-de-sanlucar": [
+   "fino"
+  ],
+  "united-states/oregon": [
+   "ava-or"
+  ]
+ },
+ "only": {
+  "france/bordeaux": [
+   "bx-sup"
+  ],
+  "france/bordeaux-superieur": [
+   "bx-sup"
+  ],
+  "france/alsace": [
+   "alsace-gc",
+   "vt",
+   "sgn"
+  ],
+  "france/beaujolais": [
+   "bj-nouveau",
+   "bj-villages"
+  ]
+ },
+ "sources": {
+  "term-0967587a": {
+   "name": "Wikipedia, Bordeaux AOC (the regional appellations) (what the label term means)",
+   "url": "https://en.wikipedia.org/wiki/Bordeaux_AOC"
+  },
+  "term-47e0ceab": {
+   "name": "Inter Beaujolais, Beaujolais-Villages (what the label term means)",
+   "url": "https://www.beaujolais.com/en/?p=1689"
+  },
+  "term-39bebfbe": {
+   "name": "German Wine Act (Weingesetz), section 20 (what the label term means)",
+   "url": "https://www.gesetze-im-internet.de/weing_1994/__20.html"
+  },
+  "term-d59b9427": {
+   "name": "German Wine Regulation (Weinverordnung), section 16a, repealed 8 May 2021 (what the label term means)",
+   "url": "https://www.buzer.de/gesetz/6206/al147181-0.htm"
+  },
+  "term-bf04d468": {
+   "name": "Tokaj product specification (termékleírás), 10th version, Hungarian Ministry of Agriculture (what the label term means)",
+   "url": "https://boraszat.kormany.hu/download/b/85/53000/TOKAJ%20term%C3%A9kle%C3%ADr%C3%A1s%20%2810%20v%C3%A1ltozat%29%20kn.pdf"
+  },
+  "term-1beaf9b5": {
+   "name": "Consejo Regulador Jerez-Xérès-Sherry and Manzanilla-Sanlúcar de Barrameda, Manzanilla (what the label term means)",
+   "url": "https://www.sherry.wine/sherry-wine/dry-sherry-wines/manzanilla"
+  },
+  "term-1fcb41cc": {
+   "name": "Consejo Regulador DOCa Rioja, classification (what the label term means)",
+   "url": "https://riojawine.com/en/the-designation/classification/"
+  },
+  "term-b131bf58": {
+   "name": "Italian Wine Central, Valpolicella Ripasso DOC (what the label term means)",
+   "url": "https://italianwinecentral.com/denomination/valpolicella-ripasso-doc/"
+  },
+  "term-eb279b11": {
+   "name": "Italian Wine Central, Amarone della Valpolicella DOCG (what the label term means)",
+   "url": "https://italianwinecentral.com/denomination/amarone-della-valpolicella-docg/"
+  },
+  "term-780520e1": {
+   "name": "IVDP (Port and Douro Wine Institute), Circular 01/2025 (what the label term means)",
+   "url": "https://ivdp.pt/media/avlbjznd/circular_01_2025_signed_signed.pdf"
+  },
+  "term-01e38f15": {
+   "name": "Wines of South Africa (WOSA), wine styles (what the label term means)",
+   "url": "https://wosa.co.za/The-Industry/Varieties-and-Styles/Wine-Styles/"
+  },
+  "term-2103c16d": {
+   "name": "Wikipedia, Noble rot (what the label term means)",
+   "url": "https://en.wikipedia.org/wiki/Noble_rot"
+  },
+  "term-51d6abe1": {
+   "name": "Consorzio Vino Chianti Classico, trademark history (what the label term means)",
+   "url": "https://www.chianticlassico.com/en/milestone_category/trademark-history-en"
+  },
+  "term-21c88d76": {
+   "name": "Regione Piemonte, Asti DOCG production rules (disciplinare), 2025 (what the label term means)",
+   "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2025-01/docg_asti_disciplinare_di_produzione.pdf"
+  },
+  "term-9965c956": {
+   "name": "Commission Delegated Regulation (EU) 2019/33, article 53 (what the label term means)",
+   "url": "https://www.legislation.gov.uk/eur/2019/33/article/53/data.htm"
+  },
+  "term-oar-845-010-0920": {
+   "name": "Oregon Administrative Rules 845-010-0920, appellation of origin (what the label term means)",
+   "url": "https://www.law.cornell.edu/regulations/oregon/Or-Admin-Code-SS-845-010-0920"
+  },
+  "term-ley-24-2003": {
+   "name": "Ley 24/2003 de la Viña y del Vino, BOE 11 July 2003 (what the label term means)",
+   "url": "https://www.boe.es/eli/es/l/2003/07/10/24"
+  },
+  "term-alsace-gc-cahier": {
+   "name": "Alsace grand cru AOC specifications (cahier des charges), BO Agri 15 January 2026 (what the label term means)",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-47631e47-a913-4910-9868-ad1c4b70bb3d/telechargement"
+  },
+  "alsace-cahier-vt": {
+   "name": "Alsace AOC specification (cahier des charges), BO n°23 of 5 June 2025: minimum sugar for Vendanges Tardives and Sélection de Grains Nobles (what the label terms mean)",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-07e925f4-f7bf-41cc-9b24-7563f1272acb/telechargement"
+  },
+  "ley-24-2003": {
+   "name": "Ley 24/2003 de la Viña y del Vino, article 13: the levels of protected wine (what the label terms mean)",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-13616"
+  }
+ },
+ "except": {
+  "sparkling-sweetness": [
+   "france/coteaux-champenois",
+   "france/rose-des-riceys"
+  ],
+  "champagne-nv": [
+   "france/coteaux-champenois",
+   "france/rose-des-riceys"
+  ],
+  "blanc-de-blancs": [
+   "france/coteaux-champenois",
+   "france/rose-des-riceys"
+  ],
+  "blanc-de-noirs": [
+   "france/coteaux-champenois",
+   "france/rose-des-riceys"
   ]
  }
 }

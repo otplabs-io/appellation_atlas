@@ -614,7 +614,7 @@
   "audited": true
  },
  "chile/malleco-valley": {
-  "text": "A subregion of Southern Chile, one of Chile's six wine regions. The South runs from the Ñuble and Biobío regions to the province of Malleco in Araucanía, and is made up of three districts: the Itata, Bío Bío and Malleco valleys.",
+  "text": "A subregion of Southern Chile, one of Chile's six wine regions. The South runs from the Ñuble and Biobío regions to the province of Malleco in Araucanía, and is made up of three subregions: the Itata, Bío Bío and Malleco valleys.",
   "from": [
    "wikipedia_of_wider",
    "where"
@@ -641,7 +641,7 @@
   "audited": true
  },
  "chile/southern-chile": {
-  "text": "One of Chile's six wine regions, running from the Ñuble and Biobío regions to the province of Malleco in Araucanía. It has three districts: Itata, Bío-Bío and Malleco Valleys.",
+  "text": "One of Chile's six wine regions, running from the Ñuble and Biobío regions to the province of Malleco in Araucanía. It has three subregions: Itata, Bío-Bío and Malleco Valleys.",
   "from": [
    "wikipedia",
    "where"
@@ -4633,7 +4633,7 @@
   }
  },
  "spain/mentrida": {
-  "text": "A DO in northern Toledo province, bordering Ávila and Madrid, between the Tagus and the foot of the Sierra de Gredos. Its municipalities include Talavera de la Reina and Toledo. Garnacha is the main grape, and Tempranillo and Syrah are also allowed.",
+  "text": "A DO in northern Toledo province, bordering Ávila and Madrid, from the foot of the Sierra de Gredos down to the Tagus and a little beyond it. Its municipalities include Talavera de la Reina and Toledo. Garnacha is the main grape, and Tempranillo and Syrah are also allowed.",
   "from": [
    "wikipedia",
    "rules"
@@ -4810,7 +4810,7 @@
   }
  },
  "spain/uruena": {
-  "text": "A single-estate DO of 78 hectares in the municipality of Urueña, Valladolid province, in Castile and León. Its rules allow rosé and red wine from four red grapes: Tempranillo, Cabernet Sauvignon, Merlot and Syrah.",
+  "text": "A single-estate Vino de Pago of 78 hectares in the municipality of Urueña, Valladolid province, in Castile and León. Its rules allow rosé and red wine from four red grapes: Tempranillo, Cabernet Sauvignon, Merlot and Syrah.",
   "from": [
    "rules",
    "where"
@@ -4888,7 +4888,7 @@
   }
  },
  "spain/valles-de-benavente": {
-  "text": "A DO in northeastern Zamora province, Castile and León, whose wines carry the traditional label term Vino de Calidad. Its rules allow red Tempranillo, Prieto Picudo, Mencía, Garnacha Tinta and Cabernet Sauvignon, and white Verdejo and Doña Blanca.",
+  "text": "A Vino de Calidad in northeastern Zamora province, Castile and León, a Spanish tier above Vino de la Tierra and below DO. Its rules allow red Tempranillo, Prieto Picudo, Mencía, Garnacha Tinta and Cabernet Sauvignon, and white Verdejo and Doña Blanca.",
   "from": [
    "wikipedia",
    "rules"
@@ -5129,7 +5129,7 @@
   "audited": true
  },
  "united-states/clear-lake": {
-  "text": "A North Coast AVA in Lake County, centered on Clear Lake, the largest natural lake entirely within California. Sub-areas include Big Valley District-Lake County, High Valley, Kelsey Bench-Lake County and Red Hills Lake County.",
+  "text": "A North Coast AVA in Lake County, centered on Clear Lake, the largest natural lake entirely within California. Sub-areas include Big Valley District-Lake County, Kelsey Bench-Lake County and Red Hills Lake County, and most of High Valley lies inside it.",
   "from": [
    "wikipedia",
    "ava",
@@ -6334,6 +6334,17 @@
   "cite": {
    "name": "T.D. ATF-397, Yorkville Highlands Viticultural Area, 63 FR 16904 (1998)",
    "url": "https://www.govinfo.gov/content/pkg/FR-1998-04-07/html/98-8990.htm"
+  }
+ },
+ "spain/condado-do-tea": {
+  "text": "A subzone of Rías Baixas, the Galician DO known for white wine from Albariño. A white labeled Rías Baixas Condado do Tea must be at least 70% Albariño and Treixadura.",
+  "from": [
+   "rules"
+  ],
+  "audited": true,
+  "cite": {
+   "name": "Rías Baixas DOP specification (pliego de condiciones), July 2024, Xunta de Galicia: the Condado do Tea subzone rule",
+   "url": "https://agacal.xunta.gal/sites/default/files/calidade-alimentaria/vinos/PC_DOP_Rias_Baixas_julio_2024_ESP.pdf"
   }
  }
 }

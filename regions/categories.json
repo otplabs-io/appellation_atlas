@@ -125,8 +125,11 @@
   "spain/pago-de-otazu",
   "spain/pago-florentino",
   "spain/prado-de-irache",
+  "spain/rio-negro",
+  "spain/rosalejo",
   "spain/tharsys",
   "spain/urbezo",
+  "spain/uruena",
   "spain/vallegarcia",
   "spain/vera-de-estenas"
  ],
@@ -173,6 +176,7 @@
  "sources": {
   "docg": "https://en.wikipedia.org/w/index.php?title=List_of_Italian_DOCG_wines&oldid=1382114503",
   "pago": "https://en.wikipedia.org/w/index.php?title=Vino_de_Pago&oldid=1334862172",
-  "dac": "https://en.wikipedia.org/w/index.php?title=Districtus_Austriae_Controllatus&oldid=1381229176"
+  "dac": "https://en.wikipedia.org/w/index.php?title=Districtus_Austriae_Controllatus&oldid=1381229176",
+  "pago_mapa": "https://www.mapa.gob.es/en/prensa/ultimas-noticias/detalle_noticias/la-uni-n-europea-registra-la-nueva-denominaci-n-de-origen-protegida-de-vino-de-pago-r-o-negro/b133dff2-de57-4c25-a6fa-a20677a2f2f2"
  }
 }

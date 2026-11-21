@@ -38,7 +38,8 @@ TABLE_IN={'france':{'Muscat of Hamburg'},'argentina':{'Superior Seedless','Cardi
 JUICE={'united-states':{'Concord','Niagara'}}
 # rows the database names wrongly: Sardinia's 7,064 ha are Cannonau, which Sardinians also call Alicante, not Alicante Bouschet
 ROWFIX={('Italy','Sardegna','Alicante Henri Bouschet'):'Garnacha Tinta',
-        ('Argentina','*','Muscat Blanc à Petits Grains (G)'):'Moscatel Rosado'}   # Argentina's pink Muscat is its own variety, Moscatel Rosado (INTA)
+        ('Argentina','*','Muscat Blanc à Petits Grains (G)'):'Moscatel Rosado',
+        ('Chile','*','Alicante Henri Bouschet'):'Tintoreras (red-fleshed grapes)'}   # SAG's census counts 142 ha of Alicante Bouschet and 6,766 ha of its Tintoreras group; the database's 6,908 ha is both   # Argentina's pink Muscat is its own variety, Moscatel Rosado (INTA)
 WINE_IN={'japan':{'Campbell Early'}}   # crushed for wine in Japan, though VIVC lists it as a table grape
 def not_wine(g,c):
     if g in WINE_IN.get(c,()): return None
@@ -52,9 +53,10 @@ NAME.update({'Gamay Noir':'Gamay','Cinsaut':'Cinsault','Garnacha Roja (Gris)':'G
 LOCAL={'australia':{'Syrah':'Shiraz','Sémillon':'Semillon'},'south-africa':{'Syrah':'Shiraz','Sémillon':'Semillon','Chenin Blanc':'Chenin Blanc'},
        'new-zealand':{'Alvarinho':'Albariño'},'united-states':{'Alvarinho':'Albariño'},'france':{'Silvaner':'Sylvaner'},
        'spain':{'Alvarinho':'Albariño','Trajadura':'Treixadura','Vinhao':'Sousón','Borraçal':'Caíño Tinto','Mazuelo':'Mazuelo'},
-       'portugal':{'Tempranillo':'Tinta Roriz','Mencía':'Jaen'},
+       'portugal':{'Tempranillo':'Tinta Roriz','Mencía':'Jaen','Damaschino':'Alicante Branco'},
        'italy':{'Pinot Gris':'Pinot Grigio','Pinot Noir':'Pinot Nero','Pinot Blanc':'Pinot Bianco','Muscat Blanc':'Moscato Bianco','Sauvignonasse':'Friulano'},
-       'germany':{'Pinot Noir':'Spätburgunder','Pinot Gris':'Grauburgunder','Pinot Blanc':'Weissburgunder','Schiava Grossa':'Trollinger','Blauer Spätburgunder':'Spätburgunder'},
+       'germany':{'Pinot Noir':'Spätburgunder','Pinot Gris':'Grauburgunder','Pinot Blanc':'Weissburgunder','Schiava Grossa':'Trollinger','Blauer Spätburgunder':'Spätburgunder',
+                 'Blaufränkisch':'Lemberger','Blauer Limberger':'Lemberger','Pinot Meunier':'Schwarzriesling','Meunier':'Schwarzriesling','Müllerrebe':'Schwarzriesling','Chasselas':'Gutedel'},   # the names German labels and statistics use
        'austria':{'Pinot Blanc':'Weissburgunder','Muscat Blanc':'Gelber Muskateller','Pinot Noir':'Blauburgunder'},
        'hungary':{'Grasă de Cotnari':'Kövérszőlő','Muscat Blanc':'Sárga Muskotály'},
        'chile':{'Listán Prieto':'País'},'argentina':{'Listán Prieto':'Criolla Chica'},'slovenia':{'Savagnin Blanc':'Traminer'},'czechia':{'Savagnin Blanc':'Traminer'}}
@@ -70,12 +72,15 @@ def text_names(t,c):
     """Grape names in running text, made to match the tables: Shiraz in Australia, Pinot Noir not Pinot noir, no (G) or (R)."""
     for a,b in TEXT+TEXT_IN.get(c,[]): t=_re.sub(a,b,t)
     return _re.sub(r'\b([\w\u00C0-\u017F][\w\u00C0-\u017F ]*?) \(\1\)',r'\1',t)   # "Spätburgunder (Pinot Noir)" renamed to "Spätburgunder (Spätburgunder)" 
+LAW_APART={'Malvasia Bianca'}
 def rule_name(g,c):
     """A grape as a rules list names it, in the Diploma's word: the law's own name (Tinta Negra, Aragonez) unless it is a mere spelling of
     the prime (Sauvignon, Cot, Semillon), and without the law's colour codes ("Listrão R")."""
     import unicodedata
     fold=lambda x:unicodedata.normalize('NFKD',x).encode('ascii','ignore').decode().lower().replace(' ','')
     g=_re.sub(r' (?:R|B|N|G|Rs|Rg)$','',g.strip())
+    if c=='italy' and g=='Bonarda': return 'Bonarda Piemontese'   # Italy's register calls Bonarda Piemontese plain "Bonarda N"; not Croatina, not Argentina's Bonarda (Douce Noire)
+    if g in LAW_APART: return text_names(g,c)   # Italy's national register lists Malvasia Bianca and Malvasia Bianca di Candia as two grapes; the synonym list joins them
     p=prime(g)
     if _re.search(r' \((?:R|Rg|G|Rs)\)$',p) and fold(g)!=fold(p): return text_names(g,c)   # a colour form the law lists apart (Muscat à Petits Grains Roses beside its white)
     d=display(g,c) if (fold(g) in fold(p) or fold(p) in fold(g) or g in NAME or p in NAME) else LOCAL.get(c,{}).get(p) or LOCAL.get(c,{}).get(g,g)
@@ -84,7 +89,7 @@ def display(g,c):
     """A grape's name as the Diploma gives it for country c: Shiraz in the Barossa, Spätburgunder in the Pfalz, Albariño in Rías Baixas."""
     p=prime(g); d=NAME_IN.get(c,{}).get(p) or NAME.get(p) or (p if p!=g else NAME.get(g,g))
     return LOCAL.get(c,{}).get(d,d)
-NAME_IN={'spain':{'Garnacha Tinta':'Garnacha','Monastrell':'Monastrell','Mazuelo':'Mazuelo'},'italy':{'Tribidrag':'Primitivo','Garnacha Tinta':'Cannonau','Mazuelo':'Carignano'},
+NAME_IN={'germany':{'Pinot Noir Précoce':'Frühburgunder'},'spain':{'Garnacha Tinta':'Garnacha','Monastrell':'Monastrell','Mazuelo':'Mazuelo'},'italy':{'Tribidrag':'Primitivo','Garnacha Tinta':'Cannonau','Mazuelo':'Carignano'},
          'croatia':{'Tribidrag':'Crljenak Kaštelanski','Graševina':'Graševina'},'france':{'Douce Noire':'Douce Noire','Garnacha Blanca':'Grenache Blanc','Trebbiano Toscano':'Ugni Blanc','Garnacha Tinta':'Grenache','Mazuelo':'Carignan'}}
 COUNTRY={'Turkiye':'turkey','Korea, Rep.':None}
 STATE={'australia':{'tas':'tasmania'},'united-states':{'northwillamettevalley':'willamettevalley','southwillamettevalley':'willamettevalley'}}
@@ -211,7 +216,12 @@ def plant():
     for c,paths in by.items():
         for path,cnt in paths.items():
             nm=path[-1]; k=STATE.get(c,{}).get(norm(nm),norm(nm)); g=None; label=nm; hit=None
-            if k in named[c] and not (c=='united-states' and k in county['06']): d=direct[named[c][k]]; d[0].update(cnt); d[1].append(T[named[c][k]]['name']); d[2]=nyear[c]
+            def within_prov(n_):   # Argentina repeats department names across provinces: San Juan's San Martín is not Mendoza's
+                if c!='argentina' or len(path)<2: return True
+                up=[]; p_=P.get(n_)
+                while p_: up.append(norm(T[p_]['name']) if p_ in T else ''); p_=P.get(p_)
+                return norm(path[0]) in up
+            if k in named[c] and not (c=='united-states' and k in county['06']) and within_prov(named[c][k]): d=direct[named[c][k]]; d[0].update(cnt); d[1].append(T[named[c][k]]['name']); d[2]=nyear[c]
             if k in ('','other','total','otherregions','noassociatedava','otherunverified') or k.endswith('total'): unplaced[c]+=sum(cnt.values()); continue
             hit=None
             if c=='united-states': hit=county['06'].get(k) or ((look[c][k][0],T[look[c][k][1]]['name']) if k in look[c] else None) or county['36'].get(k)
@@ -294,6 +304,8 @@ def plant():
     for n,v in out.items():   # the year the rows give (Argentina's 2023 file holds 2022 figures), not the file's edition
         c=n.split('/')[0]
         if v.get('year') in (2016,2023) and v.get('source') in (None,'anderson') and rowyear.get(c): v['year']=rowyear[c]
+        if c=='france' and v.get('source') in (None,'anderson') and v.get('scope')!='country' and v.get('year') in (2022,2023):   # France's 2023 file dates its regional reds 2022 and gives its whites no year (an earlier survey, Anderson's notes): say so, and give no total that adds the two
+            v['year']=2022; v['whites_older']=True
     json.dump({'$about':__doc__.split('\n')[0],**meta,'places':out},open(os.path.join(ROOT,'regions','atlas-plantings.json'),'w',encoding='utf-8'),ensure_ascii=False,indent=0)
     print(f'{len(regs)} database regions placed; {len(out)} places with plantings ({sum(1 for v in out.values() if v["scope"]=="within")} within, {sum(1 for v in out.values() if v["scope"]=="around")} around)')
     print('not placed (ha):',dict(sorted(meta['unplaced_ha'].items(),key=lambda x:-x[1])[:15]))
@@ -612,15 +624,15 @@ def readings(f,CG):
             if a and te['flat']<.8:
                 south=(c or {}).get('lat',1)<0; way=lambda *ds:sum(a[d] for d in ds)
                 toward,away=(way('NW','N','NE'),way('SE','S','SW')) if south else (way('SE','S','SW'),way('NW','N','NE'))
-                # SE and SW count toward the sun first: Château-Grillet's south-east bowl is "plein sud" in its cahier, not a morning-sun slope
+                # SE and SW count toward the sun first: Château-Grillet's south-east bowl is "plein sud" in its cahier, not a morning-sun slope; and the line says "toward the sun", not "midday sun", since Saering's slope is mostly south-east
                 side=(toward,'sun') if toward>=.6 else (away,'shade') if away>=.6 else max(((toward,'sun'),(away,'shade'),(way('NE','E','SE'),'east'),(way('SW','W','NW'),'west')),key=lambda x:x[0])
                 coolish=cls in ('too cool','cool','intermediate')
                 if side[0]<.6: r.append(['Sun','Slopes face several ways, so growers can pick warmer or cooler spots to suit each grape.'])
                 elif side[1]=='east': r.append(['Sun','Faces the morning sun. Early light dries the dew, which cuts disease, and the grapes are spared the hottest afternoon sun.'])
                 elif side[1]=='west': r.append(['Sun','Faces the afternoon sun, the hottest of the day. Grapes ripen fuller, but morning dew lingers longer.'])
-                elif side[1]=='sun' and not cls: r.append(['Sun','Faces the midday sun, the warmest way a slope can face, which helps the grapes ripen.'])   # no climate shown (Alsace grands crus): say nothing about warm or cool
+                elif side[1]=='sun' and not cls: r.append(['Sun','Faces toward the sun, which warms the vines and helps the grapes ripen.'])   # no climate shown (Alsace grands crus): say nothing about warm or cool
                 elif side[1]=='shade' and not cls: r.append(['Sun','Faces away from the sun, so the grapes ripen more slowly.'])
-                elif side[1]=='sun': r.append(['Sun','Faces the midday sun. In a climate this cool, that extra warmth is often what gets grapes fully ripe.' if coolish else 'Faces the midday sun, which pushes ripeness and alcohol up in a climate this warm.'])
+                elif side[1]=='sun': r.append(['Sun','Faces toward the sun. In a climate this cool, that extra warmth is often what gets grapes fully ripe.' if coolish else 'Faces toward the sun, which pushes ripeness and alcohol up in a climate this warm.'])
                 else: r.append(['Sun','Faces away from the sun. In a cool climate that makes ripening harder.' if coolish else 'Faces away from the sun. In a warm climate the shade keeps grapes fresher and slows ripening.'])
         if r: out['land']=r
     return out

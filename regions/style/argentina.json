@@ -2,7 +2,6 @@
  "argentina": {
   "notes": [
    "Argentine Malbec is deep in color, with intense fruit and a velvety texture.",
-   "It is softer and plusher than French Malbec, with riper tannins, yet it can age as well.",
    "Heat in most regions gives soft, ripe tannins and high alcohol, and in very warm areas acidity can run low.",
    "Torrontés makes fresh, aromatic whites with floral, Muscat-like aromas, peach and apricot, and moderate acidity."
   ],
@@ -13,28 +12,21 @@
   ]
  },
  "argentina/salta": {
-  "notes": [
-   "Salta, and Cafayate above all, is known for full bodied Torrontés and fruity reds from Cabernet Sauvignon and Tannat.",
-   "Torrontés thrives here in cold, dry, windswept conditions.",
-   "High vineyards give grapes with more acidity, adding balance and depth."
-  ],
+  "notes": [],
   "art": [
    "Argentine wine",
    "Torrontés"
   ]
  },
  "argentina/cafayate": {
-  "notes": [
-   "Cafayate is known for full bodied Torrontés and fruity reds from Cabernet Sauvignon and Tannat."
-  ],
+  "notes": [],
   "art": [
    "Argentine wine"
   ]
  },
  "argentina/valle-de-uco": {
   "notes": [
-   "Uco Valley wines are deep in color, intense in aroma and rich in flavor.",
-   "With Luján de Cuyo, it is the source of Argentina's most highly rated Malbec."
+   "Uco Valley wines are deep in color, intense in aroma and rich in flavor."
   ],
   "art": [
    "Uco Valley",
@@ -42,41 +34,31 @@
   ]
  },
  "argentina/mendoza": {
-  "notes": [
-   "Mendoza's high-altitude districts of Luján de Cuyo and the Uco Valley are the source of Argentina's most highly rated Malbec."
-  ],
+  "notes": [],
   "art": [
    "Malbec"
   ]
  },
  "argentina/lujan-de-cuyo": {
-  "notes": [
-   "Luján de Cuyo, with the Uco Valley, is the source of Argentina's most highly rated Malbec."
-  ],
+  "notes": [],
   "art": [
    "Malbec"
   ]
  },
  "argentina/san-juan": {
-  "notes": [
-   "San Juan makes premium reds from Syrah and Bonarda, and has a long history of sherry-style wines."
-  ],
+  "notes": [],
   "art": [
    "Argentine wine"
   ]
  },
  "argentina/neuquen": {
-  "notes": [
-   "Patagonia's Neuquén and Río Negro are planting more cool-climate grapes such as Pinot Noir and Chardonnay."
-  ],
+  "notes": [],
   "art": [
    "Argentine wine"
   ]
  },
  "argentina/rio-negro": {
-  "notes": [
-   "Patagonia's Río Negro and Neuquén are planting more cool-climate grapes such as Pinot Noir and Chardonnay."
-  ],
+  "notes": [],
   "art": [
    "Argentine wine"
   ]

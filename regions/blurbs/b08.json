@@ -269,7 +269,7 @@
   ]
  },
  "italy/strevi": {
-  "text": "A Piedmont appellation limited to the commune of Strevi, for wine made only from Moscato Bianco.",
+  "text": "A Piedmont appellation limited to the commune of Strevi, for Strevi passito, a sweet wine from dried Moscato Bianco grapes.",
   "from": [
    "rules"
   ]
@@ -281,7 +281,7 @@
   ]
  },
  "italy/tarquinia": {
-  "text": "A Lazio appellation around Cerveteri, Civitavecchia and Montalto di Castro, for still and semi-sparkling wine.",
+  "text": "A Lazio appellation named for the town of Tarquinia, whose area also takes in Cerveteri, Civitavecchia and Montalto di Castro, for still and semi-sparkling wine.",
   "from": [
    "rules"
   ]
@@ -683,7 +683,7 @@
   ]
  },
  "italy/villamagna": {
-  "text": "An Abruzzo appellation covering Villamagna, Bucchianico and Vacri in Chieti province.",
+  "text": "An Abruzzo appellation covering Villamagna and parts of Bucchianico and Vacri in Chieti province.",
   "from": [
    "rules",
    "wikipedia"

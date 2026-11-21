@@ -7,6 +7,7 @@ enum Copy {
     static func share(_ v: Double) -> String { v >= 0.5 ? "mostly" : v >= 0.25 ? "much" : "some" }
 
     /// The grapes left out of what is planted because they are not wine grapes (leftOut in web/atlas.js).
+    static func whitesOlder(_ year: String) -> String { "red grapes as of \(year), white grapes from an earlier survey, so the shares are approximate." }
     static func leftOut(_ left: JSON) -> String {
         func and(_ xs: [String]) -> String { xs.count > 1 ? xs.dropLast().joined(separator: ", ") + " and " + xs.last! : xs.first ?? "" }
         var out = ""
@@ -26,6 +27,7 @@ enum Copy {
         static let noRoles = "The cahier gives these grapes different roles in different wines, so they are listed here by colour."
         static let anyName = " That is every vineyard there, whatever name its wine is sold under."
         static let limitsHead = "Planting rules: shares of each grower\u{2019}s vineyard, not of the blend"
+        static let blendHead = "Blend rules: shares of the wine itself"
         static func forWine(_ w: String) -> String { "Main grapes, for \(w)" }
         static let desertRain = "Rain is left out: the 4.5 km grid takes in the wetter hills around the vineyards, so its totals run well above what weather stations among the vines record."
     }
@@ -52,6 +54,7 @@ enum Copy {
     static let shapeNote: [String: String] = [
         "Eurostat NUTS, the area it is named for": "The map draws the department, province or region it is named for. The PGI\u{2019}s own area can differ a little.",
         "Eurostat LAU, the commune it is named for": "The map draws the commune it is named for.",
+        "Eurostat LAU, the municipalities its rules name": "The map draws the municipalities its rules name.",
         "Chile Decreto 464, drawn from its comunas and provinces": "The boundary follows the comunas and provinces that Chile\u{2019}s Decreto 464 names.",
         "geoBoundaries, the department it is named for": "The map draws the department it is named for. The IG\u{2019}s own area can be smaller.",
         "geoBoundaries, the province it is named for": "The map draws the province.",

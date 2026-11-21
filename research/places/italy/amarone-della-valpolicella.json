@@ -147,29 +147,31 @@
   },
   {
    "topic": "history",
-   "claim": "Amarone was first recognised as a type of Valpolicella by DPR of 21 August 1968. The disciplinare says four wines (Valpolicella, Ripasso, Recioto, Amarone) were made autonomous denominations by ministerial decrees of 24 March 2010.",
+   "claim": "The dry style was first recognized in 1968 (DPR 21 August 1968) as Recioto della Valpolicella Amarone, within the Valpolicella DOC. The disciplinare says four wines (Valpolicella, Ripasso, Recioto, Amarone) were made separate denominations by ministerial decrees of 24 March 2010.",
    "source": [
     "disciplinare"
    ],
-   "strength": "Strong"
+   "strength": "Strong",
+   "note": "Round 28 audit: corrected against the official text."
   },
   {
    "topic": "history",
-   "claim": "The disciplinare says the first commercial bottle of Amarone della Valpolicella dates from 1953. It traces the style's ancestor to Acinatico, a dried-grape wine asked for by Cassiodorus in the 4th to 6th century letters.",
+   "claim": "The disciplinare says the first commercial bottle of Amarone della Valpolicella dates from 1953. It traces the style's ancestor to Acinatico, a dried-grape wine that Cassiodorus, minister to the Ostrogothic king Theodoric, asked for in a letter of the 530s AD.",
    "source": [
     "disciplinare"
    ],
    "strength": "Strong",
-   "note": "Official wording. The link to Cassiodorus is the consorzio's story, so keep it hedged on a sheet."
+   "note": "Official wording. The link to Cassiodorus is the consorzio's story, so keep it hedged on a sheet. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "soil",
-   "claim": "Valpolicella soils come from broken-down limestone and dolomite rock, from basalt, and from glacial and river deposits of volcanic origin. They vary, so water supply to the vines varies too.",
+   "claim": "Valpolicella soils come from weathered limestone and dolomite, from basalt, and from glacial moraine and river deposits. They vary, so water supply to the vines varies too.",
    "source": [
     "disciplinare"
    ],
    "strength": "Strong",
-   "quote": "calcareo-dolomitiche che da basalti, che da depositi morenici e fluviali di origine vulcanica"
+   "quote": "calcareo-dolomitiche che da basalti, che da depositi morenici e fluviali di origine vulcanica",
+   "note": "Round 28 audit: corrected against the official text."
   },
   {
    "topic": "soil",
@@ -182,12 +184,13 @@
   },
   {
    "topic": "vineyard",
-   "claim": "Vineyards reach up to about 500 m above sea level.",
+   "claim": "Most vineyards sit between about 150 and 500 m above sea level, and a few reach about 700 m.",
    "source": [
     "disciplinare"
    ],
    "strength": "Strong",
-   "quote": "può arrivare sino ai 500 s.l.m."
+   "quote": "può arrivare sino ai 500 s.l.m.",
+   "note": "Round 28 audit: corrected against the official text."
   },
   {
    "topic": "aspect",
@@ -199,11 +202,12 @@
   },
   {
    "topic": "vineyard",
-   "claim": "Vines must be trained on a trellis (spalliera) or an inclined Veronese pergola. Vines must be at least in their fourth growing cycle to count.",
+   "claim": "Vines must be trained on a trellis (spalliera) or an inclined Veronese pergola. Older vineyards on the traditional pergola, registered before 2010, still qualify. Vines must be at least in their fourth growing cycle to count.",
    "source": [
     "disciplinare"
    ],
-   "strength": "Strong"
+   "strength": "Strong",
+   "note": "Round 28 audit: corrected against the official text."
   },
   {
    "topic": "place",

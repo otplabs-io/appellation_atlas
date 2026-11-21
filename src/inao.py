@@ -398,12 +398,15 @@ def white_only(sec, names):
     return False
 
 
-COLOUR_ROW = r'Vins? (?:tranquilles |(mousseux) )?((?:rouges?|ros[ée]s?|blancs?)(?: et (?:rouges?|ros[ée]s?|blancs?))?)(?:\s+(?:tranquilles|secs?|(mousseux)))?\s*\)?\s*(?:[-–:]|(?=\s*[-–]?\s*c[ée]pages?))'   # also "Vins blancs tranquilles :"   # also "AOC « Languedoc » (Vins blancs) - cépages"
+COLOUR_ROW = r'Vins? (?:tranquilles |(mousseux) )?((?:rouges?|ros[ée]s?|blancs?)(?: et (?:rouges?|ros[ée]s?|blancs?))?)(?:\s+(?:tranquilles|secs?|(mousseux)))?\s*\)?\s*(?:[-–:]|(?=\s*[-–]?\s*c[ée]pages?)|(?=\s+sont issus))'   # also "Vins blancs tranquilles :"   # also "AOC « Languedoc » (Vins blancs) - cépages"
 MENTION_ROW = r'AOC\s*«\s*([^»]+?)\s*»(?:\s+suivie de la mention\s*«\s*([^»]+?)\s*»)?'
 def versions(text):
     """The rows of a grapes table that give each wine its own roles: one per colour (Malepère: Merlot leads the red, Cabernet
     Franc the rosé) or per mention (Pacherenc: Petit Manseng alone leads the sweet wine, three grapes the sec). [(label, text)]"""
-    marks = [(m.start(), next((('sparkling ' if (m.group(1) or m.group(3)) else '') + k for k, pat in WINE if re.match(pat, m.group(2), re.I)), None)) for m in re.finditer(COLOUR_ROW, text, re.I)]
+    def colours(w):   # every colour the row names, in either order ("rosés et rouges" is Estaing's red and rosé)
+        c = [k for k, pat in (('red', r'rouge'), ('rosé', r'ros[ée]'), ('white', r'blanc')) if re.search(pat, w, re.I)]
+        return {('red', 'rosé'): 'red and rosé', ('rosé', 'white'): 'white and rosé', ('red', 'white'): 'red and white'}.get(tuple(sorted(c)), c[0] if len(c) == 1 else None)
+    marks = [(m.start(), (lambda c: c and ('sparkling ' if (m.group(1) or m.group(3)) else '') + c)(colours(m.group(2)))) for m in re.finditer(COLOUR_ROW, text, re.I)]
     if len(marks) < 2:
         marks = [(m.start(), (m.group(1) + (' ' + m.group(2) if m.group(2) else ''))) for m in re.finditer(MENTION_ROW, text)]
     marks = [(a, l) for a, l in marks if l]
@@ -437,6 +440,7 @@ def parse(ch, names, sec=''):
             if fold(g) not in r or RANK[rl] < RANK[r[fold(g)][2]]: r[fold(g)] = [g, sk, rl]
         if r: by.append([label, list(r.values())])
     if len(by) < 2 or all(sorted(map(tuple, b[1])) == sorted(map(tuple, by[0][1])) for b in by): by = []
+    if any(not any(rl == 'main' for _, _, rl in b[1]) for b in by): by = []   # a wine left with no main grape was misread (Crémant d'Alsace's rosé names "pinot noir" without its colour code)
     seen_roles = {}
     for g, sk, rl in lists(' '.join(own or general)): seen_roles.setdefault((fold(g), sk), set()).add('main' if rl == 'main' else 'other')
     mixed = not by and any(len(v) > 1 for v in seen_roles.values())   # main in one wine, minor in another (Saumur's Cabernet Sauvignon), rows not separated

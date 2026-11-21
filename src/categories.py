@@ -18,7 +18,8 @@ BY={'france':{'PDO':'AOC','PGI':'IGP'},'portugal':{'PDO':'DOC','PGI':'Vinho Regi
     'spain':{'PDO':'DO','PGI':'Vino de la Tierra'}}
 DOCA={'spain/rioja','spain/priorat'}
 # Vinos de Pago recognised since the Wikipedia list was written, or missing from it (EU register and the Spanish ministry's list)
-PAGO_MORE={'spain/tharsys','spain/abadia-retuerta','spain/chozas-carrascal','spain/el-vicario','spain/vallegarcia','spain/dehesa-penalba','spain/urbezo','spain/bolandin'}
+PAGO_MORE={'spain/tharsys','spain/abadia-retuerta','spain/chozas-carrascal','spain/el-vicario','spain/vallegarcia','spain/dehesa-penalba','spain/urbezo','spain/bolandin',
+           'spain/uruena','spain/rio-negro','spain/rosalejo'}   # pagos registered after the Wikipedia list: Urueña (Orden AGR/1413/2021), Río Negro and Rosalejo (MAPA, EU registrations 2024 and 2025)
 NOT_DOCG={'italy/soave'}
 VC={'spain/valtiendas','spain/sierra-de-salamanca','spain/valles-de-benavente'}   # Vino de Calidad con Indicación Geográfica, the tier below DO (Valtiendas: Orden AYG/309/2007; Sierra de Salamanca 2010 and Valles de Benavente keep the term in their pliegos)
 DOCG_MORE={'italy/terre-alfieri','italy/canelli','italy/ciro-classico'}   # and Cirò Classico (EU Reg. 2025/1518)   # DOCGs since 2020 (Terre Alfieri) and 2023 (Canelli), after the cached list's revision   # Wikipedia's list item is "Soave Superiore": the Soave DOC itself is not a DOCG

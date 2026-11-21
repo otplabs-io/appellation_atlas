@@ -62,13 +62,13 @@
   },
   {
    "topic": "place",
-   "claim": "Montalcino is in south-east Tuscany, about 40 km south of Siena. The territory covers 243.62 square km, roughly square, with sides of about 15 km. It is bounded by the valleys of the Orcia, Asso and Ombrone rivers.",
+   "claim": "Montalcino is in south-east Tuscany, about 40 km south of Siena. The DOCG zone covers 243.62 square km, the old commune of Montalcino, roughly square with sides of about 15 km. The commune merged with San Giovanni d'Asso in 2017 and is now larger, but the zone did not change. It is bounded by the valleys of the Orcia, Asso and Ombrone rivers.",
    "source": [
     "disciplinare",
     "consorzio-territory"
    ],
    "strength": "Strong",
-   "note": "The Consorzio gives about 24,000 ha of land, of which only about 15% is vineyard. Wine Spectator, an older article, calls the shape roughly circular, which is a minor difference."
+   "note": "The Consorzio gives about 24,000 ha of land, of which only about 15% is vineyard. Wine Spectator, an older article, calls the shape roughly circular, which is a minor difference. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "place",
@@ -129,14 +129,14 @@
   },
   {
    "topic": "soil",
-   "claim": "North side (the area around Montalcino town and Montosoli, toward Buonconvento): cooler, on calcareous galestro marl. Wines are described as elegant and perfumed, with finer tannins and a salty, mineral edge. Northern sites tend to pick later than southern ones.",
+   "claim": "North side (the area around Montalcino town and Montosoli, toward Buonconvento): cooler, with soils rich in galestro, a flaky clay shale, and marl. Wines are described as elegant and perfumed, with finer tannins and a salty, mineral edge. Northern sites tend to pick later than southern ones.",
    "source": [
     "vinfolio",
     "brunolo",
     "winespectator"
    ],
    "strength": "Medium",
-   "note": "Three merchant and press sources agree on the style and the galestro. None is an official zoning. The town is the high point of the appellation."
+   "note": "Three merchant and press sources agree on the style and the galestro. None is an official zoning. The town is the high point of the appellation. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "vineyard",
@@ -338,12 +338,12 @@
   },
   {
    "topic": "history",
-   "claim": "The disciplinare names Clemente Santi as the forerunner of Brunello. His 1865 Vino Scelto (Brunello) won a silver medal in 1869. Brunello of Raffaello Padelletti and Riccardo Paccagnini won prizes in the 1890s and early 1900s. Production fell in the early 1900s. Few producers kept it going between the wars, and after World War II some agreed the production rules.",
+   "claim": "The disciplinare names Clemente Santi as the forerunner of Brunello. His 1865 Vino Scelto (Brunello) won a silver medal in 1869. A wine by Raffaello Padelletti won a prize in 1893, and Riccardo Paccagnini's Brunello won major prizes in the 1890s and 1900s. Production fell in the early 1900s. Few producers kept it going between the wars, and after World War II some agreed the production rules.",
    "source": [
     "disciplinare"
    ],
    "strength": "Strong",
-   "note": "Official wording, written by the consortium. It does not name Biondi-Santi."
+   "note": "Official wording, written by the consortium. It does not name Biondi-Santi. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "history",
@@ -374,12 +374,12 @@
   },
   {
    "topic": "other",
-   "claim": "Rosso di Montalcino DOC was set up in 1984. It lets producers release a younger Sangiovese while Brunello ages.",
+   "claim": "Rosso di Montalcino DOC was approved in 1983 (DPR 25 November 1983, published June 1984). It lets producers release a younger Sangiovese while Brunello ages.",
    "source": [
     "wikipedia-en"
    ],
    "strength": "Weak",
-   "note": "One secondary source. The disciplinare confirms only that Brunello can be reclassified as Rosso di Montalcino."
+   "note": "One secondary source. The disciplinare confirms only that Brunello can be reclassified as Rosso di Montalcino. Round 28 audit: corrected against the official text."
   }
  ],
  "conflicts": [

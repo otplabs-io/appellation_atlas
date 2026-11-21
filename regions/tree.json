@@ -118,10 +118,8 @@
     "united-states/howell-mountain",
     "united-states/spring-mountain-district",
     "united-states/diamond-mountain-district",
-    "united-states/los-carneros",
     "united-states/mt-veeder",
-    "united-states/chiles-valley",
-    "united-states/wild-horse-valley"
+    "united-states/chiles-valley"
    ]
   },
   "united-states/oakville": {
@@ -322,7 +320,7 @@
   "united-states/los-carneros": {
    "id": "united-states/los-carneros",
    "name": "Los Carneros",
-   "parent": "united-states/napa-valley",
+   "parent": "united-states/north-coast",
    "depth": 3,
    "source": "chris",
    "official": [
@@ -332,7 +330,7 @@
     "us-ava"
    ],
    "cfr": "9.32",
-   "path": "united-states/california/napa-valley/los-carneros",
+   "path": "united-states/california/north-coast/los-carneros",
    "children": []
   },
   "united-states/sonoma-county": {
@@ -354,7 +352,8 @@
     "united-states/sonoma-mountain",
     "united-states/west-sonoma-coast",
     "united-states/northern-sonoma",
-    "united-states/fountaingrove-district"
+    "united-states/fountaingrove-district",
+    "united-states/rockpile"
    ]
   },
   "united-states/russian-river-valley": {
@@ -389,10 +388,7 @@
    ],
    "cfr": "9.116",
    "path": "united-states/california/sonoma-county/sonoma-coast",
-   "children": [
-    "united-states/petaluma-gap",
-    "united-states/bennett-valley"
-   ]
+   "children": []
   },
   "united-states/fort-ross-seaview": {
    "id": "united-states/fort-ross-seaview",
@@ -457,7 +453,8 @@
    "cfr": "9.29",
    "path": "united-states/california/sonoma-county/sonoma-valley",
    "children": [
-    "united-states/moon-mountain-district-sonoma-county"
+    "united-states/moon-mountain-district-sonoma-county",
+    "united-states/bennett-valley"
    ]
   },
   "united-states/knights-valley": {
@@ -2692,7 +2689,7 @@
     "france/cote-des-bar",
     "france/coteaux-champenois",
     "france/rose-des-riceys",
-    "france/villages-subregion-not-yet-set"
+    "france/champagne-villages"
    ]
   },
   "france/montagne-de-reims": {
@@ -4077,7 +4074,6 @@
    "children": [
     "italy/barolo",
     "italy/barbaresco",
-    "italy/langhe-nebbiolo",
     "italy/barbera-d-alba",
     "italy/barbera-d-asti",
     "italy/dolcetto-d-alba",
@@ -4282,10 +4278,10 @@
   "italy/langhe-nebbiolo": {
    "id": "italy/langhe-nebbiolo",
    "name": "Langhe Nebbiolo",
-   "parent": "italy/piedmont",
-   "depth": 2,
+   "parent": "italy/langhe",
+   "depth": 3,
    "source": "chris",
-   "path": "italy/piedmont/langhe-nebbiolo",
+   "path": "italy/piedmont/langhe/langhe-nebbiolo",
    "children": []
   },
   "italy/barbera-d-alba": {
@@ -10943,61 +10939,10 @@
    "path": "france/champagne/montagne-de-reims/verzy",
    "children": []
   },
-  "france/villages-subregion-not-yet-set": {
-   "id": "france/villages-subregion-not-yet-set",
-   "name": "Champagne villages",
-   "parent": "france/champagne",
-   "depth": 2,
-   "source": "fr-champagne-crus",
-   "kind": "group",
-   "path": "france/champagne/villages-subregion-not-yet-set",
-   "children": [
-    "france/avenay-val-dor",
-    "france/bergeres-les-vertus",
-    "france/bezannes",
-    "france/billy-le-grand",
-    "france/bisseuil",
-    "france/chamery",
-    "france/champillon",
-    "france/chigny-les-roses",
-    "france/coligny",
-    "france/cormontreuil",
-    "france/coulommes-la-montagne",
-    "france/cuis",
-    "france/cumieres",
-    "france/dizy",
-    "france/ecueil",
-    "france/etrechy",
-    "france/grauves",
-    "france/jouy-les-reims",
-    "france/ludes",
-    "france/les-mesneux",
-    "france/montbre",
-    "france/mutigny",
-    "france/pargny-les-reims",
-    "france/pierry",
-    "france/rilly-la-montagne",
-    "france/sacy",
-    "france/sermiers",
-    "france/taissy",
-    "france/tauxieres",
-    "france/trepail",
-    "france/trois-puits",
-    "france/vaudemanges",
-    "france/vertus",
-    "france/villedommange",
-    "france/villeneuve-renneville",
-    "france/villers-allerand",
-    "france/villers-aux-noeuds",
-    "france/villers-marmery",
-    "france/voipreux",
-    "france/vrigny"
-   ]
-  },
   "france/avenay-val-dor": {
    "id": "france/avenay-val-dor",
    "name": "Avenay-Val-d’Or",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11014,13 +10959,13 @@
     "Premier Cru"
    ],
    "commune": "51028",
-   "path": "france/champagne/villages-subregion-not-yet-set/avenay-val-dor",
+   "path": "france/champagne/champagne-villages/avenay-val-dor",
    "children": []
   },
   "france/bergeres-les-vertus": {
    "id": "france/bergeres-les-vertus",
    "name": "Bergères-lès-Vertus",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11034,13 +10979,13 @@
     "Premier Cru"
    ],
    "commune": "51049",
-   "path": "france/champagne/villages-subregion-not-yet-set/bergeres-les-vertus",
+   "path": "france/champagne/champagne-villages/bergeres-les-vertus",
    "children": []
   },
   "france/bezannes": {
    "id": "france/bezannes",
    "name": "Bezannes",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11054,13 +10999,13 @@
     "Premier Cru"
    ],
    "commune": "51058",
-   "path": "france/champagne/villages-subregion-not-yet-set/bezannes",
+   "path": "france/champagne/champagne-villages/bezannes",
    "children": []
   },
   "france/billy-le-grand": {
    "id": "france/billy-le-grand",
    "name": "Billy-le-Grand",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11074,13 +11019,13 @@
     "Premier Cru"
    ],
    "commune": "51061",
-   "path": "france/champagne/villages-subregion-not-yet-set/billy-le-grand",
+   "path": "france/champagne/champagne-villages/billy-le-grand",
    "children": []
   },
   "france/bisseuil": {
    "id": "france/bisseuil",
    "name": "Bisseuil",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11095,13 +11040,13 @@
    ],
    "commune": "51030",
    "village_code": "51064",
-   "path": "france/champagne/villages-subregion-not-yet-set/bisseuil",
+   "path": "france/champagne/champagne-villages/bisseuil",
    "children": []
   },
   "france/chamery": {
    "id": "france/chamery",
    "name": "Chamery",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11115,13 +11060,13 @@
     "Premier Cru"
    ],
    "commune": "51112",
-   "path": "france/champagne/villages-subregion-not-yet-set/chamery",
+   "path": "france/champagne/champagne-villages/chamery",
    "children": []
   },
   "france/champillon": {
    "id": "france/champillon",
    "name": "Champillon",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11135,13 +11080,13 @@
     "Premier Cru"
    ],
    "commune": "51119",
-   "path": "france/champagne/villages-subregion-not-yet-set/champillon",
+   "path": "france/champagne/champagne-villages/champillon",
    "children": []
   },
   "france/chigny-les-roses": {
    "id": "france/chigny-les-roses",
    "name": "Chigny-lès-Roses",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11155,13 +11100,13 @@
     "Premier Cru"
    ],
    "commune": "51152",
-   "path": "france/champagne/villages-subregion-not-yet-set/chigny-les-roses",
+   "path": "france/champagne/champagne-villages/chigny-les-roses",
    "children": []
   },
   "france/coligny": {
    "id": "france/coligny",
    "name": "Coligny",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11176,13 +11121,13 @@
    ],
    "commune": "51158",
    "village_code": "51158",
-   "path": "france/champagne/villages-subregion-not-yet-set/coligny",
+   "path": "france/champagne/champagne-villages/coligny",
    "children": []
   },
   "france/cormontreuil": {
    "id": "france/cormontreuil",
    "name": "Cormontreuil",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11196,13 +11141,13 @@
     "Premier Cru"
    ],
    "commune": "51172",
-   "path": "france/champagne/villages-subregion-not-yet-set/cormontreuil",
+   "path": "france/champagne/champagne-villages/cormontreuil",
    "children": []
   },
   "france/coulommes-la-montagne": {
    "id": "france/coulommes-la-montagne",
    "name": "Coulommes-la-Montagne",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11216,13 +11161,13 @@
     "Premier Cru"
    ],
    "commune": "51177",
-   "path": "france/champagne/villages-subregion-not-yet-set/coulommes-la-montagne",
+   "path": "france/champagne/champagne-villages/coulommes-la-montagne",
    "children": []
   },
   "france/cuis": {
    "id": "france/cuis",
    "name": "Cuis",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11236,13 +11181,13 @@
     "Premier Cru"
    ],
    "commune": "51200",
-   "path": "france/champagne/villages-subregion-not-yet-set/cuis",
+   "path": "france/champagne/champagne-villages/cuis",
    "children": []
   },
   "france/cumieres": {
    "id": "france/cumieres",
    "name": "Cumières",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11256,13 +11201,13 @@
     "Premier Cru"
    ],
    "commune": "51202",
-   "path": "france/champagne/villages-subregion-not-yet-set/cumieres",
+   "path": "france/champagne/champagne-villages/cumieres",
    "children": []
   },
   "france/dizy": {
    "id": "france/dizy",
    "name": "Dizy",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11276,13 +11221,13 @@
     "Premier Cru"
    ],
    "commune": "51210",
-   "path": "france/champagne/villages-subregion-not-yet-set/dizy",
+   "path": "france/champagne/champagne-villages/dizy",
    "children": []
   },
   "france/ecueil": {
    "id": "france/ecueil",
    "name": "Ecueil",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11296,13 +11241,13 @@
     "Premier Cru"
    ],
    "commune": "51225",
-   "path": "france/champagne/villages-subregion-not-yet-set/ecueil",
+   "path": "france/champagne/champagne-villages/ecueil",
    "children": []
   },
   "france/etrechy": {
    "id": "france/etrechy",
    "name": "Etrechy",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11316,13 +11261,13 @@
     "Premier Cru"
    ],
    "commune": "51239",
-   "path": "france/champagne/villages-subregion-not-yet-set/etrechy",
+   "path": "france/champagne/champagne-villages/etrechy",
    "children": []
   },
   "france/grauves": {
    "id": "france/grauves",
    "name": "Grauves",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11336,13 +11281,13 @@
     "Premier Cru"
    ],
    "commune": "51281",
-   "path": "france/champagne/villages-subregion-not-yet-set/grauves",
+   "path": "france/champagne/champagne-villages/grauves",
    "children": []
   },
   "france/jouy-les-reims": {
    "id": "france/jouy-les-reims",
    "name": "Jouy-lès-Reims",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11356,13 +11301,13 @@
     "Premier Cru"
    ],
    "commune": "51310",
-   "path": "france/champagne/villages-subregion-not-yet-set/jouy-les-reims",
+   "path": "france/champagne/champagne-villages/jouy-les-reims",
    "children": []
   },
   "france/ludes": {
    "id": "france/ludes",
    "name": "Ludes",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11376,13 +11321,13 @@
     "Premier Cru"
    ],
    "commune": "51333",
-   "path": "france/champagne/villages-subregion-not-yet-set/ludes",
+   "path": "france/champagne/champagne-villages/ludes",
    "children": []
   },
   "france/les-mesneux": {
    "id": "france/les-mesneux",
    "name": "Les Mesneux",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11396,13 +11341,13 @@
     "Premier Cru"
    ],
    "commune": "51365",
-   "path": "france/champagne/villages-subregion-not-yet-set/les-mesneux",
+   "path": "france/champagne/champagne-villages/les-mesneux",
    "children": []
   },
   "france/montbre": {
    "id": "france/montbre",
    "name": "Montbré",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11416,13 +11361,13 @@
     "Premier Cru"
    ],
    "commune": "51375",
-   "path": "france/champagne/villages-subregion-not-yet-set/montbre",
+   "path": "france/champagne/champagne-villages/montbre",
    "children": []
   },
   "france/mutigny": {
    "id": "france/mutigny",
    "name": "Mutigny",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11436,13 +11381,13 @@
     "Premier Cru"
    ],
    "commune": "51392",
-   "path": "france/champagne/villages-subregion-not-yet-set/mutigny",
+   "path": "france/champagne/champagne-villages/mutigny",
    "children": []
   },
   "france/pargny-les-reims": {
    "id": "france/pargny-les-reims",
    "name": "Pargny-lès-Reims",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11456,13 +11401,13 @@
     "Premier Cru"
    ],
    "commune": "51422",
-   "path": "france/champagne/villages-subregion-not-yet-set/pargny-les-reims",
+   "path": "france/champagne/champagne-villages/pargny-les-reims",
    "children": []
   },
   "france/pierry": {
    "id": "france/pierry",
    "name": "Pierry",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11476,13 +11421,13 @@
     "Premier Cru"
    ],
    "commune": "51431",
-   "path": "france/champagne/villages-subregion-not-yet-set/pierry",
+   "path": "france/champagne/champagne-villages/pierry",
    "children": []
   },
   "france/rilly-la-montagne": {
    "id": "france/rilly-la-montagne",
    "name": "Rilly-la-Montagne",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11496,13 +11441,13 @@
     "Premier Cru"
    ],
    "commune": "51461",
-   "path": "france/champagne/villages-subregion-not-yet-set/rilly-la-montagne",
+   "path": "france/champagne/champagne-villages/rilly-la-montagne",
    "children": []
   },
   "france/sacy": {
    "id": "france/sacy",
    "name": "Sacy",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11516,13 +11461,13 @@
     "Premier Cru"
    ],
    "commune": "51471",
-   "path": "france/champagne/villages-subregion-not-yet-set/sacy",
+   "path": "france/champagne/champagne-villages/sacy",
    "children": []
   },
   "france/sermiers": {
    "id": "france/sermiers",
    "name": "Sermiers",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11536,13 +11481,13 @@
     "Premier Cru"
    ],
    "commune": "51532",
-   "path": "france/champagne/villages-subregion-not-yet-set/sermiers",
+   "path": "france/champagne/champagne-villages/sermiers",
    "children": []
   },
   "france/taissy": {
    "id": "france/taissy",
    "name": "Taissy",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11556,13 +11501,13 @@
     "Premier Cru"
    ],
    "commune": "51562",
-   "path": "france/champagne/villages-subregion-not-yet-set/taissy",
+   "path": "france/champagne/champagne-villages/taissy",
    "children": []
   },
   "france/tauxieres": {
    "id": "france/tauxieres",
    "name": "Tauxières",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11577,13 +11522,13 @@
    ],
    "commune": "51564",
    "village_code": "51564",
-   "path": "france/champagne/villages-subregion-not-yet-set/tauxieres",
+   "path": "france/champagne/champagne-villages/tauxieres",
    "children": []
   },
   "france/trepail": {
    "id": "france/trepail",
    "name": "Trépail",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11597,13 +11542,13 @@
     "Premier Cru"
    ],
    "commune": "51580",
-   "path": "france/champagne/villages-subregion-not-yet-set/trepail",
+   "path": "france/champagne/champagne-villages/trepail",
    "children": []
   },
   "france/trois-puits": {
    "id": "france/trois-puits",
    "name": "Trois-Puits",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11617,13 +11562,13 @@
     "Premier Cru"
    ],
    "commune": "51584",
-   "path": "france/champagne/villages-subregion-not-yet-set/trois-puits",
+   "path": "france/champagne/champagne-villages/trois-puits",
    "children": []
   },
   "france/vaudemanges": {
    "id": "france/vaudemanges",
    "name": "Vaudemanges",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11640,13 +11585,13 @@
     "Premier Cru"
    ],
    "commune": "51599",
-   "path": "france/champagne/villages-subregion-not-yet-set/vaudemanges",
+   "path": "france/champagne/champagne-villages/vaudemanges",
    "children": []
   },
   "france/vertus": {
    "id": "france/vertus",
    "name": "Vertus",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11661,13 +11606,13 @@
    ],
    "commune": "51612",
    "village_code": "51612",
-   "path": "france/champagne/villages-subregion-not-yet-set/vertus",
+   "path": "france/champagne/champagne-villages/vertus",
    "children": []
   },
   "france/villedommange": {
    "id": "france/villedommange",
    "name": "Villedommange",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11684,13 +11629,13 @@
     "Premier Cru"
    ],
    "commune": "51622",
-   "path": "france/champagne/villages-subregion-not-yet-set/villedommange",
+   "path": "france/champagne/champagne-villages/villedommange",
    "children": []
   },
   "france/villeneuve-renneville": {
    "id": "france/villeneuve-renneville",
    "name": "Villeneuve-Renneville",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11707,13 +11652,13 @@
     "Premier Cru"
    ],
    "commune": "51627",
-   "path": "france/champagne/villages-subregion-not-yet-set/villeneuve-renneville",
+   "path": "france/champagne/champagne-villages/villeneuve-renneville",
    "children": []
   },
   "france/villers-allerand": {
    "id": "france/villers-allerand",
    "name": "Villers-Allerand",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11727,13 +11672,13 @@
     "Premier Cru"
    ],
    "commune": "51629",
-   "path": "france/champagne/villages-subregion-not-yet-set/villers-allerand",
+   "path": "france/champagne/champagne-villages/villers-allerand",
    "children": []
   },
   "france/villers-aux-noeuds": {
    "id": "france/villers-aux-noeuds",
    "name": "Villers-aux-Nœuds",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11747,13 +11692,13 @@
     "Premier Cru"
    ],
    "commune": "51631",
-   "path": "france/champagne/villages-subregion-not-yet-set/villers-aux-noeuds",
+   "path": "france/champagne/champagne-villages/villers-aux-noeuds",
    "children": []
   },
   "france/villers-marmery": {
    "id": "france/villers-marmery",
    "name": "Villers-Marmery",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11767,13 +11712,13 @@
     "Premier Cru"
    ],
    "commune": "51636",
-   "path": "france/champagne/villages-subregion-not-yet-set/villers-marmery",
+   "path": "france/champagne/champagne-villages/villers-marmery",
    "children": []
   },
   "france/voipreux": {
    "id": "france/voipreux",
    "name": "Voipreux",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11788,13 +11733,13 @@
    ],
    "commune": "51612",
    "village_code": "51651",
-   "path": "france/champagne/villages-subregion-not-yet-set/voipreux",
+   "path": "france/champagne/champagne-villages/voipreux",
    "children": []
   },
   "france/vrigny": {
    "id": "france/vrigny",
    "name": "Vrigny",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11808,7 +11753,7 @@
     "Premier Cru"
    ],
    "commune": "51657",
-   "path": "france/champagne/villages-subregion-not-yet-set/vrigny",
+   "path": "france/champagne/champagne-villages/vrigny",
    "children": []
   },
   "italy/igt-indicazione-geografica-tipica": {
@@ -16846,7 +16791,9 @@
    ],
    "eu_id": "EUGI00000006397",
    "path": "italy/piedmont/langhe",
-   "children": []
+   "children": [
+    "italy/langhe-nebbiolo"
+   ]
   },
   "italy/colline-joniche-tarantine": {
    "id": "italy/colline-joniche-tarantine",
@@ -20968,7 +20915,12 @@
     "united-states/suisun-valley",
     "united-states/solano-county-green-valley",
     "united-states/guenoc-valley",
-    "united-states/benmore-valley"
+    "united-states/benmore-valley",
+    "united-states/high-valley",
+    "united-states/los-carneros",
+    "united-states/petaluma-gap",
+    "united-states/pine-mountain-cloverdale-peak",
+    "united-states/wild-horse-valley"
    ]
   },
   "united-states/indiana-uplands": {
@@ -21236,7 +21188,8 @@
     "united-states/appalachian-high-country",
     "united-states/yadkin-valley",
     "united-states/haw-river-valley",
-    "united-states/crest-of-the-blue-ridge-henderson-county"
+    "united-states/crest-of-the-blue-ridge-henderson-county",
+    "united-states/swan-creek"
    ]
   },
   "united-states/appalachian-high-country": {
@@ -21265,9 +21218,7 @@
    ],
    "cfr": "9.174",
    "path": "united-states/north-carolina/yadkin-valley",
-   "children": [
-    "united-states/swan-creek"
-   ]
+   "children": []
   },
   "united-states/shawnee-hills": {
    "id": "united-states/shawnee-hills",
@@ -22409,7 +22360,7 @@
   },
   "united-states/beverly-washington": {
    "id": "united-states/beverly-washington",
-   "name": "Beverly Washington",
+   "name": "Beverly, Washington",
    "parent": "united-states/washington",
    "depth": 2,
    "source": "us-ava",
@@ -22623,10 +22574,7 @@
    ],
    "cfr": "9.70",
    "path": "united-states/california/sonoma-county/northern-sonoma",
-   "children": [
-    "united-states/rockpile",
-    "united-states/pine-mountain-cloverdale-peak"
-   ]
+   "children": []
   },
   "united-states/mendocino": {
    "id": "united-states/mendocino",
@@ -22663,7 +22611,6 @@
    "children": [
     "united-states/red-hills-lake-county",
     "united-states/upper-lake-valley",
-    "united-states/high-valley",
     "united-states/big-valley-district-lake-county",
     "united-states/kelsey-bench-lake-county"
    ]
@@ -22731,15 +22678,15 @@
   "united-states/swan-creek": {
    "id": "united-states/swan-creek",
    "name": "Swan Creek",
-   "parent": "united-states/yadkin-valley",
-   "depth": 3,
+   "parent": "united-states/north-carolina",
+   "depth": 2,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.211",
-   "path": "united-states/north-carolina/yadkin-valley/swan-creek",
+   "path": "united-states/north-carolina/swan-creek",
    "children": []
   },
   "united-states/tualatin-hills": {
@@ -23463,15 +23410,15 @@
   "united-states/petaluma-gap": {
    "id": "united-states/petaluma-gap",
    "name": "Petaluma Gap",
-   "parent": "united-states/sonoma-coast",
-   "depth": 4,
+   "parent": "united-states/north-coast",
+   "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.261",
-   "path": "united-states/california/sonoma-county/sonoma-coast/petaluma-gap",
+   "path": "united-states/california/north-coast/petaluma-gap",
    "children": []
   },
   "united-states/mendocino-ridge": {
@@ -23900,29 +23847,29 @@
   "united-states/high-valley": {
    "id": "united-states/high-valley",
    "name": "High Valley",
-   "parent": "united-states/clear-lake",
-   "depth": 4,
+   "parent": "united-states/north-coast",
+   "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.189",
-   "path": "united-states/california/north-coast/clear-lake/high-valley",
+   "path": "united-states/california/north-coast/high-valley",
    "children": []
   },
   "united-states/rockpile": {
    "id": "united-states/rockpile",
    "name": "Rockpile",
-   "parent": "united-states/northern-sonoma",
-   "depth": 4,
+   "parent": "united-states/sonoma-county",
+   "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.173",
-   "path": "united-states/california/sonoma-county/northern-sonoma/rockpile",
+   "path": "united-states/california/sonoma-county/rockpile",
    "children": []
   },
   "united-states/hames-valley": {
@@ -24074,15 +24021,15 @@
   "united-states/pine-mountain-cloverdale-peak": {
    "id": "united-states/pine-mountain-cloverdale-peak",
    "name": "Pine Mountain-Cloverdale Peak",
-   "parent": "united-states/northern-sonoma",
-   "depth": 4,
+   "parent": "united-states/north-coast",
+   "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.220",
-   "path": "united-states/california/sonoma-county/northern-sonoma/pine-mountain-cloverdale-peak",
+   "path": "united-states/california/north-coast/pine-mountain-cloverdale-peak",
    "children": []
   },
   "united-states/snipes-mountain": {
@@ -24102,7 +24049,7 @@
   "united-states/wild-horse-valley": {
    "id": "united-states/wild-horse-valley",
    "name": "Wild Horse Valley",
-   "parent": "united-states/napa-valley",
+   "parent": "united-states/north-coast",
    "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
@@ -24110,7 +24057,7 @@
     "AVA"
    ],
    "cfr": "9.124",
-   "path": "united-states/california/napa-valley/wild-horse-valley",
+   "path": "united-states/california/north-coast/wild-horse-valley",
    "children": []
   },
   "united-states/the-rocks-district-of-milton-freewater": {
@@ -24229,7 +24176,7 @@
   "united-states/bennett-valley": {
    "id": "united-states/bennett-valley",
    "name": "Bennett Valley",
-   "parent": "united-states/sonoma-coast",
+   "parent": "united-states/sonoma-valley",
    "depth": 4,
    "source": "us-ava",
    "kind": "AVA",
@@ -24237,7 +24184,7 @@
     "AVA"
    ],
    "cfr": "9.142",
-   "path": "united-states/california/sonoma-county/sonoma-coast/bennett-valley",
+   "path": "united-states/california/sonoma-county/sonoma-valley/bennett-valley",
    "children": []
   },
   "germany": {
@@ -26169,7 +26116,9 @@
     "hungary/debroi-harslevelu",
     "hungary/kali",
     "hungary/monor",
-    "hungary/somloi"
+    "hungary/somloi",
+    "hungary/matra",
+    "hungary/bukk"
    ]
   },
   "hungary/sumeg": {
@@ -26204,16 +26153,13 @@
    ],
    "eu_id": "EUGI00000005122",
    "path": "hungary/eger",
-   "children": [
-    "hungary/bukk",
-    "hungary/matra"
-   ]
+   "children": []
   },
   "hungary/bukk": {
    "id": "hungary/bukk",
    "name": "Bükk",
-   "parent": "hungary/eger",
-   "depth": 2,
+   "parent": "hungary",
+   "depth": 1,
    "source": "eu-hu",
    "kind": "PDO",
    "also": [
@@ -26223,7 +26169,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000005785",
-   "path": "hungary/eger/bukk",
+   "path": "hungary/bukk",
    "children": []
   },
   "hungary/pannon": {
@@ -26475,8 +26421,8 @@
   "hungary/matra": {
    "id": "hungary/matra",
    "name": "Mátra",
-   "parent": "hungary/eger",
-   "depth": 2,
+   "parent": "hungary",
+   "depth": 1,
    "source": "eu-hu",
    "kind": "PDO",
    "also": [
@@ -26486,7 +26432,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000005784",
-   "path": "hungary/eger/matra",
+   "path": "hungary/matra",
    "children": []
   },
   "hungary/eszak-dunantul": {
@@ -26951,26 +26897,12 @@
    "children": [
     "greece/pgis",
     "greece/aegean-islands",
-    "greece/playies-melitona",
-    "greece/malvasia-candia",
-    "greece/candia",
-    "greece/arhanes",
-    "greece/moschato-rodou",
-    "greece/moschatos-limnou",
-    "greece/dafnes",
     "greece/epirus",
-    "greece/malvasia",
     "greece/ionian-islands",
     "greece/macedonia",
     "greece/crete",
-    "greece/mesenikola",
     "greece/thessaly",
-    "greece/peloponnese",
-    "greece/anchialos",
-    "greece/peza",
-    "greece/limnos",
-    "greece/amynteo",
-    "greece/rodos"
+    "greece/peloponnese"
    ]
   },
   "greece/pgis": {
@@ -27241,7 +27173,11 @@
    "children": [
     "greece/santorini",
     "greece/paros",
-    "greece/samos"
+    "greece/samos",
+    "greece/limnos",
+    "greece/moschatos-limnou",
+    "greece/moschato-rodou",
+    "greece/rodos"
    ]
   },
   "greece/santorini": {
@@ -27451,8 +27387,8 @@
   "greece/playies-melitona": {
    "id": "greece/playies-melitona",
    "name": "Playies Melitona",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/macedonia",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27462,7 +27398,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007001",
-   "path": "greece/playies-melitona",
+   "path": "greece/macedonia/playies-melitona",
    "children": []
   },
   "greece/moschato-patron": {
@@ -27572,8 +27508,8 @@
   "greece/malvasia-candia": {
    "id": "greece/malvasia-candia",
    "name": "Malvasia Χάνδακας-Candia",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27583,7 +27519,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007481",
-   "path": "greece/malvasia-candia",
+   "path": "greece/crete/malvasia-candia",
    "children": []
   },
   "greece/kiklades": {
@@ -27674,8 +27610,8 @@
   "greece/candia": {
    "id": "greece/candia",
    "name": "Χάνδακας - Candia",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27685,7 +27621,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007463",
-   "path": "greece/candia",
+   "path": "greece/crete/candia",
    "children": []
   },
   "greece/playies-egialias": {
@@ -27725,8 +27661,8 @@
   "greece/arhanes": {
    "id": "greece/arhanes",
    "name": "Arhanes",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27736,7 +27672,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007137",
-   "path": "greece/arhanes",
+   "path": "greece/crete/arhanes",
    "children": []
   },
   "greece/retsina-markopoulou-attikis": {
@@ -28016,8 +27952,8 @@
   "greece/moschato-rodou": {
    "id": "greece/moschato-rodou",
    "name": "Moschato Rodou",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/aegean-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28027,7 +27963,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007326",
-   "path": "greece/moschato-rodou",
+   "path": "greece/aegean-islands/moschato-rodou",
    "children": []
   },
   "greece/retsina-pikermiou": {
@@ -28067,8 +28003,8 @@
   "greece/moschatos-limnou": {
    "id": "greece/moschatos-limnou",
    "name": "Moschatos Limnou",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/aegean-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28078,7 +28014,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007136",
-   "path": "greece/moschatos-limnou",
+   "path": "greece/aegean-islands/moschatos-limnou",
    "children": []
   },
   "greece/playies-parnithas": {
@@ -28118,8 +28054,8 @@
   "greece/dafnes": {
    "id": "greece/dafnes",
    "name": "Dafnes",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28129,7 +28065,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007162",
-   "path": "greece/dafnes",
+   "path": "greece/crete/dafnes",
    "children": []
   },
   "greece/parnassos": {
@@ -28318,8 +28254,8 @@
   "greece/malvasia": {
    "id": "greece/malvasia",
    "name": "Malvasia Σητείας",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28332,7 +28268,7 @@
    "sources": [
     "eu-gr"
    ],
-   "path": "greece/malvasia",
+   "path": "greece/crete/malvasia",
    "children": []
   },
   "greece/meteora": {
@@ -28515,7 +28451,9 @@
    "children": [
     "greece/goumenissa",
     "greece/naoussa",
-    "greece/pieria"
+    "greece/pieria",
+    "greece/amynteo",
+    "greece/playies-melitona"
    ]
   },
   "greece/goumenissa": {
@@ -28663,7 +28601,13 @@
    "kind": "group",
    "path": "greece/crete",
    "children": [
-    "greece/sitia"
+    "greece/sitia",
+    "greece/arhanes",
+    "greece/candia",
+    "greece/dafnes",
+    "greece/peza",
+    "greece/malvasia",
+    "greece/malvasia-candia"
    ]
   },
   "greece/sitia": {
@@ -28771,8 +28715,8 @@
   "greece/mesenikola": {
    "id": "greece/mesenikola",
    "name": "Mesenikola",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/thessaly",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28782,7 +28726,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007118",
-   "path": "greece/mesenikola",
+   "path": "greece/thessaly/mesenikola",
    "children": []
   },
   "greece/halkidiki": {
@@ -28828,7 +28772,9 @@
    "kind": "group",
    "path": "greece/thessaly",
    "children": [
-    "greece/rapsani"
+    "greece/rapsani",
+    "greece/anchialos",
+    "greece/mesenikola"
    ]
   },
   "greece/rapsani": {
@@ -28936,8 +28882,8 @@
   "greece/anchialos": {
    "id": "greece/anchialos",
    "name": "Anchialos",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/thessaly",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28947,7 +28893,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000006825",
-   "path": "greece/anchialos",
+   "path": "greece/thessaly/anchialos",
    "children": []
   },
   "greece/evros": {
@@ -29021,8 +28967,8 @@
   "greece/peza": {
    "id": "greece/peza",
    "name": "Peza",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -29032,7 +28978,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007182",
-   "path": "greece/peza",
+   "path": "greece/crete/peza",
    "children": []
   },
   "greece/naoussa": {
@@ -29055,8 +29001,8 @@
   "greece/limnos": {
    "id": "greece/limnos",
    "name": "Limnos",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/aegean-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -29066,7 +29012,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007425",
-   "path": "greece/limnos",
+   "path": "greece/aegean-islands/limnos",
    "children": []
   },
   "greece/paggeo": {
@@ -29276,8 +29222,8 @@
   "greece/amynteo": {
    "id": "greece/amynteo",
    "name": "Amynteo",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/macedonia",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -29287,7 +29233,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007106",
-   "path": "greece/amynteo",
+   "path": "greece/macedonia/amynteo",
    "children": []
   },
   "greece/halikouna": {
@@ -29446,8 +29392,8 @@
   "greece/rodos": {
    "id": "greece/rodos",
    "name": "Rodos",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/aegean-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -29457,7 +29403,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007423",
-   "path": "greece/rodos",
+   "path": "greece/aegean-islands/rodos",
    "children": []
   },
   "greece/samos": {
@@ -41975,6 +41921,57 @@
    "children": [],
    "depth": 2,
    "path": "south-africa/kwazulu-natal/lions-river"
+  },
+  "france/champagne-villages": {
+   "id": "france/champagne-villages",
+   "name": "Champagne villages",
+   "parent": "france/champagne",
+   "depth": 2,
+   "source": "fr-champagne-crus",
+   "kind": "group",
+   "path": "france/champagne/champagne-villages",
+   "children": [
+    "france/avenay-val-dor",
+    "france/bergeres-les-vertus",
+    "france/bezannes",
+    "france/billy-le-grand",
+    "france/bisseuil",
+    "france/chamery",
+    "france/champillon",
+    "france/chigny-les-roses",
+    "france/coligny",
+    "france/cormontreuil",
+    "france/coulommes-la-montagne",
+    "france/cuis",
+    "france/cumieres",
+    "france/dizy",
+    "france/ecueil",
+    "france/etrechy",
+    "france/grauves",
+    "france/jouy-les-reims",
+    "france/ludes",
+    "france/les-mesneux",
+    "france/montbre",
+    "france/mutigny",
+    "france/pargny-les-reims",
+    "france/pierry",
+    "france/rilly-la-montagne",
+    "france/sacy",
+    "france/sermiers",
+    "france/taissy",
+    "france/tauxieres",
+    "france/trepail",
+    "france/trois-puits",
+    "france/vaudemanges",
+    "france/vertus",
+    "france/villedommange",
+    "france/villeneuve-renneville",
+    "france/villers-allerand",
+    "france/villers-aux-noeuds",
+    "france/villers-marmery",
+    "france/voipreux",
+    "france/vrigny"
+   ]
   }
  }
 }
