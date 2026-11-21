@@ -64,6 +64,7 @@
 .months rect.t{fill:#E5DCC6}.months rect.t.gs{fill:var(--coral)}
 .months rect.p{fill:#CFE3EE}.months rect.p.gs{fill:var(--teal)}
 .months text{font-family:var(--body);font-size:9px;fill:var(--soft)}
+.months text.val{font-size:8px;font-weight:600;fill:var(--ink)}
 .note{margin-top:10px;color:var(--soft)}
 .prose p+p{margin-top:8px}
 .claim{margin-top:6px}

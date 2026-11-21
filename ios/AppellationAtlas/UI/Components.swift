@@ -162,6 +162,7 @@ struct MonthsChart: View {
     let season: Color
     let base: Color
     let south: Bool
+    var labels = false   // each bar's value on top, as on the website's temperature chart
 
     var body: some View {
         let gs: Set<Int> = south ? [9, 10, 11, 0, 1, 2, 3] : [3, 4, 5, 6, 7, 8, 9]
@@ -171,6 +172,9 @@ struct MonthsChart: View {
                 .foregroundStyle(gs.contains(i) ? season : base)
                 .accessibilityLabel(Calendar(identifier: .gregorian).monthSymbols[i])
                 .accessibilityValue("\(Int(v.rounded())) \(unit)")
+                .annotation(position: .top, spacing: 2) {
+                    if labels { Text("\(Int(v.rounded()))").font(.system(size: 8, weight: .semibold)).foregroundStyle(Palette.ink) }
+                }
         }
         .chartXAxis {
             AxisMarks(values: (0..<12).map { "\($0)" }) { v in
@@ -178,7 +182,7 @@ struct MonthsChart: View {
             }
         }
         .chartYAxis(.hidden)
-        .frame(height: 70)
+        .frame(height: labels ? 84 : 70)
     }
 }
 
