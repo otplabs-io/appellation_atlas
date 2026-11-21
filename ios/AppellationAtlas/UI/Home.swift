@@ -54,6 +54,7 @@ struct HomePage: View {
             SavedList()
             PlacesHere(folded: !compact)
             AboutButton().font(.atlasNote)
+            FeedbackLink(name: "Home", id: "world")
         }
     }
 
@@ -141,6 +142,22 @@ struct PlaceShape: View {
     }
 }
 
+/// The feedback button at the bottom of every tray, as on the website.
+struct FeedbackLink: View {
+    let name: String
+    let id: String
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(Copy.feedbackPrompt).font(.atlasNote).foregroundStyle(Palette.soft)
+            if let url = Copy.feedbackURL(name: name, id: id) {
+                Link(Copy.feedbackButton, destination: url)
+                    .font(.atlasNote).buttonStyle(.bordered).buttonBorderShape(.capsule)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
 /// How to read the colors on the map.
 struct MapKey: View {
     @Environment(Atlas.self) private var atlas
@@ -172,12 +189,9 @@ struct StudyPicker: View {
     @Environment(Atlas.self) private var atlas
     var body: some View {
         @Bindable var atlas = atlas
-        VStack(alignment: .leading, spacing: 6) {
-            Text("Gold shows").font(.atlasNote).foregroundStyle(Palette.soft)
-            Picker("Gold shows", selection: $atlas.level) {
-                Text("Benchmarks").tag("b"); Text("All").tag("d")
-            }
-            .pickerStyle(.segmented)
+        Picker("Places shown in gold", selection: $atlas.level) {
+            Text("Benchmarks").tag("b"); Text("All").tag("d")
         }
+        .pickerStyle(.segmented)
     }
 }

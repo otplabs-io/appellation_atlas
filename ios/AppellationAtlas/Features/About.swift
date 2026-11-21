@@ -26,8 +26,16 @@ struct AboutView: View {
                 Section {
                     Text("Every wine place in the world on one globe, with what is planted there, its climate, its rock and its land. Everything is inside the app and works with no connection.")
                         .font(.atlasBody)
+                    Text("The Atlas is free to use. It is updated from time to time based on feedback from the people who use it.")
+                        .font(.atlasBody)
                     LabeledContent("Places", value: fmt(Double(atlas.places.count)))
                     LabeledContent("Version", value: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")
+                }
+                Section("Open source") {
+                    Text("The code is on GitHub under the MIT License. Anyone can read it, copy it, change it and run it on their own computer.")
+                        .font(.atlasNote)
+                    Link("github.com/otplabs-io/appellation_atlas", destination: URL(string: "https://github.com/otplabs-io/appellation_atlas")!)
+                        .font(.atlasNote)
                 }
                 Section("Where the data comes from") {
                     ForEach(sources, id: \.0) { s in

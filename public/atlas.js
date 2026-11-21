@@ -518,15 +518,51 @@ function renderInfo(f){
   const JUMP={style:'Style',terms:'Labeling',planted:'Planted',climate:'Climate',soil:'Rock and soil',land:'Land',parts:'Compare',rules:'Vineyard',ava:'AVA',gi:'GI',found:'Notes'};
   for(const k of order) if(X[k]) X[k]=X[k].replace('<section class="row"',`<section class="row" id="s-${k}"`);
   const jumps=order.filter(k=>X[k]&&JUMP[k]);
-  h=(jumps.length>=3?`<nav class="jump" aria-label="On this page">${jumps.map(k=>`<button type="button" class="step ts-ladder_step" data-jump="s-${k}">${JUMP[k]}</button>`).join('')}</nav>`:'')+order.map(k=>X[k]||'').join('');
+  h=(jumps.length>=3?`<nav class="jump" aria-label="On this page">${jumps.map(k=>`<button type="button" class="step ts-ladder_step" data-jump="s-${k}">${JUMP[k]}</button>`).join('')}</nav>`:'')+order.map(k=>X[k]||'').join('')+FEEDBACK(f.name,f.id);
   $('#info').innerHTML=h;
   for(const b of document.querySelectorAll('#info [data-jump]')) b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView({behavior:'smooth',block:'start'});
   const apb=$('#allparts'); if(apb) apb.onclick=()=>{M.allParts=true; renderInfo(f); M.allParts=false;};
 }
-const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">Every wine country, region and appellation we have, ${fmt(Object.keys(PL).length)} regions in all. Pick a country on the globe to start, or search for one.</p><p class="ts-body">${S.lvl==='d'?'All turns gold every place inside the classic regions, down to the smallest appellation. Emerging regions, in grey, are the rest.':'Benchmark regions, in gold, are the classic places to learn first, and the regions they sit in. Emerging regions, in grey, are the rest.'} Switch between Benchmarks and All to change the gold. The Atlas is independent, and not affiliated with or endorsed by any wine school.</p><p class="ts-body">Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.</p></div></section>`;
+// the feedback form (Google Forms): the place and its page link are filled in, the reader writes the rest
+const FEEDBACK=(name,id)=>`<section class="row" id="s-feedback"><p class="ts-caption">See something wrong or missing?</p><a class="feedback ts-caption" href="${FORM_URL}?usp=pp_url&entry.673545042=${encodeURIComponent(name)}&entry.612336214=${encodeURIComponent(location.origin+location.pathname+link(id))}" target="_blank" rel="noopener">Send feedback</a><p class="ts-caption about-link"><button type="button" class="link ts-caption" data-about>About the Atlas</button></p></section>`;
+// About: where the data comes from and the terms each source sets (About.swift in the app)
+const ABOUT_SOURCES=[
+  ['Candiago et al. 2022, EU wine PDO inventory','European boundaries and rules','https://doi.org/10.1038/s41597-022-01513-0'],
+  ['UC Davis AVA Project','US boundaries','https://github.com/UCDavisLibrary/ava'],
+  ['Eurostat GISCO','Countries and regions','https://ec.europa.eu/eurostat/web/gisco'],
+  ['Wine Australia and IPONZ','Australian and New Zealand boundaries','https://www.wineaustralia.com/'],
+  ['INAO via OpenDataWine','French grand cru plots','https://github.com/24eme/opendatawine'],
+  ['Anderson, Nelgen and Puga','What is planted (CC BY 4.0)','https://doi.org/10.25909/32870405.v1'],
+  ['WorldClim 2.1','Temperature and rain, used with the author\'s permission','https://www.worldclim.org/'],
+  ['Beck et al. 2023','Climate type','https://doi.org/10.1038/s41597-023-02549-6'],
+  ['ISRIC SoilGrids 2.0','Soil (CC BY 4.0)','https://www.isric.org/explore/soilgrids'],
+  ['Macrostrat','Rock (CC BY 4.0)','https://macrostrat.org/'],
+  ['AWS Terrain Tiles','Elevation and slope','https://registry.opendata.aws/terrain-tiles/'],
+  ['Wikidata and Wikimedia','How well known each place is','https://www.wikidata.org/'],
+];
+const REPO='https://github.com/otplabs-io/appellation_atlas';
+function openAbout(){
+  let d=$('#about');
+  if(!d){d=document.createElement('dialog'); d.id='about'; d.className='about'; d.setAttribute('aria-labelledby','about-title'); document.body.appendChild(d);
+    d.addEventListener('click',e=>{if(e.target===d||e.target.closest('[data-close]')) d.close();});}
+  const a=(u,t)=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`;
+  d.innerHTML=`<div class="about-in"><div class="about-head"><h2 id="about-title" class="ts-section_head">About the Atlas</h2><button type="button" class="link ts-body" data-close>Done</button></div>
+    <p class="ts-body">Every wine place in the world on one globe, with what is planted there, its climate, its rock and its land. There is no account and nothing to sign in to.</p>
+    <p class="ts-body">The Atlas is free to use. It is updated from time to time based on feedback from the people who use it.</p>
+    <p class="ts-caption about-n">${fmt(Object.keys(PL).length)} places</p>
+    <h3 class="ts-caption about-h">Open source</h3>
+    <p class="ts-caption">The code is on GitHub under the MIT License. Anyone can read it, copy it, change it and run it on their own computer. ${a(REPO,'github.com/otplabs-io/appellation_atlas')}</p>
+    <h3 class="ts-caption about-h">Where the data comes from</h3>
+    <ul class="about-src">${ABOUT_SOURCES.map(([n,w,u])=>`<li>${a(u,n)}<span class="ts-caption">${esc(w)}</span></li>`).join('')}</ul>
+    <p class="ts-caption about-note">The notes on how soil, slope and climate affect vines are general viticulture. They describe what usually happens, not findings about each place.</p></div>`;
+  d.showModal();
+}
+document.addEventListener('click',e=>{if(e.target.closest('[data-about]')) openAbout();});
+const FORM_URL='https://docs.google.com/forms/d/e/1FAIpQLSc7CmB3DsylFI0kt6tZncSwq53i8jsEuxdrv4deyIuWJHq8oA/viewform';
+const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">${fmt(Object.keys(PL).length)} wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know.</p><p class="ts-body">${S.lvl==='d'?'All turns gold every place inside the classic regions, down to the smallest appellation. Emerging regions, in grey, are the rest.':'Benchmark regions, in gold, are the classic places to learn first. Emerging regions, in grey, are the rest.'} Switch between Benchmarks and All to choose which places are gold.</p><p class="ts-body">Darker shades show the places with the most global interest, measured by how many Wikipedias write about them and how often those pages are read. Each map sets its own scale, so the darkest place is the best known one on that map.</p></div></section>`;
 async function render(){
   readHash(); renderPlaces(); mapShow();
-  if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=WORLD_INFO(); return;}
+  if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=WORLD_INFO()+FEEDBACK('Home','world'); return;}
   renderTitle(S.p,null);
   const id=S.p, f=await facts(id); if(S.p===id) renderInfo(f);
 }

@@ -112,9 +112,24 @@
 .hero .badge{color:var(--ink);background:var(--a2);padding:1px 6px;border-radius:2px;letter-spacing:.04em}
 .hero .badge.o{background:var(--o2)}
 .study{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;color:var(--soft)}
-.study span{margin-right:4px}
 .study button{font:inherit;color:var(--ink);background:none;border:1px solid var(--land-edge);border-radius:14px;padding:3px 11px;cursor:pointer}
 .study button[aria-pressed="true"]{background:var(--a2);border-color:var(--a3)}
+.feedback{display:inline-block;margin-top:6px;color:var(--ink);border:1px solid var(--land-edge);border-radius:14px;padding:4px 13px;text-decoration:none}
+.feedback:hover{background:var(--a2);border-color:var(--a3)}
+.about-link{margin-top:10px}
+.about{border:1px solid var(--rule);border-radius:16px;padding:0;max-width:560px;width:calc(100% - 32px);max-height:calc(100% - 48px);background:var(--paper);color:var(--ink)}
+.about::backdrop{background:rgba(0,0,0,.35)}
+.about-in{padding:18px 20px 22px}
+.about-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
+.about-head h2{margin:0}
+.about p{margin:8px 0 0}
+.about a{color:var(--teal)}
+.about-n{color:var(--soft)}
+.about-h{margin:18px 0 0;color:var(--soft);font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.about-src{list-style:none;margin:8px 0 0;padding:0}
+.about-src li{display:flex;flex-direction:column;padding:6px 0;border-top:1px solid var(--rule)}
+.about-src li span{color:var(--soft)}
+.about-note{margin-top:16px!important;color:var(--soft)}
 .mapnote{color:var(--soft);margin:2px 0 8px}
 .shape-note{color:var(--soft);margin-top:6px}
 .inside{margin:16px 0 4px}

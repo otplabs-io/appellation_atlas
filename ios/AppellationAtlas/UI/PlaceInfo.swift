@@ -68,6 +68,7 @@ struct PlaceInfo: View {
                     .padding(.vertical, 8)
                 }
                 ForEach(keys, id: \.self) { k in section(k).id(k) }
+                FeedbackLink(name: f["name"].string ?? "", id: f["id"].string ?? "").padding(.top, 8)
             }
         }
     }

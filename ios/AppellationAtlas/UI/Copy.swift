@@ -41,14 +41,27 @@ enum Copy {
     static func level(_ l: String) -> Level { levels[l] ?? levels["d"]! }
     static func worldIntro(_ l: String) -> [String] { [
         (l == "d" ? "All turns gold every place inside the classic regions, down to the smallest appellation. Emerging regions, in grey, are the rest."
-            : "Benchmark regions, in gold, are the classic places to learn first, and the regions they sit in. Emerging regions, in grey, are the rest.")
-        + " Switch between Benchmarks and All to change the gold. The Atlas is independent, and not affiliated with or endorsed by any wine school.",
-        "Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.",
+            : "Benchmark regions, in gold, are the classic places to learn first. Emerging regions, in grey, are the rest.")
+        + " Switch between Benchmarks and All to choose which places are gold.",
+        "Darker shades show the places with the most global interest, measured by how many Wikipedias write about them and how often those pages are read. Each map sets its own scale, so the darkest place is the best known one on that map.",
     ] }
+
+    static let feedbackPrompt = "See something wrong or missing?"
+    static let feedbackButton = "Send feedback"
+    /// The feedback form with the place filled in. The app has no page link, so the link field says where it came from.
+    static func feedbackURL(name: String, id: String) -> URL? {
+        var c = URLComponents(string: "https://docs.google.com/forms/d/e/1FAIpQLSc7CmB3DsylFI0kt6tZncSwq53i8jsEuxdrv4deyIuWJHq8oA/viewform")
+        c?.queryItems = [
+            URLQueryItem(name: "usp", value: "pp_url"),
+            URLQueryItem(name: "entry.673545042", value: name),
+            URLQueryItem(name: "entry.612336214", value: "From the app, place id \(id)"),
+        ]
+        return c?.url
+    }
 
     static let homeTitle = "Explore the world\u{2019}s wine regions"
     static func worldCount(_ n: Int) -> String {
-        "Every wine country, region and appellation we have, \(fmt(Double(n))) regions in all. Pick a country on the globe to start, or search for one."
+        "\(fmt(Double(n))) wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know."
     }
 
     static let shapeNote: [String: String] = [
