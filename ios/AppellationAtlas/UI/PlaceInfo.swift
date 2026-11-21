@@ -278,7 +278,7 @@ struct PlaceInfo: View {
     private func tempChart(_ c: JSON, _ south: Bool) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             SubCaption("Average temperature by month, °F")
-            MonthsChart(values: c["tavg"].doubles.map(toF), unit: "°F", season: Palette.coral, base: Palette.monthTemp, south: south)
+            MonthsChart(values: c["tavg"].doubles.map(toF), unit: "°F", season: Palette.coral, base: Palette.monthTemp, south: south, labels: true)
         }
         .frame(minWidth: 220)
     }

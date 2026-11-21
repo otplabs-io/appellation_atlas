@@ -377,9 +377,9 @@ function scale(segs,i,pos,label){   // a row of categories, the place's one lit 
 const GST_F=[['Too cool',-99,13,'under 55°F'],['Cool',13,15,'55 to 59°F'],['Intermediate',15,17,'59 to 63°F'],['Warm',17,19,'63 to 66°F'],['Hot',19,24,'66 to 75°F'],['Too hot',24,99,'over 75°F']];
 const WK_F=[['Below Ia',0,850,'under 1,500'],['Ia',850,1111,'1,500 to 2,000'],['Ib',1111,1389,'2,000 to 2,500'],['II',1389,1667,'2,500 to 3,000'],['III',1667,1944,'3,000 to 3,500'],['IV',1944,2222,'3,500 to 4,000'],['V',2222,2700,'4,000 to 4,900'],['Above V',2700,9999,'over 4,900']];
 function seg(t,v){const i=t.findIndex(([,lo,hi])=>lo<=v&&v<hi); if(i<0) return [-1,0]; const [,lo,hi]=t[i], a=lo<-50?hi-2:lo, b=hi>5000?lo+400:hi>90&&hi<1000?lo+2:hi; return [i,(v-a)/(b-a)];}
-function months(vals,unit,cls,south){   // twelve bars, the growing season marked
-  if(!vals) return ''; const max=Math.max(...vals.map(Math.abs),1), w=22, h=56, gs=south?[9,10,11,0,1,2,3]:[3,4,5,6,7,8,9];
-  const bars=vals.map((v,i)=>{const bh=Math.max(1,Math.abs(v)/max*(h-14)); return `<rect x="${i*w+3}" y="${h-bh-12}" width="${w-6}" height="${bh}" class="${cls}${gs.includes(i)?' gs':''}"/><text x="${i*w+w/2}" y="${h-1}" text-anchor="middle">${'JFMAMJJASOND'[i]}</text>`;}).join('');
+function months(vals,unit,cls,south,labels){   // twelve bars, the growing season marked, with each bar's value on top when labels is set
+  if(!vals) return ''; const top=labels?11:0, max=Math.max(...vals.map(Math.abs),1), w=22, h=56+top, gs=south?[9,10,11,0,1,2,3]:[3,4,5,6,7,8,9];
+  const bars=vals.map((v,i)=>{const bh=Math.max(1,Math.abs(v)/max*(h-14-top)); return `<rect x="${i*w+3}" y="${h-bh-12}" width="${w-6}" height="${bh}" class="${cls}${gs.includes(i)?' gs':''}"/>${labels?`<text class="val" x="${i*w+w/2}" y="${h-bh-15}" text-anchor="middle">${Math.round(v)}</text>`:''}<text x="${i*w+w/2}" y="${h-1}" text-anchor="middle">${'JFMAMJJASOND'[i]}</text>`;}).join('');
   return `<svg class="months" viewBox="0 0 ${12*w} ${h}" role="img" aria-label="Monthly ${unit}">${bars}</svg>`;
 }
 const SHAPE_NOTE={'Eurostat NUTS, the area it is named for':'The map draws the department, province or region it is named for. The PGI\u2019s own area can differ a little.',
@@ -480,7 +480,7 @@ function renderInfo(f){
       +`<p class="ts-caption sub">Growing season: ${esc((GST_F[gi]||['?'])[0].toLowerCase())}</p>${scale(GST_F.map(x=>[x[0],x[3]]),gi,gp,'Growing season temperature class')}`
       +`<p class="ts-caption sub">Winkler region ${esc(wk?wk[0]:'')}</p>${scale(WK_F.map(x=>[x[0],x[3]]),wi,wp,'Winkler region')}${wk&&wk[1]?`<p class="ts-body wk">${esc(wk[1])}</p>`:''}`
       +bigNote(f)+reading(rd.climate,'What the climate means for the vines')
-      +`<div class="mrow"><div><p class="ts-caption sub">Average temperature by month, °F</p>${months(c.tavg.map(toF),'temperature','t',south)}</div>${c.prec?`<div><p class="ts-caption sub">Rain by month, inches</p>${months(c.prec.map(inch),'rain','p',south)}</div>`:`<div><p class="ts-caption">${esc(COPY.desertRain)}</p></div>`}</div>`;
+      +`<div class="mrow"><div><p class="ts-caption sub">Average temperature by month, °F</p>${months(c.tavg.map(toF),'temperature','t',south,true)}</div>${c.prec?`<div><p class="ts-caption sub">Rain by month, inches</p>${months(c.prec.map(inch),'rain','p',south)}</div>`:`<div><p class="ts-caption">${esc(COPY.desertRain)}</p></div>`}</div>`;
     X.climate=block('Climate',b,'Averages, 1970 to 2000');
   }
   const so=f.soil, rk=f.rocks;
