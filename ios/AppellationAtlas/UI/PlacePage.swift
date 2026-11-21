@@ -79,7 +79,7 @@ struct Sidebar: View {
             .padding(16)
         }
         .searchable(text: $query, placement: .sidebar, prompt: "Search places")
-        .navigationTitle("Atlas")
+        .navigationTitle("Wine Atlas")
         .toolbar { ToolbarItem(placement: .bottomBar) { AboutButton() } }
     }
 }

@@ -322,7 +322,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Config/AppellationAtlas.entitlements;
 				INFOPLIST_FILE = Config/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Atlas uses your location only to show the wine place you are standing in. It stays on your device.";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Wine Atlas uses your location only to show the wine place you are standing in. It stays on your device.";
 				INFOPLIST_KEY_UIBackgroundModes = "remote-notification";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -362,7 +363,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Config/AppellationAtlas.entitlements;
 				INFOPLIST_FILE = Config/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Atlas uses your location only to show the wine place you are standing in. It stays on your device.";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Wine Atlas uses your location only to show the wine place you are standing in. It stays on your device.";
 				INFOPLIST_KEY_UIBackgroundModes = "remote-notification";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
