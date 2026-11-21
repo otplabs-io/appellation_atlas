@@ -47,6 +47,34 @@ func preparePolys(_ json: JSON) -> [Poly] {
     }
 }
 
+/// An open line (a river): its points as unit vectors, with a center and reach to skip it when out of sight.
+struct Line: Sendable {
+    let points: [V3]
+    let center: V3
+    let radius: Double
+}
+
+/// Lines as the data stores them: [[lon, lat, lon, lat, ...], ...].
+func prepareLines(_ json: JSON) -> [Line] {
+    json.array.map { line in
+        let a = line.doubles
+        var pts: [V3] = []
+        pts.reserveCapacity(a.count / 2)
+        var sum = V3.zero
+        var k = 0
+        while k + 1 < a.count {
+            let v = unitVector(lon: a[k], lat: a[k + 1])
+            pts.append(v); sum += v
+            k += 2
+        }
+        let len = simd_length(sum)
+        let c = len > 0 ? sum / len : V3(1, 0, 0)
+        var m = 1.0
+        for p in pts { m = min(m, simd_dot(p, c)) }
+        return Line(points: pts, center: c, radius: acos(max(-1, min(1, m))))
+    }
+}
+
 /// Where the globe is turned to, and how big it is drawn (its radius in points).
 struct Camera: Equatable, Sendable {
     var lon: Double
@@ -99,7 +127,7 @@ struct Projector {
         if dist - poly.radius > viewAngle || sin(min(poly.radius, 1.5)) * R < 0.35 { return false }
         let projected = poly.rings.map { $0.map(project) }
         let rings: [[V2]] = dist + poly.radius > Double.pi / 2 - 1e-4
-            ? clipAtHorizon(projected)
+            ? clipAtHorizon(projected, reach: poly.radius)
             : projected.map { $0.map { V2($0.x, $0.y) } }
         var any = false
         for r in rings where r.count > 2 {
@@ -115,6 +143,25 @@ struct Projector {
         var p = Path()
         for poly in polys { add(poly, to: &p) }
         return p
+    }
+
+    /// Open lines, broken at the horizon, with points under a point apart dropped (lineD in web/atlas.js).
+    func lines(_ ls: [Line]) -> Path {
+        var d = Path()
+        for l in ls {
+            if acos(max(-1, min(1, simd_dot(l.center, v)))) - l.radius > viewAngle { continue }
+            var on = false
+            var last = CGPoint.zero
+            for (i, p) in l.points.enumerated() {
+                let q = project(p)
+                if q.z < 0 { on = false; continue }
+                let s = screen(q.x, q.y)
+                if on && i < l.points.count - 1 && abs(s.x - last.x) + abs(s.y - last.y) < 1 { continue }
+                if on { d.addLine(to: s) } else { d.move(to: s) }
+                last = s; on = true
+            }
+        }
+        return d
     }
 
     /// Lines of longitude and latitude every 15 degrees.
@@ -137,7 +184,10 @@ struct Projector {
 }
 
 /// Cuts rings at the horizon and closes them along the globe's edge. Outer rings run counterclockwise.
-func clipAtHorizon(_ rings: [[V3]]) -> [[V2]] {
+/// `reach` is how far the polygon spreads from its center: one smaller than a hemisphere never needs an edge arc
+/// most of the way round. Such an arc comes from a coast that dips just behind the edge and back, where the two
+/// crossings land a hair out of order, and drawing it would paint the whole globe for a frame.
+func clipAtHorizon(_ rings: [[V3]], reach: Double = .pi) -> [[V2]] {
     var out: [[V2]] = []
     var segs: [[V2]] = []
     func cross(_ a: V3, _ b: V3) -> V2 {
@@ -182,6 +232,7 @@ func clipAtHorizon(_ rings: [[V3]]) -> [[V2]] {
             for t in sg.indices where !sg[t].used || t == i0 {
                 var d = (sg[t].a0 - sg[s].a1).truncatingRemainder(dividingBy: tau)
                 if d < 0 { d += tau }
+                if d > tau - 0.1 && reach < 1.4 { d = 0 }   // a hair out of order, not the long way round
                 if d < bd { bd = d; best = t }
             }
             let steps = Int(ceil(bd / 0.06))

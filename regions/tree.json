@@ -116,13 +116,10 @@
     "united-states/coombsville",
     "united-states/atlas-peak",
     "united-states/howell-mountain",
-    "united-states/mount-veeder",
     "united-states/spring-mountain-district",
     "united-states/diamond-mountain-district",
-    "united-states/los-carneros",
     "united-states/mt-veeder",
-    "united-states/chiles-valley",
-    "united-states/wild-horse-valley"
+    "united-states/chiles-valley"
    ]
   },
   "united-states/oakville": {
@@ -288,15 +285,6 @@
    "path": "united-states/california/napa-valley/howell-mountain",
    "children": []
   },
-  "united-states/mount-veeder": {
-   "id": "united-states/mount-veeder",
-   "name": "Mount Veeder",
-   "parent": "united-states/napa-valley",
-   "depth": 3,
-   "source": "chris",
-   "path": "united-states/california/napa-valley/mount-veeder",
-   "children": []
-  },
   "united-states/spring-mountain-district": {
    "id": "united-states/spring-mountain-district",
    "name": "Spring Mountain District",
@@ -332,7 +320,7 @@
   "united-states/los-carneros": {
    "id": "united-states/los-carneros",
    "name": "Los Carneros",
-   "parent": "united-states/napa-valley",
+   "parent": "united-states/north-coast",
    "depth": 3,
    "source": "chris",
    "official": [
@@ -342,7 +330,7 @@
     "us-ava"
    ],
    "cfr": "9.32",
-   "path": "united-states/california/napa-valley/los-carneros",
+   "path": "united-states/california/north-coast/los-carneros",
    "children": []
   },
   "united-states/sonoma-county": {
@@ -364,7 +352,8 @@
     "united-states/sonoma-mountain",
     "united-states/west-sonoma-coast",
     "united-states/northern-sonoma",
-    "united-states/fountaingrove-district"
+    "united-states/fountaingrove-district",
+    "united-states/rockpile"
    ]
   },
   "united-states/russian-river-valley": {
@@ -399,10 +388,7 @@
    ],
    "cfr": "9.116",
    "path": "united-states/california/sonoma-county/sonoma-coast",
-   "children": [
-    "united-states/petaluma-gap",
-    "united-states/bennett-valley"
-   ]
+   "children": []
   },
   "united-states/fort-ross-seaview": {
    "id": "united-states/fort-ross-seaview",
@@ -467,7 +453,8 @@
    "cfr": "9.29",
    "path": "united-states/california/sonoma-county/sonoma-valley",
    "children": [
-    "united-states/moon-mountain-district-sonoma-county"
+    "united-states/moon-mountain-district-sonoma-county",
+    "united-states/bennett-valley"
    ]
   },
   "united-states/knights-valley": {
@@ -531,7 +518,8 @@
     "united-states/dos-rios",
     "united-states/mendocino",
     "united-states/eagle-peak-mendocino-county",
-    "united-states/comptche"
+    "united-states/comptche",
+    "united-states/mendocino-ridge"
    ]
   },
   "united-states/anderson-valley": {
@@ -1241,7 +1229,6 @@
     "france/beaujolais",
     "france/provence",
     "france/languedoc-roussillon",
-    "france/other-aocs-region-not-yet-set",
     "france/igp-vins-de-pays",
     "france/charentes",
     "france/south-west-france",
@@ -1447,9 +1434,7 @@
    "eu_id": "EUGI00000001801",
    "path": "france/burgundy/cote-d-or/cote-de-nuits/vougeot",
    "children": [
-    "france/clos-de-vougeot",
-    "france/grands-echezeaux",
-    "france/echezeaux"
+    "france/clos-de-vougeot"
    ]
   },
   "france/vosne-romanee": {
@@ -1477,7 +1462,9 @@
     "france/romanee-conti",
     "france/romanee-saint-vivant",
     "france/la-grande-rue",
-    "france/richebourg"
+    "france/richebourg",
+    "france/echezeaux",
+    "france/grands-echezeaux"
    ]
   },
   "france/nuits-saint-georges": {
@@ -2702,7 +2689,7 @@
     "france/cote-des-bar",
     "france/coteaux-champenois",
     "france/rose-des-riceys",
-    "france/villages-subregion-not-yet-set"
+    "france/champagne-villages"
    ]
   },
   "france/montagne-de-reims": {
@@ -4060,14 +4047,21 @@
     "italy/umbria",
     "italy/sardinia",
     "italy/igt-indicazione-geografica-tipica",
-    "italy/other-docs-region-not-yet-set",
     "italy/emilia-romagna",
     "italy/calabria",
     "italy/lazio",
     "italy/liguria",
     "italy/molise",
     "italy/basilicata",
-    "italy/valle-d-aosta"
+    "italy/delle-venezie",
+    "italy/lison-pramaggiore",
+    "italy/lison",
+    "italy/valdadige",
+    "italy/valdadige-terradeiforti",
+    "italy/lugana",
+    "italy/garda",
+    "italy/orvieto",
+    "italy/lago-di-caldaro"
    ]
   },
   "italy/piedmont": {
@@ -4080,7 +4074,6 @@
    "children": [
     "italy/barolo",
     "italy/barbaresco",
-    "italy/langhe-nebbiolo",
     "italy/barbera-d-alba",
     "italy/barbera-d-asti",
     "italy/dolcetto-d-alba",
@@ -4285,10 +4278,10 @@
   "italy/langhe-nebbiolo": {
    "id": "italy/langhe-nebbiolo",
    "name": "Langhe Nebbiolo",
-   "parent": "italy/piedmont",
-   "depth": 2,
+   "parent": "italy/langhe",
+   "depth": 3,
    "source": "chris",
-   "path": "italy/piedmont/langhe-nebbiolo",
+   "path": "italy/piedmont/langhe/langhe-nebbiolo",
    "children": []
   },
   "italy/barbera-d-alba": {
@@ -4654,7 +4647,6 @@
     "italy/prosecco-doc",
     "italy/conegliano-valdobbiadene-prosecco-superiore",
     "italy/pinot-grigio-delle-venezie",
-    "italy/lugana",
     "italy/bardolino",
     "italy/colli-berici",
     "italy/colli-euganei",
@@ -4671,7 +4663,6 @@
     "italy/soave-superiore",
     "italy/piave-malanotte",
     "italy/gambellara",
-    "italy/lison",
     "italy/piave",
     "italy/colli-euganei-fior-d-arancio",
     "italy/bagnoli-di-sopra",
@@ -4818,8 +4809,8 @@
   "italy/lugana": {
    "id": "italy/lugana",
    "name": "Lugana",
-   "parent": "italy/veneto",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "chris",
    "official": [
     "PDO"
@@ -4828,7 +4819,7 @@
     "eu-it"
    ],
    "eu_id": "EUGI00000005070",
-   "path": "italy/veneto/lugana",
+   "path": "italy/lugana",
    "children": []
   },
   "italy/bardolino": {
@@ -4861,10 +4852,7 @@
    ],
    "eu_id": "EUGI00000004161",
    "path": "italy/alto-adige",
-   "children": [
-    "italy/valdadige",
-    "italy/valdadige-terradeiforti"
-   ]
+   "children": []
   },
   "italy/friuli-venezia-giulia": {
    "id": "italy/friuli-venezia-giulia",
@@ -4885,8 +4873,6 @@
     "italy/friuli-colli-orientali",
     "italy/friuli-grave",
     "italy/ramandolo",
-    "italy/delle-venezie",
-    "italy/lison-pramaggiore",
     "italy/friuli-latisana",
     "italy/colli-orientali-del-friuli-picolit",
     "italy/friuli-aquileia",
@@ -4964,7 +4950,6 @@
    "children": [
     "italy/trento-doc",
     "italy/teroldego-rotaliano",
-    "italy/lago-di-caldaro",
     "italy/casteller"
    ]
   },
@@ -4994,7 +4979,6 @@
    "children": [
     "italy/franciacorta",
     "italy/valtellina-superiore",
-    "italy/garda",
     "italy/scanzo",
     "italy/valcalepio",
     "italy/curtefranca",
@@ -6030,16 +6014,6 @@
    ],
    "eu_id": "EUGI00000001141",
    "path": "france/loire-valley/rose-d-anjou",
-   "children": []
-  },
-  "france/other-aocs-region-not-yet-set": {
-   "id": "france/other-aocs-region-not-yet-set",
-   "name": "Other AOCs, region not yet set",
-   "parent": "france",
-   "depth": 1,
-   "source": "eu",
-   "kind": "group",
-   "path": "france/other-aocs-region-not-yet-set",
    "children": []
   },
   "france/alsace-grand-cru-hengst": {
@@ -9813,7 +9787,7 @@
   "france/grands-echezeaux": {
    "id": "france/grands-echezeaux",
    "name": "Grands-Echezeaux",
-   "parent": "france/vougeot",
+   "parent": "france/vosne-romanee",
    "depth": 5,
    "source": "eu-fr",
    "kind": "PDO",
@@ -9821,7 +9795,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000003582",
-   "path": "france/burgundy/cote-d-or/cote-de-nuits/vougeot/grands-echezeaux",
+   "path": "france/burgundy/cote-d-or/cote-de-nuits/vosne-romanee/grands-echezeaux",
    "children": []
   },
   "france/rosette": {
@@ -10023,7 +9997,7 @@
   "france/echezeaux": {
    "id": "france/echezeaux",
    "name": "Echezeaux",
-   "parent": "france/vougeot",
+   "parent": "france/vosne-romanee",
    "depth": 5,
    "source": "eu-fr",
    "kind": "PDO",
@@ -10031,7 +10005,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000002926",
-   "path": "france/burgundy/cote-d-or/cote-de-nuits/vougeot/echezeaux",
+   "path": "france/burgundy/cote-d-or/cote-de-nuits/vosne-romanee/echezeaux",
    "children": []
   },
   "france/cahors": {
@@ -10965,61 +10939,10 @@
    "path": "france/champagne/montagne-de-reims/verzy",
    "children": []
   },
-  "france/villages-subregion-not-yet-set": {
-   "id": "france/villages-subregion-not-yet-set",
-   "name": "Villages, subregion not yet set",
-   "parent": "france/champagne",
-   "depth": 2,
-   "source": "fr-champagne-crus",
-   "kind": "group",
-   "path": "france/champagne/villages-subregion-not-yet-set",
-   "children": [
-    "france/avenay-val-dor",
-    "france/bergeres-les-vertus",
-    "france/bezannes",
-    "france/billy-le-grand",
-    "france/bisseuil",
-    "france/chamery",
-    "france/champillon",
-    "france/chigny-les-roses",
-    "france/coligny",
-    "france/cormontreuil",
-    "france/coulommes-la-montagne",
-    "france/cuis",
-    "france/cumieres",
-    "france/dizy",
-    "france/ecueil",
-    "france/etrechy",
-    "france/grauves",
-    "france/jouy-les-reims",
-    "france/ludes",
-    "france/les-mesneux",
-    "france/montbre",
-    "france/mutigny",
-    "france/pargny-les-reims",
-    "france/pierry",
-    "france/rilly-la-montagne",
-    "france/sacy",
-    "france/sermiers",
-    "france/taissy",
-    "france/tauxieres",
-    "france/trepail",
-    "france/trois-puits",
-    "france/vaudemanges",
-    "france/vertus",
-    "france/villedommange",
-    "france/villeneuve-renneville",
-    "france/villers-allerand",
-    "france/villers-aux-noeuds",
-    "france/villers-marmery",
-    "france/voipreux",
-    "france/vrigny"
-   ]
-  },
   "france/avenay-val-dor": {
    "id": "france/avenay-val-dor",
    "name": "Avenay-Val-d’Or",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11036,13 +10959,13 @@
     "Premier Cru"
    ],
    "commune": "51028",
-   "path": "france/champagne/villages-subregion-not-yet-set/avenay-val-dor",
+   "path": "france/champagne/champagne-villages/avenay-val-dor",
    "children": []
   },
   "france/bergeres-les-vertus": {
    "id": "france/bergeres-les-vertus",
    "name": "Bergères-lès-Vertus",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11056,13 +10979,13 @@
     "Premier Cru"
    ],
    "commune": "51049",
-   "path": "france/champagne/villages-subregion-not-yet-set/bergeres-les-vertus",
+   "path": "france/champagne/champagne-villages/bergeres-les-vertus",
    "children": []
   },
   "france/bezannes": {
    "id": "france/bezannes",
    "name": "Bezannes",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11076,13 +10999,13 @@
     "Premier Cru"
    ],
    "commune": "51058",
-   "path": "france/champagne/villages-subregion-not-yet-set/bezannes",
+   "path": "france/champagne/champagne-villages/bezannes",
    "children": []
   },
   "france/billy-le-grand": {
    "id": "france/billy-le-grand",
    "name": "Billy-le-Grand",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11096,13 +11019,13 @@
     "Premier Cru"
    ],
    "commune": "51061",
-   "path": "france/champagne/villages-subregion-not-yet-set/billy-le-grand",
+   "path": "france/champagne/champagne-villages/billy-le-grand",
    "children": []
   },
   "france/bisseuil": {
    "id": "france/bisseuil",
    "name": "Bisseuil",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11117,13 +11040,13 @@
    ],
    "commune": "51030",
    "village_code": "51064",
-   "path": "france/champagne/villages-subregion-not-yet-set/bisseuil",
+   "path": "france/champagne/champagne-villages/bisseuil",
    "children": []
   },
   "france/chamery": {
    "id": "france/chamery",
    "name": "Chamery",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11137,13 +11060,13 @@
     "Premier Cru"
    ],
    "commune": "51112",
-   "path": "france/champagne/villages-subregion-not-yet-set/chamery",
+   "path": "france/champagne/champagne-villages/chamery",
    "children": []
   },
   "france/champillon": {
    "id": "france/champillon",
    "name": "Champillon",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11157,13 +11080,13 @@
     "Premier Cru"
    ],
    "commune": "51119",
-   "path": "france/champagne/villages-subregion-not-yet-set/champillon",
+   "path": "france/champagne/champagne-villages/champillon",
    "children": []
   },
   "france/chigny-les-roses": {
    "id": "france/chigny-les-roses",
    "name": "Chigny-lès-Roses",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11177,13 +11100,13 @@
     "Premier Cru"
    ],
    "commune": "51152",
-   "path": "france/champagne/villages-subregion-not-yet-set/chigny-les-roses",
+   "path": "france/champagne/champagne-villages/chigny-les-roses",
    "children": []
   },
   "france/coligny": {
    "id": "france/coligny",
    "name": "Coligny",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11198,13 +11121,13 @@
    ],
    "commune": "51158",
    "village_code": "51158",
-   "path": "france/champagne/villages-subregion-not-yet-set/coligny",
+   "path": "france/champagne/champagne-villages/coligny",
    "children": []
   },
   "france/cormontreuil": {
    "id": "france/cormontreuil",
    "name": "Cormontreuil",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11218,13 +11141,13 @@
     "Premier Cru"
    ],
    "commune": "51172",
-   "path": "france/champagne/villages-subregion-not-yet-set/cormontreuil",
+   "path": "france/champagne/champagne-villages/cormontreuil",
    "children": []
   },
   "france/coulommes-la-montagne": {
    "id": "france/coulommes-la-montagne",
    "name": "Coulommes-la-Montagne",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11238,13 +11161,13 @@
     "Premier Cru"
    ],
    "commune": "51177",
-   "path": "france/champagne/villages-subregion-not-yet-set/coulommes-la-montagne",
+   "path": "france/champagne/champagne-villages/coulommes-la-montagne",
    "children": []
   },
   "france/cuis": {
    "id": "france/cuis",
    "name": "Cuis",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11258,13 +11181,13 @@
     "Premier Cru"
    ],
    "commune": "51200",
-   "path": "france/champagne/villages-subregion-not-yet-set/cuis",
+   "path": "france/champagne/champagne-villages/cuis",
    "children": []
   },
   "france/cumieres": {
    "id": "france/cumieres",
    "name": "Cumières",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11278,13 +11201,13 @@
     "Premier Cru"
    ],
    "commune": "51202",
-   "path": "france/champagne/villages-subregion-not-yet-set/cumieres",
+   "path": "france/champagne/champagne-villages/cumieres",
    "children": []
   },
   "france/dizy": {
    "id": "france/dizy",
    "name": "Dizy",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11298,13 +11221,13 @@
     "Premier Cru"
    ],
    "commune": "51210",
-   "path": "france/champagne/villages-subregion-not-yet-set/dizy",
+   "path": "france/champagne/champagne-villages/dizy",
    "children": []
   },
   "france/ecueil": {
    "id": "france/ecueil",
    "name": "Ecueil",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11318,13 +11241,13 @@
     "Premier Cru"
    ],
    "commune": "51225",
-   "path": "france/champagne/villages-subregion-not-yet-set/ecueil",
+   "path": "france/champagne/champagne-villages/ecueil",
    "children": []
   },
   "france/etrechy": {
    "id": "france/etrechy",
    "name": "Etrechy",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11338,13 +11261,13 @@
     "Premier Cru"
    ],
    "commune": "51239",
-   "path": "france/champagne/villages-subregion-not-yet-set/etrechy",
+   "path": "france/champagne/champagne-villages/etrechy",
    "children": []
   },
   "france/grauves": {
    "id": "france/grauves",
    "name": "Grauves",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11358,13 +11281,13 @@
     "Premier Cru"
    ],
    "commune": "51281",
-   "path": "france/champagne/villages-subregion-not-yet-set/grauves",
+   "path": "france/champagne/champagne-villages/grauves",
    "children": []
   },
   "france/jouy-les-reims": {
    "id": "france/jouy-les-reims",
    "name": "Jouy-lès-Reims",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11378,13 +11301,13 @@
     "Premier Cru"
    ],
    "commune": "51310",
-   "path": "france/champagne/villages-subregion-not-yet-set/jouy-les-reims",
+   "path": "france/champagne/champagne-villages/jouy-les-reims",
    "children": []
   },
   "france/ludes": {
    "id": "france/ludes",
    "name": "Ludes",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11398,13 +11321,13 @@
     "Premier Cru"
    ],
    "commune": "51333",
-   "path": "france/champagne/villages-subregion-not-yet-set/ludes",
+   "path": "france/champagne/champagne-villages/ludes",
    "children": []
   },
   "france/les-mesneux": {
    "id": "france/les-mesneux",
    "name": "Les Mesneux",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11418,13 +11341,13 @@
     "Premier Cru"
    ],
    "commune": "51365",
-   "path": "france/champagne/villages-subregion-not-yet-set/les-mesneux",
+   "path": "france/champagne/champagne-villages/les-mesneux",
    "children": []
   },
   "france/montbre": {
    "id": "france/montbre",
    "name": "Montbré",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11438,13 +11361,13 @@
     "Premier Cru"
    ],
    "commune": "51375",
-   "path": "france/champagne/villages-subregion-not-yet-set/montbre",
+   "path": "france/champagne/champagne-villages/montbre",
    "children": []
   },
   "france/mutigny": {
    "id": "france/mutigny",
    "name": "Mutigny",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11458,13 +11381,13 @@
     "Premier Cru"
    ],
    "commune": "51392",
-   "path": "france/champagne/villages-subregion-not-yet-set/mutigny",
+   "path": "france/champagne/champagne-villages/mutigny",
    "children": []
   },
   "france/pargny-les-reims": {
    "id": "france/pargny-les-reims",
    "name": "Pargny-lès-Reims",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11478,13 +11401,13 @@
     "Premier Cru"
    ],
    "commune": "51422",
-   "path": "france/champagne/villages-subregion-not-yet-set/pargny-les-reims",
+   "path": "france/champagne/champagne-villages/pargny-les-reims",
    "children": []
   },
   "france/pierry": {
    "id": "france/pierry",
    "name": "Pierry",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11498,13 +11421,13 @@
     "Premier Cru"
    ],
    "commune": "51431",
-   "path": "france/champagne/villages-subregion-not-yet-set/pierry",
+   "path": "france/champagne/champagne-villages/pierry",
    "children": []
   },
   "france/rilly-la-montagne": {
    "id": "france/rilly-la-montagne",
    "name": "Rilly-la-Montagne",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11518,13 +11441,13 @@
     "Premier Cru"
    ],
    "commune": "51461",
-   "path": "france/champagne/villages-subregion-not-yet-set/rilly-la-montagne",
+   "path": "france/champagne/champagne-villages/rilly-la-montagne",
    "children": []
   },
   "france/sacy": {
    "id": "france/sacy",
    "name": "Sacy",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11538,13 +11461,13 @@
     "Premier Cru"
    ],
    "commune": "51471",
-   "path": "france/champagne/villages-subregion-not-yet-set/sacy",
+   "path": "france/champagne/champagne-villages/sacy",
    "children": []
   },
   "france/sermiers": {
    "id": "france/sermiers",
    "name": "Sermiers",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11558,13 +11481,13 @@
     "Premier Cru"
    ],
    "commune": "51532",
-   "path": "france/champagne/villages-subregion-not-yet-set/sermiers",
+   "path": "france/champagne/champagne-villages/sermiers",
    "children": []
   },
   "france/taissy": {
    "id": "france/taissy",
    "name": "Taissy",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11578,13 +11501,13 @@
     "Premier Cru"
    ],
    "commune": "51562",
-   "path": "france/champagne/villages-subregion-not-yet-set/taissy",
+   "path": "france/champagne/champagne-villages/taissy",
    "children": []
   },
   "france/tauxieres": {
    "id": "france/tauxieres",
    "name": "Tauxières",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11599,13 +11522,13 @@
    ],
    "commune": "51564",
    "village_code": "51564",
-   "path": "france/champagne/villages-subregion-not-yet-set/tauxieres",
+   "path": "france/champagne/champagne-villages/tauxieres",
    "children": []
   },
   "france/trepail": {
    "id": "france/trepail",
    "name": "Trépail",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11619,13 +11542,13 @@
     "Premier Cru"
    ],
    "commune": "51580",
-   "path": "france/champagne/villages-subregion-not-yet-set/trepail",
+   "path": "france/champagne/champagne-villages/trepail",
    "children": []
   },
   "france/trois-puits": {
    "id": "france/trois-puits",
    "name": "Trois-Puits",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11639,13 +11562,13 @@
     "Premier Cru"
    ],
    "commune": "51584",
-   "path": "france/champagne/villages-subregion-not-yet-set/trois-puits",
+   "path": "france/champagne/champagne-villages/trois-puits",
    "children": []
   },
   "france/vaudemanges": {
    "id": "france/vaudemanges",
    "name": "Vaudemanges",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11662,13 +11585,13 @@
     "Premier Cru"
    ],
    "commune": "51599",
-   "path": "france/champagne/villages-subregion-not-yet-set/vaudemanges",
+   "path": "france/champagne/champagne-villages/vaudemanges",
    "children": []
   },
   "france/vertus": {
    "id": "france/vertus",
    "name": "Vertus",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11683,13 +11606,13 @@
    ],
    "commune": "51612",
    "village_code": "51612",
-   "path": "france/champagne/villages-subregion-not-yet-set/vertus",
+   "path": "france/champagne/champagne-villages/vertus",
    "children": []
   },
   "france/villedommange": {
    "id": "france/villedommange",
    "name": "Villedommange",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11706,13 +11629,13 @@
     "Premier Cru"
    ],
    "commune": "51622",
-   "path": "france/champagne/villages-subregion-not-yet-set/villedommange",
+   "path": "france/champagne/champagne-villages/villedommange",
    "children": []
   },
   "france/villeneuve-renneville": {
    "id": "france/villeneuve-renneville",
    "name": "Villeneuve-Renneville",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11729,13 +11652,13 @@
     "Premier Cru"
    ],
    "commune": "51627",
-   "path": "france/champagne/villages-subregion-not-yet-set/villeneuve-renneville",
+   "path": "france/champagne/champagne-villages/villeneuve-renneville",
    "children": []
   },
   "france/villers-allerand": {
    "id": "france/villers-allerand",
    "name": "Villers-Allerand",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11749,13 +11672,13 @@
     "Premier Cru"
    ],
    "commune": "51629",
-   "path": "france/champagne/villages-subregion-not-yet-set/villers-allerand",
+   "path": "france/champagne/champagne-villages/villers-allerand",
    "children": []
   },
   "france/villers-aux-noeuds": {
    "id": "france/villers-aux-noeuds",
    "name": "Villers-aux-Nœuds",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11769,13 +11692,13 @@
     "Premier Cru"
    ],
    "commune": "51631",
-   "path": "france/champagne/villages-subregion-not-yet-set/villers-aux-noeuds",
+   "path": "france/champagne/champagne-villages/villers-aux-noeuds",
    "children": []
   },
   "france/villers-marmery": {
    "id": "france/villers-marmery",
    "name": "Villers-Marmery",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11789,13 +11712,13 @@
     "Premier Cru"
    ],
    "commune": "51636",
-   "path": "france/champagne/villages-subregion-not-yet-set/villers-marmery",
+   "path": "france/champagne/champagne-villages/villers-marmery",
    "children": []
   },
   "france/voipreux": {
    "id": "france/voipreux",
    "name": "Voipreux",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11810,13 +11733,13 @@
    ],
    "commune": "51612",
    "village_code": "51651",
-   "path": "france/champagne/villages-subregion-not-yet-set/voipreux",
+   "path": "france/champagne/champagne-villages/voipreux",
    "children": []
   },
   "france/vrigny": {
    "id": "france/vrigny",
    "name": "Vrigny",
-   "parent": "france/villages-subregion-not-yet-set",
+   "parent": "france/champagne-villages",
    "depth": 3,
    "source": "fr-champagne-crus",
    "kind": "cru village",
@@ -11830,7 +11753,7 @@
     "Premier Cru"
    ],
    "commune": "51657",
-   "path": "france/champagne/villages-subregion-not-yet-set/vrigny",
+   "path": "france/champagne/champagne-villages/vrigny",
    "children": []
   },
   "italy/igt-indicazione-geografica-tipica": {
@@ -11989,16 +11912,6 @@
    ],
    "eu_id": "EUGI00000006541",
    "path": "italy/piedmont/rubino-di-cantavenna",
-   "children": []
-  },
-  "italy/other-docs-region-not-yet-set": {
-   "id": "italy/other-docs-region-not-yet-set",
-   "name": "Other DOCs, region not yet set",
-   "parent": "italy",
-   "depth": 1,
-   "source": "eu",
-   "kind": "group",
-   "path": "italy/other-docs-region-not-yet-set",
    "children": []
   },
   "italy/boca": {
@@ -12255,15 +12168,15 @@
   "italy/garda": {
    "id": "italy/garda",
    "name": "Garda",
-   "parent": "italy/lombardy",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000004141",
-   "path": "italy/lombardy/garda",
+   "path": "italy/garda",
    "children": []
   },
   "italy/castelli-di-jesi-verdicchio-riserva": {
@@ -12557,7 +12470,6 @@
    "eu_id": "EUGI00000002761",
    "path": "italy/lazio",
    "children": [
-    "italy/orvieto",
     "italy/roma",
     "italy/frascati",
     "italy/frascati-superiore",
@@ -12592,15 +12504,15 @@
   "italy/orvieto": {
    "id": "italy/orvieto",
    "name": "Orvieto",
-   "parent": "italy/lazio",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000005484",
-   "path": "italy/lazio/orvieto",
+   "path": "italy/orvieto",
    "children": []
   },
   "italy/liguria": {
@@ -13063,8 +12975,8 @@
   "italy/valdadige": {
    "id": "italy/valdadige",
    "name": "Valdadige",
-   "parent": "italy/alto-adige",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "also": [
@@ -13074,7 +12986,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000005441",
-   "path": "italy/alto-adige/valdadige",
+   "path": "italy/valdadige",
    "children": []
   },
   "italy/montefalco": {
@@ -13474,8 +13386,8 @@
   "italy/delle-venezie": {
    "id": "italy/delle-venezie",
    "name": "delle Venezie",
-   "parent": "italy/friuli-venezia-giulia",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "also": [
@@ -13485,7 +13397,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000015490",
-   "path": "italy/friuli-venezia-giulia/delle-venezie",
+   "path": "italy/delle-venezie",
    "children": []
   },
   "italy/frascati": {
@@ -13938,15 +13850,15 @@
   "italy/lison-pramaggiore": {
    "id": "italy/lison-pramaggiore",
    "name": "Lison-Pramaggiore",
-   "parent": "italy/friuli-venezia-giulia",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000003381",
-   "path": "italy/friuli-venezia-giulia/lison-pramaggiore",
+   "path": "italy/lison-pramaggiore",
    "children": []
   },
   "italy/val-tidone": {
@@ -14132,15 +14044,15 @@
   "italy/lison": {
    "id": "italy/lison",
    "name": "Lison",
-   "parent": "italy/veneto",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000003382",
-   "path": "italy/veneto/lison",
+   "path": "italy/lison",
    "children": []
   },
   "italy/val-di-neto": {
@@ -15868,8 +15780,8 @@
   "italy/valdadige-terradeiforti": {
    "id": "italy/valdadige-terradeiforti",
    "name": "Valdadige Terradeiforti",
-   "parent": "italy/alto-adige",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "also": [
@@ -15879,7 +15791,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000005442",
-   "path": "italy/alto-adige/valdadige-terradeiforti",
+   "path": "italy/valdadige-terradeiforti",
    "children": []
   },
   "italy/falerno-del-massico": {
@@ -16541,8 +16453,8 @@
   "italy/lago-di-caldaro": {
    "id": "italy/lago-di-caldaro",
    "name": "Lago di Caldaro",
-   "parent": "italy/trentino",
-   "depth": 2,
+   "parent": "italy",
+   "depth": 1,
    "source": "eu-it",
    "kind": "PDO",
    "also": [
@@ -16554,7 +16466,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000004221",
-   "path": "italy/trentino/lago-di-caldaro",
+   "path": "italy/lago-di-caldaro",
    "children": []
   },
   "italy/colline-saluzzesi": {
@@ -16879,7 +16791,9 @@
    ],
    "eu_id": "EUGI00000006397",
    "path": "italy/piedmont/langhe",
-   "children": []
+   "children": [
+    "italy/langhe-nebbiolo"
+   ]
   },
   "italy/colline-joniche-tarantine": {
    "id": "italy/colline-joniche-tarantine",
@@ -18146,23 +18060,6 @@
    ],
    "eu_id": "EUGI00000004903",
    "path": "italy/sardinia/nuragus-di-cagliari",
-   "children": []
-  },
-  "italy/valle-d-aosta": {
-   "id": "italy/valle-d-aosta",
-   "name": "Valle d'Aosta",
-   "parent": "italy",
-   "depth": 1,
-   "source": "it-groups",
-   "kind": "group",
-   "official": [
-    "PDO"
-   ],
-   "sources": [
-    "eu-it"
-   ],
-   "eu_id": "EUGI00000003121",
-   "path": "italy/valle-d-aosta",
    "children": []
   },
   "italy/cannara": {
@@ -20993,9 +20890,7 @@
    "depth": 2,
    "source": "us-ava",
    "kind": "AVA",
-   "also": [
-    "Yazoo Basin, Delta"
-   ],
+   "also": [],
    "official": [
     "AVA"
    ],
@@ -21020,7 +20915,12 @@
     "united-states/suisun-valley",
     "united-states/solano-county-green-valley",
     "united-states/guenoc-valley",
-    "united-states/benmore-valley"
+    "united-states/benmore-valley",
+    "united-states/high-valley",
+    "united-states/los-carneros",
+    "united-states/petaluma-gap",
+    "united-states/pine-mountain-cloverdale-peak",
+    "united-states/wild-horse-valley"
    ]
   },
   "united-states/indiana-uplands": {
@@ -21288,7 +21188,8 @@
     "united-states/appalachian-high-country",
     "united-states/yadkin-valley",
     "united-states/haw-river-valley",
-    "united-states/crest-of-the-blue-ridge-henderson-county"
+    "united-states/crest-of-the-blue-ridge-henderson-county",
+    "united-states/swan-creek"
    ]
   },
   "united-states/appalachian-high-country": {
@@ -21317,9 +21218,7 @@
    ],
    "cfr": "9.174",
    "path": "united-states/north-carolina/yadkin-valley",
-   "children": [
-    "united-states/swan-creek"
-   ]
+   "children": []
   },
   "united-states/shawnee-hills": {
    "id": "united-states/shawnee-hills",
@@ -22150,9 +22049,6 @@
    "depth": 2,
    "source": "us-ava",
    "kind": "AVA",
-   "also": [
-    "refered by many newspaper articles as the  \"Oak Flats Valley Ranch\" or the \"Oak Flats Valley\""
-   ],
    "official": [
     "AVA"
    ],
@@ -22464,7 +22360,7 @@
   },
   "united-states/beverly-washington": {
    "id": "united-states/beverly-washington",
-   "name": "Beverly Washington",
+   "name": "Beverly, Washington",
    "parent": "united-states/washington",
    "depth": 2,
    "source": "us-ava",
@@ -22678,10 +22574,7 @@
    ],
    "cfr": "9.70",
    "path": "united-states/california/sonoma-county/northern-sonoma",
-   "children": [
-    "united-states/rockpile",
-    "united-states/pine-mountain-cloverdale-peak"
-   ]
+   "children": []
   },
   "united-states/mendocino": {
    "id": "united-states/mendocino",
@@ -22696,7 +22589,6 @@
    "cfr": "9.93",
    "path": "united-states/california/mendocino-county/mendocino",
    "children": [
-    "united-states/mendocino-ridge",
     "united-states/yorkville-highlands",
     "united-states/redwood-valley",
     "united-states/potter-valley",
@@ -22719,7 +22611,6 @@
    "children": [
     "united-states/red-hills-lake-county",
     "united-states/upper-lake-valley",
-    "united-states/high-valley",
     "united-states/big-valley-district-lake-county",
     "united-states/kelsey-bench-lake-county"
    ]
@@ -22787,15 +22678,15 @@
   "united-states/swan-creek": {
    "id": "united-states/swan-creek",
    "name": "Swan Creek",
-   "parent": "united-states/yadkin-valley",
-   "depth": 3,
+   "parent": "united-states/north-carolina",
+   "depth": 2,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.211",
-   "path": "united-states/north-carolina/yadkin-valley/swan-creek",
+   "path": "united-states/north-carolina/swan-creek",
    "children": []
   },
   "united-states/tualatin-hills": {
@@ -23519,29 +23410,29 @@
   "united-states/petaluma-gap": {
    "id": "united-states/petaluma-gap",
    "name": "Petaluma Gap",
-   "parent": "united-states/sonoma-coast",
-   "depth": 4,
+   "parent": "united-states/north-coast",
+   "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.261",
-   "path": "united-states/california/sonoma-county/sonoma-coast/petaluma-gap",
+   "path": "united-states/california/north-coast/petaluma-gap",
    "children": []
   },
   "united-states/mendocino-ridge": {
    "id": "united-states/mendocino-ridge",
    "name": "Mendocino Ridge",
-   "parent": "united-states/mendocino",
-   "depth": 4,
+   "parent": "united-states/mendocino-county",
+   "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.158",
-   "path": "united-states/california/mendocino-county/mendocino/mendocino-ridge",
+   "path": "united-states/california/mendocino-county/mendocino-ridge",
    "children": []
   },
   "united-states/rattlesnake-hills": {
@@ -23934,7 +23825,10 @@
    ],
    "cfr": "9.123",
    "path": "united-states/california/napa-valley/mt-veeder",
-   "children": []
+   "children": [],
+   "also": [
+    "Mount Veeder"
+   ]
   },
   "united-states/paso-robles-willow-creek-district": {
    "id": "united-states/paso-robles-willow-creek-district",
@@ -23953,29 +23847,29 @@
   "united-states/high-valley": {
    "id": "united-states/high-valley",
    "name": "High Valley",
-   "parent": "united-states/clear-lake",
-   "depth": 4,
+   "parent": "united-states/north-coast",
+   "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.189",
-   "path": "united-states/california/north-coast/clear-lake/high-valley",
+   "path": "united-states/california/north-coast/high-valley",
    "children": []
   },
   "united-states/rockpile": {
    "id": "united-states/rockpile",
    "name": "Rockpile",
-   "parent": "united-states/northern-sonoma",
-   "depth": 4,
+   "parent": "united-states/sonoma-county",
+   "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.173",
-   "path": "united-states/california/sonoma-county/northern-sonoma/rockpile",
+   "path": "united-states/california/sonoma-county/rockpile",
    "children": []
   },
   "united-states/hames-valley": {
@@ -24014,7 +23908,8 @@
    "source": "us-ava",
    "kind": "AVA",
    "also": [
-    "Kelsey Bench, Kelseyfille Bench"
+    "Kelsey Bench",
+    "Kelseyville Bench"
    ],
    "official": [
     "AVA"
@@ -24126,15 +24021,15 @@
   "united-states/pine-mountain-cloverdale-peak": {
    "id": "united-states/pine-mountain-cloverdale-peak",
    "name": "Pine Mountain-Cloverdale Peak",
-   "parent": "united-states/northern-sonoma",
-   "depth": 4,
+   "parent": "united-states/north-coast",
+   "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
    "official": [
     "AVA"
    ],
    "cfr": "9.220",
-   "path": "united-states/california/sonoma-county/northern-sonoma/pine-mountain-cloverdale-peak",
+   "path": "united-states/california/north-coast/pine-mountain-cloverdale-peak",
    "children": []
   },
   "united-states/snipes-mountain": {
@@ -24154,7 +24049,7 @@
   "united-states/wild-horse-valley": {
    "id": "united-states/wild-horse-valley",
    "name": "Wild Horse Valley",
-   "parent": "united-states/napa-valley",
+   "parent": "united-states/north-coast",
    "depth": 3,
    "source": "us-ava",
    "kind": "AVA",
@@ -24162,7 +24057,7 @@
     "AVA"
    ],
    "cfr": "9.124",
-   "path": "united-states/california/napa-valley/wild-horse-valley",
+   "path": "united-states/california/north-coast/wild-horse-valley",
    "children": []
   },
   "united-states/the-rocks-district-of-milton-freewater": {
@@ -24228,9 +24123,7 @@
    "depth": 4,
    "source": "us-ava",
    "kind": "AVA",
-   "also": [
-    "Cole Vineyard"
-   ],
+   "also": [],
    "official": [
     "AVA"
    ],
@@ -24283,7 +24176,7 @@
   "united-states/bennett-valley": {
    "id": "united-states/bennett-valley",
    "name": "Bennett Valley",
-   "parent": "united-states/sonoma-coast",
+   "parent": "united-states/sonoma-valley",
    "depth": 4,
    "source": "us-ava",
    "kind": "AVA",
@@ -24291,7 +24184,7 @@
     "AVA"
    ],
    "cfr": "9.142",
-   "path": "united-states/california/sonoma-county/sonoma-coast/bennett-valley",
+   "path": "united-states/california/sonoma-county/sonoma-valley/bennett-valley",
    "children": []
   },
   "germany": {
@@ -24312,15 +24205,9 @@
     "germany/pfalz",
     "germany/baden",
     "germany/franken",
-    "germany/monzinger-niederberg",
     "germany/saale-unstrut",
-    "germany/uhlen-blaufusser-lay",
-    "germany/uhlen-laubach",
-    "germany/uhlen-roth-lay",
-    "germany/wurzburger-stein-berg",
     "germany/hessische-bergstrae",
     "germany/rheingau",
-    "germany/burgstadter-berg",
     "germany/ahr"
    ]
   },
@@ -24458,7 +24345,11 @@
    ],
    "eu_id": "EUGI00000004648",
    "path": "germany/mosel",
-   "children": []
+   "children": [
+    "germany/uhlen-blaufusser-lay",
+    "germany/uhlen-laubach",
+    "germany/uhlen-roth-lay"
+   ]
   },
   "germany/rheinburgen-landwein": {
    "id": "germany/rheinburgen-landwein",
@@ -24514,7 +24405,9 @@
    ],
    "eu_id": "EUGI00000004650",
    "path": "germany/nahe",
-   "children": []
+   "children": [
+    "germany/monzinger-niederberg"
+   ]
   },
   "germany/pfalz": {
    "id": "germany/pfalz",
@@ -24584,7 +24477,10 @@
    ],
    "eu_id": "EUGI00000004645",
    "path": "germany/franken",
-   "children": []
+   "children": [
+    "germany/wurzburger-stein-berg",
+    "germany/burgstadter-berg"
+   ]
   },
   "germany/landwein-der-saar": {
    "id": "germany/landwein-der-saar",
@@ -24617,15 +24513,15 @@
   "germany/monzinger-niederberg": {
    "id": "germany/monzinger-niederberg",
    "name": "Monzinger Niederberg",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/nahe",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000015112",
-   "path": "germany/monzinger-niederberg",
+   "path": "germany/nahe/monzinger-niederberg",
    "children": []
   },
   "germany/mecklenburger-landwein": {
@@ -24729,8 +24625,8 @@
   "germany/uhlen-blaufusser-lay": {
    "id": "germany/uhlen-blaufusser-lay",
    "name": "Uhlen Blaufüsser Lay",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/mosel",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "also": [
@@ -24740,49 +24636,49 @@
     "PDO"
    ],
    "eu_id": "EUGI00000014254",
-   "path": "germany/uhlen-blaufusser-lay",
+   "path": "germany/mosel/uhlen-blaufusser-lay",
    "children": []
   },
   "germany/uhlen-laubach": {
    "id": "germany/uhlen-laubach",
    "name": "Uhlen Laubach",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/mosel",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000014262",
-   "path": "germany/uhlen-laubach",
+   "path": "germany/mosel/uhlen-laubach",
    "children": []
   },
   "germany/uhlen-roth-lay": {
    "id": "germany/uhlen-roth-lay",
    "name": "Uhlen Roth Lay",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/mosel",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000014263",
-   "path": "germany/uhlen-roth-lay",
+   "path": "germany/mosel/uhlen-roth-lay",
    "children": []
   },
   "germany/wurzburger-stein-berg": {
    "id": "germany/wurzburger-stein-berg",
    "name": "Würzburger Stein-Berg",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/franken",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000015827",
-   "path": "germany/wurzburger-stein-berg",
+   "path": "germany/franken/wurzburger-stein-berg",
    "children": []
   },
   "germany/taubertaler-landwein": {
@@ -24886,15 +24782,15 @@
   "germany/burgstadter-berg": {
    "id": "germany/burgstadter-berg",
    "name": "Bürgstadter Berg",
-   "parent": "germany",
-   "depth": 1,
+   "parent": "germany/franken",
+   "depth": 2,
    "source": "eu-de",
    "kind": "PDO",
    "official": [
     "PDO"
    ],
    "eu_id": "EUGI00000010582",
-   "path": "germany/burgstadter-berg",
+   "path": "germany/franken/burgstadter-berg",
    "children": []
   },
   "germany/landwein-rhein-neckar": {
@@ -25296,7 +25192,7 @@
   },
   "austria/landwein-pgi": {
    "id": "austria/landwein-pgi",
-   "name": "Landwein (PGI)",
+   "name": "Landwein regions",
    "parent": "austria",
    "depth": 1,
    "source": "eu",
@@ -26220,7 +26116,9 @@
     "hungary/debroi-harslevelu",
     "hungary/kali",
     "hungary/monor",
-    "hungary/somloi"
+    "hungary/somloi",
+    "hungary/matra",
+    "hungary/bukk"
    ]
   },
   "hungary/sumeg": {
@@ -26255,16 +26153,13 @@
    ],
    "eu_id": "EUGI00000005122",
    "path": "hungary/eger",
-   "children": [
-    "hungary/bukk",
-    "hungary/matra"
-   ]
+   "children": []
   },
   "hungary/bukk": {
    "id": "hungary/bukk",
    "name": "Bükk",
-   "parent": "hungary/eger",
-   "depth": 2,
+   "parent": "hungary",
+   "depth": 1,
    "source": "eu-hu",
    "kind": "PDO",
    "also": [
@@ -26274,7 +26169,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000005785",
-   "path": "hungary/eger/bukk",
+   "path": "hungary/bukk",
    "children": []
   },
   "hungary/pannon": {
@@ -26526,8 +26421,8 @@
   "hungary/matra": {
    "id": "hungary/matra",
    "name": "Mátra",
-   "parent": "hungary/eger",
-   "depth": 2,
+   "parent": "hungary",
+   "depth": 1,
    "source": "eu-hu",
    "kind": "PDO",
    "also": [
@@ -26537,7 +26432,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000005784",
-   "path": "hungary/eger/matra",
+   "path": "hungary/matra",
    "children": []
   },
   "hungary/eszak-dunantul": {
@@ -27001,35 +26896,13 @@
    "path": "greece",
    "children": [
     "greece/pgis",
-    "greece/robola-kefallinias",
     "greece/aegean-islands",
-    "greece/mavrodafni-kefallinias",
-    "greece/playies-melitona",
-    "greece/moschato-patron",
-    "greece/mavrodafni-patron",
-    "greece/malvasia-candia",
-    "greece/moschato-kefallinias",
-    "greece/candia",
-    "greece/arhanes",
-    "greece/moschatos-riou-patras",
-    "greece/moschato-rodou",
-    "greece/moschatos-limnou",
-    "greece/dafnes",
-    "greece/mantinia",
     "greece/epirus",
-    "greece/malvasia",
     "greece/ionian-islands",
     "greece/macedonia",
     "greece/crete",
-    "greece/mesenikola",
     "greece/thessaly",
-    "greece/peloponnese",
-    "greece/anchialos",
-    "greece/patra",
-    "greece/peza",
-    "greece/limnos",
-    "greece/amynteo",
-    "greece/rodos"
+    "greece/peloponnese"
    ]
   },
   "greece/pgis": {
@@ -27241,8 +27114,8 @@
   "greece/robola-kefallinias": {
    "id": "greece/robola-kefallinias",
    "name": "Robola Kefallinias",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/ionian-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27252,7 +27125,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007021",
-   "path": "greece/robola-kefallinias",
+   "path": "greece/ionian-islands/robola-kefallinias",
    "children": []
   },
   "greece/evia": {
@@ -27300,7 +27173,11 @@
    "children": [
     "greece/santorini",
     "greece/paros",
-    "greece/samos"
+    "greece/samos",
+    "greece/limnos",
+    "greece/moschatos-limnou",
+    "greece/moschato-rodou",
+    "greece/rodos"
    ]
   },
   "greece/santorini": {
@@ -27357,8 +27234,8 @@
   "greece/mavrodafni-kefallinias": {
    "id": "greece/mavrodafni-kefallinias",
    "name": "Mavrodafni Kefallinias",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/ionian-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27368,7 +27245,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000006876",
-   "path": "greece/mavrodafni-kefallinias",
+   "path": "greece/ionian-islands/mavrodafni-kefallinias",
    "children": []
   },
   "greece/metaxaton": {
@@ -27510,8 +27387,8 @@
   "greece/playies-melitona": {
    "id": "greece/playies-melitona",
    "name": "Playies Melitona",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/macedonia",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27521,14 +27398,14 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007001",
-   "path": "greece/playies-melitona",
+   "path": "greece/macedonia/playies-melitona",
    "children": []
   },
   "greece/moschato-patron": {
    "id": "greece/moschato-patron",
    "name": "Moschato Patron",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/peloponnese",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27538,14 +27415,14 @@
     "PDO"
    ],
    "eu_id": "EUGI00000006963",
-   "path": "greece/moschato-patron",
+   "path": "greece/peloponnese/moschato-patron",
    "children": []
   },
   "greece/mavrodafni-patron": {
    "id": "greece/mavrodafni-patron",
    "name": "Mavrodafni Patron",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/peloponnese",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27555,7 +27432,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000006551",
-   "path": "greece/mavrodafni-patron",
+   "path": "greece/peloponnese/mavrodafni-patron",
    "children": []
   },
   "greece/retsina-peanias": {
@@ -27631,8 +27508,8 @@
   "greece/malvasia-candia": {
    "id": "greece/malvasia-candia",
    "name": "Malvasia Χάνδακας-Candia",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27642,7 +27519,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007481",
-   "path": "greece/malvasia-candia",
+   "path": "greece/crete/malvasia-candia",
    "children": []
   },
   "greece/kiklades": {
@@ -27716,8 +27593,8 @@
   "greece/moschato-kefallinias": {
    "id": "greece/moschato-kefallinias",
    "name": "Moschato Kefallinias",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/ionian-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27727,14 +27604,14 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007325",
-   "path": "greece/moschato-kefallinias",
+   "path": "greece/ionian-islands/moschato-kefallinias",
    "children": []
   },
   "greece/candia": {
    "id": "greece/candia",
    "name": "Χάνδακας - Candia",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27744,7 +27621,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007463",
-   "path": "greece/candia",
+   "path": "greece/crete/candia",
    "children": []
   },
   "greece/playies-egialias": {
@@ -27784,8 +27661,8 @@
   "greece/arhanes": {
    "id": "greece/arhanes",
    "name": "Arhanes",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27795,7 +27672,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007137",
-   "path": "greece/arhanes",
+   "path": "greece/crete/arhanes",
    "children": []
   },
   "greece/retsina-markopoulou-attikis": {
@@ -27835,8 +27712,8 @@
   "greece/moschatos-riou-patras": {
    "id": "greece/moschatos-riou-patras",
    "name": "Moschatos Riou Patras",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/peloponnese",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -27846,7 +27723,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007006",
-   "path": "greece/moschatos-riou-patras",
+   "path": "greece/peloponnese/moschatos-riou-patras",
    "children": []
   },
   "greece/retsina-karistou": {
@@ -28075,8 +27952,8 @@
   "greece/moschato-rodou": {
    "id": "greece/moschato-rodou",
    "name": "Moschato Rodou",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/aegean-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28086,7 +27963,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007326",
-   "path": "greece/moschato-rodou",
+   "path": "greece/aegean-islands/moschato-rodou",
    "children": []
   },
   "greece/retsina-pikermiou": {
@@ -28126,8 +28003,8 @@
   "greece/moschatos-limnou": {
    "id": "greece/moschatos-limnou",
    "name": "Moschatos Limnou",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/aegean-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28137,7 +28014,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007136",
-   "path": "greece/moschatos-limnou",
+   "path": "greece/aegean-islands/moschatos-limnou",
    "children": []
   },
   "greece/playies-parnithas": {
@@ -28177,8 +28054,8 @@
   "greece/dafnes": {
    "id": "greece/dafnes",
    "name": "Dafnes",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28188,7 +28065,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007162",
-   "path": "greece/dafnes",
+   "path": "greece/crete/dafnes",
    "children": []
   },
   "greece/parnassos": {
@@ -28211,8 +28088,8 @@
   "greece/mantinia": {
    "id": "greece/mantinia",
    "name": "Mantinia",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/peloponnese",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28222,7 +28099,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007282",
-   "path": "greece/mantinia",
+   "path": "greece/peloponnese/mantinia",
    "children": []
   },
   "greece/krania": {
@@ -28377,8 +28254,8 @@
   "greece/malvasia": {
    "id": "greece/malvasia",
    "name": "Malvasia Σητείας",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28391,7 +28268,7 @@
    "sources": [
     "eu-gr"
    ],
-   "path": "greece/malvasia",
+   "path": "greece/crete/malvasia",
    "children": []
   },
   "greece/meteora": {
@@ -28506,7 +28383,10 @@
    "path": "greece/ionian-islands",
    "children": [
     "greece/zakynthos",
-    "greece/lefkada"
+    "greece/lefkada",
+    "greece/robola-kefallinias",
+    "greece/mavrodafni-kefallinias",
+    "greece/moschato-kefallinias"
    ]
   },
   "greece/zakynthos": {
@@ -28571,7 +28451,9 @@
    "children": [
     "greece/goumenissa",
     "greece/naoussa",
-    "greece/pieria"
+    "greece/pieria",
+    "greece/amynteo",
+    "greece/playies-melitona"
    ]
   },
   "greece/goumenissa": {
@@ -28719,7 +28601,13 @@
    "kind": "group",
    "path": "greece/crete",
    "children": [
-    "greece/sitia"
+    "greece/sitia",
+    "greece/arhanes",
+    "greece/candia",
+    "greece/dafnes",
+    "greece/peza",
+    "greece/malvasia",
+    "greece/malvasia-candia"
    ]
   },
   "greece/sitia": {
@@ -28827,8 +28715,8 @@
   "greece/mesenikola": {
    "id": "greece/mesenikola",
    "name": "Mesenikola",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/thessaly",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28838,7 +28726,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007118",
-   "path": "greece/mesenikola",
+   "path": "greece/thessaly/mesenikola",
    "children": []
   },
   "greece/halkidiki": {
@@ -28884,7 +28772,9 @@
    "kind": "group",
    "path": "greece/thessaly",
    "children": [
-    "greece/rapsani"
+    "greece/rapsani",
+    "greece/anchialos",
+    "greece/mesenikola"
    ]
   },
   "greece/rapsani": {
@@ -28930,7 +28820,12 @@
    "kind": "group",
    "path": "greece/peloponnese",
    "children": [
-    "greece/nemea"
+    "greece/nemea",
+    "greece/mantinia",
+    "greece/patra",
+    "greece/mavrodafni-patron",
+    "greece/moschatos-riou-patras",
+    "greece/moschato-patron"
    ]
   },
   "greece/nemea": {
@@ -28987,8 +28882,8 @@
   "greece/anchialos": {
    "id": "greece/anchialos",
    "name": "Anchialos",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/thessaly",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -28998,7 +28893,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000006825",
-   "path": "greece/anchialos",
+   "path": "greece/thessaly/anchialos",
    "children": []
   },
   "greece/evros": {
@@ -29055,8 +28950,8 @@
   "greece/patra": {
    "id": "greece/patra",
    "name": "Patra",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/peloponnese",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -29066,14 +28961,14 @@
     "PDO"
    ],
    "eu_id": "EUGI00000006523",
-   "path": "greece/patra",
+   "path": "greece/peloponnese/patra",
    "children": []
   },
   "greece/peza": {
    "id": "greece/peza",
    "name": "Peza",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/crete",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -29083,7 +28978,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007182",
-   "path": "greece/peza",
+   "path": "greece/crete/peza",
    "children": []
   },
   "greece/naoussa": {
@@ -29106,8 +29001,8 @@
   "greece/limnos": {
    "id": "greece/limnos",
    "name": "Limnos",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/aegean-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -29117,7 +29012,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007425",
-   "path": "greece/limnos",
+   "path": "greece/aegean-islands/limnos",
    "children": []
   },
   "greece/paggeo": {
@@ -29327,8 +29222,8 @@
   "greece/amynteo": {
    "id": "greece/amynteo",
    "name": "Amynteo",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/macedonia",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -29338,7 +29233,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007106",
-   "path": "greece/amynteo",
+   "path": "greece/macedonia/amynteo",
    "children": []
   },
   "greece/halikouna": {
@@ -29497,8 +29392,8 @@
   "greece/rodos": {
    "id": "greece/rodos",
    "name": "Rodos",
-   "parent": "greece",
-   "depth": 1,
+   "parent": "greece/aegean-islands",
+   "depth": 2,
    "source": "eu-gr",
    "kind": "PDO",
    "also": [
@@ -29508,7 +29403,7 @@
     "PDO"
    ],
    "eu_id": "EUGI00000007423",
-   "path": "greece/rodos",
+   "path": "greece/aegean-islands/rodos",
    "children": []
   },
   "greece/samos": {
@@ -34054,8 +33949,7 @@
    "children": [
     "australia/murray-darling",
     "australia/perricoota",
-    "australia/riverina",
-    "australia/swan-hill"
+    "australia/riverina"
    ]
   },
   "australia/murray-darling": {
@@ -34103,7 +33997,7 @@
   "australia/swan-hill": {
    "id": "australia/swan-hill",
    "name": "Swan Hill",
-   "parent": "australia/big-rivers",
+   "parent": "australia/north-west-victoria",
    "depth": 3,
    "source": "au",
    "kind": "region",
@@ -34113,7 +34007,7 @@
    "sources": [
     "au"
    ],
-   "path": "australia/new-south-wales/big-rivers/swan-hill",
+   "path": "australia/victoria/north-west-victoria/swan-hill",
    "children": []
   },
   "australia/central-ranges": {
@@ -34991,7 +34885,9 @@
     "zone"
    ],
    "path": "australia/victoria/north-west-victoria",
-   "children": []
+   "children": [
+    "australia/swan-hill"
+   ]
   },
   "australia/port-phillip": {
    "id": "australia/port-phillip",
@@ -35527,7 +35423,6 @@
     "argentina/cuyo",
     "argentina/chubut",
     "argentina/jujuy",
-    "argentina/san-luis",
     "argentina/tucuman",
     "argentina/calchaqui",
     "argentina/valles-del-famatina",
@@ -36861,22 +36756,6 @@
    "path": "argentina/cordoba/san-javier",
    "children": []
   },
-  "argentina/san-luis": {
-   "id": "argentina/san-luis",
-   "name": "San Luis",
-   "parent": "argentina",
-   "depth": 1,
-   "source": "ar",
-   "kind": "group",
-   "official": [
-    "IG"
-   ],
-   "sources": [
-    "ar"
-   ],
-   "path": "argentina/san-luis",
-   "children": []
-  },
   "argentina/san-martin": {
    "id": "argentina/san-martin",
    "name": "San Martín",
@@ -37904,8 +37783,8 @@
     "south-africa/western-cape",
     "south-africa/northern-cape",
     "south-africa/eastern-cape",
-    "south-africa/free-state",
     "south-africa/kwazulu-natal",
+    "south-africa/free-state",
     "south-africa/limpopo",
     "south-africa/north-west-province"
    ]
@@ -37922,11 +37801,16 @@
    ],
    "path": "south-africa/western-cape",
    "children": [
-    "south-africa/breede-river-valley",
     "south-africa/cape-south-coast",
     "south-africa/coastal-region",
+    "south-africa/breede-river-valley",
     "south-africa/klein-karoo",
-    "south-africa/olifants-river"
+    "south-africa/olifants-river",
+    "south-africa/ceres-plateau",
+    "south-africa/prince-albert",
+    "south-africa/nieuwoudtville",
+    "south-africa/cederberg",
+    "south-africa/leipoldtville-sandveld"
    ]
   },
   "south-africa/breede-river-valley": {
@@ -37942,7 +37826,8 @@
    "path": "south-africa/western-cape/breede-river-valley",
    "children": [
     "south-africa/breedekloof",
-    "south-africa/robertson"
+    "south-africa/robertson",
+    "south-africa/worcester"
    ]
   },
   "south-africa/breedekloof": {
@@ -37958,8 +37843,7 @@
    "path": "south-africa/western-cape/breede-river-valley/breedekloof",
    "children": [
     "south-africa/goudini",
-    "south-africa/slanghoek",
-    "south-africa/scherpenheuvel"
+    "south-africa/slanghoek"
    ]
   },
   "south-africa/goudini": {
@@ -37991,14 +37875,14 @@
   "south-africa/scherpenheuvel": {
    "id": "south-africa/scherpenheuvel",
    "name": "Scherpenheuvel",
-   "parent": "south-africa/breedekloof",
+   "parent": "south-africa/worcester",
    "depth": 4,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/breede-river-valley/breedekloof/scherpenheuvel",
+   "path": "south-africa/western-cape/breede-river-valley/worcester/scherpenheuvel",
    "children": []
   },
   "south-africa/robertson": {
@@ -38014,14 +37898,19 @@
    "path": "south-africa/western-cape/breede-river-valley/robertson",
    "children": [
     "south-africa/agterkliphoogte",
-    "south-africa/bonnievale",
+    "south-africa/ashton",
     "south-africa/boesmansrivier",
+    "south-africa/bonnievale",
     "south-africa/eilandia",
+    "south-africa/goedemoed",
+    "south-africa/goree",
+    "south-africa/goudmyn",
     "south-africa/hoopsrivier",
     "south-africa/klaasvoogds",
     "south-africa/le-chasseur",
     "south-africa/mcgregor",
-    "south-africa/vinkrivier"
+    "south-africa/vinkrivier",
+    "south-africa/zandrivier"
    ]
   },
   "south-africa/agterkliphoogte": {
@@ -38154,11 +38043,14 @@
    "path": "south-africa/western-cape/cape-south-coast",
    "children": [
     "south-africa/cape-agulhas",
+    "south-africa/elgin",
+    "south-africa/lower-duivenhoks-river",
     "south-africa/overberg",
     "south-africa/plettenberg-bay",
     "south-africa/swellendam",
     "south-africa/walker-bay",
     "south-africa/herbertsdale",
+    "south-africa/napier",
     "south-africa/stilbaai-east"
    ]
   },
@@ -38202,7 +38094,7 @@
    ],
    "path": "south-africa/western-cape/cape-south-coast/overberg",
    "children": [
-    "south-africa/elgin",
+    "south-africa/elandskloof-kaaimansgat",
     "south-africa/greyton",
     "south-africa/klein-rivier",
     "south-africa/theewater"
@@ -38211,14 +38103,14 @@
   "south-africa/elgin": {
    "id": "south-africa/elgin",
    "name": "Elgin",
-   "parent": "south-africa/overberg",
-   "depth": 4,
+   "parent": "south-africa/cape-south-coast",
+   "depth": 3,
    "source": "za",
-   "kind": "ward",
+   "kind": "district",
    "official": [
-    "ward"
+    "district"
    ],
-   "path": "south-africa/western-cape/cape-south-coast/overberg/elgin",
+   "path": "south-africa/western-cape/cape-south-coast/elgin",
    "children": []
   },
   "south-africa/greyton": {
@@ -38236,7 +38128,7 @@
   },
   "south-africa/klein-rivier": {
    "id": "south-africa/klein-rivier",
-   "name": "Klein Rivier",
+   "name": "Klein River",
    "parent": "south-africa/overberg",
    "depth": 4,
    "source": "za",
@@ -38345,6 +38237,8 @@
     "south-africa/hemel-en-aarde-ridge",
     "south-africa/hemel-en-aarde-valley",
     "south-africa/sunday-s-glen",
+    "south-africa/springfontein-rim",
+    "south-africa/stanford-foothills",
     "south-africa/upper-hemel-en-aarde-valley"
    ]
   },
@@ -38428,7 +38322,7 @@
   },
   "south-africa/stilbaai-east": {
    "id": "south-africa/stilbaai-east",
-   "name": "Stilbaai East",
+   "name": "Still Bay East",
    "parent": "south-africa/cape-south-coast",
    "depth": 3,
    "source": "za",
@@ -38451,30 +38345,18 @@
    ],
    "path": "south-africa/western-cape/coastal-region",
    "children": [
-    "south-africa/cape-peninsula",
+    "south-africa/cape-town",
     "south-africa/darling",
     "south-africa/franschhoek-franschhoek-valley",
+    "south-africa/lutzville-valley",
     "south-africa/paarl",
     "south-africa/stellenbosch",
     "south-africa/swartland",
     "south-africa/tulbagh",
-    "south-africa/tygerberg",
-    "south-africa/constantia",
-    "south-africa/hout-bay"
+    "south-africa/wellington",
+    "south-africa/bamboes-bay",
+    "south-africa/lamberts-bay"
    ]
-  },
-  "south-africa/cape-peninsula": {
-   "id": "south-africa/cape-peninsula",
-   "name": "Cape Peninsula",
-   "parent": "south-africa/coastal-region",
-   "depth": 3,
-   "source": "za",
-   "kind": "district",
-   "official": [
-    "district"
-   ],
-   "path": "south-africa/western-cape/coastal-region/cape-peninsula",
-   "children": []
   },
   "south-africa/darling": {
    "id": "south-africa/darling",
@@ -38529,9 +38411,9 @@
    ],
    "path": "south-africa/western-cape/coastal-region/paarl",
    "children": [
+    "south-africa/agter-paarl",
     "south-africa/simonsberg-paarl",
-    "south-africa/voor-paardeberg",
-    "south-africa/wellington"
+    "south-africa/voor-paardeberg"
    ]
   },
   "south-africa/simonsberg-paarl": {
@@ -38563,19 +38445,24 @@
   "south-africa/wellington": {
    "id": "south-africa/wellington",
    "name": "Wellington",
-   "parent": "south-africa/paarl",
-   "depth": 4,
+   "parent": "south-africa/coastal-region",
+   "depth": 3,
    "source": "za",
-   "kind": "ward",
+   "kind": "district",
    "official": [
-    "ward",
     "district"
    ],
    "sources": [
     "za"
    ],
-   "path": "south-africa/western-cape/coastal-region/paarl/wellington",
-   "children": []
+   "path": "south-africa/western-cape/coastal-region/wellington",
+   "children": [
+    "south-africa/blouvlei",
+    "south-africa/bovlei",
+    "south-africa/groenberg",
+    "south-africa/limietberg",
+    "south-africa/mid-berg-river"
+   ]
   },
   "south-africa/stellenbosch": {
    "id": "south-africa/stellenbosch",
@@ -38595,7 +38482,8 @@
     "south-africa/jonkershoek-valley",
     "south-africa/papegaaiberg",
     "south-africa/polkadraai-hills",
-    "south-africa/simonsberg-stellenbosch"
+    "south-africa/simonsberg-stellenbosch",
+    "south-africa/vlottenburg"
    ]
   },
   "south-africa/banghoek": {
@@ -38702,7 +38590,13 @@
    "path": "south-africa/western-cape/coastal-region/swartland",
    "children": [
     "south-africa/malmesbury",
-    "south-africa/riebeekberg"
+    "south-africa/paardeberg-perdeberg",
+    "south-africa/paardeberg-south",
+    "south-africa/piket-bo-berg",
+    "south-africa/porseleinberg",
+    "south-africa/riebeekberg",
+    "south-africa/riebeeksrivier",
+    "south-africa/st-helena-bay"
    ]
   },
   "south-africa/malmesbury": {
@@ -38744,72 +38638,56 @@
    "path": "south-africa/western-cape/coastal-region/tulbagh",
    "children": []
   },
-  "south-africa/tygerberg": {
-   "id": "south-africa/tygerberg",
-   "name": "Tygerberg",
-   "parent": "south-africa/coastal-region",
-   "depth": 3,
-   "source": "za",
-   "kind": "district",
-   "official": [
-    "district"
-   ],
-   "path": "south-africa/western-cape/coastal-region/tygerberg",
-   "children": [
-    "south-africa/durbanville",
-    "south-africa/philadelphia"
-   ]
-  },
   "south-africa/durbanville": {
    "id": "south-africa/durbanville",
    "name": "Durbanville",
-   "parent": "south-africa/tygerberg",
+   "parent": "south-africa/cape-town",
    "depth": 4,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/coastal-region/tygerberg/durbanville",
+   "path": "south-africa/western-cape/coastal-region/cape-town/durbanville",
    "children": []
   },
   "south-africa/philadelphia": {
    "id": "south-africa/philadelphia",
    "name": "Philadelphia",
-   "parent": "south-africa/tygerberg",
+   "parent": "south-africa/cape-town",
    "depth": 4,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/coastal-region/tygerberg/philadelphia",
+   "path": "south-africa/western-cape/coastal-region/cape-town/philadelphia",
    "children": []
   },
   "south-africa/constantia": {
    "id": "south-africa/constantia",
    "name": "Constantia",
-   "parent": "south-africa/coastal-region",
-   "depth": 3,
+   "parent": "south-africa/cape-town",
+   "depth": 4,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/coastal-region/constantia",
+   "path": "south-africa/western-cape/coastal-region/cape-town/constantia",
    "children": []
   },
   "south-africa/hout-bay": {
    "id": "south-africa/hout-bay",
    "name": "Hout Bay",
-   "parent": "south-africa/coastal-region",
-   "depth": 3,
+   "parent": "south-africa/cape-town",
+   "depth": 4,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/coastal-region/hout-bay",
+   "path": "south-africa/western-cape/coastal-region/cape-town/hout-bay",
    "children": []
   },
   "south-africa/klein-karoo": {
@@ -38826,10 +38704,12 @@
    "children": [
     "south-africa/calitzdorp",
     "south-africa/langeberg-garcia",
+    "south-africa/cango-valley",
+    "south-africa/koo-plateau",
     "south-africa/montagu",
+    "south-africa/outeniqua",
     "south-africa/tradouw",
     "south-africa/tradouw-highlands",
-    "south-africa/outeniqua",
     "south-africa/upper-langkloof"
    ]
   },
@@ -38844,7 +38724,9 @@
     "district"
    ],
    "path": "south-africa/western-cape/klein-karoo/calitzdorp",
-   "children": []
+   "children": [
+    "south-africa/groenfontein"
+   ]
   },
   "south-africa/langeberg-garcia": {
    "id": "south-africa/langeberg-garcia",
@@ -38938,15 +38820,8 @@
    "children": [
     "south-africa/citrusdal-mountain",
     "south-africa/citrusdal-valley",
-    "south-africa/lutzville-valley",
-    "south-africa/bamboes-bay",
     "south-africa/spruitdrift",
-    "south-africa/vredendal",
-    "south-africa/cederberg",
-    "south-africa/ceres",
-    "south-africa/lamberts-bay",
-    "south-africa/prince-albert-valley",
-    "south-africa/swartberg"
+    "south-africa/vredendal"
    ]
   },
   "south-africa/citrusdal-mountain": {
@@ -38993,14 +38868,14 @@
   "south-africa/lutzville-valley": {
    "id": "south-africa/lutzville-valley",
    "name": "Lutzville Valley",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/coastal-region",
    "depth": 3,
    "source": "za",
    "kind": "district",
    "official": [
     "district"
    ],
-   "path": "south-africa/western-cape/olifants-river/lutzville-valley",
+   "path": "south-africa/western-cape/coastal-region/lutzville-valley",
    "children": [
     "south-africa/koekenaap"
    ]
@@ -39015,20 +38890,20 @@
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/lutzville-valley/koekenaap",
+   "path": "south-africa/western-cape/coastal-region/lutzville-valley/koekenaap",
    "children": []
   },
   "south-africa/bamboes-bay": {
    "id": "south-africa/bamboes-bay",
    "name": "Bamboes Bay",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/coastal-region",
    "depth": 3,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/bamboes-bay",
+   "path": "south-africa/western-cape/coastal-region/bamboes-bay",
    "children": []
   },
   "south-africa/spruitdrift": {
@@ -39060,66 +38935,66 @@
   "south-africa/cederberg": {
    "id": "south-africa/cederberg",
    "name": "Cederberg",
-   "parent": "south-africa/olifants-river",
-   "depth": 3,
+   "parent": "south-africa/western-cape",
+   "depth": 2,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/cederberg",
+   "path": "south-africa/western-cape/cederberg",
    "children": []
   },
   "south-africa/ceres": {
    "id": "south-africa/ceres",
    "name": "Ceres",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/ceres-plateau",
    "depth": 3,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/ceres",
+   "path": "south-africa/western-cape/ceres-plateau/ceres",
    "children": []
   },
   "south-africa/lamberts-bay": {
    "id": "south-africa/lamberts-bay",
    "name": "Lamberts Bay",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/coastal-region",
    "depth": 3,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/lamberts-bay",
+   "path": "south-africa/western-cape/coastal-region/lamberts-bay",
    "children": []
   },
   "south-africa/prince-albert-valley": {
    "id": "south-africa/prince-albert-valley",
    "name": "Prince Albert Valley",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/prince-albert",
    "depth": 3,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/prince-albert-valley",
+   "path": "south-africa/western-cape/prince-albert/prince-albert-valley",
    "children": []
   },
   "south-africa/swartberg": {
    "id": "south-africa/swartberg",
    "name": "Swartberg",
-   "parent": "south-africa/olifants-river",
+   "parent": "south-africa/prince-albert",
    "depth": 3,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/western-cape/olifants-river/swartberg",
+   "path": "south-africa/western-cape/prince-albert/swartberg",
    "children": []
   },
   "south-africa/northern-cape": {
@@ -39135,7 +39010,10 @@
    "path": "south-africa/northern-cape",
    "children": [
     "south-africa/douglas",
-    "south-africa/sutherland-karoo"
+    "south-africa/sutherland-karoo",
+    "south-africa/central-orange-river",
+    "south-africa/hartswater",
+    "south-africa/prieska"
    ]
   },
   "south-africa/douglas": {
@@ -39149,49 +39027,51 @@
     "district"
    ],
    "path": "south-africa/northern-cape/douglas",
-   "children": [
-    "south-africa/hartswater",
-    "south-africa/central-orange-river",
-    "south-africa/rietrivier-fs"
-   ]
+   "children": []
   },
   "south-africa/hartswater": {
    "id": "south-africa/hartswater",
    "name": "Hartswater",
-   "parent": "south-africa/douglas",
-   "depth": 3,
+   "parent": "south-africa/northern-cape",
+   "depth": 2,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/northern-cape/douglas/hartswater",
+   "path": "south-africa/northern-cape/hartswater",
    "children": []
   },
   "south-africa/central-orange-river": {
    "id": "south-africa/central-orange-river",
    "name": "Central Orange River",
-   "parent": "south-africa/douglas",
-   "depth": 3,
+   "parent": "south-africa/northern-cape",
+   "depth": 2,
    "source": "za",
-   "kind": "ward",
+   "kind": "district",
    "official": [
-    "ward"
+    "district"
    ],
-   "path": "south-africa/northern-cape/douglas/central-orange-river",
-   "children": []
+   "path": "south-africa/northern-cape/central-orange-river",
+   "children": [
+    "south-africa/groblershoop",
+    "south-africa/grootdrink",
+    "south-africa/kakamas",
+    "south-africa/keimoes",
+    "south-africa/upington"
+   ]
   },
   "south-africa/rietrivier-fs": {
    "id": "south-africa/rietrivier-fs",
    "name": "Rietrivier FS",
-   "parent": "south-africa/douglas",
-   "depth": 3,
+   "parent": "south-africa/free-state",
+   "depth": 2,
    "source": "za",
    "kind": "ward",
    "official": [
     "ward"
    ],
-   "path": "south-africa/northern-cape/douglas/rietrivier-fs",
+   "path": "south-africa/free-state/rietrivier-fs",
    "children": []
   },
   "south-africa/sutherland-karoo": {
@@ -39246,7 +39126,9 @@
     "geographical unit"
    ],
    "path": "south-africa/free-state",
-   "children": []
+   "children": [
+    "south-africa/rietrivier-fs"
+   ]
   },
   "south-africa/kwazulu-natal": {
    "id": "south-africa/kwazulu-natal",
@@ -39259,7 +39141,10 @@
     "geographical unit"
    ],
    "path": "south-africa/kwazulu-natal",
-   "children": []
+   "children": [
+    "south-africa/central-drakensberg",
+    "south-africa/lions-river"
+   ]
   },
   "south-africa/limpopo": {
    "id": "south-africa/limpopo",
@@ -39889,7 +39774,6 @@
     "armenia/tavush-province",
     "armenia/vayots-dzor-province",
     "armenia/yerevan",
-    "armenia/republic-of-artsakh",
     "armenia/ararat-valley",
     "armenia/areni",
     "armenia/armavir",
@@ -40028,19 +39912,6 @@
     "w-armenia"
    ],
    "path": "armenia/yerevan",
-   "children": []
-  },
-  "armenia/republic-of-artsakh": {
-   "id": "armenia/republic-of-artsakh",
-   "name": "Republic of Artsakh",
-   "parent": "armenia",
-   "depth": 1,
-   "source": "w-armenia",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "path": "armenia/republic-of-artsakh",
    "children": []
   },
   "armenia/ararat-valley": {
@@ -40359,9 +40230,9 @@
    "parent": "japan",
    "depth": 1,
    "source": "w-japan",
-   "kind": "region",
+   "kind": "GI",
    "official": [
-    "region"
+    "GI"
    ],
    "path": "japan/yamanashi",
    "children": []
@@ -40372,9 +40243,9 @@
    "parent": "japan",
    "depth": 1,
    "source": "w-japan",
-   "kind": "region",
+   "kind": "GI",
    "official": [
-    "region"
+    "GI"
    ],
    "path": "japan/hokkaido",
    "children": []
@@ -40385,9 +40256,9 @@
    "parent": "japan",
    "depth": 1,
    "source": "w-japan",
-   "kind": "region",
+   "kind": "GI",
    "official": [
-    "region"
+    "GI"
    ],
    "path": "japan/nagano",
    "children": []
@@ -40439,7 +40310,12 @@
    ],
    "path": "mexico/baja-california",
    "children": [
-    "mexico/valle-de-guadalupe"
+    "mexico/valle-de-guadalupe",
+    "mexico/valle-de-calafia",
+    "mexico/valle-de-mexicali",
+    "mexico/valle-de-san-vicente",
+    "mexico/valle-de-santo-tomas",
+    "mexico/zona-tecate"
    ]
   },
   "mexico/valle-de-guadalupe": {
@@ -40453,77 +40329,71 @@
     "region"
    ],
    "path": "mexico/baja-california/valle-de-guadalupe",
-   "children": [
-    "mexico/valle-de-calafia",
-    "mexico/valle-de-mexicali",
-    "mexico/valle-de-san-vicente",
-    "mexico/valle-de-santo-tomas",
-    "mexico/zona-tecate"
-   ]
+   "children": []
   },
   "mexico/valle-de-calafia": {
    "id": "mexico/valle-de-calafia",
    "name": "Valle de Calafia",
-   "parent": "mexico/valle-de-guadalupe",
-   "depth": 3,
+   "parent": "mexico/baja-california",
+   "depth": 2,
    "source": "w-mexico",
    "kind": "region",
    "official": [
     "region"
    ],
-   "path": "mexico/baja-california/valle-de-guadalupe/valle-de-calafia",
+   "path": "mexico/baja-california/valle-de-calafia",
    "children": []
   },
   "mexico/valle-de-mexicali": {
    "id": "mexico/valle-de-mexicali",
    "name": "Valle de Mexicali",
-   "parent": "mexico/valle-de-guadalupe",
-   "depth": 3,
+   "parent": "mexico/baja-california",
+   "depth": 2,
    "source": "w-mexico",
    "kind": "region",
    "official": [
     "region"
    ],
-   "path": "mexico/baja-california/valle-de-guadalupe/valle-de-mexicali",
+   "path": "mexico/baja-california/valle-de-mexicali",
    "children": []
   },
   "mexico/valle-de-san-vicente": {
    "id": "mexico/valle-de-san-vicente",
    "name": "Valle de San Vicente",
-   "parent": "mexico/valle-de-guadalupe",
-   "depth": 3,
+   "parent": "mexico/baja-california",
+   "depth": 2,
    "source": "w-mexico",
    "kind": "region",
    "official": [
     "region"
    ],
-   "path": "mexico/baja-california/valle-de-guadalupe/valle-de-san-vicente",
+   "path": "mexico/baja-california/valle-de-san-vicente",
    "children": []
   },
   "mexico/valle-de-santo-tomas": {
    "id": "mexico/valle-de-santo-tomas",
    "name": "Valle de Santo Tomás",
-   "parent": "mexico/valle-de-guadalupe",
-   "depth": 3,
+   "parent": "mexico/baja-california",
+   "depth": 2,
    "source": "w-mexico",
    "kind": "region",
    "official": [
     "region"
    ],
-   "path": "mexico/baja-california/valle-de-guadalupe/valle-de-santo-tomas",
+   "path": "mexico/baja-california/valle-de-santo-tomas",
    "children": []
   },
   "mexico/zona-tecate": {
    "id": "mexico/zona-tecate",
    "name": "Zona Tecate",
-   "parent": "mexico/valle-de-guadalupe",
-   "depth": 3,
+   "parent": "mexico/baja-california",
+   "depth": 2,
    "source": "w-mexico",
    "kind": "region",
    "official": [
     "region"
    ],
-   "path": "mexico/baja-california/valle-de-guadalupe/zona-tecate",
+   "path": "mexico/baja-california/zona-tecate",
    "children": []
   },
   "mexico/coahuila": {
@@ -40733,8 +40603,7 @@
    ],
    "path": "mexico/sonora",
    "children": [
-    "mexico/caborca",
-    "mexico/hermosillo"
+    "mexico/caborca"
    ]
   },
   "mexico/caborca": {
@@ -40748,19 +40617,6 @@
     "region"
    ],
    "path": "mexico/sonora/caborca",
-   "children": []
-  },
-  "mexico/hermosillo": {
-   "id": "mexico/hermosillo",
-   "name": "Hermosillo",
-   "parent": "mexico/sonora",
-   "depth": 2,
-   "source": "w-mexico",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "path": "mexico/sonora/hermosillo",
    "children": []
   },
   "mexico/zacatecas": {
@@ -40879,23 +40735,9 @@
    "source": "added",
    "path": "morocco",
    "children": [
-    "morocco/atlas-mountains",
     "morocco/benslimane",
     "morocco/meknes"
    ]
-  },
-  "morocco/atlas-mountains": {
-   "id": "morocco/atlas-mountains",
-   "name": "Atlas Mountains",
-   "parent": "morocco",
-   "depth": 1,
-   "source": "w-morocco",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "path": "morocco/atlas-mountains",
-   "children": []
   },
   "morocco/benslimane": {
    "id": "morocco/benslimane",
@@ -41104,345 +40946,6 @@
    "depth": 0,
    "source": "added",
    "path": "turkey",
-   "children": [
-    "turkey/yazgan-winery"
-   ]
-  },
-  "turkey/yazgan-winery": {
-   "id": "turkey/yazgan-winery",
-   "name": "Yazgan Winery",
-   "parent": "turkey",
-   "depth": 1,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "path": "turkey/yazgan-winery",
-   "children": [
-    "turkey/altntas",
-    "turkey/beylerce",
-    "turkey/bornova-misketi",
-    "turkey/emir",
-    "turkey/hasandede",
-    "turkey/narince",
-    "turkey/rumi",
-    "turkey/sultaniye",
-    "turkey/yapncak",
-    "turkey/adakaras",
-    "turkey/bogazkere",
-    "turkey/calkaras",
-    "turkey/dimrit",
-    "turkey/horozkaras",
-    "turkey/kalecik-karas",
-    "turkey/karalahna",
-    "turkey/karasakz",
-    "turkey/okuzgozu",
-    "turkey/papazkaras"
-   ]
-  },
-  "turkey/altntas": {
-   "id": "turkey/altntas",
-   "name": "Altıntaş",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/altntas",
-   "children": []
-  },
-  "turkey/beylerce": {
-   "id": "turkey/beylerce",
-   "name": "Beylerce",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/beylerce",
-   "children": []
-  },
-  "turkey/bornova-misketi": {
-   "id": "turkey/bornova-misketi",
-   "name": "Bornova Misketi",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/bornova-misketi",
-   "children": []
-  },
-  "turkey/emir": {
-   "id": "turkey/emir",
-   "name": "Emir",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/emir",
-   "children": []
-  },
-  "turkey/hasandede": {
-   "id": "turkey/hasandede",
-   "name": "Hasandede",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/hasandede",
-   "children": []
-  },
-  "turkey/narince": {
-   "id": "turkey/narince",
-   "name": "Narince",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/narince",
-   "children": []
-  },
-  "turkey/rumi": {
-   "id": "turkey/rumi",
-   "name": "Rumi",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/rumi",
-   "children": []
-  },
-  "turkey/sultaniye": {
-   "id": "turkey/sultaniye",
-   "name": "Sultaniye",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/sultaniye",
-   "children": []
-  },
-  "turkey/yapncak": {
-   "id": "turkey/yapncak",
-   "name": "Yapıncak",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/yapncak",
-   "children": []
-  },
-  "turkey/adakaras": {
-   "id": "turkey/adakaras",
-   "name": "Adakarası",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/adakaras",
-   "children": []
-  },
-  "turkey/bogazkere": {
-   "id": "turkey/bogazkere",
-   "name": "Boğazkere",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/bogazkere",
-   "children": []
-  },
-  "turkey/calkaras": {
-   "id": "turkey/calkaras",
-   "name": "Çalkarası",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/calkaras",
-   "children": []
-  },
-  "turkey/dimrit": {
-   "id": "turkey/dimrit",
-   "name": "Dimrit",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/dimrit",
-   "children": []
-  },
-  "turkey/horozkaras": {
-   "id": "turkey/horozkaras",
-   "name": "Horozkarası",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/horozkaras",
-   "children": []
-  },
-  "turkey/kalecik-karas": {
-   "id": "turkey/kalecik-karas",
-   "name": "Kalecik Karası",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/kalecik-karas",
-   "children": []
-  },
-  "turkey/karalahna": {
-   "id": "turkey/karalahna",
-   "name": "Karalahna",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/karalahna",
-   "children": []
-  },
-  "turkey/karasakz": {
-   "id": "turkey/karasakz",
-   "name": "Karasakız",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/karasakz",
-   "children": []
-  },
-  "turkey/okuzgozu": {
-   "id": "turkey/okuzgozu",
-   "name": "Öküzgözü",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/okuzgozu",
-   "children": []
-  },
-  "turkey/papazkaras": {
-   "id": "turkey/papazkaras",
-   "name": "Papazkarası",
-   "parent": "turkey/yazgan-winery",
-   "depth": 2,
-   "source": "w-turkey",
-   "kind": "region",
-   "official": [
-    "region"
-   ],
-   "sources": [
-    "w-turkey"
-   ],
-   "path": "turkey/yazgan-winery/papazkaras",
    "children": []
   },
   "ukraine": {
@@ -41647,6 +41150,828 @@
    ],
    "path": "uruguay/san-jose",
    "children": []
+  },
+  "south-africa/lower-duivenhoks-river": {
+   "id": "south-africa/lower-duivenhoks-river",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Lower Duivenhoks River",
+   "parent": "south-africa/cape-south-coast",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/western-cape/cape-south-coast/lower-duivenhoks-river"
+  },
+  "south-africa/elandskloof-kaaimansgat": {
+   "id": "south-africa/elandskloof-kaaimansgat",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Elandskloof/Kaaimansgat",
+   "parent": "south-africa/overberg",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/cape-south-coast/overberg/elandskloof-kaaimansgat"
+  },
+  "south-africa/springfontein-rim": {
+   "id": "south-africa/springfontein-rim",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Springfontein Rim",
+   "parent": "south-africa/walker-bay",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/cape-south-coast/walker-bay/springfontein-rim"
+  },
+  "south-africa/stanford-foothills": {
+   "id": "south-africa/stanford-foothills",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Stanford Foothills",
+   "parent": "south-africa/walker-bay",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/cape-south-coast/walker-bay/stanford-foothills"
+  },
+  "south-africa/napier": {
+   "id": "south-africa/napier",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Napier",
+   "parent": "south-africa/cape-south-coast",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/western-cape/cape-south-coast/napier"
+  },
+  "south-africa/cape-town": {
+   "id": "south-africa/cape-town",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Cape Town",
+   "parent": "south-africa/coastal-region",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [
+    "south-africa/constantia",
+    "south-africa/durbanville",
+    "south-africa/hout-bay",
+    "south-africa/philadelphia"
+   ],
+   "depth": 3,
+   "path": "south-africa/western-cape/coastal-region/cape-town"
+  },
+  "south-africa/agter-paarl": {
+   "id": "south-africa/agter-paarl",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Agter-Paarl",
+   "parent": "south-africa/paarl",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/paarl/agter-paarl"
+  },
+  "south-africa/vlottenburg": {
+   "id": "south-africa/vlottenburg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Vlottenburg",
+   "parent": "south-africa/stellenbosch",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/stellenbosch/vlottenburg"
+  },
+  "south-africa/paardeberg-perdeberg": {
+   "id": "south-africa/paardeberg-perdeberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Paardeberg/Perdeberg",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/paardeberg-perdeberg"
+  },
+  "south-africa/paardeberg-south": {
+   "id": "south-africa/paardeberg-south",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Paardeberg South",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/paardeberg-south"
+  },
+  "south-africa/piket-bo-berg": {
+   "id": "south-africa/piket-bo-berg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Piket-Bo-Berg",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/piket-bo-berg"
+  },
+  "south-africa/porseleinberg": {
+   "id": "south-africa/porseleinberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Porseleinberg",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/porseleinberg"
+  },
+  "south-africa/riebeeksrivier": {
+   "id": "south-africa/riebeeksrivier",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Riebeeksrivier",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/riebeeksrivier"
+  },
+  "south-africa/st-helena-bay": {
+   "id": "south-africa/st-helena-bay",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "St Helena Bay",
+   "parent": "south-africa/swartland",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/swartland/st-helena-bay"
+  },
+  "south-africa/blouvlei": {
+   "id": "south-africa/blouvlei",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Blouvlei",
+   "parent": "south-africa/wellington",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/wellington/blouvlei"
+  },
+  "south-africa/bovlei": {
+   "id": "south-africa/bovlei",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Bovlei",
+   "parent": "south-africa/wellington",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/wellington/bovlei"
+  },
+  "south-africa/groenberg": {
+   "id": "south-africa/groenberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Groenberg",
+   "parent": "south-africa/wellington",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/wellington/groenberg"
+  },
+  "south-africa/limietberg": {
+   "id": "south-africa/limietberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Limietberg",
+   "parent": "south-africa/wellington",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/wellington/limietberg"
+  },
+  "south-africa/mid-berg-river": {
+   "id": "south-africa/mid-berg-river",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Mid-Berg River",
+   "parent": "south-africa/wellington",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/coastal-region/wellington/mid-berg-river"
+  },
+  "south-africa/ashton": {
+   "id": "south-africa/ashton",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Ashton",
+   "parent": "south-africa/robertson",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/robertson/ashton"
+  },
+  "south-africa/goedemoed": {
+   "id": "south-africa/goedemoed",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Goedemoed",
+   "parent": "south-africa/robertson",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/robertson/goedemoed"
+  },
+  "south-africa/goree": {
+   "id": "south-africa/goree",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Goree",
+   "parent": "south-africa/robertson",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/robertson/goree"
+  },
+  "south-africa/goudmyn": {
+   "id": "south-africa/goudmyn",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Goudmyn",
+   "parent": "south-africa/robertson",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/robertson/goudmyn"
+  },
+  "south-africa/zandrivier": {
+   "id": "south-africa/zandrivier",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Zandrivier",
+   "parent": "south-africa/robertson",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/robertson/zandrivier"
+  },
+  "south-africa/worcester": {
+   "id": "south-africa/worcester",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Worcester",
+   "parent": "south-africa/breede-river-valley",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [
+    "south-africa/hex-river-valley",
+    "south-africa/keeromsberg",
+    "south-africa/moordkuil",
+    "south-africa/nuy",
+    "south-africa/rooikrans",
+    "south-africa/scherpenheuvel",
+    "south-africa/stettyn"
+   ],
+   "depth": 3,
+   "path": "south-africa/western-cape/breede-river-valley/worcester"
+  },
+  "south-africa/hex-river-valley": {
+   "id": "south-africa/hex-river-valley",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Hex River Valley",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/hex-river-valley"
+  },
+  "south-africa/keeromsberg": {
+   "id": "south-africa/keeromsberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Keeromsberg",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/keeromsberg"
+  },
+  "south-africa/moordkuil": {
+   "id": "south-africa/moordkuil",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Moordkuil",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/moordkuil"
+  },
+  "south-africa/nuy": {
+   "id": "south-africa/nuy",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Nuy",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/nuy"
+  },
+  "south-africa/rooikrans": {
+   "id": "south-africa/rooikrans",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Rooikrans",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/rooikrans"
+  },
+  "south-africa/stettyn": {
+   "id": "south-africa/stettyn",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Stettyn",
+   "parent": "south-africa/worcester",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/breede-river-valley/worcester/stettyn"
+  },
+  "south-africa/groenfontein": {
+   "id": "south-africa/groenfontein",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Groenfontein",
+   "parent": "south-africa/calitzdorp",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 4,
+   "path": "south-africa/western-cape/klein-karoo/calitzdorp/groenfontein"
+  },
+  "south-africa/cango-valley": {
+   "id": "south-africa/cango-valley",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Cango Valley",
+   "parent": "south-africa/klein-karoo",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/western-cape/klein-karoo/cango-valley"
+  },
+  "south-africa/koo-plateau": {
+   "id": "south-africa/koo-plateau",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Koo Plateau",
+   "parent": "south-africa/klein-karoo",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/western-cape/klein-karoo/koo-plateau"
+  },
+  "south-africa/ceres-plateau": {
+   "id": "south-africa/ceres-plateau",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Ceres Plateau",
+   "parent": "south-africa/western-cape",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [
+    "south-africa/ceres"
+   ],
+   "depth": 2,
+   "path": "south-africa/western-cape/ceres-plateau"
+  },
+  "south-africa/prince-albert": {
+   "id": "south-africa/prince-albert",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Prince Albert",
+   "parent": "south-africa/western-cape",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [
+    "south-africa/kweekvallei",
+    "south-africa/prince-albert-valley",
+    "south-africa/swartberg"
+   ],
+   "depth": 2,
+   "path": "south-africa/western-cape/prince-albert"
+  },
+  "south-africa/kweekvallei": {
+   "id": "south-africa/kweekvallei",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Kweekvallei",
+   "parent": "south-africa/prince-albert",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/western-cape/prince-albert/kweekvallei"
+  },
+  "south-africa/nieuwoudtville": {
+   "id": "south-africa/nieuwoudtville",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Nieuwoudtville",
+   "parent": "south-africa/western-cape",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 2,
+   "path": "south-africa/western-cape/nieuwoudtville"
+  },
+  "south-africa/leipoldtville-sandveld": {
+   "id": "south-africa/leipoldtville-sandveld",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Leipoldtville-Sandveld",
+   "parent": "south-africa/western-cape",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 2,
+   "path": "south-africa/western-cape/leipoldtville-sandveld"
+  },
+  "south-africa/groblershoop": {
+   "id": "south-africa/groblershoop",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Groblershoop",
+   "parent": "south-africa/central-orange-river",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/northern-cape/central-orange-river/groblershoop"
+  },
+  "south-africa/grootdrink": {
+   "id": "south-africa/grootdrink",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Grootdrink",
+   "parent": "south-africa/central-orange-river",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/northern-cape/central-orange-river/grootdrink"
+  },
+  "south-africa/kakamas": {
+   "id": "south-africa/kakamas",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Kakamas",
+   "parent": "south-africa/central-orange-river",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/northern-cape/central-orange-river/kakamas"
+  },
+  "south-africa/keimoes": {
+   "id": "south-africa/keimoes",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Keimoes",
+   "parent": "south-africa/central-orange-river",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/northern-cape/central-orange-river/keimoes"
+  },
+  "south-africa/upington": {
+   "id": "south-africa/upington",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Upington",
+   "parent": "south-africa/central-orange-river",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 3,
+   "path": "south-africa/northern-cape/central-orange-river/upington"
+  },
+  "south-africa/prieska": {
+   "id": "south-africa/prieska",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Prieska",
+   "parent": "south-africa/northern-cape",
+   "kind": "ward",
+   "official": [
+    "ward"
+   ],
+   "children": [],
+   "depth": 2,
+   "path": "south-africa/northern-cape/prieska"
+  },
+  "south-africa/central-drakensberg": {
+   "id": "south-africa/central-drakensberg",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Central Drakensberg",
+   "parent": "south-africa/kwazulu-natal",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [],
+   "depth": 2,
+   "path": "south-africa/kwazulu-natal/central-drakensberg"
+  },
+  "south-africa/lions-river": {
+   "id": "south-africa/lions-river",
+   "source": "sawis",
+   "sources": [
+    "sawis"
+   ],
+   "name": "Lions River",
+   "parent": "south-africa/kwazulu-natal",
+   "kind": "district",
+   "official": [
+    "district"
+   ],
+   "children": [],
+   "depth": 2,
+   "path": "south-africa/kwazulu-natal/lions-river"
+  },
+  "france/champagne-villages": {
+   "id": "france/champagne-villages",
+   "name": "Champagne villages",
+   "parent": "france/champagne",
+   "depth": 2,
+   "source": "fr-champagne-crus",
+   "kind": "group",
+   "path": "france/champagne/champagne-villages",
+   "children": [
+    "france/avenay-val-dor",
+    "france/bergeres-les-vertus",
+    "france/bezannes",
+    "france/billy-le-grand",
+    "france/bisseuil",
+    "france/chamery",
+    "france/champillon",
+    "france/chigny-les-roses",
+    "france/coligny",
+    "france/cormontreuil",
+    "france/coulommes-la-montagne",
+    "france/cuis",
+    "france/cumieres",
+    "france/dizy",
+    "france/ecueil",
+    "france/etrechy",
+    "france/grauves",
+    "france/jouy-les-reims",
+    "france/ludes",
+    "france/les-mesneux",
+    "france/montbre",
+    "france/mutigny",
+    "france/pargny-les-reims",
+    "france/pierry",
+    "france/rilly-la-montagne",
+    "france/sacy",
+    "france/sermiers",
+    "france/taissy",
+    "france/tauxieres",
+    "france/trepail",
+    "france/trois-puits",
+    "france/vaudemanges",
+    "france/vertus",
+    "france/villedommange",
+    "france/villeneuve-renneville",
+    "france/villers-allerand",
+    "france/villers-aux-noeuds",
+    "france/villers-marmery",
+    "france/voipreux",
+    "france/vrigny"
+   ]
   }
  }
 }

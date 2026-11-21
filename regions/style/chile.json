@@ -1,0 +1,147 @@
+{
+ "chile": {
+  "notes": [
+   "Cool Andes nights keep acidity high alongside ripe fruit from long, sunny days.",
+   "Carmenère is one of Chile's emblematic reds, with intense color and notes of red fruit, damp earth and spice."
+  ],
+  "art": [
+   "Chilean wine",
+   "Sauvignon blanc",
+   "Malbec"
+  ],
+  "ref": [
+   "woc"
+  ]
+ },
+ "chile/aconcagua": {
+  "notes": [],
+  "art": [
+   "Cabernet Sauvignon"
+  ]
+ },
+ "chile/aconcagua-valley": {
+  "notes": [],
+  "art": [
+   "Cabernet Sauvignon"
+  ]
+ },
+ "chile/casablanca-valley": {
+  "notes": [
+   "Casablanca is a cool, ocean-influenced valley whose leading grapes are Sauvignon Blanc and Chardonnay."
+  ],
+  "art": [
+   "Chilean wine"
+  ],
+  "ref": [
+   "woc"
+  ]
+ },
+ "chile/colchagua-valley": {
+  "notes": [
+   "Colchagua makes mostly red wine, particularly Carmenère, Cabernet Sauvignon and Merlot.",
+   "Pacific breezes cool the valley and lengthen ripening, helping the grapes keep their acidity."
+  ],
+  "art": [
+   "Chilean wine",
+   "Cabernet Sauvignon"
+  ],
+  "ref": [
+   "woc"
+  ]
+ },
+ "chile/curico-valley": {
+  "notes": [
+   "Curicó is one of Chile's largest wine areas, and Cabernet Sauvignon and Sauvignon Blanc are its main grapes."
+  ],
+  "art": [
+   "Chilean wine",
+   "Cabernet Sauvignon"
+  ],
+  "ref": [
+   "woc"
+  ]
+ },
+ "chile/maipo-valley": {
+  "notes": [
+   "Maipo Cabernet Sauvignon is marked by pervasive blackcurrant fruit and an earthy, dusty note."
+  ],
+  "art": [
+   "Cabernet Sauvignon"
+  ]
+ },
+ "chile/maule-valley": {
+  "notes": [
+   "Maule is Chile's largest wine region, and its Carmenère is notably spicy, with black pepper.",
+   "Old Carignan vines give soft, earthy reds with rich plum and black fruit.",
+   "Newer plantings of Merlot, Cabernet Franc and Carmenère show bright acidity and juicy fruit."
+  ],
+  "art": [
+   "Maule Valley",
+   "Chilean wine"
+  ],
+  "ref": [
+   "woc"
+  ]
+ },
+ "chile/limari-valley": {
+  "notes": [
+   "Limarí is best known for Chardonnay and Syrah, and it also makes Pinot Noir.",
+   "Morning fog from the Pacific and mineral-rich soils give fresh wines with a distinct mineral edge."
+  ],
+  "art": [
+   "Chilean wine"
+  ],
+  "ref": [
+   "woc"
+  ]
+ },
+ "chile/southern-chile": {
+  "notes": [
+   "Southern Chile is cool and wet. Its newer vineyards suit Pinot Noir, Chardonnay, Sauvignon Blanc and Riesling, and Itata keeps old País and Muscat vines."
+  ],
+  "art": [
+   "Chilean wine"
+  ],
+  "ref": [
+   "woc"
+  ]
+ },
+ "chile/central-valley": {
+  "notes": [
+   "The Andes and Coastal Range trap warm, dry air here, while cool Andes nights keep acidity high alongside ripe fruit."
+  ],
+  "art": [
+   "Chilean wine",
+   "Malbec"
+  ]
+ },
+ "chile/elqui-valley": {
+  "notes": [
+   "Elqui is arid, with clear skies, and Syrah and Sauvignon Blanc lead.",
+   "In its cool climate, Syrah becomes spicy and complex."
+  ],
+  "ref": [
+   "woc"
+  ]
+ },
+ "chile/coquimbo": {
+  "notes": [
+   "In the Elqui Valley, Syrah and Sauvignon Blanc lead, and the cool climate makes Syrah spicy and complex.",
+   "The Limarí Valley's limestone soils and sea breezes give Chardonnay an attractive minerality.",
+   "Limarí Syrah is also well regarded."
+  ],
+  "ref": [
+   "woc"
+  ]
+ },
+ "chile/cachapoal-valley": {
+  "notes": [
+   "Cachapoal is known for reds, mainly Carmenère, Cabernet Sauvignon and Merlot, about 80% of its output.",
+   "Cool-climate grapes grow in high vineyards in the Andes foothills, and warmer ones near Lake Rapel.",
+   "Bright sun, Andes breezes and cool nights give Cabernet Sauvignon consistent ripeness."
+  ],
+  "ref": [
+   "woc"
+  ]
+ }
+}

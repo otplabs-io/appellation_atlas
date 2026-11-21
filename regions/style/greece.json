@@ -1,0 +1,46 @@
+{
+ "greece": {
+  "notes": [
+   "Agiorgitiko, native to Nemea, makes soft, fruity reds in many styles.",
+   "Xinomavro has great aging potential, with notes of tomato and olive and rich tannin.",
+   "Samos and Patras are known for sweet Muscat."
+  ],
+  "art": [
+   "Greek wine",
+   "Muscat (grape and wine)"
+  ]
+ },
+ "greece/nemea": {
+  "notes": [
+   "Nemea reds are made from Agiorgitiko, dry or sweet.",
+   "The best come from mid-slope vineyards, since the hilltops can be too acidic and the valley floor too jammy."
+  ],
+  "art": [
+   "Agiorgitiko"
+  ]
+ },
+ "greece/santorini": {
+  "notes": [
+   "Santorini Assyrtiko is bone dry and full bodied, with high acidity, citrus, stone fruit and a distinct minerality.",
+   "Low-yielding vines in volcanic ash give concentrated wines with briny salinity and razor-sharp acidity.",
+   "Vinsanto, from sun-dried grapes, is golden orange to amber, with dried apricot, golden raisin, sweet spice and minerality."
+  ],
+  "art": [
+   "Santorini (wine)",
+   "Assyrtiko"
+  ]
+ },
+ "greece/naoussa": {
+  "notes": [
+   "Naoussa is a red from Xinomavro.",
+   "Classic Naoussa has high acidity, medium color and savory aromas of tomato paste and olive.",
+   "Its tannins are firm and often aggressive, and need years of aging to soften.",
+   "Some sites give deeper color, softer tannins and riper, warmer fruit.",
+   "Aromas also take in red fruit, spice, dried plum, tobacco and nuts, and a complex bouquet forms with age.",
+   "Off-dry and medium-sweet versions are also made."
+  ],
+  "ref": [
+   "gr-naoussa"
+  ]
+ }
+}

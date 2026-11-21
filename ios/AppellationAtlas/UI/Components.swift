@@ -37,7 +37,7 @@ struct AtlasSection<Content: View>: View {
     @ViewBuilder var content: Content
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 16) {
             HStack(alignment: .firstTextBaseline) {
                 Text(title).font(.atlasSection).foregroundStyle(Palette.ink)
                 Spacer(minLength: 8)
@@ -46,8 +46,9 @@ struct AtlasSection<Content: View>: View {
             content
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.vertical, 14)
-        .overlay(alignment: .top) { Rectangle().fill(Palette.landEdge.opacity(0.6)).frame(height: 0.5) }
+        .padding(.top, 30).padding(.bottom, 24)
+        // a band across the whole card between sections, so each one reads as its own block
+        .overlay(alignment: .top) { Rectangle().fill(Palette.fill).frame(height: 8).padding(.horizontal, -20) }
     }
 }
 
@@ -63,9 +64,9 @@ struct FactGrid: View {
     let facts: [Fact]
 
     var body: some View {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 140), spacing: 14, alignment: .topLeading)], alignment: .leading, spacing: 14) {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 140), spacing: 20, alignment: .topLeading)], alignment: .leading, spacing: 22) {
             ForEach(facts.filter { !$0.value.isEmpty }) { f in
-                VStack(alignment: .leading, spacing: 3) {
+                VStack(alignment: .leading, spacing: 4) {
                     Text(f.label.uppercased()).font(.atlasLabel).kerning(0.6).foregroundStyle(Palette.soft)
                     Text(f.value).font(.atlasValue).foregroundStyle(Palette.ink)
                     if !f.note.isEmpty { Text(f.note).font(.atlasNote).foregroundStyle(Palette.soft) }
@@ -80,7 +81,7 @@ struct FactGrid: View {
 struct SubCaption: View {
     let text: String
     init(_ text: String) { self.text = text }
-    var body: some View { Text(text).font(.atlasNote).foregroundStyle(Palette.soft).padding(.top, 4) }
+    var body: some View { Text(text).font(.atlasNote).foregroundStyle(Palette.soft).padding(.top, 8) }
 }
 
 /// Grapes or names as chips, colored down the left edge by skin.
@@ -208,22 +209,26 @@ struct Rose: View {
     }
 }
 
-/// "Why it matters": short labelled points.
+/// What the numbers above mean for the vines: short labelled points, set apart in a panel.
 struct Reading: View {
+    let title: String
     let points: [(String, String)]
 
     var body: some View {
         if !points.isEmpty {
-            VStack(alignment: .leading, spacing: 8) {
-                Text("WHY IT MATTERS").font(.atlasLabel).kerning(0.6).foregroundStyle(Palette.soft)
+            VStack(alignment: .leading, spacing: 14) {
+                Text(title.uppercased()).font(.atlasLabel).kerning(0.6).foregroundStyle(Palette.soft)
                 ForEach(Array(points.enumerated()), id: \.offset) { _, p in
-                    VStack(alignment: .leading, spacing: 2) {
+                    VStack(alignment: .leading, spacing: 3) {
                         Text(p.0).font(.atlasLabel).foregroundStyle(Palette.ink)
                         Text(p.1).font(.atlasBody).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
                     }
                 }
             }
-            .padding(.top, 6)
+            .padding(16)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Palette.fill.opacity(0.7), in: RoundedRectangle(cornerRadius: 14))
+            .padding(.top, 4)
         }
     }
 }

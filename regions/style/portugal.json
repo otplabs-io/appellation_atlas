@@ -1,0 +1,87 @@
+{
+ "portugal": {
+  "notes": [],
+  "art": [
+   "Portuguese wine",
+   "Chardonnay"
+  ]
+ },
+ "portugal/bairrada": {
+  "notes": [
+   "Baga, its highly acidic and tannic grape, is used for both red and sparkling wine."
+  ],
+  "art": [
+   "Bairrada DOC"
+  ]
+ },
+ "portugal/douro": {
+  "notes": [],
+  "art": [
+   "Douro DOC",
+   "Touriga Nacional"
+  ]
+ },
+ "portugal/porto": {
+  "notes": [
+   "Port is usually a sweet red, fortified with grape spirit that stops fermentation, giving 19 to 22% alcohol.",
+   "It has intense aroma, rich fruit and high sweetness, from small, dense grapes with concentrated flavor.",
+   "Ruby ports are aged briefly in large vessels to keep their bright red color and full fruit.",
+   "Tawny ports age in wooden barrels, slowly oxidizing to a golden-brown color with nutty flavors.",
+   "White port is made from white grapes in dry to very sweet styles."
+  ],
+  "art": [
+   "Port wine"
+  ]
+ },
+ "portugal/vinho-verde": {
+  "notes": [
+   "White Vinho Verde is very fresh from natural acidity, with fruity and floral aromas.",
+   "It is pale lemon to straw, usually 8.5 to 11% alcohol, from Loureiro, Arinto, Trajadura, Avesso and Azal.",
+   "Alvarinho from Monção and Melgaço has more alcohol, 11.5 to 14%, and ripe tropical aromas."
+  ],
+  "art": [
+   "Vinho Verde"
+  ]
+ },
+ "portugal/dao": {
+  "notes": [
+   "Dão reds are ruby, with complex fruit and floral aromas, good structure, soft tannins and good acidity.",
+   "The reds age well.",
+   "The whites are lemon-colored, with complex fruity and mineral aromas, and are fresh, with good acidity that gives length.",
+   "Vines grow mostly on granite, in a region ringed by mountains, with cold, rainy winters and very hot, dry summers."
+  ],
+  "ref": [
+   "pt-dao"
+  ]
+ },
+ "portugal/alentejo": {
+  "notes": [
+   "Alentejo wines taste young, fruity or floral when new, and develop more complex aromas with age.",
+   "Reds range from ruby to deep red, and whites from pale lemon to light gold.",
+   "Some wine is still made in large clay pots called talhas, a tradition dating back to Roman times."
+  ],
+  "ref": [
+   "pt-alentejo"
+  ]
+ },
+ "portugal/alentejano": {
+  "notes": [
+   "Alentejano wines are fruity and smooth, with a full, sturdy body.",
+   "About 3,000 hours of sun a year favor ripeness and deep color in the grapes.",
+   "Young wines are fruity or floral and grow more complex with age."
+  ],
+  "ref": [
+   "pt-alentejano"
+  ]
+ },
+ "portugal/lisboa": {
+  "notes": [
+   "Lisboa makes a wide range of wines: red, white, rosé, sparkling, fortified and the light Leve.",
+   "Lisboa Leve is low in alcohol, with fruity or floral aromas and a tart, fresh taste.",
+   "Its Atlantic coast and varied hills, soils and climate account for the range."
+  ],
+  "ref": [
+   "pt-lisboa"
+  ]
+ }
+}

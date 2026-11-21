@@ -24,14 +24,23 @@ const score=id=>PL[id]?PL[id][2]:-1;
 // out the rest. The span is at least 20 points, so places that are nearly equal stay nearly the same shade.
 function rangeOf(ids){const v=ids.map(score).filter(x=>x>=0); return v.length?[Math.min(...v),Math.max(...v)]:[0,0];}
 function tierOf(s,r){if(s<0) return 0; const lo=Math.min(r[0],r[1]-20), t=(s-lo)/(r[1]-lo); return t>=.85?4:t>=.6?3:t>=.35?2:1;}
-const wset=id=>!!(PL[id]&&PL[id][6]);   // in the WSET Level 4 Diploma (regions/wset.json): drawn in gold, the rest in greys
-function shade(id,s,r){const t=tierOf(s,r); return wset(id)?`a${Math.max(1,t)}`:`a${t} o`;}
+// The pills pick the gold: Benchmarks shows the classic places to learn first and the regions above them,
+// All every place inside the classic regions; the rest are grey
+const LEVELS={b:{name:'Benchmarks',on:'Benchmark region',off:'Emerging region',ons:'Benchmark regions',offs:'Emerging regions'},d:{name:'All',on:'Benchmark region',off:'Emerging region',ons:'Benchmark regions',offs:'Emerging regions'}};
+S.lvl=(()=>{try{const v=localStorage.getItem('atlas.level'); return LEVELS[v]?v:(v==='2'||v==='3')?'b':'d';}catch(e){return 'd';}})();
+const gold=id=>{const x=PL[id]; if(!x) return false; return S.lvl==='d'?!!x[6]:!!(x[7]&15);};
+function setLevel(v){S.lvl=v; try{localStorage.setItem('atlas.level',v);}catch(e){} keyText(); restyle(); labels(); draw(); render();}
+function keyText(){const L=LEVELS[S.lvl]; $('#keyOn').textContent=L.on; $('#keyOff').textContent=L.off;
+  for(const b of document.querySelectorAll('#study button')) b.setAttribute('aria-pressed',String(b.dataset.l===S.lvl));}
+function shade(id,s,r){const t=tierOf(s,r); return gold(id)?`a${Math.max(1,t)}`:`a${t} o`;}
 
 // ---------- the map: an orthographic globe that flies from the world down to the appellation
 const RAD=Math.PI/180, TAU=2*Math.PI;
 async function view(id){
   if(!VIEWS[id]){const r=await fetch('geo/views/'+id.replace(/\//g,'__')+'.json'); if(!r.ok) return null; const v=await r.json();
-    for(const it of v.items) if(it.p) it.g=prep(it.p); if(v.ctx) for(const c of v.ctx) c.g=prep(c.p); v.og=prep(v.outline); VIEWS[id]=v;}
+    for(const it of v.items) if(it.p) it.g=prep(it.p); if(v.ctx) for(const c of v.ctx) c.g=prep(c.p); v.og=prep(v.outline);
+    if(v.water) for(const w of v.water) w.g=w.k==='l'?prep(w.p.map(r=>[r])):prepLines(w.p);
+    VIEWS[id]=v;}
   return VIEWS[id];
 }
 function viewFor(p){let id=p; while(id&&id!=='world'&&!(GEO.places[id]&&GEO.places[id].view)) id=GEO.places[id]?.parent; return id||'world';}
@@ -45,6 +54,13 @@ function prep(P){
     for(const r of rs) for(let i=0;i<r.n;i++){const d=r.cp[i]*Math.cos(r.lam[i])*X+r.cp[i]*Math.sin(r.lam[i])*Y+r.sp[i]*Z; if(d<m) m=d;}
     return {rs,c:[X,Y,Z],rad:Math.acos(Math.max(-1,Math.min(1,m)))};});
 }
+function prepLines(L){   // a river's lines, as the polygons are kept: angles ready, and a cap around each to skip the ones out of sight
+  return L.map(r=>{const n=r.length/2, lam=new Float64Array(n), cp=new Float64Array(n), sp=new Float64Array(n); let X=0,Y=0,Z=0;
+    for(let i=0;i<n;i++){const l=r[2*i]*RAD,p=r[2*i+1]*RAD; lam[i]=l; cp[i]=Math.cos(p); sp[i]=Math.sin(p); X+=cp[i]*Math.cos(l); Y+=cp[i]*Math.sin(l); Z+=sp[i];}
+    const Ln=Math.hypot(X,Y,Z)||1; X/=Ln;Y/=Ln;Z/=Ln; let m=1;
+    for(let i=0;i<n;i++){const d=cp[i]*Math.cos(lam[i])*X+cp[i]*Math.sin(lam[i])*Y+sp[i]*Z; if(d<m) m=d;}
+    return {n,lam,cp,sp,c:[X,Y,Z],rad:Math.acos(Math.max(-1,Math.min(1,m)))};});
+}
 function camOf(lon,lat,R){const l0=lon*RAD,p0=lat*RAD; return {lon,lat,R,l0,c0:Math.cos(p0),s0:Math.sin(p0),v:[Math.cos(p0)*Math.cos(l0),Math.cos(p0)*Math.sin(l0),Math.sin(p0)]};}
 function pt(cam,lon,lat){const d=lon*RAD-cam.l0,p=lat*RAD,cp=Math.cos(p),sp=Math.sin(p),cd=Math.cos(d);
   return [cp*Math.sin(d),cam.c0*sp-cam.s0*cp*cd,cam.s0*sp+cam.c0*cp*cd];}
@@ -54,7 +70,7 @@ function projRing(r,cam){const out=new Array(r.n);
   for(let i=0;i<r.n;i++){const d=r.lam[i]-cam.l0,cd=Math.cos(d),cp=r.cp[i],sp=r.sp[i]; out[i]=[cp*Math.sin(d),cam.c0*sp-cam.s0*cp*cd,cam.s0*sp+cam.c0*cp*cd];}
   return out;}
 function cross(a,b){const t=a[2]/(a[2]-b[2]),x=a[0]+t*(b[0]-a[0]),y=a[1]+t*(b[1]-a[1]),L=Math.hypot(x,y)||1; return [x/L,y/L,0];}
-function clip(rings){   // cut a polygon at the horizon and close it along the globe's edge (outer rings run counterclockwise)
+function clip(rings,reach=Math.PI){   // cut a polygon at the horizon and close it along the globe's edge (outer rings run counterclockwise)
   const out=[],segs=[];
   for(const r of rings){const n=r.length; let vis=0; for(const p of r) if(p[2]>=0) vis++;
     if(vis===n){out.push(r); continue;} if(!vis) continue;
@@ -66,7 +82,7 @@ function clip(rings){   // cut a polygon at the horizon and close it along the g
   const A=p=>Math.atan2(p[1],p[0]), sg=segs.map(p=>({p,a0:A(p[0]),a1:A(p[p.length-1]),used:false}));
   for(const s0 of sg){if(s0.used) continue; const ring=[]; let s=s0;
     for(let g=0;g<400;g++){s.used=true; for(const q of s.p) ring.push(q);
-      let best=null,bd=9; for(const t of sg) if(!t.used||t===s0){let d=(t.a0-s.a1)%TAU; if(d<0) d+=TAU; if(d<bd){bd=d;best=t;}}
+      let best=null,bd=9; for(const t of sg) if(!t.used||t===s0){let d=(t.a0-s.a1)%TAU; if(d<0) d+=TAU; if(d>TAU-.1&&reach<1.4) d=0; if(d<bd){bd=d;best=t;}}
       const st=Math.ceil(bd/.06); for(let k=1;k<st;k++){const a=s.a1+bd*k/st; ring.push([Math.cos(a),Math.sin(a)]);}
       if(!best||best===s0) break; s=best;}
     out.push(ring);}
@@ -77,9 +93,20 @@ const r1=v=>Math.round(v*10)/10;
 function polyD(poly,cam){
   const dot=poly.c[0]*cam.v[0]+poly.c[1]*cam.v[1]+poly.c[2]*cam.v[2], dist=Math.acos(Math.max(-1,Math.min(1,dot)));
   if(dist-poly.rad>M.va||Math.sin(Math.min(poly.rad,1.5))*cam.R<.35) return '';
-  let rings=poly.rs.map(r=>projRing(r,cam)); if(dist+poly.rad>Math.PI/2-1e-4) rings=clip(rings);
+  let rings=poly.rs.map(r=>projRing(r,cam)); if(dist+poly.rad>Math.PI/2-1e-4) rings=clip(rings,poly.rad);
   const cx=M.W/2,cy=M.H/2,R=cam.R; let d='';
   for(const r of rings) if(r.length>2){d+='M'; for(let i=0;i<r.length;i++) d+=(i?'L':'')+r1(cx+R*r[i][0])+','+r1(cy-R*r[i][1]); d+='Z';}
+  return d;
+}
+function lineD(ls,cam){   // open lines, broken at the horizon, with points under a pixel apart dropped
+  const cx=M.W/2,cy=M.H/2,R=cam.R; let d='';
+  for(const l of ls){const dot=l.c[0]*cam.v[0]+l.c[1]*cam.v[1]+l.c[2]*cam.v[2]; if(Math.acos(Math.max(-1,Math.min(1,dot)))-l.rad>M.va) continue;
+    let on=false,px=0,py=0;
+    for(let i=0;i<l.n;i++){const dd=l.lam[i]-cam.l0,cd=Math.cos(dd),cp=l.cp[i],sp=l.sp[i];
+      if(cam.s0*sp+cam.c0*cp*cd<0){on=false; continue;}
+      const x=cx+R*cp*Math.sin(dd), y=cy-R*(cam.c0*sp-cam.s0*cp*cd);
+      if(on&&i<l.n-1&&Math.abs(x-px)+Math.abs(y-py)<1) continue;
+      d+=(on?'L':'M')+r1(x)+','+r1(y); px=x; py=y; on=true;}}
   return d;
 }
 function gratD(cam){
@@ -96,7 +123,7 @@ function draw(){
   const cam=M.cam, hd=Math.hypot(M.W,M.H)/2; M.va=hd>=cam.R?Math.PI/2:Math.asin(hd/cam.R)+.01;
   M.ocean.setAttribute('r',r1(cam.R)); M.rim.setAttribute('r',r1(cam.R));
   M.grat.setAttribute('d',cam.R<Math.min(M.W,M.H)*2.5?gratD(cam):'');
-  for(const f of M.feats) if(f.on()) f.el.setAttribute('d',f.g.map(p=>polyD(p,cam)).join(''));
+  for(const f of M.feats) if(f.on()){const d=f.line?lineD(f.g,cam):f.g.map(p=>polyD(p,cam)).join(''); f.el.setAttribute('d',d); if(f.edge) f.edge.setAttribute('d',d);}
 }
 function needWorld(cam,v){
   if(!v.box) return true;
@@ -116,6 +143,10 @@ function buildView(v,par){   // a view's layers: the land near it, its neighbour
   if(v.og.length) addFeat(g,'outline',v.og);
   const ig=el('g',{},g);
   for(const it of v.items) if(it.g){const f=addFeat(ig,'rg',it.g,{'data-id':it.id}); f.it=it;}
+  if(v.water){const wg=el('g',{class:'water'},g);   // the rivers and lakes the pages name (src/water.py), over the places so they show
+    for(const w of v.water.filter(w=>w.k==='l')) addFeat(wg,'lake',w.g);
+    const cg=el('g',{},wg);   // every river's pale edge under every river, so crossings stay clean
+    for(const w of v.water.filter(w=>w.k!=='l')){const f=addFeat(wg,'river',w.g); f.line=true; f.edge=el('path',{class:'river-case'},cg);}}
   g.view=v; return g;
 }
 function dropView(g){M.feats=M.feats.filter(f=>!g.contains(f.el)); g.remove();}
@@ -145,6 +176,29 @@ function labels(){
       const e=el('text',{x:r1(X),y:r1(Y),'font-size':fs,'text-anchor':a,'data-id':it.id},g); e.textContent=t;   // then its measured box, as the estimate runs short on wide names
       const r=e.getBBox(), bx=[r.x-4,r.y,r.x+r.width+4,r.y+r.height]; if(!force&&!free(bx)){e.remove(); continue;}   // 4px apart at least
       placed.push(bx); break;}}
+  for(const w of v.water||[]){   // river and lake names, after the places': along the stretch nearest the middle of the map, or across the lake
+    const tries=[];
+    if(w.k==='l'){const s=scr([w.a[0],w.a[1]]); if(s) tries.push([s,0]);}
+    else for(const l of w.g){const P=[];
+      for(let i=0;i<l.n;i++){const d=l.lam[i]-cam.l0,cd=Math.cos(d),cp=l.cp[i],sp=l.sp[i]; P.push(cam.s0*sp+cam.c0*cp*cd<0?null:[cx+R*cp*Math.sin(d),cy-R*(cam.c0*sp-cam.s0*cp*cd)]);}
+      let last=null;
+      for(let i=0;i<P.length;i++){const p=P[i]; if(!p||p[0]<30||p[0]>M.W-30||p[1]<16||p[1]>M.H-16||(last&&Math.hypot(p[0]-last[0],p[1]-last[1])<24)) continue;
+        let a=i,b=i; const near=q=>q&&Math.hypot(q[0]-p[0],q[1]-p[1])<22;   // the river's heading over about 40px
+        while(a>0&&near(P[a-1])) a--; while(b<P.length-1&&near(P[b+1])) b++;
+        if(a===i&&i>0&&P[i-1]) a=i-1; if(b===i&&i<P.length-1&&P[i+1]) b=i+1; if(a===b) continue;
+        let ang=Math.atan2(P[b][1]-P[a][1],P[b][0]-P[a][0])*180/Math.PI; if(ang>90) ang-=180; if(ang<-90) ang+=180;
+        tries.push([p,ang]); last=p;}}
+    tries.sort((x,y)=>Math.hypot(x[0][0]-cx,x[0][1]-cy)-Math.hypot(y[0][0]-cx,y[0][1]-cy));
+    const wd=w.n.length*11*.52, h=13;
+    for(const [s,ang] of tries.slice(0,60)){const a=ang*Math.PI/180, hw=(Math.abs(Math.cos(a))*wd+Math.abs(Math.sin(a))*h)/2, hh=(Math.abs(Math.sin(a))*wd+Math.abs(Math.cos(a))*h)/2;
+      const bx=[s[0]-hw,s[1]-hh,s[0]+hw,s[1]+hh]; if(!free(bx)) continue; placed.push(bx);
+      el('text',{x:r1(s[0]),y:r1(s[1]+4),class:'wl','text-anchor':'middle',transform:`rotate(${r1(ang)} ${r1(s[0])} ${r1(s[1])})`},g).textContent=w.n; break;}}
+  for(const t of v.cities||[]){   // a few towns, for bearings: a dot and the name beside it, wherever there is room
+    const s=scr(t.c); if(!s||s[0]<8||s[0]>M.W-8||s[1]<8||s[1]>M.H-8) continue; const w=t.n.length*11*.55, h=12;
+    const spot=[[s[0]+6,s[1]+4,'start'],[s[0]-6,s[1]+4,'end'],[s[0],s[1]-7,'middle'],[s[0],s[1]+15,'middle']].find(([X,Y,a])=>{const x0=a==='middle'?X-w/2:a==='end'?X-w:X; return free([x0-2,Y-h+2,x0+w+2,Y+3])&&free([s[0]-3,s[1]-3,s[0]+3,s[1]+3]);});
+    if(!spot) continue; const [X,Y,a]=spot, x0=a==='middle'?X-w/2:a==='end'?X-w:X;
+    placed.push([x0-2,Y-h+2,x0+w+2,Y+3],[s[0]-3,s[1]-3,s[0]+3,s[1]+3]);
+    el('circle',{cx:r1(s[0]),cy:r1(s[1]),r:2.6,class:'cd'},g); el('text',{x:r1(X),y:r1(Y),class:'ctl','text-anchor':a},g).textContent=t.n;}
   if(v.id!=='world'){   // the countries around, for bearings
     const here=v.id.split('/')[0], own=PL[here]?.[0];
     for(const c of WORLD.countries){if(c.n===own) continue; const s=scr(c.l); if(!s) continue; const t=c.n.toUpperCase(), w=t.length*10*.62, bx=[s[0]-w/2,s[1]-10,s[0]+w/2,s[1]+3];
@@ -159,8 +213,12 @@ async function fly(v,par){
   let dl=b.lon-a.lon; dl=((dl+540)%360)-180;
   const zr=Math.abs(Math.log(b.R/a.R)), ms=Math.min(1900,900+zr*160);
   M.busy=true; g.style.opacity=0;
-  await new Promise(res=>{const t0=performance.now(); const step=t=>{const k=Math.min(1,(t-t0)/ms), e=ease(k);
-    M.cam=camOf(a.lon+dl*e,a.lat+(b.lat-a.lat)*e,Math.exp(Math.log(a.R)+(Math.log(b.R)-Math.log(a.R))*e));
+  // turn and zoom together, on one easing; between two places far apart and both close up, rise toward the whole globe in the middle of the flight
+  const rad=Math.PI/180, R0=Math.min(M.W,M.H)/2*.9, lo=Math.min(a.R,b.R),
+    ang=Math.acos(Math.min(1,Math.sin(a.lat*rad)*Math.sin(b.lat*rad)+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.cos(dl*rad)))/rad,
+    dip=lo>R0*1.5&&ang>15?Math.log(lo/R0)*Math.min(1,ang/60):0;
+  await new Promise(res=>{const t0=performance.now(); const step=t=>{const k=Math.min(1,(t-t0)/ms), e=ease(k), p=e, z=e;
+    M.cam=camOf(a.lon+dl*p,a.lat+(b.lat-a.lat)*p,Math.exp(Math.log(a.R)+(Math.log(b.R)-Math.log(a.R))*z-dip*Math.sin(Math.PI*k)));
     const fi=Math.min(1,Math.max(0,(e-.15)/.6)); g.style.opacity=fi; for(const o of old) o.style.opacity=1-fi; setWorld(Math.max(.001,wa+(wb-wa)*e));
     draw(); k<1?requestAnimationFrame(step):res();}; requestAnimationFrame(step);});
   for(const o of old) dropView(o); M.cam=b; setWorld(wb); g.style.opacity=1; M.busy=false; draw();
@@ -278,10 +336,10 @@ function renderPlaces(){
   const crumbs=[['world','The world'],...chain.map(i=>[i,PL[i][0]]),...(leaf?[[leaf,PL[leaf][0]]]:[])];
   $('#crumbs').innerHTML=crumbs.map(([i,n],k)=>k===crumbs.length-1?`<b>${esc(n)}</b>`:`<a href="${link(i)}">${esc(n)}</a>`).join(' › ');
   if(M.allFor!==vid){M.all=false; M.allFor=vid;}
-  const bench=sorted.filter(wset), emerg=sorted.filter(i=>!wset(i)), cap=bench.length?12:30, shown=M.all?emerg:emerg.slice(0,cap);
+  const bench=sorted.filter(gold), emerg=sorted.filter(i=>!gold(i)), cap=bench.length?12:30, shown=M.all?emerg:emerg.slice(0,cap);
   const step=i=>`<a class="step ts-ladder_step" href="${link(i)}" aria-pressed="${S.p===i}"><i class="sw ${shade(i,score(i),rng)}"></i>${esc(PL[i][0])}${GEO.places[i].source?'':'<small> no map</small>'}</a>`;
   const grp=(head,list,n)=>list.length?`<p class="grp ts-fact_label">${head} <small class="ts-caption">${n}</small></p><div class="steps">${list.map(step).join('')}</div>`:'';
-  const body=grp('Benchmark regions',bench,bench.length)+grp('Emerging regions',shown,emerg.length)
+  const body=grp(LEVELS[S.lvl].ons,bench,bench.length)+grp(LEVELS[S.lvl].offs,shown,emerg.length)
     +(emerg.length>shown.length?`<button type="button" class="link ts-caption more" id="allp">Show all ${emerg.length}</button>`:'');
   const where=vid==='world'?'Countries':'Places in '+esc(PL[vid]?.[0]||'');
   $('#places').innerHTML=!sorted.length?'':leaf&&leaf!=='world'   // on a place's own page its neighbours fold away, so its page comes first
@@ -300,7 +358,15 @@ const fact=(label,value,note)=>value==null||value===''?'':`<div class="fact"><sp
 const chips=list=>`<div class="chips">${list.map(([g,sk,n])=>`<span class="chip ${sk||''}">${esc(g)}${n!=null?`<b>${n}</b>`:''}</span>`).join('')}</div>`;
 const block=(head,body,note)=>body?`<section class="row"><div class="head"><h2 class="ts-section_head">${head}</h2>${note?`<span class="ts-caption">${note}</span>`:''}</div>${body}</section>`:'';
 const toF=c=>c*9/5+32, inch=mm=>mm/25.4, ft=m=>Math.round(m*3.281/10)*10;
-const reading=xs=>xs&&xs.length?`<div class="why"><p class="why-head ts-fact_label">Why it matters</p><dl>${xs.map(([k,v])=>`<dt class="ts-fact_label">${esc(k)}</dt><dd class="ts-body">${esc(v)}</dd>`).join('')}</dl></div>`:'';
+// the grapes left out of what is planted because they are not wine grapes (Copy.leftOut in the app)
+const andList=xs=>xs.length>1?xs.slice(0,-1).join(', ')+' and '+xs[xs.length-1]:(xs[0]||'');
+// notes on the rules facts (Copy.rules in the app)
+const COPY={baseYield:'the yield its rules set; some years a little more is allowed',yieldCeiling:'the most its rules allow in any year; the usual limit is lower',
+  yieldLimit:'the most the 2022 EU record allows; some of its wines may have lower limits, and rules change',recognised:'the year its rules say it was first recognised, sometimes under an older name',noShares:'The 2022 EU record lists the grapes allowed, not their shares. Later changes to the rules may not be in it.',noRoles:'The cahier gives these grapes different roles in different wines, so they are listed here by colour.',anyName:' That is every vineyard there, whatever name its wine is sold under.',limitsHead:'Planting rules: shares of each grower\u2019s vineyard, not of the blend',blendHead:'Blend rules: shares of the wine itself',
+  forWine:w=>`Main grapes, for ${w}`,whitesOlder:y=>`red grapes as of ${y}, white grapes from an earlier survey, so the shares are approximate.`,desertRain:'Rain is left out: the 4.5 km grid takes in the wetter hills around the vineyards, so its totals run well above what weather stations among the vines record.'};
+const rockShare=v=>v>=.5?'mostly':v>=.25?'much':'some';   // a rock family's share in words: it comes from a few map points (Copy.share in the app)
+const leftOut=l=>l?(l.juice?` Juice grapes are left out: ${esc(andList(l.juice))}.`:'')+(l.table?` Table grapes are left out: ${esc(andList(l.table))}.`:''):'';
+const reading=(xs,head)=>xs&&xs.length?`<div class="why"><p class="why-head ts-fact_label">${head}</p><dl>${xs.map(([k,v])=>`<dt class="ts-fact_label">${esc(k)}</dt><dd class="ts-body">${esc(v)}</dd>`).join('')}</dl></div>`:'';
 const para=t=>t?`<p class="ts-body soil-text">${esc(t)}</p>`:'';
 const bigNote=f=>f.large?`<p class="ts-caption big-note">${f.parts?'Too big and varied for one reading. These figures average all of it; the table further down compares the places inside.':'Too big and varied for one reading. These figures average all of it, hills and valleys alike.'}</p>`:'';
 function scale(segs,i,pos,label){   // a row of categories, the place's one lit and marked
@@ -318,6 +384,7 @@ function months(vals,unit,cls,south){   // twelve bars, the growing season marke
 }
 const SHAPE_NOTE={'Eurostat NUTS, the area it is named for':'The map draws the department, province or region it is named for. The PGI\u2019s own area can differ a little.',
   'Eurostat LAU, the commune it is named for':'The map draws the commune it is named for.',
+  'Eurostat LAU, the municipalities its rules name':'The map draws the municipalities its rules name.',
   'Chile Decreto 464, drawn from its comunas and provinces':'The boundary follows the comunas and provinces that Chile\u2019s Decreto 464 names.',
   'geoBoundaries, the department it is named for':'The map draws the department it is named for. The IG\u2019s own area can be smaller.',
   'geoBoundaries, the province it is named for':'The map draws the province.',
@@ -325,10 +392,11 @@ const SHAPE_NOTE={'Eurostat NUTS, the area it is named for':'The map draws the d
   'union of its children':'There is no single boundary for it, so the map joins the places inside it.'};
 function renderTitle(id,f){   // the place's name, what it is and which group it is in, above the map
   const cap=x=>x?x[0].toUpperCase()+x.slice(1):x;
-  if(id==='world'){$('#ptitle').innerHTML=`<h2 class="ts-sheet_title name">The world</h2>`; $('#shapeNote').hidden=true; return;}
+  if(id==='world'){$('#ptitle').innerHTML=`<h2 class="ts-sheet_title name">Explore the world’s wine regions</h2>`; $('#shapeNote').hidden=true; return;}
   const kind=f?(f.kind.length?f.kind.map(cap).join(' and '):(f.depth===0?'Country':f.shape==='Eurostat LAU, the commune it is named for'?'Commune':'Region')):'';
-  $('#ptitle').innerHTML=`<p class="ts-eyebrow eyebrow">${esc(kind)}${kind?' · ':''}<span class="badge ${wset(id)?'':'o'}">${wset(id)?'Benchmark region':'Emerging region'}</span></p><h2 class="ts-sheet_title name" style="--n:${Math.max(...String(PL[id]?.[0]||id).split(/\s+/).map(w=>w.length))}">${esc(PL[id]?.[0]||id)}</h2>`
-    +(f&&f.also.length?`<p class="ts-caption also">Also ${f.also.map(esc).join(', ')}</p>`:'');
+  $('#ptitle').innerHTML=`<p class="ts-eyebrow eyebrow">${esc(kind)}${kind?' · ':''}<span class="badge ${gold(id)?'':'o'}">${gold(id)?LEVELS[S.lvl].on:LEVELS[S.lvl].off}</span></p><h2 class="ts-sheet_title name" style="--n:${Math.max(...String(PL[id]?.[0]||id).split(/\s+/).map(w=>w.length))}">${esc(PL[id]?.[0]||id)}</h2>`
+    +(f&&f.also.length?`<p class="ts-caption also">Also ${f.also.map(esc).join(', ')}</p>`:'')
+    +(f&&f.blurb?`<p class="ts-body blurb">${esc(f.blurb.text)}</p>`:'');   // what the place is known for (PlacePage in the app)
   const sn=f&&SHAPE_NOTE[f.shape]; $('#shapeNote').hidden=!sn; $('#shapeNote').textContent=sn||'';
 }
 function renderInfo(f){
@@ -347,6 +415,9 @@ function renderInfo(f){
     X.glance=block('At a glance',b);
   }
   const R=f.research;
+  if(f.keyfacts&&f.keyfacts.length) X.keyfacts=block('Key facts',`<ul class="keyfacts">${f.keyfacts.map(t=>`<li class="ts-body">${esc(t)}</li>`).join('')}</ul>`);   // from the full article (src/keyfacts.py)
+  if(f.style&&f.style.notes.length) X.style=block('Wine style',`${f.style.of?`<p class="ts-caption sub">Written for ${esc(f.style.of)} as a whole.</p>`:''}<ul class="keyfacts">${f.style.notes.map(t=>`<li class="ts-body">${esc(t)}</li>`).join('')}</ul>`);   // what the wines taste like (src/style.py)
+  if(f.terms&&f.terms.length) X.terms=block('Labeling rules',`<dl class="terms">${f.terms.map(([t,d])=>`<div><dt class="ts-fact_label">${esc(t)}</dt><dd class="ts-body">${esc(d)}</dd></div>`).join('')}</dl>`);   // the label terms its region uses (src/terms.py)
   if(R&&R.sheet){X.short=block('In short',`<div class="prose">${Object.values(R.sheet).filter(Boolean).map(t=>`<p class="ts-body">${esc(t)}</p>`).join('')}</div>`,'From our research');}
   const pl=f.planted;
   if(pl&&pl.grapes.length){
@@ -354,28 +425,43 @@ function renderInfo(f){
     const where=pl.scope==='country'?'':pl.scope==='own'?`in ${pl.names.join(' and ')}`:pl.scope==='within'?`across ${pl.names.slice(0,4).join(', ')}${pl.names.length>4?` and ${pl.names.length-4} more`:''}`
       :`${pl.names.slice(0,3).join(', ')}${pl.names.length>3?` and ${pl.names.length-3} more`:''}`;
     const top=pl.grapes[0][1]||1, ac=ha=>fmt(Math.round(ha*2.471));
-    const other=pl.grapes.find(([g])=>g==='Other'), rows=pl.grapes.filter(([g,ha])=>g!=='Other'&&(ha/pl.ha>=.01||pl.grapes.length<=6)).map(([g,ha,c],k)=>`<div class="gr ${pl.legal?pl.legal[pl.grapes.findIndex(x=>x[0]===g)]||'':''}"><span class="g ts-body"><i class="dot ${c==='W'?'w':c==='R'?'r':'o'}"></i>${esc(g)}</span><span class="bar"><i style="width:${Math.min(100,Math.max(1,ha/top*100))}%"></i></span><span class="pc ts-caption">${Math.round(ha/pl.ha*100)||'<1'}%</span>${pl.legal&&pl.legal[pl.grapes.findIndex(x=>x[0]===g)]==='minor'?'<span class="tag ts-caption">minor role</span>':''}</div>`).join('');
-    const cap=wide?`No figures exist for ${esc(f.name)} alone. These are for ${esc(where)}, the wider area it sits in: ${ac(pl.ha)} acres of vines, ${pl.year}.`:`${ac(pl.ha)} acres of vines${where?' '+esc(where):''}, ${pl.year}`;
+    const other=pl.grapes.find(([g])=>g==='Other'), rows=pl.grapes.filter(([g,ha])=>g!=='Other'&&ha/pl.ha>=.01).map(([g,ha,c],k)=>`<div class="gr ${pl.legal?pl.legal[pl.grapes.findIndex(x=>x[0]===g)]||'':''}"><span class="g ts-body"><i class="dot ${c==='W'?'w':c==='R'?'r':'o'}"></i>${esc(g)}</span><span class="bar"><i style="width:${Math.min(100,Math.max(1,ha/top*100))}%"></i></span><span class="pc ts-caption">${Math.round(ha/pl.ha*100)||'<1'}%</span>${pl.legal&&pl.legal[pl.grapes.findIndex(x=>x[0]===g)]==='minor'?'<span class="tag ts-caption">minor role</span>':''}</div>`).join('');
+    const amt=pl.whites_older?COPY.whitesOlder(pl.year):`${ac(pl.ha)} acres of wine grapes, ${pl.year}.`;
+    const cap=wide?`No figures exist for ${esc(f.name)} alone. These are for ${esc(where)}, the wider area it sits in: ${amt}`+leftOut(pl.left):(pl.whites_older?`Wine grapes${where?' '+esc(where):''}: `+amt:`${ac(pl.ha)} acres of wine grapes${where?' '+esc(where):''}, ${pl.year}.`)+(pl.any_name?COPY.anyName:'')+leftOut(pl.left);
     const key=wide?[`Allowed in ${esc(f.name)}`,`Not allowed in ${esc(f.name)}`]:[`Can carry the ${esc(f.name)} name`,'Grown here, but sold under another name'];
     X.planted=block(wide?'Planted in the wider area':'What is planted',`<p class="ts-caption sub">${cap}</p>${pl.legal?`<p class="ts-caption sub legal-key"><span><i class="lk main"></i>${key[0]}</span><span><i class="lk no"></i>${key[1]}</span></p>`:''}<div class="planted">${rows}</div>${other?`<p class="ts-caption sub">Other grapes: ${Math.round(other[1]/pl.ha*100)}%</p>`:''}`,'Share of vineyard area');
   }
   const ru=f.rules;
   if(ru){
+    ru.grapes=ru.grapes||[]; ru.grapes_other=ru.grapes_other||[]; ru.types=ru.types||[]; ru.communes=ru.communes||[];   // a record may leave a list out (Austria's DACs)
     let b='';
-    for(const [sk,head] of SKINS){const g=ru.grapes.filter(x=>x[1]===sk); if(g.length) b+=`<p class="ts-caption sub">${head}</p>${chips(g)}`;}
-    const un=ru.grapes.filter(x=>!x[1]); if(un.length) b+=`<p class="ts-caption sub">Grapes</p>${chips(un)}`;
-    if(ru.grapes_other.length) b+=`<p class="ts-caption sub">Also allowed, in smaller roles</p>${chips(ru.grapes_other)}`;
+    if(ru.province_list) b+=`<p class="ts-caption sub">The EU record lists every grape approved in the province or region, not this wine\u2019s own blend rules.</p><details class="more-d"><summary class="ts-caption">All ${ru.grapes.length} grapes</summary>${chips(ru.grapes)}</details>`;
+    else if(ru.long_list) b+=`<details class="more-d"><summary class="ts-caption">The 2022 EU record allows ${ru.grapes.length} grapes</summary>${chips(ru.grapes)}</details>`;
+    else if(ru.by_wine&&ru.by_wine.length){   // the cahier gives each wine its own roles (Malepère: Merlot leads the red, Cabernet Franc the rosé)
+      for(const [w,main,other] of ru.by_wine){
+        b+=`<p class="ts-caption sub">${esc(COPY.forWine(w))}</p>${chips(main)}`;
+        if(other.length) b+=`<p class="ts-caption">Also allowed, in smaller roles</p>${chips(other)}`;
+      }
+    }
+    else{
+      for(const [sk,head] of SKINS){const g=ru.grapes.filter(x=>x[1]===sk); if(g.length) b+=`<p class="ts-caption sub">${head}</p>${chips(g)}`;}
+      const un=ru.grapes.filter(x=>!x[1]); if(un.length) b+=`<p class="ts-caption sub">Grapes</p>${chips(un)}`;
+      if((!ru.cahier||ru.roles_unread)&&ru.grapes.length>1) b+=`<p class="ts-caption">${esc(ru.cahier?COPY.noRoles:COPY.noShares)}</p>`;
+    }
+    if(ru.grapes_other.length&&!(ru.by_wine&&ru.by_wine.length)) b+=`<p class="ts-caption sub">Also allowed, in smaller roles</p>${chips(ru.grapes_other)}`;
     if(ru.grapes_trial&&ru.grapes_trial.length) b+=`<p class="ts-caption sub">On trial, to adapt to a changing climate</p>${chips(ru.grapes_trial)}`;
-    if(ru.limits&&ru.limits.length) b+=`<p class="ts-caption sub">Limits, as a share of the vines</p><ul class="limits">${ru.limits.map(l=>`<li class="ts-body">${esc(l)}</li>`).join('')}</ul>`;
-    b+=`<div class="facts">${fact('Wine types',ru.types.join(', '))}${fact('Highest yield',ru.yield_hl?`${fmt(ru.yield_hl)} hl/ha`:ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:null,ru.yield_hl&&ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:'')}`
-      +`${fact('Fewest vines',ru.density?`${fmt(ru.density)} per ha`:null)}${fact('Irrigation',ru.irrigation)}${fact('Protected since',ru.registered?ru.registered.slice(0,4):null)}${fact('Communes',ru.communes.length?fmt(ru.communes.length):null)}</div>`;
+    if(ru.limits&&ru.limits.length) b+=`<p class="ts-caption sub">${esc(COPY.limitsHead)}</p><ul class="limits">${ru.limits.map(l=>`<li class="ts-body">${esc(l)}</li>`).join('')}</ul>`;
+    if(ru.blend&&ru.blend.length) b+=`<p class="ts-caption sub">${esc(COPY.blendHead)}</p><ul class="limits">${ru.blend.map(l=>`<li class="ts-body">${esc(l)}</li>`).join('')}</ul>`;
+    b+=`<div class="facts">${fact('Wine types',ru.types.join(', '))}${ru.yield_base?fact('Base yield',ru.yield_base,COPY.baseYield):fact(ru.yield_ceiling?'Yield ceiling':'Yield limit',ru.yield_hl?`${fmt(ru.yield_hl)} hl/ha`:ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:null,ru.yield_ceiling?COPY.yieldCeiling:COPY.yieldLimit)}${fact('Recognised',ru.recognised?String(ru.recognised):null,COPY.recognised)}`
+      +`${fact('Fewest vines',ru.density?`${fmt(ru.density)} per ha`:null)}${fact('Irrigation',ru.irrigation)}${fact('Communes',ru.communes.length?fmt(ru.communes.length):null,'in the 2022 EU record')}</div>`;
     if(ru.communes.length) b+=`<details class="more-d"><summary class="ts-caption">The communes</summary><p class="ts-caption">${ru.communes.map(esc).join(', ')}</p></details>`;
-    X.rules=block('The rules',b,'Allowed grapes, not plantings');
+    X.rules=block('Grape and vineyard rules',b,'Allowed grapes, not plantings');
   }
   const av=f.ava;
   if(av){
-    const b=`<div class="facts">${fact('Approved',av.created?av.created.slice(0,4):null)}${fact('State',av.states.join(', '))}${fact('Counties',av.counties.length?fmt(av.counties.length):null,av.counties.slice(0,6).join(', ')+(av.counties.length>6?'…':''))}</div>`
+    const b=`<div class="facts">${fact('In effect from',av.created?av.created.slice(0,4):null)}${fact('State',av.states.join(', '))}${fact('Counties',av.counties.length?fmt(av.counties.length):null,av.counties.slice(0,6).join(', ')+(av.counties.length>6?'…':''))}</div>`
       +(av.within.length?`<p class="ts-caption sub">Inside</p><div class="chips">${av.within.map(n=>`<span class="chip">${esc(n)}</span>`).join('')}</div>`:'')
+      +(av.overlaps&&av.overlaps.length?`<p class="ts-caption sub">Partly inside</p><div class="chips">${av.overlaps.map(n=>`<span class="chip">${esc(n)}</span>`).join('')}</div>`:'')
       +(av.contains.length?`<p class="ts-caption sub">Holds</p><div class="chips">${av.contains.map(n=>`<span class="chip">${esc(n)}</span>`).join('')}</div>`:'')
       +`<p class="ts-caption sub"><a href="${esc(av.cfr_url)}" target="_blank" rel="noopener">Its boundary in the CFR, § ${esc(av.cfr)}</a></p>`;
     X.ava=block('The AVA',b,'US rules name no grapes');
@@ -390,16 +476,16 @@ function renderInfo(f){
   if(c){
     const south=c.lat<0, [gi,gp]=seg(GST_F,c.gst), [wi,wp]=seg(WK_F,c.gdd), wk=f.winkler;
     const b=`<div class="facts">${fact('Growing season',`${Math.round(toF(c.gst))}°F`,'average, April to October'.replace('April to October',south?'October to April':'April to October'))}${fact('Heat',`${fmt(Math.round(c.gdd*1.8/10)*10)} degree days`,'°F, above 50°F')}`
-      +`${fact('Rain',`${Math.round(inch(c.rain))} in/year`,`${Math.round(inch(c.gs_rain))} in while the vines grow`)}${fact('Climate type',esc(c.koppen_name||c.koppen),c.koppen?'Köppen '+c.koppen:'')}</div>`
+      +`${c.rain!=null?fact('Rain',`${Math.round(inch(c.rain))} in/year`,`${Math.round(inch(c.gs_rain))} in while the vines grow`):''}${fact('Climate type',esc(c.koppen_name||c.koppen),c.koppen?'Köppen '+c.koppen+', from a 1991 to 2020 map':'')}</div>`
       +`<p class="ts-caption sub">Growing season: ${esc((GST_F[gi]||['?'])[0].toLowerCase())}</p>${scale(GST_F.map(x=>[x[0],x[3]]),gi,gp,'Growing season temperature class')}`
       +`<p class="ts-caption sub">Winkler region ${esc(wk?wk[0]:'')}</p>${scale(WK_F.map(x=>[x[0],x[3]]),wi,wp,'Winkler region')}${wk&&wk[1]?`<p class="ts-body wk">${esc(wk[1])}</p>`:''}`
-      +bigNote(f)+reading(rd.climate)
-      +`<div class="mrow"><div><p class="ts-caption sub">Average temperature by month, °F</p>${months(c.tavg.map(toF),'temperature','t',south)}</div><div><p class="ts-caption sub">Rain by month, inches</p>${months(c.prec.map(inch),'rain','p',south)}</div></div>`;
-    X.climate=block('Climate',b);
+      +bigNote(f)+reading(rd.climate,'What the climate means for the vines')
+      +`<div class="mrow"><div><p class="ts-caption sub">Average temperature by month, °F</p>${months(c.tavg.map(toF),'temperature','t',south)}</div>${c.prec?`<div><p class="ts-caption sub">Rain by month, inches</p>${months(c.prec.map(inch),'rain','p',south)}</div>`:`<div><p class="ts-caption">${esc(COPY.desertRain)}</p></div>`}</div>`;
+    X.climate=block('Climate',b,'Averages, 1970 to 2000');
   }
   const so=f.soil, rk=f.rocks;
   if(so||rk){
-    const rb=rk&&rk.families.length?`<p class="ts-caption sub">The rock beneath</p><div class="rocks">${rk.families.map(([i,v])=>`<span class="rk r-${i}" style="flex:${v}"><b class="ts-caption">${esc(rk.names[i]||i)}</b><small class="ts-caption">${Math.round(v*100)}%</small></span>`).join('')}</div>`+para(rd.soil&&rd.soil.rock):'';
+    const rb=rk&&rk.families.length?`<p class="ts-caption sub">The rock beneath, from a geologic map: the main rock units, not each vineyard's soil</p><div class="rocks">${rk.families.map(([i,v])=>`<span class="rk r-${i}" style="flex:${v}"><b class="ts-caption">${esc(rk.names[i]||i)}</b><small class="ts-caption">${rockShare(v)}</small></span>`).join('')}</div>`+para(rd.soil&&rd.soil.rock):'';
     const b=rb+(so?`<p class="ts-caption sub">The soil, 1 to 2 feet down</p><div class="facts">${fact('Texture',so.texture)}${fact('Clay, silt, sand',`${so.clay}, ${so.silt}, ${so.sand}%`)}${fact('pH',so.ph,so.ph_class)}${fact('Stones',so.stones!=null?`${so.stones}%`:null,'of the soil by volume')}</div>`+para(rd.soil&&rd.soil.top):'')+bigNote(f);
     X.soil=block('Rock and soil',b);
   }
@@ -409,7 +495,7 @@ function renderInfo(f){
     const top=te.aspect?Object.entries(te.aspect).sort((a,b)=>b[1]-a[1])[0]:null;
     const rose=te.aspect?`<svg class="rose" viewBox="-50 -50 100 100" role="img" aria-label="Which way the slopes face">${['N','NE','E','SE','S','SW','W','NW'].map((d,k)=>{const r=8+te.aspect[d]/Math.max(...Object.values(te.aspect))*30, a1=(k*45-20)*Math.PI/180, a2=(k*45+20)*Math.PI/180;
         return `<path d="M0 0L${(Math.sin(a1)*r).toFixed(1)} ${(-Math.cos(a1)*r).toFixed(1)}A${r.toFixed(1)} ${r.toFixed(1)} 0 0 1 ${(Math.sin(a2)*r).toFixed(1)} ${(-Math.cos(a2)*r).toFixed(1)}Z"/>`;}).join('')}<text x="0" y="-41" text-anchor="middle">N</text><text x="0" y="48" text-anchor="middle">S</text><text x="45" y="3" text-anchor="middle">E</text><text x="-45" y="3" text-anchor="middle">W</text></svg>`:'';
-    const b=`<div class="land"><div class="facts">${fact('Elevation',`${fmt(ft(te.elev[1]))} ft`,`${fmt(ft(te.elev[0]))} to ${fmt(ft(te.elev[2]))} ft`)}${te.aspect?fact('Grade',`${Math.round(Math.tan(te.slope*Math.PI/180)*100)}%`,`${te.slope}° on average`):fact('Slope',`${te.slope}°`,`${Math.round(te.steep*100)}% steeper than 10°, ${Math.round(te.flat*100)}% flat`)}${top?(top[1]<.3?fact('Slopes face','Every way','no main direction'):fact('Slopes face',DN[top[0]],`${Math.round(top[1]*100)}% of sloping ground`)):''}</div>${rose}</div>`+bigNote(f)+reading(rd.land);
+    const b=`<div class="land"><div class="facts">${fact('Elevation',`${fmt(ft(te.elev[1]))} ft`,`most of it ${fmt(ft(te.elev[0]))} to ${fmt(ft(te.elev[2]))} ft`)}${te.aspect?fact('Grade',`${Math.round(Math.tan(te.slope*Math.PI/180)*100)}%`,`${te.slope}° on average`):fact('Slope',`${te.slope}°`,`${Math.round(te.steep*100)}% steeper than 10°, ${Math.round(te.flat*100)}% flat`)}${top?(top[1]<.3?fact('Slopes face','Every way','no main direction'):fact('Slopes face',DN[top[0]],`${Math.round(top[1]*100)}% of sloping ground`)):''}</div>${rose}</div>`+bigNote(f)+reading(rd.land,'What the land means for the vines');
     X.land=block('The land',b);
   }
   if(R&&R.claims.length){
@@ -428,19 +514,55 @@ function renderInfo(f){
   const src=[...f.sources,...(R?R.sources:[])];
   X.sources=block('Sources',knownLine+(src.length?`<ul class="src ts-caption">${src.map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`:esc(s.name)}</li>`).join('')}</ul>`:''));
   // what the place is, then what grows there, then why it grows there, then the law, then the notes
-  const order=['glance','short','planted','climate','soil','land','parts','rules','ava','gi','found','none','sources'];
-  const JUMP={planted:'Planted',climate:'Climate',soil:'Rock and soil',land:'Land',parts:'Compare',rules:'Rules',ava:'AVA',gi:'GI',found:'Notes'};
+  const order=['keyfacts','style','terms','glance','short','planted','climate','soil','land','parts','rules','ava','gi','found','none','sources'];
+  const JUMP={style:'Style',terms:'Labeling',planted:'Planted',climate:'Climate',soil:'Rock and soil',land:'Land',parts:'Compare',rules:'Vineyard',ava:'AVA',gi:'GI',found:'Notes'};
   for(const k of order) if(X[k]) X[k]=X[k].replace('<section class="row"',`<section class="row" id="s-${k}"`);
   const jumps=order.filter(k=>X[k]&&JUMP[k]);
-  h=(jumps.length>=3?`<nav class="jump" aria-label="On this page">${jumps.map(k=>`<button type="button" class="step ts-ladder_step" data-jump="s-${k}">${JUMP[k]}</button>`).join('')}</nav>`:'')+order.map(k=>X[k]||'').join('');
+  h=(jumps.length>=3?`<nav class="jump" aria-label="On this page">${jumps.map(k=>`<button type="button" class="step ts-ladder_step" data-jump="s-${k}">${JUMP[k]}</button>`).join('')}</nav>`:'')+order.map(k=>X[k]||'').join('')+FEEDBACK(f.name,f.id);
   $('#info').innerHTML=h;
   for(const b of document.querySelectorAll('#info [data-jump]')) b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView({behavior:'smooth',block:'start'});
   const apb=$('#allparts'); if(apb) apb.onclick=()=>{M.allParts=true; renderInfo(f); M.allParts=false;};
 }
-const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">Every wine country, region and appellation we have, ${fmt(Object.keys(PL).length)} places in all.</p><p class="ts-body">Benchmark regions, in gold, are the ones the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest.</p><p class="ts-body">Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.</p></div></section>`;
+// the feedback form (Google Forms): the place and its page link are filled in, the reader writes the rest
+const FEEDBACK=(name,id)=>`<section class="row" id="s-feedback"><p class="ts-caption">See something wrong or missing?</p><a class="feedback ts-caption" href="${FORM_URL}?usp=pp_url&entry.673545042=${encodeURIComponent(name)}&entry.612336214=${encodeURIComponent(location.origin+location.pathname+link(id))}" target="_blank" rel="noopener">Send feedback</a><p class="ts-caption about-link"><button type="button" class="link ts-caption" data-about>About the Atlas</button></p></section>`;
+// About: where the data comes from and the terms each source sets (About.swift in the app)
+const ABOUT_SOURCES=[
+  ['Candiago et al. 2022, EU wine PDO inventory','European boundaries and rules','https://doi.org/10.1038/s41597-022-01513-0'],
+  ['UC Davis AVA Project','US boundaries','https://github.com/UCDavisLibrary/ava'],
+  ['Eurostat GISCO','Countries and regions','https://ec.europa.eu/eurostat/web/gisco'],
+  ['Wine Australia and IPONZ','Australian and New Zealand boundaries','https://www.wineaustralia.com/'],
+  ['INAO via OpenDataWine','French grand cru plots','https://github.com/24eme/opendatawine'],
+  ['Anderson, Nelgen and Puga','What is planted (CC BY 4.0)','https://doi.org/10.25909/32870405.v1'],
+  ['WorldClim 2.1','Temperature and rain, used with the author\'s permission','https://www.worldclim.org/'],
+  ['Beck et al. 2023','Climate type','https://doi.org/10.1038/s41597-023-02549-6'],
+  ['ISRIC SoilGrids 2.0','Soil (CC BY 4.0)','https://www.isric.org/explore/soilgrids'],
+  ['Macrostrat','Rock (CC BY 4.0)','https://macrostrat.org/'],
+  ['AWS Terrain Tiles','Elevation and slope','https://registry.opendata.aws/terrain-tiles/'],
+  ['Wikidata and Wikimedia','How well known each place is','https://www.wikidata.org/'],
+];
+const REPO='https://github.com/otplabs-io/appellation_atlas';
+function openAbout(){
+  let d=$('#about');
+  if(!d){d=document.createElement('dialog'); d.id='about'; d.className='about'; d.setAttribute('aria-labelledby','about-title'); document.body.appendChild(d);
+    d.addEventListener('click',e=>{if(e.target===d||e.target.closest('[data-close]')) d.close();});}
+  const a=(u,t)=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`;
+  d.innerHTML=`<div class="about-in"><div class="about-head"><h2 id="about-title" class="ts-section_head">About the Atlas</h2><button type="button" class="link ts-body" data-close>Done</button></div>
+    <p class="ts-body">Every wine place in the world on one globe, with what is planted there, its climate, its rock and its land. There is no account and nothing to sign in to.</p>
+    <p class="ts-body">The Atlas is free to use. It is updated from time to time based on feedback from the people who use it.</p>
+    <p class="ts-caption about-n">${fmt(Object.keys(PL).length)} places</p>
+    <h3 class="ts-caption about-h">Open source</h3>
+    <p class="ts-caption">The code is on GitHub under the MIT License. Anyone can read it, copy it, change it and run it on their own computer. ${a(REPO,'github.com/otplabs-io/appellation_atlas')}</p>
+    <h3 class="ts-caption about-h">Where the data comes from</h3>
+    <ul class="about-src">${ABOUT_SOURCES.map(([n,w,u])=>`<li>${a(u,n)}<span class="ts-caption">${esc(w)}</span></li>`).join('')}</ul>
+    <p class="ts-caption about-note">The notes on how soil, slope and climate affect vines are general viticulture. They describe what usually happens, not findings about each place.</p></div>`;
+  d.showModal();
+}
+document.addEventListener('click',e=>{if(e.target.closest('[data-about]')) openAbout();});
+const FORM_URL='https://docs.google.com/forms/d/e/1FAIpQLSc7CmB3DsylFI0kt6tZncSwq53i8jsEuxdrv4deyIuWJHq8oA/viewform';
+const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">${fmt(Object.keys(PL).length)} wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know.</p><p class="ts-body">${S.lvl==='d'?'All turns gold every place inside the classic regions, down to the smallest appellation. Emerging regions, in grey, are the rest.':'Benchmark regions, in gold, are the classic places to learn first. Emerging regions, in grey, are the rest.'} Switch between Benchmarks and All to choose which places are gold.</p><p class="ts-body">Darker shades show the places with the most global interest, measured by how many Wikipedias write about them and how often those pages are read. Each map sets its own scale, so the darkest place is the best known one on that map.</p></div></section>`;
 async function render(){
   readHash(); renderPlaces(); mapShow();
-  if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=WORLD_INFO(); return;}
+  if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=WORLD_INFO()+FEEDBACK('Home','world'); return;}
   renderTitle(S.p,null);
   const id=S.p, f=await facts(id); if(S.p===id) renderInfo(f);
 }
@@ -461,6 +583,7 @@ function wireSearch(){
 async function main(){
   [GEO,WORLD,PL]=await Promise.all(['geo/index.json','geo/world.json','places.json'].map(u=>fetch(u).then(r=>r.json())));
   PL=PL.places; SCORED=Object.values(PL).some(x=>x[2]>=0); mapInit(); wireSearch();
+  for(const b of document.querySelectorAll('#study button')) b.onclick=()=>setLevel(b.dataset.l); keyText();
   addEventListener('hashchange',()=>{render(); window.scrollTo({top:0,behavior:'smooth'});});
   render();
 }

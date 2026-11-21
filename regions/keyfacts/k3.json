@@ -1,0 +1,111 @@
+{
+ "france/hermitage": {
+  "facts": [
+   "Hermitage is a northern Rhône appellation that produces mostly red wine from Syrah, with small amounts of white from Marsanne and Roussanne.",
+   "Appellation rules allow Syrah to be topped up with 15% or less of Marsanne and/or Roussanne.",
+   "Because of their high tannin, the reds are usually aged longer than American or Australian Syrahs and are often cellared up to 40 years.",
+   "Vin de paille, or straw wine, is also produced in the region."
+  ]
+ },
+ "france/languedoc-roussillon": {
+  "facts": [
+   "In the Banyuls Grand Cru AOC, the wine is required to be aged in wood barrels for two and a half years.",
+   "Crémant de Limoux uses the traditional method."
+  ]
+ },
+ "france/loire-valley": {
+  "facts": [
+   "The Upper Loire has Sauvignon blanc in Sancerre and Pouilly-Fumé, and the Lower Loire reaches the Atlantic through Muscadet, where Melon de Bourgogne dominates.",
+   "The Middle Loire, around Touraine, Saumur, Chinon and Vouvray, is dominated by Chenin blanc and Cabernet franc.",
+   "Most production is white wine from Chenin blanc, Sauvignon blanc and Melon de Bourgogne, with red wines from Cabernet franc, especially around Chinon.",
+   "Because of the marginal climate, vintage quality has a bigger effect on Loire wines than on those of other French wine regions.",
+   "With Crémant production throughout the Loire, it is the second largest sparkling wine producer in France after Champagne."
+  ]
+ },
+ "france/margaux": {
+  "facts": [
+   "Margaux has 21 cru classé châteaux, more than any other commune in Bordeaux, including the first growth Château Margaux.",
+   "The appellation includes the villages of Margaux, Cantenac, Arsac, Soussans and Labarde.",
+   "The soil is the thinnest in the Médoc, with the highest proportion of gravel, which gives good drainage.",
+   "Cabernet Sauvignon is the predominant grape, always blended with others, and the wines are known for their perfumed fragrance and blackcurrant fruit.",
+   "Wine from the southern part of the appellation tends to be more powerful but less fragrant, leaning towards plum."
+  ]
+ },
+ "france/medoc": {
+  "facts": [
+   "Médoc AOC covers the northern third of the Médoc peninsula on the Left Bank of the Gironde estuary, and is the area once called Bas-Médoc.",
+   "Soils are Garonne gravel, Pyrenees gravel and clayey limestone, and heavy clay-rich areas suit Merlot better than Cabernet Sauvignon.",
+   "Cabernet Sauvignon and Merlot are the main grapes, with Petit Verdot, Malbec, Cabernet Franc and Carménère also allowed.",
+   "It is mostly an area of cooperatives, and none of its estates were included in the 1855 Bordeaux classification."
+  ]
+ },
+ "france/meursault": {
+  "facts": [
+   "Meursault is a Côte de Beaune commune in Burgundy, and white wine from Chardonnay makes up around 98% of production.",
+   "There are no Grand Cru vineyards within Meursault, but there are several Premier Cru vineyards.",
+   "White Meursault typically shows clear oak influence and malolactic fermentation, which leads to descriptions such as buttery.",
+   "Premier Cru climats lie in two groups, north of the village bordering Volnay and a larger group to the south toward Puligny-Montrachet and Blagny."
+  ]
+ },
+ "france/muscadet-sevre-et-maine": {
+  "facts": [
+   "Muscadet is made in the Pays Nantais at the western end of the Loire Valley, from the Melon de Bourgogne grape alone.",
+   "Muscadet-Sèvre et Maine is the most productive sub-appellation, making more than three-quarters of the region's production, and it takes its name from the rivers Sèvre and Maine.",
+   "Sur lie ageing means the wine stays in contact with the lees after fermentation, which gives a creamier mouthfeel and a fuller body.",
+   "The generic Muscadet AOC cannot use sur lie, but the three sub-appellations can."
+  ]
+ },
+ "france/pauillac": {
+  "facts": [
+   "Pauillac includes three of the five premier cru châteaux of Bordeaux: Latour, Lafite Rothschild and Mouton Rothschild.",
+   "It sits on the Left Bank of the Gironde within the Haut-Médoc, between St-Julien to the south and St-Estèphe to the north.",
+   "The soil is gravelly, and the forest to the west shelters the vines from the Atlantic winds.",
+   "Cabernet Sauvignon is the predominant grape, always blended with other grapes such as Merlot, Cabernet Franc, Petit Verdot, Malbec and Carménère.",
+   "The style has been described as stark, with blackcurrant fruit and pencil-shavings and cigar-box notes."
+  ]
+ },
+ "france/pessac-leognan": {
+  "facts": [
+   "The appellation was created in 1987, and before then the area was part of the Graves AOC.",
+   "It lies in the northern part of Graves, on the left bank of the Garonne, immediately south of the city of Bordeaux.",
+   "It includes Château Haut-Brion, the only red-wine producer outside the Haut-Médoc classified in the 1855 classification, and all the châteaux in the 1953/59 Graves classification.",
+   "Red wines are led by Cabernet Sauvignon with somewhat more Merlot than in the Médoc, while dry whites blend Sauvignon blanc and Sémillon.",
+   "The soil is very gravelly, and the white wines are typically fermented in barrels at a low temperature."
+  ]
+ },
+ "france/pomerol": {
+  "facts": [
+   "Pomerol is a Right Bank appellation in the Libournais, and its wine is predominately Merlot with Cabernet Franc in a supporting role.",
+   "There is no official classification of Pomerol wine, though Château Pétrus is widely held to be equivalent to premier cru.",
+   "The sub-soil is dark packed clay with a high iron content, and the plateau stands on a gravel bank.",
+   "Pomerol is the smallest of the major fine wine regions in Bordeaux, and almost all the wine is estate-bottled.",
+   "The AOC rules from 1936 outlawed plantings of any white grape varieties.",
+   "The wine will typically receive 18 to 20 months of aging in barriques prior to bottling and release."
+  ]
+ },
+ "france/provence": {
+  "facts": [
+   "Provence has nine AOCs, and Côtes de Provence is the largest, followed by Coteaux d'Aix-en-Provence and Coteaux Varois en Provence.",
+   "Red Bandol must age at least 18 months in oak before release and usually needs at least 10 years of aging to develop fully.",
+   "The strong mistral wind from the north cools and dries the grapes, but it can damage vines that are not securely trained.",
+   "Cassis AOC is unusual in Provence because white wine makes up over 75% of its production."
+  ]
+ },
+ "france/puligny-montrachet": {
+  "facts": [
+   "Puligny-Montrachet is a Côte de Beaune commune in Burgundy, and around 99.5% of its production is white wine.",
+   "There are four Grand Cru vineyards: Montrachet, Bâtard-Montrachet, Bienvenues-Bâtard-Montrachet and Chevalier-Montrachet.",
+   "Montrachet and Bâtard-Montrachet cross the communal border and are shared with Chassagne-Montrachet.",
+   "The Premier Cru climats lie both south of the village toward Chassagne-Montrachet and north toward Meursault.",
+   "White Puligny-Montrachet is often very mineral, with more restrained oak than some other Côte de Beaune villages, and is usually described as elegant."
+  ]
+ },
+ "france/rhone-valley": {
+  "facts": [
+   "The Rhône is generally divided into the Northern Rhône and the Southern Rhône, each with distinct vinicultural traditions.",
+   "In the Northern Rhône, Syrah is the only red grape permitted, and whites come from Marsanne, Roussanne and Viognier.",
+   "The northern Rhône has a continental climate with harsh winters and warm summers, and the mistral brings colder air from the Massif Central.",
+   "In parts of the south, Châteauneuf-du-Pape best known, large pebbles around the vine bases absorb the sun's heat by day and keep the vines warm at night."
+  ]
+ }
+}

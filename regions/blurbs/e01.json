@@ -1,0 +1,381 @@
+{
+ "italy/alta-valle-della-greve": {
+  "text": "An Italian IGT (a PGI) reserved for certain wines produced in the metropolitan area of Florence.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Alta Valle della Greve",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Alta_Valle_della_Greve&oldid=152794851"
+  }
+ },
+ "italy/biferno": {
+  "text": "A Molise PDO around Campobasso and Termoli.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/bivongi": {
+  "text": "A Calabria DOC with vineyards in the provinces of Catanzaro and Reggio Calabria, in communes such as Bivongi, Stilo and Caulonia.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Bivongi (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Bivongi_%28vino%29&oldid=152370095"
+  }
+ },
+ "italy/bonarda-dell-oltrepo-pavese": {
+  "text": "A Lombardy DOC in the province of Pavia for still and semi-sparkling wine. The rules name four red grapes: Barbera, Croatina, Uva Rara and Vespolina.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Bonarda dell'Oltrepò Pavese",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Bonarda_dell%27Oltrep%C3%B2_Pavese&oldid=153074879"
+  }
+ },
+ "italy/bosco-eliceo": {
+  "text": "An Emilia-Romagna PDO for communes including Ravenna, Comacchio and Cervia.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/botticino": {
+  "text": "A Lombardy PDO around Brescia, Botticino and Rezzato.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/buttafuoco-dell-oltrepo-pavese": {
+  "text": "An Oltrepò Pavese appellation in Lombardy, limited to seven communes including Broni, Stradella and Canneto Pavese. It allows still and semi-sparkling wine from Barbera, Croatina, Uva Rara and Vespolina, all red grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/calabria": {
+  "text": "A regional PGI covering all of Calabria. Gaglioppo is the main grape, at 46% of vineyard area, followed by Magliocco Canino at 12% and Greco at 8%. Cirò, Melissa, Savuto and Bivongi sit inside it.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "italy/capriano-del-colle": {
+  "text": "A Lombardy PDO limited to two communes, Capriano del Colle and Poncarale, for still and semi-sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/casteggio": {
+  "text": "A Lombardy PDO in seven communes including Casteggio and Montebello della Battaglia. Its rules allow five red grapes: Barbera, Croatina, Pinot Nero, Uva Rara and Vespolina.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/cellatica": {
+  "text": "A Lombardy PDO in four communes: Cellatica, Collebeato, Gussago and Rodengo Saiano.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/cinque-terre": {
+  "text": "A small Ligurian DOC on the coast of La Spezia province, covering Riomaggiore, Vernazza and Monterosso al Mare. It makes dry, delicate white wine based on Bosco, with Albarola and Vermentino, and its rules also cover wine from raisined grapes.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cinque Terre DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cinque_Terre_DOC&oldid=1329481323"
+  }
+ },
+ "italy/ciro": {
+  "text": "A Calabria DOC in the province of Crotone, covering Cirò, Cirò Marina, Crucoli and Melissa.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cirò (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Cir%C3%B2_%28vino%29&oldid=152369865"
+  }
+ },
+ "italy/colli-bolognesi": {
+  "text": "An Emilia-Romagna PDO in the hills around Bologna, in communes such as Sasso Marconi and Zola Predosa.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-bolognesi-pignoletto": {
+  "text": "An Emilia-Romagna PDO in communes such as Sasso Marconi and Zola Predosa.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-d-imola": {
+  "text": "An Emilia-Romagna DOC for wine made around Imola and in the commune of Ozzano dell'Emilia.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Colli d'Imola",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Colli_d%27Imola&oldid=152370197"
+  }
+ },
+ "italy/colli-di-faenza": {
+  "text": "An Emilia-Romagna PDO around Faenza, Brisighella and Modigliana.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-di-luni": {
+  "text": "An Italian DOC in both Liguria and Tuscany, making red and white wine mainly from Sangiovese and Vermentino. Wine experts have described its better reds as similar to small scale Chiantis.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Colli di Luni",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Colli_di_Luni&oldid=1220578145"
+  }
+ },
+ "italy/colli-di-parma": {
+  "text": "An Emilia-Romagna PDO in the hills around Parma, in communes such as Langhirano, Fidenza and Salsomaggiore Terme. It covers still, semi-sparkling and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-di-scandiano-e-di-canossa": {
+  "text": "An Emilia-Romagna PDO around Reggio nell'Emilia, Canossa and Scandiano. Its rules cover still, semi-sparkling and quality sparkling wine, and wine from raisined grapes, made from red and white grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colli-piacentini": {
+  "text": "A wine region at the western end of Emilia-Romagna, given DOC status in 1967. Its smaller DOCs include Gutturnio, and it makes over 17 wines, from Vin Santo dessert wine to lightly sparkling frizzante. Vine remains from about 2000 BC have been found there.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Colli Piacentini",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Colli_Piacentini&oldid=1185992741"
+  }
+ },
+ "italy/colli-romagna-centrale": {
+  "text": "An Emilia-Romagna PDO for still wine in communes such as Forlì, Cesena and Bertinoro.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/colline-di-levanto": {
+  "text": "A Ligurian DOC next to Cinque Terre, with very similar soils and mesoclimate. It makes red wine mainly from Sangiovese and white mainly from Vermentino.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Colline di Levanto DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Colline_di_Levanto_DOC&oldid=1330554342"
+  }
+ },
+ "italy/curtefranca": {
+  "text": "A Lombardy PDO in communes including Corte Franca, Erbusco and Iseo.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/emilia-romagna": {
+  "text": "A regional PDO covering Emilia-Romagna. Trebbiano Romagnolo is the most planted grape at 30% of vineyard area, followed by Sangiovese at 13% and Lambrusco Salamino at 10%. Inside it sit Romagna, Modena, Reggiano and Lambrusco appellations.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "italy/garda": {
+  "text": "A DOC around Lake Garda, between Verona and Mantua.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Garda (vino)",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Garda_%28vino%29&oldid=152370005"
+  }
+ },
+ "italy/garda-colli-mantovani": {
+  "text": "A Lombardy PDO in six communes, among them Solferino, Cavriana and Monzambano.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/greco-di-bianco": {
+  "text": "A Calabria DOC for passito wines, made in the province of Reggio Calabria. It is made in the commune of Bianco and part of Casignana, from Greco Bianco.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Greco di Bianco",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Greco_di_Bianco&oldid=152369775"
+  }
+ },
+ "italy/gutturnio": {
+  "text": "An Emilia-Romagna PDO for still and semi-sparkling wine made from just two red grapes, Barbera and Croatina. Its communes include Castell'Arquato, Carpaneto Piacentino and Borgonovo Val Tidone.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/lamezia": {
+  "text": "A Calabria PDO in communes including Lamezia Terme, Maida and Falerna.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/liguria": {
+  "text": "A wine region on the Italian Riviera, bordered by the Alps, Piedmont and Emilia-Romagna. Vermentino makes up 68% of plantings. Cinque Terre makes light whites from Bosco, Albarola and Vermentino, and Dolceacqua makes reds from Rossese.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Liguria wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Liguria_wine&oldid=1330554265"
+  }
+ },
+ "italy/lombardy": {
+  "text": "A north central Italian wine region known particularly for sparkling wine from Franciacorta and Oltrepò Pavese. It also makes still wines, including Nebbiolo in Valtellina and Trebbiano di Lugana whites near Lake Garda.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Lombardy wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Lombardy_wine&oldid=1383747058"
+  }
+ },
+ "italy/melissa": {
+  "text": "A Calabria PDO in communes including Melissa, Crotone and Santa Severina. Its rules allow just five grapes: Gaglioppo, Greco Bianco, Greco Nero, Malvasia Bianca and Trebbiano Toscano.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/molise": {
+  "text": "A regional PDO covering Molise, for still, semi-sparkling and quality sparkling wine. Montepulciano makes up 53% of vineyard area, followed by Trebbiano Toscano at 15%. Biferno, Pentro di Isernia and Tintilia del Molise sit inside it.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "italy/oltrepo-pavese": {
+  "text": "A Lombardy PDO that makes still, semi-sparkling, sparkling, aromatic sparkling, liqueur and raisined-grape wines. Lombardy is known particularly for its sparkling wines from the Oltrepò Pavese and Franciacorta areas.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Lombardy wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Lombardy_wine&oldid=1383747058"
+  }
+ },
+ "italy/oltrepo-pavese-metodo-classico": {
+  "text": "An Oltrepò Pavese PDO in Lombardy for sparkling wine. Its rules allow just four grapes: Chardonnay, Pinot Bianco, Pinot Grigio and Pinot Nero.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/oltrepo-pavese-pinot-grigio": {
+  "text": "An Oltrepò Pavese PDO in Lombardy for still and semi-sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/ortrugo-dei-colli-piacentini": {
+  "text": "An Emilia-Romagna PDO in the Colli Piacentini area, in communes such as Castell'Arquato and Bobbio. It covers still, semi-sparkling and sparkling wine, and its rules allow white grapes only, including Ortrugo.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/pentro-di-isernia": {
+  "text": "A Molise PDO around Isernia and Agnone, also called Pentro.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/pinot-nero-dell-oltrepo-pavese": {
+  "text": "A Lombardy DOC in the province of Pavia for still red wine, made at least 95% from Pinot Nero. Pinot Nero made as white or rosé belongs to the Oltrepò Pavese DOC instead. It became its own DOC in 2010.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Pinot Nero dell'Oltrepò Pavese",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Pinot_Nero_dell%27Oltrep%C3%B2_Pavese&oldid=147693746"
+  }
+ },
+ "italy/pornassio": {
+  "text": "A Ligurian PDO also sold as Ormeasco di Pornassio.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/portofino": {
+  "text": "A Ligurian PDO, also sold under the Golfo del Tigullio name, in communes such as Camogli and Chiavari. It covers still, semi-sparkling, sparkling and raisined-grape wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ }
+}

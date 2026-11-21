@@ -1,0 +1,486 @@
+{
+ "italy": {
+  "notes": [
+   "Italian Pinot Grigio is light bodied, often lean and pale, crisp and acidic, picked early to keep it fresh.",
+   "Merlot's low acidity often softens blends with Italy's higher-acid grapes.",
+   "Montepulciano has moderately low acidity and soft tannins for an Italian grape.",
+   "Nero d'Avola, from Sicily, has dark fruit and strong tannins."
+  ],
+  "art": [
+   "Pinot gris",
+   "Merlot",
+   "Montepulciano (grape)",
+   "Italian wine"
+  ]
+ },
+ "italy/aglianico-del-vulture": {
+  "notes": [
+   "Aglianico del Vulture can be full bodied and richly textured, with firm tannin and chocolate-cherry notes.",
+   "Young wines can be rustic and harsh, but they soften and grow silky with age.",
+   "They can improve in bottle for 6 to 20 years."
+  ],
+  "art": [
+   "Aglianico del Vulture"
+  ]
+ },
+ "italy/amarone-della-valpolicella": {
+  "notes": [
+   "Amarone is a rich, dry red from partly dried Corvina, Corvinone and Rondinella grapes.",
+   "Drying gives more tannin, deeper color, more alcohol and more extract."
+  ],
+  "art": [
+   "Amarone"
+  ]
+ },
+ "italy/asolo-prosecco": {
+  "notes": [
+   "Prosecco is aromatic and crisp, bringing to mind yellow apple, pear, white peach and apricot.",
+   "Most is meant to taste fresh, light and fairly simple, with intense primary aromas."
+  ],
+  "art": [
+   "Prosecco"
+  ]
+ },
+ "italy/asti": {
+  "notes": [
+   "Asti is a sparkling wine from Moscato Bianco, sweet or, since 2017, also drier, and Moscato d'Asti is only lightly sparkling.",
+   "It is very floral, with peach and apricot flavors and the musky note of Muscat.",
+   "It has enough acidity to balance its sweetness.",
+   "It is best young, since after two years it loses its fresh, floral notes and turns heavier."
+  ],
+  "art": [
+   "Asti wine",
+   "Muscat (grape and wine)"
+  ],
+  "ref": [
+   "audit-05633dbb"
+  ]
+ },
+ "italy/barbaresco": {
+  "notes": [
+   "It smells of roses or violets, with cherry, truffle, fennel and licorice, and turns smoky, earthy and leathery with age.",
+   "It is very tannic and tight when young and is usually best 5 to 10 years after the vintage.",
+   "Its tannins soften sooner than Barolo's, so it is more approachable young but usually ages less long."
+  ],
+  "art": [
+   "Barbaresco",
+   "Piedmont wine"
+  ]
+ },
+ "italy/barbaresco-in-barbaresco": {
+  "notes": [
+   "It smells of roses or violets, with cherry, truffle, fennel and licorice, and turns smoky, earthy and leathery with age.",
+   "It is very tannic and tight when young and is usually best 5 to 10 years after the vintage."
+  ],
+  "art": [
+   "Barbaresco"
+  ]
+ },
+ "italy/barbera-d-asti": {
+  "notes": [],
+  "art": [
+   "Barbera"
+  ]
+ },
+ "italy/barolo": {
+  "notes": [
+   "Barolo is rich, deeply concentrated and full bodied, with pronounced tannin and acidity.",
+   "Tar and roses are its classic aromas, along with notes such as cherry, licorice, leather, truffle, herbs and dried fruit.",
+   "It ages well and takes on a rust-red tinge as it matures.",
+   "Style varies across the zone. La Morra and Barolo in the west give more perfumed, softer wines. Serralunga and Monforte in the east give more tannic, structured wines that need longer aging."
+  ],
+  "art": [
+   "Barolo",
+   "Piedmont wine"
+  ]
+ },
+ "italy/barolo-in-barolo": {
+  "notes": [
+   "Barolo is rich, deeply concentrated and full bodied, with pronounced tannin and acidity.",
+   "Tar and roses are its classic aromas, and it takes on a rust-red tinge as it matures.",
+   "Wines from around La Morra and Barolo itself are more perfumed and velvety, with less tannin than other Barolo."
+  ],
+  "art": [
+   "Barolo",
+   "Piedmont wine"
+  ]
+ },
+ "italy/bolgheri": {
+  "notes": [
+   "Bolgheri reds may use Cabernet Sauvignon, Merlot and Cabernet Franc in any share, with up to half Syrah or Sangiovese."
+  ],
+  "art": [
+   "Cabernet Franc"
+  ],
+  "ref": [
+   "audit-f6ca377a"
+  ]
+ },
+ "italy/brunello-di-montalcino": {
+  "notes": [
+   "Brunello, from Sangiovese, has more body, color, extract and tannin than Chianti, and a fleshier texture.",
+   "Traditional aging in large Slavonian oak gives a more austere wine, while small French barriques add vanilla.",
+   "Good vintages can age for 20 years or more."
+  ],
+  "art": [
+   "Brunello di Montalcino",
+   "Sangiovese"
+  ]
+ },
+ "italy/rosso-di-montalcino": {
+  "notes": [
+   "Rosso di Montalcino is made from the same grapes and vineyards as Brunello but aged for less time.",
+   "It tastes much like Brunello but is often lighter in body and easier to drink young."
+  ],
+  "art": [
+   "Tuscan wine"
+  ]
+ },
+ "italy/chianti": {
+  "notes": [
+   "Chianti, led by Sangiovese, has medium-high acidity and medium tannin.",
+   "Floral, cherry and light nutty aromas are typical, and basic Chianti shows juicy cherry, plum and raspberry.",
+   "Tobacco and leather can emerge with age."
+  ],
+  "art": [
+   "Chianti"
+  ]
+ },
+ "italy/chianti-classico": {
+  "notes": [
+   "Chianti Classico is medium bodied, with firm tannin and medium-high to high acidity.",
+   "Riserva must age at least 24 months at the winery."
+  ],
+  "art": [
+   "Chianti"
+  ]
+ },
+ "italy/collio": {
+  "notes": [
+   "Collio whites are typically full bodied and rich, made from one grape or a blend of Friulano, Ribolla Gialla, Malvasia, Chardonnay, Pinot Bianco, Pinot Grigio and Sauvignon Blanc.",
+   "Most producers aim for fresh fruit and pure varietal character."
+  ],
+  "art": [
+   "Friuli-Venezia Giulia wine",
+   "Collio Goriziano"
+  ]
+ },
+ "italy/friuli-colli-orientali": {
+  "notes": [
+   "It also makes sweet wines from Picolit and Verduzzo, and dry reds from Pignolo."
+  ],
+  "art": [
+   "Colli Orientali del Friuli"
+  ]
+ },
+ "italy/friuli-venezia-giulia": {
+  "notes": [
+   "Friuli's whites stress pure fruit and acidity, usually without the mask of oak.",
+   "Friulano makes crisp, floral wines that develop notes of nuts and fennel with age.",
+   "Friuli Pinot Grigio is fuller bodied than most in northeast Italy, with delicate peach, almond and green apple.",
+   "Refosco dal Peduncolo Rosso, the best known local red, is herbal, full bodied and ages well."
+  ],
+  "art": [
+   "Friuli-Venezia Giulia wine"
+  ]
+ },
+ "italy/gavi": {
+  "notes": [
+   "Gavi, or Cortese di Gavi, is a dry white made from Cortese."
+  ],
+  "art": [
+   "Cortese di Gavi"
+  ]
+ },
+ "italy/frascati": {
+  "notes": [
+   "Frascati is a still or sparkling white made from at least 70% Malvasia."
+  ],
+  "art": [
+   "Frascati DOC"
+  ],
+  "ref": [
+   "audit-6c880cd3"
+  ]
+ },
+ "italy/vino-nobile-di-montepulciano": {
+  "notes": [
+   "Vino Nobile is Sangiovese-based and must age two years before release, three for riserva."
+  ],
+  "art": [
+   "Tuscan wine"
+  ]
+ },
+ "italy/montepulciano-d-abruzzo": {
+  "notes": [
+   "It is often deeply colored, with pepper, spice, earthy notes and black berries."
+  ],
+  "art": [
+   "Montepulciano d'Abruzzo"
+  ]
+ },
+ "italy/orvieto": {
+  "notes": [
+   "Orvieto today is mostly a dry white, with small amounts of off-dry (abboccato) and sweet (dolce) wine.",
+   "For centuries Orvieto was known for sweet, golden wines, some made with noble rot."
+  ],
+  "art": [
+   "Orvieto DOC"
+  ]
+ },
+ "italy/piemonte": {
+  "notes": [
+   "Barbera is often fruity, with high acidity and less tannin than Nebbiolo."
+  ],
+  "art": [
+   "Piedmont wine"
+  ]
+ },
+ "italy/prosecco-doc": {
+  "notes": [
+   "Prosecco is aromatic and crisp, bringing to mind yellow apple, pear, white peach and apricot.",
+   "Most is meant to taste fresh, light and fairly simple, with intense primary aromas.",
+   "Prosecco Spumante runs from Brut Nature to Demi-Sec, and Extra Dry is the main style."
+  ],
+  "art": [
+   "Prosecco"
+  ],
+  "ref": [
+   "audit-09c68533"
+  ]
+ },
+ "italy/puglia": {
+  "notes": [
+   "Negroamaro is widely planted here and is the backbone of Salice Salentino."
+  ],
+  "art": [
+   "Italian wine"
+  ]
+ },
+ "italy/salice-salentino": {
+  "notes": [
+   "Salice Salentino is built on Negroamaro."
+  ],
+  "art": [
+   "Italian wine"
+  ]
+ },
+ "italy/recioto-della-valpolicella": {
+  "notes": [
+   "Recioto della Valpolicella is a sweet red dessert wine made from dried grapes, the style the region was long known for."
+  ],
+  "art": [
+   "Valpolicella"
+  ]
+ },
+ "italy/recioto-di-soave": {
+  "notes": [
+   "Recioto di Soave is a sweet white made from grapes dried for weeks or months, traditionally on straw mats.",
+   "It is at least 70% Garganega."
+  ],
+  "art": [
+   "Recioto di Soave DOCG",
+   "Soave (wine)"
+  ]
+ },
+ "italy/sicily": {
+  "notes": [
+   "Nero d'Avola, Sicily's native red, has dark fruit and strong tannins, with plum or peppery flavors.",
+   "Grown here as Grecanico Dorato, Garganega ripens late and can have tangy acidity.",
+   "Pantelleria makes a dried-grape dessert wine from Muscat, called Zibibbo."
+  ],
+  "art": [
+   "Italian wine",
+   "Nero d'Avola",
+   "Garganega",
+   "Muscat (grape and wine)"
+  ]
+ },
+ "italy/soave": {
+  "notes": [
+   "Soave is a dry white, mainly from Garganega.",
+   "Classic Soave is medium bodied with a distinct bitter almond note, and some today is light, pale and fresh.",
+   "In the Classico zone, Garganega can give delicate wines with lemon, almond and spice."
+  ],
+  "art": [
+   "Soave (wine)",
+   "Garganega"
+  ]
+ },
+ "italy/tuscany": {
+  "notes": [
+   "Sangiovese is Tuscany's main grape, behind Chianti, Brunello and Vino Nobile. Cabernet Sauvignon here, often blended with Sangiovese, shows ripe black cherry and blackcurrant."
+  ],
+  "art": [
+   "Tuscan wine",
+   "Sangiovese",
+   "Cabernet Sauvignon"
+  ]
+ },
+ "italy/valpolicella": {
+  "notes": [
+   "Basic Valpolicella is light bodied and fragrant, often served slightly chilled, with sour cherry flavor."
+  ],
+  "art": [
+   "Valpolicella"
+  ]
+ },
+ "italy/valpolicella-ripasso": {
+  "notes": [
+   "Ripasso is Valpolicella steeped on the skins and seeds left over from recioto and Amarone.",
+   "This gives it more alcohol, body, tannin, color and flavor than basic Valpolicella."
+  ],
+  "art": [
+   "Valpolicella"
+  ]
+ },
+ "italy/veneto": {
+  "notes": [
+   "Valpolicella is ruby when young and turns garnet with age.",
+   "Soave, from Garganega, is a fragrant white with fine lemon and almond flavor."
+  ],
+  "art": [
+   "Venetian wine",
+   "Merlot"
+  ]
+ },
+ "italy/piedmont": {
+  "notes": [
+   "Barbera is often fruity, with high acidity and less tannin than Nebbiolo.",
+   "Piedmont's whites include dry, crisp Cortese, with citrus and mineral notes."
+  ],
+  "art": [
+   "Piedmont wine"
+  ]
+ },
+ "italy/dolcetto-d-alba": {
+  "notes": [
+   "Dolcetto gives fresh, dry reds with some tannin."
+  ],
+  "art": [
+   "Piedmont wine"
+  ]
+ },
+ "italy/verdicchio-dei-castelli-di-jesi": {
+  "notes": [
+   "Verdicchio can be almost colorless, with a slight green-yellow hue.",
+   "It has noticeably high acidity with citrus notes.",
+   "Sparkling and sweet passito versions are also made."
+  ],
+  "art": [
+   "Verdicchio"
+  ]
+ },
+ "italy/fiano-di-avellino": {
+  "notes": [
+   "Fiano di Avellino is often pale straw, with strong aromas of spice and flowers."
+  ],
+  "art": [
+   "Fiano (grape)"
+  ]
+ },
+ "italy/abruzzo": {
+  "notes": [],
+  "art": [
+   "Montepulciano d'Abruzzo"
+  ]
+ },
+ "italy/delle-venezie": {
+  "notes": [
+   "Italian Pinot Grigio is light bodied, often lean and pale, crisp and acidic."
+  ],
+  "art": [
+   "Pinot gris",
+   "Friuli-Venezia Giulia wine"
+  ]
+ },
+ "italy/alto-adige": {
+  "notes": [
+   "Alto Adige wines stand out for their pronounced primary aromas.",
+   "Whites from vineyards above 300 to 400 m are notably fresh, yet fruity with good structure thanks to strong sun.",
+   "Late-harvest and passito wines are sweet and full."
+  ],
+  "ref": [
+   "it-alto-adige"
+  ]
+ },
+ "italy/trentino": {
+  "notes": [
+   "Trentino wines are balanced between acidity and alcohol and taste clearly of their grape.",
+   "Nosiola makes a dry, savory white with a light bitter edge.",
+   "Vino Santo is a golden to amber sweet wine from Nosiola grapes dried on racks for months.",
+   "It cannot be sold until November of the third year after harvest."
+  ],
+  "ref": [
+   "it-trentino"
+  ]
+ },
+ "italy/taurasi": {
+  "notes": [
+   "Taurasi is made from Aglianico in the hills of Irpinia, where winters are cold and snow is common.",
+   "It is deep ruby, turning garnet and then orange-tinged with age.",
+   "It is dry, full and balanced, with a long finish.",
+   "It must age at least three years, one of them in wood.",
+   "Riserva must age at least four years, with 18 months in wood."
+  ],
+  "ref": [
+   "it-taurasi"
+  ]
+ },
+ "italy/greco-di-tufo": {
+  "notes": [
+   "Greco di Tufo is a straw-yellow white that is fresh, dry and harmonious, with intense, fine aromas.",
+   "Big swings between day and night in its volcanic clay and limestone hills help the grapes keep their acidity.",
+   "Locally, some Greco di Tufo is also sold after several years of aging.",
+   "A sparkling version is also made, from extra brut to extra dry."
+  ],
+  "ref": [
+   "it-greco-di-tufo"
+  ]
+ },
+ "italy/campania": {
+  "notes": [
+   "Taurasi, from Aglianico, is a dry, full red that must age at least three years.",
+   "Greco di Tufo is a fresh, dry white, and cool nights in its hills help keep its acidity.",
+   "Fiano di Avellino is often pale straw, with strong aromas of spice and flowers."
+  ],
+  "ref": [
+   "it-taurasi",
+   "it-greco-di-tufo"
+  ],
+  "art": [
+   "Fiano (grape)"
+  ]
+ },
+ "italy/basilicata": {
+  "notes": [
+   "Basilicata's Aglianico del Vulture can be full bodied and richly textured, with firm tannin and chocolate-cherry notes.",
+   "Young wines can be rustic and harsh, but they soften and grow silky with age.",
+   "They can improve in bottle for 6 to 20 years."
+  ],
+  "art": [
+   "Aglianico del Vulture"
+  ]
+ },
+ "italy/marche": {
+  "notes": [
+   "The Marche's Verdicchio can be almost colorless, with high acidity and citrus notes.",
+   "Sparkling and sweet passito versions are also made."
+  ],
+  "art": [
+   "Verdicchio"
+  ]
+ },
+ "italy/umbria": {
+  "notes": [
+   "Orvieto is mostly a dry white, with small amounts of off-dry and sweet wine.",
+   "Montefalco Sagrantino, from thick-skinned Sagrantino aged long in oak, is typically very dense and full bodied, with very high tannin.",
+   "A sweet passito Sagrantino is also made, and sweet wines were the grape's main use in the past."
+  ],
+  "art": [
+   "Orvieto DOC",
+   "Montefalco Sagrantino",
+   "Sagrantino"
+  ]
+ }
+}

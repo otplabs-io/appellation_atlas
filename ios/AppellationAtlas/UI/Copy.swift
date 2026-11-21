@@ -3,16 +3,71 @@ import Foundation
 // Words and scales the website writes in web/atlas.js. Keep the two in step: a change to one is a change to both.
 
 enum Copy {
-    static let worldIntro = [
-        "Benchmark regions, in gold, are the ones the WSET Diploma teaches: the classic places to learn first. Emerging regions, in grey, are the rest.",
-        "Stronger shades are better known: more Wikipedias write about them, and more people read those pages. Each place is compared with the places beside it, so Bordeaux is set against Burgundy and Languedoc, and France against Uruguay.",
-    ]
+    /// A rock family's share in words: it comes from a few map points, so a percentage would claim too much (rockShare in web/atlas.js).
+    static func share(_ v: Double) -> String { v >= 0.5 ? "mostly" : v >= 0.25 ? "much" : "some" }
 
-    static func worldCount(_ n: Int) -> String { "Every wine country, region and appellation we have, \(fmt(Double(n))) places in all." }
+    /// The grapes left out of what is planted because they are not wine grapes (leftOut in web/atlas.js).
+    static func whitesOlder(_ year: String) -> String { "red grapes as of \(year), white grapes from an earlier survey, so the shares are approximate." }
+    static func leftOut(_ left: JSON) -> String {
+        func and(_ xs: [String]) -> String { xs.count > 1 ? xs.dropLast().joined(separator: ", ") + " and " + xs.last! : xs.first ?? "" }
+        var out = ""
+        let juice = left["juice"].strings, table = left["table"].strings
+        if !juice.isEmpty { out += " Juice grapes are left out: \(and(juice))." }
+        if !table.isEmpty { out += " Table grapes are left out: \(and(table))." }
+        return out
+    }
+
+    /// Notes on the rules facts (COPY in web/atlas.js).
+    enum Rules {
+        static let baseYield = "the yield its rules set; some years a little more is allowed"
+        static let yieldCeiling = "the most its rules allow in any year; the usual limit is lower"
+        static let yieldLimit = "the most the 2022 EU record allows; some of its wines may have lower limits, and rules change"
+        static let recognised = "the year its rules say it was first recognised, sometimes under an older name"
+        static let noShares = "The 2022 EU record lists the grapes allowed, not their shares. Later changes to the rules may not be in it."
+        static let noRoles = "The cahier gives these grapes different roles in different wines, so they are listed here by colour."
+        static let anyName = " That is every vineyard there, whatever name its wine is sold under."
+        static let limitsHead = "Planting rules: shares of each grower\u{2019}s vineyard, not of the blend"
+        static let blendHead = "Blend rules: shares of the wine itself"
+        static func forWine(_ w: String) -> String { "Main grapes, for \(w)" }
+        static let desertRain = "Rain is left out: the 4.5 km grid takes in the wetter hills around the vineyards, so its totals run well above what weather stations among the vines record."
+    }
+
+    /// What gold and grey mean for each pill (LEVELS in atlas.js).
+    struct Level { let name, on, off, ons, offs: String }
+    static let levels: [String: Level] = [
+        "b": Level(name: "Benchmarks", on: "Benchmark region", off: "Emerging region", ons: "Benchmark regions", offs: "Emerging regions"),
+        "d": Level(name: "All", on: "Benchmark region", off: "Emerging region", ons: "Benchmark regions", offs: "Emerging regions"),
+    ]
+    static func level(_ l: String) -> Level { levels[l] ?? levels["d"]! }
+    static func worldIntro(_ l: String) -> [String] { [
+        (l == "d" ? "All turns gold every place inside the classic regions, down to the smallest appellation. Emerging regions, in grey, are the rest."
+            : "Benchmark regions, in gold, are the classic places to learn first. Emerging regions, in grey, are the rest.")
+        + " Switch between Benchmarks and All to choose which places are gold.",
+        "Darker shades show the places with the most global interest, measured by how many Wikipedias write about them and how often those pages are read. Each map sets its own scale, so the darkest place is the best known one on that map.",
+    ] }
+
+    static let feedbackPrompt = "See something wrong or missing?"
+    static let feedbackButton = "Send feedback"
+    /// The feedback form with the place filled in. The app has no page link, so the link field says where it came from.
+    static func feedbackURL(name: String, id: String) -> URL? {
+        var c = URLComponents(string: "https://docs.google.com/forms/d/e/1FAIpQLSc7CmB3DsylFI0kt6tZncSwq53i8jsEuxdrv4deyIuWJHq8oA/viewform")
+        c?.queryItems = [
+            URLQueryItem(name: "usp", value: "pp_url"),
+            URLQueryItem(name: "entry.673545042", value: name),
+            URLQueryItem(name: "entry.612336214", value: "From the app, place id \(id)"),
+        ]
+        return c?.url
+    }
+
+    static let homeTitle = "Explore the world\u{2019}s wine regions"
+    static func worldCount(_ n: Int) -> String {
+        "\(fmt(Double(n))) wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know."
+    }
 
     static let shapeNote: [String: String] = [
         "Eurostat NUTS, the area it is named for": "The map draws the department, province or region it is named for. The PGI\u{2019}s own area can differ a little.",
         "Eurostat LAU, the commune it is named for": "The map draws the commune it is named for.",
+        "Eurostat LAU, the municipalities its rules name": "The map draws the municipalities its rules name.",
         "Chile Decreto 464, drawn from its comunas and provinces": "The boundary follows the comunas and provinces that Chile\u{2019}s Decreto 464 names.",
         "geoBoundaries, the department it is named for": "The map draws the department it is named for. The IG\u{2019}s own area can be smaller.",
         "geoBoundaries, the province it is named for": "The map draws the province.",

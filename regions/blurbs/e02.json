@@ -1,0 +1,228 @@
+{
+ "italy/reno": {
+  "text": "An Emilia-Romagna appellation around Bologna for white wine, still, semi-sparkling and sparkling.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/rimini": {
+  "text": "An Emilia-Romagna appellation for wine, including wine from raisined grapes. They include Barbera, Cabernet Sauvignon and Albana.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/riviera-del-garda-classico": {
+  "text": "A Lombardy appellation for wine and quality sparkling wine, allowing a very wide range of red and white grapes. Lombardy is known particularly for sparkling wines from Franciacorta and Oltrepò Pavese.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Lombardy wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Lombardy_wine&oldid=1383747058"
+  }
+ },
+ "italy/riviera-ligure-di-ponente": {
+  "text": "A Ligurian appellation on the Italian Riviera, covering a large number of communes, for still and semi-sparkling wine and wine from raisined grapes.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Liguria wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Liguria_wine&oldid=1330554265"
+  }
+ },
+ "italy/romagna": {
+  "text": "An Emilia-Romagna appellation for still, semi-sparkling and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/romagna-albana": {
+  "text": "A white wine appellation of Emilia-Romagna, made principally from Albana in Bologna, Forlì-Cesena and Ravenna, and including wine from raisined grapes. It was awarded DOC status in 1967 and DOCG status in 1987.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Romagna Albana",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Romagna_Albana&oldid=1361046218"
+  }
+ },
+ "italy/rossese-di-dolceacqua": {
+  "text": "A red wine appellation in western Liguria, around Dolceacqua, for wine from the indigenous Rossese grape.",
+  "from": [
+   "wikipedia_of_wider",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Liguria wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Liguria_wine&oldid=1330554265"
+  }
+ },
+ "italy/s-anna-di-isola-capo-rizzuto": {
+  "text": "A Calabrian appellation in the province of Crotone, covering Crotone, Cutro and Isola di Capo Rizzuto. Its rules allow seven main grapes, including Gaglioppo, Greco Bianco and Nerello Mascalese.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Sant'Anna di Isola Capo Rizzuto",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Sant%27Anna_di_Isola_Capo_Rizzuto&oldid=152370110"
+  }
+ },
+ "italy/san-colombano-al-lambro": {
+  "text": "A Lombardy appellation of five communes for still and semi-sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/san-martino-della-battaglia": {
+  "text": "A Lombardy appellation of five communes for white wine, including liqueur wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/sangue-di-giuda": {
+  "text": "A Lombardy appellation for red wine, including sparkling and semi-sparkling styles, made from five allowed grapes: Barbera, Croatina, Pinot Nero, Uva Rara and Vespolina.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/savuto": {
+  "text": "A Calabrian appellation of twenty communes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/scanzo": {
+  "text": "A Lombardy appellation limited to a single commune, Scanzorosciate, for red wine made from one grape, Moscato di Scanzo.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/scavigna": {
+  "text": "A Calabrian appellation of two communes, Falerna and Nocera Terinese.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/sforzato-di-valtellina": {
+  "text": "A Lombardy appellation in the Valtellina area, known for Nebbiolo wines, for red wine made from raisined grapes.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Lombardy wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Lombardy_wine&oldid=1383747058"
+  }
+ },
+ "italy/terre-del-colleoni": {
+  "text": "A Lombardy appellation covering over seventy communes, for wine in still, semi-sparkling and sparkling styles, plus wine from raisined grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/terre-di-cosenza": {
+  "text": "A Calabrian appellation covering about 150 communes, for still and sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/tintilia-del-molise": {
+  "text": "A Molise appellation for wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/val-polcevera": {
+  "text": "A Ligurian appellation of seven communes for still, semi-sparkling, sparkling and raisined-grape wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/valcalepio": {
+  "text": "A Lombardy appellation of fifty-one communes, with wine and wine from raisined grapes made from six allowed grapes: Cabernet Sauvignon, Merlot, Moscato di Scanzo, Chardonnay, Pinot Bianco and Pinot Grigio.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "italy/valle-belice": {
+  "text": "An Italian IGT in the Belice valley, between the provinces of Agrigento and Palermo, covering Montevago, Menfi, Santa Margherita di Belice and Contessa Entellina. Its wines are white, rosé, red and passito.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Valle Belice",
+   "lang": "it",
+   "url": "https://it.wikipedia.org/w/index.php?title=Valle_Belice&oldid=143885898"
+  }
+ },
+ "italy/valle-d-aosta": {
+  "text": "Italy's smallest wine region by size and production, an Alpine appellation around the Dora Baltea river whose vineyards are among the highest in Europe. About three quarters of the wine is red, made mostly from Pinot Nero, Gamay and Petit Rouge, plus a white from Prié Blanc.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Valle d'Aosta DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Valle_d%27Aosta_DOC&oldid=1326367510"
+  }
+ },
+ "italy/valtellina-rosso": {
+  "text": "A red wine appellation in Lombardy's Valtellina area, which is known for Nebbiolo wines.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Lombardy wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Lombardy_wine&oldid=1383747058"
+  }
+ },
+ "italy/valtellina-superiore": {
+  "text": "A red wine appellation in Lombardy's Valtellina area, which is known for Nebbiolo wines.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Lombardy wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Lombardy_wine&oldid=1383747058"
+  }
+ }
+}

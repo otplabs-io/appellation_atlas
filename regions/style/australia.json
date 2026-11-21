@@ -1,0 +1,307 @@
+{
+ "australia": {
+  "notes": [
+   "Australian Shiraz is medium to full bodied and is grown in warm regions as well as moderate to cool ones.",
+   "Australian Riesling is traditionally fermented fully dry, with high acidity and vibrant citrus fruit, and it can age for decades.",
+   "Australian Chardonnay made its name with big fruit and easy drinking, while cooler regions now make crisper, less oaked wines with lime notes.",
+   "Some Shiraz is made sparkling, traditionally a little sweet, though dry versions exist."
+  ],
+  "art": [
+   "Syrah",
+   "Australian wine",
+   "Riesling",
+   "Chardonnay"
+  ],
+  "ref": [
+   "audit-05c78504",
+   "audit-82ebc95b"
+  ]
+ },
+ "australia/adelaide-hills": {
+  "notes": [
+   "Adelaide Hills Chardonnay is medium weight with good natural acidity, and some from cooler sites goes into sparkling wine.",
+   "Sauvignon Blanc is the region's most widely planted white grape."
+  ],
+  "art": [
+   "Chardonnay",
+   "Sauvignon blanc"
+  ],
+  "ref": [
+   "audit-45a01cee"
+  ]
+ },
+ "australia/barossa-valley": {
+  "notes": [
+   "Barossa Shiraz, often from old vines, is big and full bodied, with rich chocolate and spice.",
+   "In this hot climate Shiraz has softer tannin, jammier fruit and notes of licorice, anise and earthy leather.",
+   "Barossa Grenache is jammy and intensely fruity."
+  ],
+  "art": [
+   "Barossa Valley wine region",
+   "Syrah",
+   "Grenache"
+  ]
+ },
+ "australia/barossa": {
+  "notes": [
+   "Barossa Shiraz, often from old vines, is big and full bodied, with rich chocolate and spice.",
+   "Barossa Grenache is jammy and intensely fruity.",
+   "Eden Valley, the cooler, rockier part of the zone, is known for Riesling with a lime note."
+  ],
+  "art": [
+   "Barossa Valley wine region",
+   "Grenache",
+   "Riesling"
+  ]
+ },
+ "australia/clare-valley": {
+  "notes": [
+   "Clare Valley Riesling is restrained and austere when young, with lime and mineral notes, and it can evolve for decades.",
+   "Its Cabernet Sauvignon shows dark, rich black fruit with firm but plush tannins."
+  ],
+  "art": [
+   "South Australian wine",
+   "Riesling",
+   "Cabernet Sauvignon"
+  ],
+  "ref": [
+   "audit-f3207aac"
+  ]
+ },
+ "australia/coonawarra": {
+  "notes": [
+   "Coonawarra is synonymous with Cabernet Sauvignon, full of plum and blackcurrant fruit."
+  ],
+  "art": [
+   "Coonawarra wine region",
+   "Cabernet Sauvignon"
+  ]
+ },
+ "australia/eden-valley": {
+  "notes": [
+   "Eden Valley Riesling often shows a characteristic lime note.",
+   "Its soils are rockier and more acidic than the neighboring Barossa Valley's."
+  ],
+  "art": [
+   "Riesling",
+   "South Australian wine"
+  ]
+ },
+ "australia/great-southern": {
+  "notes": [
+   "Riesling and Cabernet Sauvignon are the region's most important wines, and its Cabernet is deep in color and long-lived.",
+   "Its Chardonnay is tightly structured, with grapefruit notes, and ages well."
+  ],
+  "art": [
+   "Great Southern (wine region)",
+   "Chardonnay"
+  ],
+  "ref": [
+   "audit-10a43f53"
+  ]
+ },
+ "australia/heathcote": {
+  "notes": [
+   "Heathcote's old Cambrian soils give deeply colored, rich Shiraz at around 14 to 15% alcohol."
+  ],
+  "art": [
+   "Victorian wine"
+  ]
+ },
+ "australia/hunter-valley": {
+  "notes": [
+   "Hunter Semillon is picked early to make a wine of low alcohol.",
+   "Young, it is austere, with lemon, lime, green apple and grassy notes.",
+   "With ten years or more in bottle it turns rich and honeyed, with toast, biscuit and a mineral backbone.",
+   "Hunter Shiraz is medium bodied, with red and dark berries when young. With age it turns earthy and leathery, and the best can age 20 to 30 years.",
+   "Hunter Chardonnay ranges from lean and mineral to full flavored and rich."
+  ],
+  "art": [
+   "Hunter Valley wine region",
+   "New South Wales wine",
+   "Sémillon"
+  ],
+  "ref": [
+   "audit-951ff3b9"
+  ]
+ },
+ "australia/margaret-river": {
+  "notes": [
+   "Margaret River Cabernet is tightly structured, with pronounced black fruit.",
+   "Semillon and Sauvignon Blanc are also grown here, often blended into crisp, lively whites."
+  ],
+  "art": [
+   "Cabernet Sauvignon",
+   "Merlot",
+   "Syrah"
+  ],
+  "ref": [
+   "audit-cfee7e4b"
+  ]
+ },
+ "australia/mclaren-vale": {
+  "notes": [
+   "McLaren Vale Shiraz shows pronounced berry and spice, with dark chocolate and licorice.",
+   "Grenache here is lusciously rich and spicy, with plum, mulberry, tobacco leaf and earthy notes in the best years.",
+   "Chardonnay is marked by ripe peach, with white peach from cooler sites."
+  ],
+  "art": [
+   "McLaren Vale",
+   "Grenache",
+   "Syrah"
+  ]
+ },
+ "australia/mornington-peninsula": {
+  "notes": [
+   "The Mornington Peninsula is strongly maritime, and Pinot Noir is its most planted grape.",
+   "Its Chardonnay typically shows melon, citrus and fig."
+  ],
+  "art": [
+   "Mornington Peninsula wine region"
+  ],
+  "ref": [
+   "audit-022e4422"
+  ]
+ },
+ "australia/new-south-wales": {
+  "notes": [
+   "Hunter Valley Semillon is dry and low in alcohol, and it can age for decades, often peaking at 10 to 20 years.",
+   "Hunter Shiraz is earthy, with tar notes, and can take on Rhône-like qualities with age.",
+   "Hilltops Shiraz is noted for black pepper, closer to Old World Syrah."
+  ],
+  "art": [
+   "New South Wales wine"
+  ]
+ },
+ "australia/riverland": {
+  "notes": [
+   "The Riverland is Australia's largest grape-growing region by tonnage, and its main grapes are Shiraz, Chardonnay and Cabernet Sauvignon."
+  ],
+  "art": [
+   "Chardonnay",
+   "Grenache"
+  ],
+  "ref": [
+   "audit-04140808"
+  ]
+ },
+ "australia/rutherglen": {
+  "notes": [
+   "Rutherglen is known for full bodied reds from Shiraz and Petite Sirah, and for sweet fortified wines.",
+   "Rutherglen Muscat is made from grapes shriveled on the vine, fortified with grape spirit and aged in old oak casks."
+  ],
+  "art": [
+   "Victorian wine"
+  ],
+  "ref": [
+   "audit-53ee310b"
+  ]
+ },
+ "australia/south-australia": {
+  "notes": [
+   "South Australia runs from lime-scented Clare Valley Riesling to full bodied Barossa Shiraz.",
+   "Clare and Eden Valley Riesling often shows a lime note."
+  ],
+  "art": [
+   "South Australian wine",
+   "Riesling"
+  ],
+  "ref": [
+   "audit-82ebc95b",
+   "audit-05c78504"
+  ]
+ },
+ "australia/tasmania": {
+  "notes": [
+   "Tasmania's main grapes are Pinot Noir, Chardonnay and Pinot Gris, and Pinot Noir and Chardonnay also go into traditional method sparkling wine.",
+   "The wines keep a natural acidity that gives freshness and balance.",
+   "Its cool climate gives crisp, less oaked Chardonnay with lime notes."
+  ],
+  "art": [
+   "Tasmanian wine",
+   "Chardonnay"
+  ],
+  "ref": [
+   "audit-99981a76"
+  ]
+ },
+ "australia/victoria": {
+  "notes": [
+   "Grampians Shiraz and Cabernet have juicy berry fruit with eucalyptus and spice.",
+   "Rutherglen and Glenrowan are known for full bodied reds and sweet fortified wines."
+  ],
+  "art": [
+   "Victorian wine"
+  ]
+ },
+ "australia/western-australia": {
+  "notes": [
+   "Margaret River has a strongly maritime climate, and Cabernet Sauvignon and Chardonnay are its leading wines."
+  ],
+  "art": [
+   "Merlot",
+   "Syrah",
+   "Chardonnay"
+  ],
+  "ref": [
+   "audit-cfee7e4b"
+  ]
+ },
+ "australia/yarra-valley": {
+  "notes": [
+   "The Yarra Valley is relatively cool even at its warmest sites, and it grows Chardonnay and Pinot Noir for still and sparkling wine.",
+   "Yarra Cabernet, often blended with a little Cabernet Franc and Merlot, ranges from medium to full bodied with silky tannins."
+  ],
+  "art": [
+   "Yarra Valley wine region",
+   "Cabernet Sauvignon"
+  ],
+  "ref": [
+   "audit-023cdac1"
+  ]
+ },
+ "australia/geelong": {
+  "notes": [
+   "Geelong's cool climate gives a long ripening season, and low rainfall concentrates flavor, aroma and color.",
+   "Pinot Noir commonly shows plums, tobacco, violets, strawberries and truffles.",
+   "Shiraz relies on dark cherry fruit with persistent tannins, sometimes with pepper and spice.",
+   "Cabernet can be concentrated, powerful and long-lived, with intense blackcurrant."
+  ],
+  "ref": [
+   "wa-geelong"
+  ]
+ },
+ "australia/goulburn-valley": {
+  "notes": [
+   "The Goulburn Valley is warm, with an inland valley-floor climate and big swings between day and night.",
+   "It has the world's oldest and largest plantings of Marsanne, lemony and delicate when young and gaining honeysuckle with age.",
+   "Chardonnay is peachy and buttery, and can grow complex with age.",
+   "Cabernet Sauvignon is ripe, warm and earthy, with chocolate notes."
+  ],
+  "ref": [
+   "wa-goulburn-valley"
+  ]
+ },
+ "australia/murray-darling": {
+  "notes": [
+   "The Murray Darling is hot, with long sunshine hours, low humidity and almost no growing-season rain, so vines need irrigation.",
+   "Chardonnay, its most important premium wine, has a fruity softness and generosity.",
+   "Shiraz and Cabernet have plenty of soft, sweet fruit and are best drunk at one to two years old.",
+   "Some wineries succeed with Mediterranean grapes suited to the warm climate."
+  ],
+  "ref": [
+   "wa-murray-darling"
+  ]
+ },
+ "australia/riverina": {
+  "notes": [
+   "The Riverina's specialty is luscious sweet Semillon, left on the vine for up to two months after normal ripeness.",
+   "Humid autumns bring noble rot, which concentrates the grapes' sugar and acid.",
+   "Summers are hot and sunny, with low humidity.",
+   "Chardonnay, with careful use of oak, has pleasant varietal flavor and weight."
+  ],
+  "ref": [
+   "wa-riverina"
+  ]
+ }
+}

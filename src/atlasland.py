@@ -28,8 +28,68 @@ def parents():
 ANDERSON='https://doi.org/10.25909/32870405.v1'
 YEAR={'Germany':2016,'Hungary':2016,'United States':2016}   # these break down by wine region or county in 2016, by state or district in 2023
 NAME={'Garnacha Tinta':'Grenache','Côt':'Malbec','Mazuelo':'Carignan','Tribidrag':'Zinfandel','Monastrell':'Mourvèdre','Douce Noire':'Bonarda',
-      'Prosecco':'Glera','Tempranillo (W)':'Tempranillo Blanco','Muscat Blanc à Petits Grains':'Muscat Blanc','Alicante Henri Bouschet':'Alicante Bouschet','Graševina':'Welschriesling'}
-NAME_IN={'spain':{'Garnacha Tinta':'Garnacha','Monastrell':'Monastrell','Mazuelo':'Mazuelo'},'italy':{'Tribidrag':'Primitivo','Garnacha Tinta':'Cannonau','Mazuelo':'Carignano'},
+      'Prosecco':'Glera','Tempranillo (W)':'Tempranillo Blanco','Muscat Blanc à Petits Grains':'Muscat Blanc','Alicante Henri Bouschet':'Alicante Bouschet','Graševina':'Welschriesling',
+      'Durif':'Petite Sirah'}
+# Not wine grapes, so left out of what is planted. Table and raisin grapes from VIVC (regions/table-grapes.json). In the United States the
+# county surveys count every vine, juice grapes too: USDA's grape survey asks about juice-type grapes apart from wine-type ones, and
+# Concord and Niagara are the juice grapes it means first.
+TABLE=set(jl(os.path.join(ROOT,'regions','table-grapes.json'))['table'])
+TABLE_IN={'france':{'Muscat of Hamburg'},'argentina':{'Superior Seedless','Cardinal','Alphonse Lavallée'}}   # VIVC: table grapes (Argentina's INV rows count them)   # in France it is the Muscat du Ventoux table-grape AOP's grape, not a wine grape
+JUICE={'united-states':{'Concord','Niagara'}}
+# rows the database names wrongly: Sardinia's 7,064 ha are Cannonau, which Sardinians also call Alicante, not Alicante Bouschet
+ROWFIX={('Italy','Sardegna','Alicante Henri Bouschet'):'Garnacha Tinta',
+        ('Argentina','*','Muscat Blanc à Petits Grains (G)'):'Moscatel Rosado',
+        ('Chile','*','Alicante Henri Bouschet'):'Tintoreras (red-fleshed grapes)'}   # SAG's census counts 142 ha of Alicante Bouschet and 6,766 ha of its Tintoreras group; the database's 6,908 ha is both   # Argentina's pink Muscat is its own variety, Moscatel Rosado (INTA)
+WINE_IN={'japan':{'Campbell Early'}}   # crushed for wine in Japan, though VIVC lists it as a table grape
+def not_wine(g,c):
+    if g in WINE_IN.get(c,()): return None
+    return 'table' if g in TABLE or g in TABLE_IN.get(c,()) else 'juice' if g in JUICE.get(c,()) else None
+# The names the Diploma uses, over the database's prime names: one table for planted lists, rules and climate lines alike.
+NAME.update({'Sultaniye':'Sultana','Vidal':'Vidal Blanc','Sauvignon Blanc (G)':'Sauvignon Gris','Pinot Meunier':'Meunier','Meunier':'Meunier',
+             'Tocai Friulano':'Friulano','Sauvignonasse':'Friulano','Muscat Blanc à Petits Grains':'Muscat Blanc','Mazuela':'Mazuelo',
+             'Müller Thurgau':'Müller-Thurgau','Mueller Thurgau':'Müller-Thurgau','Weißer Riesling':'Riesling','Weisser Riesling':'Riesling'})
+NAME.update({'Gamay Noir':'Gamay','Cinsaut':'Cinsault','Garnacha Roja (Gris)':'Grenache Gris','Muscat Blanc à Petits Grains (G)':'Muscat Blanc',
+             'Muscat Blanc à Petits Grains (R)':'Muscat Blanc','Muscat Blanc à Petits Grains (Rg)':'Muscat Blanc'})
+LOCAL={'australia':{'Syrah':'Shiraz','Sémillon':'Semillon'},'south-africa':{'Syrah':'Shiraz','Sémillon':'Semillon','Chenin Blanc':'Chenin Blanc'},
+       'new-zealand':{'Alvarinho':'Albariño'},'united-states':{'Alvarinho':'Albariño'},'france':{'Silvaner':'Sylvaner'},
+       'spain':{'Alvarinho':'Albariño','Trajadura':'Treixadura','Vinhao':'Sousón','Borraçal':'Caíño Tinto','Mazuelo':'Mazuelo'},
+       'portugal':{'Tempranillo':'Tinta Roriz','Mencía':'Jaen','Damaschino':'Alicante Branco'},
+       'italy':{'Pinot Gris':'Pinot Grigio','Pinot Noir':'Pinot Nero','Pinot Blanc':'Pinot Bianco','Muscat Blanc':'Moscato Bianco','Sauvignonasse':'Friulano'},
+       'germany':{'Pinot Noir':'Spätburgunder','Pinot Gris':'Grauburgunder','Pinot Blanc':'Weissburgunder','Schiava Grossa':'Trollinger','Blauer Spätburgunder':'Spätburgunder',
+                 'Blaufränkisch':'Lemberger','Blauer Limberger':'Lemberger','Pinot Meunier':'Schwarzriesling','Meunier':'Schwarzriesling','Müllerrebe':'Schwarzriesling','Chasselas':'Gutedel'},   # the names German labels and statistics use
+       'austria':{'Pinot Blanc':'Weissburgunder','Muscat Blanc':'Gelber Muskateller','Pinot Noir':'Blauburgunder'},
+       'hungary':{'Grasă de Cotnari':'Kövérszőlő','Muscat Blanc':'Sárga Muskotály'},
+       'chile':{'Listán Prieto':'País'},'argentina':{'Listán Prieto':'Criolla Chica'},'slovenia':{'Savagnin Blanc':'Traminer'},'czechia':{'Savagnin Blanc':'Traminer'}}
+LOCAL['austria']['Savagnin Blanc']='Traminer'
+import re as _re
+TEXT=[(r'\bPinot noir\b','Pinot Noir'),(r'\bSauvignon blanc\b','Sauvignon Blanc'),(r'\bChenin blanc\b','Chenin Blanc'),(r'\bCabernet sauvignon\b','Cabernet Sauvignon'),
+      (r'\bCabernet franc\b','Cabernet Franc'),(r'\bPinot [Mm]eunier\b','Meunier'),(r'\bPinot gris\b','Pinot Gris'),(r'\bPinot blanc\b','Pinot Blanc'),
+      (r'\bPinot grigio\b','Pinot Grigio'),(r'\bPinot nero\b','Pinot Nero'),(r'\bGamay Noir\b','Gamay'),(r'\bCinsaut\b','Cinsault'),(r'\bCarmenere\b','Carmenère'),
+      (r'\bvitis vinifera\b','Vitis vinifera'),(r'Garnacha Roja \(Gris\)','Grenache Gris'),(r' \((?:G|R|Rg)\)',''),(r'\bCarménère\b','Carmenère'),(r'\bEchézeaux\b','Échezeaux'),(r'\bMEGA\b','MGA'),(r'\bMelon de Bourgogne\b','Melon'),(r'\bBrun Argente\b','Brun Argenté'),(r'\bFetească Neagrăn\b','Fetească Neagră'),(r'\bBăbeasacă\b','Băbească'),(r'\bRkatiteli\b','Rkatsiteli'),(r'\bRiesling Italian\b','Welschriesling'),(r'\bSauvignon Blanc Gris\b','Sauvignon Gris')]
+TEXT_IN={'australia':[(r'\bSyrah\b','Shiraz'),(r'\bSémillon\b','Semillon')],'south-africa':[(r'\bSyrah\b','Shiraz'),(r'\bSémillon\b','Semillon')],
+         'new-zealand':[(r'\bAlvarinho\b','Albariño')],'spain':[(r'\bAlvarinho\b','Albariño')],'france':[(r'\bSilvaner\b','Sylvaner'),(r'\bSemillon\b','Sémillon')],'germany':[(r'\bPinot Noir\b','Spätburgunder')],'spain':[(r'\bAlvarinho\b','Albariño'),(r'\bDOP\b','DO')],'portugal':[(r'\bTempranillo\b','Tinta Roriz'),(r'\bMencía\b','Jaen')],'hungary':[(r'\b[Oo]laszrizling\b','Welschriesling')],'slovenia':[(r'\bLaški [Rr]izling\b','Welschriesling')],'italy':[(r'\bMuscat Blanc\b','Moscato Bianco')]}
+def text_names(t,c):
+    """Grape names in running text, made to match the tables: Shiraz in Australia, Pinot Noir not Pinot noir, no (G) or (R)."""
+    for a,b in TEXT+TEXT_IN.get(c,[]): t=_re.sub(a,b,t)
+    return _re.sub(r'\b([\w\u00C0-\u017F][\w\u00C0-\u017F ]*?) \(\1\)',r'\1',t)   # "Spätburgunder (Pinot Noir)" renamed to "Spätburgunder (Spätburgunder)" 
+LAW_APART={'Malvasia Bianca'}
+def rule_name(g,c):
+    """A grape as a rules list names it, in the Diploma's word: the law's own name (Tinta Negra, Aragonez) unless it is a mere spelling of
+    the prime (Sauvignon, Cot, Semillon), and without the law's colour codes ("Listrão R")."""
+    import unicodedata
+    fold=lambda x:unicodedata.normalize('NFKD',x).encode('ascii','ignore').decode().lower().replace(' ','')
+    g=_re.sub(r' (?:R|B|N|G|Rs|Rg)$','',g.strip())
+    if c=='italy' and g=='Bonarda': return 'Bonarda Piemontese'   # Italy's register calls Bonarda Piemontese plain "Bonarda N"; not Croatina, not Argentina's Bonarda (Douce Noire)
+    if g in LAW_APART: return text_names(g,c)   # Italy's national register lists Malvasia Bianca and Malvasia Bianca di Candia as two grapes; the synonym list joins them
+    p=prime(g)
+    if _re.search(r' \((?:R|Rg|G|Rs)\)$',p) and fold(g)!=fold(p): return text_names(g,c)   # a colour form the law lists apart (Muscat à Petits Grains Roses beside its white)
+    d=display(g,c) if (fold(g) in fold(p) or fold(p) in fold(g) or g in NAME or p in NAME) else LOCAL.get(c,{}).get(p) or LOCAL.get(c,{}).get(g,g)
+    return text_names(d,c)
+def display(g,c):
+    """A grape's name as the Diploma gives it for country c: Shiraz in the Barossa, Spätburgunder in the Pfalz, Albariño in Rías Baixas."""
+    p=prime(g); d=NAME_IN.get(c,{}).get(p) or NAME.get(p) or (p if p!=g else NAME.get(g,g))
+    return LOCAL.get(c,{}).get(d,d)
+NAME_IN={'germany':{'Pinot Noir Précoce':'Frühburgunder'},'spain':{'Garnacha Tinta':'Garnacha','Monastrell':'Monastrell','Mazuelo':'Mazuelo'},'italy':{'Tribidrag':'Primitivo','Garnacha Tinta':'Cannonau','Mazuelo':'Carignano'},
          'croatia':{'Tribidrag':'Crljenak Kaštelanski','Graševina':'Graševina'},'france':{'Douce Noire':'Douce Noire','Garnacha Blanca':'Grenache Blanc','Trebbiano Toscano':'Ugni Blanc','Garnacha Tinta':'Grenache','Mazuelo':'Carignan'}}
 COUNTRY={'Turkiye':'turkey','Korea, Rep.':None}
 STATE={'australia':{'tas':'tasmania'},'united-states':{'northwillamettevalley':'willamettevalley','southwillamettevalley':'willamettevalley'}}
@@ -99,21 +159,53 @@ def boundaries():
     arg=collections.defaultdict(list)
     for f in jl(os.path.join(CA,'argentina','ARG_ADM2.geojson'))['features']: arg[norm(f['properties']['shapeName'])].append((f['geometry'],f['properties']['shapeName']))
     return S,look,nuts,county,chile,arg,shape
+# Official figures where the database is plainly wrong. Its 2022 row for Vienna gives Riesling 274 of 561 ha (49%); Statistik
+# Austria's 2020 census counts 87 ha of 667 (13%), with Grüner Veltliner first at 200 ha, as the database's own 2016 row had it.
+OFFICIAL={'austria/wien':dict(table='RebsortenNachBL2020.ods',column='Wien',year=2020,source='statistik-austria')}
+def austria_census(column):
+    """Hectares by variety for one state, from Statistik Austria's Weingartengrunderhebung 2020 (data/cache/statistik-austria)."""
+    import zipfile,xml.etree.ElementTree as ET
+    T_='{urn:oasis:names:tc:opendocument:xmlns:table:1.0}'; P_='{urn:oasis:names:tc:opendocument:xmlns:text:1.0}p'
+    root=ET.fromstring(zipfile.ZipFile(os.path.join(CA,'statistik-austria','RebsortenNachBL2020.ods')).read('content.xml'))
+    rows=[]
+    for r in root.iter(T_+'table-row'):
+        cells=[]
+        for c in r.findall(T_+'table-cell'):
+            cells+=[' '.join(''.join(x.itertext()) for x in c.findall(P_))]*min(int(c.get(T_+'number-columns-repeated','1')),12)
+        rows.append(cells)
+    head=next(r for r in rows if r and r[0]=='Rebsorte'); col=head.index(column)+1   # the Austria column is split into 2015 and 2020
+    out=collections.Counter(); colour={}; skin=None; skip=False
+    for r in rows:
+        if not r or not r[0]: continue
+        if r[0] in ('Weißwein','Rotwein'): skin='W' if r[0]=='Weißwein' else 'R'; skip=False; continue
+        if r[0]=='darunter': skip=True; continue   # the lines under "darunter" are already inside "Andere ..."
+        if r[0]=='zusammen' or skin is None or len(r)<=col: skip=False if r[0]=='zusammen' else skip; continue
+        if skip and not r[0].startswith('Gemischter Satz'): continue
+        v=r[col].replace(' ','').replace(',','.')
+        try: ha=float(v)
+        except ValueError: continue
+        names=[r[0].split(' (')[0]]+[x.strip() for x in re.findall(r'\(([^)]*)\)',r[0]) for x in x.split(',')]
+        g=next((prime(x) for x in names if prime(x)!=x),None) or ('other' if re.match(r'Andere|Gemischter',r[0]) else names[0])
+        out[g]+=ha; colour[g]=skin
+    return out,colour
 def plant():
     from shapely.geometry import shape as _s
     from shapely.strtree import STRtree
     S,look,nuts,county,chile,arg,shape=boundaries(); P=parents()
     cid={norm(t['name']):n for n,t in T.items() if t['depth']==0}
-    regs=[]; national=collections.defaultdict(lambda:collections.Counter()); colour={}; nyear={}; unplaced=collections.Counter()
+    regs=[]; national=collections.defaultdict(lambda:collections.Counter()); colour={}; nyear={}; unplaced=collections.Counter(); rowyear={}
     have={y:{r[0] for r in rows(y)} for y in (2016,2023)}
     years={c:(YEAR.get(c,2023) if c in have[YEAR.get(c,2023)] else 2016) for c in have[2016]|have[2023]}
     by=collections.defaultdict(lambda:collections.defaultdict(collections.Counter))
     for y in (2016,2023):
-        for r in rows(y):
-            if years.get(r[0])!=y: continue
+        R=rows(y); latest=collections.defaultdict(int)   # France's 2023 file carries a 2022 and a 2023 row for some grapes in a region:
+        yr=lambda r:int(r[6]) if str(r[6] or '').strip().isdigit() else 0   # keep the newer of the two. Rows with no year are not duplicates
+        for r in R: latest[tuple(r[:5])]=max(latest[tuple(r[:5])],yr(r))
+        for r in R:
+            if years.get(r[0])!=y or (yr(r) and yr(r)!=latest[tuple(r[:5])]): continue
             c=COUNTRY.get(r[0],cid.get(norm(r[0])))
             if not c or not r[5]: continue
-            g=r[4] or 'other'; colour[g]=r[8]; national[c][g]+=float(r[5]); nyear[c]=y
+            g=ROWFIX.get((r[0],r[1],r[4])) or ROWFIX.get((r[0],'*',r[4])) or r[4] or 'other'; colour[g]=r[8]; national[c][g]+=float(r[5]); nyear[c]=y; rowyear[c]=max(rowyear.get(c,0),yr(r))
             path=tuple(clean(x) for x in r[1:4] if clean(x))
             if path: by[c][path][g]+=float(r[5])
     named=collections.defaultdict(dict)   # every atlas place by name, shape or not
@@ -124,7 +216,12 @@ def plant():
     for c,paths in by.items():
         for path,cnt in paths.items():
             nm=path[-1]; k=STATE.get(c,{}).get(norm(nm),norm(nm)); g=None; label=nm; hit=None
-            if k in named[c] and not (c=='united-states' and k in county['06']): d=direct[named[c][k]]; d[0].update(cnt); d[1].append(T[named[c][k]]['name']); d[2]=nyear[c]
+            def within_prov(n_):   # Argentina repeats department names across provinces: San Juan's San Martín is not Mendoza's
+                if c!='argentina' or len(path)<2: return True
+                up=[]; p_=P.get(n_)
+                while p_: up.append(norm(T[p_]['name']) if p_ in T else ''); p_=P.get(p_)
+                return norm(path[0]) in up
+            if k in named[c] and not (c=='united-states' and k in county['06']) and within_prov(named[c][k]): d=direct[named[c][k]]; d[0].update(cnt); d[1].append(T[named[c][k]]['name']); d[2]=nyear[c]
             if k in ('','other','total','otherregions','noassociatedava','otherunverified') or k.endswith('total'): unplaced[c]+=sum(cnt.values()); continue
             hit=None
             if c=='united-states': hit=county['06'].get(k) or ((look[c][k][0],T[look[c][k][1]]['name']) if k in look[c] else None) or county['36'].get(k)
@@ -141,10 +238,33 @@ def plant():
             regs.append(dict(c=c,name=label,g=g.buffer(0),cnt=cnt,year=nyear[c]))
     tree=STRtree([r['g'] for r in regs]); area=[r['g'].area for r in regs]
     def pack(cnt,c):
+        nm=lambda g:display(g,c)
+        left={}   # the table and juice grapes taken out, biggest first, by what they are grown for
+        for g,v in cnt.most_common():
+            k=not_wine(g,c)
+            if k and v>=.5: left.setdefault(k,[]).append(nm(g))
+        cnt=collections.Counter({g:v for g,v in cnt.items() if not not_wine(g,c)})
         tot=sum(cnt.values()); top=[(g,v) for g,v in cnt.most_common() if g not in ('other','other red','other white')]
-        rest=tot-sum(v for _,v in top[:12]); nm=lambda g:NAME_IN.get(c,{}).get(g,NAME.get(g,g))
-        return dict(ha=round(tot),grapes=[[nm(g),round(v),colour.get(g) or '',g] for g,v in top[:12]]+([['Other',round(rest),'','other']] if rest>=.5 else []))
+        rest=tot-sum(v for _,v in top[:12])
+        merged={}   # two database names can share a Diploma name (Muscat Blanc and its pink form): one row each
+        for g,v in top[:12]:
+            d=nm(g); m=merged.setdefault(d,[d,0,colour.get(g) or '',g]); m[1]+=v
+        out=dict(ha=round(tot),grapes=[[d,round(v),c_,g] for d,v,c_,g in merged.values()]+([['Other',round(rest),'','other']] if rest>=.5 else []))
+        if left: out['left']={k:v[:4] for k,v in left.items()}
+        return out
     out={}
+    kidsP=collections.defaultdict(list)
+    for k,v in P.items(): kidsP[v].append(k)
+    def below(n):
+        st=list(kidsP.get(n,[])); seen=[]
+        while st: k=st.pop(); seen.append(k); st+=kidsP.get(k,[])
+        return seen
+    for n in list(direct):   # the database lists nested regions apart (Washington's Columbia Valley row is what is left after
+        sub=[k for k in below(n) if k in direct]   # Yakima, Walla Walla and the rest), so a place's own figures take in its parts' rows
+        if sub:
+            cnt=collections.Counter(direct[n][0])
+            for k in sub: cnt.update(direct[k][0])
+            direct[n]=[cnt,direct[n][1]+[x for k in sub for x in direct[k][1]],direct[n][2]]
     for n,(cnt,names,y) in direct.items():   # a database region with an atlas place of the same name: its own figures
         out[n]=dict(scope='own',names=list(dict.fromkeys(names)),year=y,**pack(cnt,n.split('/')[0]))
     SH={}   # each place's share of area in each district
@@ -154,6 +274,7 @@ def plant():
     sibs=collections.defaultdict(list)
     for n,p in P.items(): sibs[p].append(n)
     for n in sorted(P,key=lambda n:T[n]['depth']):
+        if T[n].get('kind')=='group' and T[n].get('source')=='eu': out.pop(n,None); continue   # a list the EU register keeps (Spain's Vino de la Tierra, a country's PGIs), not a place: no figures, and none to pass down
         if n in out: continue
         c=n.split('/')[0]
         if n==c:
@@ -166,6 +287,8 @@ def plant():
         share=SH[n]; g=S[n]
         # every district that holds at least a tenth of the place, unless a neighbour of the same rank is mostly in it and this place only a little (Beaujolais's Rhône, for Burgundy)
         use=[i for i,v in share.items() if v>=.1 and not (v<.3 and any(SH.get(q,{}).get(i,0)>=.5 for q in sibs[P[n]] if q!=n))]
+        ga=g.area or 1e-12
+        use+=[i for i,v in share.items() if i not in use and v*ga>=.5*area[i]]   # and every district lying mostly inside it: all of Mendoza's departments, not just the two biggest
         pt=g.representative_point()
         if not use: use=[i for i in share if regs[i]['g'].contains(pt)][:1]
         if not use: continue
@@ -173,8 +296,16 @@ def plant():
         for i in use: cnt.update(regs[i]['cnt'])
         wide=sum(area[i] for i in use)>1.5*(g.area or 1e-12)   # the districts reach well beyond the place
         out[n]=dict(scope='around' if wide else 'within',names=list(dict.fromkeys(regs[i]['name'] for i in sorted(use,key=lambda i:-sum(regs[i]['cnt'].values())))),year=regs[use[0]]['year'],**pack(cnt,c))
+    for n,o in OFFICIAL.items():
+        cnt,col=austria_census(o['column']); colour.update({g:c for g,c in col.items() if g not in colour})
+        out[n]=dict(scope='own',names=[T[n]['name']],year=o['year'],source=o['source'],**pack(cnt,n.split('/')[0]))
     meta=dict(source='Anderson, K., S. Nelgen and G. Puga, Database of Regional, National and Global Winegrape Bearing Areas by Variety, 2000 to 2023, Wine Economics Research Centre, University of Adelaide (CC BY 4.0)',
               url=ANDERSON,unplaced_ha={c:round(v) for c,v in unplaced.items() if v>=1})
+    for n,v in out.items():   # the year the rows give (Argentina's 2023 file holds 2022 figures), not the file's edition
+        c=n.split('/')[0]
+        if v.get('year') in (2016,2023) and v.get('source') in (None,'anderson') and rowyear.get(c): v['year']=rowyear[c]
+        if c=='france' and v.get('source') in (None,'anderson') and v.get('scope')!='country' and v.get('year') in (2022,2023):   # France's 2023 file dates its regional reds 2022 and gives its whites no year (an earlier survey, Anderson's notes): say so, and give no total that adds the two
+            v['year']=2022; v['whites_older']=True
     json.dump({'$about':__doc__.split('\n')[0],**meta,'places':out},open(os.path.join(ROOT,'regions','atlas-plantings.json'),'w',encoding='utf-8'),ensure_ascii=False,indent=0)
     print(f'{len(regs)} database regions placed; {len(out)} places with plantings ({sum(1 for v in out.values() if v["scope"]=="within")} within, {sum(1 for v in out.values() if v["scope"]=="around")} around)')
     print('not placed (ha):',dict(sorted(meta['unplaced_ha'].items(),key=lambda x:-x[1])[:15]))
@@ -198,15 +329,15 @@ def fetch_tile(t):
         except Exception:
             time.sleep(1+k)
     return None
-def terrain(max_tiles=16):
+def terrain(max_tiles=16,only=None):
     """Elevation, slope and aspect for every place with a shape below the country level. Writes regions/atlas-terrain.json.
     Small places are read at zoom 12 (about 25 m a pixel at 45 degrees), the rest at zoom 11; a place spread over more than
     max_tiles tiles is read from an even sample of them. Tiles are read once, in memory, and not kept."""
     import numpy as np,shapely,hashlib
     from concurrent.futures import ThreadPoolExecutor
     S=shapes(); plan={}; users=collections.defaultdict(list)
+    S=warm_shapes({n:g for n,g in S.items() if T[n]['depth']>0 and (not only or n in only)})   # elevation and slope of the warm ground, where vines can grow
     for n,g in S.items():
-        if T[n]['depth']==0: continue
         g=g.buffer(0)
         for z in (12,11):
             x0,y0=tile_of(g.bounds[0],g.bounds[3],z); x1,y1=tile_of(g.bounds[2],g.bounds[1],z)
@@ -218,6 +349,8 @@ def terrain(max_tiles=16):
         plan[n]=(g,ts)
         for t in ts: users[t].append(n)
     res=_measure(plan,users)
+    if only:   # a few places remeasured: keep everyone else's figures
+        prev=jl(os.path.join(ROOT,'regions','atlas-terrain.json'))['places']; prev.update(res); res=prev
     _write_terrain(res)
 
 def _measure(plan,users):
@@ -321,6 +454,20 @@ def plots():
 # ---------- the rock beneath
 GEO_API='https://macrostrat.org/api/v2/geologic_units/map?lat={lat}&lng={lng}'
 SCALES=['large','medium','small','tiny']
+def warm_shapes(S):
+    """Each place's shape cut to its warm ground: the WorldClim cells with a growing season of 13 °C or more, written by
+    src/atlas.py climate (build/atlas/warmcells.json). A place with no such cells keeps its whole shape."""
+    from shapely.geometry import box
+    from shapely.ops import unary_union
+    p=os.path.join(OUT,'warmcells.json')
+    if not os.path.exists(p): return S
+    W=jl(p); G=W['grid']; x0,y0,dx,dy=G['x0'],G['y0'],G['dx'],G['dy']; out={}
+    for n,g in S.items():
+        cs=W['cells'].get(n)
+        if not cs: out[n]=g; continue
+        w=unary_union([box(x0+c*dx,y0-(r+1)*dy,x0+(c+1)*dx,y0-r*dy) for r,c in cs]).intersection(g.buffer(0))
+        out[n]=w if not w.is_empty and w.area>.02*g.area else g
+    return out
 def rock_points(g,k):
     """Up to k points spread over a shape: an even grid over its bounds, kept where it falls inside, thinned evenly."""
     import shapely
@@ -334,7 +481,7 @@ def rock_points(g,k):
     return [(round(x,3),round(y,3)) for x,y in pts]
 def rocks():
     """The rock families under every place with a shape below the country level, from Macrostrat's geologic map: the
-    most detailed map unit at up to nine points, each point's lithologies sorted into the families in
+    most detailed map unit at 5 to 15 points over its warm ground, each point's lithologies sorted into the families in
     regions/rock-types.json. Writes regions/atlas-rocks.json. Points are cached in data/cache/macrostrat/points.json."""
     from concurrent.futures import ThreadPoolExecutor
     RT=jl(os.path.join(ROOT,'regions','rock-types.json'))
@@ -345,10 +492,10 @@ def rocks():
         if f: fam[i]=f
     cp=os.path.join(CA,'macrostrat','points.json'); cache=jl(cp) if os.path.exists(cp) else {}
     S=shapes(); plan={}
-    for n,g in S.items():
-        if T[n]['depth']==0: continue
+    W=warm_shapes({n:g for n,g in S.items() if T[n]['depth']>0})   # the rock under the vineyards' warm ground, not the mountains
+    for n,g in W.items():
         a=g.area*111.32**2*math.cos(math.radians(g.representative_point().y))
-        plan[n]=rock_points(g.buffer(0),3 if a<50 else 5 if a<1000 else 9)
+        plan[n]=rock_points(g.buffer(0),5 if a<50 else 9 if a<1000 else 15)
     todo=sorted({f'{x},{y}' for ps in plan.values() for x,y in ps}-set(cache))
     print(f'{len(plan)} places, {len(todo)} points to look up ({len(cache)} cached)',flush=True)
     def look(key):
@@ -392,30 +539,54 @@ def readings(f,CG):
     Built from the place's own numbers and the rules in regions/climate-grapes.json and rock-types.json. Each point says
     what the number does to the vines or the wine, and never just restates the number shown beside it."""
     out={}; c=f.get('climate'); so=f.get('soil'); te=f.get('terrain'); pl=f.get('planted'); big=f.get('large'); rk=f.get('rocks')
-    G=CG['grapes']; AL=CG['also']; key=lambda g:AL.get(g,g)
-    planted=[g for g,ha,*_ in (pl or {}).get('grapes',[]) if g!='Other' and key(g) in G and ha>=.05*pl['ha']][:4]
+    G=CG['grapes']; AL=CG['also']
+    import unicodedata
+    fold=lambda x:unicodedata.normalize('NFKD',x).encode('ascii','ignore').decode().lower()
+    GF={fold(g):g for g in G}
+    def key(g):   # the rules spell grapes as the law does (Semillon, Sauvignon, Cot): match them through the synonym table
+        d=prime(g); d=NAME.get(d,d); d=AL.get(d,AL.get(g,d))
+        return d if d in G else GF.get(fold(d),GF.get(fold(g),d))
+    # Only the place's own grapes are named: what is planted there, or else the main grapes its rules allow (a grand cru
+    # has no planting figures of its own). With neither, no grape is named, since a list that fits the climate reads as
+    # a list of what grows there.
+    planted=[key(g) for g,ha,*_ in (pl or {}).get('grapes',[]) if g!='Other' and key(g) in G and ha>=.05*pl['ha']][:4] if pl and pl.get('scope') in ('own','within','country') else []
+    main=[g for g,*_ in ((f.get('rules') or {}).get('grapes') or [])]
+    if (f['id'].startswith('italy/') and len(main)>=10) or len(main)>6: main=[]   # Italy's EU lists are the province's; a long list is no place's identity
+    if f['id'].startswith('france/') and not (f.get('rules') or {}).get('cahier'): main=[]
+    if (f.get('rules') or {}).get('roles_unread'): main=[]   # roles not read apart: Saint-Romain's Pinot Gris is an accessory in its reds, not one of its wines   # the EU list has no roles: Pinot Gris is allowed in Pernand's red, not one of its grapes
+    lead=next((g for g,ha,*_ in (pl or {}).get('grapes',[]) if g!='Other'),None)
+    if lead and key(lead) not in G: planted=[]   # Verdejo leads in Rueda: judging only its minor grapes would mislead
+    known=list(dict.fromkeys(key(g) for g in main if key(g) in G))
+    share={key(g):ha for g,ha,*_ in (pl or {}).get('grapes') or f.get('_wider') or []}
+    known.sort(key=lambda g:-share.get(g,0))   # the most planted first, even from a wider area's table: Merlot before Malbec in Saint-Émilion
+    ruled=known[:4] if main and len(known)*2>len(set(map(key,main))) else []   # name the grapes only when most of them can be judged: not Chardonnay alone for Beaujolais
+    label='Grown here'
+    if not planted and ruled: planted,label=ruled,'Its grapes'
     cls=None
     if c and c.get('gst') is not None:
         t=c['gst']; cls=next(n for lo,hi,n in CG['classes'] if lo<=t<hi); r=[]
-        suits=[g for g,(lo,hi) in G.items() if lo<=t<=hi]
-        suits=[g for g in suits if g in map(key,planted)]+[g for g in suits if g not in map(key,planted)]
         if big: planted=[]
-        elif cls=='too cool': r.append(['Grapes','Too cool for the classic wine grapes. Only very early grapes and hybrids ripen here.'])
-        elif cls=='too hot': r.append(['Grapes','Too hot for the classic table-wine grapes. Heat like this suits fortified wine, table grapes and raisins.'])
-        elif not suits and cls=='hot': r.append(['Grapes','Few classic table-wine grapes keep their freshness in heat like this. It suits fortified wine, table grapes and raisins.'])
-        elif suits: r.append(['Grapes',f'Seasons this {"warm" if cls in ("warm","hot") else "cool" if cls=="cool" else "mild"} ripen {_and(suits[:5])} fully without cooking off their freshness.'])
+        # a place with grapes of its own is spoken of through them: the climate grid averages in the hills and towns around the
+        # vines, so a cool reading over Wachau or an Alsace grand cru says more about the grid than about the vineyards
+        elif cls=='too cool' and not planted: r.append(['Grapes','Too cool for most classic wine grapes. Only very early ripening ones do well here.'])
+        elif cls=='too hot' and not planted: r.append(['Grapes','Too hot for most classic table-wine grapes. Heat like this suits fortified wine.'])
         ok=[g for g in planted if G[key(g)][0]<=t<=G[key(g)][1]]
         cool=[g for g in planted if t<G[key(g)][0]]; warm=[g for g in planted if t>G[key(g)][1]]
-        if ok: r.append(['Grown here',f'{_and(ok)} {"sit" if len(ok)>1 else "sits"} in {"their" if len(ok)>1 else "its"} sweet spot, so the wines can show the style {"they are" if len(ok)>1 else "it is"} known for.'])
-        for g in cool: r.append(['Grown here',f'{g} is at its cool limit. In cool years it can stay underripe, with green, sharp flavors.'])
-        for g in warm: r.append(['Grown here',f'{g} is at its warm limit. It can ripen too fast, giving heavy, soft wine that has lost its freshness.'])
+        ok=[display(g,f['id'].split('/')[0]) for g in ok]   # Spätburgunder in the Pfalz, Shiraz in the Barossa, as the tables say
+        if ok: r.append([label,f'{_and(ok)} {"sit" if len(ok)>1 else "sits"} in {"their" if len(ok)>1 else "its"} sweet spot, so the wines can show the style {"they are" if len(ok)>1 else "it is"} known for.'])
+        # no warm- or cool-limit verdicts: one average over a region cannot tell Clare's cool Riesling sites or Rioja Oriental's warm
+        # Garnacha from the rest, and the verdicts read as judgements on benchmark wines
         if c.get('rain') and c.get('gs_rain') is not None:
             pr=c['prec']; south=c['lat']<0; share=c['gs_rain']/c['rain'] if c['rain'] else 0
-            if _in(c['gs_rain'])<4: r.append(['Rain','Summers are close to rainless. Vines need irrigation or deep soil that stores winter rain, but disease is rare.'])
+            summer=sum(pr[i] for i in ((11,0,1) if south else (5,6,7))); winter=sum(pr[i] for i in ((5,6,7) if south else (11,0,1)))
+            if (c.get('koppen') or '').startswith('B') and summer>1.5*winter and summer>.4*sum(pr): r.append(['Rain','A dry climate, and what little rain there is falls mostly in summer. Water is scarce.'])
+            elif (c.get('koppen') or '').startswith('B') and share>=.4: r.append(['Rain','A dry climate, though much of its little rain falls while the vines grow. Water is scarce.'])   # Verde Valley's monsoon
+            elif (c.get('koppen') or '').startswith('B'): r.append(['Rain','A dry climate, with little rain while the vines grow. Water is scarce and the dry air keeps disease down.'])
+            elif _in(c['gs_rain'])<4: r.append(['Rain','Summers are close to rainless. Vines draw on water stored in the soil, or on irrigation, but disease is rare.'])
             elif share<.35: r.append(['Rain','Most rain falls in winter. Dry summers keep mildew and rot down, though young vines may need watering.'])
-            elif share>.7: r.append(['Rain','Most rain falls while the vines grow. Damp leaves invite mildew and rot, so growers spray more and pick carefully.'])
-            hv=[2,3] if south else [8,9]; avg=sum(pr)/12
-            if avg and sum(pr[i] for i in hv)/2>1.25*avg: r.append(['Harvest','Rain picks up at harvest. Growers race to pick before rot sets in, and vintages vary more.'])
+            elif share>.7 and _in(c['gs_rain'])>=16: r.append(['Rain','Most rain falls while the vines grow. Damp leaves invite mildew and rot, so growers spray more and pick carefully.'])   # a share alone is not enough: Znojmo gets 14 inches
+            hv=[2,3] if south else [8,9]; avg=sum(pr)/12   # not in Mediterranean climates, where autumn is merely the wettest season and vintages are steady
+            if avg and sum(pr[i] for i in hv)/2>1.25*avg and not (c.get('koppen') or '')[:2] in ('Cs','BS','BW') and c['gst']<19: r.append(['Harvest','Rain picks up at harvest. Growers race to pick before rot sets in, and vintages vary more.'])   # hot places pick in July and August, before these rains
         out['climate']=r
     soil={}   # two short paragraphs, not labelled points: what the rock does, then what the topsoil does
     if rk and rk.get('families'):
@@ -424,34 +595,44 @@ def readings(f,CG):
         if ss: soil['rock']=' '.join(ss)
     if so and not big:
         tx=so['texture']; ss=[]
-        if tx in ('sand','loamy sand','sandy loam'): ss.append('The topsoil drains fast and warms early in spring. Vines get little water, which keeps crops small and flavors concentrated, but drought bites hard.')
-        elif tx.endswith('clay loam'): ss.append('The topsoil holds water well and drains at a steady pace, so vines rarely go thirsty or sit in wet ground.')
-        elif 'clay' in tx: ss.append('The topsoil stores water through dry spells, but stays wet and cold after rain, which slows ripening and can swell the grapes.')
-        elif tx in ('silt','silt loam'): ss.append('The topsoil holds plenty of water, which can push leafy, vigorous vines unless growers rein them in.')
-        else: ss.append('The topsoil drains well and still stores water for dry spells, so vines grow evenly.')
-        if so['ph']>=7.4: ss.append('Its high pH can starve vines of iron and yellow the leaves, so growers plant lime-tolerant rootstocks.')
-        elif so['ph']<5.5: ss.append('It is very acid, which locks up nutrients, so growers spread lime to raise the pH.')
+        top=rk['families'][0][0] if rk and rk.get('families') else None
+        drains=top in ('gravel','sand','granite','schist','sandstone','volcanic')
+        if tx in ('sand','loamy sand','sandy loam'): ss.append('The soil drains fast and warms early in spring. Vines get little water, which keeps crops small and flavors concentrated, but drought bites hard.')
+        elif drains: pass   # the rock text has said it drains fast; a water-holding sample from 30 to 60 cm would only contradict it
+        elif tx.endswith('clay loam'): ss.append('The soil holds water well and drains at a steady pace, so vines rarely go thirsty or sit in wet ground.')
+        elif 'clay' in tx: ss.append('The soil stores water through dry spells, but stays wet and cold after rain, which slows ripening and can swell the grapes.')
+        elif tx in ('silt','silt loam'): ss.append('The soil holds plenty of water, which can push leafy, vigorous vines unless growers rein them in.')
+        else: ss.append('The soil drains well and still stores water for dry spells, so vines grow evenly.')
+        lime=bool(rk and rk.get('families') and rk['families'][0][0] in ('limestone','chalk','marl'))
+        if lime and so['ph']<7.4: pass   # over limestone the sampled layer can read near neutral; saying so would contradict the rock
+        elif so['ph']>=7.4: ss.append('Its high pH can starve vines of iron and yellow the leaves.')
+        elif so['ph']<5.5: ss.append('It is strongly acid, which locks up nutrients, so growers spread lime to raise the pH.')
+        elif so['ph']<6.5: ss.append('It is moderately acid, which most vines tolerate well.')
         else: ss.append('Its pH is close to neutral, so vines take up the nutrients they need easily.')
         if (so.get('stones') or 0)>=25: ss.append("Stones in it help water drain and store the day's heat, giving it back to the vines at night.")
         soil['top']=' '.join(ss)
-    if soil: out['soil']=soil
+    if soil.get('rock') and soil.get('top'): soil.pop('top')   # the rock text has said how the ground drains; a 1 km soil model would only contradict it
+    # Not shown: the rock sentences describe map geology (Jerez's albariza reads as gravel, Uco's alluvium as volcanic bedrock) and the
+    # soil model is a 1 km grid; both read as facts about the vineyards and too often contradict them. The figures stay, captioned.
     if te:
         r=[]; lo,mid,hi=te['elev']; dF=(hi-lo)*6.5/1000*1.8
-        if dF>=2: r.append(['Height',f'The high ground runs about {round(dF)}°F cooler than the low ground. Higher vineyards ripen later and keep more acidity, so one grape can make lighter or richer wine here depending on height.'])
+        if False: r.append(['Height',f'The high ground runs about {round(dF)}°F cooler than the low ground. Higher vineyards ripen later and keep more acidity, so one grape can make lighter or richer wine here depending on height.'])
         if not big:
-            if te['flat']>=.7: r.append(['Slope','Mostly flat. Easy and cheap to farm by machine, but on still nights cold air settles on flat ground, so spring frost is a bigger risk.'])
-            elif te['steep']>=.25: r.append(['Slope','Much of it is steep. Cold air and rain run off, so frost and waterlogging are rare and soils stay thin, keeping yields low. Steep rows are slow and costly to work, often by hand.'])
-            else: r.append(['Slope','Gentle slopes. Enough tilt to drain cold air and rain away, which lowers frost risk, yet still easy to farm by machine.'])
+            # the terrain is measured over the whole warm ground, so it says how the land lies, not how a given vineyard is farmed
+            pass   # no slope or height verdicts: a 30 m grid over a whole area cannot see Côte-Rôtie's terraces or tell the Napa valley floor from its hills
             a=te.get('aspect')
             if a and te['flat']<.8:
                 south=(c or {}).get('lat',1)<0; way=lambda *ds:sum(a[d] for d in ds)
                 toward,away=(way('NW','N','NE'),way('SE','S','SW')) if south else (way('SE','S','SW'),way('NW','N','NE'))
-                side=max(((toward,'sun'),(away,'shade'),(way('NE','E','SE'),'east'),(way('SW','W','NW'),'west')),key=lambda x:x[0])
+                # SE and SW count toward the sun first: Château-Grillet's south-east bowl is "plein sud" in its cahier, not a morning-sun slope; and the line says "toward the sun", not "midday sun", since Saering's slope is mostly south-east
+                side=(toward,'sun') if toward>=.6 else (away,'shade') if away>=.6 else max(((toward,'sun'),(away,'shade'),(way('NE','E','SE'),'east'),(way('SW','W','NW'),'west')),key=lambda x:x[0])
                 coolish=cls in ('too cool','cool','intermediate')
                 if side[0]<.6: r.append(['Sun','Slopes face several ways, so growers can pick warmer or cooler spots to suit each grape.'])
                 elif side[1]=='east': r.append(['Sun','Faces the morning sun. Early light dries the dew, which cuts disease, and the grapes are spared the hottest afternoon sun.'])
                 elif side[1]=='west': r.append(['Sun','Faces the afternoon sun, the hottest of the day. Grapes ripen fuller, but morning dew lingers longer.'])
-                elif side[1]=='sun': r.append(['Sun','Faces the midday sun. In a climate this cool, that extra warmth is often what gets grapes fully ripe.' if coolish else 'Faces the midday sun, which pushes ripeness and alcohol up in a climate this warm.'])
+                elif side[1]=='sun' and not cls: r.append(['Sun','Faces toward the sun, which warms the vines and helps the grapes ripen.'])   # no climate shown (Alsace grands crus): say nothing about warm or cool
+                elif side[1]=='shade' and not cls: r.append(['Sun','Faces away from the sun, so the grapes ripen more slowly.'])
+                elif side[1]=='sun': r.append(['Sun','Faces toward the sun. In a climate this cool, that extra warmth is often what gets grapes fully ripe.' if coolish else 'Faces toward the sun, which pushes ripeness and alcohol up in a climate this warm.'])
                 else: r.append(['Sun','Faces away from the sun. In a cool climate that makes ripening harder.' if coolish else 'Faces away from the sun. In a warm climate the shade keeps grapes fresher and slows ripening.'])
         if r: out['land']=r
     return out
@@ -462,5 +643,5 @@ if __name__=='__main__':
     elif cmd=='rocks': rocks()
     elif cmd=='plots': plots()
     elif cmd=='terrain':
-        import atlas; atlas.guard(); terrain()
+        import atlas; atlas.guard(); terrain(only=set(sys.argv[2:]) or None)
     else: print(__doc__)

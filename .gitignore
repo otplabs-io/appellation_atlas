@@ -6,7 +6,7 @@ __pycache__/
 build/
 
 # Raw downloads from the original sources (about 3.7 GB). Some of them may not be redistributed.
-data/
+/data/
 
 # Machine and tool files
 .DS_Store

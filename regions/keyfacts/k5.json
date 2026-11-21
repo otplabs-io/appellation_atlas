@@ -1,0 +1,112 @@
+{
+ "italy/barbaresco": {
+  "facts": [
+   "Barbaresco is made from the Nebbiolo grape and became a DOCG in 1980, after DOC status in 1966.",
+   "DOCG rules require a minimum of 2 years ageing before release, with at least 9 months in wooden barrels, and at least 4 years for riserva.",
+   "The minimum alcohol level is 12.5 per cent.",
+   "Barbaresco is allowed to age a year less than Barolo, and its tannins tend to soften more quickly.",
+   "The Barbaresco Consorzio introduced Menzioni Geografiche Aggiuntive (MEGA) subzones in 2007, and the final number of subzones is 66."
+  ]
+ },
+ "italy/barolo": {
+  "facts": [
+   "Barolo is a red DOCG wine made from the Nebbiolo grape, and the zone was raised to DOCG status in 1980.",
+   "A Barolo must be aged at least three years, a minimum of 38 months from November 1 of the harvest year, with at least 18 months in wooden barrels.",
+   "Barolo Riserva requires five years of total ageing, a minimum of 62 months from November 1 of the harvest year, with at least 18 months in barrel.",
+   "Over 87% of Barolo comes from the communes of Barolo, La Morra, Castiglione Falletto, Serralunga d'Alba and Monforte d'Alba.",
+   "In 2010 the Barolo Consorzio introduced MGA subzones, with 181 delimited, of which 170 are vineyard areas and 11 are village designations."
+  ]
+ },
+ "italy/brunello-di-montalcino": {
+  "facts": [
+   "Brunello di Montalcino is made 100% from Sangiovese, and in 1980 it was one of the first four wines awarded DOCG status.",
+   "The current ageing rules, set in 1998, require 2 years in oak and at least 4 months in bottle, with Normale released 50 months after harvest and Riserva a year later.",
+   "Montalcino has one of the warmest and driest climates in Tuscany, with average annual rainfall of around 28 inches, compared with 35 inches in Chianti.",
+   "Producers can also make Sant'Antimo DOC wines, which allow grapes other than Sangiovese, and the sweet white Moscadello di Montalcino from Muscat."
+  ]
+ },
+ "italy/chianti-classico": {
+  "facts": [
+   "Chianti Classico is a Tuscan DOCG made from 80 to 100% Sangiovese, with other red grapes allowed up to a maximum of 20%.",
+   "Chianti Classico became its own denomination in 1996 and is no longer a subzone of Chianti.",
+   "The symbol of the Lega del Chianti, a black rooster on a gold field, became the emblem of the Chianti Classico consortium.",
+   "Riserva needs at least two years of ageing, including at least three months in bottle, and a minimum total alcohol of 12.5%."
+  ]
+ },
+ "italy/etna": {
+  "facts": [
+   "Etna became a DOC in 1968, the first DOC of Sicily and one of the oldest in Italy.",
+   "Etna Rosso and Rosato require at least 80% Nerello Mascalese, with Nerello Cappuccio making up no more than 20%.",
+   "Etna Bianco requires at least 60% Carricante, and Bianco Superiore requires at least 80% Carricante with grapes coming only from the Milo area.",
+   "The soil is volcanic, rocky, fast-draining and rich in minerals, formed from decomposed lava, ash and sand.",
+   "Vineyard altitude varies between about 1,475 and 3,610 feet, which causes large temperature differences between day and night and across the seasons."
+  ]
+ },
+ "italy/piedmont": {
+  "facts": [
+   "Barbera is the most widely planted grape, with Nebbiolo and Dolcetto also significant for red wine, and Moscato leading among whites.",
+   "Barolo and Barbaresco are both made from Nebbiolo, and Nebbiolo takes its name from the Piedmontese word nebia, meaning fog.",
+   "The Barbaresco DOCG requires a minimum alcohol of 12.5% and 2 years minimum ageing, or 4 years for riserva.",
+   "The region has no IGT classification, and about 90% of winemaking takes place in the south around Alba, Asti and Alessandria."
+  ]
+ },
+ "italy/prosecco-doc": {
+  "facts": [
+   "Prosecco is made from the Glera grape, renamed in Italy in 2009, and the rules allow up to 15% of other permitted varieties.",
+   "Since 1 January 2010, Prosecco is exclusively a geographical indication and no longer the name of a grape variety.",
+   "Prosecco is usually made by the Charmat-Martinotti method, with secondary fermentation in large stainless steel tanks and a minimum production time of 30 days.",
+   "Most Prosecco DOC is made as spumante or frizzante, and only about 5% is still tranquillo wine.",
+   "Brut has up to 12 grams per litre of residual sugar, Extra Dry has 12 to 17 g/L and Dry has 17 to 32 g/L."
+  ]
+ },
+ "italy/soave": {
+  "facts": [
+   "Garganega is the principal grape, and Soave must contain a minimum of 70% Garganega.",
+   "Soave Superiore has been a DOCG since 2001, created for the 2002 vintage, and Recioto di Soave received its own DOCG in 1998.",
+   "Soave Classico comes from hillside vineyards around Soave and Monteforte d'Alpone, with limestone soils in the west and decomposed volcanic rock in the east.",
+   "Recioto di Soave uses the appassimento drying process and keeps much of its sweetness.",
+   "Soave Superiore Riserva needs a minimum alcohol of 12.5% and at least 24 months of ageing, with at least three months in bottle."
+  ]
+ },
+ "italy/taurasi": {
+  "facts": [
+   "Taurasi is a red wine from the province of Avellino in Campania, made principally from Aglianico, and it became a DOCG in 1993.",
+   "Under DOCG rules Taurasi must be aged at least 3 years before release, with at least 1 year in wood, and Riserva at least 4 years.",
+   "Up to 15% of Barbera, Piedirosso and Sangiovese may be blended with the Aglianico.",
+   "The vineyards sit on volcanic soil, and Aglianico thrives at altitudes of around 1,300 to 1,600 feet above sea level."
+  ]
+ },
+ "italy/valpolicella": {
+  "facts": [
+   "Valpolicella is a DOC red wine from the province of Verona, authorized in 1968, blended mainly from Corvina and/or Corvinone at 45 to 95% and Rondinella at 5 to 30%.",
+   "Classico comes from the original zone around Negrar, Marano di Valpolicella, Fumane, Sant'Ambrogio di Valpolicella and San Pietro in Cariano, and Valpantena comes from the Valpantena valley.",
+   "Ripasso wine is passed over the pressed skins of Recioto or Amarone before barrel ageing, which gives it more body, flavor and alcohol.",
+   "Valpolicella Ripasso is a DOC of its own, and Amarone and Recioto della Valpolicella, made from partly dried grapes, are DOCGs of their own."
+  ]
+ },
+ "new-zealand/central-otago": {
+  "facts": [
+   "It is the only true continental climate zone in New Zealand, with large daily and seasonal temperature extremes, protected from the maritime climate by high mountains.",
+   "Frost can occur at any time between March and November, and heavy frosts are common throughout winter.",
+   "Soils are rough-edged mica and other metamorphic schists in silt loams that drain easily, so irrigation is generally essential.",
+   "The sub-regions include Bannockburn, Bendigo, Tarras, Gibbston, Wānaka, Alexandra Basin and Cromwell Basin, with Gibbston the coolest and highest."
+  ]
+ },
+ "new-zealand/marlborough": {
+  "facts": [
+   "Marlborough is by far New Zealand's largest wine region, with three quarters of the country's wine production and 70% of its vineyard area in 2020.",
+   "Marlborough was registered as a Geographical Indication in 2018, and its Sauvignon Blanc is recognised as world class.",
+   "The Wairau Valley soils are primarily free-draining alluvial gravels, and cool night-time sea breezes give the temperature variation needed for good wines.",
+   "The three sub-regions are the Wairau Valley, the Southern Valleys with largely glacial loess soils, and the cooler Awatere Valley.",
+   "Méthode Marlborough wines must be made entirely in Marlborough by the traditional method and aged on lees for a minimum of 18 months.",
+   "Appellation Marlborough Wine requires wines to be made entirely from sustainably grown Marlborough grapes and bottled in New Zealand."
+  ]
+ },
+ "portugal": {
+  "facts": [
+   "Portugal has two UNESCO World Heritage wine regions, the Douro Valley and Pico Island.",
+   "Bairrada is named for the Portuguese word barro, meaning clay, and its main grape is Baga.",
+   "Port needs schist-rich soil in the Douro Valley, and Portugal has many native grapes, including Touriga Nacional in the Douro and Dão."
+  ]
+ }
+}

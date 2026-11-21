@@ -5,13 +5,17 @@ import SwiftUI
 struct GlobeView: View {
     @Environment(Globe.self) private var globe
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @GestureState private var dragging = false
+    @GestureState private var pinching = false
     var bottomInset: CGFloat = 0
+    var topInset: CGFloat = 0
 
     var body: some View {
         GeometryReader { geo in
             // Read everything the canvas draws here, so any change to it redraws the canvas.
             let frame = Frame(cam: globe.cam, view: globe.view?.id, parent: globe.parent?.id, leaf: globe.leaf, out: globe.outgoing?.view.id,
-                              fade: globe.fadeIn, world: globe.worldOpacity, labels: globe.labels.count, dots: globe.dots.count, low: globe.range.0, high: globe.range.1)
+                              fade: globe.fadeIn, world: globe.worldOpacity, labels: globe.labels.count, dots: globe.dots.count, low: globe.range.0, high: globe.range.1,
+                              previews: globe.previews.map(\.id), level: globe.atlas.level)
             Canvas(rendersAsynchronously: false) { ctx, size in
                 _ = frame
                 draw(&ctx, size)
@@ -21,24 +25,31 @@ struct GlobeView: View {
             .gesture(
                 SimultaneousGesture(
                     DragGesture(minimumDistance: 3)
+                        .updating($dragging) { _, on, _ in on = true }
                         .onChanged { globe.dragChanged(start: $0.startLocation, translation: $0.translation) }
                         .onEnded { globe.dragEnded(velocity: $0.velocity) },
                     MagnifyGesture()
-                        .onChanged { globe.pinchChanged(scale: $0.magnification, anchor: $0.startLocation) }
-                        .onEnded { _ in globe.pinchEnded() }))
+                        .updating($pinching) { _, on, _ in on = true }
+                        .onChanged { globe.pinchChanged(scale: $0.magnification, anchor: $0.startLocation) }))
+            // a gesture's state resets whether it ended or was cancelled, so this always hears the fingers lift
+            .onChange(of: dragging || pinching) { _, on in
+                if !on { DispatchQueue.main.async { globe.touchesEnded() } }   // after the drag's own end has run
+            }
             .gesture(
                 ExclusiveGesture(
-                    SpatialTapGesture(count: 2).onEnded { _ in globe.zoomOut() },
-                    SpatialTapGesture().onEnded { v in if let id = globe.hit(v.location) { globe.onPick(id) } }))
+                    SpatialTapGesture(count: 2).onEnded { v in globe.zoomIn(at: v.location) },
+                    SpatialTapGesture().onEnded { v in globe.tap(at: v.location) }))
             .onAppear {
                 globe.reduceMotion = reduceMotion
+                globe.topInset = topInset
                 globe.resized(geo.size, bottom: bottomInset)
             }
             .onChange(of: geo.size) { _, s in globe.resized(s, bottom: bottomInset) }
             .onChange(of: bottomInset) { _, b in globe.resized(geo.size, bottom: b) }
+            .onChange(of: topInset) { _, t in globe.topInset = t; globe.relabel() }
             .accessibilityElement()
             .accessibilityLabel("Globe of the world's wine places")
-            .accessibilityHint("Showing \(globe.atlas.name(globe.leaf ?? globe.view?.id ?? "world")). Pick a place from the list to go to it.")
+            .accessibilityHint("Showing \(globe.atlas.name(globe.leaf ?? globe.view?.id ?? "world")). Tap a place to open it, double-tap to zoom in, or pick a place from the list.")
         }
     }
 
@@ -68,6 +79,12 @@ struct GlobeView: View {
             var n = ctx
             n.opacity = globe.outgoing == nil ? 1 : globe.fadeIn
             layer(&n, P, v, globe.parent)
+        }
+        // the parts of a place big enough to show them: thin lines inside it, a hint of the level below
+        for pv in globe.previews {
+            var inner = Path()
+            for it in pv.items { for p in it.polys { P.add(p, to: &inner) } }
+            ctx.stroke(inner, with: .color(Palette.regionStroke.opacity(0.9)), style: StrokeStyle(lineWidth: 0.8, lineJoin: .round))
         }
         for d in globe.dots {
             let r: CGFloat = 6
@@ -105,30 +122,70 @@ struct GlobeView: View {
             ctx.stroke(o, with: .color(Palette.teal), style: StrokeStyle(lineWidth: 1.6, dash: [5, 3]))
         }
         let isCurrent = globe.view?.id == v.id
-        // the chosen place last, so places that share its boundary do not cover it
-        let ordered = isCurrent && globe.leaf != nil ? v.items.filter { $0.id != globe.leaf } + v.items.filter { $0.id == globe.leaf } : v.items
-        for it in ordered {
+        // biggest first (the items come sorted), so the places inside a big one stay visible over it
+        var picked: Path?
+        for it in v.items {
             let path = P.path(it.polys)
             if path.isEmpty { continue }
             let tier = globe.atlas.tier(it.id, range: globe.range)
-            let fill: Color = isCurrent && globe.leaf == it.id ? Palette.target : Palette.shade(benchmark: globe.atlas.isBenchmark(it.id), tier: tier)
-            ctx.fill(path, with: .color(fill))
+            ctx.fill(path, with: .color(Palette.shade(benchmark: globe.atlas.isBenchmark(it.id), tier: tier)))
             ctx.stroke(path, with: .color(tier == 0 ? Palette.landEdge : Palette.regionStroke), style: StrokeStyle(lineWidth: 1, lineJoin: .round))
+            if isCurrent && globe.leaf == it.id { picked = path }
+        }
+        // the chosen place's edge over everything, so its whole extent shows even where smaller places cover it
+        if let picked {
+            // tinted over everything, not painted: a big one (Toscana IGT) still shows the places inside it
+            ctx.fill(picked, with: .color(Palette.target.opacity(0.3)))
+            ctx.stroke(picked, with: .color(Palette.regionStroke), style: StrokeStyle(lineWidth: 5, lineJoin: .round))
+            ctx.stroke(picked, with: .color(Palette.target), style: StrokeStyle(lineWidth: 2.5, lineJoin: .round))
+        }
+        // the rivers and lakes the pages name, over the places so they show
+        if !v.water.isEmpty {
+            var lakes = Path()
+            for w in v.water where w.lake { for p in w.polys { P.add(p, to: &lakes) } }
+            ctx.fill(lakes, with: .color(Palette.lake))
+            ctx.stroke(lakes, with: .color(Palette.river), style: StrokeStyle(lineWidth: 0.8, lineJoin: .round))
+            var rivers = Path()
+            for w in v.water where !w.lake { rivers.addPath(P.lines(w.lines)) }
+            ctx.stroke(rivers, with: .color(Palette.paper.opacity(0.9)), style: StrokeStyle(lineWidth: 3.4, lineCap: .round, lineJoin: .round))   // a pale edge, so a river reads across the deepest gold
+            ctx.stroke(rivers, with: .color(Palette.river), style: StrokeStyle(lineWidth: 1.5, lineCap: .round, lineJoin: .round))
         }
     }
 
     private func label(_ ctx: inout GraphicsContext, _ l: MapLabel) {
-        let text: Text
-        switch l.kind {
-        case .place: text = Text(l.text).font(.system(size: 13, weight: .bold)).foregroundStyle(Palette.ink)
-        case .country: text = Text(l.text).font(.system(size: 10, weight: .bold)).kerning(0.8).foregroundStyle(Palette.soft)
+        let st = l.style
+        if l.kind == .place && l.id == globe.leaf {   // the chosen place's name, set on a pill so it reads at a glance
+            let r = ctx.resolve(Text(l.text).font(st.font).foregroundStyle(Color.white))
+            let sz = r.measure(in: CGSize(width: 1000, height: 100))
+            let x = l.point.x - sz.width * l.anchor.x, y = l.point.y - sz.height * l.anchor.y
+            let pill = Path(roundedRect: CGRect(x: x - 7, y: y - 3, width: sz.width + 14, height: sz.height + 6), cornerRadius: (sz.height + 6) / 2)
+            ctx.fill(pill, with: .color(Palette.target))
+            ctx.stroke(pill, with: .color(Palette.regionStroke), lineWidth: 1.5)
+            ctx.draw(r, at: l.point, anchor: l.anchor)
+            return
         }
-        let r = ctx.resolve(text)
+        if let d = l.dot {   // a town's spot
+            let c = Path(ellipseIn: CGRect(x: d.x - 2.6, y: d.y - 2.6, width: 5.2, height: 5.2))
+            ctx.fill(c, with: .color(Palette.soft))
+            ctx.stroke(c, with: .color(Palette.paper), lineWidth: 1)
+        }
+        let color: Color = switch st.tone {
+        case .ink: Palette.ink
+        case .soft: Palette.soft
+        case .faint: Palette.ink.opacity(0.5)
+        case .water: Palette.riverInk
+        }
+        let r = ctx.resolve(Text(l.text).font(st.italic ? st.font.italic() : st.font).kerning(st.kern).foregroundStyle(color))
         var halo = ctx
-        halo.addFilter(.shadow(color: Palette.halo, radius: 1.2))
-        halo.addFilter(.shadow(color: Palette.halo, radius: 1.2))
-        halo.addFilter(.shadow(color: Palette.halo, radius: 1.2))
-        halo.draw(r, at: l.point, anchor: l.anchor)
+        let blur: CGFloat = st.tone == .ink ? 1.2 : 1
+        for _ in 0..<3 { halo.addFilter(.shadow(color: Palette.halo, radius: blur)) }
+        if l.angle != 0 {   // a river's name runs along it
+            halo.translateBy(x: l.point.x, y: l.point.y)
+            halo.rotate(by: .degrees(l.angle))
+            halo.draw(r, at: .zero, anchor: l.anchor)
+        } else {
+            halo.draw(r, at: l.point, anchor: l.anchor)
+        }
     }
 }
 
@@ -139,4 +196,6 @@ private struct Frame: Equatable {
     let fade: Double, world: Double
     let labels: Int, dots: Int
     let low: Double, high: Double
+    let previews: [String]
+    let level: String   // the course studied picks the gold
 }

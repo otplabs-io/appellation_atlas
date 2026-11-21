@@ -1,0 +1,779 @@
+{
+ "portugal": {
+  "text": "A country whose wine regions include the Douro, Vinho Verde, Alentejano, Dão and Tejo. Tinta Roriz (Tempranillo), Touriga Franca, Touriga Nacional and Fernão Pires are the most planted grapes. The Douro Valley and Pico Island are UNESCO World Heritage wine regions.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Portuguese wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Portuguese_wine&oldid=1361348983"
+  }
+ },
+ "portugal/alenquer": {
+  "text": "A valley wine region in Lisboa, where grapes ripen easily into full-bodied, spicy, peppery reds. The whites are dry with a creamy mouthfeel. Allowed grapes include Touriga Nacional, Castelão, Arinto and Fernão Pires.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Alenquer DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Alenquer_DOC&oldid=1144688439"
+  }
+ },
+ "portugal/alentejano": {
+  "text": "A Portuguese regional wine area classed as a PGI.",
+  "from": [
+   "where"
+  ]
+ },
+ "portugal/alentejo": {
+  "text": "A large southern Portuguese region that covers about a third of the country and is also noted for cork. Its table wines draw growing attention, and some producers still use clay pots as in Roman times. Allowed grapes include Alicante Bouschet, Trincadeira, Aragonez and Antão Vaz.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Alentejo wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Alentejo_wine&oldid=1297988082"
+  }
+ },
+ "portugal/arruda": {
+  "text": "A Lisboa wine region around the town of Arruda dos Vinhos, known mainly for red wine. Its wines are made from allowed grapes such as Castelão, Touriga Nacional, Aragonez and Alicante Bouschet, with Arinto and Fernão Pires among the whites.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Arruda DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Arruda_DOC&oldid=1144688455"
+  }
+ },
+ "portugal/bairrada": {
+  "text": "A mild, maritime region near the Atlantic, known for deep-colored, tannic reds with black currant and bell pepper flavors. Allowed grapes include Baga. About two thirds of Portugal's sparkling wine is made here, and rosé is emerging.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Bairrada DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bairrada_DOC&oldid=1360282781"
+  }
+ },
+ "portugal/beira-atlantico": {
+  "text": "A regional wine area on Portugal's Atlantic side, where Baga is by far the most planted grape at 47 percent. Fernão Pires comes next at 22 percent, then Bical, Syrah, Touriga Nacional and Tempranillo.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "portugal/bucelas": {
+  "text": "An area north of Lisbon known for white wine made only from Arinto, Rabo de Ovelha and Sercial. It is noted for cool fermentation. Its whites were once likened in London to Rhine Riesling and called Portuguese hock.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Bucelas DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bucelas_DOC&oldid=1355018510"
+  }
+ },
+ "portugal/carcavelos": {
+  "text": "A coastal area near Lisbon and Estoril known for fortified wine, a liqueur wine in off-dry, topaz-colored style with nutty aromas. It was once sought after for its tawny wine, but suburban building has since cut it back sharply.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Carcavelos DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Carcavelos_DOC&oldid=1343966429"
+  }
+ },
+ "portugal/colares": {
+  "text": "A coastal area in Sintra where vines grow directly in sand behind dunes. Phylloxera cannot live in sand, so the old Ramisco vines are ungrafted. The wines are deep red, full-bodied and very tannic.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Colares DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Colares_DOC&oldid=1071854518"
+  }
+ },
+ "portugal/dao": {
+  "text": "A north central Portuguese region, a DOC since 1908, said to be the origin of Touriga Nacional.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Dão DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=D%C3%A3o_DOC&oldid=1293428770"
+  }
+ },
+ "portugal/dotejo": {
+  "text": "A Portuguese PDO allowing still wine, sparkling wine and liqueur wine. Its very long grape list covers many reds and whites, including Fernão Pires, Castelão, Trincadeira, Touriga Nacional and Arinto.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "portugal/douro": {
+  "text": "Portugal's river valley best known for Port, though it makes as much unfortified table wine. Styles range from light claret-like reds to rich oaked ones. Allowed grapes include Rabigato and Touriga Nacional.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Douro DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Douro_DOC&oldid=1366153417"
+  }
+ },
+ "portugal/duriense": {
+  "text": "A Portuguese regional wine area classed as a PGI.",
+  "from": [
+   "where"
+  ]
+ },
+ "portugal/encostas-d-aire": {
+  "text": "A wine region on limestone hills at the north end of Lisboa, reaching into the Beiras. It was promoted to DOC and absorbed the Alcobaça area as a subregion. Allowed grapes include Fernão Pires, Arinto, Baga, Touriga Nacional and Trincadeira.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Encostas d'Aire DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Encostas_d%27Aire_DOC&oldid=931458395"
+  }
+ },
+ "portugal/lisboa": {
+  "text": "One of Portugal's largest wine producers by volume, a regional wine area stretching from Lisbon along the Atlantic coast to Bairrada. It was called Estremadura until 2009. Caladoc, Castelão, Fernão Pires and Syrah are the most planted grapes.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Lisboa VR",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Lisboa_VR&oldid=1144688507"
+  }
+ },
+ "portugal/madeira": {
+  "text": "A fortified wine from an island in the North Atlantic, made in styles from dry aperitif wines to sweet dessert wines. It has a long history from the Age of Exploration. Allowed grapes include Sercial, Verdelho, Malvasia and Tinta Negra.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Madeira wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Madeira_wine&oldid=1383641405"
+  }
+ },
+ "portugal/minho": {
+  "text": "A regional wine area covering the same ground as Vinho Verde, with nearly identical wines. It differs by allowing foreign grapes. Loureiro leads plantings at 30 percent, with Alvarinho, Vinhão, Azal and Trajadura also grown.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Minho wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Minho_wine_region&oldid=1144688802"
+  }
+ },
+ "portugal/obidos": {
+  "text": "A Lisboa wine region around the town of Óbidos, making red and white wines, with the whites traditionally used for distilled drinks. Sparkling wine is also allowed, from grapes such as Touriga Nacional, Arinto and Fernão Pires.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Óbidos DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=%C3%93bidos_DOC&oldid=1144688809"
+  }
+ },
+ "portugal/palmela": {
+  "text": "A Setúbal Peninsula region first noticed for off-dry white wines from early-picked Muscat, and lately for dry reds and whites. The Arrábida hills have well-drained limestone soil. It also allows sparkling and liqueur wines.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Palmela DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Palmela_DOC&oldid=1045836924"
+  }
+ },
+ "portugal/peninsula-de-setubal": {
+  "text": "A regional wine area where Castelão is by far the most planted grape at 45 percent. Fernão Pires, Muscat of Alexandria, Syrah and Alicante Bouschet follow, with Touriga Nacional also grown.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "portugal/porto": {
+  "text": "A fortified wine made by stopping fermentation early with grape spirit, giving rich fruit, sweetness and 19 to 22 percent alcohol. Main red styles are Ruby, which is younger, and Tawny, aged longer in barrel.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Port wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Port_wine&oldid=1384891691"
+  }
+ },
+ "portugal/setubal": {
+  "text": "A liqueur wine area known for fortified Muscat wines called Moscatel de Setúbal, a style thought to have been invented by José Maria da Fonseca, whose company still holds a near monopoly on it.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Setúbal DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Set%C3%BAbal_DOC&oldid=1355306668"
+  }
+ },
+ "portugal/tejo": {
+  "text": "A regional wine area along the Tagus river, which gives it a more temperate climate than other parts of Portugal. Fernão Pires is the most planted grape at 37 percent. Formerly named Ribatejo.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Tejo wine region",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Tejo_wine_region&oldid=1144688845"
+  }
+ },
+ "portugal/terras-do-dao": {
+  "text": "A Portuguese regional wine area (PGI). Mencía is the most planted grape at 23 percent of vines, then Touriga Nacional at 21 percent and Tempranillo at 18, with Alfrocheiro, Encruzado and Baga also grown.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "portugal/torres-vedras": {
+  "text": "A PDO wine region in Lisboa, centered on the town of Torres Vedras, whose high yields were long used by bulk producers for inexpensive table wine. Allowed grapes include Castelão, Touriga Nacional, Aragonez, Arinto and Fernão Pires.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Torres Vedras DOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Torres_Vedras_DOC&oldid=1382579024"
+  }
+ },
+ "portugal/vinho-verde": {
+  "text": "A northern Portuguese region whose name means green, or young, wine, released three to six months after harvest. The wines can be white, red or rosé, are drunk young, and include Alvarinho, Loureiro, Arinto and Vinhão.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Vinho Verde",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vinho_Verde&oldid=1353865917"
+  }
+ },
+ "chile": {
+  "text": "A wine country where Spanish conquistadors brought vines in the 16th century and French grapes such as Cabernet Sauvignon and Merlot arrived in the mid-19th. Cabernet Sauvignon leads plantings at 29 percent, followed by Sauvignon Blanc. Chile is free of the phylloxera louse.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Chilean wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Chilean_wine&oldid=1368380371"
+  }
+ },
+ "chile/aconcagua": {
+  "text": "One of Chile's five principal wine regions, covering all vineyards in the Valparaíso Region. It includes Casablanca, San Antonio and Aconcagua Valleys.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Aconcagua (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Aconcagua_%28wine_region%29&oldid=1304724692"
+  }
+ },
+ "chile/aconcagua-valley": {
+  "text": "A subregion of Chile's Aconcagua wine region, which covers all the vineyards of the Valparaíso Region. It is known for red wines, with white grapes now planted on new coastal sites.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Aconcagua (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Aconcagua_%28wine_region%29&oldid=1304724692"
+  }
+ },
+ "chile/alto-maipo": {
+  "text": "A zone of the Maipo Valley, in Chile's Central Valley, the main growing zone for Chilean wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Central Valley (Chilean wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Central_Valley_%28Chilean_wine_region%29&oldid=1297222963"
+  }
+ },
+ "chile/bio-bio-valley": {
+  "text": "A subregion of Southern Chile, one of the five principal wine regions of Chile, alongside the Itata and Malleco valleys.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Southern Chile (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Southern_Chile_%28wine_region%29&oldid=1258483357"
+  }
+ },
+ "chile/cachapoal-valley": {
+  "text": "A zone of the Rapel Valley subregion, in Chile's Central Valley region.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Central Valley (Chilean wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Central_Valley_%28Chilean_wine_region%29&oldid=1297222963"
+  }
+ },
+ "chile/casablanca-valley": {
+  "text": "A subregion of Chile's Aconcagua wine region, which covers all the vineyards of the Valparaíso Region.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Aconcagua (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Aconcagua_%28wine_region%29&oldid=1304724692"
+  }
+ },
+ "chile/central-maipo": {
+  "text": "A zone of the Maipo Valley, in Chile's Central Valley, the main growing zone for Chilean wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Central Valley (Chilean wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Central_Valley_%28Chilean_wine_region%29&oldid=1297222963"
+  }
+ },
+ "chile/central-valley": {
+  "text": "Chile's main wine-growing zone, spanning O'Higgins, Maule and the Metropolitana region. It includes Maipo, Rapel, Curicó and Maule Valleys. Cabernet Sauvignon covers 34 percent of its vines, with Sauvignon Blanc, Merlot and Carmenère behind.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Central Valley (Chilean wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Central_Valley_%28Chilean_wine_region%29&oldid=1297222963"
+  }
+ },
+ "chile/colchagua-valley": {
+  "text": "A zone of the Rapel Valley, in Chile's Central Valley, the main growing zone for Chilean wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Central Valley (Chilean wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Central_Valley_%28Chilean_wine_region%29&oldid=1297222963"
+  }
+ },
+ "chile/coquimbo": {
+  "text": "A Chilean region that includes the Elqui, Limarí and Choapa Valleys. Chardonnay is the most planted grape at 26 percent of vines, followed by Syrah at 15 percent, Pedro Giménez and Sauvignon Blanc.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "chile/curico-valley": {
+  "text": "A Chilean subregion of the Central Valley, the main growing zone for Chilean wine, that contains the Teno and Lontué Valleys.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Central Valley (Chilean wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Central_Valley_%28Chilean_wine_region%29&oldid=1297222963"
+  }
+ },
+ "chile/elqui-valley": {
+  "text": "A northern Chilean valley in the Coquimbo region, at the southern end of the Atacama Desert, running from the Pacific to the Andes, up to 6,500 feet. It is known for table grapes and pisco, and is the north's most commercially successful wine region.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Elqui Valley (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Elqui_Valley_%28wine_region%29&oldid=1249739961"
+  }
+ },
+ "chile/itata-valley": {
+  "text": "A subregion of Southern Chile, one of the five principal wine regions of Chile, alongside the Bío Bío and Malleco valleys.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Southern Chile (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Southern_Chile_%28wine_region%29&oldid=1258483357"
+  }
+ },
+ "chile/lontue-valley": {
+  "text": "A zone of the Curicó Valley, in Chile's Central Valley, the main growing zone for Chilean wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Central Valley (Chilean wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Central_Valley_%28Chilean_wine_region%29&oldid=1297222963"
+  }
+ },
+ "chile/maipo-valley": {
+  "text": "A subregion of the Central Valley, in the Metropolitana area, split into Alto, Central and Pacific Maipo. Cabernet Sauvignon covers 52 percent of its vines, well ahead of Merlot, Syrah, Carmenère, Sauvignon Blanc and Chardonnay.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "chile/malleco-valley": {
+  "text": "A subregion of Southern Chile, one of the five principal wine regions of Chile. The South covers the Bío Bío and Araucanía regions and is made up of three districts: the Itata, Bío Bío and Malleco valleys.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Southern Chile (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Southern_Chile_%28wine_region%29&oldid=1258483357"
+  }
+ },
+ "chile/maule-valley": {
+  "text": "One of Chile's largest and oldest winegrowing valleys, in the Central Valley and about 155 miles south of Santiago. Varied microclimates suit red and white, and it is best known for powerful reds. Cabernet Sauvignon covers 28 percent of vines.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Maule Valley",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Maule_Valley&oldid=1249509027"
+  }
+ },
+ "chile/pacific-maipo": {
+  "text": "A zone of the Maipo Valley, in Chile's Central Valley, the main growing zone for Chilean wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Central Valley (Chilean wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Central_Valley_%28Chilean_wine_region%29&oldid=1297222963"
+  }
+ },
+ "chile/rapel-valley": {
+  "text": "A subregion of the Central Valley, in the O'Higgins area that holds the Cachapoal and Colchagua Valleys. Cabernet Sauvignon is the most planted grape at 38 percent, followed by Carmenère, Merlot, Alicante Bouschet and Syrah.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "chile/san-antonio-valley": {
+  "text": "A subregion of Chile's Aconcagua wine region, which covers all the vineyards of the Valparaíso Region.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Aconcagua (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Aconcagua_%28wine_region%29&oldid=1304724692"
+  }
+ },
+ "chile/southern-chile": {
+  "text": "One of Chile's five principal wine regions, covering the Bío Bío and Araucanía regions. It has three districts: Itata, Bío-Bío and Malleco Valleys.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Southern Chile (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Southern_Chile_%28wine_region%29&oldid=1258483357"
+  }
+ },
+ "chile/teno-valley": {
+  "text": "A zone of the Curicó Valley, in Chile's Central Valley, the main growing zone for Chilean wine.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Central Valley (Chilean wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Central_Valley_%28Chilean_wine_region%29&oldid=1297222963"
+  }
+ },
+ "austria": {
+  "text": "A above all dry white wine country led by Grüner Veltliner, at 33 percent of vines. About 30 percent of wine is red, from Zweigelt, Blaufränkisch and Pinot Noir. Sweet wines come from around Neusiedler See.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Austrian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Austrian_wine&oldid=1323163032"
+  }
+ },
+ "austria/burgenland": {
+  "text": "An Austrian PDO whose areas include Eisenberg, Neusiedlersee, Leithaberg and Mittelburgenland. Across those areas Blaufränkisch and Zweigelt lead plantings at about 21 and 20 percent. It allows still and sparkling wine.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "austria/carnuntum": {
+  "text": "A wine area in Niederösterreich (Lower Austria), Austria, where Zweigelt leads plantings at 28 percent, with Grüner Veltliner at 20 and Blaufränkisch at 12.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "austria/eisenberg": {
+  "text": "A wine area in Burgenland, Austria, whose wine is made only from Blaufränkisch, which covers 43 percent of its vineyards. Welschriesling is the next most planted grape at 20 percent.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "austria/kamptal": {
+  "text": "A wine area in Niederösterreich (Lower Austria), Austria, whose Kamptal DAC wine is made from Grüner Veltliner and Riesling only. Grüner Veltliner covers 55 percent of its vineyards and Riesling 10, with Zweigelt also planted.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "austria/kremstal": {
+  "text": "A wine area in Niederösterreich (Lower Austria), Austria, whose DAC wines are Grüner Veltliner or Riesling. Grüner Veltliner is fresh and spicy, Riesling has stone fruit and mineral notes, and the regular wines show no botrytis or oak.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Kremstal DAC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Kremstal_DAC&oldid=876141174"
+  }
+ },
+ "austria/leithaberg": {
+  "text": "A wine area in Burgenland, Austria, for wine from Blaufränkisch, Chardonnay, Grüner Veltliner and Neuburger, with Pinot Blanc also allowed. Blaufränkisch is the most planted grape at 21 percent, followed by Grüner Veltliner at 14.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "austria/mittelburgenland": {
+  "text": "A wine area in Burgenland, Austria, whose DAC wine is made only from Blaufränkisch. The grape covers 52 percent of its vineyards, with Zweigelt second at 24 percent.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "austria/neusiedlersee": {
+  "text": "A wine area in Burgenland, Austria, where Zweigelt is the most planted grape at 24 percent, ahead of Grüner Veltliner, Welschriesling and Blaufränkisch. It allows still and sparkling wines.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "austria/niederosterreich": {
+  "text": "Lower Austria, an Austrian PDO that holds Wachau, Kamptal, Kremstal, Weinviertel, Wagram and others. Across Weinviertel and Thermenregion, Grüner Veltliner is the most planted grape at 46 percent, with Zweigelt and Welschriesling also grown.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "austria/rosalia": {
+  "text": "A wine area in Austria where Blaufränkisch covers 48 percent of vineyards, with Zweigelt at 18 percent and Grüner Veltliner at 8.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "austria/ruster-ausbruch": {
+  "text": "A protected Austrian designation of origin (PDO).",
+  "from": [
+   "where"
+  ]
+ },
+ "austria/steiermark": {
+  "text": "An Austrian PDO with three areas: Vulkanland Steiermark, Südsteiermark and Weststeiermark. Across Vulkanland Steiermark and Weststeiermark, plantings are mixed, led by Blauer Wildbacher at 20 percent, then Pinot Blanc and Welschriesling at 15.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "austria/steirerland": {
+  "text": "A regional Austrian wine designation, a Landwein PGI. Across Austria, wines are above all dry whites, often from Grüner Veltliner, and about 30 percent of the wines are red.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Austrian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Austrian_wine&oldid=1323163032"
+  }
+ },
+ "austria/sudsteiermark": {
+  "text": "A wine area in Steiermark, Austria, where Sauvignon Blanc is the most planted grape at 26 percent. Welschriesling, Muscat Blanc and Pinot Blanc follow, with Chardonnay also grown.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "austria/thermenregion": {
+  "text": "A wine area in Niederösterreich (Lower Austria), Austria, whose allowed grapes include Zierfandler and Rotgipfler. Plantings are varied, led by Zweigelt at 15 percent, then Grüner Veltliner, Sankt Laurent, Pinot Noir and Rotgipfler.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "austria/traisental": {
+  "text": "A wine district in Niederösterreich (Lower Austria), Austria, south of Krems, designated in 1995. Grüner Veltliner dominates at 64 percent and is made fresh for drinking young. Traisental DAC covers Grüner Veltliner and Riesling.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Traisental",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Traisental&oldid=1372897143"
+  }
+ },
+ "austria/vulkanland-steiermark": {
+  "text": "A wine area in Steiermark, Austria, where Welschriesling is the most planted grape at 20 percent, followed by Pinot Blanc and Sauvignon Blanc. Zweigelt, Muscat Blanc and Chardonnay are also grown.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "austria/wachau": {
+  "text": "One of Austria's most established wine regions, in Niederösterreich (Lower Austria), on the Danube west of Vienna, known for dry Riesling and Grüner Veltliner. Its own three-level system runs from Steinfeder, up to 11.5 percent alcohol, upward. Grüner Veltliner covers 64 percent of vines.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Wachau wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Wachau_wine&oldid=1383730478"
+  }
+ },
+ "austria/wagram": {
+  "text": "A wine area in Niederösterreich (Lower Austria), Austria, where Grüner Veltliner covers 56 percent of vineyards. Zweigelt follows at 12 percent, with Riesling, Roter Veltliner and Müller-Thurgau also grown.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "austria/weinviertel": {
+  "text": "Austria's first controlled designation of origin, in Niederösterreich (Lower Austria), making almost half of Austria's Grüner Veltliner. The wine is aromatic and spicy with pepper notes. Reserve is dry and full-bodied, and may show botrytis and oak.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Weinviertel DAC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Weinviertel_DAC&oldid=1337463948"
+  }
+ },
+ "austria/weststeiermark": {
+  "text": "A wine area in Steiermark, Austria, where Blauer Wildbacher covers 64 percent of vineyards, far ahead of Sauvignon Blanc, Pinot Blanc and Muscat Blanc. Blauer Wildbacher makes Schilcher, its pale, sharp rosé.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ }
+}

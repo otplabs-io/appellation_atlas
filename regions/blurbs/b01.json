@@ -1,0 +1,932 @@
+{
+ "france": {
+  "text": "France is one of the world's largest wine producers, with several hundred appellations that set grapes and winemaking by place. It gave the world grapes such as Chardonnay, Cabernet Sauvignon and Syrah. Merlot, Ugni Blanc and Grenache are its most planted.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "French wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=French_wine&oldid=1369751019"
+  }
+ },
+ "france/aloxe-corton": {
+  "text": "A Côte de Beaune village appellation in Burgundy for red wine from Pinot Noir and white from Chardonnay. About 98 percent is red. Its commune holds vineyards of all three Corton hill grand crus: Corton, Corton-Charlemagne and Charlemagne.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Aloxe-Corton wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Aloxe-Corton_wine&oldid=1348821553"
+  }
+ },
+ "france/alsace": {
+  "text": "France's mostly white wine region, with Germanic influence, where most wines are labeled by grape variety. Riesling and Gewürztraminer lead plantings in the Haut-Rhin and Bas-Rhin, then Pinot Gris and Auxerrois. Its appellations are Alsace, Alsace Grand Cru and Crémant d'Alsace.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Alsace wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Alsace_wine&oldid=1351653670"
+  }
+ },
+ "france/alsace-grand-cru": {
+  "text": "Alsace's appellation for wines from selected named vineyards, recognized in 1975. Wines must meet the Alsace AOC rules plus stricter ones, including yields of 55 hectoliters per hectare or less.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Alsace Grand Cru AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Alsace_Grand_Cru_AOC&oldid=1365958407"
+  }
+ },
+ "france/alsace-grand-cru-altenberg-de-bergbieten": {
+  "text": "A white wine grand cru from the Altenberg vineyard at Bergbieten, in Bas-Rhin, Alsace. It is one of fifty-one Alsace grands crus, each with its own appellation but sharing the Alsace Grand Cru rules. Riesling, Gewürztraminer, Pinot Gris and Muscat are allowed. Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Altenberg de Bergbieten",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Altenberg_de_Bergbieten&oldid=1319587961"
+  }
+ },
+ "france/alsace-grand-cru-altenberg-de-bergheim": {
+  "text": "An Alsace Grand Cru vineyard in Bergheim. Its main allowed grapes are Pinot Gris, Riesling and Gewürztraminer, with Chasselas, three kinds of Muscat, Pinot Blanc and Pinot Noir also allowed as minor grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-altenberg-de-wolxheim": {
+  "text": "A white wine grand cru from the Altenberg vineyard at Wolxheim, near the northern end of the Alsace Wine Route and between Engelberg and Bruderthal on the Wine Route. It is one of fifty-one Alsace grands crus. Riesling, Gewürztraminer, Pinot Gris and Muscat are allowed. Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Altenberg de Wolxheim",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Altenberg_de_Wolxheim&oldid=1384031654"
+  }
+ },
+ "france/alsace-grand-cru-brand": {
+  "text": "An Alsace Grand Cru vineyard in Turckheim. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-bruderthal": {
+  "text": "An Alsace Grand Cru vineyard in Molsheim. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-eichberg": {
+  "text": "An Alsace Grand Cru vineyard in Eguisheim. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-engelberg": {
+  "text": "An Alsace Grand Cru vineyard in Dahlenheim and Scharrachbergheim-Irmstett. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-florimont": {
+  "text": "An Alsace Grand Cru vineyard in Ingersheim and Katzenthal. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-frankstein": {
+  "text": "An Alsace Grand Cru vineyard in Dambach-La-Ville. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-froehn": {
+  "text": "An Alsace Grand Cru vineyard in Zellenberg. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-furstentum": {
+  "text": "An Alsace Grand Cru vineyard in Kaysersberg Vignoble. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-geisberg": {
+  "text": "An Alsace Grand Cru vineyard in Ribeauvillé. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-gloeckelberg": {
+  "text": "An Alsace Grand Cru vineyard in Rodern and Saint-Hippolyte. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-goldert": {
+  "text": "An Alsace Grand Cru vineyard in Gueberschwihr. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-hatschbourg": {
+  "text": "An Alsace Grand Cru vineyard in Hattstatt and Vœgtlinshoffen. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-hengst": {
+  "text": "An Alsace Grand Cru vineyard in Wintzenheim. Its wines can be made from seven grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel) and Pinot Noir for red. Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-kaefferkopf": {
+  "text": "An Alsace Grand Cru vineyard in Ammerschwihr. Its main allowed grapes are Pinot Gris, Riesling and Gewürztraminer, with the three Muscats allowed as minor grapes. It was the latest vineyard added to the 51 Alsace Grand Cru sites, in 2007.",
+  "from": [
+   "rules",
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Alsace Grand Cru AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Alsace_Grand_Cru_AOC&oldid=1365958407"
+  }
+ },
+ "france/alsace-grand-cru-kanzlerberg": {
+  "text": "An Alsace Grand Cru vineyard in Bergheim. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-kastelberg": {
+  "text": "An Alsace Grand Cru vineyard in Andlau. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-kessler": {
+  "text": "An Alsace Grand Cru vineyard in Guebwiller. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-kirchberg-de-barr": {
+  "text": "An Alsace Grand Cru vineyard in Barr. Its wines can be made from seven grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel) and Pinot Noir for red. Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-kirchberg-de-ribeauville": {
+  "text": "An Alsace Grand Cru vineyard in Ribeauvillé. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-kitterle": {
+  "text": "An Alsace Grand Cru vineyard in Guebwiller. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-mambourg": {
+  "text": "An Alsace Grand Cru vineyard in Kaysersberg Vignoble. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-mandelberg": {
+  "text": "An Alsace Grand Cru vineyard in Beblenheim and Mittelwihr. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-marckrain": {
+  "text": "An Alsace Grand Cru vineyard in Bennwihr and Kaysersberg Vignoble. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-moenchberg": {
+  "text": "An Alsace Grand Cru vineyard in Andlau and Eichhoffen. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-muenchberg": {
+  "text": "An Alsace Grand Cru vineyard in Nothalten. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-ollwiller": {
+  "text": "An Alsace Grand Cru vineyard in Wuenheim. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-osterberg": {
+  "text": "An Alsace Grand Cru vineyard in Ribeauvillé. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-pfersigberg": {
+  "text": "An Alsace Grand Cru vineyard in Eguisheim and Wettolsheim. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-pfingstberg": {
+  "text": "An Alsace Grand Cru vineyard in Orschwihr. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-praelatenberg": {
+  "text": "An Alsace Grand Cru vineyard in Kintzheim. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-rangen": {
+  "text": "An Alsace Grand Cru vineyard in Thann and Vieux-Thann. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-rosacker": {
+  "text": "An Alsace Grand Cru vineyard in Hunawihr. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-saering": {
+  "text": "An Alsace Grand Cru vineyard in Guebwiller. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-schlossberg": {
+  "text": "An Alsace Grand Cru vineyard in Kaysersberg Vignoble. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-schoenenbourg": {
+  "text": "An Alsace Grand Cru vineyard in Riquewihr and Zellenberg. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-sommerberg": {
+  "text": "An Alsace Grand Cru vineyard in Katzenthal and Niedermorschwihr. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-sonnenglanz": {
+  "text": "An Alsace Grand Cru vineyard in Beblenheim. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-spiegel": {
+  "text": "An Alsace Grand Cru vineyard in Bergholtz and Guebwiller. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-sporen": {
+  "text": "An Alsace Grand Cru vineyard in Riquewihr. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-steinert": {
+  "text": "An Alsace Grand Cru vineyard in Pfaffenheim and Westhalten. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-steingrubler": {
+  "text": "An Alsace Grand Cru vineyard in Wettolsheim. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-steinklotz": {
+  "text": "An Alsace Grand Cru vineyard in Marlenheim. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-vorbourg": {
+  "text": "An Alsace Grand Cru vineyard in Rouffach and Westhalten. Its wines can be made from seven grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel) and Pinot Noir for red. Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-wiebelsberg": {
+  "text": "An Alsace Grand Cru vineyard in Andlau. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-wineck-schlossberg": {
+  "text": "An Alsace Grand Cru vineyard in Ammerschwihr and Katzenthal. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-winzenberg": {
+  "text": "An Alsace Grand Cru vineyard in Blienschwiller. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-zinnkoepfle": {
+  "text": "An Alsace Grand Cru vineyard in Soultzmatt and Westhalten. Its wines can be made from six grapes: Riesling, Gewürztraminer, Pinot Gris and three Muscats (Muscat Blanc à Petits Grains, Muscat Rose à Petits Grains and Muscat Ottonel). Each white is made from one grape alone, though the Muscats may be blended.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/alsace-grand-cru-zotzenberg": {
+  "text": "An Alsace Grand Cru vineyard in Mittelbergheim. Its wines can be made from four grapes, Riesling, Gewürztraminer, Pinot Gris and Sylvaner, but not the Muscats. It is one of 51 Alsace Grand Cru vineyards. Each wine is made from one grape alone.",
+  "from": [
+   "rules",
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Alsace Grand Cru AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Alsace_Grand_Cru_AOC&oldid=1365958407"
+  }
+ },
+ "france/ambonnay": {
+  "text": "A cru village in the Montagne de Reims, one of five sub-regions of Champagne, where soils are chalk-based and Pinot Noir is the main grape. Champagne's rules allow sparkling wine from Pinot Noir, Meunier and Chardonnay, plus Arbane, Petit Meslier, Pinot Blanc and Pinot Gris.",
+  "from": [
+   "where",
+   "rules_of_wider",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Montagne de Reims",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Montagne_de_Reims&oldid=1361808889"
+  }
+ },
+ "france/anjou": {
+  "text": "A Loire Valley appellation near the city of Angers, part of the Middle Loire with Saumur and Touraine. Rules allow still and sparkling wine from grapes including Cabernet Franc, Grolleau, Gamay and Chardonnay.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Anjou wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Anjou_wine&oldid=1378843060"
+  }
+ },
+ "france/anjou-brissac": {
+  "text": "A Loire Valley appellation for wine made from Cabernet Franc and Cabernet Sauvignon, covering communes around Brissac Loire Aubance such as Denée and Mozé-sur-Louet.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/anjou-coteaux-de-la-loire": {
+  "text": "A Loire Valley appellation for wine made from Chenin, covering communes such as Chalonnes-sur-Loire, Bouchemaine and Saint-Georges-sur-Loire.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/anjou-villages": {
+  "text": "A Loire Valley appellation for wine made from Cabernet Franc and Cabernet Sauvignon, covering communes such as Beaulieu-sur-Layon, Chalonnes-sur-Loire and Bouchemaine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/arbois": {
+  "text": "A Jura appellation, in the cool climate region between Burgundy and Switzerland, for wine made from Savagnin Blanc, Chardonnay, Pinot Noir, Poulsard and Trousseau. Its rules also allow a partially fermented grape must made from raisined grapes. Pupillin is among its communes.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Jura wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Jura_wine&oldid=1364484294"
+  }
+ },
+ "france/aude": {
+  "text": "A department-wide IGP wine from the Aude, one of France's vins de pays, called vin de pays de l'Aude from 1968 until 2009. The most planted grapes there are Syrah (16 percent), Merlot and Carignan (15 each), then Grenache and Chardonnay (12 each).",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Aude (IGP)",
+   "lang": "fr",
+   "url": "https://fr.wikipedia.org/w/index.php?title=Aude_%28IGP%29&oldid=237584283"
+  }
+ },
+ "france/auxey-duresses": {
+  "text": "A Côte de Beaune village appellation in Burgundy for red wine from Pinot Noir and white from Chardonnay. About two-thirds is red and one-third white. It has no grand cru vineyards, and the appellation was created in 1970.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Auxey-Duresses wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Auxey-Duresses_wine&oldid=1177175824"
+  }
+ },
+ "france/avenay-val-dor": {
+  "text": "A Champagne village. Champagne's rules allow sparkling wine from Pinot Noir, Meunier and Chardonnay, plus Arbane, Petit Meslier, Pinot Blanc and Pinot Gris.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/avize": {
+  "text": "A cru village in the Côte des Blancs, an area of Champagne vineyards named for its grape, where Chardonnay is grown above all and many champagnes are blanc de blancs, from white grapes only. Avize is one of four villages on the Côte des Blancs slope itself.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Côte des Blancs",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4te_des_Blancs&oldid=1361808884"
+  }
+ },
+ "france/ay": {
+  "text": "A cru village in the Vallée de la Marne, a Champagne sub-region on the banks of the Marne. It holds only two Grands Crus villages, Aÿ and Tours-sur-Marne, and Meunier is its main grape at about 59 percent of production.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Vallée de la Marne",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Vall%C3%A9e_de_la_Marne&oldid=1361808891"
+  }
+ },
+ "france/bandol": {
+  "text": "A Provence appellation around Bandol, Le Castellet and Sanary-sur-Mer. Its main allowed grapes are Grenache, Mourvèdre and Cinsaut, with Bourboulenc, Clairette and Ugni Blanc also allowed.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/banyuls": {
+  "text": "A fortified vin doux naturel from old vines on terraced slopes of the Catalan Pyrenees in Roussillon, in Languedoc-Roussillon near the Spanish border. Fermentation is stopped by adding alcohol. Its main allowed grapes are Grenache (red, white and gray), Macabeu and Tourbat.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Banyuls AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Banyuls_AOC&oldid=1355034477"
+  }
+ },
+ "france/banyuls-grand-cru": {
+  "text": "A Languedoc-Roussillon liqueur wine appellation covering Banyuls-sur-Mer, Cerbère, Collioure and Port-Vendres. Its grapes include Grenache, Grenache Blanc and Gris, Macabeu and Mourvèdre.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/barsac": {
+  "text": "A Bordeaux appellation inside the Sauternes & Barsac area, limited to the commune of Barsac, for wine made from Semillon, Sauvignon, Sauvignon Gris and Muscadelle.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/batard-montrachet": {
+  "text": "A Côte de Beaune Grand Cru in the Côte d'Or, grouped under Puligny-Montrachet, for wine made only from Chardonnay. Its vineyards are shared between the communes of Chassagne-Montrachet and Puligny-Montrachet. Puligny-Montrachet itself makes almost only white wine.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Puligny-Montrachet wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Puligny-Montrachet_wine&oldid=1380016987"
+  }
+ },
+ "france/bearn": {
+  "text": "A South West France appellation. Its rules allow Tannat, Cabernet Franc and Cabernet Sauvignon, along with Petit Manseng, Gros Manseng and Raffiat de Moncade. Some vineyards in Jurançon can make red Béarn, and some in Madiran can make rosé.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Béarn AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=B%C3%A9arn_AOC&oldid=1349242045"
+  }
+ },
+ "france/beaujolais": {
+  "text": "A French appellation in the Burgundy region, best known for light-bodied red wine from Gamay, a thin-skinned, low-tannin grape. White is about 1 percent of production, above all Chardonnay. Crus within it include Morgon, Fleurie, Moulin-à-Vent and Brouilly.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Beaujolais",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Beaujolais&oldid=1376165801"
+  }
+ },
+ "france/beaujolais-in-beaujolais": {
+  "text": "A Beaujolais place whose wider appellation makes mostly light-bodied red wine from Gamay, with Chardonnay for white.",
+  "from": [
+   "where",
+   "rules_of_wider",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Beaujolais",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Beaujolais&oldid=1376165801"
+  }
+ },
+ "france/beaujolais-villages": {
+  "text": "A Beaujolais-Villages entry within Beaujolais whose wider appellation makes mostly light-bodied red wine from Gamay, with Chardonnay for white.",
+  "from": [
+   "where",
+   "rules_of_wider",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Beaujolais",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Beaujolais&oldid=1376165801"
+  }
+ },
+ "france/beaumes-de-venise": {
+  "text": "A southern Rhône Valley appellation making two kinds of wine: sweet fortified vin doux naturel as Muscat de Beaumes de Venise, and red Côtes du Rhône Villages. Its rules list Grenache first, with Syrah and Mourvèdre as other grapes.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Beaumes de Venise AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Beaumes_de_Venise_AOC&oldid=1360131270"
+  }
+ },
+ "france/beaumont-sur-vesle": {
+  "text": "A cru village in the Montagne de Reims, one of five sub-regions of Champagne, where soils are chalk-based and Pinot Noir is the main grape. Champagne's rules allow sparkling wine from Pinot Noir, Meunier and Chardonnay, plus Arbane, Petit Meslier, Pinot Blanc and Pinot Gris.",
+  "from": [
+   "where",
+   "rules_of_wider",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Montagne de Reims",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Montagne_de_Reims&oldid=1361808889"
+  }
+ },
+ "france/beaune": {
+  "text": "A Côte de Beaune appellation for red wine from Pinot Noir and white from Chardonnay, with slightly over 85 percent red. It has no grand cru vineyards.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Beaune wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Beaune_wine&oldid=1146036282"
+  }
+ },
+ "france/bellet": {
+  "text": "A Provence appellation in the commune of Nice. Its rules allow grapes such as Brachet, Fuella Nera, Grenache, Cinsaut, Vermentino, Clairette and Chardonnay. Wine has been made in Provence for at least 2,600 years.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Provence wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Provence_wine&oldid=1370227472"
+  }
+ },
+ "france/bergerac": {
+  "text": "A South West France wine area around the town of Bergerac in the Dordogne, just east of Bordeaux, with 13 appellations including Monbazillac and Pécharmant. Rules allow Merlot, the Cabernets, Cot, Semillon and Sauvignon.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Bergerac wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bergerac_wine&oldid=1341142162"
+  }
+ },
+ "france/bergeres-les-vertus": {
+  "text": "A Champagne village. Champagne's rules allow sparkling wine from Pinot Noir, Meunier and Chardonnay, plus Arbane, Petit Meslier, Pinot Blanc and Pinot Gris.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/bezannes": {
+  "text": "A village in the Champagne area. Champagne's rules allow sparkling wine from Pinot Noir, Meunier and Chardonnay, plus Arbane, Petit Meslier, Pinot Blanc and Pinot Gris.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/bienvenues-batard-montrachet": {
+  "text": "A grand cru vineyard in Puligny-Montrachet, Côte de Beaune, for white wine from Chardonnay. It borders the Bâtard-Montrachet grand cru to the west and south and the Les Pucelles premier cru to the north.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Bienvenues-Bâtard-Montrachet",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bienvenues-B%C3%A2tard-Montrachet&oldid=1177177161"
+  }
+ },
+ "france/billy-le-grand": {
+  "text": "A village within Champagne. Champagne's rules allow sparkling wine from Pinot Noir, Meunier and Chardonnay, plus Arbane, Petit Meslier, Pinot Blanc and Pinot Gris.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/bisseuil": {
+  "text": "A cru village of Champagne, whose wider appellation makes quality sparkling wine. Champagne's rules allow Chardonnay, Meunier and Pinot Noir, plus small amounts of Arbane, Petit Meslier, Pinot Blanc and Pinot Gris.",
+  "from": [
+   "where",
+   "rules_of_wider"
+  ]
+ },
+ "france/blagny": {
+  "text": "A Côte de Beaune appellation for red wine from Pinot Noir, covering only seven premier cru climats in Meursault and Puligny-Montrachet. Created in 1970, it is named for a small village in Puligny-Montrachet on the border with Meursault.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Blagny AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Blagny_AOC&oldid=1146036297"
+  }
+ },
+ "france/blaye": {
+  "text": "A right bank Bordeaux area on the Gironde around the town of Blaye, for red wine. Its rules allow Merlot, Cabernet Sauvignon, Cabernet Franc, Cot, Carmenère and Petit Verdot.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Blaye (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Blaye_%28wine%29&oldid=1242219907"
+  }
+ },
+ "france/blaye-cotes-de-bordeaux": {
+  "text": "A Right Bank Bordeaux appellation. Bordeaux's rules allow Sauvignon, Semillon and Muscadelle for white and Merlot, the Cabernets, Cot, Carmenère and Petit Verdot for red.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/bonnes-mares": {
+  "text": "A grand cru vineyard for red wine from Pinot Noir in the Côte de Nuits, Burgundy. Its appellation dates from 1936. It is shared between Chambolle-Musigny, where most of it lies, and Morey-Saint-Denis.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Bonnes Mares",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bonnes_Mares&oldid=1234427261"
+  }
+ },
+ "france/bonnezeaux": {
+  "text": "A Loire Valley appellation for wine made from Chenin, in the commune of Bellevigne-en-Layon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/bordeaux": {
+  "text": "A southwest France wine region around the city of Bordeaux, where the Dordogne joins the Garonne to form the Gironde estuary. The Gironde grows mostly Merlot (58 percent), Cabernet Sauvignon (20) and Cabernet Franc (8), with some Sémillon and Sauvignon Blanc.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Bordeaux wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bordeaux_wine&oldid=1365208163"
+  }
+ },
+ "france/bordeaux-bordeaux-superieur": {
+  "text": "A grouping within Bordeaux that holds the Bordeaux Supérieur appellation. Bordeaux's rules allow Merlot, Cabernet Franc, Cabernet Sauvignon, Cot and Carmenère for red, plus Sauvignon, Semillon and Muscadelle. The Gironde area grows mostly Merlot (58 percent) and Cabernet Sauvignon (20).",
+  "from": [
+   "rules_of_wider",
+   "planted",
+   "where"
+  ]
+ },
+ "france/bordeaux-superieur": {
+  "text": "A Bordeaux appellation within the Bordeaux & Bordeaux Supérieur group. Its rules allow Merlot, Cabernet Sauvignon, Cabernet Franc, Cot and Carmenère, plus Semillon, Sauvignon and Muscadelle. The Gironde grows mostly Merlot (58 percent) and Cabernet Sauvignon (20).",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "france/bourgogne": {
+  "text": "A Burgundy appellation spread across many communes, including Aloxe-Corton, Ancey and Augy. Its rules allow Pinot Noir, Chardonnay, Pinot Blanc and Pinot Gris, with César and Gamay as minor grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/bourgogne-aligote": {
+  "text": "A Burgundy appellation for white wine made only from the Aligoté grape, created in 1937. About 4,200 acres of Burgundy vineyards were devoted to it in 2007, and average annual production from 2003 to 2007 was 107,470 hectoliters.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Bourgogne Aligoté AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bourgogne_Aligot%C3%A9_AOC&oldid=1303005766"
+  }
+ },
+ "france/bourgogne-mousseux": {
+  "text": "A Burgundy sparkling wine appellation. Its rules allow Pinot Noir, César and Gamay, with Aligoté, Chardonnay and Pinot Blanc also allowed as minor grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/bourgogne-passe-tout-grains": {
+  "text": "A Burgundy appellation that is mostly red, with some rosé. Unlike most Burgundy, which uses a single grape, it is essentially a blend of Gamay and Pinot Noir, and its rules also allow Chardonnay, Pinot Blanc and Pinot Gris.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Bourgogne Passe-Tout-Grains AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bourgogne_Passe-Tout-Grains_AOC&oldid=1209423792"
+  }
+ },
+ "france/bourgueil": {
+  "text": "A Loire Valley appellation that makes mostly red wine from Cabernet Franc. It gained AOC status in 1937, and Cabernet Sauvignon is also allowed.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Bourgueil AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bourgueil_AOC&oldid=1242219905"
+  }
+ },
+ "france/boutenac": {
+  "text": "A Languedoc-Roussillon appellation around Boutenac, Fabrezan and Lézignan-Corbières, for wine from Carignan, Grenache, Mourvèdre and Syrah.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/bouzeron": {
+  "text": "A white wine appellation in the Côte Chalonnaise, Burgundy, made from Aligoté. It is the only communal-level Burgundy appellation for Aligoté. Other Burgundy Aligoté wines are limited to the regional Bourgogne Aligoté.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Bouzeron AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bouzeron_AOC&oldid=1146036357"
+  }
+ },
+ "france/bouzy": {
+  "text": "A cru village in the Montagne de Reims, one of five sub-regions of Champagne, where soils are chalk-based and Pinot Noir is the main grape. Champagne's rules allow sparkling wine from Pinot Noir, Meunier and Chardonnay, plus Arbane, Petit Meslier, Pinot Blanc and Pinot Gris.",
+  "from": [
+   "where",
+   "rules_of_wider",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Montagne de Reims",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Montagne_de_Reims&oldid=1361808889"
+  }
+ },
+ "france/brouilly": {
+  "text": "A Beaujolais appellation for wine made from Gamay, with Aligoté, Chardonnay and Melon also allowed. Its communes include Cercié, Odenas and Saint-Lager.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/brulhois": {
+  "text": "A South West France appellation around Astaffort and Auvillar, for wine from Merlot, Tannat and Cabernet Franc.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/burgundy": {
+  "text": "A region in east-central France whose best-known wines are dry reds from Pinot Noir and whites from Chardonnay.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Burgundy wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Burgundy_wine&oldid=1365731507"
+  }
+ }
+}

@@ -6,7 +6,7 @@ struct AboutView: View {
     @Environment(Atlas.self) private var atlas
 
     private let sources: [(String, String, String)] = [
-        ("Candiago et al. 2022, EU wine PDO inventory", "European boundaries and rules", "https://doi.org/10.1038/s41597-022-01778-5"),
+        ("Candiago et al. 2022, EU wine PDO inventory", "European boundaries and rules", "https://doi.org/10.1038/s41597-022-01513-0"),
         ("UC Davis AVA Project", "US boundaries", "https://github.com/UCDavisLibrary/ava"),
         ("Eurostat GISCO", "Countries and regions", "https://ec.europa.eu/eurostat/web/gisco"),
         ("Wine Australia and IPONZ", "Australian and New Zealand boundaries", "https://www.wineaustralia.com/"),
@@ -18,7 +18,6 @@ struct AboutView: View {
         ("Macrostrat", "Rock (CC BY 4.0)", "https://macrostrat.org/"),
         ("AWS Terrain Tiles", "Elevation and slope", "https://registry.opendata.aws/terrain-tiles/"),
         ("Wikidata and Wikimedia", "How well known each place is", "https://www.wikidata.org/"),
-        ("WSET Level 4 specification", "Which places are Benchmark regions", "https://www.wsetglobal.com/"),
     ]
 
     var body: some View {
@@ -27,8 +26,16 @@ struct AboutView: View {
                 Section {
                     Text("Every wine place in the world on one globe, with what is planted there, its climate, its rock and its land. Everything is inside the app and works with no connection.")
                         .font(.atlasBody)
+                    Text("The Atlas is free to use. It is updated from time to time based on feedback from the people who use it.")
+                        .font(.atlasBody)
                     LabeledContent("Places", value: fmt(Double(atlas.places.count)))
                     LabeledContent("Version", value: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")
+                }
+                Section("Open source") {
+                    Text("The code is on GitHub under the MIT License. Anyone can read it, copy it, change it and run it on their own computer.")
+                        .font(.atlasNote)
+                    Link("github.com/otplabs-io/appellation_atlas", destination: URL(string: "https://github.com/otplabs-io/appellation_atlas")!)
+                        .font(.atlasNote)
                 }
                 Section("Where the data comes from") {
                     ForEach(sources, id: \.0) { s in

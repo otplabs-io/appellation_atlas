@@ -1,0 +1,139 @@
+{
+ "mexico": {
+  "text": "Home to the oldest wine-growing region in the Americas, planted by the Spanish in the 16th century. Baja California makes 90% of the wine, and the most planted grapes include Sultaniye, Cabernet Sauvignon, Carignan and Merlot.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Mexican wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Mexican_wine&oldid=1374299167"
+  }
+ },
+ "mexico/baja-california": {
+  "text": "A Mexican wine region that makes about 90% of the country's wine. Its Ruta del Vino links over fifty wineries with the port of Ensenada and the border, and it is promoted for wine tourism.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Mexican wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Mexican_wine&oldid=1374299167"
+  }
+ },
+ "mexico/coahuila": {
+  "text": "A Mexican wine region that includes the Valle de Parras. Parras is where a Cabernet Sauvignon won the trophy for the world's best Cabernet at the 2020 International Cabernet competition.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Mexican wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Mexican_wine&oldid=1374299167"
+  }
+ },
+ "mexico/valle-de-parras": {
+  "text": "A valley in Coahuila, Mexico. A Parras Cabernet Sauvignon, Don Leo Gran Reserva, won the trophy for the world's best Cabernet at the 2020 International Cabernet competition.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Mexican wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Mexican_wine&oldid=1374299167"
+  }
+ },
+ "mexico/valle-de-guadalupe": {
+  "text": "A valley in Baja California, the state that makes about 90% of Mexico's wine. It holds smaller valleys including Calafia, Mexicali, San Vicente, Santo Tomás and the Tecate zone.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Mexican wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Mexican_wine&oldid=1374299167"
+  }
+ },
+ "netherlands": {
+  "text": "A small wine producer that is a strong and growing branch of Dutch farming, with 180 commercial vineyards. Chardonnay is the most planted grape, followed by Pinot Noir and the hybrid Johanniter.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Dutch wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Dutch_wine&oldid=1304575308"
+  }
+ },
+ "netherlands/achterhoek-winterswijk": {
+  "text": "A Dutch PDO around the commune of Winterswijk. It allows still, semi-sparkling, sparkling and liqueur wines, plus wines from raisined or overripe grapes. Allowed grapes include Solaris, Johanniter, Regent and Souvignier Gris.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "netherlands/maasvallei-limburg": {
+  "text": "A Dutch PDO for still wine along the Maas valley in Limburg. Allowed grapes include Riesling, Chardonnay, Pinot Noir, Pinot Gris, Auxerrois and Gewürztraminer, plus Acolon and Dornfelder for reds.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "netherlands/mergelland": {
+  "text": "A Dutch PDO for still and sparkling wine around Maastricht, Valkenburg and Vaals. Allowed grapes include Riesling, Chardonnay, Pinot Noir, Pinot Blanc, Pinot Gris, Auxerrois and Müller-Thurgau.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "netherlands/oolde": {
+  "text": "A Dutch PDO in the commune of Lochem. It allows still, semi-sparkling, sparkling and liqueur wines, and wines from overripe grapes. Allowed grapes include Solaris, Regent, Cabernet Blanc, Cabertin and Pinotin.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "netherlands/vijlen": {
+  "text": "A Dutch PDO in the commune of Vaals, allowing still and sparkling wine. Allowed grapes include Chardonnay, Pinot Noir and Pinot Gris, along with Solaris, Muscaris, Johanniter and Cabernet Cortis.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "netherlands/rivierenland": {
+  "text": "A Dutch PDO since 2022 for wine from along the Rhine, Waal, Linge and Oude IJssel rivers in Gelderland. It sits on a river floodplain of sandy, clay and gravelly layers, with fertile soils suited to vines.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Rivierenland (wijnstreek)",
+   "lang": "nl",
+   "url": "https://nl.wikipedia.org/w/index.php?title=Rivierenland_%28wijnstreek%29&oldid=70354809"
+  }
+ },
+ "netherlands/pgis": {
+  "text": "The group of twelve Dutch PGIs, one for each province: Zeeland, Zuid-Holland, Utrecht, Overijssel, Noord-Holland, Noord-Brabant, Limburg, Groningen, Gelderland, Friesland, Flevoland and Drenthe.",
+  "from": [
+   "where"
+  ]
+ },
+ "turkey": {
+  "text": "A country where grape growing in Anatolia goes back at least 7,000 years, and one of the first places Vitis vinifera was domesticated. It has the world's sixth-largest vineyard area, but only 3% to 15% of the harvest becomes wine. Sultaniye, Öküzgözü, Syrah and Boğazkere lead plantings.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Turkish wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Turkish_wine&oldid=1364576947"
+  }
+ }
+}

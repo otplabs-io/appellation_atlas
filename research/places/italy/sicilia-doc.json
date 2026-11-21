@@ -22,12 +22,13 @@
   },
   {
    "topic": "place",
-   "claim": "The grape zone is the whole administrative territory of the Region of Sicily. Winemaking, mandatory aging and bottling must also happen within the region.",
+   "claim": "The grape zone is the whole administrative territory of the Region of Sicily. Winemaking, mandatory aging and bottling must also take place in Sicily, apart from a few firms with individual permits to bottle elsewhere.",
    "source": [
     "disciplinare"
    ],
    "strength": "Strong",
-   "quote": "comprende l’intero territorio amministrativo della Regione Sicilia"
+   "quote": "comprende l’intero territorio amministrativo della Regione Sicilia",
+   "note": "Round 28 audit: corrected against the official text."
   },
   {
    "topic": "place",
@@ -65,20 +66,21 @@
   },
   {
    "topic": "winemaking",
-   "claim": "Sparkling may be white or rosé, and may be named for Grillo, Chardonnay, Catarratto, Carricante, Grecanico, Pinot Grigio, Moscato Bianco, Zibibbo, Nero d'Avola, Frappato, Nerello Mascalese or Pinot Nero. The sweetness range runs from brut nature to extra dry.",
-   "source": [
-    "disciplinare"
-   ],
-   "strength": "Strong"
-  },
-  {
-   "topic": "alcohol",
-   "claim": "Minimum total alcohol for sparkling: 11.5% for tank-method white and rosé, 12% for classic method. Classic method needs at least 5.5 g/l total acidity.",
+   "claim": "Sparkling may be white or rosé, and may be named for Grillo, Chardonnay, Catarratto, Carricante, Grecanico, Pinot Grigio, Moscato Bianco, Zibibbo, Nero d'Avola, Frappato, Nerello Mascalese or Pinot Nero. Most run from brut nature to extra dry. Moscato Bianco and Zibibbo sparkling wines are sweet.",
    "source": [
     "disciplinare"
    ],
    "strength": "Strong",
-   "note": "The disciplinare read gives no set time on the lees for classic method. EU minimums apply."
+   "note": "Round 28 audit: corrected against the official text."
+  },
+  {
+   "topic": "alcohol",
+   "claim": "Minimum total alcohol for sparkling is 11.5% for tank-method white and rosé and 12% for classic method. Sweet Moscato Bianco and Zibibbo sparkling wines need 10.5 to 11%. Classic-method white needs at least 5.5 g/l total acidity, and classic rosé 5.0 g/l.",
+   "source": [
+    "disciplinare"
+   ],
+   "strength": "Strong",
+   "note": "The disciplinare read gives no set time on the lees for classic method. EU minimums apply. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "winemaking",
@@ -98,12 +100,12 @@
   },
   {
    "topic": "history",
-   "claim": "The disciplinare traces Sicilian wine back through the Greeks, Romans, Arabs, Normans and Spanish. It says the Muslims brought Zibibbo, named from Capo Zebib in Africa, to Pantelleria.",
+   "claim": "The disciplinare traces Sicilian wine back through the Greeks, Romans, Arabs, Normans and Spanish. It says the Muslims brought Zibibbo to Pantelleria and names it after Capo Zebib in Africa. The more common view links the name to the Arabic zabib, raisin.",
    "source": [
     "disciplinare"
    ],
    "strength": "Strong",
-   "note": "Official history, unchecked against other sources."
+   "note": "Official history, unchecked against other sources. Round 28 audit: corrected against the official text."
   }
  ],
  "conflicts": [],

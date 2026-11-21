@@ -1,0 +1,30 @@
+{
+ "canada": {
+  "notes": [
+   "Ontario is the world's largest producer of icewine."
+  ],
+  "art": [
+   "Chardonnay",
+   "Ontario wine"
+  ]
+ },
+ "canada/okanagan-valley": {
+  "notes": [
+   "Okanagan Chardonnay is marked by delicate citrus fruit."
+  ],
+  "art": [
+   "Okanagan Valley (wine region)",
+   "Chardonnay"
+  ]
+ },
+ "canada/ontario": {
+  "notes": [
+   "Ontario is the world's largest producer of icewine."
+  ],
+  "art": [
+   "Ontario wine",
+   "Chardonnay",
+   "Cabernet Franc"
+  ]
+ }
+}

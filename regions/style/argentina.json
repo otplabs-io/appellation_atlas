@@ -1,0 +1,66 @@
+{
+ "argentina": {
+  "notes": [
+   "Argentine Malbec is deep in color, with intense fruit and a velvety texture.",
+   "Heat in most regions gives soft, ripe tannins and high alcohol, and in very warm areas acidity can run low.",
+   "Torrontés makes fresh, aromatic whites with floral, Muscat-like aromas, peach and apricot, and moderate acidity."
+  ],
+  "art": [
+   "Malbec",
+   "Argentine wine",
+   "Torrontés"
+  ]
+ },
+ "argentina/salta": {
+  "notes": [],
+  "art": [
+   "Argentine wine",
+   "Torrontés"
+  ]
+ },
+ "argentina/cafayate": {
+  "notes": [],
+  "art": [
+   "Argentine wine"
+  ]
+ },
+ "argentina/valle-de-uco": {
+  "notes": [
+   "Uco Valley wines are deep in color, intense in aroma and rich in flavor."
+  ],
+  "art": [
+   "Uco Valley",
+   "Malbec"
+  ]
+ },
+ "argentina/mendoza": {
+  "notes": [],
+  "art": [
+   "Malbec"
+  ]
+ },
+ "argentina/lujan-de-cuyo": {
+  "notes": [],
+  "art": [
+   "Malbec"
+  ]
+ },
+ "argentina/san-juan": {
+  "notes": [],
+  "art": [
+   "Argentine wine"
+  ]
+ },
+ "argentina/neuquen": {
+  "notes": [],
+  "art": [
+   "Argentine wine"
+  ]
+ },
+ "argentina/rio-negro": {
+  "notes": [],
+  "art": [
+   "Argentine wine"
+  ]
+ }
+}

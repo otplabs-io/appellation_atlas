@@ -1,0 +1,347 @@
+{
+ "israel": {
+  "text": "A country with five wine regions: Galilee, the Judean Hills, Shimshon, the Negev and the Sharon plain. Cabernet Sauvignon, Carignan and Merlot are the most planted grapes. The modern industry was founded by Baron Edmond James de Rothschild, owner of Bordeaux's Château Lafite-Rothschild.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Israeli wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Israeli_wine&oldid=1357126363"
+  }
+ },
+ "israel/galilee": {
+  "text": "An Israeli region, including the Golan Heights, that is the most suited to vines in the country. High elevation, cool breezes, big day and night temperature swings and rich, well-drained soils all help.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Israeli wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Israeli_wine&oldid=1357126363"
+  }
+ },
+ "israel/upper-galilee": {
+  "text": "A part of Israel's Galilee, the country's most suitable region for vines because of its high elevation, cool breezes, big day and night temperature swings and well-drained soils.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Israeli wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Israeli_wine&oldid=1357126363"
+  }
+ },
+ "israel/golan-heights": {
+  "text": "An area counted within Israel's Galilee (Galil), the region best suited to vines thanks to high elevation, cool breezes and big day and night temperature swings.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Israeli wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Israeli_wine&oldid=1357126363"
+  }
+ },
+ "israel/judean-hills": {
+  "text": "An Israeli wine region in the hills around the city of Jerusalem. It holds the Jerusalem, Bet Shemesh and Latrun areas.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Israeli wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Israeli_wine&oldid=1357126363"
+  }
+ },
+ "israel/jerusalem": {
+  "text": "An area inside Israel's Judean Hills, the wine region that surrounds the city of Jerusalem.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Israeli wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Israeli_wine&oldid=1357126363"
+  }
+ },
+ "israel/bet-shemesh": {
+  "text": "An area inside Israel's Judean Hills, the wine region that surrounds the city of Jerusalem.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Israeli wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Israeli_wine&oldid=1357126363"
+  }
+ },
+ "israel/latrun": {
+  "text": "An area inside Israel's Judean Hills, the wine region that surrounds the city of Jerusalem.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Israeli wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Israeli_wine&oldid=1357126363"
+  }
+ },
+ "israel/negev": {
+  "text": "A semi-arid desert region of Israel where drip irrigation has made grape growing possible.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Israeli wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Israeli_wine&oldid=1357126363"
+  }
+ },
+ "austria/bergland": {
+  "text": "An Austrian Landwein (PGI) area whose most planted grapes are Chardonnay and Sauvignon Blanc, each at 15 percent of vineyard area, followed by Pinot Noir, Muscat Blanc and Grüner Veltliner.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "austria/landwein-pgi": {
+  "text": "Austria's PGI group of country wines, made up of three areas: Weinland, Steirerland and Bergland. Austria overall is above all dry whites, often from Grüner Veltliner, with about 30 percent red.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Austrian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Austrian_wine&oldid=1323163032"
+  }
+ },
+ "austria/karnten": {
+  "text": "A Kärnten PDO, for wine and quality sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "austria/oberosterreich": {
+  "text": "An Austrian PDO for Oberösterreich, for wine and quality sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "austria/salzburg": {
+  "text": "An Austrian PDO for Salzburg, for wine and quality sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "austria/tirol": {
+  "text": "An Austrian PDO for Tirol, for wine and quality sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "austria/vorarlberg": {
+  "text": "An Austrian PDO for Vorarlberg, for wine and quality sparkling wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "austria/wien": {
+  "text": "The Wien PDO, for wine and quality sparkling wine from inside the city. Grüner Veltliner covers 30 percent of its vineyards, followed by Riesling at 13 percent and Chardonnay and Pinot Blanc at about 8 percent each.",
+  "from": [
+   "rules",
+   "planted",
+   "where"
+  ]
+ },
+ "serbia": {
+  "text": "A country whose vineyards cover about 170,000 acres. Welschriesling is the most planted grape at 14 percent, followed by Merlot and Cabernet Sauvignon. It has eight wine regions, from Banat to the Timok Valley.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Serbian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Serbian_wine&oldid=1367382060"
+  }
+ },
+ "uruguay": {
+  "text": "A South American country best known for red wine from Tannat, which is its most planted grape at 27 percent. Muscat of Hamburg, Merlot and Trebbiano Toscano follow. White wines from Albariño are starting to get international attention.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Uruguayan wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Uruguayan_wine&oldid=1345493565"
+  }
+ },
+ "uruguay/maldonado": {
+  "text": "A Uruguayan wine region that holds the Garzón and José Ignacio areas. Uruguay as a whole is best known for red wine from Tannat.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Uruguayan wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Uruguayan_wine&oldid=1345493565"
+  }
+ },
+ "denmark": {
+  "text": "A country that grows little wine and sells most of it at home. Its most planted grapes are Solaris, Rondo and Léon Millot. Climate change and fruit wines have helped the industry grow.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Danish wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Danish_wine&oldid=1336934664"
+  }
+ },
+ "denmark/dons": {
+  "text": "A Danish PDO for quality sparkling wine. Its rules allow Solaris, Rondo, Regent, Orion, Cabernet Cortis, Madeleine Angevine, Zalas Perle and Pinot Noir.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "denmark/pgis": {
+  "text": "Denmark's group of regional PGIs, made up of Bornholm, Jylland, Sjælland and Fyn. The country grows little wine and sells most of it at home.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Danish wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Danish_wine&oldid=1336934664"
+  }
+ },
+ "switzerland": {
+  "text": "A country that drinks nearly all of its own wine, with under 2 percent exported. Pinot Noir and Chasselas are the leading grapes at 26 and 24 percent. Red grapes cover 57 percent of vineyards.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Swiss wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Swiss_wine&oldid=1352617216"
+  }
+ },
+ "switzerland/ticino": {
+  "text": "Switzerland's southernmost and warmest wine region, on the south side of the Alps. It is known for Merlot, including Bianchi di Merlot, a white wine made from red Merlot grapes with minimal skin contact.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Ticino (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ticino_%28wine_region%29&oldid=1320922139"
+  }
+ },
+ "ukraine": {
+  "text": "A country whose vineyards lie mostly near the Black Sea coast in the south and around the Tisza valley in Zakarpattia. Cabernet Sauvignon, Aligoté and Rkatsiteli are the most planted grapes.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Ukrainian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ukrainian_wine&oldid=1354611208"
+  }
+ },
+ "georgia": {
+  "text": "One of the oldest wine-producing countries, with about 8,000 years of grape growing. It is known for kvevri, ancient clay jars used for winemaking and listed by UNESCO. Rkatsiteli and Saperavi are its main grapes.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Georgian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Georgian_wine&oldid=1380993064"
+  }
+ },
+ "georgia/kakheti": {
+  "text": "An eastern Georgian region, one of the best known in the country, with Telavi and Kvareli as micro-regions. Rkatsiteli covers 43 percent of its vineyards and Saperavi 41 percent.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Georgian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Georgian_wine&oldid=1380993064"
+  }
+ },
+ "georgia/kartli": {
+  "text": "An eastern Georgian region, counted among the country's best-known wine regions. Georgia is known for kvevri clay-jar winemaking.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Georgian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Georgian_wine&oldid=1380993064"
+  }
+ },
+ "georgia/imereti": {
+  "text": "A Georgian wine region, listed alongside Racha-Lechkhumi and Kvemo Svaneti. Georgia is known for kvevri clay-jar winemaking.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Georgian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Georgian_wine&oldid=1380993064"
+  }
+ },
+ "georgia/racha-lechkhumi-and-kvemo-svaneti": {
+  "text": "A Georgian wine region, listed alongside Imereti. Georgia is known for kvevri clay-jar winemaking.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Georgian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Georgian_wine&oldid=1380993064"
+  }
+ },
+ "georgia/abkhazia": {
+  "text": "A Georgian wine area on the coast. Georgia is known for kvevri clay-jar winemaking.",
+  "from": [
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Georgian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Georgian_wine&oldid=1380993064"
+  }
+ }
+}

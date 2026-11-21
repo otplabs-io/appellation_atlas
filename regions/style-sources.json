@@ -1,0 +1,325 @@
+{
+ "$about": "Sources for style notes that do not come from Wikipedia (src/style.py). A place's entry in regions/style/<country>.json lists them under ref. EU specifications are the producers' own official descriptions, filed with the EU register (eAmbrosia) or the national authority; the rest are national wine bodies, a GI register and wine education writing. Cached copies are in data/cache/eu-spec and data/cache/style-web.",
+ "sources": {
+  "es-rias-baixas": {
+   "name": "Rías Baixas DOP specification (pliego de condiciones), July 2024, Xunta de Galicia (what the wines taste like)",
+   "url": "https://agacal.xunta.gal/sites/default/files/calidade-alimentaria/vinos/PC_DOP_Rias_Baixas_julio_2024_ESP.pdf"
+  },
+  "es-bierzo": {
+   "name": "Bierzo DOP technical file, amendment PDO-ES-A0615-AM02, EU register eAmbrosia (what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/56847"
+  },
+  "es-toro": {
+   "name": "Toro DOP technical file, amendment PDO-ES-A0886-AM04, EU register eAmbrosia (what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/64969"
+  },
+  "es-calatayud": {
+   "name": "Calatayud DOP specification (pliego de condiciones), Orden AGA/43/2024, Gobierno de Aragón (what the wines taste like)",
+   "url": "https://www.aragon.es/documents/d/guest/pliego_condiciones_dop_calatayud"
+  },
+  "es-jumilla": {
+   "name": "Jumilla DOP technical file, amendment PDO-ES-A0109-AM04, EU register eAmbrosia (what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/64661"
+  },
+  "es-yecla": {
+   "name": "Yecla DOP technical file, PDO-ES-A0606, EU register eAmbrosia (what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10381"
+  },
+  "es-la-mancha": {
+   "name": "La Mancha DOP technical file, PDO-ES-A0045, EU register eAmbrosia (what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10455"
+  },
+  "es-cataluna": {
+   "name": "Cataluña DOP specification (pliego de condiciones), September 2022, Spanish Ministry of Agriculture (what the wines taste like)",
+   "url": "https://www.mapa.gob.es/images/es/cataluna_2022_09_15_tcm30-634101.pdf"
+  },
+  "es-castilla-y-leon": {
+   "name": "Castilla y León IGP specification (pliego de condiciones), November 2020, Spanish Ministry of Agriculture (what the wines taste like)",
+   "url": "https://www.mapa.gob.es/images/es/castillayleon_2020_11_23_tcm30-210753.pdf"
+  },
+  "it-alto-adige": {
+   "name": "Alto Adige DOC technical file, PDO-IT-A0293-AM02, EU register eAmbrosia (what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31194"
+  },
+  "it-trentino": {
+   "name": "Trentino DOC production rules (disciplinare di produzione), Trento Chamber of Commerce (what the wines taste like)",
+   "url": "https://www.tn.camcom.it/sites/default/files/uploads/documents/ControlliDOCIGT/16DisciplinareDOCTRENTINO.pdf"
+  },
+  "it-taurasi": {
+   "name": "Taurasi DOCG single document, amendment PDO-IT-A0237-AM04, EU register eAmbrosia (what the wine tastes like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/64283"
+  },
+  "it-greco-di-tufo": {
+   "name": "Greco di Tufo DOCG single document, amendment PDO-IT-A0236-AM02, EU register eAmbrosia (what the wine tastes like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/64280"
+  },
+  "pt-dao": {
+   "name": "Dão DOP specification (caderno de especificações), EU register eAmbrosia (what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/16844"
+  },
+  "pt-alentejo": {
+   "name": "Alentejo DOP specification (caderno de especificações), 2011, EU register eAmbrosia (what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/1282"
+  },
+  "pt-alentejano": {
+   "name": "Alentejano IG specification (caderno de especificações), EU register eAmbrosia (what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/2853"
+  },
+  "pt-lisboa": {
+   "name": "Lisboa IG specification (caderno de especificações), June 2014, EU register eAmbrosia (what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/22309"
+  },
+  "fr-cotes-de-gascogne": {
+   "name": "Côtes de Gascogne IGP specification (cahier des charges), EU register eAmbrosia (what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/7185"
+  },
+  "fr-bourgogne": {
+   "name": "Bourgogne AOC specification (cahier des charges), EU register eAmbrosia (Hautes Côtes volumes, and what the wines taste like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/5674"
+  },
+  "gr-naoussa": {
+   "name": "Naoussa PDO specification, EU register eAmbrosia (what the wine tastes like)",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/9118"
+  },
+  "wa-geelong": {
+   "name": "Wine Australia, Geelong region profile (what the wines taste like)",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/victoria-wines/geelong"
+  },
+  "wa-goulburn-valley": {
+   "name": "Wine Australia, Goulburn Valley region profile (what the wines taste like)",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/victoria-wines/goulburn-valley"
+  },
+  "wa-murray-darling": {
+   "name": "Wine Australia, Murray Darling region profile (what the wines taste like)",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/victoria-wines/murray-darling"
+  },
+  "wa-riverina": {
+   "name": "Wine Australia, Riverina region profile (what the wines taste like)",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/new-south-wales-wines/riverina"
+  },
+  "iponz-nelson": {
+   "name": "Nelson GI registration, applicant's evidence, Intellectual Property Office of New Zealand (what the wines taste like)",
+   "url": "https://www.iponz.govt.nz/assets/GIRegister/1836/Applicants-evidence.pdf"
+  },
+  "wosa": {
+   "name": "Wines of South Africa, Winelands of South Africa (what each area is known for)",
+   "url": "https://www.wosa.co.za/The-Industry/Winegrowing-Areas/Winelands-of-South-Africa/"
+  },
+  "woc": {
+   "name": "Wines of Chile, Winegrowing regions and grape varieties (what each valley is known for)",
+   "url": "https://www.winesofchile.org/winegrowing-regions/"
+  },
+  "guildsomm-sb": {
+   "name": "Fred Swan, The Wines of Santa Barbara County, GuildSomm (what the wines taste like)",
+   "url": "https://guildsomm.com/stay_current/features/b/fred-swan/posts/santa-barbara-feature"
+  },
+  "sbv-los-olivos": {
+   "name": "Santa Barbara Vintners, Los Olivos District (what is planted)",
+   "url": "https://sbcountywines.com/portfolio_page/los-olivos-district/"
+  },
+  "slo-coast": {
+   "name": "SLO Coast Wine, the San Luis Obispo Coast and its AVAs (what the wines taste like)",
+   "url": "https://slocoastwine.com/trade-media/"
+  },
+  "decanter-santa-cruz": {
+   "name": "Decanter, Discover Pacific Coast precision in the Santa Cruz Mountains (what the wines taste like)",
+   "url": "https://www.decanter.com/wine/california-wine-region/discover-pacific-coast-precision-in-the-santa-cruz-mountains/"
+  },
+  "audit-05c78504": {
+   "name": "Wine Australia, Shiraz",
+   "url": "https://wineaustralia.com/discover-australian-wine/shiraz"
+  },
+  "audit-82ebc95b": {
+   "name": "Wine Australia, Riesling",
+   "url": "https://wineaustralia.com/discover-australian-wine/riesling"
+  },
+  "audit-45a01cee": {
+   "name": "Wine Australia, Adelaide Hills region profile",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/south-australia-wines/adelaide-hills"
+  },
+  "audit-f3207aac": {
+   "name": "Wine Australia, Clare Valley region profile",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/south-australia-wines/clare-valley"
+  },
+  "audit-10a43f53": {
+   "name": "Wine Australia, Great Southern region profile",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/western-australia-wines/great-southern"
+  },
+  "audit-951ff3b9": {
+   "name": "Wine Australia, Hunter Valley region profile",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/new-south-wales-wines/hunter-valley"
+  },
+  "audit-cfee7e4b": {
+   "name": "Wine Australia, Margaret River region profile",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/western-australia-wines/margaret-river"
+  },
+  "audit-022e4422": {
+   "name": "Wine Australia, Mornington Peninsula region profile",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/victoria-wines/mornington-peninsula"
+  },
+  "audit-04140808": {
+   "name": "Wine Australia, Riverland region profile",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/south-australia-wines/riverland"
+  },
+  "audit-53ee310b": {
+   "name": "Winemakers of Rutherglen, Muscat of Rutherglen",
+   "url": "https://winemakers.com.au/muscat-of-rutherglen/"
+  },
+  "audit-99981a76": {
+   "name": "Wine Australia, Tasmania region profile",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/tasmania-wines/tasmania"
+  },
+  "audit-023cdac1": {
+   "name": "Wine Australia, Yarra Valley region profile",
+   "url": "https://www.wineaustralia.com/market-insights/regions-and-varieties/victoria-wines/yarra-valley"
+  },
+  "audit-8d678b1b": {
+   "name": "BMLUK, Mittelburgenland DAC product specification (Produktspezifikation), June 2022",
+   "url": "https://www.bmluk.gv.at/dam/jcr:3f3b609e-e45f-455c-b0ed-c5f94b49c931/Mittelburgenland%20Produktspezifikation.pdf"
+  },
+  "audit-6e89774b": {
+   "name": "Alsace AOC specification (cahier des charges), BO Agri 5 June 2025",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-07e925f4-f7bf-41cc-9b24-7563f1272acb/telechargement"
+  },
+  "audit-9d62252c": {
+   "name": "Anjou, Cabernet d'Anjou and Rosé d'Anjou AOC specification (cahier des charges), BO Agri 7 May 2026",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-cbea3bbc-3662-449a-9ace-a05174e06031/telechargement"
+  },
+  "audit-ced74bfa": {
+   "name": "Bandol AOC specification (cahier des charges), BO Agri 20 August 2026",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-5dba9fe2-3426-4f86-90e1-84267bdbae56/telechargement"
+  },
+  "audit-c4f347af": {
+   "name": "Barsac AOC specification (cahier des charges), BO Agri 2 April 2026",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-1a477297-6fbd-4fc0-a606-c32c25b2450d/telechargement"
+  },
+  "audit-4331e055": {
+   "name": "Beaujolais AOC specification (cahier des charges), BO Agri 20 August 2026",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-587d5ea5-ef21-44d1-ad87-80a5851ec807/telechargement"
+  },
+  "audit-633a100c": {
+   "name": "Bergerac AOC specification (cahier des charges), BO Agri 2 September 2021",
+   "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-a078cfed-a9b4-4684-997f-6fc1ea003699/telechargement"
+  },
+  "audit-653169bf": {
+   "name": "Sauternes AOC specification (cahier des charges), BO Agri 2 April 2026",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-eadb5a1d-5cbd-4817-90a8-05163683bb05/telechargement"
+  },
+  "audit-88e734fe": {
+   "name": "INAO, AOP Cabernet d'Anjou product page (what the wine tastes like)",
+   "url": "https://www.inao.gouv.fr/node/39314/printable/pdf"
+  },
+  "audit-84533dd7": {
+   "name": "INAO, AOP Cahors product page (what the wine tastes like)",
+   "url": "https://www.inao.gouv.fr/node/2108/printable/pdf"
+  },
+  "audit-46cf849d": {
+   "name": "Comité Champagne, Champagne and its grape varieties",
+   "url": "https://www.champagne.fr/en/about-champagne/a-great-blended-wine/champagne-and-its-grape-varieties"
+  },
+  "audit-33ac8574": {
+   "name": "Inter Rhône (Rhône Valley Vineyards), AOC Condrieu",
+   "url": "https://www.vins-rhone.com/en/cotes-du-rhone-cru-aoc-condrieu"
+  },
+  "audit-23363f0e": {
+   "name": "Inter Rhône (Rhône Valley Vineyards), AOC Cornas",
+   "url": "https://vins-rhone.com/en/cotes-du-rhone-cru-aoc-cornas"
+  },
+  "audit-0b41937a": {
+   "name": "Entre-deux-Mers AOC specification (cahier des charges), arrêté of 19 September 2025, BO Agri 25 September 2025",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-00f0a856-9577-440e-aef1-9ff22d0b3383/telechargement"
+  },
+  "audit-82331ebb": {
+   "name": "INAO, AOP Monbazillac product page (how the wine is made)",
+   "url": "https://www.inao.gouv.fr/node/2100/printable/pdf"
+  },
+  "audit-1f0eae89": {
+   "name": "Sancerre AOC specification (cahier des charges), BO Agri",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-c5b06e73-5c8e-40fc-81cb-26d1b8a0135a/telechargement"
+  },
+  "audit-e2f11827": {
+   "name": "Touraine AOC specification (cahier des charges), BO Agri 11 September 2025",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-59d3a419-514e-4364-9c6c-526c38d753f5/telechargement"
+  },
+  "audit-dd667cbf": {
+   "name": "Inter Rhône (Rhône Valley Vineyards), AOC Vacqueyras",
+   "url": "https://www.vins-rhone.com/en/cotes-du-rhone-cru-aoc-vacqueyras"
+  },
+  "audit-2f4dd665": {
+   "name": "Jurançon AOC specification (cahier des charges), BO Agri 12 June 2025",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-d645c8b2-51ab-4b49-838c-4339610be9ac/telechargement"
+  },
+  "audit-9a69cbea": {
+   "name": "Wines of Germany (Deutsches Weininstitut), the trend towards dry wines continues",
+   "url": "https://www.winesofgermany.com/news-media/news/news/1754/the-trend-towards-dry-wines-continues"
+  },
+  "audit-b7a8e0c4": {
+   "name": "Bavarian wine regulation (BayWeinRAV), section 13",
+   "url": "https://www.gesetze-bayern.de/Content/Document/BayWeinRAV-13"
+  },
+  "audit-9083829a": {
+   "name": "Wines of Germany, Rheingau region page",
+   "url": "https://www.winesofgermany.com/our-regions/growing-area/69/rheingau"
+  },
+  "audit-05633dbb": {
+   "name": "Asti DOCG amendment (2017), EU register eAmbrosia",
+   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/44445"
+  },
+  "audit-f6ca377a": {
+   "name": "Consorzio Tutela Vini Bolgheri DOC, production code (English)",
+   "url": "https://www.bolgheridoc.com/wp-content/uploads/2020/10/disciplinare-bolgheri-en.pdf"
+  },
+  "audit-6c880cd3": {
+   "name": "Italian Wine Central, Frascati DOC",
+   "url": "https://italianwinecentral.com/denomination/frascati-doc/"
+  },
+  "audit-09c68533": {
+   "name": "Consorzio di Tutela della DOC Prosecco, types of Prosecco DOC",
+   "url": "https://www.prosecco.wine/en/types"
+  },
+  "audit-2fe0c3b0": {
+   "name": "Ribera del Duero DOP specification (pliego de condiciones), 31 July 2023, Consejo Regulador",
+   "url": "https://www.riberadelduero.es/sites/default/files/2023-08/PLIEGO_DOUE%2031-07-23_0.pdf"
+  },
+  "audit-a10113f5": {
+   "name": "Consejo Regulador DOCa Rioja, grape varieties",
+   "url": "https://riojawine.com/en-gb/the-designation/grape-varieties/"
+  },
+  "audit-1fcb41cc": {
+   "name": "Consejo Regulador DOCa Rioja, classification",
+   "url": "https://riojawine.com/en/the-designation/classification/"
+  },
+  "audit-5ab514ad": {
+   "name": "Valencia DOP specification (pliego de condiciones), April 2023, Spanish Ministry of Agriculture",
+   "url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/valencia_2023_04_03_tcm30-210545.pdf"
+  },
+  "audit-49b38447": {
+   "name": "D.O. Navarra, official site",
+   "url": "https://navarrawine.com/en/"
+  },
+  "audit-78d691d2": {
+   "name": "Anderson Valley Winegrowers Association",
+   "url": "https://avwines.com/"
+  },
+  "audit-a7cc0bd0": {
+   "name": "Oregon Wine Board, 2024 Oregon Vineyard and Winery Report",
+   "url": "https://industry.oregonwine.org/?p=44354"
+  },
+  "audit-a6fc05e6": {
+   "name": "Finger Lakes Wine Alliance, Riesling",
+   "url": "https://fingerlakeswinealliance.com/?p=3523"
+  },
+  "audit-10218c36": {
+   "name": "Russian River Valley Winegrowers, varietals",
+   "url": "https://russianrivervalley.org/about/varietals/"
+  },
+  "audit-697f8c35": {
+   "name": "Napa Valley Vintners, Rutherford AVA",
+   "url": "https://napavintners.com/napa_valley/appellations/rutherford/"
+  },
+  "audit-4f184615": {
+   "name": "Paso Robles Wine Country Alliance, varieties produced",
+   "url": "https://pasowine.com/paso-robles/varieties-produced/"
+  }
+ }
+}

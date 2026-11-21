@@ -1,0 +1,1055 @@
+{
+ "france/buzet": {
+  "text": "A South West France appellation in Lot-et-Garonne for wine made from Cabernet Sauvignon, Merlot, Cabernet Franc and Cot among the reds, plus whites such as Sauvignon and Semillon.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Buzet AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Buzet_AOC&oldid=1300485710"
+  }
+ },
+ "france/cabardes": {
+  "text": "A Languedoc-Roussillon appellation for red and rosé wine, made from grapes such as Cabernet Sauvignon, Merlot, Syrah, Grenache and Cabernet Franc. It became official only in 1999, making it one of the youngest in France.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cabardès AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cabard%C3%A8s_AOC&oldid=1300894266"
+  }
+ },
+ "france/cabernet-d-anjou": {
+  "text": "A Loire Valley appellation whose wines are made from Cabernet Franc and Cabernet Sauvignon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cabernet-de-saumur": {
+  "text": "A Loire Valley appellation whose wines are made from Cabernet Franc and Cabernet Sauvignon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cadillac": {
+  "text": "A Bordeaux appellation for sweet white wine, in the Entre-Deux-Mers area. It is made from Semillon, Sauvignon, Sauvignon Gris and Muscadelle, and takes its name from the town of Cadillac-sur-Garonne.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cadillac AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cadillac_AOC&oldid=1232399908"
+  }
+ },
+ "france/cahors": {
+  "text": "A South West France appellation for red wine only, built on Malbec, known locally as Cot or Auxerrois. Malbec must make up at least 70% of the blend, and Merlot or Tannat can fill out the rest.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Cahors wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cahors_wine&oldid=1345504847"
+  }
+ },
+ "france/cairanne": {
+  "text": "A Rhône Valley appellation in the southern Rhône, in the Vaucluse, for red and white wine, mainly from Grenache, Clairette, Grenache Blanc and Roussanne. It was part of Côtes-du-Rhône Villages until it won its own appellation, confirmed in 2018.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Cairanne AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cairanne_AOC&oldid=1232410136"
+  }
+ },
+ "france/canon-fronsac": {
+  "text": "A Right Bank Bordeaux appellation around Fronsac and Saint-Michel-de-Fronsac. Its wines are made from Merlot, Cabernet Franc, Cabernet Sauvignon, Cot, Carmenère and Petit Verdot.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cassis": {
+  "text": "A Provence appellation in the commune of Cassis. Whites draw on Clairette and Marsanne, while reds and rosés draw on Cinsaut, Grenache and Mourvèdre.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/castillon-cotes-de-bordeaux": {
+  "text": "A Right Bank Bordeaux appellation for red wine, from Merlot, Cabernet Franc, Cabernet Sauvignon and Cot.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/cerons": {
+  "text": "A Bordeaux appellation on the Left Bank covering Cérons, Illats and Podensac. Its wines are made from Semillon, Sauvignon, Sauvignon Gris and Muscadelle.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/chablis": {
+  "text": "A Burgundy appellation in the far north of the region, making dry white wine from Chardonnay alone. The cool climate gives high acidity and less fruitiness, often with a flinty or steely note, and oak influence is usually much lighter than elsewhere in Burgundy.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Chablis (AOC)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Chablis_%28AOC%29&oldid=1381447788"
+  }
+ },
+ "france/chablis-grand-cru": {
+  "text": "The Grand Cru of Chablis, in northern Burgundy, for white wine from Chardonnay alone. Its seven climats all lie in the commune of Chablis, and the cool climate gives wines more acidity and less fruitiness, often with a flinty note.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Chablis (AOC)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Chablis_%28AOC%29&oldid=1381447788"
+  }
+ },
+ "france/chablis-in-chablis": {
+  "text": "A Burgundy place within the Chablis area, whose wider appellation allows only Chardonnay. Chablis is Burgundy's northernmost appellation, and its cool climate gives wines more acidity and less fruitiness, often with a flinty note.",
+  "from": [
+   "rules_of_wider",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Chablis (AOC)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Chablis_%28AOC%29&oldid=1381447788"
+  }
+ },
+ "france/chambertin": {
+  "text": "A Grand Cru vineyard in Gevrey-Chambertin, in the Côte de Nuits, making red wine mainly from Pinot Noir. It sits roughly in the middle of a group of nine Grand Crus that carry the Chambertin name.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Chambertin",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Chambertin&oldid=1300448071"
+  }
+ },
+ "france/chambertin-clos-de-beze": {
+  "text": "A Grand Cru within Gevrey-Chambertin, in the Côte de Nuits of Burgundy. Its wine is made from Pinot Noir, with Chardonnay, Pinot Blanc and Pinot Gris also allowed. Gevrey-Chambertin has nine Grand Cru vineyards, and its appellation is for red wine with Pinot Noir as the main grape.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Gevrey-Chambertin wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Gevrey-Chambertin_wine&oldid=1348050318"
+  }
+ },
+ "france/chambolle-musigny": {
+  "text": "A Côte de Nuits village appellation for red wine with Pinot Noir as the main grape. It holds two Grand Crus, Musigny and Bonnes Mares, and 25 Premier Cru vineyards. The appellation was created in 1936.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Chambolle-Musigny wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Chambolle-Musigny_wine&oldid=1348050319"
+  }
+ },
+ "france/chamery": {
+  "text": "A cru village of Champagne, whose wider appellation makes quality sparkling wine from Chardonnay, Meunier, Pinot Noir and other grapes.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/champagne": {
+  "text": "France's sparkling wine appellation, made by secondary fermentation in the bottle. Pinot Noir, Pinot Meunier and Chardonnay make almost all of it, with small amounts of Pinot Blanc, Pinot Gris, Arbane and Petit Meslier. It became linked with royalty and luxury.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Champagne",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Champagne&oldid=1375080208"
+  }
+ },
+ "france/champillon": {
+  "text": "A cru village of Champagne, whose wider appellation makes quality sparkling wine from Chardonnay, Meunier, Pinot Noir and other grapes.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/chapelle-chambertin": {
+  "text": "A Grand Cru in Gevrey-Chambertin, in the Côte de Nuits, making red wine mainly from Pinot Noir. It lies on the lower hillside east of Chambertin-Clos de Bèze, and the appellation was created in 1937.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Chapelle-Chambertin",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Chapelle-Chambertin&oldid=1328893557"
+  }
+ },
+ "france/charlemagne": {
+  "text": "A Côte de Beaune Grand Cru within Aloxe-Corton for white wine from Chardonnay, with Pinot Blanc also allowed. Its vineyards lie in the villages of Aloxe-Corton and Pernand-Vergelesses. Aloxe-Corton itself uses Pinot Noir for red and Chardonnay for white.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Aloxe-Corton wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Aloxe-Corton_wine&oldid=1348821553"
+  }
+ },
+ "france/charmes-chambertin": {
+  "text": "A Grand Cru in Gevrey-Chambertin, in the Côte de Nuits, specializing in red wine with Pinot Noir as the main grape. It lies on the lower hillside east of Chambertin, and the appellation was created in 1937.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Charmes-Chambertin",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Charmes-Chambertin&oldid=1277979101"
+  }
+ },
+ "france/chassagne-montrachet": {
+  "text": "A Côte de Beaune village appellation making about two-thirds white wine from Chardonnay and one-third red from Pinot Noir. It has three Grand Crus, Montrachet being the best known, and 50 Premier Cru vineyards.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Chassagne-Montrachet wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Chassagne-Montrachet_wine&oldid=1350505579"
+  }
+ },
+ "france/chateau-chalon": {
+  "text": "A Jura appellation for white wine made only from Savagnin in the vin jaune (\"yellow wine\") style. Aged in cask at least six years and three months, it is bottled in the 62 cl clavelin and is very long-lived.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Château-Chalon AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ch%C3%A2teau-Chalon_AOC&oldid=1354352487"
+  }
+ },
+ "france/chateau-grillet": {
+  "text": "A tiny northern Rhône appellation in the Rhône Valley, of 9.4 acres, owned by a single winery. It makes white wine from Viognier and is effectively an enclave within Condrieu, which also makes Viognier-only whites.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Château-Grillet AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ch%C3%A2teau-Grillet_AOC&oldid=1276709416"
+  }
+ },
+ "france/chateaumeillant": {
+  "text": "A Loire Valley appellation for wine made mainly from Gamay, with Pinot Noir and Pinot Gris as minor grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/chateauneuf-du-pape": {
+  "text": "A southern Rhône appellation between Avignon and Orange, covering about 7,900 acres. It allows 18 grapes, including Grenache, Syrah, Mourvèdre, Cinsaut, Clairette and Roussanne.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Châteauneuf-du-Pape AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Ch%C3%A2teauneuf-du-Pape_AOC&oldid=1379604962"
+  }
+ },
+ "france/chatillon-en-diois": {
+  "text": "A Rhône Valley appellation around Châtillon-en-Diois, made from Gamay, Aligoté and Chardonnay, with Pinot Noir and Syrah as minor grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/chenas": {
+  "text": "A Beaujolais appellation for wine made from Gamay, covering Chénas and La Chapelle-de-Guinchay. Beaujolais reds are generally Gamay, a thin-skinned, low-tannin grape.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Beaujolais",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Beaujolais&oldid=1376165801"
+  }
+ },
+ "france/chevalier-montrachet": {
+  "text": "A Grand Cru within Puligny-Montrachet, in the Côte de Beaune of Burgundy. Its white wine is made from Chardonnay alone. Puligny-Montrachet itself makes almost only white wine, and has four Grand Cru vineyards.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Puligny-Montrachet wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Puligny-Montrachet_wine&oldid=1380016987"
+  }
+ },
+ "france/cheverny": {
+  "text": "A Loire Valley appellation for dry white, light red and rosé wines. Whites are led by Sauvignon Blanc, blended with other grapes. It spreads over communes of Loir-et-Cher and became an AOC in 1993.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Cheverny AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cheverny_AOC&oldid=1232392294"
+  }
+ },
+ "france/chigny-les-roses": {
+  "text": "A cru village of Champagne, whose wider appellation makes quality sparkling wine from Chardonnay, Meunier, Pinot Noir and other grapes.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/chinon": {
+  "text": "A Loire appellation in Touraine that is unusually above all red, made from Cabernet Franc, with 2% to 5% rosé and a little white from Chenin.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Chinon AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Chinon_AOC&oldid=1317445985"
+  }
+ },
+ "france/chiroubles": {
+  "text": "A Beaujolais appellation limited to the commune of Chiroubles, making wine from Gamay. Beaujolais reds are generally Gamay, a thin-skinned, low-tannin grape.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Beaujolais",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Beaujolais&oldid=1376165801"
+  }
+ },
+ "france/chorey-les-beaune": {
+  "text": "A village appellation in the Côte de Beaune, in the Côte d'Or of Burgundy, covering the commune of Chorey-lès-Beaune. Wines are made from Pinot Noir and Chardonnay.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/chouilly": {
+  "text": "A cru village in the Côte des Blancs, an area of Champagne vineyards named for its grape, where Chardonnay is grown above all and many champagnes are blanc de blancs, from white grapes only. Champagne's rules allow Chardonnay, Pinot Noir and Meunier, plus a few other grapes.",
+  "from": [
+   "where",
+   "rules_of_wider",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Côte des Blancs",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4te_des_Blancs&oldid=1361808884"
+  }
+ },
+ "france/clairette-de-bellegarde": {
+  "text": "A Rhône Valley appellation in the commune of Bellegarde, making wine only from Clairette.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/clairette-de-die": {
+  "text": "A natural sparkling white from the Rhône Valley, made from at least 75% Muscat à Petits Grains and up to 25% Clairette. A traditional-method wine is also made from Clairette alone. The Muscat wine has peach and apricot flavors, with rose and honeysuckle aromas, and is usually drunk young.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Clairette de Die AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Clairette_de_Die_AOC&oldid=1360858030"
+  }
+ },
+ "france/clairette-du-languedoc": {
+  "text": "A Languedoc-Roussillon appellation making wine only from Clairette. The rules allow liqueur wine as well as table wine.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/clos-de-la-roche": {
+  "text": "A Grand Cru within Morey-Saint-Denis, in the Côte de Nuits of Burgundy. Its wine is made from Pinot Noir, with Chardonnay, Pinot Blanc and Pinot Gris also allowed. Morey-Saint-Denis makes red and white wine, mainly from Pinot Noir and Chardonnay.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Morey-Saint-Denis wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Morey-Saint-Denis_wine&oldid=1214238547"
+  }
+ },
+ "france/clos-de-tart": {
+  "text": "A Grand Cru within Morey-Saint-Denis, in the Côte de Nuits of Burgundy. It is for red wine from Pinot Noir, with Chardonnay, Pinot Blanc and Pinot Gris allowed in small amounts. Morey-Saint-Denis makes red and white wine, mainly from Pinot Noir and Chardonnay.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Morey-Saint-Denis wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Morey-Saint-Denis_wine&oldid=1214238547"
+  }
+ },
+ "france/clos-de-vougeot": {
+  "text": "A wall-enclosed Grand Cru for red wine in Vougeot, in the Côte de Nuits of Burgundy. At 125 acres, it is the largest single vineyard in the Côte de Nuits entitled to grand cru status. Its wine is made from Pinot Noir.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Clos de Vougeot",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Clos_de_Vougeot&oldid=1256308730"
+  }
+ },
+ "france/clos-des-lambrays": {
+  "text": "A walled Grand Cru in Morey-Saint-Denis, in the Côte de Nuits, making red wine mainly from Pinot Noir. It was raised from premier cru to grand cru in 1981, and most of its 22 acres belong to Domaine des Lambrays.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Clos des Lambrays",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Clos_des_Lambrays&oldid=1338011852"
+  }
+ },
+ "france/clos-saint-denis": {
+  "text": "A Grand Cru within Morey-Saint-Denis, in the Côte de Nuits of Burgundy. Its wine is made from Pinot Noir, with Chardonnay, Pinot Blanc and Pinot Gris also allowed. Morey-Saint-Denis makes red and white wine, mainly from Pinot Noir and Chardonnay.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Morey-Saint-Denis wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Morey-Saint-Denis_wine&oldid=1214238547"
+  }
+ },
+ "france/coligny": {
+  "text": "A cru village of Champagne, whose wider appellation makes quality sparkling wine. Champagne's rules allow Chardonnay, Meunier and Pinot Noir, plus small amounts of Arbane, Petit Meslier, Pinot Blanc and Pinot Gris.",
+  "from": [
+   "where",
+   "rules_of_wider"
+  ]
+ },
+ "france/collioure": {
+  "text": "A Roussillon appellation within Languedoc-Roussillon, making red, rosé and a few white wines. Reds come from Grenache Noir, Mourvèdre, Syrah, Carignan and Cinsaut, and whites from Grenache Blanc and Gris. Its boundaries match Banyuls, whose grapes go into fortified wines.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Collioure AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Collioure_AOC&oldid=1358899555"
+  }
+ },
+ "france/condrieu": {
+  "text": "A northern Rhône appellation south of Côte-Rôtie, making white wine only from Viognier. Its vineyards lie in seven communes, on the steep slopes of the foothills of the Massif Central on the right bank of the Rhône.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Condrieu AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Condrieu_AOC&oldid=1276963171"
+  }
+ },
+ "france/corbieres": {
+  "text": "The largest appellation in Languedoc-Roussillon. It is almost 95% red, with Carignan the most common grape, plus Grenache, Syrah and Mourvèdre. It has a wide range of soils.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Corbières AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Corbi%C3%A8res_AOC&oldid=1293985432"
+  }
+ },
+ "france/cormontreuil": {
+  "text": "A cru village of Champagne, whose wider appellation makes quality sparkling wine from Chardonnay, Meunier, Pinot Noir and other grapes.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/cornas": {
+  "text": "One of the smallest appellations in the Rhône valley, in the northern Rhône. It makes only red wine, made only from Syrah.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Cornas AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cornas_AOC&oldid=1299789198"
+  }
+ },
+ "france/corton": {
+  "text": "A large Grand Cru hill in the Côte de Beaune, shared by Aloxe-Corton, Pernand-Vergelesses and Ladoix, making red and white wine. Labels usually add the climat name, as in Corton Les Bressandes. Reds use Pinot Noir and whites use Chardonnay.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Corton (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Corton_%28wine%29&oldid=1333880654"
+  }
+ },
+ "france/corton-charlemagne": {
+  "text": "A Grand Cru within Aloxe-Corton, in the Côte de Beaune, for white wine from Chardonnay, with Pinot Blanc also allowed. It covers parts of Aloxe-Corton, Pernand-Vergelesses and Ladoix-Serrigny. Aloxe-Corton itself uses Pinot Noir for red and Chardonnay for white.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Aloxe-Corton wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Aloxe-Corton_wine&oldid=1348821553"
+  }
+ },
+ "france/costieres-de-nimes": {
+  "text": "A Rhône Valley appellation between Nîmes and the western Rhône delta, in the Gard. Its wines resemble Rhône wines more than Languedoc ones, and it is now run by the Rhône wine committee. Its main allowed grapes are Mourvèdre, Syrah, Grenache, Marsanne and Roussanne.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Costières de Nîmes AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Costi%C3%A8res_de_N%C3%AEmes_AOC&oldid=1318588792"
+  }
+ },
+ "france/cote-chalonnaise": {
+  "text": "A Burgundy subregion south of the Côte d'Or, on rising ground above Chalon-sur-Saône. It has no Grand Cru vineyards. Pinot Noir and Chardonnay dominate, with some Aligoté and Gamay, and it includes Mercurey, Givry, Rully, Montagny and Bouzeron.",
+  "from": [
+   "wikipedia",
+   "planted_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Côte Chalonnaise",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4te_Chalonnaise&oldid=1342122793"
+  }
+ },
+ "france/cote-d-or": {
+  "text": "A Burgundy area split into the Côte de Nuits, Côte de Beaune and the two Hautes-Côtes. Pinot Noir is the most planted grape at 66%, followed by Chardonnay at 27% and Aligoté at 6%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "france/cote-de-beaune": {
+  "text": "The southern part of the Côte d'Or, a limestone ridge about 15 miles long. Reds continue from the Côte de Nuits but are lighter and more perfumed. Farther south lie great white names like Meursault and Chassagne-Montrachet.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Côte de Beaune",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4te_de_Beaune&oldid=1367177988"
+  }
+ },
+ "france/cote-de-beaune-villages": {
+  "text": "A Côte de Beaune appellation for wine from a long list of villages, including Meursault, Puligny-Montrachet, Pernand-Vergelesses and Chorey-lès-Beaune. Pinot Noir and Chardonnay are the main grapes allowed.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cote-de-brouilly": {
+  "text": "A Beaujolais appellation for Gamay in four communes: Cercié, Odenas, Quincié-en-Beaujolais and Saint-Lager. Beaujolais reds are generally Gamay, a thin-skinned, low-tannin grape.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Beaujolais",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Beaujolais&oldid=1376165801"
+  }
+ },
+ "france/cote-de-nuits": {
+  "text": "The northern part of the Côte d'Or, from Dijon to just south of Nuits-Saint-Georges. It is most famous for reds made from Pinot Noir. Six of its fourteen communes produce grand cru wines.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Côte de Nuits",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4te_de_Nuits&oldid=1381372788"
+  }
+ },
+ "france/cote-de-nuits-villages": {
+  "text": "A Burgundy appellation covering three communes of the Côte de Nuits: Premeaux-Prissey, Comblanchien and Corgoloin. Fixin and Brochon were once part of it. Pinot Noir and Chardonnay are the main grapes allowed.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cote-des-blancs": {
+  "text": "A Champagne area south of Épernay, named for its grape: about 95% Chardonnay. The mostly east-facing slope runs for about 12 miles, and its champagnes often carry the term blanc de blancs. Avize, Cramant, Le Mesnil-sur-Oger and Oger sit on it.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Côte des Blancs",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4te_des_Blancs&oldid=1361808884"
+  }
+ },
+ "france/cote-roannaise": {
+  "text": "A Loire Valley appellation whose wine is made only from Gamay. It covers a group of communes including Ambierle, Renaison and Saint-Haon-le-Châtel.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Loire Valley (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Loire_Valley_%28wine%29&oldid=1383592503"
+  }
+ },
+ "france/cote-rotie": {
+  "text": "A northern Rhône appellation whose name means \"the roasted slope\", for the long hours of sun on its steep, walled slopes. The reds are Syrah with up to 20% Viognier, fermented together for extra aroma.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Côte-Rôtie AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4te-R%C3%B4tie_AOC&oldid=1317908595"
+  }
+ },
+ "france/coteaux-bourguignons": {
+  "text": "A Burgundy-wide appellation for red, white and rosé wine, created in 2011 to replace Bourgogne Grand Ordinaire. The name means \"Burgundian hills\". Grapes include Gamay, Pinot Noir, Chardonnay and Aligoté.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Coteaux Bourguignons",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Coteaux_Bourguignons&oldid=1309280042"
+  }
+ },
+ "france/coteaux-champenois": {
+  "text": "Champagne's main still-wine appellation, covering the same area. It allows Chardonnay, Meunier, Pinot Noir and other Champagne grapes. Across Champagne, Pinot Noir is the most planted grape at 38%.",
+  "from": [
+   "rules",
+   "planted"
+  ]
+ },
+ "france/coteaux-d-aix-en-provence": {
+  "text": "A Provence appellation for red, rosé and white wine. Grenache, Syrah, Mourvèdre, Counoise and Cinsaut lead the reds and rosés, and Vermentino the whites.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/coteaux-d-ancenis": {
+  "text": "A Loire Valley appellation whose wine is made from Cabernet Franc, Gamay and Pinot Gris.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/coteaux-de-die": {
+  "text": "A Rhône Valley appellation around Die, making wine only from Clairette.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/coteaux-de-l-aubance": {
+  "text": "A Loire Valley appellation whose wine is made only from Chenin.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/coteaux-de-saumur": {
+  "text": "A Loire Valley appellation whose wine is made only from Chenin.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/coteaux-du-giennois": {
+  "text": "A Loire Valley appellation whose wine is made from Sauvignon, Gamay and Pinot Noir.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/coteaux-du-layon": {
+  "text": "A Loire Valley appellation for sweet white wine, made from Chenin along the River Layon in Anjou. Six villages, such as Beaulieu-sur-Layon and Saint-Aubin-de-Luigné, may add their name to the label.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Coteaux du Layon",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Coteaux_du_Layon&oldid=1374380976"
+  }
+ },
+ "france/coteaux-du-loir": {
+  "text": "A Loire Valley appellation whose wine is made from Pineau d'Aunis and Chenin, with Cabernet Franc, Cot, Gamay and Grolleau as minor grapes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/coteaux-du-lyonnais": {
+  "text": "A Beaujolais appellation on the slopes of the Monts du Lyonnais, west of Lyon. Wines are made from Chardonnay, Aligoté and Gamay.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Coteaux du Lyonnais",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Coteaux_du_Lyonnais&oldid=1247048261"
+  }
+ },
+ "france/coteaux-du-quercy": {
+  "text": "An appellation whose wine is made mainly from Cabernet Franc, with Cot, Gamay, Merlot and Tannat as minor grapes.",
+  "from": [
+   "rules"
+  ]
+ },
+ "france/coteaux-du-vendomois": {
+  "text": "A Loire Valley appellation for white, red and gris wine. Its main grapes are Chenin Blanc and Pineau d'Aunis, and Pinot Noir and Cabernet Franc are each 10 to 40% of the reds.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/coteaux-varois-en-provence": {
+  "text": "A Provence appellation with wines made from Cinsaut, Grenache, Mourvèdre and Syrah.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cotes-d-auvergne": {
+  "text": "A Loire Valley appellation whose wine is made from Gamay and Chardonnay, with Pinot Noir as a minor grape. It covers more than fifty communes, including Aubière, Boudes and Châteaugay.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cotes-de-bergerac": {
+  "text": "A South West France appellation in the Bergerac area. Reds draw on Cabernet Franc, Cabernet Sauvignon, Cot and Merlot, and whites on Sauvignon, Semillon and Muscadelle.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cotes-de-blaye": {
+  "text": "A Right Bank Bordeaux appellation for dry white wine, mainly from Colombard and Ugni Blanc, with Muscadelle, Sauvignon and Sémillon in smaller roles. Blaye is among its communes.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cotes-de-bordeaux": {
+  "text": "A large Bordeaux-area appellation covering more than 100 communes. It allows red grapes such as Merlot, Cabernet Franc, Cabernet Sauvignon and Cot, plus white Sauvignon, Semillon and Muscadelle.",
+  "from": [
+   "rules"
+  ]
+ },
+ "france/cotes-de-bordeaux-saint-macaire": {
+  "text": "A Bordeaux appellation in the Entre-Deux-Mers area, around Saint-Macaire and nine other communes. Its wines are made from Semillon, Sauvignon, Sauvignon Gris and Muscadelle. Entre-Deux-Mers lies between the Garonne and Dordogne rivers.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Entre-Deux-Mers",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Entre-Deux-Mers&oldid=1267948456"
+  }
+ },
+ "france/cotes-de-bourg": {
+  "text": "A Right Bank Bordeaux appellation around Bourg-sur-Gironde, on the east bank of the Gironde estuary, in the north of Bordeaux. The Romans planted the first vineyards. Merlot, Cabernet Franc, Cabernet Sauvignon and Cot are among the grapes allowed.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Côtes de Bourg",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4tes_de_Bourg&oldid=1232400085"
+  }
+ },
+ "france/cotes-de-duras": {
+  "text": "A South West France appellation for red and white wine, in Lot-et-Garonne, just east of the Bordeaux border. Grapes allowed include Merlot, Cabernet Sauvignon, Sauvignon, Semillon and Muscadelle.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Côtes de Duras",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4tes_de_Duras&oldid=1208345916"
+  }
+ },
+ "france/cotes-de-millau": {
+  "text": "A South West France appellation whose wine is made from Syrah, Gamay and Chenin, with Cabernet Sauvignon, Mauzac, Duras and Fer as minor grapes. Its communes include Millau, Aguessac and Compeyre.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cotes-de-montravel": {
+  "text": "A Bergerac appellation in South West France, making wine from Sauvignon, Sauvignon Gris, Semillon and Muscadelle, with Ondenc as a minor grape.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cotes-de-provence": {
+  "text": "A Provence appellation with wines made from Cinsaut, Grenache, Mourvèdre, Syrah and Tibouren, plus Vermentino, Clairette and Semillon.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cotes-du-forez": {
+  "text": "A Loire Valley appellation whose wine is made only from Gamay. It covers a group of communes including Montbrison, Boën-sur-Lignon and Champdieu. The Loire Valley wine region follows the river Loire from the Atlantic coast past Orléans to Sancerre and Pouilly.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Loire Valley (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Loire_Valley_%28wine%29&oldid=1383592503"
+  }
+ },
+ "france/cotes-du-jura": {
+  "text": "A Jura appellation allowing wine and wine from raisined grapes. Grapes include Savagnin, Chardonnay, Pinot Noir, Poulsard and Trousseau, and its communes include Arbois and Baume-les-Messieurs. Jura is a cool climate region between Burgundy and Switzerland.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Jura wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Jura_wine&oldid=1364484294"
+  }
+ },
+ "france/cotes-du-marmandais": {
+  "text": "A South West France appellation around Marmande, on the Garonne just southeast of Entre-Deux-Mers, and a satellite of Bordeaux. It became an AOC in 1990. Its main allowed grapes are Sauvignon, Cabernet Sauvignon, Merlot and Cabernet Franc.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Côtes du Marmandais",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4tes_du_Marmandais&oldid=1232403210"
+  }
+ },
+ "france/cotes-du-rhone": {
+  "text": "The basic appellation of the Rhône, listed under the Southern Rhône and usable throughout the region, in red, white and rosé. Reds and rosés are generally led by Grenache, and whites by Grenache Blanc.",
+  "from": [
+   "wikipedia",
+   "rules",
+   "where"
+  ],
+  "wiki": {
+   "title": "Côtes du Rhône AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4tes_du_Rh%C3%B4ne_AOC&oldid=1318589727"
+  }
+ },
+ "france/cotes-du-rhone-villages": {
+  "text": "A Rhône Valley appellation listed under the Southern Rhône, usable in a limited part of the region, sometimes with the commune's name added.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cotes-du-roussillon": {
+  "text": "The least selective appellation of Roussillon, in Languedoc-Roussillon. In 2002, 68 percent of its output was red, 28 percent rosé and 4 percent white. Grenache dominates reds and rosés, and reds need at least three varieties, with no more than 60 percent Carignan.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Côtes du Roussillon AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4tes_du_Roussillon_AOC&oldid=1232406129"
+  }
+ },
+ "france/cotes-du-roussillon-villages": {
+  "text": "A Roussillon appellation within Languedoc-Roussillon, covering more than thirty communes, including Baixas, Estagel and Caramany. Its rules allow Carignan, Grenache, Mourvèdre, Syrah and Lledoner Pelut.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cotes-du-vivarais": {
+  "text": "An appellation in the northwestern extreme of the southern Rhône, made in nine communes of the Ardèche and five of the Gard. The Gorges of the Ardèche cut through it. It became an AOC in 1999, with Grenache and Syrah as main allowed grapes.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Côtes du Vivarais AOC",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4tes_du_Vivarais_AOC&oldid=1318587881"
+  }
+ },
+ "france/coulee-de-serrant": {
+  "text": "A Loire Valley appellation for a single vineyard within Savennières. Its white wine is made only from Chenin, dry or sweet. The Loire Valley wine region follows the river Loire from the Atlantic coast past Orléans to Sancerre and Pouilly, with Anjou, Saumur, Chinon and Vouvray in between.",
+  "from": [
+   "rules",
+   "wikipedia_of_wider",
+   "where"
+  ],
+  "wiki": {
+   "title": "Loire Valley (wine)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Loire_Valley_%28wine%29&oldid=1383592503"
+  }
+ },
+ "france/coulommes-la-montagne": {
+  "text": "A cru village of Champagne, whose wider appellation makes quality sparkling wine from Chardonnay, Meunier, Pinot Noir and other grapes.",
+  "from": [
+   "rules_of_wider",
+   "where"
+  ]
+ },
+ "france/cour-cheverny": {
+  "text": "A Loire Valley appellation in eleven communes around Cheverny, making wine only from Romorantin.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "france/cramant": {
+  "text": "A cru village in the Côte des Blancs, an area of Champagne vineyards named for its grape, where Chardonnay is grown above all and many champagnes are blanc de blancs, from white grapes only. Cramant is one of four villages on the Côte des Blancs slope itself.",
+  "from": [
+   "where",
+   "wikipedia_of_wider"
+  ],
+  "wiki": {
+   "title": "Côte des Blancs",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=C%C3%B4te_des_Blancs&oldid=1361808884"
+  }
+ },
+ "france/cremant-d-alsace": {
+  "text": "Alsace's sparkling wine, made like champagne and recognized as an AOC in 1976. It is usually a blend of Pinot Blanc, Pinot Gris, Pinot Noir, Riesling, Auxerrois and Chardonnay, and the rosé is made from Pinot Noir.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Crémant d'Alsace",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Cr%C3%A9mant_d%27Alsace&oldid=1260130303"
+  }
+ },
+ "france/cremant-de-bordeaux": {
+  "text": "A sparkling wine appellation covering nearly 500 communes. It is made from the Bordeaux grapes, red and white, including Merlot, Cabernet Sauvignon, Semillon and Sauvignon.",
+  "from": [
+   "rules",
+   "planted"
+  ]
+ }
+}

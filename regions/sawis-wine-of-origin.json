@@ -1,0 +1,20 @@
+{
+ "$about": "South Africa's Wine of Origin production areas, transcribed from SAWIS, Production areas defined in terms of the Wine of Origin Scheme, June 2024 (data/cache/sawis/). Geographical unit > region > district > ward; wards outside any district sit under their region or unit. Used by build/review/sync_sawis.py to set regions/tree.json.",
+ "source": {"name": "SAWIS, Production areas defined in terms of the Wine of Origin Scheme, June 2024", "url": "https://www.sawis.co.za/cert/download/Production_areas_-_June_2024.pdf"},
+ "units": {
+  "Western Cape": {
+   "Cape South Coast": {"Cape Agulhas": ["Elim"], "Elgin": [], "Lower Duivenhoks River": [], "Overberg": ["Elandskloof/Kaaimansgat", "Greyton", "Klein River", "Theewater"], "Plettenberg Bay": [], "Swellendam": ["Buffeljags", "Malgas", "Stormsvlei"], "Walker Bay": ["Bot River", "Hemel-en-Aarde Ridge", "Hemel-en-Aarde Valley", "Sunday's Glen", "Springfontein Rim", "Stanford Foothills", "Upper Hemel-en-Aarde Valley"], "": ["Herbertsdale", "Napier", "Still Bay East"]},
+   "Coastal Region": {"Cape Town": ["Constantia", "Durbanville", "Hout Bay", "Philadelphia"], "Darling": ["Groenekloof"], "Franschhoek/Franschhoek Valley": [], "Lutzville Valley": ["Koekenaap"], "Paarl": ["Agter-Paarl", "Simonsberg-Paarl", "Voor Paardeberg"], "Stellenbosch": ["Banghoek", "Bottelary", "Devon Valley", "Jonkershoek Valley", "Papegaaiberg", "Polkadraai Hills", "Simonsberg-Stellenbosch", "Vlottenburg"], "Swartland": ["Malmesbury", "Paardeberg/Perdeberg", "Paardeberg South", "Piket-Bo-Berg", "Porseleinberg", "Riebeekberg", "Riebeeksrivier", "St Helena Bay"], "Tulbagh": [], "Wellington": ["Blouvlei", "Bovlei", "Groenberg", "Limietberg", "Mid-Berg River"], "": ["Bamboes Bay", "Lamberts Bay"]},
+   "Breede River Valley": {"Breedekloof": ["Goudini", "Slanghoek"], "Robertson": ["Agterkliphoogte", "Ashton", "Boesmansrivier", "Bonnievale", "Eilandia", "Goedemoed", "Goree", "Goudmyn", "Hoopsrivier", "Klaasvoogds", "Le Chasseur", "McGregor", "Vinkrivier", "Zandrivier"], "Worcester": ["Hex River Valley", "Keeromsberg", "Moordkuil", "Nuy", "Rooikrans", "Scherpenheuvel", "Stettyn"]},
+   "Klein Karoo": {"Calitzdorp": ["Groenfontein"], "Langeberg-Garcia": [], "": ["Cango Valley", "Koo Plateau", "Montagu", "Outeniqua", "Tradouw", "Tradouw Highlands", "Upper Langkloof"]},
+   "Olifants River": {"Citrusdal Mountain": ["Piekenierskloof"], "Citrusdal Valley": [], "": ["Spruitdrift", "Vredendal"]},
+   "": {"Ceres Plateau": ["Ceres"], "Prince Albert": ["Kweekvallei", "Prince Albert Valley", "Swartberg"], "": ["Nieuwoudtville", "Cederberg", "Leipoldtville-Sandveld"]}
+  },
+  "Northern Cape": {"": {"Douglas": [], "Sutherland-Karoo": [], "Central Orange River": ["Groblershoop", "Grootdrink", "Kakamas", "Keimoes", "Upington"], "": ["Hartswater", "Prieska"]}},
+  "Eastern Cape": {"": {"": ["St Francis Bay"]}},
+  "KwaZulu-Natal": {"": {"Central Drakensberg": [], "Lions River": []}},
+  "Free State": {"": {"": ["Rietrivier FS"]}},
+  "Limpopo": {},
+  "North-West Province": {}
+ }
+}

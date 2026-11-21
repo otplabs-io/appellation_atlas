@@ -1,22 +1,61 @@
 import SwiftUI
 
-/// iPhone: the sheet over the globe, with search at the top.
+/// iPhone: the sheet over the globe, with search at the top. The search field is part of the page, so it scrolls with it.
 struct PlaceSheet: View {
+    @Binding var detent: PresentationDetent
     @State private var query = ""
+    @FocusState private var searching: Bool
+    @Environment(Nav.self) private var nav
 
     var body: some View {
-        NavigationStack {
+        ScrollViewReader { reader in
             ScrollView {
-                if query.isEmpty {
-                    PlacePage(compact: true).padding(.horizontal, 20).padding(.bottom, 40)
-                } else {
-                    SearchResults(query: $query).padding(.horizontal, 20)
+                VStack(alignment: .leading, spacing: 0) {
+                    SearchField(query: $query, focused: $searching).padding(.top, 20).id("top")
+                    if query.isEmpty && !searching {
+                        PlacePage(compact: true).padding(.top, 16)
+                    } else {
+                        SearchResults(query: $query) { query = ""; searching = false }.padding(.top, 8)
+                    }
+                }
+                .padding(.horizontal, 20).padding(.bottom, 40)
+            }
+            .scrollDismissesKeyboard(.interactively)
+            .onChange(of: searching) { _, s in if s { withAnimation { detent = .large } } }
+            .onChange(of: nav.place) { reader.scrollTo("top", anchor: .top) }
+        }
+        .environment(\.startSearch, { searching = true })
+        .onboarding()
+    }
+}
+
+/// The search field: a magnifier, the words, and a way to clear them or stop.
+struct SearchField: View {
+    @Binding var query: String
+    var focused: FocusState<Bool>.Binding
+
+    var body: some View {
+        HStack(spacing: 10) {
+            HStack(spacing: 8) {
+                Image(systemName: "magnifyingglass").foregroundStyle(Palette.soft)
+                TextField("Search a country, region or appellation", text: $query)
+                    .focused(focused)
+                    .submitLabel(.search)
+                    .autocorrectionDisabled()
+                    .textInputAutocapitalization(.never)
+                if !query.isEmpty {
+                    Button { query = "" } label: { Image(systemName: "xmark.circle.fill").foregroundStyle(Palette.soft) }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("Clear the search")
                 }
             }
-            .searchable(text: $query, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search a country, region or appellation")
-            .navigationTitle("")
-            .navigationBarTitleDisplayMode(.inline)
+            .padding(.horizontal, 14).padding(.vertical, 11)
+            .background(Palette.fill, in: Capsule())
+            if focused.wrappedValue {
+                Button("Cancel") { query = ""; focused.wrappedValue = false }.font(.subheadline.weight(.semibold))
+            }
         }
+        .animation(.snappy, value: focused.wrappedValue)
     }
 }
 
@@ -34,7 +73,7 @@ struct Sidebar: View {
                     Crumbs()
                     PlacesHere(folded: false)
                 } else {
-                    SearchResults(query: $query)
+                    SearchResults(query: $query) { query = "" }
                 }
             }
             .padding(16)
@@ -47,19 +86,19 @@ struct Sidebar: View {
 
 struct SearchResults: View {
     @Binding var query: String
+    var done: () -> Void = {}
     @Environment(Atlas.self) private var atlas
     @Environment(Nav.self) private var nav
-    @Environment(\.dismissSearch) private var dismissSearch
 
     var body: some View {
         let hits = atlas.search(query)
         LazyVStack(alignment: .leading, spacing: 0) {
-            if hits.isEmpty {
+            if hits.isEmpty && !query.isEmpty {
                 Text(query.count < 2 ? "Type at least two letters." : "No place by that name.").font(.atlasBody).foregroundStyle(Palette.soft).padding(.vertical, 12)
             }
             ForEach(hits) { p in
                 Button {
-                    nav.go(p.id); query = ""; dismissSearch()
+                    nav.go(p.id); done()
                 } label: {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(p.name).font(.body.weight(.semibold)).foregroundStyle(Palette.ink)
@@ -87,23 +126,26 @@ struct PlacePage: View {
         let id = nav.place
         let f = id == "world" ? nil : atlas.facts(id)
         let leaf = id != atlas.viewFor(id)
+        if id == "world" {
+            HomePage(compact: compact).id(id)
+        } else {
+            // long-press any words on the page to select and copy them
+            page(id, f, leaf).textSelection(.enabled)
+        }
+    }
+
+    private func page(_ id: String, _ f: JSON?, _ leaf: Bool) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            PlaceHeader(id: id, facts: f).padding(.top, compact ? 16 : 0)
-            if id != "world" { SaveButton(placeID: id) }
-            if compact && id != "world" { Crumbs() }
-            if id == "world" {
-                VStack(alignment: .leading, spacing: 10) {
-                    Text(Copy.worldCount(atlas.places.count))
-                    ForEach(Copy.worldIntro, id: \.self) { Text($0) }
-                }
-                .font(.atlasBody).foregroundStyle(Palette.ink)
-                if compact { SavedList(); PlacesHere(folded: false) }
-                AboutButton().font(.atlasNote).padding(.top, 8)
-            } else {
-                if compact && !leaf { PlacesHere(folded: false) }
-                if let f { PlaceInfo(f: f, range: globe.range) } else { ProgressView() }
-                if compact && leaf { PlacesHere(folded: true) }
+            PlaceHeader(id: id, facts: f)
+            if let b = f?["blurb"]["text"].string, !b.isEmpty {   // what the place is known for (blurb in web/atlas.js)
+                Text(b).font(.atlasBody).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
+                    .padding(.bottom, 2)
             }
+            SaveButton(placeID: id)
+            if compact { Crumbs() }
+            if compact && !leaf { PlacesHere(folded: false) }
+            if let f { PlaceInfo(f: f, range: globe.range) } else { ProgressView() }
+            if compact && leaf { PlacesHere(folded: true) }
         }
         .id(id)
     }
@@ -122,7 +164,7 @@ struct PlaceHeader: View {
                 HStack(spacing: 6) {
                     let kind = kindText
                     if !kind.isEmpty { Text(kind.uppercased()).font(.atlasEyebrow).kerning(1.2).foregroundStyle(Palette.coralText) }
-                    Text(atlas.isBenchmark(id) ? "BENCHMARK REGION" : "EMERGING REGION")
+                    Text((atlas.isBenchmark(id) ? Copy.level(atlas.level).on : Copy.level(atlas.level).off).uppercased())
                         .font(.atlasEyebrow).kerning(0.6)
                         .padding(.horizontal, 6).padding(.vertical, 1)
                         .background(atlas.isBenchmark(id) ? Palette.gold4[2] : Palette.grey4[2], in: RoundedRectangle(cornerRadius: 2))
@@ -186,14 +228,14 @@ struct PlacesHere: View {
         let vid = atlas.viewFor(nav.place)
         let here = atlas.placesIn(vid)
         let range = atlas.range(here.map(\.id))
-        let bench = here.filter(\.benchmark), emerging = here.filter { !$0.benchmark }
+        let bench = here.filter { atlas.isBenchmark($0.id) }, emerging = here.filter { !atlas.isBenchmark($0.id) }
         let cap = bench.isEmpty ? 30 : 12
         let shown = showAll ? emerging : Array(emerging.prefix(cap))
         let title = vid == "world" ? "Countries" : "Places in \(atlas.name(vid))"
         if !here.isEmpty {
             let list = VStack(alignment: .leading, spacing: 10) {
-                if !bench.isEmpty { group("Benchmark regions", bench, count: bench.count, range: range) }
-                if !shown.isEmpty { group("Emerging regions", shown, count: emerging.count, range: range) }
+                if !bench.isEmpty { group(Copy.level(atlas.level).ons, bench, count: bench.count, range: range) }
+                if !shown.isEmpty { group(Copy.level(atlas.level).offs, shown, count: emerging.count, range: range) }
                 if emerging.count > shown.count {
                     Button("Show all \(emerging.count)") { withAnimation { showAll = true } }.font(.atlasNote.weight(.semibold))
                 }
@@ -226,7 +268,7 @@ struct PlacesHere: View {
                 ForEach(list) { p in
                     Button { nav.go(p.id) } label: {
                         HStack(spacing: 6) {
-                            Swatch(color: Palette.shade(benchmark: p.benchmark, tier: atlas.tier(p.id, range: range)))
+                            Swatch(color: Palette.shade(benchmark: atlas.isBenchmark(p.id), tier: atlas.tier(p.id, range: range)))
                             Text(p.name).font(.system(size: 13, weight: .heavy))
                             if atlas.geo[p.id]?.source == nil { Text("no map").font(.system(size: 11)).foregroundStyle(Palette.soft) }
                         }
@@ -235,7 +277,7 @@ struct PlacesHere: View {
                         .background(nav.place == p.id ? Palette.target : Palette.fill, in: Capsule())
                     }
                     .buttonStyle(.plain)
-                    .accessibilityLabel("\(p.name), \(p.benchmark ? "Benchmark" : "Emerging") region")
+                    .accessibilityLabel("\(p.name), \(atlas.isBenchmark(p.id) ? Copy.level(atlas.level).on : Copy.level(atlas.level).off)")
                 }
             }
         }

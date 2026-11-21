@@ -1,0 +1,196 @@
+{
+ "lebanon": {
+  "text": "A country with a 5,000-year winemaking history, one of the oldest wine production regions in the world. Its most planted grapes are Cabernet Sauvignon and Chardonnay, then Merlot, Sauvignon Blanc and Syrah. Its areas include the Bekaa Valley, Batroun, Mount Lebanon, North Lebanon and Jezzine.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Lebanese wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Lebanese_wine&oldid=1385182277"
+  }
+ },
+ "moldova": {
+  "text": "A country with three historical wine regions: Valul lui Traian, Ștefan Vodă and Codru. Cabernet Sauvignon, Aligoté and Merlot are the most planted grapes. Most of its wine is exported, with 60% going to European Union countries.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Moldovan wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Moldovan_wine&oldid=1360908130"
+  }
+ },
+ "chile/austral": {
+  "text": "One of Chile's six official wine regions, set up by a 1994 decree. A wine labeled Austral must be at least three quarters made in the region.",
+  "from": [
+   "wikipedia"
+  ],
+  "wiki": {
+   "title": "Austral (wine region)",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Austral_%28wine_region%29&oldid=1084570908"
+  }
+ },
+ "chile/atacama": {
+  "text": "A Chilean region whose vineyards grow mostly Chardonnay and Sauvignon Blanc, followed by Pinot Noir and Syrah. It holds the Copiapó Valley and Huasco Valley.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "chile/copiapo-valley": {
+  "text": "A wine valley in Chile's Atacama region, covering the whole Copiapó Province and recognized in Chilean law since 1994.",
+  "from": [
+   "wikipedia",
+   "where"
+  ],
+  "wiki": {
+   "title": "Copiapó Valley",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Copiap%C3%B3_Valley&oldid=1324109979"
+  }
+ },
+ "japan": {
+  "text": "Japan makes wine from home-grown grapes mainly in Yamanashi, which accounts for about a third of domestic production. Koshu and Delaware are the most planted grapes. Domestic winemaking only really began with the Meiji era in the late 19th century.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Japanese wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Japanese_wine&oldid=1372515692"
+  }
+ },
+ "japan/yamanashi": {
+  "text": "The main wine region of Japan, making about a third of domestic production. Its vineyards are mostly Koshu, at 76%, followed by Muscat Bailey A at 19%.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Japanese wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Japanese_wine&oldid=1372515692"
+  }
+ },
+ "japan/hokkaido": {
+  "text": "A northern Japanese wine region at the far north end of the country's vineyards. Its most planted grapes are Pinot Noir and Kerner, then Niagara, Chardonnay and Zweigelt.",
+  "from": [
+   "wikipedia_of_wider",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Japanese wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Japanese_wine&oldid=1372515692"
+  }
+ },
+ "japan/nagano": {
+  "text": "A Japanese wine region where Merlot is the most planted grape, at 23%. Concord and Niagara follow, then Chardonnay at 15%.",
+  "from": [
+   "planted",
+   "where"
+  ]
+ },
+ "malta": {
+  "text": "An island wine country with winemaking going back over two thousand years to the Phoenicians. Its PDO allows still wine, sparkling wine and wines from raisined or overripe grapes, with grapes including Girgentina and Gellewza. Some wineries use imported grapes because agricultural land is severely limited.",
+  "from": [
+   "wikipedia",
+   "rules"
+  ],
+  "wiki": {
+   "title": "Maltese wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Maltese_wine&oldid=1348132702"
+  }
+ },
+ "malta/gozo": {
+  "text": "Malta's PDO of Gozo, which covers 14 communes. Its rules allow still, sparkling, raisined-grape and overripe-grape wines, with grapes including Girgentina and Gellewza.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "morocco": {
+  "text": "A North African country whose high mountains and cooling Atlantic influence give it good natural potential for quality wine. Italia, Cinsaut and Muscat of Alexandria are the most planted grapes. Its wine industry has been expanding since the 1990s with foreign investment.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Moroccan wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Moroccan_wine&oldid=1379054879"
+  }
+ },
+ "north-macedonia": {
+  "text": "A country where red wine makes up about 80% of production. Vranac is the most planted grape, at 36%, followed by Dimyat at 25%. Its regions include Povardarie, Skopsko vinogorje and Tikveš.",
+  "from": [
+   "wikipedia",
+   "planted",
+   "where"
+  ],
+  "wiki": {
+   "title": "Macedonian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Macedonian_wine&oldid=1345699319"
+  }
+ },
+ "brazil": {
+  "text": "The third-largest wine producer in Latin America, behind Argentina and Chile. Isabella and Bordô are the most planted grapes. Better quality vinho fino comes from European Vitis vinifera vines, which covered only about 12,000 acres in 2003.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Brazilian wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Brazilian_wine&oldid=1360622215"
+  }
+ },
+ "luxembourg": {
+  "text": "A country whose wine comes mainly from the southeast, from vineyards overlooking the Moselle river. Müller-Thurgau, Pinot Gris, Auxerrois and Riesling are among the most planted grapes. Cooperatives dominate production, and very little of the wine is seen outside Luxembourg and Belgium.",
+  "from": [
+   "wikipedia",
+   "planted"
+  ],
+  "wiki": {
+   "title": "Luxembourgish wine",
+   "lang": "en",
+   "url": "https://en.wikipedia.org/w/index.php?title=Luxembourgish_wine&oldid=1345164242"
+  }
+ },
+ "luxembourg/moselle-luxembourgeoise": {
+  "text": "Luxembourg's Moselle PDO, covering twelve communes along the river. It allows still and quality sparkling wine, with allowed grapes including Riesling, Auxerrois, Elbling, Pinot Gris, Pinot Blanc and Pinot Noir.",
+  "from": [
+   "rules",
+   "where"
+  ]
+ },
+ "australia/queensland": {
+  "text": "Queensland's wine zone, covering about 665,000 square miles and about 1,660 acres of vines. It holds the Granite Belt and South Burnett regions.",
+  "from": [
+   "gi",
+   "where"
+  ]
+ },
+ "australia/granite-belt": {
+  "text": "A Queensland wine region with about 780 acres of vines. Syrah is the most planted grape, at 18%, followed by Chardonnay, Cabernet Sauvignon and Verdelho.",
+  "from": [
+   "gi",
+   "planted"
+  ]
+ },
+ "australia/south-burnett": {
+  "text": "A Queensland wine region with about 540 acres of vines. Nearly half the plantings are Syrah, at 47%, followed by Cabernet Sauvignon at 16% and Sémillon at 9%.",
+  "from": [
+   "gi",
+   "planted"
+  ]
+ }
+}

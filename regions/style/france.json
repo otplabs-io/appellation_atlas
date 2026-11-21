@@ -1,0 +1,935 @@
+{
+ "france/aloxe-corton": {
+  "notes": [
+   "Aloxe-Corton reds are fairly dark, ruby to garnet in color.",
+   "They smell and taste of red and black fruit, and they are robust and structured."
+  ],
+  "art": [
+   "Aloxe-Corton wine"
+  ]
+ },
+ "france/alsace": {
+  "notes": [
+   "Most Alsace whites come from aromatic grapes, so many are aromatic, floral and spicy.",
+   "Riesling here is known for dry wines, and Gewürztraminer for highly aromatic ones.",
+   "Labels on Alsace whites must state the sugar level, except on Vendanges Tardives and Sélection de Grains Nobles.",
+   "Long, dry autumns let Pinot Gris hang late, often giving very powerful flavors.",
+   "Vendanges Tardives wines often show very exotic, candied fruit aromas with a fresh finish."
+  ],
+  "art": [
+   "Alsace wine",
+   "Pinot gris"
+  ],
+  "ref": [
+   "audit-6e89774b"
+  ]
+ },
+ "france/anjou": {
+  "notes": [
+   "Chenin Blanc makes Anjou's still and sparkling whites, and Cabernet Franc and Cabernet Sauvignon its reds.",
+   "Anjou Blanc ranges from dry to sweet and from light to full bodied, and dry Chenin here tastes of quince and apple.",
+   "Anjou Rouge is fruity, with red fruit and a light structure, and is made to drink within three years."
+  ],
+  "art": [
+   "Anjou wine",
+   "Chenin blanc"
+  ],
+  "ref": [
+   "audit-9d62252c"
+  ]
+ },
+ "france/bandol": {
+  "notes": [
+   "Red Bandol is dark, with rich flavors of black fruit, vanilla, cinnamon and leather.",
+   "It usually needs at least 10 years to fully develop, though some is made to drink after three.",
+   "Bandol rosé is spicy and earthy, sometimes with strawberry notes.",
+   "Red Bandol is at least half Mourvèdre and spends at least 18 months in wood, usually large casks."
+  ],
+  "art": [
+   "Provence wine"
+  ],
+  "ref": [
+   "audit-ced74bfa"
+  ]
+ },
+ "france/barsac": {
+  "notes": [
+   "Barsac stands out for very fruity aromas and a liveliness that comes from its limestone soils.",
+   "Sémillon, thin skinned and prone to noble rot, is the main grape in these sweet wines.",
+   "Barsac producers may label their wine either Barsac or Sauternes."
+  ],
+  "art": [
+   "Sauternes (wine)",
+   "Sémillon"
+  ],
+  "ref": [
+   "audit-c4f347af"
+  ]
+ },
+ "france/beaujolais": {
+  "notes": [
+   "Most Beaujolais reds are light in color, fruity and floral, and made to drink young. Villages and cru wines are deeper and more structured, and can keep for several years.",
+   "Beaujolais Nouveau is released on the third Thursday of November. It is fresh and fruity, and meant to drink within a few months.",
+   "Producers usually use a semi-carbonic style of fermentation to keep the fruit."
+  ],
+  "art": [
+   "Beaujolais",
+   "Gamay"
+  ],
+  "ref": [
+   "audit-4331e055"
+  ]
+ },
+ "france/beaujolais-in-beaujolais": {
+  "notes": [
+   "Most Beaujolais is red from Gamay, usually made with a semi-carbonic style of fermentation to keep the fruit.",
+   "The northern villages make more powerful, age-worthy wines than the light, fruity reds of the south."
+  ],
+  "art": [
+   "Beaujolais"
+  ],
+  "ref": [
+   "audit-4331e055"
+  ]
+ },
+ "france/beaune": {
+  "notes": [
+   "Beaune makes mostly red wine, lighter and more perfumed than the reds of the Côte de Nuits."
+  ],
+  "art": [
+   "Côte de Beaune"
+  ]
+ },
+ "france/bergerac": {
+  "notes": [
+   "Bergerac whites and reds are dry, and its rosés are dry or off-dry.",
+   "The reds are fruity, sometimes richly tannic, and a little austere when young.",
+   "The whites are floral and fruity with some acidity, and fuller Sémillon or Muscadelle wines gain complexity over a few years."
+  ],
+  "art": [
+   "Bergerac wine"
+  ],
+  "ref": [
+   "audit-633a100c"
+  ]
+ },
+ "france/bordeaux": {
+  "notes": [
+   "Most Bordeaux is red, with sweet and dry whites, rosé and sparkling Crémant de Bordeaux making up the rest.",
+   "Plain Bordeaux AOC wines are fruity, with little oak, and are made to drink young.",
+   "Left Bank reds lean on Cabernet Sauvignon and are concentrated, tannic and long lived.",
+   "Right Bank reds lean on Merlot and often have great fruit concentration and softer tannins.",
+   "Sauternes and Barsac make sweet whites from grapes affected by noble rot."
+  ],
+  "art": [
+   "Bordeaux wine",
+   "French wine"
+  ],
+  "ref": [
+   "audit-653169bf"
+  ]
+ },
+ "france/left-bank": {
+  "notes": [
+   "Left Bank reds, from Graves and the Médoc, are led by Cabernet Sauvignon, often with a good share of Merlot."
+  ],
+  "art": [
+   "Bordeaux wine"
+  ]
+ },
+ "france/right-bank": {
+  "notes": [
+   "Merlot tends to lead the reds in Saint-Émilion, Pomerol and the other Right Bank appellations."
+  ],
+  "art": [
+   "Bordeaux wine"
+  ]
+ },
+ "france/bordeaux-bordeaux-superieur": {
+  "notes": [
+   "Plain Bordeaux AOC wines are fruity, with little oak, and are made to drink young."
+  ],
+  "art": [
+   "Bordeaux wine"
+  ]
+ },
+ "france/bourgueil": {
+  "notes": [
+   "Bourgueil reds have a floral, fruity bouquet that turns earthy as the wine ages."
+  ],
+  "art": [
+   "Bourgueil AOC",
+   "Loire Valley (wine)"
+  ]
+ },
+ "france/burgundy": {
+  "notes": [
+   "Grand cru wines are made for cellaring and usually need at least five to seven years.",
+   "Aligoté makes light whites with slightly herbal flavor and higher acidity than Chardonnay."
+  ],
+  "art": [
+   "Burgundy wine",
+   "Pinot noir",
+   "Chardonnay",
+   "Aligoté"
+  ]
+ },
+ "france/cabernet-d-anjou": {
+  "notes": [
+   "Cabernet d'Anjou is a rosé made only from Cabernet Franc and Cabernet Sauvignon.",
+   "It is a lightly sweet rosé, and its sweetness sets it apart from most other rosés."
+  ],
+  "art": [
+   "Anjou wine"
+  ],
+  "ref": [
+   "audit-88e734fe"
+  ]
+ },
+ "france/cahors": {
+  "notes": [
+   "Cahors is a red only, made mostly from Malbec, dark and deep in color and able to age a long time.",
+   "The wines are dark purple, with aromas of damson, tobacco and raisin."
+  ],
+  "art": [
+   "Malbec"
+  ],
+  "ref": [
+   "audit-84533dd7"
+  ]
+ },
+ "france/chablis": {
+  "notes": [
+   "Chablis's cool climate gives Chardonnay more acidity and less fruit than warmer regions do.",
+   "Racy, green-apple acidity is its trademark, and the style is crisper and steelier than the rest of Burgundy.",
+   "Chablis was traditionally aged in old, neutral barrels that added no oak flavor.",
+   "Some Chablis has an earthy, wet stone flavor that grows with age before mellowing into delicate honeyed notes.",
+   "Grand cru Chablis can often age well over 15 years, and many premiers crus at least 10."
+  ],
+  "art": [
+   "Chablis (AOC)",
+   "French wine"
+  ]
+ },
+ "france/chablis-in-chablis": {
+  "notes": [
+   "Chablis's cool climate gives Chardonnay more acidity and less fruit than warmer regions do.",
+   "Racy, green-apple acidity is its trademark, and the style is crisp, lean and mineral.",
+   "Some Chablis has an earthy, wet stone flavor that grows with age before mellowing into delicate honeyed notes."
+  ],
+  "art": [
+   "Chablis (AOC)",
+   "Chardonnay"
+  ]
+ },
+ "france/champagne": {
+  "notes": [
+   "Pinot Noir gives Champagne body and structure, Chardonnay brings freshness, and Meunier adds roundness.",
+   "Most Champagne is non-vintage. Houses blend grapes, villages and reserve wines from earlier years to keep the same style every year.",
+   "White Champagne can be made from black grapes, because gentle pressing keeps the color out of the juice.",
+   "A dosage of sugar and wine sets the sweetness, and today it is used mostly to fine-tune the sense of acidity."
+  ],
+  "art": [
+   "Champagne",
+   "Pinot Meunier"
+  ],
+  "ref": [
+   "audit-46cf849d"
+  ]
+ },
+ "france/chassagne-montrachet": {
+  "notes": [
+   "White Chassagne-Montrachet is often both fruity and mineral, with more or less oak depending on the producer.",
+   "Its vineyards are known for a hazelnut aroma, while Puligny-Montrachet is steelier."
+  ],
+  "art": [
+   "Chassagne-Montrachet wine",
+   "Chardonnay"
+  ]
+ },
+ "france/chateauneuf-du-pape": {
+  "notes": [
+   "Grenache gives very ripe, sweet juice, while Syrah adds color and spice and Mourvèdre adds elegance and structure.",
+   "The reds are often earthy and gamey, with hints of tar, leather and the dried herbs called garrigue.",
+   "White Châteauneuf ranges from lean and mineral to oily and rich, with notes such as almond, anise, fennel, honeysuckle and peach."
+  ],
+  "art": [
+   "Châteauneuf-du-Pape AOC"
+  ]
+ },
+ "france/chinon": {
+  "notes": [
+   "Chinon's Cabernet Franc reds are typically dry and light to medium bodied.",
+   "Wines from the steep, rocky slopes are more tannic, with mineral and gamey notes, and grow velvety and spicy with age.",
+   "Good producers in strong years make full bodied, well structured reds for aging."
+  ],
+  "art": [
+   "Chinon AOC",
+   "Loire Valley (wine)"
+  ]
+ },
+ "france/condrieu": {
+  "notes": [
+   "Condrieu is made only from Viognier and is highly aromatic, with violet, white peach and apricot.",
+   "It is often full bodied and rich, with a texture like Chardonnay, and its perfume can suggest sweetness.",
+   "Too much oak can overwhelm its delicate flavors.",
+   "It is usually best within four to eight years, as its freshness fades with age."
+  ],
+  "art": [
+   "Condrieu AOC",
+   "Viognier"
+  ],
+  "ref": [
+   "audit-33ac8574"
+  ]
+ },
+ "france/cornas": {
+  "notes": [
+   "Cornas is made only from Syrah, and its wines are almost black in color and age well."
+  ],
+  "art": [
+   "Cornas AOC"
+  ],
+  "ref": [
+   "audit-23363f0e"
+  ]
+ },
+ "france/cote-chalonnaise": {
+  "notes": [
+   "Mercurey reds are noted for spicy cherry notes.",
+   "Montagny whites are noted for their acidity and body.",
+   "Bouzeron's Aligoté is light bodied with subtle spice, and is at its best within five years."
+  ],
+  "art": [
+   "Côte Chalonnaise"
+  ]
+ },
+ "france/cote-de-beaune": {
+  "notes": [
+   "Reds grow lighter and more perfumed from the Côte de Nuits south through Beaune.",
+   "Meursault makes rich, buttery Chardonnay that turns nutty with time.",
+   "Corton's best reds join the muscle of the Côte de Nuits with the elegance of the Côte de Beaune."
+  ],
+  "art": [
+   "Côte de Beaune"
+  ]
+ },
+ "france/cote-de-nuits": {
+  "notes": [
+   "Gevrey-Chambertin, Morey-Saint-Denis and Vougeot are noted for full bodied reds.",
+   "Chambolle-Musigny's chalky soils give lighter bodied wines with finer aromas."
+  ],
+  "art": [
+   "Côte de Nuits"
+  ]
+ },
+ "france/cote-des-blancs": {
+  "notes": [
+   "Côte des Blancs Champagnes are known for light, delicate aromas, finesse and elegance."
+  ],
+  "art": [
+   "Côte des Blancs"
+  ]
+ },
+ "france/cote-rotie": {
+  "notes": [
+   "Côte-Rôtie is known above all for its aroma, pairing meaty notes like bacon with floral ones like violet.",
+   "Common notes include green olive, raspberry, black and white pepper, blueberry, blackberry, plum and leather.",
+   "Wines from the iron-rich schist of the Côte Brune are more tannic and full bodied, and need longer in bottle.",
+   "Next to mineral, tannic Hermitage, Côte-Rôtie is fruity and perfumed."
+  ],
+  "art": [
+   "Côte-Rôtie AOC",
+   "Syrah"
+  ]
+ },
+ "france/coteaux-du-layon": {
+  "notes": [
+   "Coteaux du Layon is a sweet Chenin Blanc white that is never dry, though the sweetness varies.",
+   "Basic wines are semi-sweet, and some producers make very sweet wines with intense botrytis character.",
+   "Next to sweet Vouvray, the wines tend to be fuller bodied, often sweeter and slightly lower in acidity.",
+   "Chenin Blanc gives them high acidity when young and the ability to age well."
+  ],
+  "art": [
+   "Coteaux du Layon",
+   "Loire Valley (wine)"
+  ]
+ },
+ "france/cotes-du-rhone": {
+  "notes": [
+   "The whites range from dry and citrusy to fuller and rounder."
+  ],
+  "art": [
+   "Côtes du Rhône AOC"
+  ]
+ },
+ "france/cotes-du-rhone-villages": {
+  "notes": [
+   "Grenache-based Côtes du Rhône Villages typically has a chewy fruitiness."
+  ],
+  "art": [
+   "Grenache"
+  ]
+ },
+ "france/cremant-de-loire": {
+  "notes": [
+   "Crémant de Loire is a sparkling wine that makes good use of grapes that ripen less in cool years.",
+   "Chenin Blanc's high acidity suits it well.",
+   "It comes in a range of sweetness levels, from dry to sweet."
+  ],
+  "art": [
+   "Loire Valley (wine)",
+   "Chenin blanc"
+  ]
+ },
+ "france/entre-deux-mers": {
+  "notes": [
+   "Since 2025 the Entre-Deux-Mers name covers dry reds as well as dry whites.",
+   "Sauvignon Blanc is grown here for dry wines."
+  ],
+  "art": [
+   "Entre-Deux-Mers",
+   "Sauvignon blanc"
+  ],
+  "ref": [
+   "audit-0b41937a"
+  ]
+ },
+ "france/gevrey-chambertin": {
+  "notes": [
+   "Gevrey-Chambertin reds are deeply colored and potent for Burgundy.",
+   "They have intense aromas and flavors of blackcurrant, cherry, musk and licorice.",
+   "The village is noted for full bodied reds, especially from its nine grand crus."
+  ],
+  "art": [
+   "Gevrey-Chambertin wine",
+   "Côte de Nuits"
+  ]
+ },
+ "france/gigondas": {
+  "notes": [
+   "It usually benefits from at least three years in the cellar, and the best keep 10 years or more."
+  ],
+  "art": [
+   "Gigondas AOC"
+  ]
+ },
+ "france/graves": {
+  "notes": [
+   "It is best known for its dry whites, and it is the only part of Bordeaux with a classification for them.",
+   "Its oak-aged dry Sauvignon Blanc blends are among the few Sauvignons that age well.",
+   "Sauternes and Cérons, inside Graves, make sweet whites shaped by noble rot."
+  ],
+  "art": [
+   "Graves (wine region)",
+   "Bordeaux wine",
+   "Sauvignon blanc"
+  ]
+ },
+ "france/hermitage": {
+  "notes": [
+   "Hermitage reds tend to be very earthy, with aromas of leather, red berries, earth, cocoa and coffee.",
+   "They are mineral and tannic, with a long reputation for power.",
+   "Rich, dry whites are made from Marsanne and Roussanne."
+  ],
+  "art": [
+   "Hermitage AOC",
+   "Syrah"
+  ]
+ },
+ "france/jurancon": {
+  "notes": [
+   "Jurançon makes a dry white and a more sought-after sweet white.",
+   "The sweet wines develop aromas of tropical fruit such as pineapple and mango.",
+   "Grapes for the sweet wines are often picked by hand late into October and November."
+  ],
+  "art": [
+   "Jurançon AOC"
+  ]
+ },
+ "france/languedoc-roussillon": {
+  "notes": [
+   "Syrah here goes into Rhône-style blends with Grenache, blends with Cabernet Sauvignon, and single-variety wines.",
+   "The vins doux naturels are sweet wines fortified during fermentation to keep their sugar."
+  ],
+  "art": [
+   "Languedoc-Roussillon wine",
+   "Syrah"
+  ]
+ },
+ "france/languedoc": {
+  "notes": [
+   "Picpoul, low in alcohol and high in acidity, is used in blends and on its own."
+  ],
+  "art": [
+   "Languedoc-Roussillon wine",
+   "Chenin blanc",
+   "Chardonnay",
+   "Piquepoul"
+  ]
+ },
+ "france/lirac": {
+  "notes": [
+   "Red Lirac often resembles a soft Côtes du Rhône Villages, while the more ambitious wines are closer to Châteauneuf-du-Pape."
+  ],
+  "art": [
+   "Lirac AOC"
+  ]
+ },
+ "france/loire-valley": {
+  "notes": [
+   "Loire wines tend to be fruity, with fresh, crisp flavors from high acidity, especially when young.",
+   "Sweetness runs from bone dry (sec) to very sweet moelleux wines, often touched by noble rot.",
+   "Sauvignon Blanc tastes of gooseberry and grapefruit, and cool years give lighter, more mineral wines.",
+   "Loire Pinot Noir is very light in body and color, and ripe Cabernet Franc smells of raspberry and pencil shavings."
+  ],
+  "art": [
+   "Loire Valley (wine)"
+  ]
+ },
+ "france/macon": {
+  "notes": [
+   "White Mâcon is Chardonnay only, while red and rosé Mâcon come from Pinot Noir and Gamay."
+  ],
+  "art": [
+   "Mâconnais"
+  ]
+ },
+ "france/macon-villages": {
+  "notes": [
+   "Mâcon-Villages is a white wine made from Chardonnay only."
+  ],
+  "art": [
+   "Mâconnais"
+  ]
+ },
+ "france/madiran": {
+  "notes": [
+   "Madiran, from Tannat, is typically very concentrated and high in tannin.",
+   "It traditionally needs several years of aging to be at its best."
+  ],
+  "art": [
+   "Madiran wine",
+   "Tannat"
+  ]
+ },
+ "france/margaux": {
+  "notes": [
+   "Blackcurrant is the main fruit flavor in Margaux.",
+   "Aromas of violets are a hallmark of the appellation.",
+   "Wines from the southern communes, such as Cantenac and Labarde, tend to be more powerful, less fragrant and closer to plum."
+  ],
+  "art": [
+   "Margaux AOC",
+   "Cabernet Sauvignon"
+  ]
+ },
+ "france/medoc": {
+  "notes": [
+   "Petit Verdot is used in small amounts here to give structure to the Bordeaux blend."
+  ],
+  "art": [
+   "Petit Verdot"
+  ]
+ },
+ "france/mercurey": {
+  "notes": [
+   "Mercurey reds are noted for spicy cherry notes, though quality varies.",
+   "The rarer whites are mineral, with apple notes."
+  ],
+  "art": [
+   "Mercurey wine"
+  ]
+ },
+ "france/meursault": {
+  "notes": [
+   "White Meursault usually shows clear oak and malolactic fermentation, which is why it is often called buttery.",
+   "Meursault is among the roundest white Burgundies, and it turns nutty with age."
+  ],
+  "art": [
+   "Meursault wine",
+   "Côte de Beaune",
+   "Chardonnay"
+  ]
+ },
+ "france/minervois": {
+  "notes": [],
+  "art": [
+   "Languedoc-Roussillon wine"
+  ]
+ },
+ "france/monbazillac": {
+  "notes": [
+   "Monbazillac is a sweet white from Sémillon, Sauvignon Blanc and Muscadelle.",
+   "It is broadly like Sauternes, but more Muscadelle in the blend can give slightly different aromas.",
+   "The grapes are always picked by hand in several passes through the vines."
+  ],
+  "art": [
+   "Monbazillac AOC"
+  ],
+  "ref": [
+   "audit-82331ebb"
+  ]
+ },
+ "france/montagny": {
+  "notes": [
+   "Montagny whites are noted for their acidity and body."
+  ],
+  "art": [
+   "Côte Chalonnaise"
+  ]
+ },
+ "france/morgon": {
+  "notes": [
+   "Morgon makes earthy wines that can take on a silky, Burgundian texture after five years.",
+   "The Côte du Py hillside makes the most powerful Morgon.",
+   "It can keep developing in bottle for up to 10 years."
+  ],
+  "art": [
+   "Beaujolais"
+  ]
+ },
+ "france/moulin-a-vent": {
+  "notes": [
+   "Moulin-à-Vent makes the fullest bodied and most powerful Beaujolais.",
+   "Some producers age it in oak, giving more tannin and structure than other Beaujolais.",
+   "It can keep developing in bottle for up to 10 years, gaining Burgundian structure and complexity."
+  ],
+  "art": [
+   "Beaujolais"
+  ]
+ },
+ "france/muscadet": {
+  "notes": [
+   "Muscadet is made from Melon de Bourgogne and has no Muscat-like flavor.",
+   "It is light bodied, almost always dry, and has a legal maximum of 12% alcohol.",
+   "It is fresh and crisp, with citrus and mineral notes, and is best within three years of release.",
+   "Wines kept longer on their lees are slightly fuller bodied.",
+   "In cool years the grapes can lack the fruit to balance their acidity."
+  ],
+  "art": [
+   "Muscadet",
+   "Loire Valley (wine)"
+  ]
+ },
+ "france/northern-rhone": {
+  "notes": [
+   "Northern Rhône reds are often known by their aromas of green olive and smoky bacon.",
+   "Syrah here is classically elegant, tannic and smoky, with restrained fruit."
+  ],
+  "art": [
+   "Rhône wine",
+   "Syrah"
+  ]
+ },
+ "france/pauillac": {
+  "notes": [
+   "Pauillac's main fruit flavor is usually blackcurrant, sometimes veering toward plum.",
+   "It is noted for a strong lead-pencil scent, and some wines show minty notes."
+  ],
+  "art": [
+   "Pauillac AOC",
+   "Cabernet Sauvignon"
+  ]
+ },
+ "france/pessac-leognan": {
+  "notes": [
+   "Pessac-Léognan is equally famous for reds and dry whites, though red still leads.",
+   "Reds typically taste of blackcurrant and cedar and are often called earthy.",
+   "The whites taste of nectarine when young and of nuts, honey and custard after 7 to 15 years.",
+   "Its oak-aged Sauvignon Blanc blends are among the few Sauvignons that age well."
+  ],
+  "art": [
+   "Pessac-Léognan",
+   "Sauvignon blanc"
+  ]
+ },
+ "france/pomerol": {
+  "notes": [
+   "Pomerol is led by Merlot, with Cabernet Franc valued for the tannin and acidity it adds.",
+   "Its characteristic flavor is plum, sometimes tending to prune.",
+   "The wines are deeply colored and creamy, with supple tannins and lower acidity than other Bordeaux reds.",
+   "Clay soils give body and power, while lighter, sandier soils give less powerful wines that age less long."
+  ],
+  "art": [
+   "Pomerol AOC"
+  ]
+ },
+ "france/pommard": {
+  "notes": [
+   "Pommard is among the most powerful and tannic reds of the Côte de Beaune.",
+   "It contrasts with the light, elegant wines of neighboring Volnay."
+  ],
+  "art": [
+   "Pommard wine"
+  ]
+ },
+ "france/pouilly-fuisse": {
+  "notes": [
+   "Pouilly-Fuissé is a full bodied Chardonnay with aromas of nuts and yellow fruit such as lemon, pineapple and apple.",
+   "With age, honey and brioche take over."
+  ],
+  "art": [
+   "Pouilly-Fuissé",
+   "Chardonnay"
+  ]
+ },
+ "france/pouilly-fume": {
+  "notes": [
+   "Pouilly-Fumé is a dry Sauvignon Blanc from around Pouilly-sur-Loire.",
+   "It tastes of gooseberry and grapefruit and is usually fuller bodied and richer than other Loire Sauvignon.",
+   "It is one of the few Sauvignon Blancs with aging potential."
+  ],
+  "art": [
+   "Pouilly-Fumé",
+   "Loire Valley (wine)",
+   "Sauvignon blanc"
+  ]
+ },
+ "france/provence": {
+  "notes": [
+   "Provence is known mainly for rosé, which is normally dry, with zesty acidity.",
+   "Many wines carry the scents of the garrigue: wild lavender, rosemary and thyme.",
+   "Some Provence wines resemble Southern Rhône wines, sharing grapes and some of their style."
+  ],
+  "art": [
+   "Provence wine",
+   "French wine"
+  ]
+ },
+ "france/puligny-montrachet": {
+  "notes": [
+   "White Puligny-Montrachet is often very mineral, with more restrained oak than some other Côte de Beaune villages.",
+   "It is usually called elegant rather than fruit-driven, and it is steelier than Chassagne-Montrachet."
+  ],
+  "art": [
+   "Puligny-Montrachet wine",
+   "Chardonnay"
+  ]
+ },
+ "france/rhone-valley": {
+  "notes": [
+   "Northern Rhône reds, from Syrah, are known for aromas of green olive and smoky bacon.",
+   "Southern Rhône reds blend Grenache, Syrah, Mourvèdre, Carignan and Cinsaut.",
+   "Southern reds from the left bank are full bodied and tannic when young, with aromas of prune, undergrowth, chocolate and ripe black fruit.",
+   "Right bank reds are slightly lighter and fruitier."
+  ],
+  "art": [
+   "Rhône wine"
+  ]
+ },
+ "france/southern-rhone": {
+  "notes": [
+   "Southern Rhône reds blend Grenache, Syrah, Mourvèdre, Carignan and Cinsaut, a mix known elsewhere as GSM.",
+   "Syrah adds structure and color to Grenache in blends such as Côtes du Rhône and Châteauneuf-du-Pape.",
+   "Reds from the left bank are full bodied and tannic when young, with aromas of prune, undergrowth, chocolate and ripe black fruit.",
+   "Right bank reds are slightly lighter and fruitier."
+  ],
+  "art": [
+   "Rhône wine",
+   "Syrah"
+  ]
+ },
+ "france/rose-d-anjou": {
+  "notes": [
+   "Rosé d'Anjou is a medium-sweet rosé made mostly from Grolleau."
+  ],
+  "art": [
+   "Anjou wine"
+  ]
+ },
+ "france/rully": {
+  "notes": [
+   "Rully's better whites are crisp and lean, with lemon and nutty notes and lively acidity."
+  ],
+  "art": [
+   "Côte Chalonnaise"
+  ]
+ },
+ "france/saint-estephe": {
+  "notes": [
+   "It is known as slow to mature and among the toughest, most tannic Bordeaux."
+  ],
+  "art": [
+   "Saint-Estèphe AOC",
+   "Cabernet Sauvignon"
+  ]
+ },
+ "france/saint-julien": {
+  "notes": [
+   "Southern Saint-Julien is smoother and close to Margaux, while the north is more robust and powerful, like Pauillac.",
+   "Its wines are noted for scents of cedar and cigar box."
+  ],
+  "art": [
+   "Saint-Julien AOC",
+   "Cabernet Sauvignon"
+  ]
+ },
+ "france/saint-veran": {
+  "notes": [
+   "Saint-Véran shows white peach, apple or pear, or floral notes of lime blossom and acacia.",
+   "With time these give way to hazelnut or almond, with touches of honey, vanilla and flint."
+  ],
+  "art": [
+   "Saint-Véran AOC"
+  ]
+ },
+ "france/sancerre": {
+  "notes": [
+   "Classic Sancerre blanc is bone dry and highly aromatic, with intense flavors of peach and gooseberry.",
+   "It has naturally high acidity and can show flinty, gunflint notes as well as citrus and spice.",
+   "Kimmeridgian marl gives powerful Sancerre, limestone gives elegant wines, and flinty clay gives wines with white and yellow flower notes.",
+   "Red Sancerre, from Pinot Noir, is light to medium bodied and floral, and the rosés are dry with raspberry and strawberry notes."
+  ],
+  "art": [
+   "Sancerre (wine)"
+  ],
+  "ref": [
+   "audit-1f0eae89"
+  ]
+ },
+ "france/saumur": {
+  "notes": [
+   "Saumur's Cabernet Franc reds are light and fruity."
+  ],
+  "art": [
+   "Saumur (wine)",
+   "Loire Valley (wine)",
+   "Chenin blanc"
+  ]
+ },
+ "france/sauternes": {
+  "notes": [
+   "Sauternes is a sweet white from grapes touched by noble rot, and it must taste noticeably sweet.",
+   "Common notes are apricot, honey and peach, with a nutty note typical of botrytized Sémillon.",
+   "The best can age well beyond 100 years.",
+   "In years without noble rot, producers often make dry whites sold as Bordeaux AOC."
+  ],
+  "art": [
+   "Sauternes (wine)"
+  ]
+ },
+ "france/savennieres": {
+  "notes": [
+   "Savennières is a white from Chenin Blanc, today almost always dry.",
+   "Its cool climate gives it high acidity, and it is long lived.",
+   "The traditional style can be austere and closed when young.",
+   "It is fuller bodied than dry Vouvray."
+  ],
+  "art": [
+   "Savennières wine"
+  ]
+ },
+ "france/tavel": {
+  "notes": [
+   "Tavel is rosé only.",
+   "It is dry, with more body and structure than most rosés.",
+   "Longer skin contact for part of the juice makes it more powerful, more tannic and darker than other rosés."
+  ],
+  "art": [
+   "Tavel AOC"
+  ]
+ },
+ "france/touraine": {
+  "notes": [
+   "Touraine whites are dry and mainly Sauvignon Blanc, with citrus, tropical fruit or white flower aromas and a fresh finish.",
+   "Touraine reds are based on Côt, or on Cabernet Franc west of Tours, with Cabernet Sauvignon, Gamay and Pinot Noir also allowed."
+  ],
+  "art": [
+   "Touraine AOC"
+  ],
+  "ref": [
+   "audit-e2f11827"
+  ]
+ },
+ "france/vacqueyras": {
+  "notes": [
+   "Vacqueyras reds are mainly Grenache, with Syrah and Mourvèdre, and are powerful, rich and full bodied."
+  ],
+  "art": [
+   "Vacqueyras AOC"
+  ],
+  "ref": [
+   "audit-dd667cbf"
+  ]
+ },
+ "france/volnay": {
+  "notes": [
+   "Volnay is typically light, aromatic and elegant rather than powerful."
+  ],
+  "art": [
+   "Volnay wine",
+   "Côte de Beaune"
+  ]
+ },
+ "france/vosne-romanee": {
+  "notes": [
+   "Vosne-Romanée is often described as combining elegance with power.",
+   "The wines are racy and elegant, and they often need long cellaring to develop fully."
+  ],
+  "art": [
+   "Vosne-Romanée wine"
+  ]
+ },
+ "france/vougeot": {
+  "notes": [],
+  "art": [
+   "Côte de Nuits"
+  ]
+ },
+ "france/vouvray": {
+  "notes": [
+   "Vouvray is Chenin Blanc, made from dry (sec) through off-dry (demi-sec) to sweet (moelleux and doux), and sparkling.",
+   "Cool years favor dry and sparkling wines, while warm years bring sweet and even botrytized wines.",
+   "Depending on style, it shows honey, nuts, ginger, fig, apple and white flowers.",
+   "Traditional high-acid examples can need three to seven years in bottle before the acidity softens."
+  ],
+  "art": [
+   "Vouvray (wine)"
+  ]
+ },
+ "france/cotes-de-gascogne": {
+  "notes": [
+   "Côtes de Gascogne wines show aromatic freshness, mostly fruity or floral.",
+   "Their intensity varies with the grape and how the wine is made.",
+   "Wines with some sweetness, and the late-harvest whites, have riper, more developed fruit aromas.",
+   "Colombard, Gros Manseng, Ugni Blanc and Sauvignon Blanc are among the many white grapes allowed."
+  ],
+  "ref": [
+   "fr-cotes-de-gascogne"
+  ]
+ },
+ "france/hautes-cotes-de-beaune": {
+  "notes": [
+   "Hautes Côtes de Beaune wines are sold as Bourgogne, with Hautes Côtes de Beaune added to the name.",
+   "About 17% of the wine is white, and the rest is red and rosé."
+  ],
+  "ref": [
+   "fr-bourgogne"
+  ]
+ },
+ "france/hautes-cotes-de-nuits": {
+  "notes": [
+   "Hautes Côtes de Nuits wines are sold as Bourgogne, with Hautes Côtes de Nuits added to the name.",
+   "About 22% of the wine is white, and the rest is red and rosé."
+  ],
+  "ref": [
+   "fr-bourgogne"
+  ]
+ },
+ "france/south-west-france": {
+  "notes": [
+   "Madiran, from Tannat, is typically very concentrated and high in tannin.",
+   "Jurançon is a sweet white from Gros and Petit Manseng, and Jurançon Sec is its dry version."
+  ],
+  "art": [
+   "Malbec",
+   "Madiran wine",
+   "Bergerac wine",
+   "Jurançon AOC"
+  ],
+  "ref": [
+   "audit-2f4dd665"
+  ]
+ }
+}

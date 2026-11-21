@@ -4,7 +4,8 @@
 .app-sub a{color:var(--teal);text-decoration:none}
 .app-sub a:hover{text-decoration:underline}
 :root{--a0:#EEF2F5;--a1:var(--gold-tint);--a2:#F5D58A;--a3:var(--map-premier);--a4:var(--gold-deep);
-  --o1:#DDE3E8;--o2:#CBD3DA;--o3:#B6C1CA;--o4:#9EABB6}   /* places outside the WSET Diploma: cool greys, so the gold ones stand out */
+  --o1:#DDE3E8;--o2:#CBD3DA;--o3:#B6C1CA;--o4:#9EABB6;   /* places outside the benchmark regions: cool greys, so the gold ones stand out */
+  --river:#5B9BC4;--lake:#CFE3EE;--river-ink:#2F6F99}   /* water: the ocean's blue, a step deeper so a thin line reads on gold */
 .map .rg.a0{fill:var(--a0);stroke:var(--land-edge)}
 .map .rg.a1{fill:var(--a1)}
 .map .rg.a2{fill:var(--a2)}
@@ -20,6 +21,15 @@
 .map .dot-m.a1{fill:var(--a2)}.map .dot-m.a2{fill:var(--a2)}.map .dot-m.a3{fill:var(--a3)}.map .dot-m.a4{fill:var(--a4)}
 .map .dot-m.o.a1,.map .dot-m.o.a2{fill:var(--o2)}.map .dot-m.o.a3{fill:var(--o3)}.map .dot-m.o.a4{fill:var(--o4)}
 .map .dot-m.sel{fill:var(--map-target)}
+.map .river-case{fill:none;stroke:var(--paper,#fff);stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round;opacity:.9;pointer-events:none}   /* a pale edge, so a river reads across the deepest gold */
+.map .river{fill:none;stroke:var(--river);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.map .lake{fill:var(--lake);stroke:var(--river);stroke-width:.8;stroke-linejoin:round;pointer-events:none}
+.terms{margin:0;display:grid;gap:10px}
+.terms dt{margin:0;color:var(--ink)}
+.terms dd{margin:2px 0 0;color:var(--ink)}
+.map text.ctl{font-family:var(--body);font-weight:500;font-size:11px;fill:var(--soft);stroke-width:3px}   /* towns, for bearings: quieter than places and rivers */
+.map circle.cd{fill:var(--soft);stroke:var(--paper,#fff);stroke-width:1;pointer-events:none}
+.map text.wl{font-family:var(--body);font-style:italic;font-weight:600;font-size:11px;fill:var(--river-ink);stroke-width:3px}
 .key{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;margin-top:10px;color:var(--soft)}
 .key .kr{display:flex;align-items:center;gap:4px}
 .key-note{flex-basis:100%;display:flex;align-items:center;gap:8px;margin:2px 0 0;color:var(--ink);font-style:italic}
@@ -37,7 +47,7 @@
 .hero .also{margin-top:4px;color:var(--soft)}
 .hero .known{margin-top:8px;color:var(--soft);display:flex;align-items:center;gap:6px}
 .hero .ts-body{margin-top:8px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px 16px;margin-top:4px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:22px 20px;margin-top:4px}
 .fact{display:flex;flex-direction:column;gap:2px}
 .fact .ts-fact_note{color:var(--soft)}
 .sub{margin:14px 0 6px;color:var(--soft)}
@@ -65,7 +75,7 @@
 .src li+li{margin-top:4px}
 .src a{color:var(--teal)}
 /* ---- what is planted, the climate scales, the land */
-.planted{display:grid;gap:5px;margin-top:6px;max-width:560px}
+.planted{display:grid;gap:10px;margin-top:10px;max-width:560px}
 .gr{display:grid;grid-template-columns:minmax(130px,44%) 1fr 38px;align-items:center;gap:8px}
 .gr .g{display:flex;align-items:center;gap:7px;overflow-wrap:anywhere}
 .gr .dot{flex:none;width:9px;height:9px;border-radius:50%;background:var(--land-edge)}
@@ -82,10 +92,10 @@
 .scale .seg.on .n,.scale .seg.on .r{color:var(--ink)}
 .scale .mark{position:absolute;top:-5px;width:0;height:0;margin-left:-6px;border:6px solid transparent;border-top-color:var(--ink)}
 .wk{margin-top:6px}
-.why{margin-top:14px;max-width:680px}
+.why{margin-top:18px;max-width:680px;padding:16px;background:color-mix(in srgb,var(--fill) 70%,transparent);border-radius:14px}
 .soil-text{max-width:680px;margin:12px 0 18px}
-.why-head{color:var(--soft);margin:0 0 6px}
-.why dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 16px;margin:0}
+.why-head{color:var(--soft);margin:0 0 12px}
+.why dl{display:grid;grid-template-columns:max-content 1fr;gap:12px 16px;margin:0}
 .why dt{color:var(--ink);padding-top:1px}
 .why dd{margin:0}
 @media (max-width:520px){.why dl{grid-template-columns:1fr;gap:2px}.why dd{margin-bottom:8px}}
@@ -101,6 +111,25 @@
 #ptitle{margin:4px 0 2px}
 .hero .badge{color:var(--ink);background:var(--a2);padding:1px 6px;border-radius:2px;letter-spacing:.04em}
 .hero .badge.o{background:var(--o2)}
+.study{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;color:var(--soft)}
+.study button{font:inherit;color:var(--ink);background:none;border:1px solid var(--land-edge);border-radius:14px;padding:3px 11px;cursor:pointer}
+.study button[aria-pressed="true"]{background:var(--a2);border-color:var(--a3)}
+.feedback{display:inline-block;margin-top:6px;color:var(--ink);border:1px solid var(--land-edge);border-radius:14px;padding:4px 13px;text-decoration:none}
+.feedback:hover{background:var(--a2);border-color:var(--a3)}
+.about-link{margin-top:10px}
+.about{border:1px solid var(--rule);border-radius:16px;padding:0;max-width:560px;width:calc(100% - 32px);max-height:calc(100% - 48px);background:var(--paper);color:var(--ink)}
+.about::backdrop{background:rgba(0,0,0,.35)}
+.about-in{padding:18px 20px 22px}
+.about-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
+.about-head h2{margin:0}
+.about p{margin:8px 0 0}
+.about a{color:var(--teal)}
+.about-n{color:var(--soft)}
+.about-h{margin:18px 0 0;color:var(--soft);font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.about-src{list-style:none;margin:8px 0 0;padding:0}
+.about-src li{display:flex;flex-direction:column;padding:6px 0;border-top:1px solid var(--rule)}
+.about-src li span{color:var(--soft)}
+.about-note{margin-top:16px!important;color:var(--soft)}
 .mapnote{color:var(--soft);margin:2px 0 8px}
 .shape-note{color:var(--soft);margin-top:6px}
 .inside{margin:16px 0 4px}
@@ -148,12 +177,16 @@ details.sibs>summary small{color:var(--soft);font-weight:400}
 .jump{display:flex;flex-wrap:wrap;gap:6px;padding:14px 20px 4px}
 .jump .step{border:0}
 section.row[id^="s-"]{scroll-margin-top:80px}
+/* a band between a place's sections, so each reads as its own block (AtlasSection in the app) */
+#info section.row{padding:30px 20px 24px;border-top:8px solid var(--fill)}
+#info .head{margin-bottom:16px}
 /* Dark: follows the system setting, with the same colors as the iPhone and iPad app (ios/AppellationAtlas/UI/Theme.swift). */
 @media (prefers-color-scheme:dark){
   :root{color-scheme:dark;--ink:#E6ECF1;--soft:#A3AFBA;--coral:#F06A4C;--coral-text:#F58B70;--gold-tint:#4A3C1A;--gold-deep:#F0BE58;--teal:#5FB8BC;
     --paper:#0F161D;--fill:#1D2833;--ground:#0A1016;--rule:#40505D;--ocean:#0E2231;--ocean-hi:#1A3A50;--land:#24313D;--land-edge:#40505D;--map-target:#F06A4C;
     --map-premier:#C2902C;--hot:#F06A4C;--dot-empty-border:#5A6A78;
-    --a0:#2A3743;--a1:#5A4820;--a2:#8A6922;--a3:#C2902C;--a4:#F0BE58;--o1:#334150;--o2:#445462;--o3:#5A6A78;--o4:#7A8996}
+    --a0:#2A3743;--a1:#5A4820;--a2:#8A6922;--a3:#C2902C;--a4:#F0BE58;--o1:#334150;--o2:#445462;--o3:#5A6A78;--o4:#7A8996;
+    --river:#4F8DB5;--lake:#1A3A50;--river-ink:#8CC3E3}
   .page,.top,.sugg,.search input,.map,.zout{background:var(--paper)}
   .search input,.zout,.sugg{border-color:var(--rule)}
   .map .grat{stroke:#2E5068}
@@ -167,3 +200,7 @@ section.row[id^="s-"]{scroll-margin-top:80px}
   .rk.r-schist,.rk.r-shale{background:#2E3945}.rk.r-gravel,.rk.r-sand,.rk.r-sandstone{background:#43391F}.rk.r-alluvium,.rk.r-loess,.rk.r-clay{background:#35322B}
   a{color:var(--teal)}
 }
+
+.blurb{margin:10px 0 2px;max-width:640px;color:var(--ink)}
+.keyfacts{margin:0;padding-left:1.1em;display:grid;gap:10px;max-width:680px}
+.keyfacts li::marker{color:var(--teal,#1F6F6F)}

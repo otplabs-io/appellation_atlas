@@ -1,0 +1,712 @@
+{
+"united-states/napa-valley": [
+"united-states/north-coast"
+],
+"united-states/oakville": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/rutherford": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/stags-leap-district": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/st-helena": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/calistoga": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/yountville": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/oak-knoll-district": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/coombsville": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/atlas-peak": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/howell-mountain": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/spring-mountain-district": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/diamond-mountain-district": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/los-carneros": [
+"united-states/north-coast"
+],
+"united-states/russian-river-valley": [
+"united-states/northern-sonoma",
+"united-states/north-coast"
+],
+"united-states/sonoma-coast": [
+"united-states/north-coast"
+],
+"united-states/fort-ross-seaview": [
+"united-states/west-sonoma-coast",
+"united-states/sonoma-coast",
+"united-states/north-coast"
+],
+"united-states/alexander-valley": [
+"united-states/northern-sonoma",
+"united-states/north-coast"
+],
+"united-states/dry-creek-valley": [
+"united-states/northern-sonoma",
+"united-states/north-coast"
+],
+"united-states/sonoma-valley": [
+"united-states/north-coast"
+],
+"united-states/knights-valley": [
+"united-states/northern-sonoma",
+"united-states/north-coast"
+],
+"united-states/chalk-hill": [
+"united-states/russian-river-valley",
+"united-states/northern-sonoma",
+"united-states/north-coast"
+],
+"united-states/sonoma-mountain": [
+"united-states/sonoma-valley",
+"united-states/north-coast"
+],
+"united-states/anderson-valley": [
+"united-states/mendocino",
+"united-states/north-coast"
+],
+"united-states/central-coast": [],
+"united-states/paso-robles": [
+"united-states/central-coast"
+],
+"united-states/sta-rita-hills": [
+"united-states/santa-ynez-valley",
+"united-states/central-coast"
+],
+"united-states/santa-lucia-highlands": [
+"united-states/monterey",
+"united-states/central-coast"
+],
+"united-states/santa-maria-valley": [
+"united-states/central-coast"
+],
+"united-states/santa-cruz-mountains": [
+"united-states/san-francisco-bay",
+"united-states/central-coast"
+],
+"united-states/edna-valley": [
+"united-states/san-luis-obispo-coast",
+"united-states/central-coast"
+],
+"united-states/monterey": [
+"united-states/central-coast"
+],
+"united-states/lodi": [],
+"united-states/sierra-foothills": [],
+"united-states/willamette-valley": [],
+"united-states/dundee-hills": [
+"united-states/willamette-valley"
+],
+"united-states/eola-amity-hills": [
+"united-states/willamette-valley"
+],
+"united-states/ribbon-ridge": [
+"united-states/chehalem-mountains",
+"united-states/willamette-valley"
+],
+"united-states/yamhill-carlton": [
+"united-states/willamette-valley"
+],
+"united-states/chehalem-mountains": [
+"united-states/willamette-valley"
+],
+"united-states/mcminnville": [
+"united-states/willamette-valley"
+],
+"united-states/laurelwood-district": [
+"united-states/chehalem-mountains",
+"united-states/willamette-valley"
+],
+"united-states/van-duzer-corridor": [
+"united-states/willamette-valley"
+],
+"united-states/southern-oregon": [],
+"united-states/columbia-valley": [],
+"united-states/walla-walla-valley": [
+"united-states/columbia-valley"
+],
+"united-states/red-mountain": [
+"united-states/yakima-valley",
+"united-states/columbia-valley"
+],
+"united-states/yakima-valley": [
+"united-states/columbia-valley"
+],
+"united-states/horse-heaven-hills": [
+"united-states/columbia-valley"
+],
+"united-states/wahluke-slope": [
+"united-states/columbia-valley"
+],
+"united-states/finger-lakes": [],
+"united-states/seneca-lake": [
+"united-states/finger-lakes"
+],
+"united-states/cayuga-lake": [
+"united-states/finger-lakes"
+],
+"united-states/long-island": [],
+"united-states/north-fork": [
+"united-states/long-island"
+],
+"united-states/the-hamptons": [
+"united-states/long-island"
+],
+"united-states/ozark-mountain": [],
+"united-states/upper-mississippi-river-valley": [],
+"united-states/ohio-river-valley": [],
+"united-states/texas-hill-country": [],
+"united-states/texas-high-plains": [],
+"united-states/snake-river-valley": [],
+"united-states/loess-hills-district": [],
+"united-states/puget-sound": [],
+"united-states/mississippi-delta": [],
+"united-states/north-coast": [],
+"united-states/indiana-uplands": [],
+"united-states/wisconsin-ledge": [],
+"united-states/hudson-river-region": [],
+"united-states/outer-coastal-plain": [],
+"united-states/shenandoah-valley": [],
+"united-states/lake-erie": [],
+"united-states/south-coast": [],
+"united-states/texoma": [],
+"united-states/upper-cumberland": [],
+"united-states/southeastern-new-england": [],
+"united-states/tip-of-the-mitt": [],
+"united-states/appalachian-high-country": [],
+"united-states/yadkin-valley": [],
+"united-states/shawnee-hills": [],
+"united-states/lake-michigan-shore": [],
+"united-states/lehigh-valley": [],
+"united-states/upper-hudson": [],
+"united-states/western-connecticut-highlands": [],
+"united-states/monticello": [],
+"united-states/eastern-connecticut-highlands": [],
+"united-states/cumberland-valley": [],
+"united-states/northern-neck-george-washington-birthplace": [],
+"united-states/haw-river-valley": [],
+"united-states/virginia-peninsula": [],
+"united-states/mimbres-valley": [],
+"united-states/willcox": [],
+"united-states/madera": [],
+"united-states/antelope-valley-of-the-california-high-desert": [],
+"united-states/upper-hiwassee-highlands": [],
+"united-states/champlain-valley-of-new-york": [],
+"united-states/middle-rio-grande-valley": [],
+"united-states/lewis-clark-valley": [],
+"united-states/texas-davis-mountains": [],
+"united-states/virginias-eastern-shore": [],
+"united-states/mesilla-valley": [],
+"united-states/leelanau-peninsula": [],
+"united-states/lancaster-valley": [],
+"united-states/sonoita": [],
+"united-states/catoctin": [],
+"united-states/columbia-gorge": [],
+"united-states/warren-hills": [],
+"united-states/contra-costa": [],
+"united-states/malibu-coast": [],
+"united-states/middleburg-virginia": [],
+"united-states/west-sonoma-coast": [
+"united-states/sonoma-coast",
+"united-states/north-coast"
+],
+"united-states/verde-valley": [],
+"united-states/crest-of-the-blue-ridge-henderson-county": [],
+"united-states/cucamonga-valley": [],
+"united-states/gabilan-mountains": [
+"united-states/central-coast"
+],
+"united-states/trinity-lakes": [],
+"united-states/capay-valley": [],
+"united-states/clarksburg": [],
+"united-states/central-delaware-valley": [],
+"united-states/dahlonega-plateau": [],
+"united-states/grand-valley": [],
+"united-states/dunnigan-hills": [],
+"united-states/linganore": [],
+"united-states/tehachapi-mountains": [],
+"united-states/north-fork-of-roanoke": [],
+"united-states/west-elks": [],
+"united-states/squaw-valley-miramonte": [],
+"united-states/covelo": [],
+"united-states/tracy-hills": [],
+"united-states/yucaipa-valley": [],
+"united-states/paulsell-valley": [],
+"united-states/diablo-grande": [],
+"united-states/lake-wisconsin": [
+"united-states/upper-mississippi-river-valley"
+],
+"united-states/escondido-valley": [],
+"united-states/inwood-valley": [],
+"united-states/niagara-escarpment": [],
+"united-states/old-mission-peninsula": [],
+"united-states/augusta": [],
+"united-states/palos-verdes-peninsula": [],
+"united-states/dos-rios": [],
+"united-states/manton-valley": [],
+"united-states/alexandria-lakes": [],
+"united-states/rocky-knob": [],
+"united-states/sierra-pelona-valley": [],
+"united-states/leona-valley": [],
+"united-states/willow-creek": [],
+"united-states/long-valley-lake-county": [
+"united-states/north-coast"
+],
+"united-states/winters-highlands": [],
+"united-states/crystal-springs-of-napa-valley": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/loramie-creek": [],
+"united-states/salado-creek": [],
+"united-states/beverly-washington": [
+"united-states/columbia-valley"
+],
+"united-states/seiad-valley": [],
+"united-states/river-junction": [],
+"united-states/ulupalakua": [],
+"united-states/arkansas-mountain": [
+"united-states/ozark-mountain"
+],
+"united-states/ozark-highlands": [
+"united-states/ozark-mountain"
+],
+"united-states/san-francisco-bay": [
+"united-states/central-coast"
+],
+"united-states/rogue-valley": [
+"united-states/southern-oregon"
+],
+"united-states/umpqua-valley": [
+"united-states/southern-oregon"
+],
+"united-states/kanawha-river-valley": [
+"united-states/ohio-river-valley"
+],
+"united-states/el-dorado": [],
+"united-states/san-luis-obispo-coast": [
+"united-states/central-coast"
+],
+"united-states/northern-sonoma": [
+"united-states/north-coast"
+],
+"united-states/mendocino": [
+"united-states/north-coast"
+],
+"united-states/clear-lake": [
+"united-states/north-coast"
+],
+"united-states/santa-ynez-valley": [
+"united-states/central-coast"
+],
+"united-states/ancient-lakes-of-columbia-valley": [
+"united-states/columbia-valley"
+],
+"united-states/royal-slope": [
+"united-states/columbia-valley"
+],
+"united-states/san-antonio-valley": [
+"united-states/central-coast"
+],
+"united-states/swan-creek": [],
+"united-states/tualatin-hills": [
+"united-states/willamette-valley"
+],
+"united-states/cape-may-peninsula": [
+"united-states/outer-coastal-plain"
+],
+"united-states/san-luis-rey": [
+"united-states/south-coast"
+],
+"united-states/white-bluffs": [
+"united-states/columbia-valley"
+],
+"united-states/temecula-valley": [
+"united-states/south-coast"
+],
+"united-states/ramona-valley": [
+"united-states/south-coast"
+],
+"united-states/clements-hills": [
+"united-states/lodi"
+],
+"united-states/mokelumne-river": [
+"united-states/lodi"
+],
+"united-states/grand-river-valley": [
+"united-states/lake-erie"
+],
+"united-states/sloughhouse": [
+"united-states/lodi"
+],
+"united-states/fennville": [
+"united-states/lake-michigan-shore"
+],
+"united-states/borden-ranch": [
+"united-states/lodi"
+],
+"united-states/fredericksburg-in-the-texas-hill-country": [
+"united-states/texas-hill-country"
+],
+"united-states/martha-s-vineyard": [
+"united-states/southeastern-new-england"
+],
+"united-states/alta-mesa": [
+"united-states/lodi"
+],
+"united-states/cosumnes-river": [
+"united-states/lodi"
+],
+"united-states/hermann": [
+"united-states/ozark-mountain"
+],
+"united-states/eagle-foothills": [
+"united-states/snake-river-valley"
+],
+"united-states/san-benito": [
+"united-states/central-coast"
+],
+"united-states/arroyo-grande-valley": [
+"united-states/san-luis-obispo-coast",
+"united-states/central-coast"
+],
+"united-states/fountaingrove-district": [
+"united-states/north-coast"
+],
+"united-states/ben-lomond-mountain": [
+"united-states/santa-cruz-mountains",
+"united-states/san-francisco-bay",
+"united-states/central-coast"
+],
+"united-states/rocky-reach": [
+"united-states/columbia-valley"
+],
+"united-states/lake-chelan": [
+"united-states/columbia-valley"
+],
+"united-states/lower-long-tom": [
+"united-states/willamette-valley"
+],
+"united-states/jahant": [
+"united-states/lodi"
+],
+"united-states/eagle-peak-mendocino-county": [
+"united-states/north-coast"
+],
+"united-states/north-yuba": [
+"united-states/sierra-foothills"
+],
+"united-states/carmel-valley": [
+"united-states/central-coast"
+],
+"united-states/suisun-valley": [
+"united-states/north-coast"
+],
+"united-states/solano-county-green-valley": [
+"united-states/north-coast"
+],
+"united-states/california-shenandoah-valley": [
+"united-states/sierra-foothills"
+],
+"united-states/naches-heights": [
+"united-states/columbia-valley"
+],
+"united-states/the-burn-of-columbia-valley": [
+"united-states/columbia-valley"
+],
+"united-states/fiddletown": [
+"united-states/sierra-foothills"
+],
+"united-states/san-pasqual-valley": [
+"united-states/south-coast"
+],
+"united-states/york-mountain": [
+"united-states/central-coast"
+],
+"united-states/bell-mountain": [
+"united-states/texas-hill-country"
+],
+"united-states/alisos-canyon": [
+"united-states/central-coast"
+],
+"united-states/mount-pisgah-polk-county-oregon": [
+"united-states/willamette-valley"
+],
+"united-states/guenoc-valley": [
+"united-states/north-coast"
+],
+"united-states/merritt-island": [
+"united-states/clarksburg"
+],
+"united-states/saddle-rock-malibu": [
+"united-states/malibu-coast"
+],
+"united-states/comptche": [
+"united-states/north-coast"
+],
+"united-states/benmore-valley": [
+"united-states/north-coast"
+],
+"united-states/malibu-newton-canyon": [
+"united-states/malibu-coast"
+],
+"united-states/isle-st-george": [
+"united-states/lake-erie"
+],
+"united-states/santa-clara-valley": [
+"united-states/san-francisco-bay",
+"united-states/central-coast"
+],
+"united-states/applegate-valley": [
+"united-states/rogue-valley",
+"united-states/southern-oregon"
+],
+"united-states/livermore-valley": [
+"united-states/san-francisco-bay",
+"united-states/central-coast"
+],
+"united-states/petaluma-gap": [
+"united-states/north-coast"
+],
+"united-states/mendocino-ridge": [
+"united-states/north-coast"
+],
+"united-states/rattlesnake-hills": [
+"united-states/yakima-valley",
+"united-states/columbia-valley"
+],
+"united-states/elkton-oregon": [
+"united-states/umpqua-valley",
+"united-states/southern-oregon"
+],
+"united-states/paso-robles-estrella-district": [
+"united-states/paso-robles",
+"united-states/central-coast"
+],
+"united-states/paso-robles-highlands-district": [
+"united-states/paso-robles",
+"united-states/central-coast"
+],
+"united-states/adelaida-district": [
+"united-states/paso-robles",
+"united-states/central-coast"
+],
+"united-states/creston-district": [
+"united-states/paso-robles",
+"united-states/central-coast"
+],
+"united-states/altus": [
+"united-states/arkansas-mountain",
+"united-states/ozark-mountain"
+],
+"united-states/yorkville-highlands": [
+"united-states/mendocino",
+"united-states/north-coast"
+],
+"united-states/san-lucas": [
+"united-states/monterey",
+"united-states/central-coast"
+],
+"united-states/arroyo-seco": [
+"united-states/monterey",
+"united-states/central-coast"
+],
+"united-states/red-hills-lake-county": [
+"united-states/clear-lake",
+"united-states/north-coast"
+],
+"united-states/redwood-valley": [
+"united-states/mendocino",
+"united-states/north-coast"
+],
+"united-states/lamorinda": [
+"united-states/san-francisco-bay",
+"united-states/central-coast"
+],
+"united-states/potter-valley": [
+"united-states/mendocino",
+"united-states/north-coast"
+],
+"united-states/san-juan-creek": [
+"united-states/paso-robles",
+"united-states/central-coast"
+],
+"united-states/fair-play": [
+"united-states/el-dorado",
+"united-states/sierra-foothills"
+],
+"united-states/happy-canyon-of-santa-barbara": [
+"united-states/santa-ynez-valley",
+"united-states/central-coast"
+],
+"united-states/san-bernabe": [
+"united-states/monterey",
+"united-states/central-coast"
+],
+"united-states/los-olivos-district": [
+"united-states/santa-ynez-valley",
+"united-states/central-coast"
+],
+"united-states/el-pomar-district": [
+"united-states/paso-robles",
+"united-states/central-coast"
+],
+"united-states/upper-lake-valley": [
+"united-states/clear-lake",
+"united-states/north-coast"
+],
+"united-states/templeton-gap-district": [
+"united-states/paso-robles",
+"united-states/central-coast"
+],
+"united-states/san-miguel-district": [
+"united-states/paso-robles",
+"united-states/central-coast"
+],
+"united-states/paicines": [
+"united-states/san-benito",
+"united-states/central-coast"
+],
+"united-states/moon-mountain-district-sonoma-county": [
+"united-states/sonoma-valley",
+"united-states/north-coast"
+],
+"united-states/santa-margarita-ranch": [
+"united-states/paso-robles",
+"united-states/central-coast"
+],
+"united-states/paso-robles-geneseo-district": [
+"united-states/paso-robles",
+"united-states/central-coast"
+],
+"united-states/mt-veeder": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/paso-robles-willow-creek-district": [
+"united-states/paso-robles",
+"united-states/central-coast"
+],
+"united-states/high-valley": [
+"united-states/north-coast"
+],
+"united-states/rockpile": [
+"united-states/north-coast"
+],
+"united-states/hames-valley": [
+"united-states/monterey",
+"united-states/central-coast"
+],
+"united-states/big-valley-district-lake-county": [
+"united-states/clear-lake",
+"united-states/north-coast"
+],
+"united-states/kelsey-bench-lake-county": [
+"united-states/clear-lake",
+"united-states/north-coast"
+],
+"united-states/chalone": [
+"united-states/gabilan-mountains",
+"united-states/central-coast"
+],
+"united-states/goose-gap": [
+"united-states/yakima-valley",
+"united-states/columbia-valley"
+],
+"united-states/mt-harlan": [
+"united-states/gabilan-mountains",
+"united-states/central-coast"
+],
+"united-states/ballard-canyon": [
+"united-states/santa-ynez-valley",
+"united-states/central-coast"
+],
+"united-states/cienega-valley": [
+"united-states/san-benito",
+"united-states/central-coast"
+],
+"united-states/red-hill-douglas-county-oregon": [
+"united-states/umpqua-valley"
+],
+"united-states/chiles-valley": [
+"united-states/napa-valley",
+"united-states/north-coast"
+],
+"united-states/pine-mountain-cloverdale-peak": [
+"united-states/north-coast"
+],
+"united-states/snipes-mountain": [
+"united-states/yakima-valley",
+"united-states/columbia-valley"
+],
+"united-states/wild-horse-valley": [
+"united-states/north-coast"
+],
+"united-states/the-rocks-district-of-milton-freewater": [
+"united-states/walla-walla-valley",
+"united-states/columbia-valley"
+],
+"united-states/pacheco-pass": [
+"united-states/santa-clara-valley",
+"united-states/san-francisco-bay",
+"united-states/central-coast"
+],
+"united-states/mcdowell-valley": [
+"united-states/mendocino",
+"united-states/north-coast"
+],
+"united-states/candy-mountain": [
+"united-states/columbia-valley"
+],
+"united-states/cole-ranch": [
+"united-states/north-coast"
+],
+"united-states/green-valley-of-russian-river-valley": [
+"united-states/russian-river-valley",
+"united-states/northern-sonoma",
+"united-states/sonoma-coast",
+"united-states/north-coast"
+],
+"united-states/san-ysidro-district": [
+"united-states/santa-clara-valley",
+"united-states/san-francisco-bay",
+"united-states/central-coast"
+],
+"united-states/lime-kiln-valley": [
+"united-states/cienega-valley",
+"united-states/san-benito",
+"united-states/central-coast"
+],
+"united-states/bennett-valley": [
+"united-states/sonoma-valley",
+"united-states/north-coast"
+]
+}

@@ -76,12 +76,12 @@
   },
   {
    "topic": "soil",
-   "claim": "Verduno's soils are mostly Sant'Agata marls, grey-blue and layered, with clay, limestone and sand in varying mixes, laid down in the Miocene.",
+   "claim": "Verduno's soils are mostly Sant'Agata marls. These are grey-blue, layered and rich in lime, with varying clay and sand. They were laid down in the late Miocene.",
    "source": [
     "pelaverga-search"
    ],
    "strength": "Weak",
-   "note": "Search summaries only. No geological source opened."
+   "note": "Search summaries only. No geological source opened. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "tasting",
@@ -103,12 +103,12 @@
   },
   {
    "topic": "name",
-   "claim": "'Piccolo' refers to the small berries, which set it apart from the larger-berried Pelaverga grape of the Saluzzo area.",
+   "claim": "Pelaverga Piccolo is a different grape from the Pelaverga of the Saluzzo hills. 'Piccolo' refers to its small berries.",
    "source": [
     "pelaverga-search"
    ],
    "strength": "Weak",
-   "note": "Search summary only."
+   "note": "Search summary only. Round 28 audit: corrected against the official text."
   },
   {
    "topic": "name",
