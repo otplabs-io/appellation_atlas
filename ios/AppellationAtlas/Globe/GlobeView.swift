@@ -9,6 +9,9 @@ struct GlobeView: View {
     @GestureState private var pinching = false
     var bottomInset: CGFloat = 0
     var topInset: CGFloat = 0
+    /// Space covered at the sides, as by an iPad sidebar floating over the map, so the globe centers in what is left.
+    var leadingInset: CGFloat = 0
+    var trailingInset: CGFloat = 0
 
     var body: some View {
         GeometryReader { geo in
@@ -42,10 +45,10 @@ struct GlobeView: View {
             .onAppear {
                 globe.reduceMotion = reduceMotion
                 globe.topInset = topInset
-                globe.resized(geo.size, bottom: bottomInset)
+                globe.resized(geo.size, bottom: bottomInset, left: leadingInset, right: trailingInset)
             }
-            .onChange(of: geo.size) { _, s in globe.resized(s, bottom: bottomInset) }
-            .onChange(of: bottomInset) { _, b in globe.resized(geo.size, bottom: b) }
+            .onChange(of: geo.size) { _, s in globe.resized(s, bottom: bottomInset, left: leadingInset, right: trailingInset) }
+            .onChange(of: [bottomInset, leadingInset, trailingInset]) { _, _ in globe.resized(geo.size, bottom: bottomInset, left: leadingInset, right: trailingInset) }
             .onChange(of: topInset) { _, t in globe.topInset = t; globe.relabel() }
             .accessibilityElement()
             .accessibilityLabel("Globe of the world's wine places")

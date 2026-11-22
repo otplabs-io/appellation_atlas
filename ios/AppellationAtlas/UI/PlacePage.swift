@@ -61,7 +61,10 @@ struct SearchField: View {
 
 /// iPad: search and the places to go to, beside the globe.
 struct Sidebar: View {
+    /// Set from the page beside the globe to put the cursor in the search field.
+    @Binding var searching: Bool
     @State private var query = ""
+    @FocusState private var focused: Bool
     @Environment(Nav.self) private var nav
     @Environment(Atlas.self) private var atlas
 
@@ -79,6 +82,12 @@ struct Sidebar: View {
             .padding(16)
         }
         .searchable(text: $query, placement: .sidebar, prompt: "Search places")
+        .searchFocused($focused)
+        .task(id: searching) {
+            guard searching else { return }
+            try? await Task.sleep(for: .milliseconds(350))   // once the sidebar has slid in
+            focused = true; searching = false
+        }
         .navigationTitle("Wine Atlas")
         .toolbar { ToolbarItem(placement: .bottomBar) { AboutButton() } }
     }

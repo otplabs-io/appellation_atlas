@@ -95,6 +95,11 @@ final class Globe {
     var bottomInset: CGFloat = 0
     /// Space at the top kept clear of labels: the status bar and the buttons under it.
     var topInset: CGFloat = 0
+    /// Space covered at the sides (the iPad's sidebar and place panel), so the globe centers between them.
+    var leftInset: CGFloat = 0
+    var rightInset: CGFloat = 0
+    /// The width of the map left open between the sides.
+    var openWidth: CGFloat { max(1, size.width - leftInset - rightInset) }
     var cam = Camera(lon: Globe.start.lon, lat: Globe.start.lat, R: 120)
     private(set) var view: MapView?
     private(set) var parent: MapView?
@@ -131,8 +136,8 @@ final class Globe {
 
     // ---- layout
 
-    var center: CGPoint { CGPoint(x: size.width / 2, y: (size.height - bottomInset) / 2) }
-    var fitSize: CGSize { CGSize(width: size.width, height: max(200, size.height - bottomInset)) }
+    var center: CGPoint { CGPoint(x: leftInset + openWidth / 2, y: (size.height - bottomInset) / 2) }
+    var fitSize: CGSize { CGSize(width: max(200, openWidth), height: max(200, size.height - bottomInset)) }
     var projector: Projector { projector(cam) }
     func projector(_ c: Camera) -> Projector { Projector(c, center: center, diagonal: hypot(size.width, size.height)) }
 
@@ -147,12 +152,13 @@ final class Globe {
 
     @ObservationIgnored private var oldBase: Double?
 
-    func resized(_ s: CGSize, bottom: CGFloat) {
+    func resized(_ s: CGSize, bottom: CGFloat, left: CGFloat = 0, right: CGFloat = 0) {
         guard s.width > 0, s.height > 0 else { return }
         if oldBase == nil, let v = view { oldBase = camFor(v).R }
         let first = size == .zero
         size = s
         bottomInset = bottom
+        leftInset = max(0, left); rightInset = max(0, right)
         if first { Task { await show(want) } }
         else if let v = view, !busy {
             // keep where the globe is turned and how far in it is, only fitted to the new space
@@ -232,7 +238,7 @@ final class Globe {
     private func focus(_ it: MapItem) async {
         guard !it.polys.isEmpty else { return }
         let bb = projector.path(it.polys).boundingRect
-        let open = CGRect(x: 0, y: topInset, width: size.width, height: max(1, size.height - bottomInset - topInset))
+        let open = CGRect(x: leftInset, y: topInset, width: openWidth, height: max(1, size.height - bottomInset - topInset))
         if !bb.isNull, !bb.isEmpty, bb.intersects(open) { return }
         let s = bb.isNull ? 1 : max(bb.width, bb.height)
         let want = min(fitSize.width, fitSize.height - topInset) * 0.45
@@ -274,7 +280,7 @@ final class Globe {
 
     private func fly(_ v: MapView, _ par: MapView?, to fixed: Camera? = nil) async {
         let old = view.map { ($0, parent) }
-        let a = cam, b = fixed ?? camFor(v)
+        let a = cam, b = fixed ?? camFor(v), base = camFor(v).R
         view = v; parent = par; outgoing = old; fadeIn = 0
         restyle(); labels = []; dots = []; previews = []
         let wa = worldOpacity, wb: Double = needsWorld(b, v) ? 1 : 0
@@ -295,30 +301,37 @@ final class Globe {
             fadeIn = min(1, max(0, (e - 0.15) / 0.6))
             worldOpacity = max(0.001, wa + (wb - wa) * e)
         }
-        outgoing = nil; cam = b; worldOpacity = wb; fadeIn = 1; busy = false
+        outgoing = nil; cam = refit(b, base); worldOpacity = wb; fadeIn = 1; busy = false
         arrivals += 1
     }
 
     private func intro(_ b: Camera) async {
-        let a = Camera(lon: b.lon + 300, lat: b.lat - 20, R: b.R * 0.05)
+        let a = Camera(lon: b.lon + 300, lat: b.lat - 20, R: b.R * 0.05), base = baseR
         busy = true; appear = 0
         await animate(3600) { [self] k in
             let z = Globe.ease(min(1, k * 1.15)), sp = 1 - pow(1 - k, 3)
             cam = Camera(lon: a.lon + (b.lon - a.lon) * sp, lat: a.lat + (b.lat - a.lat) * sp, R: exp(log(a.R) + (log(b.R) - log(a.R)) * z))
             appear = min(1, k * 5)
         }
-        cam = b; appear = 1; busy = false
+        cam = refit(b, base); appear = 1; busy = false
+    }
+
+    /// A flight's end, fitted to the space as it is now: the panels beside the map can settle while the globe moves.
+    private func refit(_ b: Camera, _ base: Double) -> Camera {
+        var c = b
+        if base > 0 { c.R *= baseR / base }
+        return c
     }
 
     private func glide(_ b: Camera, ms: Double = 500, ease: Bool = true) async {
-        let a = cam, dl = shortest(a.lon, b.lon)
+        let a = cam, dl = shortest(a.lon, b.lon), base = baseR
         busy = true; labels = []; dots = []
         await animate(reduceMotion ? 1 : ms) { [self] k in
             let e = ease ? Globe.ease(k) : 1 - pow(1 - k, 3)
             cam = lerp(a, b, e, dl)
             if let v = view, v.id != "world" { worldOpacity = needsWorld(cam, v) ? 1 : 0 }
         }
-        cam = b; busy = false
+        cam = refit(b, base); busy = false
         relabel()
     }
 
@@ -427,15 +440,15 @@ final class Globe {
     /// The place that fills most of the screen, near the middle, when it clearly leads and has its own map.
     private func deeper() async -> Bool {
         guard let v = view else { return false }
-        let P = projector, W = size.width, H = size.height, hd = hypot(W, H) / 2
+        let P = projector, W = size.width, H = size.height, hd = hypot(openWidth, H) / 2
         var scored: [(MapItem, Double, Double)] = []
         for it in v.items {
             let bb = P.path(it.polys).boundingRect
             if bb.isNull || bb.isEmpty { continue }
-            let x0 = max(0, bb.minX), x1 = min(W, bb.maxX), y0 = max(0, bb.minY), y1 = min(H, bb.maxY)
+            let x0 = max(leftInset, bb.minX), x1 = min(W - rightInset, bb.maxX), y0 = max(0, bb.minY), y1 = min(H, bb.maxY)
             if x1 <= x0 || y1 <= y0 { continue }
-            let a = (x1 - x0) * (y1 - y0) / (W * H)
-            let d = hypot((x0 + x1) / 2 - W / 2, (y0 + y1) / 2 - H / 2) / hd
+            let a = (x1 - x0) * (y1 - y0) / (openWidth * H)
+            let d = hypot((x0 + x1) / 2 - center.x, (y0 + y1) / 2 - H / 2) / hd
             scored.append((it, a, a * (1 - d * 0.8)))
         }
         scored.sort { $0.2 > $1.2 }
@@ -515,11 +528,11 @@ final class Globe {
 
     func relabel() {
         guard let v = view, size != .zero else { labels = []; dots = []; previews = []; return }
-        let P = projector, W = size.width, H = size.height
+        let P = projector, W = size.width, H = size.height, L = leftInset, Rt = W - rightInset, openW = openWidth
         var placed: [CGRect] = []
         var outL: [MapLabel] = [], outD: [MapDot] = []
         func free(_ b: CGRect) -> Bool {
-            if b.minX < 2 || b.maxX > W - 2 || b.minY < max(2, topInset) || b.maxY > H - 2 - bottomInset { return false }
+            if b.minX < L + 2 || b.maxX > Rt - 2 || b.minY < max(2, topInset) || b.maxY > H - 2 - bottomInset { return false }
             return !placed.contains { b.insetBy(dx: 2, dy: 2).intersects($0) }
         }
         /// Tries spots around a point, in order, and keeps the first that is free (or the last, when forced).
@@ -549,7 +562,7 @@ final class Globe {
             return [150, 110, 70, 36, 0][min(4, t)]
         }
         // and the screen holds only so many names: about one for each 16,000 square points of open map
-        var budget = max(6, Int(W * shownH / 16_000))
+        var budget = max(6, Int(openW * shownH / 16_000))
 
         let live = v.items.filter { !$0.polys.isEmpty }.sorted {
             let a = leaf == $0.id ? 1 : 0, b = leaf == $1.id ? 1 : 0
@@ -574,8 +587,8 @@ final class Globe {
         var open: [MapView] = []
         if zoomedIn {
             for it in live where it.id != leaf && atlas.geo[it.id]?.hasView == true {
-                guard let bb = boxes[it.id], !bb.isNull, max(bb.width, bb.height) >= min(W, shownH) * 0.5,
-                      bb.intersects(CGRect(x: 0, y: topInset, width: W, height: H - topInset - bottomInset)),
+                guard let bb = boxes[it.id], !bb.isNull, max(bb.width, bb.height) >= min(openW, shownH) * 0.5,
+                      bb.intersects(CGRect(x: L, y: topInset, width: openW, height: H - topInset - bottomInset)),
                       let cv = atlas.view(it.id), !cv.items.isEmpty else { continue }
                 open.append(cv)
             }
@@ -618,7 +631,7 @@ final class Globe {
 
         // 3. the regions beside this one (those with maps of their own), named in whatever part of them is on screen
         if let par = parent {
-            let shownArea = CGRect(x: 0, y: topInset, width: W, height: H - topInset - bottomInset)
+            let shownArea = CGRect(x: L, y: topInset, width: openW, height: H - topInset - bottomInset)
             let st = LabelStyle.neighbour
             let near = par.items.filter { $0.id != v.id && atlas.geo[$0.id]?.hasView == true }.sorted { atlas.score($0.id) > atlas.score($1.id) }
             // a neighbour that overlaps this place (Sonoma Coast around Russian River Valley) is named only outside it
@@ -641,7 +654,7 @@ final class Globe {
         }
 
         // 4. river and lake names, after the places': along the stretch nearest the middle of the map, or across the lake (labels in web/atlas.js)
-        let mid = CGPoint(x: W / 2, y: topInset + shownH / 2)
+        let mid = CGPoint(x: L + openW / 2, y: topInset + shownH / 2)
         for w in v.water {
             var tries: [(CGPoint, Double)] = []
             if w.lake {
@@ -651,7 +664,7 @@ final class Globe {
                     let pts: [CGPoint?] = l.points.map { let q = P.project($0); return q.z < 0 ? nil : P.screen(q.x, q.y) }
                     var last: CGPoint? = nil
                     for i in pts.indices {
-                        guard let p = pts[i], p.x >= 30, p.x <= W - 30, p.y >= topInset + 16, p.y <= H - bottomInset - 16 else { continue }
+                        guard let p = pts[i], p.x >= L + 30, p.x <= Rt - 30, p.y >= topInset + 16, p.y <= H - bottomInset - 16 else { continue }
                         if let q = last, hypot(p.x - q.x, p.y - q.y) < 24 { continue }
                         func near(_ k: Int) -> Bool { guard let q = pts[k] else { return false }; return hypot(q.x - p.x, q.y - p.y) < 22 }
                         var a = i, b = i   // the river's heading over about 40 points
@@ -682,7 +695,7 @@ final class Globe {
 
         // 4b. a few towns, for bearings: a dot and the name beside it, wherever there is room (web/atlas.js)
         for t in v.cities {
-            guard let s = P.screen(lon: t.lon, lat: t.lat), s.x >= 8, s.x <= W - 8, s.y >= topInset + 8, s.y <= H - bottomInset - 8 else { continue }
+            guard let s = P.screen(lon: t.lon, lat: t.lat), s.x >= L + 8, s.x <= Rt - 8, s.y >= topInset + 8, s.y <= H - bottomInset - 8 else { continue }
             let st = LabelStyle.town, w = st.width(t.name), h: CGFloat = 12
             let dotBox = CGRect(x: s.x - 3, y: s.y - 3, width: 6, height: 6)
             guard free(dotBox) else { continue }
