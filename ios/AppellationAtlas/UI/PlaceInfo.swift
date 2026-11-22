@@ -70,6 +70,12 @@ struct PlaceInfo: View {
                 ForEach(keys, id: \.self) { k in section(k).id(k) }
                 FeedbackLink(name: f["name"].string ?? "", id: f["id"].string ?? "").padding(.top, 8)
             }
+            // For screenshots: run with -section climate to open the page at that section.
+            .task {
+                guard let s = UserDefaults.standard.string(forKey: "section"), let k = Key(rawValue: s), keys.contains(k) else { return }
+                try? await Task.sleep(for: .seconds(1))
+                proxy.scrollTo(k, anchor: .top)
+            }
         }
     }
 
