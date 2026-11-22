@@ -109,7 +109,7 @@ Each place page lists the sources behind it. Check each source's own terms befor
 | [INAO via OpenDataWine](https://github.com/24eme/opendatawine) | French grand cru plots | Licence Ouverte |
 | [INAO cahiers des charges](https://www.inao.gouv.fr/rechercher-un-produit) | French main and minor grapes, and their share limits | Licence Ouverte |
 | [Anderson, Nelgen and Puga](https://doi.org/10.25909/32870405.v1) | What is planted | CC BY 4.0 |
-| [WorldClim 2.1](https://www.worldclim.org/) | Temperature and rain | Limits commercial use and redistribution. See their terms |
+| [WorldClim 2.1](https://www.worldclim.org/) | Temperature | Limits commercial use and redistribution. See their terms |
 | [Beck et al. 2023](https://doi.org/10.1038/s41597-023-02549-6) | Climate type | See the paper |
 | [ISRIC SoilGrids 2.0](https://www.isric.org/explore/soilgrids) | Soil | CC BY 4.0 |
 | [Macrostrat](https://macrostrat.org/) | Rock | CC BY 4.0 |

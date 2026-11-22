@@ -29,7 +29,6 @@ enum Copy {
         static let limitsHead = "Planting rules: shares of each grower\u{2019}s vineyard, not of the blend"
         static let blendHead = "Blend rules: shares of the wine itself"
         static func forWine(_ w: String) -> String { "Main grapes, for \(w)" }
-        static let desertRain = "Rain is left out: the 4.5 km grid takes in the wetter hills around the vineyards, so its totals run well above what weather stations among the vines record."
     }
 
     /// What gold and grey mean for each pill (LEVELS in atlas.js).
@@ -118,7 +117,6 @@ func fmt(_ n: Double?) -> String {
 }
 
 func toF(_ c: Double) -> Double { c * 9 / 5 + 32 }
-func inches(_ mm: Double) -> Double { mm / 25.4 }
 func feet(_ m: Double) -> Double { (m * 3.281 / 10).rounded() * 10 }
 func capitalized(_ s: String) -> String { s.prefix(1).uppercased() + s.dropFirst() }
 func plural(_ n: Int, _ word: String) -> String { "\(n) \(word)\(n == 1 ? "" : "s")" }

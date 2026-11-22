@@ -532,7 +532,6 @@ def rocks():
 # ---------- what the numbers mean, in plain words
 def _f(c): return c*9/5+32
 def _and(xs): xs=list(xs); return ', '.join(xs[:-1])+' and '+xs[-1] if len(xs)>1 else (xs[0] if xs else '')
-def _in(mm): return mm/25.4
 def readings(f,CG):
     """What a place's climate, rock, soil and land mean for its vines: short labelled points [topic, why it matters] for
     climate and land, and plain paragraphs for soil ({'rock': ..., 'top': ...}).
@@ -576,17 +575,6 @@ def readings(f,CG):
         if ok: r.append([label,f'{_and(ok)} {"sit" if len(ok)>1 else "sits"} in {"their" if len(ok)>1 else "its"} sweet spot, so the wines can show the style {"they are" if len(ok)>1 else "it is"} known for.'])
         # no warm- or cool-limit verdicts: one average over a region cannot tell Clare's cool Riesling sites or Rioja Oriental's warm
         # Garnacha from the rest, and the verdicts read as judgements on benchmark wines
-        if c.get('rain') and c.get('gs_rain') is not None:
-            pr=c['prec']; south=c['lat']<0; share=c['gs_rain']/c['rain'] if c['rain'] else 0
-            summer=sum(pr[i] for i in ((11,0,1) if south else (5,6,7))); winter=sum(pr[i] for i in ((5,6,7) if south else (11,0,1)))
-            if (c.get('koppen') or '').startswith('B') and summer>1.5*winter and summer>.4*sum(pr): r.append(['Rain','A dry climate, and what little rain there is falls mostly in summer. Water is scarce.'])
-            elif (c.get('koppen') or '').startswith('B') and share>=.4: r.append(['Rain','A dry climate, though much of its little rain falls while the vines grow. Water is scarce.'])   # Verde Valley's monsoon
-            elif (c.get('koppen') or '').startswith('B'): r.append(['Rain','A dry climate, with little rain while the vines grow. Water is scarce and the dry air keeps disease down.'])
-            elif _in(c['gs_rain'])<4: r.append(['Rain','Summers are close to rainless. Vines draw on water stored in the soil, or on irrigation, but disease is rare.'])
-            elif share<.35: r.append(['Rain','Most rain falls in winter. Dry summers keep mildew and rot down, though young vines may need watering.'])
-            elif share>.7 and _in(c['gs_rain'])>=16: r.append(['Rain','Most rain falls while the vines grow. Damp leaves invite mildew and rot, so growers spray more and pick carefully.'])   # a share alone is not enough: Znojmo gets 14 inches
-            hv=[2,3] if south else [8,9]; avg=sum(pr)/12   # not in Mediterranean climates, where autumn is merely the wettest season and vintages are steady
-            if avg and sum(pr[i] for i in hv)/2>1.25*avg and not (c.get('koppen') or '')[:2] in ('Cs','BS','BW') and c['gst']<19: r.append(['Harvest','Rain picks up at harvest. Growers race to pick before rot sets in, and vintages vary more.'])   # hot places pick in July and August, before these rains
         out['climate']=r
     soil={}   # two short paragraphs, not labelled points: what the rock does, then what the topsoil does
     if rk and rk.get('families'):

@@ -264,7 +264,6 @@ struct PlaceInfo: View {
             FactGrid(facts: [
                 Fact(label: "Growing season", value: "\(Int(toF(c["gst"].double ?? 0).rounded()))°F", note: south ? "average, October to April" : "average, April to October"),
                 Fact(label: "Heat", value: "\(fmt(((c["gdd"].double ?? 0) * 1.8 / 10).rounded() * 10)) degree days", note: "°F, above 50°F"),
-                Fact(label: "Rain", value: c["rain"].double.map { "\(Int(inches($0).rounded())) in/year" } ?? "", note: c["gs_rain"].double.map { "\(Int(inches($0).rounded())) in while the vines grow" } ?? ""),
                 Fact(label: "Climate type", value: c["koppen_name"].string ?? c["koppen"].string ?? "", note: c["koppen"].string.map { "Köppen " + $0 + ", from a 1991 to 2020 map" } ?? ""),
             ])
             SubCaption("Growing season: \(gi >= 0 ? Copy.growingSeason[gi].0.lowercased() : "?")")
@@ -274,10 +273,7 @@ struct PlaceInfo: View {
             if let t = wk[1].string, !t.isEmpty { Text(t).font(.atlasBody) }
             bigNote
             Reading(title: "What the climate means for the vines", points: pairs(reading))
-            ViewThatFits {
-                HStack(alignment: .top, spacing: 16) { tempChart(c, south); rainChart(c, south) }
-                VStack(alignment: .leading, spacing: 10) { tempChart(c, south); rainChart(c, south) }
-            }
+            tempChart(c, south)
         }
     }
 
@@ -286,19 +282,7 @@ struct PlaceInfo: View {
             SubCaption("Average temperature by month, °F")
             MonthsChart(values: c["tavg"].doubles.map(toF), unit: "°F", season: Palette.coral, base: Palette.monthTemp, south: south, labels: true)
         }
-        .frame(minWidth: 220)
-    }
-
-    private func rainChart(_ c: JSON, _ south: Bool) -> some View {
-        VStack(alignment: .leading, spacing: 4) {
-            if c["prec"].doubles.isEmpty {   // left out in deserts (desertRain in web/atlas.js)
-                Text(Copy.Rules.desertRain).font(.atlasNote).foregroundStyle(Palette.soft)
-            } else {
-                SubCaption("Rain by month, inches")
-                MonthsChart(values: c["prec"].doubles.map(inches), unit: "inches", season: Palette.teal, base: Palette.monthRain, south: south)
-            }
-        }
-        .frame(minWidth: 220)
+        .frame(maxWidth: 340, alignment: .leading)   // as .months in web/atlas.css
     }
 
     private var soil: some View {

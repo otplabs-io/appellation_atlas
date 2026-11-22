@@ -55,7 +55,6 @@ enum Palette {
     static let red = Color(light: 0x8E2F3C, dark: 0xC0566A)
     static let pink = Color(light: 0xD98C95, dark: 0xE3A0A8)
     static let monthTemp = Color(light: 0xE5DCC6, dark: 0x3A3426)
-    static let monthRain = Color(light: 0xCFE3EE, dark: 0x1F3A4C)
 
     static func rock(_ id: String) -> Color {
         switch id {
