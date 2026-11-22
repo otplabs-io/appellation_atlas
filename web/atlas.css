@@ -62,7 +62,6 @@
 .mrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 20px;margin-top:4px}
 .months{display:block;width:100%;max-width:340px;height:auto}
 .months rect.t{fill:#E5DCC6}.months rect.t.gs{fill:var(--coral)}
-.months rect.p{fill:#CFE3EE}.months rect.p.gs{fill:var(--teal)}
 .months text{font-family:var(--body);font-size:9px;fill:var(--soft)}
 .months text.val{font-size:8px;font-weight:600;fill:var(--ink)}
 .note{margin-top:10px;color:var(--soft)}
@@ -195,7 +194,7 @@ section.row[id^="s-"]{scroll-margin-top:80px}
   .map .rg.sib,.map .rg.sib.n0{fill:#2A3743}
   .map text{stroke:#0E1820}
   .chip.red{border-left-color:#C0566A}.chip.pink{border-left-color:#E3A0A8}
-  .months rect.t{fill:#3A3426}.months rect.p{fill:#1F3A4C}
+  .months rect.t{fill:#3A3426}
   .scale .seg{border-right-color:var(--paper)}
   .rk.r-limestone,.rk.r-chalk{background:#3B3829}.rk.r-marl{background:#3A3426}.rk.r-volcanic{background:#3E3130}.rk.r-granite{background:#423331}
   .rk.r-schist,.rk.r-shale{background:#2E3945}.rk.r-gravel,.rk.r-sand,.rk.r-sandstone{background:#43391F}.rk.r-alluvium,.rk.r-loess,.rk.r-clay{background:#35322B}

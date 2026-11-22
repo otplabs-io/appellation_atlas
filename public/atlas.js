@@ -357,13 +357,13 @@ const SKINS=[['red','Red grapes'],['white','White grapes'],['pink','Pink and gre
 const fact=(label,value,note)=>value==null||value===''?'':`<div class="fact"><span class="ts-fact_label">${label}</span><span class="ts-fact_value">${value}</span>${note?`<span class="ts-fact_note">${note}</span>`:''}</div>`;
 const chips=list=>`<div class="chips">${list.map(([g,sk,n])=>`<span class="chip ${sk||''}">${esc(g)}${n!=null?`<b>${n}</b>`:''}</span>`).join('')}</div>`;
 const block=(head,body,note)=>body?`<section class="row"><div class="head"><h2 class="ts-section_head">${head}</h2>${note?`<span class="ts-caption">${note}</span>`:''}</div>${body}</section>`:'';
-const toF=c=>c*9/5+32, inch=mm=>mm/25.4, ft=m=>Math.round(m*3.281/10)*10;
+const toF=c=>c*9/5+32, ft=m=>Math.round(m*3.281/10)*10;
 // the grapes left out of what is planted because they are not wine grapes (Copy.leftOut in the app)
 const andList=xs=>xs.length>1?xs.slice(0,-1).join(', ')+' and '+xs[xs.length-1]:(xs[0]||'');
 // notes on the rules facts (Copy.rules in the app)
 const COPY={baseYield:'the yield its rules set; some years a little more is allowed',yieldCeiling:'the most its rules allow in any year; the usual limit is lower',
   yieldLimit:'the most the 2022 EU record allows; some of its wines may have lower limits, and rules change',recognised:'the year its rules say it was first recognised, sometimes under an older name',noShares:'The 2022 EU record lists the grapes allowed, not their shares. Later changes to the rules may not be in it.',noRoles:'The cahier gives these grapes different roles in different wines, so they are listed here by colour.',anyName:' That is every vineyard there, whatever name its wine is sold under.',limitsHead:'Planting rules: shares of each grower\u2019s vineyard, not of the blend',blendHead:'Blend rules: shares of the wine itself',
-  forWine:w=>`Main grapes, for ${w}`,whitesOlder:y=>`red grapes as of ${y}, white grapes from an earlier survey, so the shares are approximate.`,desertRain:'Rain is left out: the 4.5 km grid takes in the wetter hills around the vineyards, so its totals run well above what weather stations among the vines record.'};
+  forWine:w=>`Main grapes, for ${w}`,whitesOlder:y=>`red grapes as of ${y}, white grapes from an earlier survey, so the shares are approximate.`};
 const rockShare=v=>v>=.5?'mostly':v>=.25?'much':'some';   // a rock family's share in words: it comes from a few map points (Copy.share in the app)
 const leftOut=l=>l?(l.juice?` Juice grapes are left out: ${esc(andList(l.juice))}.`:'')+(l.table?` Table grapes are left out: ${esc(andList(l.table))}.`:''):'';
 const reading=(xs,head)=>xs&&xs.length?`<div class="why"><p class="why-head ts-fact_label">${head}</p><dl>${xs.map(([k,v])=>`<dt class="ts-fact_label">${esc(k)}</dt><dd class="ts-body">${esc(v)}</dd>`).join('')}</dl></div>`:'';
@@ -476,11 +476,11 @@ function renderInfo(f){
   if(c){
     const south=c.lat<0, [gi,gp]=seg(GST_F,c.gst), [wi,wp]=seg(WK_F,c.gdd), wk=f.winkler;
     const b=`<div class="facts">${fact('Growing season',`${Math.round(toF(c.gst))}°F`,'average, April to October'.replace('April to October',south?'October to April':'April to October'))}${fact('Heat',`${fmt(Math.round(c.gdd*1.8/10)*10)} degree days`,'°F, above 50°F')}`
-      +`${c.rain!=null?fact('Rain',`${Math.round(inch(c.rain))} in/year`,`${Math.round(inch(c.gs_rain))} in while the vines grow`):''}${fact('Climate type',esc(c.koppen_name||c.koppen),c.koppen?'Köppen '+c.koppen+', from a 1991 to 2020 map':'')}</div>`
+      +`${fact('Climate type',esc(c.koppen_name||c.koppen),c.koppen?'Köppen '+c.koppen+', from a 1991 to 2020 map':'')}</div>`
       +`<p class="ts-caption sub">Growing season: ${esc((GST_F[gi]||['?'])[0].toLowerCase())}</p>${scale(GST_F.map(x=>[x[0],x[3]]),gi,gp,'Growing season temperature class')}`
       +`<p class="ts-caption sub">Winkler region ${esc(wk?wk[0]:'')}</p>${scale(WK_F.map(x=>[x[0],x[3]]),wi,wp,'Winkler region')}${wk&&wk[1]?`<p class="ts-body wk">${esc(wk[1])}</p>`:''}`
       +bigNote(f)+reading(rd.climate,'What the climate means for the vines')
-      +`<div class="mrow"><div><p class="ts-caption sub">Average temperature by month, °F</p>${months(c.tavg.map(toF),'temperature','t',south,true)}</div>${c.prec?`<div><p class="ts-caption sub">Rain by month, inches</p>${months(c.prec.map(inch),'rain','p',south)}</div>`:`<div><p class="ts-caption">${esc(COPY.desertRain)}</p></div>`}</div>`;
+      +`<div class="mrow"><div><p class="ts-caption sub">Average temperature by month, °F</p>${months(c.tavg.map(toF),'temperature','t',south,true)}</div></div>`;
     X.climate=block('Climate',b,'Averages, 1970 to 2000');
   }
   const so=f.soil, rk=f.rocks;
@@ -533,7 +533,7 @@ const ABOUT_SOURCES=[
   ['Wine Australia and IPONZ','Australian and New Zealand boundaries','https://www.wineaustralia.com/'],
   ['INAO via OpenDataWine','French grand cru plots','https://github.com/24eme/opendatawine'],
   ['Anderson, Nelgen and Puga','What is planted (CC BY 4.0)','https://doi.org/10.25909/32870405.v1'],
-  ['WorldClim 2.1','Temperature and rain, used with the author\'s permission','https://www.worldclim.org/'],
+  ['WorldClim 2.1','Monthly temperatures, used with the author\'s permission','https://www.worldclim.org/'],
   ['Beck et al. 2023','Climate type','https://doi.org/10.1038/s41597-023-02549-6'],
   ['ISRIC SoilGrids 2.0','Soil (CC BY 4.0)','https://www.isric.org/explore/soilgrids'],
   ['Macrostrat','Rock (CC BY 4.0)','https://macrostrat.org/'],

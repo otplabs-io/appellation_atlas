@@ -12,7 +12,7 @@ struct AboutView: View {
         ("Wine Australia and IPONZ", "Australian and New Zealand boundaries", "https://www.wineaustralia.com/"),
         ("INAO via OpenDataWine", "French grand cru plots", "https://github.com/24eme/opendatawine"),
         ("Anderson, Nelgen and Puga", "What is planted (CC BY 4.0)", "https://doi.org/10.25909/32870405.v1"),
-        ("WorldClim 2.1", "Temperature and rain, used with the author's permission", "https://www.worldclim.org/"),
+        ("WorldClim 2.1", "Monthly temperatures, used with the author's permission", "https://www.worldclim.org/"),
         ("Beck et al. 2023", "Climate type", "https://doi.org/10.1038/s41597-023-02549-6"),
         ("ISRIC SoilGrids 2.0", "Soil (CC BY 4.0)", "https://www.isric.org/explore/soilgrids"),
         ("Macrostrat", "Rock (CC BY 4.0)", "https://macrostrat.org/"),

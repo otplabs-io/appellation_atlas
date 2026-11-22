@@ -399,9 +399,6 @@ ALSO_INSIDE={'australia/north-west-victoria':['australia/murray-darling'],'austr
 CHRIS_KIND={'italy/langhe-nebbiolo':'DOC','spain/condado-do-tea':'Subzone','spain/o-rosal':'Subzone','spain/val-do-salnes':'Subzone','france/beaujolais-villages':'AOC','france/macon-villages':'AOC','france/chablis-premier-cru':'AOC','france/hautes-cotes-de-nuits':'AOC',
             'france/hautes-cotes-de-beaune':'AOC','france/castillon-cotes-de-bordeaux':'AOC','france/blaye-cotes-de-bordeaux':'AOC','france/alsace-aoc':'AOC',
             'italy/puglia-igt':'IGT','france/cote-des-bar':'district','france/montagne-de-reims':'district','france/cote-des-blancs':'district','france/vallee-de-la-marne':'district'}
-# WorldClim's dry patch over Viterbo province: the grid gives 300 to 480 mm a year where the Viterbo station records about 736 mm
-# (1971 to 2000) and Rome about 727 mm, so rain is left out on the places inside it
-GRID_DRY={'new-zealand/martinborough','italy/vignanello','italy/est-est-est-di-montefiascone','italy/colli-etruschi-viterbesi','italy/aleatico-di-gradoli','italy/tarquinia','italy/orvieto'}
 # Blurbs on pages without reviewed key facts keep only what the page's own data supports: a sentence with numbers keeps them only if
 # each is a planting share, the planting year, or the AVA, GI or recognition year on the page; a ranking ("largest", "first") only
 # if the superlative check confirmed it (build/review/superlatives/). Wikipedia's figures and rankings were the main source of errors.
@@ -922,21 +919,12 @@ def facts():
             sh=sum(c_['prec'][i] for i in summer)/P_ if P_ else 0
             th=20*T_+(280 if sh>=.7 else 0 if sh<.3 else 140)
             if P_<.5*th:   # Molinos: 137 mm a year is desert, though the 1 km map, taking in mountain cells, says Cwb
-                f['climate']=dict(c_,koppen='BW'+('h' if T_>=18 else 'k'),koppen_name='Arid, desert'+(', hot' if T_>=18 else ', cold')+' (from these figures)')
-        reg_=next((c_[0] for c_ in chain if c_[0] in ('italy/lazio','italy/umbria','italy/toscana','italy/tuscany')),None)
+                f['climate']=dict(c_,koppen='BW'+('h' if T_>=18 else 'k'),koppen_name='Arid, desert'+(', hot' if T_>=18 else ', cold')+' (from WorldClim\'s monthly averages)')
         GC_=n.startswith('france/alsace-grand-cru-')   # climate and soil read over the cru's whole communes, Vosges forest and all, not its plot (Schoenenbourg)
-        if f.get('climate') and ((f['climate'].get('cells') or 9)<=2 or GC_):   # one grid cell on a 56 ha grand cru reads the mountain above it (Altenberg de Bergheim)
-            f['climate']=dict(f['climate'],rain=None,gs_rain=None,prec=None,dry=True)
-            if (f.get('reading') or {}).get('climate'): f['reading']['climate']=[x for x in f['reading']['climate'] if x[0] not in ('Rain','Harvest')]
         if f.get('soil') and (GC_ or AREA.get(n,99)<5 or (f.get('climate') or {}).get('cells',9)<=2): f.pop('soil',None)   # a 1 km topsoil model on a plot of a few hectares
-        if f.get('climate'):   # rain over a whole outline takes in the wet hills around the vineyards: Applegate Valley reads 37 in against 25 at its stations, Marlborough 38 against 26, Washington 24 against 8 east of the Cascades. No total is shown anywhere
-            f['climate']=dict(f['climate'],rain=None,gs_rain=None,prec=None,dry=True)
-            if (f.get('reading') or {}).get('climate'): f['reading']['climate']=[x for x in f['reading']['climate'] if x[0] not in ('Rain','Harvest')]
-        if n in GRID_DRY or (reg_ and (f.get('climate') or {}).get('rain') and f['climate']['rain']<700) and f.get('climate'):   # the grid's dry patch over central Italy: stations there record more than 600 mm
-            f['climate']=dict(f['climate'],rain=None,gs_rain=None,prec=None,dry=True)
-            if (f.get('reading') or {}).get('climate'): f['reading']['climate']=[x for x in f['reading']['climate'] if x[0] not in ('Rain','Harvest')]
-        if (f.get('climate') or {}).get('koppen','').startswith('BW'):   # in deserts the grid reads two to three times the station normals (San Juan: about 4 inches, not 10)
-            f['climate']=dict(f['climate'],rain=None,gs_rain=None,prec=None,dry=True)
+        if f.get('climate'):   # no rain anywhere, by Chris's choice: grids read valleys ringed by hills and deserts far too wet, and too few
+            # weather stations stand among vines (build/review/rain/). The monthly rain stays in atlas-climate.json for the dry test above only
+            f['climate']={k:v for k,v in f['climate'].items() if k not in ('rain','gs_rain','prec','dry')}
         if f.get('climate') and f['climate'].get('gdd') is not None:
             # the class only: Winkler's sentences for each class were written for California, and read wrongly elsewhere ("mostly hybrids"
             # in Champagne, "quality tops out at acceptable" in the Barossa); what suits the place is said from its own grapes instead
