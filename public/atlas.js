@@ -26,7 +26,9 @@ function rangeOf(ids){const v=ids.map(score).filter(x=>x>=0); return v.length?[M
 function tierOf(s,r){if(s<0) return 0; const lo=Math.min(r[0],r[1]-20), t=(s-lo)/(r[1]-lo); return t>=.85?4:t>=.6?3:t>=.35?2:1;}
 // The pills pick the gold: Benchmarks shows the classic places to learn first and the regions above them,
 // All every place inside the classic regions; the rest are grey
-const LEVELS={b:{name:'Benchmarks',on:'Benchmark region',off:'Emerging region',ons:'Benchmark regions',offs:'Emerging regions'},d:{name:'All',on:'Benchmark region',off:'Emerging region',ons:'Benchmark regions',offs:'Emerging regions'}};
+// Grey says only that a place is off the study list, never how well known it is, so its words say where it sits
+const LEVELS={b:{name:'Benchmarks',on:'Benchmark region',off:'Other region',ons:'Benchmark regions'},d:{name:'All',on:'Benchmark region',off:'Other region',ons:'Benchmark regions'}};
+const moreIn=vid=>vid==='world'?'Other countries':'More in '+(PL[vid]?.[0]||'');
 S.lvl=(()=>{try{const v=localStorage.getItem('atlas.level'); return LEVELS[v]?v:(v==='2'||v==='3')?'b':'d';}catch(e){return 'd';}})();
 const gold=id=>{const x=PL[id]; if(!x) return false; return S.lvl==='d'?!!x[6]:!!(x[7]&15);};
 function setLevel(v){S.lvl=v; try{localStorage.setItem('atlas.level',v);}catch(e){} keyText(); restyle(); labels(); draw(); render();}
@@ -339,7 +341,7 @@ function renderPlaces(){
   const bench=sorted.filter(gold), emerg=sorted.filter(i=>!gold(i)), cap=bench.length?12:30, shown=M.all?emerg:emerg.slice(0,cap);
   const step=i=>`<a class="step ts-ladder_step" href="${link(i)}" aria-pressed="${S.p===i}"><i class="sw ${shade(i,score(i),rng)}"></i>${esc(PL[i][0])}${GEO.places[i].source?'':'<small> no map</small>'}</a>`;
   const grp=(head,list,n)=>list.length?`<p class="grp ts-fact_label">${head} <small class="ts-caption">${n}</small></p><div class="steps">${list.map(step).join('')}</div>`:'';
-  const body=grp(LEVELS[S.lvl].ons,bench,bench.length)+grp(LEVELS[S.lvl].offs,shown,emerg.length)
+  const body=grp(LEVELS[S.lvl].ons,bench,bench.length)+(bench.length?grp(esc(moreIn(vid)),shown,emerg.length):shown.length?`<div class="steps">${shown.map(step).join('')}</div>`:'')
     +(emerg.length>shown.length?`<button type="button" class="link ts-caption more" id="allp">Show all ${emerg.length}</button>`:'');
   const where=vid==='world'?'Countries':'Places in '+esc(PL[vid]?.[0]||'');
   $('#places').innerHTML=!sorted.length?'':leaf&&leaf!=='world'   // on a place's own page its neighbours fold away, so its page comes first
@@ -394,7 +396,7 @@ function renderTitle(id,f){   // the place's name, what it is and which group it
   const cap=x=>x?x[0].toUpperCase()+x.slice(1):x;
   if(id==='world'){$('#ptitle').innerHTML=`<h2 class="ts-sheet_title name">Explore the world’s wine regions</h2>`; $('#shapeNote').hidden=true; return;}
   const kind=f?(f.kind.length?f.kind.map(cap).join(' and '):(f.depth===0?'Country':f.shape==='Eurostat LAU, the commune it is named for'?'Commune':'Region')):'';
-  $('#ptitle').innerHTML=`<p class="ts-eyebrow eyebrow">${esc(kind)}${kind?' · ':''}<span class="badge ${gold(id)?'':'o'}">${gold(id)?LEVELS[S.lvl].on:LEVELS[S.lvl].off}</span></p><h2 class="ts-sheet_title name" style="--n:${Math.max(...String(PL[id]?.[0]||id).split(/\s+/).map(w=>w.length))}">${esc(PL[id]?.[0]||id)}</h2>`
+  $('#ptitle').innerHTML=`<p class="ts-eyebrow eyebrow">${esc(kind)}${gold(id)?`${kind?' · ':''}<span class="badge">${LEVELS[S.lvl].on}</span>`:''}</p><h2 class="ts-sheet_title name" style="--n:${Math.max(...String(PL[id]?.[0]||id).split(/\s+/).map(w=>w.length))}">${esc(PL[id]?.[0]||id)}</h2>`
     +(f&&f.also.length?`<p class="ts-caption also">Also ${f.also.map(esc).join(', ')}</p>`:'')
     +(f&&f.blurb?`<p class="ts-body blurb">${esc(f.blurb.text)}</p>`:'');   // what the place is known for (PlacePage in the app)
   const sn=f&&SHAPE_NOTE[f.shape]; $('#shapeNote').hidden=!sn; $('#shapeNote').textContent=sn||'';
@@ -560,7 +562,7 @@ function openAbout(){
 }
 document.addEventListener('click',e=>{if(e.target.closest('[data-about]')) openAbout();});
 const FORM_URL='https://docs.google.com/forms/d/e/1FAIpQLSc7CmB3DsylFI0kt6tZncSwq53i8jsEuxdrv4deyIuWJHq8oA/viewform';
-const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">${fmt(Object.keys(PL).length)} wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know.</p><p class="ts-body">${S.lvl==='d'?'All turns gold every place inside the classic regions, down to the smallest appellation. Emerging regions, in grey, are the rest.':'Benchmark regions, in gold, are the classic places to learn first. Emerging regions, in grey, are the rest.'} Switch between Benchmarks and All to choose which places are gold.</p><p class="ts-body">Darker shades show the places with the most global interest, measured by how many Wikipedias write about them and how often those pages are read. Each map sets its own scale, so the darkest place is the best known one on that map.</p></div></section>`;
+const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">${fmt(Object.keys(PL).length)} wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know.</p><p class="ts-body">${S.lvl==='d'?'All turns gold every place inside the classic regions, down to the smallest appellation. Grey marks every other place.':'Benchmark regions, in gold, are the classic places to learn first. Grey marks every other place.'} Switch between Benchmarks and All to choose which places are gold.</p><p class="ts-body">Darker shades show the places with the most global interest, measured by how many Wikipedias write about them and how often those pages are read. Each map sets its own scale, so the darkest place is the best known one on that map.</p></div></section>`;
 async function render(){
   readHash(); renderPlaces(); mapShow();
   if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=WORLD_INFO()+FEEDBACK('Home','world'); return;}

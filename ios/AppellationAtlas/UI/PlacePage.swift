@@ -173,11 +173,13 @@ struct PlaceHeader: View {
                 HStack(spacing: 6) {
                     let kind = kindText
                     if !kind.isEmpty { Text(kind.uppercased()).font(.atlasEyebrow).kerning(1.2).foregroundStyle(Palette.coralText) }
-                    Text((atlas.isBenchmark(id) ? Copy.level(atlas.level).on : Copy.level(atlas.level).off).uppercased())
-                        .font(.atlasEyebrow).kerning(0.6)
-                        .padding(.horizontal, 6).padding(.vertical, 1)
-                        .background(atlas.isBenchmark(id) ? Palette.gold4[2] : Palette.grey4[2], in: RoundedRectangle(cornerRadius: 2))
-                        .foregroundStyle(Palette.ink)
+                    if atlas.isBenchmark(id) {   // grey places carry no badge, as in renderTitle in atlas.js
+                        Text(Copy.level(atlas.level).on.uppercased())
+                            .font(.atlasEyebrow).kerning(0.6)
+                            .padding(.horizontal, 6).padding(.vertical, 1)
+                            .background(Palette.gold4[2], in: RoundedRectangle(cornerRadius: 2))
+                            .foregroundStyle(Palette.ink)
+                    }
                 }
                 Text(atlas.name(id)).font(.atlasTitle).foregroundStyle(Palette.ink).minimumScaleFactor(0.5).lineLimit(3)
                 if let also = facts?["also"].strings, !also.isEmpty {
@@ -225,7 +227,7 @@ struct Crumbs: View {
     }
 }
 
-/// The places on this view: Benchmark regions first, then Emerging ones, with the rest behind Show all.
+/// The places on this view: Benchmark regions first, then More in (the view), with the rest behind Show all.
 struct PlacesHere: View {
     let folded: Bool
     @Environment(Atlas.self) private var atlas
@@ -237,16 +239,16 @@ struct PlacesHere: View {
         let vid = atlas.viewFor(nav.place)
         let here = atlas.placesIn(vid)
         let range = atlas.range(here.map(\.id))
-        let bench = here.filter { atlas.isBenchmark($0.id) }, emerging = here.filter { !atlas.isBenchmark($0.id) }
+        let bench = here.filter { atlas.isBenchmark($0.id) }, others = here.filter { !atlas.isBenchmark($0.id) }
         let cap = bench.isEmpty ? 30 : 12
-        let shown = showAll ? emerging : Array(emerging.prefix(cap))
+        let shown = showAll ? others : Array(others.prefix(cap))
         let title = vid == "world" ? "Countries" : "Places in \(atlas.name(vid))"
         if !here.isEmpty {
             let list = VStack(alignment: .leading, spacing: 10) {
                 if !bench.isEmpty { group(Copy.level(atlas.level).ons, bench, count: bench.count, range: range) }
-                if !shown.isEmpty { group(Copy.level(atlas.level).offs, shown, count: emerging.count, range: range) }
-                if emerging.count > shown.count {
-                    Button("Show all \(emerging.count)") { withAnimation { showAll = true } }.font(.atlasNote.weight(.semibold))
+                if !shown.isEmpty { group(bench.isEmpty ? nil : Copy.moreIn(vid, atlas.name(vid)), shown, count: others.count, range: range) }   // no heading when nothing here is gold
+                if others.count > shown.count {
+                    Button("Show all \(others.count)") { withAnimation { showAll = true } }.font(.atlasNote.weight(.semibold))
                 }
             }
             if folded {
@@ -267,11 +269,13 @@ struct PlacesHere: View {
         }
     }
 
-    private func group(_ head: String, _ list: [Place], count: Int, range: (Double, Double)) -> some View {
+    private func group(_ head: String?, _ list: [Place], count: Int, range: (Double, Double)) -> some View {
         VStack(alignment: .leading, spacing: 6) {
-            HStack(spacing: 6) {
-                Text(head.uppercased()).font(.atlasLabel).kerning(0.6).foregroundStyle(Palette.soft)
-                Text("\(count)").font(.atlasNote).foregroundStyle(Palette.soft)
+            if let head {
+                HStack(spacing: 6) {
+                    Text(head.uppercased()).font(.atlasLabel).kerning(0.6).foregroundStyle(Palette.soft)
+                    Text("\(count)").font(.atlasNote).foregroundStyle(Palette.soft)
+                }
             }
             FlowLayout(spacing: 6) {
                 ForEach(list) { p in
