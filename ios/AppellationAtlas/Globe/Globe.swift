@@ -124,7 +124,9 @@ final class Globe {
     @ObservationIgnored private var going = false
     /// Set when the finger picks a place on the map: the globe then changes level where it is, without moving.
     @ObservationIgnored private var keepFor: String?
-    @ObservationIgnored private var gesture: (cam: Camera, anchor: CGPoint, geo: V2?)?
+    @ObservationIgnored private var gesture: (cam: Camera, anchor: CGPoint)?
+    /// Where the finger was at the last step of a gesture.
+    @ObservationIgnored private var last = CGPoint.zero
     @ObservationIgnored private var drag = CGSize.zero
     @ObservationIgnored private var pinch = 1.0
     @ObservationIgnored var reduceMotion = false
@@ -366,7 +368,8 @@ final class Globe {
     private func beginGesture(at anchor: CGPoint) {
         if gesture == nil {
             ticker.stop(); busy = false
-            gesture = (cam, anchor, projector.geo(at: anchor))
+            gesture = (cam, anchor)
+            last = anchor
             drag = .zero; pinch = 1
             labels = []; dots = []
         }
@@ -375,7 +378,21 @@ final class Globe {
     private func applyGesture() {
         guard let g = gesture else { return }
         let s = CGPoint(x: g.anchor.x + drag.width, y: g.anchor.y + drag.height)
-        look(g.geo, at: s, R: clampR(g.cam.R * pinch, from: g.cam.R), from: g.cam)
+        step(from: last, to: s, R: clampR(g.cam.R * pinch, from: g.cam.R))
+        last = s
+    }
+
+    /// Moves the globe as the finger goes from one point to the next. A drag turns it at a steady rate, the same over land,
+    /// sea or open space, so it never jumps. A pinch keeps the spot under the fingers where it is, when it can.
+    private func step(from p: CGPoint, to s: CGPoint, R: Double) {
+        let a = cam, k = 1 / RAD / R
+        var lon = a.lon - Double(s.x - p.x) * k / max(0.25, cos(a.lat * RAD)), lat = a.lat + Double(s.y - p.y) * k
+        if R != a.R, let geo = projector.geo(at: p) {
+            let P = projector(Camera(lon: geo.x, lat: geo.y, R: R))
+            if let c = P.unproject(x: (P.cx - s.x) / R, y: (s.y - P.cy) / R) { lon = c.x; lat = c.y }
+        }
+        cam = Camera(lon: lon - 360 * ((lon + 180) / 360).rounded(.down), lat: max(-80, min(80, lat)), R: R)
+        if let v = view, v.id != "world" { worldOpacity = needsWorld(cam, v) ? 1 : 0 }
     }
 
     func dragChanged(start: CGPoint, translation: CGSize) {
@@ -412,9 +429,8 @@ final class Globe {
         let speed = hypot(velocity.width, velocity.height)
         if speed > 250, !reduceMotion {
             let carry = 0.22
-            let s = CGPoint(x: g.anchor.x + drag.width + velocity.width * carry, y: g.anchor.y + drag.height + velocity.height * carry)
             let from = cam
-            look(g.geo, at: s, R: cam.R, from: g.cam)
+            step(from: last, to: CGPoint(x: last.x + velocity.width * carry, y: last.y + velocity.height * carry), R: cam.R)
             let to = cam
             cam = from
             Task {
