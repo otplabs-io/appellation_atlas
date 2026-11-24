@@ -338,7 +338,7 @@ final class Globe {
     // ---- gestures
 
     private var baseR: Double { view.map { camFor($0).R } ?? cam.R }
-    /// Zooming in opens a place once the globe is this close to its own map; pinching out below `leaveAt` of the
+    /// A tapped place keeps the camera once the globe is this close to its own map; pinching out below `leaveAt` of the
     /// view's own size goes up a level. The gap between them keeps a level from flipping back and forth.
     static let openAt = 0.85, leaveAt = 0.7
     var zoomed: Bool { cam.R > baseR * 1.03 }
@@ -432,34 +432,7 @@ final class Globe {
         if v.id != "world" && cam.R < b.R * Globe.leaveAt {   // pinched out: up a level, where the globe is
             pickInPlace(v.parent ?? "world"); return
         }
-        if v.id != "world", cam.R > b.R * 1.03, await deeper() { return }   // the world turns and zooms freely: a country opens only when tapped
-        guard !busy, view?.id == v.id else { return }
-        relabel()   // the globe stays where the finger left it
-    }
-
-    /// The place that fills most of the screen, near the middle, when it clearly leads and has its own map.
-    private func deeper() async -> Bool {
-        guard let v = view else { return false }
-        let P = projector, W = size.width, H = size.height, hd = hypot(openWidth, H) / 2
-        var scored: [(MapItem, Double, Double)] = []
-        for it in v.items {
-            let bb = P.path(it.polys).boundingRect
-            if bb.isNull || bb.isEmpty { continue }
-            let x0 = max(leftInset, bb.minX), x1 = min(W - rightInset, bb.maxX), y0 = max(0, bb.minY), y1 = min(H, bb.maxY)
-            if x1 <= x0 || y1 <= y0 { continue }
-            let a = (x1 - x0) * (y1 - y0) / (openWidth * H)
-            let d = hypot((x0 + x1) / 2 - center.x, (y0 + y1) / 2 - H / 2) / hd
-            scored.append((it, a, a * (1 - d * 0.8)))
-        }
-        scored.sort { $0.2 > $1.2 }
-        guard let (best, area, sc) = scored.first, area >= 0.2, scored.count < 2 || scored[1].2 * 1.3 <= sc else { return false }
-        if atlas.viewFor(best.id) != best.id {
-            if area > 0.45 { pickInPlace(best.id); return true }
-            return false
-        }
-        guard let cv = atlas.view(best.id), cam.R >= camFor(cv).R * Globe.openAt else { return false }
-        pickInPlace(best.id)
-        return true
+        relabel()   // the globe stays where the finger left it, at every level: a place opens only when tapped
     }
 
     /// Picks a place from the map itself, so the globe changes level where it is rather than flying.
@@ -468,7 +441,7 @@ final class Globe {
         onPick(id)
     }
 
-    /// Twice as close, keeping the tapped spot under the finger. Zooming far enough into a place opens it.
+    /// Twice as close, keeping the tapped spot under the finger.
     func zoomIn(at p: CGPoint) {
         guard !busy, !going, gesture == nil else { return }
         let geo = projector.geo(at: p)

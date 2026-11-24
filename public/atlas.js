@@ -274,20 +274,7 @@ function touchMode(){M.svg.style.touchAction=M.view.id==='world'&&!zoomed()?'pan
 async function settle(){
   if(M.busy||!M.view) return; const v=M.view, b=camFor(v);
   if(v.id!=='world'&&M.cam.R<b.R*.75){zoomOut(); return;}
-  if(v.id!=='world'&&M.cam.R>b.R*1.03&&await deeper()) return;   // the world turns and zooms freely: a country opens only when tapped
-  if(M.busy||M.view!==v) return;
-  if(M.cam.R<b.R) glide(v.id==='world'?camOf(M.cam.lon,Math.max(-60,Math.min(70,M.cam.lat)),b.R):b); else {labels(); touchMode();}
-}
-async function deeper(){   // the place that fills most of the screen, near the middle, when it clearly leads and has its own map
-  const hd=Math.hypot(M.W,M.H)/2, sc=[];
-  for(const f of M.feats) if(f.it&&!f.sib&&f.on()&&f.el.getAttribute('d')){const bb=f.el.getBBox();
-    const x0=Math.max(0,bb.x), x1=Math.min(M.W,bb.x+bb.width), y0=Math.max(0,bb.y), y1=Math.min(M.H,bb.y+bb.height); if(x1<=x0||y1<=y0) continue;
-    const a=(x1-x0)*(y1-y0)/(M.W*M.H), d=Math.hypot((x0+x1)/2-M.W/2,(y0+y1)/2-M.H/2)/hd; sc.push([f.it,a,a*(1-d*.8)]);}
-  sc.sort((p,q)=>q[2]-p[2]); const [best,area,score_]=sc[0]||[];
-  if(!best||area<.2||(sc[1]&&sc[1][2]*1.3>score_)) return false;
-  if(viewFor(best.id)!==best.id){if(area>.45){go(best.id); return true;} return false;}   // an appellation with nothing inside: zoomed onto it, it is chosen
-  const cv=await view(best.id); if(!cv||M.cam.R<camFor(cv).R*.6) return false;
-  go(best.id); return true;
+  labels(); touchMode();   // the globe stays where the finger left it, at every level: a place opens only when tapped
 }
 async function glide(b,ms=500){
   const a=M.cam; let dl=b.lon-a.lon; dl=((dl+540)%360)-180; M.busy=true; M.lab.replaceChildren();
