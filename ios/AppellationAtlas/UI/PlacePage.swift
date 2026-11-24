@@ -173,11 +173,12 @@ struct PlaceHeader: View {
                 HStack(spacing: 6) {
                     let kind = kindText
                     if !kind.isEmpty { Text(kind.uppercased()).font(.atlasEyebrow).kerning(1.2).foregroundStyle(Palette.coralText) }
-                    if atlas.isBenchmark(id) {   // grey places carry no badge, as in renderTitle in atlas.js
-                        Text(Copy.level(atlas.level).on.uppercased())
+                    let t = atlas.tone(id)
+                    if t != .other {   // grey places carry no badge, as in renderTitle in atlas.js
+                        Text(Copy.tone(t).one.uppercased())
                             .font(.atlasEyebrow).kerning(0.6)
                             .padding(.horizontal, 6).padding(.vertical, 1)
-                            .background(Palette.gold4[2], in: RoundedRectangle(cornerRadius: 2))
+                            .background(t == .benchmark ? Palette.gold4[2] : Palette.gold4[1], in: RoundedRectangle(cornerRadius: 2))
                             .foregroundStyle(Palette.ink)
                     }
                 }
@@ -227,7 +228,7 @@ struct Crumbs: View {
     }
 }
 
-/// The places on this view: Benchmark regions first, then More in (the view), with the rest behind Show all.
+/// The places on this view: Benchmark regions, then Classic regions, then More in (the view), with the rest behind Show all.
 struct PlacesHere: View {
     let folded: Bool
     @Environment(Atlas.self) private var atlas
@@ -239,14 +240,16 @@ struct PlacesHere: View {
         let vid = atlas.viewFor(nav.place)
         let here = atlas.placesIn(vid)
         let range = atlas.range(here.map(\.id))
-        let bench = here.filter { atlas.isBenchmark($0.id) }, others = here.filter { !atlas.isBenchmark($0.id) }
-        let cap = bench.isEmpty ? 30 : 12
+        let bench = here.filter { atlas.tone($0.id) == .benchmark }, classic = here.filter { atlas.tone($0.id) == .classic }
+        let others = here.filter { atlas.tone($0.id) == .other }, gold = !bench.isEmpty || !classic.isEmpty
+        let cap = gold ? 12 : 30
         let shown = showAll ? others : Array(others.prefix(cap))
         let title = vid == "world" ? "Countries" : "Places in \(atlas.name(vid))"
         if !here.isEmpty {
             let list = VStack(alignment: .leading, spacing: 10) {
-                if !bench.isEmpty { group(Copy.level(atlas.level).ons, bench, count: bench.count, range: range) }
-                if !shown.isEmpty { group(bench.isEmpty ? nil : Copy.moreIn(vid, atlas.name(vid)), shown, count: others.count, range: range) }   // no heading when nothing here is gold
+                if !bench.isEmpty { group(Copy.tone(.benchmark).many, bench, count: bench.count, range: range) }
+                if !classic.isEmpty { group(Copy.tone(.classic).many, classic, count: classic.count, range: range) }
+                if !shown.isEmpty { group(!gold ? nil : Copy.moreIn(vid, atlas.name(vid)), shown, count: others.count, range: range) }   // no heading when nothing here is gold
                 if others.count > shown.count {
                     Button("Show all \(others.count)") { withAnimation { showAll = true } }.font(.atlasNote.weight(.semibold))
                 }
@@ -281,7 +284,7 @@ struct PlacesHere: View {
                 ForEach(list) { p in
                     Button { nav.go(p.id) } label: {
                         HStack(spacing: 6) {
-                            Swatch(color: Palette.shade(benchmark: atlas.isBenchmark(p.id), tier: atlas.tier(p.id, range: range)))
+                            Swatch(color: Palette.tone(atlas.tone(p.id)))
                             Text(p.name).font(.system(size: 13, weight: .heavy))
                             if atlas.geo[p.id]?.source == nil { Text("no map").font(.system(size: 11)).foregroundStyle(Palette.soft) }
                         }
@@ -290,7 +293,7 @@ struct PlacesHere: View {
                         .background(nav.place == p.id ? Palette.target : Palette.fill, in: Capsule())
                     }
                     .buttonStyle(.plain)
-                    .accessibilityLabel("\(p.name), \(atlas.isBenchmark(p.id) ? Copy.level(atlas.level).on : Copy.level(atlas.level).off)")
+                    .accessibilityLabel("\(p.name), \(Copy.tone(atlas.tone(p.id)).one)")
                 }
             }
         }

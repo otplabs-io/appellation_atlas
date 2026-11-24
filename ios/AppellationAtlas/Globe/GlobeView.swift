@@ -18,7 +18,7 @@ struct GlobeView: View {
             // Read everything the canvas draws here, so any change to it redraws the canvas.
             let frame = Frame(cam: globe.cam, view: globe.view?.id, parent: globe.parent?.id, leaf: globe.leaf, out: globe.outgoing?.view.id,
                               fade: globe.fadeIn, world: globe.worldOpacity, labels: globe.labels.count, dots: globe.dots.count, low: globe.range.0, high: globe.range.1,
-                              previews: globe.previews.map(\.id), level: globe.atlas.level)
+                              previews: globe.previews.map(\.id))
             Canvas(rendersAsynchronously: false) { ctx, size in
                 _ = frame
                 draw(&ctx, size)
@@ -100,9 +100,7 @@ struct GlobeView: View {
     }
 
     private func dotShade(_ id: String) -> Color {
-        let t = globe.atlas.tier(id, range: globe.range)
-        if t == 0 { return Palette.gold4[0] }
-        return globe.atlas.isBenchmark(id) ? Palette.gold4[max(2, t)] : Palette.grey4[max(2, t)]
+        Palette.tone(globe.atlas.tone(id))
     }
 
     /// A view's layers: the land near it, its neighbours, the place itself, its places.
@@ -130,9 +128,8 @@ struct GlobeView: View {
         for it in v.items {
             let path = P.path(it.polys)
             if path.isEmpty { continue }
-            let tier = globe.atlas.tier(it.id, range: globe.range)
-            ctx.fill(path, with: .color(Palette.shade(benchmark: globe.atlas.isBenchmark(it.id), tier: tier)))
-            ctx.stroke(path, with: .color(tier == 0 ? Palette.landEdge : Palette.regionStroke), style: StrokeStyle(lineWidth: 1, lineJoin: .round))
+            ctx.fill(path, with: .color(Palette.tone(globe.atlas.tone(it.id))))
+            ctx.stroke(path, with: .color(Palette.regionStroke), style: StrokeStyle(lineWidth: 1, lineJoin: .round))
             if isCurrent && globe.leaf == it.id { picked = path }
         }
         // the chosen place's edge over everything, so its whole extent shows even where smaller places cover it
@@ -200,5 +197,4 @@ private struct Frame: Equatable {
     let labels: Int, dots: Int
     let low: Double, high: Double
     let previews: [String]
-    let level: String   // the course studied picks the gold
 }

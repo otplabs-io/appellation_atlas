@@ -41,15 +41,16 @@ enum Palette {
     static let lake = Color(light: 0xCFE3EE, dark: 0x1A3A50)
     static let riverInk = Color(light: 0x2F6F99, dark: 0x8CC3E3)
 
-    /// Benchmark (gold) shades by tier, 0 for places with no score.
+    /// Gold shades, light to dark; 0 is the empty land.
     static let gold4 = [Color(light: 0xEEF2F5, dark: 0x2A3743), Color(light: 0xF9EBC6, dark: 0x5A4820),
                         Color(light: 0xF5D58A, dark: 0x8A6922), Color(light: 0xE9B44C, dark: 0xC2902C), Color(light: 0xC98F22, dark: 0xF0BE58)]
-    /// Grey shades by tier, for places off the study list.
+    /// Grey shades, light to dark, for places off the study list.
     static let grey4 = [Color(light: 0xEEF2F5, dark: 0x2A3743), Color(light: 0xDDE3E8, dark: 0x334150),
                         Color(light: 0xCBD3DA, dark: 0x445462), Color(light: 0xB6C1CA, dark: 0x5A6A78), Color(light: 0x9EABB6, dark: 0x7A8996)]
 
-    static func shade(benchmark: Bool, tier: Int) -> Color {
-        benchmark ? gold4[max(1, tier)] : grey4[tier]
+    /// The map's three tones (.rg.a4, .rg.a2 and .rg.a2.o in atlas.css).
+    static func tone(_ t: Tone) -> Color {
+        switch t { case .benchmark: gold4[4]; case .classic: gold4[2]; case .other: grey4[2] }
     }
 
     static let red = Color(light: 0x8E2F3C, dark: 0xC0566A)

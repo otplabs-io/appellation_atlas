@@ -1011,7 +1011,7 @@ def facts():
         if view_of(n) in CV: src.append('geonames')   # and names a few towns
         f['sources']=[SRC[s] for s in dict.fromkeys(src)]
         json.dump(f,open(os.path.join(fd,n.replace('/','__')+'.json'),'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
-        places[n]=[t['name'],x['parent'],round((N.get(n) or {}).get('score',-1)),(kind or [''])[0],T[t['path'].split('/')[0]]['name'],f['also'],int(n in BENCH),lv(n)]
+        places[n]=[t['name'],x['parent'],round((N.get(n) or {}).get('score',-1)),(kind or [''])[0],T[t['path'].split('/')[0]]['name'],f['also'],int(n in BENCH),lv(n),int(n in WS and n not in VINELESS)]   # the last: inside a classic region, by where it is alone, the map's light gold
     json.dump(dict(places=places),open(os.path.join(OUT,'places.json'),'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
     print(f'{len(places)} places: {len(BENCH)} Benchmark ({len(WS)-len(BENCH)} inside Diploma regions with nothing of their own), {len(E)} with EU rules, {len(A)} AVAs, {len(CL)} with climate, {len(R)} researched, {len(N)} with a Wikipedia score')
 # ---- climate and soil, worked out over each place's shape
