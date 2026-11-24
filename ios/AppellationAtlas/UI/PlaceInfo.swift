@@ -368,7 +368,7 @@ struct PlaceInfo: View {
                         GridRow {
                             Button { nav.go(id) } label: {
                                 HStack(spacing: 6) {
-                                    Swatch(color: Palette.shade(benchmark: atlas.isBenchmark(id), tier: atlas.tier(id, range: range)))
+                                    Swatch(color: Palette.tone(atlas.tone(id)))
                                     Text(atlas.name(id)).font(.atlasNote.weight(.semibold))
                                 }
                             }
@@ -531,7 +531,7 @@ struct PlaceInfo: View {
     private var knownLine: String? {
         guard atlas.scored else { return nil }
         let kn = f["known"]
-        if !kn.truthy { return "No Wikipedia article of its own, so it is drawn in the lightest shade." }
+        if !kn.truthy { return "No Wikipedia article of its own." }
         let days = kn["days"].int ?? 60
         if let n = kn["articles"].int, n > 0 {
             var s = "Scored from \(fmt(Double(n))) Wikipedia article\(n == 1 ? "" : "s") on it and its places, \(fmt(kn["total"].double)) page views in the last \(days) days in all"

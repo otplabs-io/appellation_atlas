@@ -189,7 +189,7 @@ final class Globe {
     }
 
     func shade(_ id: String) -> Color {
-        Palette.shade(benchmark: atlas.isBenchmark(id), tier: atlas.tier(id, range: range))
+        Palette.tone(atlas.tone(id))
     }
 
     // ---- moving between places

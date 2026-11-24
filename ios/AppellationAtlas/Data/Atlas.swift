@@ -13,7 +13,12 @@ struct Place: Hashable, Identifiable, Sendable {
     let benchmark: Bool
     /// 1 named on the Essentials list, 2 named on Core, 4 above an Essentials place, 8 above a Core place.
     let levels: Int
+    /// Inside a classic region, by where it is alone (places.json's last field).
+    let classic: Bool
 }
+
+/// The map's three fixed tones (tone in atlas.js): dark gold, light gold, grey.
+enum Tone { case benchmark, classic, other }
 
 /// Where a place sits on the map, from geo/index.json.
 struct GeoEntry: Sendable {
@@ -81,12 +86,8 @@ final class Atlas {
     /// True when the places carry Wikipedia scores.
     let scored: Bool
     let children: [String: [String]]
-    /// The countries in gold for the level being studied, by name, as the world map names them.
+    /// The countries in dark gold, by name, as the world map names them.
     var benchmarkCountries: Set<String> { Set(places.values.filter { $0.parent == "world" && isBenchmark($0.id) }.map(\.name)) }
-    /// Which places are gold: "b" Benchmarks or "d" All (atlas.js S.lvl). Older saved "2" and "3" read as Benchmarks.
-    var level: String = { let v = UserDefaults.standard.string(forKey: "atlas.level") ?? "d"; return v == "2" || v == "3" ? "b" : v }() {
-        didSet { UserDefaults.standard.set(level, forKey: "atlas.level") }
-    }
     @ObservationIgnored private let countryIDs: [String: String]
     @ObservationIgnored private let root: URL
     @ObservationIgnored private var viewCache: [String: MapView] = [:]
@@ -105,7 +106,7 @@ final class Atlas {
         var pl: [String: Place] = [:]
         for (id, x) in (JSON.readFast(root.appending(path: "places.json")) ?? .null)["places"].pairs {
             pl[id] = Place(id: id, name: x[0].string ?? id, parent: x[1].string ?? "world", score: x[2].double ?? -1,
-                           kind: x[3].string ?? "", country: x[4].string ?? "", also: x[5].strings, benchmark: x[6].truthy, levels: x[7].int ?? 0)
+                           kind: x[3].string ?? "", country: x[4].string ?? "", also: x[5].strings, benchmark: x[6].truthy, levels: x[7].int ?? 0, classic: x[8].truthy)
         }
         places = pl
         var g: [String: GeoEntry] = [:]
@@ -138,14 +139,10 @@ final class Atlas {
 
     func name(_ id: String) -> String { id == "world" ? "The world" : places[id]?.name ?? id }
     func score(_ id: String) -> Double { places[id]?.score ?? -1 }
-    /// In gold: for Benchmarks, the classic places to learn first and the regions above them; for All, every place inside the classic regions.
-    func isBenchmark(_ id: String) -> Bool {
-        guard let p = places[id] else { return false }
-        switch level {
-        case "b": return p.levels & 15 != 0
-        default: return p.benchmark
-        }
-    }
+    /// Dark gold: the classic places to learn first and the regions above them.
+    func isBenchmark(_ id: String) -> Bool { (places[id]?.levels ?? 0) & 15 != 0 }
+    /// Dark gold for a benchmark, light gold for the rest of the classic regions and the places inside them, grey for the rest.
+    func tone(_ id: String) -> Tone { isBenchmark(id) ? .benchmark : places[id]?.classic == true ? .classic : .other }
     func kind(_ id: String) -> String { places[id]?.kind ?? "" }
 
     func view(_ id: String) -> MapView? {

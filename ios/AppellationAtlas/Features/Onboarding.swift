@@ -78,15 +78,9 @@ struct Onboarding: View {
 
     private var colors: some View {
         Page(title: "Gold for the classics",
-             text: "Benchmark regions, in gold, are the classic places to learn first. Grey marks every other place. A deeper shade means the place is better known. The Atlas is not affiliated with any wine school.") {
+             text: "Dark gold marks the benchmark regions, the classic places to learn first. Light gold marks the rest of the classic regions and every place inside them. Grey marks every other place. The Atlas is not affiliated with any wine school.") {
             VStack(alignment: .leading, spacing: 14) {
-                ramp(Palette.gold4, "Benchmark")
-                ramp(Palette.grey4, "Other")
-                HStack(spacing: 6) {
-                    Text("Less known"); Image(systemName: "arrow.right"); Text("Better known")
-                }
-                .font(.caption.weight(.semibold)).foregroundStyle(Palette.soft)
-                .fixedSize()
+                ForEach([Tone.benchmark, .classic, .other], id: \.self) { ramp($0) }
             }
         }
     }
@@ -118,12 +112,12 @@ struct Onboarding: View {
 
     // ---- parts
 
-    private func ramp(_ shades: [Color], _ name: String) -> some View {
+    private func ramp(_ t: Tone) -> some View {
         HStack(spacing: 12) {
-            HStack(spacing: 0) { ForEach(1..<5, id: \.self) { shades[$0].frame(width: 36, height: 34) } }
+            Palette.tone(t).frame(width: 48, height: 34)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Palette.landEdge, lineWidth: 0.5))
-            Text(name).font(.headline).foregroundStyle(Palette.ink).fixedSize()
+            Text(Copy.tone(t).key).font(.headline).foregroundStyle(Palette.ink).fixedSize()
         }
         .accessibilityElement(children: .combine)
     }

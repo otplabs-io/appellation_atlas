@@ -31,21 +31,21 @@ enum Copy {
         static func forWine(_ w: String) -> String { "Main grapes, for \(w)" }
     }
 
-    /// What gold and grey mean for each pill (LEVELS in atlas.js). Grey says only that a place is off the study list, never how well known it is.
-    struct Level { let name, on, off, ons: String }
-    static let levels: [String: Level] = [
-        "b": Level(name: "Benchmarks", on: "Benchmark region", off: "Other region", ons: "Benchmark regions"),
-        "d": Level(name: "All", on: "Benchmark region", off: "Other region", ons: "Benchmark regions"),
-    ]
-    static func level(_ l: String) -> Level { levels[l] ?? levels["d"]! }
+    /// What each tone is called (TONES in atlas.js). Grey says only that a place is off the study list, never how well known it is.
+    struct ToneWords { let one, many, key: String }
+    static func tone(_ t: Tone) -> ToneWords {
+        switch t {
+        case .benchmark: ToneWords(one: "Benchmark region", many: "Benchmark regions", key: "Benchmark")
+        case .classic: ToneWords(one: "Classic region", many: "Classic regions", key: "Classic region")
+        case .other: ToneWords(one: "Other region", many: "", key: "Other")
+        }
+    }
     /// The grey group's heading under the gold one (moreIn in atlas.js).
     static func moreIn(_ vid: String, _ name: String) -> String { vid == "world" ? "Other countries" : "More in \(name)" }
-    static func worldIntro(_ l: String) -> [String] { [
-        (l == "d" ? "All turns gold every place inside the classic regions, down to the smallest appellation. Grey marks every other place."
-            : "Benchmark regions, in gold, are the classic places to learn first. Grey marks every other place.")
-        + " Switch between Benchmarks and All to choose which places are gold.",
-        "Darker shades show the places with the most global interest, measured by how many Wikipedias write about them and how often those pages are read. Each map sets its own scale, so the darkest place is the best known one on that map.",
-    ] }
+    static let worldIntro = [
+        "Dark gold marks the benchmark regions, the classic places to learn first. Light gold marks the rest of the classic regions and every place inside them. Grey marks every other place.",
+        "Each list puts the best known places first, by how many Wikipedias write about them and how often those pages are read.",
+    ]
 
     static let feedbackPrompt = "See something wrong or missing?"
     static let feedbackButton = "Send feedback"

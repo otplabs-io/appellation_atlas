@@ -165,33 +165,20 @@ struct MapKey: View {
         @Bindable var atlas = atlas
         VStack(alignment: .leading, spacing: 10) {
             Text("Reading the map").font(.atlasSection).foregroundStyle(Palette.ink)
-            StudyPicker()
-            HStack(spacing: 18) { row(Palette.gold4, "Benchmark"); row(Palette.grey4, "Other") }
-            ForEach(Copy.worldIntro(atlas.level), id: \.self) { Text($0).font(.atlasNote).foregroundStyle(Palette.soft) }
+            HStack(spacing: 16) { ForEach([Tone.benchmark, .classic, .other], id: \.self) { row($0) } }
+            ForEach(Copy.worldIntro, id: \.self) { Text($0).font(.atlasNote).foregroundStyle(Palette.soft) }
         }
         .padding(14)
         .background(Palette.fill.opacity(0.6), in: RoundedRectangle(cornerRadius: 16))
     }
 
-    private func row(_ ramp: [Color], _ name: String) -> some View {
-        HStack(spacing: 8) {
-            HStack(spacing: 0) { ForEach(1..<5, id: \.self) { ramp[$0].frame(width: 14, height: 22) } }
+    private func row(_ t: Tone) -> some View {
+        HStack(spacing: 6) {
+            Palette.tone(t).frame(width: 18, height: 18)
                 .clipShape(RoundedRectangle(cornerRadius: 5))
                 .overlay(RoundedRectangle(cornerRadius: 5).stroke(Palette.landEdge, lineWidth: 0.5))
                 .accessibilityHidden(true)
-            Text(name).font(.subheadline.weight(.bold)).foregroundStyle(Palette.ink)
+            Text(Copy.tone(t).key).font(.subheadline.weight(.bold)).foregroundStyle(Palette.ink).fixedSize()
         }
-    }
-}
-
-/// The gold pills: they pick which places are gold (the study buttons under the web map).
-struct StudyPicker: View {
-    @Environment(Atlas.self) private var atlas
-    var body: some View {
-        @Bindable var atlas = atlas
-        Picker("Places shown in gold", selection: $atlas.level) {
-            Text("Benchmarks").tag("b"); Text("All").tag("d")
-        }
-        .pickerStyle(.segmented)
     }
 }

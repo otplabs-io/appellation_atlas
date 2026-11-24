@@ -32,9 +32,7 @@
 .map text.wl{font-family:var(--body);font-style:italic;font-weight:600;font-size:11px;fill:var(--river-ink);stroke-width:3px}
 .key{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;margin-top:10px;color:var(--soft)}
 .key .kr{display:flex;align-items:center;gap:4px}
-.key-note{flex-basis:100%;display:flex;align-items:center;gap:8px;margin:2px 0 0;color:var(--ink);font-style:italic}
-.key-note .grad{display:inline-block;width:46px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--o1),var(--a4))}
-.key i,.sw{display:inline-block;width:18px;height:12px;border:1px solid var(--land-edge)}
+.key i,.sw{display:inline-block;width:18px;height:12px;border:1px solid var(--land-edge)}.key i{margin-right:2px}
 .key i+span{margin-left:4px}
 .key .a1,.sw.a1{background:var(--a1)}.key .a2,.sw.a2{background:var(--a2)}.key .a3,.sw.a3{background:var(--a3)}.key .a4,.sw.a4{background:var(--a4)}.sw.a0{background:var(--a0)}
 .key .o.a1,.sw.o.a1{background:var(--o1)}.key .o.a2,.sw.o.a2{background:var(--o2)}.key .o.a3,.sw.o.a3{background:var(--o3)}.key .o.a4,.sw.o.a4{background:var(--o4)}
@@ -109,10 +107,7 @@
 
 /* ---- the title above the map, the place groups, the comparison table, the notes */
 #ptitle{margin:4px 0 2px}
-.hero .badge{color:var(--ink);background:var(--a2);padding:1px 6px;border-radius:2px;letter-spacing:.04em}
-.study{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;color:var(--soft)}
-.study button{font:inherit;color:var(--ink);background:none;border:1px solid var(--land-edge);border-radius:14px;padding:3px 11px;cursor:pointer}
-.study button[aria-pressed="true"]{background:var(--a2);border-color:var(--a3)}
+.hero .badge{color:var(--ink);background:var(--a2);padding:1px 6px;border-radius:2px;letter-spacing:.04em}.hero .badge.c{background:var(--a1)}
 .feedback{display:inline-block;margin-top:6px;color:var(--ink);border:1px solid var(--land-edge);border-radius:14px;padding:4px 13px;text-decoration:none}
 .feedback:hover{background:var(--a2);border-color:var(--a3)}
 .about-link{margin-top:10px}
