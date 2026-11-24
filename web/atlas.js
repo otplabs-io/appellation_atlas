@@ -1,6 +1,6 @@
 /* Appellation Atlas. A globe of every wine place there is.
-   Places are shaded by how well known they are (regions/notoriety.json, from Wikipedia), darkest for the best known,
-   compared with the other places on the same view. Tap or pinch into a place to go in; under the map is what is known
+   Places are shaded by the study list: darkest gold for the essential benchmarks, then the benchmarks, light gold for the
+   places inside one, grey for the rest. Tap or pinch into a place to go in; under the map is what is known
    about the place you are in: the rules, the grapes, the climate and the soil, more exact the deeper you go.
    Data: places.json and facts/<id>.json (src/atlas.py facts), geo/world.json, geo/index.json and geo/views/*.json
    (src/atlas.py geo). The place lives in the URL (#/france/burgundy), so the back button and shared links keep it.
@@ -248,13 +248,13 @@ function mapInit(){
   const geoAt=(cam,s)=>unpt(cam,(s[0]-M.W/2)/cam.R,(M.H/2-s[1])/cam.R);
   const mid=()=>{const v=[...P.values()], x=v.reduce((t,p)=>t+p[0],0)/v.length, y=v.reduce((t,p)=>t+p[1],0)/v.length;
     return [loc(x,y),v.length>1?Math.hypot(v[0][0]-v[1][0],v[0][1]-v[1][1]):0];};
-  const begin=()=>{const [s,d]=mid(); g0={cam:M.cam,s,d,geo:geoAt(M.cam,s),flat:P.size===1&&M.view.id==='world'&&!zoomed()};};
+  const begin=()=>{const [s,d]=mid(); g0={cam:M.cam,s,d,last:s,flat:P.size===1&&M.view.id==='world'&&!zoomed()};};
   M.svg.addEventListener('pointerdown',e=>{if(M.busy) return; P.set(e.pointerId,[e.clientX,e.clientY]); if(P.size===1) M.dragged=false; begin();});
   M.svg.addEventListener('pointermove',e=>{if(!P.has(e.pointerId)||M.busy||!g0) return; P.set(e.pointerId,[e.clientX,e.clientY]);
     let [s,d]=mid();
     if(P.size===1){if(!M.dragged&&Math.hypot(s[0]-g0.s[0],s[1]-g0.s[1])<6) return; if(g0.flat&&e.pointerType==='touch') s=[s[0],g0.s[1]];}
     if(!M.dragged){M.dragged=true; M.lab.replaceChildren(); try{M.svg.setPointerCapture(e.pointerId);}catch(_){}}
-    look(g0.geo,s,P.size>1&&g0.d?clampR(g0.cam.R*d/g0.d):g0.cam.R,g0.cam);});
+    step(g0.last,s,P.size>1&&g0.d?clampR(g0.cam.R*d/g0.d):g0.cam.R); g0.last=s;});
   const up=e=>{if(!P.delete(e.pointerId)) return; if(P.size) begin(); else {g0=null; if(M.dragged) settle();}};
   M.svg.addEventListener('pointerup',up); M.svg.addEventListener('pointercancel',up);
   M.svg.addEventListener('wheel',e=>{if(!e.ctrlKey) return; e.preventDefault(); if(M.busy) return;
@@ -269,6 +269,14 @@ function clampR(R){const b=baseR(), w=M.view.id==='world'; return Math.min(b*(w?
 function look(geo,s,R,cam0){
   let c=geo&&unpt(camOf(geo[0],geo[1],R),(M.W/2-s[0])/R,(s[1]-M.H/2)/R); if(!c) c=[cam0.lon,cam0.lat];
   M.cam=camOf(c[0],Math.max(-80,Math.min(80,c[1])),R); if(M.view.id!=='world') setWorld(needWorld(M.cam,M.view)?1:0); draw();
+}
+// Moves the globe as the finger goes from one point to the next. A drag turns it at a steady rate, the same over land, sea
+// or open space, so it never jumps. A pinch keeps the spot under the fingers where it is, when it can.
+function step(p,s,R){
+  const a=M.cam, k=1/RAD/R; let lon=a.lon-(s[0]-p[0])*k/Math.max(.25,Math.cos(a.lat*RAD)), lat=a.lat+(s[1]-p[1])*k;
+  const g=R!==a.R&&unpt(a,(p[0]-M.W/2)/a.R,(M.H/2-p[1])/a.R), c=g&&unpt(camOf(g[0],g[1],R),(M.W/2-s[0])/R,(s[1]-M.H/2)/R);
+  if(c){lon=c[0]; lat=c[1];}
+  M.cam=camOf(((lon+180)%360+360)%360-180,Math.max(-80,Math.min(80,lat)),R); if(M.view.id!=='world') setWorld(needWorld(M.cam,M.view)?1:0); draw();
 }
 function touchMode(){M.svg.style.touchAction=M.view.id==='world'&&!zoomed()?'pan-y':'none';}
 async function settle(){
