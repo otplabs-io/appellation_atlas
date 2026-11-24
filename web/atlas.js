@@ -22,11 +22,12 @@ function go(id){if((id||'world')===S.p) return; location.hash=link(id);}
 const score=id=>PL[id]?PL[id][2]:-1;
 // Shade by where a place sits between the least and best known places on the same view, so one star (Napa) does not wash
 // out the rest. The span is at least 20 points, so places that are nearly equal stay nearly the same shade.
-// Three fixed tones, the same in every view: dark gold the benchmark regions, the classic places to learn first, and the regions above them;
-// light gold the rest of the classic regions and every place inside them, by where it is alone; grey every other place.
-// Grey says only that a place is off the study list, never how well known it is.
-const TONES={b:{one:'Benchmark region',many:'Benchmark regions',key:'Benchmark',cls:'a4'},c:{one:'Classic region',many:'Classic regions',key:'Classic region',cls:'a2'},o:{one:'Other region',many:'',key:'Other',cls:'a2 o'}};
-const tone=id=>{const x=PL[id]; return !x?'o':x[7]&15?'b':x[8]?'c':'o';};
+// Four fixed shades, the same in every view, all from the study list: the darkest gold for the essential benchmarks, the places the
+// Level 2 specification names and the regions above them; dark gold for the other benchmarks, the places only the Level 3 specification
+// names and the regions above them; light gold for every place inside a named place, by where it is alone; grey for the rest.
+// Every essential is a benchmark too. Grey says only that a place is off the study list, never how well known it is.
+const TONES={e:{one:'Essential benchmark',many:'Essential benchmarks',cls:'a4'},b:{one:'Benchmark',many:'Benchmarks',cls:'a3'},i:{one:'Inside a benchmark',many:'Inside a benchmark',cls:'a2'},o:{one:'Other',many:'',cls:'a2 o'}};
+const tone=id=>{const x=PL[id]; return !x?'o':x[7]&5?'e':x[7]&10?'b':x[8]?'i':'o';};
 const moreIn=vid=>vid==='world'?'Other countries':'More in '+(PL[vid]?.[0]||'');
 const shade=id=>TONES[tone(id)].cls;
 
@@ -329,10 +330,10 @@ function renderPlaces(){
   const crumbs=[['world','The world'],...chain.map(i=>[i,PL[i][0]]),...(leaf?[[leaf,PL[leaf][0]]]:[])];
   $('#crumbs').innerHTML=crumbs.map(([i,n],k)=>k===crumbs.length-1?`<b>${esc(n)}</b>`:`<a href="${link(i)}">${esc(n)}</a>`).join(' › ');
   if(M.allFor!==vid){M.all=false; M.allFor=vid;}
-  const bench=sorted.filter(i=>tone(i)==='b'), classic=sorted.filter(i=>tone(i)==='c'), emerg=sorted.filter(i=>tone(i)==='o'), gold=bench.length+classic.length, cap=gold?12:30, shown=M.all?emerg:emerg.slice(0,cap);
+  const ess=sorted.filter(i=>tone(i)==='e'), bench=sorted.filter(i=>tone(i)==='b'), inner=sorted.filter(i=>tone(i)==='i'), emerg=sorted.filter(i=>tone(i)==='o'), gold=ess.length+bench.length+inner.length, cap=gold?12:30, shown=M.all?emerg:emerg.slice(0,cap);
   const step=i=>`<a class="step ts-ladder_step" href="${link(i)}" aria-pressed="${S.p===i}"><i class="sw ${shade(i)}"></i>${esc(PL[i][0])}${GEO.places[i].source?'':'<small> no map</small>'}</a>`;
   const grp=(head,list,n)=>list.length?`<p class="grp ts-fact_label">${head} <small class="ts-caption">${n}</small></p><div class="steps">${list.map(step).join('')}</div>`:'';
-  const body=grp(TONES.b.many,bench,bench.length)+grp(TONES.c.many,classic,classic.length)+(gold?grp(esc(moreIn(vid)),shown,emerg.length):shown.length?`<div class="steps">${shown.map(step).join('')}</div>`:'')
+  const body=grp(TONES.e.many,ess,ess.length)+grp(ess.length?'Other benchmarks':TONES.b.many,bench,bench.length)+grp(TONES.i.many,inner,inner.length)+(gold?grp(esc(moreIn(vid)),shown,emerg.length):shown.length?`<div class="steps">${shown.map(step).join('')}</div>`:'')
     +(emerg.length>shown.length?`<button type="button" class="link ts-caption more" id="allp">Show all ${emerg.length}</button>`:'');
   const where=vid==='world'?'Countries':'Places in '+esc(PL[vid]?.[0]||'');
   $('#places').innerHTML=!sorted.length?'':leaf&&leaf!=='world'   // on a place's own page its neighbours fold away, so its page comes first
@@ -553,7 +554,7 @@ function openAbout(){
 }
 document.addEventListener('click',e=>{if(e.target.closest('[data-about]')) openAbout();});
 const FORM_URL='https://docs.google.com/forms/d/e/1FAIpQLSc7CmB3DsylFI0kt6tZncSwq53i8jsEuxdrv4deyIuWJHq8oA/viewform';
-const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">${fmt(Object.keys(PL).length)} wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know.</p><p class="ts-body">Dark gold marks the benchmark regions, the classic places to learn first. Light gold marks the rest of the classic regions and every place inside them. Grey marks every other place.</p><p class="ts-body">Each list puts the best known places first, by how many Wikipedias write about them and how often those pages are read.</p></div></section>`;
+const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">${fmt(Object.keys(PL).length)} wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know.</p><p class="ts-body">Gold marks the benchmarks, the classic places to learn. The darkest gold marks the essential benchmarks, the ones to learn first, so every essential is a benchmark too. Light gold marks the places inside a benchmark. Grey marks every other place.</p><p class="ts-body">Each list puts the best known places first, by how many Wikipedias write about them and how often those pages are read.</p></div></section>`;
 async function render(){
   readHash(); renderPlaces(); mapShow();
   if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=WORLD_INFO()+FEEDBACK('Home','world'); return;}

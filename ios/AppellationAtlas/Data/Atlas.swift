@@ -13,12 +13,12 @@ struct Place: Hashable, Identifiable, Sendable {
     let benchmark: Bool
     /// 1 named on the Essentials list, 2 named on Core, 4 above an Essentials place, 8 above a Core place.
     let levels: Int
-    /// Inside a classic region, by where it is alone (places.json's last field).
-    let classic: Bool
+    /// Inside a place the study list names, by where it is alone (places.json's last field).
+    let inside: Bool
 }
 
-/// The map's three fixed tones (tone in atlas.js): dark gold, light gold, grey.
-enum Tone { case benchmark, classic, other }
+/// The map's four fixed shades (tone in atlas.js): darkest gold, dark gold, light gold, grey. Every essential is a benchmark too.
+enum Tone { case essential, benchmark, inside, other }
 
 /// Where a place sits on the map, from geo/index.json.
 struct GeoEntry: Sendable {
@@ -106,7 +106,7 @@ final class Atlas {
         var pl: [String: Place] = [:]
         for (id, x) in (JSON.readFast(root.appending(path: "places.json")) ?? .null)["places"].pairs {
             pl[id] = Place(id: id, name: x[0].string ?? id, parent: x[1].string ?? "world", score: x[2].double ?? -1,
-                           kind: x[3].string ?? "", country: x[4].string ?? "", also: x[5].strings, benchmark: x[6].truthy, levels: x[7].int ?? 0, classic: x[8].truthy)
+                           kind: x[3].string ?? "", country: x[4].string ?? "", also: x[5].strings, benchmark: x[6].truthy, levels: x[7].int ?? 0, inside: x[8].truthy)
         }
         places = pl
         var g: [String: GeoEntry] = [:]
@@ -139,10 +139,14 @@ final class Atlas {
 
     func name(_ id: String) -> String { id == "world" ? "The world" : places[id]?.name ?? id }
     func score(_ id: String) -> Double { places[id]?.score ?? -1 }
-    /// Dark gold: the classic places to learn first and the regions above them.
+    /// Any gold but the lightest: a place the study list names, at either level, or a region above one.
     func isBenchmark(_ id: String) -> Bool { (places[id]?.levels ?? 0) & 15 != 0 }
-    /// Dark gold for a benchmark, light gold for the rest of the classic regions and the places inside them, grey for the rest.
-    func tone(_ id: String) -> Tone { isBenchmark(id) ? .benchmark : places[id]?.classic == true ? .classic : .other }
+    /// The darkest gold for the Level 2 places and the regions above them, dark gold for the Level 3 ones, light gold for the places
+    /// inside a named place, grey for the rest.
+    func tone(_ id: String) -> Tone {
+        guard let p = places[id] else { return .other }
+        return p.levels & 5 != 0 ? .essential : p.levels & 10 != 0 ? .benchmark : p.inside ? .inside : .other
+    }
     func kind(_ id: String) -> String { places[id]?.kind ?? "" }
 
     func view(_ id: String) -> MapView? {

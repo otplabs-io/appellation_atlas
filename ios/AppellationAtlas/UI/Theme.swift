@@ -48,9 +48,9 @@ enum Palette {
     static let grey4 = [Color(light: 0xEEF2F5, dark: 0x2A3743), Color(light: 0xDDE3E8, dark: 0x334150),
                         Color(light: 0xCBD3DA, dark: 0x445462), Color(light: 0xB6C1CA, dark: 0x5A6A78), Color(light: 0x9EABB6, dark: 0x7A8996)]
 
-    /// The map's three tones (.rg.a4, .rg.a2 and .rg.a2.o in atlas.css).
+    /// The map's four shades (.rg.a4, .rg.a3, .rg.a2 and .rg.a2.o in atlas.css).
     static func tone(_ t: Tone) -> Color {
-        switch t { case .benchmark: gold4[4]; case .classic: gold4[2]; case .other: grey4[2] }
+        switch t { case .essential: gold4[4]; case .benchmark: gold4[3]; case .inside: gold4[2]; case .other: grey4[2] }
     }
 
     static let red = Color(light: 0x8E2F3C, dark: 0xC0566A)

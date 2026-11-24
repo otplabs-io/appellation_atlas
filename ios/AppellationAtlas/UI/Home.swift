@@ -165,7 +165,7 @@ struct MapKey: View {
         @Bindable var atlas = atlas
         VStack(alignment: .leading, spacing: 10) {
             Text("Reading the map").font(.atlasSection).foregroundStyle(Palette.ink)
-            HStack(spacing: 16) { ForEach([Tone.benchmark, .classic, .other], id: \.self) { row($0) } }
+            FlowLayout(spacing: 12) { ForEach([Tone.essential, .benchmark, .inside, .other], id: \.self) { row($0) } }
             ForEach(Copy.worldIntro, id: \.self) { Text($0).font(.atlasNote).foregroundStyle(Palette.soft) }
         }
         .padding(14)
@@ -178,7 +178,7 @@ struct MapKey: View {
                 .clipShape(RoundedRectangle(cornerRadius: 5))
                 .overlay(RoundedRectangle(cornerRadius: 5).stroke(Palette.landEdge, lineWidth: 0.5))
                 .accessibilityHidden(true)
-            Text(Copy.tone(t).key).font(.subheadline.weight(.bold)).foregroundStyle(Palette.ink).fixedSize()
+            Text(Copy.tone(t).one).font(.subheadline.weight(.bold)).foregroundStyle(Palette.ink).fixedSize()
         }
     }
 }

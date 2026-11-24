@@ -32,18 +32,19 @@ enum Copy {
     }
 
     /// What each tone is called (TONES in atlas.js). Grey says only that a place is off the study list, never how well known it is.
-    struct ToneWords { let one, many, key: String }
+    struct ToneWords { let one, many: String }
     static func tone(_ t: Tone) -> ToneWords {
         switch t {
-        case .benchmark: ToneWords(one: "Benchmark region", many: "Benchmark regions", key: "Benchmark")
-        case .classic: ToneWords(one: "Classic region", many: "Classic regions", key: "Classic region")
-        case .other: ToneWords(one: "Other region", many: "", key: "Other")
+        case .essential: ToneWords(one: "Essential benchmark", many: "Essential benchmarks")
+        case .benchmark: ToneWords(one: "Benchmark", many: "Benchmarks")
+        case .inside: ToneWords(one: "Inside a benchmark", many: "Inside a benchmark")
+        case .other: ToneWords(one: "Other", many: "")
         }
     }
     /// The grey group's heading under the gold one (moreIn in atlas.js).
     static func moreIn(_ vid: String, _ name: String) -> String { vid == "world" ? "Other countries" : "More in \(name)" }
     static let worldIntro = [
-        "Dark gold marks the benchmark regions, the classic places to learn first. Light gold marks the rest of the classic regions and every place inside them. Grey marks every other place.",
+        "Gold marks the benchmarks, the classic places to learn. The darkest gold marks the essential benchmarks, the ones to learn first, so every essential is a benchmark too. Light gold marks the places inside a benchmark. Grey marks every other place.",
         "Each list puts the best known places first, by how many Wikipedias write about them and how often those pages are read.",
     ]
 
