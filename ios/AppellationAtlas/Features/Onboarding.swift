@@ -91,7 +91,7 @@ struct Onboarding: View {
                 hint("hand.tap.fill", "Tap a place or its name", "It opens, and its page shows below. Tap it again to let go.")
                 hint("hand.draw.fill", "Drag to turn the globe", "Turn anywhere, even off the place you have open, and tap what you find.")
                 hint("arrow.up.left.and.arrow.down.right", "Pinch to zoom", "Pinch out far enough and you go up a level, from Tuscany to Italy.")
-                hint("plus.magnifyingglass", "Double-tap to zoom in", "Right where you tap. Keep going and the place opens.")
+                hint("plus.magnifyingglass", "Double-tap to zoom in", "Right where you tap. The globe stays where you leave it.")
                 hint("rectangle.bottomhalf.inset.filled", "Pull the card up", "For the climate, the rock and soil, the land and the rules.")
             }
             .padding(.horizontal, 4)
