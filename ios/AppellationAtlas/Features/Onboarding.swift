@@ -78,9 +78,9 @@ struct Onboarding: View {
 
     private var colors: some View {
         Page(title: "Gold for the classics",
-             text: "Dark gold marks the benchmark regions, the classic places to learn first. Light gold marks the rest of the classic regions and every place inside them. Grey marks every other place. The Atlas is not affiliated with any wine school.") {
+             text: "Gold marks the benchmarks, the classic places to learn. The darkest gold marks the essential benchmarks, the ones to learn first, so every essential is a benchmark too. Light gold marks the places inside a benchmark. Grey marks every other place. The Atlas is not affiliated with any wine school.") {
             VStack(alignment: .leading, spacing: 14) {
-                ForEach([Tone.benchmark, .classic, .other], id: \.self) { ramp($0) }
+                ForEach([Tone.essential, .benchmark, .inside, .other], id: \.self) { ramp($0) }
             }
         }
     }
@@ -117,7 +117,7 @@ struct Onboarding: View {
             Palette.tone(t).frame(width: 48, height: 34)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Palette.landEdge, lineWidth: 0.5))
-            Text(Copy.tone(t).key).font(.headline).foregroundStyle(Palette.ink).fixedSize()
+            Text(Copy.tone(t).one).font(.headline).foregroundStyle(Palette.ink).fixedSize()
         }
         .accessibilityElement(children: .combine)
     }

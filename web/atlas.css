@@ -107,7 +107,7 @@
 
 /* ---- the title above the map, the place groups, the comparison table, the notes */
 #ptitle{margin:4px 0 2px}
-.hero .badge{color:var(--ink);background:var(--a2);padding:1px 6px;border-radius:2px;letter-spacing:.04em}.hero .badge.c{background:var(--a1)}
+.hero .badge{color:var(--ink);background:var(--a3);padding:1px 6px;border-radius:2px;letter-spacing:.04em}.hero .badge.b{background:var(--a2)}.hero .badge.i{background:var(--a1)}
 .feedback{display:inline-block;margin-top:6px;color:var(--ink);border:1px solid var(--land-edge);border-radius:14px;padding:4px 13px;text-decoration:none}
 .feedback:hover{background:var(--a2);border-color:var(--a3)}
 .about-link{margin-top:10px}
