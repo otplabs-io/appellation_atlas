@@ -44,7 +44,7 @@ enum Palette {
     /// Benchmark (gold) shades by tier, 0 for places with no score.
     static let gold4 = [Color(light: 0xEEF2F5, dark: 0x2A3743), Color(light: 0xF9EBC6, dark: 0x5A4820),
                         Color(light: 0xF5D58A, dark: 0x8A6922), Color(light: 0xE9B44C, dark: 0xC2902C), Color(light: 0xC98F22, dark: 0xF0BE58)]
-    /// Emerging (grey) shades by tier.
+    /// Grey shades by tier, for places off the study list.
     static let grey4 = [Color(light: 0xEEF2F5, dark: 0x2A3743), Color(light: 0xDDE3E8, dark: 0x334150),
                         Color(light: 0xCBD3DA, dark: 0x445462), Color(light: 0xB6C1CA, dark: 0x5A6A78), Color(light: 0x9EABB6, dark: 0x7A8996)]
 

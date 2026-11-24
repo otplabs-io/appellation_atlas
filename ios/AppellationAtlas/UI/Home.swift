@@ -166,7 +166,7 @@ struct MapKey: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("Reading the map").font(.atlasSection).foregroundStyle(Palette.ink)
             StudyPicker()
-            HStack(spacing: 18) { row(Palette.gold4, "Benchmark"); row(Palette.grey4, "Emerging") }
+            HStack(spacing: 18) { row(Palette.gold4, "Benchmark"); row(Palette.grey4, "Other") }
             ForEach(Copy.worldIntro(atlas.level), id: \.self) { Text($0).font(.atlasNote).foregroundStyle(Palette.soft) }
         }
         .padding(14)

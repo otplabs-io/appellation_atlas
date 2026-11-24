@@ -110,7 +110,6 @@
 /* ---- the title above the map, the place groups, the comparison table, the notes */
 #ptitle{margin:4px 0 2px}
 .hero .badge{color:var(--ink);background:var(--a2);padding:1px 6px;border-radius:2px;letter-spacing:.04em}
-.hero .badge.o{background:var(--o2)}
 .study{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;color:var(--soft)}
 .study button{font:inherit;color:var(--ink);background:none;border:1px solid var(--land-edge);border-radius:14px;padding:3px 11px;cursor:pointer}
 .study button[aria-pressed="true"]{background:var(--a2);border-color:var(--a3)}

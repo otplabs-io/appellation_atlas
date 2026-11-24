@@ -31,16 +31,18 @@ enum Copy {
         static func forWine(_ w: String) -> String { "Main grapes, for \(w)" }
     }
 
-    /// What gold and grey mean for each pill (LEVELS in atlas.js).
-    struct Level { let name, on, off, ons, offs: String }
+    /// What gold and grey mean for each pill (LEVELS in atlas.js). Grey says only that a place is off the study list, never how well known it is.
+    struct Level { let name, on, off, ons: String }
     static let levels: [String: Level] = [
-        "b": Level(name: "Benchmarks", on: "Benchmark region", off: "Emerging region", ons: "Benchmark regions", offs: "Emerging regions"),
-        "d": Level(name: "All", on: "Benchmark region", off: "Emerging region", ons: "Benchmark regions", offs: "Emerging regions"),
+        "b": Level(name: "Benchmarks", on: "Benchmark region", off: "Other region", ons: "Benchmark regions"),
+        "d": Level(name: "All", on: "Benchmark region", off: "Other region", ons: "Benchmark regions"),
     ]
     static func level(_ l: String) -> Level { levels[l] ?? levels["d"]! }
+    /// The grey group's heading under the gold one (moreIn in atlas.js).
+    static func moreIn(_ vid: String, _ name: String) -> String { vid == "world" ? "Other countries" : "More in \(name)" }
     static func worldIntro(_ l: String) -> [String] { [
-        (l == "d" ? "All turns gold every place inside the classic regions, down to the smallest appellation. Emerging regions, in grey, are the rest."
-            : "Benchmark regions, in gold, are the classic places to learn first. Emerging regions, in grey, are the rest.")
+        (l == "d" ? "All turns gold every place inside the classic regions, down to the smallest appellation. Grey marks every other place."
+            : "Benchmark regions, in gold, are the classic places to learn first. Grey marks every other place.")
         + " Switch between Benchmarks and All to choose which places are gold.",
         "Darker shades show the places with the most global interest, measured by how many Wikipedias write about them and how often those pages are read. Each map sets its own scale, so the darkest place is the best known one on that map.",
     ] }
