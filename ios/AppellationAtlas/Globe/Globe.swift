@@ -124,11 +124,10 @@ final class Globe {
     @ObservationIgnored private var going = false
     /// Set when the finger picks a place on the map: the globe then changes level where it is, without moving.
     @ObservationIgnored private var keepFor: String?
-    @ObservationIgnored private var gesture: (cam: Camera, anchor: CGPoint)?
-    /// Where the finger was at the last step of a gesture.
+    /// The camera and the space between two fingers when the fingers last changed, as on the website.
+    @ObservationIgnored private var gesture: (cam: Camera, spread: Double?, fingers: Int)?
+    /// Where the fingers' midpoint was at the last step of a gesture.
     @ObservationIgnored private var last = CGPoint.zero
-    @ObservationIgnored private var drag = CGSize.zero
-    @ObservationIgnored private var pinch = 1.0
     @ObservationIgnored var reduceMotion = false
 
     init(atlas: Atlas, opening: String = "world") {
@@ -365,23 +364,6 @@ final class Globe {
         if let v = view, v.id != "world" { worldOpacity = needsWorld(cam, v) ? 1 : 0 }
     }
 
-    private func beginGesture(at anchor: CGPoint) {
-        if gesture == nil {
-            ticker.stop(); busy = false
-            gesture = (cam, anchor)
-            last = anchor
-            drag = .zero; pinch = 1
-            labels = []; dots = []
-        }
-    }
-
-    private func applyGesture() {
-        guard let g = gesture else { return }
-        let s = CGPoint(x: g.anchor.x + drag.width, y: g.anchor.y + drag.height)
-        step(from: last, to: s, R: clampR(g.cam.R * pinch, from: g.cam.R))
-        last = s
-    }
-
     /// Moves the globe as the finger goes from one point to the next. A drag turns it at a steady rate, the same over land,
     /// sea or open space, so it never jumps. A pinch keeps the spot under the fingers where it is, when it can.
     private func step(from p: CGPoint, to s: CGPoint, R: Double) {
@@ -395,36 +377,41 @@ final class Globe {
         if let v = view, v.id != "world" { worldOpacity = needsWorld(cam, v) ? 1 : 0 }
     }
 
-    func dragChanged(start: CGPoint, translation: CGSize) {
+    /// The fingers moved. Like the website, the globe follows the midpoint of the fingers and zooms by how far apart the
+    /// first two are, and starts fresh whenever a finger lands or lifts, so nothing jumps.
+    func touchesMoved(to s: CGPoint, spread d: Double?, fingers n: Int, time t: TimeInterval) {
         guard !going else { return }
-        beginGesture(at: start)
-        drag = translation
-        applyGesture()
+        if gesture == nil { ticker.stop(); busy = false; labels = []; dots = [] }
+        guard let g = gesture, g.fingers == n else {
+            gesture = (cam, d, n); last = s; flick = .zero; moved = t
+            return
+        }
+        let R = n > 1 && (g.spread ?? 0) > 0 && d != nil ? clampR(g.cam.R * d! / g.spread!, from: g.cam.R) : g.cam.R
+        step(from: last, to: s, R: R)
+        // a flick only follows one finger; the speed is smoothed over the last few moves
+        let dt = t - moved
+        if n == 1, dt > 0 {
+            let v = CGSize(width: (s.x - last.x) / dt, height: (s.y - last.y) / dt)
+            flick = CGSize(width: flick.width * 0.3 + v.width * 0.7, height: flick.height * 0.3 + v.height * 0.7)
+        } else if n > 1 { flick = .zero }
+        last = s; moved = t
     }
 
-    func pinchChanged(scale: Double, anchor: CGPoint) {
-        guard !going else { return }
-        beginGesture(at: anchor)
-        pinch = scale
-        applyGesture()
-    }
-
-    /// How fast the finger was moving when the drag let go, for the flick that follows.
+    /// How fast the finger was moving, for the flick that follows, and when it last moved.
     @ObservationIgnored private var flick = CGSize.zero
+    @ObservationIgnored private var moved: TimeInterval = 0
 
-    func dragEnded(velocity: CGSize) { flick = velocity }
-
-    /// Every finger is off the glass. Called once both gestures are over, whether they ended or were cancelled, so a
-    /// pinch always settles (and changes level) and the next gesture always starts fresh.
-    func touchesEnded() {
-        let v = flick
+    /// Every finger is off the glass, whether the touch ended or was cancelled, so a pinch always settles (and changes
+    /// level) and the next gesture always starts fresh. A finger that rested before lifting does not flick.
+    func touchesEnded(time t: TimeInterval) {
+        let v = t - moved < 0.08 ? flick : .zero
         flick = .zero
         endGesture(velocity: v)
     }
 
     /// Lets a flick carry on and slow down, then settles the globe the way the website does.
     private func endGesture(velocity: CGSize) {
-        guard let g = gesture else { return }
+        guard gesture != nil else { return }
         gesture = nil
         let speed = hypot(velocity.width, velocity.height)
         if speed > 250, !reduceMotion {
