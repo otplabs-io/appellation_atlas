@@ -145,7 +145,6 @@
  },
  "united-states/oregon": {
   "notes": [
-   "Pinot Noir is Oregon's leading grape, with about 60% of its planted acreage.",
    "Oregon Pinot Gris is medium bodied, yellow to copper-pink, with aromas of pear, apple and melon."
   ],
   "art": [
@@ -158,8 +157,7 @@
  },
  "united-states/paso-robles": {
   "notes": [
-   "With hot days and cool sea-air evenings, Paso Robles makes Zinfandel known for being soft and round.",
-   "Cabernet Sauvignon is the most planted grape, followed by Merlot, Syrah, Zinfandel and Chardonnay."
+   "With hot days and cool sea-air evenings, Paso Robles makes Zinfandel known for being soft and round."
   ],
   "art": [
    "Zinfandel"
@@ -170,7 +168,6 @@
  },
  "united-states/russian-river-valley": {
   "notes": [
-   "Its cool climate is especially suited to Pinot Noir and Chardonnay.",
    "Merlot has a distinctive tea-like note, and Zinfandel shows tarter red fruit than in warmer Dry Creek Valley.",
    "Its crisp grapes are prized for sparkling wine."
   ],
@@ -248,7 +245,6 @@
  "united-states/santa-maria-valley": {
   "notes": [
    "Fog, wind and the Pacific keep days cool here, so the grapes keep plenty of acidity.",
-   "Pinot Noir and Chardonnay lead, with a good share of Syrah.",
    "Its Pinot Noir has darker cherry fruit, balanced by savory notes such as earthy spice and tea.",
    "Chardonnay is lean, with bright acidity, green apple and chalk in the west, and fuller, with yellow apple, in the east."
   ],
@@ -258,7 +254,6 @@
  },
  "united-states/sta-rita-hills": {
   "notes": [
-   "Even at its eastern edge, Sta. Rita Hills is a very cool Winkler Region I.",
    "Pinot Noir, about 65% of the vines, shows bright red cherry, ripe and often with a maraschino accent.",
    "Chardonnay leans toward lemon, green apple or yellow apple, and in some sites toward mineral notes.",
    "Its Syrah is often lean, with whole-cluster spice."
@@ -268,19 +263,13 @@
   ]
  },
  "united-states/santa-ynez-valley": {
-  "notes": [
-   "The Santa Ynez Valley warms from Winkler Region I near the coast to Region III in the east.",
-   "Chardonnay is the most planted grape, and Pinot Noir is also important.",
-   "The warmer east suits Rhône and Bordeaux grapes."
-  ],
+  "notes": [],
   "ref": [
    "guildsomm-sb"
   ]
  },
  "united-states/ballard-canyon": {
   "notes": [
-   "Ballard Canyon calls itself Syrah territory, and more than half its vines are Syrah.",
-   "Strong winds, fog and big swings between day and night temper its heat.",
    "Its Syrah has savory notes like the northern Rhône, with riper fruit, fuller body and softer, more plentiful tannins."
   ],
   "ref": [
@@ -289,7 +278,6 @@
  },
  "united-states/happy-canyon-of-santa-barbara": {
   "notes": [
-   "Happy Canyon is the warm side of Santa Barbara County, with little fog.",
    "Wind, altitude and day-night swings of up to 50°F give wines a cooler personality than you might expect.",
    "Cabernet Sauvignon can be ripe without being jammy, or show savory herb and mineral notes.",
    "Sauvignon Blanc ranges from ripe tropical and stone fruit to tart citrus, grass and pepper."
@@ -299,28 +287,21 @@
   ]
  },
  "united-states/los-olivos-district": {
-  "notes": [
-   "Los Olivos District is moderately warm, a cool Winkler Region III, with little fog.",
-   "Most vines are Bordeaux and Rhône grapes, and Italian and Spanish grapes are common too."
-  ],
+  "notes": [],
   "ref": [
    "guildsomm-sb",
    "sbv-los-olivos"
   ]
  },
  "united-states/alisos-canyon": {
-  "notes": [
-   "Winds through the San Antonio River Valley cool Alisos Canyon, but it is warmer and less foggy than its neighbors.",
-   "Key grapes in the wider Los Alamos Valley include Chardonnay, Riesling, Pinot Noir, Syrah, Rhône whites and Bordeaux reds."
-  ],
+  "notes": [],
   "ref": [
    "guildsomm-sb"
   ]
  },
  "united-states/edna-valley": {
   "notes": [
-   "A long, cool growing season near the Pacific gives ripe flavor while the grapes keep their natural acidity.",
-   "Pinot Noir and Chardonnay lead."
+   "A long, cool growing season near the Pacific gives ripe flavor while the grapes keep their natural acidity."
   ],
   "ref": [
    "slo-coast"
@@ -328,8 +309,7 @@
  },
  "united-states/arroyo-grande-valley": {
   "notes": [
-   "A long, cool growing season near the Pacific gives ripe flavor while the grapes keep their natural acidity.",
-   "Pinot Noir and Chardonnay lead."
+   "A long, cool growing season near the Pacific gives ripe flavor while the grapes keep their natural acidity."
   ],
   "ref": [
    "slo-coast"

@@ -106,9 +106,7 @@
   ]
  },
  "italy/bolgheri": {
-  "notes": [
-   "Bolgheri reds may use Cabernet Sauvignon, Merlot and Cabernet Franc in any share, with up to half Syrah or Sangiovese."
-  ],
+  "notes": [],
   "art": [
    "Cabernet Franc"
   ],
@@ -129,7 +127,6 @@
  },
  "italy/rosso-di-montalcino": {
   "notes": [
-   "Rosso di Montalcino is made from the same grapes and vineyards as Brunello but aged for less time.",
    "It tastes much like Brunello but is often lighter in body and easier to drink young."
   ],
   "art": [
@@ -148,8 +145,7 @@
  },
  "italy/chianti-classico": {
   "notes": [
-   "Chianti Classico is medium bodied, with firm tannin and medium-high to high acidity.",
-   "Riserva must age at least 24 months at the winery."
+   "Chianti Classico is medium bodied, with firm tannin and medium-high to high acidity."
   ],
   "art": [
    "Chianti"
@@ -193,9 +189,7 @@
   ]
  },
  "italy/frascati": {
-  "notes": [
-   "Frascati is a still or sparkling white made from at least 70% Malvasia."
-  ],
+  "notes": [],
   "art": [
    "Frascati DOC"
   ],
@@ -204,9 +198,7 @@
   ]
  },
  "italy/vino-nobile-di-montepulciano": {
-  "notes": [
-   "Vino Nobile is Sangiovese-based and must age two years before release, three for riserva."
-  ],
+  "notes": [],
   "art": [
    "Tuscan wine"
   ]
@@ -221,8 +213,7 @@
  },
  "italy/orvieto": {
   "notes": [
-   "Orvieto today is mostly a dry white, with small amounts of off-dry (abboccato) and sweet (dolce) wine.",
-   "For centuries Orvieto was known for sweet, golden wines, some made with noble rot."
+   "Orvieto today is mostly a dry white, with small amounts of off-dry (abboccato) and sweet (dolce) wine."
   ],
   "art": [
    "Orvieto DOC"
@@ -250,17 +241,13 @@
   ]
  },
  "italy/puglia": {
-  "notes": [
-   "Negroamaro is widely planted here and is the backbone of Salice Salentino."
-  ],
+  "notes": [],
   "art": [
    "Italian wine"
   ]
  },
  "italy/salice-salentino": {
-  "notes": [
-   "Salice Salentino is built on Negroamaro."
-  ],
+  "notes": [],
   "art": [
    "Italian wine"
   ]
@@ -275,8 +262,7 @@
  },
  "italy/recioto-di-soave": {
   "notes": [
-   "Recioto di Soave is a sweet white made from grapes dried for weeks or months, traditionally on straw mats.",
-   "It is at least 70% Garganega."
+   "Recioto di Soave is a sweet white made from grapes dried for weeks or months, traditionally on straw mats."
   ],
   "art": [
    "Recioto di Soave DOCG",
@@ -408,8 +394,7 @@
   "notes": [
    "Trentino wines are balanced between acidity and alcohol and taste clearly of their grape.",
    "Nosiola makes a dry, savory white with a light bitter edge.",
-   "Vino Santo is a golden to amber sweet wine from Nosiola grapes dried on racks for months.",
-   "It cannot be sold until November of the third year after harvest."
+   "Vino Santo is a golden to amber sweet wine from Nosiola grapes dried on racks for months."
   ],
   "ref": [
    "it-trentino"
@@ -417,11 +402,8 @@
  },
  "italy/taurasi": {
   "notes": [
-   "Taurasi is made from Aglianico in the hills of Irpinia, where winters are cold and snow is common.",
    "It is deep ruby, turning garnet and then orange-tinged with age.",
-   "It is dry, full and balanced, with a long finish.",
-   "It must age at least three years, one of them in wood.",
-   "Riserva must age at least four years, with 18 months in wood."
+   "It is dry, full and balanced, with a long finish."
   ],
   "ref": [
    "it-taurasi"
@@ -431,7 +413,6 @@
   "notes": [
    "Greco di Tufo is a straw-yellow white that is fresh, dry and harmonious, with intense, fine aromas.",
    "Big swings between day and night in its volcanic clay and limestone hills help the grapes keep their acidity.",
-   "Locally, some Greco di Tufo is also sold after several years of aging.",
    "A sparkling version is also made, from extra brut to extra dry."
   ],
   "ref": [

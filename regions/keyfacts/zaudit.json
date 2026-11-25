@@ -1,7 +1,6 @@
 {
  "argentina/mendoza": {
   "facts": [
-   "Mendoza, in the eastern foothills of the Andes, holds about 71% of Argentina's vineyard area and made about 81% of its wine in 2024.",
    "Luján de Cuyo is one of Argentina's two Denominaciones de Origen Controladas, recognized nationally in 2005, and Malbec covers nearly 60% of its vineyards.",
    "The climate is continental and semi-desert, and the main climate risks are hail, early or late frost and the hot, dry Zonda wind.",
    "Soils are young alluvial and colluvial mixes of stones, clay, silt and sand, low in organic matter, and irrigation water comes mostly from Andean snowmelt rivers and aquifers."
@@ -32,7 +31,6 @@
  },
  "argentina/valle-de-uco": {
   "facts": [
-   "The Uco Valley is a sub-region of Mendoza, the province that made about 81% of Argentina's wine in 2024.",
    "Luján de Cuyo and the Uco Valley make most of Mendoza's top wines, with Uco sites such as Altamira, Gualtallary, San Pablo and Vista Flores highly regarded.",
    "Tupungato, in the Uco Valley, has more Chardonnay than any other Mendoza department, about a quarter of the province's total.",
    "Low rainfall and the low humidity that comes with altitude limit vine disease."
@@ -55,7 +53,6 @@
  },
  "australia/barossa-valley": {
   "facts": [
-   "Barossa Valley Shiraz is full bodied, rich and robust, with notes such as blackberry, plum, black pepper and chocolate, and some Barossa Shiraz vines date back to the 1840s.",
    "The Barossa zone covers both the warm Barossa Valley and the cooler Eden Valley, and wine labeled Barossa must contain at least 85% Barossa fruit."
   ],
   "audited": true,
@@ -68,8 +65,7 @@
  },
  "australia/clare-valley": {
   "facts": [
-   "Clare Valley is one of Australia's oldest wine regions and is renowned for Riesling, Shiraz and Cabernet Sauvignon.",
-   "It lies in the Mid North of South Australia, about 81 miles north of Adelaide, and was registered as an Australian Geographical Indication on 25 March 1999.",
+   "Clare Valley was registered as an Australian Geographical Indication on 25 March 1999.",
    "Vineyards sit at about 820 to 1,800 feet, and large drops in temperature at night slow ripening.",
    "Rain falls mainly in winter, averaging about 20 inches a year, and the dry growing season leaves few disease risks apart from eutypa.",
    "The region has no legally defined subregions, but it is informally split into Auburn, Clare, Polish Hill River, Sevenhill and Watervale."
@@ -88,7 +84,6 @@
  },
  "australia/coonawarra": {
   "facts": [
-   "Coonawarra, in the Limestone Coast zone of South Australia, is known for Cabernet Sauvignon grown on its terra rossa soil.",
    "The terra rossa strip runs north to south for about 17 miles and is about 1.1 miles wide, over a ridge of free-draining limestone.",
    "West of the ridge, heavy black rendzina clays hold more water and are harder to manage in wet, cool seasons, while a transitional brown rendzina also grows vines successfully.",
    "The climate is maritime influenced, with about 9 inches of rain in the October to April growing season out of about 23 inches a year.",
@@ -108,7 +103,6 @@
    "The Hunter Valley zone boundary largely follows the Hunter Valley catchment, and the Hunter region has three named subregions: Upper Hunter Valley, Broke Fordwich and Pokolbin.",
    "The climate is subtropical with maritime influence, among Australia's warmest wine regions, and more than two thirds of the rain falls from October to April.",
    "Sun and summer storms are the main vineyard challenges, so growers manage canopies to shade bunches without blocking airflow and watch the weather closely before harvest.",
-   "Hunter Semillon is unoaked, crisp and delicate with citrus and grass notes when young, and the finest examples turn honeyed, toasty and nutty after as little as five years in bottle.",
    "The Upper Hunter, further inland, is generally warmer than the Lower Hunter and gets less rain."
   ],
   "audited": true,
@@ -125,10 +119,8 @@
  },
  "australia/margaret-river": {
   "facts": [
-   "Margaret River is in the southwestern corner of Western Australia.",
    "Its Mediterranean climate has strong maritime influence from the ocean on three sides, and a low daily temperature range gives very even heat accumulation.",
    "Most rain falls in winter, with only about 8 inches of about 36 inches a year falling from October to April.",
-   "Its signature wines are Semillon Sauvignon Blanc blends, Chardonnay and Cabernet Sauvignon, alongside Shiraz and smaller amounts of Chenin Blanc, Merlot and Malbec.",
    "There are no official subregions, but in 1999 John Gladstones suggested six: Yallingup, Carbunup, Wilyabrup, Treeton, Wallcliffe and Karridale."
   ],
   "audited": true,
@@ -141,11 +133,9 @@
  },
  "australia/yarra-valley": {
   "facts": [
-   "Yarra Valley is a cool climate region about 28 miles northeast of Melbourne, long famous for Chardonnay and Pinot Noir, with fruit from its coolest sites used for sparkling wine.",
    "Traditional vineyards on the northern side of the valley have grey to grey-brown, low-fertility soils over red-brown clay subsoils.",
    "Vineyards range from about 100 to 1,300 feet, and the southern side, around Seville and Hoddles Creek, has much younger, deep, fertile red volcanic soils.",
-   "The Yarra Valley was Victoria's first wine-growing district, with vines planted in 1838 on the property now called Yering Station, but by 1937 all its vineyards had gone to pasture.",
-   "Yarra Chardonnay has moved away from the oaky, rich styles of the 1980s and 1990s toward fine, restrained wines, often picked at lower sugar levels to keep acidity high."
+   "The Yarra Valley was Victoria's first wine-growing district, with vines planted in 1838 on the property now called Yering Station, but by 1937 all its vineyards had gone to pasture."
   ],
   "audited": true,
   "cite": [
@@ -157,8 +147,6 @@
  },
  "austria": {
   "facts": [
-   "Austria makes mostly white wine, led by Grüner Veltliner on about a third of its vineyards, and about 30% of its wine is red, mainly from Zweigelt and Blaufränkisch.",
-   "DAC, short for Districtus Austriae Controllatus, marks regionally typical quality wines under rules that a regional wine committee proposes to the agriculture minister.",
    "There are now 18 DACs; the first, Weinviertel DAC, was presented in 2003, and Wachau DAC applies from the 2020 vintage.",
    "Zweigelt, Austria's most planted red grape, was bred at Klosterneuburg in 1922 by crossing Sankt Laurent and Blaufränkisch.",
    "Mittelburgenland, nicknamed Blaufränkischland, has a red wine DAC for Blaufränkisch, while the Weinviertel is Austria's largest wine region."
@@ -199,7 +187,6 @@
   "facts": [
    "Wachau has its own three-level classification, all for dry wines: Steinfeder up to 11.5% alcohol, Federspiel from 11.5 to 12.5%, and Smaragd with a minimum of 12.5%.",
    "Steinfeder, Federspiel and Smaragd wines are always white and dry, made without enrichment or added sugar and without any oak influence.",
-   "Smaragd grapes hang longest on the vine, giving complex, heavier wines with promising aging potential.",
    "Vinea Wachau, the growers' association founded in 1983, began creating the Steinfeder, Federspiel and Smaragd trademarks in 1984.",
    "Vineyards climb steep Danube terraces built on dry stone walls, with soils of gneiss, amphibolite and wind-blown loess.",
    "Riesling thrives on the shallow, poor terraces, while Grüner Veltliner does best in loess at the foot of slopes or in sandier soils near the Danube."
@@ -224,8 +211,7 @@
   "facts": [
    "The Niagara Peninsula has the largest planted area of any viticultural area in Canada, covering 13,600 acres.",
    "It is bordered by Lake Ontario to the north, the Niagara River to the east, and the Welland River and Hamilton to the south and west.",
-   "The Niagara Escarpment, rising to some 575 feet above sea level, passes through the appellation, which holds 10 sub-appellations.",
-   "Ontario is one of the world's leading ice wine producers, and most of its ice wine is made from Riesling and Vidal.",
+   "The Niagara Escarpment, rising to some 575 feet above sea level, passes through the appellation.",
    "Lake Ontario moderates air temperature, and the main grapes are Chardonnay, Riesling, Pinot Noir and Cabernet Franc."
   ],
   "audited": true,
@@ -242,8 +228,6 @@
  },
  "chile/casablanca-valley": {
   "facts": [
-   "Casablanca Valley is in the Valparaíso region.",
-   "It is known for white wines, notably Sauvignon Blanc and Chardonnay, and for Pinot Noir, which suits its cool climate.",
    "Pacific maritime influence and morning fog cool the valley's climate."
   ],
   "audited": true,
@@ -257,9 +241,7 @@
  "chile/maipo-valley": {
   "facts": [
    "Under Chile's official zoning, Pirque, Puente Alto and Buin may use the Andes term, while Isla de Maipo, Talagante and Melipilla may use Entre Cordilleras.",
-   "Its eastern vineyards lie in the Andes foothills, and its western vineyards reach the sandy soils of the Coastal Range.",
-   "Cabernet Sauvignon is the main variety, and Merlot, Syrah and Carmenère also thrive here.",
-   "The valley lies across the Andes from Mendoza Province."
+   "Its eastern vineyards lie in the Andes foothills, and its western vineyards reach the sandy soils of the Coastal Range."
   ],
   "audited": true,
   "cite": [
@@ -276,17 +258,13 @@
  "france/alsace": {
   "facts": [
    "The Vosges mountains shelter Alsace from rain and maritime influence, so the region is rather dry and sunny.",
-   "Vendange Tardive (VT) and Sélection de Grains Nobles (SGN) were codified as late harvest designations on 1 March 1984, and SGN means grapes affected by noble rot.",
-   "Minimum must weights are 244 g/L for Riesling VT and 276 g/L for Riesling SGN, and 270 g/L and 306 g/L for Pinot Gris and Gewürztraminer.",
    "Alsace AOC wine must be bottled in the tall Vin du Rhin flute, or in a bottle of the same tall, cylindrical, long-necked shape."
   ],
   "audited": true
  },
  "france/beaujolais": {
   "facts": [
-   "Red Beaujolais is made from Gamay, often by a method inspired by semi-carbonic maceration that preserves its fruit, and Gamay gives wines low in tannin.",
-   "There are three tiers: Beaujolais, Beaujolais-Villages from the northern half of the area, and Cru Beaujolais with ten crus.",
-   "The ten crus are Saint-Amour, Juliénas, Chénas, Moulin-à-Vent, Fleurie, Chiroubles, Morgon, Régnié, Brouilly and Côte de Brouilly."
+   "There are three tiers: Beaujolais, Beaujolais-Villages from the northern half of the area, and Cru Beaujolais with ten crus."
   ],
   "audited": true
  },
@@ -314,9 +292,8 @@
  },
  "france/burgundy": {
   "facts": [
-   "Burgundy classifications follow geography, not producers, with four levels from regional and village to Premier Cru and Grand Cru.",
-   "The climats of Burgundy, its precisely delimited vineyard plots, were inscribed on the UNESCO World Heritage List in July 2015.",
-   "The most famous wines are dry reds from Pinot Noir and whites from Chardonnay, with Gamay and Aligoté also grown."
+   "Burgundy classifications follow geography, not producers.",
+   "The climats of Burgundy, its precisely delimited vineyard plots, were inscribed on the UNESCO World Heritage List in July 2015."
   ],
   "audited": true,
   "cite": [
@@ -333,7 +310,6 @@
  "france/chablis": {
   "facts": [
    "Chablis has four levels: Petit Chablis, Chablis, Premier Cru and Grand Cru, with Chablis AOC designated in 1938 and Petit Chablis in 1944.",
-   "Chablis must be made from Chardonnay alone, and typically shows much less oak influence than the white wines of the rest of Burgundy.",
    "Chablis, Premier Cru and Grand Cru vineyards lie mainly on Kimmeridgian soils, while Petit Chablis is mainly grown on Portlandian soils on the higher slopes and plateau.",
    "The seven Grand Cru vineyards lie on one southwest-facing hill next to the town: Bougros, Preuses, Vaudésir, Grenouilles, Valmur, Les Clos and Blanchot.",
    "Spring frost is a major risk, and growers protect vines with heaters, candles and water sprays that coat the buds in ice."
@@ -364,8 +340,7 @@
  },
  "france/champagne": {
   "facts": [
-   "Champagne gets its bubbles from a second fermentation in the bottle, and the appellation requires a minimum of fifteen months before release.",
-   "Almost all champagne uses Chardonnay, Pinot Noir and Meunier, with blanc de blancs made only from white grapes and blanc de noirs only from black grapes.",
+   "The appellation requires a minimum of fifteen months before release.",
    "After aging on the lees, riddling moves the lees into the bottle neck, disgorging removes them, and a liqueur d'expédition is added.",
    "Vintage champagne may use no more than 80% of the wine a producer makes or buys in that year, keeping the rest for blends and reserve wines."
   ],
@@ -374,7 +349,6 @@
  "france/chateauneuf-du-pape": {
   "facts": [
    "Growers formed a syndicate in 1923 to defend the name, and their rules, recognized by decree on 15 May 1936, became a model later adopted by other French regions.",
-   "The rules allow eighteen varieties, with no split between principal and accessory varieties.",
    "Every permitted variety may be used for both red and white wines, and Grenache is the dominant grape in the vineyard.",
    "Many soils hold rounded alpine pebbles, galets roulés, in a reddish clay, which store the day's heat and release it at night to help the grapes ripen fully.",
    "Yields are limited to 35 hl/ha, wines must reach a minimum natural alcohol of 12.5%, and red wines may not be enriched.",
@@ -387,9 +361,7 @@
    "Pinot Noir is mainly planted around Beaune, Pommard and Volnay; Meursault, Puligny and Chassagne are mainly white, and Santenay and Maranges return to red.",
    "Corton is the only red Grand Cru in the district, and it and the white Grand Cru Corton-Charlemagne both span Aloxe-Corton, Ladoix-Serrigny and Pernand-Vergelesses.",
    "The Montrachet Grand Crus are split between Puligny-Montrachet and Chassagne-Montrachet and include Chevalier-Montrachet and Bâtard-Montrachet.",
-   "Meursault has no Grand Crus and makes almost only white wine from Chardonnay, often with toasted and almond notes and a rich, mellow palate.",
-   "Côte de Beaune Villages is a general appellation for 16 villages, excluding Aloxe-Corton, Pommard, Volnay and Beaune.",
-   "Pommard has a solid structure with velvety fruit and long aging potential, while Volnay is prized for great finesse, its tannic frame balanced by discreet acidity."
+   "Côte de Beaune Villages is a general appellation for 16 villages, excluding Aloxe-Corton, Pommard, Volnay and Beaune."
   ],
   "audited": true,
   "cite": [
@@ -454,10 +426,8 @@
  },
  "france/cote-rotie": {
   "facts": [
-   "Syrah and Viognier are the only permitted grapes, and Côte-Rôtie is red wine from Syrah with up to 20% Viognier.",
-   "Under the appellation rules, Syrah and Viognier, if used, must be fermented at the same time, a process known as cofermentation.",
    "The Côte Brune has darker, clay-rich, iron-rich soils over mica schist, and the Côte Blonde has pale, siliceous soils from gneiss.",
-   "The name means the roasted slope, for hillsides scorched by summer sun, and the climate is semi-continental, though the last Mediterranean influences reach up the Rhône."
+   "The climate is semi-continental, though the last Mediterranean influences reach up the Rhône."
   ],
   "audited": true,
   "cite": [
@@ -469,8 +439,6 @@
  },
  "france/gevrey-chambertin": {
   "facts": [
-   "The AOC may be used only for red wine with Pinot Noir as the main grape variety.",
-   "There are nine Grand Cru vineyards, Chambertin and eight others named Chambertin in combination with something else, such as Chapelle-Chambertin.",
    "The Route des Grands Crus runs through the Grands Crus, separating Chambertin from Charmes-Chambertin.",
    "Chambertin-Clos de Bèze may also be sold as Chambertin, and Mazoyères-Chambertin as Charmes-Chambertin, but not the other way round.",
    "Twenty-six climats are classified as Premier Cru."
@@ -490,10 +458,8 @@
  "france/graves": {
   "facts": [
    "Graves is named for its gravelly soils, carried by the Garonne from Pyrenean valleys, and forms a band about ten kilometers wide on the river's left bank from north of Bordeaux to southeast of Langon.",
-   "Red wines make up about three quarters of production.",
    "Sixteen châteaux were classified in the 1959 Crus Classés de Graves, all within what is now Pessac-Léognan.",
    "In 1987 the part closest to the city of Bordeaux became a separate AOC, Pessac-Léognan, home of first growth Château Haut-Brion.",
-   "Reds are a balanced blend of Cabernet Sauvignon and Merlot, and dry whites are based on Sémillon and Sauvignon Blanc, sometimes with Muscadelle.",
    "Graves AOC covers red, dry white and sweet white wines, and the sweet whites may use the name Graves Supérieures only up to the 2028 harvest."
   ],
   "audited": true,
@@ -506,9 +472,7 @@
  },
  "france/hermitage": {
   "facts": [
-   "Hermitage is a northern Rhône appellation where red wine from Syrah made up 70% of production in 2009, and white wine comes from Marsanne and Roussanne.",
    "Appellation rules allow Syrah to be topped up with 15% or less of Marsanne and/or Roussanne.",
-   "The reds are powerful and tannic, which gives them a good capacity for aging.",
    "Vin de paille, or straw wine, is also produced in the region."
   ],
   "audited": true
@@ -530,7 +494,6 @@
   "facts": [
    "The Upper Loire has Sauvignon Blanc in Sancerre and Pouilly-Fumé, and the Lower Loire reaches the Atlantic through Muscadet, where Melon dominates.",
    "In the Middle Loire, Vouvray is made from Chenin Blanc, Chinon and Saumur reds are based on Cabernet Franc, and Touraine whites are based on Sauvignon Blanc.",
-   "White wine is the largest share at about 36% of production, and Cabernet Franc, Chenin Blanc, Melon and Sauvignon Blanc are the most planted grapes.",
    "The Loire is France's second largest region for AOP sparkling wine, after Champagne."
   ],
   "audited": true,
@@ -568,9 +531,7 @@
  },
  "france/medoc": {
   "facts": [
-   "Médoc AOC may be used across 50 communes of the Médoc peninsula, on the Left Bank north of Bordeaux, but it is claimed mainly in the north, the area once called Bas-Médoc.",
    "Soils are gravel laid down by the Garonne and Dordogne and Tertiary clay-limestone, with Cabernet Sauvignon favoring the gravel and Cabernet Franc the limestone.",
-   "Cabernet Sauvignon and Merlot are the main grapes, with Petit Verdot, Malbec, Cabernet Franc and Carmenère also allowed.",
    "Large châteaux sit beside small family estates backed by several cooperatives, and no estate under the Médoc appellation was included in the 1855 classification."
   ],
   "audited": true,
@@ -586,11 +547,7 @@
   ]
  },
  "france/meursault": {
-  "facts": [
-   "Meursault is a Côte de Beaune commune in Burgundy, and white wine from Chardonnay makes up around 98% of production.",
-   "There are no Grand Cru vineyards within Meursault, but there are several Premier Cru vineyards.",
-   "White Meursault often shows toasted almond and hazelnut notes, with butter, honey and citrus."
-  ],
+  "facts": [],
   "audited": true,
   "cite": [
    {
@@ -607,7 +564,6 @@
   "facts": [
    "Muscadet is made in the Pays Nantais at the western end of the Loire Valley, from the Melon grape alone.",
    "Muscadet Sèvre et Maine is the largest Muscadet appellation, with about 81% of the claimed vineyard area, and it takes its name from the rivers Sèvre and Maine.",
-   "Sur lie aging means the wine stays in contact with the lees after fermentation, which gives a creamier mouthfeel and a fuller body.",
    "The generic Muscadet AOC cannot use sur lie, but the three sub-appellations can."
   ],
   "audited": true,
@@ -624,11 +580,9 @@
  },
  "france/pauillac": {
   "facts": [
-   "Pauillac includes three of the five premier cru châteaux of Bordeaux: Latour, Lafite Rothschild and Mouton Rothschild.",
    "It sits on the Left Bank of the Gironde within the Haut-Médoc, between St-Julien to the south and St-Estèphe to the north.",
    "The vines grow on well-drained gravel terraces that run parallel to the Gironde estuary.",
-   "Cabernet Sauvignon dominates the blend, with Merlot for roundness and fruit and Cabernet Franc or, more rarely, Petit Verdot; Carmenère and Malbec are also allowed.",
-   "The wines are deeply colored, powerful and structured, and develop a highly complex bouquet with long aging."
+   "Cabernet Sauvignon dominates the blend, with Merlot for roundness and fruit and Cabernet Franc or, more rarely, Petit Verdot; Carmenère and Malbec are also allowed."
   ],
   "audited": true,
   "cite": [
@@ -641,9 +595,7 @@
  "france/pessac-leognan": {
   "facts": [
    "The appellation was created in 1987, and before then the area was part of the Graves AOC.",
-   "It lies in the northern part of Graves, on the left bank of the Garonne, bordering the city of Bordeaux to the west and south.",
    "It includes Château Haut-Brion, the only red-wine producer outside the Haut-Médoc classified in the 1855 classification, and all the châteaux in the 1959 Graves classification.",
-   "Red wines are led by Cabernet Sauvignon, often with Merlot and Cabernet Franc, while dry whites are mainly Sauvignon Blanc and Sémillon.",
    "The soils are mainly gravel and sandy gravel left by the ancient Garonne, in places three meters deep or more."
   ],
   "audited": true,
@@ -656,11 +608,9 @@
  },
  "france/pomerol": {
   "facts": [
-   "Pomerol is a Right Bank appellation in the Libournais, and its wine is predominately Merlot with Cabernet Franc in a supporting role.",
    "Pomerol has no official classification, yet Château Pétrus is a worldwide byword for a great growth.",
    "Gravel and sand terraces lie over Tertiary clay, and the subsoil holds iron oxides known locally as crasse de fer.",
    "Pomerol's vineyard covers about 1,980 acres, and in 2009 its 140 mostly family estates averaged about 15 acres each.",
-   "Pomerol is for red wine only, and all its permitted grapes are red.",
    "The wines must age until at least November 1 of the year after harvest and may go on sale from November 15."
   ],
   "audited": true,
@@ -696,10 +646,7 @@
  },
  "france/puligny-montrachet": {
   "facts": [
-   "Puligny-Montrachet is a Côte de Beaune commune in Burgundy, and more than 99% of its production is white wine.",
-   "There are four Grand Cru vineyards: Montrachet, Bâtard-Montrachet, Bienvenues-Bâtard-Montrachet and Chevalier-Montrachet.",
-   "Montrachet and Bâtard-Montrachet cross the communal border and are shared with Chassagne-Montrachet.",
-   "Young white Puligny-Montrachet is pale gold with green glints, with floral, fruity, nutty and mineral notes and a honeyed touch."
+   "Montrachet and Bâtard-Montrachet cross the communal border and are shared with Chassagne-Montrachet."
   ],
   "audited": true,
   "cite": [
@@ -719,7 +666,6 @@
  },
  "france/rhone-valley": {
   "facts": [
-   "The Rhône is generally divided into the Northern Rhône and the Southern Rhône, each with distinct vinicultural traditions.",
    "In the northern Rhône crus, Syrah is the only red grape, sometimes with a little white grape, and the whites come from Marsanne, Roussanne and Viognier.",
    "The northern Rhône has a temperate continental climate, and the mistral, a cold, dry and often violent north wind, sweeps the valley.",
    "In Châteauneuf-du-Pape, rounded pebbles store the sun's heat by day and release it at night, helping the grapes ripen fully."
@@ -769,7 +715,6 @@
    "The Saint-Émilion classification dates from 1955, covers wines of the Saint-Émilion Grand Cru appellation, and is updated every 10 years or so.",
    "The classification has three levels: Premier grand cru classé A, Premier grand cru classé B, and Grand cru classé.",
    "As of the 2022 classification, Château Figeac and Château Pavie are the two estates at the highest level.",
-   "Merlot is by far the main grape, with Cabernet Franc and Cabernet Sauvignon the other principal varieties.",
    "The appellation lies east of Libourne on a limestone plateau above the Dordogne, and its vineyard covered about 13,600 acres in 2010."
   ],
   "audited": true,
@@ -790,8 +735,7 @@
  },
  "france/sancerre": {
   "facts": [
-   "Sancerre is an AOC in the eastern Loire, best known for white wine from Sauvignon Blanc, with red and rosé made from Pinot Noir.",
-   "White Sancerre became an AOC in 1936, and red and rosé Sancerre gained AOC status in 1959."
+   "Red and rosé Sancerre gained AOC status in 1959."
   ],
   "audited": true,
   "cite": [
@@ -807,7 +751,6 @@
  },
  "france/sauternes": {
   "facts": [
-   "Sauternes is a sweet white wine made from Sémillon, Sauvignon Blanc, Sauvignon Gris and Muscadelle grapes affected by Botrytis cinerea, also called noble rot.",
    "Where the Ciron meets the Garonne, condensation brings humid nights, and drying sun and wind by day favor noble rot.",
    "Grapes are picked by hand in successive passes, selecting the botrytized berries, and yields vary widely between vintages.",
    "In the 1855 classification, Château d'Yquem alone was ranked Premier Cru Supérieur, above 11 Premiers Crus and 15 Deuxièmes Crus.",
@@ -817,10 +760,7 @@
  },
  "france/vosne-romanee": {
   "facts": [
-   "Vosne-Romanée AOC is only for red wine with Pinot Noir as the main grape, and it covers the communes of Vosne-Romanée and Flagey-Échezeaux.",
    "There are six Grand Cru vineyards in Vosne-Romanée and two in Flagey-Échezeaux, plus 14 Premier Cru vineyards across the two communes.",
-   "The Grand Crus in Vosne-Romanée are La Tâche, La Grande Rue, La Romanée, Romanée-Conti, Romanée-Saint-Vivant and Richebourg.",
-   "Flagey-Échezeaux has two Grand Crus, Échezeaux and Grands Échezeaux.",
    "Romanée-Conti and La Tâche are monopoles of Domaine de la Romanée-Conti.",
    "Chardonnay, Pinot Blanc and Pinot Gris may be interplanted among the vines, up to 15% in total in each parcel."
   ],
@@ -834,8 +774,6 @@
  },
  "france/vouvray": {
   "facts": [
-   "Vouvray is a Loire Valley AOC in Touraine, just east of Tours, and is dedicated almost exclusively to Chenin Blanc.",
-   "Vintage conditions shape the style, and in the best years sweet wines are made from grapes shriveled on the vine or affected by noble rot.",
    "Sec Vouvray may hold up to 8 g/L of residual sugar, moelleux wines up to 45 g/L, and doux wines 45 g/L or more.",
    "The plateau rests on soft tuffeau chalk, with clay-limestone soils on the slopes and clay-siliceous soils at the plateau edges, and cellars were dug into the tuffeau.",
    "Sparkling Vouvray is made by the traditional method and can be pétillant (semi-sparkling) or mousseux (fully sparkling)."
@@ -851,9 +789,7 @@
  "germany": {
   "facts": [
    "Germany has 13 quality wine regions (Anbaugebiete), and white wine is more than two thirds of production.",
-   "Prädikatswein levels are Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese and Eiswein, and they are linked to minimum potential alcohol.",
-   "Chaptalization is allowed only up to the QbA level, not for Prädikatswein, and Süssreserve may be added after fermentation.",
-   "Riesling is the benchmark grape and the most planted, at 23.4% of vines in 2024, and Spätburgunder leads among reds."
+   "Chaptalization is allowed only up to the QbA level, not for Prädikatswein, and Süssreserve may be added after fermentation."
   ],
   "audited": true,
   "cite": [
@@ -878,11 +814,8 @@
  "germany/mosel": {
   "facts": [
    "Mosel covers the valleys of the Mosel, Saar and Ruwer rivers, and before 1 August 2007 it was called Mosel-Saar-Ruwer.",
-   "Riesling is the main grape, covering 62.4% of vineyard area in 2024, and white varieties cover 90% of the total.",
    "Steep slopes and Devonian slate soils shape the wines, and the slate slopes store the day's heat.",
-   "Mosel Rieslings are typically fine and fruity, with relatively low alcohol and a fine acid structure.",
-   "The region has six districts (Bereiche), 19 Großlagen and 524 Einzellagen.",
-   "The Calmont vineyard in Bremm is often called the steepest vineyard in Europe."
+   "The region has six districts (Bereiche), 19 Großlagen and 524 Einzellagen."
   ],
   "audited": true,
   "cite": [
@@ -906,11 +839,9 @@
  },
  "germany/pfalz": {
   "facts": [
-   "Pfalz had 58,560 acres under cultivation in 2022, making it the second largest German wine region after Rheinhessen.",
    "It has many hours of sunshine and lies between the forested Haardt Mountains and the Rhine plain.",
    "The region has two districts, Südliche Weinstraße in the south and Mittelhaardt-Deutsche Weinstraße in the north.",
-   "White grapes cover 69% of the vineyard and red grapes 31%, and most of the red wine is made dry.",
-   "Riesling is the leading grape at about a quarter of the vineyard, followed by the red Dornfelder."
+   "White grapes cover 69% of the vineyard and red grapes 31%, and most of the red wine is made dry."
   ],
   "audited": true,
   "cite": [
@@ -926,7 +857,6 @@
  },
  "germany/rheingau": {
   "facts": [
-   "Rheingau makes up only about 3 percent of the German vineyard area.",
    "Many vineyards lie on south-facing slopes sheltered by the Taunus hills, at about 50 degrees north.",
    "Spätlese was first made at Schloss Johannisberg in 1775."
   ],
@@ -948,7 +878,6 @@
  },
  "greece/santorini": {
   "facts": [
-   "Assyrtiko is the flagship grape, giving rich wines whose strong acidity is balanced by high alcohol.",
    "Vines are trained in a basket system called kouloura, and the grapes ripen inside the baskets, protected from the strong winds.",
    "Phylloxera never reached the island, which is credited to its sandy volcanic soil, so the vines grow on their own roots and some may be 300 years old.",
    "The soils are sandy mixes of pumice and ash, very low in clay and organic matter, and the island has strong summer winds and about 10 to 15 inches of rain a year.",
@@ -969,10 +898,8 @@
  },
  "hungary/tokaj": {
   "facts": [
-   "Tokaj is known for Tokaji aszú, first mentioned in writing in 1571, and it was declared a World Heritage Site in 2002.",
-   "Only six grapes are permitted: Furmint and Hárslevelű as the main varieties, plus Sárga Muskotály, Kabar, Kövérszőlő and Zéta.",
+   "Tokaji aszú was first mentioned in writing in 1571.",
    "The soils are mostly volcanic, with loess on about 5% of the area around Tarcal and Tokaj, and the vineyards lie on the sheltered southern edge of the Zemplén hills.",
-   "The Tisza and Bodrog rivers help create the conditions for noble rot and the drying of the grapes.",
    "Cellars, mostly carved into tuff from the 13th century on, stay at about 46 to 54°F year round, and mold on their walls helps regulate humidity."
   ],
   "audited": true,
@@ -986,7 +913,7 @@
  "italy": {
   "facts": [
    "DOC status is reserved for wines from areas recognized as IGT for at least five years, except in regions that have no IGT.",
-   "DOCG applies only to wines that have been DOC for at least seven years, and bottles carry a control band.",
+   "DOCG bottles carry a control band.",
    "Before a DOCG or DOC wine can be sold, each batch must pass chemical-physical and organoleptic analysis, and for DOCG the result is valid for 180 days."
   ],
   "audited": true,
@@ -1003,10 +930,7 @@
  },
  "italy/amarone-della-valpolicella": {
   "facts": [
-   "Amarone became a DOCG of its own, as did Recioto della Valpolicella, by ministerial decree of 24 March 2010.",
-   "It is made from partially dried grapes: Corvina and/or Corvinone (45 to 95%), Rondinella (5 to 30%) and other approved red grapes (up to 25%).",
-   "Drying is called appassimento, and grapes typically rest in drying lofts for 100 to 120 days.",
-   "After fermentation, the wine must age at least 2 years, calculated from 1 January of the year following the harvest."
+   "Drying is called appassimento, and grapes typically rest in drying lofts for 100 to 120 days."
   ],
   "audited": true,
   "cite": [
@@ -1018,10 +942,8 @@
  },
  "italy/barbaresco": {
   "facts": [
-   "Barbaresco is made from the Nebbiolo grape and became a DOCG in 1980, after DOC status in 1966.",
    "Barbaresco must age at least 26 months from 1 November of the harvest year, 9 of them in wood, and Riserva at least 50 months.",
    "The minimum alcohol level is 12.5 per cent.",
-   "Barbaresco's minimum aging is a year shorter than Barolo's.",
    "The Barbaresco Consorzio introduced Menzioni Geografiche Aggiuntive (MGA) subzones in 2007, and the final number of subzones is 66."
   ],
   "audited": true,
@@ -1038,17 +960,13 @@
  },
  "italy/barolo": {
   "facts": [
-   "Barolo is a red DOCG wine made from the Nebbiolo grape, and the zone was raised to DOCG status in 1980.",
-   "A Barolo must be aged at least three years, a minimum of 38 months from November 1 of the harvest year, with at least 18 months in wooden barrels.",
-   "Barolo Riserva requires five years of total aging, a minimum of 62 months from November 1 of the harvest year, with at least 18 months in barrel.",
    "In 2010 the Barolo Consorzio introduced MGA subzones, with 181 delimited, of which 170 are vineyard areas and 11 are village designations."
   ],
   "audited": true
  },
  "italy/brunello-di-montalcino": {
   "facts": [
-   "Brunello di Montalcino is made 100% from Sangiovese, and in 1980 it was one of the first four wines awarded DOCG status.",
-   "Brunello must spend at least two years in oak and four months in bottle, and it cannot be released before 1 January of the fifth year after harvest; Riserva needs six months in bottle and a year longer.",
+   "In 1980 Brunello di Montalcino was one of the first four wines awarded DOCG status.",
    "Montalcino's climate is Mediterranean but tends to be dry, with average rainfall of about 28 inches a year.",
    "Producers can also make Sant'Antimo DOC wines, which allow grapes other than Sangiovese, and the sweet white Moscadello di Montalcino from Muscat."
   ],
@@ -1074,16 +992,13 @@
    "Etna became a DOC in 1968, the first DOC of Sicily and one of the oldest in Italy.",
    "Etna Rosso and Rosato require at least 80% Nerello Mascalese, with Nerello Cappuccio making up no more than 20%.",
    "Etna Bianco requires at least 60% Carricante, and Bianco Superiore requires at least 80% Carricante with grapes coming only from the Milo area.",
-   "Most vineyard soils are volcanic, formed from ash, sand, lapilli and pumice, and are loose, stony, very permeable and rich in trace elements.",
-   "Most vines grow between about 985 and 2,950 feet, and on the southwest slope they reach 3,610 feet."
+   "Most vineyard soils are volcanic, formed from ash, sand, lapilli and pumice, and are loose, stony, very permeable and rich in trace elements."
   ],
   "audited": true
  },
  "italy/piedmont": {
   "facts": [
-   "Barbera is the most widely planted grape, with Nebbiolo and Dolcetto also significant for red wine, and Moscato leading among whites.",
-   "Barolo and Barbaresco are both made from Nebbiolo, whose name is thought to come from nebbia, the Italian word for fog.",
-   "The Barbaresco DOCG requires a minimum alcohol of 12.5% and at least 26 months of aging, or 50 months for riserva.",
+   "The name Nebbiolo is thought to come from nebbia, the Italian word for fog.",
    "The region has no IGT classification."
   ],
   "audited": true,
@@ -1104,10 +1019,8 @@
  },
  "italy/prosecco-doc": {
   "facts": [
-   "Prosecco is made from the Glera grape, renamed in Italy in 2009, and the rules allow up to 15% of other permitted varieties.",
    "Since 2009, Prosecco has been a protected designation of origin and no longer the name of a grape variety.",
    "Spumante must be made by natural second fermentation in pressure tanks, known as the Martinotti method, and the rosé needs a production period of at least 60 days.",
-   "Most Prosecco DOC is made as spumante or frizzante, and in 2024 still wine was only about 0.1% of bottles.",
    "Brut has up to 12 grams per liter of residual sugar, Extra Dry has 12 to 17 g/L and Dry has 17 to 32 g/L."
   ],
   "audited": true,
@@ -1148,7 +1061,6 @@
  },
  "italy/taurasi": {
   "facts": [
-   "Taurasi is a red wine from the province of Avellino in Campania, made principally from Aglianico, and it became a DOCG in 1993.",
    "Under DOCG rules Taurasi must be aged at least 3 years before release, with at least 1 year in wood, and Riserva at least 4 years.",
    "Up to 15% of other non-aromatic red grapes approved for Avellino province may be blended with the Aglianico.",
    "The Aglianico vineyards sit on hills between about 1,300 and 2,300 feet, on soils rich in clay and limestone with volcanic ash deposits in parts of the zone."
@@ -1164,9 +1076,7 @@
  "italy/valpolicella": {
   "facts": [
    "Valpolicella is a DOC red wine from the province of Verona, authorized in 1968, blended mainly from Corvina and/or Corvinone at 45 to 95% and Rondinella at 5 to 30%.",
-   "Classico comes from the zone around Negrar, Marano di Valpolicella, Fumane, Sant'Ambrogio di Valpolicella and San Pietro in Cariano, and Valpantena comes from the Valpantena valley.",
-   "Ripasso wine is refermented on the pressed skins left from Recioto or Amarone, then aged in wood, which gives it more structure, alcohol and roundness.",
-   "Valpolicella Ripasso is a DOC of its own, and Amarone and Recioto della Valpolicella, made from partly dried grapes, are DOCGs of their own."
+   "Classico comes from the zone around Negrar, Marano di Valpolicella, Fumane, Sant'Ambrogio di Valpolicella and San Pietro in Cariano, and Valpantena comes from the Valpantena valley."
   ],
   "audited": true,
   "cite": [
@@ -1204,8 +1114,7 @@
  },
  "new-zealand/marlborough": {
   "facts": [
-   "Marlborough is by far New Zealand's largest wine region, with three quarters of the country's wine production and 70% of its vineyard area in 2020.",
-   "Marlborough was registered as a Geographical Indication in 2018, and it is most famous for its acclaimed style of Sauvignon Blanc.",
+   "Marlborough was registered as a Geographical Indication in 2018.",
    "Central Wairau Valley soils are free-draining gravels and stony riverbeds, and cooling sea breezes and cool nights give a strong day to night temperature swing.",
    "The three subregions are the Wairau Valley, the Southern Valleys with older soils richer in clay, and the cooler Awatere Valley.",
    "Méthode Marlborough wines must be made entirely in Marlborough by the traditional method and aged on lees for a minimum of 18 months.",
@@ -1229,7 +1138,6 @@
  },
  "portugal": {
   "facts": [
-   "Portugal has two UNESCO World Heritage wine regions, the Douro Valley and Pico Island.",
    "Bairrada has clay-limestone soils, and Baga is considered its leading red grape.",
    "Most of the Douro region is schist, with some granite at its edges, and Portugal has many native grapes, including Touriga Nacional in the Douro and Dão."
   ],
@@ -1247,7 +1155,6 @@
  },
  "portugal/douro": {
   "facts": [
-   "The region sells nearly as much DOC Douro wine as Port, about 5.3 million cases against 7.1 million in 2025.",
    "The region has three subregions, from west to east: Baixo Corgo, Cima Corgo and Douro Superior.",
    "Rainfall drops from west to east, from about 47 inches a year in the Baixo Corgo to about 15 inches in the Douro Superior.",
    "The Marão and Montemuro mountains shelter the region from humid Atlantic winds, giving very cold winters and hot, dry summers.",
@@ -1293,11 +1200,7 @@
  },
  "portugal/porto": {
   "facts": [
-   "Port is made by adding grape spirit, called aguardente, to stop fermentation early, which leaves residual sugar and gives about 19% to 22% alcohol by volume.",
    "Port comes from the demarcated Douro region, which has three official zones: Baixo Corgo, Cima Corgo and Douro Superior.",
-   "Ruby blends young wines with fruity character and deep red color, while Tawny is aged in oak and may carry an age indication such as 10, 20, 30 or 40 years.",
-   "Vintage Port comes from a single year's grapes, is bottled two to three years after the harvest, and develops in bottle for 10 to 50 years.",
-   "Late Bottled Vintage is a single-year Ruby bottled after four to six years of aging in wood.",
    "Colheita is a single-harvest Port aged in wood for at least seven years, with the vintage year printed on the bottle."
   ],
   "audited": true,
@@ -1314,7 +1217,6 @@
  },
  "portugal/vinho-verde": {
   "facts": [
-   "Alvarinho and Loureiro are among the region's dominant white grape varieties.",
    "The DOC has nine subregions, which may appear on the label with the name Vinho Verde, such as Vinho Verde-Amarante."
   ],
   "audited": true,
@@ -1329,7 +1231,6 @@
   "facts": [
    "Stellenbosch's winemaking tradition goes back to the end of the 17th century, and it held about 13% of South Africa's wine grape vineyards in 2025.",
    "The district is ringed by the Helderberg, Simonsberg and Stellenbosch Mountains, with deep, well-drained soils.",
-   "Stellenbosch makes fine examples of almost all the noble grapes and is known for the quality of its red blends.",
    "A southeasterly wind called the Cape Doctor blows across the southwestern Cape in spring and summer, holding back vineyard disease and lowering temperatures by several degrees."
   ],
   "audited": true,
@@ -1349,9 +1250,7 @@
   ]
  },
  "spain": {
-  "facts": [
-   "Vino de pago (VP) is a category created in 2003 for single-estate wines, where a pago is a named site with its own soil and microclimate."
-  ],
+  "facts": [],
   "audited": true,
   "cite": [
    {
@@ -1362,10 +1261,7 @@
  },
  "spain/cava": {
   "facts": [
-   "Only wines made by the traditional method may be labeled cava.",
-   "More than 95% of cava is produced in the Comtats de Barcelona zone of Catalonia, whose heart is Sant Sadurní d'Anoia in Penedès.",
-   "Macabeo, Parellada and Xarel·lo are the most traditional cava grapes, and Chardonnay and Malvasia are also permitted.",
-   "Authorized red grapes are Garnacha tinta, Monastrell, Trepat and Pinot Noir, and rosé cava base wines must contain at least 25% red grapes.",
+   "Rosé cava base wines must contain at least 25% red grapes.",
    "The term cava was officially approved for Spanish sparkling wine in 1972, when the Regulatory Council of Sparkling Wines was set up."
   ],
   "audited": true,
@@ -1386,10 +1282,7 @@
  },
  "spain/jerez": {
   "facts": [
-   "Palomino is the base of almost all sherry, and Pedro Ximénez and Moscatel are used for sweet wines.",
    "The best vineyards are on albariza, an almost white soil that keeps moisture through the hot summer and suits Palomino best.",
-   "Fino and Manzanilla age under a layer of flor, while oloroso ages only oxidatively once the initial flor has gone.",
-   "Amontillado is first aged under flor and then exposed to oxygen, which makes it darker than a fino but lighter than an oloroso.",
    "In the solera system, wine moves through several tiers of barrels, so most sherry carries no vintage, and VOS and VORS mean at least 20 and 30 years average age."
   ],
   "audited": true,
@@ -1410,7 +1303,6 @@
  },
  "spain/priorat": {
   "facts": [
-   "Priorat is one of only two Spanish regions with DOCa status, alongside Rioja, and is called DOQ in Catalan.",
    "Its soil is llicorella, a brittle, layered slate of darkened copper color, and vine roots push down between its sheets.",
    "Garnatxa negre and Cariñena are the recommended red grapes, and Cabernet Sauvignon, Merlot and Syrah are among the other authorized reds.",
    "Yields are very low, around 1 kg of grapes per vine, against an authorized maximum of 6,000 kg/ha for red grapes.",
@@ -1448,10 +1340,7 @@
  "spain/ribera-del-duero": {
   "facts": [
    "Ribera del Duero is a DO on the northern plateau of Castile and León, founded on 21 July 1982, and it has stayed a DO rather than becoming DOCa.",
-   "Red wines must be at least 75% Tinto Fino, the local name for Tempranillo.",
-   "Other permitted grapes are Cabernet Sauvignon, Garnacha Tinta, Malbec and Merlot, and Albillo Mayor is the main white grape.",
-   "Valleys sit at about 2,460 to 2,790 feet in a continental Mediterranean climate, with about 17 inches of rain a year at Aranda de Duero and extremes from 108°F to minus 4°F.",
-   "Red Crianza needs two years with 12 months in oak, Reserva three years with 12 months in oak, and Gran Reserva five years with two in oak."
+   "Valleys sit at about 2,460 to 2,790 feet in a continental Mediterranean climate, with about 17 inches of rain a year at Aranda de Duero and extremes from 108°F to minus 4°F."
   ],
   "audited": true,
   "cite": [
@@ -1466,13 +1355,7 @@
   ]
  },
  "spain/rioja": {
-  "facts": [
-   "Rioja is a DOCa, the highest category in Spanish wine regulation, and in 1991 it became Spain's first DOCa.",
-   "Rioja has three zones: Rioja Alta, Rioja Alavesa and Rioja Oriental, which was formerly called Rioja Baja.",
-   "Rioja Alta gives wines with body and high acidity suited to barrel aging, Alavesa slightly higher alcohol and a little less acidity, and Oriental, the warmest and driest zone, riper wines suited to blending.",
-   "The traditional red varieties are Tempranillo, Garnacha tinta, Mazuelo and Graciano, and the traditional whites are Viura, Malvasía and Garnacha blanca.",
-   "Aging takes place in 225-liter oak barrels, and red Crianza needs two years in total with at least one year in barrel."
-  ],
+  "facts": [],
   "audited": true,
   "cite": [
    {
@@ -1483,7 +1366,6 @@
  },
  "spain/rueda": {
   "facts": [
-   "Rueda is a Spanish DO in Castile and León, known mainly for white wines based on the Verdejo grape.",
    "The vineyards sit on a flat high plain at about 2,300 to 2,850 feet, with the Duero River forming its northern edge.",
    "The climate is continental with some Atlantic influence, with long cold winters, late spring frosts and hot, dry summers.",
    "Drip irrigation now helps vines cope with the hot, dry summers.",
@@ -1500,7 +1382,6 @@
  "united-states": {
   "facts": [
    "American Viticultural Areas (AVAs) are based on distinct local geography, climate and soil, and the federal rules for creating them date from 1978.",
-   "For an AVA to appear on a label, at least 85% of the grapes must come from within it.",
    "A wine labeled with a varietal must be at least 75% of that grape, and Oregon requires 90% for certain varietals such as Pinot Noir."
   ],
   "audited": true,
@@ -1517,7 +1398,7 @@
  },
  "united-states/columbia-valley": {
   "facts": [
-   "Columbia Valley is a large AVA covering much of central and southern Washington and reaching into northern Oregon, established in 1984.",
+   "Columbia Valley was established as an AVA in 1984.",
    "Over 99% of Washington's vineyard acreage lies within it, and almost all the state's growing regions, including Walla Walla Valley, Yakima Valley, Red Mountain and Horse Heaven Hills, are sub-appellations of it.",
    "The Cascade Range casts a rain shadow, leaving an average of 6 to 8 inches of rain a year, so vineyards depend on irrigation.",
    "Irrigation water comes from the Columbia River and its tributaries, along with aquifers."
@@ -1561,10 +1442,7 @@
  "united-states/napa-valley": {
   "facts": [
    "Napa Valley was established as the nation's second AVA in 1981 and covers all of Napa County except the portion northeast of Putah Creek and Lake Berryessa.",
-   "Grape varieties grown include Cabernet Sauvignon, Chardonnay, Pinot Noir, Merlot and Zinfandel.",
-   "Napa Valley holds seventeen nested AVAs, including Oakville and Rutherford.",
-   "The southern end is coolest, with marine breezes crossing San Pablo Bay, while farther up the valley the ocean has less influence and summers are warmer.",
-   "Napa Valley has a dry Mediterranean climate."
+   "The southern end is coolest, with marine breezes crossing San Pablo Bay, while farther up the valley the ocean has less influence and summers are warmer."
   ],
   "audited": true,
   "cite": [
@@ -1586,7 +1464,6 @@
   "facts": [
    "A county is a legal American appellation of origin in its own right, so Sonoma County can go on a label without being an AVA when at least 75 percent of the wine comes from there.",
    "Sonoma County has 19 AVAs, reflecting its wide variety of climate and soil conditions.",
-   "The most common varieties planted are Chardonnay, Cabernet Sauvignon and Pinot Noir, and the area is also known for Merlot and Zinfandel.",
    "In Russian River Valley, cooling Pacific fog usually arrives in the evening, often dropping the temperature 35 to 40 degrees from its daytime high.",
    "Russian River Valley is known for cool climate varieties, notably Pinot Noir and Chardonnay.",
    "The Petaluma Gap pulls cool coastal air inland through a gap in the coastal mountains, and its wind and fog suit Pinot Noir, Chardonnay and Syrah."
@@ -1609,7 +1486,7 @@
  },
  "united-states/willamette-valley": {
   "facts": [
-   "Willamette Valley is an Oregon AVA established in 1983, with a cool climate and a name now synonymous with Pinot Noir.",
+   "Willamette Valley was established as an AVA in 1983.",
    "Predominant soils are marine sedimentary, volcanic and loess.",
    "Northerly latitude and the moderating Pacific Ocean make it one of the coolest winegrowing regions in North America.",
    "Yamhill-Carlton only includes land between 200 and 1,000 feet in elevation."

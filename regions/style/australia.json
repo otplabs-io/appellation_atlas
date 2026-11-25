@@ -19,8 +19,7 @@
  },
  "australia/adelaide-hills": {
   "notes": [
-   "Adelaide Hills Chardonnay is medium weight with good natural acidity, and some from cooler sites goes into sparkling wine.",
-   "Sauvignon Blanc is the region's most widely planted white grape."
+   "Adelaide Hills Chardonnay is medium weight with good natural acidity, and some from cooler sites goes into sparkling wine."
   ],
   "art": [
    "Chardonnay",
@@ -79,8 +78,7 @@
  },
  "australia/eden-valley": {
   "notes": [
-   "Eden Valley Riesling often shows a characteristic lime note.",
-   "Its soils are rockier and more acidic than the neighboring Barossa Valley's."
+   "Eden Valley Riesling often shows a characteristic lime note."
   ],
   "art": [
    "Riesling",
@@ -153,7 +151,6 @@
  },
  "australia/mornington-peninsula": {
   "notes": [
-   "The Mornington Peninsula is strongly maritime, and Pinot Noir is its most planted grape.",
    "Its Chardonnay typically shows melon, citrus and fig."
   ],
   "art": [
@@ -174,9 +171,7 @@
   ]
  },
  "australia/riverland": {
-  "notes": [
-   "The Riverland is Australia's largest grape-growing region by tonnage, and its main grapes are Shiraz, Chardonnay and Cabernet Sauvignon."
-  ],
+  "notes": [],
   "art": [
    "Chardonnay",
    "Grenache"
@@ -187,8 +182,7 @@
  },
  "australia/rutherglen": {
   "notes": [
-   "Rutherglen is known for full bodied reds from Shiraz and Petite Sirah, and for sweet fortified wines.",
-   "Rutherglen Muscat is made from grapes shriveled on the vine, fortified with grape spirit and aged in old oak casks."
+   "Rutherglen is known for full bodied reds from Shiraz and Petite Sirah, and for sweet fortified wines."
   ],
   "art": [
    "Victorian wine"
@@ -213,7 +207,6 @@
  },
  "australia/tasmania": {
   "notes": [
-   "Tasmania's main grapes are Pinot Noir, Chardonnay and Pinot Gris, and Pinot Noir and Chardonnay also go into traditional method sparkling wine.",
    "The wines keep a natural acidity that gives freshness and balance.",
    "Its cool climate gives crisp, less oaked Chardonnay with lime notes."
   ],
@@ -235,9 +228,7 @@
   ]
  },
  "australia/western-australia": {
-  "notes": [
-   "Margaret River has a strongly maritime climate, and Cabernet Sauvignon and Chardonnay are its leading wines."
-  ],
+  "notes": [],
   "art": [
    "Merlot",
    "Syrah",
@@ -249,15 +240,16 @@
  },
  "australia/yarra-valley": {
   "notes": [
-   "The Yarra Valley is relatively cool even at its warmest sites, and it grows Chardonnay and Pinot Noir for still and sparkling wine.",
-   "Yarra Cabernet, often blended with a little Cabernet Franc and Merlot, ranges from medium to full bodied with silky tannins."
+   "Yarra Cabernet, often blended with a little Cabernet Franc and Merlot, ranges from medium to full bodied with silky tannins.",
+   "Yarra Chardonnay has moved away from the oaky, rich styles of the 1980s and 1990s toward fine, restrained wines, often picked at lower sugar levels to keep acidity high."
   ],
   "art": [
    "Yarra Valley wine region",
    "Cabernet Sauvignon"
   ],
   "ref": [
-   "audit-023cdac1"
+   "audit-023cdac1",
+   "kf-wine-australia-australian-wine-discovered-region-guide-yarra"
   ]
  },
  "australia/geelong": {
@@ -273,7 +265,6 @@
  },
  "australia/goulburn-valley": {
   "notes": [
-   "The Goulburn Valley is warm, with an inland valley-floor climate and big swings between day and night.",
    "It has the world's oldest and largest plantings of Marsanne, lemony and delicate when young and gaining honeysuckle with age.",
    "Chardonnay is peachy and buttery, and can grow complex with age.",
    "Cabernet Sauvignon is ripe, warm and earthy, with chocolate notes."
@@ -284,10 +275,8 @@
  },
  "australia/murray-darling": {
   "notes": [
-   "The Murray Darling is hot, with long sunshine hours, low humidity and almost no growing-season rain, so vines need irrigation.",
    "Chardonnay, its most important premium wine, has a fruity softness and generosity.",
-   "Shiraz and Cabernet have plenty of soft, sweet fruit and are best drunk at one to two years old.",
-   "Some wineries succeed with Mediterranean grapes suited to the warm climate."
+   "Shiraz and Cabernet have plenty of soft, sweet fruit and are best drunk at one to two years old."
   ],
   "ref": [
    "wa-murray-darling"
@@ -297,7 +286,6 @@
   "notes": [
    "The Riverina's specialty is luscious sweet Semillon, left on the vine for up to two months after normal ripeness.",
    "Humid autumns bring noble rot, which concentrates the grapes' sugar and acid.",
-   "Summers are hot and sunny, with low humidity.",
    "Chardonnay, with careful use of oak, has pleasant varietal flavor and weight."
   ],
   "ref": [

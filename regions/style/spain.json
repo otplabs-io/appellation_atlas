@@ -33,10 +33,8 @@
  },
  "spain/priorat": {
   "notes": [
-   "Very old vines on steep schist terraces give tiny yields, around 5 to 6 hectoliters a hectare.",
    "Priorat is dense, rich, concentrated and dark, with noticeable tannin.",
-   "It shows dark black fruit with notes of fig and tar.",
-   "Reds are Garnacha or Cariñena, alone or blended with grapes such as Cabernet Sauvignon, Merlot or Syrah."
+   "It shows dark black fruit with notes of fig and tar."
   ],
   "art": [
    "Grenache",
@@ -45,11 +43,11 @@
  },
  "spain/ribera-del-duero": {
   "notes": [
-   "Ribera del Duero reds must be at least 75% Tempranillo, known here as Tinto Fino or Tinta del País.",
-   "Its high-altitude continental climate, with hot days and cold nights, suits Tempranillo well."
+   "Tempranillo and Garnacha make Ribera del Duero's full-bodied reds."
   ],
   "art": [
-   "Tempranillo"
+   "Tempranillo",
+   "Spanish wine"
   ],
   "ref": [
    "audit-2fe0c3b0"
@@ -57,8 +55,9 @@
  },
  "spain/rioja": {
   "notes": [
-   "Tempranillo is Rioja's leading red grape, grown alongside Garnacha, Graciano and Mazuelo.",
-   "Red Crianza and Reserva spend at least one year in 225-liter oak barrels, and Gran Reserva at least two.",
+   "Oak aging gives Rioja reds pronounced vanilla flavors, long a trademark of the region, though some modern producers use less oak.",
+   "Tempranillo has a fairly neutral profile, so in Rioja it is often blended or aged long in oak, where it takes on the barrel's flavor.",
+   "Rioja Alta gives wines with body and high acidity suited to barrel aging, Alavesa slightly higher alcohol and a little less acidity, and Oriental, the warmest and driest zone, riper wines suited to blending.",
    "Some white Rioja Reserva and Gran Reserva ages for decades into a highly distinctive, aromatic wine."
   ],
   "art": [
@@ -68,13 +67,12 @@
   ],
   "ref": [
    "audit-a10113f5",
-   "audit-1fcb41cc"
+   "audit-1fcb41cc",
+   "kf-pliego-de-condiciones-doca-rioja-en-vigor-consejo-regulador"
   ]
  },
  "spain/rueda": {
-  "notes": [
-   "Rueda Verdejo must be at least 85% Verdejo."
-  ],
+  "notes": [],
   "art": [
    "Verdejo"
   ]
@@ -91,9 +89,7 @@
   ]
  },
  "spain/penedes": {
-  "notes": [
-   "Xarel·lo, long a blending grape here, is now also made on its own."
-  ],
+  "notes": [],
   "art": [
    "Spanish wine",
    "Tempranillo",
@@ -101,10 +97,7 @@
   ]
  },
  "spain/cava": {
-  "notes": [
-   "Cava is a sparkling wine that ferments and ages in bottle, named for the cellars where this happens.",
-   "Macabeo and Xarel·lo are key grapes, and some top Cavas are led by Xarel·lo."
-  ],
+  "notes": [],
   "art": [
    "Spanish wine",
    "Macabeo",
@@ -113,7 +106,6 @@
  },
  "spain/navarra": {
   "notes": [
-   "Merlot is sometimes blended here with Tempranillo.",
    "Navarra has a long rosado tradition, mostly from Garnacha and made by the bleeding method."
   ],
   "art": [
@@ -146,7 +138,6 @@
  },
  "spain/bierzo": {
   "notes": [
-   "Bierzo reds are made mostly from Mencía, and its whites mostly from Godello.",
    "The reds smell of red and black fruit and violets, and taste fresh, with medium to full body.",
    "The whites show white and stone fruit, citrus and white flowers, with freshness and medium to full body.",
    "Barrel-aged reds add vanilla, coconut, toast and spice."
@@ -157,7 +148,6 @@
  },
  "spain/toro": {
   "notes": [
-   "Toro reds are at least 75% Tinta de Toro, or at least 85% Garnacha.",
    "Very cold winters, long sunny days and extreme temperatures give wines with structure and high alcohol.",
    "The reds show red and black fruit, with medium to full body and balanced alcohol and acidity.",
    "Barrel-aged reds, from Roble to Gran Reserva, add oak aromas as they age.",
@@ -169,7 +159,6 @@
  },
  "spain/calatayud": {
   "notes": [
-   "Most of Calatayud's vineyards sit high, between 650 and 900 m, and the altitude decides when each style is picked.",
    "Young reds are deep cherry to garnet, fruity, fleshy and balanced, with soft tannin and a long finish.",
    "Rosés are strawberry to raspberry pink, intensely floral and fruity, fresh and powerful.",
    "Calatayud Superior is a deep red, with fruit, balsamic, mineral, toast and spice aromas.",
@@ -181,7 +170,6 @@
  },
  "spain/jumilla": {
   "notes": [
-   "Monastrell is Jumilla's key grape, tough enough for drought, summer heat and spring frost.",
    "It gives broad, fleshy wines with good alcohol and acidity, ripe fruit and well-integrated tannin.",
    "The reds run from violet to brick red, with red and black fruit, and are tannic.",
    "Other grapes add color stability, acidity and aging potential.",

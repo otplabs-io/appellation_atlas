@@ -333,7 +333,7 @@
   },
   "classico": {
    "name": "Classico",
-   "def": "The original heartland of an Italian wine area. Every bottle of Chianti Classico carries the black rooster on its neck seal.",
+   "def": "The original heartland of an Italian wine area.",
    "source": "SRC:term-51d6abe1"
   },
   "riserva": {
@@ -376,8 +376,7 @@
   "france": [
    "aoc",
    "igp",
-   "vdf",
-   "old-vines"
+   "vdf"
   ],
   "france/pessac-leognan": [
    "graves-cc",
@@ -402,9 +401,7 @@
    "tba",
    "eiswein",
    "trocken",
-   "landwein",
-   "vdp-gg",
-   "sekt"
+   "vdp-gg"
   ],
   "austria": [
    "qualitatswein-at",
@@ -630,7 +627,8 @@
  },
  "only": {
   "france/bordeaux": [
-   "bx-sup"
+   "bx-sup",
+   "cru-classe-1855"
   ],
   "france/bordeaux-superieur": [
    "bx-sup"
@@ -643,6 +641,13 @@
   "france/beaujolais": [
    "bj-nouveau",
    "bj-villages"
+  ],
+  "france": [
+   "old-vines"
+  ],
+  "germany": [
+   "landwein",
+   "sekt"
   ]
  },
  "sources": {

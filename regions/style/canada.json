@@ -1,8 +1,6 @@
 {
  "canada": {
-  "notes": [
-   "Ontario is the world's largest producer of icewine."
-  ],
+  "notes": [],
   "art": [
    "Chardonnay",
    "Ontario wine"
@@ -18,9 +16,7 @@
   ]
  },
  "canada/ontario": {
-  "notes": [
-   "Ontario is the world's largest producer of icewine."
-  ],
+  "notes": [],
   "art": [
    "Ontario wine",
    "Chardonnay",

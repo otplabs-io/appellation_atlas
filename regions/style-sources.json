@@ -320,6 +320,66 @@
   "audit-4f184615": {
    "name": "Paso Robles Wine Country Alliance, varieties produced",
    "url": "https://pasowine.com/paso-robles/varieties-produced/"
+  },
+  "kf-wine-australia-australian-wine-discovered-region-guide-yarra": {
+   "name": "Wine Australia, Australian Wine Discovered, Region Guide: Yarra Valley (what the wines taste like)",
+   "url": "https://www.australianwine.com/getContentAsset/e072b974-964d-4f0d-973d-f240c1060497/2a6464f5-7547-4f96-aacf-a0c3da1718f8/AWD_YarraValley_Guide.pdf"
+  },
+  "kf-bivb-the-c-te-de-beaune-and-the-hautes-c-tes-de-beaune": {
+   "name": "BIVB, The Côte de Beaune and the Hautes Côtes de Beaune (what the wines taste like)",
+   "url": "https://www.bourgogne-wines.com/wine-and-terroir/our-vineyards/cote-de-beaune-and-hautes-cotes-de-beaune/cote-de-beaune-and-the-hautes-cotes-de-beaune-a-winegrowing-region-renowned-for-its-legendary-wines,2471,9314.html"
+  },
+  "kf-bivb-appellations-grand-cru-de-la-c-te-de-beaune-montrachet": {
+   "name": "BIVB, Appellations Grand Cru de la Côte de Beaune (Montrachet family sheet) (what the wines taste like)",
+   "url": "https://www.vins-bourgogne.fr/gallery_files/site/321/402/19991/20164.pdf"
+  },
+  "kf-cahier-des-charges-de-l-aoc-corton-d-cret-n-2011-1390-du-26": {
+   "name": "Cahier des charges de l'AOC Corton, décret n° 2011-1390 du 26 octobre 2011 (what the wines taste like)",
+   "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-7b3c14e3-4105-489a-91a6-3e8b7ee78017/telechargement"
+  },
+  "kf-cahier-des-charges-de-l-aoc-corton-charlemagne-d-cret-n-2011": {
+   "name": "Cahier des charges de l'AOC Corton-Charlemagne, décret n° 2011-1380 du 25 octobre 2011 (what the wines taste like)",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-b0de3df4-2bfa-4b92-8e50-9fe5d7d24d73/telechargement"
+  },
+  "kf-cahier-des-charges-de-l-aoc-meursault-arr-t-du-4-juin-2026": {
+   "name": "Cahier des charges de l'AOC Meursault, arrêté du 4 juin 2026 (what the wines taste like)",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-f14f68d0-cb2a-49ca-9fa5-edd6b2828624/telechargement"
+  },
+  "kf-cahier-des-charges-de-l-aoc-pommard-bo-n-47-du-25-novembre-2": {
+   "name": "Cahier des charges de l'AOC Pommard, BO n°47 du 25 novembre 2011 (what the wines taste like)",
+   "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-e86a7a8a-07ef-470c-b050-7de95dcd5da4/telechargement"
+  },
+  "kf-cahier-des-charges-de-l-aoc-volnay-arr-t-du-20-f-vrier-2026": {
+   "name": "Cahier des charges de l'AOC Volnay, arrêté du 20 février 2026 (what the wines taste like)",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-3c0ee7f6-d1d2-4a6f-b5ef-592027ddaf01/telechargement"
+  },
+  "kf-cahier-des-charges-de-l-aoc-meursault-arr-t-du-4-juin-2026-b": {
+   "name": "Cahier des charges de l'AOC Meursault, arrêté du 4 juin 2026 (BO n°24 du 11 juin 2026) (what the wines taste like)",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-f14f68d0-cb2a-49ca-9fa5-edd6b2828624/telechargement"
+  },
+  "kf-bivb-meursault-appellation-sheet": {
+   "name": "BIVB, Meursault appellation sheet (what the wines taste like)",
+   "url": "https://www.bourgogne-wines.com/wine-and-terroir/bourgogne-and-its-appellations/meursault,2458,9253.html?args=Y29tcF9pZD0yMjc4JmFjdGlvbj12aWV3RmljaGUmaWQ9MzQ5Jnw%3D"
+  },
+  "kf-cahier-des-charges-de-l-aoc-pauillac-arr-t-du-27-avril-2026": {
+   "name": "Cahier des charges de l'AOC Pauillac, arrêté du 27 avril 2026 (BO n°19 du 7 mai 2026) (what the wines taste like)",
+   "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-80bb5b86-f133-499e-81b2-27bce9470e36/telechargement"
+  },
+  "kf-cahier-des-charges-de-l-aoc-puligny-montrachet-d-cret-n-2011": {
+   "name": "Cahier des charges de l'AOC Puligny-Montrachet, décret n° 2011-1298 du 12 octobre 2011 (what the wines taste like)",
+   "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-437a4e9a-13eb-4d74-8d07-9711118e5d41/telechargement"
+  },
+  "kf-bivb-montrachet-b-tard-montrachet-chevalier-montrachet-criot": {
+   "name": "BIVB, Montrachet, Bâtard-Montrachet, Chevalier-Montrachet, Criots-Bâtard-Montrachet, Bienvenues-Bâtard-Montrachet sheet (what the wines taste like)",
+   "url": "https://www.bourgogne-wines.com/wine-and-terroir/bourgogne-and-its-appellations/gallery_files/site/321/402/57644/57698.pdf"
+  },
+  "kf-bivb-puligny-montrachet-appellation-sheet": {
+   "name": "BIVB, Puligny-Montrachet appellation sheet (what the wines taste like)",
+   "url": "https://www.bourgogne-wines.com/wine-and-terroir/bourgogne-and-its-appellations/puligny-montrachet,2458,9253.html?args=Y29tcF9pZD0yMjc4JmFjdGlvbj12aWV3RmljaGUmaWQ9Mzc4Jnw%3D"
+  },
+  "kf-pliego-de-condiciones-doca-rioja-en-vigor-consejo-regulador": {
+   "name": "Pliego de condiciones DOCa Rioja en vigor (Consejo Regulador) (what the wines taste like)",
+   "url": "https://riojawine.com/wp-content/uploads/2023/07/pliego-de-condiciones-de-la-doca-rioja-en-vigor.pdf"
   }
  }
 }
