@@ -1,12 +1,11 @@
 import SwiftUI
+import UIKit
 
 /// The globe, drawn natively. It flies between places, turns and zooms under the fingers, carries on after a flick,
 /// and taps pick a place.
 struct GlobeView: View {
     @Environment(Globe.self) private var globe
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    @GestureState private var dragging = false
-    @GestureState private var pinching = false
     var bottomInset: CGFloat = 0
     var topInset: CGFloat = 0
     /// Space covered at the sides, as by an iPad sidebar floating over the map, so the globe centers in what is left.
@@ -25,19 +24,7 @@ struct GlobeView: View {
             }
             .opacity(globe.appear)
             .contentShape(Rectangle())
-            .gesture(
-                SimultaneousGesture(
-                    DragGesture(minimumDistance: 3)
-                        .updating($dragging) { _, on, _ in on = true }
-                        .onChanged { globe.dragChanged(start: $0.startLocation, translation: $0.translation) }
-                        .onEnded { globe.dragEnded(velocity: $0.velocity) },
-                    MagnifyGesture()
-                        .updating($pinching) { _, on, _ in on = true }
-                        .onChanged { globe.pinchChanged(scale: $0.magnification, anchor: $0.startLocation) }))
-            // a gesture's state resets whether it ended or was cancelled, so this always hears the fingers lift
-            .onChange(of: dragging || pinching) { _, on in
-                if !on { DispatchQueue.main.async { globe.touchesEnded() } }   // after the drag's own end has run
-            }
+            .gesture(GlobeTouches(globe: globe))
             .gesture(
                 ExclusiveGesture(
                     SpatialTapGesture(count: 2).onEnded { v in globe.zoomIn(at: v.location) },
@@ -197,4 +184,75 @@ private struct Frame: Equatable {
     let labels: Int, dots: Int
     let low: Double, high: Double
     let previews: [String]
+}
+
+/// Every finger on the globe, the way the website hears pointers: the midpoint of the fingers, the space between the
+/// first two, and how many there are. SwiftUI's drag follows only the first finger, which pinned that finger's spot
+/// in place during a pinch instead of the spot between the fingers.
+struct GlobeTouches: UIGestureRecognizerRepresentable {
+    let globe: Globe
+
+    func makeUIGestureRecognizer(context: Context) -> Fingers { Fingers() }
+
+    func handleUIGestureRecognizerAction(_ r: Fingers, context: Context) {
+        switch r.state {
+        case .began, .changed:
+            globe.touchesMoved(to: context.converter.localLocation, spread: r.spread, fingers: r.touches.count, time: r.time)
+        case .ended, .cancelled:
+            globe.touchesEnded(time: r.time)
+        default: break
+        }
+    }
+
+    /// Starts once a finger has moved a few points, so taps still reach the tap gestures, and ends when the last
+    /// finger lifts.
+    final class Fingers: UIGestureRecognizer {
+        private(set) var touches: [UITouch] = []
+        private(set) var time: TimeInterval = 0
+        /// Where each finger landed, to tell a drag from a tap.
+        private var landed: [UITouch: CGPoint] = [:]
+
+        /// How far apart the first two fingers are, in points.
+        var spread: Double? {
+            guard touches.count > 1, let v = view else { return nil }
+            let a = touches[0].location(in: v), b = touches[1].location(in: v)
+            return hypot(a.x - b.x, a.y - b.y)
+        }
+
+        override func location(in v: UIView?) -> CGPoint {
+            guard !touches.isEmpty else { return .zero }
+            let ps = touches.map { $0.location(in: v) }
+            return CGPoint(x: ps.map(\.x).reduce(0, +) / CGFloat(ps.count), y: ps.map(\.y).reduce(0, +) / CGFloat(ps.count))
+        }
+
+        override func touchesBegan(_ ts: Set<UITouch>, with e: UIEvent) {
+            touches += ts.filter { !touches.contains($0) }
+            time = e.timestamp
+            for t in ts { landed[t] = t.location(in: view) }
+            if state == .began || state == .changed { state = .changed }
+        }
+
+        override func touchesMoved(_ ts: Set<UITouch>, with e: UIEvent) {
+            time = e.timestamp
+            if state == .possible {
+                if touches.contains(where: { t in landed[t].map { p in let q = t.location(in: view); return hypot(q.x - p.x, q.y - p.y) >= 3 } ?? false }) {
+                    state = .began
+                }
+            } else if state == .began || state == .changed { state = .changed }
+        }
+
+        override func touchesEnded(_ ts: Set<UITouch>, with e: UIEvent) { lift(ts, e, cancelled: false) }
+        override func touchesCancelled(_ ts: Set<UITouch>, with e: UIEvent) { lift(ts, e, cancelled: true) }
+
+        private func lift(_ ts: Set<UITouch>, _ e: UIEvent, cancelled: Bool) {
+            touches.removeAll { ts.contains($0) }
+            for t in ts { landed[t] = nil }
+            time = e.timestamp
+            let on = state == .began || state == .changed
+            if touches.isEmpty { state = on ? (cancelled ? .cancelled : .ended) : .failed }
+            else if on { state = .changed }
+        }
+
+        override func reset() { super.reset(); touches = []; landed = [:] }
+    }
 }
