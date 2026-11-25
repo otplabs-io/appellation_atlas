@@ -14,7 +14,7 @@ struct PlaceInfo: View {
         var jump: String? {
             switch self {
             case .style: "Style"
-            case .terms: "Labeling"
+            case .terms: "Label"
             case .planted: "Planted"
             case .climate: "Climate"
             case .soil: "Rock and soil"
@@ -121,7 +121,7 @@ struct PlaceInfo: View {
 
     /// What the words on its labels mean: the terms its region uses, for the benchmark places (terms in web/atlas.js).
     private var terms: some View {
-        AtlasSection(title: "Labeling rules") {
+        AtlasSection(title: "On the label") {
             VStack(alignment: .leading, spacing: 10) {
                 ForEach(Array(f["terms"].array.enumerated()), id: \.offset) { _, t in
                     VStack(alignment: .leading, spacing: 2) {

@@ -406,7 +406,7 @@ function renderInfo(f){
   const R=f.research;
   if(f.keyfacts&&f.keyfacts.length) X.keyfacts=block('Key facts',`<ul class="keyfacts">${f.keyfacts.map(t=>`<li class="ts-body">${esc(t)}</li>`).join('')}</ul>`);   // from the full article (src/keyfacts.py)
   if(f.style&&f.style.notes.length) X.style=block('Wine style',`${f.style.of?`<p class="ts-caption sub">Written for ${esc(f.style.of)} as a whole.</p>`:''}<ul class="keyfacts">${f.style.notes.map(t=>`<li class="ts-body">${esc(t)}</li>`).join('')}</ul>`);   // what the wines taste like (src/style.py)
-  if(f.terms&&f.terms.length) X.terms=block('Labeling rules',`<dl class="terms">${f.terms.map(([t,d])=>`<div><dt class="ts-fact_label">${esc(t)}</dt><dd class="ts-body">${esc(d)}</dd></div>`).join('')}</dl>`);   // the label terms its region uses (src/terms.py)
+  if(f.terms&&f.terms.length) X.terms=block('On the label',`<dl class="terms">${f.terms.map(([t,d])=>`<div><dt class="ts-fact_label">${esc(t)}</dt><dd class="ts-body">${esc(d)}</dd></div>`).join('')}</dl>`);   // the label terms its region uses (src/terms.py)
   if(R&&R.sheet){X.short=block('In short',`<div class="prose">${Object.values(R.sheet).filter(Boolean).map(t=>`<p class="ts-body">${esc(t)}</p>`).join('')}</div>`,'From our research');}
   const pl=f.planted;
   if(pl&&pl.grapes.length){
@@ -504,7 +504,7 @@ function renderInfo(f){
   X.sources=block('Sources',knownLine+(src.length?`<ul class="src ts-caption">${src.map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`:esc(s.name)}</li>`).join('')}</ul>`:''));
   // what the place is, then what grows there, then why it grows there, then the law, then the notes
   const order=['keyfacts','style','terms','glance','short','planted','climate','soil','land','parts','rules','ava','gi','found','none','sources'];
-  const JUMP={style:'Style',terms:'Labeling',planted:'Planted',climate:'Climate',soil:'Rock and soil',land:'Land',parts:'Compare',rules:'Vineyard',ava:'AVA',gi:'GI',found:'Notes'};
+  const JUMP={style:'Style',terms:'Label',planted:'Planted',climate:'Climate',soil:'Rock and soil',land:'Land',parts:'Compare',rules:'Vineyard',ava:'AVA',gi:'GI',found:'Notes'};
   for(const k of order) if(X[k]) X[k]=X[k].replace('<section class="row"',`<section class="row" id="s-${k}"`);
   const jumps=order.filter(k=>X[k]&&JUMP[k]);
   h=(jumps.length>=3?`<nav class="jump" aria-label="On this page">${jumps.map(k=>`<button type="button" class="step ts-ladder_step" data-jump="s-${k}">${JUMP[k]}</button>`).join('')}</nav>`:'')+order.map(k=>X[k]||'').join('')+FEEDBACK(f.name,f.id);

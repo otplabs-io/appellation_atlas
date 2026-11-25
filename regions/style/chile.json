@@ -27,7 +27,7 @@
  },
  "chile/casablanca-valley": {
   "notes": [
-   "Casablanca is a cool, ocean-influenced valley whose leading grapes are Sauvignon Blanc and Chardonnay."
+   "Casablanca Sauvignon Blanc is known for a fresh, complex style."
   ],
   "art": [
    "Chilean wine"
@@ -38,7 +38,6 @@
  },
  "chile/colchagua-valley": {
   "notes": [
-   "Colchagua makes mostly red wine, particularly Carmenère, Cabernet Sauvignon and Merlot.",
    "Pacific breezes cool the valley and lengthen ripening, helping the grapes keep their acidity."
   ],
   "art": [
@@ -50,9 +49,7 @@
   ]
  },
  "chile/curico-valley": {
-  "notes": [
-   "Curicó is one of Chile's largest wine areas, and Cabernet Sauvignon and Sauvignon Blanc are its main grapes."
-  ],
+  "notes": [],
   "art": [
    "Chilean wine",
    "Cabernet Sauvignon"
@@ -85,7 +82,6 @@
  },
  "chile/limari-valley": {
   "notes": [
-   "Limarí is best known for Chardonnay and Syrah, and it also makes Pinot Noir.",
    "Morning fog from the Pacific and mineral-rich soils give fresh wines with a distinct mineral edge."
   ],
   "art": [
@@ -96,9 +92,7 @@
   ]
  },
  "chile/southern-chile": {
-  "notes": [
-   "Southern Chile is cool and wet. Its newer vineyards suit Pinot Noir, Chardonnay, Sauvignon Blanc and Riesling, and Itata keeps old País and Muscat vines."
-  ],
+  "notes": [],
   "art": [
    "Chilean wine"
   ],
@@ -117,7 +111,6 @@
  },
  "chile/elqui-valley": {
   "notes": [
-   "Elqui is arid, with clear skies, and Syrah and Sauvignon Blanc lead.",
    "In its cool climate, Syrah becomes spicy and complex."
   ],
   "ref": [
@@ -127,8 +120,7 @@
  "chile/coquimbo": {
   "notes": [
    "In the Elqui Valley, Syrah and Sauvignon Blanc lead, and the cool climate makes Syrah spicy and complex.",
-   "The Limarí Valley's limestone soils and sea breezes give Chardonnay an attractive minerality.",
-   "Limarí Syrah is also well regarded."
+   "The Limarí Valley's limestone soils and sea breezes give Chardonnay an attractive minerality."
   ],
   "ref": [
    "woc"
@@ -136,8 +128,6 @@
  },
  "chile/cachapoal-valley": {
   "notes": [
-   "Cachapoal is known for reds, mainly Carmenère, Cabernet Sauvignon and Merlot, about 80% of its output.",
-   "Cool-climate grapes grow in high vineyards in the Andes foothills, and warmer ones near Lake Rapel.",
    "Bright sun, Andes breezes and cool nights give Cabernet Sauvignon consistent ripeness."
   ],
   "ref": [

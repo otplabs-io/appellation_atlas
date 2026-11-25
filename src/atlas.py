@@ -938,10 +938,10 @@ def facts():
         if n in R: f['research']=R[n]
         tk=[k for p_ in [c_[0] for c_ in chain]+[n] for k in LT['places'].get(p_,[])]+LT.get('only',{}).get(n,[]); tk=[k for k in tk if n not in LT.get('except',{}).get(k,[])]
         tiers=TIER_TERMS.get(n.split('/')[0])
-        if tiers:   # a DOC page explains DOC, not every tier of Italy's ladder; a place with no tier of its own (a region, a group) keeps them all
+        if tiers:   # a DOC page explains DOC, not every tier of Italy's ladder; the country page shows the whole ladder, and a region with no tier of its own (Burgundy, Piedmont) shows none
             kinds_=list(f.get('kind') or [])+[x for c_ in reversed(chain) for x in categories.label(c_[0],[k_ for k_ in T[c_[0]].get('official',[]) if k_] or ([T[c_[0]]['kind']] if T[c_[0]].get('kind') else []),CATS) or []]
             own=next((tiers[x] for x in kinds_ if x in tiers),None)
-            if own: tk=[k for k in tk if k==own or k not in set(tiers.values())|{'vdf'}]
+            if own or '/' in n: tk=[k for k in tk if k==own or k not in set(tiers.values())|{'vdf'}]
         if 'ava' in tk and not f.get('ava'): tk=[k for k in tk if k!='ava']   # the AVA rule on an AVA page, not on a state or an informal region (California's Central Valley)   # what the words on its labels mean: its own terms, those of the regions above it, and terms for the place alone (Bordeaux Supérieur is not a Loupiac term)
         if tk:
             f['terms']=[[LT['terms'][k]['name'],LT['terms'][k]['def']] for k in dict.fromkeys(tk)]
