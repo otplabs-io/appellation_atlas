@@ -15,7 +15,9 @@ const START={lon:-33.56,lat:18.13,ex:.83775,ey:.9314};   // where the globe open
 const S={p:'world'};
 const fmt=n=>n==null?'':Math.round(n).toLocaleString('en-US');
 // ---------- the place in the URL
-function readHash(){const h=decodeURIComponent(location.hash.replace(/^#\/?/,'')); S.p=h&&PL[h]?h:'world';}
+function readHash(){const h=decodeURIComponent(location.hash.replace(/^#\/?/,'')); S.p=h&&PL[h]?h:'world'; appBanner();}
+// Safari's App Store banner: Open takes the app straight to the place on screen (the app reads atlas://place/<id>)
+function appBanner(){const m=document.querySelector('meta[name="apple-itunes-app"]'); if(m) m.content='app-id=6839710428'+(S.p!=='world'?', app-argument=atlas://place/'+S.p:'');}
 const link=id=>id&&id!=='world'?'#/'+id:'#/';
 function go(id){if((id||'world')===S.p) return; location.hash=link(id);}
 // ---------- notoriety: a place's shade, against the others on the same view
