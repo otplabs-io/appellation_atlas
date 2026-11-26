@@ -239,7 +239,7 @@ function mapInit(){
   M.box.replaceChildren(M.svg); mapSize();
   const out=document.createElement('button'); out.type='button'; out.className='zout ts-place_subtitle'; out.onclick=zoomOut; out.hidden=true; M.box.appendChild(out); M.out=out;
   M.svg.addEventListener('click',e=>{if(M.dragged||M.busy) return; const t=e.target.closest('[data-id]');
-    if(t){pick(t.dataset.id); return;}
+    if(t){if(t.classList.contains('sib')) pick(t.dataset.id); else cycle(stack(t,e)); return;}
     const b=M.svg.getBoundingClientRect(), x=(e.clientX-b.left)*M.W/b.width, y=(e.clientY-b.top)*M.H/b.height;   // a near miss: the closest place within a fingertip
     let best=null,bd=24; for(const it of M.view.items) if(it.s){const d=Math.hypot(it.s[0]-x,it.s[1]-y); if(d<bd){bd=d;best=it;}} if(best) pick(best.id);});
   M.svg.addEventListener('dblclick',e=>{if(!e.target.closest('[data-id]')) zoomOut();});
@@ -310,6 +310,20 @@ async function mapShow(){
     M.out.textContent='‹ '+(M.leaf?v.name:v.parent==='world'?'The world':PL[v.parent]?.[0]||'Back');
     touchMode();
   } finally {M.going=false;}
+}
+// Every place under a tap, the one it lands on first, then the rest from smallest to largest. A label goes first unless it
+// sits on a smaller place, as Prosecco DOC's name sits on Conegliano Valdobbiadene. Places are drawn largest first.
+function stack(t,e){
+  const ix=k=>M.view.items.findIndex(i=>i.id===k), id=t.dataset.id;
+  const under=document.elementsFromPoint(e.clientX,e.clientY).filter(x=>x.matches('path.rg[data-id]:not(.sib)')).map(x=>x.dataset.id);
+  if(!t.closest('.lab')||(under.length&&ix(id)>=0&&ix(under[0])>ix(id))) return under.length?under:[id];
+  return [id,...under.filter(k=>k!==id)];
+}
+// Each tap on the same spot moves to the next place there, so places that share a shape, such as Valpolicella and
+// Amarone della Valpolicella, can all be reached. After the last, back out to the map's own place.
+function cycle(ids){
+  if(M.busy) return;
+  const i=ids.indexOf(S.p); go(i<0?ids[0]:ids[i+1]??M.view.id);
 }
 function pick(id){
   if(M.busy) return;

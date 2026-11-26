@@ -458,10 +458,14 @@ final class Globe {
         }
     }
 
-    /// A tap: picks what is under the finger, or lets go of the place already picked.
+    /// A tap: picks what is under the finger. Each tap on the same spot moves to the next place there, so places that
+    /// share a shape, such as Valpolicella and Amarone della Valpolicella, can all be reached. After the last, back out
+    /// to the map's own place, as on the website.
     func tap(at p: CGPoint) {
-        guard let id = hit(p) else { return }
-        pickInPlace(id == leaf ? (view?.id ?? "world") : id)
+        let ids = hit(p)
+        guard let first = ids.first else { return }
+        guard let l = leaf, let i = ids.firstIndex(of: l) else { pickInPlace(first); return }
+        pickInPlace(i + 1 < ids.count ? ids[i + 1] : (view?.id ?? "world"))
     }
 
     /// Out one level: from a place to its view, or from a view to its parent.
@@ -472,32 +476,36 @@ final class Globe {
         onPick(v.parent ?? "world")
     }
 
-    /// What a tap lands on. The words of a label first, since they name their place. Then the smallest shape under the
-    /// finger, then a dot or a label point within a fingertip. Off this view (turned over to France from Tuscany), the
-    /// place there at the same level as this one.
-    func hit(_ p: CGPoint) -> String? {
-        guard let v = view, !busy else { return nil }
+    /// Every place a tap lands on, the first pick first. The words of a label first, since they name their place, unless
+    /// they sit on a smaller place, as Prosecco DOC's name sits on Conegliano Valdobbiadene. Then every shape under the
+    /// finger, smallest first. Then a dot or a label point within a fingertip. Off this view (turned over to France from
+    /// Tuscany), the place there at the same level as this one.
+    func hit(_ p: CGPoint) -> [String] {
+        guard let v = view, !busy else { return [] }
         let P = projector
+        let under = v.items.indices.reversed().filter { P.path(v.items[$0].polys).contains(p, eoFill: false) }   // drawn largest first
+        let ids = under.map { v.items[$0].id }
         if let l = labels.first(where: { $0.kind != .water && $0.kind != .town && $0.box.insetBy(dx: -6, dy: -6).contains(p) }) {
-            if l.kind != .country { return l.id }
-            if let c = atlas.country(named: String(l.id.dropFirst(2))) { return c }
+            if l.kind == .country { if let c = atlas.country(named: String(l.id.dropFirst(2))) { return [c] } }
+            else if let u = under.first, let k = v.items.firstIndex(where: { $0.id == l.id }), u > k { return ids }
+            else { return [l.id] + ids.filter { $0 != l.id } }
         }
-        for it in v.items.reversed() where P.path(it.polys).contains(p, eoFill: false) { return it.id }
+        if !ids.isEmpty { return ids }
         var best: String?, bd = 24.0
         for d in dots { let k = hypot(d.point.x - p.x, d.point.y - p.y); if k < bd { bd = k; best = d.id } }
-        if best != nil { return best }
+        if let b = best { return [b] }
         for it in v.items {
             guard let l = it.label, let s = P.screen(lon: l.x, lat: l.y) else { continue }
             let k = hypot(s.x - p.x, s.y - p.y)
             if k < bd { bd = k; best = it.id }
         }
-        if best != nil { return best }
-        guard let g = P.geo(at: p) else { return nil }
+        if let b = best { return [b] }
+        guard let g = P.geo(at: p) else { return [] }
         let chain = WhereAmI.chain(at: g.x, g.y, in: atlas)
-        if chain.isEmpty { return nil }
+        if chain.isEmpty { return [] }
         let level = max(1, atlas.chain(v.id).count)   // Tuscany is level 2: pick a level-2 place, such as Burgundy
         let pick = chain[min(level, chain.count) - 1]
-        return pick == v.id ? nil : pick
+        return pick == v.id ? [] : [pick]
     }
 
     // ---- labels, placed so none overlap, best known first
