@@ -158,6 +158,7 @@ nonisolated struct Triangle: Shape {
 /// Twelve monthly bars with the growing season colored.
 struct MonthsChart: View {
     let values: [Double]
+    var shown: [Double]? = nil   // the numbers to print, when the bars are drawn from other values (heights from °F, so the shape is the same in °C)
     let unit: String
     let season: Color
     let base: Color
@@ -171,9 +172,9 @@ struct MonthsChart: View {
             BarMark(x: .value("Month", "\(i)"), y: .value(unit, v))
                 .foregroundStyle(gs.contains(i) ? season : base)
                 .accessibilityLabel(Calendar(identifier: .gregorian).monthSymbols[i])
-                .accessibilityValue("\(Int(v.rounded())) \(unit)")
+                .accessibilityValue("\(Int((shown?[i] ?? v).rounded())) \(unit)")
                 .annotation(position: .top, spacing: 2) {
-                    if labels { Text("\(Int(v.rounded()))").font(.system(size: 8, weight: .semibold)).foregroundStyle(Palette.ink) }
+                    if labels { Text("\(Int((shown?[i] ?? v).rounded()))").font(.system(size: 8, weight: .semibold)).foregroundStyle(Palette.ink) }
                 }
         }
         .chartXAxis {

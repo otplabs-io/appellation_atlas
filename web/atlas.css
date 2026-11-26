@@ -119,6 +119,17 @@
 .about p{margin:8px 0 0}
 .about a{color:var(--teal)}
 .about-n{color:var(--soft)}
+.useg{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:3px;padding:3px;border-radius:12px;background:var(--fill)}
+.useg button{min-height:36px;border:0;border-radius:9px;background:transparent;color:var(--soft);font-weight:700;cursor:pointer}
+.useg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.useg button:disabled{cursor:default}
+.useg.sys{margin-top:6px}
+.urows{list-style:none;margin:14px 0 0;padding:0;border:1px solid var(--rule);border-radius:16px}
+.urows li{display:grid;grid-template-columns:1fr 140px;gap:10px;align-items:center;padding:10px 12px;border-top:1px solid var(--rule)}
+.urows li:first-child{border-top:0}
+.urows li>span:first-child{display:flex;flex-direction:column;gap:1px;min-width:0}
+.urows .un{font-weight:700}
+.urows .ts-caption{color:var(--soft)}
 .about-h{margin:18px 0 0;color:var(--soft);font-weight:700;text-transform:uppercase;letter-spacing:.04em}
 .about-src{list-style:none;margin:8px 0 0;padding:0}
 .about-src li{display:flex;flex-direction:column;padding:6px 0;border-top:1px solid var(--rule)}

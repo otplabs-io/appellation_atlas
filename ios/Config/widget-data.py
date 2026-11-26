@@ -15,7 +15,7 @@ for f in sorted(glob.glob(os.path.join(src,'facts','*.json'))):
     if not grape and d.get('rules') and d['rules'].get('grapes'): grape=d['rules']['grapes'][0][0]
     kind=(d.get('kind') or ['Region'])[0]
     out.append(dict(id=d['id'],name=d['name'],where=', '.join(x for x in [d['chain'][-1][1] if d.get('chain') else '',d.get('country','')] if x and x!=d['name']),
-                    kind=kind,climate=(c.get('gst_class') or '').capitalize(),gst=round(c['gst']*9/5+32) if c.get('gst') is not None else None,grape=grape))
+                    kind=kind,climate=(c.get('gst_class') or '').capitalize(),gst=round(c['gst']*9/5+32) if c.get('gst') is not None else None,gst_c=round(c['gst']) if c.get('gst') is not None else None,grape=grape))
 os.makedirs(os.path.dirname(dst),exist_ok=True)
 json.dump(out,open(dst,'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
 print(f'widget: {len(out)} places')

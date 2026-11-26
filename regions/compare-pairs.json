@@ -1,0 +1,433 @@
+{
+ "about": "Pairs of benchmark places that people often compare, most compared first. The ranking comes from one web search per pair in November 2026, counting results that name both places in their title; the first six are fixed at the top by choice. 'wines' says how the wines compare and is written only from its 'sources' (keys in SRC in src/atlas.py). How the places compare is built from the Atlas's own figures. tag: different-grapes when the places are known for different grapes, sounds-alike when they are more different than they sound.",
+ "pairs": [
+  {
+   "a": "france/burgundy",
+   "b": "united-states/willamette-valley",
+   "link": "Pinot Noir, Chardonnay",
+   "tag": "",
+   "wines": [
+    {
+     "head": "Pinot Noir",
+     "text": "Oregon Pinot Noir is often called the closest in style to Burgundy. Burgundy's own leans earthy and floral. The best red Burgundy can be kept for more than 15 years."
+    },
+    {
+     "head": "Chardonnay",
+     "text": "Oregon Chardonnay is made around bright acidity rather than a buttery feel. Willamette growers differ on Burgundy: some say their wines are growing more like white Burgundy, while others set out not to copy it."
+    }
+   ],
+   "sources": [
+    "cmp-winefolly-pinot-noir",
+    "cmp-wiki-burgundy",
+    "cmp-owb-chardonnay",
+    "cmp-guildsomm-willamette-chardonnay"
+   ]
+  },
+  {
+   "a": "france/bordeaux",
+   "b": "united-states/napa-valley",
+   "link": "Cabernet Sauvignon, Merlot",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/sancerre",
+   "b": "new-zealand/marlborough",
+   "link": "Sauvignon Blanc",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "spain/rioja",
+   "b": "spain/ribera-del-duero",
+   "link": "Tempranillo",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "italy/barolo",
+   "b": "italy/barbaresco",
+   "link": "Nebbiolo",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/champagne",
+   "b": "italy/prosecco-doc",
+   "link": "Sparkling, made two ways",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "italy/prosecco-doc",
+   "b": "spain/cava",
+   "link": "Sparkling, made two ways",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/champagne",
+   "b": "spain/cava",
+   "link": "Sparkling, both bottle-fermented",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/bordeaux",
+   "b": "france/burgundy",
+   "link": "France's two great reds",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "spain/jerez",
+   "b": "portugal/douro",
+   "link": "Sherry and Port",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "italy/barolo",
+   "b": "italy/brunello-di-montalcino",
+   "link": "Nebbiolo and Sangiovese",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "united-states/napa-valley",
+   "b": "united-states/sonoma-county",
+   "link": "Next-door neighbors",
+   "tag": "sounds-alike",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/sancerre",
+   "b": "france/pouilly-fume",
+   "link": "Sauvignon Blanc, across the Loire",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/left-bank",
+   "b": "france/right-bank",
+   "link": "Cabernet-led and Merlot-led",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "italy/chianti-classico",
+   "b": "italy/brunello-di-montalcino",
+   "link": "Sangiovese",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/sauternes",
+   "b": "hungary/tokaj",
+   "link": "Sweet wines from noble rot",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "australia/barossa-valley",
+   "b": "australia/mclaren-vale",
+   "link": "Shiraz",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/pomerol",
+   "b": "france/saint-emilion",
+   "link": "Merlot-led blends",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "spain/rias-baixas",
+   "b": "portugal/vinho-verde",
+   "link": "Albariño, called Alvarinho",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "italy/barolo",
+   "b": "france/burgundy",
+   "link": "Nebbiolo and Pinot Noir",
+   "tag": "different-grapes",
+   "wines": [
+    {
+     "head": "Nebbiolo and Pinot Noir",
+     "text": "Barolo is made from Nebbiolo. It is medium to full-bodied, with high tannin and acidity, and is often said to smell of tar and roses. Red Burgundy is mostly Pinot Noir, which is lighter and silky, with lower tannin."
+    },
+    {
+     "head": "Color and age",
+     "text": "Both are light in color. Barolo takes on a rust-red tinge as it matures. The best red Burgundy can be kept for more than 15 years."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-barolo",
+    "cmp-winefolly-nebbiolo",
+    "cmp-winefolly-pinot-noir",
+    "cmp-wiki-burgundy"
+   ]
+  },
+  {
+   "a": "united-states/paso-robles",
+   "b": "united-states/napa-valley",
+   "link": "California reds",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/northern-rhone",
+   "b": "france/southern-rhone",
+   "link": "Syrah alone and Grenache blends",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "argentina/mendoza",
+   "b": "france/cahors",
+   "link": "Malbec",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "new-zealand/central-otago",
+   "b": "france/burgundy",
+   "link": "Pinot Noir",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "germany/mosel",
+   "b": "germany/rheingau",
+   "link": "Riesling",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "australia/clare-valley",
+   "b": "australia/eden-valley",
+   "link": "Riesling",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/beaujolais",
+   "b": "france/burgundy",
+   "link": "Gamay and Pinot Noir",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "italy/etna",
+   "b": "france/burgundy",
+   "link": "Nerello Mascalese and Pinot Noir",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/meursault",
+   "b": "france/puligny-montrachet",
+   "link": "Chardonnay",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/cote-de-nuits",
+   "b": "france/cote-de-beaune",
+   "link": "Mostly red and mostly white",
+   "tag": "sounds-alike",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/pauillac",
+   "b": "france/margaux",
+   "link": "Cabernet-led blends",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "italy/tuscany",
+   "b": "italy/piedmont",
+   "link": "Sangiovese and Nebbiolo",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "italy/amarone-della-valpolicella",
+   "b": "italy/barolo",
+   "link": "A dried-grape blend and Nebbiolo",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "italy/bolgheri",
+   "b": "france/bordeaux",
+   "link": "Bordeaux grapes",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "united-states/willamette-valley",
+   "b": "united-states/russian-river-valley",
+   "link": "Pinot Noir",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/cote-rotie",
+   "b": "france/hermitage",
+   "link": "Syrah",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/chateauneuf-du-pape",
+   "b": "france/gigondas",
+   "link": "Grenache blends",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "germany/mosel",
+   "b": "france/alsace",
+   "link": "Riesling",
+   "tag": "sounds-alike",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "united-states/columbia-valley",
+   "b": "united-states/napa-valley",
+   "link": "Cabernet Sauvignon",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "south-africa/stellenbosch",
+   "b": "france/bordeaux",
+   "link": "Cabernet-led blends",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "united-states/finger-lakes",
+   "b": "germany/mosel",
+   "link": "Riesling",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "spain/rioja",
+   "b": "france/bordeaux",
+   "link": "Barrel-aged reds",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "argentina/mendoza",
+   "b": "united-states/napa-valley",
+   "link": "Malbec and Cabernet",
+   "tag": "different-grapes",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/chablis",
+   "b": "france/meursault",
+   "link": "Chardonnay",
+   "tag": "sounds-alike",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "australia/margaret-river",
+   "b": "france/bordeaux",
+   "link": "Cabernet-led blends",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/vouvray",
+   "b": "france/savennieres",
+   "link": "Chenin Blanc",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/fleurie",
+   "b": "france/morgon",
+   "link": "Gamay",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/chinon",
+   "b": "france/bourgueil",
+   "link": "Cabernet Franc",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "austria/wachau",
+   "b": "germany/mosel",
+   "link": "Riesling",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  },
+  {
+   "a": "france/hermitage",
+   "b": "australia/barossa-valley",
+   "link": "Syrah and Shiraz",
+   "tag": "",
+   "wines": [],
+   "sources": []
+  }
+ ]
+}

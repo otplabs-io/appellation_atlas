@@ -53,7 +53,11 @@ struct HomePage: View {
             MapKey()
             SavedList()
             PlacesHere(folded: !compact)
-            AboutButton().font(.atlasNote)
+            HStack(spacing: 18) {
+                UnitsButton()
+                AboutButton()
+            }
+            .font(.atlasNote)
             FeedbackLink(name: "Home", id: "world")
         }
     }

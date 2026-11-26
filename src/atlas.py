@@ -399,6 +399,13 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'jones2010':dict(name='Jones 2010, Climate, grapes, and wine: structure and suitability in a variable and changing climate, VIII International Terroir Congress (which grapes suit which growing season temperatures)',url='https://ives-openscience.eu/wp-content/uploads/2023/03/Climate_Grape_Wine_Jones.pdf'),
      'winkler-wiki':dict(name='Wikipedia, Winkler index (what each region suits)',url='https://en.wikipedia.org/w/index.php?title=Winkler_index&oldid=1379995815'),
      'lapse':dict(name='Wikipedia, Lapse rate (6.5 °C cooler per 1,000 m, the standard atmosphere)',url='https://en.wikipedia.org/wiki/Lapse_rate'),
+     # how the wines of two often-compared places compare (regions/compare-pairs.json)
+     'cmp-winefolly-pinot-noir':dict(name='Wine Folly, Pinot Noir',url='https://winefolly.com/grapes/pinot-noir/'),
+     'cmp-winefolly-nebbiolo':dict(name='Wine Folly, Nebbiolo',url='https://winefolly.com/grapes/nebbiolo/'),
+     'cmp-wiki-burgundy':dict(name='Wikipedia, Burgundy wine',url='https://en.wikipedia.org/wiki/Burgundy_wine'),
+     'cmp-wiki-barolo':dict(name='Wikipedia, Barolo',url='https://en.wikipedia.org/wiki/Barolo'),
+     'cmp-owb-chardonnay':dict(name='Oregon Wine Board, Oregon Chardonnay',url='https://www.oregonwine.org/discover/oregon-chardonnay/'),
+     'cmp-guildsomm-willamette-chardonnay':dict(name="GuildSomm, Neal Hulkower, Willamette Valley's Way with Chardonnay",url='https://guildsomm.com/public_content/features/articles/b/neal-hulkower/posts/willamette-valley-chardonnay'),
      'sawis':dict(name='SAWIS, Production areas defined in terms of the Wine of Origin Scheme, June 2024 (regions, districts and wards)',url='https://www.sawis.co.za/cert/download/Production_areas_-_June_2024.pdf'),}
 @snap('australia-gi')
 def au_gi(): return {m:v[1] for m,v in X.australia().items()}
@@ -1217,6 +1224,41 @@ def climate():
                'places':{n:o for n,o in sorted(out.items()) if o['climate'] or o['soil']}},open(os.path.join(ROOT,'regions','atlas-climate.json'),'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
     print(f'{sum(1 for o in out.values() if o["climate"])} with climate, {sum(1 for o in out.values() if o["soil"])} with soil, {time.time()-t0:.0f}s')
 # ---- the page
+def mark_units(folder):
+    """Every figure with a unit in place text becomes a mark holding its US and metric wording (src/units.py), so the
+    site and the app can follow the person's Units setting."""
+    import units; n=0
+    for fn in glob.glob(os.path.join(folder,'*.json')):
+        raw=open(fn,encoding='utf-8').read()
+        if not units.HINT.search(raw): continue
+        d=json.loads(raw); m=units.mark_all(d)
+        if m!=d:
+            n+=1
+            with open(fn,'w',encoding='utf-8') as fh: json.dump(m,fh,ensure_ascii=False,separators=(',',':'))
+    print(f'atlas: units marked in {n} places')
+
+def compare_pairs(dest):
+    """The often-compared pairs, checked and with their sources spelled out. The build stops on a pair that names a place
+    the Atlas lacks or one that is not a benchmark, on wine text with no source, and on a source missing from SRC."""
+    d=jl(os.path.join(ROOT,'regions','compare-pairs.json')); PL=jl(os.path.join(OUT,'places.json'))['places']; bad=[]; out=[]
+    for i,p in enumerate(d['pairs'],1):
+        for x in (p['a'],p['b']):
+            if x not in PL: bad.append(f'#{i}: no place {x}')
+            elif not PL[x][7]&15: bad.append(f'#{i}: {x} is not a benchmark')
+        if p['a']==p['b']: bad.append(f'#{i}: a place set against itself')
+        if p['tag'] not in ('','different-grapes','sounds-alike'): bad.append(f'#{i}: unknown tag {p["tag"]}')
+        if p['wines'] and not p['sources']: bad.append(f'#{i}: wine text with no source')
+        bad+=[f'#{i}: source {k} is not in SRC' for k in p['sources'] if k not in SRC]
+        bad+=[f'#{i}: an em dash in its text' for w in p['wines'] if '\u2014' in w['text']+w['head']]
+        out.append(dict(a=p['a'],b=p['b'],link=p['link'],tag=p['tag'],wines=p['wines'],sources=[dict(name=SRC[k]['name'],url=SRC[k]['url']) for k in p['sources'] if k in SRC]))
+    seen=set()
+    for i,p in enumerate(d['pairs'],1):
+        k=frozenset((p['a'],p['b']))
+        if k in seen: bad.append(f'#{i}: pair listed twice')
+        seen.add(k)
+    if bad: raise SystemExit('compare-pairs.json:\n  '+'\n  '.join(bad))
+    with open(dest,'w') as fh: json.dump(dict(pairs=out),fh,ensure_ascii=False,separators=(',',':'))
+
 def site(dest=None):
     """Write the finished site to public/, which is what Vercel serves. Built beside it and swapped in, so public/ is never half written."""
     dest=dest or os.path.join(ROOT,'public'); new=os.path.join(ROOT,'build','public-new'); old=os.path.join(ROOT,'build','public-old')
@@ -1226,6 +1268,8 @@ def site(dest=None):
     shutil.copytree(os.path.join(ROOT,'web'),new,ignore=junk)
     for sub in ('geo','facts'): shutil.copytree(os.path.join(OUT,sub),os.path.join(new,sub),ignore=junk)
     shutil.copy2(os.path.join(OUT,'places.json'),os.path.join(new,'places.json'))
+    compare_pairs(os.path.join(new,'compare.json'))
+    mark_units(os.path.join(new,'facts'))
     if os.path.exists(dest): os.rename(dest,old)
     os.rename(new,dest); shutil.rmtree(old,ignore_errors=True)
     print(f'atlas: written to {os.path.relpath(dest,ROOT)}/')

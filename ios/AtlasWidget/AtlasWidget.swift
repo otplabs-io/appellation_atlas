@@ -9,6 +9,7 @@ struct WidgetPlace: Codable, Hashable {
     let kind: String
     let climate: String
     let gst: Int?
+    var gst_c: Int? = nil   // the same in Celsius; the widget follows the device's region, as it cannot see the app's choice
     let grape: String?
 
     static let all: [WidgetPlace] = {
@@ -18,7 +19,7 @@ struct WidgetPlace: Codable, Hashable {
         return list
     }()
 
-    static let sample = WidgetPlace(id: "france/romanee-conti", name: "Romanée-Conti", where: "Côte de Nuits, France", kind: "PDO", climate: "Cool", gst: 59, grape: "Pinot Noir")
+    static let sample = WidgetPlace(id: "france/romanee-conti", name: "Romanée-Conti", where: "Côte de Nuits, France", kind: "PDO", climate: "Cool", gst: 59, gst_c: 15, grape: "Pinot Noir")
 
     /// The same place all day, a new one each day.
     static func ofTheDay(_ date: Date) -> WidgetPlace {
@@ -80,7 +81,7 @@ struct PlaceWidgetView: View {
                     Text(p.where).font(.caption).foregroundStyle(.secondary).lineLimit(1)
                     if family != .systemSmall { Spacer(minLength: 0) }
                     HStack(spacing: 10) {
-                        if let g = p.gst { fact("\(g)°F", p.climate) }
+                        if let g = p.gst { fact(Locale.current.measurementSystem == .us ? "\(g)°F" : "\(p.gst_c ?? Int((Double(g - 32) * 5 / 9).rounded()))°C", p.climate) }
                         if let grape = p.grape { fact(grape, "Main grape") }
                     }
                 }

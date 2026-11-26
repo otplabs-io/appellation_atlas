@@ -51,7 +51,7 @@ enum JSON: Equatable, Sendable {
         return .null
     }
 
-    var string: String? { if case .string(let s) = self { return s }; return nil }
+    var string: String? { if case .string(let s) = self { return Units.text(s) }; return nil }   // figures in place text follow the Units setting
     var double: Double? { if case .number(let n) = self { return n }; return nil }
     var int: Int? { double.map { Int($0.rounded()) } }
     var bool: Bool? {
