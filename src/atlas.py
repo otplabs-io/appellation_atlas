@@ -208,6 +208,15 @@ def plot_shapes():
     for n,less in PLOT_LESS.items():
         if n in S: S[n]=S[n].difference(unary_union([S[k] for k in less if k in S])).buffer(0)
     return S
+# shapes whose label is not a SHAPE_SRC value, and the SRC entry each one names
+SHAPE_LABEL_SRC={'Eurostat GISCO LAU':'lau','Eurostat GISCO countries':'gisco-countries','Eurostat GISCO NUTS 2021':'nuts',
+                 'geoBoundaries, the province it is named for':'argentina','US Census counties':'census-counties'}
+def store_src(v):
+    """The SRC entry for a stored zone, from the source line its file carries (or 'store:<name>' for a store's own border)."""
+    if v.startswith('store:'): v=v[6:]; return 'argentina' if v.startswith('argentina') else 'sa-municipalities' if v.startswith('south-africa') else None
+    for k,w in (('EU wine PDO','eu-pdo'),('geoBoundaries department','argentina'),('geoBoundaries municipality','sa-municipalities'),('Eurostat GISCO NUTS','nuts'),('geoBoundaries district','lebanon-districts')):
+        if v.startswith(k): return w
+    return None
 LAZIO_WFS='https://geoportale.regione.lazio.it/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&outputFormat=application/json&srsName=EPSG:4326&typeNames=geonode:'
 LAZIO_LAYERS=['Vini_DOC_Regione_Lazio','Vini_DOCG_Regione_Lazio']
 def lazio_shapes():
@@ -374,6 +383,9 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'argentina':dict(name='geoBoundaries, Argentina departments (Instituto Geográfico Nacional, CC BY 3.0 IGO) and provinces (CC BY 2.5)',url='https://www.geoboundaries.org'),
      'cadastre':dict(name='Etalab, Plan cadastral informatisé: the lieux-dits of Gevrey-Chambertin (Licence Ouverte)',url='https://cadastre.data.gouv.fr/datasets/cadastre-etalab'),
      'sa-municipalities':dict(name='geoBoundaries, South African local municipalities from the Municipal Demarcation Board (CC BY 3.0 IGO), drawing each Wine of Origin district by its municipalities',url='https://www.geoboundaries.org'),
+     'gisco-countries':dict(name='Eurostat GISCO, Countries 2020 (1:1 million)',url='https://ec.europa.eu/eurostat/web/gisco/geodata/administrative-units/countries'),
+     'census-counties':dict(name="US Census Bureau, 2010 cartographic boundaries of counties, through Plotly's datasets (geojson-counties-fips.json, public domain)",url='https://github.com/plotly/datasets'),
+     'lebanon-districts':dict(name='geoBoundaries, Lebanon district outlines (public domain)',url='https://www.geoboundaries.org'),
      'lazio':dict(name="ARSIAL, Vini DOC and Vini DOCG Regione Lazio: each zone drawn from its disciplinare on the regional 1:5,000 map (Regione Lazio geoportal)",url='https://geoportale.regione.lazio.it/catalogue/#/dataset/1081'),
      'lau':dict(name='Eurostat GISCO, Local Administrative Units 2021 (communes)',url='https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units'),
      'lau-rules':dict(name='Eurostat GISCO, Local Administrative Units 2021 (the municipalities the rules name)',url='https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units'),
@@ -1043,8 +1055,9 @@ def facts():
             pr=next((AU[m] for m in [geoindex_norm(v) for v in [t['name']]+t.get('also',[])] if m in AU),None)
             if pr: f['gi']={k:pr.get(v) for k,v in dict(type='GI_TYPE',number='GI_NUMBER',year='YEAR_REGISTER',area_km2='GI_AREA_KM2',vines_ha='VINE_AREA_HA',url='GI_URL',state='STATE').items()}
         src+=[k for k,v in SHAPE_SRC.items() if v==x['source']]
-        if n in PLOT_CUT or any(k in PLOT_CUT for k in PLOT_LESS.get(n,())): src.append('cadastre')
-        if n.startswith('south-africa/') and x['source'] in ('zone store','geoBoundaries'): src.append('sa-municipalities')   # Wine of Origin districts are not published as map data, so each is drawn by its municipalities   # the lieu-dit line between Charmes and Mazoyères
+        if n in PLOT_CUT or any(k in PLOT_CUT for k in PLOT_LESS.get(n,())): src.append('cadastre')   # the lieu-dit line between Charmes and Mazoyères
+        src+=[SHAPE_LABEL_SRC[x['source']]] if x['source'] in SHAPE_LABEL_SRC else []
+        if x['source'] in ('zone store','geoBoundaries'): src+=[k for v in G.store_sources(n) for k in [store_src(v)] if k]   # the map behind a stored zone: the EU's communes, or the municipalities or districts it is drawn by
         sub=below(n)+ALSO_INSIDE.get(n,[])   # a region in two zones counts in both (Murray Darling and Swan Hill straddle the Victoria and New South Wales border)
         ac=list(dict.fromkeys([UCD_T.get(x,x) for x in (A.get(n) or {}).get('contains') or [] if x and t['name'] not in OVERLAP_OF.get(x,()) and x not in AVANOTCONTAINS.get(t['name'],())]
                               +([T[k]['name'] for k,v in A.items() if k!=n and k in T and t['name'] in (v.get('within') or [])] if n in A else [])))   # UC Davis lists El Dorado twice in Sierra Foothills (the AVA and the county); an AVA only partly inside is not counted; AVAs whose own "Inside" names this one count too (Fort Ross-Seaview in Sonoma Coast)

@@ -123,6 +123,17 @@ def own_shape(n):
     p=next((p for r,p in S.zones().get(nm,[]) if r==c or r.startswith(c+'-')),None)
     if p: return shape(jl(p)['geometry']).buffer(0),'zone store'
     return None,None
+def store_sources(n):
+    """The 'source' line of each eu-maps file a place's stored shape came from: its zone files, or its store's border and
+    communes (named by the store), so its page can name the map behind it."""
+    o=OV['places'].get(n,{})
+    if 'store_border' in o or 'store_commune' in o: return ['store:'+(o.get('store_border') or o['store_commune'][0])]
+    names=o.get('stores') or ([] if o else [T[n]['name']])
+    c=n.split('/')[0]; out=[]
+    for x in names:
+        ps=[p for r,p in S.zones().get(norm(x),[]) if 'stores' in o or r==c or r.startswith(c+'-')]
+        if ps: out.append(jl(ps[0])['properties'].get('source') or '')
+    return out
 def display_parent(n):
     """The place the app shows this one inside: its tree parent, skipping category nodes."""
     p=OV['display_parent'].get(n,T[n]['parent'])
