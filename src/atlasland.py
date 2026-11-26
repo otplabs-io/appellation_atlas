@@ -404,21 +404,22 @@ def _write_terrain(res):
                'source':'AWS Terrain Tiles (Terrarium), from SRTM, GMTED2010, ETOPO1 and national elevation models','url':'https://registry.opendata.aws/terrain-tiles/',
                'places':res},open(os.path.join(ROOT,'regions','atlas-terrain.json'),'w',encoding='utf-8'),separators=(',',':'))
 
-def plots():
-    """Elevation, slope and aspect over the real boundary of each grand cru and single-vineyard appellation, from the INAO
-    delimitations (regions/grand-crus.json). The EU draws these by whole commune, which says nothing of the plot itself.
-    Read at zoom 13 (about 13 m a pixel at 47 degrees). Writes regions/atlas-plots.json."""
-    import subprocess,shapely
+def plot_shapes(fetch=True,extra=()):
+    """The real boundary of each grand cru and single-vineyard appellation in regions/grand-crus.json, from the INAO
+    delimitations, as {place: shape}. The EU draws these by whole commune, so La Tâche and Romanée-Conti came out as one
+    shape. With fetch off, only what data/cache already holds is read, and nothing is downloaded. extra adds places drawn
+    by INAO only for the map, not measured as vineyards."""
+    import subprocess
     from shapely.geometry import shape
     from shapely.ops import unary_union
     ODW='https://raw.githubusercontent.com/24eme/opendatawine/9d65ed62f55097faf109bcd4c44805f596981bda/delimitation_aoc'
     FG='https://raw.githubusercontent.com/gregoiredavid/france-geojson/5d34ee6d0140c29f785fdb047d9329f1aab58833'
     def get(url,name):
         p=os.path.join(CA,name)
-        if not os.path.exists(p) and not os.path.exists(p+'.missing'):
+        if fetch and not os.path.exists(p) and not os.path.exists(p+'.missing'):
             if subprocess.run(['curl','-s','-f','-m','120','-o',p,url]).returncode: open(p+'.missing','w').close()
         return p if os.path.exists(p) else None
-    L=jl(os.path.join(ROOT,'regions','grand-crus.json')); ids=L['cote_d_or']+L['alsace']+L['other']
+    L=jl(os.path.join(ROOT,'regions','grand-crus.json')); ids=L['cote_d_or']+L['alsace']+L['other']+list(extra)
     names=lambda n:{norm(x) for a in [T[n]['name']]+T[n].get('also',[]) for x in [a]+a.split(' ou ')}
     want=collections.defaultdict(set)
     for n in ids:
@@ -437,11 +438,22 @@ def plots():
                 for code in C.get(norm(c),[]): scan(code)
     for p in os.listdir(CA):
         if re.fullmatch(r'd\d{2}[\dAB]\d{2}\.json',p) and p[1:3] not in ('67','68'): scan(p[1:6])
-    plan={}; users=collections.defaultdict(list); z=13; miss=[]
+    out={}
     for n in ids:
         gs=[shape(x['geometry']).buffer(0) for c,f in sorted(hits[n]) for p in [get(f'{ODW}/{c[:2]}/{c}/{f}',f'g{c}-{f}')] if p for x in jl(p)['features']]
-        if not gs: miss.append(n); continue
-        g=unary_union(gs).buffer(0); shapely.prepare(g)
+        if gs: out[n]=unary_union(gs).buffer(0)
+    return out
+
+def plots():
+    """Elevation, slope and aspect over the real boundary of each grand cru and single-vineyard appellation, from the INAO
+    delimitations (regions/grand-crus.json). The EU draws these by whole commune, which says nothing of the plot itself.
+    Read at zoom 13 (about 13 m a pixel at 47 degrees). Writes regions/atlas-plots.json."""
+    import shapely
+    L=jl(os.path.join(ROOT,'regions','grand-crus.json')); ids=L['cote_d_or']+L['alsace']+L['other']
+    S=plot_shapes(); plan={}; users=collections.defaultdict(list); z=13; miss=[]
+    for n in ids:
+        if n not in S: miss.append(n); continue
+        g=S[n]; shapely.prepare(g)
         x0,y0=tile_of(g.bounds[0],g.bounds[3],z); x1,y1=tile_of(g.bounds[2],g.bounds[1],z)
         ts=[(z,x,y) for x in range(x0,x1+1) for y in range(y0,y1+1) if g.intersects(tile_box(x,y,z))]
         plan[n]=(g,ts)

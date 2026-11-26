@@ -249,16 +249,16 @@ function mapInit(){
   const mid=()=>{const v=[...P.values()], x=v.reduce((t,p)=>t+p[0],0)/v.length, y=v.reduce((t,p)=>t+p[1],0)/v.length;
     return [loc(x,y),v.length>1?Math.hypot(v[0][0]-v[1][0],v[0][1]-v[1][1]):0];};
   const begin=()=>{const [s,d]=mid(); g0={cam:M.cam,s,d,last:s,flat:P.size===1&&M.view.id==='world'&&!zoomed()};};
-  M.svg.addEventListener('pointerdown',e=>{if(M.busy) return; P.set(e.pointerId,[e.clientX,e.clientY]); if(P.size===1) M.dragged=false; begin();});
+  M.svg.addEventListener('pointerdown',e=>{if(M.busy) return; P.set(e.pointerId,[e.clientX,e.clientY]); if(P.size===1){M.dragged=false; M.push=null;} begin();});
   M.svg.addEventListener('pointermove',e=>{if(!P.has(e.pointerId)||M.busy||!g0) return; P.set(e.pointerId,[e.clientX,e.clientY]);
     let [s,d]=mid();
     if(P.size===1){if(!M.dragged&&Math.hypot(s[0]-g0.s[0],s[1]-g0.s[1])<6) return; if(g0.flat&&e.pointerType==='touch') s=[s[0],g0.s[1]];}
     if(!M.dragged){M.dragged=true; M.lab.replaceChildren(); try{M.svg.setPointerCapture(e.pointerId);}catch(_){}}
-    step(g0.last,s,P.size>1&&g0.d?clampR(g0.cam.R*d/g0.d):g0.cam.R); g0.last=s;});
+    const R=P.size>1&&g0.d?g0.cam.R*d/g0.d:g0.cam.R; push(R,s); step(g0.last,s,clampR(R)); g0.last=s;});
   const up=e=>{if(!P.delete(e.pointerId)) return; if(P.size) begin(); else {g0=null; if(M.dragged) settle();}};
   M.svg.addEventListener('pointerup',up); M.svg.addEventListener('pointercancel',up);
   M.svg.addEventListener('wheel',e=>{if(!e.ctrlKey) return; e.preventDefault(); if(M.busy) return;
-    const s=loc(e.clientX,e.clientY); M.lab.replaceChildren(); look(geoAt(M.cam,s),s,clampR(M.cam.R*Math.exp(-Math.max(-50,Math.min(50,e.deltaY))*.01)),M.cam);
+    const s=loc(e.clientX,e.clientY), R=M.cam.R*Math.exp(-Math.max(-50,Math.min(50,e.deltaY))*.01); M.lab.replaceChildren(); push(R,s); look(geoAt(M.cam,s),s,clampR(R),M.cam);
     clearTimeout(wt); wt=setTimeout(settle,250);},{passive:false});
   M.svg.addEventListener('touchmove',e=>{if(e.touches.length>1) e.preventDefault();},{passive:false});
   for(const t of ['gesturestart','gesturechange']) M.svg.addEventListener(t,e=>e.preventDefault());
@@ -266,15 +266,30 @@ function mapInit(){
 }
 const baseR=()=>camFor(M.view).R, zoomed=()=>M.cam.R>baseR()*1.03;
 function clampR(R){const b=baseR(), w=M.view.id==='world'; return Math.min(b*(w?14:8),Math.max(b*(w?.8:.5),R));}
+// The world globe only has rough country outlines, so it stops at 14 times. Pinching on past that marks the spot, and
+// letting go there opens the country under the fingers. Backing off below the limit forgets it.
+function push(R,s){if(M.view.id!=='world') return; const c=baseR()*14; if(R>c*1.1) M.push=s; else if(R<c) M.push=null;}
+function countryAt(s){const b=M.svg.getBoundingClientRect();
+  const t=document.elementsFromPoint(b.left+s[0]*b.width/M.W,b.top+s[1]*b.height/M.H).find(x=>x.matches('path.rg[data-id]:not(.sib)'));
+  return t?.dataset.id;}
+// The camera that puts a place at a screen point at size R. The quick guess is exact only at the middle of the screen, so a
+// few corrections follow: without them a pinch over the whole globe slides it tens of points each frame.
+function aim(g,s,R){
+  let c=unpt(camOf(g[0],g[1],R),(M.W/2-s[0])/R,(s[1]-M.H/2)/R); if(!c) return null; const k=1/RAD/R; let best=c,be=Infinity;
+  for(let i=0;i<20;i++){const q=pt(camOf(c[0],c[1],R),g[0],g[1]); if(q[2]<0) break;
+    const ex=s[0]-(M.W/2+R*q[0]), ey=s[1]-(M.H/2-R*q[1]), e=Math.abs(ex)+Math.abs(ey); if(e<be){be=e; best=c;} if(e<.1) break;
+    c=[c[0]-ex*k/Math.max(.25,Math.cos(c[1]*RAD)),Math.max(-89,Math.min(89,c[1]+ey*k))];}
+  return best;
+}
 function look(geo,s,R,cam0){
-  let c=geo&&unpt(camOf(geo[0],geo[1],R),(M.W/2-s[0])/R,(s[1]-M.H/2)/R); if(!c) c=[cam0.lon,cam0.lat];
+  let c=geo&&aim(geo,s,R); if(!c) c=[cam0.lon,cam0.lat];
   M.cam=camOf(c[0],Math.max(-80,Math.min(80,c[1])),R); if(M.view.id!=='world') setWorld(needWorld(M.cam,M.view)?1:0); draw();
 }
 // Moves the globe as the finger goes from one point to the next. A drag turns it at a steady rate, the same over land, sea
 // or open space, so it never jumps. A pinch keeps the spot under the fingers where it is, when it can.
 function step(p,s,R){
   const a=M.cam, k=1/RAD/R; let lon=a.lon-(s[0]-p[0])*k/Math.max(.25,Math.cos(a.lat*RAD)), lat=a.lat+(s[1]-p[1])*k;
-  const g=R!==a.R&&unpt(a,(p[0]-M.W/2)/a.R,(M.H/2-p[1])/a.R), c=g&&unpt(camOf(g[0],g[1],R),(M.W/2-s[0])/R,(s[1]-M.H/2)/R);
+  const g=R!==a.R&&unpt(a,(p[0]-M.W/2)/a.R,(M.H/2-p[1])/a.R), c=g&&aim(g,s,R);
   if(c){lon=c[0]; lat=c[1];}
   M.cam=camOf(((lon+180)%360+360)%360-180,Math.max(-80,Math.min(80,lat)),R); if(M.view.id!=='world') setWorld(needWorld(M.cam,M.view)?1:0); draw();
 }
@@ -282,6 +297,7 @@ function touchMode(){M.svg.style.touchAction=M.view.id==='world'&&!zoomed()?'pan
 async function settle(){
   if(M.busy||!M.view) return; const v=M.view, b=camFor(v);
   if(v.id!=='world'&&M.cam.R<b.R*.75){zoomOut(); return;}
+  if(v.id==='world'&&M.push){const id=countryAt(M.push); M.push=null; if(id){go(id); return;}}
   labels(); touchMode();   // the globe stays where the finger left it, at every level: a place opens only when tapped
 }
 async function glide(b,ms=500){

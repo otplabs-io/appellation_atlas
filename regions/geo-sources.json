@@ -1,5 +1,5 @@
 {
- "$comment": "Where the app's map finds a shape for a place that no source names directly. src/geoindex.py reads it. places: nuts (NUTS 2 ids), us_state (FIPS), us_county (FIPS), pdo (EU PDO names), store_border (an eu-maps store's panel 1 border), store_commune ([store, name]), stores (zone names in the eu-maps stores), none (no shape: shown as a chip). passthrough: category nodes the app skips. display_parent: a place shown inside another place than its tree parent.",
+ "$comment": "Where the app's map finds a shape for a place that no source names directly. src/geoindex.py reads it. places: nuts (NUTS 2 ids), us_state (FIPS), us_county (FIPS), pdo (EU PDO names), store_border (an eu-maps store's panel 1 border), store_commune ([store, name, ...]: one commune or the union of several), stores (zone names in the eu-maps stores), none (no shape: shown as a chip), village (the commune of its name, as for the other villages inside an appellation, not an appellation that shares the name). passthrough: category nodes the app skips. display_parent: a place shown inside another place than its tree parent.",
  "places": {
   "italy/piedmont": {"nuts": ["ITC1"]},
   "italy/tuscany": {"nuts": ["ITI1"]},
@@ -12,6 +12,8 @@
   "spain/canary-islands": {"nuts": ["ES70"]},
   "spain/penedes-cava": {"pdo": ["Penedès"]},
   "spain/rioja-alta": {"none": true},
+  "italy/verduno": {"village": true},
+  "netherlands/maasvallei-limburg": {"stores": ["Maasvallei Limburg"]},
   "portugal/minho": {"pdo": ["Vinho Verde"]},
   "united-states/california": {"us_state": "06"},
   "united-states/oregon": {"us_state": "41"},
@@ -21,6 +23,7 @@
   "argentina/tunuyan": {"store_commune": ["argentina-mendoza", "Tunuyán"]},
   "argentina/los-chacayes": {"none": true},
   "south-africa/western-cape": {"store_border": "south-africa-wc"},
+  "south-africa/breede-river-valley": {"store_commune": ["south-africa-wc", "Langeberg", "Breede Valley"]},
   "south-africa/cape-south-coast": {"stores": ["Overberg", "Walker Bay", "Cape Agulhas"]}
  },
  "passthrough": ["italy/igt-indicazione-geografica-tipica", "greece/pgis", "portugal/vinho-regional-pgi"],
