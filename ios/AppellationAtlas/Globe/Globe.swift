@@ -352,14 +352,26 @@ final class Globe {
         return min(hi, max(lo, R))
     }
 
+    /// The camera that puts a place at a screen point at size R. The quick guess is exact only at the middle of the
+    /// screen, so a few corrections follow: without them a pinch over the whole globe slides it tens of points each frame.
+    private func aim(_ g: V2, at s: CGPoint, R: Double) -> V2? {
+        let P0 = projector(Camera(lon: g.x, lat: g.y, R: R))
+        guard var c = P0.unproject(x: (P0.cx - s.x) / R, y: (s.y - P0.cy) / R) else { return nil }
+        let k = 1 / RAD / R
+        var best = c, be = Double.infinity   // the closest so far, so a correction never makes it worse
+        for _ in 0..<20 {
+            guard let q = projector(Camera(lon: c.x, lat: c.y, R: R)).screen(lon: g.x, lat: g.y) else { break }
+            let ex = Double(s.x - q.x), ey = Double(s.y - q.y), e = abs(ex) + abs(ey)
+            if e < be { be = e; best = c }
+            if e < 0.1 { break }
+            c = V2(c.x - ex * k / max(0.25, cos(c.y * RAD)), max(-89, min(89, c.y + ey * k)))
+        }
+        return best
+    }
+
     /// Turns the globe so a point keeps the same place under the finger, at a new size.
     private func look(_ geo: V2?, at s: CGPoint, R: Double, from c0: Camera) {
-        var c: V2?
-        if let g = geo {
-            let P = projector(Camera(lon: g.x, lat: g.y, R: R))
-            c = P.unproject(x: (P.cx - s.x) / R, y: (s.y - P.cy) / R)
-        }
-        let to = c ?? V2(c0.lon, c0.lat)
+        let to = geo.flatMap { aim($0, at: s, R: R) } ?? V2(c0.lon, c0.lat)
         cam = Camera(lon: to.x, lat: max(-80, min(80, to.y)), R: R)
         if let v = view, v.id != "world" { worldOpacity = needsWorld(cam, v) ? 1 : 0 }
     }
@@ -369,10 +381,7 @@ final class Globe {
     private func step(from p: CGPoint, to s: CGPoint, R: Double) {
         let a = cam, k = 1 / RAD / R
         var lon = a.lon - Double(s.x - p.x) * k / max(0.25, cos(a.lat * RAD)), lat = a.lat + Double(s.y - p.y) * k
-        if R != a.R, let geo = projector.geo(at: p) {
-            let P = projector(Camera(lon: geo.x, lat: geo.y, R: R))
-            if let c = P.unproject(x: (P.cx - s.x) / R, y: (s.y - P.cy) / R) { lon = c.x; lat = c.y }
-        }
+        if R != a.R, let geo = projector.geo(at: p), let c = aim(geo, at: s, R: R) { lon = c.x; lat = c.y }
         cam = Camera(lon: lon - 360 * ((lon + 180) / 360).rounded(.down), lat: max(-80, min(80, lat)), R: R)
         if let v = view, v.id != "world" { worldOpacity = needsWorld(cam, v) ? 1 : 0 }
     }
@@ -381,12 +390,18 @@ final class Globe {
     /// first two are, and starts fresh whenever a finger lands or lifts, so nothing jumps.
     func touchesMoved(to s: CGPoint, spread d: Double?, fingers n: Int, time t: TimeInterval) {
         guard !going else { return }
-        if gesture == nil { ticker.stop(); busy = false; labels = []; dots = [] }
+        if gesture == nil { ticker.stop(); busy = false; labels = []; dots = []; pinched = false; pushAt = nil }
+        if n > 1 { pinched = true }
         guard let g = gesture, g.fingers == n else {
             gesture = (cam, d, n); last = s; flick = .zero; moved = t
             return
         }
-        let R = n > 1 && (g.spread ?? 0) > 0 && d != nil ? clampR(g.cam.R * d! / g.spread!, from: g.cam.R) : g.cam.R
+        let want = n > 1 && (g.spread ?? 0) > 0 && d != nil ? g.cam.R * d! / g.spread! : g.cam.R
+        if n > 1, view?.id == "world" {   // pinching on past the world's limit marks the spot; backing off forgets it
+            let cap = baseR * 14
+            if want > cap * 1.1 { pushAt = s } else if want < cap { pushAt = nil }
+        }
+        let R = n > 1 ? clampR(want, from: g.cam.R) : want
         step(from: last, to: s, R: R)
         // a flick only follows one finger; the speed is smoothed over the last few moves
         let dt = t - moved
@@ -400,11 +415,17 @@ final class Globe {
     /// How fast the finger was moving, for the flick that follows, and when it last moved.
     @ObservationIgnored private var flick = CGSize.zero
     @ObservationIgnored private var moved: TimeInterval = 0
+    /// Whether two fingers have been down in this gesture. A pinch never ends in a flick: the fingers lift a moment
+    /// apart, and the last one's slide as it lifts would throw the globe away.
+    @ObservationIgnored private var pinched = false
+    /// Where the fingers were when a pinch pushed past the world globe's limit. The world only has rough country
+    /// outlines, so it stops at 14 times; letting go there opens the country under the fingers, where the globe is.
+    @ObservationIgnored private var pushAt: CGPoint?
 
     /// Every finger is off the glass, whether the touch ended or was cancelled, so a pinch always settles (and changes
     /// level) and the next gesture always starts fresh. A finger that rested before lifting does not flick.
     func touchesEnded(time t: TimeInterval) {
-        let v = t - moved < 0.08 ? flick : .zero
+        let v = !pinched && t - moved < 0.08 ? flick : .zero
         flick = .zero
         endGesture(velocity: v)
     }
@@ -434,6 +455,10 @@ final class Globe {
         let b = camFor(v)
         if v.id != "world" && cam.R < b.R * Globe.leaveAt {   // pinched out: up a level, where the globe is
             pickInPlace(v.parent ?? "world"); return
+        }
+        if v.id == "world", let p = pushAt {
+            pushAt = nil
+            if let id = hit(p).first { pickInPlace(id); return }
         }
         relabel()   // the globe stays where the finger left it, at every level: a place opens only when tapped
     }

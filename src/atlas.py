@@ -175,13 +175,62 @@ def eu_rows_ids():
 # the Côte de Beaune AOC is a few slopes above Beaune. The page is the district: drawn from its villages, without the AOC's rules.
 DISTRICTS={'france/cote-de-beaune'}
 SHAPE_SRC={'eu-pdo':'EU wine PDO boundaries','lau-rules':'Eurostat LAU, the municipalities its rules name','ava':'UC Davis AVA boundaries','wine-australia':'Wine Australia GI boundaries','iponz':'IPONZ GI register',
-           'argentina':'geoBoundaries, the department it is named for','chile':'Chile Decreto 464, drawn from its comunas and provinces','nuts':'Eurostat NUTS, the area it is named for','lau':'Eurostat LAU, the commune it is named for'}
+           'argentina':'geoBoundaries, the department it is named for','chile':'Chile Decreto 464, drawn from its comunas and provinces','nuts':'Eurostat NUTS, the area it is named for','lau':'Eurostat LAU, the commune it is named for',
+           'plots':'INAO vineyard delimitations','lazio':'ARSIAL wine zones for Regione Lazio'}
 def geoindex_norm(v):
     import geoindex as G; return G.norm(v)
 # outlines the EU record gets wrong (round 30): Valdeorras's row carries Alicante's 104 communes, Cviček's carries Bela krajina's three
 SHAPE_FIX={'spain/valdeorras':('lau',['ES_32009','ES_32015','ES_32017','ES_32038','ES_32060','ES_32072','ES_32073','ES_32088']),   # O Barco, O Bolo, Carballeda, Larouco, Petín, A Rúa, Rubiá, Vilamartín: the DO's eight municipalities
            'slovenia/cvicek':('pdo','PDO-SI-A0871'),   # Cviček is the Dolenjska (Lower Carniola) district's wine: drawn as that district
            'france/coligny':('none',None)}   # merged into Val-des-Marais in 2018; the only Coligny left in the 2021 communes is in the Ain (like Vertus or Bisseuil, no outline)
+# a grand cru's INAO area that takes in a neighbor sold under its name: Chambertin's 28 ha include Clos de Bèze's 15, and
+# Chambertin's own vineyard is the 12.9 ha left. Charmes and Mazoyères share one INAO area of 31 ha.
+PLOT_LESS={'france/chambertin':['france/chambertin-clos-de-beze'],'france/charmes-chambertin':['france/mazoyeres-chambertin']}
+# a cadastral lieu-dit that draws the line INAO does not: Mazoyères is the 18.6 ha of that area in the lieu-dit "Mazoyères ou
+# Charmes", so Charmes keeps the 12.3 ha in "Aux Charmes"
+PLOT_CUT={'france/mazoyeres-chambertin':('21295','MAZOYERES OU CHARMES')}
+CADASTRE='https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/communes/{d}/{c}/cadastre-{c}-lieux_dits.json.gz'
+# appellations the EU draws as the same commune as a neighbor, with their own INAO boundary: Saint-Georges is 2.8 km² of Montagne
+INAO_DRAW=['france/saint-georges-saint-emilion','france/petit-chablis']   # and Petit Chablis, which the EU draws as all of Chablis's communes
+def plot_shapes():
+    """Each grand cru and single-vineyard appellation drawn by its own INAO boundary, not the whole commune the EU draws
+    (La Tâche and Romanée-Conti came out as one shape). Read from data/cache only."""
+    import atlasland
+    from shapely.ops import unary_union
+    try: S=atlasland.plot_shapes(fetch=False,extra=INAO_DRAW)
+    except (FileNotFoundError,TypeError): return {}
+    import gzip
+    from shapely.geometry import shape
+    for n,(c,nom) in PLOT_CUT.items():
+        p=os.path.join(CA,f'cadastre-{c}-lieux_dits.json.gz')
+        if n in S and os.path.exists(p):
+            S[n]=S[n].intersection(unary_union([shape(f['geometry']) for f in json.load(gzip.open(p))['features'] if f['properties']['nom']==nom])).buffer(0)
+    for n,less in PLOT_LESS.items():
+        if n in S: S[n]=S[n].difference(unary_union([S[k] for k in less if k in S])).buffer(0)
+    return S
+LAZIO_WFS='https://geoportale.regione.lazio.it/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&outputFormat=application/json&srsName=EPSG:4326&typeNames=geonode:'
+LAZIO_LAYERS=['Vini_DOC_Regione_Lazio','Vini_DOCG_Regione_Lazio']
+def lazio_shapes():
+    """Lazio's DOC and DOCG zones as ARSIAL drew them from each disciplinare on the 1:5,000 regional map, as {place: shape}.
+    The EU draws them by whole commune, so Frascati and Marino each took in all of Rome. Orvieto is left to the EU, since
+    the Lazio layer holds only its Lazio half. Read from data/cache only."""
+    import re
+    from shapely.geometry import shape
+    from shapely.ops import unary_union
+    key=lambda v:' '.join(w for w in re.sub(r'[^a-z ]',' ',geoindex_norm(v)).split() if w not in ('di','del','della'))
+    by={}
+    for n,t in T.items():
+        if t['path'].startswith('italy/lazio/'):
+            for a in [t['name']]+t.get('also',[]): by[key(a)]=n
+    out={}
+    for L in LAZIO_LAYERS:
+        p=os.path.join(CA,'lazio-vini',L+'.json')
+        if not os.path.exists(p): continue
+        for f in jl(p)['features']:
+            d=f['properties']['denominazi']
+            n=next((by[key(x)] for x in [d]+d.split('_') if key(x) in by),None)
+            if n: out[n]=unary_union([out[n],shape(f['geometry'])]).buffer(0) if n in out else shape(f['geometry']).buffer(0)
+    return out
 def fixed_shape(n):
     import geoindex as G
     how,v=SHAPE_FIX[n]
@@ -249,6 +298,8 @@ def fetch():
         with urllib.request.urlopen(urllib.request.Request(f'https://www.iponz.govt.nz/get-ip/geographical-indications/register/{s}',headers=ua),timeout=60) as r:
             m=re.search(r'/assets/GIRegister/[^"]+\.zip',r.read().decode('utf-8','replace'))
         if m: save('https://www.iponz.govt.nz'+m.group(0),p)
+    for L in LAZIO_LAYERS: save(LAZIO_WFS+L,os.path.join(CA,'lazio-vini',L+'.json'))
+    for c,_ in PLOT_CUT.values(): save(CADASTRE.format(d=c[:2],c=c),os.path.join(CA,f'cadastre-{c}-lieux_dits.json.gz'))
     for L in (1,3):
         save(f'https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_01M_2021_4326_LEVL_{L}.geojson',os.path.join(CA,'gisco',f'NUTS_RG_01M_2021_4326_LEVL_{L}.geojson'))
 def geo():
@@ -259,10 +310,11 @@ def geo():
     for n in places:
         p=G.display_parent(n)
         if p: kids[p].append(n)
-    shp={}; src={}; t0=time.time()
+    shp={}; src={}; t0=time.time(); PS=plot_shapes(); print(f'{len(PS)} places drawn by their INAO vineyard boundary',flush=True)
+    LZ=lazio_shapes(); print(f'{len(LZ)} places drawn by their Lazio zone',flush=True)
     def resolve(n):
         if n in shp: return shp[n]
-        try: g,s=(None,None) if n in DISTRICTS else (fixed_shape(n) if n in SHAPE_FIX else G.own_shape(n))
+        try: g,s=(None,None) if n in DISTRICTS else (PS[n],SHAPE_SRC['plots']) if n in PS else (LZ[n],SHAPE_SRC['lazio']) if n in LZ else (fixed_shape(n) if n in SHAPE_FIX else G.own_shape(n))
         except KeyError: g,s=None,None
         if (g is None or g.is_empty) and n not in DISTRICTS: g,s=extra_shape(n)
         if g is None or g.is_empty:
@@ -320,6 +372,9 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'nuts':dict(name='Eurostat GISCO, NUTS 2021 boundaries',url='https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics'),
      'chile':dict(name='Decreto 464, Zonificación vitícola (Servicio Agrícola y Ganadero), drawn on geoBoundaries comunas and regions (BCN, CC BY 3.0 IGO) and provinces (OpenStreetMap, ODbL)',url='https://sag.cl/sites/default/files/decreto_ndeg_464.pdf'),
      'argentina':dict(name='geoBoundaries, Argentina departments (Instituto Geográfico Nacional, CC BY 3.0 IGO) and provinces (CC BY 2.5)',url='https://www.geoboundaries.org'),
+     'cadastre':dict(name='Etalab, Plan cadastral informatisé: the lieux-dits of Gevrey-Chambertin (Licence Ouverte)',url='https://cadastre.data.gouv.fr/datasets/cadastre-etalab'),
+     'sa-municipalities':dict(name='geoBoundaries, South African local municipalities from the Municipal Demarcation Board (CC BY 3.0 IGO), drawing each Wine of Origin district by its municipalities',url='https://www.geoboundaries.org'),
+     'lazio':dict(name="ARSIAL, Vini DOC and Vini DOCG Regione Lazio: each zone drawn from its disciplinare on the regional 1:5,000 map (Regione Lazio geoportal)",url='https://geoportale.regione.lazio.it/catalogue/#/dataset/1081'),
      'lau':dict(name='Eurostat GISCO, Local Administrative Units 2021 (communes)',url='https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units'),
      'lau-rules':dict(name='Eurostat GISCO, Local Administrative Units 2021 (the municipalities the rules name)',url='https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units'),
      'nrcs':dict(name='USDA NRCS Soil Survey Manual, Agriculture Handbook 18 (texture classes and pH classes)',url=None),
@@ -988,6 +1043,8 @@ def facts():
             pr=next((AU[m] for m in [geoindex_norm(v) for v in [t['name']]+t.get('also',[])] if m in AU),None)
             if pr: f['gi']={k:pr.get(v) for k,v in dict(type='GI_TYPE',number='GI_NUMBER',year='YEAR_REGISTER',area_km2='GI_AREA_KM2',vines_ha='VINE_AREA_HA',url='GI_URL',state='STATE').items()}
         src+=[k for k,v in SHAPE_SRC.items() if v==x['source']]
+        if n in PLOT_CUT or any(k in PLOT_CUT for k in PLOT_LESS.get(n,())): src.append('cadastre')
+        if n.startswith('south-africa/') and x['source'] in ('zone store','geoBoundaries'): src.append('sa-municipalities')   # Wine of Origin districts are not published as map data, so each is drawn by its municipalities   # the lieu-dit line between Charmes and Mazoyères
         sub=below(n)+ALSO_INSIDE.get(n,[])   # a region in two zones counts in both (Murray Darling and Swan Hill straddle the Victoria and New South Wales border)
         ac=list(dict.fromkeys([UCD_T.get(x,x) for x in (A.get(n) or {}).get('contains') or [] if x and t['name'] not in OVERLAP_OF.get(x,()) and x not in AVANOTCONTAINS.get(t['name'],())]
                               +([T[k]['name'] for k,v in A.items() if k!=n and k in T and t['name'] in (v.get('within') or [])] if n in A else [])))   # UC Davis lists El Dorado twice in Sierra Foothills (the AVA and the county); an AVA only partly inside is not counted; AVAs whose own "Inside" names this one count too (Fort Ross-Seaview in Sonoma Coast)
@@ -1008,7 +1065,7 @@ def facts():
             f.pop('climate',None); f.pop('winkler',None)
             if f.get('reading'): f['reading'].pop('climate',None)
         if f.get('blurb') and n not in KF and not BL.get(n,{}).get('audited'): f['blurb']['text']=trim_blurb(f['blurb']['text'],f)   # a blurb the audit rewrote was checked against sources; the trimmer leaves it alone
-        if f.get('terrain') and (x['source'] in AREA_SHAPES or (x['source']=='zone store' and n.startswith('argentina/'))) and n not in PLOTS:   # Argentina's stored zones are its departments: Luján de Cuyo's band ran up into the Andes   # a whole commune or district: its heights are not the vineyards' (Avize's plateau, Gattinara's plain)
+        if f.get('terrain') and (x['source'] in AREA_SHAPES or n in INAO_DRAW or (x['source']=='zone store' and n.startswith('argentina/'))) and n not in PLOTS:   # Saint-Georges's heights were read over all of Montagne   # Argentina's stored zones are its departments: Luján de Cuyo's band ran up into the Andes   # a whole commune or district: its heights are not the vineyards' (Avize's plateau, Gattinara's plain)
             f.pop('terrain',None); f.pop('aspect',None)
             if f.get('reading'): f['reading'].pop('land',None)
             src=[s_ for s_ in src if s_ not in ('terrain','lapse')]

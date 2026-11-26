@@ -76,10 +76,19 @@ class Sources:
                 if os.path.exists(p): d.setdefault(norm(a['name']),shape(jl(p)['geometry']).buffer(0))
             return d
         return s.get('st',load)
+    def zones(s):   # the same zones by name, each with the store (country) it is in
+        def load():
+            d=collections.defaultdict(list)
+            for a in jl(os.path.join(CA,'eu-maps','_national.json'))['appellations']:
+                p=os.path.join(CA,'eu-maps',a['region'],a['slug']+'.json')
+                if os.path.exists(p): d[norm(a['name'])].append((a['region'],p))
+            return d
+        return s.get('zn',load)
     def store_border(s,store): return unary_union([shape(f['geometry']) for f in jl(os.path.join(CA,'eu-maps',store,'_region.json'))['features']]).buffer(0)
-    def store_commune(s,store,name):
-        for f in jl(os.path.join(CA,'eu-maps',store,'_communes.json'))['features']:
-            if norm(f['properties']['name'])==norm(name): return shape(f['geometry']).buffer(0)
+    def store_commune(s,store,*names):   # one commune, or the union of several (Breede River Valley spans two municipalities)
+        want={norm(x) for x in names}
+        gs=[shape(f['geometry']).buffer(0) for f in jl(os.path.join(CA,'eu-maps',store,'_communes.json'))['features'] if norm(f['properties']['name']) in want]
+        return unary_union(gs).buffer(0) if gs else None
 S=Sources()
 def country_of(n): return T[T[n]['path'].split('/')[0]]['name']
 def own_shape(n):
@@ -92,7 +101,7 @@ def own_shape(n):
     if 'store_border' in o: return S.store_border(o['store_border']),'geoBoundaries'
     if 'store_commune' in o: return S.store_commune(*o['store_commune']),'geoBoundaries'
     if 'stores' in o: return unary_union([S.stores()[norm(x)] for x in o['stores']]).buffer(0),'geoBoundaries'
-    if o.get('none'): return None,None
+    if o.get('none') or o.get('village'): return None,None
     if T[n]['depth']==0: return S.countries().get(T[n]['name']),'Eurostat GISCO countries'
     if C=='United States':
         g=S.avas().get(nm)
@@ -110,8 +119,9 @@ def own_shape(n):
                 a=T[a].get('parent')
             cs=[max(cs,key=lambda g:g.intersection(ag).area)] if ag is not None and not ag.is_empty else []
         if cs: return cs[0],'Eurostat GISCO LAU'
-    g=S.stores().get(nm)
-    if g is not None: return g,'zone store'
+    c=n.split('/')[0]   # only a zone in the place's own country: Serbia's Banat is not Romania's
+    p=next((p for r,p in S.zones().get(nm,[]) if r==c or r.startswith(c+'-')),None)
+    if p: return shape(jl(p)['geometry']).buffer(0),'zone store'
     return None,None
 def display_parent(n):
     """The place the app shows this one inside: its tree parent, skipping category nodes."""
