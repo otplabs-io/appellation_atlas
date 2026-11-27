@@ -10,6 +10,8 @@
 const $=s=>document.querySelector(s), esc=s=>unitText(String(s??'')).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fold=s=>String(s??'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
 const NS='http://www.w3.org/2000/svg';
+const BACK='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="color:var(--teal)" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>';
+const CMP_ICON='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4v16M16 4v16M4 8h4M16 16h4"/></svg>';
 let GEO,WORLD,PL,VIEWS={},FACTS={},SCORED=false;   // SCORED: notoriety has been fetched
 const START={lon:-33.56,lat:18.13,ex:.83775,ey:.9314};   // where the globe opens, and how much of it to fit
 const S={p:'world'};
@@ -18,9 +20,14 @@ const fmt=n=>n==null?'':Math.round(n).toLocaleString('en-US');
 function readHash(){const h=decodeURIComponent(location.hash.replace(/^#\/?/,''));
   S.view='place'; S.ca=S.cb=null;
   if(h==='pairs'){S.view='pairs'; S.p='world';}
+  else if(h==='compare'){S.view='compare'; S.p='world';}
   else if(h.startsWith('compare/')){const [a,b]=h.slice(8).split('/vs/'); S.view='compare'; S.ca=PL[a]?a:null; S.cb=b&&PL[b]?b:null; S.p='world';}
   else S.p=h&&PL[h]?h:'world';
-  document.body.classList.toggle('cmpmode',S.view!=='place'); appBanner();}
+  const cl=document.body.classList; cl.toggle('cmpmode',S.view==='compare'); cl.toggle('pairsmode',S.view==='pairs'); cl.toggle('home',S.view==='place'&&S.p==='world');
+  appBanner(); relayout();}
+// the map's size follows the page's mode (the globe at home is taller than a place's map on a phone)
+function relayout(){if(!M.svg) return; const w=M.box.clientWidth, h=M.box.clientHeight; if(!w||!h||(w===M.W&&h===M.H)) return; mapSize(); if(M.view&&!M.busy){M.cam=camOf(M.cam.lon,M.cam.lat,M.cam.R); draw(); labels();}}
+const WIDE=()=>matchMedia('(min-width:1024px)').matches;
 // Safari's App Store banner: Open takes the app straight to the place on screen (the app reads atlas://place/<id>)
 function appBanner(){const m=document.querySelector('meta[name="apple-itunes-app"]'); if(!m) return;
   const arg=S.view==='compare'&&S.ca&&S.cb?'atlas://compare/'+S.ca+'/vs/'+S.cb:S.view==='pairs'?'atlas://pairs':S.p!=='world'?'atlas://place/'+S.p:'';
@@ -39,6 +46,9 @@ const TONES={e:{one:'Essential benchmark',many:'Essential benchmarks',cls:'a4'},
 const tone=id=>{const x=PL[id]; return !x?'o':x[7]&5?'e':x[7]&10?'b':x[8]?'i':'o';};
 const moreIn=vid=>vid==='world'?'Other countries':'More in '+(PL[vid]?.[0]||'');
 const shade=id=>TONES[tone(id)].cls;
+// "Show on the map": all places, the benchmarks, or the essential benchmarks only; the rest stay plain land (mapShade in the app)
+let FILTER=(()=>{try{return localStorage.getItem('atlas-filter')||'all';}catch(e){return 'all';}})();
+const mapShade=id=>{const t=tone(id); return FILTER==='bench'&&(t==='i'||t==='o')||FILTER==='essential'&&t!=='e'?'a0':shade(id);};
 
 // ---------- the map: an orthographic globe that flies from the world down to the appellation
 const RAD=Math.PI/180, TAU=2*Math.PI;
@@ -126,7 +136,7 @@ function camFor(v){
   if(v.id==='world'){const h=START; return camOf(h.lon,h.lat,Math.min(M.W/2/h.ex,M.H/2/h.ey)*.94);}
   return camOf(v.center[0],v.center[1],Math.min(M.W/2/v.half[0],M.H/2/v.half[1])*.9);}
 function draw(){
-  const cam=M.cam, hd=Math.hypot(M.W,M.H)/2; M.va=hd>=cam.R?Math.PI/2:Math.asin(hd/cam.R)+.01;
+  const cam=M.cam, hd=WIDE()?Math.hypot(innerWidth,innerHeight):Math.hypot(M.W,M.H)/2; M.va=hd>=cam.R?Math.PI/2:Math.asin(hd/cam.R)+.01;
   M.ocean.setAttribute('r',r1(cam.R)); M.rim.setAttribute('r',r1(cam.R));
   M.grat.setAttribute('d',cam.R<Math.min(M.W,M.H)*2.5?gratD(cam):'');
   for(const f of M.feats) if(f.on()){const d=f.line?lineD(f.g,cam):f.g.map(p=>polyD(p,cam)).join(''); f.el.setAttribute('d',d); if(f.edge) f.edge.setAttribute('d',d);}
@@ -159,7 +169,7 @@ function dropView(g){M.feats=M.feats.filter(f=>!g.contains(f.el)); g.remove();}
 const kindOf=id=>PL[id]?.[3]||'';
 function restyle(){
   const v=M.view; if(!v) return;   for(const f of M.feats) if(f.it){
-    f.el.setAttribute('class',`rg${f.sib?' sib a0':' '+shade(f.it.id)}${M.leaf===f.it.id?' sel':''}`);
+    f.el.setAttribute('class',`rg${f.sib?' sib a0':' '+mapShade(f.it.id)}${M.leaf===f.it.id?' sel':''}`);
     f.el.replaceChildren(); el('title',{},f.el).textContent=f.it.name+(kindOf(f.it.id)?` (${kindOf(f.it.id)})`:'');}
 }
 function labels(){
@@ -171,7 +181,7 @@ function labels(){
   for(const it of v.items) it.s=null;
   for(const it of live){   // too small to tap at this size: add a dot (not on the world view)
     const f=M.feats.find(f=>f.it===it&&!f.sib), bb=f&&f.el.getBBox(); const s=scr(it.l); if(!s) continue; it.s=s; it.dot=v.id!=='world'&&(!bb||Math.max(bb.width,bb.height)<16); it.bb=bb;   // no dots for countries: a small one gets its name only
-    if(it.dot){const c=el('circle',{cx:r1(s[0]),cy:r1(s[1]),r:6,class:`dot-m ${shade(it.id)}${M.leaf===it.id?' sel':''}`,'data-id':it.id},g); el('title',{},c).textContent=it.name; placed.push([s[0]-5,s[1]-5,s[0]+5,s[1]+5]);}}
+    if(it.dot){const c=el('circle',{cx:r1(s[0]),cy:r1(s[1]),r:6,class:`dot-m ${mapShade(it.id)}${M.leaf===it.id?' sel':''}`,'data-id':it.id},g); el('title',{},c).textContent=it.name; placed.push([s[0]-5,s[1]-5,s[0]+5,s[1]+5]);}}
   for(const it of live){if(!it.s) continue; const t=it.name, w=t.length*fs*.56, h=fs*1.2, [x,y]=it.s;
     const tries=it.dot?[[x+10,y+4,'start'],[x-10,y+4,'end'],[x,y-11,'middle'],[x,y+h+8,'middle']]
       :[[x,y+fs*.35,'middle'],[x,y-8,'middle'],[x,y+h+4,'middle'],[x+12,y+fs*.35,'start'],[x-12,y+fs*.35,'end'],[x+8,y-8,'start'],[x-8,y-8,'end'],[x+8,y+h+4,'start'],[x-8,y+h+4,'end']];
@@ -235,7 +245,7 @@ async function intro(b){
     M.svg.style.opacity=Math.min(1,k*5); draw(); k<1?requestAnimationFrame(step):res();}; requestAnimationFrame(step);});
   M.cam=b; M.svg.style.opacity=''; M.busy=false; draw();
 }
-function mapSize(){const w=M.box.clientWidth||360, h=Math.round(Math.max(320,Math.min(w*.95,innerHeight*.62))); M.W=w; M.H=h;
+function mapSize(){const w=M.box.clientWidth||360, h=Math.max(200,M.box.clientHeight||320); M.W=w; M.H=h;   // the stylesheet sizes the map: the top of a phone, or the space between the panels (drawn on under them)
   M.svg.setAttribute('viewBox',`0 0 ${w} ${h}`); M.svg.setAttribute('height',h); M.ocean.setAttribute('cx',w/2); M.ocean.setAttribute('cy',h/2); M.rim.setAttribute('cx',w/2); M.rim.setAttribute('cy',h/2);}
 function mapInit(){
   M.box=$('#map'); M.feats=[];
@@ -246,7 +256,7 @@ function mapInit(){
   M.world=el('g',{class:'world'},M.svg); for(const c of WORLD.countries){c.g=prep(c.p); addFeat(M.world,'land',c.g);}
   M.layers=el('g',{},M.svg); M.rim=el('circle',{class:'rim'},M.svg); M.lab=el('g',{class:'lab'},M.svg);
   M.box.replaceChildren(M.svg); mapSize();
-  const out=document.createElement('button'); out.type='button'; out.className='zout ts-place_subtitle'; out.onclick=zoomOut; out.hidden=true; M.box.appendChild(out); M.out=out;
+  const out=document.createElement('button'); out.type='button'; out.className='zout'; out.onclick=zoomOut; out.hidden=true; M.box.appendChild(out); M.out=out;
   M.svg.addEventListener('click',e=>{if(M.dragged||M.busy) return; const t=e.target.closest('[data-id]');
     if(t){if(t.classList.contains('sib')) pick(t.dataset.id); else cycle(stack(t,e)); return;}
     const b=M.svg.getBoundingClientRect(), x=(e.clientX-b.left)*M.W/b.width, y=(e.clientY-b.top)*M.H/b.height;   // a near miss: the closest place within a fingertip
@@ -332,7 +342,7 @@ async function mapShow(){
       if(want===p) break;}
     restyle(); labels();
     const v=M.view; M.out.hidden=v.id==='world'&&!M.leaf;
-    M.out.textContent='‹ '+(M.leaf?v.name:v.parent==='world'?'The world':PL[v.parent]?.[0]||'Back');
+    M.out.innerHTML=BACK+esc(M.leaf?v.name:v.parent==='world'?'The world':PL[v.parent]?.[0]||'Back');
     touchMode();
   } finally {M.going=false;}
 }
@@ -356,7 +366,7 @@ function pick(id){
   go(id);
 }
 // ---------- under the map: the places here, and what is known about the place you are in
-function renderPlaces(){
+function renderPlaces(){   // the trail above the name, and the places inside, for their own section (renderInfo)
   const vid=viewFor(S.p), here=Object.keys(GEO.places).filter(i=>GEO.places[i].parent===vid);
   const sorted=here.sort((a,b)=>score(b)-score(a)||PL[a][0].localeCompare(PL[b][0]));
   const chain=[]; let id=vid; while(id&&id!=='world'){chain.unshift(id); id=GEO.places[id]?.parent;}
@@ -365,17 +375,12 @@ function renderPlaces(){
   $('#crumbs').innerHTML=crumbs.map(([i,n],k)=>k===crumbs.length-1?`<b>${esc(n)}</b>`:`<a href="${link(i)}">${esc(n)}</a>`).join(' › ');
   if(M.allFor!==vid){M.all=false; M.allFor=vid;}
   const ess=sorted.filter(i=>tone(i)==='e'), bench=sorted.filter(i=>tone(i)==='b'), inner=sorted.filter(i=>tone(i)==='i'), emerg=sorted.filter(i=>tone(i)==='o'), gold=ess.length+bench.length+inner.length, cap=gold?12:30, shown=M.all?emerg:emerg.slice(0,cap);
-  const step=i=>`<a class="step ts-ladder_step" href="${link(i)}" aria-pressed="${S.p===i}"><i class="sw ${shade(i)}"></i>${esc(PL[i][0])}${GEO.places[i].source?'':'<small> no map</small>'}</a>`;
-  const grp=(head,list,n)=>list.length?`<p class="grp ts-fact_label">${head} <small class="ts-caption">${n}</small></p><div class="steps">${list.map(step).join('')}</div>`:'';
+  const step=i=>`<a class="step" href="${link(i)}" aria-pressed="${S.p===i}"><i class="sw ${shade(i)}"></i>${esc(PL[i][0])}${GEO.places[i].source?'':'<small> no map</small>'}</a>`;
+  const grp=(head,list,n)=>list.length?`<p class="grp">${head} ${n}</p><div class="steps">${list.map(step).join('')}</div>`:'';
   const body=grp(TONES.e.many,ess,ess.length)+grp(ess.length?'Other benchmarks':TONES.b.many,bench,bench.length)+grp(TONES.i.many,inner,inner.length)+(gold?grp(esc(moreIn(vid)),shown,emerg.length):shown.length?`<div class="steps">${shown.map(step).join('')}</div>`:'')
     +(emerg.length>shown.length?`<button type="button" class="link ts-caption more" id="allp">Show all ${emerg.length}</button>`:'');
-  const where=vid==='world'?'Countries':'Places in '+esc(PL[vid]?.[0]||'');
-  $('#places').innerHTML=!sorted.length?'':leaf&&leaf!=='world'   // on a place's own page its neighbours fold away, so its page comes first
-    ?`<details class="sibs"${M.sibsOpen?' open':''}><summary class="ts-section_head inside">Other places in ${esc(PL[vid]?.[0]||'')} <small class="ts-caption">${sorted.length}</small></summary>${body}</details>`
-    :`<h3 class="ts-section_head inside">${where}</h3>${body}`;
-  const sd=$('#places details.sibs'); if(sd) sd.ontoggle=()=>{M.sibsOpen=sd.open;};
-  const ap=$('#allp'); if(ap) ap.onclick=()=>{M.all=true; renderPlaces();};
-  $('#mapNote').textContent=vid==='world'?'Tap a country or pinch to zoom in. Drag to turn the globe.':'Tap a place to go in. Drag to move. Pinch to zoom in or out.';
+  const pn=esc(PL[vid]?.[0]||'');
+  M.places=!sorted.length?null:{head:leaf&&leaf!=='world'?`Other places in ${pn}`:vid==='world'?'Countries':`Places in ${pn}`,body,n:sorted.length,leaf:!!leaf,parent:pn};
 }
 async function facts(id){
   if(!FACTS[id]){const r=await fetch('facts/'+id.replace(/\//g,'__')+'.json'); FACTS[id]=r.ok?await r.json():null;}
@@ -433,15 +438,25 @@ const SHAPE_NOTE={'Eurostat NUTS, the area it is named for':'The map draws the d
   'geoBoundaries, the province it is named for':'The map draws the province.',
   'IPONZ GI register':'The boundary is the one on New Zealand\u2019s GI register.','Wine Australia GI boundaries':'The boundary is Wine Australia\u2019s. The legal one is the written description in the register.',
   'union of its children':'There is no single boundary for it, so the map joins the places inside it.'};
-function renderTitle(id,f){   // the place's name, what it is and which group it is in, above the map
+function renderTitle(id,f){   // what the place is and which group it is in, its name and what it is known for (PlaceSheet in the app)
   const cap=x=>x?x[0].toUpperCase()+x.slice(1):x;
-  if(id==='world'){$('#ptitle').innerHTML=`<h2 class="ts-sheet_title name">Explore the world’s wine regions</h2>`; $('#shapeNote').hidden=true; return;}
+  if(id==='world'){$('#ptitle').innerHTML=''; $('#shapeNote').hidden=true; return;}
   const kind=f?(f.kind.length?f.kind.map(cap).join(' and '):(f.depth===0?'Country':f.shape==='Eurostat LAU, the commune it is named for'?'Commune':'Region')):'';
-  $('#ptitle').innerHTML=`<p class="ts-eyebrow eyebrow">${esc(kind)}${tone(id)!=='o'?`${kind?' · ':''}<span class="badge ${tone(id)}">${TONES[tone(id)].one}</span>`:''}</p><h2 class="ts-sheet_title name" style="--n:${Math.max(...String(PL[id]?.[0]||id).split(/\s+/).map(w=>w.length))}">${esc(PL[id]?.[0]||id)}</h2>`
-    +(f&&f.also.length?`<p class="ts-caption also">Also ${f.also.map(esc).join(', ')}</p>`:'')
-    +(f&&f.blurb?`<p class="ts-body blurb">${esc(f.blurb.text)}</p>`:'')
-    +(f&&f.climate?`<p class="ts-caption cmp-link"><a href="${cmpLink(id)}">Compare with another place</a></p>`:'');   // what the place is known for (PlacePage in the app)
-  const sn=f&&SHAPE_NOTE[f.shape]; $('#shapeNote').hidden=!sn; $('#shapeNote').textContent=sn||'';
+  $('#ptitle').innerHTML=`<p class="eyebrow">${esc(kind)}${tone(id)!=='o'?`${kind?' · ':''}<span class="badge ${tone(id)}">${TONES[tone(id)].one}</span>`:''}</p><h2 class="name" style="--n:${Math.max(...String(PL[id]?.[0]||id).split(/\s+/).map(w=>w.length))}">${esc(PL[id]?.[0]||id)}</h2>`
+    +(f&&f.also.length?`<p class="also">Also ${f.also.map(esc).join(', ')}</p>`:'')
+    +(f&&f.blurb?`<p class="blurb">${esc(f.blurb.text)}</p>`:'');
+  const sn=f&&SHAPE_NOTE[f.shape]; M.shapeNote=sn||'';
+}
+// the place's figures as cards: what is planted most, its growing season and its heat (GlanceStrip in the app).
+// A phone swipes through them in a row; a wide screen sets them in a grid.
+function glanceStrip(f){
+  const c=f.climate, l=lead(f), cards=[];
+  if(l){const pl=f.planted, gr=pl.grapes.filter(([g])=>g!=='Other').slice(0,4);
+    cards.push(`<div class="gl gl-wide"><span class="gk">Planted, ${l.y}${l.about?' (approximate)':''}</span>${gr.map(([g,ha])=>{const p=Math.round(ha/pl.ha*100); return `<span class="glr"><span>${esc(g)}</span><i><b style="width:${p}%"></b></i><span>${p}%</span></span>`;}).join('')}</div>`);}
+  if(c&&c.gst!=null){const [gi]=seg(GST_F,c.gst);
+    cards.push(`<div class="gl"><span class="gk">Growing season</span><span class="gv">${deg(c.gst)}</span><span class="gn">${gi>=0?esc(GST_F[gi][0])+', ':''}${c.lat<0?'October to April':'April to October'}</span><span class="gseg" aria-hidden="true">${GST_F.map((x,k)=>`<i${k===gi?' class="on"':''}></i>`).join('')}</span></div>`);}
+  if(c&&c.gdd!=null) cards.push(`<div class="gl"><span class="gk">Heat</span><span class="gv">${heat(c.gdd).replace(' degree days','')}</span><span class="gn">degree days${f.winkler&&f.winkler[0]?', Winkler '+esc(f.winkler[0]):''}</span></div>`);
+  return cards;
 }
 function renderInfo(f){
   if(!f){$('#info').innerHTML=''; return;}
@@ -451,13 +466,14 @@ function renderInfo(f){
       :`${kn.articles
         ?`Scored from ${fmt(kn.articles)} Wikipedia article${kn.articles===1?'':'s'} on it and its places, ${fmt(kn.total)} page views in the last ${kn.days} days in all${kn.best?`. Best known: ${esc(PL[kn.best]?.[0]||kn.best)}`:''}.${kn.langs==null?' No article of its own.':''}`
         :`Known: in ${kn.langs} Wikipedia${kn.langs===1?'':'s'}, ${fmt(kn.views)} page views in the last ${kn.days} days.`}${kn.url?` <a href="${esc(kn.url)}" target="_blank" rel="noopener">Read about it on Wikipedia</a>`:''}`}</p>`:'');
-  const sm=f.summary;
-  if(sm){
-    const k=sm.kinds.map(([k,n])=>`${n} ${k}${n===1?'':'s'}`).join(', ');
-    let b=`<div class="facts">${fact('Places inside',fmt(sm.places),k)}${sm.gst?fact('Growing season',degRange(sm.gst[0],sm.gst[1]),'average temperature across its places'):''}</div>`;
-    if(sm.grapes.length&&!f.planted) b+=`<p class="ts-caption sub">The grapes most often allowed, and in how many of its ${sm.with_rules} appellation${sm.with_rules===1?'':'s'} with rules:</p>${chips(sm.grapes)}`;
-    X.glance=block('At a glance',b);
-  }
+  const sm=f.summary, cards=glanceStrip(f), P=M.places;
+  // under the name: the cards, then the places inside and Compare (the sheet's first screen on a phone)
+  const placesBtn=P?`<button type="button" class="btn ghost" data-jump="s-places">${sm&&!P.leaf?`${fmt(sm.places)} places inside`:P.leaf?`More in ${P.parent}`:`${P.n} places inside`}</button>`:'';
+  const lead=`<div class="lead">${cards.length?`<div class="lead-h"><b>At a glance</b>${cards.length>1?'<span>Swipe for more</span>':''}</div><div class="glance">${cards.join('')}</div>`:''}`
+    +`<div class="acts">${placesBtn}<a class="btn teal" href="${cmpLink(f.id)}">${CMP_ICON}Compare</a></div></div>`;
+  if(P){const k=sm?sm.kinds.map(([k,n])=>`${n} ${k}${n===1?'':'s'}`).join(', '):'';
+    X.places=block(P.head,`<div class="pgrp">${sm&&!P.leaf?`<p class="sub-n">${fmt(sm.places)} places in all${k?': '+esc(k):''}.</p>`:''}${P.body}</div>`);}
+  if(sm&&sm.grapes.length&&!f.planted) X.allowed=block('Grapes most often allowed',`<p class="ts-caption sub">In how many of its ${sm.with_rules} appellation${sm.with_rules===1?'':'s'} with rules:</p>${chips(sm.grapes)}`);
   const R=f.research;
   if(f.keyfacts&&f.keyfacts.length) X.keyfacts=block('Key facts',`<ul class="keyfacts">${f.keyfacts.map(t=>`<li class="ts-body">${esc(t)}</li>`).join('')}</ul>`);   // from the full article (src/keyfacts.py)
   if(f.style&&f.style.notes.length) X.style=block('Wine style',`${f.style.of?`<p class="ts-caption sub">Written for ${esc(f.style.of)} as a whole.</p>`:''}<ul class="keyfacts">${f.style.notes.map(t=>`<li class="ts-body">${esc(t)}</li>`).join('')}</ul>`);   // what the wines taste like (src/style.py)
@@ -556,16 +572,29 @@ function renderInfo(f){
   }
   if(!sm&&!ru&&!av&&!c&&!R&&!pl&&!rk) X.none=block('What we have','<p class="ts-body">No shape, rules or research for this place yet.</p>');
   const src=[...f.sources,...(R?R.sources:[])];
-  X.sources=block('Sources',knownLine+(src.length?`<ul class="src ts-caption">${src.map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`:esc(s.name)}</li>`).join('')}</ul>`:''));
+  X.sources=block('Sources',(M.shapeNote?`<p class="ts-caption sub">${esc(M.shapeNote)}</p>`:'')+knownLine+(src.length?`<ul class="src ts-caption">${src.map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`:esc(s.name)}</li>`).join('')}</ul>`:''));
   // what the place is, then what grows there, then why it grows there, then the law, then the notes
-  const order=['keyfacts','style','terms','glance','short','planted','climate','soil','land','parts','rules','ava','gi','found','none','sources'];
-  const JUMP={style:'Style',terms:'Label',planted:'Planted',climate:'Climate',soil:'Rock and soil',land:'Land',parts:'Compare',rules:'Vineyard',ava:'AVA',gi:'GI',found:'Notes'};
+  const order=['keyfacts','style','terms','short','planted','allowed','climate','soil','land','places','parts','rules','ava','gi','found','none','sources'];
+  const JUMP={keyfacts:'Key facts',style:'Style',terms:'Label',planted:'Planted',climate:'Climate',soil:'Rock and soil',land:'Land',places:'Places',allowed:'Grapes',parts:'Differences',rules:'Vineyard',ava:'AVA',gi:'GI',found:'Notes'};
   for(const k of order) if(X[k]) X[k]=X[k].replace('<section class="row"',`<section class="row" id="s-${k}"`);
   const jumps=order.filter(k=>X[k]&&JUMP[k]);
-  h=(jumps.length>=3?`<nav class="jump" aria-label="On this page">${jumps.map(k=>`<button type="button" class="step ts-ladder_step" data-jump="s-${k}">${JUMP[k]}</button>`).join('')}</nav>`:'')+order.map(k=>X[k]||'').join('')+FEEDBACK(f.name,f.id);
+  h=lead+(jumps.length>=2?`<nav class="jump" aria-label="On this page">${jumps.map((k,i)=>`<button type="button" class="step${i?'':' on'}" data-jump="s-${k}">${JUMP[k]}</button>`).join('')}</nav>`:'')+order.map(k=>X[k]||'').join('')+FEEDBACK(f.name,f.id);
   $('#info').innerHTML=h;
-  for(const b of document.querySelectorAll('#info [data-jump]')) b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView({behavior:'smooth',block:'start'});
+  for(const b of document.querySelectorAll('#info [data-jump]')) b.onclick=()=>{const t=document.getElementById(b.dataset.jump); if(t) t.scrollIntoView({behavior:'smooth',block:'start'});};
+  const ap=$('#allp'); if(ap) ap.onclick=()=>{M.all=true; renderPlaces(); renderInfo(f);};
+  spy();
   const apb=$('#allparts'); if(apb) apb.onclick=()=>{M.allParts=true; renderInfo(f); M.allParts=false;};
+}
+// the chip for the section in view stays lit (the chip bar in the app)
+let SPY=null;
+function spy(){
+  if(SPY) SPY.disconnect(); const nav=$('#info .jump'); if(!nav||!('IntersectionObserver' in window)) return;
+  const set=id=>{for(const b of nav.querySelectorAll('[data-jump]')){const on=b.dataset.jump===id; b.classList.toggle('on',on); if(on&&nav.scrollWidth>nav.clientWidth) nav.scrollTo({left:b.offsetLeft-20,behavior:'smooth'});}};
+  const seen=new Map();
+  SPY=new IntersectionObserver(es=>{for(const e of es) seen.set(e.target.id,e.isIntersecting?e.boundingClientRect.top:null);
+    const ids=[...nav.querySelectorAll('[data-jump]')].map(b=>b.dataset.jump), first=ids.find(i=>seen.get(i)!=null); if(first) set(first);},
+    {root:WIDE()?$('main'):null,rootMargin:'-60px 0px -55% 0px'});
+  for(const b of nav.querySelectorAll('[data-jump]')){const t=document.getElementById(b.dataset.jump); if(t) SPY.observe(t);}
 }
 // the feedback form (Google Forms): the place and its page link are filled in, the reader writes the rest
 const FEEDBACK=(name,id)=>`<section class="row" id="s-feedback"><p class="ts-caption">See something wrong or missing?</p><a class="feedback ts-caption" href="${FORM_URL}?usp=pp_url&entry.673545042=${encodeURIComponent(name)}&entry.612336214=${encodeURIComponent(location.origin+location.pathname+link(id))}" target="_blank" rel="noopener">Send feedback</a><p class="ts-caption about-link"><button type="button" class="link ts-caption" data-units>Units</button> · <button type="button" class="link ts-caption" data-about>About the Atlas</button></p></section>`;
@@ -629,13 +658,12 @@ function openUnits(){
 }
 document.addEventListener('click',e=>{if(e.target.closest('[data-units]')) openUnits();});
 const FORM_URL='https://docs.google.com/forms/d/e/1FAIpQLSc7CmB3DsylFI0kt6tZncSwq53i8jsEuxdrv4deyIuWJHq8oA/viewform';
-const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">${fmt(Object.keys(PL).length)} wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know.</p><p class="ts-body">Gold marks the benchmarks, the classic places to learn. The darkest gold marks the essential benchmarks, the ones to learn first, so every essential is a benchmark too. Light gold marks the places inside a benchmark. Grey marks every other place.</p><p class="ts-body">Each list puts the best known places first, by how many Wikipedias write about them and how often those pages are read.</p><p class="ts-body"><a href="#/pairs">Often compared</a>: the pairs of benchmark regions people set side by side most.</p></div></section>`;
 async function render(){
   readHash();
   if(S.view==='compare') return renderCompare();
   if(S.view==='pairs') return renderPairs();
   renderPlaces(); mapShow();
-  if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=WORLD_INFO()+FEEDBACK('Home','world'); return;}
+  if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=''; return;}
   renderTitle(S.p,null);
   const id=S.p, f=await facts(id); if(S.p===id) renderInfo(f);
 }
@@ -648,106 +676,157 @@ const cmpLink=(a,b)=>'#/compare/'+a+(b?'/vs/'+b:'');
 function shapes(a,oa,b,ob,box,inset,looseAt=10){   // looseAt: under 1/looseAt of the box, the smaller shape is drawn to its own scale
   if(!oa||!ob) return null;
   const sa=Math.max(oa.w,oa.h), sb=Math.max(ob.w,ob.h), s=box/Math.max(sa,sb), loose=Math.min(sa,sb)*s<box/looseAt;
-  const svg=(id,o,k)=>`<svg class="cshape ${shade(id)}" viewBox="0 0 ${o.w} ${o.h}" width="${Math.max(2,o.w*k).toFixed(1)}" height="${Math.max(2,o.h*k).toFixed(1)}" aria-hidden="true"><path d="${o.d}" vector-effect="non-scaling-stroke"/></svg>`;
-  if(loose) return {a:svg(a,oa,box/sa),b:svg(b,ob,box/sb),loose:true,times:Math.round(Math.max(sa,sb)/Math.min(sa,sb))};
+  const svg=(id,o,k)=>`<svg class="cshape ${shade(id)}" viewBox="0 0 ${o.w} ${o.h}" width="${Math.max(2,o.w*k).toFixed(1)}" height="${Math.max(2,o.h*k).toFixed(1)}" aria-hidden="true"><path d="${o.d}"/></svg>`;
+  if(loose&&!inset) return {a:svg(a,oa,box/sa),b:svg(b,ob,box/sb),loose:true,times:Math.round(Math.max(sa,sb)/Math.min(sa,sb))};
   const r={a:svg(a,oa,s),b:svg(b,ob,s),loose:false,pxkm:s};
-  if(inset&&Math.min(sa,sb)*s<box/4){   // the smaller one is hard to read at true scale: show it again, enlarged, beside itself
-    const small=sa<sb?'a':'b', o=sa<sb?oa:ob, id=sa<sb?a:b, z=Math.round(box/2/Math.max(o.w,o.h)/s);
-    r[small]+=`<span class="czoom">${svg(id,o,s*z)}<span class="ts-caption">×${z}</span></span>`;}
+  if(inset&&Math.min(sa,sb)*s<box/4){   // the smaller one is hard to read at true scale: it stays there, small, with an enlarged copy above it
+    const small=sa<sb?'a':'b', o=sa<sb?oa:ob, id=sa<sb?a:b, W=WIDE()?196:110, H=WIDE()?132:76, z=Math.min(W/o.w,H/o.h)/s;
+    r[small]+=`<span class="czoom">${svg(id,o,s*z)}</span><span class="czoom-n">enlarged ${fmt(Math.round(z))} times</span>`; r.zoom=small;}
   return r;
 }
 // a scale bar about a third of the box wide, in round miles or kilometers
 function scaleBar(pxkm,box){
   const u=usU('dist')?1.609344:1, want=box/3/pxkm/u, p=10**Math.floor(Math.log10(want)), n=[1,2,5,10].map(x=>x*p).filter(x=>x<=want).pop()||p;
-  return `<span class="cbar"><i style="width:${(n*u*pxkm).toFixed(1)}px"></i>${fmt(n)} ${usU('dist')?(n===1?'mile':'miles'):'km'}</span>`;
+  return `<span class="cbar"><i style="width:${(n*u*pxkm).toFixed(1)}px"></i></span>${fmt(n)} ${usU('dist')?(n===1?'mile':'miles'):'km'}`;
 }
 const dryOf=k=>!k?null:k[0]==='B'?'an arid climate':{f:'no dry season',s:'dry summers',w:'dry winters',m:'a short dry season'}[k[1]]||null;
+const summerOf=k=>!k||k[0]==='B'||k[0]==='E'?null:{a:'hot',b:'warm',c:'cool',d:'cold'}[k[2]]||null;
 const latOf=c=>c&&c.lat!=null?`${Math.abs(Math.round(c.lat))}°${c.lat<0?'S':'N'}`:'';
 // the leading grape and its share, when the figures are for the place itself
 function lead(f){const pl=f.planted; if(!pl||!pl.grapes||!pl.grapes.length||!['own','within'].includes(pl.scope)) return null;
-  const g=pl.grapes.find(([n])=>n!=='Other'); return g?{g:g[0],p:Math.round(g[1]/pl.ha*100),y:pl.year,about:!!pl.whites_older,two:pl.grapes.filter(([n])=>n!=='Other').slice(0,2).map(([n,ha])=>`${n} ${Math.round(ha/pl.ha*100)}%`).join(', ')}:null;}
-// how the places compare, in sentences built only from the Atlas's own figures (Compare.placesText in the app)
-function placesText(fa,fb){
+  const gs=pl.grapes.filter(([n])=>n!=='Other'), g=gs[0]; return g?{g:g[0],p:Math.round(g[1]/pl.ha*100),y:pl.year,about:!!pl.whites_older,names:gs.map(x=>x[0]),c:g[2],two:gs.slice(0,2).map(([n,ha])=>`${n} ${Math.round(ha/pl.ha*100)}%`).join(', ')}:null;}
+const only=f=>f.rules&&f.rules.grapes&&f.rules.grapes.length===1&&!(f.rules.grapes_other||[]).length?f.rules.grapes[0]:null;   // the one grape its rules allow
+const andJoin=t=>{const x=String(t||'').split(/,\s*|\s+and\s+/).filter(Boolean); return andList(x);};
+// how the places compare, in sentences built only from the Atlas's own figures: the season first, then the rain, then what
+// is planted, then how big each is (Compare.placesText in the app)
+function placesText(fa,fb,p){
   const A=fa.name,B=fb.name,ca=fa.climate,cb=fb.climate,s=[];
-  const wa=fa.winkler&&fa.winkler[0],wb=fb.winkler&&fb.winkler[0], wk=wa&&wb?(wa===wb?`both are Winkler region ${wa}`:`${A} is Winkler region ${wa} to ${B}'s ${wb}`):'';
-  if(ca&&cb&&ca.gst!=null&&cb.gst!=null){const ta=tN(ca.gst),tb=tN(cb.gst);
-    s.push((ta===tb?`Their growing seasons average the same ${deg(ca.gst)}`:`${A}'s growing season averages ${deg(ca.gst)}, ${Math.abs(ta-tb)}${tU()} ${ta>tb?'warmer':'cooler'} than ${B}'s ${deg(cb.gst)}`)
-      +(wk?(ta===tb?(wa===wb?`, and ${wk}`:`, though ${wk}`):(wa===wb?`, though ${wk}`:`, and ${wk}`)):'')+'.');}
-  else if(wk) s.push(wk[0].toUpperCase()+wk.slice(1)+'.');
-  const da=dryOf(ca&&ca.koppen),db=dryOf(cb&&cb.koppen);
-  if(da&&db) s.push(da===db?(da==='no dry season'?'Neither has a dry season.':`Both have ${da}.`):`${A} has ${da}; ${B} has ${db}.`);
+  const wa=fa.winkler&&fa.winkler[0],wb=fb.winkler&&fb.winkler[0]; let same=false;
+  if(ca&&cb&&ca.gst!=null&&cb.gst!=null){const ta=tN(ca.gst),tb=tN(cb.gst),d=Math.abs(ta-tb);
+    if(d<=1){same=true; const both=PL[fa.id]&&PL[fb.id]&&tone(fa.id)!=='o'&&tone(fb.id)!=='o'&&tone(fa.id)!=='i'&&tone(fb.id)!=='i';
+      s.push(`${both&&p&&p.link&&!p.tag?`Two benchmarks for ${andJoin(p.link)} with almost the same growing season`:'Almost the same growing season'}: ${d===0?`both average ${deg(ca.gst)}`:`${deg(ca.gst)} in ${A} and ${deg(cb.gst)} in ${B}`}${wa&&wb?(wa===wb?` and both are Winkler region ${wa}`:`, Winkler region ${wa} against ${wb}`):''}.`);}
+    else{const [W,C,cw,cc,ww,wc]=ta>tb?[A,B,ca,cb,wa,wb]:[B,A,cb,ca,wb,wa];
+      s.push(`${W}'s growing season is ${d}${tU()} warmer: ${deg(cw.gst)} against ${deg(cc.gst)}${ww&&wc?(ww===wc?`, though both are Winkler region ${ww}`:`, Winkler region ${ww} against ${wc}`):''}.`);}}
+  else if(wa&&wb) s.push(wa===wb?`Both are Winkler region ${wa}.`:`${A} is Winkler region ${wa}; ${B} is ${wb}.`);
+  const da=dryOf(ca&&ca.koppen),db=dryOf(cb&&cb.koppen),ha=summerOf(ca&&ca.koppen),hb=summerOf(cb&&cb.koppen);
+  const dry=(X,d)=>d==='no dry season'?`${X} has no dry season`:d==='dry summers'?`${X}'s summers are dry`:d==='dry winters'?`${X}'s winters are dry`:d==='an arid climate'?`${X} is arid`:`${X} has ${d}`;
+  if(da&&db&&da!==db) s.push(`${same?'The difference is rain. ':''}${dry(A,da)}, while ${dry(B,db)}.`);
+  else if(da&&db){const af=!(ca&&cb&&ca.gst!=null&&cb.gst!=null)||ca.gst>=cb.gst, [P,Q,hp,hq]=af?[A,B,ha,hb]:[B,A,hb,ha];   // the warmer place first
+    s.push(`${da==='no dry season'?'Neither has a dry season':`Both have ${da}`}${ha&&hb&&ha!==hb?`, but ${P}'s summers are ${hp} and ${Q}'s ${hq}`:''}.`);}
   const la=lead(fa),lb=lead(fb);
-  if(la&&lb) s.push(la.g===lb.g?`${la.g} leads in both, at ${la.about?'about ':''}${la.p}% of the vines in ${A} (${la.y}) and ${lb.about?'about ':''}${lb.p}% in ${B} (${lb.y}).`
-    :`${A}'s most planted grape is ${la.g}, ${la.about?'about ':''}${la.p}% of the vines in ${la.y}; ${B}'s is ${lb.g}, ${lb.about?'about ':''}${lb.p}% in ${lb.y}.`);
+  if(la&&lb){
+    if(la.g===lb.g) s.push(`${la.g} leads in both: ${la.p}% of the vines in ${A} and ${lb.p}% in ${B}.`);
+    else if(la.names[1]===lb.g) s.push(`${A} plants more ${la.g} than ${lb.g}; in ${B}, ${lb.g} is ${lb.p}% of the vines.`);
+    else if(lb.names[1]===la.g) s.push(`${B} plants more ${lb.g} than ${la.g}; in ${A}, ${la.g} is ${la.p}% of the vines.`);
+    else s.push(`${la.g} leads in ${A}, at ${la.p}% of the vines; in ${B} it is ${lb.g}, at ${lb.p}%.`);}
+  else{const oa=only(fa),ob=only(fb);
+    if(la&&ob) s.push(`${B} is made only from ${ob[0]}; in ${A}, ${la.g} leads at ${la.p}% of the vines.`);
+    else if(lb&&oa) s.push(`${A} is made only from ${oa[0]}; in ${B}, ${lb.g} leads at ${lb.p}% of the vines.`);}
+  const sz=f=>{const n=f.rules&&f.rules.communes&&f.rules.communes.length, k=f.kind&&f.kind[0], m=f.summary&&f.summary.places;
+    return n&&k?{t:`one ${k} of ${fmt(n)} commune${n===1?'':'s'}`,n:0}:m?{t:`a whole ${f.depth===0?'country':'region'} of ${fmt(m)} places`,n:m}:null;};
+  const za=sz(fa),zb=sz(fb);
+  if(za&&zb&&(!za.n||!zb.n)&&za.n!==zb.n){const [x,y,X,Y]=za.n<zb.n?[za,zb,A,B]:[zb,za,B,A]; s.push(`${X} is ${x.t}; ${Y} is ${y.t}.`);}
   const ea=fa.terrain&&fa.terrain.elev,eb=fb.terrain&&fb.terrain.elev;
-  if(ea&&eb) s.push(`The land sits at about ${elev(ea[1])} in ${A} and ${elev(eb[1])} in ${B}.`);
+  if(ea&&eb&&Math.abs(ea[1]-eb[1])>=250) s.push(`The vineyards sit higher in ${ea[1]>eb[1]?A:B}, at about ${elev(Math.max(ea[1],eb[1]))} against ${elev(Math.min(ea[1],eb[1]))}.`);
   return s.join(' ');
 }
-function cmpSources(fa,fb,p){
-  const pick=f=>f?Object.values(f.src_for||{}).flat().map(i=>f.sources[i]).filter(Boolean):[];
-  const seen=new Set(), all=[...pick(fa),...pick(fb),...(p?p.sources:[])].filter(s=>!seen.has(s.name)&&seen.add(s.name));
-  return `<ul class="src ts-caption">${all.map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`:esc(s.name)}</li>`).join('')}</ul>`;
+// a source's short name, for the line at the foot of Compare
+const SHORT=[[/^Fick and Hijmans 2017/,'WorldClim 2.1'],[/^Beck et al\. 2023/,'Beck et al. 2023 Köppen maps'],[/^Winkler, Cook/,'Winkler 1974'],[/^Jones 2010/,'Jones 2010'],[/^Anderson, Nelgen and Puga/,'University of Adelaide grape-area database'],[/^Candiago et al\. 2022/,'Candiago et al. 2022']];
+function shortName(n,wine){for(const [re,t] of SHORT) if(re.test(n)) return t;
+  n=n.replace(/\s*\((what the wines taste like|key facts|what the label terms mean)\)$/,'');
+  const i=n.indexOf(', '); return i<0?n:wine?n.slice(0,i)+' on '+n.slice(i+2):n.slice(0,i);}
+function cmpSources(fa,fb,p,rulesFor){
+  const line=(head,list,wine)=>{const seen=new Set(), xs=list.filter(Boolean).filter(x=>{const k=shortName(x.name,wine); return !seen.has(k)&&seen.add(k);});
+    return xs.length?`<span>${head}: ${xs.map(x=>x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(shortName(x.name,wine))}</a>`:esc(shortName(x.name,wine))).join(wine?'; ':', ')}.</span>`:'';};
+  const of=(f,k)=>f?((f.src_for||{})[k]||[]).map(i=>f.sources[i]):[];
+  const style=f=>f?f.sources.filter(x=>/\(what the wines taste like\)$/.test(x.name)):[];
+  const wines=p&&p.wines.length?p.sources:[...style(fa),...style(fb)];
+  return `<div class="csrc o7"><b>SOURCES</b>${line('Climate',[...of(fa,'climate'),...of(fb,'climate')])}${rulesFor.length?line('Rules',rulesFor.flatMap(f=>of(f,'map'))):''}${line('Plantings',[...of(fa,'planted'),...of(fb,'planted')])}${line('Wines',wines,true)}</div>`;
 }
+// the twelve months as bars to one scale for both places, 30°F to 74°F, the growing season in coral (the month charts in the app)
+function monChart(f,c,h){
+  if(!c||!c.tavg) return '';
+  const south=c.lat<0, gs=south?[9,10,11,0,1,2,3]:[3,4,5,6,7,8,9];
+  const bars=c.tavg.map((v,i)=>`<span><em>${tN(v)}</em><i class="${gs.includes(i)?'gs':''}" style="height:${Math.max(2,Math.round((toF(v)-30)*h/44))}px"></i></span>`).join('');
+  return `<div class="cm" role="img" aria-label="${esc(f.name)} by month: ${c.tavg.map(tN).join(', ')}"><div class="cm-bars">${bars}</div><div class="cm-m">${[...'JFMAMJJASOND'].map(m=>`<span>${m}</span>`).join('')}</div><b>${esc(shortPlace(f.name))} · ${deg(c.gst)} season</b></div>`;
+}
+const shortPlace=n=>n.replace(/ (Valley|County|AVA|DOC|DOCG|DOCa|DO)$/,'');
+const US_STATES={AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming'};
+const subOf=(f,id)=>[f.ava&&f.ava.states&&f.ava.states.length===1&&(US_STATES[f.ava.states[0]]||f.ava.states[0])||(PL[id]?.[4]&&PL[id][4]!==f.name?PL[id][4]:''),latOf(f.climate)].filter(Boolean).join(' · ');
+const skinOf=f=>{const l=lead(f); if(l&&l.c) return l.c==='R'?'r':l.c==='W'?'w':'p'; const o=only(f); return o?(o[1]==='red'?'r':o[1]==='white'?'w':'p'):'w';};
 async function renderCompare(){
   const a=S.ca,b=S.cb; await pairs();
-  const [fa,fb]=await Promise.all([a?facts(a):null,b?facts(b):null]); if(S.ca!==a||S.cb!==b) return;
-  const nm=id=>esc(PL[id]?.[0]||id), place=PL[a]?.[4]||'';
-  const head=`<section class="row cmp-head"><p class="crumbs ts-place_subtitle"><a href="#/">The world</a> › <a href="#/pairs">Often compared</a></p><h2 class="ts-sheet_title">Compare</h2>
-    <div class="cpick">${[a,b].map((id,k)=>id?`<span class="cchip"><i class="sw ${shade(id)}"></i>${nm(id)}<a class="x" href="${cmpLink(k?a:b||'')}" aria-label="Choose another place instead of ${nm(id)}">✕</a></span>`:`<span class="cchip empty">Search above for a place</span>`).join('<span class="ts-caption">and</span>')}</div></section>`;
+  const [fa,fb]=await Promise.all([a?facts(a):null,b?facts(b):null]); if(S.ca!==a||S.cb!==b||S.view!=='compare') return;
+  const nm=id=>esc(PL[id]?.[0]||id);
+  const chip=(id,k)=>id?`<span class="cchip"><i class="sw ${shade(id)}"></i>${nm(id)}<a class="x" href="${cmpLink(k?a:b||'')}" aria-label="Choose another place instead of ${nm(id)}">✕</a></span>`:`<span class="cchip empty">${k?'A second place':'A first place'}</span>`;
+  const chips=`<div class="cchips">${chip(a,0)}<span class="cand">and</span>${chip(b,1)}</div>`;
+  const back=a?link(a):'#/';
+  const top=`<div class="cbar-top"><a class="cback" href="${back}" data-back aria-label="Back">${BACK}</a><h1>Compare</h1>${chips}<a class="cpill other" href="#/pairs">Other pairs</a></div>`;
   if(!a||!b||!fa||!fb){
     const near=(PAIRS||[]).filter(p=>p.a===a||p.b===a).map(p=>p.a===a?p.b:p.a);
-    $('#info').innerHTML=head+`<section class="row"><p class="ts-body">${a?`Search above for a place to compare with ${nm(a)}.`:'Search above for the first place.'}</p>${near.length?`<p class="ts-caption sub">Often compared with ${nm(a)}</p><div class="chips">${near.map(id=>`<a class="chip" href="${cmpLink(a,id)}"><i class="sw ${shade(id)}"></i>${nm(id)}</a>`).join('')}</div>`:''}<p class="ts-caption about-link"><a href="#/pairs">See all often compared pairs</a></p></section>`;
-    $('#q').placeholder='Search a place to compare'; return;
+    $('#info').innerHTML=`<div class="cmp-pick">${top}${chips.replace('cchips','cchips below')}<div class="cmp-near"><div class="cmp-search"><label><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span class="sr">Search</span><input id="cq" type="search" placeholder="${a?`Search a place to compare with ${nm(a)}`:'Search the first place'}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-autocomplete="list" aria-controls="csugg"></label><ul id="csugg" class="sugg" role="listbox" hidden></ul></div>`
+      +(near.length?`<p class="ck">Often compared with ${nm(a)}</p><div class="chips">${near.map(id=>`<a class="chip" href="${cmpLink(a,id)}"><i class="sw ${shade(id)}"></i>${nm(id)}</a>`).join('')}</div>`:'')
+      +`<p class="ts-caption"><a href="#/pairs">See all often compared pairs</a></p></div></div>`;
+    wireSearch($('#cq'),$('#csugg'),x=>{if(x.id===S.ca) return; location.hash=cmpLink(S.ca||x.id,S.ca?x.id:null);}); if(!matchMedia('(hover:none)').matches) $('#cq').focus();
+    return;
   }
-  $('#q').placeholder='Search a country, region or appellation';
-  const p=pairOf(a,b), box=Math.min(170,(innerWidth-80)/2), sh=shapes(a,fa.outline,b,fb.outline,box,true);
-  const sub=(f,id)=>esc([PL[id]?.[4]&&PL[id][4]!==f.name?PL[id][4]:'',latOf(f.climate)].filter(Boolean).join(' · '));
-  const col=(id,f,svg)=>`<div class="ccol"><div class="cart" style="height:${Math.ceil(box)}px">${svg||'<span class="ts-caption">No outline</span>'}</div><a class="cname ts-section_head" href="${link(id)}"><i class="sw ${shade(id)}"></i>${nm(id)}</a><span class="ts-caption">${sub(f,id)}</span>${f.outline&&f.outline.far?'<span class="ts-caption">Far-off islands and territories not drawn</span>':''}</div>`;
-  const art=`<section class="row"><div class="ccard"><div class="cgrid">${col(a,fa,sh&&sh.a)}${col(b,fb,sh&&sh.b)}</div>`
-    +(sh?`<p class="ts-caption cnote">${sh.loose?`Too different in size to draw to one scale. ${nm(Math.max(fa.outline.w,fa.outline.h)>Math.max(fb.outline.w,fb.outline.h)?a:b)} is about ${fmt(sh.times)} times as long.`:`${scaleBar(sh.pxkm,box)} Both drawn to the same scale.`}</p>`:'')+`</div></section>`;
-  const diff=p&&p.tag==='different-grapes'?`<section class="row"><p class="ts-body cdiff">${nm(a)} and ${nm(b)} are made from different grapes, so this page compares the typical wine of each.</p></section>`:'';
-  const pt=placesText(fa,fb);
-  const ca=fa.climate,cb=fb.climate;
-  const mon=(f,c)=>c&&c.tavg?`<div><p class="ts-caption sub">${esc(f.name)} · ${deg(c.gst)} season</p>${months(c.tavg.map(toF),'temperature','t',c.lat<0,true,c.tavg.map(tN))}</div>`:'';
-  const charts=ca||cb?`<p class="ts-caption sub">Average temperature by month, ${tU()}</p><div class="mrow">${mon(fa,ca)}${mon(fb,cb)}</div>`:'';
-  const row=(k,x,y)=>x||y?`<tr><th scope="row">${k}</th><td>${x||'<small>no figures</small>'}</td><td>${y||'<small>no figures</small>'}</td></tr>`:'';
-  const pl=f=>{const l=lead(f); return l?`${esc(l.two)} <small>(${l.y}${l.about?', approximate':''})</small>`:'';};
-  const table=`<div class="tablewrap"><table class="parts ts-caption ctab"><thead><tr><th></th><th>${nm(a)}</th><th>${nm(b)}</th></tr></thead><tbody>`
-    +row('Growing season',ca&&deg(ca.gst),cb&&deg(cb.gst))+row('Heat',ca&&heat(ca.gdd),cb&&heat(cb.gdd))+row('Winkler region',fa.winkler&&fa.winkler[0],fb.winkler&&fb.winkler[0])
-    +row('Climate',ca&&esc(ca.koppen_name),cb&&esc(cb.koppen_name))+row('Planted',pl(fa),pl(fb))+row('Elevation',fa.terrain&&fa.terrain.elev&&elev(fa.terrain.elev[1]),fb.terrain&&fb.terrain.elev&&elev(fb.terrain.elev[1]))+`</tbody></table></div>`;
-  const wines=p&&p.wines.length?block('How the wines compare',p.wines.map(w=>`<h3 class="ts-fact_label cw">${esc(w.head)}</h3><p class="ts-body">${esc(w.text)}</p>`).join('')):'';
-  $('#info').innerHTML=head+art+diff+(pt?block('How the places compare',`<p class="ts-body">${esc(pt)}</p>`):'')+block('Side by side',charts+table)+wines
-    +block('Sources',cmpSources(fa,fb,p))+`<section class="row"><p class="ts-caption"><a href="#/pairs">Other often compared pairs</a></p></section>`;
+  const p=pairOf(a,b), wide=WIDE(), box=wide?293:154, sh=shapes(a,fa.outline,b,fb.outline,box,true);
+  const col=(id,f,svg)=>`<div class="ccol"><div class="cart">${svg||'<span class="csub">No outline</span>'}</div><div class="cnm"><a class="cname" href="${link(id)}"><i class="sw ${shade(id)}"></i>${nm(id)}</a><span class="csub">${esc(subOf(f,id))}</span>${f.outline&&f.outline.far?'<span class="csub">Far-off islands and territories not drawn</span>':''}</div></div>`;
+  const card=`<div class="ccard o1"><div class="cgrid">${col(a,fa,sh&&sh.a)}${col(b,fb,sh&&sh.b)}</div>`
+    +(sh?`<p class="cnote">${sh.loose?`Too different in size to draw to one scale. ${nm(Math.max(fa.outline.w,fa.outline.h)>Math.max(fb.outline.w,fb.outline.h)?a:b)} is about ${fmt(sh.times)} times as long.`:`${scaleBar(sh.pxkm,box)} · both drawn to the same scale`}</p>`:'')+`</div>`;
+  const INFO='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg>';
+  const diff=p&&p.tag==='different-grapes'?`<div class="cdiff o2" role="note">${INFO}<p><b>Different grapes.</b> ${esc(p.note||`${PL[a][0]} and ${PL[b][0]} are made from different grapes, so this page compares the typical wine of each.`)}</p></div>`:'';
+  const pt=placesText(fa,fb,p);
+  const ca=fa.climate,cb=fb.climate, mh=wide?96:57;
+  const charts=ca&&ca.tavg||cb&&cb.tavg?`<div class="cblk o4"><span class="ck">Average by month, ${tU()}</span><div class="cmon">${monChart(fa,ca,mh)}${monChart(fb,cb,mh)}</div></div>`:'';
+  const rulesFor=[];
+  const grapesOf=(f,both)=>{const l=lead(f); if(l) return `${esc(l.two)}${both?'':' planted'} (${l.y}${l.about?', approximate':''})`; const o=only(f); if(o){rulesFor.push(f); return `${esc(o[0])}, the only grape its rules allow`;} return '';};
+  const la=lead(fa),lb=lead(fb), both=!!(la&&lb), ga=grapesOf(fa,both), gb=grapesOf(fb,both);
+  const row=(k,x,y)=>x||y?`<div class="crow"><b>${k}</b><span>${x||'No figures'}</span><span>${y||'No figures'}</span></div>`:'';
+  const rows=`<div class="crows o5">${row('Heat',ca&&ca.gdd!=null&&heat(ca.gdd),cb&&cb.gdd!=null&&heat(cb.gdd))}${row(both||!(ga||gb)?'Planted':'Grapes',ga,gb)}</div>`;
+  const paras=t=>String(t).split(/\n\n+/).map(x=>`<p>${esc(x)}</p>`).join('');
+  let wines='';
+  if(p&&p.wines.length) wines=`<div class="cwines o6"><span class="ck red">How the wines compare</span>${p.wines.map(w=>`<div class="cw"><h3><i class="${w.c||'w'}"></i>${esc(w.head)}</h3>${paras(w.text)}</div>`).join('')}</div>`;
+  else{const own=[[a,fa],[b,fb]].filter(([,f])=>f.style&&f.style.notes.length);
+    if(own.length) wines=`<div class="cwines own o6"><span class="ck red">The wines</span>${own.map(([id,f])=>`<div class="cw"><h3><i class="${skinOf(f)}"></i>${nm(id)}</h3>${f.style.notes.slice(0,2).map(t=>`<p>${esc(t)}</p>`).join('')}</div>`).join('')}</div>`;}
+  $('#info').innerHTML=`<div class="cmp">${top}<div class="cmp-body"><div class="ccol-l">${card}${charts}${rows}</div><div class="ccol-r">${diff}${pt?`<div class="cblk o3"><span class="ck red">How the places compare</span><p>${esc(pt)}</p></div>`:''}${wines}${cmpSources(fa,fb,p,rulesFor)}</div></div></div>`;
 }
 async function renderPairs(){
   await pairs(); if(S.view!=='pairs') return;
-  $('#q').placeholder='Search a country, region or appellation';
   const tag={'different-grapes':'Different grapes','sounds-alike':'More different than they sound'};
   const li=(p,i)=>{const sh=shapes(p.a,p.oa,p.b,p.ob,46,false,5);
-    return `<li><a href="${cmpLink(p.a,p.b)}"><span class="pn ts-section_head">${i+1}</span><span class="pa">${sh?sh.a+sh.b:''}</span><span class="pt"><b class="ts-body">${esc(PL[p.a]?.[0]||p.a)} · ${esc(PL[p.b]?.[0]||p.b)}</b><span class="ts-caption">${esc(p.link)}</span>`
+    return `<li><a href="${cmpLink(p.a,p.b)}"><span class="pn">${i+1}</span><span class="pa">${sh?sh.a+sh.b:''}</span><span class="pt"><b>${esc(PL[p.a]?.[0]||p.a)} · ${esc(PL[p.b]?.[0]||p.b)}</b><span class="pl">${esc(p.link)}</span>`
       +`<span class="ptags">${p.tag?`<i class="ptag ${p.tag}">${tag[p.tag]}</i>`:''}${sh&&sh.loose?'<i class="ptag loose">Not to scale</i>':''}</span></span></a></li>`;};
-  $('#info').innerHTML=`<section class="row cmp-head"><p class="crumbs ts-place_subtitle"><a href="#/">The world</a> › Often compared</p><h2 class="ts-sheet_title">Often compared</h2><p class="ts-body">The pairs people set side by side most, among benchmark regions.</p></section>`
-    +`<section class="row"><ol class="pairs">${PAIRS.map(li).join('')}</ol><p class="ts-caption sub">Each pair is drawn to one scale so you can compare their sizes, except where marked not to scale.</p></section>`+FEEDBACK('Often compared','world');
+  const any='<a class="cpill teal" href="#/compare">Compare any two</a>';
+  $('#info').innerHTML=`<div class="ptop"><a class="cback" href="#/" data-back aria-label="Back">${BACK}</a>${any}</div>`
+    +`<div class="phead"><div><h1>Often compared</h1><p>The pairs people set side by side most, among benchmark regions.${WIDE()?' Each pair is drawn to one scale unless marked.':''}</p></div>${WIDE()?any:''}</div>`
+    +`<ol class="pairs">${PAIRS.map(li).join('')}</ol>${WIDE()?'':'<p class="pfoot">Each pair is drawn to one scale, so you can see how their sizes compare, unless marked not to scale.</p>'}`;
 }
 // ---------- search
-function wireSearch(){
-  const q=$('#q'), ul=$('#sugg'); let list=[], sel=-1;
-  const all=Object.entries(PL).map(([id,x])=>({id,name:x[0],f:fold([x[0],...(x[5]||[])].join(' ')),s:x[2],k:x[3],c:x[4]}));
+let ALL=null;
+function wireSearch(q,ul,choose){   // a search box and its list; choose gets the place picked
+  let list=[], sel=-1;
+  ALL=ALL||Object.entries(PL).map(([id,x])=>({id,name:x[0],f:fold([x[0],...(x[5]||[])].join(' ')),s:x[2],k:x[3],c:x[4]}));
   const show=()=>{ul.hidden=!list.length; q.setAttribute('aria-expanded',String(!!list.length));
     ul.innerHTML=list.map((x,i)=>`<li role="option" aria-selected="${i===sel}" data-i="${i}"><span class="sl">${esc(x.name)} <small>${esc([x.k,x.c].filter(Boolean).join(', '))}</small></span></li>`).join('');};
-  const choose=x=>{q.value=''; list=[]; show(); q.blur(); if(S.view==='compare'&&!(S.ca&&S.cb)&&x.id!==S.ca){location.hash=cmpLink(S.ca||x.id,S.ca?x.id:null); return;} go(x.id);};   // on Compare with a place to fill, search fills it
+  const pickIt=x=>{q.value=''; list=[]; show(); q.blur(); choose(x);};
   q.addEventListener('input',()=>{const t=fold(q.value.trim()); sel=-1;
-    list=t.length<2?[]:all.filter(x=>x.f.includes(t)).sort((a,b)=>(b.f.startsWith(t)-a.f.startsWith(t))||b.s-a.s).slice(0,10); show();});
+    list=t.length<2?[]:ALL.filter(x=>x.f.includes(t)).sort((a,b)=>(b.f.startsWith(t)-a.f.startsWith(t))||b.s-a.s).slice(0,10); show();});
   q.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){sel=Math.min(list.length-1,sel+1); show(); e.preventDefault();} else if(e.key==='ArrowUp'){sel=Math.max(-1,sel-1); show(); e.preventDefault();}
-    else if(e.key==='Enter'&&list.length){choose(list[Math.max(0,sel)]); e.preventDefault();} else if(e.key==='Escape'){list=[]; show();}});
-  ul.addEventListener('mousedown',e=>{const li=e.target.closest('li'); if(li){e.preventDefault(); choose(list[+li.dataset.i]);}});
+    else if(e.key==='Enter'&&list.length){pickIt(list[Math.max(0,sel)]); e.preventDefault();} else if(e.key==='Escape'){list=[]; show();}});
+  ul.addEventListener('mousedown',e=>{const li=e.target.closest('li'); if(li){e.preventDefault(); pickIt(list[+li.dataset.i]);}});
   q.addEventListener('blur',()=>setTimeout(()=>{list=[]; show();},150));
 }
 async function main(){
   [GEO,WORLD,PL]=await Promise.all(['geo/index.json','geo/world.json','places.json'].map(u=>fetch(u).then(r=>r.json())));
-  PL=PL.places; SCORED=Object.values(PL).some(x=>x[2]>=0); mapInit(); wireSearch();
+  PL=PL.places; SCORED=Object.values(PL).some(x=>x[2]>=0); mapInit(); wireSearch($('#q'),$('#sugg'),x=>go(x.id));
 
-  addEventListener('hashchange',()=>{render(); window.scrollTo({top:0,behavior:'smooth'});});
+  addEventListener('hashchange',()=>{M.came=true; render(); window.scrollTo({top:0,behavior:'smooth'}); const m=$('main'); if(m) m.scrollTop=0;});
+  const fb=()=>document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===FILTER)));
+  fb(); document.addEventListener('click',e=>{const b=e.target.closest('[data-filter]'); if(!b) return; FILTER=b.dataset.filter; try{localStorage.setItem('atlas-filter',FILTER);}catch(e){} fb(); if(M.view){restyle(); labels();}});
+  pairs().then(ps=>{const el=$('#sidePairs'); if(el) el.innerHTML=`<div class="sp-head"><span>Often compared</span><a href="#/pairs">All ${ps.length}</a></div>`
+    +ps.slice(0,3).map((p,i)=>`<a class="sp" href="${cmpLink(p.a,p.b)}"><b>${i+1}</b><span><span class="sp-n">${esc(PL[p.a]?.[0]||p.a)} · ${esc(PL[p.b]?.[0]||p.b)}</span><span class="sp-l">${esc(p.link)}</span></span></a>`).join('');});
+  document.addEventListener('click',e=>{const b=e.target.closest('[data-back]'); if(b&&M.came){e.preventDefault(); history.back();}});
   render();
 }
 main();

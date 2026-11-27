@@ -9,6 +9,7 @@ struct AtlasApp: App {
     private let container = ModelContainer.atlas()
 
     init() {
+        DFont.register()
         let a = Atlas.load()
         _atlas = State(initialValue: a)
         let n = Nav()
@@ -44,8 +45,12 @@ final class Nav {
 
     func go(_ id: String) { place = id.isEmpty ? "world" : id }
 
-    /// Two places side by side, or the often compared pairs, in a sheet over the page (CompareSheet).
+    /// Two places side by side, or the often compared pairs, on a page over the map (CompareCover).
     var compare: CompareRoute?
+    /// Settings, on a page over the map (SettingsCover).
+    var settings = false
+    /// About the Atlas, in a sheet.
+    var about = false
 
     /// atlas://place/<id>, atlas://compare/<a>/vs/<b> and atlas://pairs: the links the website's App Store banner hands over.
     func open(_ url: URL) {

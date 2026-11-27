@@ -1,3 +1,4 @@
+import SwiftData
 import simd
 import SwiftUI
 
@@ -6,13 +7,17 @@ extension EnvironmentValues {
     @Entry var startSearch: () -> Void = {}
 }
 
-/// The first page: what the globe shows, where to start, and how to read it.
-struct HomePage: View {
-    let compact: Bool
+/// Home: search, the map filter and your saved places, in the card at the bottom of a phone or the panel at the
+/// left of an iPad (the side panel in web/index.html). Further down, the often compared pairs and the classics.
+struct HomeCard: View {
+    var wide = false
+    var onFocus: (Bool) -> Void = { _ in }
+    @State private var query = ""
+    @FocusState private var focused: Bool
     @Environment(Atlas.self) private var atlas
     @Environment(Nav.self) private var nav
-    @Environment(\.startSearch) private var startSearch
     @AppStorage("onboarded") private var onboarded = false
+    @Query(sort: \SavedPlace.savedAt, order: .reverse) private var saved: [SavedPlace]
 
     /// The classics to start with: well known, and each a different look.
     static let classics = ["france/burgundy", "france/bordeaux", "france/champagne", "italy/barolo", "spain/rioja", "germany/mosel",
@@ -20,23 +25,74 @@ struct HomePage: View {
                            "new-zealand/marlborough", "argentina/mendoza"]
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 22) {
+        VStack(alignment: .leading, spacing: 14) {
+            if wide {
+                HStack {
+                    Text("Appellation Atlas").font(.display(20, .heavy, relativeTo: .title3)).foregroundStyle(Palette.ink).accessibilityAddTraits(.isHeader)
+                    Spacer()
+                    SettingsButton(size: 40, plain: true)
+                }
+            }
+            DSearchBox(query: $query, focused: $focused, height: wide ? 46 : 48)
+            if query.isEmpty && !focused {
+                MapFilterPicker()
+                savedGrid
+                if wide || saved.isEmpty { OftenComparedList(count: wide ? 3 : 2) }
+                if !wide { more }
+                else {
+                    HStack(spacing: 4) {
+                        AboutButton(plain: true)
+                        Text("·").foregroundStyle(Palette.soft)
+                        Button("How it works") { onboarded = false }
+                    }
+                    .font(.text(12, .bold, relativeTo: .caption)).foregroundStyle(Palette.teal)
+                }
+            } else {
+                SearchResults(query: $query) { query = ""; focused = false }
+            }
+        }
+        .onChange(of: focused) { _, f in onFocus(f) }
+    }
+
+    /// Your saved places, two to a row, and a way to compare two of them.
+    @ViewBuilder private var savedGrid: some View {
+        if !saved.isEmpty {
             VStack(alignment: .leading, spacing: 8) {
-                Text(Copy.homeTitle).font(.atlasTitle).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
-                Text(Copy.worldCount(atlas.places.count)).font(.atlasBody).foregroundStyle(Palette.soft)
+                HStack(alignment: .firstTextBaseline) {
+                    Text("Saved").font(.display(15, .bold, relativeTo: .headline)).foregroundStyle(Palette.ink)
+                    Spacer()
+                    if !wide { Button("Compare two") { nav.compare = CompareRoute() }.font(.text(13, .heavy, relativeTo: .footnote)).foregroundStyle(Palette.teal) }
+                }
+                LazyVGrid(columns: [GridItem(.flexible(), spacing: 8), GridItem(.flexible())], spacing: 8) {
+                    ForEach(saved.filter { atlas.places[$0.placeID] != nil }) { s in
+                        Button { nav.go(s.placeID) } label: {
+                            VStack(alignment: .leading, spacing: 4) {
+                                HStack(spacing: 8) {
+                                    Rectangle().fill(Palette.tone(atlas.tone(s.placeID))).frame(width: 12, height: 12)
+                                    Text(atlas.name(s.placeID)).font(.text(wide ? 14 : 15, .heavy, relativeTo: .subheadline)).foregroundStyle(Palette.ink).lineLimit(1)
+                                }
+                                let sub = [atlas.kind(s.placeID), atlas.places[s.placeID]?.country ?? ""].filter { !$0.isEmpty && $0 != atlas.name(s.placeID) }.joined(separator: ", ")
+                                Text(sub.isEmpty ? " " : sub).font(.text(12, relativeTo: .caption)).foregroundStyle(Palette.soft).lineLimit(1)
+                            }
+                            .padding(12)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .cardBox(16)
+                            .contentShape(Rectangle())
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
             }
-            .accessibilityElement(children: .combine)
-            .accessibilityAddTraits(.isHeader)
+        }
+    }
 
-            HStack(spacing: 10) {
-                if compact { Tile(icon: "magnifyingglass", title: "Search", action: startSearch) }
-                Tile(icon: "dice", title: "Surprise me") { surprise() }
-                Tile(icon: "hand.tap", title: "How it works") { onboarded = false }
-            }
-
+    /// Under the card on a phone, seen when it is pulled up.
+    private var more: some View {
+        VStack(alignment: .leading, spacing: 22) {
+            if !saved.isEmpty { OftenComparedList() }
             VStack(alignment: .leading, spacing: 10) {
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Start with a classic").font(.atlasSection).foregroundStyle(Palette.ink)
+                    Text("Start with a classic").font(.display(15, .bold, relativeTo: .headline)).foregroundStyle(Palette.ink)
                     Text("The benchmark regions to learn first.").font(.atlasNote).foregroundStyle(Palette.soft)
                 }
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -49,21 +105,14 @@ struct HomePage: View {
                 }
                 .scrollClipDisabled()
             }
-
-            MapKey()
-            SavedList()
-            PlacesHere(folded: !compact)
-            Button { nav.compare = CompareRoute(pairs: true) } label: {
-                Label("Often compared: the pairs of benchmark regions people set side by side most", systemImage: "square.split.2x1")
-                    .font(.atlasBody.weight(.semibold)).multilineTextAlignment(.leading)
+            HStack(spacing: 10) {
+                Tile(icon: "dice", title: "Surprise me") { surprise() }
+                Tile(icon: "hand.tap", title: "How it works") { onboarded = false }
+                Tile(icon: "info.circle", title: "About") { nav.about = true }
             }
-            HStack(spacing: 18) {
-                UnitsButton()
-                AboutButton()
-            }
-            .font(.atlasNote)
             FeedbackLink(name: "Home", id: "world")
         }
+        .padding(.top, 10)
     }
 
     private func surprise() {
@@ -163,30 +212,5 @@ struct FeedbackLink: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-    }
-}
-
-/// How to read the colors on the map.
-struct MapKey: View {
-    @Environment(Atlas.self) private var atlas
-    var body: some View {
-        @Bindable var atlas = atlas
-        VStack(alignment: .leading, spacing: 10) {
-            Text("Reading the map").font(.atlasSection).foregroundStyle(Palette.ink)
-            FlowLayout(spacing: 12) { ForEach([Tone.essential, .benchmark, .inside, .other], id: \.self) { row($0) } }
-            ForEach(Copy.worldIntro, id: \.self) { Text($0).font(.atlasNote).foregroundStyle(Palette.soft) }
-        }
-        .padding(14)
-        .background(Palette.fill.opacity(0.6), in: RoundedRectangle(cornerRadius: 16))
-    }
-
-    private func row(_ t: Tone) -> some View {
-        HStack(spacing: 6) {
-            Palette.tone(t).frame(width: 18, height: 18)
-                .clipShape(RoundedRectangle(cornerRadius: 5))
-                .overlay(RoundedRectangle(cornerRadius: 5).stroke(Palette.landEdge, lineWidth: 0.5))
-                .accessibilityHidden(true)
-            Text(Copy.tone(t).one).font(.subheadline.weight(.bold)).foregroundStyle(Palette.ink).fixedSize()
-        }
     }
 }

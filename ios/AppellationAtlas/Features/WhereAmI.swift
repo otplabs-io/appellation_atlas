@@ -95,6 +95,7 @@ final class WhereAmI: NSObject, CLLocationManagerDelegate {
 
 /// The locate button on the globe, and what it found.
 struct WhereAmIButton: View {
+    var size: CGFloat = 48
     @Environment(Atlas.self) private var atlas
     @Environment(Nav.self) private var nav
     @State private var finder = WhereAmI()
@@ -104,12 +105,13 @@ struct WhereAmIButton: View {
             finder.locate(in: atlas) { nav.go($0) }
         } label: {
             Group {
-                if finder.state == .locating { ProgressView() } else { Image(systemName: "location.fill") }
+                if finder.state == .locating { ProgressView() } else { Image(systemName: "location.fill").font(.system(size: size > 46 ? 19 : 17, weight: .semibold)).foregroundStyle(Palette.teal) }
             }
-            .frame(width: 22, height: 22)
-            .padding(11)
+            .frame(width: size, height: size)
+            .contentShape(Circle())
         }
-        .buttonStyle(.glass)
+        .buttonStyle(.plain)
+        .glassPill(size / 2)
         .accessibilityLabel("Where am I")
         .accessibilityHint("Shows the wine place you are standing in")
         .alert(title, isPresented: Binding(get: { message != nil }, set: { if !$0 { finder.dismiss() } })) {

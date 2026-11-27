@@ -1,96 +1,29 @@
 import SwiftUI
 
-/// iPhone: the sheet over the globe, with search at the top. The search field is part of the page, so it scrolls with it.
+/// iPhone: the sheet over the globe. At home it is the search card; on a place, the place's page.
 struct PlaceSheet: View {
     @Binding var detent: PresentationDetent
-    @State private var query = ""
-    @FocusState private var searching: Bool
     @Environment(Nav.self) private var nav
 
     var body: some View {
         ScrollViewReader { reader in
             ScrollView {
-                VStack(alignment: .leading, spacing: 0) {
-                    SearchField(query: $query, focused: $searching).padding(.top, 20).id("top")
-                    if query.isEmpty && !searching {
-                        PlacePage(compact: true).padding(.top, 16)
+                Group {
+                    if nav.place == "world" {
+                        HomeCard { f in if f { withAnimation { detent = .large } } }
+                            .padding(.horizontal, 16).padding(.top, 18).padding(.bottom, 30)
                     } else {
-                        SearchResults(query: $query) { query = ""; searching = false }.padding(.top, 8)
+                        PlaceInfo(compact: true).padding(.bottom, 40)
                     }
                 }
-                .padding(.horizontal, 20).padding(.bottom, 40)
+                .id("top")
             }
             .scrollDismissesKeyboard(.interactively)
-            .onChange(of: searching) { _, s in if s { withAnimation { detent = .large } } }
             .onChange(of: nav.place) { reader.scrollTo("top", anchor: .top) }
         }
-        .environment(\.startSearch, { searching = true })
         .onboarding()
-        .compareSheet()
-    }
-}
-
-/// The search field: a magnifier, the words, and a way to clear them or stop.
-struct SearchField: View {
-    @Binding var query: String
-    var focused: FocusState<Bool>.Binding
-
-    var body: some View {
-        HStack(spacing: 10) {
-            HStack(spacing: 8) {
-                Image(systemName: "magnifyingglass").foregroundStyle(Palette.soft)
-                TextField("Search a country, region or appellation", text: $query)
-                    .focused(focused)
-                    .submitLabel(.search)
-                    .autocorrectionDisabled()
-                    .textInputAutocapitalization(.never)
-                if !query.isEmpty {
-                    Button { query = "" } label: { Image(systemName: "xmark.circle.fill").foregroundStyle(Palette.soft) }
-                        .buttonStyle(.plain)
-                        .accessibilityLabel("Clear the search")
-                }
-            }
-            .padding(.horizontal, 14).padding(.vertical, 11)
-            .background(Palette.fill, in: Capsule())
-            if focused.wrappedValue {
-                Button("Cancel") { query = ""; focused.wrappedValue = false }.font(.subheadline.weight(.semibold))
-            }
-        }
-        .animation(.snappy, value: focused.wrappedValue)
-    }
-}
-
-/// iPad: search and the places to go to, beside the globe.
-struct Sidebar: View {
-    /// Set from the page beside the globe to put the cursor in the search field.
-    @Binding var searching: Bool
-    @State private var query = ""
-    @FocusState private var focused: Bool
-    @Environment(Nav.self) private var nav
-    @Environment(Atlas.self) private var atlas
-
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                if query.isEmpty {
-                    SavedList()
-                    Crumbs()
-                    PlacesHere(folded: false)
-                } else {
-                    SearchResults(query: $query) { query = "" }
-                }
-            }
-            .padding(16)
-        }
-        .searchable(text: $query, placement: .sidebar, prompt: "Search places")
-        .searchFocused($focused)
-        .task(id: searching) {
-            guard searching else { return }
-            try? await Task.sleep(for: .milliseconds(350))   // once the sidebar has slid in
-            focused = true; searching = false
-        }
-        .navigationTitle("Wine Atlas")
-        .toolbar { ToolbarItem(placement: .bottomBar) { UnitsButton() }; ToolbarItem(placement: .bottomBar) { AboutButton() } }
+        .compareCover()
+        .settingsCover()
     }
 }
 
@@ -125,94 +58,6 @@ struct SearchResults: View {
     }
 }
 
-/// A place's whole page: who it is, where it sits, the places inside it, then what is known.
-struct PlacePage: View {
-    let compact: Bool
-    @Environment(Atlas.self) private var atlas
-    @Environment(Nav.self) private var nav
-    @Environment(Globe.self) private var globe
-    @AppStorage(Units.key) private var units = ""   // so figures in the blurb redraw when the units change
-
-    var body: some View {
-        let _ = units
-        let id = nav.place
-        let f = id == "world" ? nil : atlas.facts(id)
-        let leaf = id != atlas.viewFor(id)
-        if id == "world" {
-            HomePage(compact: compact).id(id)
-        } else {
-            // long-press any words on the page to select and copy them
-            page(id, f, leaf).textSelection(.enabled)
-        }
-    }
-
-    private func page(_ id: String, _ f: JSON?, _ leaf: Bool) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
-            PlaceHeader(id: id, facts: f)
-            if let b = f?["blurb"]["text"].string, !b.isEmpty {   // what the place is known for (blurb in web/atlas.js)
-                Text(b).font(.atlasBody).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
-                    .padding(.bottom, 2)
-            }
-            HStack(spacing: 10) {
-                SaveButton(placeID: id)
-                if f?["climate"].isNull == false {   // "Compare with another place" on the website
-                    Button { nav.compare = CompareRoute(a: id) } label: { Label("Compare", systemImage: "square.split.2x1") }
-                        .buttonStyle(.bordered).tint(Palette.teal)
-                }
-            }
-            if compact { Crumbs() }
-            if compact && !leaf { PlacesHere(folded: false) }
-            if let f { PlaceInfo(f: f, range: globe.range) } else { ProgressView() }
-            if compact && leaf { PlacesHere(folded: true) }
-        }
-        .id(id)
-    }
-}
-
-struct PlaceHeader: View {
-    let id: String
-    let facts: JSON?
-    @Environment(Atlas.self) private var atlas
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            if id == "world" {
-                Text("The world").font(.atlasTitle).foregroundStyle(Palette.ink)
-            } else {
-                HStack(spacing: 6) {
-                    let kind = kindText
-                    if !kind.isEmpty { Text(kind.uppercased()).font(.atlasEyebrow).kerning(1.2).foregroundStyle(Palette.coralText) }
-                    let t = atlas.tone(id)
-                    if t != .other {   // grey places carry no badge, as in renderTitle in atlas.js
-                        Text(Copy.tone(t).one.uppercased())
-                            .font(.atlasEyebrow).kerning(0.6)
-                            .padding(.horizontal, 6).padding(.vertical, 1)
-                            .background(t == .essential ? Palette.gold4[3] : t == .benchmark ? Palette.gold4[2] : Palette.gold4[1], in: RoundedRectangle(cornerRadius: 2))
-                            .foregroundStyle(Palette.ink)
-                    }
-                }
-                Text(atlas.name(id)).font(.atlasTitle).foregroundStyle(Palette.ink).minimumScaleFactor(0.5).lineLimit(3)
-                if let also = facts?["also"].strings, !also.isEmpty {
-                    Text("Also " + also.joined(separator: ", ")).font(.atlasNote).foregroundStyle(Palette.soft)
-                }
-                if let s = facts?["shape"].string, let note = Copy.shapeNote[s] {
-                    Text(note).font(.atlasNote).foregroundStyle(Palette.soft)
-                }
-            }
-        }
-        .accessibilityElement(children: .combine)
-        .accessibilityAddTraits(.isHeader)
-    }
-
-    private var kindText: String {
-        guard let f = facts else { return "" }
-        let kinds = f["kind"].strings
-        if !kinds.isEmpty { return kinds.map(capitalized).joined(separator: " and ") }
-        if f["depth"].int == 0 { return "Country" }
-        return f["shape"].string == "Eurostat LAU, the commune it is named for" ? "Commune" : "Region"
-    }
-}
-
 /// The way back up: the world, then each place down to this one.
 struct Crumbs: View {
     @Environment(Atlas.self) private var atlas
@@ -240,6 +85,7 @@ struct Crumbs: View {
 /// The places on this view: Essential benchmarks, then Benchmarks, then Inside a benchmark, then More in (the view), with the rest behind Show all.
 struct PlacesHere: View {
     let folded: Bool
+    var titled = true
     @Environment(Atlas.self) private var atlas
     @Environment(Nav.self) private var nav
     @State private var showAll = false
@@ -275,7 +121,7 @@ struct PlacesHere: View {
                 .padding(.vertical, 8)
             } else {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text(title).font(.atlasSection).foregroundStyle(Palette.ink)
+                    if titled { Text(title).font(.atlasSection).foregroundStyle(Palette.ink) }
                     list
                 }
                 .onChange(of: vid) { showAll = false }

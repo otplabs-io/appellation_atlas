@@ -70,13 +70,14 @@ enum Palette {
     }
 }
 
-/// The type styles, after the website's ts-* classes, set in the system font so they scale with Dynamic Type.
+/// The type styles, after the website's ts-* classes, in its own typefaces (Poppins and Nunito Sans, DesignD.swift).
+/// Each follows Dynamic Type from the system style named beside it.
 extension Font {
-    static let atlasTitle = Font.system(.largeTitle, design: .default).weight(.heavy)
-    static let atlasSection = Font.system(.headline).weight(.bold)
-    static let atlasLabel = Font.system(.caption2).weight(.heavy)
-    static let atlasValue = Font.system(.title3).weight(.bold)
-    static let atlasNote = Font.system(.caption)
-    static let atlasBody = Font.system(.subheadline)
-    static let atlasEyebrow = Font.system(.caption).weight(.heavy)
+    static let atlasTitle = Font.display(40, .heavy, relativeTo: .largeTitle)
+    static let atlasSection = Font.display(15, .bold, relativeTo: .headline)
+    static let atlasLabel = Font.text(11.5, .heavy, relativeTo: .caption2)
+    static let atlasValue = Font.display(16, .bold, relativeTo: .title3)
+    static let atlasNote = Font.text(12, relativeTo: .caption)
+    static let atlasBody = Font.text(14.5, relativeTo: .subheadline)
+    static let atlasEyebrow = Font.text(12.5, .heavy, relativeTo: .caption)
 }

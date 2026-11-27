@@ -30,25 +30,25 @@ struct FlowLayout: Layout {
     }
 }
 
-/// A titled section of a place's page.
+/// A titled section of a place's page, with a hairline above it (#info section.row in web/atlas.css).
 struct AtlasSection<Content: View>: View {
     let title: String
     var note: String?
     @ViewBuilder var content: Content
+    @Environment(\.sectionRule) private var rule
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 12) {
             HStack(alignment: .firstTextBaseline) {
-                Text(title).font(.atlasSection).foregroundStyle(Palette.ink)
+                Text(title).font(.display(18, .bold, relativeTo: .title3)).foregroundStyle(Palette.ink).accessibilityAddTraits(.isHeader)
                 Spacer(minLength: 8)
                 if let note { Text(note).font(.atlasNote).foregroundStyle(Palette.soft).multilineTextAlignment(.trailing) }
             }
             content
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.top, 30).padding(.bottom, 24)
-        // a band across the whole card between sections, so each one reads as its own block
-        .overlay(alignment: .top) { Rectangle().fill(Palette.fill).frame(height: 8).padding(.horizontal, -20) }
+        .padding(.top, 14).padding(.bottom, 18)
+        .overlay(alignment: .top) { if rule { Rectangle().fill(Palette.line).frame(height: 1).padding(.horizontal, -20) } }
     }
 }
 
