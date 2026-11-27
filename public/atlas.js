@@ -451,8 +451,11 @@ function renderTitle(id,f){   // what the place is and which group it is in, its
 // A phone swipes through them in a row; a wide screen sets them in a grid.
 function glanceStrip(f){
   const c=f.climate, l=lead(f), cards=[];
+  const bar=(g,p)=>`<span class="glr"><span>${esc(g)}</span><i><b style="width:${p}%"></b></i><span>${p}%</span></span>`;
   if(l){const pl=f.planted, gr=pl.grapes.filter(([g])=>g!=='Other').slice(0,4);
-    cards.push(`<div class="gl gl-wide"><span class="gk">Planted, ${l.y}${l.about?' (approximate)':''}</span>${gr.map(([g,ha])=>{const p=Math.round(ha/pl.ha*100); return `<span class="glr"><span>${esc(g)}</span><i><b style="width:${p}%"></b></i><span>${p}%</span></span>`;}).join('')}</div>`);}
+    cards.push(`<div class="gl gl-wide"><span class="gk">Planted, ${l.y}${l.about?' (approximate)':''}</span>${gr.map(([g,ha])=>bar(g,Math.round(ha/pl.ha*100))).join('')}</div>`);}
+  else if(f.planted_wider){const w=f.planted_wider;   // no figures of its own: the nearest wider area's, named as such (wider_planted in src/atlas.py)
+    cards.push(`<div class="gl gl-wide"><span class="gk">Planted in ${esc(w.name)}, ${w.year}${w.about?' (approximate)':''}</span>${w.grapes.map(([g,p])=>bar(g,p)).join('')}</div>`);}
   if(c&&c.gst!=null){const [gi]=seg(GST_F,c.gst);
     cards.push(`<div class="gl"><span class="gk">Growing season</span><span class="gv">${deg(c.gst)}</span><span class="gn">${gi>=0?esc(GST_F[gi][0])+', ':''}${c.lat<0?'October to April':'April to October'}</span><span class="gseg" aria-hidden="true">${GST_F.map((x,k)=>`<i${k===gi?' class="on"':''}></i>`).join('')}</span></div>`);}
   if(c&&c.gdd!=null) cards.push(`<div class="gl"><span class="gk">Heat</span><span class="gv">${heat(c.gdd).replace(' degree days','')}</span><span class="gn">degree days${f.winkler&&f.winkler[0]?', Winkler '+esc(f.winkler[0]):''}</span></div>`);
@@ -693,7 +696,7 @@ const dryOf=k=>!k?null:k[0]==='B'?'an arid climate':{f:'no dry season',s:'dry su
 const summerOf=k=>!k||k[0]==='B'||k[0]==='E'?null:{a:'hot',b:'warm',c:'cool',d:'cold'}[k[2]]||null;
 const latOf=c=>c&&c.lat!=null?`${Math.abs(Math.round(c.lat))}°${c.lat<0?'S':'N'}`:'';
 // the leading grape and its share, when the figures are for the place itself
-function lead(f){const pl=f.planted; if(!pl||!pl.grapes||!pl.grapes.length||!['own','within'].includes(pl.scope)) return null;
+function lead(f){const pl=f.planted; if(!pl||!pl.grapes||!pl.grapes.length||!['own','within','country'].includes(pl.scope)) return null;
   const gs=pl.grapes.filter(([n])=>n!=='Other'), g=gs[0]; return g?{g:g[0],p:Math.round(g[1]/pl.ha*100),y:pl.year,about:!!pl.whites_older,names:gs.map(x=>x[0]),c:g[2],two:gs.slice(0,2).map(([n,ha])=>`${n} ${Math.round(ha/pl.ha*100)}%`).join(', ')}:null;}
 const only=f=>f.rules&&f.rules.grapes&&f.rules.grapes.length===1&&!(f.rules.grapes_other||[]).length?f.rules.grapes[0]:null;   // the one grape its rules allow
 const andJoin=t=>{const x=String(t||'').split(/,\s*|\s+and\s+/).filter(Boolean); return andList(x);};

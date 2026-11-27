@@ -83,7 +83,7 @@ enum CompareText {
     /// The leading grape and its share, when the figures are for the place itself.
     static func lead(_ f: JSON) -> Lead? {
         let pl = f["planted"]
-        guard ["own", "within"].contains(pl["scope"].string ?? ""), let ha = pl["ha"].double, ha > 0 else { return nil }
+        guard ["own", "within", "country"].contains(pl["scope"].string ?? ""), let ha = pl["ha"].double, ha > 0 else { return nil }
         let gs = pl["grapes"].array.filter { $0[0].string != "Other" }
         guard let g = gs.first, let name = g[0].string else { return nil }
         let pct: (JSON) -> Int = { Int((($0[1].double ?? 0) / ha * 100).rounded()) }

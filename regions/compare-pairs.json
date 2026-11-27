@@ -1397,6 +1397,117 @@
     "cmp-wiki-pfalz",
     "cmp-wiki-alsace"
    ]
+  },
+  {
+   "a": "spain/ribera-del-duero",
+   "b": "spain/toro",
+   "link": "Tempranillo on the Duero",
+   "tag": "",
+   "wines": [
+    {
+     "head": "Tempranillo, two names",
+     "c": "r",
+     "text": "Both grow Tempranillo along the Duero, under local names: Tinto Fino or Tinta del País in Ribera del Duero, Tinta de Toro in Toro. Most of Ribera's reds are Tinto Fino, often with Cabernet Sauvignon, Malbec and Merlot, though some, like Tinto Pesquera, are 100% Tempranillo. Toro's reds are mostly 100% Tinta de Toro."
+    },
+    {
+     "head": "Climate and aging",
+     "c": "r",
+     "text": "Toro's climate is extreme continental, with long hot summers, cold winters and only 350 to 400 mm of rain a year, and its sandy soil kept phylloxera out, so some of its vines are older than the epidemic. A Toro crianza needs six months in oak; Ribera follows Rioja's rules, where a crianza needs 12."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-ribera",
+    "cmp-wiki-toro",
+    "cmp-wiki-tempranillo"
+   ]
+  },
+  {
+   "a": "france/provence",
+   "b": "france/tavel",
+   "link": "Two French rosés",
+   "tag": "",
+   "wines": [
+    {
+     "head": "Rosé",
+     "c": "p",
+     "text": "Both are best known for rosé. It is more than half of Provence's wine, and about 80% in Côtes de Provence, its largest appellation. Tavel makes nothing else: every Tavel is rosé, from Grenache and Cinsault with some Syrah and Mourvèdre."
+    },
+    {
+     "head": "Style",
+     "c": "p",
+     "text": "Tavel keeps some of its juice on the skins longer before blending it back, so it is darker, more tannic and fuller than most rosés, and one of the few that can improve with age, though most is drunk young. Provence rosé is made from grapes such as Grenache, Cinsault, Mourvèdre and Tibouren, and more producers now ferment it cool in temperature-controlled tanks."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-provence",
+    "cmp-wiki-tavel"
+   ]
+  },
+  {
+   "a": "united-states/willamette-valley",
+   "b": "new-zealand/central-otago",
+   "link": "Pinot Noir, two hemispheres",
+   "tag": "",
+   "wines": [
+    {
+     "head": "Pinot Noir",
+     "c": "r",
+     "text": "Both are known above all for Pinot Noir. The Willamette Valley is recognized worldwide for it, and rose to fame when a 1975 Eyrie Vineyard Pinot Noir placed 10th among the Pinot Noirs at the 1979 Wine Olympics. In Central Otago, the world's southernmost commercial wine region, Pinot Noir is over 80% of the vines."
+    },
+    {
+     "head": "Climate",
+     "c": "n",
+     "text": "The Willamette Valley is cool and moist, with wet winters and dry, warm summers, and most growers do not irrigate. Central Otago, sheltered by high mountains, has New Zealand's only true continental climate, with hot dry summers, cold snowy winters and big swings between day and night; its schist soils drain so fast that most vineyards need irrigation."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-willamette",
+    "cmp-wiki-central-otago"
+   ]
+  },
+  {
+   "a": "new-zealand/martinborough",
+   "b": "new-zealand/central-otago",
+   "link": "New Zealand Pinot Noir",
+   "tag": "",
+   "wines": [
+    {
+     "head": "Pinot Noir",
+     "c": "r",
+     "text": "Pinot Noir leads both. Martinborough's wineries were making increasingly complex Pinot Noir by the late 1980s, and about then the first Pinot Noir went into Central Otago, in the Kawarau Gorge. Central Otago Pinot pairs New Zealand's acidity and abundant fruit with aromas usually linked to Burgundy, and it is over 80% of the region's vines."
+    },
+    {
+     "head": "Climate",
+     "c": "n",
+     "text": "Martinborough lies in the rain shadow of the Tararua Range, a genuine cool climate with a long, dry autumn and one of New Zealand's longest growing seasons, and its breezes keep yields low. Central Otago, far to the south, has the country's only true continental climate, with hot dry summers, cold snowy winters and big swings between day and night."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-nz",
+    "cmp-wiki-central-otago"
+   ]
+  },
+  {
+   "a": "australia/coonawarra",
+   "b": "australia/margaret-river",
+   "link": "Australian Cabernet",
+   "tag": "",
+   "wines": [
+    {
+     "head": "Cabernet Sauvignon",
+     "c": "r",
+     "text": "Coonawarra is synonymous with Cabernet Sauvignon, full of plum and blackcurrant fruit, grown on a strip of red terra rossa soil over limestone about 15 by 2 km. Margaret River grows Cabernet Sauvignon in a wider mix: its vines are about 40% red and 60% white, with Chardonnay, Sauvignon Blanc and Sémillon."
+    },
+    {
+     "head": "Climate",
+     "c": "n",
+     "text": "Both have been likened to Bordeaux. Coonawarra, 60 km from the sea, is somewhat maritime, and cloud cover keeps January temperatures down to 19.1°C. Margaret River is the most maritime of Australia's major regions, with the narrowest temperature range, and only 200 mm of its 1,160 mm of rain falls from October to April."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-coonawarra",
+    "cmp-wiki-margaret-river"
+   ]
   }
  ]
 }
