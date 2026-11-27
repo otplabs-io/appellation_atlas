@@ -28,80 +28,199 @@
    "b": "united-states/napa-valley",
    "link": "Cabernet Sauvignon, Merlot",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Blends",
+     "text": "Red Bordeaux is usually a blend: Cabernet Sauvignon leads on the Left Bank and Merlot on the Right Bank. Many Napa wines also blend grapes, from the valley floor and the hillsides, and Inglenook, founded in 1879, was the first Bordeaux-style winery in the US."
+    },
+    {
+     "head": "Taste and aging",
+     "text": "Wine Folly's tasting notes for Bordeaux and for the North Coast, which includes Napa, share black currant, tobacco and pencil lead. It calls Bordeaux Cabernet some of the most savory and age-worthy. Left Bank reds are concentrated, tannic and long-lived, and most are meant for the cellar."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-bordeaux",
+    "cmp-wiki-napa",
+    "cmp-winefolly-cabernet"
+   ]
   },
   {
    "a": "france/sancerre",
    "b": "new-zealand/marlborough",
    "link": "Sauvignon Blanc",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Sauvignon Blanc",
+     "text": "Both are high in acidity. Sancerre is mostly bone dry, made with little oak and without malolactic fermentation, and tends to be less grassy and herbaceous than New Zealand Sauvignon Blanc. Marlborough's shows vibrant fruit and very sharp acidity, with bell pepper, gooseberry and passionfruit, and a gram or two of sugar is normal there to balance the acid."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-sancerre",
+    "cmp-winefolly-sauvignon-blanc"
+   ]
   },
   {
    "a": "spain/rioja",
    "b": "spain/ribera-del-duero",
    "link": "Tempranillo",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Tempranillo",
+     "text": "Tempranillo leads in both. Ribera del Duero's hot, short growing season gives a richer style, with black cherry, blackberry and dried fig. Rioja is known for vanilla from oak, with cherry, dill and cigar box, and its wines are graded partly by how long they spend in oak."
+    },
+    {
+     "head": "Aging in Rioja",
+     "text": "A red Rioja Crianza spends at least a year in barrel. A Reserva ages at least three years, one of them in oak. A Gran Reserva spends at least two years in barrel and three in bottle."
+    }
+   ],
+   "sources": [
+    "cmp-winefolly-tempranillo",
+    "cmp-wiki-rioja"
+   ]
   },
   {
    "a": "italy/barolo",
    "b": "italy/barbaresco",
    "link": "Nebbiolo",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Nebbiolo",
+     "text": "Both are Nebbiolo from the Langhe. Barbaresco gets a slight sea influence and ripens a little earlier. Its tannins are less harsh when young and soften sooner, so it does not age as long as a traditional Barolo. Barolos from La Morra and Barolo itself come closest to Barbaresco."
+    },
+    {
+     "head": "Aging rules",
+     "text": "Barolo must age at least three years, 18 months of them in wood, and a Riserva at least five. Barbaresco must age at least two years, 9 months in wood, and a Riserva at least four."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-barolo",
+    "cmp-wiki-barbaresco"
+   ]
   },
   {
    "a": "france/champagne",
    "b": "italy/prosecco-doc",
    "link": "Sparkling, made two ways",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Made two ways",
+     "text": "Champagne gets its second fermentation in the bottle, from Pinot Noir, Pinot Meunier and Chardonnay, and must age at least 15 months. Most Prosecco is made from Glera and gets its second fermentation in large steel tanks, which can take as little as 30 days."
+    },
+    {
+     "head": "Taste",
+     "text": "Prosecco is aromatic and crisp, with yellow apple, pear, white peach and apricot, and is best drunk within three to five years of its vintage. Extra Dry is its most common style."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-champagne",
+    "cmp-wiki-prosecco"
+   ]
   },
   {
    "a": "italy/prosecco-doc",
    "b": "spain/cava",
    "link": "Sparkling, made two ways",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Made two ways",
+     "text": "Cava must be made by the traditional method, with its second fermentation in the bottle, mostly from Macabeo, Parellada and Xarel·lo. Most Prosecco is made from Glera, with its second fermentation in steel tanks."
+    },
+    {
+     "head": "Style",
+     "text": "Prosecco is aromatic and crisp, with apple, pear and white peach, and Extra Dry is its most common style. Cava runs from bone-dry brut nature to sweet dulce, and about 95% of it comes from Penedès."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-prosecco",
+    "cmp-wiki-cava"
+   ]
   },
   {
    "a": "france/champagne",
    "b": "spain/cava",
    "link": "Sparkling, both bottle-fermented",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Both made in the bottle",
+     "text": "Both get their second fermentation in the bottle, by the traditional method. Champagne is made almost entirely from Pinot Noir, Pinot Meunier and Chardonnay. Cava is mostly Macabeo, Parellada and Xarel·lo, with Chardonnay also allowed."
+    },
+    {
+     "head": "Rules",
+     "text": "Champagne must age at least 15 months, and vintage Champagne at least three years. Cava may no longer be sold as Spanish champagne."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-champagne",
+    "cmp-wiki-cava"
+   ]
   },
   {
    "a": "france/bordeaux",
    "b": "france/burgundy",
    "link": "France's two great reds",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Blends and single grapes",
+     "text": "Red Bordeaux is almost always a blend, led by Cabernet Sauvignon on the Left Bank and Merlot on the Right. Red Burgundy is Pinot Noir and white Burgundy is Chardonnay. Bordeaux ranks its producers; Burgundy ranks its vineyards."
+    },
+    {
+     "head": "Taste and aging",
+     "text": "Left Bank reds are concentrated, tannic and long-lived. Pinot Noir is usually light to medium-bodied with lower tannin, and Burgundy's leans earthy and floral. The best grand cru Burgundy can be kept for more than 15 years."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-bordeaux",
+    "cmp-wiki-burgundy",
+    "cmp-winefolly-pinot-noir"
+   ]
   },
   {
    "a": "spain/jerez",
    "b": "portugal/douro",
    "link": "Sherry and Port",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Sherry and Port",
+     "text": "Sherry is made from white grapes, mostly Palomino, and fortified after fermentation, so most Sherry is dry. Port is usually a sweet red. It is fortified partway through fermentation, which leaves sugar in the wine, and it is usually 19 to 22% alcohol."
+    },
+    {
+     "head": "Aging",
+     "text": "Sherry ages at least two years in a solera of linked barrels and does not generally improve once bottled. Ruby Port is aged only a few years. Tawny Port ages much longer in barrel, with age statements from 10 to 50 years."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-sherry",
+    "cmp-wiki-port"
+   ]
   },
   {
    "a": "italy/barolo",
    "b": "italy/brunello-di-montalcino",
    "link": "Nebbiolo and Sangiovese",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Nebbiolo and Sangiovese",
+     "text": "Barolo is Nebbiolo: light in color, with strong tannin, and often said to smell of tar and roses. Brunello is 100% Sangiovese, with high acidity and flavors of blackberry, black cherry, chocolate, leather and violets."
+    },
+    {
+     "head": "Aging",
+     "text": "Barolo must age at least three years, 18 months in wood. Brunello spends two years in oak and at least four months in bottle, and is released 50 months after the harvest. Most Brunello needs at least 10 years, and traditional Barolo can take more than 10 years to soften."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-barolo",
+    "cmp-wiki-brunello",
+    "cmp-winefolly-nebbiolo"
+   ]
   },
   {
    "a": "united-states/napa-valley",

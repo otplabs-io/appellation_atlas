@@ -15,9 +15,16 @@ const START={lon:-33.56,lat:18.13,ex:.83775,ey:.9314};   // where the globe open
 const S={p:'world'};
 const fmt=n=>n==null?'':Math.round(n).toLocaleString('en-US');
 // ---------- the place in the URL
-function readHash(){const h=decodeURIComponent(location.hash.replace(/^#\/?/,'')); S.p=h&&PL[h]?h:'world'; appBanner();}
+function readHash(){const h=decodeURIComponent(location.hash.replace(/^#\/?/,''));
+  S.view='place'; S.ca=S.cb=null;
+  if(h==='pairs'){S.view='pairs'; S.p='world';}
+  else if(h.startsWith('compare/')){const [a,b]=h.slice(8).split('/vs/'); S.view='compare'; S.ca=PL[a]?a:null; S.cb=b&&PL[b]?b:null; S.p='world';}
+  else S.p=h&&PL[h]?h:'world';
+  document.body.classList.toggle('cmpmode',S.view!=='place'); appBanner();}
 // Safari's App Store banner: Open takes the app straight to the place on screen (the app reads atlas://place/<id>)
-function appBanner(){const m=document.querySelector('meta[name="apple-itunes-app"]'); if(m) m.content='app-id=6839710428'+(S.p!=='world'?', app-argument=atlas://place/'+S.p:'');}
+function appBanner(){const m=document.querySelector('meta[name="apple-itunes-app"]'); if(!m) return;
+  const arg=S.view==='compare'&&S.ca&&S.cb?'atlas://compare/'+S.ca+'/vs/'+S.cb:S.view==='pairs'?'atlas://pairs':S.p!=='world'?'atlas://place/'+S.p:'';
+  m.content='app-id=6839710428'+(arg?', app-argument='+arg:'');}
 const link=id=>id&&id!=='world'?'#/'+id:'#/';
 function go(id){if((id||'world')===S.p) return; location.hash=link(id);}
 // ---------- notoriety: a place's shade, against the others on the same view
@@ -432,7 +439,8 @@ function renderTitle(id,f){   // the place's name, what it is and which group it
   const kind=f?(f.kind.length?f.kind.map(cap).join(' and '):(f.depth===0?'Country':f.shape==='Eurostat LAU, the commune it is named for'?'Commune':'Region')):'';
   $('#ptitle').innerHTML=`<p class="ts-eyebrow eyebrow">${esc(kind)}${tone(id)!=='o'?`${kind?' · ':''}<span class="badge ${tone(id)}">${TONES[tone(id)].one}</span>`:''}</p><h2 class="ts-sheet_title name" style="--n:${Math.max(...String(PL[id]?.[0]||id).split(/\s+/).map(w=>w.length))}">${esc(PL[id]?.[0]||id)}</h2>`
     +(f&&f.also.length?`<p class="ts-caption also">Also ${f.also.map(esc).join(', ')}</p>`:'')
-    +(f&&f.blurb?`<p class="ts-body blurb">${esc(f.blurb.text)}</p>`:'');   // what the place is known for (PlacePage in the app)
+    +(f&&f.blurb?`<p class="ts-body blurb">${esc(f.blurb.text)}</p>`:'')
+    +(f&&f.climate?`<p class="ts-caption cmp-link"><a href="${cmpLink(id)}">Compare with another place</a></p>`:'');   // what the place is known for (PlacePage in the app)
   const sn=f&&SHAPE_NOTE[f.shape]; $('#shapeNote').hidden=!sn; $('#shapeNote').textContent=sn||'';
 }
 function renderInfo(f){
@@ -621,12 +629,104 @@ function openUnits(){
 }
 document.addEventListener('click',e=>{if(e.target.closest('[data-units]')) openUnits();});
 const FORM_URL='https://docs.google.com/forms/d/e/1FAIpQLSc7CmB3DsylFI0kt6tZncSwq53i8jsEuxdrv4deyIuWJHq8oA/viewform';
-const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">${fmt(Object.keys(PL).length)} wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know.</p><p class="ts-body">Gold marks the benchmarks, the classic places to learn. The darkest gold marks the essential benchmarks, the ones to learn first, so every essential is a benchmark too. Light gold marks the places inside a benchmark. Grey marks every other place.</p><p class="ts-body">Each list puts the best known places first, by how many Wikipedias write about them and how often those pages are read.</p></div></section>`;
+const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">${fmt(Object.keys(PL).length)} wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know.</p><p class="ts-body">Gold marks the benchmarks, the classic places to learn. The darkest gold marks the essential benchmarks, the ones to learn first, so every essential is a benchmark too. Light gold marks the places inside a benchmark. Grey marks every other place.</p><p class="ts-body">Each list puts the best known places first, by how many Wikipedias write about them and how often those pages are read.</p><p class="ts-body"><a href="#/pairs">Often compared</a>: the pairs of benchmark regions people set side by side most.</p></div></section>`;
 async function render(){
-  readHash(); renderPlaces(); mapShow();
+  readHash();
+  if(S.view==='compare') return renderCompare();
+  if(S.view==='pairs') return renderPairs();
+  renderPlaces(); mapShow();
   if(S.p==='world'){renderTitle('world'); $('#info').innerHTML=WORLD_INFO()+FEEDBACK('Home','world'); return;}
   renderTitle(S.p,null);
   const id=S.p, f=await facts(id); if(S.p===id) renderInfo(f);
+}
+// ---------- compare: two places side by side (CompareView in the app)
+let PAIRS=null;
+async function pairs(){if(!PAIRS){const r=await fetch('compare.json'); PAIRS=r.ok?(await r.json()).pairs:[];} return PAIRS;}
+const pairOf=(a,b)=>(PAIRS||[]).find(p=>(p.a===a&&p.b===b)||(p.a===b&&p.b===a));
+const cmpLink=(a,b)=>'#/compare/'+a+(b?'/vs/'+b:'');
+// two outlines in their tones, to one scale when their sizes allow it; box is the larger side in pixels
+function shapes(a,oa,b,ob,box,inset,looseAt=10){   // looseAt: under 1/looseAt of the box, the smaller shape is drawn to its own scale
+  if(!oa||!ob) return null;
+  const sa=Math.max(oa.w,oa.h), sb=Math.max(ob.w,ob.h), s=box/Math.max(sa,sb), loose=Math.min(sa,sb)*s<box/looseAt;
+  const svg=(id,o,k)=>`<svg class="cshape ${shade(id)}" viewBox="0 0 ${o.w} ${o.h}" width="${Math.max(2,o.w*k).toFixed(1)}" height="${Math.max(2,o.h*k).toFixed(1)}" aria-hidden="true"><path d="${o.d}" vector-effect="non-scaling-stroke"/></svg>`;
+  if(loose) return {a:svg(a,oa,box/sa),b:svg(b,ob,box/sb),loose:true,times:Math.round(Math.max(sa,sb)/Math.min(sa,sb))};
+  const r={a:svg(a,oa,s),b:svg(b,ob,s),loose:false,pxkm:s};
+  if(inset&&Math.min(sa,sb)*s<box/4){   // the smaller one is hard to read at true scale: show it again, enlarged, beside itself
+    const small=sa<sb?'a':'b', o=sa<sb?oa:ob, id=sa<sb?a:b, z=Math.round(box/2/Math.max(o.w,o.h)/s);
+    r[small]+=`<span class="czoom">${svg(id,o,s*z)}<span class="ts-caption">×${z}</span></span>`;}
+  return r;
+}
+// a scale bar about a third of the box wide, in round miles or kilometers
+function scaleBar(pxkm,box){
+  const u=usU('dist')?1.609344:1, want=box/3/pxkm/u, p=10**Math.floor(Math.log10(want)), n=[1,2,5,10].map(x=>x*p).filter(x=>x<=want).pop()||p;
+  return `<span class="cbar"><i style="width:${(n*u*pxkm).toFixed(1)}px"></i>${fmt(n)} ${usU('dist')?(n===1?'mile':'miles'):'km'}</span>`;
+}
+const dryOf=k=>!k?null:k[0]==='B'?'an arid climate':{f:'no dry season',s:'dry summers',w:'dry winters',m:'a short dry season'}[k[1]]||null;
+const latOf=c=>c&&c.lat!=null?`${Math.abs(Math.round(c.lat))}°${c.lat<0?'S':'N'}`:'';
+// the leading grape and its share, when the figures are for the place itself
+function lead(f){const pl=f.planted; if(!pl||!pl.grapes||!pl.grapes.length||!['own','within'].includes(pl.scope)) return null;
+  const g=pl.grapes.find(([n])=>n!=='Other'); return g?{g:g[0],p:Math.round(g[1]/pl.ha*100),y:pl.year,about:!!pl.whites_older,two:pl.grapes.filter(([n])=>n!=='Other').slice(0,2).map(([n,ha])=>`${n} ${Math.round(ha/pl.ha*100)}%`).join(', ')}:null;}
+// how the places compare, in sentences built only from the Atlas's own figures (Compare.placesText in the app)
+function placesText(fa,fb){
+  const A=fa.name,B=fb.name,ca=fa.climate,cb=fb.climate,s=[];
+  if(ca&&cb&&ca.gst!=null&&cb.gst!=null){const ta=tN(ca.gst),tb=tN(cb.gst);
+    s.push(ta===tb?`Both have a growing season that averages ${deg(ca.gst)}.`:`${A}'s growing season averages ${deg(ca.gst)}, ${Math.abs(ta-tb)}${tU()} ${ta>tb?'warmer':'cooler'} than ${B}'s ${deg(cb.gst)}.`);}
+  const wa=fa.winkler&&fa.winkler[0],wb=fb.winkler&&fb.winkler[0];
+  if(wa&&wb) s.push(wa===wb?`Both are Winkler region ${wa}.`:`${A} is Winkler region ${wa} and ${B} is region ${wb}.`);
+  const da=dryOf(ca&&ca.koppen),db=dryOf(cb&&cb.koppen);
+  if(da&&db) s.push(da===db?(da==='no dry season'?'Neither has a dry season.':`Both have ${da}.`):`${A} has ${da}, while ${B} has ${db}.`);
+  const la=lead(fa),lb=lead(fb);
+  if(la&&lb) s.push(la.g===lb.g?`${la.g} leads in both: ${la.about?'about ':''}${la.p}% of the vines in ${A} (${la.y}) and ${lb.about?'about ':''}${lb.p}% in ${B} (${lb.y}).`
+    :`The leading grape in ${A} is ${la.g}, ${la.about?'about ':''}${la.p}% of the vines (${la.y}). In ${B} it is ${lb.g}, ${lb.about?'about ':''}${lb.p}% (${lb.y}).`);
+  const ea=fa.terrain&&fa.terrain.elev,eb=fb.terrain&&fb.terrain.elev;
+  if(ea&&eb) s.push(`The land sits at about ${elev(ea[1])} in ${A} and ${elev(eb[1])} in ${B}.`);
+  return s.join(' ');
+}
+function cmpSources(fa,fb,p){
+  const pick=f=>f?Object.values(f.src_for||{}).flat().map(i=>f.sources[i]).filter(Boolean):[];
+  const seen=new Set(), all=[...pick(fa),...pick(fb),...(p?p.sources:[])].filter(s=>!seen.has(s.name)&&seen.add(s.name));
+  return `<ul class="src ts-caption">${all.map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`:esc(s.name)}</li>`).join('')}</ul>`;
+}
+async function renderCompare(){
+  const a=S.ca,b=S.cb; await pairs();
+  const [fa,fb]=await Promise.all([a?facts(a):null,b?facts(b):null]); if(S.ca!==a||S.cb!==b) return;
+  const nm=id=>esc(PL[id]?.[0]||id), place=PL[a]?.[4]||'';
+  const head=`<section class="row cmp-head"><p class="crumbs ts-place_subtitle"><a href="#/">The world</a> › <a href="#/pairs">Often compared</a></p><h2 class="ts-sheet_title">Compare</h2>
+    <div class="cpick">${[a,b].map((id,k)=>id?`<span class="cchip"><i class="sw ${shade(id)}"></i>${nm(id)}<a class="x" href="${cmpLink(k?a:b||'')}" aria-label="Choose another place instead of ${nm(id)}">✕</a></span>`:`<span class="cchip empty">Search above for a place</span>`).join('<span class="ts-caption">and</span>')}</div></section>`;
+  if(!a||!b||!fa||!fb){
+    const near=(PAIRS||[]).filter(p=>p.a===a||p.b===a).map(p=>p.a===a?p.b:p.a);
+    $('#info').innerHTML=head+`<section class="row"><p class="ts-body">${a?`Search above for a place to compare with ${nm(a)}.`:'Search above for the first place.'}</p>${near.length?`<p class="ts-caption sub">Often compared with ${nm(a)}</p><div class="chips">${near.map(id=>`<a class="chip" href="${cmpLink(a,id)}"><i class="sw ${shade(id)}"></i>${nm(id)}</a>`).join('')}</div>`:''}<p class="ts-caption about-link"><a href="#/pairs">See all often compared pairs</a></p></section>`;
+    $('#q').placeholder='Search a place to compare'; return;
+  }
+  $('#q').placeholder='Search a country, region or appellation';
+  const p=pairOf(a,b), box=Math.min(170,(innerWidth-80)/2), sh=shapes(a,fa.outline,b,fb.outline,box,true);
+  const sub=(f,id)=>esc([PL[id]?.[4]&&PL[id][4]!==f.name?PL[id][4]:'',latOf(f.climate)].filter(Boolean).join(' · '));
+  const col=(id,f,svg)=>`<div class="ccol"><div class="cart" style="height:${Math.ceil(box)}px">${svg||'<span class="ts-caption">No outline</span>'}</div><a class="cname ts-section_head" href="${link(id)}"><i class="sw ${shade(id)}"></i>${nm(id)}</a><span class="ts-caption">${sub(f,id)}</span></div>`;
+  const art=`<section class="row"><div class="ccard"><div class="cgrid">${col(a,fa,sh&&sh.a)}${col(b,fb,sh&&sh.b)}</div>`
+    +(sh?`<p class="ts-caption cnote">${sh.loose?`Too different in size to draw to one scale. ${nm(Math.max(fa.outline.w,fa.outline.h)>Math.max(fb.outline.w,fb.outline.h)?a:b)} is about ${fmt(sh.times)} times as long.`:`${scaleBar(sh.pxkm,box)} Both drawn to the same scale.`}</p>`:'')+`</div></section>`;
+  const diff=p&&p.tag==='different-grapes'?`<section class="row"><p class="ts-body cdiff">${nm(a)} and ${nm(b)} are made from different grapes, so this compares the wines typical of each, not one grape in two places.</p></section>`:'';
+  const pt=placesText(fa,fb);
+  const ca=fa.climate,cb=fb.climate;
+  const mon=(f,c)=>c&&c.tavg?`<div><p class="ts-caption sub">${esc(f.name)} · ${deg(c.gst)} season</p>${months(c.tavg.map(toF),'temperature','t',c.lat<0,true,c.tavg.map(tN))}</div>`:'';
+  const charts=ca||cb?`<p class="ts-caption sub">Average temperature by month, ${tU()}</p><div class="mrow">${mon(fa,ca)}${mon(fb,cb)}</div>`:'';
+  const row=(k,x,y)=>x||y?`<tr><th scope="row">${k}</th><td>${x||'<small>no figures</small>'}</td><td>${y||'<small>no figures</small>'}</td></tr>`:'';
+  const pl=f=>{const l=lead(f); return l?`${esc(l.two)} <small>(${l.y}${l.about?', approximate':''})</small>`:'';};
+  const table=`<div class="tablewrap"><table class="parts ts-caption ctab"><thead><tr><th></th><th>${nm(a)}</th><th>${nm(b)}</th></tr></thead><tbody>`
+    +row('Growing season',ca&&deg(ca.gst),cb&&deg(cb.gst))+row('Heat',ca&&heat(ca.gdd),cb&&heat(cb.gdd))+row('Winkler region',fa.winkler&&fa.winkler[0],fb.winkler&&fb.winkler[0])
+    +row('Climate',ca&&esc(ca.koppen_name),cb&&esc(cb.koppen_name))+row('Planted',pl(fa),pl(fb))+row('Elevation',fa.terrain&&fa.terrain.elev&&elev(fa.terrain.elev[1]),fb.terrain&&fb.terrain.elev&&elev(fb.terrain.elev[1]))+`</tbody></table></div>`;
+  const wines=p&&p.wines.length?block('How the wines compare',p.wines.map(w=>`<h3 class="ts-fact_label cw">${esc(w.head)}</h3><p class="ts-body">${esc(w.text)}</p>`).join('')):'';
+  $('#info').innerHTML=head+art+diff+(pt?block('How the places compare',`<p class="ts-body">${esc(pt)}</p>`):'')+block('Side by side',charts+table)+wines
+    +block('Sources',cmpSources(fa,fb,p))+`<section class="row"><p class="ts-caption"><a href="#/pairs">Other often compared pairs</a></p></section>`;
+}
+async function renderPairs(){
+  await pairs(); if(S.view!=='pairs') return;
+  $('#q').placeholder='Search a country, region or appellation';
+  const tag={'different-grapes':'Different grapes','sounds-alike':'More different than they sound'};
+  const li=(p,i)=>{const sh=shapes(p.a,p.oa,p.b,p.ob,46,false,5);
+    return `<li><a href="${cmpLink(p.a,p.b)}"><span class="pn ts-section_head">${i+1}</span><span class="pa">${sh?sh.a+sh.b:''}</span><span class="pt"><b class="ts-body">${esc(PL[p.a]?.[0]||p.a)} · ${esc(PL[p.b]?.[0]||p.b)}</b><span class="ts-caption">${esc(p.link)}</span>`
+      +`<span class="ptags">${p.tag?`<i class="ptag ${p.tag}">${tag[p.tag]}</i>`:''}${sh&&sh.loose?'<i class="ptag loose">Not to scale</i>':''}</span></span></a></li>`;};
+  $('#info').innerHTML=`<section class="row cmp-head"><p class="crumbs ts-place_subtitle"><a href="#/">The world</a> › Often compared</p><h2 class="ts-sheet_title">Often compared</h2><p class="ts-body">The pairs people set side by side most, among benchmark regions.</p></section>`
+    +`<section class="row"><ol class="pairs">${PAIRS.map(li).join('')}</ol><p class="ts-caption sub">Each pair is drawn to one scale, so you can see how their sizes compare, unless marked not to scale.</p></section>`+FEEDBACK('Often compared','world');
 }
 // ---------- search
 function wireSearch(){
@@ -634,7 +734,7 @@ function wireSearch(){
   const all=Object.entries(PL).map(([id,x])=>({id,name:x[0],f:fold([x[0],...(x[5]||[])].join(' ')),s:x[2],k:x[3],c:x[4]}));
   const show=()=>{ul.hidden=!list.length; q.setAttribute('aria-expanded',String(!!list.length));
     ul.innerHTML=list.map((x,i)=>`<li role="option" aria-selected="${i===sel}" data-i="${i}"><span class="sl">${esc(x.name)} <small>${esc([x.k,x.c].filter(Boolean).join(', '))}</small></span></li>`).join('');};
-  const choose=x=>{q.value=''; list=[]; show(); q.blur(); go(x.id);};
+  const choose=x=>{q.value=''; list=[]; show(); q.blur(); if(S.view==='compare'&&!(S.ca&&S.cb)&&x.id!==S.ca){location.hash=cmpLink(S.ca||x.id,S.ca?x.id:null); return;} go(x.id);};   // on Compare with a place to fill, search fills it
   q.addEventListener('input',()=>{const t=fold(q.value.trim()); sel=-1;
     list=t.length<2?[]:all.filter(x=>x.f.includes(t)).sort((a,b)=>(b.f.startsWith(t)-a.f.startsWith(t))||b.s-a.s).slice(0,10); show();});
   q.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){sel=Math.min(list.length-1,sel+1); show(); e.preventDefault();} else if(e.key==='ArrowUp'){sel=Math.max(-1,sel-1); show(); e.preventDefault();}

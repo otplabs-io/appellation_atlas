@@ -14,5 +14,6 @@ The app and the website must carry the same information and features. Keep them 
 - **Words and scales are mirrored by hand.** `ios/AppellationAtlas/UI/Copy.swift` holds what `web/atlas.js` writes itself: section notes, the growing season and Winkler scales, shape notes, the world intro. Change one, change the other.
 - **Sections follow the same order and logic.** `ios/AppellationAtlas/UI/PlaceInfo.swift` mirrors `renderInfo` in `web/atlas.js`. A new section on one gets added to the other.
 - **The globe is the same math.** `ios/AppellationAtlas/Globe/` ports the projection, clipping, culling, flights, zoom rules and labels from `web/atlas.js`.
+- **Compare and units are mirrored too.** `ios/AppellationAtlas/Features/Compare.swift` mirrors `renderCompare`, `renderPairs` and `placesText` in `web/atlas.js`; `UI/Units.swift` mirrors the unit formatters. Unit figures inside place text are marked once at build time (`src/units.py`); outlines for Compare come from `src/outlines.py`; the often compared pairs live in `regions/compare-pairs.json`, and their wine text may say only what the sources listed with it say.
 - **Colors are the same tokens.** `ios/AppellationAtlas/UI/Theme.swift` matches `web/atlas.css`, light and dark.
 - App-only extras, by Chris's choice: Where am I, saved places with notes (iCloud), the place-of-the-day widget.

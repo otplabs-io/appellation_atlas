@@ -405,6 +405,20 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'cmp-wiki-burgundy':dict(name='Wikipedia, Burgundy wine',url='https://en.wikipedia.org/wiki/Burgundy_wine'),
      'cmp-wiki-barolo':dict(name='Wikipedia, Barolo',url='https://en.wikipedia.org/wiki/Barolo'),
      'cmp-owb-chardonnay':dict(name='Oregon Wine Board, Oregon Chardonnay',url='https://www.oregonwine.org/discover/oregon-chardonnay/'),
+     'cmp-wiki-bordeaux':dict(name='Wikipedia, Bordeaux wine',url='https://en.wikipedia.org/wiki/Bordeaux_wine'),
+     'cmp-wiki-napa':dict(name='Wikipedia, Napa Valley AVA',url='https://en.wikipedia.org/wiki/Napa_Valley_AVA'),
+     'cmp-winefolly-cabernet':dict(name='Wine Folly, Cabernet Sauvignon',url='https://winefolly.com/grapes/cabernet-sauvignon/'),
+     'cmp-wiki-sancerre':dict(name='Wikipedia, Sancerre (wine)',url='https://en.wikipedia.org/wiki/Sancerre_AOC'),
+     'cmp-winefolly-sauvignon-blanc':dict(name='Wine Folly, Sauvignon Blanc',url='https://winefolly.com/grapes/sauvignon-blanc/'),
+     'cmp-wiki-rioja':dict(name='Wikipedia, Rioja DOCa',url='https://en.wikipedia.org/wiki/Rioja_(wine)'),
+     'cmp-winefolly-tempranillo':dict(name='Wine Folly, Tempranillo',url='https://winefolly.com/grapes/tempranillo/'),
+     'cmp-wiki-barbaresco':dict(name='Wikipedia, Barbaresco',url='https://en.wikipedia.org/wiki/Barbaresco'),
+     'cmp-wiki-champagne':dict(name='Wikipedia, Champagne',url='https://en.wikipedia.org/wiki/Champagne_(wine)'),
+     'cmp-wiki-prosecco':dict(name='Wikipedia, Prosecco',url='https://en.wikipedia.org/wiki/Prosecco'),
+     'cmp-wiki-cava':dict(name='Wikipedia, Cava (Spanish wine)',url='https://en.wikipedia.org/wiki/Cava_(Spanish_wine)'),
+     'cmp-wiki-sherry':dict(name='Wikipedia, Sherry',url='https://en.wikipedia.org/wiki/Sherry'),
+     'cmp-wiki-port':dict(name='Wikipedia, Port wine',url='https://en.wikipedia.org/wiki/Port_wine'),
+     'cmp-wiki-brunello':dict(name='Wikipedia, Brunello di Montalcino',url='https://en.wikipedia.org/wiki/Brunello_di_Montalcino'),
      'cmp-guildsomm-willamette-chardonnay':dict(name="GuildSomm, Neal Hulkower, Willamette Valley's Way with Chardonnay",url='https://guildsomm.com/public_content/features/articles/b/neal-hulkower/posts/willamette-valley-chardonnay'),
      'sawis':dict(name='SAWIS, Production areas defined in terms of the Wine of Origin Scheme, June 2024 (regions, districts and wards)',url='https://www.sawis.co.za/cert/download/Production_areas_-_June_2024.pdf'),}
 @snap('australia-gi')
@@ -1061,10 +1075,12 @@ def facts():
         if x['source']=='Wine Australia GI boundaries':
             pr=next((AU[m] for m in [geoindex_norm(v) for v in [t['name']]+t.get('also',[])] if m in AU),None)
             if pr: f['gi']={k:pr.get(v) for k,v in dict(type='GI_TYPE',number='GI_NUMBER',year='YEAR_REGISTER',area_km2='GI_AREA_KM2',vines_ha='VINE_AREA_HA',url='GI_URL',state='STATE').items()}
+        n_map=len(src)   # the sources behind the outline start here (Compare cites them with the shapes)
         src+=[k for k,v in SHAPE_SRC.items() if v==x['source']]
         if n in PLOT_CUT or any(k in PLOT_CUT for k in PLOT_LESS.get(n,())): src.append('cadastre')   # the lieu-dit line between Charmes and Mazoyères
         src+=[SHAPE_LABEL_SRC[x['source']]] if x['source'] in SHAPE_LABEL_SRC else []
-        if x['source'] in ('zone store','geoBoundaries'): src+=[k for v in G.store_sources(n) for k in [store_src(v)] if k]   # the map behind a stored zone: the EU's communes, or the municipalities or districts it is drawn by
+        if x['source'] in ('zone store','geoBoundaries'): src+=[k for v in G.store_sources(n) for k in [store_src(v)] if k]
+        map_src=src[n_map:]   # the map behind a stored zone: the EU's communes, or the municipalities or districts it is drawn by
         sub=below(n)+ALSO_INSIDE.get(n,[])   # a region in two zones counts in both (Murray Darling and Swan Hill straddle the Victoria and New South Wales border)
         ac=list(dict.fromkeys([UCD_T.get(x,x) for x in (A.get(n) or {}).get('contains') or [] if x and t['name'] not in OVERLAP_OF.get(x,()) and x not in AVANOTCONTAINS.get(t['name'],())]
                               +([T[k]['name'] for k,v in A.items() if k!=n and k in T and t['name'] in (v.get('within') or [])] if n in A else [])))   # UC Davis lists El Dorado twice in Sierra Foothills (the AVA and the county); an AVA only partly inside is not counted; AVAs whose own "Inside" names this one count too (Fort Ross-Seaview in Sonoma Coast)
@@ -1093,6 +1109,10 @@ def facts():
         if WV.get(view_of(n)): src.append('osm-water')   # the map above the page draws rivers and lakes
         if view_of(n) in CV: src.append('geonames')   # and names a few towns
         f['sources']=[SRC[s] for s in dict.fromkeys(src)]
+        # which of those back the climate, the plantings and the outline: Compare cites only these, for both places
+        ix={k:i for i,k in enumerate(dict.fromkeys(src))}
+        f['src_for']={g:[ix[k] for k in ks if k in ix] for g,ks in (('climate',('worldclim','koppen','winkler','jones2010')),
+            ('planted',[(f['planted'].get('source') or 'anderson')] if f.get('planted') else []),('map',map_src))}
         json.dump(f,open(os.path.join(fd,n.replace('/','__')+'.json'),'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
         places[n]=[t['name'],x['parent'],round((N.get(n) or {}).get('score',-1)),(kind or [''])[0],T[t['path'].split('/')[0]]['name'],f['also'],int(n in BENCH),lv(n),int(inside(n))]   # the last: inside a place the study list names, the map's light gold
     json.dump(dict(places=places),open(os.path.join(OUT,'places.json'),'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
@@ -1237,7 +1257,7 @@ def mark_units(folder):
             with open(fn,'w',encoding='utf-8') as fh: json.dump(m,fh,ensure_ascii=False,separators=(',',':'))
     print(f'atlas: units marked in {n} places')
 
-def compare_pairs(dest):
+def compare_pairs(dest,facts_dir):
     """The often-compared pairs, checked and with their sources spelled out. The build stops on a pair that names a place
     the Atlas lacks or one that is not a benchmark, on wine text with no source, and on a source missing from SRC."""
     d=jl(os.path.join(ROOT,'regions','compare-pairs.json')); PL=jl(os.path.join(OUT,'places.json'))['places']; bad=[]; out=[]
@@ -1250,7 +1270,9 @@ def compare_pairs(dest):
         if p['wines'] and not p['sources']: bad.append(f'#{i}: wine text with no source')
         bad+=[f'#{i}: source {k} is not in SRC' for k in p['sources'] if k not in SRC]
         bad+=[f'#{i}: an em dash in its text' for w in p['wines'] if '\u2014' in w['text']+w['head']]
-        out.append(dict(a=p['a'],b=p['b'],link=p['link'],tag=p['tag'],wines=p['wines'],sources=[dict(name=SRC[k]['name'],url=SRC[k]['url']) for k in p['sources'] if k in SRC]))
+        ol=lambda x:(jl(os.path.join(facts_dir,x.replace('/','__')+'.json')).get('outline') if os.path.exists(os.path.join(facts_dir,x.replace('/','__')+'.json')) else None)
+        out.append(dict(a=p['a'],b=p['b'],link=p['link'],tag=p['tag'],wines=p['wines'],sources=[dict(name=SRC[k]['name'],url=SRC[k]['url']) for k in p['sources'] if k in SRC],
+                        oa=ol(p['a']),ob=ol(p['b'])))   # both outlines, so the list can draw every pair without loading 100 places
     seen=set()
     for i,p in enumerate(d['pairs'],1):
         k=frozenset((p['a'],p['b']))
@@ -1268,8 +1290,9 @@ def site(dest=None):
     shutil.copytree(os.path.join(ROOT,'web'),new,ignore=junk)
     for sub in ('geo','facts'): shutil.copytree(os.path.join(OUT,sub),os.path.join(new,sub),ignore=junk)
     shutil.copy2(os.path.join(OUT,'places.json'),os.path.join(new,'places.json'))
-    compare_pairs(os.path.join(new,'compare.json'))
     mark_units(os.path.join(new,'facts'))
+    import outlines; print(f"atlas: outlines for {outlines.add_all(os.path.join(new,'facts'),os.path.join(new,'geo','views'),jl(os.path.join(OUT,'places.json'))['places'],os.path.join(ROOT,'build','outline-cache.json'))} places")
+    compare_pairs(os.path.join(new,'compare.json'),os.path.join(new,'facts'))
     if os.path.exists(dest): os.rename(dest,old)
     os.rename(new,dest); shutil.rmtree(old,ignore_errors=True)
     print(f'atlas: written to {os.path.relpath(dest,ROOT)}/')
