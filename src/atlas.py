@@ -405,6 +405,77 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'cmp-wiki-burgundy':dict(name='Wikipedia, Burgundy wine',url='https://en.wikipedia.org/wiki/Burgundy_wine'),
      'cmp-wiki-barolo':dict(name='Wikipedia, Barolo',url='https://en.wikipedia.org/wiki/Barolo'),
      'cmp-owb-chardonnay':dict(name='Oregon Wine Board, Oregon Chardonnay',url='https://www.oregonwine.org/discover/oregon-chardonnay/'),
+     'cmp-wiki-bordeaux':dict(name='Wikipedia, Bordeaux wine',url='https://en.wikipedia.org/wiki/Bordeaux_wine'),
+     'cmp-wiki-napa':dict(name='Wikipedia, Napa Valley AVA',url='https://en.wikipedia.org/wiki/Napa_Valley_AVA'),
+     'cmp-wiki-sancerre':dict(name='Wikipedia, Sancerre (wine)',url='https://en.wikipedia.org/wiki/Sancerre_AOC'),
+     'cmp-winefolly-sauvignon-blanc':dict(name='Wine Folly, Sauvignon Blanc',url='https://winefolly.com/grapes/sauvignon-blanc/'),
+     'cmp-wiki-rioja':dict(name='Wikipedia, Rioja DOCa',url='https://en.wikipedia.org/wiki/Rioja_(wine)'),
+     'cmp-winefolly-tempranillo':dict(name='Wine Folly, Tempranillo',url='https://winefolly.com/grapes/tempranillo/'),
+     'cmp-wiki-barbaresco':dict(name='Wikipedia, Barbaresco',url='https://en.wikipedia.org/wiki/Barbaresco'),
+     'cmp-wiki-champagne':dict(name='Wikipedia, Champagne',url='https://en.wikipedia.org/wiki/Champagne_(wine)'),
+     'cmp-wiki-prosecco':dict(name='Wikipedia, Prosecco',url='https://en.wikipedia.org/wiki/Prosecco'),
+     'cmp-wiki-cava':dict(name='Wikipedia, Cava (Spanish wine)',url='https://en.wikipedia.org/wiki/Cava_(Spanish_wine)'),
+     'cmp-wiki-sherry':dict(name='Wikipedia, Sherry',url='https://en.wikipedia.org/wiki/Sherry'),
+     'cmp-wiki-port':dict(name='Wikipedia, Port wine',url='https://en.wikipedia.org/wiki/Port_wine'),
+     'cmp-wiki-ribera':dict(name='Wikipedia, Ribera del Duero',url='https://en.wikipedia.org/wiki/Ribera_del_Duero'),
+     'cmp-winefolly-napa-bordeaux':dict(name='Wine Folly, Comparing Napa vs Bordeaux Cabernet Sauvignon',url='https://winefolly.com/episode/napa-vs-bordeaux-cabernet-sauvignon-video/'),
+     'cmp-vinissimus-cava':dict(name='Vinissimus, Cava, Champagne and Prosecco: differences and how to choose',url='https://www.vinissimus.com/en/content/cava-vs-champagne/'),
+     'cmp-wiki-sonoma':dict(name='Wikipedia, Sonoma County wine',url='https://en.wikipedia.org/wiki/Sonoma_County_wine'),
+     'cmp-wiki-pouilly':dict(name='Wikipedia, Pouilly-Fumé',url='https://en.wikipedia.org/wiki/Pouilly-Fum%C3%A9'),
+     'cmp-wiki-chianti':dict(name='Wikipedia, Chianti',url='https://en.wikipedia.org/wiki/Chianti'),
+     'cmp-wiki-sauternes':dict(name='Wikipedia, Sauternes wine',url='https://en.wikipedia.org/wiki/Sauternes_wine'),
+     'cmp-wiki-tokaji':dict(name='Wikipedia, Tokaji',url='https://en.wikipedia.org/wiki/Tokaji'),
+     'cmp-wiki-barossa':dict(name='Wikipedia, Barossa Valley (wine)',url='https://en.wikipedia.org/wiki/Barossa_Valley_(wine)'),
+     'cmp-wiki-mclaren':dict(name='Wikipedia, McLaren Vale wine region',url='https://en.wikipedia.org/wiki/McLaren_Vale_wine_region'),
+     'cmp-wiki-pomerol':dict(name='Wikipedia, Pomerol',url='https://en.wikipedia.org/wiki/Pomerol'),
+     'cmp-wiki-saint-emilion':dict(name='Wikipedia, Saint-Émilion wine',url='https://en.wikipedia.org/wiki/Saint-%C3%89milion_wine'),
+     'cmp-wiki-rias-baixas':dict(name='Wikipedia, Rías Baixas (DO)',url='https://en.wikipedia.org/wiki/R%C3%ADas_Baixas_(DO)'),
+     'cmp-wiki-vinho-verde':dict(name='Wikipedia, Vinho Verde',url='https://en.wikipedia.org/wiki/Vinho_Verde'),
+     'cmp-wiki-paso':dict(name='Wikipedia, Paso Robles AVA',url='https://en.wikipedia.org/wiki/Paso_Robles_AVA'),
+     'cmp-wiki-rhone':dict(name='Wikipedia, Rhône wine',url='https://en.wikipedia.org/wiki/Rh%C3%B4ne_wine'),
+     'cmp-winefolly-merlot':dict(name='Wine Folly, Merlot',url='https://winefolly.com/grapes/merlot/'),
+     'cmp-winefolly-albarino':dict(name='Wine Folly, Albariño',url='https://winefolly.com/grapes/albarino/'),
+     'cmp-wiki-mendoza':dict(name='Wikipedia, Mendoza wine',url='https://en.wikipedia.org/wiki/Mendoza_wine'),
+     'cmp-wiki-cahors':dict(name='Wikipedia, Cahors wine',url='https://en.wikipedia.org/wiki/Cahors_AOC'),
+     'cmp-winefolly-malbec':dict(name='Wine Folly, Malbec',url='https://winefolly.com/grapes/malbec/'),
+     'cmp-wiki-central-otago':dict(name='Wikipedia, Central Otago wine region',url='https://en.wikipedia.org/wiki/Central_Otago_wine_region'),
+     'cmp-wiki-mosel':dict(name='Wikipedia, Mosel (wine region)',url='https://en.wikipedia.org/wiki/Mosel_(wine_region)'),
+     'cmp-wiki-rheingau':dict(name='Wikipedia, Rheingau (wine region)',url='https://en.wikipedia.org/wiki/Rheingau_(wine_region)'),
+     'cmp-wiki-clare':dict(name='Wikipedia, Clare Valley wine region',url='https://en.wikipedia.org/wiki/Clare_Valley_wine_region'),
+     'cmp-wiki-eden':dict(name='Wikipedia, Eden Valley wine region',url='https://en.wikipedia.org/wiki/Eden_Valley_wine_region'),
+     'cmp-wiki-beaujolais':dict(name='Wikipedia, Beaujolais',url='https://en.wikipedia.org/wiki/Beaujolais_wine'),
+     'cmp-wiki-etna':dict(name='Wikipedia, Etna DOC',url='https://en.wikipedia.org/wiki/Etna_DOC'),
+     'cmp-winefolly-nerello':dict(name='Wine Folly, Nerello Mascalese',url='https://winefolly.com/grapes/nerello-mascalese/'),
+     'cmp-wiki-meursault':dict(name='Wikipedia, Meursault wine',url='https://en.wikipedia.org/wiki/Meursault_wine'),
+     'cmp-wiki-puligny':dict(name='Wikipedia, Puligny-Montrachet wine',url='https://en.wikipedia.org/wiki/Puligny-Montrachet_wine'),
+     'cmp-wiki-cote-de-nuits':dict(name='Wikipedia, Côte de Nuits',url='https://en.wikipedia.org/wiki/C%C3%B4te_de_Nuits'),
+     'cmp-wiki-cote-de-beaune':dict(name='Wikipedia, Côte de Beaune',url='https://en.wikipedia.org/wiki/C%C3%B4te_de_Beaune'),
+     'cmp-wiki-pauillac':dict(name='Wikipedia, Pauillac AOC',url='https://en.wikipedia.org/wiki/Pauillac_AOC'),
+     'cmp-wiki-margaux':dict(name='Wikipedia, Margaux AOC',url='https://en.wikipedia.org/wiki/Margaux_AOC'),
+     'cmp-wiki-tuscany':dict(name='Wikipedia, Tuscan wine',url='https://en.wikipedia.org/wiki/Tuscan_wine'),
+     'cmp-wiki-piedmont':dict(name='Wikipedia, Piedmont wine',url='https://en.wikipedia.org/wiki/Piedmont_wine'),
+     'cmp-wiki-amarone':dict(name='Wikipedia, Amarone',url='https://en.wikipedia.org/wiki/Amarone'),
+     'cmp-wiki-bolgheri':dict(name='Wikipedia, Bolgheri',url='https://en.wikipedia.org/wiki/Bolgheri'),
+     'cmp-wiki-russian-river':dict(name='Wikipedia, Russian River Valley AVA',url='https://en.wikipedia.org/wiki/Russian_River_Valley_AVA'),
+     'cmp-wiki-willamette':dict(name='Wikipedia, Willamette Valley AVA',url='https://en.wikipedia.org/wiki/Willamette_Valley_AVA'),
+     'cmp-wiki-cote-rotie':dict(name='Wikipedia, Côte-Rôtie AOC',url='https://en.wikipedia.org/wiki/C%C3%B4te-R%C3%B4tie_AOC'),
+     'cmp-wiki-hermitage':dict(name='Wikipedia, Hermitage AOC',url='https://en.wikipedia.org/wiki/Hermitage_AOC'),
+     'cmp-wiki-chateauneuf':dict(name='Wikipedia, Châteauneuf-du-Pape AOC',url='https://en.wikipedia.org/wiki/Ch%C3%A2teauneuf-du-Pape_AOC'),
+     'cmp-wiki-gigondas':dict(name='Wikipedia, Gigondas AOC',url='https://en.wikipedia.org/wiki/Gigondas_AOC'),
+     'cmp-wiki-alsace':dict(name='Wikipedia, Alsace wine',url='https://en.wikipedia.org/wiki/Alsace_wine'),
+     'cmp-wiki-columbia':dict(name='Wikipedia, Columbia Valley AVA',url='https://en.wikipedia.org/wiki/Columbia_Valley_AVA'),
+     'cmp-wiki-south-africa':dict(name='Wikipedia, South African wine',url='https://en.wikipedia.org/wiki/South_African_wine'),
+     'cmp-wiki-finger-lakes':dict(name='Wikipedia, Finger Lakes AVA',url='https://en.wikipedia.org/wiki/Finger_Lakes_AVA'),
+     'cmp-wiki-chablis':dict(name='Wikipedia, Chablis',url='https://en.wikipedia.org/wiki/Chablis_wine'),
+     'cmp-winefolly-chardonnay':dict(name='Wine Folly, Chardonnay',url='https://winefolly.com/grapes/chardonnay/'),
+     'cmp-wiki-margaret-river':dict(name='Wikipedia, Margaret River wine region',url='https://en.wikipedia.org/wiki/Margaret_River_wine_region'),
+     'cmp-wiki-vouvray':dict(name='Wikipedia, Vouvray wine',url='https://en.wikipedia.org/wiki/Vouvray_AOC'),
+     'cmp-wiki-savennieres':dict(name='Wikipedia, Savennières wine',url='https://en.wikipedia.org/wiki/Savenni%C3%A8res_AOC'),
+     'cmp-wiki-chinon':dict(name='Wikipedia, Chinon AOC',url='https://en.wikipedia.org/wiki/Chinon_AOC'),
+     'cmp-wiki-bourgueil':dict(name='Wikipedia, Bourgueil AOC',url='https://en.wikipedia.org/wiki/Bourgueil_AOC'),
+     'cmp-wiki-wachau':dict(name='Wikipedia, Wachau',url='https://en.wikipedia.org/wiki/Wachau'),
+     'cmp-winefolly-syrah':dict(name='Wine Folly, Syrah',url='https://winefolly.com/grapes/syrah/'),
+     'cmp-wiki-brunello':dict(name='Wikipedia, Brunello di Montalcino',url='https://en.wikipedia.org/wiki/Brunello_di_Montalcino'),
      'cmp-guildsomm-willamette-chardonnay':dict(name="GuildSomm, Neal Hulkower, Willamette Valley's Way with Chardonnay",url='https://guildsomm.com/public_content/features/articles/b/neal-hulkower/posts/willamette-valley-chardonnay'),
      'sawis':dict(name='SAWIS, Production areas defined in terms of the Wine of Origin Scheme, June 2024 (regions, districts and wards)',url='https://www.sawis.co.za/cert/download/Production_areas_-_June_2024.pdf'),}
 @snap('australia-gi')
@@ -1061,10 +1132,12 @@ def facts():
         if x['source']=='Wine Australia GI boundaries':
             pr=next((AU[m] for m in [geoindex_norm(v) for v in [t['name']]+t.get('also',[])] if m in AU),None)
             if pr: f['gi']={k:pr.get(v) for k,v in dict(type='GI_TYPE',number='GI_NUMBER',year='YEAR_REGISTER',area_km2='GI_AREA_KM2',vines_ha='VINE_AREA_HA',url='GI_URL',state='STATE').items()}
+        n_map=len(src)   # the sources behind the outline start here (Compare cites them with the shapes)
         src+=[k for k,v in SHAPE_SRC.items() if v==x['source']]
         if n in PLOT_CUT or any(k in PLOT_CUT for k in PLOT_LESS.get(n,())): src.append('cadastre')   # the lieu-dit line between Charmes and Mazoyères
         src+=[SHAPE_LABEL_SRC[x['source']]] if x['source'] in SHAPE_LABEL_SRC else []
-        if x['source'] in ('zone store','geoBoundaries'): src+=[k for v in G.store_sources(n) for k in [store_src(v)] if k]   # the map behind a stored zone: the EU's communes, or the municipalities or districts it is drawn by
+        if x['source'] in ('zone store','geoBoundaries'): src+=[k for v in G.store_sources(n) for k in [store_src(v)] if k]
+        map_src=src[n_map:]   # the map behind a stored zone: the EU's communes, or the municipalities or districts it is drawn by
         sub=below(n)+ALSO_INSIDE.get(n,[])   # a region in two zones counts in both (Murray Darling and Swan Hill straddle the Victoria and New South Wales border)
         ac=list(dict.fromkeys([UCD_T.get(x,x) for x in (A.get(n) or {}).get('contains') or [] if x and t['name'] not in OVERLAP_OF.get(x,()) and x not in AVANOTCONTAINS.get(t['name'],())]
                               +([T[k]['name'] for k,v in A.items() if k!=n and k in T and t['name'] in (v.get('within') or [])] if n in A else [])))   # UC Davis lists El Dorado twice in Sierra Foothills (the AVA and the county); an AVA only partly inside is not counted; AVAs whose own "Inside" names this one count too (Fort Ross-Seaview in Sonoma Coast)
@@ -1093,6 +1166,10 @@ def facts():
         if WV.get(view_of(n)): src.append('osm-water')   # the map above the page draws rivers and lakes
         if view_of(n) in CV: src.append('geonames')   # and names a few towns
         f['sources']=[SRC[s] for s in dict.fromkeys(src)]
+        # which of those back the climate, the plantings and the outline: Compare cites only these, for both places
+        ix={k:i for i,k in enumerate(dict.fromkeys(src))}
+        f['src_for']={g:[ix[k] for k in ks if k in ix] for g,ks in (('climate',('worldclim','koppen','winkler','jones2010')),
+            ('planted',[(f['planted'].get('source') or 'anderson')] if f.get('planted') else []),('map',map_src))}
         json.dump(f,open(os.path.join(fd,n.replace('/','__')+'.json'),'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
         places[n]=[t['name'],x['parent'],round((N.get(n) or {}).get('score',-1)),(kind or [''])[0],T[t['path'].split('/')[0]]['name'],f['also'],int(n in BENCH),lv(n),int(inside(n))]   # the last: inside a place the study list names, the map's light gold
     json.dump(dict(places=places),open(os.path.join(OUT,'places.json'),'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
@@ -1237,7 +1314,7 @@ def mark_units(folder):
             with open(fn,'w',encoding='utf-8') as fh: json.dump(m,fh,ensure_ascii=False,separators=(',',':'))
     print(f'atlas: units marked in {n} places')
 
-def compare_pairs(dest):
+def compare_pairs(dest,facts_dir):
     """The often-compared pairs, checked and with their sources spelled out. The build stops on a pair that names a place
     the Atlas lacks or one that is not a benchmark, on wine text with no source, and on a source missing from SRC."""
     d=jl(os.path.join(ROOT,'regions','compare-pairs.json')); PL=jl(os.path.join(OUT,'places.json'))['places']; bad=[]; out=[]
@@ -1250,7 +1327,11 @@ def compare_pairs(dest):
         if p['wines'] and not p['sources']: bad.append(f'#{i}: wine text with no source')
         bad+=[f'#{i}: source {k} is not in SRC' for k in p['sources'] if k not in SRC]
         bad+=[f'#{i}: an em dash in its text' for w in p['wines'] if '\u2014' in w['text']+w['head']]
-        out.append(dict(a=p['a'],b=p['b'],link=p['link'],tag=p['tag'],wines=p['wines'],sources=[dict(name=SRC[k]['name'],url=SRC[k]['url']) for k in p['sources'] if k in SRC]))
+        ol=lambda x:(jl(os.path.join(facts_dir,x.replace('/','__')+'.json')).get('outline') if os.path.exists(os.path.join(facts_dir,x.replace('/','__')+'.json')) else None)
+        import units
+        out.append(dict(a=p['a'],b=p['b'],link=p['link'],tag=p['tag'],wines=[dict(head=w['head'],text=units.mark(w['text'])) for w in p['wines']],   # figures with units follow the Units setting, as in place text
+sources=[dict(name=SRC[k]['name'],url=SRC[k]['url']) for k in p['sources'] if k in SRC],
+                        oa=ol(p['a']),ob=ol(p['b'])))   # both outlines, so the list can draw every pair without loading 100 places
     seen=set()
     for i,p in enumerate(d['pairs'],1):
         k=frozenset((p['a'],p['b']))
@@ -1268,8 +1349,9 @@ def site(dest=None):
     shutil.copytree(os.path.join(ROOT,'web'),new,ignore=junk)
     for sub in ('geo','facts'): shutil.copytree(os.path.join(OUT,sub),os.path.join(new,sub),ignore=junk)
     shutil.copy2(os.path.join(OUT,'places.json'),os.path.join(new,'places.json'))
-    compare_pairs(os.path.join(new,'compare.json'))
     mark_units(os.path.join(new,'facts'))
+    import outlines; print(f"atlas: outlines for {outlines.add_all(os.path.join(new,'facts'),os.path.join(new,'geo','views'),jl(os.path.join(OUT,'places.json'))['places'],os.path.join(ROOT,'build','outline-cache.json'))} places")
+    compare_pairs(os.path.join(new,'compare.json'),os.path.join(new,'facts'))
     if os.path.exists(dest): os.rename(dest,old)
     os.rename(new,dest); shutil.rmtree(old,ignore_errors=True)
     print(f'atlas: written to {os.path.relpath(dest,ROOT)}/')

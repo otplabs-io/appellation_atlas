@@ -92,6 +92,12 @@ final class Atlas {
     @ObservationIgnored private let root: URL
     @ObservationIgnored private var viewCache: [String: MapView] = [:]
     @ObservationIgnored private var factCache: [String: JSON] = [:]
+    @ObservationIgnored private var pairCache: [JSON]?
+    /// The often compared pairs (public/compare.json), read once.
+    var comparePairs: [JSON]? {
+        if pairCache == nil { pairCache = JSON.read(root.appending(path: "compare.json"))?["pairs"].array ?? [] }
+        return pairCache
+    }
     @ObservationIgnored private let searchIndex: [(id: String, folded: String)]
 
     static func load() -> Atlas {

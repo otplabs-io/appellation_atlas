@@ -26,6 +26,7 @@ struct PlaceSheet: View {
         }
         .environment(\.startSearch, { searching = true })
         .onboarding()
+        .compareSheet()
     }
 }
 
@@ -152,7 +153,13 @@ struct PlacePage: View {
                 Text(b).font(.atlasBody).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
                     .padding(.bottom, 2)
             }
-            SaveButton(placeID: id)
+            HStack(spacing: 10) {
+                SaveButton(placeID: id)
+                if f?["climate"].isNull == false {   // "Compare with another place" on the website
+                    Button { nav.compare = CompareRoute(a: id) } label: { Label("Compare", systemImage: "square.split.2x1") }
+                        .buttonStyle(.bordered).tint(Palette.teal)
+                }
+            }
             if compact { Crumbs() }
             if compact && !leaf { PlacesHere(folded: false) }
             if let f { PlaceInfo(f: f, range: globe.range) } else { ProgressView() }

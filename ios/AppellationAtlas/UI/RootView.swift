@@ -114,6 +114,7 @@ struct WideLayout: View {
         }
         .onChange(of: nav.place) { if narrow && columns != .detailOnly { withAnimation { columns = .detailOnly } } }
         .onboarding()
+        .compareSheet()
     }
 }
 

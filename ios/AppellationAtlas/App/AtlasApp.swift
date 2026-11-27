@@ -22,7 +22,7 @@ struct AtlasApp: App {
                 .environment(atlas)
                 .environment(globe)
                 .environment(nav)
-                .onOpenURL { url in if url.scheme == "atlas", url.host() == "place" { nav.go(String(url.path().dropFirst())) } }
+                .onOpenURL { url in nav.open(url) }
         }
         .modelContainer(container)
     }
@@ -43,4 +43,21 @@ final class Nav {
     }
 
     func go(_ id: String) { place = id.isEmpty ? "world" : id }
+
+    /// Two places side by side, or the often compared pairs, in a sheet over the page (CompareSheet).
+    var compare: CompareRoute?
+
+    /// atlas://place/<id>, atlas://compare/<a>/vs/<b> and atlas://pairs: the links the website's App Store banner hands over.
+    func open(_ url: URL) {
+        guard url.scheme == "atlas" else { return }
+        let path = String(url.path().dropFirst())
+        switch url.host() {
+        case "place": go(path)
+        case "compare":
+            let parts = path.components(separatedBy: "/vs/")
+            compare = CompareRoute(a: parts.first.flatMap { $0.isEmpty ? nil : $0 }, b: parts.count > 1 ? parts[1] : nil)
+        case "pairs": compare = CompareRoute(pairs: true)
+        default: break
+        }
+    }
 }

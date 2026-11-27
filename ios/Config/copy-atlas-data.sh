@@ -5,4 +5,4 @@ SRC="${SRCROOT}/../public"
 DST="${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Atlas"
 if [ ! -f "$SRC/places.json" ]; then echo "error: No Atlas data in public/. Run make site in the Appellation Atlas folder first."; exit 1; fi
 mkdir -p "$DST"
-rsync -a --delete --exclude '* [0-9].*' --exclude '* [0-9][0-9].*' --exclude '.DS_Store' "$SRC/places.json" "$SRC/geo" "$SRC/facts" "$DST/"
+rsync -a --delete --exclude '* [0-9].*' --exclude '* [0-9][0-9].*' --exclude '.DS_Store' "$SRC/places.json" "$SRC/compare.json" "$SRC/geo" "$SRC/facts" "$DST/"
