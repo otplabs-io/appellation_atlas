@@ -93,8 +93,10 @@ struct GlanceStrip: View {
     var row = true
     @AppStorage(Units.key) private var units = ""
 
-    static func has(_ f: JSON) -> Bool { f["climate"]["gst"].double != nil || f["climate"]["gdd"].double != nil || CompareText.lead(f) != nil }
-    static func count(_ f: JSON) -> Int { [f["climate"]["gst"].double != nil, f["climate"]["gdd"].double != nil, CompareText.lead(f) != nil].filter { $0 }.count }
+    static func has(_ f: JSON) -> Bool { f["climate"]["gst"].double != nil || f["climate"]["gdd"].double != nil || hasPlanted(f) }
+    /// Its own plantings, or failing those the nearest wider area's (planted_wider, from wider_planted in src/atlas.py).
+    static func hasPlanted(_ f: JSON) -> Bool { CompareText.lead(f) != nil || !f["planted_wider"]["grapes"].array.isEmpty }
+    static func count(_ f: JSON) -> Int { [f["climate"]["gst"].double != nil, f["climate"]["gdd"].double != nil, hasPlanted(f)].filter { $0 }.count }
 
     var body: some View {
         let _ = units
@@ -102,7 +104,7 @@ struct GlanceStrip: View {
         if row {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 10) {
-                    if CompareText.lead(f) != nil { planted(width: 236, label: 92, gap: 8, size: 13).frame(width: 236) }
+                    if Self.hasPlanted(f) { planted(width: 236, label: 92, gap: 8, size: 13).frame(width: 236) }
                     if let g = c["gst"].double { season(g, c, bar: true).frame(width: 200) }
                     if let d = c["gdd"].double { heat(d).frame(width: 200) }
                 }
@@ -113,7 +115,7 @@ struct GlanceStrip: View {
             .padding(.horizontal, -20)
         } else {
             VStack(spacing: 10) {
-                if CompareText.lead(f) != nil { planted(width: nil, label: 110, gap: 10, size: 13.5) }
+                if Self.hasPlanted(f) { planted(width: nil, label: 110, gap: 10, size: 13.5) }
                 HStack(alignment: .top, spacing: 10) {
                     if let g = c["gst"].double { season(g, c, bar: false) }
                     if let d = c["gdd"].double { heat(d) }
@@ -124,15 +126,24 @@ struct GlanceStrip: View {
     }
 
     private func planted(width: CGFloat?, label: CGFloat, gap: CGFloat, size: CGFloat) -> some View {
-        let l = CompareText.lead(f)!
-        let pl = f["planted"], ha = pl["ha"].double ?? 1
+        // its own figures as shares of its vineyard, or the wider area's, already in percent
+        let rows: [(String, Int)], head: String
+        if let l = CompareText.lead(f) {
+            let pl = f["planted"], ha = pl["ha"].double ?? 1
+            rows = pl["grapes"].array.filter { $0[0].string != "Other" }.prefix(4).map { ($0[0].string ?? "", Int((($0[1].double ?? 0) / ha * 100).rounded())) }
+            head = "PLANTED, \(l.y)\(l.about ? " (APPROXIMATE)" : "")"
+        } else {
+            let w = f["planted_wider"]
+            rows = w["grapes"].array.map { ($0[0].string ?? "", $0[1].int ?? 0) }
+            head = "PLANTED IN \((w["name"].string ?? "").uppercased()), \(w["year"].int ?? 0)\(w["about"].bool == true ? " (APPROXIMATE)" : "")"
+        }
         return VStack(alignment: .leading, spacing: row ? 9 : 8) {
-            Text(verbatim: "PLANTED, \(l.y)\(l.about ? " (APPROXIMATE)" : "")").font(.text(11.5, .heavy, relativeTo: .caption2)).kerning(0.7).foregroundStyle(Palette.soft)
-                .lineLimit(1).minimumScaleFactor(0.8)
-            ForEach(Array(pl["grapes"].array.filter { $0[0].string != "Other" }.prefix(4).enumerated()), id: \.offset) { _, g in
-                let p = Int(((g[1].double ?? 0) / ha * 100).rounded())
+            Text(verbatim: head).font(.text(11.5, .heavy, relativeTo: .caption2)).kerning(0.7).foregroundStyle(Palette.soft)
+                .fixedSize(horizontal: false, vertical: true)
+            ForEach(Array(rows.enumerated()), id: \.offset) { _, r in
+                let p = r.1, name = r.0
                 HStack(spacing: gap) {
-                    Text(g[0].string ?? "").font(.text(size, relativeTo: .footnote)).foregroundStyle(Palette.ink).lineLimit(1).frame(width: label, alignment: .leading)
+                    Text(name).font(.text(size, relativeTo: .footnote)).foregroundStyle(Palette.ink).lineLimit(1).frame(width: label, alignment: .leading)
                     GeometryReader { geo in
                         ZStack(alignment: .leading) {
                             Rectangle().fill(Palette.fill)

@@ -419,6 +419,12 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'cmp-wiki-priorat':dict(name='Wikipedia, Priorat DOQ',url='https://en.wikipedia.org/wiki/Priorat_DOQ'),
      'cmp-wiki-sta-rita':dict(name='Wikipedia, Sta. Rita Hills AVA',url='https://en.wikipedia.org/wiki/Sta._Rita_Hills_AVA'),
      'cmp-wiki-pfalz':dict(name='Wikipedia, Palatinate (wine region)',url='https://en.wikipedia.org/wiki/Palatinate_(wine_region)'),
+     'cmp-wiki-toro':dict(name='Wikipedia, Toro (DO)',url='https://en.wikipedia.org/wiki/Toro_(DO)'),
+     'cmp-wiki-tempranillo':dict(name='Wikipedia, Tempranillo',url='https://en.wikipedia.org/wiki/Tempranillo'),
+     'cmp-wiki-tavel':dict(name='Wikipedia, Tavel AOC',url='https://en.wikipedia.org/wiki/Tavel_AOC'),
+     'cmp-wiki-provence':dict(name='Wikipedia, Provence wine',url='https://en.wikipedia.org/wiki/Provence_wine'),
+     'cmp-wiki-nz':dict(name='Wikipedia, New Zealand wine',url='https://en.wikipedia.org/wiki/New_Zealand_wine'),
+     'cmp-wiki-coonawarra':dict(name='Wikipedia, Coonawarra wine region',url='https://en.wikipedia.org/wiki/Coonawarra_wine_region'),
      'cmp-wiki-barolo':dict(name='Wikipedia, Barolo',url='https://en.wikipedia.org/wiki/Barolo'),
      'cmp-owb-chardonnay':dict(name='Oregon Wine Board, Oregon Chardonnay',url='https://www.oregonwine.org/discover/oregon-chardonnay/'),
      'cmp-wiki-bordeaux':dict(name='Wikipedia, Bordeaux wine',url='https://en.wikipedia.org/wiki/Bordeaux_wine'),
@@ -1317,6 +1323,42 @@ def climate():
                'places':{n:o for n,o in sorted(out.items()) if o['climate'] or o['soil']}},open(os.path.join(ROOT,'regions','atlas-climate.json'),'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
     print(f'{sum(1 for o in out.values() if o["climate"])} with climate, {sum(1 for o in out.values() if o["soil"])} with soil, {time.time()-t0:.0f}s')
 # ---- the page
+def wider_planted(folder,places):
+    """A place with no planting figures of its own gets those of the nearest place above it that has them, for its
+    At a glance card only, named as that wider area ("Planted in Campania"). Its source joins the place's Sources."""
+    F={}
+    for fn in glob.glob(os.path.join(folder,'*.json')):
+        if ' ' in os.path.basename(fn): continue
+        F[os.path.basename(fn)[:-5].replace('__','/')]=fn
+    cache={}
+    def load(pid):
+        if pid not in cache: cache[pid]=jl(F[pid]) if pid in F else None
+        return cache[pid]
+    n=0
+    for pid,fn in F.items():
+        f=load(pid)
+        if not f or f.get('planted'): continue
+        a=(places.get(pid) or [None,None])[1]
+        while a and a!='world':
+            g=load(a)
+            if g and g.get('planted') and g['planted'].get('scope') in ('own','within','country') and g['planted'].get('ha'): break
+            a=(places.get(a) or [None,None])[1]
+        else: continue
+        pl=g['planted']; ha=pl['ha']
+        gr=[[x[0],round(x[1]/ha*100),x[2] if len(x)>2 else ''] for x in pl['grapes'] if x[0]!='Other'][:4]
+        if not gr: continue
+        f['planted_wider']=dict(of=a,name=g['name'],year=pl['year'],about=bool(pl.get('whites_older')),grapes=gr)
+        src=[g['sources'][i] for i in (g.get('src_for') or {}).get('planted',[])]
+        idx=[]
+        for x in src:
+            k=next((i for i,y in enumerate(f['sources']) if y.get('name')==x.get('name')),None)
+            if k is None: f['sources'].append(x); k=len(f['sources'])-1
+            idx.append(k)
+        f.setdefault('src_for',{})['planted_wider']=idx
+        with open(fn,'w',encoding='utf-8') as fh: json.dump(f,fh,ensure_ascii=False,separators=(',',':'))
+        n+=1
+    print(f'atlas: wider plantings for {n} places')
+
 def mark_units(folder):
     """Every figure with a unit in place text becomes a mark holding its US and metric wording (src/units.py), so the
     site and the app can follow the person's Units setting."""
@@ -1368,6 +1410,7 @@ def site(dest=None):
     for sub in ('geo','facts'): shutil.copytree(os.path.join(OUT,sub),os.path.join(new,sub),ignore=junk)
     shutil.copy2(os.path.join(OUT,'places.json'),os.path.join(new,'places.json'))
     mark_units(os.path.join(new,'facts'))
+    wider_planted(os.path.join(new,'facts'),jl(os.path.join(OUT,'places.json'))['places'])
     import outlines; print(f"atlas: outlines for {outlines.add_all(os.path.join(new,'facts'),os.path.join(new,'geo','views'),jl(os.path.join(OUT,'places.json'))['places'],os.path.join(ROOT,'build','outline-cache.json'))} places")
     compare_pairs(os.path.join(new,'compare.json'),os.path.join(new,'facts'))
     if os.path.exists(dest): os.rename(dest,old)
