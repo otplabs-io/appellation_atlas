@@ -6,6 +6,7 @@ import UIKit
 struct GlobeView: View {
     @Environment(Globe.self) private var globe
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @AppStorage(MapFilter.key) private var mapFilter = MapFilter.all.rawValue   // so the globe redraws when the filter changes
     var bottomInset: CGFloat = 0
     var topInset: CGFloat = 0
     /// Space covered at the sides, as by an iPad sidebar floating over the map, so the globe centers in what is left.
@@ -13,6 +14,7 @@ struct GlobeView: View {
     var trailingInset: CGFloat = 0
 
     var body: some View {
+        let _ = mapFilter
         GeometryReader { geo in
             // Read everything the canvas draws here, so any change to it redraws the canvas.
             let frame = Frame(cam: globe.cam, view: globe.view?.id, parent: globe.parent?.id, leaf: globe.leaf, out: globe.outgoing?.view.id,
@@ -87,7 +89,7 @@ struct GlobeView: View {
     }
 
     private func dotShade(_ id: String) -> Color {
-        Palette.tone(globe.atlas.tone(id))
+        globe.atlas.mapShade(id)
     }
 
     /// A view's layers: the land near it, its neighbours, the place itself, its places.
@@ -115,7 +117,7 @@ struct GlobeView: View {
         for it in v.items {
             let path = P.path(it.polys)
             if path.isEmpty { continue }
-            ctx.fill(path, with: .color(Palette.tone(globe.atlas.tone(it.id))))
+            ctx.fill(path, with: .color(globe.atlas.mapShade(it.id)))
             ctx.stroke(path, with: .color(Palette.regionStroke), style: StrokeStyle(lineWidth: 1, lineJoin: .round))
             if isCurrent && globe.leaf == it.id { picked = path }
         }

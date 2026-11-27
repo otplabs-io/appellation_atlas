@@ -39,6 +39,9 @@ const TONES={e:{one:'Essential benchmark',many:'Essential benchmarks',cls:'a4'},
 const tone=id=>{const x=PL[id]; return !x?'o':x[7]&5?'e':x[7]&10?'b':x[8]?'i':'o';};
 const moreIn=vid=>vid==='world'?'Other countries':'More in '+(PL[vid]?.[0]||'');
 const shade=id=>TONES[tone(id)].cls;
+// "Show on the map": all places, the benchmarks, or the essential benchmarks only; the rest stay plain land (mapShade in the app)
+let FILTER=(()=>{try{return localStorage.getItem('atlas-filter')||'all';}catch(e){return 'all';}})();
+const mapShade=id=>{const t=tone(id); return FILTER==='bench'&&(t==='i'||t==='o')||FILTER==='essential'&&t!=='e'?'a0':shade(id);};
 
 // ---------- the map: an orthographic globe that flies from the world down to the appellation
 const RAD=Math.PI/180, TAU=2*Math.PI;
@@ -159,7 +162,7 @@ function dropView(g){M.feats=M.feats.filter(f=>!g.contains(f.el)); g.remove();}
 const kindOf=id=>PL[id]?.[3]||'';
 function restyle(){
   const v=M.view; if(!v) return;   for(const f of M.feats) if(f.it){
-    f.el.setAttribute('class',`rg${f.sib?' sib a0':' '+shade(f.it.id)}${M.leaf===f.it.id?' sel':''}`);
+    f.el.setAttribute('class',`rg${f.sib?' sib a0':' '+mapShade(f.it.id)}${M.leaf===f.it.id?' sel':''}`);
     f.el.replaceChildren(); el('title',{},f.el).textContent=f.it.name+(kindOf(f.it.id)?` (${kindOf(f.it.id)})`:'');}
 }
 function labels(){
@@ -171,7 +174,7 @@ function labels(){
   for(const it of v.items) it.s=null;
   for(const it of live){   // too small to tap at this size: add a dot (not on the world view)
     const f=M.feats.find(f=>f.it===it&&!f.sib), bb=f&&f.el.getBBox(); const s=scr(it.l); if(!s) continue; it.s=s; it.dot=v.id!=='world'&&(!bb||Math.max(bb.width,bb.height)<16); it.bb=bb;   // no dots for countries: a small one gets its name only
-    if(it.dot){const c=el('circle',{cx:r1(s[0]),cy:r1(s[1]),r:6,class:`dot-m ${shade(it.id)}${M.leaf===it.id?' sel':''}`,'data-id':it.id},g); el('title',{},c).textContent=it.name; placed.push([s[0]-5,s[1]-5,s[0]+5,s[1]+5]);}}
+    if(it.dot){const c=el('circle',{cx:r1(s[0]),cy:r1(s[1]),r:6,class:`dot-m ${mapShade(it.id)}${M.leaf===it.id?' sel':''}`,'data-id':it.id},g); el('title',{},c).textContent=it.name; placed.push([s[0]-5,s[1]-5,s[0]+5,s[1]+5]);}}
   for(const it of live){if(!it.s) continue; const t=it.name, w=t.length*fs*.56, h=fs*1.2, [x,y]=it.s;
     const tries=it.dot?[[x+10,y+4,'start'],[x-10,y+4,'end'],[x,y-11,'middle'],[x,y+h+8,'middle']]
       :[[x,y+fs*.35,'middle'],[x,y-8,'middle'],[x,y+h+4,'middle'],[x+12,y+fs*.35,'start'],[x-12,y+fs*.35,'end'],[x+8,y-8,'start'],[x-8,y-8,'end'],[x+8,y+h+4,'start'],[x-8,y+h+4,'end']];
@@ -235,7 +238,7 @@ async function intro(b){
     M.svg.style.opacity=Math.min(1,k*5); draw(); k<1?requestAnimationFrame(step):res();}; requestAnimationFrame(step);});
   M.cam=b; M.svg.style.opacity=''; M.busy=false; draw();
 }
-function mapSize(){const w=M.box.clientWidth||360, h=Math.round(Math.max(320,Math.min(w*.95,innerHeight*.62))); M.W=w; M.H=h;
+function mapSize(){const w=M.box.clientWidth||360, wide=matchMedia('(min-width:1024px)').matches, h=wide?Math.max(320,M.box.clientHeight):Math.round(Math.max(320,Math.min(w*.95,innerHeight*.62))); M.W=w; M.H=h;   // wide: the map fills the space between the panels
   M.svg.setAttribute('viewBox',`0 0 ${w} ${h}`); M.svg.setAttribute('height',h); M.ocean.setAttribute('cx',w/2); M.ocean.setAttribute('cy',h/2); M.rim.setAttribute('cx',w/2); M.rim.setAttribute('cy',h/2);}
 function mapInit(){
   M.box=$('#map'); M.feats=[];
@@ -443,6 +446,15 @@ function renderTitle(id,f){   // the place's name, what it is and which group it
     +(f&&f.climate?`<p class="ts-caption cmp-link"><a href="${cmpLink(id)}">Compare with another place</a></p>`:'');   // what the place is known for (PlacePage in the app)
   const sn=f&&SHAPE_NOTE[f.shape]; $('#shapeNote').hidden=!sn; $('#shapeNote').textContent=sn||'';
 }
+// the place's figures as a row of cards: its growing season, its heat and what is planted most (GlanceStrip in the app)
+function glanceStrip(f){
+  const c=f.climate, l=lead(f), cards=[];
+  if(c&&c.gst!=null){const [gi]=seg(GST_F,c.gst); cards.push(`<div class="gl"><span class="ts-fact_label">Growing season</span><span class="gv">${deg(c.gst)}</span><span class="ts-caption">${gi>=0?esc(GST_F[gi][0])+', ':''}${c.lat<0?'October to April':'April to October'}</span></div>`);}
+  if(c&&c.gdd!=null) cards.push(`<div class="gl"><span class="ts-fact_label">Heat</span><span class="gv">${heat(c.gdd).replace(' degree days','')}</span><span class="ts-caption">degree days${f.winkler&&f.winkler[0]?', Winkler '+esc(f.winkler[0]):''}</span></div>`);
+  if(l){const pl=f.planted, gr=pl.grapes.filter(([g])=>g!=='Other').slice(0,4);
+    cards.push(`<div class="gl gl-wide"><span class="ts-fact_label">Planted, ${l.y}${l.about?' (approximate)':''}</span>${gr.map(([g,ha])=>{const p=Math.round(ha/pl.ha*100); return `<span class="glr ts-caption"><span>${esc(g)}</span><i><b style="width:${p}%"></b></i><span>${p}%</span></span>`;}).join('')}</div>`);}
+  return cards.length?`<div class="glance">${cards.join('')}</div>`:'';
+}
 function renderInfo(f){
   if(!f){$('#info').innerHTML=''; return;}
   renderTitle(f.id,f);
@@ -451,11 +463,12 @@ function renderInfo(f){
       :`${kn.articles
         ?`Scored from ${fmt(kn.articles)} Wikipedia article${kn.articles===1?'':'s'} on it and its places, ${fmt(kn.total)} page views in the last ${kn.days} days in all${kn.best?`. Best known: ${esc(PL[kn.best]?.[0]||kn.best)}`:''}.${kn.langs==null?' No article of its own.':''}`
         :`Known: in ${kn.langs} Wikipedia${kn.langs===1?'':'s'}, ${fmt(kn.views)} page views in the last ${kn.days} days.`}${kn.url?` <a href="${esc(kn.url)}" target="_blank" rel="noopener">Read about it on Wikipedia</a>`:''}`}</p>`:'');
-  const sm=f.summary;
-  if(sm){
-    const k=sm.kinds.map(([k,n])=>`${n} ${k}${n===1?'':'s'}`).join(', ');
-    let b=`<div class="facts">${fact('Places inside',fmt(sm.places),k)}${sm.gst?fact('Growing season',degRange(sm.gst[0],sm.gst[1]),'average temperature across its places'):''}</div>`;
-    if(sm.grapes.length&&!f.planted) b+=`<p class="ts-caption sub">The grapes most often allowed, and in how many of its ${sm.with_rules} appellation${sm.with_rules===1?'':'s'} with rules:</p>${chips(sm.grapes)}`;
+  const sm=f.summary, gs=glanceStrip(f);
+  if(sm||gs){
+    const k=!sm?'':sm.kinds.map(([k,n])=>`${n} ${k}${n===1?'':'s'}`).join(', ');
+    let b=sm?`<div class="facts">${fact('Places inside',fmt(sm.places),k)}${sm.gst&&!(f.climate&&f.climate.gst!=null)?fact('Growing season',degRange(sm.gst[0],sm.gst[1]),'average temperature across its places'):''}</div>`:'';
+    b+=gs;
+    if(sm&&sm.grapes.length&&!f.planted) b+=`<p class="ts-caption sub">The grapes most often allowed, and in how many of its ${sm.with_rules} appellation${sm.with_rules===1?'':'s'} with rules:</p>${chips(sm.grapes)}`;
     X.glance=block('At a glance',b);
   }
   const R=f.research;
@@ -558,7 +571,7 @@ function renderInfo(f){
   const src=[...f.sources,...(R?R.sources:[])];
   X.sources=block('Sources',knownLine+(src.length?`<ul class="src ts-caption">${src.map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`:esc(s.name)}</li>`).join('')}</ul>`:''));
   // what the place is, then what grows there, then why it grows there, then the law, then the notes
-  const order=['keyfacts','style','terms','glance','short','planted','climate','soil','land','parts','rules','ava','gi','found','none','sources'];
+  const order=['glance','keyfacts','style','terms','short','planted','climate','soil','land','parts','rules','ava','gi','found','none','sources'];
   const JUMP={style:'Style',terms:'Label',planted:'Planted',climate:'Climate',soil:'Rock and soil',land:'Land',parts:'Compare',rules:'Vineyard',ava:'AVA',gi:'GI',found:'Notes'};
   for(const k of order) if(X[k]) X[k]=X[k].replace('<section class="row"',`<section class="row" id="s-${k}"`);
   const jumps=order.filter(k=>X[k]&&JUMP[k]);
@@ -747,7 +760,11 @@ async function main(){
   [GEO,WORLD,PL]=await Promise.all(['geo/index.json','geo/world.json','places.json'].map(u=>fetch(u).then(r=>r.json())));
   PL=PL.places; SCORED=Object.values(PL).some(x=>x[2]>=0); mapInit(); wireSearch();
 
-  addEventListener('hashchange',()=>{render(); window.scrollTo({top:0,behavior:'smooth'});});
+  addEventListener('hashchange',()=>{render(); window.scrollTo({top:0,behavior:'smooth'}); const m=$('main'); if(m) m.scrollTop=0;});
+  const fb=()=>document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===FILTER)));
+  fb(); document.addEventListener('click',e=>{const b=e.target.closest('[data-filter]'); if(!b) return; FILTER=b.dataset.filter; try{localStorage.setItem('atlas-filter',FILTER);}catch(e){} fb(); if(M.view){restyle(); labels();}});
+  pairs().then(ps=>{const el=$('#sidePairs'); if(el) el.innerHTML=`<div class="sp-head"><span class="ts-section_head">Often compared</span><a class="ts-caption" href="#/pairs">All ${ps.length}</a></div>`
+    +ps.slice(0,3).map((p,i)=>`<a class="sp" href="${cmpLink(p.a,p.b)}"><b class="ts-caption">${i+1}</b><span><span class="ts-body sp-n">${esc(PL[p.a]?.[0]||p.a)} · ${esc(PL[p.b]?.[0]||p.b)}</span><span class="ts-caption">${esc(p.link)}</span></span></a>`).join('');});
   render();
 }
 main();

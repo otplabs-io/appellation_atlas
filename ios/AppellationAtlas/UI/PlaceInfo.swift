@@ -32,10 +32,10 @@ struct PlaceInfo: View {
 
     private var present: [Key] {
         var k: [Key] = []
+        if f["summary"].truthy || GlanceStrip.has(f) { k.append(.glance) }   // first, as on the website
         if !f["keyfacts"].array.isEmpty { k.append(.keyfacts) }
         if !f["style"]["notes"].array.isEmpty { k.append(.style) }
         if !f["terms"].array.isEmpty { k.append(.terms) }
-        if f["summary"].truthy { k.append(.glance) }
         if f["research"]["sheet"].truthy { k.append(.short) }
         if !f["planted"]["grapes"].array.isEmpty { k.append(.planted) }
         if f["climate"].truthy { k.append(.climate) }
@@ -168,11 +168,14 @@ struct PlaceInfo: View {
         let sm = f["summary"]
         let kinds = sm["kinds"].array.map { plural($0[1].int ?? 0, $0[0].string ?? "") }.joined(separator: ", ")
         return AtlasSection(title: "At a glance") {
-            FactGrid(facts: [
-                Fact(label: "Places inside", value: fmt(sm["places"].double), note: kinds),
-                Fact(label: "Growing season", value: sm["gst"].truthy ? Units.degRange(sm["gst"][0].double ?? 0, sm["gst"][1].double ?? 0) : "", note: "average temperature across its places"),
-            ])
-            if !sm["grapes"].array.isEmpty && !f["planted"].truthy {
+            if sm.truthy {
+                FactGrid(facts: [
+                    Fact(label: "Places inside", value: fmt(sm["places"].double), note: kinds),
+                    Fact(label: "Growing season", value: sm["gst"].truthy && f["climate"]["gst"].double == nil ? Units.degRange(sm["gst"][0].double ?? 0, sm["gst"][1].double ?? 0) : "", note: "average temperature across its places"),
+                ])
+            }
+            if GlanceStrip.has(f) { GlanceStrip(f: f).padding(.top, sm.truthy ? 8 : 0) }
+            if sm.truthy && !sm["grapes"].array.isEmpty && !f["planted"].truthy {
                 let n = sm["with_rules"].int ?? 0
                 SubCaption("The grapes most often allowed, and in how many of its \(n) appellation\(n == 1 ? "" : "s") with rules:")
                 Chips(items: chips(sm["grapes"]))

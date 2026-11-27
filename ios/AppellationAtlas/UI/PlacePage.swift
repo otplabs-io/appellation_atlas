@@ -73,6 +73,7 @@ struct Sidebar: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 if query.isEmpty {
+                    MapFilterPicker()
                     SavedList()
                     Crumbs()
                     PlacesHere(folded: false)

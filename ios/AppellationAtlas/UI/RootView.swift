@@ -37,7 +37,7 @@ struct CompactLayout: View {
                 BackButton()
                     .padding(.leading, 16)
                     .padding(.top, 4)
-                WhereAmIButton()
+                HStack(spacing: 8) { SettingsButton(); WhereAmIButton() }
                     .padding(.trailing, 16)
                     .padding(.top, 4)
                     .frame(maxWidth: .infinity, alignment: .trailing)
@@ -89,7 +89,7 @@ struct WideLayout: View {
                     .ignoresSafeArea(edges: .bottom)
                     .onGeometryChange(for: CGRect.self) { $0.frame(in: .global) } action: { map = $0 }
                 BackButton().padding(16)
-                WhereAmIButton().padding(16).frame(maxWidth: .infinity, alignment: .trailing)
+                HStack(spacing: 8) { SettingsButton(); WhereAmIButton() }.padding(16).frame(maxWidth: .infinity, alignment: .trailing)
             }
             .navigationTitle(atlas.name(nav.place))
             .navigationBarTitleDisplayMode(.inline)

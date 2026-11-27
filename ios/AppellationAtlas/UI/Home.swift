@@ -28,6 +28,8 @@ struct HomePage: View {
             .accessibilityElement(children: .combine)
             .accessibilityAddTraits(.isHeader)
 
+            MapFilterPicker()
+
             HStack(spacing: 10) {
                 if compact { Tile(icon: "magnifyingglass", title: "Search", action: startSearch) }
                 Tile(icon: "dice", title: "Surprise me") { surprise() }
@@ -53,10 +55,7 @@ struct HomePage: View {
             MapKey()
             SavedList()
             PlacesHere(folded: !compact)
-            Button { nav.compare = CompareRoute(pairs: true) } label: {
-                Label("Often compared: the pairs of benchmark regions people set side by side most", systemImage: "square.split.2x1")
-                    .font(.atlasBody.weight(.semibold)).multilineTextAlignment(.leading)
-            }
+            OftenComparedList()
             HStack(spacing: 18) {
                 UnitsButton()
                 AboutButton()

@@ -190,7 +190,7 @@ final class Globe {
     }
 
     func shade(_ id: String) -> Color {
-        Palette.tone(atlas.tone(id))
+        atlas.mapShade(id)
     }
 
     // ---- moving between places

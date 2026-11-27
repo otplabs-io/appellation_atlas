@@ -15,13 +15,18 @@
 </head>
 <body class="app">
 <div class="page">
-  <h1 class="app-title ts-page_title"><a href="./" title="Back to the world">Appellation Atlas</a></h1>
+  <div class="side">
+  <div class="title-row"><h1 class="app-title ts-page_title"><a href="./" title="Back to the world">Appellation Atlas</a></h1>
+    <button type="button" class="gear" data-units aria-label="Units"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></button></div>
   <header class="top">
     <div class="search" role="combobox" aria-haspopup="listbox" aria-owns="sugg">
       <label><span class="sr">Search</span><input id="q" type="search" class="ts-body" placeholder="Search a country, region or appellation" autocomplete="off" autocapitalize="off" spellcheck="false" aria-autocomplete="list" aria-controls="sugg" aria-expanded="false"></label>
       <ul id="sugg" class="sugg" role="listbox" hidden></ul>
     </div>
   </header>
+  <div class="filter" role="group" aria-label="Show on the map"><button type="button" class="ts-body" data-filter="all" aria-pressed="true">All places</button><button type="button" class="ts-body" data-filter="bench" aria-pressed="false">Benchmarks</button><button type="button" class="ts-body" data-filter="essential" aria-pressed="false">Essential</button></div>
+  <div id="sidePairs" class="side-pairs"></div>
+  </div>
   <main>
     <section class="row origin">
       <p id="crumbs" class="crumbs ts-place_subtitle"></p>

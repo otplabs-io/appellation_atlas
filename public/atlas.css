@@ -242,3 +242,42 @@ section.row[id^="s-"]{scroll-margin-top:80px}
 .keyfacts li::marker{color:var(--teal,#1F6F6F)}
 .doc h2.ts-sheet_title{margin:0 0 12px}
 .doc .prose{margin-top:6px}
+
+/* ---- daylight: the map filter, the glance cards, and on wide screens the map between two floating panels (RootView in the app) */
+.side{display:contents}
+.title-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-right:16px}
+.title-row .app-title{flex:1;min-width:0}
+.gear{flex:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;margin-top:max(12px,env(safe-area-inset-top));border:1px solid var(--rule);border-radius:20px;background:var(--paper);color:var(--ink);cursor:pointer}
+.filter{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;margin:10px 20px 0;padding:3px;border-radius:12px;background:var(--fill)}
+.filter button{min-height:36px;border:0;border-radius:9px;background:transparent;color:var(--soft);font-weight:700;cursor:pointer}
+.filter button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.side-pairs{display:none}
+.glance{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:4px}
+.facts+.glance{margin-top:16px}
+.gl{display:flex;flex-direction:column;gap:3px;padding:12px 14px;border:1px solid var(--rule);border-radius:16px;background:var(--paper)}
+.gl .ts-fact_label,.gl .ts-caption{color:var(--soft)}
+.gl .gv{font-family:var(--display,Poppins),sans-serif;font-weight:700;font-size:26px;line-height:1.1;color:var(--ink)}
+.gl-wide{grid-column:1/-1;gap:6px}
+.glr{display:grid;grid-template-columns:minmax(90px,36%) 1fr 36px;align-items:center;gap:8px;color:var(--ink)!important}
+.glr i{display:block;height:8px;background:var(--fill)}.glr b{display:block;height:8px;background:var(--a3)}
+.glr span:last-child{text-align:right;color:var(--soft)}
+@media (min-width:1024px){
+  body.app{background:var(--ground)}
+  .page{max-width:none;margin:0;outline:0;background:transparent;min-height:0}
+  .side{display:block;position:fixed;z-index:30;left:20px;top:20px;width:348px;max-height:calc(100vh - 40px);overflow:auto;padding-bottom:16px;background:var(--paper);border:1px solid var(--rule);border-radius:24px;box-shadow:0 10px 24px rgba(31,45,58,.14)}
+  .side .app-title{padding:18px 18px 2px;font-size:24px}
+  .side .gear{margin-top:14px}
+  .side .top{position:static;padding:10px 18px 0;border-bottom:0;background:transparent}
+  .side .filter{margin:12px 18px 0}
+  .side-pairs{display:flex;flex-direction:column;gap:6px;margin:16px 18px 0}
+  .sp-head{display:flex;justify-content:space-between;align-items:baseline}.sp-head a{color:var(--teal);font-weight:700;text-decoration:none}
+  .sp{display:grid;grid-template-columns:18px 1fr;gap:8px;padding:8px 10px;border:1px solid var(--rule);border-radius:14px;color:var(--ink);text-decoration:none}
+  .sp:hover{border-color:var(--teal)}.sp b{color:var(--soft);text-align:right}.sp span{display:flex;flex-direction:column;min-width:0}.sp .ts-caption{color:var(--soft)}.sp-n{font-weight:700}
+  main{position:fixed;z-index:30;right:20px;top:20px;bottom:20px;width:440px;overflow:auto;background:var(--paper);border:1px solid var(--rule);border-radius:24px;box-shadow:0 10px 24px rgba(31,45,58,.14)}
+  .cmpmode main{left:388px;width:auto}
+  #map{position:fixed;z-index:1;left:388px;right:480px;top:0;bottom:0;width:auto;margin:0!important;border:0!important;background:transparent}
+  #map svg{height:100%}
+  .origin .key{position:fixed;z-index:20;left:400px;bottom:20px;margin:0;padding:8px 12px;border:1px solid var(--rule);border-radius:14px;background:var(--paper)}
+  .origin .mapnote{display:none}
+  .hero .name{font-size:min(44px,calc(400px / (var(--n,1) * .64)))}
+}
