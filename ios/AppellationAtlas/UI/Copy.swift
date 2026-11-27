@@ -84,23 +84,23 @@ enum Copy {
             : "Too big and varied for one reading. These figures average all of it, hills and valleys alike."
     }
 
-    /// Growing season classes in Celsius bounds, with the Fahrenheit range shown.
-    static let growingSeason: [(String, Double, Double, String)] = [
-        ("Too cool", -99, 13, "under 55°F"), ("Cool", 13, 15, "55 to 59°F"), ("Intermediate", 15, 17, "59 to 63°F"),
-        ("Warm", 17, 19, "63 to 66°F"), ("Hot", 19, 24, "66 to 75°F"), ("Too hot", 24, 99, "over 75°F"),
+    /// Growing season classes in Celsius bounds, with the range shown in Fahrenheit and in Celsius.
+    static let growingSeason: [(String, Double, Double, String, String)] = [
+        ("Too cool", -99, 13, "under 55°F", "under 13°C"), ("Cool", 13, 15, "55 to 59°F", "13 to 15°C"), ("Intermediate", 15, 17, "59 to 63°F", "15 to 17°C"),
+        ("Warm", 17, 19, "63 to 66°F", "17 to 19°C"), ("Hot", 19, 24, "66 to 75°F", "19 to 24°C"), ("Too hot", 24, 99, "over 75°F", "over 24°C"),
     ]
 
-    /// Winkler regions in Celsius degree days, with the Fahrenheit range shown.
-    static let winkler: [(String, Double, Double, String)] = [
-        ("Below Ia", 0, 850, "under 1,500"), ("Ia", 850, 1111, "1,500 to 2,000"), ("Ib", 1111, 1389, "2,000 to 2,500"),
-        ("II", 1389, 1667, "2,500 to 3,000"), ("III", 1667, 1944, "3,000 to 3,500"), ("IV", 1944, 2222, "3,500 to 4,000"),
-        ("V", 2222, 2700, "4,000 to 4,900"), ("Above V", 2700, 9999, "over 4,900"),
+    /// Winkler regions in Celsius degree days, with the range shown in Fahrenheit and in Celsius degree days.
+    static let winkler: [(String, Double, Double, String, String)] = [
+        ("Below Ia", 0, 850, "under 1,500", "under 850"), ("Ia", 850, 1111, "1,500 to 2,000", "850 to 1,110"), ("Ib", 1111, 1389, "2,000 to 2,500", "1,110 to 1,390"),
+        ("II", 1389, 1667, "2,500 to 3,000", "1,390 to 1,670"), ("III", 1667, 1944, "3,000 to 3,500", "1,670 to 1,940"), ("IV", 1944, 2222, "3,500 to 4,000", "1,940 to 2,220"),
+        ("V", 2222, 2700, "4,000 to 4,900", "2,220 to 2,700"), ("Above V", 2700, 9999, "over 4,900", "over 2,700"),
     ]
 
     /// Which segment a value falls in, and how far along it.
-    static func segment(_ t: [(String, Double, Double, String)], _ v: Double) -> (Int, Double) {
+    static func segment(_ t: [(String, Double, Double, String, String)], _ v: Double) -> (Int, Double) {
         guard let i = t.firstIndex(where: { $0.1 <= v && v < $0.2 }) else { return (-1, 0) }
-        let (_, lo, hi, _) = t[i]
+        let (_, lo, hi, _, _) = t[i]
         let a = lo < -50 ? hi - 2 : lo
         let b = hi > 90 && hi < 1000 ? lo + 2 : hi > 5000 ? lo + 400 : hi
         return (i, (v - a) / (b - a))

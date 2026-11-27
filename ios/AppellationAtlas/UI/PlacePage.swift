@@ -89,7 +89,7 @@ struct Sidebar: View {
             focused = true; searching = false
         }
         .navigationTitle("Wine Atlas")
-        .toolbar { ToolbarItem(placement: .bottomBar) { AboutButton() } }
+        .toolbar { ToolbarItem(placement: .bottomBar) { UnitsButton() }; ToolbarItem(placement: .bottomBar) { AboutButton() } }
     }
 }
 
@@ -130,8 +130,10 @@ struct PlacePage: View {
     @Environment(Atlas.self) private var atlas
     @Environment(Nav.self) private var nav
     @Environment(Globe.self) private var globe
+    @AppStorage(Units.key) private var units = ""   // so figures in the blurb redraw when the units change
 
     var body: some View {
+        let _ = units
         let id = nav.place
         let f = id == "world" ? nil : atlas.facts(id)
         let leaf = id != atlas.viewFor(id)

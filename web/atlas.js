@@ -7,7 +7,7 @@
    The globe code follows app/app.js; keep the two in step. */
 (()=>{
 'use strict';
-const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $=s=>document.querySelector(s), esc=s=>unitText(String(s??'')).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fold=s=>String(s??'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
 const NS='http://www.w3.org/2000/svg';
 let GEO,WORLD,PL,VIEWS={},FACTS={},SCORED=false;   // SCORED: notoriety has been fetched
@@ -379,6 +379,21 @@ const fact=(label,value,note)=>value==null||value===''?'':`<div class="fact"><sp
 const chips=list=>`<div class="chips">${list.map(([g,sk,n])=>`<span class="chip ${sk||''}">${esc(g)}${n!=null?`<b>${n}</b>`:''}</span>`).join('')}</div>`;
 const block=(head,body,note)=>body?`<section class="row"><div class="head"><h2 class="ts-section_head">${head}</h2>${note?`<span class="ts-caption">${note}</span>`:''}</div>${body}</section>`:'';
 const toF=c=>c*9/5+32, ft=m=>Math.round(m*3.281/10)*10;
+// Units, one choice per kind: 'us' or 'm'. Saved on this device. At first they follow the browser's region (Units in the app).
+const UNIT_KINDS=['temp','heat','rain','elev','dist','area'];
+const unitDefault=()=>{const l=navigator.language||'en-US', r=(l.split('-')[1]||'').toUpperCase(); return r?(['US','LR','MM'].includes(r)?'us':'m'):(l.startsWith('en')?'us':'m');};
+const UNITS=(()=>{let s={}; try{s=JSON.parse(localStorage.getItem('atlas-units')||'{}')||{};}catch(e){} const d=unitDefault(); return Object.fromEntries(UNIT_KINDS.map(k=>[k,s[k]==='us'||s[k]==='m'?s[k]:d]));})();
+const usU=k=>UNITS[k]==='us';
+// figures inside place text arrive marked with both wordings, ⟦kind|US|metric⟧ (src/units.py); this keeps one (Units.text in the app)
+function unitText(t){return t.indexOf('\u27e6')<0?t:t.replace(/\u27e6(\w+)\|([^|\u27e7]*)\|([^\u27e7]*)\u27e7/g,(_,k,a,b)=>usU(k)?a:b);}
+const tN=c=>Math.round(usU('temp')?toF(c):c), tU=()=>usU('temp')?'°F':'°C';
+const deg=c=>`${tN(c)}${tU()}`, degRange=(a,b)=>tN(a)===tN(b)?deg(a):`${tN(a)} to ${tN(b)}${tU()}`;
+const heat=g=>`${fmt(Math.round((usU('heat')?g*1.8:g)/10)*10)} degree days`, heatNote=()=>usU('heat')?'°F, above 50°F':'°C, above 10°C';
+const elN=m=>usU('elev')?fmt(ft(m)):fmt(Math.round(m/5)*5), elU=()=>usU('elev')?'ft':'m';
+const elev=m=>`${elN(m)} ${elU()}`, elevRange=(a,b)=>`${elN(a)} to ${elN(b)} ${elU()}`;
+const soilDepth=()=>usU('elev')?'1 to 2 feet':'30 to 60 cm';
+const area=ha=>usU('area')?`${fmt(ha*2.471)} acres`:`${fmt(ha)} hectares`, areaShort=ha=>usU('area')?`${fmt(ha*2.471)} acres`:`${fmt(ha)} ha`;
+const land=km2=>usU('area')?`${fmt(km2*0.3861)} square miles`:`${fmt(km2)} km²`;
 // the grapes left out of what is planted because they are not wine grapes (Copy.leftOut in the app)
 const andList=xs=>xs.length>1?xs.slice(0,-1).join(', ')+' and '+xs[xs.length-1]:(xs[0]||'');
 // notes on the rules facts (Copy.rules in the app)
@@ -395,12 +410,12 @@ function scale(segs,i,pos,label){   // a row of categories, the place's one lit 
   return `<div class="scale" role="img" aria-label="${esc(label)}">${segs.map(([n,r],k)=>`<div class="seg${k===i?' on':''}" style="width:${w}%"><span class="n">${esc(n)}</span><span class="r">${esc(r)}</span></div>`).join('')}`
     +(i>=0?`<i class="mark" style="left:${(i+Math.max(.04,Math.min(.96,pos)))*w}%"></i>`:'')+`</div>`;
 }
-const GST_F=[['Too cool',-99,13,'under 55°F'],['Cool',13,15,'55 to 59°F'],['Intermediate',15,17,'59 to 63°F'],['Warm',17,19,'63 to 66°F'],['Hot',19,24,'66 to 75°F'],['Too hot',24,99,'over 75°F']];
-const WK_F=[['Below Ia',0,850,'under 1,500'],['Ia',850,1111,'1,500 to 2,000'],['Ib',1111,1389,'2,000 to 2,500'],['II',1389,1667,'2,500 to 3,000'],['III',1667,1944,'3,000 to 3,500'],['IV',1944,2222,'3,500 to 4,000'],['V',2222,2700,'4,000 to 4,900'],['Above V',2700,9999,'over 4,900']];
+const GST_F=[['Too cool',-99,13,'under 55°F','under 13°C'],['Cool',13,15,'55 to 59°F','13 to 15°C'],['Intermediate',15,17,'59 to 63°F','15 to 17°C'],['Warm',17,19,'63 to 66°F','17 to 19°C'],['Hot',19,24,'66 to 75°F','19 to 24°C'],['Too hot',24,99,'over 75°F','over 24°C']];
+const WK_F=[['Below Ia',0,850,'under 1,500','under 850'],['Ia',850,1111,'1,500 to 2,000','850 to 1,110'],['Ib',1111,1389,'2,000 to 2,500','1,110 to 1,390'],['II',1389,1667,'2,500 to 3,000','1,390 to 1,670'],['III',1667,1944,'3,000 to 3,500','1,670 to 1,940'],['IV',1944,2222,'3,500 to 4,000','1,940 to 2,220'],['V',2222,2700,'4,000 to 4,900','2,220 to 2,700'],['Above V',2700,9999,'over 4,900','over 2,700']];
 function seg(t,v){const i=t.findIndex(([,lo,hi])=>lo<=v&&v<hi); if(i<0) return [-1,0]; const [,lo,hi]=t[i], a=lo<-50?hi-2:lo, b=hi>5000?lo+400:hi>90&&hi<1000?lo+2:hi; return [i,(v-a)/(b-a)];}
-function months(vals,unit,cls,south,labels){   // twelve bars, the growing season marked, with each bar's value on top when labels is set
+function months(vals,unit,cls,south,labels,shown){   // twelve bars, the growing season marked, with each bar's value on top when labels is set
   if(!vals) return ''; const top=labels?11:0, max=Math.max(...vals.map(Math.abs),1), w=22, h=56+top, gs=south?[9,10,11,0,1,2,3]:[3,4,5,6,7,8,9];
-  const bars=vals.map((v,i)=>{const bh=Math.max(1,Math.abs(v)/max*(h-14-top)); return `<rect x="${i*w+3}" y="${h-bh-12}" width="${w-6}" height="${bh}" class="${cls}${gs.includes(i)?' gs':''}"/>${labels?`<text class="val" x="${i*w+w/2}" y="${h-bh-15}" text-anchor="middle">${Math.round(v)}</text>`:''}<text x="${i*w+w/2}" y="${h-1}" text-anchor="middle">${'JFMAMJJASOND'[i]}</text>`;}).join('');
+  const bars=vals.map((v,i)=>{const bh=Math.max(1,Math.abs(v)/max*(h-14-top)); return `<rect x="${i*w+3}" y="${h-bh-12}" width="${w-6}" height="${bh}" class="${cls}${gs.includes(i)?' gs':''}"/>${labels?`<text class="val" x="${i*w+w/2}" y="${h-bh-15}" text-anchor="middle">${Math.round(shown?shown[i]:v)}</text>`:''}<text x="${i*w+w/2}" y="${h-1}" text-anchor="middle">${'JFMAMJJASOND'[i]}</text>`;}).join('');
   return `<svg class="months" viewBox="0 0 ${12*w} ${h}" role="img" aria-label="Monthly ${unit}">${bars}</svg>`;
 }
 const SHAPE_NOTE={'Eurostat NUTS, the area it is named for':'The map draws the department, province or region it is named for. The PGI\u2019s own area can differ a little.',
@@ -431,7 +446,7 @@ function renderInfo(f){
   const sm=f.summary;
   if(sm){
     const k=sm.kinds.map(([k,n])=>`${n} ${k}${n===1?'':'s'}`).join(', ');
-    let b=`<div class="facts">${fact('Places inside',fmt(sm.places),k)}${sm.gst?fact('Growing season',Math.round(toF(sm.gst[0]))===Math.round(toF(sm.gst[1]))?`${Math.round(toF(sm.gst[0]))}°F`:`${Math.round(toF(sm.gst[0]))} to ${Math.round(toF(sm.gst[1]))}°F`,'average temperature across its places'):''}</div>`;
+    let b=`<div class="facts">${fact('Places inside',fmt(sm.places),k)}${sm.gst?fact('Growing season',degRange(sm.gst[0],sm.gst[1]),'average temperature across its places'):''}</div>`;
     if(sm.grapes.length&&!f.planted) b+=`<p class="ts-caption sub">The grapes most often allowed, and in how many of its ${sm.with_rules} appellation${sm.with_rules===1?'':'s'} with rules:</p>${chips(sm.grapes)}`;
     X.glance=block('At a glance',b);
   }
@@ -445,10 +460,10 @@ function renderInfo(f){
     const wide=pl.scope==='around'||pl.scope==='parent';   // no figures for the place itself, only for the district around it
     const where=pl.scope==='country'?'':pl.scope==='own'?`in ${pl.names.join(' and ')}`:pl.scope==='within'?`across ${pl.names.slice(0,4).join(', ')}${pl.names.length>4?` and ${pl.names.length-4} more`:''}`
       :`${pl.names.slice(0,3).join(', ')}${pl.names.length>3?` and ${pl.names.length-3} more`:''}`;
-    const top=pl.grapes[0][1]||1, ac=ha=>fmt(Math.round(ha*2.471));
+    const top=pl.grapes[0][1]||1;
     const other=pl.grapes.find(([g])=>g==='Other'), rows=pl.grapes.filter(([g,ha])=>g!=='Other'&&ha/pl.ha>=.01).map(([g,ha,c],k)=>`<div class="gr ${pl.legal?pl.legal[pl.grapes.findIndex(x=>x[0]===g)]||'':''}"><span class="g ts-body"><i class="dot ${c==='W'?'w':c==='R'?'r':'o'}"></i>${esc(g)}</span><span class="bar"><i style="width:${Math.min(100,Math.max(1,ha/top*100))}%"></i></span><span class="pc ts-caption">${Math.round(ha/pl.ha*100)||'<1'}%</span>${pl.legal&&pl.legal[pl.grapes.findIndex(x=>x[0]===g)]==='minor'?'<span class="tag ts-caption">minor role</span>':''}</div>`).join('');
-    const amt=pl.whites_older?COPY.whitesOlder(pl.year):`${ac(pl.ha)} acres of wine grapes, ${pl.year}.`;
-    const cap=wide?`No figures exist for ${esc(f.name)} alone. These are for ${esc(where)}, the wider area it sits in: ${amt}`+leftOut(pl.left):(pl.whites_older?`Wine grapes${where?' '+esc(where):''}: `+amt:`${ac(pl.ha)} acres of wine grapes${where?' '+esc(where):''}, ${pl.year}.`)+(pl.any_name?COPY.anyName:'')+leftOut(pl.left);
+    const amt=pl.whites_older?COPY.whitesOlder(pl.year):`${area(pl.ha)} of wine grapes, ${pl.year}.`;
+    const cap=wide?`No figures exist for ${esc(f.name)} alone. These are for ${esc(where)}, the wider area it sits in: ${amt}`+leftOut(pl.left):(pl.whites_older?`Wine grapes${where?' '+esc(where):''}: `+amt:`${area(pl.ha)} of wine grapes${where?' '+esc(where):''}, ${pl.year}.`)+(pl.any_name?COPY.anyName:'')+leftOut(pl.left);
     const key=wide?[`Allowed in ${esc(f.name)}`,`Not allowed in ${esc(f.name)}`]:[`Can carry the ${esc(f.name)} name`,'Grown here, but sold under another name'];
     X.planted=block(wide?'Planted in the wider area':'What is planted',`<p class="ts-caption sub">${cap}</p>${pl.legal?`<p class="ts-caption sub legal-key"><span><i class="lk main"></i>${key[0]}</span><span><i class="lk no"></i>${key[1]}</span></p>`:''}<div class="planted">${rows}</div>${other?`<p class="ts-caption sub">Other grapes: ${Math.round(other[1]/pl.ha*100)}%</p>`:''}`,'Share of vineyard area');
   }
@@ -473,7 +488,7 @@ function renderInfo(f){
     if(ru.grapes_trial&&ru.grapes_trial.length) b+=`<p class="ts-caption sub">On trial, to adapt to a changing climate</p>${chips(ru.grapes_trial)}`;
     if(ru.limits&&ru.limits.length) b+=`<p class="ts-caption sub">${esc(COPY.limitsHead)}</p><ul class="limits">${ru.limits.map(l=>`<li class="ts-body">${esc(l)}</li>`).join('')}</ul>`;
     if(ru.blend&&ru.blend.length) b+=`<p class="ts-caption sub">${esc(COPY.blendHead)}</p><ul class="limits">${ru.blend.map(l=>`<li class="ts-body">${esc(l)}</li>`).join('')}</ul>`;
-    b+=`<div class="facts">${fact('Wine types',ru.types.join(', '))}${ru.yield_base?fact('Base yield',ru.yield_base,COPY.baseYield):fact(ru.yield_ceiling?'Yield ceiling':'Yield limit',ru.yield_hl?`${fmt(ru.yield_hl)} hl/ha`:ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:null,ru.yield_ceiling?COPY.yieldCeiling:COPY.yieldLimit)}${fact('Recognised',ru.recognised?String(ru.recognised):null,COPY.recognised)}`
+    b+=`<div class="facts">${fact('Wine types',ru.types.join(', '))}${ru.yield_base?fact('Base yield',esc(ru.yield_base),COPY.baseYield):fact(ru.yield_ceiling?'Yield ceiling':'Yield limit',ru.yield_hl?`${fmt(ru.yield_hl)} hl/ha`:ru.yield_kg?`${fmt(ru.yield_kg)} kg/ha`:null,ru.yield_ceiling?COPY.yieldCeiling:COPY.yieldLimit)}${fact('Recognised',ru.recognised?String(ru.recognised):null,COPY.recognised)}`
       +`${fact('Fewest vines',ru.density?`${fmt(ru.density)} per ha`:null)}${fact('Irrigation',ru.irrigation)}${fact('Communes',ru.communes.length?fmt(ru.communes.length):null,'in the 2022 EU record')}</div>`;
     if(ru.communes.length) b+=`<details class="more-d"><summary class="ts-caption">The communes</summary><p class="ts-caption">${ru.communes.map(esc).join(', ')}</p></details>`;
     X.rules=block('Grape and vineyard rules',b,'Allowed grapes, not plantings');
@@ -489,25 +504,25 @@ function renderInfo(f){
   }
   const gi=f.gi;
   if(gi){
-    const b=`<div class="facts">${fact('Type',esc((gi.type||'GI')[0].toUpperCase()+(gi.type||'GI').slice(1)),gi.year?`Registered ${gi.year}`:'')}${gi.vines_ha?fact('Vineyards',`${fmt(gi.vines_ha)} ha`,`in ${fmt(gi.area_km2)} km² in all`):fact('Area',`${fmt(gi.area_km2)} km²`,'')}</div>`
+    const b=`<div class="facts">${fact('Type',esc((gi.type||'GI')[0].toUpperCase()+(gi.type||'GI').slice(1)),gi.year?`Registered ${gi.year}`:'')}${gi.vines_ha?fact('Vineyards',areaShort(gi.vines_ha),`in ${land(gi.area_km2)} in all`):fact('Area',land(gi.area_km2),'')}</div>`
       +(gi.url?`<p class="ts-caption sub"><a href="${esc(gi.url)}" target="_blank" rel="noopener">Its entry at Wine Australia</a></p>`:'');
     X.gi=block('The GI',b,'Australian GIs name no grapes');
   }
   const c=f.climate, rd=f.reading||{};
   if(c){
     const south=c.lat<0, [gi,gp]=seg(GST_F,c.gst), [wi,wp]=seg(WK_F,c.gdd), wk=f.winkler;
-    const b=`<div class="facts">${fact('Growing season',`${Math.round(toF(c.gst))}°F`,'average, April to October'.replace('April to October',south?'October to April':'April to October'))}${fact('Heat',`${fmt(Math.round(c.gdd*1.8/10)*10)} degree days`,'°F, above 50°F')}`
+    const b=`<div class="facts">${fact('Growing season',deg(c.gst),'average, April to October'.replace('April to October',south?'October to April':'April to October'))}${fact('Heat',heat(c.gdd),heatNote())}`
       +`${fact('Climate type',esc(c.koppen_name||c.koppen),c.koppen?'Köppen '+c.koppen+', from a 1991 to 2020 map':'')}</div>`
-      +`<p class="ts-caption sub">Growing season: ${esc((GST_F[gi]||['?'])[0].toLowerCase())}</p>${scale(GST_F.map(x=>[x[0],x[3]]),gi,gp,'Growing season temperature class')}`
-      +`<p class="ts-caption sub">Winkler region ${esc(wk?wk[0]:'')}</p>${scale(WK_F.map(x=>[x[0],x[3]]),wi,wp,'Winkler region')}${wk&&wk[1]?`<p class="ts-body wk">${esc(wk[1])}</p>`:''}`
+      +`<p class="ts-caption sub">Growing season: ${esc((GST_F[gi]||['?'])[0].toLowerCase())}</p>${scale(GST_F.map(x=>[x[0],x[usU('temp')?3:4]]),gi,gp,'Growing season temperature class')}`
+      +`<p class="ts-caption sub">Winkler region ${esc(wk?wk[0]:'')}</p>${scale(WK_F.map(x=>[x[0],x[usU('heat')?3:4]]),wi,wp,'Winkler region')}${wk&&wk[1]?`<p class="ts-body wk">${esc(wk[1])}</p>`:''}`
       +bigNote(f)+reading(rd.climate,'What the climate means for the vines')
-      +`<div class="mrow"><div><p class="ts-caption sub">Average temperature by month, °F</p>${months(c.tavg.map(toF),'temperature','t',south,true)}</div></div>`;
+      +`<div class="mrow"><div><p class="ts-caption sub">Average temperature by month, ${tU()}</p>${months(c.tavg.map(toF),'temperature','t',south,true,c.tavg.map(tN))}</div></div>`;
     X.climate=block('Climate',b,'Averages, 1970 to 2000');
   }
   const so=f.soil, rk=f.rocks;
   if(so||rk){
     const rb=rk&&rk.families.length?`<p class="ts-caption sub">The rock beneath, from a geologic map: the main rock units, not each vineyard's soil</p><div class="rocks">${rk.families.map(([i,v])=>`<span class="rk r-${i}" style="flex:${v}"><b class="ts-caption">${esc(rk.names[i]||i)}</b><small class="ts-caption">${rockShare(v)}</small></span>`).join('')}</div>`+para(rd.soil&&rd.soil.rock):'';
-    const b=rb+(so?`<p class="ts-caption sub">The soil, 1 to 2 feet down</p><div class="facts">${fact('Texture',so.texture)}${fact('Clay, silt, sand',`${so.clay}, ${so.silt}, ${so.sand}%`)}${fact('pH',so.ph,so.ph_class)}${fact('Stones',so.stones!=null?`${so.stones}%`:null,'of the soil by volume')}</div>`+para(rd.soil&&rd.soil.top):'')+bigNote(f);
+    const b=rb+(so?`<p class="ts-caption sub">The soil, ${soilDepth()} down</p><div class="facts">${fact('Texture',so.texture)}${fact('Clay, silt, sand',`${so.clay}, ${so.silt}, ${so.sand}%`)}${fact('pH',so.ph,so.ph_class)}${fact('Stones',so.stones!=null?`${so.stones}%`:null,'of the soil by volume')}</div>`+para(rd.soil&&rd.soil.top):'')+bigNote(f);
     X.soil=block('Rock and soil',b);
   }
   const te=f.terrain;
@@ -516,7 +531,7 @@ function renderInfo(f){
     const top=te.aspect?Object.entries(te.aspect).sort((a,b)=>b[1]-a[1])[0]:null;
     const rose=te.aspect?`<svg class="rose" viewBox="-50 -50 100 100" role="img" aria-label="Which way the slopes face">${['N','NE','E','SE','S','SW','W','NW'].map((d,k)=>{const r=8+te.aspect[d]/Math.max(...Object.values(te.aspect))*30, a1=(k*45-20)*Math.PI/180, a2=(k*45+20)*Math.PI/180;
         return `<path d="M0 0L${(Math.sin(a1)*r).toFixed(1)} ${(-Math.cos(a1)*r).toFixed(1)}A${r.toFixed(1)} ${r.toFixed(1)} 0 0 1 ${(Math.sin(a2)*r).toFixed(1)} ${(-Math.cos(a2)*r).toFixed(1)}Z"/>`;}).join('')}<text x="0" y="-41" text-anchor="middle">N</text><text x="0" y="48" text-anchor="middle">S</text><text x="45" y="3" text-anchor="middle">E</text><text x="-45" y="3" text-anchor="middle">W</text></svg>`:'';
-    const b=`<div class="land"><div class="facts">${fact('Elevation',`${fmt(ft(te.elev[1]))} ft`,`most of it ${fmt(ft(te.elev[0]))} to ${fmt(ft(te.elev[2]))} ft`)}${te.aspect?fact('Grade',`${Math.round(Math.tan(te.slope*Math.PI/180)*100)}%`,`${te.slope}° on average`):fact('Slope',`${te.slope}°`,`${Math.round(te.steep*100)}% steeper than 10°, ${Math.round(te.flat*100)}% flat`)}${top?(top[1]<.3?fact('Slopes face','Every way','no main direction'):fact('Slopes face',DN[top[0]],`${Math.round(top[1]*100)}% of sloping ground`)):''}</div>${rose}</div>`+bigNote(f)+reading(rd.land,'What the land means for the vines');
+    const b=`<div class="land"><div class="facts">${fact('Elevation',elev(te.elev[1]),`most of it ${elevRange(te.elev[0],te.elev[2])}`)}${te.aspect?fact('Grade',`${Math.round(Math.tan(te.slope*Math.PI/180)*100)}%`,`${te.slope}° on average`):fact('Slope',`${te.slope}°`,`${Math.round(te.steep*100)}% steeper than 10°, ${Math.round(te.flat*100)}% flat`)}${top?(top[1]<.3?fact('Slopes face','Every way','no main direction'):fact('Slopes face',DN[top[0]],`${Math.round(top[1]*100)}% of sloping ground`)):''}</div>${rose}</div>`+bigNote(f)+reading(rd.land,'What the land means for the vines');
     X.land=block('The land',b);
   }
   if(R&&R.claims.length){
@@ -527,7 +542,7 @@ function renderInfo(f){
   const pa=f.parts;
   if(pa&&pa.length){
     const rows=pa.slice().sort((a,b)=>b[7]-a[7]||score(b[0])-score(a[0])), many=rows.length>12&&!M.allParts;
-    const tr=r=>`<tr><th scope="row"><a href="${link(r[0])}"><i class="sw ${shade(r[0])}"></i>${esc(PL[r[0]]?.[0]||r[0])}</a></th><td>${Array.isArray(r[1])?`${Math.round(toF(r[1][0]))} to ${Math.round(toF(r[1][1]))}°F`:r[8]?'<small>varies</small>':r[1]!=null?`${Math.round(toF(r[1]))}°F <small>${esc(r[2]||'')}</small>`:''}</td><td>${r[3]==null?'':Array.isArray(r[3])?`${fmt(ft(r[3][0]))} to ${fmt(ft(r[3][2]))} ft`:fmt(ft(r[3]))+' ft'}</td><td>${r[4]!=null?Math.round(r[4]*100)+'%':''}</td><td>${esc(r[6]||'')}</td></tr>`;
+    const tr=r=>`<tr><th scope="row"><a href="${link(r[0])}"><i class="sw ${shade(r[0])}"></i>${esc(PL[r[0]]?.[0]||r[0])}</a></th><td>${Array.isArray(r[1])?`${tN(r[1][0])} to ${deg(r[1][1])}`:r[8]?'<small>varies</small>':r[1]!=null?`${deg(r[1])} <small>${esc(r[2]||'')}</small>`:''}</td><td>${r[3]==null?'':Array.isArray(r[3])?elevRange(r[3][0],r[3][2]):elev(r[3])}</td><td>${r[4]!=null?Math.round(r[4]*100)+'%':''}</td><td>${esc(r[6]||'')}</td></tr>`;
     X.parts=block('How its places compare',`<p class="ts-caption sub">${f.depth===0?'A country is too big for one reading.':'Too big and varied for one reading.'} Here is how the places inside it differ.</p><div class="tablewrap"><table class="parts ts-caption"><thead><tr><th>Place</th><th>Growing season</th><th>Elevation</th><th>Steep</th><th>Main grape</th></tr></thead><tbody>${(many?rows.slice(0,12):rows).map(tr).join('')}</tbody></table></div>`
       +(many?`<button type="button" class="link ts-caption more" id="allparts">Show all ${rows.length}</button>`:''));
   }
@@ -545,7 +560,7 @@ function renderInfo(f){
   const apb=$('#allparts'); if(apb) apb.onclick=()=>{M.allParts=true; renderInfo(f); M.allParts=false;};
 }
 // the feedback form (Google Forms): the place and its page link are filled in, the reader writes the rest
-const FEEDBACK=(name,id)=>`<section class="row" id="s-feedback"><p class="ts-caption">See something wrong or missing?</p><a class="feedback ts-caption" href="${FORM_URL}?usp=pp_url&entry.673545042=${encodeURIComponent(name)}&entry.612336214=${encodeURIComponent(location.origin+location.pathname+link(id))}" target="_blank" rel="noopener">Send feedback</a><p class="ts-caption about-link"><button type="button" class="link ts-caption" data-about>About the Atlas</button></p></section>`;
+const FEEDBACK=(name,id)=>`<section class="row" id="s-feedback"><p class="ts-caption">See something wrong or missing?</p><a class="feedback ts-caption" href="${FORM_URL}?usp=pp_url&entry.673545042=${encodeURIComponent(name)}&entry.612336214=${encodeURIComponent(location.origin+location.pathname+link(id))}" target="_blank" rel="noopener">Send feedback</a><p class="ts-caption about-link"><button type="button" class="link ts-caption" data-units>Units</button> · <button type="button" class="link ts-caption" data-about>About the Atlas</button></p></section>`;
 // About: where the data comes from and the terms each source sets (About.swift in the app)
 const ABOUT_SOURCES=[
   ['Candiago et al. 2022, EU wine PDO inventory','European boundaries and rules','https://doi.org/10.1038/s41597-022-01513-0'],
@@ -580,6 +595,31 @@ function openAbout(){
   d.showModal();
 }
 document.addEventListener('click',e=>{if(e.target.closest('[data-about]')) openAbout();});
+// Units: the whole system at once, or each kind on its own (UnitsView in the app)
+const UNIT_ROWS=[['temp','Temperature','°F','°C',()=>`Burgundy's growing season: ${deg(14.8)}`],['heat','Heat','°F days','°C days',()=>`Burgundy: ${heat(1064)}`],
+  ['rain','Rainfall','in','mm',()=>`Shown in ${usU('rain')?'inches':'millimeters'}`],['elev','Elevation','ft','m',()=>`Heights and lengths in ${usU('elev')?'feet':'meters'}`],
+  ['dist','Distance','mi','km',()=>`Shown in ${usU('dist')?'miles':'kilometers'}`],['area','Area','acres','ha',()=>`Shown in ${usU('area')?'acres':'hectares'}`]];
+function setUnits(k,v){
+  for(const x of k?[k]:UNIT_KINDS) UNITS[x]=v;
+  try{localStorage.setItem('atlas-units',JSON.stringify(UNITS));}catch(e){}
+  openUnits(); render();
+}
+function openUnits(){
+  let d=$('#units');
+  if(!d){d=document.createElement('dialog'); d.id='units'; d.className='about'; d.setAttribute('aria-labelledby','units-title'); document.body.appendChild(d);
+    d.addEventListener('click',e=>{const b=e.target.closest('[data-unit]'); if(b){const [k,v]=b.dataset.unit.split(':'); setUnits(k==='all'?null:k,v); return;}
+      if(e.target===d||e.target.closest('[data-close]')) d.close();});}
+  const vals=UNIT_KINDS.map(k=>UNITS[k]), sys=vals.every(v=>v==='us')?'us':vals.every(v=>v==='m')?'m':'custom';
+  const btn=(on,key,label)=>`<button type="button" class="ts-body" aria-pressed="${on}" ${key?`data-unit="${key}"`:'disabled'}>${label}</button>`;
+  const focus=document.activeElement&&d.contains(document.activeElement)?document.activeElement.dataset.unit:null;
+  d.innerHTML=`<div class="about-in"><div class="about-head"><h2 id="units-title" class="ts-section_head">Units</h2><button type="button" class="link ts-body" data-close>Done</button></div>
+    <div class="useg sys" role="group" aria-label="Measurement system">${btn(sys==='us','all:us','US')}${btn(sys==='m','all:m','Metric')}${btn(sys==='custom','','Custom')}</div>
+    <ul class="urows">${UNIT_ROWS.map(([k,n,a,b,ex])=>`<li><span><span class="ts-body un">${n}</span><span class="ts-caption">${esc(ex())}</span></span><span class="useg" role="group" aria-label="${n}">${btn(UNITS[k]==='us',k+':us',a)}${btn(UNITS[k]==='m',k+':m',b)}</span></li>`).join('')}</ul>
+    <p class="ts-caption about-note">At first the Atlas follows your browser's region. Figures set by law stay as the rules state them, like yields in hectoliters per hectare.</p></div>`;
+  if(focus){const f=d.querySelector(`[data-unit="${focus}"]`); if(f) f.focus();}
+  if(!d.open) d.showModal();
+}
+document.addEventListener('click',e=>{if(e.target.closest('[data-units]')) openUnits();});
 const FORM_URL='https://docs.google.com/forms/d/e/1FAIpQLSc7CmB3DsylFI0kt6tZncSwq53i8jsEuxdrv4deyIuWJHq8oA/viewform';
 const WORLD_INFO=()=>`<section class="row"><div class="prose"><p class="ts-body">${fmt(Object.keys(PL).length)} wine regions, from whole countries down to single vineyards. Tap a country on the globe to begin, or search for one you know.</p><p class="ts-body">Gold marks the benchmarks, the classic places to learn. The darkest gold marks the essential benchmarks, the ones to learn first, so every essential is a benchmark too. Light gold marks the places inside a benchmark. Grey marks every other place.</p><p class="ts-body">Each list puts the best known places first, by how many Wikipedias write about them and how often those pages are read.</p></div></section>`;
 async function render(){

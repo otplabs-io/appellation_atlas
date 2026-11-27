@@ -8,6 +8,7 @@ struct PlaceInfo: View {
     @Environment(Atlas.self) private var atlas
     @Environment(Nav.self) private var nav
     @State private var allParts = false
+    @AppStorage(Units.key) private var units = ""   // so the figures redraw when the units change
 
     private enum Key: String, CaseIterable {
         case keyfacts, style, terms, glance, short, planted, climate, soil, land, parts, rules, ava, gi, found, none, sources
@@ -51,6 +52,7 @@ struct PlaceInfo: View {
     }
 
     var body: some View {
+        let _ = units
         let keys = present
         let jumps = keys.filter { $0.jump != nil }
         ScrollViewReader { proxy in
@@ -168,7 +170,7 @@ struct PlaceInfo: View {
         return AtlasSection(title: "At a glance") {
             FactGrid(facts: [
                 Fact(label: "Places inside", value: fmt(sm["places"].double), note: kinds),
-                Fact(label: "Growing season", value: sm["gst"].truthy ? Self.range(toF(sm["gst"][0].double ?? 0), toF(sm["gst"][1].double ?? 0)) : "", note: "average temperature across its places"),
+                Fact(label: "Growing season", value: sm["gst"].truthy ? Units.degRange(sm["gst"][0].double ?? 0, sm["gst"][1].double ?? 0) : "", note: "average temperature across its places"),
             ])
             if !sm["grapes"].array.isEmpty && !f["planted"].truthy {
                 let n = sm["with_rules"].int ?? 0
@@ -207,13 +209,13 @@ struct PlaceInfo: View {
         let legal = pl["legal"].strings
         let other = grapes.first { $0[0].string == "Other" }
         let rows = grapes.enumerated().filter { _, g in g[0].string != "Other" && (g[1].double ?? 0) / ha >= 0.01 }   // a row under 1% would read "0%"
-        let acres = fmt(ha * 2.471)
+        let amountText = Units.area(ha)
         let year = pl["year"].int.map(String.init) ?? ""
         let older = pl["whites_older"].bool == true   // France's regional whites come from an earlier survey than its reds
-        let amount = older ? Copy.whitesOlder(year) : "\(acres) acres of wine grapes, \(year)."
+        let amount = older ? Copy.whitesOlder(year) : "\(amountText) of wine grapes, \(year)."
         let caption = wide
             ? "No figures exist for \(name) alone. These are for \(where_), the wider area it sits in: \(amount)"
-            : (older ? "Wine grapes\(where_.isEmpty ? "" : " " + where_): " + amount : "\(acres) acres of wine grapes\(where_.isEmpty ? "" : " " + where_), \(year).") + (pl["any_name"].bool == true ? Copy.Rules.anyName : "")
+            : (older ? "Wine grapes\(where_.isEmpty ? "" : " " + where_): " + amount : "\(amountText) of wine grapes\(where_.isEmpty ? "" : " " + where_), \(year).") + (pl["any_name"].bool == true ? Copy.Rules.anyName : "")
         let key = wide ? ["Allowed in \(name)", "Not allowed in \(name)"] : ["Can carry the \(name) name", "Grown here, but sold under another name"]
         return AtlasSection(title: wide ? "Planted in the wider area" : "What is planted", note: "Share of vineyard area") {
             Text(caption + Copy.leftOut(pl["left"])).font(.atlasNote).foregroundStyle(Palette.soft)
@@ -262,14 +264,14 @@ struct PlaceInfo: View {
         let reading = f["reading"]["climate"]
         return AtlasSection(title: "Climate", note: "Averages, 1970 to 2000") {
             FactGrid(facts: [
-                Fact(label: "Growing season", value: "\(Int(toF(c["gst"].double ?? 0).rounded()))°F", note: south ? "average, October to April" : "average, April to October"),
-                Fact(label: "Heat", value: "\(fmt(((c["gdd"].double ?? 0) * 1.8 / 10).rounded() * 10)) degree days", note: "°F, above 50°F"),
+                Fact(label: "Growing season", value: Units.deg(c["gst"].double ?? 0), note: south ? "average, October to April" : "average, April to October"),
+                Fact(label: "Heat", value: Units.heat(c["gdd"].double ?? 0), note: Units.heatNote),
                 Fact(label: "Climate type", value: c["koppen_name"].string ?? c["koppen"].string ?? "", note: c["koppen"].string.map { "Köppen " + $0 + ", from a 1991 to 2020 map" } ?? ""),
             ])
             SubCaption("Growing season: \(gi >= 0 ? Copy.growingSeason[gi].0.lowercased() : "?")")
-            ScaleBar(segments: Copy.growingSeason.map { ($0.0, $0.3) }, index: gi, position: gp, label: "Growing season temperature class")
+            ScaleBar(segments: Copy.growingSeason.map { ($0.0, Units.us(.temp) ? $0.3 : $0.4) }, index: gi, position: gp, label: "Growing season temperature class")
             SubCaption("Winkler region \(wk[0].string ?? "")")
-            ScaleBar(segments: Copy.winkler.map { ($0.0, $0.3) }, index: wi, position: wp, label: "Winkler region")
+            ScaleBar(segments: Copy.winkler.map { ($0.0, Units.us(.heat) ? $0.3 : $0.4) }, index: wi, position: wp, label: "Winkler region")
             if let t = wk[1].string, !t.isEmpty { Text(t).font(.atlasBody) }
             bigNote
             Reading(title: "What the climate means for the vines", points: pairs(reading))
@@ -279,8 +281,8 @@ struct PlaceInfo: View {
 
     private func tempChart(_ c: JSON, _ south: Bool) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            SubCaption("Average temperature by month, °F")
-            MonthsChart(values: c["tavg"].doubles.map(toF), unit: "°F", season: Palette.coral, base: Palette.monthTemp, south: south, labels: true)
+            SubCaption("Average temperature by month, \(Units.tU)")
+            MonthsChart(values: c["tavg"].doubles.map(toF), shown: c["tavg"].doubles.map { Double(Units.tN($0)) }, unit: Units.tU, season: Palette.coral, base: Palette.monthTemp, south: south, labels: true)
         }
         .frame(maxWidth: 340, alignment: .leading)   // as .months in web/atlas.css
     }
@@ -310,7 +312,7 @@ struct PlaceInfo: View {
                 if let t = rd["rock"].string { Text(t).font(.atlasBody).fixedSize(horizontal: false, vertical: true) }
             }
             if so.truthy {
-                SubCaption("The soil, 1 to 2 feet down")
+                SubCaption("The soil, \(Units.soilDepth) down")
                 FactGrid(facts: [
                     Fact(label: "Texture", value: so["texture"].string ?? ""),
                     Fact(label: "Clay, silt, sand", value: "\(so["clay"].int ?? 0), \(so["silt"].int ?? 0), \(so["sand"].int ?? 0)%"),
@@ -330,7 +332,7 @@ struct PlaceInfo: View {
         let top = asp.max { $0.value < $1.value }
         let slope = te["slope"].double ?? 0
         let slopeText = slope.rounded() == slope ? String(format: "%.0f", slope) : String(format: "%.1f", slope)
-        var facts = [Fact(label: "Elevation", value: "\(fmt(feet(te["elev"][1].double ?? 0))) ft", note: "most of it \(fmt(feet(te["elev"][0].double ?? 0))) to \(fmt(feet(te["elev"][2].double ?? 0))) ft")]
+        var facts = [Fact(label: "Elevation", value: Units.elev(te["elev"][1].double ?? 0), note: "most of it \(Units.elevRange(te["elev"][0].double ?? 0, te["elev"][2].double ?? 0))")]
         if aspect.truthy {
             facts.append(Fact(label: "Grade", value: "\(Int((tan(slope * Double.pi / 180) * 100).rounded()))%", note: "\(slopeText)° on average"))
         } else {
@@ -385,22 +387,17 @@ struct PlaceInfo: View {
         }
     }
 
-    /// "59°F" when both ends round the same, else "57 to 61°F".
-    static func range(_ lo: Double, _ hi: Double) -> String {
-        let a = Int(lo.rounded()), b = Int(hi.rounded())
-        return a == b ? "\(a)°F" : "\(a) to \(b)°F"
-    }
 
     private func gstCell(_ r: JSON) -> String {
-        if case .array(let a) = r[1], a.count == 2 { return "\(Int(toF(a[0].double ?? 0).rounded())) to \(Int(toF(a[1].double ?? 0).rounded()))°F" }
+        if case .array(let a) = r[1], a.count == 2 { return "\(Units.tN(a[0].double ?? 0)) to \(Units.deg(a[1].double ?? 0))" }
         if r[8].truthy { return "varies" }
-        if let g = r[1].double { return "\(Int(toF(g).rounded()))°F " + (r[2].string ?? "") }
+        if let g = r[1].double { return Units.deg(g) + " " + (r[2].string ?? "") }
         return ""
     }
 
     private func elevCell(_ e: JSON) -> String {
-        if case .array(let a) = e { return "\(fmt(feet(a[0].double ?? 0))) to \(fmt(feet(a[2].double ?? 0))) ft" }
-        if let m = e.double { return "\(fmt(feet(m))) ft" }
+        if case .array(let a) = e { return Units.elevRange(a[0].double ?? 0, a[2].double ?? 0) }
+        if let m = e.double { return Units.elev(m) }
         return ""
     }
 
@@ -488,8 +485,8 @@ struct PlaceInfo: View {
             FactGrid(facts: [
                 Fact(label: "Type", value: capitalized(type), note: g["year"].int.map { "Registered \($0)" } ?? ""),
                 g["vines_ha"].truthy
-                    ? Fact(label: "Vineyards", value: "\(fmt(g["vines_ha"].double)) ha", note: "in \(fmt(g["area_km2"].double)) km² in all")
-                    : Fact(label: "Area", value: "\(fmt(g["area_km2"].double)) km²"),
+                    ? Fact(label: "Vineyards", value: Units.areaShort(g["vines_ha"].double ?? 0), note: "in \(Units.land(g["area_km2"].double ?? 0)) in all")
+                    : Fact(label: "Area", value: Units.land(g["area_km2"].double ?? 0)),
             ])
             if let u = g["url"].string, let url = URL(string: u) { Link("Its entry at Wine Australia", destination: url).font(.atlasNote) }
         }
