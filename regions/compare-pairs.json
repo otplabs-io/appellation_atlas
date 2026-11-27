@@ -9,11 +9,11 @@
    "wines": [
     {
      "head": "Pinot Noir",
-     "text": "Oregon Pinot Noir is often called the closest in style to Burgundy. Burgundy's own leans earthy and floral. The best red Burgundy can be kept for more than 15 years."
+     "text": "Oregon Pinot Noir is often called the closest in style to Burgundy. Burgundy's own leans earthy and floral, and the best red Burgundy keeps for more than 15 years."
     },
     {
      "head": "Chardonnay",
-     "text": "Oregon Chardonnay is made around bright acidity rather than a buttery feel. Willamette growers differ on Burgundy: some say their wines are growing more like white Burgundy, while others set out not to copy it."
+     "text": "Oregon Chardonnay is built on bright acidity, the opposite of the buttery style. Willamette growers disagree about Burgundy: some say their wines are drifting toward white Burgundy, and others set out not to copy it."
     }
    ],
    "sources": [
@@ -31,11 +31,11 @@
    "wines": [
     {
      "head": "Blends",
-     "text": "Red Bordeaux is usually a blend: Cabernet Sauvignon leads on the Left Bank and Merlot on the Right Bank. Many Napa wines also blend grapes, from the valley floor and the hillsides, and Inglenook, founded in 1879, was the first Bordeaux-style winery in the US."
+     "text": "Both blend. Red Bordeaux is usually led by Cabernet Sauvignon on the Left Bank and by Merlot on the Right. Many Napa wines mix grapes from the valley floor and the hillsides, and Inglenook, founded in 1879, was the first Bordeaux-style winery in the US."
     },
     {
      "head": "Taste and aging",
-     "text": "Wine Folly's side-by-side tasting suggests Bordeaux blends at about 12.5% alcohol, often surprisingly light, with earthy notes, and Napa ones at 14.5% or more, with much firmer tannins. Bordeaux's top Left Bank reds are concentrated and long-lived, and most are meant for the cellar."
+     "text": "Wine Folly's side-by-side tasting points to Bordeaux at about 12.5% alcohol, often surprisingly light and earthy, and Napa at 14.5% or more, with much firmer tannins. Bordeaux's top Left Bank reds are concentrated and long-lived, and most are meant for the cellar."
     }
    ],
    "sources": [
@@ -52,7 +52,7 @@
    "wines": [
     {
      "head": "Sauvignon Blanc",
-     "text": "Both are high in acidity. Sancerre is mostly bone dry, made with little oak and without malolactic fermentation, and tends to be less grassy and herbaceous than New Zealand Sauvignon Blanc. Marlborough's shows vibrant fruit and very sharp acidity, with bell pepper, gooseberry and passionfruit, and a gram or two of sugar is normal there to balance the acid."
+     "text": "Both are Sauvignon Blanc with high acidity. Sancerre is mostly bone dry, made with little oak and without malolactic fermentation, and it is less grassy and herbaceous than New Zealand's. Marlborough brings vibrant fruit and very sharp acidity, with bell pepper, gooseberry and passionfruit, and a gram or two of sugar there is normal to balance the acid."
     }
    ],
    "sources": [
@@ -68,11 +68,11 @@
    "wines": [
     {
      "head": "Tempranillo",
-     "text": "Tempranillo leads in both. In Ribera del Duero it is called Tinto Fino, and the hot, short growing season gives a richer style, with black cherry, blackberry and dried fig. Rioja is known for vanilla from oak, with cherry, dill and cigar box."
+     "text": "Tempranillo leads in both; in Ribera del Duero it goes by Tinto Fino. Ribera's hot, short growing season gives a richer wine, with black cherry, blackberry and dried fig. Rioja is known for vanilla from oak, with cherry, dill and cigar box."
     },
     {
      "head": "Aging rules",
-     "text": "Both use the same aging terms and rules. A red Crianza ages at least two years, one of them in oak. A Reserva ages at least three years, one in oak. A Gran Reserva ages five years before release, two of them in oak."
+     "text": "The two use the same aging terms. A red Crianza ages at least two years, one of them in oak, and a Reserva at least three, one in oak. A Gran Reserva ages five years before release, two of them in oak."
     }
    ],
    "sources": [
@@ -89,11 +89,11 @@
    "wines": [
     {
      "head": "Nebbiolo",
-     "text": "Both are Nebbiolo from the Langhe. Barbaresco gets a slight sea influence and ripens a little earlier. Its tannins are less harsh when young and soften sooner, so it does not age as long as a traditional Barolo. Barolos from La Morra and Barolo itself come closest to Barbaresco."
+     "text": "Both are Nebbiolo from the Langhe. Barbaresco gets a little sea influence, so its grapes ripen slightly earlier. Its tannins are less harsh when young and soften sooner, which is also why it doesn't age as long as a traditional Barolo. The Barolos closest to Barbaresco come from La Morra and the village of Barolo itself."
     },
     {
      "head": "Aging rules",
-     "text": "Barolo must age at least three years, 18 months of them in wood, and a Riserva at least five. Barbaresco must age at least two years, 9 months in wood, and a Riserva at least four."
+     "text": "Barolo ages at least three years, 18 months of them in wood, and a Riserva at least five. Barbaresco needs two years, 9 months in wood, and four for a Riserva."
     }
    ],
    "sources": [
@@ -109,11 +109,11 @@
    "wines": [
     {
      "head": "Made two ways",
-     "text": "Champagne gets its second fermentation in the bottle, from Pinot Noir, Pinot Meunier and Chardonnay, and must age at least 15 months. Most Prosecco is made from Glera and gets its second fermentation in large steel tanks, which can take as little as 30 days."
+     "text": "Champagne gets its bubbles from a second fermentation in the bottle. It is made from Pinot Noir, Pinot Meunier and Chardonnay and must age at least 15 months. Most Prosecco is Glera, given its second fermentation in large steel tanks, which can take as little as 30 days."
     },
     {
      "head": "Taste",
-     "text": "Prosecco is aromatic and crisp, with yellow apple, pear, white peach and apricot, and is best drunk within three to five years of its vintage. Extra Dry is its most common style."
+     "text": "Prosecco is aromatic and crisp, with yellow apple, pear, white peach and apricot, and it is best within three to five years of the vintage. Its most common style is Extra Dry, which is sweeter than Brut."
     }
    ],
    "sources": [
@@ -129,11 +129,11 @@
    "wines": [
     {
      "head": "Made two ways",
-     "text": "Cava is made like Champagne, with its second fermentation in the bottle, mostly from Macabeo, Parellada and Xarel·lo, and it spends at least 9 months on its lees. Most Prosecco is made from Glera, with its second fermentation in large steel tanks, and it needs no long aging."
+     "text": "Cava is made the way Champagne is, with its second fermentation in the bottle and at least 9 months on its lees, mostly from Macabeo, Parellada and Xarel·lo. Most Prosecco is Glera, fermented a second time in steel tanks, and it needs no long aging."
     },
     {
      "head": "Style",
-     "text": "Fermenting in the bottle gives Cava fine, lasting bubbles. Prosecco is fresh and fruit-driven, with apple, pear and white peach, and Extra Dry is its most common style."
+     "text": "Fermenting in the bottle gives Cava fine, lasting bubbles. Prosecco is fresh and fruit-driven, with apple, pear and white peach. Cava runs from bone-dry brut nature to sweet dulce, and about 95% of it comes from Penedès."
     }
    ],
    "sources": [
@@ -149,12 +149,12 @@
    "tag": "different-grapes",
    "wines": [
     {
-     "head": "Both made in the bottle",
-     "text": "Both get their second fermentation in the bottle, by the traditional method. Champagne is made almost entirely from Pinot Noir, Pinot Meunier and Chardonnay. Cava is mostly Macabeo, Parellada and Xarel·lo, with Chardonnay also allowed."
+     "head": "Grapes",
+     "text": "Both get their second fermentation in the bottle, by the traditional method, so the difference starts with the grapes. Champagne is almost all Pinot Noir, Pinot Meunier and Chardonnay. Cava is mostly Macabeo, Parellada and Xarel·lo, with Chardonnay allowed."
     },
     {
-     "head": "Rules",
-     "text": "Champagne must age at least 15 months, and vintage Champagne at least three years. Cava spends at least 9 months on its lees, and it may no longer be sold as Spanish champagne."
+     "head": "Aging",
+     "text": "Champagne ages at least 15 months, and vintage Champagne at least three years. Cava spends at least 9 months on its lees. It can no longer be sold as Spanish champagne."
     }
    ],
    "sources": [
@@ -166,16 +166,16 @@
   {
    "a": "france/bordeaux",
    "b": "france/burgundy",
-   "link": "France's two great reds",
+   "link": "Blends and single grapes",
    "tag": "different-grapes",
    "wines": [
     {
      "head": "Blends and single grapes",
-     "text": "Red Bordeaux is almost always a blend, led by Cabernet Sauvignon on the Left Bank and Merlot on the Right. Red Burgundy is Pinot Noir and white Burgundy is Chardonnay. Bordeaux ranks its producers; Burgundy ranks its vineyards."
+     "text": "Red Bordeaux is almost always a blend, led by Cabernet Sauvignon on the Left Bank and Merlot on the Right. Red Burgundy is Pinot Noir and white Burgundy is Chardonnay. They rank wine differently too: Bordeaux classifies its producers, Burgundy its vineyards."
     },
     {
      "head": "Taste and aging",
-     "text": "Left Bank reds are concentrated, tannic and long-lived. Pinot Noir is usually light to medium-bodied with lower tannin, and Burgundy's leans earthy and floral. The best grand cru Burgundy can be kept for more than 15 years."
+     "text": "Left Bank Bordeaux is concentrated, tannic and long-lived. Pinot Noir is usually light to medium-bodied with lower tannin, and Burgundy's leans earthy and floral. The best grand cru Burgundy keeps for more than 15 years."
     }
    ],
    "sources": [
@@ -191,12 +191,12 @@
    "tag": "different-grapes",
    "wines": [
     {
-     "head": "Sherry and Port",
-     "text": "Sherry is made from white grapes, mostly Palomino, and fortified after fermentation, so most Sherry is dry. Port is usually a sweet red. It is fortified partway through fermentation, which leaves sugar in the wine, and it is usually 19 to 22% alcohol."
+     "head": "When the spirit goes in",
+     "text": "Sherry is fortified after fermentation, so most Sherry is dry. It is made from white grapes, mostly Palomino. Port is fortified partway through fermentation, which leaves sugar in the wine, so it is usually a sweet red at 19 to 22% alcohol."
     },
     {
      "head": "Aging",
-     "text": "Sherry ages at least two years in a solera of linked barrels and does not generally improve once bottled. Ruby Port is aged only a few years. Tawny Port ages much longer in barrel, with age statements from 10 to 50 years."
+     "text": "Sherry spends at least two years in a solera of linked barrels and doesn't improve once bottled. Ruby Port is aged only a few years. Tawny Port ages far longer in barrel, with age statements from 10 to 50 years."
     }
    ],
    "sources": [
@@ -216,7 +216,7 @@
     },
     {
      "head": "Aging",
-     "text": "Barolo must age at least three years, 18 months in wood. Brunello spends two years in oak and at least four months in bottle, and is released 50 months after the harvest. Most Brunello needs at least 10 years, and traditional Barolo can take more than 10 years to soften."
+     "text": "Both take patience. Barolo ages at least three years, 18 months in wood, and a traditional one can take more than 10 years to soften. Brunello spends two years in oak and comes out 50 months after the harvest, and most need at least 10 years."
     }
    ],
    "sources": [
@@ -233,7 +233,7 @@
    "wines": [
     {
      "head": "Size and spread",
-     "text": "Sonoma County is far bigger than the Napa Valley AVA, about 1.14 million acres against about 253,000 acres, and it makes far more wine. Its 19 AVAs reflect how varied it is: cool-climate grapes do well in some areas and warm-climate grapes in others. Within Napa, the open southern end is cooler and the closed northern end is often much warmer."
+     "text": "Sonoma is much the bigger of the two: about 1.14 million acres against Napa's 253,000 acres, and it makes far more wine. Its 19 AVAs reflect how varied it is, with cool-climate grapes doing well in some areas and warm-climate grapes in others. Napa varies too, from its open, cooler southern end to its closed northern end, which is often much warmer."
     },
     {
      "head": "Grapes",
@@ -253,11 +253,11 @@
    "wines": [
     {
      "head": "Sauvignon Blanc",
-     "text": "Both are Sauvignon Blanc with naturally high acidity, and only very experienced tasters can tell them apart blind. Sancerre tends to be fuller, with more pronounced aromas. Pouilly-Fumé is more perfumed and is known for a smoky bouquet."
+     "text": "Only very experienced tasters can tell these two apart blind. Both are Sauvignon Blanc with naturally high acidity. Sancerre tends to be fuller, with more pronounced aromas. Pouilly-Fumé is more perfumed and known for a smoky bouquet."
     },
     {
      "head": "Soils",
-     "text": "Sancerre's flint soils give its most aromatic and longest-lived wines, and its clay and limestone give more body. Pouilly-Fumé grows on Kimmeridgian marl, hard limestone and flinty clay."
+     "text": "Sancerre's flint gives its most aromatic and longest-lived wines, and its clay and limestone give more body. Pouilly-Fumé grows on Kimmeridgian marl, hard limestone and flinty clay."
     }
    ],
    "sources": [
@@ -273,11 +273,11 @@
    "wines": [
     {
      "head": "Blends",
-     "text": "Left Bank reds are led by Cabernet Sauvignon: a top estate's blend is typically about 70% Cabernet Sauvignon, with Cabernet Franc and Merlot. Right Bank reds, around Libourne, turn that around, with about 70% Merlot."
+     "text": "A top Left Bank red is typically about 70% Cabernet Sauvignon, with Cabernet Franc and Merlot. Around Libourne on the Right Bank the blend flips to about 70% Merlot."
     },
     {
      "head": "Style",
-     "text": "Left Bank reds are concentrated, tannic and long-lived, and most are meant for the cellar. Right Bank reds often have great fruit concentration and softer tannins, and they age well too. Wine Folly ties Merlot's success on the Right Bank to its clay-rich soils."
+     "text": "Left Bank wines are concentrated, tannic and long-lived, and most are meant for the cellar. Right Bank wines often have great fruit concentration and softer tannins, and they age well too. Wine Folly credits the Right Bank's clay-rich soils for Merlot's success there."
     }
    ],
    "sources": [
@@ -293,11 +293,11 @@
    "wines": [
     {
      "head": "Sangiovese",
-     "text": "Brunello is 100% Sangiovese. Chianti Classico is mostly Sangiovese, and white grapes have not been allowed in it since 2006."
+     "text": "Brunello is 100% Sangiovese. Chianti Classico is mostly Sangiovese, and white grapes have been banned from it since 2006."
     },
     {
      "head": "Style and aging",
-     "text": "Chianti Classico tends to be medium-bodied, with firm tannin, medium-high to high acidity and floral, cherry and light nutty notes. Brunello comes from one of the warmest, driest parts of Tuscany and has a fleshier texture, with blackberry, black cherry, chocolate, leather and violets. It spends two years in oak, is released 50 months after the harvest, and most need at least 10 years."
+     "text": "Chianti Classico tends to be medium-bodied, with firm tannin, medium-high to high acidity, and floral, cherry and light nutty notes. Brunello comes from one of the warmest, driest corners of Tuscany and is fleshier, with blackberry, black cherry, chocolate, leather and violets. It spends two years in oak, comes out 50 months after the harvest, and most need at least 10 years."
     }
    ],
    "sources": [
@@ -317,7 +317,7 @@
     },
     {
      "head": "How sweet",
-     "text": "For Tokaji Aszú, the rotted berries are picked one by one and trodden into a paste, and its sweetness runs from 3 to 6 puttonyos. Sauternes has no set level of sugar but must taste clearly sweet, with apricot, honey and peach and a nutty note. Both can last a very long time: Sauternes beyond 100 years, and Tokaji Eszencia 200 years or more."
+     "text": "For Tokaji Aszú the rotted berries are picked one by one and trodden into a paste, and the sweetness runs from 3 to 6 puttonyos. Sauternes has no set sugar level but must taste clearly sweet, with apricot, honey and peach and a nutty note. Both last a very long time: Sauternes beyond 100 years, and Tokaji Eszencia 200 years or more."
     }
    ],
    "sources": [
@@ -333,7 +333,7 @@
    "wines": [
     {
      "head": "Shiraz",
-     "text": "Shiraz leads in both, and it is about 60% of McLaren Vale's crush. Barossa Shiraz is full-bodied, with rich chocolate and spice, and Barossa grapes can get very ripe, with high sugar and low acid, so acid is often added. McLaren Vale Shiraz shows berry and spice with some dark chocolate and liquorice, and a soft, rolling palate."
+     "text": "Shiraz leads in both, and in McLaren Vale it is about 60% of the crush. Barossa Shiraz is full-bodied, with rich chocolate and spice, and Barossa grapes can get so ripe, high in sugar and low in acid, that winemakers often add acid. McLaren Vale Shiraz has berry and spice with some dark chocolate and liquorice, and a soft, rolling palate."
     }
    ],
    "sources": [
@@ -370,11 +370,11 @@
    "wines": [
     {
      "head": "Albariño and Alvarinho",
-     "text": "Albariño is over 90% of the vines in Rías Baixas. In Vinho Verde, where it is called Alvarinho, it is one grape among several and most wines are blends; Vinho Alvarinho comes from Monção and Melgaço."
+     "text": "In Rías Baixas, Albariño is over 90% of the vines. In Vinho Verde it is called Alvarinho and is one grape among several, and most wines are blends; Vinho Alvarinho comes from Monção and Melgaço."
     },
     {
      "head": "Style",
-     "text": "Albariño has high acidity, stone fruit and a hint of salt. Most white Vinho Verde is light, about 8.5 to 11% alcohol, fresh, and released three to six months after the harvest, sometimes with a little sparkle added. Vinho Alvarinho is stronger, 11.5 to 14%, with ripe tropical aromas."
+     "text": "Albariño has high acidity, stone fruit and a hint of salt. Most white Vinho Verde is lighter, about 8.5 to 11% alcohol, sold three to six months after the harvest, and sometimes given a little added sparkle. Vinho Alvarinho is the stronger one, 11.5 to 14%, with ripe tropical aromas."
     }
    ],
    "sources": [
@@ -391,11 +391,11 @@
    "wines": [
     {
      "head": "Nebbiolo and Pinot Noir",
-     "text": "Barolo is made from Nebbiolo. It is medium to full-bodied, with high tannin and acidity, and is often said to smell of tar and roses. Red Burgundy is mostly Pinot Noir, which is lighter and silky, with lower tannin."
+     "text": "Barolo is Nebbiolo: medium to full-bodied, high in tannin and acidity, and often said to smell of tar and roses. Red Burgundy is mostly Pinot Noir, which is lighter and silky, with lower tannin."
     },
     {
      "head": "Color and age",
-     "text": "Both are light in color. Barolo takes on a rust-red tinge as it matures. The best red Burgundy can be kept for more than 15 years."
+     "text": "Both are light in color. Barolo picks up a rust-red tinge as it matures, and the best red Burgundy keeps for more than 15 years."
     }
    ],
    "sources": [
@@ -413,7 +413,7 @@
    "wines": [
     {
      "head": "Grapes",
-     "text": "Paso Robles is known for Zinfandel, its heritage grape, for Cabernet Sauvignon and for Rhône-style wines, and it grew the first Syrah planted in California. Its blends often break the traditional rules. Napa's Cabernet Sauvignon and Chardonnay took the top places at the 1976 Paris tasting, and Inglenook was the first Bordeaux-style winery in the US."
+     "text": "Paso Robles is known for Zinfandel, its heritage grape, as well as Cabernet Sauvignon and Rhône-style wines, and it grew the first Syrah planted in California. Its blends often ignore the traditional rules. Napa's Cabernet Sauvignon and Chardonnay took the top places at the 1976 Paris tasting, and Inglenook was the first Bordeaux-style winery in the US."
     },
     {
      "head": "Climate",
@@ -437,7 +437,7 @@
     },
     {
      "head": "Style",
-     "text": "The north is cooler, with a continental climate, and its Syrah is known for aromas of green olive and smoky bacon. The south is more Mediterranean, with hot summers. Reds from the southern Rhône's left bank are full-bodied and tannic when young, with prune, undergrowth and chocolate."
+     "text": "The north is cooler, with a continental climate, and its Syrah is known for aromas of green olive and smoky bacon. The south is Mediterranean, with hot summers. Reds from the southern Rhône's left bank are full-bodied and tannic when young, with prune, undergrowth and chocolate."
     }
    ],
    "sources": [
@@ -449,224 +449,556 @@
    "b": "france/cahors",
    "link": "Malbec",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Malbec",
+     "text": "Malbec is Mendoza's most important grape. In Cahors it must be at least 70% of the wine, with Merlot or Tannat making up the rest, and Cahors is Wine Folly's pick for Malbec outside Argentina."
+    },
+    {
+     "head": "Place",
+     "text": "Mendoza is semi-arid desert, and its best Malbec comes from high vineyards; the average site is 600 to 1,100 meters up. Wine Folly says Malbec struggles to keep its acidity lower down. Cahors grows on gravel terraces along the Lot, with hot summers, wet winters and some Mediterranean influence."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-mendoza",
+    "cmp-wiki-cahors",
+    "cmp-winefolly-malbec"
+   ]
   },
   {
    "a": "new-zealand/central-otago",
    "b": "france/burgundy",
    "link": "Pinot Noir",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Pinot Noir",
+     "text": "Pinot Noir is over 80% of Central Otago's vines, while Burgundy makes more white wine than red. Wine Folly calls Central Otago Pinot rich and robust, often with good tannic structure, and Burgundy's more earthy and floral."
+    },
+    {
+     "head": "Place",
+     "text": "Both are continental. Central Otago, the world's southernmost commercial wine region, is New Zealand's only truly continental one, sheltered by mountains, with big daily and seasonal swings. It gets 375 to 600 mm of rain a year, and irrigation is generally essential. Burgundy's vines grow in clay and limestone."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-central-otago",
+    "cmp-wiki-burgundy",
+    "cmp-winefolly-pinot-noir"
+   ]
   },
   {
    "a": "germany/mosel",
    "b": "germany/rheingau",
    "link": "Riesling",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Riesling",
+     "text": "Riesling dominates both: about 60% of the Mosel's vineyards and 78% of the Rheingau's, the highest share in Germany. Mosel Riesling is often light, lower in alcohol, crisp and high in acidity, with flowery aromas and slatey mineral notes. The best Middle Mosel wines can age 50 to 100 years."
+    },
+    {
+     "head": "Place",
+     "text": "The Mosel's slate slopes are some of the most labor-intensive vineyards in the world, and the Calmont is the steepest on record. Most Rheingau vineyards face south, below the Taunus hills. The German form of noble rot was discovered there by accident, at Schloss Johannisberg."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-mosel",
+    "cmp-wiki-rheingau"
+   ]
   },
   {
    "a": "australia/clare-valley",
    "b": "australia/eden-valley",
    "link": "Riesling",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Riesling",
+     "text": "Clare Valley is best known for Riesling, yet in both valleys Shiraz is the most planted grape. Riesling comes second in Eden Valley, about 24% of the vines, and third in Clare, about 22%, behind Cabernet Sauvignon."
+    },
+    {
+     "head": "Place",
+     "text": "Clare's vines grow at 400 to 500 meters, where nights stay cool even in summer, so the fruit ripens more slowly and evenly. Eden Valley is in the Mount Lofty Ranges."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-clare",
+    "cmp-wiki-eden"
+   ]
   },
   {
    "a": "france/beaujolais",
    "b": "france/burgundy",
    "link": "Gamay and Pinot Noir",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Gamay and Pinot Noir",
+     "text": "Beaujolais is Gamay, a thin-skinned grape low in tannin, made into a very light-bodied red with fairly high acidity, often by carbonic maceration. Burgundy's reds are Pinot Noir. Beaujolais is warmer than Burgundy, closer to the Rhône in climate, and its grapes ripen fully."
+    },
+    {
+     "head": "History and crus",
+     "text": "In the 14th century Burgundy pushed Gamay south to Beaujolais, calling it vile and disloyal. Cru means different things in each place: in Beaujolais a whole village area, in Burgundy a single vineyard. Cru Beaujolais can be fuller, darker and much longer-lived than the rest, and Beaujolais-Villages is best within two years. Grand cru Burgundy typically needs five to seven."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-beaujolais",
+    "cmp-wiki-burgundy"
+   ]
   },
   {
    "a": "italy/etna",
    "b": "france/burgundy",
    "link": "Nerello Mascalese and Pinot Noir",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Nerello Mascalese and Pinot Noir",
+     "text": "Wine Folly calls Nerello Mascalese, Etna's red grape, reminiscent of Pinot Noir: light to medium-bodied, with high acidity. It has a little more tannin than Pinot, and Wine Folly gives both 10 years or more in the cellar. Etna Rosso must be at least 80% Nerello Mascalese."
+    },
+    {
+     "head": "Place",
+     "text": "Etna's vines grow on volcanic, mineral-rich soil between 450 and 1,100 meters, where the height brings big swings between day and night, and summer rain almost never comes. Burgundy grows on clay and limestone, with cold winters and hot summers."
+    }
+   ],
+   "sources": [
+    "cmp-winefolly-nerello",
+    "cmp-winefolly-pinot-noir",
+    "cmp-wiki-etna",
+    "cmp-wiki-burgundy"
+   ]
   },
   {
    "a": "france/meursault",
    "b": "france/puligny-montrachet",
    "link": "Chardonnay",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Chardonnay",
+     "text": "Meursault usually shows its oak and goes through malolactic fermentation, which makes it rounder and creamier, with vanilla, coconut and dill from the barrel. Puligny-Montrachet tends to be very mineral, with more restrained oak, and is described as elegant rather than fruit-driven."
+    },
+    {
+     "head": "Grand crus",
+     "text": "Puligny has four grand cru vineyards, including its share of Montrachet. Meursault, one of the most famous names in Burgundy, has none."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-meursault",
+    "cmp-wiki-puligny",
+    "cmp-wiki-cote-de-beaune"
+   ]
   },
   {
    "a": "france/cote-de-nuits",
    "b": "france/cote-de-beaune",
    "link": "Mostly red and mostly white",
    "tag": "sounds-alike",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Red and white",
+     "text": "The Côte de Nuits holds 24 of Burgundy's 25 red grand crus. The Côte de Beaune holds all but one of the white grand crus, including Corton-Charlemagne and the Montrachets, and its only red grand crus are the Cortons."
+    },
+    {
+     "head": "Style",
+     "text": "In the Côte de Nuits, Pinot Noir goes on marl and Chardonnay on limestone. Heading south into the Côte de Beaune the reds get lighter and more perfumed, though Pommard makes some of the most tannic, full-bodied wines on the Côte d'Or."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-cote-de-nuits",
+    "cmp-wiki-cote-de-beaune",
+    "cmp-wiki-burgundy"
+   ]
   },
   {
    "a": "france/pauillac",
    "b": "france/margaux",
    "link": "Cabernet-led blends",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Cabernet Sauvignon",
+     "text": "Cabernet Sauvignon leads in both. Pauillac's style has been called stark, with blackcurrant, pencil shavings and cigar box. Margaux is known for its perfume, also with blackcurrant, from the Médoc's thinnest, most gravelly soil, where vines ripen 7 to 10 days ahead of the rest."
+    },
+    {
+     "head": "Châteaux",
+     "text": "Pauillac has three of Bordeaux's five first growths: Latour, Lafite Rothschild and Mouton Rothschild. Margaux has one, Château Margaux, and 21 classed growths, more than any other commune."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-pauillac",
+    "cmp-wiki-margaux"
+   ]
   },
   {
    "a": "italy/tuscany",
    "b": "italy/piedmont",
    "link": "Sangiovese and Nebbiolo",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Sangiovese and Nebbiolo",
+     "text": "Sangiovese is Tuscany's main grape, and Piedmont's great reds are Nebbiolo. Chianti Classico is medium-bodied, with firm, dry tannins and a cherry aroma. Barolo is a big, tannic Nebbiolo, and once it has aged it can feel like velvet."
+    },
+    {
+     "head": "Climate and blending",
+     "text": "Tuscany is warm and Mediterranean. Piedmont has colder continental winters and less rain, in the Alps' rain shadow, and fog helps its grapes ripen. Piedmont makes single-grape wines with very little blending, while Tuscany has its Super Tuscans, blends using grapes from outside the region."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-tuscany",
+    "cmp-wiki-piedmont"
+   ]
   },
   {
    "a": "italy/amarone-della-valpolicella",
    "b": "italy/barolo",
    "link": "A dried-grape blend and Nebbiolo",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Dried grapes and Nebbiolo",
+     "text": "Amarone is made mostly from Corvina grapes dried for about 120 days, which lose 35 to 45% of their weight. The result is a very ripe, raisiny, full-bodied dry red with very little acid, often above 15% alcohol. Barolo is Nebbiolo, light in color, with naturally high acidity and aromas of tar and roses."
+    },
+    {
+     "head": "Aging",
+     "text": "Amarone ages at least two years in wood and is rarely released until five years after the vintage. Barolo ages at least three years, 18 months in wood, and can take more than 10 years to soften."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-amarone",
+    "cmp-wiki-barolo"
+   ]
   },
   {
    "a": "italy/bolgheri",
    "b": "france/bordeaux",
    "link": "Bordeaux grapes",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Bordeaux grapes in Tuscany",
+     "text": "Bolgheri grows Bordeaux's grapes on the Tuscan coast: Cabernet Sauvignon, Merlot, Cabernet Franc and Petit Verdot, which thrive in its sunny, dry, breezy spot. Before 1974 it made ordinary whites and rosés. That year a six-year-old Sassicaia beat a line-up of Bordeaux in a tasting."
+    },
+    {
+     "head": "Blends",
+     "text": "Bolgheri Rosso may hold 10 to 80% Cabernet Sauvignon and up to 80% Merlot, and ages 24 months. Sassicaia goes up to 85% Cabernet Sauvignon. A top Left Bank Bordeaux is typically 70% Cabernet Sauvignon, grown in an oceanic, humid climate."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-bolgheri",
+    "cmp-wiki-bordeaux"
+   ]
   },
   {
    "a": "united-states/willamette-valley",
    "b": "united-states/russian-river-valley",
    "link": "Pinot Noir",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Climate",
+     "text": "Fog shapes the Russian River Valley. It rolls in through the Petaluma Gap, burns off by day, and drops night temperatures 35 to 40°F, which slows ripening. The Willamette Valley is cool and moist, with dry, warm summers that pass 90°F on only 5 to 15 days a year, and most growers there don't irrigate."
+    },
+    {
+     "head": "Pinot Noir",
+     "text": "Willamette is known worldwide for its Pinot Noir. In the Russian River Valley, Chardonnay outnumbers Pinot, 42% to 29% of the vines. Classic Russian River Pinot is pale, lively and delicate, with cherry, berry and earthy mushroom notes, though some producers have made it heavier, almost like Syrah."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-russian-river",
+    "cmp-wiki-willamette"
+   ]
   },
   {
    "a": "france/cote-rotie",
    "b": "france/hermitage",
    "link": "Syrah",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Syrah",
+     "text": "Both are Northern Rhône Syrah from steep slopes. Côte-Rôtie may add up to 20% Viognier, a white grape fermented with the Syrah, though many are pure Syrah; the pairing gives meaty and floral aromas, green olive, raspberry, violet and bacon. Hermitage may add up to 15% Marsanne or Roussanne but mostly uses Syrah alone, and it is earthy, with leather, red berries and cocoa."
+    },
+    {
+     "head": "Slopes and aging",
+     "text": "Côte-Rôtie's vines climb slopes of nearly 60°, on schist and granite. Hermitage is a steep granite hill facing the afternoon sun. Côte-Rôtie is meant to be drunk 5 to 6 years after the vintage, and the best last 10 to 15; Hermitage is often cellared up to 40 years."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-cote-rotie",
+    "cmp-wiki-hermitage"
+   ]
   },
   {
    "a": "france/chateauneuf-du-pape",
    "b": "france/gigondas",
    "link": "Grenache blends",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Grenache blends",
+     "text": "Gigondas has been called Châteauneuf-du-Pape's little brother. Châteauneuf allows 18 grape varieties in any proportion, but most of its reds are Grenache-led blends, and Grenache is 72% of its vines. Gigondas red must include at least 15% Syrah or Mourvèdre."
+    },
+    {
+     "head": "Style",
+     "text": "Châteauneuf reds are earthy and gamey, with hints of tar, leather and dried herbs, tough and tannic when young, and usually 14 to 15.5% alcohol. Gigondas is known for power rather than elegance, some of its slopes are warmer than Châteauneuf's, and its best wines keep 10 years or more."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-chateauneuf",
+    "cmp-wiki-gigondas"
+   ]
   },
   {
    "a": "germany/mosel",
    "b": "france/alsace",
    "link": "Riesling",
    "tag": "sounds-alike",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Riesling",
+     "text": "Mosel Riesling is often light, low in alcohol, crisp and high in acidity, and the region has a long history of sweeter wine; its growers now push dry Trocken styles. Alsace was traditionally all dry and makes some of the world's most noted dry Rieslings, though some producers now leave a little sugar. Alsace wines tend to be higher in alcohol and slightly lower in sugar than their German counterparts."
+    },
+    {
+     "head": "Other grapes",
+     "text": "Riesling is about 60% of the Mosel's vines. In Alsace it is just over a fifth, alongside Gewürztraminer, Pinot Gris and others, and Alsace wines rarely taste of oak."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-mosel",
+    "cmp-wiki-alsace"
+   ]
   },
   {
    "a": "united-states/columbia-valley",
    "b": "united-states/napa-valley",
    "link": "Cabernet Sauvignon",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Place",
+     "text": "The Columbia Valley sits around the 46th parallel, in line with France's famous wine regions, and gets about two more hours of daylight than California. It gets 6 to 8 inches of rain a year, and growers irrigate, controlling the water closely. Napa gets 24 to 55 inches, and summer fog until mid-morning."
+    },
+    {
+     "head": "Cabernet Sauvignon",
+     "text": "Columbia Valley wines are fruit-forward like California's yet keep some European balance and structure. The grapes hang a little longer than in California, which gives the tannins more time to mature, and warm days with cool nights hold acid and sugar in balance."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-columbia",
+    "cmp-wiki-napa"
+   ]
   },
   {
    "a": "south-africa/stellenbosch",
    "b": "france/bordeaux",
    "link": "Cabernet-led blends",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Reds and climate",
+     "text": "Stellenbosch is known for its reds, especially Cabernet Sauvignon, Merlot, Pinotage and Shiraz. False Bay tempers its climate, and its growing season averages about 20°C, just slightly warmer than Bordeaux's."
+    },
+    {
+     "head": "Soils and blends",
+     "text": "Its valleys near the rivers are sandy alluvial loam, and its hillsides near the mountains decomposed granite. Red Bordeaux is a blend, led by Cabernet Sauvignon on the Left Bank, where a top estate's wine is typically 70% Cabernet Sauvignon."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-south-africa",
+    "cmp-wiki-bordeaux"
+   ]
   },
   {
    "a": "united-states/finger-lakes",
    "b": "germany/mosel",
    "link": "Riesling",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Riesling",
+     "text": "Riesling is one of the Finger Lakes' most successful grapes, and the region is often compared to Germany's Rhine regions. Mosel Riesling is often light, lower in alcohol and high in acidity, grown on porous slate; the Finger Lakes grow on shaly, stony clay loam."
+    },
+    {
+     "head": "Cool places",
+     "text": "Both are cool and continental, and both lean on water. In the Finger Lakes, the deep lakes hold back bud-break until spring frost has passed and delay the first autumn frost. On the Mosel, the river reflects extra sun up onto the vines."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-finger-lakes",
+    "cmp-wiki-mosel"
+   ]
   },
   {
    "a": "spain/rioja",
    "b": "france/bordeaux",
    "link": "Barrel-aged reds",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Barrels",
+     "text": "Rioja learned barrel aging from Bordeaux. Bordeaux-influenced winemakers brought oak aging in the early 18th century, and in 1852 Murrieta made a fine wine in Rioja after learning the process in Bordeaux. Both age their wines in 225-liter oak barrels."
+    },
+    {
+     "head": "Grapes",
+     "text": "Rioja's reds are mostly Tempranillo, about 88% of its red vines, and vanilla from oak is the region's trademark. Bordeaux reds blend Cabernet Sauvignon, Merlot and Cabernet Franc, and basic Bordeaux sees little oak."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-rioja",
+    "cmp-wiki-bordeaux"
+   ]
   },
   {
    "a": "argentina/mendoza",
    "b": "united-states/napa-valley",
    "link": "Malbec and Cabernet",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Malbec",
+     "text": "Malbec is Mendoza's most important grape. Wine Folly describes it as full-bodied, with medium tannin, lower acidity and flavors of red plum, blackberry, vanilla, sweet tobacco and cocoa, and suggests trying it blended with Cabernet Sauvignon."
+    },
+    {
+     "head": "Place",
+     "text": "Mendoza is semi-arid high desert, where hail is the main worry and the best Malbec comes from high vineyards. Napa is Mediterranean, with hot, dry summers, cool, wet winters, morning fog, and volcanic soil in the north."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-mendoza",
+    "cmp-winefolly-malbec",
+    "cmp-wiki-napa"
+   ]
   },
   {
    "a": "france/chablis",
    "b": "france/meursault",
    "link": "Chardonnay",
    "tag": "sounds-alike",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Chardonnay",
+     "text": "Both are Chardonnay from Burgundy, made in opposite styles. Chablis is cool and sees much less oak than the Côte de Beaune; its racy, green-apple acidity and a flinty, mineral note from Kimmeridgian soil are its trademarks. Meursault usually shows oak and goes through malolactic fermentation, which makes it rounder and creamier, and Wine Folly says it leans toward buttered toast and hazelnut."
+    },
+    {
+     "head": "Aging",
+     "text": "Chablis makes some of the longest-lived Chardonnay. Meursault, for all its fame, has no grand cru vineyards."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-chablis",
+    "cmp-wiki-meursault",
+    "cmp-winefolly-chardonnay"
+   ]
   },
   {
    "a": "australia/margaret-river",
    "b": "france/bordeaux",
    "link": "Cabernet-led blends",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Climate",
+     "text": "Margaret River's climate is described as similar to Bordeaux in a dry vintage. It is the most maritime of Australia's major regions, with the smallest temperature range over the year, and its Forest Grove ironstone soils are some of the most acclaimed. Bordeaux's climate is oceanic."
+    },
+    {
+     "head": "Cabernet Sauvignon",
+     "text": "Cabernet Sauvignon is Margaret River's second-biggest grape by harvest, after Sauvignon Blanc. Bordeaux's Médoc reds are Cabernet-led, typically about 70% at the top estates, often with a good share of Merlot."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-margaret-river",
+    "cmp-wiki-bordeaux"
+   ]
   },
   {
    "a": "france/vouvray",
    "b": "france/savennieres",
    "link": "Chenin Blanc",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Chenin Blanc",
+     "text": "Both are Chenin Blanc with high acidity. Vouvray runs from dry to sweet and also makes sparkling wine, and the vintage decides which: cool years mean dry and sparkling wines, warm years sweet ones. Savennières is almost always dry, fuller-bodied than dry Vouvray, and can be austere when young."
+    },
+    {
+     "head": "Aging",
+     "text": "Dry Vouvray can age 15 to 20 years or more, while sparkling Vouvray is best within three. Savennières, from three schist hills, is long-lived too."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-vouvray",
+    "cmp-wiki-savennieres"
+   ]
   },
   {
    "a": "france/fleurie",
    "b": "france/morgon",
    "link": "Gamay",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Two crus",
+     "text": "Fleurie is medium-bodied, with a velvety texture and a fruity, floral bouquet, and in good vintages it wants at least four years. Morgon is the deepest-colored and richest cru, with apricot and peach. It turns earthy, can take on a Burgundian character, and grows silky after about five years, and the Côte du Py hillside makes its most powerful wines."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-beaujolais"
+   ]
   },
   {
    "a": "france/chinon",
    "b": "france/bourgueil",
    "link": "Cabernet Franc",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Cabernet Franc",
+     "text": "Both are mostly Cabernet Franc. Chinon may add up to 25% Cabernet Sauvignon and Bourgueil up to 10%. Chinon is usually light to medium-bodied: from stony terraces it is a young wine with blackcurrant and anise, and from steeper, rockier slopes it is more tannic. Bourgueil is floral and fruity, turns earthy with age, and its color follows the soil, dusky red from limestone and redcurrant from sand."
+    },
+    {
+     "head": "Aging",
+     "text": "Chinon keeps 10 years or more, and Bourgueil up to 20."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-chinon",
+    "cmp-wiki-bourgueil"
+   ]
   },
   {
    "a": "austria/wachau",
    "b": "germany/mosel",
    "link": "Riesling",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Riesling",
+     "text": "Both grow Riesling on steep slopes above a river: the Wachau on terraces above the Danube, alongside Grüner Veltliner, and the Mosel on porous slate. Mosel Riesling is often light, lower in alcohol, crisp and high in acidity, and its growers now push dry Trocken wines."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-wachau",
+    "cmp-wiki-mosel"
+   ]
   },
   {
    "a": "france/hermitage",
    "b": "australia/barossa-valley",
    "link": "Syrah and Shiraz",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Syrah and Shiraz",
+     "text": "Syrah is called Shiraz in Australia, and Wine Folly sums up the split: French and Italian Syrah tend toward more acidity and earthy aromas, Australian toward fruit and spice. Hermitage is earthy, with leather, red berries and cocoa, and is often cellared up to 40 years. Barossa Shiraz is full-bodied, with rich chocolate and spice, from grapes so ripe that winemakers often add acid, and American oak adds dill and coconut."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-hermitage",
+    "cmp-wiki-barossa",
+    "cmp-winefolly-syrah"
+   ]
   }
  ]
 }

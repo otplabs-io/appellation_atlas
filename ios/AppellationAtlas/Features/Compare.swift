@@ -91,21 +91,24 @@ enum CompareText {
         let A = fa["name"].string ?? "", B = fb["name"].string ?? ""
         let ca = fa["climate"], cb = fb["climate"]
         var s: [String] = []
+        let wa = fa["winkler"][0].string, wb = fb["winkler"][0].string
+        let wk: String? = { guard let wa, let wb else { return nil }; return wa == wb ? "both are Winkler region \(wa)" : "\(A) is Winkler region \(wa) to \(B)'s \(wb)" }()
         if let ga = ca["gst"].double, let gb = cb["gst"].double {
-            let ta = Units.tN(ga), tb = Units.tN(gb)
-            s.append(ta == tb ? "Both have a growing season that averages \(Units.deg(ga))."
-                     : "\(A)'s growing season averages \(Units.deg(ga)), \(abs(ta - tb))\(Units.tU) \(ta > tb ? "warmer" : "cooler") than \(B)'s \(Units.deg(gb)).")
-        }
-        if let wa = fa["winkler"][0].string, let wb = fb["winkler"][0].string {
-            s.append(wa == wb ? "Both are Winkler region \(wa)." : "\(A) is Winkler region \(wa) and \(B) is region \(wb).")
+            let ta = Units.tN(ga), tb = Units.tN(gb), sameW = wa == wb
+            var t = ta == tb ? "Their growing seasons average the same \(Units.deg(ga))"
+                : "\(A)'s growing season averages \(Units.deg(ga)), \(abs(ta - tb))\(Units.tU) \(ta > tb ? "warmer" : "cooler") than \(B)'s \(Units.deg(gb))"
+            if let wk { t += ((ta == tb) == sameW ? ", and " : ", though ") + wk }
+            s.append(t + ".")
+        } else if let wk {
+            s.append(wk.prefix(1).uppercased() + wk.dropFirst() + ".")
         }
         if let da = dry(ca["koppen"].string), let db = dry(cb["koppen"].string) {
-            s.append(da == db ? (da == "no dry season" ? "Neither has a dry season." : "Both have \(da).") : "\(A) has \(da), while \(B) has \(db).")
+            s.append(da == db ? (da == "no dry season" ? "Neither has a dry season." : "Both have \(da).") : "\(A) has \(da); \(B) has \(db).")
         }
         if let la = lead(fa), let lb = lead(fb) {
             let ab: (Lead) -> String = { $0.about ? "about " : "" }
-            s.append(la.g == lb.g ? "\(la.g) leads in both: \(ab(la))\(la.p)% of the vines in \(A) (\(la.y)) and \(ab(lb))\(lb.p)% in \(B) (\(lb.y))."
-                     : "The leading grape in \(A) is \(la.g), \(ab(la))\(la.p)% of the vines (\(la.y)). In \(B) it is \(lb.g), \(ab(lb))\(lb.p)% (\(lb.y)).")
+            s.append(la.g == lb.g ? "\(la.g) leads in both, at \(ab(la))\(la.p)% of the vines in \(A) (\(la.y)) and \(ab(lb))\(lb.p)% in \(B) (\(lb.y))."
+                     : "\(A)'s most planted grape is \(la.g), \(ab(la))\(la.p)% of the vines in \(la.y); \(B)'s is \(lb.g), \(ab(lb))\(lb.p)% in \(lb.y).")
         }
         if let ea = fa["terrain"]["elev"][1].double, let eb = fb["terrain"]["elev"][1].double {
             s.append("The land sits at about \(Units.elev(ea)) in \(A) and \(Units.elev(eb)) in \(B).")
@@ -227,7 +230,7 @@ struct ComparePage: View {
         let box: Double = width == .regular ? 220 : 150
         shapes(a, fa, b, fb, box)
         if p?["tag"].string == "different-grapes" {
-            Text("\(atlas.name(a)) and \(atlas.name(b)) are made from different grapes, so this compares the wines typical of each, not one grape in two places.")
+            Text("\(atlas.name(a)) and \(atlas.name(b)) are made from different grapes, so this page compares the typical wine of each.")
                 .font(.atlasBody).foregroundStyle(Palette.ink).padding(14)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background(Palette.goldTint, in: RoundedRectangle(cornerRadius: 14))
@@ -413,7 +416,7 @@ struct PairsList: View {
                 LazyVGrid(columns: cols, spacing: 6) {
                     ForEach(Array(atlas.pairs().enumerated()), id: \.offset) { i, p in row(i, p) }
                 }
-                Text("Each pair is drawn to one scale, so you can see how their sizes compare, unless marked not to scale.")
+                Text("Each pair is drawn to one scale so you can compare their sizes, except where marked not to scale.")
                     .font(.atlasNote).foregroundStyle(Palette.soft).padding(.top, 6)
             }
             .padding(20)

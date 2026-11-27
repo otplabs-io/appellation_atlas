@@ -669,15 +669,16 @@ function lead(f){const pl=f.planted; if(!pl||!pl.grapes||!pl.grapes.length||!['o
 // how the places compare, in sentences built only from the Atlas's own figures (Compare.placesText in the app)
 function placesText(fa,fb){
   const A=fa.name,B=fb.name,ca=fa.climate,cb=fb.climate,s=[];
+  const wa=fa.winkler&&fa.winkler[0],wb=fb.winkler&&fb.winkler[0], wk=wa&&wb?(wa===wb?`both are Winkler region ${wa}`:`${A} is Winkler region ${wa} to ${B}'s ${wb}`):'';
   if(ca&&cb&&ca.gst!=null&&cb.gst!=null){const ta=tN(ca.gst),tb=tN(cb.gst);
-    s.push(ta===tb?`Both have a growing season that averages ${deg(ca.gst)}.`:`${A}'s growing season averages ${deg(ca.gst)}, ${Math.abs(ta-tb)}${tU()} ${ta>tb?'warmer':'cooler'} than ${B}'s ${deg(cb.gst)}.`);}
-  const wa=fa.winkler&&fa.winkler[0],wb=fb.winkler&&fb.winkler[0];
-  if(wa&&wb) s.push(wa===wb?`Both are Winkler region ${wa}.`:`${A} is Winkler region ${wa} and ${B} is region ${wb}.`);
+    s.push((ta===tb?`Their growing seasons average the same ${deg(ca.gst)}`:`${A}'s growing season averages ${deg(ca.gst)}, ${Math.abs(ta-tb)}${tU()} ${ta>tb?'warmer':'cooler'} than ${B}'s ${deg(cb.gst)}`)
+      +(wk?(ta===tb?(wa===wb?`, and ${wk}`:`, though ${wk}`):(wa===wb?`, though ${wk}`:`, and ${wk}`)):'')+'.');}
+  else if(wk) s.push(wk[0].toUpperCase()+wk.slice(1)+'.');
   const da=dryOf(ca&&ca.koppen),db=dryOf(cb&&cb.koppen);
-  if(da&&db) s.push(da===db?(da==='no dry season'?'Neither has a dry season.':`Both have ${da}.`):`${A} has ${da}, while ${B} has ${db}.`);
+  if(da&&db) s.push(da===db?(da==='no dry season'?'Neither has a dry season.':`Both have ${da}.`):`${A} has ${da}; ${B} has ${db}.`);
   const la=lead(fa),lb=lead(fb);
-  if(la&&lb) s.push(la.g===lb.g?`${la.g} leads in both: ${la.about?'about ':''}${la.p}% of the vines in ${A} (${la.y}) and ${lb.about?'about ':''}${lb.p}% in ${B} (${lb.y}).`
-    :`The leading grape in ${A} is ${la.g}, ${la.about?'about ':''}${la.p}% of the vines (${la.y}). In ${B} it is ${lb.g}, ${lb.about?'about ':''}${lb.p}% (${lb.y}).`);
+  if(la&&lb) s.push(la.g===lb.g?`${la.g} leads in both, at ${la.about?'about ':''}${la.p}% of the vines in ${A} (${la.y}) and ${lb.about?'about ':''}${lb.p}% in ${B} (${lb.y}).`
+    :`${A}'s most planted grape is ${la.g}, ${la.about?'about ':''}${la.p}% of the vines in ${la.y}; ${B}'s is ${lb.g}, ${lb.about?'about ':''}${lb.p}% in ${lb.y}.`);
   const ea=fa.terrain&&fa.terrain.elev,eb=fb.terrain&&fb.terrain.elev;
   if(ea&&eb) s.push(`The land sits at about ${elev(ea[1])} in ${A} and ${elev(eb[1])} in ${B}.`);
   return s.join(' ');
@@ -704,7 +705,7 @@ async function renderCompare(){
   const col=(id,f,svg)=>`<div class="ccol"><div class="cart" style="height:${Math.ceil(box)}px">${svg||'<span class="ts-caption">No outline</span>'}</div><a class="cname ts-section_head" href="${link(id)}"><i class="sw ${shade(id)}"></i>${nm(id)}</a><span class="ts-caption">${sub(f,id)}</span>${f.outline&&f.outline.far?'<span class="ts-caption">Far-off islands and territories not drawn</span>':''}</div>`;
   const art=`<section class="row"><div class="ccard"><div class="cgrid">${col(a,fa,sh&&sh.a)}${col(b,fb,sh&&sh.b)}</div>`
     +(sh?`<p class="ts-caption cnote">${sh.loose?`Too different in size to draw to one scale. ${nm(Math.max(fa.outline.w,fa.outline.h)>Math.max(fb.outline.w,fb.outline.h)?a:b)} is about ${fmt(sh.times)} times as long.`:`${scaleBar(sh.pxkm,box)} Both drawn to the same scale.`}</p>`:'')+`</div></section>`;
-  const diff=p&&p.tag==='different-grapes'?`<section class="row"><p class="ts-body cdiff">${nm(a)} and ${nm(b)} are made from different grapes, so this compares the wines typical of each, not one grape in two places.</p></section>`:'';
+  const diff=p&&p.tag==='different-grapes'?`<section class="row"><p class="ts-body cdiff">${nm(a)} and ${nm(b)} are made from different grapes, so this page compares the typical wine of each.</p></section>`:'';
   const pt=placesText(fa,fb);
   const ca=fa.climate,cb=fb.climate;
   const mon=(f,c)=>c&&c.tavg?`<div><p class="ts-caption sub">${esc(f.name)} · ${deg(c.gst)} season</p>${months(c.tavg.map(toF),'temperature','t',c.lat<0,true,c.tavg.map(tN))}</div>`:'';
@@ -726,7 +727,7 @@ async function renderPairs(){
     return `<li><a href="${cmpLink(p.a,p.b)}"><span class="pn ts-section_head">${i+1}</span><span class="pa">${sh?sh.a+sh.b:''}</span><span class="pt"><b class="ts-body">${esc(PL[p.a]?.[0]||p.a)} · ${esc(PL[p.b]?.[0]||p.b)}</b><span class="ts-caption">${esc(p.link)}</span>`
       +`<span class="ptags">${p.tag?`<i class="ptag ${p.tag}">${tag[p.tag]}</i>`:''}${sh&&sh.loose?'<i class="ptag loose">Not to scale</i>':''}</span></span></a></li>`;};
   $('#info').innerHTML=`<section class="row cmp-head"><p class="crumbs ts-place_subtitle"><a href="#/">The world</a> › Often compared</p><h2 class="ts-sheet_title">Often compared</h2><p class="ts-body">The pairs people set side by side most, among benchmark regions.</p></section>`
-    +`<section class="row"><ol class="pairs">${PAIRS.map(li).join('')}</ol><p class="ts-caption sub">Each pair is drawn to one scale, so you can see how their sizes compare, unless marked not to scale.</p></section>`+FEEDBACK('Often compared','world');
+    +`<section class="row"><ol class="pairs">${PAIRS.map(li).join('')}</ol><p class="ts-caption sub">Each pair is drawn to one scale so you can compare their sizes, except where marked not to scale.</p></section>`+FEEDBACK('Often compared','world');
 }
 // ---------- search
 function wireSearch(){
