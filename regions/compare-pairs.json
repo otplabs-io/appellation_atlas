@@ -35,13 +35,13 @@
     },
     {
      "head": "Taste and aging",
-     "text": "Wine Folly's tasting notes for Bordeaux and for the North Coast, which includes Napa, share black currant, tobacco and pencil lead. It calls Bordeaux Cabernet some of the most savory and age-worthy. Left Bank reds are concentrated, tannic and long-lived, and most are meant for the cellar."
+     "text": "Wine Folly's side-by-side tasting suggests Bordeaux blends at about 12.5% alcohol, often surprisingly light, with earthy notes, and Napa ones at 14.5% or more, with much firmer tannins. Bordeaux's top Left Bank reds are concentrated and long-lived, and most are meant for the cellar."
     }
    ],
    "sources": [
     "cmp-wiki-bordeaux",
     "cmp-wiki-napa",
-    "cmp-winefolly-cabernet"
+    "cmp-winefolly-napa-bordeaux"
    ]
   },
   {
@@ -68,16 +68,17 @@
    "wines": [
     {
      "head": "Tempranillo",
-     "text": "Tempranillo leads in both. Ribera del Duero's hot, short growing season gives a richer style, with black cherry, blackberry and dried fig. Rioja is known for vanilla from oak, with cherry, dill and cigar box, and its wines are graded partly by how long they spend in oak."
+     "text": "Tempranillo leads in both. In Ribera del Duero it is called Tinto Fino, and the hot, short growing season gives a richer style, with black cherry, blackberry and dried fig. Rioja is known for vanilla from oak, with cherry, dill and cigar box."
     },
     {
-     "head": "Aging in Rioja",
-     "text": "A red Rioja Crianza spends at least a year in barrel. A Reserva ages at least three years, one of them in oak. A Gran Reserva spends at least two years in barrel and three in bottle."
+     "head": "Aging rules",
+     "text": "Both use the same aging terms and rules. A red Crianza ages at least two years, one of them in oak. A Reserva ages at least three years, one in oak. A Gran Reserva ages five years before release, two of them in oak."
     }
    ],
    "sources": [
     "cmp-winefolly-tempranillo",
-    "cmp-wiki-rioja"
+    "cmp-wiki-rioja",
+    "cmp-wiki-ribera"
    ]
   },
   {
@@ -128,16 +129,17 @@
    "wines": [
     {
      "head": "Made two ways",
-     "text": "Cava must be made by the traditional method, with its second fermentation in the bottle, mostly from Macabeo, Parellada and Xarel·lo. Most Prosecco is made from Glera, with its second fermentation in steel tanks."
+     "text": "Cava is made like Champagne, with its second fermentation in the bottle, mostly from Macabeo, Parellada and Xarel·lo, and it spends at least 9 months on its lees. Most Prosecco is made from Glera, with its second fermentation in large steel tanks, and it needs no long aging."
     },
     {
      "head": "Style",
-     "text": "Prosecco is aromatic and crisp, with apple, pear and white peach, and Extra Dry is its most common style. Cava runs from bone-dry brut nature to sweet dulce, and about 95% of it comes from Penedès."
+     "text": "Fermenting in the bottle gives Cava fine, lasting bubbles. Prosecco is fresh and fruit-driven, with apple, pear and white peach, and Extra Dry is its most common style."
     }
    ],
    "sources": [
+    "cmp-wiki-cava",
     "cmp-wiki-prosecco",
-    "cmp-wiki-cava"
+    "cmp-vinissimus-cava"
    ]
   },
   {
@@ -152,12 +154,13 @@
     },
     {
      "head": "Rules",
-     "text": "Champagne must age at least 15 months, and vintage Champagne at least three years. Cava may no longer be sold as Spanish champagne."
+     "text": "Champagne must age at least 15 months, and vintage Champagne at least three years. Cava spends at least 9 months on its lees, and it may no longer be sold as Spanish champagne."
     }
    ],
    "sources": [
     "cmp-wiki-champagne",
-    "cmp-wiki-cava"
+    "cmp-wiki-cava",
+    "cmp-vinissimus-cava"
    ]
   },
   {

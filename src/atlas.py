@@ -407,7 +407,6 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'cmp-owb-chardonnay':dict(name='Oregon Wine Board, Oregon Chardonnay',url='https://www.oregonwine.org/discover/oregon-chardonnay/'),
      'cmp-wiki-bordeaux':dict(name='Wikipedia, Bordeaux wine',url='https://en.wikipedia.org/wiki/Bordeaux_wine'),
      'cmp-wiki-napa':dict(name='Wikipedia, Napa Valley AVA',url='https://en.wikipedia.org/wiki/Napa_Valley_AVA'),
-     'cmp-winefolly-cabernet':dict(name='Wine Folly, Cabernet Sauvignon',url='https://winefolly.com/grapes/cabernet-sauvignon/'),
      'cmp-wiki-sancerre':dict(name='Wikipedia, Sancerre (wine)',url='https://en.wikipedia.org/wiki/Sancerre_AOC'),
      'cmp-winefolly-sauvignon-blanc':dict(name='Wine Folly, Sauvignon Blanc',url='https://winefolly.com/grapes/sauvignon-blanc/'),
      'cmp-wiki-rioja':dict(name='Wikipedia, Rioja DOCa',url='https://en.wikipedia.org/wiki/Rioja_(wine)'),
@@ -418,6 +417,9 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'cmp-wiki-cava':dict(name='Wikipedia, Cava (Spanish wine)',url='https://en.wikipedia.org/wiki/Cava_(Spanish_wine)'),
      'cmp-wiki-sherry':dict(name='Wikipedia, Sherry',url='https://en.wikipedia.org/wiki/Sherry'),
      'cmp-wiki-port':dict(name='Wikipedia, Port wine',url='https://en.wikipedia.org/wiki/Port_wine'),
+     'cmp-wiki-ribera':dict(name='Wikipedia, Ribera del Duero',url='https://en.wikipedia.org/wiki/Ribera_del_Duero'),
+     'cmp-winefolly-napa-bordeaux':dict(name='Wine Folly, Comparing Napa vs Bordeaux Cabernet Sauvignon',url='https://winefolly.com/episode/napa-vs-bordeaux-cabernet-sauvignon-video/'),
+     'cmp-vinissimus-cava':dict(name='Vinissimus, Cava, Champagne and Prosecco: differences and how to choose',url='https://www.vinissimus.com/en/content/cava-vs-champagne/'),
      'cmp-wiki-brunello':dict(name='Wikipedia, Brunello di Montalcino',url='https://en.wikipedia.org/wiki/Brunello_di_Montalcino'),
      'cmp-guildsomm-willamette-chardonnay':dict(name="GuildSomm, Neal Hulkower, Willamette Valley's Way with Chardonnay",url='https://guildsomm.com/public_content/features/articles/b/neal-hulkower/posts/willamette-valley-chardonnay'),
      'sawis':dict(name='SAWIS, Production areas defined in terms of the Wine of Origin Scheme, June 2024 (regions, districts and wards)',url='https://www.sawis.co.za/cert/download/Production_areas_-_June_2024.pdf'),}
