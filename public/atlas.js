@@ -701,7 +701,7 @@ async function renderCompare(){
   $('#q').placeholder='Search a country, region or appellation';
   const p=pairOf(a,b), box=Math.min(170,(innerWidth-80)/2), sh=shapes(a,fa.outline,b,fb.outline,box,true);
   const sub=(f,id)=>esc([PL[id]?.[4]&&PL[id][4]!==f.name?PL[id][4]:'',latOf(f.climate)].filter(Boolean).join(' · '));
-  const col=(id,f,svg)=>`<div class="ccol"><div class="cart" style="height:${Math.ceil(box)}px">${svg||'<span class="ts-caption">No outline</span>'}</div><a class="cname ts-section_head" href="${link(id)}"><i class="sw ${shade(id)}"></i>${nm(id)}</a><span class="ts-caption">${sub(f,id)}</span></div>`;
+  const col=(id,f,svg)=>`<div class="ccol"><div class="cart" style="height:${Math.ceil(box)}px">${svg||'<span class="ts-caption">No outline</span>'}</div><a class="cname ts-section_head" href="${link(id)}"><i class="sw ${shade(id)}"></i>${nm(id)}</a><span class="ts-caption">${sub(f,id)}</span>${f.outline&&f.outline.far?'<span class="ts-caption">Far-off islands and territories not drawn</span>':''}</div>`;
   const art=`<section class="row"><div class="ccard"><div class="cgrid">${col(a,fa,sh&&sh.a)}${col(b,fb,sh&&sh.b)}</div>`
     +(sh?`<p class="ts-caption cnote">${sh.loose?`Too different in size to draw to one scale. ${nm(Math.max(fa.outline.w,fa.outline.h)>Math.max(fb.outline.w,fb.outline.h)?a:b)} is about ${fmt(sh.times)} times as long.`:`${scaleBar(sh.pxkm,box)} Both drawn to the same scale.`}</p>`:'')+`</div></section>`;
   const diff=p&&p.tag==='different-grapes'?`<section class="row"><p class="ts-body cdiff">${nm(a)} and ${nm(b)} are made from different grapes, so this compares the wines typical of each, not one grape in two places.</p></section>`:'';

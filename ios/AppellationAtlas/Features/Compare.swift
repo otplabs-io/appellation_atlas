@@ -313,6 +313,7 @@ struct ComparePage: View {
             let country = atlas.places[id]?.country ?? ""
             Text([country == atlas.name(id) ? "" : country, CompareText.lat(f["climate"])].filter { !$0.isEmpty }.joined(separator: " · "))
                 .font(.atlasNote).foregroundStyle(Palette.soft)
+            if f["outline"]["far"].string != nil { Text("Far-off islands and territories not drawn").font(.atlasNote).foregroundStyle(Palette.soft) }   // a country's overseas parts (src/outlines.py)
         }
         .frame(maxWidth: .infinity)
     }

@@ -420,6 +420,21 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'cmp-wiki-ribera':dict(name='Wikipedia, Ribera del Duero',url='https://en.wikipedia.org/wiki/Ribera_del_Duero'),
      'cmp-winefolly-napa-bordeaux':dict(name='Wine Folly, Comparing Napa vs Bordeaux Cabernet Sauvignon',url='https://winefolly.com/episode/napa-vs-bordeaux-cabernet-sauvignon-video/'),
      'cmp-vinissimus-cava':dict(name='Vinissimus, Cava, Champagne and Prosecco: differences and how to choose',url='https://www.vinissimus.com/en/content/cava-vs-champagne/'),
+     'cmp-wiki-sonoma':dict(name='Wikipedia, Sonoma County wine',url='https://en.wikipedia.org/wiki/Sonoma_County_wine'),
+     'cmp-wiki-pouilly':dict(name='Wikipedia, Pouilly-Fumé',url='https://en.wikipedia.org/wiki/Pouilly-Fum%C3%A9'),
+     'cmp-wiki-chianti':dict(name='Wikipedia, Chianti',url='https://en.wikipedia.org/wiki/Chianti'),
+     'cmp-wiki-sauternes':dict(name='Wikipedia, Sauternes wine',url='https://en.wikipedia.org/wiki/Sauternes_wine'),
+     'cmp-wiki-tokaji':dict(name='Wikipedia, Tokaji',url='https://en.wikipedia.org/wiki/Tokaji'),
+     'cmp-wiki-barossa':dict(name='Wikipedia, Barossa Valley (wine)',url='https://en.wikipedia.org/wiki/Barossa_Valley_(wine)'),
+     'cmp-wiki-mclaren':dict(name='Wikipedia, McLaren Vale wine region',url='https://en.wikipedia.org/wiki/McLaren_Vale_wine_region'),
+     'cmp-wiki-pomerol':dict(name='Wikipedia, Pomerol',url='https://en.wikipedia.org/wiki/Pomerol'),
+     'cmp-wiki-saint-emilion':dict(name='Wikipedia, Saint-Émilion wine',url='https://en.wikipedia.org/wiki/Saint-%C3%89milion_wine'),
+     'cmp-wiki-rias-baixas':dict(name='Wikipedia, Rías Baixas (DO)',url='https://en.wikipedia.org/wiki/R%C3%ADas_Baixas_(DO)'),
+     'cmp-wiki-vinho-verde':dict(name='Wikipedia, Vinho Verde',url='https://en.wikipedia.org/wiki/Vinho_Verde'),
+     'cmp-wiki-paso':dict(name='Wikipedia, Paso Robles AVA',url='https://en.wikipedia.org/wiki/Paso_Robles_AVA'),
+     'cmp-wiki-rhone':dict(name='Wikipedia, Rhône wine',url='https://en.wikipedia.org/wiki/Rh%C3%B4ne_wine'),
+     'cmp-winefolly-merlot':dict(name='Wine Folly, Merlot',url='https://winefolly.com/grapes/merlot/'),
+     'cmp-winefolly-albarino':dict(name='Wine Folly, Albariño',url='https://winefolly.com/grapes/albarino/'),
      'cmp-wiki-brunello':dict(name='Wikipedia, Brunello di Montalcino',url='https://en.wikipedia.org/wiki/Brunello_di_Montalcino'),
      'cmp-guildsomm-willamette-chardonnay':dict(name="GuildSomm, Neal Hulkower, Willamette Valley's Way with Chardonnay",url='https://guildsomm.com/public_content/features/articles/b/neal-hulkower/posts/willamette-valley-chardonnay'),
      'sawis':dict(name='SAWIS, Production areas defined in terms of the Wine of Origin Scheme, June 2024 (regions, districts and wards)',url='https://www.sawis.co.za/cert/download/Production_areas_-_June_2024.pdf'),}
@@ -1273,7 +1288,9 @@ def compare_pairs(dest,facts_dir):
         bad+=[f'#{i}: source {k} is not in SRC' for k in p['sources'] if k not in SRC]
         bad+=[f'#{i}: an em dash in its text' for w in p['wines'] if '\u2014' in w['text']+w['head']]
         ol=lambda x:(jl(os.path.join(facts_dir,x.replace('/','__')+'.json')).get('outline') if os.path.exists(os.path.join(facts_dir,x.replace('/','__')+'.json')) else None)
-        out.append(dict(a=p['a'],b=p['b'],link=p['link'],tag=p['tag'],wines=p['wines'],sources=[dict(name=SRC[k]['name'],url=SRC[k]['url']) for k in p['sources'] if k in SRC],
+        import units
+        out.append(dict(a=p['a'],b=p['b'],link=p['link'],tag=p['tag'],wines=[dict(head=w['head'],text=units.mark(w['text'])) for w in p['wines']],   # figures with units follow the Units setting, as in place text
+sources=[dict(name=SRC[k]['name'],url=SRC[k]['url']) for k in p['sources'] if k in SRC],
                         oa=ol(p['a']),ob=ol(p['b'])))   # both outlines, so the list can draw every pair without loading 100 places
     seen=set()
     for i,p in enumerate(d['pairs'],1):

@@ -230,64 +230,158 @@
    "b": "united-states/sonoma-county",
    "link": "Next-door neighbors",
    "tag": "sounds-alike",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Size and spread",
+     "text": "Sonoma County is far bigger than the Napa Valley AVA, about 1.14 million acres against about 253,000 acres, and it makes far more wine. Its 19 AVAs reflect how varied it is: cool-climate grapes do well in some areas and warm-climate grapes in others. Within Napa, the open southern end is cooler and the closed northern end is often much warmer."
+    },
+    {
+     "head": "Grapes",
+     "text": "Sonoma's most planted grapes are Chardonnay, Cabernet Sauvignon and Pinot Noir, and it is also known for Merlot and Zinfandel. Napa's Chardonnay and Cabernet Sauvignon took the top places at the 1976 Paris tasting, and many Napa wines blend grapes from the valley floor and the hillsides."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-sonoma",
+    "cmp-wiki-napa"
+   ]
   },
   {
    "a": "france/sancerre",
    "b": "france/pouilly-fume",
    "link": "Sauvignon Blanc, across the Loire",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Sauvignon Blanc",
+     "text": "Both are Sauvignon Blanc with naturally high acidity, and only very experienced tasters can tell them apart blind. Sancerre tends to be fuller, with more pronounced aromas. Pouilly-Fumé is more perfumed and is known for a smoky bouquet."
+    },
+    {
+     "head": "Soils",
+     "text": "Sancerre's flint soils give its most aromatic and longest-lived wines, and its clay and limestone give more body. Pouilly-Fumé grows on Kimmeridgian marl, hard limestone and flinty clay."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-sancerre",
+    "cmp-wiki-pouilly"
+   ]
   },
   {
    "a": "france/left-bank",
    "b": "france/right-bank",
    "link": "Cabernet-led and Merlot-led",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Blends",
+     "text": "Left Bank reds are led by Cabernet Sauvignon: a top estate's blend is typically about 70% Cabernet Sauvignon, with Cabernet Franc and Merlot. Right Bank reds, around Libourne, turn that around, with about 70% Merlot."
+    },
+    {
+     "head": "Style",
+     "text": "Left Bank reds are concentrated, tannic and long-lived, and most are meant for the cellar. Right Bank reds often have great fruit concentration and softer tannins, and they age well too. Wine Folly ties Merlot's success on the Right Bank to its clay-rich soils."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-bordeaux",
+    "cmp-winefolly-merlot"
+   ]
   },
   {
    "a": "italy/chianti-classico",
    "b": "italy/brunello-di-montalcino",
    "link": "Sangiovese",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Sangiovese",
+     "text": "Brunello is 100% Sangiovese. Chianti Classico is mostly Sangiovese, and white grapes have not been allowed in it since 2006."
+    },
+    {
+     "head": "Style and aging",
+     "text": "Chianti Classico tends to be medium-bodied, with firm tannin, medium-high to high acidity and floral, cherry and light nutty notes. Brunello comes from one of the warmest, driest parts of Tuscany and has a fleshier texture, with blackberry, black cherry, chocolate, leather and violets. It spends two years in oak, is released 50 months after the harvest, and most need at least 10 years."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-chianti",
+    "cmp-wiki-brunello"
+   ]
   },
   {
    "a": "france/sauternes",
    "b": "hungary/tokaj",
    "link": "Sweet wines from noble rot",
    "tag": "different-grapes",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Noble rot",
+     "text": "Both are sweet wines from grapes with noble rot. Sauternes is made from Sémillon, Sauvignon Blanc and Muscadelle. Tokaji is mainly Furmint, with Hárslevelű."
+    },
+    {
+     "head": "How sweet",
+     "text": "For Tokaji Aszú, the rotted berries are picked one by one and trodden into a paste, and its sweetness runs from 3 to 6 puttonyos. Sauternes has no set level of sugar but must taste clearly sweet, with apricot, honey and peach and a nutty note. Both can last a very long time: Sauternes beyond 100 years, and Tokaji Eszencia 200 years or more."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-sauternes",
+    "cmp-wiki-tokaji"
+   ]
   },
   {
    "a": "australia/barossa-valley",
    "b": "australia/mclaren-vale",
    "link": "Shiraz",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Shiraz",
+     "text": "Shiraz leads in both, and it is about 60% of McLaren Vale's crush. Barossa Shiraz is full-bodied, with rich chocolate and spice, and Barossa grapes can get very ripe, with high sugar and low acid, so acid is often added. McLaren Vale Shiraz shows berry and spice with some dark chocolate and liquorice, and a soft, rolling palate."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-barossa",
+    "cmp-wiki-mclaren"
+   ]
   },
   {
    "a": "france/pomerol",
    "b": "france/saint-emilion",
    "link": "Merlot-led blends",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Size and rank",
+     "text": "Pomerol is the smallest wine area in Bordeaux, about 800 hectares, and it has no official classification, though Pétrus and Le Pin sell at first-growth prices. Saint-Emilion covers about 5,400 hectares and has had a classification since 1955, revised about every 10 years."
+    },
+    {
+     "head": "Merlot",
+     "text": "Merlot leads in both, often with Cabernet Franc. Wine Folly puts Pomerol's Merlot on clay-rich soils, with concentrated black cherry and plum, and Saint-Emilion's on limestone and clay, with blackcurrant and dark cherry."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-pomerol",
+    "cmp-wiki-saint-emilion",
+    "cmp-winefolly-merlot"
+   ]
   },
   {
    "a": "spain/rias-baixas",
    "b": "portugal/vinho-verde",
    "link": "Albariño, called Alvarinho",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Albariño and Alvarinho",
+     "text": "Albariño is over 90% of the vines in Rías Baixas. In Vinho Verde, where it is called Alvarinho, it is one grape among several and most wines are blends; Vinho Alvarinho comes from Monção and Melgaço."
+    },
+    {
+     "head": "Style",
+     "text": "Albariño has high acidity, stone fruit and a hint of salt. Most white Vinho Verde is light, about 8.5 to 11% alcohol, fresh, and released three to six months after the harvest, sometimes with a little sparkle added. Vinho Alvarinho is stronger, 11.5 to 14%, with ripe tropical aromas."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-rias-baixas",
+    "cmp-wiki-vinho-verde",
+    "cmp-winefolly-albarino"
+   ]
   },
   {
    "a": "italy/barolo",
@@ -316,16 +410,39 @@
    "b": "united-states/napa-valley",
    "link": "California reds",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Grapes",
+     "text": "Paso Robles is known for Zinfandel, its heritage grape, for Cabernet Sauvignon and for Rhône-style wines, and it grew the first Syrah planted in California. Its blends often break the traditional rules. Napa's Cabernet Sauvignon and Chardonnay took the top places at the 1976 Paris tasting, and Inglenook was the first Bordeaux-style winery in the US."
+    },
+    {
+     "head": "Climate",
+     "text": "Paso Robles is Winkler region II to III and gets 10 to 25 inches of rain a year. Napa runs from region I to III and gets 24 to 55 inches."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-paso",
+    "cmp-wiki-napa"
+   ]
   },
   {
    "a": "france/northern-rhone",
    "b": "france/southern-rhone",
    "link": "Syrah alone and Grenache blends",
    "tag": "",
-   "wines": [],
-   "sources": []
+   "wines": [
+    {
+     "head": "Syrah and blends",
+     "text": "In the north, Syrah is the only red grape allowed, sometimes with a little white grape: Côte-Rôtie may add up to 20% Viognier. Southern reds are usually blends led by Grenache, with Syrah, Mourvèdre, Carignan and Cinsault, and Châteauneuf-du-Pape allows 19 varieties."
+    },
+    {
+     "head": "Style",
+     "text": "The north is cooler, with a continental climate, and its Syrah is known for aromas of green olive and smoky bacon. The south is more Mediterranean, with hot summers. Reds from the southern Rhône's left bank are full-bodied and tannic when young, with prune, undergrowth and chocolate."
+    }
+   ],
+   "sources": [
+    "cmp-wiki-rhone"
+   ]
   },
   {
    "a": "argentina/mendoza",

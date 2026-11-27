@@ -10,6 +10,8 @@ w and h are the width and height in kilometers. The site and the app scale every
 kilometer, so sizes compare. Bits smaller than 1/60 of the place's size are dropped.
 """
 import hashlib, json, math, os
+
+VERSION = '2:'   # change it when the way outlines are made changes, so the cache is rebuilt
 from shapely.geometry import Polygon, MultiPolygon
 from shapely.ops import unary_union
 
@@ -28,7 +30,7 @@ def rings_of(pid, views, places):
     return None
 
 
-def outline(rings):
+def outline(rings, country=False):
     polys = []
     for ring in rings or []:
         if not ring: continue
@@ -39,6 +41,20 @@ def outline(rings):
             if not p.is_empty: polys.append(p)
     if not polys: return None
     g = unary_union(polys)
+    trimmed = False
+    if country and isinstance(g, MultiPolygon):
+        # a country's far-off islands and territories (Guadeloupe for France, the Canaries for Spain) would stretch it
+        # across an ocean: keep the main land and every part within a quarter of its size of a part already kept, so
+        # island chains near home stay (Sicily, then Lampedusa), and say so
+        main = max(g.geoms, key=lambda p: p.area)
+        span = max(main.bounds[2] - main.bounds[0], main.bounds[3] - main.bounds[1])
+        near, rest = [main], [p for p in g.geoms if p is not main]
+        while True:
+            add = [p for p in rest if min(p.distance(k) for k in near) <= span / 4]
+            if not add: break
+            near += add; rest = [p for p in rest if not any(p is a for a in add)]
+        trimmed = len(near) < len(g.geoms)
+        g = unary_union(near)
     lat = g.centroid.y
     kx, ky = 111.32 * math.cos(math.radians(lat)), 110.57   # km per degree
     minx, miny, maxx, maxy = g.bounds
@@ -57,7 +73,7 @@ def outline(rings):
         xs = list(p.exterior.coords)[:-1]
         d.append('M' + 'L'.join(f(x) + ' ' + f(y) for x, y in xs) + 'Z')
     if not d: return None
-    return dict(w=round(w, 2), h=round(h, 2), d=''.join(d))
+    return dict(w=round(w, 2), h=round(h, 2), d=''.join(d), **({'far': 'left out'} if trimmed else {}))
 
 
 def add_all(facts_dir, views, places, cache_path):
@@ -69,9 +85,10 @@ def add_all(facts_dir, views, places, cache_path):
         pid = fn[:-5].replace('__', '/')
         rings = rings_of(pid, views, places)
         if not rings: continue
-        key = hashlib.sha1(json.dumps(rings).encode()).hexdigest()[:16]
+        key = VERSION + hashlib.sha1(json.dumps(rings).encode()).hexdigest()[:16]
+        key += 'c' if (places.get(pid) or [None, None])[1] == 'world' else ''
         if cache.get(pid, {}).get('key') != key:
-            cache[pid] = dict(key=key, o=outline(rings))
+            cache[pid] = dict(key=key, o=outline(rings, country=key.endswith('c')))
         o = cache[pid]['o']
         if not o: continue
         p = os.path.join(facts_dir, fn)
