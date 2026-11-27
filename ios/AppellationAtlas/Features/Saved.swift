@@ -24,10 +24,38 @@ extension ModelContainer {
     }
 }
 
-/// Star a place, and open its notes.
-struct SaveButton: View {
+/// Star a place: the round button beside its name.
+struct StarButton: View {
     let placeID: String
     @Environment(\.modelContext) private var context
+    @Query private var saved: [SavedPlace]
+
+    init(placeID: String) {
+        self.placeID = placeID
+        _saved = Query(filter: #Predicate<SavedPlace> { $0.placeID == placeID })
+    }
+
+    var body: some View {
+        let on = !saved.isEmpty
+        Button {
+            if on { saved.forEach(context.delete) } else { context.insert(SavedPlace(placeID: placeID)) }
+        } label: {
+            Image(systemName: on ? "star.fill" : "star").font(.system(size: 19, weight: .semibold))
+                .foregroundStyle(Palette.gold4[4])
+                .frame(width: 44, height: 44)
+                .background(Palette.card, in: Circle())
+                .overlay(Circle().stroke(Palette.landEdge, lineWidth: 1))
+                .contentShape(Circle())
+        }
+        .buttonStyle(.plain)
+        .sensoryFeedback(.success, trigger: on)
+        .accessibilityLabel(on ? "Remove from saved places" : "Save this place")
+    }
+}
+
+/// Your notes on a saved place, under its summary: tap to write or edit them.
+struct SavedNote: View {
+    let placeID: String
     @Query private var saved: [SavedPlace]
     @State private var editing = false
 
@@ -37,37 +65,21 @@ struct SaveButton: View {
     }
 
     var body: some View {
-        let item = saved.first
-        HStack(spacing: 8) {
-            Button {
-                if let item { saved.forEach(context.delete); _ = item } else { context.insert(SavedPlace(placeID: placeID)) }
-            } label: {
-                Label(item == nil ? "Save" : "Saved", systemImage: item == nil ? "star" : "star.fill")
-                    .font(.subheadline.weight(.semibold))
-            }
-            .buttonStyle(.bordered)
-            .buttonBorderShape(.capsule)
-            .tint(item == nil ? Palette.teal : Palette.gold4[4])
-            .sensoryFeedback(.success, trigger: item != nil)
-            .accessibilityLabel(item == nil ? "Save this place" : "Remove from saved places")
-            if item != nil {
-                Button { editing = true } label: {
-                    Label(item?.note.isEmpty == false ? "Notes" : "Add notes", systemImage: "square.and.pencil").font(.subheadline.weight(.semibold))
+        if let item = saved.first {
+            Group {
+                if item.note.isEmpty {
+                    Button { editing = true } label: { Label("Add notes", systemImage: "square.and.pencil") }
+                        .font(.text(13, .heavy, relativeTo: .footnote)).foregroundStyle(Palette.teal)
+                } else {
+                    Text(item.note).font(.atlasBody).foregroundStyle(Palette.ink)
+                        .padding(12).frame(maxWidth: .infinity, alignment: .leading)
+                        .background(Palette.goldTint.opacity(0.6), in: RoundedRectangle(cornerRadius: 12))
+                        .onTapGesture { editing = true }
+                        .accessibilityLabel("Your notes: \(item.note)")
+                        .accessibilityHint("Double tap to edit")
                 }
-                .buttonStyle(.bordered)
-                .buttonBorderShape(.capsule)
             }
-        }
-        .sheet(isPresented: $editing) {
-            if let item { NotesEditor(place: item) }
-        }
-        if let n = item?.note, !n.isEmpty {
-            Text(n).font(.atlasBody).foregroundStyle(Palette.ink)
-                .padding(12).frame(maxWidth: .infinity, alignment: .leading)
-                .background(Palette.goldTint.opacity(0.6), in: RoundedRectangle(cornerRadius: 10))
-                .onTapGesture { editing = true }
-                .accessibilityLabel("Your notes: \(n)")
-                .accessibilityHint("Double tap to edit")
+            .sheet(isPresented: $editing) { NotesEditor(place: item) }
         }
     }
 }

@@ -16,8 +16,13 @@ struct LabelStyle: Equatable {
     let tone: Tone
     var italic = false
 
-    var uiFont: UIFont { .systemFont(ofSize: size, weight: weight == .heavy ? .heavy : weight == .bold ? .bold : .semibold) }
-    var font: Font { .system(size: size, weight: weight == .heavy ? .heavy : weight == .bold ? .bold : .semibold) }
+    /// As on the website's map: place names in Poppins, capitals, water and towns in Nunito Sans (.map text in atlas.css).
+    var fontName: String {
+        if !caps && !italic && tone != .water { return "Poppins-Bold" }
+        return "NunitoSans12ptExtraLight12pt-" + (weight == .heavy ? "ExtraBold" : weight == .bold ? "Bold" : "SemiBold")
+    }
+    var uiFont: UIFont { UIFont(name: fontName, size: size) ?? .systemFont(ofSize: size, weight: weight == .heavy ? .heavy : weight == .bold ? .bold : .semibold) }
+    var font: Font { Font(uiFont) }
     func text(_ s: String) -> String { caps ? s.uppercased() : s }
     func width(_ s: String) -> CGFloat { (text(s) as NSString).size(withAttributes: [.font: uiFont, .kern: kern]).width }
 

@@ -1,26 +1,55 @@
 import SwiftUI
 
-/// What is known about a place, in the website's order: what the place is, then what grows there, then why it grows
-/// there, then the law, then the notes. Every sentence comes from the data, as on the website.
+/// A place's page, as design D lays it out: what it is and what it is known for, its figures as cards, the places inside
+/// it and Compare, then a bar of chips over its sections. A phone shows it in the sheet over the map, an iPad in the
+/// panel beside it (renderTitle, glanceStrip and renderInfo in web/atlas.js).
 struct PlaceInfo: View {
+    let compact: Bool
+    @Environment(Atlas.self) private var atlas
+    @Environment(Nav.self) private var nav
+    @Environment(Globe.self) private var globe
+
+    var body: some View {
+        let id = nav.place
+        if id != "world", let f = atlas.facts(id) {
+            PlaceSections(id: id, f: f, range: globe.range, compact: compact).id(id)
+        } else if id != "world" {
+            ProgressView().frame(maxWidth: .infinity).padding(40)
+        }
+    }
+}
+
+extension EnvironmentValues {
+    /// Whether a section draws the hairline above it (not the first, which sits under the chip bar).
+    @Entry var sectionRule = true
+}
+
+struct PlaceSections: View {
+    let id: String
     let f: JSON
     let range: (Double, Double)
+    let compact: Bool
     @Environment(Atlas.self) private var atlas
     @Environment(Nav.self) private var nav
     @State private var allParts = false
+    @State private var active: Key?
+    @State private var tops: [Key: CGFloat] = [:]
     @AppStorage(Units.key) private var units = ""   // so the figures redraw when the units change
 
-    private enum Key: String, CaseIterable {
-        case keyfacts, style, terms, glance, short, planted, climate, soil, land, parts, rules, ava, gi, found, none, sources
+    enum Key: String, CaseIterable {
+        case keyfacts, style, terms, short, planted, allowed, climate, soil, land, places, parts, rules, ava, gi, found, none, sources
         var jump: String? {
             switch self {
+            case .keyfacts: "Key facts"
             case .style: "Style"
             case .terms: "Label"
             case .planted: "Planted"
+            case .allowed: "Grapes"
             case .climate: "Climate"
             case .soil: "Rock and soil"
             case .land: "Land"
-            case .parts: "Compare"
+            case .places: "Places"
+            case .parts: "Differences"
             case .rules: "Vineyard"
             case .ava: "AVA"
             case .gi: "GI"
@@ -30,17 +59,20 @@ struct PlaceInfo: View {
         }
     }
 
+    private var hasPlaces: Bool { !atlas.placesIn(atlas.viewFor(id)).isEmpty }
+
     private var present: [Key] {
         var k: [Key] = []
-        if f["summary"].truthy || GlanceStrip.has(f) { k.append(.glance) }   // first, as on the website
         if !f["keyfacts"].array.isEmpty { k.append(.keyfacts) }
         if !f["style"]["notes"].array.isEmpty { k.append(.style) }
         if !f["terms"].array.isEmpty { k.append(.terms) }
         if f["research"]["sheet"].truthy { k.append(.short) }
         if !f["planted"]["grapes"].array.isEmpty { k.append(.planted) }
+        if !f["summary"]["grapes"].array.isEmpty && !f["planted"].truthy { k.append(.allowed) }
         if f["climate"].truthy { k.append(.climate) }
         if f["soil"].truthy || f["rocks"].truthy { k.append(.soil) }
         if f["terrain"].truthy { k.append(.land) }
+        if hasPlaces { k.append(.places) }
         if !f["parts"].array.isEmpty { k.append(.parts) }
         if f["rules"].truthy { k.append(.rules) }
         if f["ava"].truthy { k.append(.ava) }
@@ -57,20 +89,25 @@ struct PlaceInfo: View {
         let jumps = keys.filter { $0.jump != nil }
         ScrollViewReader { proxy in
             VStack(alignment: .leading, spacing: 0) {
-                if jumps.count >= 3 {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 6) {
-                            ForEach(jumps, id: \.self) { k in
-                                Button(k.jump!) { withAnimation { proxy.scrollTo(k, anchor: .top) } }
-                                    .font(.system(size: 13, weight: .heavy))
-                                    .buttonStyle(.bordered).buttonBorderShape(.capsule)
-                            }
+                lead { k in withAnimation { proxy.scrollTo(k, anchor: .top) } }
+                LazyVStack(alignment: .leading, spacing: 0, pinnedViews: [.sectionHeaders]) {
+                    Section {
+                        ForEach(Array(keys.enumerated()), id: \.element) { i, k in
+                            section(k)
+                                .padding(.horizontal, 20)
+                                .environment(\.sectionRule, i > 0)
+                                .id(k)
+                                .onGeometryChange(for: CGFloat.self) { $0.frame(in: .scrollView).minY } action: { tops[k] = $0 }
                         }
+                        FeedbackLink(name: f["name"].string ?? "", id: id).padding(.horizontal, 20).padding(.top, 8)
+                    } header: {
+                        if jumps.count >= 2 { chipBar(jumps, proxy) }
                     }
-                    .padding(.vertical, 8)
                 }
-                ForEach(keys, id: \.self) { k in section(k).id(k) }
-                FeedbackLink(name: f["name"].string ?? "", id: f["id"].string ?? "").padding(.top, 8)
+            }
+            .onChange(of: tops) { _, t in
+                let on = keys.filter { $0.jump != nil && (t[$0] ?? .infinity) <= 90 }.last ?? jumps.first
+                if on != active { active = on }
             }
             // For screenshots: run with -section climate to open the page at that section.
             .task {
@@ -81,12 +118,119 @@ struct PlaceInfo: View {
         }
     }
 
+    // ---- the top of the page
+
+    private var kindText: String {
+        let kinds = f["kind"].strings
+        if !kinds.isEmpty { return kinds.map(capitalized).joined(separator: " and ") }
+        if f["depth"].int == 0 { return "Country" }
+        return f["shape"].string == "Eurostat LAU, the commune it is named for" ? "Commune" : "Region"
+    }
+
+    private func lead(_ jump: @escaping (Key) -> Void) -> some View {
+        let t = atlas.tone(id)
+        let sm = f["summary"]
+        let vid = atlas.viewFor(id), leafPage = id != vid
+        return VStack(alignment: .leading, spacing: 14) {
+            if !compact { Crumbs() }
+            VStack(alignment: .leading, spacing: 6) {
+                HStack(spacing: 6) {
+                    Text(kindText.uppercased() + (t != .other ? " ·" : "")).font(.text(12.5, .heavy, relativeTo: .caption)).kerning(1.4).foregroundStyle(Palette.coralText)
+                    if t != .other {   // grey places carry no badge, as in renderTitle in atlas.js
+                        Text(Copy.tone(t).one.uppercased())
+                            .font(.text(12.5, .heavy, relativeTo: .caption)).kerning(1.4)
+                            .padding(.horizontal, 6).padding(.vertical, 1)
+                            .background(t == .essential ? Palette.gold4[3] : t == .benchmark ? Palette.gold4[2] : Palette.gold4[1], in: RoundedRectangle(cornerRadius: 2))
+                            .foregroundStyle(Palette.ink)
+                    }
+                }
+                HStack(alignment: .center, spacing: 12) {
+                    Text(atlas.name(id)).font(.display(40, .heavy, relativeTo: .largeTitle)).kerning(-1).foregroundStyle(Palette.ink)
+                        .lineLimit(3).minimumScaleFactor(0.5)
+                        .accessibilityAddTraits(.isHeader)
+                    Spacer(minLength: 0)
+                    StarButton(placeID: id)
+                }
+                if let also = f["also"].strings.nilIfEmpty {
+                    Text("Also " + also.joined(separator: ", ")).font(.atlasNote).foregroundStyle(Palette.soft)
+                }
+                if let b = f["blurb"]["text"].string, !b.isEmpty {   // what the place is known for (blurb in web/atlas.js)
+                    Text(b).font(.text(15, relativeTo: .body)).lineSpacing(3).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
+                }
+                SavedNote(placeID: id)
+            }
+            .textSelection(.enabled)
+            if GlanceStrip.has(f) {
+                HStack(alignment: .firstTextBaseline) {
+                    Text("At a glance").font(.display(15, .bold, relativeTo: .headline)).foregroundStyle(Palette.ink)
+                    Spacer()
+                    if compact && GlanceStrip.count(f) > 1 { Text("Swipe for more").font(.text(12, relativeTo: .caption)).foregroundStyle(Palette.soft) }
+                }
+                GlanceStrip(f: f, row: compact)
+            }
+            HStack(spacing: 8) {
+                if hasPlaces {
+                    let n = sm["places"].double
+                    Button { jump(.places) } label: {
+                        Text(!leafPage && n != nil ? "\(fmt(n)) places inside" : leafPage ? "More in \(atlas.name(vid))" : "\(atlas.placesIn(vid).count) places inside")
+                            .font(.text(14, .heavy, relativeTo: .subheadline)).foregroundStyle(Palette.ink).lineLimit(1).minimumScaleFactor(0.8)
+                            .frame(maxWidth: .infinity).frame(height: compact ? 48 : 46)
+                            .background(Palette.card, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                            .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(Palette.landEdge, lineWidth: 1))
+                            .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                }
+                Button { nav.compare = CompareRoute(a: id) } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: "arrow.left.arrow.right").font(.system(size: 14, weight: .bold))
+                        Text("Compare").font(.text(14, .heavy, relativeTo: .subheadline))
+                    }
+                    .foregroundStyle(Palette.paper)
+                    .frame(maxWidth: .infinity).frame(height: compact ? 48 : 46)
+                    .background(Palette.teal, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .padding(.horizontal, 20)
+        .padding(.top, compact ? 22 : 20)
+        .padding(.bottom, 16)
+    }
+
+    private func chipBar(_ jumps: [Key], _ proxy: ScrollViewProxy) -> some View {
+        ScrollViewReader { bar in
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 6) {
+                    ForEach(jumps, id: \.self) { k in
+                        let on = (active ?? jumps.first) == k
+                        Button { active = k; withAnimation { proxy.scrollTo(k, anchor: .top) } } label: {
+                            Text(k.jump!).font(.text(13, .heavy, relativeTo: .footnote))
+                                .foregroundStyle(on ? Palette.paper : Palette.teal)
+                                .padding(.horizontal, 12).padding(.vertical, 6)
+                                .background(on ? Palette.ink : Palette.fill, in: Capsule())
+                        }
+                        .buttonStyle(.plain)
+                        .id(k)
+                    }
+                }
+                .padding(.horizontal, 20).padding(.vertical, 10)
+            }
+            .onChange(of: active) { _, k in if let k { withAnimation { bar.scrollTo(k, anchor: .center) } } }
+        }
+        .background(Palette.paper.opacity(0.98))
+        .overlay(alignment: .top) { Rectangle().fill(Palette.line).frame(height: 1) }
+        .overlay(alignment: .bottom) { Rectangle().fill(Palette.line).frame(height: 1) }
+    }
+
     @ViewBuilder private func section(_ k: Key) -> some View {
         switch k {
         case .keyfacts: keyfacts
         case .style: style
         case .terms: terms
-        case .glance: glance
+        case .allowed: allowed
+        case .places: AtlasSection(title: id != atlas.viewFor(id) ? "Other places in \(atlas.name(atlas.viewFor(id)))" : "Places in \(atlas.name(id))") { placesBody }
         case .short: short
         case .planted: planted
         case .climate: climate
@@ -142,8 +286,8 @@ struct PlaceInfo: View {
             VStack(alignment: .leading, spacing: 10) {
                 ForEach(f["style"]["notes"].strings, id: \.self) { t in
                     HStack(alignment: .firstTextBaseline, spacing: 10) {
-                        Circle().fill(Palette.teal).frame(width: 6, height: 6).alignmentGuide(.firstTextBaseline) { $0[.bottom] + 1 }
-                        Text(t).font(.atlasBody).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
+                        Circle().fill(Palette.ink).frame(width: 5, height: 5).alignmentGuide(.firstTextBaseline) { $0[.bottom] + 1 }
+                        Text(t).font(.text(14.5, relativeTo: .subheadline)).lineSpacing(2.5).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
                     }
                 }
             }
@@ -156,31 +300,31 @@ struct PlaceInfo: View {
             VStack(alignment: .leading, spacing: 10) {
                 ForEach(f["keyfacts"].strings, id: \.self) { t in
                     HStack(alignment: .firstTextBaseline, spacing: 10) {
-                        Circle().fill(Palette.teal).frame(width: 6, height: 6).alignmentGuide(.firstTextBaseline) { $0[.bottom] + 1 }
-                        Text(t).font(.atlasBody).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
+                        Circle().fill(Palette.ink).frame(width: 5, height: 5).alignmentGuide(.firstTextBaseline) { $0[.bottom] + 1 }
+                        Text(t).font(.text(14.5, relativeTo: .subheadline)).lineSpacing(2.5).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
                     }
                 }
             }
         }
     }
 
-    private var glance: some View {
-        let sm = f["summary"]
-        let kinds = sm["kinds"].array.map { plural($0[1].int ?? 0, $0[0].string ?? "") }.joined(separator: ", ")
-        return AtlasSection(title: "At a glance") {
-            if sm.truthy {
-                FactGrid(facts: [
-                    Fact(label: "Places inside", value: fmt(sm["places"].double), note: kinds),
-                    Fact(label: "Growing season", value: sm["gst"].truthy && f["climate"]["gst"].double == nil ? Units.degRange(sm["gst"][0].double ?? 0, sm["gst"][1].double ?? 0) : "", note: "average temperature across its places"),
-                ])
-            }
-            if GlanceStrip.has(f) { GlanceStrip(f: f).padding(.top, sm.truthy ? 8 : 0) }
-            if sm.truthy && !sm["grapes"].array.isEmpty && !f["planted"].truthy {
-                let n = sm["with_rules"].int ?? 0
-                SubCaption("The grapes most often allowed, and in how many of its \(n) appellation\(n == 1 ? "" : "s") with rules:")
-                Chips(items: chips(sm["grapes"]))
-            }
+    /// The grapes most often allowed across its appellations, for a region with no plantings of its own.
+    private var allowed: some View {
+        let sm = f["summary"], n = sm["with_rules"].int ?? 0
+        return AtlasSection(title: "Grapes most often allowed") {
+            Text("In how many of its \(n) appellation\(n == 1 ? "" : "s") with rules:").font(.atlasNote).foregroundStyle(Palette.soft)
+            Chips(items: chips(sm["grapes"]))
         }
+    }
+
+    /// The places inside it, or around it for a place with none of its own (renderPlaces in web/atlas.js).
+    @ViewBuilder private var placesBody: some View {
+        let sm = f["summary"]
+        if sm.truthy && id == atlas.viewFor(id) {
+            let kinds = sm["kinds"].array.map { plural($0[1].int ?? 0, $0[0].string ?? "") }.joined(separator: ", ")
+            Text("\(fmt(sm["places"].double)) places in all\(kinds.isEmpty ? "" : ": " + kinds).").font(.text(13, relativeTo: .footnote)).foregroundStyle(Palette.soft)
+        }
+        PlacesHere(folded: false, titled: false)
     }
 
     private var short: some View {

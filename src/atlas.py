@@ -403,6 +403,22 @@ SRC={'eu-pdo':dict(name='Candiago et al. 2022, A geospatial inventory of regulat
      'cmp-winefolly-pinot-noir':dict(name='Wine Folly, Pinot Noir',url='https://winefolly.com/grapes/pinot-noir/'),
      'cmp-winefolly-nebbiolo':dict(name='Wine Folly, Nebbiolo',url='https://winefolly.com/grapes/nebbiolo/'),
      'cmp-wiki-burgundy':dict(name='Wikipedia, Burgundy wine',url='https://en.wikipedia.org/wiki/Burgundy_wine'),
+     'cmp-wiki-pommard':dict(name='Wikipedia, Pommard wine',url='https://en.wikipedia.org/wiki/Pommard_wine'),
+     'cmp-wiki-volnay':dict(name='Wikipedia, Volnay wine',url='https://en.wikipedia.org/wiki/Volnay_wine'),
+     'cmp-wiki-gevrey':dict(name='Wikipedia, Gevrey-Chambertin wine',url='https://en.wikipedia.org/wiki/Gevrey-Chambertin_wine'),
+     'cmp-wiki-vosne':dict(name='Wikipedia, Vosne-Romanée wine',url='https://en.wikipedia.org/wiki/Vosne-Roman%C3%A9e_wine'),
+     'cmp-wiki-pouilly-fuisse':dict(name='Wikipedia, Pouilly-Fuissé',url='https://en.wikipedia.org/wiki/Pouilly-Fuiss%C3%A9'),
+     'cmp-wiki-saint-julien':dict(name='Wikipedia, Saint-Julien AOC',url='https://en.wikipedia.org/wiki/Saint-Julien_AOC'),
+     'cmp-wiki-saint-estephe':dict(name='Wikipedia, Saint-Estèphe AOC',url='https://en.wikipedia.org/wiki/Saint-Est%C3%A8phe_AOC'),
+     'cmp-wiki-pessac':dict(name='Wikipedia, Pessac-Léognan',url='https://en.wikipedia.org/wiki/Pessac-L%C3%A9ognan'),
+     'cmp-wiki-muscadet':dict(name='Wikipedia, Muscadet',url='https://en.wikipedia.org/wiki/Muscadet'),
+     'cmp-wiki-crozes':dict(name='Wikipedia, Crozes-Hermitage AOC',url='https://en.wikipedia.org/wiki/Crozes-Hermitage_AOC'),
+     'cmp-wiki-cornas':dict(name='Wikipedia, Cornas AOC',url='https://en.wikipedia.org/wiki/Cornas_AOC'),
+     'cmp-wiki-taurasi':dict(name='Wikipedia, Taurasi',url='https://en.wikipedia.org/wiki/Taurasi'),
+     'cmp-wiki-aglianico':dict(name='Wikipedia, Aglianico',url='https://en.wikipedia.org/wiki/Aglianico'),
+     'cmp-wiki-priorat':dict(name='Wikipedia, Priorat DOQ',url='https://en.wikipedia.org/wiki/Priorat_DOQ'),
+     'cmp-wiki-sta-rita':dict(name='Wikipedia, Sta. Rita Hills AVA',url='https://en.wikipedia.org/wiki/Sta._Rita_Hills_AVA'),
+     'cmp-wiki-pfalz':dict(name='Wikipedia, Palatinate (wine region)',url='https://en.wikipedia.org/wiki/Palatinate_(wine_region)'),
      'cmp-wiki-barolo':dict(name='Wikipedia, Barolo',url='https://en.wikipedia.org/wiki/Barolo'),
      'cmp-owb-chardonnay':dict(name='Oregon Wine Board, Oregon Chardonnay',url='https://www.oregonwine.org/discover/oregon-chardonnay/'),
      'cmp-wiki-bordeaux':dict(name='Wikipedia, Bordeaux wine',url='https://en.wikipedia.org/wiki/Bordeaux_wine'),
@@ -1327,9 +1343,11 @@ def compare_pairs(dest,facts_dir):
         if p['wines'] and not p['sources']: bad.append(f'#{i}: wine text with no source')
         bad+=[f'#{i}: source {k} is not in SRC' for k in p['sources'] if k not in SRC]
         bad+=[f'#{i}: an em dash in its text' for w in p['wines'] if '\u2014' in w['text']+w['head']]
+        bad+=[f'#{i}: wine color {w.get("c")} is not r, w, p or n' for w in p['wines'] if w.get('c') not in ('r','w','p','n')]
+        if (p['tag']=='different-grapes')!=bool(p.get('note')): bad.append(f'#{i}: a different-grapes pair needs a note, and only those')
         ol=lambda x:(jl(os.path.join(facts_dir,x.replace('/','__')+'.json')).get('outline') if os.path.exists(os.path.join(facts_dir,x.replace('/','__')+'.json')) else None)
         import units
-        out.append(dict(a=p['a'],b=p['b'],link=p['link'],tag=p['tag'],wines=[dict(head=w['head'],text=units.mark(w['text'])) for w in p['wines']],   # figures with units follow the Units setting, as in place text
+        out.append(dict(a=p['a'],b=p['b'],link=p['link'],tag=p['tag'],note=units.mark(p.get('note','')),wines=[dict(head=w['head'],text=units.mark(w['text']),c=w['c']) for w in p['wines']],   # figures with units follow the Units setting, as in place text
 sources=[dict(name=SRC[k]['name'],url=SRC[k]['url']) for k in p['sources'] if k in SRC],
                         oa=ol(p['a']),ob=ol(p['b'])))   # both outlines, so the list can draw every pair without loading 100 places
     seen=set()

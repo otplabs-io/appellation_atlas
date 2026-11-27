@@ -69,9 +69,10 @@ enum Units {
     static func land(_ km2: Double) -> String { us(.area) ? "\(fmt(km2 * 0.3861)) square miles" : "\(fmt(km2)) km²" }
 }
 
-/// Chooses the units: the whole system at once, or each kind on its own (openUnits in atlas.js).
-struct UnitsView: View {
+/// Settings: the units, the whole system at once or each kind on its own (D-Settings; openUnits in atlas.js).
+struct SettingsPage: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.horizontalSizeClass) private var width
     @AppStorage(Units.key) private var saved = ""
 
     private let rows: [(UnitKind, String, String, String)] = [
@@ -97,48 +98,53 @@ struct UnitsView: View {
     }
 
     var body: some View {
-        NavigationStack {
-            List {
-                Section {
-                    Picker("Measurement system", selection: Binding(get: { system }, set: { v in if v != "custom" { saved = Units.setting(nil, to: v, in: saved) } })) {
-                        Text("US").tag("us")
-                        Text("Metric").tag("m")
-                        if system == "custom" { Text("Custom").tag("custom") }
-                    }
-                    .pickerStyle(.segmented)
-                }
-                Section {
-                    ForEach(rows, id: \.0) { k, name, a, b in
-                        HStack(spacing: 10) {
-                            VStack(alignment: .leading, spacing: 1) {
-                                Text(name).font(.atlasBody.weight(.bold))
-                                Text(example(k)).font(.atlasNote).foregroundStyle(Palette.soft)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 0) {
+                HStack { CircleBack(action: { dismiss() }); Spacer() }
+                    .padding(.horizontal, 16).padding(.top, 6).padding(.bottom, 4)
+                Text("Settings").font(.display(30, .heavy, relativeTo: .largeTitle)).kerning(-0.6).foregroundStyle(Palette.ink)
+                    .accessibilityAddTraits(.isHeader)
+                    .padding(.horizontal, 20).padding(.top, 6).padding(.bottom, 12)
+                VStack(alignment: .leading, spacing: 8) {
+                    Caps("Units").padding(.horizontal, 4)
+                    DSegmented(options: [("us", "US"), ("m", "Metric"), ("custom", "Custom")],
+                               selection: Binding(get: { system }, set: { v in if v != "custom" { saved = Units.setting(nil, to: v, in: saved) } }),
+                               height: 38, size: 14, label: "Measurement system")
+                    VStack(spacing: 0) {
+                        ForEach(Array(rows.enumerated()), id: \.offset) { i, r in
+                            let (k, name, a, b) = r
+                            HStack(spacing: 10) {
+                                VStack(alignment: .leading, spacing: 1) {
+                                    Text(name).font(.text(15, .heavy, relativeTo: .body)).foregroundStyle(Palette.ink)
+                                    Text(example(k)).font(.text(12, relativeTo: .caption)).foregroundStyle(Palette.soft)
+                                }
+                                Spacer(minLength: 8)
+                                DSegmented(options: [("us", a), ("m", b)], selection: Binding(get: { Units.value(k, saved) }, set: { saved = Units.setting(k, to: $0, in: saved) }),
+                                           height: 32, size: 13, label: name)
+                                    .frame(width: 132)
                             }
-                            Spacer(minLength: 8)
-                            Picker(name, selection: Binding(get: { Units.value(k, saved) }, set: { saved = Units.setting(k, to: $0, in: saved) })) {
-                                Text(a).tag("us")
-                                Text(b).tag("m")
-                            }
-                            .pickerStyle(.segmented)
-                            .frame(width: 140)
+                            .padding(.leading, 14).padding(.trailing, 12).padding(.vertical, 10)
+                            .overlay(alignment: .top) { if i > 0 { Rectangle().fill(Palette.fill).frame(height: 1) } }
                         }
                     }
-                } footer: {
-                    Text("At first the Atlas follows your device's region. Figures set by law stay as the rules state them, like yields in hectoliters per hectare.")
+                    .cardBox(20)
+                    .padding(.top, 4)
+                    Text("At first the app follows your \(width == .regular ? "iPad" : "iPhone")'s region. Figures set by law stay as the rules state them, like yields in hectoliters per hectare.")
+                        .font(.text(12.5, relativeTo: .footnote)).foregroundStyle(Palette.soft).lineSpacing(2)
+                        .padding(.horizontal, 4).padding(.top, 4)
                 }
+                .padding(.horizontal, 16)
             }
-            .navigationTitle("Units")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
+            .padding(.bottom, 30)
         }
+        .background(Palette.paper.ignoresSafeArea())
     }
 }
 
-/// Opens Units.
+/// Opens Settings.
 struct UnitsButton: View {
-    @State private var open = false
+    @Environment(Nav.self) private var nav
     var body: some View {
-        Button { open = true } label: { Label("Units", systemImage: "ruler") }
-            .sheet(isPresented: $open) { UnitsView() }
+        Button { nav.settings = true } label: { Label("Units", systemImage: "ruler") }
     }
 }

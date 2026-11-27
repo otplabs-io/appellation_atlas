@@ -65,9 +65,9 @@ struct AboutView: View {
 
 /// Opens About.
 struct AboutButton: View {
-    @State private var open = false
+    var plain = false
+    @Environment(Nav.self) private var nav
     var body: some View {
-        Button { open = true } label: { Label("About the Atlas", systemImage: "info.circle") }
-            .sheet(isPresented: $open) { AboutView() }
+        Button { nav.about = true } label: { if plain { Text("About") } else { Label("About the Atlas", systemImage: "info.circle") } }
     }
 }
